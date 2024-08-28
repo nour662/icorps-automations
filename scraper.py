@@ -7,84 +7,81 @@ from bs4 import BeautifulSoup as bs
 import re as re
 import time
 import pandas as pd
+from argparse import ArgumentParser
 import chromedriver_binary
 import json
 from selenium.common.exceptions import NoSuchElementException
 import pandas as pd
+import sys
 
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
-driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+##login 
+## load json 
+## split into different batches 
+## go to each url in each batch
+
+#######First priority: 
+## scrape all expierence information 
+## Save it to csv "whatever-batch-x.csv"
+## continue looping until finished
+## merge all csv. 
+
+
+
+
+
+######## Second priority.... (doesnt need to be done rn)
+## get the university based on the time of enrollment in i-corps (before or during but not after)
+## Scrape that university, and their stanidng
+
+
+
+
+
+
+## clean exp merged csv by search for keyword/or other
+### check whether or not they match the team name on file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # https://medium.com/mlearning-ai/how-to-build-a-web-scraper-for-linkedin-6b49b6b6adfc
 
-#Input webdriver path, LinkedIn username, LinkedIn password
-PATH = "C:/Users/hairb/OneDrive/Desktop/chrome-win64/chrome-win64"
-# USERNAME = input("Enter the username: ")
-# PASSWORD = input("Enter the password: ")
-USERNAME = "your username"
-PASSWORD = "your password"
-print(PATH)
-print(USERNAME)
-print(PASSWORD)
 
-driver = webdriver.Chrome()
+people_keywords = ["CEO" , "COO" , "CIO" , "CDO" , "CTO" , "CFO", "CMO" , "CSO", "Founder" , "Co-founder"]
+company_keywords = ["LLC" , "INC", "Corp"]
 
-# Goes to Linked In home page
-time.sleep(2)
-driver.get("https://www.linkedin.com/uas/login")
-time.sleep(1.5)
 
-# Logs in with the inputed criteria
 
-email = driver.find_element(By.ID, "username")
-email.send_keys(USERNAME)
-password = driver.find_element(By.ID, "password")
-password.send_keys(PASSWORD)
-time.sleep(0.1)
-password.send_keys(Keys.RETURN)
-time.sleep(0.5)
-
-# Open the JSON file
-with open('links.json', 'r') as file:
-    # Load JSON data from file
-    data = json.load(file)
-
-print(data)
-
-time.sleep(2)
-
-# Loops through links and visits each page
-# Checks for intern tag in role
-
-def remove_job_descriptor(str):
-    for i in range(0, len(str)):
-        if (str[i] == "·"):
-            return str[0:(i-1)]
-    return str
-
-def find_largest_arr(exp_map):
-    max = -1
-    for exp in exp_map:
-        if (len(exp_map[exp]) > max):
-            max = len(exp_map[exp])
-    return max
-
-def balance_arrays(exp_map):
-    max = find_largest_arr(exp_map)
-    print(f"max: {max}")
-    for exp in exp_map:
-        while (len(exp_map[exp]) < max):
-            exp_map[exp].append("")
-    return exp_map
+def login(username, passoword) : 
+    ### DONE, needs comments
+    email = driver.find_element(By.ID, "username")
+    email.send_keys(username)
+    password = driver.find_element(By.ID, "password")
+    password.send_keys(passoword)
+    time.sleep(0.1)
+    password.send_keys(Keys.RETURN)
+    time.sleep(0.5)
             
 
+def scr(url): 
 
-exp_map = {}
-intern_map = {}
 
-for i in range(0, len(data)):
+
+"""for i in range(0, len(data)):
     driver.get(data[i])
     time.sleep(1.5)
 
@@ -93,8 +90,6 @@ for i in range(0, len(data)):
 
 
     exp = []
-
-
 
     count = 0
     for job in jobs:
@@ -131,21 +126,52 @@ for i in range(0, len(data)):
     exp_map[name] = exp
 
     print("*************")
-    time.sleep(0.5)
+    time.sleep(0.5)"""
 
-print(exp_map)
-exp_map = balance_arrays(exp_map)
-print(exp_map)
 
-names = []
-for exp in exp_map:
-    names.append(exp)
 
-df = pd.DataFrame(data=exp_map).transpose()
-df.insert(loc=0, column='Person', value=names)
+def main(username, password ):
 
-print(df)
 
-df.to_csv('experience_list.csv', index=False)  
-        
-driver.quit()
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument('--remote-debugging-port=9222')  # Use the same port as used to start Chrome
+
+    driver = webdriver.Chrome(options=chrome_options)
+
+    # Goes to Linked In home page
+    #time.sleep(2)
+    #driver.get("https://www.linkedin.com/uas/login")
+    #time.sleep(1.5)
+
+
+    #login(username, password)
+
+    with open('links.json', 'r') as file:
+        data = json.load(file)
+
+    batch_size = 1 
+    start_batch = 0
+    for i in range(start_batch, len(data) , batch_size):
+
+        results = scrape_linkedin()
+        save_to_csv()
+
+
+    merge_csv()
+
+    driver.quit
+
+
+def parse_args(arglist):
+    ## DONE: needs comments
+
+    parser = ArgumentParser()
+    parser.add_argument( "--username" , "-u", help="linkedin username")
+    parser.add_argument("--password" , "-p", nargs="*", help="linkedin password")
+
+    return parser.parse_args(arglist)
+
+if __name__ == "__main__":
+    #DONE, needs commetns
+    args = parse_args(sys.argv[1:])
+    main(args.username, args.password)
