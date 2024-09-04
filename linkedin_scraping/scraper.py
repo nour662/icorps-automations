@@ -39,17 +39,61 @@ def login(driver, username, password):
 
 def scrape_linkedin(driver, url):
     """
-    Scrapes LinkedIn page content from the given URL.
+    Scrapes LinkedIn page content from the given URL using CCS_Selector.
     """
+    #For both the experience and the education section if statements, they may not be necesary with the current pull to "section:has(#experience)>div>ul>li"
+    if 'details/experience/' in url:
+        pass
+    else:
+        url +='details/experience/'
+   
     driver.get(url)
+    data = {}
     time.sleep(random.uniform(5, 10))  # Random delay
 
-    data = [] 
-
-
-    #TO - DO, write this section. Look into old scraping examples.
-
+    #Will need to check "job" for keywords
+    experience_section = {key:[] for key in ['job','company','date','location','description']}
+    jobs = driver.find_elements(By.CSS_SELECTOR, 'section:has(#experience)>div>ul>li')
+    for job in jobs:
+        experience_section['job']     += [job.find_element(By.CSS_SELECTOR, 'span[class="mr1 t-bold"] span').text]
+        experience_section['company'] += [job.find_element(By.CSS_SELECTOR, 'span[class="t-14 t-normal"] span').text]
+        experience_section['date']    += [job.find_element(By.CSS_SELECTOR, 'span[class="t-14 t-normal t-black--light"] span').text]
+        experience_section['location']    += [driver.execute_script('return arguments[0].querySelector("span[class=\'t-14 t-normal t-black--light\']:nth-child(4) span")?.innerText', job)]
+        experience_section['description'] += [driver.execute_script('return arguments[0].querySelector("ul li ul span[aria-hidden=true]")?.innerText', job)]
+        
+    data[url] = experience_section
+   
+    #Returns the URL to the original so it can be used for the education section
+    url = url.removesuffix('details/experience/')
     return data
+
+def scrape_education_linkedin(driver,url):
+    """
+    Scrapes Linkedin's edcuation details from the given URL
+    """
+    #For both the experience and the education section if statements, they may not be necesary with the current pull to "section:has(#experience)>div>ul>li"
+    if 'details/education/' in url:
+        pass
+    else:
+        url +='details/education/'
+
+    driver.get(url)
+    info_education = {}
+    time.sleep(random.uniform(5, 10))  # Random delay
+
+    education_section = {key:[] for key in ['school','degree','date','description']}
+    colleges = driver.find_elements(By.CSS_SELECTOR, 'section:has(#education)>div>ul>li')
+    for college in colleges:
+        education_section['school'] += [college.find_element(By.CSS_SELECTOR, 'span[class="mr1 t-bold"] span').text]
+        education_section['degree'] += [college.find_element(By.CSS_SELECTOR, 'span[class="t-14 t-normal"] span').text]
+        education_section['date']   += [college.find_element(By.CSS_SELECTOR, 'span[class="t-14 t-normal t-black--light"] span').text]
+        education_section['description'] += [driver.execute_script('return arguments[0].querySelector("ul li ul span[aria-hidden=true]")?.innerText', college)]
+
+    info_education[url] = education_section
+    
+    #Returns the URL to the original
+    url = url.removesuffix('details/education/')
+    return info_education
 
 def save_to_csv(results, batch_number):
     """
