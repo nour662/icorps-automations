@@ -172,6 +172,6 @@ def parse_args(arglist):
     return parser.parse_args(arglist)
 
 if __name__ == "__main__":
-    #DONE, needs commetns
+    #DONE, needs comments
     args = parse_args(sys.argv[1:])
     main(args.username, args.password)
