@@ -44,6 +44,8 @@ def scrape_linkedin(driver, url):
     driver.get(url)
     time.sleep(random.uniform(5, 10))  # Random delay
 
+ 
+
     data = [] 
 
 
