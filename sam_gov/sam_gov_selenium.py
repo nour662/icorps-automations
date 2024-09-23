@@ -10,7 +10,7 @@ import time
 def search_name_and_scrape_info(driver, company_name, csv_filename):
     # Step 1: Modify the search URL with the desired keyword
     search_url = f"https://sam.gov/search/?page=1&pageSize=25&sort=-relevance&index=ei&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bkey%5D=%22{company_name}%22&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bvalue%5D=%22{company_name}%22&sfm%5Bstatus%5D%5Bis_active%5D=true&sfm%5Bstatus%5D%5Bis_inactive%5D=false"
-    
+    #search_url = f"https://sam.gov/search/?page=1&pageSize=25&sort=-modifiedDate&sfm%5BsimpleSearch%5D%5BkeywordRadio%5D=ALL&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bkey%5D=%22{company_name}%22&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bvalue%5D=%22{company_name}%22&sfm%5BsimpleSearch%5D%5BkeywordEditorTextarea%5D=&sfm%5Bstatus%5D%5Bis_active%5D=true"
     driver.get(search_url)
     time.sleep(4)
     
@@ -94,6 +94,8 @@ df = pd.read_csv('data/engeineering_DeansList.csv')  # INPUT CSV!!! Please chang
 time.sleep(60)  # Adjusted the sleep time to avoid too long a wait.
 
 # Iterate over each row in the DataFrame
+first_name = driver.find_element(By.XPATH, '//span[@id="pocFirstName"]').text
+last_name = driver.find_element(By.XPATH, '//span[@id="pocLastName"]').text
 for index, row in df.iterrows():
     keywords = ['llc' , 'inc' , 'corp']
     company_name = row['last_name']  # INPUT ROW!!! Please change this to the name of the column containing the last name of the person.
