@@ -1,4 +1,3 @@
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -6,19 +5,16 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException, ElementNotInteractableException
 import pandas as pd
 import time
-
-#df = pd.read_csv('name_list.csv')  # INPUT CSV!!! Please change this to the proper file you want to search through.
-#data_list =df.values.tolist()
-#print(data_list)
-
-
-
-
-
-def search_name_and_scrape_info(driver, company_name, csv_filename):
-    # Step 1: Modify the search URL with the desired keyword
-    search_url = f"https://sam.gov/search/?page=1&pageSize=25&sort=-relevance&index=ei&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bkey%5D=%22{company_name}%22&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bvalue%5D=%22{company_name}%22&sfm%5Bstatus%5D%5Bis_active%5D=true&sfm%5Bstatus%5D%5Bis_inactive%5D=false"
-    #search_url = f"https://sam.gov/search/?page=1&pageSize=25&sort=-modifiedDate&sfm%5BsimpleSearch%5D%5BkeywordRadio%5D=ALL&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bkey%5D=%22{company_name}%22&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bvalue%5D=%22{company_name}%22&sfm%5BsimpleSearch%5D%5BkeywordEditorTextarea%5D=&sfm%5Bstatus%5D%5Bis_active%5D=true"
+"""
+df = pd.read_csv('name_list.csv')  # INPUT CSV!!! Please change this to the proper file you want to search through.
+data_list =df.values.tolist()
+print(data_list)
+"""
+def search_name_and_scrape_info(driver, company_name):
+    #Step 1: Modify the search URL with the desired keyword
+    #search_url = f"https://sam.gov/search/?page=1&pageSize=25&sort=-relevance&index=ei&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bkey%5D=%22{company_name}%22&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bvalue%5D=%22{company_name}%22&sfm%5Bstatus%5D%5Bis_active%5D=true&sfm%5Bstatus%5D%5Bis_inactive%5D=false"
+    #search_url = f"https://sam.gov/search/?page=1&pageSize=25&sort=-relevance&index=ei&sfm%5BsimpleSearch%5D%5BkeywordRadio%5D=ALL&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bkey%5D=%22nano%22&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bvalue%5D=%22{company_name}%22&sfm%5Bstatus%5D%5Bis_active%5D=true"
+    search_url = f"https://sam.gov/search/?page=1&pageSize=25&sort=-modifiedDate&sfm%5BsimpleSearch%5D%5BkeywordRadio%5D=ALL&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bkey%5D=%22{company_name}%22&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bvalue%5D=%22{company_name}%22&sfm%5BsimpleSearch%5D%5BkeywordEditorTextarea%5D=&sfm%5Bstatus%5D%5Bis_active%5D=true"
     driver.get(search_url)
     time.sleep(4)
     print(company_name)
@@ -95,20 +91,18 @@ chrome_options.add_argument('--remote-debugging-port=9222')  # Use the same port
 driver = webdriver.Chrome(options=chrome_options)
 
 # Navigate to the search page
-driver.get('')
+#driver.get(search_url)
 
 # Read the CSV file containing names
 df = pd.read_csv('name_list.csv')  # INPUT CSV!!! Please change this to the proper file you want to search through.
-#data_list =df.values.tolist()
 time.sleep(60)  # Adjusted the sleep time to avoid too long a wait.
 
 # Iterate over each row in the DataFrame
-first_name = driver.find_element(By.XPATH, '//span[@id="pocFirstName"]').text
-last_name = driver.find_element(By.XPATH, '//span[@id="pocLastName"]').text
-for index, row in df.iterrows():
+print(df)
+for row in df.iterrows():
     keywords = ['llc' , 'inc' , 'corp']
-    company_name = row['last_name']  # INPUT ROW!!! Please change this to the name of the column containing the last name of the person.
-    search_name_and_scrape_info(driver, first_name, last_name, df, index)
+    company_name = row  # INPUT ROW!!! Please change this to the name of the column containing the last name of the person.
+    search_name_and_scrape_info(driver, company_name)
 
 # Close the WebDriver
 driver.quit()
@@ -116,6 +110,3 @@ print(df)
 
 # Save the updated DataFrame to a CSV file
 df.to_csv('engineering_DeansList_scraped.csv', index=False)
-
-
-
