@@ -2,6 +2,7 @@ import requests
 import pandas as pd 
 import csv 
 from time import sleep
+from lxml import html
 
 
 ## Go back and delete whatever we dont need
@@ -32,8 +33,53 @@ def search_keyword(driver, keyword):
     return [a.get_attribute('href') for a in links]
 
 
-def scrape_links(): 
-    pass 
+def scrape_links(keyword, url): 
+    response = requests.get(url)
+    tree = html.fromstring(response.content)
+
+    legal_name_xpath = '//h1[@class="grid-col margin-top-3 display-none tablet:display-block wrap"]/text()'
+    num_uei_xpath = '(//span[@class = "wrap font-sans-md tablet:font-sans-lg h2"]/text())[1]'
+    cage_xpath = '(//span[@class = "wrap font-sans-md tablet:font-sans-lg h2"]/text())[2]'
+    physical_address_xpath= '//ul[@class="sds-list sds-list--unstyled margin-top-1"]//li/text()'    
+    mailing_address_xpath= '//ul[contains(text(), "Mailing Address")]/following-sibling::span'
+    entity_url_xpath= '//a[@class="usa-link"]/@href'
+    start_date_xpath = '//span[contains(text(), "Entity Start Date")]/following-sibling::span'
+    contact1_xpath = '//div[@class = "sds-card__body padding-2"]//child::h3'
+    #contact1_position_xpath ='(//span[@class ="ng-star-inserted"]/text())[5]'
+    #contact2_xpath= 
+    #contact2_position_xpath = '(//span[@class ="ng-star-inserted"]/text())[6]'
+    if len(physical_address_xpath) ==3:
+        street_xpath ='//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[1]' 
+        town_state_xpath = '//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[2]' 
+        zipcode_country_xpath = '//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[3]'
+    elif len(physical_address_xpath)== 4: 
+        street_xpath ='//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[1]' 
+        suite_xpath ='//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[2]'
+        town_state_xpath = '//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[3]' 
+        zipcode_country_xpath = '//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[4]'
+
+    legal_name = tree.xpath(legal_name_xpath)
+    num_uei= tree.xpath(num_uei_xpath)
+    cage = tree.xpath(cage_xpath)
+    physical_address = tree.xpath(physical_address_xpath) 
+    mailing_address = tree.xpath(mailing_address_xpath) 
+    entity_url= tree.xpath(entity_url_xpath)
+    start_date = tree.xpath(start_date_xpath)
+    contact1 = tree.xpath(contact1_xpath)
+    #contact1_position = tree.xpath(contact1_position_xpath)
+    contact2 = tree.xpath(contact2_xpath)
+    #contact2_postion = tree.xpath(contact2_position_xpath)
+    if len(physical_address_xpath) < 4:
+        street =tree.xpath(street_xpath)
+        town_state =tree.xpath(town_state_xpath)
+        zipcode_country =tree.xpath(zipcode_country_xpath)
+    else: 
+        street =tree.xpath(street_xpath)
+        suite = tree.xpath(suite_xpath)
+        town_state =tree.xpath(town_state_xpath)
+        zipcode_country =tree.xpath(zipcode_country_xpath)
+    
+    return None
 
 
 def main():
@@ -80,7 +126,7 @@ def main():
 
 
 
-    pass 
+     
 
 
 if __name__  == "__main__" : 
