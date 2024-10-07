@@ -50,18 +50,18 @@ def scrape_links(driver,keyword, url):
             suite = tree.xpath(suite_xpath)[0] if tree.xpath(suite_xpath) else None
         
         return {
-            "keyword": driver.find_element(keyword),
-            "legal_name": driver.find_element(legal_name_xpath)[0] if driver.find_element(legal_name_xpath) else None,
-            "num_uei": driver.find_element(num_uei_xpath)[0] if driver.find_element(num_uei_xpath) else None,
-            "cage": driver.find_element(cage_xpath)[0] if driver.find_element(cage_xpath) else None,
-            "street": driver.find_element(street_xpath)[0] if driver.find_element(street_xpath) else None,
-            "suite": driver.find_element(suite),
-            "town_state": driver.find_element(town_state_xpath)[0] if driver.find_element(town_state_xpath) else None,
-            "zipcode_country": driver.find_element(zipcode_country_xpath)[0] if driver.find_element(zipcode_country_xpath) else None,
-            "mailing_address": driver.find_element(mailing_address_xpath)[0] if driver.find_element(mailing_address_xpath) else None,
-            "entity_url": driver.find_element(entity_url_xpath)[0] if driver.find_element(entity_url_xpath) else None,
-            "start_date": driver.find_element(start_date_xpath)[0] if driver.find_element(start_date_xpath) else None,
-            "contact1": driver.find_element(contact1_xpath)[0] if driver.find_element(contact1_xpath) else None
+            "keyword": driver.find_element(By.Xpath,keyword),
+            "legal_name": driver.find_element(By.Xpath,legal_name_xpath)[0] if driver.find_element(By.Xpath,legal_name_xpath) else None,
+            "num_uei": driver.find_element(By.Xpath,num_uei_xpath)[0] if driver.find_element(By.Xpath,num_uei_xpath) else None,
+            "cage": driver.find_element(By.Xpath,cage_xpath)[0] if driver.find_element(By.Xpath,cage_xpath) else None,
+            "street": driver.find_element(By.Xpath,street_xpath)[0] if driver.find_element(By.Xpath,street_xpath) else None,
+            "suite": driver.find_element(By.Xpath,suite),
+            "town_state": driver.find_element(By.Xpath,town_state_xpath)[0] if driver.find_element(By.Xpath,town_state_xpath) else None,
+            "zipcode_country": driver.find_element(By.Xpath,zipcode_country_xpath)[0] if driver.find_element(By.Xpath,zipcode_country_xpath) else None,
+            "mailing_address": driver.find_element(By.Xpath,mailing_address_xpath)[0] if driver.find_element(By.Xpath,mailing_address_xpath) else None,
+            "entity_url": driver.find_element(By.Xpath,entity_url_xpath)[0] if driver.find_element(By.Xpath,entity_url_xpath) else None,
+            "start_date": driver.find_element(By.Xpath,start_date_xpath)[0] if driver.find_element(By.Xpath,start_date_xpath) else None,
+            "contact1": driver.find_element(By.Xpath,contact1_xpath)[0] if driver.find_element(By.Xpath,contact1_xpath) else None
         }
         """
         return {
