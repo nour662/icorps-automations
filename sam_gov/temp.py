@@ -38,8 +38,8 @@ def scrape_links(driver,keyword, url):
         start_date_xpath = driver.find_element(By.XPATH,'//span[contains(text(), "Entity Start Date")]/following-sibling::span')
         contact1_xpath = driver.find_element(By.XPATH,'//div[@class="sds-card__body padding-2"]//child::h3')
         print(legal_name_xpath)
-        print(num_uei_xpath)
-        if len(tree.xpath(physical_address_xpath)) == 3:
+        print(tree_xapth(num_uei_xpath))
+        if len(physical_address_xpath) == 3:
             street_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[1]')
             town_state_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[2]')
             zipcode_country_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[3]')
@@ -49,7 +49,7 @@ def scrape_links(driver,keyword, url):
             suite_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[2]')
             town_state_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[3]')
             zipcode_country_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[4]')
-            suite = tree.xpath(suite_xpath)[0] if tree.xpath(suite_xpath) else None
+            suite = tree_xpath(suite_xpath)[0] if tree_xpath(suite_xpath) else None
         
         return {
             "keyword": driver.find_element(By.XPATH,keyword),
@@ -99,7 +99,7 @@ def main():
     search_page_button = driver.find_element(By.XPATH, '//a[@id="search"]')
     search_page_button.click() 
 
-    input_df = pd.read_csv("input.csv")
+    input_df = pd.read_csv("sam_gov/input.csv")
     input_list = input_df["Company_Name"].tolist()
 
     domain_button = driver.find_element(By.XPATH , '//div[@class="sds-card sds-card--collapsible sds-card--collapsed ng-star-inserted"]')
