@@ -12,6 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import os
 import math
 
+#Opens Chrome and navigates through the website to the search screen
 def search_keyword(driver, keyword):
     try:
         search_bar = WebDriverWait(driver, 10).until(
@@ -31,6 +32,7 @@ def search_keyword(driver, keyword):
         print(f"Error searching keyword {keyword}: {e}")
         return []
 
+#Scrapes the individual company pages for each companies information  
 def scrape_links(driver, keyword, url):
     try:
         driver.get(url)
@@ -66,6 +68,7 @@ def scrape_links(driver, keyword, url):
         result1 = ','.join(physical_address_lines) if physical_address_lines else None
         result2 = ','.join(mailing_address_lines) if mailing_address_lines else None
 
+        #Returns and formats the results of the search which appear on the output .csv file 
         return {
             "keyword": keyword,
             "legal_name": legal_name,
@@ -85,10 +88,12 @@ def scrape_links(driver, keyword, url):
         print(f"Error scraping {url}: {e}")
         return None
 
+#Searches through the inputted .csv file and formats the company names 
 def process_batch(driver, input_list, start, end):
     links = {}
     batch_input = input_list[start:end]
 
+    #Universilizes the naming conventions of each company on the .csv file by removing company titles and symbols
     for name in batch_input:
         search_input = name.lower().strip()
         search_input = search_input.replace(".", "").replace(",", "").replace("inc", "").replace("llc", "").replace("corp", "").replace("ltd", "").replace("limited", "").replace("pty", "")
@@ -105,7 +110,7 @@ def process_batch(driver, input_list, start, end):
     return links_data
 
 def main(starting_batch=0):
-    input_df = pd.read_csv("input.csv")
+    input_df = pd.read_csv("input.csv") #Calls to an external .csv file which contains the company names (User input)
     input_list = input_df["Company_Name"].tolist()
 
     chrome_options = Options()
