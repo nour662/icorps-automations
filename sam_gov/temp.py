@@ -22,84 +22,52 @@ def search_keyword(driver, keyword):
 
 def scrape_links(driver,keyword, url): 
     try:
-
-
         driver.get(url)
 
         sleep(5)
 
-        legal_named = driver.find_element(By.XPATH,'//h1[@class="grid-col margin-top-3 display-none tablet:display-block wrap"]').text
+        legal_name = driver.find_element(By.XPATH,'//h1[@class="grid-col margin-top-3 display-none tablet:display-block wrap"]').text
         num_uei = driver.find_element(By.XPATH,'(//span[@class="wrap font-sans-md tablet:font-sans-lg h2"])[1]').text
-        cage_xpath = driver.find_element(By.XPATH,'(//span[@class="wrap font-sans-md tablet:font-sans-lg h2"])[2]').text
-        physical_address_xpath = ",".join(driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//li').text)
-        mailing_address_xpath = ",".join(driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//li').text) ## Needs to be fixed
-        entity_url_xpath = driver.find_element(By.XPATH,'//a[@class="usa-link"]/@href').text
-        start_date_xpath = driver.find_element(By.XPATH,'//span[contains(text(), "Entity Start Date")]/following-sibling::span').text
-        contact1_xpath = driver.find_element(By.XPATH,'(//div[@class="sds-card__body padding-2"]//child::h3)[1]').text
-        contact_2_xpath = driver.find_element(By.XPATH,'(//div[@class="sds-card__body padding-2"]//child::h3)[2]').text
-
-
-        print(legal_name)
-        print(num_uei)
-
-
+        cage = driver.find_element(By.XPATH,'(//span[@class="wrap font-sans-md tablet:font-sans-lg h2"])[2]').text
+        physical_address = driver.find_element(By.XPATH,'//ul[@class ="sds-list sds-list--unstyled margin-top-1"]').text
+        mailing_address = driver.find_element(By.XPATH,'(//ul[@class="sds-list sds-list--unstyled"])[2]').text 
+        entity_url = driver.find_element(By.XPATH,'//a[@class="usa-link"]').get_attribute('href')
+        start_date = driver.find_element(By.XPATH,'//span[contains(text(), "Entity Start Date")]/following-sibling::span').text
+        contact1 = driver.find_element(By.XPATH,'(//div[@class="sds-card__body padding-2"]//child::h3)[1]').text
+        contact_2 = driver.find_element(By.XPATH,'(//div[@class="sds-card__body padding-2"]//child::h3)[2]').text
+        state_country_incorporation = driver.find_element(By.XPATH,'(//div[@class= "grid-col-6 sds-field ng-star-inserted"])[3]//span[2]').text
+        congressional_district = driver.find_element(By.XPATH, '(//div[@class= "grid-col-6 sds-field"])[3]//span[2]').text
+        
+        physical_address_lines = physical_address.split('\n')
+        result1 = ','.join(physical_address_lines)
+       
+        mailing_address_lines = mailing_address.split('\n')
+        result2 = ','.join(mailing_address_lines)
 
         
         return {
             "keyword": keyword,
-            "legal_name": legal_name_xpath[0] if legal_name_xpath else None,
-            "num_uei": num_uei_xpath[0] if num_uei_xpath else None,
-            "cage": cage_xpath[0] if cage_xpath else None,
-            "street": street_xpath[0] if street_xpath else None,
-            "suite": suite,
-            "town_state": town_state_xpath[0] if town_state_xpath else None,
-            "zipcode_country": zipcode_country_xpath[0] if zipcode_country_xpath else None,
-            "mailing_address": mailing_address_xpath[0] if mailing_address_xpath else None,
-            "entity_url": entity_url_xpath[0] if entity_url_xpath else None,
-            "start_date": start_date_xpath[0] if start_date_xpath else None,
-            "contact1": contact1_xpath[0] if contact1_xpath else None
+            "legal_name": legal_name if legal_name else None,
+            "num_uei": num_uei if num_uei else None,
+            "cage": cage if cage else None,
+            "physical_address": result1 if physical_address else None,
+            "mailing_address": result2 if mailing_address else None,
+            "entity_url": entity_url if entity_url else None,
+            "start_date": start_date if start_date else None,
+            "contact1": contact1 if contact1 else None,
+            "contact2": contact_2 if contact_2 else None,
+            "state_country_incorporation": state_country_incorporation if state_country_incorporation else None,
+            "congressional_district ": congressional_district if congressional_district  else None,
         }
-        """
-        return {
-            "keyword": driver.find_element(By.XPATH,keyword),
-            "legal_name": driver.find_element(By.XPATH,legal_name_xpath)[0] if driver.find_element(By.XPATH,legal_name_xpath) else None,
-            "num_uei": driver.find_element(By.XPATH,num_uei_xpath)[0] if driver.find_element(By.XPATH,num_uei_xpath) else None,
-            "cage": driver.find_element(By.XPATH,cage_xpath)[0] if driver.find_element(By.XPATH,cage_xpath) else None,
-            "street": driver.find_element(By.XPATH,street_xpath)[0] if driver.find_element(By.XPATH,street_xpath) else None,
-            "suite": driver.find_element(By.XPATH,suite),
-            "town_state": driver.find_element(By.XPATH,town_state_xpath)[0] if driver.find_element(By.XPATH,town_state_xpath) else None,
-            "zipcode_country": driver.find_element(By.XPATH,zipcode_country_xpath)[0] if driver.find_element(By.XPATH,zipcode_country_xpath) else None,
-            "mailing_address": driver.find_element(By.XPATH,mailing_address_xpath)[0] if driver.find_element(By.XPATH,mailing_address_xpath) else None,
-            "entity_url": driver.find_element(By.XPATH,entity_url_xpath)[0] if driver.find_element(By.XPATH,entity_url_xpath) else None,
-            "start_date": driver.find_element(By.XPATH,start_date_xpath)[0] if driver.find_element(By.XPATH,start_date_xpath) else None,
-            "contact1": driver.find_element(By.XPATH,contact1_xpath)[0] if driver.find_element(By.XPATH,contact1_xpath) else None
-        }
-        """
-    
-        """
-        return {
-            "keyword": keyword,
-            "legal_name": tree.xpath(legal_name_xpath)[0] if tree.xpath(legal_name_xpath) else None,
-            "num_uei": tree.xpath(num_uei_xpath)[0] if tree.xpath(num_uei_xpath) else None,
-            "cage": tree.xpath(cage_xpath)[0] if tree.xpath(cage_xpath) else None,
-            "street": tree.xpath(street_xpath)[0] if tree.xpath(street_xpath) else None,
-            "suite": suite,
-            "town_state": tree.xpath(town_state_xpath)[0] if tree.xpath(town_state_xpath) else None,
-            "zipcode_country": tree.xpath(zipcode_country_xpath)[0] if tree.xpath(zipcode_country_xpath) else None,
-            "mailing_address": tree.xpath(mailing_address_xpath)[0] if tree.xpath(mailing_address_xpath) else None,
-            "entity_url": tree.xpath(entity_url_xpath)[0] if tree.xpath(entity_url_xpath) else None,
-            "start_date": tree.xpath(start_date_xpath)[0] if tree.xpath(start_date_xpath) else None,
-            "contact1": tree.xpath(contact1_xpath)[0] if tree.xpath(contact1_xpath) else None
-        }"""
     
     except Exception as e:
         print(f"Error scraping {url}: {e}")
         return None
 
 def main():
-    links = {}  
+    links = {} 
 
-    input_df = pd.read_csv("input.csv")
+    input_df = pd.read_csv("sam_gov/input.csv")
     input_list = input_df["Company_Name"].tolist()
 
     chrome_options = Options()
@@ -113,6 +81,8 @@ def main():
     search_page_button = driver.find_element(By.XPATH, '//a[@id="search"]')
     search_page_button.click() 
 
+
+    sleep(2)
 
 
     domain_button = driver.find_element(By.XPATH , '//div[@class="sds-card sds-card--collapsible sds-card--collapsed ng-star-inserted"]')
