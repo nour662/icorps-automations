@@ -29,7 +29,7 @@ def scrape_links(driver,keyword, url):
 
         sleep(5)
 
-        legal_name_xpath = driver.find_element(By.XPATH,'//h1[@class="grid-col margin-top-3 display-none tablet:display-block wrap"]/text()')
+        legal_name_xpath = driver.find_element(By.XPATH,'//h1[@class="grid-col margin-top-3 display-none tablet:display-block wrap"]').text
         num_uei_xpath = driver.find_element(By.XPATH,'(//span[@class="wrap font-sans-md tablet:font-sans-lg h2"]/text())[1]')
         cage_xpath = driver.find_element(By.XPATH,'(//span[@class="wrap font-sans-md tablet:font-sans-lg h2"]/text())[2]')
         physical_address_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//li/text()')
@@ -37,8 +37,7 @@ def scrape_links(driver,keyword, url):
         entity_url_xpath = driver.find_element(By.XPATH,'//a[@class="usa-link"]/@href')
         start_date_xpath = driver.find_element(By.XPATH,'//span[contains(text(), "Entity Start Date")]/following-sibling::span')
         contact1_xpath = driver.find_element(By.XPATH,'//div[@class="sds-card__body padding-2"]//child::h3')
-        print(legal_name_xpath)
-        print(tree_xapth(num_uei_xpath))
+        #if len(tree.xpath(physical_address_xpath)) == 3:
         if len(physical_address_xpath) == 3:
             street_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[1]')
             town_state_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[2]')
@@ -49,8 +48,24 @@ def scrape_links(driver,keyword, url):
             suite_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[2]')
             town_state_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[3]')
             zipcode_country_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[4]')
-            suite = tree_xpath(suite_xpath)[0] if tree_xpath(suite_xpath) else None
+            #suite = tree.xpath(suite_xpath)[0] if tree.xpath(suite_xpath) else None
+            suite = suite_xpath[0] if suite_xpath else None
         
+        return {
+            "keyword": keyword,
+            "legal_name": legal_name_xpath[0] if legal_name_xpath else None,
+            "num_uei": num_uei_xpath[0] if num_uei_xpath else None,
+            "cage": cage_xpath[0] if cage_xpath else None,
+            "street": street_xpath[0] if street_xpath else None,
+            "suite": suite,
+            "town_state": town_state_xpath[0] if town_state_xpath else None,
+            "zipcode_country": zipcode_country_xpath[0] if zipcode_country_xpath else None,
+            "mailing_address": mailing_address_xpath[0] if mailing_address_xpath else None,
+            "entity_url": entity_url_xpath[0] if entity_url_xpath else None,
+            "start_date": start_date_xpath[0] if start_date_xpath else None,
+            "contact1": contact1_xpath[0] if contact1_xpath else None
+        }
+        """
         return {
             "keyword": driver.find_element(By.XPATH,keyword),
             "legal_name": driver.find_element(By.XPATH,legal_name_xpath)[0] if driver.find_element(By.XPATH,legal_name_xpath) else None,
@@ -65,6 +80,8 @@ def scrape_links(driver,keyword, url):
             "start_date": driver.find_element(By.XPATH,start_date_xpath)[0] if driver.find_element(By.XPATH,start_date_xpath) else None,
             "contact1": driver.find_element(By.XPATH,contact1_xpath)[0] if driver.find_element(By.XPATH,contact1_xpath) else None
         }
+        """
+    
         """
         return {
             "keyword": keyword,
