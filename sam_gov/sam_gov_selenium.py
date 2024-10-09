@@ -1,108 +1,154 @@
+import requests
+import pandas as pd
+from time import sleep
+from lxml import html
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, NoSuchElementException, ElementNotInteractableException
-import pandas as pd
-import time
+import os
+import math
 
-def search_name_and_scrape_info(driver, company_name):
-    #Step 1: Modify the search URL with the desired keyword
-    #search_url = f"https://sam.gov/search/?page=1&pageSize=25&sort=-relevance&index=ei&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bkey%5D=%22{company_name}%22&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bvalue%5D=%22{company_name}%22&sfm%5Bstatus%5D%5Bis_active%5D=true&sfm%5Bstatus%5D%5Bis_inactive%5D=false"
-    search_url = f"https://sam.gov/search/?page=1&pageSize=25&sort=-relevance&index=ei&sfm%5BsimpleSearch%5D%5BkeywordRadio%5D=ALL&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bkey%5D=%22nano%22&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bvalue%5D=%22{company_name}%22&sfm%5Bstatus%5D%5Bis_active%5D=true"
-    #search_url = f"https://sam.gov/search/?page=1&pageSize=25&sort=-relevance&index=ei&sfm%5BsimpleSearch%5D%5BkeywordRadio%5D=ALL&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bkey%5D={keyword}&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bvalue%5D={keyword}&sfm%5BsimpleSearch%5D%5BkeywordEditorTextarea%5D=&sfm%5Bstatus%5D%5Bis_active%5D=true&sfm%5Bstatus%5D%5Bis_inactive%5D=false"
-    driver.get(search_url)
-    time.sleep(4)
-    print(company_name)
-    # Step 2: Gather links from the search results
+def search_keyword(driver, keyword):
     try:
-        # Locate the links using XPath that contains '/entity/' in their href
-        search_results = WebDriverWait(driver, 10).until(
-            EC.presence_of_all_elements_located((By.XPATH, '//a[contains(@href, "/entity/")]'))
+        search_bar = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, '//input[@name="search"]'))
         )
-        links = [result.get_attribute('href') for result in search_results]
+        submit_button = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, '//button[@class="usa-button ng-star-inserted"]'))
+        )
 
-    except TimeoutException:
-        print("No results found for the given company name.")
-        return
+        search_bar.send_keys(keyword)
+        submit_button.click()
 
-    # Initialize a list to store the records
-    records = []
+        sleep(5)
+        links = driver.find_elements(By.XPATH, '//div[@class="grid-row grid-gap"]//a')
+        return [a.get_attribute('href') for a in links][:5]
+    except Exception as e:
+        print(f"Error searching keyword {keyword}: {e}")
+        return []
 
-    # Step 3: Scrape details from each link
-    for link in links:
-        driver.get(link)
-        time.sleep(2)  # Wait for the page to load
-        
-        try:
-            # Use XPath to find each required field
-            entity_name = driver.find_element(By.XPATH, '//h1').text  # Adjust XPath as needed
+def scrape_links(driver, keyword, url):
+    try:
+        driver.get(url)
+        sleep(5)
 
-            # Scraping individual fields using XPath
-            uei_sam = driver.find_element(By.XPATH, '//span[@id="ueiSAM"]').text
-            legal_business_name = driver.find_element(By.XPATH, '//span[@id="legalBusinessName"]').text
-            dba_name = driver.find_element(By.XPATH, '//span[@id="dbaName"]').text
-            cage_code = driver.find_element(By.XPATH, '//span[@id="cageCode"]').text
-            registration_status = driver.find_element(By.XPATH, '//span[@id="registrationStatus"]').text
-            entity_url = driver.find_element(By.XPATH, '//a[@id="entityURL"]').get_attribute('href')
-            
-            # Construct address strings using XPath
-            physical_address = driver.find_element(By.XPATH, '//div[@id="physicalAddress"]').text.replace('\n', ', ')
-            mailing_address = driver.find_element(By.XPATH, '//div[@id="mailingAddress"]').text.replace('\n', ', ')
+        def safe_find(xpath):
+            try:
+                return driver.find_element(By.XPATH, xpath).text
+            except Exception:
+                return None
 
-            primary_naics = driver.find_element(By.XPATH, '//span[@id="primaryNaics"]').text
+        def safe_find_attr(xpath, attr):
+            try:
+                return driver.find_element(By.XPATH, xpath).get_attribute(attr)
+            except Exception:
+                return None
 
-            # Points of Contact (POC)
-            poc_first_name = driver.find_element(By.XPATH, '//span[@id="pocFirstName"]').text
-            poc_last_name = driver.find_element(By.XPATH, '//span[@id="pocLastName"]').text
-            poc_title = driver.find_element(By.XPATH, '//span[@id="pocTitle"]').text
-            duns = driver.find_element(By.XPATH, '//span[@id="duns"]').text  # Adjust as needed if D-U-N-S number exists
+        legal_name = safe_find('//h1[@class="grid-col margin-top-3 display-none tablet:display-block wrap"]')
+        num_uei = safe_find('(//span[@class="wrap font-sans-md tablet:font-sans-lg h2"])[1]')
+        cage = safe_find('(//span[@class="wrap font-sans-md tablet:font-sans-lg h2"])[2]')
+        physical_address = safe_find('//ul[@class="sds-list sds-list--unstyled margin-top-1"]')
+        mailing_address = safe_find('(//ul[@class="sds-list sds-list--unstyled"])[2]')
+        entity_url = safe_find_attr('//a[@class="usa-link"]', 'href')
+        start_date = safe_find('//span[contains(text(), "Entity Start Date")]/following-sibling::span')
+        contact1 = safe_find('(//div[@class="sds-card__body padding-2"]//child::h3)[1]')
+        contact2 = safe_find('(//div[@class="sds-card__body padding-2"]//child::h3)[2]')
+        state_country_incorporation = safe_find('(//div[@class= "grid-col-6 sds-field ng-star-inserted"])[3]//span[2]')
+        congressional_district = safe_find('(//div[@class= "grid-col-6 sds-field"])[3]//span[2]')
 
-            # Construct the record with all scraped information
-            record = {
-                'SearchKeyword': company_name,
-                'UEI': uei_sam,
-                'LegalBusinessName': legal_business_name,
-                'DBAName': dba_name,
-                'CAGECode': cage_code,
-                'RegistrationStatus': registration_status,
-                'EntityURL': entity_url,
-                'PhysicalAddress': physical_address,
-                'MailingAddress': mailing_address,
-                'PrimaryNAICS': primary_naics,
-                'POCName': f"{poc_first_name} {poc_last_name}",
-                'POCTitle': poc_title,
-                'DUNS': duns
-            }
+        physical_address_lines = physical_address.split('\n') if physical_address else None
+        mailing_address_lines = mailing_address.split('\n') if mailing_address else None
 
-            # Append the record to the list
-            records.append(record)
-            
-        except NoSuchElementException as e:
-            print(f"Failed to scrape data from {link}: {e}")
+        result1 = ','.join(physical_address_lines) if physical_address_lines else None
+        result2 = ','.join(mailing_address_lines) if mailing_address_lines else None
 
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument('--remote-debugging-port=9222')  # Use the same port as used to start Chrome
+        return {
+            "keyword": keyword,
+            "legal_name": legal_name,
+            "num_uei": num_uei,
+            "cage": cage,
+            "physical_address": result1,
+            "mailing_address": result2,
+            "entity_url": entity_url,
+            "start_date": start_date,
+            "contact1": contact1,
+            "contact2": contact2,
+            "state_country_incorporation": state_country_incorporation,
+            "congressional_district": congressional_district,
+        }
 
-driver = webdriver.Chrome(options=chrome_options)
+    except Exception as e:
+        print(f"Error scraping {url}: {e}")
+        return None
 
-# Navigate to the search page
-#driver.get(search_url)
+def process_batch(driver, input_list, start, end):
+    links = {}
+    batch_input = input_list[start:end]
 
-# Read the CSV file containing names
-df = pd.read_csv('name_list.csv')  # INPUT CSV!!! Please change this to the proper file you want to search through.
-time.sleep(60)  # Adjusted the sleep time to avoid too long a wait.
+    for name in batch_input:
+        search_input = name.lower().strip()
+        search_input = search_input.replace(".", "").replace(",", "").replace("inc", "").replace("llc", "").replace("corp", "").replace("ltd", "").replace("limited", "").replace("pty", "")
+        result_links = search_keyword(driver, search_input)
+        links[name] = result_links
 
-# Iterate over each row in the DataFrame
-#print(df)
-for row in df.iterrows():
-    keywords = ['llc' , 'inc' , 'corp']
-    company_name = row  # INPUT ROW!!! Please change this to the name of the column containing the last name of the person.
-    search_name_and_scrape_info(driver, company_name)
+    links_data = []
+    for keyword, urls in links.items():
+        for url in urls:
+            result = scrape_links(driver, keyword, url)
+            if result:
+                links_data.append(result)
 
-# Close the WebDriver
-driver.quit()
-#print(df)
+    return links_data
 
-# Save the updated DataFrame to a CSV file
-df.to_csv('engineering_DeansList_scraped.csv', index=False)
+def main(starting_batch=0):
+    input_df = pd.read_csv("input.csv")
+    input_list = input_df["Company_Name"].tolist()
+
+    chrome_options = Options()
+    chrome_options.add_argument('--remote-debugging-port=9222')
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
+
+
+    try:
+        driver.get("https://sam.gov/content/home")
+        sleep(60)
+
+        search_page_button = driver.find_element(By.XPATH, '//a[@id="search"]')
+        search_page_button.click()
+
+        WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//div[@class="sds-card sds-card--collapsible sds-card--collapsed ng-star-inserted"]')))
+        domain_button = driver.find_element(By.XPATH, '//div[@class="sds-card sds-card--collapsible sds-card--collapsed ng-star-inserted"]')
+        domain_button.click()
+
+        entity_domain = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, '(//li[@class="usa-sidenav__item ng-star-inserted"])[3]'))
+        )
+        entity_domain.click()
+
+        batch_size = 2
+        num_batches = math.ceil(len(input_list) / batch_size)
+
+        for i in range(starting_batch, num_batches):
+            start_idx = i * batch_size
+            end_idx = min(start_idx + batch_size, len(input_list))
+            print(f"Processing batch {i+1}/{num_batches}, companies {start_idx+1} to {end_idx}")
+
+            batch_data = process_batch(driver, input_list, start_idx, end_idx)
+
+            output_df = pd.DataFrame(batch_data)
+            output_filename = f"output/batch_{i+1}.csv"
+            output_df.to_csv(output_filename, index=False)
+            print(f"Batch {i+1} completed and saved to {output_filename}")
+            driver.get("https://sam.gov/search/?index=ei&page=1&pageSize=25&sort=-relevance&sfm%5BsimpleSearch%5D%5BkeywordRadio%5D=ALL&sfm%5BsimpleSearch%5D%5BkeywordEditorTextarea%5D=&sfm%5Bstatus%5D%5Bis_active%5D=true&sfm%5Bstatus%5D%5Bis_inactive%5D=false")
+
+
+    finally:
+        driver.quit()
+
+if __name__ == "__main__":
+    starting_batch = int(input("Enter the batch number to start from: "))
+    main(starting_batch)
