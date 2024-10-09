@@ -22,34 +22,28 @@ def search_keyword(driver, keyword):
 
 def scrape_links(driver,keyword, url): 
     try:
-        #response = requests.get(url)
-        #tree = html.fromstring(response.content)
+
 
         driver.get(url)
 
         sleep(5)
 
-        legal_name_xpath = driver.find_element(By.XPATH,'//h1[@class="grid-col margin-top-3 display-none tablet:display-block wrap"]').text
-        num_uei_xpath = driver.find_element(By.XPATH,'(//span[@class="wrap font-sans-md tablet:font-sans-lg h2"]/text())[1]')
-        cage_xpath = driver.find_element(By.XPATH,'(//span[@class="wrap font-sans-md tablet:font-sans-lg h2"]/text())[2]')
-        physical_address_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//li/text()')
-        mailing_address_xpath = driver.find_element(By.XPATH,'//ul[contains(text(), "Mailing Address")]/following-sibling::span')
-        entity_url_xpath = driver.find_element(By.XPATH,'//a[@class="usa-link"]/@href')
-        start_date_xpath = driver.find_element(By.XPATH,'//span[contains(text(), "Entity Start Date")]/following-sibling::span')
-        contact1_xpath = driver.find_element(By.XPATH,'//div[@class="sds-card__body padding-2"]//child::h3')
-        #if len(tree.xpath(physical_address_xpath)) == 3:
-        if len(physical_address_xpath) == 3:
-            street_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[1]')
-            town_state_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[2]')
-            zipcode_country_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[3]')
-            suite = None
-        else:
-            street_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[1]')
-            suite_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[2]')
-            town_state_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[3]')
-            zipcode_country_xpath = driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//child::li[4]')
-            #suite = tree.xpath(suite_xpath)[0] if tree.xpath(suite_xpath) else None
-            suite = suite_xpath[0] if suite_xpath else None
+        legal_named = driver.find_element(By.XPATH,'//h1[@class="grid-col margin-top-3 display-none tablet:display-block wrap"]').text
+        num_uei = driver.find_element(By.XPATH,'(//span[@class="wrap font-sans-md tablet:font-sans-lg h2"])[1]').text
+        cage_xpath = driver.find_element(By.XPATH,'(//span[@class="wrap font-sans-md tablet:font-sans-lg h2"])[2]').text
+        physical_address_xpath = ",".join(driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//li').text)
+        mailing_address_xpath = ",".join(driver.find_element(By.XPATH,'//ul[@class="sds-list sds-list--unstyled margin-top-1"]//li').text) ## Needs to be fixed
+        entity_url_xpath = driver.find_element(By.XPATH,'//a[@class="usa-link"]/@href').text
+        start_date_xpath = driver.find_element(By.XPATH,'//span[contains(text(), "Entity Start Date")]/following-sibling::span').text
+        contact1_xpath = driver.find_element(By.XPATH,'(//div[@class="sds-card__body padding-2"]//child::h3)[1]').text
+        contact_2_xpath = driver.find_element(By.XPATH,'(//div[@class="sds-card__body padding-2"]//child::h3)[2]').text
+
+
+        print(legal_name)
+        print(num_uei)
+
+
+
         
         return {
             "keyword": keyword,
@@ -105,6 +99,9 @@ def scrape_links(driver,keyword, url):
 def main():
     links = {}  
 
+    input_df = pd.read_csv("input.csv")
+    input_list = input_df["Company_Name"].tolist()
+
     chrome_options = Options()
     chrome_options.add_argument('--remote-debugging-port=9222')  
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
@@ -116,8 +113,7 @@ def main():
     search_page_button = driver.find_element(By.XPATH, '//a[@id="search"]')
     search_page_button.click() 
 
-    input_df = pd.read_csv("sam_gov/input.csv")
-    input_list = input_df["Company_Name"].tolist()
+
 
     domain_button = driver.find_element(By.XPATH , '//div[@class="sds-card sds-card--collapsible sds-card--collapsed ng-star-inserted"]')
     domain_button.click()
