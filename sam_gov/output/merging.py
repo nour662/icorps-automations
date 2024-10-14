@@ -10,7 +10,7 @@ for file in all_files:
     batch_number = int(file.split('batch_')[1].split('.csv')[0])
     
     # Check if the batch number is within the desired range
-    if 24 <= batch_number <= 45:
+    if 46 <= batch_number <= 60:
         try:
             temp_df = pd.read_csv(file)
             df_list.append(temp_df)
@@ -19,7 +19,7 @@ for file in all_files:
 
 if df_list:
     merged_df = pd.concat(df_list, ignore_index=True)
-    merged_df.to_csv('merged_batches(24-45).csv', index= False)
+    merged_df.to_csv('merged_batches(46-60).csv', index= False)
 
 """
 
