@@ -95,6 +95,7 @@ def process_batch(driver, input_list, start, end):
 
     #Universilizes the naming conventions of each company on the .csv file by removing company titles and symbols
     for name in batch_input:
+        name = str(name)
         search_input = name.lower().strip()
         search_input = search_input.replace(".", "").replace(",", "").replace("inc", "").replace("llc", "").replace("corp", "").replace("ltd", "").replace("limited", "").replace("pty", "")
         result_links = search_keyword(driver, search_input)
@@ -134,8 +135,11 @@ def main(starting_batch=0):
         )
         entity_domain.click()
 
-        batch_size = 2
+        batch_size = 20
         num_batches = math.ceil(len(input_list) / batch_size)
+
+        if not os.path.exists("output"):
+            os.makedirs("output")
 
         for i in range(starting_batch, num_batches):
             start_idx = i * batch_size
@@ -145,6 +149,7 @@ def main(starting_batch=0):
             batch_data = process_batch(driver, input_list, start_idx, end_idx)
 
             output_df = pd.DataFrame(batch_data)
+
             output_filename = f"output/batch_{i+1}.csv"
             output_df.to_csv(output_filename, index=False)
             print(f"Batch {i+1} completed and saved to {output_filename}")
