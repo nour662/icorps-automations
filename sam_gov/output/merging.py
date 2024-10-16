@@ -1,6 +1,7 @@
 import pandas as pd
 import glob
 
+#Identifies the path to the location where all the batches are placed
 all_files = glob.glob(r'C:\Users\sluca\Downloads\icorps-data\sam_gov\output\batch_*.csv')
 
 df_list = []
@@ -22,6 +23,7 @@ if df_list:
     merged_df.to_csv('merged_batches(46-60).csv', index= False)
 
 """
+#Is used to merge all batches rather than a specific range of batches
 
 df_list = []
 
