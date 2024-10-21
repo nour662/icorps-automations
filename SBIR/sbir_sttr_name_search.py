@@ -143,8 +143,9 @@ def scrape_award_page(award_url, names):
 
 
 def main(): 
-    df = pd.read_csv('../sam_gov/input.csv')
+    df = pd.read_csv(r'C:\Users\sluca\Downloads\icorps-data\sam_gov\input.csv')
     company_list = df['Company_Name'].tolist()
+    company_list = [str(a) for a in company_list]
 
     #To universalize the company names and remove inconsistencies
     lowercase_list = list(map(str.lower,company_list))
