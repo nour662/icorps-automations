@@ -3,13 +3,19 @@ from lxml import html
 import pandas as pd
 from datetime import datetime
 import time
+import os
+import random
 
 # Function to fetch the search results and extract the link to the first result
 def get_result_link(company_name, company_pages):
     search_url = f'https://legacy.www.sbir.gov/sbirsearch/firm/all?firm={company_name}&uei=&city=&zip=&page=1'
-    response = requests.get(search_url)
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    }
+    response = requests.get(search_url, headers=headers)
 
-    #Checks to see if the request to the server was successful
+    # Checks to see if the request to the server was successful
     if response.status_code == 200:
         tree = html.fromstring(response.content)
 
@@ -18,23 +24,21 @@ def get_result_link(company_name, company_pages):
 
         # Sorts through the results of the original database search
         if links:
-          to_set_list = []
-          for link in links:
-            to_set = 'https://legacy.www.sbir.gov' + link
-            to_set_list.append(to_set)
+            to_set_list = []
+            for link in links:
+                to_set = 'https://legacy.www.sbir.gov' + link
+                to_set_list.append(to_set)
 
-          company_pages[company_name] = to_set_list
-
+            company_pages[company_name] = to_set_list
         else:
-            print(f"Failed to retrieve search results: {company_name}")
+            print(f"Failed to retrieve search results for company: {company_name}")
 
     return company_pages
 
-
 # Function to fetch detailed page and extract information
-def scrape_company_profile(profile_page_url):
+def scrape_company_profile(profile_page_url , keyword):
     response = requests.get(profile_page_url)
-
+    
     if response.status_code == 200:
         tree = html.fromstring(response.content)
 
@@ -45,6 +49,7 @@ def scrape_company_profile(profile_page_url):
         zip_xpath = '//span[@itemprop="postalCode"]/text()'
         website_xpath = '//a[@title="Company Website"]/@href'
         employee_xpath = '//div[@class="row open-style"]//div[@class="col-md-4"][2]//p[strong[contains(text(), "# of Employees:")]]/text()'
+        uei_xpath = '//p[strong[text()="UEI:"]]/text()'
 
         company_name = tree.xpath(name_xpath)
         street_address = tree.xpath(street_address_xpath)
@@ -53,6 +58,7 @@ def scrape_company_profile(profile_page_url):
         zip_code = tree.xpath(zip_xpath)
         website = tree.xpath(website_xpath)
         employee_count = tree.xpath(employee_xpath)
+        uei  = tree.xpath(uei_xpath)
 
         # Clean extracted data
         company_name = company_name[0].strip() if company_name else "N/A"
@@ -62,9 +68,11 @@ def scrape_company_profile(profile_page_url):
         zip_code = zip_code[0].strip() if zip_code else "N/A"
         website = website[0].strip() if website else "N/A"
         employee_count = employee_count[0].strip() if employee_count else "N/A"
+        uei = uei[0].strip() if uei else "N/A"
 
         # Create a DataFrame for this company's data
         company_df = pd.DataFrame([{
+            "Keyword" : keyword, 
             "Name": company_name,
             "Street Address": street_address,
             "City": city,
@@ -72,7 +80,9 @@ def scrape_company_profile(profile_page_url):
             "Zip Code": zip_code,
             "Website": website,
             "Employee Count": employee_count,
+            "UEI" : uei, 
             "SBIR Profile Link": profile_page_url
+
         }])
 
         # Extract award links
@@ -82,7 +92,7 @@ def scrape_company_profile(profile_page_url):
         # Return the DataFrame and the list of award links
         return company_df, [f'https://legacy.www.sbir.gov{link}' for link in awards_links]
     else:
-        print(f"Failed to retrieve detailed page: {response.status_code}")
+        print(f"Failed to retrieve detailed page for {profile_page_url}: {response.status_code}")
         return pd.DataFrame(), []
 
 def format_date(date_str):
@@ -94,9 +104,8 @@ def format_date(date_str):
         return date_str  # Return the original string if parsing fails
 
 # Function to scrape funding records from award pages
-def scrape_award_page(award_url, names):
+def scrape_award_page(award_url, company_name):
     response = requests.get(award_url)
-
     if response.status_code == 200:
         tree = html.fromstring(response.content)
 
@@ -126,7 +135,7 @@ def scrape_award_page(award_url, names):
 
         # Return the scraped data as a dictionary including the award URL
         return {
-            "Keyword Search": names,
+            "Keyword Search": company_name[0].strip() if company_name else "N/A",
             "Company Name": company_name[0].strip() if company_name else "N/A",
             "Start Date": formatted_award_start_date,
             "End Date": formatted_award_end_date,
@@ -134,67 +143,91 @@ def scrape_award_page(award_url, names):
             "Phase": phase[0].strip() if phase else "N/A",
             "Program": program[0].strip() if program else "N/A",
             "Solicitation Number": solicitation_number[0].strip() if solicitation_number else "N/A",
-            "Source Link" : award_url
+            "Source Link": award_url
         }
     else:
         print(f"Failed to retrieve award page: {response.status_code}")
         return None
+
     
 
 
+<<<<<<< HEAD
 def main(): 
     df = pd.read_csv(r'C:\Users\sluca\Downloads\icorps-data\sam_gov\input.csv')
     company_list = df['Company_Name'].tolist()
     company_list = [str(a) for a in company_list]
+=======
+def main(input_file='input.csv', start_batch=107, batch_size=10):
+    # Load the companies from input.csv
+    if not os.path.exists(input_file):
+        print(f"Input file {input_file} not found.")
+        return
+    
+    # Read company names from the CSV (assuming company names are in a column called 'Company Name')
+    companies_df = pd.read_csv(input_file)
+    if 'Company_Name' not in companies_df.columns:
+        print("The CSV must contain a 'Company_Name' column.")
+        return
+    
+    companies = companies_df['Company_Name'].tolist()
+>>>>>>> ec9dfab23b2df8c3074db3f28d43b3b35b84f758
 
-    #To universalize the company names and remove inconsistencies
-    lowercase_list = list(map(str.lower,company_list))
-    cleaned_list = [item.replace(" inc", "") for item in lowercase_list]
-    cleaned_list = [item.replace(" llc", "") for item in cleaned_list]
-    cleaned_list = [item.replace(" corp", "") for item in cleaned_list]
-    cleaned_list = [item.replace(" ltd", "") for item in cleaned_list]
-    cleaned_list = [item.replace(" pty", "") for item in cleaned_list]
-    cleaned_list = [item.replace(" limited", "") for item in cleaned_list]
-    cleaned_list = [item.replace(",", "") for item in cleaned_list]
-    cleaned_list = [item.replace(".", "") for item in cleaned_list]
-
-    #To create the display of the "company_info_sbirsttr" page
-    company_info_df = pd.DataFrame(columns=[
-        "Keyword Search","Name", "Street Address", "City", "State", "Zip Code", "Website", "Employee Count" , "SBIR Profile Link"
-    ])
+    # Create directories if they don't exist
+    if not os.path.exists('company_output'):
+        os.makedirs('company_output')
+    if not os.path.exists('award_output'):
+        os.makedirs('award_output')
 
     company_pages = {}
-    funding_records = []
+    total_batches = (len(companies) + batch_size - 1) // batch_size  # Total number of batches
 
+    for batch_num in range(start_batch, total_batches + 1):
+        print(f"Processing batch {batch_num}/{total_batches}")
+        print()
+        start_idx = (batch_num - 1) * batch_size
+        end_idx = min(batch_num * batch_size, len(companies))
+        batch_companies = companies[start_idx:end_idx]
 
-    # Iterate through the list of Company Name's and fetch the corresponding page links
-    for company_name in cleaned_list:
-        company_pages = get_result_link(company_name, company_pages)
+        all_company_info = pd.DataFrame()  # DataFrame to store all company data in the batch
+        all_award_info = pd.DataFrame()    # DataFrame to store all award data in the batch
 
-    valid_names = []
+        # Process each company in the batch
+        for company_name in batch_companies:
+            print(f"Processing company: {company_name}")
+            company_pages = get_result_link(company_name, company_pages)
 
-    for names in company_pages.keys():
-        profile_page_urls = company_pages[names]
-        for page_url in profile_page_urls:
-            profile_page_url = page_url
-            if profile_page_url:
-                valid_names.append(names)
-                company_df, award_links = scrape_company_profile(profile_page_url)
-                company_info_df = pd.concat([company_info_df, company_df], ignore_index=True)
-                for award_link in award_links:
-                    record = scrape_award_page(award_link, names)
-                    if record:
-                        funding_records.append(record)
+            if company_name in company_pages:
+                for profile_page_url in company_pages[company_name]:
+                    # Scrape company profile and award links
+                    company_df, award_links = scrape_company_profile(profile_page_url,company_name)
 
-    #Takes the search phrase and places it in the displayed record
-    company_info_df = company_info_df.assign(**{"Keyword Search": valid_names})
+                    # Append company info to the batch DataFrame
+                    all_company_info = pd.concat([all_company_info, company_df], ignore_index=True)
 
-    # Save company information to a CSV file
-    company_info_df.to_csv('company_info_sbirsttr_db.csv', index=False)
+                    # Scrape and append award info
+                    for award_url in award_links:
+                        award_info = scrape_award_page(award_url, company_name)
+                        if award_info:
+                            all_award_info = pd.concat([all_award_info, pd.DataFrame([award_info])], ignore_index=True)
 
-    # Save funding records to a CSV file
-    df_funding = pd.DataFrame(funding_records)
-    df_funding.to_csv('sbirsttr_funding.csv', index=False)
+        # Save the company and award info to CSV files in their respective directories
+        company_csv_path = f'company_output/company_batch_{batch_num}.csv'
+        award_csv_path = f'award_output/award_batch_{batch_num}.csv'
+        
+        if not all_company_info.empty:
+            all_company_info.to_csv(company_csv_path, index=False)
+            print(f"Saved company information for batch {batch_num} to {company_csv_path}")
+        else:
+            print(f"No company information to save for batch {batch_num}")
+
+        if not all_award_info.empty:
+            all_award_info.to_csv(award_csv_path, index=False)
+            print(f"Saved award information for batch {batch_num} to {award_csv_path}")
+        else:
+            print(f"No award information to save for batch {batch_num}")
+
+        time.sleep(5)  
 
 
 if __name__  == "__main__": 
