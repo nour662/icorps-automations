@@ -18,4 +18,4 @@ for file in all_files:
         print(f"Error reading {file}: {e}")
 
 merged_df = pd.concat(df_list, ignore_index= True)
-merged_df.to_csv('SBIR_company_name_uncleaned_batches.csv', index=False)
+merged_df.to_csv('SBIR_company_name_batches.csv', index=False)
