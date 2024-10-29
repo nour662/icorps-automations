@@ -2,8 +2,8 @@ import os
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 
-# Replace 'YOUR_SLACK_TOKEN' with your actual token
-client = WebClient(token=os.getenv("YOUR_SLACK_TOKEN"))
+
+client = WebClient(token=os.getenv("token"))
 
 def get_channel_ids():
     try:
@@ -23,7 +23,6 @@ def get_messages(channel_id):
         print(f"Error fetching messages from channel {channel_id}: {e.response['error']}")
         return []
 
-# Retrieve messages from all channels
 all_messages = {}
 channel_ids = get_channel_ids()
 
