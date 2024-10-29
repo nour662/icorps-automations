@@ -12,7 +12,6 @@ from selenium.webdriver.support import expected_conditions as EC
 import os
 import math
 
-#Opens Chrome and navigates through the website to the search screen
 def search_keyword(driver, keyword):
     try:
         search_bar = WebDriverWait(driver, 10).until(
@@ -24,12 +23,26 @@ def search_keyword(driver, keyword):
 
         search_bar.send_keys(keyword)
         submit_button.click()
-
         sleep(5)
+
+        # Get all links in the search results
         links = driver.find_elements(By.XPATH, '//div[@class="grid-row grid-gap"]//a')
-        return [a.get_attribute('href') for a in links][:5]
+        filtered_links = []
+
+        # Only save links where the adjacent "R" text exists
+        for link in links:
+            try:
+                # Find the text element near each link
+                text_element = link.find_element(By.XPATH, './/following-sibling::td[@class="recipient-list__body-cell"]/span')
+                if text_element.text == "R":
+                    filtered_links.append(link.get_attribute('href'))
+            except Exception:
+                continue  # Skip if "R" text isn't found or there's an error
+
+        return filtered_links[:5]
+
     except Exception as e:
-        print(f"Error searching keyword {keyword}: {e}")
+        print(f"Error searching keyword '{keyword}': {e}")
         return []
 
 #Scrapes the individual company pages for each companies information  
@@ -97,7 +110,7 @@ def process_batch(driver, input_list, start, end):
     for name in batch_input:
         name = str(name)
         search_input = name.lower().strip()
-        search_input = search_input.replace(".", "").replace(",", "").replace("inc", "").replace("llc", "").replace("corp", "").replace("ltd", "").replace("limited", "").replace("pty", "")
+        #search_input = search_input.replace(".", "").replace(",", "").replace("inc", "").replace("llc", "").replace("corp", "").replace("ltd", "").replace("limited", "").replace("pty", "")
         result_links = search_keyword(driver, search_input)
         links[name] = result_links
 
@@ -110,6 +123,7 @@ def process_batch(driver, input_list, start, end):
 
     return links_data
 
+# Main function to run the entire process
 def main(starting_batch=0):
     input_df = pd.read_csv("input.csv") 
     input_list = input_df["UEI"].tolist()
@@ -118,19 +132,17 @@ def main(starting_batch=0):
     chrome_options.add_argument('--remote-debugging-port=9222')
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
 
-
     try:
         driver.get("https://www.usaspending.gov/recipient")
         sleep(5)
 
-        search_bar = driver.find_element(By.XPATH, '//input[@class="search-section__input"]')
-        search_button =  driver.find_element(By.XPATH, '//button[@class="search-section__button"]')
-
         batch_size = 20
         num_batches = math.ceil(len(input_list) / batch_size)
 
-        if not os.path.exists("output"):
-            os.makedirs("output")
+        if not os.path.exists("company_output"):
+            os.makedirs("company_output")
+        if not os.path.exists("funding_output"):
+            os.makedirs("funding_output")
 
         for i in range(starting_batch, num_batches):
             start_idx = i * batch_size
@@ -138,14 +150,16 @@ def main(starting_batch=0):
             print(f"Processing batch {i+1}/{num_batches}, companies {start_idx+1} to {end_idx}")
 
             batch_data = process_batch(driver, input_list, start_idx, end_idx)
-
             output_df = pd.DataFrame(batch_data)
 
+            # Save each batch to a CSV file
             output_filename = f"output/batch_{i+1}.csv"
             output_df.to_csv(output_filename, index=False)
-            print(f"Batch {i+1} completed and saved to {output_filename}")
-            driver.get("https://sam.gov/search/?index=ei&page=1&pageSize=25&sort=-relevance&sfm%5BsimpleSearch%5D%5BkeywordRadio%5D=ALL&sfm%5BsimpleSearch%5D%5BkeywordEditorTextarea%5D=&sfm%5Bstatus%5D%5Bis_active%5D=true&sfm%5Bstatus%5D%5Bis_inactive%5D=false")
+            print(f"Batch {i+1} completed and saved to '{output_filename}'")
 
+            # Return to search page for the next batch
+            driver.get("https://sam.gov/search/?index=ei&page=1&pageSize=25&sort=-relevance&sfm%5BsimpleSearch%5D%5BkeywordRadio%5D=ALL&sfm%5BsimpleSearch%5D%5BkeywordEditorTextarea%5D=&sfm%5Bstatus%5D%5Bis_active%5D=true&sfm%5Bstatus%5D%5Bis_inactive%5D=false")
+            sleep(5)
 
     finally:
         driver.quit()
