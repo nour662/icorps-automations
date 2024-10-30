@@ -6,8 +6,33 @@ import time
 import os
 import random
 
+"""
+This script searches the SBIR/STTR database for companies of interest using their company name. If the search key returns 
+multiple results, only the first 50 results will be displayed.
+
+If a company is found in the database, two CSV files will be generated:
+
+company_info_sbirsttr_db.csv: This file contains information from the company profile, including address, search term, 
+number of employees, website, and more. Additional data points from each company profile can be pulled, so feel free to 
+customize the script according to your needs.
+
+sbirsttr_funding.csv: This file includes the SBIR/STTR funding records associated with each company. It contains data such as 
+the search term, start date, end date, funding amount, contract number, solicitation number, and more. You can also customize 
+which data points are included in this file.
+
+Please note that using the company name for searching is not the only method available. Oftentimes, it would be best to 
+utilize a unique identifier like a UEI or DUNS number to avoid inconsistencies in naming across different sources, and get 
+more reliable results. You can perform a broader search using company names, but this may require more effort in data cleaning.
+"""
+
 # Function to fetch the search results and extract the link to the first result
 def get_result_link(company_name, company_pages):
+    """
+    This function seaches the SBIR.gov database by company name and checks to see if results appear. If a valid server request
+    is returned, the company is listed on the database then the url is stored, but if the server request is unsuccessful, the user
+    is displayed a message saying which company name cannot be found.
+    """
+    
     search_url = f'https://legacy.www.sbir.gov/sbirsearch/firm/all?firm={company_name}&uei=&city=&zip=&page=1'
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
@@ -37,6 +62,12 @@ def get_result_link(company_name, company_pages):
 
 # Function to fetch detailed page and extract information
 def scrape_company_profile(profile_page_url , keyword):
+    """
+    This function utilizes Xpaths to extract the targetted information from each search term's result from the SBIR.gov website.
+    The pulled information includes company name, address, websites, # of emplotees, UEI, and SBIR profile link. After collecting
+    the company information, the award page link within the profile is grabbed and stored.
+    """
+
     response = requests.get(profile_page_url)
     
     if response.status_code == 200:
@@ -105,6 +136,13 @@ def format_date(date_str):
 
 # Function to scrape funding records from award pages
 def scrape_award_page(award_url, company_name):
+    """
+    Utilizing the award link grabbed by the "scrape_company_profile" function, the award information for all search results is 
+    collected. This information contains award start date, end date, amount, DUNDS #, phase, company name, ect. This information is 
+    then stored. If a company has not won any awards, the user will be displayed a message saying the company's name that could
+    not have awards retieved for.
+    """
+
     response = requests.get(award_url)
     if response.status_code == 200:
         tree = html.fromstring(response.content)
@@ -153,6 +191,10 @@ def scrape_award_page(award_url, company_name):
 
 
 def main(input_file='input.csv', start_batch=107, batch_size=10):
+    """
+    This function determines the batch size of the search terms and decides what batch to start the program off at if it is being 
+    run for a specific range. The function then formats all information for the 2 outputted .csv file
+    """
     # Load the companies from input.csv
     if not os.path.exists(input_file):
         print(f"Input file {input_file} not found.")
