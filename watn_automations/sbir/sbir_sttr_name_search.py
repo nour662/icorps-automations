@@ -152,12 +152,6 @@ def scrape_award_page(award_url, company_name):
     
 
 
-<<<<<<< HEAD
-def main(): 
-    df = pd.read_csv(r'C:\Users\sluca\Downloads\icorps-data\sam_gov\input.csv')
-    company_list = df['Company_Name'].tolist()
-    company_list = [str(a) for a in company_list]
-=======
 def main(input_file='input.csv', start_batch=107, batch_size=10):
     # Load the companies from input.csv
     if not os.path.exists(input_file):
@@ -171,7 +165,6 @@ def main(input_file='input.csv', start_batch=107, batch_size=10):
         return
     
     companies = companies_df['Company_Name'].tolist()
->>>>>>> ec9dfab23b2df8c3074db3f28d43b3b35b84f758
 
     # Create directories if they don't exist
     if not os.path.exists('company_output'):

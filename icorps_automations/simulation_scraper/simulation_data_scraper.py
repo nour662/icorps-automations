@@ -10,8 +10,8 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
 def extract_file_content(driver, file_url, download_path, file_name):
+
     try:
         driver.execute_script("window.open(arguments[0], '_blank');", file_url)
         driver.switch_to.window(driver.window_handles[1])
