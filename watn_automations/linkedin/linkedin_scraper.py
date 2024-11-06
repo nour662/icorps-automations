@@ -14,6 +14,19 @@ import sys
 from argparse import ArgumentParser
 from webdriver_manager.chrome import ChromeDriverManager
 
+"""
+This script scrapes the LinkedIn platform to collect information ragarding selected individuals based on the seach parements in 
+the "input.csv" file. The search terms are "EID,,First Name,Last Name,Email,Linkedin Profile". From there, the script collects the 
+job experience and education history of each person. For education history the following data is outputted:
+
+School, Degree, Date, and Description
+
+For job experience the following data is outputted:
+
+Job, Company, Date, Location, and Description
+""" 
+
+
 # Define keywords for filtering
 people_keywords = ["CEO", "COO", "CIO", "CDO", "CTO", "CFO", "CMO", "CSO", "Founder", "Co-founder"]
 company_keywords = ["LLC", "INC", "Corp"]
