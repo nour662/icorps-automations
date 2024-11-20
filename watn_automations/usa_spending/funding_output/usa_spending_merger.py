@@ -4,11 +4,21 @@ import zipfile
 
 """
 This program is intended to be used to go thorugh the USA Spending Records and merge all similiar files together. After downloading
-all indetified companies award records from the USA Spending database, move all outputted folders together into a seperate folder. 
-This script will go through that folder and merge together all Assistance Prime Award Summaries, Assistance Sub Awards, 
-Contract Prime Award Summaries, and Contract Sub Awards, for all companies, into their own 4 seperate .csv files. 
+all indetified companies award records from the USA Spending database, move all outputted folders together into a seperate master'
+folder. This script will go through that folder and merge together all Assistance Prime Award Summaries, Assistance Sub Awards, 
+Contract Prime Award Summaries, and Contract Sub Awards based on their order in the sub-folders. The merged version of each document
+type will be outputted in their own serperate .csv files. 
 
-The 4 .csv file output will be located within this master folder and they will be cleaned through the removal of all empty columns.
+The location of the input folder needs to be identified on line 24.
+
+The 4 .csv file output will be located within this master folder and they will already be cleaned through the removal 
+of all empty columns.
+
+The output for the 4 master files is extensive, but can be reduced through identifying the information that needs to be prioritized 
+depending on your needs, such as "total_obligated_amount", "award_id_piid", "period_of_performance_start_date", 
+"period_of_performance_current_end_date", "recipient_name_raw", ect. 
+
+**Scott Lucarelli**
 """
 #Locates the path to the USA Spending .zip folders
 folder_path = (r'C:\Users\sluca\Downloads\USA_Spending')
@@ -23,6 +33,11 @@ contract_sub_award_list =  []
 
 #Sorts through the saved .zip files from the USA spending website
 for zip_file in os.listdir(folder_path):
+    """
+    This loop searches through the master folder and enters each company's individual folder. From there it adds the content
+    of each document to its master list based on its order in the folder. The first document is "assistance_prime_award", the 
+    second is "assistance_sub_award", third is "contract_prime_award", fourth is "contract_sub_award".
+    """
     if zip_file.endswith('.zip'):
         zip_path = os.path.join(folder_path, zip_file)
 

@@ -23,6 +23,9 @@ which data points are included in this file.
 Please note that using the company name for searching is not the only method available. Oftentimes, it would be best to 
 utilize a unique identifier like a UEI or DUNS number to avoid inconsistencies in naming across different sources, and get 
 more reliable results. You can perform a broader search using company names, but this may require more effort in data cleaning.
+
+**Nour Ali Ahmed**
+**Scott Lucarelli**
 """
 
 # Function to fetch the search results and extract the link to the first result

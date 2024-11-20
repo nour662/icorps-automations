@@ -26,6 +26,8 @@ multiple records could appear as the result of a singular search, and therfore t
 ease the cleaning process, it is recommend to use the "merging.py" script following this program to combine all batches into a 
 large .csv file. 
 
+**Nour Ali Ahmed**
+**Scott Lucarelli**
 """
 
 #Opens Chrome and navigates through the website to the search screen
