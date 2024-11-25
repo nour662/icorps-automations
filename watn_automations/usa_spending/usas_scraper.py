@@ -12,6 +12,30 @@ from selenium.webdriver.support import expected_conditions as EC
 import os
 import math
 
+"""
+This script searches the USA Spending government database for companies of interest by UEI Number. It takes in input
+from a .csv file named "input.csv". 
+
+The output of this script comes in 2 groups: funding output and company output. 
+
+1. Company Output: This script collects company information for each UEI entered into the program and outputs the 
+results in batches. The format of the results is as follows:
+
+keyword,legal_name,uei,legacy_duns,cage,full_address,congressional_district
+
+2. Funding Output: This script will pull each companies documents off the USA spending website and merge all pulled 
+documents together based on type. The names of the outputted merged .csv files are as follows:
+    - assistance_prime_award.csv
+    - assistance_sub_award.csv
+    - contract_prime_award.csv
+    - coontract_sub_award.csv
+
+Because an unique identifier is used as a search term, cleaning of the data is not required 
+
+**Nour Ali Ahmed**
+"""
+
+#This function acesses the USA Spending website
 def search_keyword(driver, keyword, result_links):
     try:
         driver.get("https://www.usaspending.gov/recipient")
@@ -32,7 +56,13 @@ def search_keyword(driver, keyword, result_links):
     except Exception as e:
         print(f"Error searching keyword '{keyword}': {e}")
 
+#Locates the page of each company by UEI and extracts company information
 def scrape_links(driver, keyword, url):
+    """
+    This function seeks to locate each company's  legal name, UEI number, DUNS number, CAGE, full address, and
+    congressional district. If it cannot locate the company's record, then it will be returned that there was an error 
+    scraping that specific URL and UEI.
+    """
     try:
         driver.get(url)
 
@@ -75,6 +105,7 @@ def scrape_links(driver, keyword, url):
         print(f"Error scraping {url}: {e}")
         return None
 
+#
 def process_batch(driver, input_list, start, end, batch_number):
     company_data = []
     batch_input = input_list[start:end]
@@ -93,6 +124,7 @@ def process_batch(driver, input_list, start, end, batch_number):
     company_df.to_csv(company_filename, index=False)
     print(f"Batch {batch_number} company data saved to '{company_filename}'")
 
+#Divides the input file into batches, reads it, and outputts results
 def main(input_file='input.csv', start_batch=0):
     if not os.path.exists(input_file):
         print(f"Input file '{input_file}' not found.")
