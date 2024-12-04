@@ -9,7 +9,7 @@ import math, pandas as pd, sys, pickle, logging
 from argparse import ArgumentParser
 
 def search_keyword(driver, keyword):
-    # Wait for the "Inactive" element to be clickable
+
     inactive = WebDriverWait(driver, 100).until(
         EC.element_to_be_clickable((By.XPATH, '//span[contains(text(), "Inactive")]'))
     )
