@@ -60,8 +60,7 @@ def scrape_links(driver, keyword, url):
         mailing_address = safe_find('(//ul[@class="sds-list sds-list--unstyled"])[2]')
         entity_url = safe_find_attr('//a[@class="usa-link"]', 'href')
         start_date = safe_find('//span[contains(text(), "Entity Start Date")]/following-sibling::span')
-        contact1 = safe_find('(//div[@class="sds-card__body padding-2"]//child::h3)[1]')
-        contact2 = safe_find('(//div[@class="sds-card__body padding-2"]//child::h3)[2]')
+        contacts = safe_find('//div[@class="sds-card__body padding-2"]//child::h3')
         state_country_incorporation = safe_find('(//div[@class= "grid-col-6 sds-field ng-star-inserted"])[3]//span[2]')
         congressional_district = safe_find('(//div[@class= "grid-col-6 sds-field"])[3]//span[2]')
 
@@ -82,8 +81,7 @@ def scrape_links(driver, keyword, url):
             "mailing_address": result2,
             "entity_url": entity_url,
             "start_date": start_date,
-            "contact1": contact1,
-            "contact2": contact2,
+            "contacts": contacts,
             "state_country_incorporation": state_country_incorporation,
             "congressional_district": congressional_district,
         }
