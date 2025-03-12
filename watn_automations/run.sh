@@ -11,10 +11,10 @@ today=$(date +"%m%d%Y")
 mkdir outputs/outputs_$today
 
 ## 5. Creating Sepereate Directories for Data Sources
-cd outputs/outputs_$today && mkdir usas_batches sam_batches sbir_batches merged_batches && cd ../..
+cd outputs/outputs_$today && mkdir usas_batches sam_batches sbir_batches merged_batches log && cd ../..
 
 ## 6. Getting cookies.pkl File for SAM.gov login
-python3 util/get_cookies.py -i https://sam.gov  -o sam/cookies.pkl 
+python3 util/get_cookies.py -u https://sam.gov/ -o sam/cookies.pkl 
 
 ## 7. Running SAM.gov Scraper
 python3 sam/sam_scraper.py -i inputs/icorps_masterlist.csv -s 0 -o outputs/outputs_$today

@@ -7,6 +7,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import math, pandas as pd, sys, pickle, logging
 from argparse import ArgumentParser
+from time import sleep
+
+
+
+
+
+## Fix the entity information filter selection
 
 def search_keyword(driver, keyword):
 
@@ -28,9 +35,12 @@ def search_keyword(driver, keyword):
         search_bar.send_keys(keyword)
         submit_button.click()
 
-        WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.XPATH, '//div[@class="grid-row grid-gap"]//a')))
-        links = driver.find_elements(By.XPATH, '//div[@class="grid-row grid-gap"]//a')
-        return [a.get_attribute('href') for a in links][:5]
+    
+        links = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//div[@class="grid-row grid-gap"]//a')))
+         
+        
+        return [a.get_attribute('href') for a in links][:10]
+    
     except Exception as e:
         logging.error(f"Error searching keyword {keyword}: {e}")  
         return []
@@ -110,6 +120,22 @@ def process_batch(driver, input_list, start, end):
 
     return links_data
 
+
+def select_filters(driver): 
+        
+    search_button = WebDriverWait(driver , 10).until(
+        EC.element_to_be_clickable((By.XPATH , '//a[@id = "search"]'))
+    )
+
+    search_button.click()
+
+
+    entity_domain = WebDriverWait(driver, 10).until(
+        EC.element_to_be_clickable((By.XPATH, '(//span[contains(text() , "Entity Information")])[1]'))
+    )
+    entity_domain.click()
+
+
 def load_cookies(driver, input_path):
     with open(input_path, "rb") as file:
         cookies = pickle.load(file)
@@ -129,31 +155,18 @@ def main(input_file, starting_batch, output_path):
     
     chrome_options = Options()
     chrome_options.add_argument('--remote-debugging-port=9222')
-    #chrome_options.add_argument('--headless')
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
 
     try:
-        driver.get("https://sam.gov/content/home")
+        driver.get("https://sam.gov/")
         
         load_cookies(driver, "sam/cookies.pkl")
 
-        close_button = driver.find_element(By.CSS_SELECTOR, 'button[aria-label="Close Modal"]')
-        close_button.click()
-        
-        search_page_button = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, '//a[@id="search"]')))
-        search_page_button.click()
 
-        domain_button =WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, '//div[@class="sds-card sds-card--collapsible sds-card--collapsed ng-star-inserted"]')))
-        domain_button.click()
+       # sleep(500000)
 
 
-        entity_domain = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, '(//li[@class="usa-sidenav__item ng-star-inserted"])[3]'))
-        )
-        entity_domain.click()
-
+        select_filters(driver)
 
         batch_size = 10
         num_batches = math.ceil(len(input_list) / batch_size)
