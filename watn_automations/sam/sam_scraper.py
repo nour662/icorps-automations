@@ -10,15 +10,9 @@ from argparse import ArgumentParser
 from time import sleep
 
 
-
-
-<<<<<<< HEAD:watn_automations/sam/sam_gov_selenium.py
 **Nour Ali Ahmed**
 **Scott Lucarelli**
-"""
-=======
->>>>>>> 32df71bb8f7169c81d45c8d49cc677a75014884d:watn_automations/sam/sam_scraper.py
-
+gut
 ## Fix the entity information filter selection
 
 def search_keyword(driver, keyword):
