@@ -37,7 +37,7 @@ def search_keyword(driver, keyword):
         submit_button.click()
 
     
-        links = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//div[@class="grid-row grid-gap"]//a')))
+        links = WebDriverWait(driver, 3).until(EC.element_to_be_clickable((By.XPATH, '//div[@class="grid-row grid-gap"]//a')))
          
         
         return [a.get_attribute('href') for a in links][:10]
@@ -165,7 +165,7 @@ def main(input_file, starting_batch, output_path):
 
 
         #sleep(500000)
-        driver.get("https://sam.gov/search/")
+        #driver.get("https://sam.gov/search/")
 
         select_filters(driver)
 
