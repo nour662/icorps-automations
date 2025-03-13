@@ -15,16 +15,17 @@ from time import sleep
 '''
 
 ## Fix the entity information filter selection
+        
 
 def search_keyword(driver, keyword):
-
+    print(keyword)
     inactive = WebDriverWait(driver, 100).until(
         EC.element_to_be_clickable((By.XPATH, '//span[contains(text(), "Inactive")]'))
     )
     
     if not inactive.is_selected():
         inactive.click()
-
+        
     try:
         search_bar = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '//input[@name="search"]'))
@@ -102,6 +103,7 @@ def scrape_links(driver, keyword, url):
         return None
 
 def process_batch(driver, input_list, start, end):
+        
     links = {}
     batch_input = input_list[start:end]
 
@@ -184,7 +186,7 @@ def main(input_file, starting_batch, output_path):
             output_filename = f"{output_path}/sam_batches/batch_{i+1}.csv"
             output_df.to_csv(output_filename, index=False)
             logging.info(f"Batch {i+1} completed and saved to {output_filename}")
-            driver.get("https://sam.gov/search/")
+            driver.get("https:://sam.gov/search/") # second+ batches time out (cant find entity_domain button)
         
 
     finally:
