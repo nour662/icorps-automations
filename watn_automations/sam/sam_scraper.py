@@ -9,10 +9,11 @@ import math, pandas as pd, sys, pickle, logging
 from argparse import ArgumentParser
 from time import sleep
 
-
+'''
 **Nour Ali Ahmed**
 **Scott Lucarelli**
-gut
+'''
+
 ## Fix the entity information filter selection
 
 def search_keyword(driver, keyword):
@@ -131,7 +132,7 @@ def select_filters(driver):
 
 
     entity_domain = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.XPATH, '(//span[contains(text() , "Entity Information")])[1]'))
+        EC.element_to_be_clickable((By.XPATH, '//*[@aria-describedby="mat-mdc-chip-9-aria-description"]'))
     )
     entity_domain.click()
 
@@ -160,11 +161,11 @@ def main(input_file, starting_batch, output_path):
     try:
         driver.get("https://sam.gov/")
         
-        load_cookies(driver, "sam/cookies.pkl")
+        load_cookies(driver, "sam/cookies.pkl") # this cookies files causes an infinite loop where the program goes back and forth from the home/search page till timeout
 
 
-       # sleep(500000)
-
+        #sleep(500000)
+        driver.get("https://sam.gov/search/")
 
         select_filters(driver)
 
@@ -183,7 +184,8 @@ def main(input_file, starting_batch, output_path):
             output_filename = f"{output_path}/sam_batches/batch_{i+1}.csv"
             output_df.to_csv(output_filename, index=False)
             logging.info(f"Batch {i+1} completed and saved to {output_filename}")
-            driver.get("https://sam.gov/search/?index=ei&page=1&pageSize=25&sort=-relevance&sfm%5BsimpleSearch%5D%5BkeywordRadio%5D=ALL&sfm%5BsimpleSearch%5D%5BkeywordEditorTextarea%5D=&sfm%5Bstatus%5D%5Bis_active%5D=true&sfm%5Bstatus%5D%5Bis_inactive%5D=false")
+            driver.get("https://sam.gov/search/")
+        
 
     finally:
         driver.quit()
