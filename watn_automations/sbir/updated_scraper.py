@@ -1,55 +1,44 @@
+import argparse
 import requests
+import csv
+import re
 
-def search_awards_by_uei(uei):
-    """Fetch SBIR awards based on UEI."""
-    url = f"https://api.www.sbir.gov/public/api/awards?uei={uei}"
-    response = requests.get(url)
-
-    print(f"Request URL: {url}")
-    print(f"Status Code: {response.status_code}")
-
-    if response.status_code == 200:
-        try:
-            awards = response.json()
-            print(f"Response Data: {awards}")  # Debugging: Print full response
-            return awards
-        except Exception as e:
-            print(f"JSON Parse Error: {e}")
-            return None
-    else:
-        print(f"Error fetching data: {response.text}")
-        return None
-
-def extract_company_info(awards, uei):
-    """Extracts company details from the award data and ensures correct UEI."""
-    for award in awards:
-        if award.get("uei") == uei:  # Ensure the returned data matches the requested UEI
-            return {
-                "Company Name": award.get("firm"),
-                "UEI": award.get("uei"),
-                "DUNS": award.get("duns"),
-                "Number of Employees": award.get("number_employees"),
-                "HUBZone Owned": award.get("hubzone_owned"),
-                "Women Owned": award.get("women_owned"),
-                "Socially/Economically Disadvantaged": award.get("socially_economically_disadvantaged"),
-                "Company URL": award.get("company_url"),
-                "Address": f"{award.get('address1')} {award.get('address2')}".strip(),
-                "City": award.get("city"),
-                "State": award.get("state"),
-                "ZIP Code": award.get("zip"),
-                "POC Name": award.get("poc_name"),
-                "POC Title": award.get("poc_title"),
-                "POC Phone": award.get("poc_phone"),
-                "POC Email": award.get("poc_email"),
-            }
+def get_firm_info_by_uei(uei):
+    BASE_URL = "https://api.www.sbir.gov/public/api/firm"
+    response = requests.get(BASE_URL, params={"uei": uei})
     
-    print(f"No matching company found for UEI: {uei}")  # Debugging
-    return None  # Return None if no match is found
+    if response.status_code == 200:
+        firm_data = response.json()
+        return firm_data if firm_data else None
+    return None
 
-def extract_funding_info(awards):
-    """Extracts award funding details."""
+def get_awards_by_firm_name(firm_name):
+    BASE_URL = "https://api.www.sbir.gov/public/api/awards"
+    response = requests.get(BASE_URL, params={"firm": firm_name})
+    
+    return response.json() if response.status_code == 200 else None
+
+def extract_company_info(firm_data):
+    firm_data = firm_data[0]
+    return {
+        "Company Name": firm_data.get("company_name"),
+        "UEI": firm_data.get("uei"),
+        "DUNS": firm_data.get("duns"),
+        "SBIR Profile": firm_data.get("sbir_url"),
+        "Number of Employees": firm_data.get("number_employees"),
+        "Women Owned": firm_data.get("women_owned"),
+        "Company URL": firm_data.get("company_url"),
+        "Address": f"{firm_data.get('address1', '')} {firm_data.get('address2', '')}".strip(),
+        "City": firm_data.get("city"),
+        "State": firm_data.get("state"),
+        "ZIP Code": firm_data.get("zip"),
+    }
+
+def extract_funding_info(awards, uei):
     return [
         {
+            "Company Name": award.get('firm_name'),
+            "UEI": award.get("uei"),
             "Award Title": award.get("award_title"),
             "Agency": award.get("agency"),
             "Branch": award.get("branch"),
@@ -59,30 +48,63 @@ def extract_funding_info(awards):
             "Contract Number": award.get("contract"),
             "Proposal Award Date": award.get("proposal_award_date"),
             "Contract End Date": award.get("contract_end_date"),
-            "Abstract": award.get("abstract"),
+            "Award Link": award.get("award_link")
         }
-        for award in awards
+        for award in awards if award.get("uei") == uei
     ]
 
-# Input UEI
-uei = "LA9LCVM7HMK5"
+def save_to_csv(filename, data_list):
+    if not data_list:
+        print(f"No data to save for {filename}")
+        return
 
-# Fetch awards
-awards = search_awards_by_uei(uei)
+    keys = data_list[0].keys()  
+    with open(filename, "w", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=keys)
+        writer.writeheader()
+        writer.writerows(data_list)
+    print(f"Data saved to {filename}")
 
-if awards:
-    company_info = extract_company_info(awards, uei)
-    funding_info = extract_funding_info(awards)
+def clean_firm_name(firm_name):
+    cleaned_name = re.sub(r'\b(Inc|LLC|Corp|Ltd|Co|LLP|Ltd.)\b', '', firm_name, flags=re.IGNORECASE)
+    cleaned_name = re.sub(r'[^A-Za-z0-9\s]', '', cleaned_name)
+    return cleaned_name.strip()
 
-    if company_info:
-        print("\n=== Company Information ===")
-        for key, value in company_info.items():
-            print(f"{key}: {value}")
-    else:
-        print("\nNo company information found for the given UEI.")
+def process_ueis(input_file, output_file):
+    with open(input_file, mode='r', newline='') as infile:
+        reader = csv.DictReader(infile)
+        uei_list = [row['UEI'] for row in reader]
+    
+    all_company_info = []
+    all_funding_info = []
 
-    """ print("\n=== Funding Details ===")
-    for funding in funding_info:
-        print("\n--- Award ---")
-        for key, value in funding.items():
-            print(f"{key}: {value}")"""
+    for uei in uei_list:
+        print(f"Processing UEI: {uei}")
+
+        firm_info = get_firm_info_by_uei(uei)
+        if firm_info:
+            company_info = extract_company_info(firm_info)
+
+            firm_name = company_info["Company Name"]
+            cleaned_firm_name = clean_firm_name(firm_name)
+            awards = get_awards_by_firm_name(cleaned_firm_name)
+
+            funding_info = extract_funding_info(awards, uei) if awards else []
+
+            all_company_info.append(company_info)
+            all_funding_info.extend(funding_info)
+
+        else:
+            print(f"No company found for UEI: {uei}")
+
+    save_to_csv(output_file + "_company_info.csv", all_company_info)
+    save_to_csv(output_file + "_funding_info.csv", all_funding_info)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Process UEIs and get data from SBIR APIs.")
+    parser.add_argument('input_file', type=str, help="Path to the input CSV file containing UEIs.")
+    parser.add_argument('output_file', type=str, help="Base path for the output CSV files.")
+    
+    args = parser.parse_args()
+
+    process_ueis(args.input_file, args.output_file)
