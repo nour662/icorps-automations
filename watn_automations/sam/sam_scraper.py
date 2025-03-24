@@ -18,7 +18,6 @@ from time import sleep
         
 
 def search_keyword(driver, keyword):
-    print(keyword)
     inactive = WebDriverWait(driver, 100).until(
         EC.element_to_be_clickable((By.XPATH, '//span[contains(text(), "Inactive")]'))
     )
@@ -186,8 +185,11 @@ def main(input_file, starting_batch, output_path):
             output_filename = f"{output_path}/sam_batches/batch_{i+1}.csv"
             output_df.to_csv(output_filename, index=False)
             logging.info(f"Batch {i+1} completed and saved to {output_filename}")
-            driver.get("https:://sam.gov/search/") # second+ batches time out (cant find entity_domain button)
-        
+            
+            #reset to homepage for new batch
+            driver.get("https://sam.gov/")
+            select_filters(driver)
+            
 
     finally:
         driver.quit()
