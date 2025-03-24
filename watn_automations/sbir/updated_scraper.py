@@ -48,7 +48,7 @@ def extract_funding_info(awards, uei):
             "Contract Number": award.get("contract"),
             "Proposal Award Date": award.get("proposal_award_date"),
             "Contract End Date": award.get("contract_end_date"),
-            "Award Link": award.get("award_link")
+            "Award Link": f'https://www.sbir.gov/awards/{award.get("award_link")}'
         }
         for award in awards if award.get("uei") == uei
     ]
@@ -70,7 +70,7 @@ def clean_firm_name(firm_name):
     cleaned_name = re.sub(r'[^A-Za-z0-9\s]', '', cleaned_name)
     return cleaned_name.strip()
 
-def process_ueis(input_file, output_file):
+def main(input_file, output_file):
     with open(input_file, mode='r', newline='') as infile:
         reader = csv.DictReader(infile)
         uei_list = [row['UEI'] for row in reader]
@@ -107,4 +107,4 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
 
-    process_ueis(args.input_file, args.output_file)
+    main(args.input_file, args.output_file)
