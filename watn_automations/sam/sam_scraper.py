@@ -10,11 +10,6 @@ from argparse import ArgumentParser
 from time import sleep
 
 
-
-
-
-## Fix the entity information filter selection
-
 def search_keyword(driver, keyword):
 
     inactive = WebDriverWait(driver, 100).until(
