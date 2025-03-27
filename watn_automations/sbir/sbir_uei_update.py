@@ -46,25 +46,30 @@ def get_first_result_link(driver, uei, company_pages):
     return company_pages
 
 # Function to fetch detailed page and extract information
-'''def scrape_company_profile(profile_page_url):
+def scrape_company_profile(profile_page_url):
     response = requests.get(profile_page_url)
 
     if response.status_code == 200:
         tree = html.fromstring(response.content)
 
-        name_xpath = '//h1[@class="page-header"]/text()'
-        street_address_xpath = '//span[@itemprop="streetAddress"]/text()'
-        city_xpath = '//span[@itemprop="addressLocality"]/text()'
-        state_xpath = '//span[@itemprop="addressRegion"]/text()'
-        zip_xpath = '//span[@itemprop="postalCode"]/text()'
-        website_xpath = '//a[@title="Company Website"]/@href'
-        employee_xpath = '//div[@class="row open-style"]//div[@class="col-md-4"][2]//p[strong[contains(text(), "# of Employees:")]]/text()'
+        name_xpath = '//*[@id="block-sbir-content"]/section[2]/h2/text()'
+        full_address = '//*[@id="block-sbir-content"]/section[2]/div/div[1]/div[1]/address/text()'
+        website_xpath = '//*[@id="block-sbir-content"]/section[2]/div/div[1]/div[1]/p/a/href'
+        employee_xpath = '//*[@id="block-sbir-content"]/section[2]/div/div[1]/div[2]/p[2]/strong[contains(text(), "# of Employees:")]]/text()'
 
         company_name = tree.xpath(name_xpath)
-        street_address = tree.xpath(street_address_xpath)
-        city = tree.xpath(city_xpath)
-        state = tree.xpath(state_xpath)
-        zip_code = tree.xpath(zip_xpath)
+        
+        addr_list1 = full_address[0].split(",")
+        if len(addr_list1) > 1:
+            street_address = addr_list1[0]
+        else: 
+            street_address = full_address[0]
+          
+        addr_list2 = full_address[1].split(",")
+        city = addr_list2[0].strip()
+        state = addr_list2[1].strip()
+        zip_code = addr_list2[2].strip()
+            
         website = tree.xpath(website_xpath)
         employee_count = tree.xpath(employee_xpath)
 
@@ -100,7 +105,7 @@ def get_first_result_link(driver, uei, company_pages):
     else:
         print(f"Failed to retrieve detailed page: {response.status_code}")
         return pd.DataFrame(), []
-'''
+
 def format_date(date_str):
     """Convert date from YYYY-MM-DD to MM/DD/YYYY format."""
     try:
