@@ -9,40 +9,40 @@ import requests
 from lxml import html
 import pandas as pd
 from datetime import datetime
+from time import sleep
 
 
 # Function to fetch the search results and extract the link to the first result
 def get_first_result_link(driver, uei, company_pages):
     driver.get("https://www.sbir.gov/portfolio")
-
-    print(uei)
     
-        
+    try: 
         # fill in uei field
-        input_field = tree.xpath('//*[@id="edit-uei"]')
+        input_field = driver.find_element(By.ID, 'edit-uei')
+        input_field.clear()
+        input_field.send_keys(uei)
         
-        if input_field:
-            input_element = input_field[0]
-            input_element.clear()
-            input_element.send_keys(uei)
-        
-            #search using uei
-            search_button = tree.xpath('//*[@id="edit-search"]')
-            search_button.click()
-            
-            # Extract the first result link
-            links = tree.xpath('//*[@id="search-results-hits"]/tbody/tr/td/a/@href')
-
-            if links:
-                company_pages[uei] = 'https://www.sbir.gov/portfolio' + links[0]
-            else:
-                print(f'{uei} search: None Found')
-        else: 
-            print(f"Failed to update UEI input field")
-    else:
-        print(f"Failed to retrieve search results: {response.status_code}")
+        #search using uei
+        search_button = WebDriverWait(driver, 100).until(
+            EC.element_to_be_clickable((By.ID, 'edit-submit'))
+        )
+        #driver.execute_script("arguments[0].click()", search_button)
+        #search_button.click()
+        search_button.send_keys('\n')
     
-    print("company_pages: " , company_pages)
+    
+        # Extract the first result link
+        link_element = WebDriverWait(driver, 10).until(
+                                    EC.presence_of_element_located((By.XPATH, '//*[@id="search-results-hits"]/tbody/tr/td[1]/a'))
+                                )
+        link = [link_element.get_attribute('href')]
+        if link:
+            company_pages[uei] = link[0]
+        else:
+            print(f'{uei} search: None Found')
+    except Exception as e:
+        print(f"Failed to retrieve search results: {e}")
+        
     return company_pages
 
 # Function to fetch detailed page and extract information
