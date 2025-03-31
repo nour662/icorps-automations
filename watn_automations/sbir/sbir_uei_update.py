@@ -29,15 +29,17 @@ def get_first_result_link(driver, uei, company_pages):
         #driver.execute_script("arguments[0].click()", search_button)
         #search_button.click()
         search_button.send_keys('\n')
-    
+        sleep(2)
     
         # Extract the first result link
         link_element = WebDriverWait(driver, 10).until(
                                     EC.presence_of_element_located((By.XPATH, '//*[@id="search-results-hits"]/tbody/tr/td[1]/a'))
                                 )
-        link = [link_element.get_attribute('href')]
+        link = link_element.get_attribute('href')
+        # company_name = link_element.get_attribute('text')
+     
         if link:
-            company_pages[uei] = link[0]
+            company_pages[uei] = link
         else:
             print(f'{uei} search: None Found')
     except Exception as e:
@@ -53,34 +55,42 @@ def scrape_company_profile(profile_page_url):
         tree = html.fromstring(response.content)
 
         name_xpath = '//*[@id="block-sbir-content"]/section[2]/h2/text()'
-        full_address = '//*[@id="block-sbir-content"]/section[2]/div/div[1]/div[1]/address/text()'
-        website_xpath = '//*[@id="block-sbir-content"]/section[2]/div/div[1]/div[1]/p/a/href'
-        employee_xpath = '//*[@id="block-sbir-content"]/section[2]/div/div[1]/div[2]/p[2]/strong[contains(text(), "# of Employees:")]]/text()'
-
-        company_name = tree.xpath(name_xpath)
+        address_xpath = '//*[@id="block-sbir-content"]/section[2]/div/div[1]/div[1]/address/text()'
+        website_xpath = '//*[@id="block-sbir-content"]/section[2]/div/div[1]/div[1]/p/a/@href'
+        employee_xpath = '//*[@id="block-sbir-content"]/section[2]/div/div[1]/div[2]/p[2]/text()'
         
+        company_name = tree.xpath(name_xpath)
+
+        full_address = tree.xpath(address_xpath)        
         addr_list1 = full_address[0].split(",")
         if len(addr_list1) > 1:
             street_address = addr_list1[0]
         else: 
-            street_address = full_address[0]
-          
+            street_address = full_address[0]  
         addr_list2 = full_address[1].split(",")
-        city = addr_list2[0].strip()
-        state = addr_list2[1].strip()
-        zip_code = addr_list2[2].strip()
+        city = addr_list2[0]
+        state = addr_list2[1]
+        zip_code = addr_list2[2]
             
         website = tree.xpath(website_xpath)
+        print(website)
         employee_count = tree.xpath(employee_xpath)
 
         # Clean extracted data
         company_name = company_name[0].strip() if company_name else "N/A"
-        street_address = street_address[0].strip().title() if street_address else "N/A"
-        city = city[0].strip().title() if city else "N/A"
-        state = state[0].strip() if state else "N/A"
-        zip_code = zip_code[0].strip() if zip_code else "N/A"
+        print(company_name)
+        street_address = street_address.strip().title() if street_address else "N/A"
+        print(street_address)
+        city = city.strip().title() if city else "N/A"
+        print(city)
+        state = state.strip() if state else "N/A"
+        print(state)
+        zip_code = zip_code.strip() if zip_code else "N/A"
+        print(zip_code)
         website = website[0].strip() if website else "N/A"
+        print(website)
         employee_count = employee_count[0].strip() if employee_count else "N/A"
+        print(employee_count)
 
         # Create a DataFrame for this company's data
         company_df = pd.DataFrame([{
@@ -93,7 +103,7 @@ def scrape_company_profile(profile_page_url):
             "Employee Count": employee_count,
             "SBIR Profile Link": profile_page_url
         }])
-
+        '''
         # Extract award links
         awards_xpath = '//div[@class="firm-details-content"]//h3/a/@href'
         awards_links = tree.xpath(awards_xpath)
@@ -101,7 +111,9 @@ def scrape_company_profile(profile_page_url):
         # Return the DataFrame and the list of award links
         # print("company_df: " , company_df)
         # print("awards_links: " , awards_links)
-        return company_df, [f'https://legacy.www.sbir.gov{link}' for link in awards_links]
+        return company_df, [f'https://www.sbir.gov{link}' for link in awards_links]
+        '''
+        return company_df, company_name
     else:
         print(f"Failed to retrieve detailed page: {response.status_code}")
         return pd.DataFrame(), []
@@ -185,9 +197,10 @@ def main():
         company_pages = get_first_result_link(driver, uei, company_pages)
         profile_page_url = company_pages.get(uei)
         print(profile_page_url)
-        '''if profile_page_url:
-            company_df, award_links = scrape_company_profile(profile_page_url)
+        if profile_page_url:
+            company_df, company_name = scrape_company_profile(profile_page_url)
             company_info_df = pd.concat([company_info_df, company_df], ignore_index=True)
+            '''
             for award_link in award_links:
                 record = scrape_award_page(award_link)
                 if record:
