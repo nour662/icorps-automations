@@ -10,6 +10,8 @@ from lxml import html
 import pandas as pd
 from datetime import datetime
 from time import sleep
+import os
+import glob
 
 
 # Function to fetch the search results and extract the link to the first result
@@ -32,7 +34,7 @@ def get_first_result_link(driver, uei, company_pages):
         sleep(2)
     
         # Extract the first result link
-        link_element = WebDriverWait(driver, 10).until(
+        link_element = WebDriverWait(driver, 5).until(
                                     EC.presence_of_element_located((By.XPATH, '//*[@id="search-results-hits"]/tbody/tr/td[1]/a'))
                                 )
         link = link_element.get_attribute('href')
@@ -73,7 +75,6 @@ def scrape_company_profile(profile_page_url):
         zip_code = addr_list2[2]
             
         website = tree.xpath(website_xpath)
-        print(website)
         employee_count = tree.xpath(employee_xpath)
 
         # Clean extracted data
@@ -103,84 +104,143 @@ def scrape_company_profile(profile_page_url):
             "Employee Count": employee_count,
             "SBIR Profile Link": profile_page_url
         }])
-        '''
-        # Extract award links
-        awards_xpath = '//div[@class="firm-details-content"]//h3/a/@href'
-        awards_links = tree.xpath(awards_xpath)
-
-        # Return the DataFrame and the list of award links
-        # print("company_df: " , company_df)
-        # print("awards_links: " , awards_links)
-        return company_df, [f'https://www.sbir.gov{link}' for link in awards_links]
-        '''
+        
         return company_df, company_name
     else:
         print(f"Failed to retrieve detailed page: {response.status_code}")
         return pd.DataFrame(), []
 
+def download_awards(driver, company_name):
+    driver.get("https://www.sbir.gov/awards")
+    
+    try: 
+        # fill in company name field
+        input_field = driver.find_element(By.ID, 'edit-company-name')
+        input_field.clear()
+        input_field.send_keys(company_name)
+        
+        #search using company name
+        search_button = WebDriverWait(driver, 100).until(
+            EC.element_to_be_clickable((By.ID, 'edit-submit'))
+        )
+        search_button.send_keys('\n')
+        sleep(2)
+    
+        try:
+            '''this downloads the awards as a csv we can use this by extracting the csv
+            direct all downloads from one folder to another'''
+            # find the download button
+            download_button = WebDriverWait(driver, 10).until(
+                EC.element_to_be_clickable((By.ID, "downloadBtn"))
+            )
+            download_button.click()
+        except Exception as e:
+            print(f"Failed to download awards csv: {e}")  
+    except Exception as e:
+        print(f"Failed to find awards: {e}")
+        
+def delete_files_in_directory(directory_path):
+   try:
+     files = os.listdir(directory_path)
+     for file in files:
+       file_path = os.path.join(directory_path, file)
+       if os.path.isfile(file_path):
+         os.remove(file_path)
+     print("All files deleted successfully.")
+   except Exception as e:
+     print("Error occurred while deleting files: {e}")
+        
+def merge_csv(directory):
+    # Get the list of files in the directory and sort them by creation date
+    all_award_files = glob.glob(f'{directory}/awards_search_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].csv')
+    df_list = []
+    for file in all_award_files:
+        try:
+            temp_df = pd.read_csv(file)
+            df_list.append(temp_df)
+        except Exception as e:
+            print(f"Error reading {file}: {e}")
+    merged_df = pd.concat(df_list, ignore_index= True)
+    return merged_df
+    # merged_df.to_csv(f'sbir/full_award_search_uncleaned.csv', index=False)
+
 def format_date(date_str):
     """Convert date from YYYY-MM-DD to MM/DD/YYYY format."""
     try:
-        date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+        date_obj = datetime.strptime(date_str, "%B %d, %Y")
         return date_obj.strftime('%m/%d/%Y')
     except ValueError:
         return date_str  # Return the original string if parsing fails
 
 # Function to scrape funding records from award pages
-'''def scrape_award_page(award_url):
-    response = requests.get(award_url)
+def scrape_award_df(award_df):
+    # Extract data using the column names of the given dataframe
+    keyword_search = award_df['Company Name'].to_list()
+    company_name = award_df['Company Name'].to_list()
+    uei = award_df['UEI'].to_list()
+    award_start_date = award_df['Proposal Award Date'].to_list()
+    award_end_date = award_df['Contract End Date'].to_list()
+    amount = award_df['Award Amount'].to_list()
+    phase = award_df['Phase'].to_list()
+    program = award_df['Program'].to_list()
+    solicitation_number = award_df['Solicitation Number'].to_list()
 
-    if response.status_code == 200:
-        tree = html.fromstring(response.content)
+    # Format award amount
+    formatted_award_amount = []
+    for num in amount: 
+        formatted_award_amount.append(f"${num:,.2f}")
+        
+    # Format dates
+    formatted_award_start_date = []
+    for start_date in award_start_date:
+        formatted_award_start_date.append(format_date(start_date))
+        
+    formatted_award_end_date = []
+    for end_date in award_end_date:
+        formatted_award_end_date.append(format_date(end_date))
+        
+    # Format Solicitation Number
+    formatted_award_SN = []
+    for snum in solicitation_number:
+        if not isinstance(snum, str):
+            formatted_award_SN.append("N/A")
+        else:
+            formatted_award_SN.append(snum)
 
-        # Define the XPaths for various fields
-        award_start_date_xpath = '//span[@class="open-label" and contains(text(), "Award Start Date (Proposal Award Date):")]/following-sibling::span[@class="open-description"]/text()'
-        award_end_date_xpath = '//span[@class="open-label" and contains(text(), "Award End Date (Contract End Date):")]/following-sibling::span[@class="open-description"]/text()'
-        # duns_num_xpath = '//div[@class="row open-style"]//span[@class="open-label" and contains(text(), "DUNS:")]/following-sibling::span[@class="open-description"]/text()'
-        amount_xpath = '//div[@class="row open-style"]//span[@class="open-label" and contains(text(), "Amount:")]/following-sibling::span[@class="open-description"]/text()'
-        phase_xpath = '//div[@class="row open-style"]//span[@class="open-label" and contains(text(), "Phase:")]/following-sibling::span[@class="open-description"]/text()'
-        program_xpath = '//div[@class="row open-style"]//span[@class="open-label" and contains(text(), "Program:")]/following-sibling::span[@class="open-description"]/text()'
-        solicitation_number_xpath = '//div[@class="row open-style"]//span[@class="open-label" and contains(text(), "Solicitation Number:")]/following-sibling::span[@class="open-description"]/text()'
-        company_name_xpath = '//div[@class="sbc-name-wrapper"]/a/text()'
-
-        # Extract data using the defined XPaths
-        award_start_date = tree.xpath(award_start_date_xpath)
-        award_end_date = tree.xpath(award_end_date_xpath)
-        # duns_num = tree.xpath(duns_num_xpath)  # not being used
-        amount = tree.xpath(amount_xpath)
-        phase = tree.xpath(phase_xpath)
-        program = tree.xpath(program_xpath)
-        solicitation_number = tree.xpath(solicitation_number_xpath)
-        company_name = tree.xpath(company_name_xpath)
-
-        # Format dates
-        formatted_award_start_date = format_date(award_start_date[0].strip()) if award_start_date else "N/A"
-        formatted_award_end_date = format_date(award_end_date[0].strip()) if award_end_date else "N/A"
-
-        # Return the scraped data as a dictionary including the award URL
-        return {
-            "Company Name": company_name[0].strip() if company_name else "N/A",
-            "Start Date": formatted_award_start_date,
-            "End Date": formatted_award_end_date,
-            "Funding Amount": amount[0].strip() if amount else "N/A",
-            "Phase": phase[0].strip() if phase else "N/A",
-            "Program": program[0].strip() if program else "N/A",
-            "Solicitation Number": solicitation_number[0].strip() if solicitation_number else "N/A",
-            "Source Link" : award_url
-        }
-    else:
-        print(f"Failed to retrieve award page: {response.status_code}")
-        return None
-''' 
+    # Return the scraped data as a dictionary including the award URL
+    funding_records= {
+        "Keyword Search": keyword_search,
+        "Company Name": company_name,
+        'UEI': uei,
+        "Start Date": formatted_award_start_date,
+        "End Date": formatted_award_end_date,
+        "Funding Amount": formatted_award_amount,
+        "Phase": phase,
+        "Program": program,
+        "Solicitation Number": formatted_award_SN,
+    }
+    
+    # Save funding records to a CSV file
+    df_funding = pd.DataFrame.from_dict(funding_records)
+    df_funding.to_csv('watn_automations\\sbir\\sbirsttr_funding.csv', index=False)
  
 def main():   
-    ## TO- change to list pulled from input file
+    # Set up the driver and directory  
     chrome_options = Options()
+    directory = "C:\\Users\\Pineappleboss.MGP\\Downloads\\sbir_award_downloads" # Set own download directory
+    
+    prefs = {
+        "download.default_directory": directory,  
+        "download.prompt_for_download": False,       # Disable download prompt
+        "safebrowsing.enabled": True                 # Enable safe browsing
+    }
+    chrome_options.add_experimental_option("prefs", prefs)
     chrome_options.add_argument('--remote-debugging-port=9222')
+    #chrome_options.add_argument('--headless')
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
+
     
-    
-    df = pd.read_csv(r"C:\\Users\\Pineappleboss.MGP\\OneDrive\\Documents\\GitHub\\icorps-automations\\watn_automations\\sbir\\UEI_test_list.csv")
+    df = pd.read_csv("watn_automations\\sbir\\UEI_test_list.csv")
     #uei_list = df.to_list()
     #uei_list = df[df["num_uei"]].to_list()
     uei_list = df['num_uei'].tolist()
@@ -189,8 +249,7 @@ def main():
         "Name", "Street Address", "City", "State", "Zip Code", "Website", "Employee Count" , "SBIR Profile Link"
     ])
     company_pages = {}
-    funding_records = []
-
+    delete_files_in_directory(directory)
 
     # Iterate through the list of UEIs and fetch the corresponding page links
     for uei in uei_list:
@@ -200,19 +259,14 @@ def main():
         if profile_page_url:
             company_df, company_name = scrape_company_profile(profile_page_url)
             company_info_df = pd.concat([company_info_df, company_df], ignore_index=True)
-            '''
-            for award_link in award_links:
-                record = scrape_award_page(award_link)
-                if record:
-                    funding_records.append(record)
-
+            download_awards(driver, company_name)
+    
+    # merge award CSV files and get funding csv       
+    full_award_df = merge_csv(directory)
+    scrape_award_df(full_award_df)
+    
     # Save company information to a CSV file
-    company_info_df.to_csv('company_info_sbirsttr_db.csv', index=False)
-
-    # Save funding records to a CSV file
-    df_funding = pd.DataFrame(funding_records)
-    df_funding.to_csv('sbirsttr_funding.csv', index=False)
-    '''
+    company_info_df.to_csv('watn_automations\\sbir\\company_info_sbirsttr_db.csv', index=False)
     
 if __name__ == "__main__":
     main()
