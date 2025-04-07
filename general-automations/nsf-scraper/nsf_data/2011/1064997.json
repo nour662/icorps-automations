@@ -1,0 +1,105 @@
+{
+ "awd_id": "1064997",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TC: Medium: Collaborative Research: Program Analysis for Smartphone Application Security",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2011-04-15",
+ "awd_exp_date": "2017-03-31",
+ "tot_intn_awd_amt": 433415.0,
+ "awd_amount": 433415.0,
+ "awd_min_amd_letter_date": "2011-04-08",
+ "awd_max_amd_letter_date": "2011-04-08",
+ "awd_abstract_narration": "This project investigates a new approach for describing and reasoning about security properties of smartphone applications.  Smartphones are becoming pervasive, and smartphone applications are increasingly used for a variety of social, health, scientific, and military purposes. However, the capabilities these phones provide, such as access to GPS, camera, Internet, calendar, contacts, and other sensitive information can lead to major security risks.  Today's smartphone development methodologies do little to help developers construct applications that safely access sensitive resources.\r\n\r\nThe goal of this project is to develop new program analysis techniques that can help developers express, reason about, and enforce security policies in smartphones.  The proposed technical approach will allow developers to define rich security policies in an intuitive and flexible manner: as program code that interacts with a mobile application and checks desired properties.  To ensure that application code conforms to such policies, the project is pursuing several techniques that leverage recent advances in static and dynamic program analysis.  The project is also investigating approaches to automatically synthesize a code-based policy for a given application. The project is instantiating these ideas in the context of Google's Android operating system, and is evaluating the ideas in terms of effectiveness and performance on a broad range of Android-based smartphone applications.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jeffrey",
+   "pi_last_name": "Foster",
+   "pi_mid_init": "S",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jeffrey S Foster",
+   "pi_email_addr": "jeffrey.foster@tufts.edu",
+   "nsf_id": "000095036",
+   "pi_start_date": "2011-04-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Maryland, College Park",
+  "inst_street_address": "3112 LEE BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE PARK",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "3014056269",
+  "inst_zip_code": "207425100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "MD04",
+  "org_lgl_bus_name": "UNIVERSITY OF MARYLAND, COLLEGE PARK",
+  "org_prnt_uei_num": "NPU8ULVAAS23",
+  "org_uei_num": "NPU8ULVAAS23"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Maryland, College Park",
+  "perf_str_addr": "3112 LEE BUILDING",
+  "perf_city_name": "COLLEGE PARK",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "207425100",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "MD04",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779500",
+   "pgm_ele_name": "TRUSTWORTHY COMPUTING"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7795",
+   "pgm_ref_txt": "TRUSTWORTHY COMPUTING"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 433415.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Mobile devices such as smartphones have access to a significant amount of sensitive data, such as the user's contacts and calendar, and device capabilities, such as the GPS location, camera, and microphone. Thus, mobile device security is a major, ongoing concern. The goal of this project was to develop new, forward-looking ways to improve mobile device security, with a focus on the Android mobile operating system.</p>\n<p>Our first major result was the development of a finer-grained permission system for Android. For example, while Android apps typically have access to the entire Internet, using our approach apps can be restricted to access only particular domains or web sites. A key feature of our approach is that it does not require modifying the operating system, and thus apps with our finer-grained permissions can be run on stock devices.</p>\n<p>After achieving this result, we realized that even finer-grained permissions may be insufficient for security, because they provide all-or-nothing access. In practice, it also matters when an app uses a permission, and what it does with any sensitive information it accesses. For example, there is a great deal of difference between an app that asks the user to select a contact and then sends that contact information to a server on the Internet, versus an app that immediately sends the user's full contact database to a server when the app launches. Yet both have the same set of permissions.</p>\n<p>To address this issue, we developed a new security framework we call \"interaction-based declassification.\" The key idea behind our framework is that users naturally express their intentions about security as they use an app. For example, in this approach, when the user selects a contact they can grant permission for that contact, and that contact only, to be sent to the server. Whereas our approach can disallow the app that uploads the user's full contact database even before they have clicked any buttons in the app.</p>\n<p>We developed the theoretical foundations of interaction-based declassification, and we also demonstrated that it can be enforced via symbolic execution, which is a technique for analyzing program code.</p>\n<p>Finally, we explored the hypothesis underlying the interaction-based declassification work: that interactions should relate to permission uses. We conducted two studies to test this hypothesis. First, we developed a dynamic analysis tool that instruments Android apps to record when they perform sensitive operations, such as accessing the microphone, and when user interactions, such as button clicks, occur. We then reviewed 150 popular Android apps and found that the most sensitive operations (particularly accessing the microphone and the camera) almost always occur only after a relevant user interaction, e.g., clicking a microphone button. This suggests developers already do believe certain sensitive actions should only be taken after a user interaction.</p>\n<p>Second, we performed an online survey to examine how different user interactions with an app affect users' expectations about whether an app performs sensitive actions. Our results suggest that user interactions, such as button clicks, can be interpreted as authorization, and that accesses not directly tied to user interactions should be authorized separately to avoid confusing the user.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/11/2017<br>\n\t\t\t\t\tModified by: Jeffrey&nbsp;S&nbsp;Foster</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMobile devices such as smartphones have access to a significant amount of sensitive data, such as the user's contacts and calendar, and device capabilities, such as the GPS location, camera, and microphone. Thus, mobile device security is a major, ongoing concern. The goal of this project was to develop new, forward-looking ways to improve mobile device security, with a focus on the Android mobile operating system.\n\nOur first major result was the development of a finer-grained permission system for Android. For example, while Android apps typically have access to the entire Internet, using our approach apps can be restricted to access only particular domains or web sites. A key feature of our approach is that it does not require modifying the operating system, and thus apps with our finer-grained permissions can be run on stock devices.\n\nAfter achieving this result, we realized that even finer-grained permissions may be insufficient for security, because they provide all-or-nothing access. In practice, it also matters when an app uses a permission, and what it does with any sensitive information it accesses. For example, there is a great deal of difference between an app that asks the user to select a contact and then sends that contact information to a server on the Internet, versus an app that immediately sends the user's full contact database to a server when the app launches. Yet both have the same set of permissions.\n\nTo address this issue, we developed a new security framework we call \"interaction-based declassification.\" The key idea behind our framework is that users naturally express their intentions about security as they use an app. For example, in this approach, when the user selects a contact they can grant permission for that contact, and that contact only, to be sent to the server. Whereas our approach can disallow the app that uploads the user's full contact database even before they have clicked any buttons in the app.\n\nWe developed the theoretical foundations of interaction-based declassification, and we also demonstrated that it can be enforced via symbolic execution, which is a technique for analyzing program code.\n\nFinally, we explored the hypothesis underlying the interaction-based declassification work: that interactions should relate to permission uses. We conducted two studies to test this hypothesis. First, we developed a dynamic analysis tool that instruments Android apps to record when they perform sensitive operations, such as accessing the microphone, and when user interactions, such as button clicks, occur. We then reviewed 150 popular Android apps and found that the most sensitive operations (particularly accessing the microphone and the camera) almost always occur only after a relevant user interaction, e.g., clicking a microphone button. This suggests developers already do believe certain sensitive actions should only be taken after a user interaction.\n\nSecond, we performed an online survey to examine how different user interactions with an app affect users' expectations about whether an app performs sensitive actions. Our results suggest that user interactions, such as button clicks, can be interpreted as authorization, and that accesses not directly tied to user interactions should be authorized separately to avoid confusing the user.\n\n\t\t\t\t\tLast Modified: 05/11/2017\n\n\t\t\t\t\tSubmitted by: Jeffrey S Foster"
+ }
+}

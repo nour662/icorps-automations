@@ -1,0 +1,117 @@
+{
+ "awd_id": "1117125",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CIF: Small: Recursive Robust Principal Components' Analyis (PCA)",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "John Cozzens",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 396659.0,
+ "awd_amount": 396659.0,
+ "awd_min_amd_letter_date": "2011-08-24",
+ "awd_max_amd_letter_date": "2011-08-24",
+ "awd_abstract_narration": "We develop novel and provably stable polynomial time solutions for solving the recursive robust principal component analysis (PCA) problem. Here, \"robust\" refers to robustness to both independent and correlated sparse outliers. The goal of PCA is to find the principal component (PC) space, which is the  minimum-dimension subspace that spans (or, in practice, approximately spans) a given dataset. Computing the PCs in the presence of outliers is called robust PCA. If the PC space changes over time, there is a need to update the PCs. Doing this recursively is referred to as recursive robust PCA. Key potential applications include automatic foreground extraction from similar-looking backgrounds in video; sensor-network-based detection and tracking of abnormal events such as forest fires; online detection of brain activation patterns from functional MRI sequences; and speech/audio extraction from large but correlated background noise.\r\n\r\nThe key idea is to reformulate this as a problem of recursively recovering a time sequence of sparse signals in the presence of large but correlated noise. The noise must be correlated enough to have an approximately low rank covariance matrix that is either constant or changes slowly. The change in the support of the sparse signal sequences may or may not be slow, but it is highly correlated; e.g. the support can move, expand or deform over time. We ask the following practically relevant questions about performance guarantees of the proposed algorithms. (a) Under what conditions can we prove exact recovery? (b) When can be obtain time-invariant and small error bounds (i.e., show stability)? \r\n\r\nThe research will be included in the curriculum at various levels and in undergraduate senior design and summer research projects.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Namrata",
+   "pi_last_name": "Vaswani",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Namrata Vaswani",
+   "pi_email_addr": "namrata@iastate.edu",
+   "nsf_id": "000234521",
+   "pi_start_date": "2011-08-24",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Fritz",
+   "pi_last_name": "Keinert",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Fritz Keinert",
+   "pi_email_addr": "keinert@iastate.edu",
+   "nsf_id": "000435094",
+   "pi_start_date": "2011-08-24",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Iowa State University",
+  "inst_street_address": "1350 BEARDSHEAR HALL",
+  "inst_street_address_2": "515 MORRILL ROAD",
+  "inst_city_name": "AMES",
+  "inst_state_code": "IA",
+  "inst_state_name": "Iowa",
+  "inst_phone_num": "5152945225",
+  "inst_zip_code": "500112103",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "IA04",
+  "org_lgl_bus_name": "IOWA STATE UNIVERSITY OF SCIENCE AND TECHNOLOGY",
+  "org_prnt_uei_num": "DQDBM7FGJPC5",
+  "org_uei_num": "DQDBM7FGJPC5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Iowa State University",
+  "perf_str_addr": "1350 BEARDSHEAR HALL",
+  "perf_city_name": "AMES",
+  "perf_st_code": "IA",
+  "perf_st_name": "Iowa",
+  "perf_zip_code": "500112103",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "IA04",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779700",
+   "pgm_ele_name": "Comm & Information Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7936",
+   "pgm_ref_txt": "SIGNAL PROCESSING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 396659.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Intellectual Merit.&nbsp;<br />This project solved the problem of recursive dynamic robust principal components analysis (PCA). It resulted in multiple novel online and efficient algorithms for solving the dynamic robust PCA problem. As a byproduct, these algorithms also solved the recursive robust sparse recovery problem in large but structured noise. Both these problems occur in a large number of big data analysis applications ranging from video analytics to recommendation system design and process monitoring.&nbsp;</p>\n<p><br />Two algorithm approaches were designed - the first was called Recursive Projected Compressive Sensing (ReProCS) and the second was called modified-PCP where PCP stands for principal component pursuit.&nbsp;</p>\n<p>Three sets of ReProCS based algorithms were designed; two of these were also shown to be provably accurate under mild assumptions.&nbsp;</p>\n<p>A third, called Practical ReProCS, was able to solve the difficult video analytics problem of separating a video into foreground and background layer videos. This video layering is often the first step in solving other high-level computer vision and video transmission problems such as activity recognition or low bit-rate video conferencing. The same algorithm was also shown to outperform the state-of-the-art for a video denoising and enhancement application.</p>\n<p>This project also resulted in the PI studying the correlated-PCA problem. This is the problem of PCA when data and noise are correlated, i.e., the noise is data-dependent. While PCA is a very well-studied problem, the correlated-PCA problem has received very little attention in the literature so far.&nbsp;</p>\n<p>Broader Impacts<br />The proposed work has had important applications in video analytics and computer vision and in video denoising and enhancement. It has led to collaboration with industry (Rockwell Collins) on the vidoe denoising problem.&nbsp;</p>\n<p>Three graduate students have received their Ph.D.s., one of these three was a woman, and one of them was a U.S. National.&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/09/2017<br>\n\t\t\t\t\tModified by: Namrata&nbsp;Vaswani</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIntellectual Merit. \nThis project solved the problem of recursive dynamic robust principal components analysis (PCA). It resulted in multiple novel online and efficient algorithms for solving the dynamic robust PCA problem. As a byproduct, these algorithms also solved the recursive robust sparse recovery problem in large but structured noise. Both these problems occur in a large number of big data analysis applications ranging from video analytics to recommendation system design and process monitoring. \n\n\nTwo algorithm approaches were designed - the first was called Recursive Projected Compressive Sensing (ReProCS) and the second was called modified-PCP where PCP stands for principal component pursuit. \n\nThree sets of ReProCS based algorithms were designed; two of these were also shown to be provably accurate under mild assumptions. \n\nA third, called Practical ReProCS, was able to solve the difficult video analytics problem of separating a video into foreground and background layer videos. This video layering is often the first step in solving other high-level computer vision and video transmission problems such as activity recognition or low bit-rate video conferencing. The same algorithm was also shown to outperform the state-of-the-art for a video denoising and enhancement application.\n\nThis project also resulted in the PI studying the correlated-PCA problem. This is the problem of PCA when data and noise are correlated, i.e., the noise is data-dependent. While PCA is a very well-studied problem, the correlated-PCA problem has received very little attention in the literature so far. \n\nBroader Impacts\nThe proposed work has had important applications in video analytics and computer vision and in video denoising and enhancement. It has led to collaboration with industry (Rockwell Collins) on the vidoe denoising problem. \n\nThree graduate students have received their Ph.D.s., one of these three was a woman, and one of them was a U.S. National. \n\n\t\t\t\t\tLast Modified: 01/09/2017\n\n\t\t\t\t\tSubmitted by: Namrata Vaswani"
+ }
+}

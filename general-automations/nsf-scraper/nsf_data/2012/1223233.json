@@ -1,0 +1,105 @@
+{
+ "awd_id": "1223233",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Small: Physically Unclonable Function (PUF) Enhancements Via Lithography and Design Partnership",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927991",
+ "po_email": "namla@nsf.gov",
+ "po_sign_block_name": "Nina Amla",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2017-08-31",
+ "tot_intn_awd_amt": 499559.0,
+ "awd_amount": 499559.0,
+ "awd_min_amd_letter_date": "2012-08-16",
+ "awd_max_amd_letter_date": "2012-08-16",
+ "awd_abstract_narration": "Silicon physically unclonable function (PUF) is a supplemental circuit embedded in an IC which generates signatures unique to its native IC. This signature could be used for authentication, protection of data and secure communication. PUFs rely on the presence of uncontrollable variations in the fabrication process causing the circuit parameters to exhibit randomness. Current approaches for PUF design have mostly investigated circuit and architectural aspects. PUF quality is severely marred by a lack of understanding of exactly how fabrication process variations impact the PUF responses. Much of the existing work assumes the fabrication process to be a black box. This results in several opportunities being unutilized. This research investigates fundamentally different approaches to PUF enhancements. It leverages quantified models for fabrication randomness that have been developed in Design for Manufacturability related research endeavors. This research looks into mask, circuit and layout level techniques along with their interdependence.\r\n\r\nThis work enables improved silicon PUFs thereby increasing the possibility of their adoption. Our approaches would be useful for both semiconductor manufacturing companies and fab-less design houses. On an education front, PhD students shall be involved in the core aspect of this work while undergraduates shall be used for data collection, analysis and test-bed development. Lastly, this project plans to enhance infrastructure for research and education by making available all the artifacts produced by this research in public domain. Further outreach efforts such as tutorials, panel discussions, etc. shall also be organized.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ankur",
+   "pi_last_name": "Srivastava",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ankur Srivastava",
+   "pi_email_addr": "ankurs@eng.umd.edu",
+   "nsf_id": "000313791",
+   "pi_start_date": "2012-08-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Maryland, College Park",
+  "inst_street_address": "3112 LEE BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE PARK",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "3014056269",
+  "inst_zip_code": "207425100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "MD04",
+  "org_lgl_bus_name": "UNIVERSITY OF MARYLAND, COLLEGE PARK",
+  "org_prnt_uei_num": "NPU8ULVAAS23",
+  "org_uei_num": "NPU8ULVAAS23"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Maryland College Park",
+  "perf_str_addr": "",
+  "perf_city_name": "College Park",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "207425141",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "MD04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 499559.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Silicon physically unclonable functions (PUFs) are circuits that exploit modern manufacturing variations to generate unique signatures for chip authentication and cryptographic key generation. In this project, we investigated two important questions: How do we design better PUF circuits and What type of attacks are possible on PUFs. Existing research has focused on improving PUF quality at architectural or design levels, but has ignored opportunities available during fabrication, which is the source of systematic and random variation in (ICs)/PUFs. We developed mask level optical proximity correction based techniques along with circuit level enhancements for better quality PUFs and validated using simulations.</p>\n<p>&nbsp;Attacks on PUFs that predict the responses to input challenge vectors offer an interesting research problem. An attack approach based on the optimization theory and side-channel information is developed where we estimate the manufacturing variations of the circuit elements and predict the PUF&rsquo;s responses to challenge vectors whose actual responses are not known. We apply this attack approach on some popular PUF designs, including the Arbiter PUFs, the Memristor Crossbar PUFs, and the XOR Arbiter PUFs. Simulations show a substantial reduction in attack complexity compared with previously proposed machine-learning (ML)-based attacks.</p>\n<p>&nbsp;In addition, we have also investigated various significant questions pertaining to mitigating hardware Trojans and design obfuscation for untrusted foundries.</p>\n<p>&nbsp;The broader impacts of this project include student training, publications and various outreach activities.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/23/2017<br>\n\t\t\t\t\tModified by: Ankur&nbsp;Srivastava</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nSilicon physically unclonable functions (PUFs) are circuits that exploit modern manufacturing variations to generate unique signatures for chip authentication and cryptographic key generation. In this project, we investigated two important questions: How do we design better PUF circuits and What type of attacks are possible on PUFs. Existing research has focused on improving PUF quality at architectural or design levels, but has ignored opportunities available during fabrication, which is the source of systematic and random variation in (ICs)/PUFs. We developed mask level optical proximity correction based techniques along with circuit level enhancements for better quality PUFs and validated using simulations.\n\n Attacks on PUFs that predict the responses to input challenge vectors offer an interesting research problem. An attack approach based on the optimization theory and side-channel information is developed where we estimate the manufacturing variations of the circuit elements and predict the PUF?s responses to challenge vectors whose actual responses are not known. We apply this attack approach on some popular PUF designs, including the Arbiter PUFs, the Memristor Crossbar PUFs, and the XOR Arbiter PUFs. Simulations show a substantial reduction in attack complexity compared with previously proposed machine-learning (ML)-based attacks.\n\n In addition, we have also investigated various significant questions pertaining to mitigating hardware Trojans and design obfuscation for untrusted foundries.\n\n The broader impacts of this project include student training, publications and various outreach activities.\n\n \n\n\t\t\t\t\tLast Modified: 11/23/2017\n\n\t\t\t\t\tSubmitted by: Ankur Srivastava"
+ }
+}

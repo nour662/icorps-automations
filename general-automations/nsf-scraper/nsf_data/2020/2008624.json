@@ -1,0 +1,117 @@
+{
+ "awd_id": "2008624",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: CNS Core: Small: A Principled Framework for Workload Distribution Techniques in Large-Scale Networks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Ann Von Lehmen",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 333500.0,
+ "awd_amount": 333500.0,
+ "awd_min_amd_letter_date": "2020-08-24",
+ "awd_max_amd_letter_date": "2020-10-19",
+ "awd_abstract_narration": "Over the last decade, distributed computing and big data analytics have enabled unprecedented advancements in human life, including in medicine and health, education, business, and in stimulating new careers. And, it is fundamental to the computing industry, a significant economic engine for the US.  However, traditional approaches to distributed computing are developed as ad hoc solutions to individual applications. In the classical paradigm, the system designer specifies a simple model of the network, along with a few low-level design goals, such as high utilization and low job completion time, and then develops a fixed algorithm to distribute the computation across workers. Although this paradigm has  resulted in heuristics that work in practice, networks and applications continuously grow in complexity and heterogeneity, hence, the critical task of designing workload distribution algorithms that work well across a variety of conditions has become exceedingly difficult.  This proposal addresses that challenge by developing a general framework that can be used as applications and networks grow.  Ultimately, it will make distributed computing more explainable and better tailored to the needs of applications.\r\n\r\nWorkload distribution has a long and rich history. However, the existing literature lacks design principles for reasoning about compute versus communication tradeoffs in large-scale networks. This proposal seeks to develop a principled framework for workload distribution techniques. It aims to provide the mathematical foundations behind function computation in distributed networks, where a function is an abstraction of a computation task, such as training a neural network, indexing the web, query processing, etc. Hence, the operator does not have to rely on heuristics or simplified models to decide on workload distribution. Instead, the proposed framework offers the trade-off space between cost and performance for the best use of available resources. This proposal aims to address the fundamental challenge of parallel function computation in distributed networks and how to enable rigorous mathematical analysis of deployed approaches by (i) developing a series of core principles for workload distribution systems through analyzing a variety of applications, including datacenter job scheduling, decentralized Stochastic Gradient Descent training, and erasure coding for inference jobs, and (ii) devising a novel scheduling framework for distributing computation tasks in distributed networks. The proposed framework leverages Little\u2019s Law to minimize both communication and computation times when designing practical, robust, and high-performance workload distribution algorithms. The PIs will evaluate the proposed scheduler against state-of-the-art heuristic algorithms and pin-point the constraints and features that makes each heuristic a special use case of the generic framework.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Manya",
+   "pi_last_name": "Ghobadi",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Manya Ghobadi",
+   "pi_email_addr": "ghobadi@mit.edu",
+   "nsf_id": "000791554",
+   "pi_start_date": "2020-08-24",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Muriel",
+   "pi_last_name": "Medard",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Muriel Medard",
+   "pi_email_addr": "medard@mit.edu",
+   "nsf_id": "000106371",
+   "pi_start_date": "2020-08-24",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Massachusetts Institute of Technology",
+  "inst_street_address": "77 MASSACHUSETTS AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6172531000",
+  "inst_zip_code": "021394301",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+  "org_prnt_uei_num": "E2NYLCDML6V1",
+  "org_uei_num": "E2NYLCDML6V1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Massachusetts Instritute of Technology",
+  "perf_str_addr": "77 Massachusetts Avenue",
+  "perf_city_name": "Cambridge",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021394301",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 333500.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-071671b6-7fff-a7fe-45e4-cd7b899e80dc\">\n<p dir=\"ltr\"><span>This project aimed to develop a principled framework for workload distribution techniques in data center networks. The work provided the mathematical foundations behind function computation in distributed networks, where a function is an abstraction of a computation task such as training a neural network, indexing the web, query processing, machine learning inference, etc.&nbsp;</span></p>\n<br />\n<p dir=\"ltr\"><span>Our objectives were two-fold. First, we planned to develop a series of core principles for workload distribution systems by analyzing various applications. These principles raise the level of abstraction in function computation theory to provide a framework for network operators to handle large-scale distributed computation tasks and choose the best acceptable performance constrained by their practical limitations. Second, we aimed to design and develop a distributed function scheduler that enables workloads to be specified using our abstractions by connecting the dots between function computation theory and practical workload distribution using a framework that can capture intermediate function computations and the communication overhead incurred between distributed workers. The contributions of this project are as follows.</span></p>\n<br />\n<p dir=\"ltr\"><span>First, we have developed Nona, a principled framework for distributing latency-sensitive jobs considering a cluster's compute and communication resources. In doing so, we developed a mathematical formulation to characterize the job completion time of a series of jobs distributed in a cluster with stochastic allocation strategies. From this formulation, we derived an optimization problem to find the optimal scheduling strategy. Nona&rsquo;s formulation used queueing-theoretic techniques to handle locality dependencies and to balance gains from parallelism with added network delay from congestion. Through careful propagation of probability distributions of different jobs' DAGs, we included stochastic dependency in our formulation. Further, we implemented a stochastic scheduler that uses the solution found by the optimization to perform placement decisions in real-time. Using real-world applications, we demonstrated that Nona improves the job completion time by an order of magnitude.</span></p>\n<br />\n<p dir=\"ltr\"><span>Second, we developed a distributed coded computation approach that allows for intermediate results to be released at an earlier stage than the final result. We introduced the novel concept of layered-resolution distributed coded computations such that lower resolutions of the final result are obtained from the collective results of the workers &ndash; at an earlier stage than the final result. This innovation makes it possible to have more effective deadline-based systems, since even if a computational job is terminated because of timing, an approximated version of the final result can be released. Based on our theoretical and empirical results, the average execution delay for the first resolution is notably smaller than for the final resolution.&nbsp;</span></p>\n<br />\n<p dir=\"ltr\"><span>Finally, we provided a flow-based coded caching framework for information-centric networks. We jointly optimized delivery rates, cross-coding across nodes/servers, and cache content allocation as a function of demand and the network&rsquo;s topology. Our model accounts for storage and transmission costs, demand asymmetry, and arbitrary multi-hop topologies, and relies on an ordered flow-based decoding schedule for the transmissions created by pairwise coded flows. Through extensive experiments over multiple topologies, we observed that our coded caching scheme reduced transmission costs over competitors by several orders of magnitude.</span></p>\n<br />\n<p dir=\"ltr\"><span>This project involved students ranging from undergraduate to graduate and postdoctoral levels, and exposed them to the multidisciplinary nature of research &ndash; from new queueing theory concepts to practical system architecture to application and experimental analysis of emerging workloads, enabled by the cross-stack approach of the CNS core project.</span></p>\n<br /></span></p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 01/04/2024<br>\nModified by: Manya&nbsp;Ghobadi</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\n\n\n\nThis project aimed to develop a principled framework for workload distribution techniques in data center networks. The work provided the mathematical foundations behind function computation in distributed networks, where a function is an abstraction of a computation task such as training a neural network, indexing the web, query processing, machine learning inference, etc.\n\n\n\n\nOur objectives were two-fold. First, we planned to develop a series of core principles for workload distribution systems by analyzing various applications. These principles raise the level of abstraction in function computation theory to provide a framework for network operators to handle large-scale distributed computation tasks and choose the best acceptable performance constrained by their practical limitations. Second, we aimed to design and develop a distributed function scheduler that enables workloads to be specified using our abstractions by connecting the dots between function computation theory and practical workload distribution using a framework that can capture intermediate function computations and the communication overhead incurred between distributed workers. The contributions of this project are as follows.\n\n\n\n\nFirst, we have developed Nona, a principled framework for distributing latency-sensitive jobs considering a cluster's compute and communication resources. In doing so, we developed a mathematical formulation to characterize the job completion time of a series of jobs distributed in a cluster with stochastic allocation strategies. From this formulation, we derived an optimization problem to find the optimal scheduling strategy. Nonas formulation used queueing-theoretic techniques to handle locality dependencies and to balance gains from parallelism with added network delay from congestion. Through careful propagation of probability distributions of different jobs' DAGs, we included stochastic dependency in our formulation. Further, we implemented a stochastic scheduler that uses the solution found by the optimization to perform placement decisions in real-time. Using real-world applications, we demonstrated that Nona improves the job completion time by an order of magnitude.\n\n\n\n\nSecond, we developed a distributed coded computation approach that allows for intermediate results to be released at an earlier stage than the final result. We introduced the novel concept of layered-resolution distributed coded computations such that lower resolutions of the final result are obtained from the collective results of the workers  at an earlier stage than the final result. This innovation makes it possible to have more effective deadline-based systems, since even if a computational job is terminated because of timing, an approximated version of the final result can be released. Based on our theoretical and empirical results, the average execution delay for the first resolution is notably smaller than for the final resolution.\n\n\n\n\nFinally, we provided a flow-based coded caching framework for information-centric networks. We jointly optimized delivery rates, cross-coding across nodes/servers, and cache content allocation as a function of demand and the networks topology. Our model accounts for storage and transmission costs, demand asymmetry, and arbitrary multi-hop topologies, and relies on an ordered flow-based decoding schedule for the transmissions created by pairwise coded flows. Through extensive experiments over multiple topologies, we observed that our coded caching scheme reduced transmission costs over competitors by several orders of magnitude.\n\n\n\n\nThis project involved students ranging from undergraduate to graduate and postdoctoral levels, and exposed them to the multidisciplinary nature of research  from new queueing theory concepts to practical system architecture to application and experimental analysis of emerging workloads, enabled by the cross-stack approach of the CNS core project.\n\n\n\n\n\t\t\t\t\tLast Modified: 01/04/2024\n\n\t\t\t\t\tSubmitted by: ManyaGhobadi\n"
+ }
+}

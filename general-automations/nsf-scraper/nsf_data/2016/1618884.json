@@ -1,0 +1,105 @@
+{
+ "awd_id": "1618884",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Small: Collaborative: An Iterative Approach to Secure Computation",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927991",
+ "po_email": "namla@nsf.gov",
+ "po_sign_block_name": "Nina Amla",
+ "awd_eff_date": "2016-09-15",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 249517.0,
+ "awd_amount": 249517.0,
+ "awd_min_amd_letter_date": "2016-09-14",
+ "awd_max_amd_letter_date": "2016-09-14",
+ "awd_abstract_narration": "Secure multi-party computation (SMC) allows several mutually untrusting parties to perform joint computations while keeping their inputs private. This project develops new techniques for constructing two-party secure computation protocols with low communication overhead.   Building on the PIs prior work for constructing special-purpose secure computation protocols for greedy algorithms, this project aims to develop new techniques that exploit the algorithmic structure of a function in order to develop more efficient secure computation protocols.  Of particular interest in this project are linear algebraic tasks, graph matching algorithms, and problems from computational geometry. The project develops new methods to achieve security against covert adversaries for these problems.\r\n\r\n\r\nThe investigators broadly disseminate the outcomes of the research and software libraries in order to benefit both theoreticians and practitioners. The project includes various educational and outreach activities such as organizing workshops for high-school students. The project has created a wiki for cryptographic constructions and security notions associated with these constructions.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Muthuramakrishn",
+   "pi_last_name": "Venkitasubramaniam",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Muthuramakrishn Venkitasubramaniam",
+   "pi_email_addr": "muthuv@cs.rochester.edu",
+   "nsf_id": "000595451",
+   "pi_start_date": "2016-09-14",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Rochester",
+  "inst_street_address": "910 GENESEE ST",
+  "inst_street_address_2": "STE 200",
+  "inst_city_name": "ROCHESTER",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "5852754031",
+  "inst_zip_code": "146113847",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "NY25",
+  "org_lgl_bus_name": "UNIVERSITY OF ROCHESTER",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "F27KDXZMF9Y8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Rochester",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "146270140",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "25",
+  "perf_st_cong_dist": "NY25",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 249517.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-384e719b-7fff-1f1a-c65b-1cd35e0509ea\"> </span></p>\n<p dir=\"ltr\"><span>This project has developed new techniques for constructing two-party and multi-party secure computation protocols with low communication overhead.&nbsp; The standard method for designing a secure computation protocol for function $f$ first transforms f into either a circuit or a RAM program and then applies a generic secure computation protocol that either handles boolean gates or translates the RAM program into oblivious RAM instructions. While much progress has been made to reduce the overhead for both circuit and ORAM techniques, the communication overhead remains a substantial bottleneck.</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>One of the main outcomes of our project is a new paradigm for securely computing functions that are ``efficiently verifiable''. A function $f(x,y)$ is efficiently verifiable by another function $g$ if the running time of $g$ is always smaller than $f$ and $g(x,y,z)=1$ if and only if $f(x,y)=z$. For such functions $f$, we show how to construct 2-party secure computation protocols in the 1-bit leak adversary model and the fully malicious adversary model that are asymptotically more efficient than the state-of-the-art techniques. Our techniques apply to problems as varied as matrix multiplication, optimization problems such as max-flow and minimum spanning tree.</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>We also&nbsp; extend and generalize the technique by showing how to apply it to any secure protocol that is secure up to additive errors. As another concrete example, we present a novel protocol for computing perfect matching that is secure in the 1-bit leakage model by leveraging the fact that perfect matchings can be efficiently verified.&nbsp;</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>Building on these techniques, we also constructed state-of-the-art secure computation protocols for ECDSA key generation and signing for both 2- and n- parties that are secure against n-1 malicious parties.&nbsp; These protocols rely on a new technique for detecting cheating by verifying the output signatures.&nbsp; Similarly, we have designed secure protocols for sampling an RSA modulus that also rely on special verifiability properties of the function in order to protect against malicious parties.</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>Finally, we introduced a new secure two-party computation for arithmetic circuits and gave the first implementation of a general compiler that takes an arbitrary passively secure protocol for the oblivious linear evaluation functionality (OLE) and uses it in a black-box way to obtain an actively secure protocol for arithmetic circuits.</span></p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/17/2022<br>\n\t\t\t\t\tModified by: Muthuramakrishn&nbsp;Venkitasubramaniam</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \nThis project has developed new techniques for constructing two-party and multi-party secure computation protocols with low communication overhead.  The standard method for designing a secure computation protocol for function $f$ first transforms f into either a circuit or a RAM program and then applies a generic secure computation protocol that either handles boolean gates or translates the RAM program into oblivious RAM instructions. While much progress has been made to reduce the overhead for both circuit and ORAM techniques, the communication overhead remains a substantial bottleneck.\n\n \nOne of the main outcomes of our project is a new paradigm for securely computing functions that are ``efficiently verifiable''. A function $f(x,y)$ is efficiently verifiable by another function $g$ if the running time of $g$ is always smaller than $f$ and $g(x,y,z)=1$ if and only if $f(x,y)=z$. For such functions $f$, we show how to construct 2-party secure computation protocols in the 1-bit leak adversary model and the fully malicious adversary model that are asymptotically more efficient than the state-of-the-art techniques. Our techniques apply to problems as varied as matrix multiplication, optimization problems such as max-flow and minimum spanning tree.\n\n \nWe also  extend and generalize the technique by showing how to apply it to any secure protocol that is secure up to additive errors. As another concrete example, we present a novel protocol for computing perfect matching that is secure in the 1-bit leakage model by leveraging the fact that perfect matchings can be efficiently verified. \n\n \nBuilding on these techniques, we also constructed state-of-the-art secure computation protocols for ECDSA key generation and signing for both 2- and n- parties that are secure against n-1 malicious parties.  These protocols rely on a new technique for detecting cheating by verifying the output signatures.  Similarly, we have designed secure protocols for sampling an RSA modulus that also rely on special verifiability properties of the function in order to protect against malicious parties.\n\n \nFinally, we introduced a new secure two-party computation for arithmetic circuits and gave the first implementation of a general compiler that takes an arbitrary passively secure protocol for the oblivious linear evaluation functionality (OLE) and uses it in a black-box way to obtain an actively secure protocol for arithmetic circuits.\n\n \n\n \n\n \n\n\t\t\t\t\tLast Modified: 01/17/2022\n\n\t\t\t\t\tSubmitted by: Muthuramakrishn Venkitasubramaniam"
+ }
+}

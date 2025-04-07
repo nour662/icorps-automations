@@ -1,0 +1,101 @@
+{
+ "awd_id": "1217281",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "III: Small: Topical Positioning System (TPS) for Informed Reading of Web Pages",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Maria Zemankova",
+ "awd_eff_date": "2012-10-01",
+ "awd_exp_date": "2017-09-30",
+ "tot_intn_awd_amt": 499752.0,
+ "awd_amount": 499752.0,
+ "awd_min_amd_letter_date": "2012-09-06",
+ "awd_max_amd_letter_date": "2012-09-06",
+ "awd_abstract_narration": "This work addresses the challenge of increasing the critical literacy of people looking for information on the Web, including information regarding healthcare, policy, or any other broadly discussed topic. The proposed research on Topical Positioning System \"TPS\" drives the vision of developing a browser tool that shows a person whether the web page in front of them discusses a provocative topic, whether the material is presented in a heavily biased way, whether it represents an outlier (fringe) idea, and how its discussion of issues relates to the broader context and to information presented in \"familiar\" sources. This research applies and extends text analysis and comparison techniques to this problem. It uses statistical language modeling, topic modeling, machine learning, and link analysis techniques to represent Web pages and clusters of Web pages. It requires both off-line pre-processing to organize web-scale collections and on-line, query-time fine-tuning of the organization for presentation in a TPS browser add-on. \r\n\r\nThis research will be the foundation of class projects as well as graduate student research, exposing a large number of students to issues of web-based search and critical evaluation of information. More importantly, however, this work has the potential to impact many people, helping them make more informed choices in response to what they read on the Web and elsewhere. The results of this project will be published in peer-reviewed venues and listed at the project Web site (http://ciir.cs.umass.edu/research/tps).  A freely available TPS browser add-on will be available at this Web site.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "James",
+   "pi_last_name": "Allan",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "James M Allan",
+   "pi_email_addr": "allan@cs.umass.edu",
+   "nsf_id": "000209290",
+   "pi_start_date": "2012-09-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Massachusetts Amherst",
+  "inst_street_address": "101 COMMONWEALTH AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "AMHERST",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "4135450698",
+  "inst_zip_code": "010039252",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "MA02",
+  "org_lgl_bus_name": "UNIVERSITY OF MASSACHUSETTS",
+  "org_prnt_uei_num": "VGJHK59NMPK9",
+  "org_uei_num": "VGJHK59NMPK9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Massachusetts Amherst",
+  "perf_str_addr": "OGCA, 70 Butterfield Terrace",
+  "perf_city_name": "Amherst",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "010039242",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "MA02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736400",
+   "pgm_ele_name": "Info Integration & Informatics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 499752.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Search engines have made it easy for people to find useful information; however, those search engines have also made it equally easy for people to stumble upon advice and comments that are of dubious or even negative value. This project&rsquo;s goal was to develop and foster technologies to assist people in critical evaluation of the material they find on the internet, and to help them understand why a page is educative or why it is not. It is driven by a vision of a &ldquo;Topical Positioning System&rdquo; (TPS) tool that shows a person whether the web page in front of them discusses a provocative topic, whether the material is presented in a heavily biased way, and whether it represents an outlier (fringe) idea, with the ultimate goal of visualizing how its discussion of issues relates to the broader context and to information presented in authoritative sources.&nbsp; The motivating goal is ultimately not to present the person with a filter or grade for each web page, but to help them recognize that there is a larger discussion and to critically evaluate how the page in question is positioned in that discussion.</p>\n<p>This project demonstrated that controversy detection was possible using Wikipedia as a source of \"topics\" and using automatic estimates of controversy derived from the edit history of those articles (Dori-Hacohen and Allan 2013 and 2015). It was extended to demonstrate that Twitter feeds could also be used to identify controversial topics. It demonstrated that intensities of controversy among related pages are not independent and proposed a stacked model which exploits the dependencies among related pages to improve classification of controversial web pages when compared to examining each page in isolation (Dori-Hacohen, Jensen, and Allan 2016).</p>\n<p>Following on from that effort, we undertook work to model controversy more directly and more formally, resulting in some new approaches (Jang, Foley, Dori-Hacohen, and Allan 2016), including a formal model that encompasses the Wikipedia and Twitter models. Based on insights from social science research, it also introduced a language modeling approach to this problem. We extensively evaluated different methods of creating controversy language models based on a diverse set of public datasets including Wikipedia, Web and News corpora.</p>\n<p>The primary result of the project has been a clear demonstration that it is possible to detect controversy in arbitrary web pages with reasonable accuracy using different sources to derive labeled training data. The work has laid the foundation for leveraging summarization technologies to explain the nature of controversy and how a page is positioned in the larger discourse.</p>\n<p>An additional outcome of this project has been the creation of a startup company to deploy this technology to recognize changes in controversial material in public media. The startup, founded by one of the PhD students (now graduated) whose work was funded by this project, was supported by an NSF I-Corps grant and is currently in the midst of its ongoing customer discovery process.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/28/2017<br>\n\t\t\t\t\tModified by: James&nbsp;M&nbsp;Allan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nSearch engines have made it easy for people to find useful information; however, those search engines have also made it equally easy for people to stumble upon advice and comments that are of dubious or even negative value. This project?s goal was to develop and foster technologies to assist people in critical evaluation of the material they find on the internet, and to help them understand why a page is educative or why it is not. It is driven by a vision of a \"Topical Positioning System\" (TPS) tool that shows a person whether the web page in front of them discusses a provocative topic, whether the material is presented in a heavily biased way, and whether it represents an outlier (fringe) idea, with the ultimate goal of visualizing how its discussion of issues relates to the broader context and to information presented in authoritative sources.  The motivating goal is ultimately not to present the person with a filter or grade for each web page, but to help them recognize that there is a larger discussion and to critically evaluate how the page in question is positioned in that discussion.\n\nThis project demonstrated that controversy detection was possible using Wikipedia as a source of \"topics\" and using automatic estimates of controversy derived from the edit history of those articles (Dori-Hacohen and Allan 2013 and 2015). It was extended to demonstrate that Twitter feeds could also be used to identify controversial topics. It demonstrated that intensities of controversy among related pages are not independent and proposed a stacked model which exploits the dependencies among related pages to improve classification of controversial web pages when compared to examining each page in isolation (Dori-Hacohen, Jensen, and Allan 2016).\n\nFollowing on from that effort, we undertook work to model controversy more directly and more formally, resulting in some new approaches (Jang, Foley, Dori-Hacohen, and Allan 2016), including a formal model that encompasses the Wikipedia and Twitter models. Based on insights from social science research, it also introduced a language modeling approach to this problem. We extensively evaluated different methods of creating controversy language models based on a diverse set of public datasets including Wikipedia, Web and News corpora.\n\nThe primary result of the project has been a clear demonstration that it is possible to detect controversy in arbitrary web pages with reasonable accuracy using different sources to derive labeled training data. The work has laid the foundation for leveraging summarization technologies to explain the nature of controversy and how a page is positioned in the larger discourse.\n\nAn additional outcome of this project has been the creation of a startup company to deploy this technology to recognize changes in controversial material in public media. The startup, founded by one of the PhD students (now graduated) whose work was funded by this project, was supported by an NSF I-Corps grant and is currently in the midst of its ongoing customer discovery process.\n\n\t\t\t\t\tLast Modified: 12/28/2017\n\n\t\t\t\t\tSubmitted by: James M Allan"
+ }
+}

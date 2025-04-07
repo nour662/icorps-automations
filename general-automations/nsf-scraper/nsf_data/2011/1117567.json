@@ -1,0 +1,117 @@
+{
+ "awd_id": "1117567",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small: Distributed System Diagnosis via Request Flow Comparison",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2014-07-31",
+ "tot_intn_awd_amt": 487764.0,
+ "awd_amount": 487764.0,
+ "awd_min_amd_letter_date": "2011-08-01",
+ "awd_max_amd_letter_date": "2011-08-01",
+ "awd_abstract_narration": "This work builds on recent instrumentation approaches that provide low-overhead end-to-end tracing (e.g., Stardust and Dapper) that can capture the flow (i.e., path and timing) of individual requests within and across the components of a distributed system.  \r\n\r\nIn addition to tools for profiling and examining system behavior, the PIs are creating tools that compare request flows between two executions to guide understanding of changes in performance, as contrasted with determining why a system has always been slow.  Comparing request flows can help diagnose a large class of performance problems, such as degradations resulting from software changes/upgrades or from usage over time (e.g., due to resource leakage or workload changes).  \r\n\r\nThis research is evaluating the efficacy of this approach, addressing scalability challenges in instrumentation data collection and analysis, and exploring the effects of virtualization on variability.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Gregory",
+   "pi_last_name": "Ganger",
+   "pi_mid_init": "R",
+   "pi_sufx_name": "",
+   "pi_full_name": "Gregory R Ganger",
+   "pi_email_addr": "ganger@ece.cmu.edu",
+   "nsf_id": "000328442",
+   "pi_start_date": "2011-08-01",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Chuck",
+   "pi_last_name": "Cranor",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Chuck Cranor",
+   "pi_email_addr": "chuck@andrew.cmu.edu",
+   "nsf_id": "000255876",
+   "pi_start_date": "2011-08-01",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Carnegie-Mellon University",
+  "inst_street_address": "5000 FORBES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4122688746",
+  "inst_zip_code": "152133815",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "CARNEGIE MELLON UNIVERSITY",
+  "org_prnt_uei_num": "U3NKNFLNQ613",
+  "org_uei_num": "U3NKNFLNQ613"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Carnegie-Mellon University",
+  "perf_str_addr": "5000 FORBES AVE",
+  "perf_city_name": "PITTSBURGH",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152133815",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7354",
+   "pgm_ref_txt": "COMPUTER SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 487764.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The causes of performance changes in a distributed software system often elude even its developers. &nbsp;This project developed, demonstrated, and evaluated a new technique for gaining insight into such changes: comparing request flows from two executions (e.g., of two system versions or time periods). &nbsp;Building on end-to-end request-flow tracing within and across software components of a distributed service (e.g., an Internet service), algorithms were developed for identifying and ranking changes in the flow and/or timing of request processing. &nbsp;These algorithms were implemented in a tool called Spectroscope, which was used for a broad array of evaluations. &nbsp;Example case studies used Spectroscope to diagnose performance problems in a distributed storage service caused by code changes, configuration modifications, and component degradations, demonstrating the value and efficacy of comparing request flows. &nbsp;The project also transferred the algorithms to some companies and reported on their use to diagnose performance changes within select Google services.</p>\n<p>In addition to developing this new technique and evaluating its overall efficacy, in multiple real distributed services and real performance problem case studies, this project explored (via user studies) visualization approaches for helping users interactively diagnose complex problems and software development approaches for improving the effectiveness of automated problem diagnosis tools. &nbsp;Our findings indicate that no single visualization approach is best for all users and problem types, but that a production navigation interface can be effective by supporting multiple styles (inc. side-by-side comparison of graphs, user-controlled animation, and overlay) and allowing a user to switch among them at will. &nbsp;Our findings also indicate that the statistical methods underlying automated problem diagnosis are confounded by excessive variance in non-problem request flow timings, making it crucial for software systems to be predictable within nodes of a request flow. &nbsp;To assist with this, the project developed techniques for guiding developers toward points in a software system where variance is a problem.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/16/2015<br>\n\t\t\t\t\tModified by: Gregory&nbsp;R&nbsp;Ganger</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe causes of performance changes in a distributed software system often elude even its developers.  This project developed, demonstrated, and evaluated a new technique for gaining insight into such changes: comparing request flows from two executions (e.g., of two system versions or time periods).  Building on end-to-end request-flow tracing within and across software components of a distributed service (e.g., an Internet service), algorithms were developed for identifying and ranking changes in the flow and/or timing of request processing.  These algorithms were implemented in a tool called Spectroscope, which was used for a broad array of evaluations.  Example case studies used Spectroscope to diagnose performance problems in a distributed storage service caused by code changes, configuration modifications, and component degradations, demonstrating the value and efficacy of comparing request flows.  The project also transferred the algorithms to some companies and reported on their use to diagnose performance changes within select Google services.\n\nIn addition to developing this new technique and evaluating its overall efficacy, in multiple real distributed services and real performance problem case studies, this project explored (via user studies) visualization approaches for helping users interactively diagnose complex problems and software development approaches for improving the effectiveness of automated problem diagnosis tools.  Our findings indicate that no single visualization approach is best for all users and problem types, but that a production navigation interface can be effective by supporting multiple styles (inc. side-by-side comparison of graphs, user-controlled animation, and overlay) and allowing a user to switch among them at will.  Our findings also indicate that the statistical methods underlying automated problem diagnosis are confounded by excessive variance in non-problem request flow timings, making it crucial for software systems to be predictable within nodes of a request flow.  To assist with this, the project developed techniques for guiding developers toward points in a software system where variance is a problem.\n\n \n\n\t\t\t\t\tLast Modified: 08/16/2015\n\n\t\t\t\t\tSubmitted by: Gregory R Ganger"
+ }
+}

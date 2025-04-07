@@ -1,0 +1,105 @@
+{
+ "awd_id": "2012355",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Computational Harmonic Analysis Approach to Active Learning",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2020-07-01",
+ "awd_exp_date": "2024-06-30",
+ "tot_intn_awd_amt": 270448.0,
+ "awd_amount": 270448.0,
+ "awd_min_amd_letter_date": "2020-05-19",
+ "awd_max_amd_letter_date": "2020-05-19",
+ "awd_abstract_narration": "Research in supervised learning is concerned with uncovering relationships between training data and some function or label that is attached to each datum, with the goal of generalizing to new samples. Modern machine learning tools, such as deep networks, typically require a huge set of training data in order to classify the rest of the data with sufficient confidence. Obviously, assigning an accurate label to a datum can be an expensive task, involving a great deal of human effort. This project seeks to develop methods to classify large amounts of data with a theoretically minimal number of training labels. The key to classifying with a small number of labels comes with the ability to choose at which data points a label will be queried. This collaborative research project will study these methods, known as active machine learning, from a geometric and harmonic analysis perspective, focusing on both algorithmic insights and theoretical guarantees. The ability to perform classification with a small number of labeled points has important implications in a variety of applications, including remote sensing classification, medical data analysis, and general applications where it is expensive to collect labels.\r\n\r\nThis project applies knowledge in computational harmonic analysis, function approximation, and machine learning to the study of active learning models, focusing on algorithmic insights, efficient implementations, and performance guarantees for both novel algorithms and currently existing machine learning algorithms. Mathematical tools, including localized kernel construction, approximation analysis in terms of intrinsic dimensionality, and harmonic analysis of eigenfunctions of operators on graphs and manifolds, have natural applications in the study of these areas. Specifically, the project addresses four fundamental questions that arise in the field: (1) How do you conservatively propagate the sampled labels to new points when the labels form a hierarchical clustering with possibly zero minimal separation between clusters? (2) Does the mechanism of kernel active learning generalize to graphs, where naive choice of points to sample becomes a combinatorial optimization problem? (3) Can we incorporate the structure of a neural network (or general parametric) classifier into the choice of labels queried and provably bound the generalization error for predictions on the rest of the data? (4) How can we tailor our framework to transfer learning and high-dimensional imaging?\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Hrushikesh",
+   "pi_last_name": "Mhaskar",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Hrushikesh Mhaskar",
+   "pi_email_addr": "Hrushikesh.Mhaskar@cgu.edu",
+   "nsf_id": "000632124",
+   "pi_start_date": "2020-05-19",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Claremont Graduate University",
+  "inst_street_address": "150 E 10TH ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "CLAREMONT",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9096079296",
+  "inst_zip_code": "917115909",
+  "inst_country_name": "United States",
+  "cong_dist_code": "28",
+  "st_cong_dist_code": "CA28",
+  "org_lgl_bus_name": "CLAREMONT GRADUATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "N34CXJCDNDU1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Claremont Graduate University",
+  "perf_str_addr": "150 East Tenth Street",
+  "perf_city_name": "Claremont",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "917115909",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "28",
+  "perf_st_cong_dist": "CA28",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "079Z",
+   "pgm_ref_txt": "Machine Learning Theory"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 270448.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><pre><pre><pre><span>Active learning is a paradigm in machine learning where the algorithm <br />strategically selects the most informative data points for labeling, aiming to <br />maximize model performance while minimizing labeling costs. This approach is <br />particularly effective when dealing with large </span><span>datasets</span><span> where manual labeling is <br />expensive or time-consuming. By focusing on data points near decision <br />boundaries or data points that are representative of a given cluster, active <br />learning algorithms can efficiently improve model accuracy and generalization. <br />These boundary points are often the most challenging for the model to classify <br />and therefore provide the most valuable information for refining the decision <br />boundary.  This approach has been successfully applied in various domains, <br />including text classification, image recognition, and </span><span>biomedical</span><span> research, where it <br />has significantly reduced the time and resources required for building accurate <br />machine learning models. </span></pre>\n<pre><br /></pre>\n<pre>Much of our research has focused on developing algorithms and theoretical <br />analysis for querying the class label at a very small number of judiciously chosen <br />points so as to be able to attach the appropriate class label to every point in the <br />set.  As part of this award, we have started to develop a totally new paradigm for <br />machine learning. In classical machine learning, approximation theory plays only <br />a marginal role, even though the fundamental problem of machine learning is <br />often stated as a problem of function approximation. Assuming that the data <br />comes from an unknown manifold, we have developed an approximation method <br />based directly on the data, with theoretical performance guarantees, and without<br /> using any optimization. We have argued that classification problems are fruitfully<br /> treated analogously to the problem of super-resolution signal processing. For this<br /> purpose, we have developed a novel approach based on localized kernels that is <br />capable of learning a hierarchical estimate of the supports of class label <br />distributions without any assumptions on the number of classes or even on the <br />minimal separation between the supports.   Similarly, we've developed statistical <br />convergence results for the kernel witness function, which can be used to detect <br />the boundaries between these supports.  We've applied these methods to <br />hyperspectral image classification, determining ``in-class'' and ``out-of-class'' <br />regions in the latent space of a generative model, and determining propensity of<br /> treatment for various populations.</pre>\n<pre><br /></pre>\n<pre>Another line of research has focused on generalizing active learning algorithms, <br />traditionally defined on Euclidean space, to data that is graph based.   As a part <br />of this award, we have developed several approaches for learning where to <br />sample labels to approximate function means on graphs, and show the number of<br /> labels needed is vastly smaller than the number of data points available.  We also<br /> developed novel methods for active exploration sampling on graphs that serves <br />as a computationally efficient proxy for maximizing the Fiedler value of the <br />unlabeled data submatrix of the graph Laplacian. Similarly, we've developed <br />various novel versions of distances on graphs, including generalizations of <br />effective resistance and optimal transport to connection graphs, and distance <br />measures between time series and random fields that go to zero when there is <br />partial overlap of the distributions.  These notions of distance can be instrumental <br />to defining active learning based exploration strategies on graph based data sets. <br /> We've applied these methods to node classification in citation networks, learning<br /> on time series windows and image patches, and vector field clustering.</pre>\n<pre>Finally, we have developed methods for incorporating our analyses into <br />off-the-shelf ML algorithms.   As part of this grant, we developed hierarchical <br />exploration based strategies for streaming boosted kernel regression, and show <br />that the method can achieve zero training error using a small subset of the labels<br /> of the data points. Similarly, we've demonstrated that neural networks learn <br />witness functions and powerful statistical tests between distributions incredibly <br />quickly, much faster and with fewer number of points than traditional neural <br />tangent kernel analysis would suggest.  This implies that the boundary between<br /> classes can be detected incredibly quickly in training, which would allow one to <br />begin actively sampling labels near the boundary after only a couple epochs of <br />training. We have applied these methods to statistical two sample testing<br /> between distributions, and forecasting of dynamical systems given an initial <br />condition and training data from other trajectories.</pre>\n<pre>The research we conducted involved five graduate students at UCSD, and two<br /> graduate students and one postdoc at CGU.  Our results for this collaborative <br />award across UCSD and CGU have resulted in 28 publications and numerous <br />preprints, was presented at 51 seminars and conferences, and 5 workshops or <br />minisymposium were organized by the authors on topics related to this grant. <br />Additionally, some of the mathematical methods we used and developed were <br />taught in graduate courses developed by the PIs.</pre>\n<pre><br /></pre>\n<pre><br /></pre>\n<br /></pre>\n</pre><br>\n<p>\n Last Modified: 10/30/2024<br>\nModified by: Hrushikesh&nbsp;Mhaskar</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\n\n\n\n\nActive learning is a paradigm in machine learning where the algorithm \nstrategically selects the most informative data points for labeling, aiming to \nmaximize model performance while minimizing labeling costs. This approach is \nparticularly effective when dealing with large datasets where manual labeling is \nexpensive or time-consuming. By focusing on data points near decision \nboundaries or data points that are representative of a given cluster, active \nlearning algorithms can efficiently improve model accuracy and generalization. \nThese boundary points are often the most challenging for the model to classify \nand therefore provide the most valuable information for refining the decision \nboundary.  This approach has been successfully applied in various domains, \nincluding text classification, image recognition, and biomedical research, where it \nhas significantly reduced the time and resources required for building accurate \nmachine learning models. \n\n\n\n\n\n\nMuch of our research has focused on developing algorithms and theoretical \nanalysis for querying the class label at a very small number of judiciously chosen \npoints so as to be able to attach the appropriate class label to every point in the \nset.  As part of this award, we have started to develop a totally new paradigm for \nmachine learning. In classical machine learning, approximation theory plays only \na marginal role, even though the fundamental problem of machine learning is \noften stated as a problem of function approximation. Assuming that the data \ncomes from an unknown manifold, we have developed an approximation method \nbased directly on the data, with theoretical performance guarantees, and without\n using any optimization. We have argued that classification problems are fruitfully\n treated analogously to the problem of super-resolution signal processing. For this\n purpose, we have developed a novel approach based on localized kernels that is \ncapable of learning a hierarchical estimate of the supports of class label \ndistributions without any assumptions on the number of classes or even on the \nminimal separation between the supports.   Similarly, we've developed statistical \nconvergence results for the kernel witness function, which can be used to detect \nthe boundaries between these supports.  We've applied these methods to \nhyperspectral image classification, determining ``in-class'' and ``out-of-class'' \nregions in the latent space of a generative model, and determining propensity of\n treatment for various populations.\n\n\n\n\n\n\nAnother line of research has focused on generalizing active learning algorithms, \ntraditionally defined on Euclidean space, to data that is graph based.   As a part \nof this award, we have developed several approaches for learning where to \nsample labels to approximate function means on graphs, and show the number of\n labels needed is vastly smaller than the number of data points available.  We also\n developed novel methods for active exploration sampling on graphs that serves \nas a computationally efficient proxy for maximizing the Fiedler value of the \nunlabeled data submatrix of the graph Laplacian. Similarly, we've developed \nvarious novel versions of distances on graphs, including generalizations of \neffective resistance and optimal transport to connection graphs, and distance \nmeasures between time series and random fields that go to zero when there is \npartial overlap of the distributions.  These notions of distance can be instrumental \nto defining active learning based exploration strategies on graph based data sets. \n We've applied these methods to node classification in citation networks, learning\n on time series windows and image patches, and vector field clustering.\n\n\nFinally, we have developed methods for incorporating our analyses into \noff-the-shelf ML algorithms.   As part of this grant, we developed hierarchical \nexploration based strategies for streaming boosted kernel regression, and show \nthat the method can achieve zero training error using a small subset of the labels\n of the data points. Similarly, we've demonstrated that neural networks learn \nwitness functions and powerful statistical tests between distributions incredibly \nquickly, much faster and with fewer number of points than traditional neural \ntangent kernel analysis would suggest.  This implies that the boundary between\n classes can be detected incredibly quickly in training, which would allow one to \nbegin actively sampling labels near the boundary after only a couple epochs of \ntraining. We have applied these methods to statistical two sample testing\n between distributions, and forecasting of dynamical systems given an initial \ncondition and training data from other trajectories.\n\n\nThe research we conducted involved five graduate students at UCSD, and two\n graduate students and one postdoc at CGU.  Our results for this collaborative \naward across UCSD and CGU have resulted in 28 publications and numerous \npreprints, was presented at 51 seminars and conferences, and 5 workshops or \nminisymposium were organized by the authors on topics related to this grant. \nAdditionally, some of the mathematical methods we used and developed were \ntaught in graduate courses developed by the PIs.\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\tLast Modified: 10/30/2024\n\n\t\t\t\t\tSubmitted by: HrushikeshMhaskar\n"
+ }
+}

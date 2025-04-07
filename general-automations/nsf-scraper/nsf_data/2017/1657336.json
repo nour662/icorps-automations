@@ -1,0 +1,105 @@
+{
+ "awd_id": "1657336",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: SHF: Design and Analysis of Processing-Near-Memory Enabled GPU Architecture",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Yuanyuan Yang",
+ "awd_eff_date": "2017-02-01",
+ "awd_exp_date": "2020-01-31",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 175000.0,
+ "awd_min_amd_letter_date": "2017-01-25",
+ "awd_max_amd_letter_date": "2017-01-25",
+ "awd_abstract_narration": "Graphics Processing Units (GPUs) are becoming an inevitable part of every\u00a0computing system because of their ability to enable orders of magnitude faster and\u00a0energy-efficient execution. However, the necessary and continuous scaling of GPUs\u00a0in terms of performance and energy efficiency will not be an easy task.\u00a0Prior works have shown that two biggest impediments towards this scaling are the\u00a0limited memory bandwidth and the excessive data movement across different levels\u00a0of the memory hierarchy. In order to alleviate these two issues, die-stacking technology\u00a0is gaining momentum in the realm of high-performance energy-efficient GPU computing.\u00a0This technology not only enables very high memory bandwidth for better performance\u00a0but also provides support for processing-near-memory (PNM) to reduce data movement,\u00a0access latencies, and energy consumption. Although these technologies seem promising,\u00a0the architectural support and execution models for PNM-based GPUs and their\u00a0implications on the entire system design have largely been unexplored. This project takes a fresh look at the design and execution model of a PNM-enabled GPU, which consists of multiple memory stacks and each memory stack incorporates\u00a0a 3D-stacked logic layer that can consist of multiple PNM GPU cores and other uncore\u00a0components. Considering that GPUs are becoming an inevitable part of every computing\u00a0system ranging from warehouse-scale computers to wearable devices, the insights resulting from this research can have a long-term positive impact on the GPU-based\u00a0computing. The findings of this research will be incorporated to existing and new undergraduate and graduate courses, which will directly help in educating and training students, including women and students from diverse backgrounds and minority groups.\r\n\r\nFirst, a detailed design space exploration will be performed, which\u00a0will involve the study of the impact and interactions of different design choices\u00a0related to PNM cores (e.g., register file, SIMD width, pipeline components,\u00a0warp occupancy), uncore components at the logic layer (e.g., caches) and stacked\u00a0memory (e.g., number of stacked memories). Second, a\u00a0computation distribution framework (CDF) will be developed that will answer: a) when is it\u00a0preferable to map computations to PNM cores, b) which PNM cores\u00a0and computations they should be?, and c) how can we effectively take advantage of both PNM and regular GPU cores? The CDF will leverage different static and\u00a0runtime strategies to address many of such similar questions to push the\u00a0envelopes of energy efficiency and performance even further. The proposed research components will be evaluated via a wide-range of GPGPU applications.\u00a0 If successful, the findings of this research would better equip PNM-enabled\u00a0GPUs to effectively alleviate the two major bottlenecks: memory bandwidth and\u00a0energy.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Adwait",
+   "pi_last_name": "Jog",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Adwait Jog",
+   "pi_email_addr": "ajog@virginia.edu",
+   "nsf_id": "000702344",
+   "pi_start_date": "2017-01-25",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "College of William and Mary",
+  "inst_street_address": "1314 S MOUNT VERNON AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "WILLIAMSBURG",
+  "inst_state_code": "VA",
+  "inst_state_name": "Virginia",
+  "inst_phone_num": "7572213965",
+  "inst_zip_code": "23185",
+  "inst_country_name": "United States",
+  "cong_dist_code": "08",
+  "st_cong_dist_code": "VA08",
+  "org_lgl_bus_name": "COLLEGE OF WILLIAM AND MARY",
+  "org_prnt_uei_num": "EVWJPCY6AD97",
+  "org_uei_num": "EVWJPCY6AD97"
+ },
+ "perf_inst": {
+  "perf_inst_name": "College of William and Mary",
+  "perf_str_addr": "",
+  "perf_city_name": "Williamsburg",
+  "perf_st_code": "VA",
+  "perf_st_name": "Virginia",
+  "perf_zip_code": "231878795",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "VA01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7941",
+   "pgm_ref_txt": "COMPUTER ARCHITECTURE"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 175000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-ccfb695a-7fff-5788-0676-323e6e816247\"> </span></p>\n<p dir=\"ltr\"><span>Intellectual Merit</span></p>\n<p dir=\"ltr\"><span>Graphics Processing Units (GPUs) are becoming an inevitable part of every computing system because of their ability to enable orders of magnitude faster and energy-efficient execution. However, the necessary and continuous scaling of GPUs in terms of performance and energy efficiency is not an easy task. Prior works have shown that the two biggest impediments towards this scaling are the limited memory bandwidth and the excessive data movement across different levels of the memory hierarchy. This project took a global view of this problem by researching on three related topics: near data computing, bandwidth management, and memory systems. All these topics were considered in light of emerging applications. In terms of near data computing, the major works appeared in top research venues (ISCA 2019 and MICRO 2018) where the PI considered near-data computing in GPU interconnect and emerging automata accelerators. In terms of bandwidth management, the major works appeared in top research venues (HPCA 2018 and ICS 2019) where PI considered bandwidth management for performance, fairness, and energy efficiency. Finally, PI also explored novel memory architectures in ISVLSI 2017 and VLSID 2017 papers.&nbsp; Overall, this research initiation grant helped in generating several novel insights and was instrumental in building PI's independent research.</span></p>\n<p dir=\"ltr\"><span><br /></span></p>\n<p dir=\"ltr\"><span>Broader Impact</span></p>\n<p dir=\"ltr\"><span>On the topics related to this grant, PI successfully advised the thesis of multiple Ph.D. students, one female master's student, and one undergraduate student. Several supported students also did internships at AMD Research and Paci&#64257;c Northwest National Laboratory. For outreach, the PI co-organized workshops on minimizing data movement (Min-Move) and gave a keynote talk in the School of Education at William &amp; Mary to attract middle and high school students to careers related to computer science. The topics of this grant have also been incorporated into the new course on GPU Architecture and Programming that PI Jog developed at William &amp; Mary. </span></p>\n<div><span><br /></span></div>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/17/2020<br>\n\t\t\t\t\tModified by: Adwait&nbsp;Jog</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \nIntellectual Merit\nGraphics Processing Units (GPUs) are becoming an inevitable part of every computing system because of their ability to enable orders of magnitude faster and energy-efficient execution. However, the necessary and continuous scaling of GPUs in terms of performance and energy efficiency is not an easy task. Prior works have shown that the two biggest impediments towards this scaling are the limited memory bandwidth and the excessive data movement across different levels of the memory hierarchy. This project took a global view of this problem by researching on three related topics: near data computing, bandwidth management, and memory systems. All these topics were considered in light of emerging applications. In terms of near data computing, the major works appeared in top research venues (ISCA 2019 and MICRO 2018) where the PI considered near-data computing in GPU interconnect and emerging automata accelerators. In terms of bandwidth management, the major works appeared in top research venues (HPCA 2018 and ICS 2019) where PI considered bandwidth management for performance, fairness, and energy efficiency. Finally, PI also explored novel memory architectures in ISVLSI 2017 and VLSID 2017 papers.  Overall, this research initiation grant helped in generating several novel insights and was instrumental in building PI's independent research.\n\n\nBroader Impact\nOn the topics related to this grant, PI successfully advised the thesis of multiple Ph.D. students, one female master's student, and one undergraduate student. Several supported students also did internships at AMD Research and Paci&#64257;c Northwest National Laboratory. For outreach, the PI co-organized workshops on minimizing data movement (Min-Move) and gave a keynote talk in the School of Education at William &amp; Mary to attract middle and high school students to careers related to computer science. The topics of this grant have also been incorporated into the new course on GPU Architecture and Programming that PI Jog developed at William &amp; Mary. \n\n\n\n \n\n \n\n\t\t\t\t\tLast Modified: 03/17/2020\n\n\t\t\t\t\tSubmitted by: Adwait Jog"
+ }
+}

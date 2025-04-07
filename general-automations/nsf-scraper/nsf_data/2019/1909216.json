@@ -1,0 +1,105 @@
+{
+ "awd_id": "1909216",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AF: Small: Computational Complexity Theory and Circuit Complexity",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "A. Funda Ergun",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2022-09-30",
+ "tot_intn_awd_amt": 200000.0,
+ "awd_amount": 200000.0,
+ "awd_min_amd_letter_date": "2019-07-26",
+ "awd_max_amd_letter_date": "2019-07-26",
+ "awd_abstract_narration": "Some computational problems require more resources than others.  But recognizing which computational problems are hard and which are easy turns out to be extremely challenging.  It also turns out to be extremely important, in the following sense.  Much of our economy relies on secure on-line financial transactions, and public-key cryptography is an essential component of providing on-line security.  However, every public-key cryptographic system relies on the existence of some function that is easy to compute and hard to invert (a so-called one-way function).  Despite a half-century of concerted effort, it remains unknown if one-way functions exist.  Instead, the field of computational complexity theory has succeeded in developing a framework for understanding how various problems relate to each other.  This framework consists of a collection of \"complexity classes\" and notions of \"reductions\" among computational problems.  It is a surprising empirical observation that the overwhelming majority of computational problems that are encountered in practice can have their computational complexity precisely characterized in terms of these classes.  That is: two problems are considered to be \"equivalent\" if each can be reduced to the other, so that an efficient algorithm for one yields an efficient algorithm for the other. Most computational problems that arise in practice turn out to be equivalent in this sense to a \"hardest\" problem in some complexity class.  Thus, understanding the complexity of real-world computational problems boils down to understanding the relationships among various complexity classes.\r\n\r\nThis project seeks to improve our understanding of the relationships among complexity classes by using the approach of \"metacomplexity\".  The focus of complexity theory is to determine how hard problems are. The focus of metacomplexity is to determine how hard it is to determine how hard problems are.  The canonical example of a problem in metacomplexity is the Minimum Circuit Size Problem (MCSP): given the truth table of a Boolean function, determine the size of the smallest circuit computing the function.  Recent work has shown that seemingly-slight improvements in our understanding of the complexity of MCSP would have dramatic consequences in terms of answering long-standing open questions about the relationships among complexity classes.  The project will seek to build on this recent work, in order to establish a clearer picture of how MCSP fits into the framework of complexity classes, among other investigations in computational complexity theory.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Eric",
+   "pi_last_name": "Allender",
+   "pi_mid_init": "W",
+   "pi_sufx_name": "",
+   "pi_full_name": "Eric W Allender",
+   "pi_email_addr": "Allender@cs.rutgers.edu",
+   "nsf_id": "000391611",
+   "pi_start_date": "2019-07-26",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Rutgers University New Brunswick",
+  "inst_street_address": "3 RUTGERS PLZ",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEW BRUNSWICK",
+  "inst_state_code": "NJ",
+  "inst_state_name": "New Jersey",
+  "inst_phone_num": "8489320150",
+  "inst_zip_code": "089018559",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "NJ12",
+  "org_lgl_bus_name": "RUTGERS, THE STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "M1LVPE5GLSD9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Rutgers University New Brunswick",
+  "perf_str_addr": "110 Frelinghuysen Road",
+  "perf_city_name": "Piscataway",
+  "perf_st_code": "NJ",
+  "perf_st_name": "New Jersey",
+  "perf_zip_code": "088548072",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "NJ06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7927",
+   "pgm_ref_txt": "COMPLEXITY & CRYPTOGRAPHY"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 200000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Which functions are hard to compute, and which are easy? Which       strings contain a lot of information, and which do not? Although       these questions may seem unrelated, there are actually close       connections between the two. The best known approaches to       measuring the amount of information in a string center on the       question of how much a string can be compressed. More precisely,       algorithmic information theory (also known as Kolmogorov       complexity) equates the information content of a string with the       length of its shortest description.&nbsp; A variant of Kolmogorov       complexity, called KT, takes into account not only the length of       the shortest description of a string, but also the time required       to obtain the string from its description. The KT complexity of       the graph of a function turns out to be an approximation of the       circuit size that is required to compute the function.</p>\n<p>The fourteen publications that acknowledge the support of this       grant span a variety of topics related to compression and complexity,       and draw surprising connections to the study of cryptography --       especially to the notion of zero-knowledge proofs.&nbsp; A series of       these papers led to the result that the set of strings with high       KT complexity is hard (under randomized reductions) for a class       known as NISZK: (Non-Interactive Statistical Zero Knowledge).&nbsp;       More strikingly, NISZK is PRECISELY the set of problems that are       randomly-reducible to the set of strings with high Kolmogorov       complexity (with a moderate approximation error).&nbsp; Another of the       papers showed that cryptographically-secure one-way functions that       are computable in small space exist if and only if computing       KT(x|y) is hard on average, whereas this same problem (computing       KT(x|y)) is NP-complete (under randomized reductions).&nbsp; This       arguably gives the first example of a natural NP-complete problem       whose complexity characterizes the existence of a class of one-way       functions.</p>\n<p>Work supported by the grant also resulted in improved parallel       algorithms for Depth-First Search and for Integer Division.&nbsp; The       improved division algorithm provided improved upper bounds on the       complexity of computing the bits of the binary representation of       algebraic numbers.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/05/2022<br>\n\t\t\t\t\tModified by: Eric&nbsp;W&nbsp;Allender</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nWhich functions are hard to compute, and which are easy? Which       strings contain a lot of information, and which do not? Although       these questions may seem unrelated, there are actually close       connections between the two. The best known approaches to       measuring the amount of information in a string center on the       question of how much a string can be compressed. More precisely,       algorithmic information theory (also known as Kolmogorov       complexity) equates the information content of a string with the       length of its shortest description.  A variant of Kolmogorov       complexity, called KT, takes into account not only the length of       the shortest description of a string, but also the time required       to obtain the string from its description. The KT complexity of       the graph of a function turns out to be an approximation of the       circuit size that is required to compute the function.\n\nThe fourteen publications that acknowledge the support of this       grant span a variety of topics related to compression and complexity,       and draw surprising connections to the study of cryptography --       especially to the notion of zero-knowledge proofs.  A series of       these papers led to the result that the set of strings with high       KT complexity is hard (under randomized reductions) for a class       known as NISZK: (Non-Interactive Statistical Zero Knowledge).        More strikingly, NISZK is PRECISELY the set of problems that are       randomly-reducible to the set of strings with high Kolmogorov       complexity (with a moderate approximation error).  Another of the       papers showed that cryptographically-secure one-way functions that       are computable in small space exist if and only if computing       KT(x|y) is hard on average, whereas this same problem (computing       KT(x|y)) is NP-complete (under randomized reductions).  This       arguably gives the first example of a natural NP-complete problem       whose complexity characterizes the existence of a class of one-way       functions.\n\nWork supported by the grant also resulted in improved parallel       algorithms for Depth-First Search and for Integer Division.  The       improved division algorithm provided improved upper bounds on the       complexity of computing the bits of the binary representation of       algebraic numbers.\n\n \n\n\t\t\t\t\tLast Modified: 12/05/2022\n\n\t\t\t\t\tSubmitted by: Eric W Allender"
+ }
+}

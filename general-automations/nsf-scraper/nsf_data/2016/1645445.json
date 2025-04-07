@@ -1,0 +1,101 @@
+{
+ "awd_id": "1645445",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Advancements in the Ultraspherical Spectral Method",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Leland Jameson",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2018-07-31",
+ "tot_intn_awd_amt": 104033.0,
+ "awd_amount": 104033.0,
+ "awd_min_amd_letter_date": "2016-09-09",
+ "awd_max_amd_letter_date": "2016-09-09",
+ "awd_abstract_narration": "The numerical solution of real-world fluid flow and airfoil problems needs an accurate, flexible, and fully-adaptive spectral element method. The so-called ultraspherical spectral method, with its sparsity and regularity preserving discretizations, is promising to overcome many of the traditional computational barriers. This research project will exploit and investigate the remarkable properties of the ultraspherical spectral method with the aim of producing a high quality and industrial-strength spectral element solver for partial differential equations. One key feature will be its robustness to pinching boundary features, typical with airfoils, that will alleviate the current tremendous burden on mesh generation algorithms. The project will radically alter the perception of spectral methods in the computational mathematics and engineering communities by extensively demonstrating that, when done carefully, they can be a flexible, general, and powerful numerical tool.\r\n\r\nToday's pseudospectral methods deliver both convenience and spectrally accurate discretizations for the solution of differential equations. However, they lead to dense discretizations, numerical instability, and a severe limitation to simple geometries. The novel ultraspherical spectral method is an alternative that retains the same accuracy and convenience, but leads to almost banded well-conditioned discretizations that faithfully preserves the regularity of the underlying differential operator while also being amenable to specialized fast linear algebra routines. Based on this new spectral method, the PI will derive a new mathematically-grounded fully-adaptive spectral element method for meshed geometries. Key novel computational features will include: (1) A high accuracy on mesh elements that is independent of the aspect ratio; (2) True hp-adaptivity that allows for essentially arbitrarily large element degree p and small average mesh element size h (without concern of ill-conditioning); and (3) The flexibility to solve a wide range of differential equations with general boundary constraints; and (4) Local refinement and mesh coarsening for the resolution of corner singularities. This new spectral element method will be applied to challenging partial differential equations for the state-of-the-art numerical simulation of advection-dominated fluid flow problems.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Alex",
+   "pi_last_name": "Townsend",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Alex J Townsend",
+   "pi_email_addr": "townsend@cornell.edu",
+   "nsf_id": "000687673",
+   "pi_start_date": "2016-09-09",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Cornell University",
+  "inst_street_address": "341 PINE TREE RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "ITHACA",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6072555014",
+  "inst_zip_code": "148502820",
+  "inst_country_name": "United States",
+  "cong_dist_code": "19",
+  "st_cong_dist_code": "NY19",
+  "org_lgl_bus_name": "CORNELL UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "G56PUALJ3KT5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Cornell University",
+  "perf_str_addr": "373 Pine Tree Road",
+  "perf_city_name": "Ithaca",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "148502820",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "19",
+  "perf_st_cong_dist": "NY19",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0115",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001516DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2015,
+   "fund_oblg_amt": 104033.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The project developed a collection of numerical algorithms for the solution of real-world fluid flow problems that are accurate, flexible, and fully-adaptive spectral methods. The so-called ultraspherical spectral method, with its sparsity and regularity preserving discretizations, was a key tool that gave us the flexibility and robustness of our codes.&nbsp; We generalized these tools to polar, spherical, cylindrical, and triangular geometries using the so-called double Fourier sphere method and generalized basis functions. Software systems such as ApproxFun, Chebfun, and Dedalus now employ ideas that are based on these developments, making these numerical tools available to their users.&nbsp;</p>\n<p>Our new spectral methods are particularly competitive for the numerical simulation of advection-dominated fluid flow problems (see Figure).&nbsp; Our new techniques have been used in the field of active fluid simulations on the disk and ball. They have allowed physicists to better understand swimming bacteria in a suspension that are enclosed by a moving ring-shape container (see Figure). We have also used them to develop numerical algorithms for the simulation of the shallow water equations on the sphere, dancing sessile droplet, and electroconvective cross flows.&nbsp;</p>\n<p>We generalized the ultraspherical spectral method to work on geometries that are triangulated, allowing for the development of an extremely high degree spectral element method code. One key feature of this new element method is its robustness to meshes that contain skinny triangles, which we hope can be employed to alleviate the current tremendous burden on mesh generation algorithms for problems with complicated geometries and moving boundaries.</p>\n<p>Serendipitously, we also discovered a theoretical connection between certain partial differential equations (PDEs) and low-rank matrices/tensors, which is providing a useful insight into low-rank matrices and tensors as well as leading to more efficient PDE solvers. This connection has led to the development of a parallel nonuniform fast Fourier transform and the&nbsp;derivation of theoretical bounds on the compressibility of certain matrices/tensors.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/29/2018<br>\n\t\t\t\t\tModified by: Alex&nbsp;J&nbsp;Townsend</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2018/1645445/1645445_10380976_1540840593451_ScreenShot2018-10-29at2.59.47PM--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2018/1645445/1645445_10380976_1540840593451_ScreenShot2018-10-29at2.59.47PM--rgov-800width.jpg\" title=\"Active fluid simulation\"><img src=\"/por/images/Reports/POR/2018/1645445/1645445_10380976_1540840593451_ScreenShot2018-10-29at2.59.47PM--rgov-66x44.jpg\" alt=\"Active fluid simulation\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">A rigid ring suspended on atorsional spring is filled with a thin-film active fluid.</div>\n<div class=\"imageCredit\">Physical Review Fluids (Vol. 3, No. 10)</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Alex&nbsp;J&nbsp;Townsend</div>\n<div class=\"imageTitle\">Active fluid simulation</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2018/1645445/1645445_10380976_1540840670983_ScreenShot2018-10-29at3.00.52PM--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2018/1645445/1645445_10380976_1540840670983_ScreenShot2018-10-29at3.00.52PM--rgov-800width.jpg\" title=\"Navier-Stokes simulation\"><img src=\"/por/images/Reports/POR/2018/1645445/1645445_10380976_1540840670983_ScreenShot2018-10-29at3.00.52PM--rgov-66x44.jpg\" alt=\"Navier-Stokes simulation\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Simulation of the Navier-Stokes equations in a polar geometry</div>\n<div class=\"imageCredit\">Alex Townsend</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Alex&nbsp;J&nbsp;Townsend</div>\n<div class=\"imageTitle\">Navier-Stokes simulation</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThe project developed a collection of numerical algorithms for the solution of real-world fluid flow problems that are accurate, flexible, and fully-adaptive spectral methods. The so-called ultraspherical spectral method, with its sparsity and regularity preserving discretizations, was a key tool that gave us the flexibility and robustness of our codes.  We generalized these tools to polar, spherical, cylindrical, and triangular geometries using the so-called double Fourier sphere method and generalized basis functions. Software systems such as ApproxFun, Chebfun, and Dedalus now employ ideas that are based on these developments, making these numerical tools available to their users. \n\nOur new spectral methods are particularly competitive for the numerical simulation of advection-dominated fluid flow problems (see Figure).  Our new techniques have been used in the field of active fluid simulations on the disk and ball. They have allowed physicists to better understand swimming bacteria in a suspension that are enclosed by a moving ring-shape container (see Figure). We have also used them to develop numerical algorithms for the simulation of the shallow water equations on the sphere, dancing sessile droplet, and electroconvective cross flows. \n\nWe generalized the ultraspherical spectral method to work on geometries that are triangulated, allowing for the development of an extremely high degree spectral element method code. One key feature of this new element method is its robustness to meshes that contain skinny triangles, which we hope can be employed to alleviate the current tremendous burden on mesh generation algorithms for problems with complicated geometries and moving boundaries.\n\nSerendipitously, we also discovered a theoretical connection between certain partial differential equations (PDEs) and low-rank matrices/tensors, which is providing a useful insight into low-rank matrices and tensors as well as leading to more efficient PDE solvers. This connection has led to the development of a parallel nonuniform fast Fourier transform and the derivation of theoretical bounds on the compressibility of certain matrices/tensors.\n\n\t\t\t\t\tLast Modified: 10/29/2018\n\n\t\t\t\t\tSubmitted by: Alex J Townsend"
+ }
+}

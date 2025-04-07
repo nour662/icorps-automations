@@ -1,0 +1,105 @@
+{
+ "awd_id": "1718084",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small: Self-Monitoring Virtual Machines for Performance Guarantees in Public Clouds",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2017-10-01",
+ "awd_exp_date": "2020-09-30",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 500000.0,
+ "awd_min_amd_letter_date": "2017-09-09",
+ "awd_max_amd_letter_date": "2017-09-09",
+ "awd_abstract_narration": "With its massive pooling and multiplexing of computing resources, the cloud offers both large organizations and small businesses the prospect of lower information technology costs, lighter administrative burdens, and rapid scaling of resources. However, multi-tenancy in public clouds makes critical computing resources, such as processor, memory, I/O devices, and storage, shared among virtual machines that are operated by different users. The performance of applications running in public clouds, therefore, may be affected by their neighboring virtual machines due to contention on the shared computing resources. Nonetheless, existing cloud performance monitoring tools do not offer visibility into hardware resources; cloud users have no choice but to blindly run computations on these public services in the hope that the performance is not negatively affected, for instance, by the neighbor's resource-depleting applications. The lack of performance guarantees is a hurdle faced by all cloud users to fully embrace the economic benefit of cloud computing, and especially by those whose applications demand stability and predictability of the runtime environments. This proposed project aims to solve this problem by developing novel techniques that allow cloud users to monitor the resource contention on the physical cloud servers without the help of the cloud providers.  Specifically, the proposed work entails the design, implementation, and evaluation of self-monitoring virtual machines, which leverage the nested virtualization technology and side-channel analysis techniques to monitor the contention in shared computing resources and proactively migrate nested virtual machines to avoid severe performance degradation.\r\n\r\nThe project will make broader societal impacts in the following aspects: First, new education tools will be developed through the proposed project. Specifically, one of the outcomes of the intended research will be Amazon machine images with which a derivative cloud can be created on top of public clouds. Enabled by this derivative cloud, students of the operating systems or system security courses can obtain hands-on experience with cloud computing; they will also have access to nested virtualization environments to conduct operating system kernel development. Second, the project will be integrated into NSF's LSAMP (Louis Stokes Alliances for Minority Participation) program,  to help increase underrepresented minority student recruitment, retention, and attainment of STEM degrees, and also to enhance the participation of underrepresented minority students in system research. Third, the project will produce open-source tools that enable self-monitoring VMs in public clouds, which will be made available in the form of source code (available on the project homepage) and Amazon machine images, to encourage adaptation and adoption of the developed techniques.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Yinqian",
+   "pi_last_name": "Zhang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yinqian Zhang",
+   "pi_email_addr": "yinqian@cse.ohio-state.edu",
+   "nsf_id": "000680043",
+   "pi_start_date": "2017-09-09",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Ohio State University",
+  "inst_street_address": "1960 KENNY RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLUMBUS",
+  "inst_state_code": "OH",
+  "inst_state_name": "Ohio",
+  "inst_phone_num": "6146888735",
+  "inst_zip_code": "432101016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "OH03",
+  "org_lgl_bus_name": "OHIO STATE UNIVERSITY, THE",
+  "org_prnt_uei_num": "MN4MDDMN8529",
+  "org_uei_num": "DLWBSLWAJWR1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Ohio State University",
+  "perf_str_addr": "1960 Kenny Road",
+  "perf_city_name": "Columbus",
+  "perf_st_code": "OH",
+  "perf_st_name": "Ohio",
+  "perf_zip_code": "432101016",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "OH03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  },
+  {
+   "pgm_ele_code": "735900",
+   "pgm_ele_name": "CCRI-CISE Cmnty Rsrch Infrstrc"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 500000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The emergence and fast development of cloud computing have reshaped the modern IT industry. Cloud services also enable scientists to conduct computation-intensive experiments on public clouds. This project has led to an exploration of using cross-VM side-channel analysis techniques to monitor performance degradation due to resource contention on shared cloud servers. &nbsp;Besides the main target of the research, this project has also enabled the study of confidential cloud computing and side-channel analysis techniques, and the exploration of use cases of clouds for scientific studies, such as the study of password security and blockchain security.</p>\n<p>&nbsp;</p>\n<p>Broader societal impacts of the project include the following two aspects: First, the project has allowed the PI to mentor several graduate students. Particularly, the project enables them to initially explore their research interests, improve their ability to conduct systems and security research, and establish their reputation in the field of systems and security through publication at top-tier conferences. After graduation, they will become researchers or engineers who have deep knowledge of cloud computing that will be very valuable to the entire society. Second, the results of the research have been disseminated through peer-review conference publications. Particularly, 15 papers have been published at top-tier or high-profile conferences. Besides, some technical presentations describing these research results have been recorded and made available online.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/29/2021<br>\n\t\t\t\t\tModified by: Yinqian&nbsp;Zhang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe emergence and fast development of cloud computing have reshaped the modern IT industry. Cloud services also enable scientists to conduct computation-intensive experiments on public clouds. This project has led to an exploration of using cross-VM side-channel analysis techniques to monitor performance degradation due to resource contention on shared cloud servers.  Besides the main target of the research, this project has also enabled the study of confidential cloud computing and side-channel analysis techniques, and the exploration of use cases of clouds for scientific studies, such as the study of password security and blockchain security.\n\n \n\nBroader societal impacts of the project include the following two aspects: First, the project has allowed the PI to mentor several graduate students. Particularly, the project enables them to initially explore their research interests, improve their ability to conduct systems and security research, and establish their reputation in the field of systems and security through publication at top-tier conferences. After graduation, they will become researchers or engineers who have deep knowledge of cloud computing that will be very valuable to the entire society. Second, the results of the research have been disseminated through peer-review conference publications. Particularly, 15 papers have been published at top-tier or high-profile conferences. Besides, some technical presentations describing these research results have been recorded and made available online.\n\n \n\n \n\n \n\n\t\t\t\t\tLast Modified: 01/29/2021\n\n\t\t\t\t\tSubmitted by: Yinqian Zhang"
+ }
+}

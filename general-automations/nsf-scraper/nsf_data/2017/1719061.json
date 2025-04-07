@@ -1,0 +1,101 @@
+{
+ "awd_id": "1719061",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small: Architectural Support for Programmable Memory Metadata",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Erik Brunvand",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 499994.0,
+ "awd_amount": 499994.0,
+ "awd_min_amd_letter_date": "2017-07-13",
+ "awd_max_amd_letter_date": "2017-07-13",
+ "awd_abstract_narration": "All computers heavily rely on large and growing memory capacity to handle increasingly diverse, challenging, and data-intensive computation. In order to utilize memory effectively and efficiently, provide high performance, and guarantee security and privacy, computer systems associate memory metadata with all information stored in memory. This metadata stores system-managed information about the data rather than application data directly and is vital for correctness and performance. Storing, accessing, and updating metadata presents unique tradeoff opportunities between metadata cost and performance overheads and the benefits metadata can provide. Conventional approaches have been to couple metadata management with the management of memory itself (in the form of virtual memory) and have evolved very slowly over time.  However, this approach is facing increasing difficulties as computer memory systems evolve to be larger, more heterogeneous, and organized in deeper hierarchies. Such revolutionary memory systems require an equally revolutionary architecture for managing and accessing metadata. This project is researching and exploring such a metadata architecture. This research is sorely needed as both academia and industry are continually finding new uses for metadata but are often left with poor metadata mechanisms that are at the wrong granularity, have too high an overhead on performance, and are too complex to implement. Therefore, the wrong tradeoffs are often made between performance, security, safety, and reliability. The results of this research will directly lead to secure, reliable, performant, and efficient computer systems that provide strong privacy guarantees, which are all crucial to the computing systems both scientists and society in general have come to rely on. \r\n\r\nThe approach is to decouple metadata management from data memory management (virtual memory) while exposing metadata management mechanism architecturally to alleviate many of the above limitations. This metadata architecture will be programmable from within the microarchiture and also by system software and provide new levels of flexibility and capabilities. Specifically, the research answers questions on how to: (1) decouple general memory metadata from system-critical translation and protection; (2) coordinate metadata across multiple storage/access mechanisms with different tradeoffs in overhead and granularity; (3) construct expressive yet efficient interfaces for memory metadata; and (4) provide the tools needed by researchers and industry to analyze memory management ideas.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Mattan",
+   "pi_last_name": "Erez",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mattan Erez",
+   "pi_email_addr": "mattan.erez@mail.utexas.edu",
+   "nsf_id": "000082396",
+   "pi_start_date": "2017-07-13",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Austin",
+  "perf_str_addr": "101 E. 27th Street, Suite 5.300",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787121532",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "25",
+  "perf_st_cong_dist": "TX25",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 499994.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The project focused on a little-explored aspect of high-end computers---the storage and management of memory metadata that is used to ensure systems are reliable, secure, and attain high performance. Managing such metadata is increasingly challenging because modern computers heavily rely on large and growing memory capacity to handle increasingly diverse, challenging, and data-intensive computation. In order to utilize memory effectively and efficiently, provide high performance, and guarantee security and privacy, computer systems associate memory metadata with all information stored in memory. This metadata stores system-managed information about the data rather than application data directly and is vital for correctness and performance. Storing, accessing, and updating metadata presents unique tradeoff opportunities between metadata cost and performance overheads and the benefits metadata can provide. Conventional approaches have been to couple metadata management with the management of memory itself (in the form of virtual memory) and have evolved very slowly over time.</p>\n<p><br />This project explored such a metadata architecture and several uses and resulted in several important intellectual findings and contributions, including developing new mechanisms for storing and managing metadata to address the above challenges and using these mechanisms to improve performance and efficiency, and hence sustainability by better utilizing limited hardware resources. Two specific examples are: (1) new memory compression architectures that increase the effective memory available to computers by nearly a factor of two without requiring additional memory devices, with their associated monetary, energy, and embedded carbon costs; and (2) a new approach to performing memory data access with a prefetch approach that can double the performance of a single processor core for challenging memory-intensive applications, thus halving the number of active cores necessary to attain a performance goal. The project also yielded methodology improvements that led to new insights and description of pitfalls in the tools and approaches used by scientists to conduct computer-architecture research.&nbsp;</p>\n<p><br />In terms of broader impacts, the project directly addresses environmental sustainability goals by enabling a system to provide effective memory capacity and throughput with roughly half the number of memory devices and cores needed previously---i.e., at roughly half the power (operational carbon footprint) and half the hardware resources (embedded carbon footprint). The project was also very successful in terms of human-resource development and DEI goals, partially funding the studies of eight PhD students over the course of the project, including two female students. Five of the students have graduated and joined leading technology companies in the US, including AMD, Google, Meta, and Microsoft.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/13/2022<br>\n\t\t\t\t\tModified by: Mattan&nbsp;Erez</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe project focused on a little-explored aspect of high-end computers---the storage and management of memory metadata that is used to ensure systems are reliable, secure, and attain high performance. Managing such metadata is increasingly challenging because modern computers heavily rely on large and growing memory capacity to handle increasingly diverse, challenging, and data-intensive computation. In order to utilize memory effectively and efficiently, provide high performance, and guarantee security and privacy, computer systems associate memory metadata with all information stored in memory. This metadata stores system-managed information about the data rather than application data directly and is vital for correctness and performance. Storing, accessing, and updating metadata presents unique tradeoff opportunities between metadata cost and performance overheads and the benefits metadata can provide. Conventional approaches have been to couple metadata management with the management of memory itself (in the form of virtual memory) and have evolved very slowly over time.\n\n\nThis project explored such a metadata architecture and several uses and resulted in several important intellectual findings and contributions, including developing new mechanisms for storing and managing metadata to address the above challenges and using these mechanisms to improve performance and efficiency, and hence sustainability by better utilizing limited hardware resources. Two specific examples are: (1) new memory compression architectures that increase the effective memory available to computers by nearly a factor of two without requiring additional memory devices, with their associated monetary, energy, and embedded carbon costs; and (2) a new approach to performing memory data access with a prefetch approach that can double the performance of a single processor core for challenging memory-intensive applications, thus halving the number of active cores necessary to attain a performance goal. The project also yielded methodology improvements that led to new insights and description of pitfalls in the tools and approaches used by scientists to conduct computer-architecture research. \n\n\nIn terms of broader impacts, the project directly addresses environmental sustainability goals by enabling a system to provide effective memory capacity and throughput with roughly half the number of memory devices and cores needed previously---i.e., at roughly half the power (operational carbon footprint) and half the hardware resources (embedded carbon footprint). The project was also very successful in terms of human-resource development and DEI goals, partially funding the studies of eight PhD students over the course of the project, including two female students. Five of the students have graduated and joined leading technology companies in the US, including AMD, Google, Meta, and Microsoft.\n\n\t\t\t\t\tLast Modified: 07/13/2022\n\n\t\t\t\t\tSubmitted by: Mattan Erez"
+ }
+}

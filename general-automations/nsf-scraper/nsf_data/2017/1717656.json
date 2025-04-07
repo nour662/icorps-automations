@@ -1,0 +1,117 @@
+{
+ "awd_id": "1717656",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "III: Small: Distributed Semantic Information Processing Applied to Camera Sensor Networks",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032927347",
+ "po_email": "sspengle@nsf.gov",
+ "po_sign_block_name": "Sylvia Spengler",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 312610.0,
+ "awd_amount": 312610.0,
+ "awd_min_amd_letter_date": "2017-07-27",
+ "awd_max_amd_letter_date": "2017-09-09",
+ "awd_abstract_narration": "In many applications, sensor networks can be used to monitor large geographical regions. This typically produces large quantities of data that need to be associated, summarized and classified in order to arrive to a semantically meaningful descriptions of the phenomena being monitored. The long-term guiding vision of this project is a distributed network that can perform this analysis autonomously, over long periods of times, and in a scalable way. As a concrete application, this research focuses on smart camera networks with nodes that are either static or part of robotic agents. The planned work will result in systems that are more efficient, accurate, and resilient. The algorithms developed will find wide applications, including in security (continuously detecting suspicious individuals in real time) and the Internet of Things. As part of the broader impacts, the project will produce educational material to explain the scientific results of the project to a K12 audience.\r\n\r\nThis research will introduce a novel framework for consistently, efficiently and reliably extracting semantic information across a network of smart cameras. The project will revolve around three pillars: (i) solving the consistent multi-camera feature matching problem: find if a feature seen at a node has been seen by other camera nodes, and if yes, find the most consistent correspondences using a variation of decentralized hashing; (ii) autonomously finding emerging patterns (e.g., images from different individuals) through feature clustering, using a distributed algorithm for computing k-medoids; (iii) employing a new distributed decision tree inference paradigm that allows the network to take consistent decisions about the world (for example, the identity of an individual) while spreading computations across the network. The project website will provide access to the results of the work, including papers, downloadable code, and educational material.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Roberto",
+   "pi_last_name": "Tron",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Roberto Tron",
+   "pi_email_addr": "tronroberto@gmail.com",
+   "nsf_id": "000705272",
+   "pi_start_date": "2017-07-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Trustees of Boston University",
+  "inst_street_address": "1 SILBER WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "BOSTON",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6173534365",
+  "inst_zip_code": "022151703",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "TRUSTEES OF BOSTON UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "THL6A6JLE1S7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Trustees of Boston University",
+  "perf_str_addr": "110 Cummington Mall",
+  "perf_city_name": "Boston",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "022152407",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736400",
+   "pgm_ele_name": "Info Integration & Informatics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 312610.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Our project introduced novel solutions for consistently and efficiently extracting semantic information across a network of smart cameras. The performed work advanced current technologies in two directions.<br /><br /></p>\n<ol>\n<li>Provide a way to find corresponding objects across many images taken at possibly very far away cameras by using a minimal amount of data exchanged across the network. The algorithms rely on two key technical ideas. First, if different images contain similar-looking objects, they will contain features (e.g., small object parts) that naturally form relatively tight groups (clusters); we can therefore find more accurate matches across images by looking for clusters instead of considering individual features. Second, one can assign specific types of features (e.g., intuitively, corners versus flat parts of an object) to different nodes of the network; when new images arrive, each node then can look at the data and know to communicate only with the corresponding nodes, without having to waste resources with other nodes.</li>\n<li>Provide a way to summarize a data set that is arbitrarily spread across the different cameras into a given number of \"representative\" data points (where each one represents the center of a cluster of points in the data). In our approach, each node keeps a set of estimated centers, communicates with nearby nodes, and adjusts its own local estimates toward an agreement while also keeping track of its own data. We can formally prove that, with the proper tuning, the algorithm always converges to a good solution where all the nodes agree.</li>\n</ol>\n<p>The main innovative aspects of the two advancements above is in the fact that they do not require each node to transmit their data across the entire network; this provides advantages with regard to the efficiency of the algorithms, and also add a layer of protection with respect to privacy considerations.<br /><br />As broader impacts, the PI produced a freely available board game called \"NetMatch: the Game\", which, in addition to providing a fun experience, can be used to gain intuitions about the technical challenges involved in the correspondence algorithms mentioned above. Additionally, the project has involved and trained two undergraduate, three graduate, and one postdoctoral students, with additional other high school, undergraduate, and graduate students performing ancillary activities.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/30/2021<br>\n\t\t\t\t\tModified by: Roberto&nbsp;Tron</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOur project introduced novel solutions for consistently and efficiently extracting semantic information across a network of smart cameras. The performed work advanced current technologies in two directions.\n\n\n\nProvide a way to find corresponding objects across many images taken at possibly very far away cameras by using a minimal amount of data exchanged across the network. The algorithms rely on two key technical ideas. First, if different images contain similar-looking objects, they will contain features (e.g., small object parts) that naturally form relatively tight groups (clusters); we can therefore find more accurate matches across images by looking for clusters instead of considering individual features. Second, one can assign specific types of features (e.g., intuitively, corners versus flat parts of an object) to different nodes of the network; when new images arrive, each node then can look at the data and know to communicate only with the corresponding nodes, without having to waste resources with other nodes.\nProvide a way to summarize a data set that is arbitrarily spread across the different cameras into a given number of \"representative\" data points (where each one represents the center of a cluster of points in the data). In our approach, each node keeps a set of estimated centers, communicates with nearby nodes, and adjusts its own local estimates toward an agreement while also keeping track of its own data. We can formally prove that, with the proper tuning, the algorithm always converges to a good solution where all the nodes agree.\n\n\nThe main innovative aspects of the two advancements above is in the fact that they do not require each node to transmit their data across the entire network; this provides advantages with regard to the efficiency of the algorithms, and also add a layer of protection with respect to privacy considerations.\n\nAs broader impacts, the PI produced a freely available board game called \"NetMatch: the Game\", which, in addition to providing a fun experience, can be used to gain intuitions about the technical challenges involved in the correspondence algorithms mentioned above. Additionally, the project has involved and trained two undergraduate, three graduate, and one postdoctoral students, with additional other high school, undergraduate, and graduate students performing ancillary activities.\n\n\t\t\t\t\tLast Modified: 12/30/2021\n\n\t\t\t\t\tSubmitted by: Roberto Tron"
+ }
+}

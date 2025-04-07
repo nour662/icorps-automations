@@ -1,0 +1,96 @@
+{
+ "awd_id": "1048505",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "An Integrated Science Environment for Astrophysical Simulations",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Sushil K Prasad",
+ "awd_eff_date": "2011-01-01",
+ "awd_exp_date": "2013-12-31",
+ "tot_intn_awd_amt": 240000.0,
+ "awd_amount": 240000.0,
+ "awd_min_amd_letter_date": "2010-12-29",
+ "awd_max_amd_letter_date": "2010-12-29",
+ "awd_abstract_narration": "Astrophysical simulation codes, as well as astrophysical data, have grown increasingly complex: simulations are now able to probe the formation of stars, galaxies, black holes and many other disparate phenomena.  However, as simulations become larger, and the physical models governing those simulations become more complex, the inherent difficulties in developing simulation codes and analyzing the data output from these simulations grow commensurately.  Many different, often competing, groups utilize independent simulation platforms, which prevents substantial collaboration as a result of technical incompatibilities.  To mitigate this fragmentation, this research involves the creation of an Integrated Science Environment for both astrophysical computation and visualization.  This Integrated Science Environment is designed to work equally well for new users as well as for petascale simulations on platforms such as the NSF-funded Blue Waters.  \r\n\r\nThe Integrated Science Environment produced by this research is constructed out of three primary components: a simulation platform interface, an initial conditions generator, and an analysis and visualization engine.  The simulation platform interface abstracts the internal data structures and unit-handling of individual simulation platforms into physically-relevant quantities, providing a compatibility layer enabling microphysical solvers (such as chemistry, radiative cooling, and hydrodynamics) to be applied to multiple platforms unmodified.  The initial conditions generator creates the starting points for astrophysical simulations, enabling both intuitive initial conditions generation and straightforward cross-code comparison and validation of results.  Finally, the analysis engine produces high-quality quantitative results and visualizations, including planetarium-quality visualization tools.  The Integrated Science Environment is fully MPI-parallelized and is written primarily in Python with APIs for in situ or concurrent analysis and visualization to be conducted during the course of a simulation, scaling up to hundreds of thousands of processors.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Matthew",
+   "pi_last_name": "Turk",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Matthew J Turk",
+   "pi_email_addr": "",
+   "nsf_id": "000685745",
+   "pi_start_date": "2010-12-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Turk                    Matthew        J",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "La Jolla",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "",
+  "inst_zip_code": "920372608",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "Turk                    Matthew        J",
+  "perf_str_addr": "",
+  "perf_city_name": "La Jolla",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920372608",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "769600",
+   "pgm_ele_name": "CI Fellowships"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 240000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Understanding astrophysical phenomena -- such as how stars form, the lifetimes of galaxies, and how supernovae explode -- requires conducting complex, multi-component computer simulations. &nbsp;These simulations are conducted on computer platforms spanning the range of single processor laptops all the way to the largest supercomputers in the world, where several hundred thousand processors work in concert to compute the interplay of chemistry, hydrodynamics, radiative transfer and gravity. &nbsp;These simulations are built on computational models based on our understanding of physics at small scales, and they provide outputs that help us understand and contextualize telescope observations. &nbsp;</p>\n<p><br />Rather than a single method of conducting these simulations, however, researchers often utilize different computational platforms, developing independent tools to verify the results of other simulations. &nbsp;Each of these platforms brings with it different underlying assumptions about how data should be stored, the mechanisms for accessing that data, and even the types of data that is stored during the course of a simulation. &nbsp;This results in something of a conceptual language barrier, which prevents researchers from directly comparing results and introduces a large obstacle to early-stage researchers transitioning between research groups and code platforms. &nbsp;Furthermore, there was not a single target method of producing analysis routines that would be applicable across all simulation codes. &nbsp;The efficiency of researchers to conduct, process and understand data from simulations is dependent on their ability to describe the scientific questions they need to ask in meaningful ways, without requiring them to translate these to the underlying assumptions of data storage that are present in specific simulation codes.</p>\n<p>The open source analysis and visualization toolkit \"yt\" was originally designed to provide a mechanism for \"asking questions of data\" for one particular simulation platform, the Enzo code. &nbsp;Instead of describing file opening, conversion of units, data selection and processing in detailed, fine-grained ways, it provided a high-level mechanism of describing data in terms of physical meaning and with a minimum of technical overhead. &nbsp;However, during the course of this project yt was further developed to apply to many different simulation code formats. &nbsp;This has resulted in a dramatic increase in collaboration between scientists, as rather than targeting individual simulation data formats, they can simply target yt when developing analysis modules. &nbsp;For instance, this has included simulating observations from telescopes, advanced methods of visualization, and even developing tools for creating scientific communication for use at planetariums. &nbsp;The yt toolkit has been deployed on computing platforms ranging from the very small (laptop) to the very, very large (supercomputer). &nbsp;This has directly increased research productivity, reducing the duplication of effort between research groups and increases collaboration between scientists.</p>\n<p>In the course of this development, yt has also been extended to generate initial conditions for simulations, so that new problems can be easily explored. &nbsp;Furthermore, yt has developed capabilities for conducting actual simulations, as repeatable experiments; chemical rate solvers can be conducted directly on data in memory, allowing for experimentation and exploration of data without the full cost of a simulation.</p>\n<p>As computational power increases, the commensurate increase in both the rate at which data is generated and the volume of that data has been difficult to manage. &nbsp;Computer simulations generate vastly more data than can be stored; rather than storing this data and analyzing it after the simulation has been conducted, in many cases it is now n...",
+  "por_txt_cntn": "\nUnderstanding astrophysical phenomena -- such as how stars form, the lifetimes of galaxies, and how supernovae explode -- requires conducting complex, multi-component computer simulations.  These simulations are conducted on computer platforms spanning the range of single processor laptops all the way to the largest supercomputers in the world, where several hundred thousand processors work in concert to compute the interplay of chemistry, hydrodynamics, radiative transfer and gravity.  These simulations are built on computational models based on our understanding of physics at small scales, and they provide outputs that help us understand and contextualize telescope observations.  \n\n\nRather than a single method of conducting these simulations, however, researchers often utilize different computational platforms, developing independent tools to verify the results of other simulations.  Each of these platforms brings with it different underlying assumptions about how data should be stored, the mechanisms for accessing that data, and even the types of data that is stored during the course of a simulation.  This results in something of a conceptual language barrier, which prevents researchers from directly comparing results and introduces a large obstacle to early-stage researchers transitioning between research groups and code platforms.  Furthermore, there was not a single target method of producing analysis routines that would be applicable across all simulation codes.  The efficiency of researchers to conduct, process and understand data from simulations is dependent on their ability to describe the scientific questions they need to ask in meaningful ways, without requiring them to translate these to the underlying assumptions of data storage that are present in specific simulation codes.\n\nThe open source analysis and visualization toolkit \"yt\" was originally designed to provide a mechanism for \"asking questions of data\" for one particular simulation platform, the Enzo code.  Instead of describing file opening, conversion of units, data selection and processing in detailed, fine-grained ways, it provided a high-level mechanism of describing data in terms of physical meaning and with a minimum of technical overhead.  However, during the course of this project yt was further developed to apply to many different simulation code formats.  This has resulted in a dramatic increase in collaboration between scientists, as rather than targeting individual simulation data formats, they can simply target yt when developing analysis modules.  For instance, this has included simulating observations from telescopes, advanced methods of visualization, and even developing tools for creating scientific communication for use at planetariums.  The yt toolkit has been deployed on computing platforms ranging from the very small (laptop) to the very, very large (supercomputer).  This has directly increased research productivity, reducing the duplication of effort between research groups and increases collaboration between scientists.\n\nIn the course of this development, yt has also been extended to generate initial conditions for simulations, so that new problems can be easily explored.  Furthermore, yt has developed capabilities for conducting actual simulations, as repeatable experiments; chemical rate solvers can be conducted directly on data in memory, allowing for experimentation and exploration of data without the full cost of a simulation.\n\nAs computational power increases, the commensurate increase in both the rate at which data is generated and the volume of that data has been difficult to manage.  Computer simulations generate vastly more data than can be stored; rather than storing this data and analyzing it after the simulation has been conducted, in many cases it is now necessary to store only a small subset of the data generated and to instead conduct the majority of analysis while the simulation is running, without writing data to d..."
+ }
+}

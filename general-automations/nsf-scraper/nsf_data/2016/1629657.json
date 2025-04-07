@@ -1,0 +1,96 @@
+{
+ "awd_id": "1629657",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "XPS: FULL: Collaborative Research: PARAGRAPH: Parallel, Scalable Graph Analytics",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Wei Ding",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 328123.0,
+ "awd_amount": 328123.0,
+ "awd_min_amd_letter_date": "2016-08-12",
+ "awd_max_amd_letter_date": "2020-06-18",
+ "awd_abstract_narration": "Many real world problems can be effectively modeled as complex relationship networks or graphs where nodes represent entities of interest and edges mimic the interactions or relationships among them. The number of such problems and the diversity of domains from which they arise is growing. However developing high-performance applications to extract useful information from such datasets is very challenging.  Graphical processing units are very attractive for such applications because they offer higher computational performance and energy efficiency than standard multi-core processors. However, the development of high-performance applications for them is currently much more challenging than  parallel program development for standard  multi-core processors. Effective  application development to use graphical processing units generally requires that developers possess considerable expertise on their architectural characteristics and use specialized programming models and performance optimization techniques. Thus, simultaneously achieving high performance and high user productivity for data analytics applications for such devices is a daunting challenge.\r\n\r\nThis project proposes a scalable high-level software framework to enable the productive development of high-performance applications for graphical processing units. It features two distinct abstractions to address the performance and productivity challenges in developing graph/data analytics applications: 1) a frontier-centric abstraction that is based on a common iterative characteristic of many of these applications, with a dynamically moving active frontier of vertices (or edges) where computation is centered, and 2) an abstraction based on sparse linear algebra primitives, exploiting the dual relationship between sparse matrices and graphs. A benchmark suite of graph analytics applications will be developed and evaluated using both abstractions, enabling insights into the effectiveness of these alternate high-level abstractions for a range of analytics applications. The benchmark suite and the software framework will be publicly released.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "John",
+   "pi_last_name": "Owens",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "John D Owens",
+   "pi_email_addr": "jowens@ece.ucdavis.edu",
+   "nsf_id": "000377403",
+   "pi_start_date": "2016-08-12",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Davis",
+  "inst_street_address": "1850 RESEARCH PARK DR STE 300",
+  "inst_street_address_2": "",
+  "inst_city_name": "DAVIS",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "5307547700",
+  "inst_zip_code": "956186153",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "CA04",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, DAVIS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "TX2DAGQPENZ5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Davis",
+  "perf_str_addr": "One Shields Avenue",
+  "perf_city_name": "Davis",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "956165270",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "CA04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "828300",
+   "pgm_ele_name": "Exploiting Parallel&Scalabilty"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 328123.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this project was to develop software that can enable both high user productivity and high performance in implementing graph applications. Our work targeted the \"graphics processing unit\" (GPU), an emerging commodity highly parallel processor that is increasingly common in our mainstream computing infrastructure.<br /><br />The principal challenge of this work is that while GPUs potentially offer high performance, they are difficult to program. What makes them hard to program includes the difficulty of writing capable, high-performance low-level primitives, specifying a well-chosen programming model, and designing equally well-chosen programming abstractions. Thus in our work we have concentrated on designing these low-level primitives, programming models, and programming abstractions and implementing them in open-source software.<br /><br />We believe that over the lifetime of this grant, based in part on our work, graph analytics on GPUs have made significant steps in moving from research challenges to making an impact on real-world problems. Our open-source \"Gunrock\" and \"GraphBLAST\" frameworks, both developed with the support of this grant, now allow programmers to harness the power of the GPU for a wide variety of graph applications. In fact, Gunrock is now included in industry leader NVIDIA's data science framework \"RAPIDS\". The broader impact here is the increased accessibility to GPU graph analytics and the increase in performance when programmers use them, allowing more experiments and more rapid feedback to the broad set of engineering and science applications that compute on graphs.<br /><br />In the course of this project, we built graph frameworks based around two different programming models. The first uses a traditional graph programming model where low-level operations are defined on collections of graph vertices or edges. Our implementation, \"Gunrock\", offers the best combination of performance and programmability of any GPU graph framework. The second (\"Graph BLAS\") instead characterizes graph operations in the language of linear algebra, which, while not the most intuitive programming model, offers the enormous promise of leveraging existing linear-algebra implementations. The intellectual merit of our work is primarily in advancing the state of the art in algorithms and implementations for both native-graph and Graph BLAS programming models on GPUs.<br /><br />On the native-graph side, we demonstrated scalability of our Gunrock framework to multiple GPUs and to multiple nodes in a cluster, also showing how to implement the popular direction-optimized breadth-first search on the latter for the first time. We explored a number of applications using our Gunrock programming model, including graph coloring, triangle counting, and machine-learning inference. Finally, we extended the ability of Gunrock from only addressing static (unchanging) graphs to supporting dynamic (mutable) graphs with a novel dynamic-graph data structure that we added to Gunrock.<br /><br />On the Graph BLAS side, our research team was part of the group that helped define and advance the Graph BLAS as a standard, as well as defining applications that could be built atop Graph BLAS (\"LAGraph\"). Our chief contribution was building GraphBLAST, a Graph BLAS implementation on the GPU. GraphBLAST demonstrated best-in-class performance among Graph BLAS implementations and comparable and often better performance to Gunrock. One of the keys to our high performance was the algorithmic advancements that we made both in the implementation of sparse graph primitives on GPUs as well as novel graph algorithms built using the Graph BLAS (notably, direction-optimized breadth-first search).<br /><br />Finally, perhaps the greatest benefit of building both frameworks was our ability to compare and contrast them and from that effort, learn not only which frameworks are best on different graph algorithms and datasets but also why.<br /><br />We appreciate the support of the National Science Foundation in funding us to do this important work and advance the state of the art in our field.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/12/2021<br>\n\t\t\t\t\tModified by: John&nbsp;D&nbsp;Owens</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of this project was to develop software that can enable both high user productivity and high performance in implementing graph applications. Our work targeted the \"graphics processing unit\" (GPU), an emerging commodity highly parallel processor that is increasingly common in our mainstream computing infrastructure.\n\nThe principal challenge of this work is that while GPUs potentially offer high performance, they are difficult to program. What makes them hard to program includes the difficulty of writing capable, high-performance low-level primitives, specifying a well-chosen programming model, and designing equally well-chosen programming abstractions. Thus in our work we have concentrated on designing these low-level primitives, programming models, and programming abstractions and implementing them in open-source software.\n\nWe believe that over the lifetime of this grant, based in part on our work, graph analytics on GPUs have made significant steps in moving from research challenges to making an impact on real-world problems. Our open-source \"Gunrock\" and \"GraphBLAST\" frameworks, both developed with the support of this grant, now allow programmers to harness the power of the GPU for a wide variety of graph applications. In fact, Gunrock is now included in industry leader NVIDIA's data science framework \"RAPIDS\". The broader impact here is the increased accessibility to GPU graph analytics and the increase in performance when programmers use them, allowing more experiments and more rapid feedback to the broad set of engineering and science applications that compute on graphs.\n\nIn the course of this project, we built graph frameworks based around two different programming models. The first uses a traditional graph programming model where low-level operations are defined on collections of graph vertices or edges. Our implementation, \"Gunrock\", offers the best combination of performance and programmability of any GPU graph framework. The second (\"Graph BLAS\") instead characterizes graph operations in the language of linear algebra, which, while not the most intuitive programming model, offers the enormous promise of leveraging existing linear-algebra implementations. The intellectual merit of our work is primarily in advancing the state of the art in algorithms and implementations for both native-graph and Graph BLAS programming models on GPUs.\n\nOn the native-graph side, we demonstrated scalability of our Gunrock framework to multiple GPUs and to multiple nodes in a cluster, also showing how to implement the popular direction-optimized breadth-first search on the latter for the first time. We explored a number of applications using our Gunrock programming model, including graph coloring, triangle counting, and machine-learning inference. Finally, we extended the ability of Gunrock from only addressing static (unchanging) graphs to supporting dynamic (mutable) graphs with a novel dynamic-graph data structure that we added to Gunrock.\n\nOn the Graph BLAS side, our research team was part of the group that helped define and advance the Graph BLAS as a standard, as well as defining applications that could be built atop Graph BLAS (\"LAGraph\"). Our chief contribution was building GraphBLAST, a Graph BLAS implementation on the GPU. GraphBLAST demonstrated best-in-class performance among Graph BLAS implementations and comparable and often better performance to Gunrock. One of the keys to our high performance was the algorithmic advancements that we made both in the implementation of sparse graph primitives on GPUs as well as novel graph algorithms built using the Graph BLAS (notably, direction-optimized breadth-first search).\n\nFinally, perhaps the greatest benefit of building both frameworks was our ability to compare and contrast them and from that effort, learn not only which frameworks are best on different graph algorithms and datasets but also why.\n\nWe appreciate the support of the National Science Foundation in funding us to do this important work and advance the state of the art in our field.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 09/12/2021\n\n\t\t\t\t\tSubmitted by: John D Owens"
+ }
+}

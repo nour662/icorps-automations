@@ -1,0 +1,96 @@
+{
+ "awd_id": "1713691",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Nonlinear Partial Differential Equations, Monotone Numerical Schemes, and Scaling Limits for Semi-Supervised Learning on Graphs",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Victor Roytburd",
+ "awd_eff_date": "2017-08-15",
+ "awd_exp_date": "2020-07-31",
+ "tot_intn_awd_amt": 163136.0,
+ "awd_amount": 163136.0,
+ "awd_min_amd_letter_date": "2017-08-08",
+ "awd_max_amd_letter_date": "2017-08-08",
+ "awd_abstract_narration": "Machine learning aims to harness the power of data to train algorithms to make predictions and perform complex tasks in science, engineering, medicine, and everyday life.  Despite the wide success of machine learning, the growing size of typical data sets is creating serious computational challenges, partially due to our incomplete understanding of how algorithms work in the big data regime.  The first goal of this project is to address these issues within a branch of machine learning called graph-based semi-supervised learning, which has found applications in problems such as protein sequencing, website classification, and speech recognition.  The investigator analyzes some recently-proposed algorithms for semi-supervised learning.  A deep mathematical understanding of these algorithms explains why they work and, more importantly, when they will fail.  The investigator uses these insights to develop new, fast, and more efficient algorithms for semi-supervised learning.  The second goal of this project is to develop and study new algorithms for curvature motions of curves and surfaces that are stable, efficient, and convergent.  Curvature motion has found many applications in science and engineering, including materials science, computer vision, image processing, and recently in data science and machine learning.  Curvature motion describes, for example, the motion of soap bubbles as well as the evolution of polycrystalline materials (such as metals and ceramic) during the manufacturing process.  Because both machine learning and curvature motions have very broad applications across science and engineering, any improvement in algorithms and in our understanding of them could have broad societal impacts.\r\n\r\nThe first objective of this project is to study rigorously a recently-proposed algorithm for graph-based semi-supervised learning based on Lp-Laplacian regularization.  In particular, the investigator proves that the learning algorithms have continuum limits that correspond to solving a weighted p-Laplace equation in the viscosity sense.  In the limit of small labeled data and infinite unlabeled data, it has recently been conjectured that Lp-Laplacian regularization is ill-posed when p is smaller than the intrinsic dimension of the data.  The project aims to settle this conjecture rigorously.  The investigator uses these continuum limits to study the relationship between the fraction of labeled data and the performance of the algorithms, and to develop new and more efficient computational algorithms based on these insights.  The second objective of the project is to develop and analyze a new class of monotone finite difference schemes for curvature-driven motions of curves and surfaces, for which rigorous convergence proofs are available.  The investigator has recently discovered a general technique for constructing monotone finite difference schemes for a wide class of curvature motions of curves and surfaces.  He implements the new schemes for a variety of motions, experimentally tests convergence rates, and rigorously proves convergence to the viscosity solution using the Barles-Souganidis framework.  Monotonicity of the new schemes allows for the development of fully implicit and unconditionally monotone time-stepping schemes, and guarantees the approximations are capturing the correct continuum dynamics.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jeffrey",
+   "pi_last_name": "Calder",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jeffrey Calder",
+   "pi_email_addr": "jwcalder@umn.edu",
+   "nsf_id": "000677566",
+   "pi_start_date": "2017-08-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Minnesota-Twin Cities",
+  "inst_street_address": "2221 UNIVERSITY AVE SE STE 100",
+  "inst_street_address_2": "",
+  "inst_city_name": "MINNEAPOLIS",
+  "inst_state_code": "MN",
+  "inst_state_name": "Minnesota",
+  "inst_phone_num": "6126245599",
+  "inst_zip_code": "554143074",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "MN05",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF MINNESOTA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "KABJZBBJ4B54"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Universiy of MInnesota, School of Mathematics- Twin Cities",
+  "perf_str_addr": "206 Church St SE",
+  "perf_city_name": "Minneapolis",
+  "perf_st_code": "MN",
+  "perf_st_name": "Minnesota",
+  "perf_zip_code": "554550488",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "MN05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126600",
+   "pgm_ele_name": "APPLIED MATHEMATICS"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 163136.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project was focused on theoretical and algorithmic developments in graph-based learning, and in particular, semi-supervised learning. Semi-supervised learning aims to learn new classes with as few training examples as possible. For example, even a child can look at a single image of, say, a train, and can easily learn the class and recognize new images of trains, even if they are different colors, sizes, shapes, etc. In contrast, current machine learning algorithms need hundreds, if not thousands, of examples of a new class to learn it well. Semi-supervised learning aims to bridge this gap.</p>\n<p><br />One main technical aspect of the project was to rigorously study some common algorithms for semi-supervised learning in the setting of very few labeled examples per class. The commonly used algorithm Laplace learning does not perform well in this regime. The theoretical work developed in this project explains why this is the case, and led directly to a new class of algorithms that do work well for semi-supervised learning with very few labels, including p-Laplace learning, the Properly Weighted graph Laplacian, and Poisson learning. The PI studied these algorithms rigorously, proving they work well with very few labels, and developed algorithms to efficiently find solutions to these semi-supervised learning problems. This work has the potential to have a broad impact in fields that use semi-supervised learning, such as DNA sequence classification, speech recognition, and image classification, among many other problems.</p>\n<p><br />Another contribution of the project is the analysis of several commonly used algorithms in the field of unsupervised learning. Unsupervised learning aims to uncover structure in data, such as the existence of distinct clusters. The PI studied unsupervised algorithms for dimension reduction, which aim to give simple representations of complicated high dimensional data. In particular, the PI studied spectral embedding algorithms, which use the spectrum of the graph Laplacian to embed data into low dimensional Euclidean spaces. The PI proved that these embeddings have a smoother structure than was previously understood, by establishing Lipschitz regularity for Laplacian eigenfunctions. These results were then used to strongly connect the graph Laplacian eigenfunctions to their continuum counterparts (a weighted Laplace-Beltrami operator on a data manifold), which provides improved tools for studying this important class of algorithms. The PI also established a continuum limit for Google's PageRank algorithm, which opens the door to a better understanding of ranking algorithms on directed graphs, which have applications in biology, chemistry, ecology, neuroscience, physics, and computer systems.</p>\n<p><br />A third, and final, contribution is the development of a new algorithm, called PDE acceleration, for solving convex calculus of variations problems. The algorithm draws inspiration from momentum, also called acceleration, methods for optimization that are popular in machine learning, and in particular, in deep learning. The PI generalized the ideas to the setting of solving partial differential equations that arise from calculus of variations problems, and proved convergence with an exponential rate of the resulting PDE acceleration algorithm. This work has the potential to have an impact on many areas of science and engineering that rely on variational formulations, such as geometric optics, thin film design, optimal control theory, and many other areas.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/25/2020<br>\n\t\t\t\t\tModified by: Jeffrey&nbsp;Calder</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project was focused on theoretical and algorithmic developments in graph-based learning, and in particular, semi-supervised learning. Semi-supervised learning aims to learn new classes with as few training examples as possible. For example, even a child can look at a single image of, say, a train, and can easily learn the class and recognize new images of trains, even if they are different colors, sizes, shapes, etc. In contrast, current machine learning algorithms need hundreds, if not thousands, of examples of a new class to learn it well. Semi-supervised learning aims to bridge this gap.\n\n\nOne main technical aspect of the project was to rigorously study some common algorithms for semi-supervised learning in the setting of very few labeled examples per class. The commonly used algorithm Laplace learning does not perform well in this regime. The theoretical work developed in this project explains why this is the case, and led directly to a new class of algorithms that do work well for semi-supervised learning with very few labels, including p-Laplace learning, the Properly Weighted graph Laplacian, and Poisson learning. The PI studied these algorithms rigorously, proving they work well with very few labels, and developed algorithms to efficiently find solutions to these semi-supervised learning problems. This work has the potential to have a broad impact in fields that use semi-supervised learning, such as DNA sequence classification, speech recognition, and image classification, among many other problems.\n\n\nAnother contribution of the project is the analysis of several commonly used algorithms in the field of unsupervised learning. Unsupervised learning aims to uncover structure in data, such as the existence of distinct clusters. The PI studied unsupervised algorithms for dimension reduction, which aim to give simple representations of complicated high dimensional data. In particular, the PI studied spectral embedding algorithms, which use the spectrum of the graph Laplacian to embed data into low dimensional Euclidean spaces. The PI proved that these embeddings have a smoother structure than was previously understood, by establishing Lipschitz regularity for Laplacian eigenfunctions. These results were then used to strongly connect the graph Laplacian eigenfunctions to their continuum counterparts (a weighted Laplace-Beltrami operator on a data manifold), which provides improved tools for studying this important class of algorithms. The PI also established a continuum limit for Google's PageRank algorithm, which opens the door to a better understanding of ranking algorithms on directed graphs, which have applications in biology, chemistry, ecology, neuroscience, physics, and computer systems.\n\n\nA third, and final, contribution is the development of a new algorithm, called PDE acceleration, for solving convex calculus of variations problems. The algorithm draws inspiration from momentum, also called acceleration, methods for optimization that are popular in machine learning, and in particular, in deep learning. The PI generalized the ideas to the setting of solving partial differential equations that arise from calculus of variations problems, and proved convergence with an exponential rate of the resulting PDE acceleration algorithm. This work has the potential to have an impact on many areas of science and engineering that rely on variational formulations, such as geometric optics, thin film design, optimal control theory, and many other areas.\n\n\t\t\t\t\tLast Modified: 11/25/2020\n\n\t\t\t\t\tSubmitted by: Jeffrey Calder"
+ }
+}

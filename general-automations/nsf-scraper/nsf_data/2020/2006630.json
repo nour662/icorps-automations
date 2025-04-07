@@ -1,0 +1,101 @@
+{
+ "awd_id": "2006630",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: CNS Core: Small: Towards Automated and QoE-driven Machine Learning Model Selection for Edge Inference",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 249968.0,
+ "awd_amount": 249968.0,
+ "awd_min_amd_letter_date": "2020-08-10",
+ "awd_max_amd_letter_date": "2020-08-10",
+ "awd_abstract_narration": "Edge devices, such as mobile phones, drones and robots, have been emerging as an increasingly more important platform for deep neural network (DNN) inference. For an edge device, selecting an optimal DNN model out of many possibilities is crucial for maximizing the user\u2019s quality of experience (QoE), but this is significantly challenged by the high degree of heterogeneity in edge devices and constant-changing usage scenarios. The current practice commonly selects a single DNN model for many or all edge devices, which can only provide a satisfactory QoE for a small fraction of users at best. Alternatively, device-specific DNN model optimization is time-consuming and not scalable to a large diversity of edge devices. Moreover, the existing approaches focus on optimizing a certain objective metric for edge inference, which may not translate into improvement of the actual QoE for users. By leveraging the predictive power of machine learning and keeping users in a loop, this project proposes an automated and scalable device-level DNN model selection engine for QoE-optimal edge inference. Specifically, this project includes two thrusts: first, it exploits online learning to predict QoE for each edge device, automating deployment-stage DNN model selection; and second, it builds a runtime QoE predictor and automatically selects an optimal DNN model given runtime contextual information.\r\n\r\nThis project represents an important departure from and an essential complement to the current practices in DNN model optimization. It can bring the benefits of DNN-enabled intelligence to many more resource-constrained edge devices with an optimal QoE. Additionally, it provides novel observations, insights and principles for edge inference, catalyzing the transformation of the design of DNN models into a new user-centric paradigm. This project also enables new opportunities to improve curriculum design and attract students, especially under-represented minorities, to engage in science, technology, engineering, and mathematics fields.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jie",
+   "pi_last_name": "Xu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jie Xu",
+   "pi_email_addr": "jie.xu@ufl.edu",
+   "nsf_id": "000700862",
+   "pi_start_date": "2020-08-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Miami",
+  "inst_street_address": "1320 SOUTH DIXIE HIGHWAY STE 650",
+  "inst_street_address_2": "",
+  "inst_city_name": "CORAL GABLES",
+  "inst_state_code": "FL",
+  "inst_state_name": "Florida",
+  "inst_phone_num": "3052843924",
+  "inst_zip_code": "331462919",
+  "inst_country_name": "United States",
+  "cong_dist_code": "27",
+  "st_cong_dist_code": "FL27",
+  "org_lgl_bus_name": "UNIVERSITY OF MIAMI",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "RQMFJGDTQ5V3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Miami",
+  "perf_str_addr": "1251 Memorial Drive, MEB 520",
+  "perf_city_name": "Coral Gables",
+  "perf_st_code": "FL",
+  "perf_st_name": "Florida",
+  "perf_zip_code": "331462509",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "27",
+  "perf_st_cong_dist": "FL27",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 249968.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project focused on enhancing edge inference, where deep neural network (DNN) models are deployed on edge devices such as mobile phones, drones, and robots. Edge inference offers benefits like reduced latency, increased privacy, and lower dependence on network connections. However, significant challenges arise from the heterogeneity of device hardware, user scenarios, and the variety of available DNN models. To address these challenges, the project introduced&nbsp;<strong>Aquaman</strong>, a scalable and automated model selection engine designed to optimize inference quality in diverse edge environments. This system dynamically selects DNN models for edge devices, balancing accuracy, latency, and energy consumption, all while adapting to users' needs.</p>\r\n<p><strong>Intellectual Merit</strong></p>\r\n<p>The project advanced the field of edge inference through several key innovations in model selection and federated learning.</p>\r\n<p>Initially, the team designed a cloud/edge computing platform to implement DNN ensemble techniques aimed at improving inference quality. DNN ensembles are known for reducing prediction variance, improving accuracy, and enhancing robustness against adversarial attacks. The DNN ensemble selection problem was formulated to adaptively select a subset of DNNs, called EdgeCmte, best-suited for the current inference tasks, while accounting for computing resource constraints and service response deadlines.</p>\r\n<p>The core focus of the project shifted toward automated, user-centric DNN model selection. The team developed Aquaman, a system that uses Quality of Experience (QoE) feedback from users to guide model selection decisions. The QoE predictor at the heart of Aquaman continuously adapts based on real-time user feedback, using a neural bandit learning approach to balance exploration and exploitation efficiently. This system demonstrated its effectiveness through experimental studies, showing how it could enhance edge inference across diverse user conditions.</p>\r\n<p>To further improve QoE, the project developed an approach for runtime customization of DNN inference on edge devices. This framework employed the NeuralUCB algorithm, which generalizes well to various user QoE patterns. By incorporating knowledge transfer techniques, the learning process was accelerated, reducing the need for frequent user feedback solicitation while maintaining learning efficiency. Experiments on synthetic and real-world data confirmed the framework's ability to improve runtime DNN model selection and enhance user QoE.</p>\r\n<p>Building on previous work, the project developed the Neural Ensemble (NeuE) algorithm to manage the complexity of DNN ensemble formation for edge devices. By using neural network-based performance predictors, NeuE adapted to device heterogeneity and computing resource limitations, ensuring that the ensemble selected was optimized for both inference accuracy and service deadlines.</p>\r\n<p>Federated learning (FL) played a crucial role in accelerating model customization. By leveraging FL, the project was able to build a common runtime QoE predictor, which significantly sped up the model customization process on individual edge devices. The development of MARLIN (Mobility-Assisted Federated LearnINg), an asynchronous FL algorithm, enhanced convergence rates by using mobile device relays, further reducing the time required for model adaptation.</p>\r\n<p>To address real-world challenges such as heterogeneous data domains, instance-dependent noisy labels, and client dropout, the project incorporated various FL techniques. These innovations enabled the framework to maintain high inference quality and robustness despite variations in data quality and device participation.</p>\r\n<p><strong>Broader Impacts</strong></p>\r\n<p>This project has had significant impacts on both the scientific community and society at large.</p>\r\n<ol>\r\n<li><strong>Scientific Impact</strong>: The project made substantial contributions to the field of edge AI by introducing innovative methods for automating DNN model selection and optimizing runtime customization. The integration of federated learning with edge inference has opened new avenues for privacy-preserving AI systems, particularly for real-time applications on resource-constrained devices.</li>\r\n<li><strong>Societal Impact</strong>: By improving edge inference, the project enhances user experiences in various real-world scenarios, from mobile applications to autonomous systems. The ability to adapt to device-specific constraints and user preferences makes edge AI more practical and efficient.&nbsp;</li>\r\n<li><strong>Educational Impact</strong>: The project has played a pivotal role in educating the next generation of researchers and engineers. The work has been incorporated into undergraduate and graduate courses. Additionally, the project has created opportunities for minority students to engage in meaningful research, which will positively impact their academic and career trajectories.</li>\r\n<li><strong>Open-Source Contributions</strong>: The research team made relevant code and models publicly available, fostering collaboration and further innovation within both academia and industry.&nbsp;</li>\r\n</ol>\r\n<p><strong>Conclusion</strong></p>\r\n<p>This project successfully advanced the field of edge inference, providing innovative solutions to optimize deep neural network model selection and customization for edge devices. The development of the Aquaman engine has paved the way for more efficient, scalable, and privacy-preserving AI systems in edge environments. These contributions have the potential to revolutionize the deployment of intelligent systems on mobile and embedded devices, improving both user experiences and the practical applicability of edge AI technologies.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 01/07/2025<br>\nModified by: Jie&nbsp;Xu</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThis project focused on enhancing edge inference, where deep neural network (DNN) models are deployed on edge devices such as mobile phones, drones, and robots. Edge inference offers benefits like reduced latency, increased privacy, and lower dependence on network connections. However, significant challenges arise from the heterogeneity of device hardware, user scenarios, and the variety of available DNN models. To address these challenges, the project introducedAquaman, a scalable and automated model selection engine designed to optimize inference quality in diverse edge environments. This system dynamically selects DNN models for edge devices, balancing accuracy, latency, and energy consumption, all while adapting to users' needs.\r\n\n\nIntellectual Merit\r\n\n\nThe project advanced the field of edge inference through several key innovations in model selection and federated learning.\r\n\n\nInitially, the team designed a cloud/edge computing platform to implement DNN ensemble techniques aimed at improving inference quality. DNN ensembles are known for reducing prediction variance, improving accuracy, and enhancing robustness against adversarial attacks. The DNN ensemble selection problem was formulated to adaptively select a subset of DNNs, called EdgeCmte, best-suited for the current inference tasks, while accounting for computing resource constraints and service response deadlines.\r\n\n\nThe core focus of the project shifted toward automated, user-centric DNN model selection. The team developed Aquaman, a system that uses Quality of Experience (QoE) feedback from users to guide model selection decisions. The QoE predictor at the heart of Aquaman continuously adapts based on real-time user feedback, using a neural bandit learning approach to balance exploration and exploitation efficiently. This system demonstrated its effectiveness through experimental studies, showing how it could enhance edge inference across diverse user conditions.\r\n\n\nTo further improve QoE, the project developed an approach for runtime customization of DNN inference on edge devices. This framework employed the NeuralUCB algorithm, which generalizes well to various user QoE patterns. By incorporating knowledge transfer techniques, the learning process was accelerated, reducing the need for frequent user feedback solicitation while maintaining learning efficiency. Experiments on synthetic and real-world data confirmed the framework's ability to improve runtime DNN model selection and enhance user QoE.\r\n\n\nBuilding on previous work, the project developed the Neural Ensemble (NeuE) algorithm to manage the complexity of DNN ensemble formation for edge devices. By using neural network-based performance predictors, NeuE adapted to device heterogeneity and computing resource limitations, ensuring that the ensemble selected was optimized for both inference accuracy and service deadlines.\r\n\n\nFederated learning (FL) played a crucial role in accelerating model customization. By leveraging FL, the project was able to build a common runtime QoE predictor, which significantly sped up the model customization process on individual edge devices. The development of MARLIN (Mobility-Assisted Federated LearnINg), an asynchronous FL algorithm, enhanced convergence rates by using mobile device relays, further reducing the time required for model adaptation.\r\n\n\nTo address real-world challenges such as heterogeneous data domains, instance-dependent noisy labels, and client dropout, the project incorporated various FL techniques. These innovations enabled the framework to maintain high inference quality and robustness despite variations in data quality and device participation.\r\n\n\nBroader Impacts\r\n\n\nThis project has had significant impacts on both the scientific community and society at large.\r\n\r\nScientific Impact: The project made substantial contributions to the field of edge AI by introducing innovative methods for automating DNN model selection and optimizing runtime customization. The integration of federated learning with edge inference has opened new avenues for privacy-preserving AI systems, particularly for real-time applications on resource-constrained devices.\r\nSocietal Impact: By improving edge inference, the project enhances user experiences in various real-world scenarios, from mobile applications to autonomous systems. The ability to adapt to device-specific constraints and user preferences makes edge AI more practical and efficient.\r\nEducational Impact: The project has played a pivotal role in educating the next generation of researchers and engineers. The work has been incorporated into undergraduate and graduate courses. Additionally, the project has created opportunities for minority students to engage in meaningful research, which will positively impact their academic and career trajectories.\r\nOpen-Source Contributions: The research team made relevant code and models publicly available, fostering collaboration and further innovation within both academia and industry.\r\n\r\n\n\nConclusion\r\n\n\nThis project successfully advanced the field of edge inference, providing innovative solutions to optimize deep neural network model selection and customization for edge devices. The development of the Aquaman engine has paved the way for more efficient, scalable, and privacy-preserving AI systems in edge environments. These contributions have the potential to revolutionize the deployment of intelligent systems on mobile and embedded devices, improving both user experiences and the practical applicability of edge AI technologies.\r\n\n\n\r\n\n\n\t\t\t\t\tLast Modified: 01/07/2025\n\n\t\t\t\t\tSubmitted by: JieXu\n"
+ }
+}

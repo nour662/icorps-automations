@@ -1,0 +1,101 @@
+{
+ "awd_id": "1617992",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small: Running the Kernel Continuously with Simultaneous Multi-Threading",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2016-10-01",
+ "awd_exp_date": "2020-09-30",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 500000.0,
+ "awd_min_amd_letter_date": "2016-08-08",
+ "awd_max_amd_letter_date": "2016-08-08",
+ "awd_abstract_narration": "Since 2002, many commodity computer processors include a feature called simultaneous multi-threading (SMT), marketed by Intel as Hyperthreading (tm). SMT enables a single processor core to perform two or more tasks in parallel. Until now, operating systems researchers have focused on accommodating SMT in existing operating system designs, investigating topics such as SMT-aware resource allocation, scheduling and synchronization methods. In this project, rather than merely accommodate SMT, we investigate a new low-level operating system design that is enabled by SMT hardware. In modern operating systems, the processor switches between the safe but quite limited 'user mode' which is used to run applications, and the unsafe but all-powerful 'supervisor mode' which is available only to the operating system. Sometimes, these switches occur millions of times per second, providing an illusion of parallel operation. In our new design, the user and supervisor modes are actually active simultaneously, but on separate SMT threads. This avoids the often high cost of frequent mode switches, and enables new efficiency and design improvements throughout the operating system. \r\n\r\nBased on preliminary measurements, we find that the throughput gains provided by conventional SMT diminishes rapidly with the number of processor cores in a system, as a result of sub-linear scalability in the application. To counter this, and to make better use of existing hardware, we propose the \"cokernel\" operating system design principle, where one hardware thread per CPU is dedicated to continuously executing the kernel. By offloading kernel duties from the other hardware thread(s), a cokernel operating system enables higher per-thread application throughput, avoiding  scalability concerns. In addition, having a continuously executing kernel thread on each core enables a wide range of improvements to other aspects of the kernel, such as replacing most system calls with message passing, hybrid cooperative-preemptive process scheduling, kernel-assisted asynchronous inter-core and inter-socket communication and true kernel background tasks.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jakob",
+   "pi_last_name": "Eriksson",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jakob Eriksson",
+   "pi_email_addr": "jakob@uic.edu",
+   "nsf_id": "000537836",
+   "pi_start_date": "2016-08-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Illinois at Chicago",
+  "inst_street_address": "809 S MARSHFIELD AVE M/C 551",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHICAGO",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "3129962862",
+  "inst_zip_code": "606124305",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "IL07",
+  "org_lgl_bus_name": "UNIVERSITY OF ILLINOIS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "W8XEAJDKMXH3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Illinois at Chicago",
+  "perf_str_addr": "851 S Morgan St",
+  "perf_city_name": "Chicago",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "606077042",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "IL07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 500000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project explores new approaches for using the increasing number of cores available in modern CPUs. With more cores available, traditional approaches, such as locks for mutual exclusion, and mode-changing system calls, may not offer the most scalable solution.</p>\n<p>While the project explored a range of research ideas around this central theme, the most fruitful direction, and eventually the primary focus of the project, was the idea of delegation as an alternative to shared memory for communication between cores running an application. In layman terms, conventional shared memory communication requires a CPU core to first acquire exclusive use of a shared data structure before accessing it, a process which sometimes requires considerable coordination between cores. This is analogous to a shared pen and dry-erase board, that several people huddle around to write on. Delegation, meanwhile, designates one core as solely responsible for any given shared data structure, and other cores request work to be performed through a dedicated communication channel. To continue the board analogy, this corresponds to one person exclusively writing on the shared board, according to the wishes of others. Under many circumstances, this is significantly more efficient.&nbsp;</p>\n<p>The findings of the project include highly efficient communication channels for delegation, which have been shown to substantially outperform the conventional model on a range of applications. The project also demonstrated means by which individual cores rapidly switch between the \"client\" and \"server\" roles - alternately performing work as directed by others, and asking others to do work (on other data structures) on their behalf. Finally, looking into the future, delegation has the potential to seamlessly connect multiple individual computers, allowing a single application to efficiently run on much larger systems than what is possible with shared-memory communication.&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/12/2021<br>\n\t\t\t\t\tModified by: Jakob&nbsp;Eriksson</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project explores new approaches for using the increasing number of cores available in modern CPUs. With more cores available, traditional approaches, such as locks for mutual exclusion, and mode-changing system calls, may not offer the most scalable solution.\n\nWhile the project explored a range of research ideas around this central theme, the most fruitful direction, and eventually the primary focus of the project, was the idea of delegation as an alternative to shared memory for communication between cores running an application. In layman terms, conventional shared memory communication requires a CPU core to first acquire exclusive use of a shared data structure before accessing it, a process which sometimes requires considerable coordination between cores. This is analogous to a shared pen and dry-erase board, that several people huddle around to write on. Delegation, meanwhile, designates one core as solely responsible for any given shared data structure, and other cores request work to be performed through a dedicated communication channel. To continue the board analogy, this corresponds to one person exclusively writing on the shared board, according to the wishes of others. Under many circumstances, this is significantly more efficient. \n\nThe findings of the project include highly efficient communication channels for delegation, which have been shown to substantially outperform the conventional model on a range of applications. The project also demonstrated means by which individual cores rapidly switch between the \"client\" and \"server\" roles - alternately performing work as directed by others, and asking others to do work (on other data structures) on their behalf. Finally, looking into the future, delegation has the potential to seamlessly connect multiple individual computers, allowing a single application to efficiently run on much larger systems than what is possible with shared-memory communication. \n\n\t\t\t\t\tLast Modified: 02/12/2021\n\n\t\t\t\t\tSubmitted by: Jakob Eriksson"
+ }
+}

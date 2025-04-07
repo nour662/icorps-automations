@@ -1,0 +1,109 @@
+{
+ "awd_id": "1216829",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small:Conductor: A Run-Time System for Exascale Computing",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2012-10-01",
+ "awd_exp_date": "2017-09-30",
+ "tot_intn_awd_amt": 400000.0,
+ "awd_amount": 400000.0,
+ "awd_min_amd_letter_date": "2012-09-11",
+ "awd_max_amd_letter_date": "2012-09-11",
+ "awd_abstract_narration": "One of the critical problems---if not the critical problem---in\r\nreaching the exascale computing goal by the end of the decade is the\r\npower problem.  Exascale systems have a target power constraint of 20\r\nmegawatts even though today's petascale systems---which have\r\nperformance at least two orders of magnitude below prospective\r\nexascale systems---generally consume around 5 megawatts.  Hardware\r\nimprovements alone will not bridge this gap.\r\n\r\nThe PI is developing a run-time system called Conductor to address the\r\npower issue.  The overall goal of Conductor is to produce near-optimal\r\napplication performance under a prescribed power bound.  Conductor\r\ncarries this out by allocating power both between and within nodes.\r\nFirst, the PI is designing and implementing a new technique called\r\npower scheduling, which addresses the inter-node case.  The second\r\npart of Conductor addresses the intra-node case with power gating,\r\nwhich allows powering off of individual components in a more\r\nfine-grain manner than is generally available in architectures today.\r\nFinally, the PI is investigating techniques to allow users to assist\r\nConductor, through annotations, in achieving high performance in cases\r\nwhere power scheduling and power gating alone are not sufficient.\r\n\r\nThe impact of the research described in this proposal is significant.\r\nConductor is essential to achieving exascale performance on nontrivial\r\napplications, and it will help push towards the exascale goal.\r\nAchieving exascale performance is an important national priority and\r\nwill impact many application domains.  The PI is also integrating the\r\nresearch ideas into both undergraduate and graduate parallel and\r\ndistributed computing courses.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "David",
+   "pi_last_name": "Lowenthal",
+   "pi_mid_init": "K",
+   "pi_sufx_name": "",
+   "pi_full_name": "David K Lowenthal",
+   "pi_email_addr": "dkl@cs.arizona.edu",
+   "nsf_id": "000435738",
+   "pi_start_date": "2012-09-11",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Arizona",
+  "inst_street_address": "845 N PARK AVE RM 538",
+  "inst_street_address_2": "",
+  "inst_city_name": "TUCSON",
+  "inst_state_code": "AZ",
+  "inst_state_name": "Arizona",
+  "inst_phone_num": "5206266000",
+  "inst_zip_code": "85721",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "AZ07",
+  "org_lgl_bus_name": "UNIVERSITY OF ARIZONA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "ED44Y3W6P7B9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Arizona",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "AZ",
+  "perf_st_name": "Arizona",
+  "perf_zip_code": "857210001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "AZ07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7354",
+   "pgm_ref_txt": "COMPUTER SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 400000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>One of the critical problems---if not the critical problem---in<br />reaching the exascale computing goal by the end of the decade is the<br />power problem.&nbsp; Exascale systems have a target power constraint of 20<br />megawatts, and the performance and power consumptions of today's<br />petascale systems are not on a target to achieve this goal.&nbsp; Hardware<br />improvements alone will not bridge this gap.&nbsp; This project developed<br />software infrastructure to address the power/performance gap so that<br />the exascale goal will be more easily reached.<br /><br />The intellectual merit of this work was in several areas.&nbsp; First, we<br />showed that using an overprovisioned supercomputer can lead to better<br />performance across a range of applications, while still meeting a<br />power constraint.&nbsp; In particular, we found that overprovisioning leads<br />to an average speedup of more than 50% over worst-case provisioning,<br />which is the current state-of-the-art.<br /><br />Second, we developed a follow-on run-time system, called Conductor,<br />that helped to allocate power to applications so that performance is<br />improved.&nbsp; Over a set of high-performance computing benchmarks,<br />Conductor leads to a best-case performance improvement of up to 30%<br />and an average improvement of 19%.</p>\n<p>Third, we developed novel scheduling algorithms for overprovisioned<br />clusters that improve throughput on such machines while maintaining a<br />system-wide power bound.&nbsp; Our results show that our new scheduling<br />policy increases system power utilization while adhering to strict<br />job-level power bounds.&nbsp; It leads to 31% (19% on average) and 54% (36%<br />on average) faster average turnaround time when compared to worst-case<br />provisioning and naive overprovisioning respectively.<br /><br />The broader impact of the research described in this proposal is<br />significant.&nbsp; Conductor is essential to achieving exascale performance<br />on nontrivial applications, and it will help push towards the exascale<br />goal.&nbsp; Achieving exascale performance is an important national<br />priority and will impact many application domains.&nbsp; Notably, parts of<br />our work on power-aware scheduling is being considered for inclusion<br />in the next-generation scheduler being developed at Lawrence Livermore<br />National Laboratory, which has a large user base.&nbsp; In addition,<br />Conductor is in final form and will soon be distributed freely.&nbsp; The PI also integrated the research ideas into both undergraduate and graduate parallel and distributed computing courses.&nbsp;&nbsp; Specifically, both courses now have a power/performance component.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/20/2017<br>\n\t\t\t\t\tModified by: David&nbsp;Lowenthal</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOne of the critical problems---if not the critical problem---in\nreaching the exascale computing goal by the end of the decade is the\npower problem.  Exascale systems have a target power constraint of 20\nmegawatts, and the performance and power consumptions of today's\npetascale systems are not on a target to achieve this goal.  Hardware\nimprovements alone will not bridge this gap.  This project developed\nsoftware infrastructure to address the power/performance gap so that\nthe exascale goal will be more easily reached.\n\nThe intellectual merit of this work was in several areas.  First, we\nshowed that using an overprovisioned supercomputer can lead to better\nperformance across a range of applications, while still meeting a\npower constraint.  In particular, we found that overprovisioning leads\nto an average speedup of more than 50% over worst-case provisioning,\nwhich is the current state-of-the-art.\n\nSecond, we developed a follow-on run-time system, called Conductor,\nthat helped to allocate power to applications so that performance is\nimproved.  Over a set of high-performance computing benchmarks,\nConductor leads to a best-case performance improvement of up to 30%\nand an average improvement of 19%.\n\nThird, we developed novel scheduling algorithms for overprovisioned\nclusters that improve throughput on such machines while maintaining a\nsystem-wide power bound.  Our results show that our new scheduling\npolicy increases system power utilization while adhering to strict\njob-level power bounds.  It leads to 31% (19% on average) and 54% (36%\non average) faster average turnaround time when compared to worst-case\nprovisioning and naive overprovisioning respectively.\n\nThe broader impact of the research described in this proposal is\nsignificant.  Conductor is essential to achieving exascale performance\non nontrivial applications, and it will help push towards the exascale\ngoal.  Achieving exascale performance is an important national\npriority and will impact many application domains.  Notably, parts of\nour work on power-aware scheduling is being considered for inclusion\nin the next-generation scheduler being developed at Lawrence Livermore\nNational Laboratory, which has a large user base.  In addition,\nConductor is in final form and will soon be distributed freely.  The PI also integrated the research ideas into both undergraduate and graduate parallel and distributed computing courses.   Specifically, both courses now have a power/performance component.\n\n\t\t\t\t\tLast Modified: 10/20/2017\n\n\t\t\t\t\tSubmitted by: David Lowenthal"
+ }
+}

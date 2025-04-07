@@ -1,0 +1,117 @@
+{
+ "awd_id": "1218176",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AF: Small: Physics Based Approaches to Quantum Information Science",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927498",
+ "po_email": "achtchel@nsf.gov",
+ "po_sign_block_name": "Almadena Chtchelkanova",
+ "awd_eff_date": "2012-08-01",
+ "awd_exp_date": "2016-07-31",
+ "tot_intn_awd_amt": 499994.0,
+ "awd_amount": 499994.0,
+ "awd_min_amd_letter_date": "2012-07-17",
+ "awd_max_amd_letter_date": "2012-07-17",
+ "awd_abstract_narration": "Hopefully in the near future quantum computers will be built.  These devices could outperform conventional digital computers, not by having faster operations but by reducing the number of operations required to obtain a result. However to date there are only a few known examples of computational tasks where this speedup has been established.  The PIs of this proposal are looking for other ways that quantum computers could speed up computationally intensive tasks that now challenge the limits of conventional computers.  They are looking at several specific methods for achieving quantum speedup.  One such method is the Quantum Adiabatic Algorithm, which relies on a fundamental concept in quantum physics that tells us how to keep a quantum system in its lowest energy state. The PIs are investigating the efficacy of this method on general optimization problems which arise often in practice.  Another method uses the physics of quantum coherence on geometric structures to seek algorithmic speed up for search problems.  In addition to algorithms, the PIs will investigate quantum cryptographic protocols that might be used on a future quantum internet.  Applications of these ideas might include more secure identity protection as well as more secure financial transactions.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Peter",
+   "pi_last_name": "Shor",
+   "pi_mid_init": "W",
+   "pi_sufx_name": "",
+   "pi_full_name": "Peter W Shor",
+   "pi_email_addr": "shor@math.mit.edu",
+   "nsf_id": "000236958",
+   "pi_start_date": "2012-07-17",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Edward",
+   "pi_last_name": "Farhi",
+   "pi_mid_init": "H",
+   "pi_sufx_name": "",
+   "pi_full_name": "Edward H Farhi",
+   "pi_email_addr": "farhi@mit.edu",
+   "nsf_id": "000159560",
+   "pi_start_date": "2012-07-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Massachusetts Institute of Technology",
+  "inst_street_address": "77 MASSACHUSETTS AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6172531000",
+  "inst_zip_code": "021394301",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+  "org_prnt_uei_num": "E2NYLCDML6V1",
+  "org_uei_num": "E2NYLCDML6V1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Massachusetts Institute of Technology",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021394307",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7928",
+   "pgm_ref_txt": "QUANTUM COMPUTING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 499994.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The PIs investigated quantum information theory, focusing on the development of new algorithms for quantum computers. The most significant outcome of this project is the development of a class of algorithms that they call quantum approximate optimization algorithms (QAOA). The QAOA does not find the exact solution to a problem, but an approximate solution. It is a low-depth algorithm, which means it is suitable for the small quantum computers that experimentalists believe can be built in the near term. These algorithms work on constraint satisfaction problems, a class of problems that have been extensively studied by computer scientists and which arise quite often in practice. The PIs provided evidence that the QAOA is a powerful algorithm by showing that it generates better solutions than the straighforward classical algorithm for MAX CUT. There is only one classical algorithm that is guaranteed to do better. This is the Goemans-Williamson algorithm, and it is a complicated algorithm that uses the advanced technique of semidefinite programming, and for which the analysis is quite complicated. The QAOA, on the other hand, is a fairly simple algorithm, given that you have a quantum computer. There is still room for improvement of the parameters of the QAOA for this problem, so it is possible that finding the right parameters would let QAOA match Goemans-Williamson.&nbsp;</p>\n<p>The PIs also showed that even if small errors are made in the application of the quantum gates in the QAOA algorithm, the solution remains relatively good. Thus, quantum computers running the QAOA algorithm need not incur the large overhead required for quantum fault-tolerance.</p>\n<p>They further showed that, unless a widely-believed conjecture on complexity theory is false, classical computers cannot simulate the QAOA algorithm. To be more particular, they showed that a classical algorithm cannot replicate the probability distribution on the output given by the QAOA algorithm.</p>\n<p>The PIs also investigated the adiabatic algorithm for quantum computers. They tested several strategies for speeding up the adiabatic algorithm by simulating it on a classical computer, and showed that for small problems these strategies worked well on hard instances of a problem. Testing whether these would still work well for larger instances requires a quantum computer. They also numerically and analytically investigated a prevous scheme for providing a small degree of fault-tolerance to the adiabatic algorithm, and showed that it works as expected.</p>\n<p>The PIs also investigated quantum algorithms for lattice problems. Quantum computers would be able to break all public key cryptosystems currently in use. The cryptosystems which are currently most in favor to replace them are based on the hardness of lattice problems. Thus, it is of paramount importance to discover whether quantum computers can also solve these lattice problems. The PIs identified several quantum algorithms that manipulate lattices in ways that nobody previously knew how to do. It is still unclear whether these can be used as building blocks in an algorithm that would break lattice cryptosystems.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/14/2016<br>\n\t\t\t\t\tModified by: Peter&nbsp;W&nbsp;Shor</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe PIs investigated quantum information theory, focusing on the development of new algorithms for quantum computers. The most significant outcome of this project is the development of a class of algorithms that they call quantum approximate optimization algorithms (QAOA). The QAOA does not find the exact solution to a problem, but an approximate solution. It is a low-depth algorithm, which means it is suitable for the small quantum computers that experimentalists believe can be built in the near term. These algorithms work on constraint satisfaction problems, a class of problems that have been extensively studied by computer scientists and which arise quite often in practice. The PIs provided evidence that the QAOA is a powerful algorithm by showing that it generates better solutions than the straighforward classical algorithm for MAX CUT. There is only one classical algorithm that is guaranteed to do better. This is the Goemans-Williamson algorithm, and it is a complicated algorithm that uses the advanced technique of semidefinite programming, and for which the analysis is quite complicated. The QAOA, on the other hand, is a fairly simple algorithm, given that you have a quantum computer. There is still room for improvement of the parameters of the QAOA for this problem, so it is possible that finding the right parameters would let QAOA match Goemans-Williamson. \n\nThe PIs also showed that even if small errors are made in the application of the quantum gates in the QAOA algorithm, the solution remains relatively good. Thus, quantum computers running the QAOA algorithm need not incur the large overhead required for quantum fault-tolerance.\n\nThey further showed that, unless a widely-believed conjecture on complexity theory is false, classical computers cannot simulate the QAOA algorithm. To be more particular, they showed that a classical algorithm cannot replicate the probability distribution on the output given by the QAOA algorithm.\n\nThe PIs also investigated the adiabatic algorithm for quantum computers. They tested several strategies for speeding up the adiabatic algorithm by simulating it on a classical computer, and showed that for small problems these strategies worked well on hard instances of a problem. Testing whether these would still work well for larger instances requires a quantum computer. They also numerically and analytically investigated a prevous scheme for providing a small degree of fault-tolerance to the adiabatic algorithm, and showed that it works as expected.\n\nThe PIs also investigated quantum algorithms for lattice problems. Quantum computers would be able to break all public key cryptosystems currently in use. The cryptosystems which are currently most in favor to replace them are based on the hardness of lattice problems. Thus, it is of paramount importance to discover whether quantum computers can also solve these lattice problems. The PIs identified several quantum algorithms that manipulate lattices in ways that nobody previously knew how to do. It is still unclear whether these can be used as building blocks in an algorithm that would break lattice cryptosystems.\n\n\t\t\t\t\tLast Modified: 11/14/2016\n\n\t\t\t\t\tSubmitted by: Peter W Shor"
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "awd_id": "1704077",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "NeTS: Medium: From Packets to Insights: Programmable Streaming Analytics for Networks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Darleen Fisher",
+ "awd_eff_date": "2017-07-01",
+ "awd_exp_date": "2022-06-30",
+ "tot_intn_awd_amt": 1200000.0,
+ "awd_amount": 1212750.0,
+ "awd_min_amd_letter_date": "2017-06-23",
+ "awd_max_amd_letter_date": "2020-08-10",
+ "awd_abstract_narration": "The ability to monitor Internet traffic on our communications networks is of critical importance to our nation's economic prosperity and national security. For communications networks to run well, however, network operators must be able to manage them: they must be able to detect, diagnose, and fix problems that degrade the performance of the applications we use, and they must be able to detect and mitigate attacks against the infrastructure.\u00a0 To ensure that computer networks are secure and perform well, network operators need to gather measurements to detect attack traffic, diagnose performance problems, identify flaky equipment, drive traffic-engineering decisions, and more. Although network devices provide reasonable mechanisms for monitoring the control plane -- that part of the network that is responsible for routing packets/information through the network.\u00a0 Tools and mechanisms for monitoring the flow of network traffic remain primitive (e.g., ping and traceroute for active measurement, Netflow and sFlow for passive measurement). These measurements provide coarse statistics about network traffic or conditions, but they provide at once both too little information (because they obscure important details about the flows, such as packet timings, queue sizes, and loss rates) and too much information (because, for any particular question about performance or security, the operator needs detailed information about a few flows, as opposed to coarse information about all of them).  This project aims to develop measurements that are \"just right\" for each of the above tasks and to design a data-analytics platform for querying the data that can be used to diagnose and mitigate network problems.\r\n\u00a0\r\nTwo technological trends enable fundamentally new paradigms for network measurement. The first trend is the rise of programmable network hardware -- including reconfigurable application-specific integrated circuits (ASICs), field-programmable gate arrays (FPGAs), and network processors -- that are fast and inexpensive enough for use in commodity switches, and also programmable in target-independent languages like P4. The second trend is the emergence of scalable streaming analytics platforms, such as Spark Streaming and Apache Storm. These platforms make it possible to express queries based on streams of tuples and efficiently filter and aggregate the data. Using the programmable functionality from switches, one can define the types of tuples that a switch exports, and even perform simple computations over the tuples directly in the data plane. Given input tuple streams from one or more switches, the stream processor can compute the answer to a high-level query. This project is developing a streaming analytics framework that addresses these challenges. The researchers will develop a query language with familiar programming paradigms from existing streaming analytics platforms, which they will extend to support domain-specific primitives. They are also developing a runtime system that partitions this query across the stream processor and the switches in the data plane. Queries will entail network-wide aggregation, iterative \"drill down\" capabilities, and joins with external data sources (e.g., routing, application identification). The researchers are evaluating the feasibility and usability of this platform in the context of a wide-range of security and performance diagnosis queries that arise in operational networks.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jennifer",
+   "pi_last_name": "Rexford",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jennifer Rexford",
+   "pi_email_addr": "jrex@princeton.edu",
+   "nsf_id": "000474054",
+   "pi_start_date": "2017-06-23",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Nicholas",
+   "pi_last_name": "Feamster",
+   "pi_mid_init": "G",
+   "pi_sufx_name": "",
+   "pi_full_name": "Nicholas G Feamster",
+   "pi_email_addr": "feamster@uchicago.edu",
+   "nsf_id": "000489704",
+   "pi_start_date": "2017-06-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Princeton University",
+  "inst_street_address": "1 NASSAU HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "PRINCETON",
+  "inst_state_code": "NJ",
+  "inst_state_name": "New Jersey",
+  "inst_phone_num": "6092583090",
+  "inst_zip_code": "085442001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "NJ12",
+  "org_lgl_bus_name": "THE TRUSTEES OF PRINCETON UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NJ1YPQXQG7U5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Princeton University",
+  "perf_str_addr": "87 Prospect Avenue",
+  "perf_city_name": "Princeton",
+  "perf_st_code": "NJ",
+  "perf_st_name": "New Jersey",
+  "perf_zip_code": "085442020",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "NJ12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  },
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 286358.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 599665.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 326727.0
+  }
+ ],
+ "por": null
+}

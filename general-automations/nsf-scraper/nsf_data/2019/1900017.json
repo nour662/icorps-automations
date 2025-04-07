@@ -1,0 +1,145 @@
+{
+ "awd_id": "1900017",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CDS&E: D3SC: Accelerating Density Functional Theory Based Simulations and Materials Design with Machine Learning",
+ "cfda_num": "47.049",
+ "org_code": "03090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Michel Dupuis",
+ "awd_eff_date": "2019-06-15",
+ "awd_exp_date": "2023-05-31",
+ "tot_intn_awd_amt": 449999.0,
+ "awd_amount": 449999.0,
+ "awd_min_amd_letter_date": "2019-06-13",
+ "awd_max_amd_letter_date": "2021-02-24",
+ "awd_abstract_narration": "Rampi Ramprasad and Le Song of the Georgia Institute of Technology are supported by an award from the Chemical Theory, Models and Computational Methods program in the Division of Chemistry to accelerate computer simulations of molecules and materials.  The award is co-funded by the Condensed Matter and Materials Theory program in the Division of Materials Research.  Simulations based on Quantum Mechanics are accurate, versatile and vital to molecular and materials discovery. Unfortunately, for many real-world systems, they are also painstakingly slow.  Thus, scientists are often limited to studying idealized systems at small scales. Ramprasad and Song are utilizing Artificial Intelligence approaches to develop a new, transformative capability that observes, distills and learns the behavior of the Quantum Mechanical equations and notions of chemical (dis)similarity. Their new \"Machine Learning\" capability is able to emulate Quantum Mechanical simulations, but at unprecedented speed-ups of over eight orders of magnitude while still preserving accuracy. This capability progressively improves in quality as it is periodically (or on-demand) exposed to fresh data on new chemistries and molecular configurations in regions of poor knowledge. In other words, the simulation capability can systematically and continuously improve with experience. Several problems currently beyond the reaches of traditional simulation methods may  become solvable. Through their research, pedagogical and dissemination efforts, Ramprasad and Song are training the next generation of students who will require skills in traditional STEM domains as well as in advanced data analytics.  The project is well-aligned with NSF's Harnessing the Data Revolution Big Idea. This effort is also aligned with the Materials Genome Initiative (MGI) which has propelled efforts to hasten the discovery cycle of new chemicals and materials to satisfy a variety of critical technological needs. \r\n\r\n\r\nThe specific flavor of Quantum Mechanical simulations that Ramprasad and Song are targeting in their work involves solving the Kohn-Sham (KS) equation of density functional theory (DFT). Despite its versatility, routine DFT calculations are usually limited to a few hundred atoms due to the computational bottleneck posed by the KS equation. The Machine Learning based DFT-emulation scheme that Ramprasad and Song are developing assimilates the function of the KS equation efficiently using past example reference DFT calculations.  Once trained, the scheme by-passes the KS equation entirely for future calculations, to directly, rapidly and accurately predict the electronic structure of a molecule or material, given just its atomic configuration. Novel rotationally invariant graph neural network representations are being utilized to map the atomic environment around a grid point to the electron density and local electronic density of states at that grid point. This mapping is learned using a deep neural network trained on initial reference DFT results at millions of grid points. Subsequently emerging new data will be absorbed into the neural networks via multi-task learning and transfer learning. The paradigm allows for the high-fidelity emulation of KS DFT, but orders of magnitude faster than the direct solution; indeed, the machine learning prediction scheme is strictly linear-scaling with system size. This capability is being aimed at systems involving C, H, O and N, which encompasses a large chemical space of technologically important polymers and molecules. The vision is to enable a capability to efficiently design molecules and polymers with a target electronic structure.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "CHE",
+ "org_div_long_name": "Division Of Chemistry",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ramamurthy",
+   "pi_last_name": "Ramprasad",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ramamurthy Ramprasad",
+   "pi_email_addr": "ramprasad@gatech.edu",
+   "nsf_id": "000431417",
+   "pi_start_date": "2019-06-13",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Former Co-Principal Investigator",
+   "pi_first_name": "Le",
+   "pi_last_name": "Song",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Le Song",
+   "pi_email_addr": "lsong@cc.gatech.edu",
+   "nsf_id": "000601175",
+   "pi_start_date": "2019-06-13",
+   "pi_end_date": "2021-02-24"
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Institute of Technology",
+  "perf_str_addr": "225 North Avenue",
+  "perf_city_name": "Atlanta",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320420",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "176500",
+   "pgm_ele_name": "CONDENSED MATTER & MAT THEORY"
+  },
+  {
+   "pgm_ele_code": "688100",
+   "pgm_ele_name": "Chem Thry, Mdls & Cmptnl Mthds"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "054Z",
+   "pgm_ref_txt": "(MGI) Materials Genome Initiative"
+  },
+  {
+   "pgm_ref_code": "062Z",
+   "pgm_ref_txt": "Harnessing the Data Revolution"
+  },
+  {
+   "pgm_ref_code": "075Z",
+   "pgm_ref_txt": "Artificial Intelligence (AI)"
+  },
+  {
+   "pgm_ref_code": "7237",
+   "pgm_ref_txt": "NANO NON-SOLIC SCI & ENG AWD"
+  },
+  {
+   "pgm_ref_code": "8084",
+   "pgm_ref_txt": "CDS&E"
+  },
+  {
+   "pgm_ref_code": "8614",
+   "pgm_ref_txt": "Nanomaterials"
+  },
+  {
+   "pgm_ref_code": "9216",
+   "pgm_ref_txt": "ADVANCED SOFTWARE TECH & ALGOR"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 449999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>Intellectual Merit: This proposed activity has lead to a novel computational framework that can be used to perform simulations of complex atomic- and electronic-level processes at the speed of conventional classical force-field simulations but at the accuracy of quantum mechanical calculations. Timescales previously unreachable using quantum mechanical simulations may be accessed using this new paradigm (conceivably, milliseconds-seconds in a routine manner for super cell sizes typical in quantum mechanical calculations). This work exploits an adaptive machine learning scheme that can eventually emulate QM simulations at a miniscule fraction of the cost. This capability will allow us to directly monitor the details and atomic-level mechanisms of a large range of materials phenomena across enormous time- and length-scales. </span></p>\n<p>Broader Impact: Identifying suitable materials for a host of applications or obtaining a detailed understanding of the conditions that promote or impede a chemical process, requires an intricate knowledge of the underlying chemical and physical factors. Owing to the complexities involved, the identification or the design of a suitable system has historically been largely based on trial and error, guided by intuition. We are entering an era where such an Edisonian approach is gradually being replaced by more rational strategies, involving advanced computational screening, followed by targeted synthesis and optimization. For such computation-guided efforts to flourish, important developments need to happen, such as the development in this work. There may thus be significant practical (industrial and commercial) value in this effort, thus broadening the impact of this work.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/01/2023<br>\n\t\t\t\t\tModified by: Ramamurthy&nbsp;Ramprasad</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2023/1900017/1900017_10610642_1690901063897_ScreenShot2023-08-01at10.37.09AM--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1900017/1900017_10610642_1690901063897_ScreenShot2023-08-01at10.37.09AM--rgov-800width.jpg\" title=\"Our machine learning (ML) methodology to emulate quantum mechanics (QM)\"><img src=\"/por/images/Reports/POR/2023/1900017/1900017_10610642_1690901063897_ScreenShot2023-08-01at10.37.09AM--rgov-66x44.jpg\" alt=\"Our machine learning (ML) methodology to emulate quantum mechanics (QM)\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Components of the ML pipeline, including training database,  representation scheme, learning architecture and prediction outcomes. This capability can emulate and produce QM-like output but several orders of magnitude faster than QM.</div>\n<div class=\"imageCredit\">Beatriz Gonzalez del Rio</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Ramamurthy&nbsp;Ramprasad</div>\n<div class=\"imageTitle\">Our machine learning (ML) methodology to emulate quantum mechanics (QM)</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nIntellectual Merit: This proposed activity has lead to a novel computational framework that can be used to perform simulations of complex atomic- and electronic-level processes at the speed of conventional classical force-field simulations but at the accuracy of quantum mechanical calculations. Timescales previously unreachable using quantum mechanical simulations may be accessed using this new paradigm (conceivably, milliseconds-seconds in a routine manner for super cell sizes typical in quantum mechanical calculations). This work exploits an adaptive machine learning scheme that can eventually emulate QM simulations at a miniscule fraction of the cost. This capability will allow us to directly monitor the details and atomic-level mechanisms of a large range of materials phenomena across enormous time- and length-scales. \n\nBroader Impact: Identifying suitable materials for a host of applications or obtaining a detailed understanding of the conditions that promote or impede a chemical process, requires an intricate knowledge of the underlying chemical and physical factors. Owing to the complexities involved, the identification or the design of a suitable system has historically been largely based on trial and error, guided by intuition. We are entering an era where such an Edisonian approach is gradually being replaced by more rational strategies, involving advanced computational screening, followed by targeted synthesis and optimization. For such computation-guided efforts to flourish, important developments need to happen, such as the development in this work. There may thus be significant practical (industrial and commercial) value in this effort, thus broadening the impact of this work.\n\n\t\t\t\t\tLast Modified: 08/01/2023\n\n\t\t\t\t\tSubmitted by: Ramamurthy Ramprasad"
+ }
+}

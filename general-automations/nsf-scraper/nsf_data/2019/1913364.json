@@ -1,0 +1,101 @@
+{
+ "awd_id": "1913364",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Improving Numerical Methods for Large Eigenvalue Problems",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2019-08-01",
+ "awd_exp_date": "2023-07-31",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2019-07-22",
+ "awd_max_amd_letter_date": "2019-07-22",
+ "awd_abstract_narration": "Eigenvalue problems are the cornerstones of computational science and engineering. They arise in applications ranging from electronic structure calculations in physics and chemistry, dynamic of supramolecular systems in biology to structural and vibration in civil and mechanical engineering. Emerging applications include the investigation and design of new materials such as Lithium-ion electrolyte and graphene and the study of dynamics of viral capsids of supramolecular systems such as Zika and West Nile viruses. These applications require large number of eigenvalues. The capability of being able to efficiently compute large number of eigenvalues will not just be appealing, but also mandatory for the next generation of eigensolvers. In this project, we will undertake synergistic efforts to develop mathematical theory and numerical methods for large eigenvalue problems. The outcome of this project will provide mathematical theory and computational tools for scientists and engineers to obtain more precise simulation outputs in much less time, and to allow them to pursue more productive simulation strategies. This project will integrate research activities into interdisciplinary teaching, education and training of graduate students in the forefront of computational mathematics.  One graduate student will be funded by this award.\r\n\r\nTo address challenging issues of existing algorithms and software for large linear eigenvalue problems, we will focus on two core techniques. One is an explicit external deflation for reliably moving away the computed eigenpairs to prevent the algorithm from computing over again those quantities. The second technique is a communication-avoiding matrix powers kernel for fast sparse-plus-low-rank matrix-vector products in Krylov subspace solvers with the explicit external deflation. For large nonlinear eigenvalue problems, we develop mathematical theory and algorithm templates for guiding the design and implementation of approximation based nonlinear eigensolvers. In addition, we will explore an emerging formulation of large nonlinear eigenvalue problems where underlying nonlinear matrix-valued functions are not explicitly available.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Zhaojun",
+   "pi_last_name": "Bai",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Zhaojun Bai",
+   "pi_email_addr": "bai@cs.ucdavis.edu",
+   "nsf_id": "000235085",
+   "pi_start_date": "2019-07-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Davis",
+  "inst_street_address": "1850 RESEARCH PARK DR STE 300",
+  "inst_street_address_2": "",
+  "inst_city_name": "DAVIS",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "5307547700",
+  "inst_zip_code": "956186153",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "CA04",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, DAVIS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "TX2DAGQPENZ5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California, Davis",
+  "perf_str_addr": "1 Shields Ave",
+  "perf_city_name": "Davis",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "956165270",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "CA04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>We conducted synergistic efforts to improve numerical methods for large eigenvalue problems, where the word ``large'' means large in dimensionality (degrees of freedom) and large in the number of the required eigenpairs. Large eigenvalue problems pose great challenges due to the fact that algorithmically, it becomes increasingly difficult to find interior eigenvalues, and computationally, it progressively requires more memory and data communication.</p>\n<p>For computing large number of eigenpairs of linear eigenvalue problems, we presented a comprehensive backward stability analysis of Hotelling's deflation, also called the EED, to move away computed eigenpairs to prevent an algorithm from computing these eigenpairs again. The efficacy of new approaches are demonstrated for solving large-scale buckling eigenvalue problems in structure engineering, and in fairness algorithms in machine learning.</p>\n<p>For large nonlinear eigenvalue problems, we obtained new convergence rate estimates of the SCF, which is much sharper than the previous known ones.&nbsp; The SCF is a gateway algorithm for solving nonlinear eigenvalue problems with eigenvector-dependency.&nbsp; In addition, we derived new theoretical and computational techniques for nonlinear eigenvalue problems arising from optimization of composite functions of Rayleigh quotients, orthogonal canonical correlation analysis and others.</p>\n<p>The project results have been disseminated to the communities of interest in 8 journal and conference publications. Two PhD students worked on the project and graduated during the course of the project.</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 12/29/2023<br>\nModified by: Zhaojun&nbsp;Bai</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nWe conducted synergistic efforts to improve numerical methods for large eigenvalue problems, where the word ``large'' means large in dimensionality (degrees of freedom) and large in the number of the required eigenpairs. Large eigenvalue problems pose great challenges due to the fact that algorithmically, it becomes increasingly difficult to find interior eigenvalues, and computationally, it progressively requires more memory and data communication.\n\n\nFor computing large number of eigenpairs of linear eigenvalue problems, we presented a comprehensive backward stability analysis of Hotelling's deflation, also called the EED, to move away computed eigenpairs to prevent an algorithm from computing these eigenpairs again. The efficacy of new approaches are demonstrated for solving large-scale buckling eigenvalue problems in structure engineering, and in fairness algorithms in machine learning.\n\n\nFor large nonlinear eigenvalue problems, we obtained new convergence rate estimates of the SCF, which is much sharper than the previous known ones. The SCF is a gateway algorithm for solving nonlinear eigenvalue problems with eigenvector-dependency. In addition, we derived new theoretical and computational techniques for nonlinear eigenvalue problems arising from optimization of composite functions of Rayleigh quotients, orthogonal canonical correlation analysis and others.\n\n\nThe project results have been disseminated to the communities of interest in 8 journal and conference publications. Two PhD students worked on the project and graduated during the course of the project.\n\n\n\t\t\t\t\tLast Modified: 12/29/2023\n\n\t\t\t\t\tSubmitted by: ZhaojunBai\n"
+ }
+}

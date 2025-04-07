@@ -1,0 +1,101 @@
+{
+ "awd_id": "2028825",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: PPoSS: Planning: Towards an Integrated, Full-stack System for Memory-centric Computing",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Wei Ding",
+ "awd_eff_date": "2021-01-01",
+ "awd_exp_date": "2022-12-31",
+ "tot_intn_awd_amt": 64525.0,
+ "awd_amount": 64525.0,
+ "awd_min_amd_letter_date": "2020-08-24",
+ "awd_max_amd_letter_date": "2020-10-14",
+ "awd_abstract_narration": "As the volume of data being processed by today\u2019s systems continues to increase, the traditional organization of memory systems is shifting to accommodate that accelerating growth. Data-centric applications such as irregular graph-mining algorithms, distributed machine learning, and genome sequencing require a large amount of data to compute and store, and generate massive amounts of intermediate data to move around the compute resources. Memory-centric computing is a potential solution to overcome the performance bottleneck of current systems. Near or in-memory computing can mitigate the bandwidth limitations with fewer data movements between the memory and host processing units; a remote memory pool with a fast interconnect shared by all processing units can overcome the current capacity constraints. Both solutions are promising for breaking down the memory wall. However, it is challenging to release the power of both solutions with direct integration.\r\n\u00a0\r\nIn this project, the investigators propose an integrated, full-stack system to enable memory-centric computing (SMC2). The system will incorporate the emerging near-memory data processors (NDP) and an extensible remote memory pool to minimize the performance impact of memory accesses in graph-mining applications. The research tasks include optimizations in architecture, the software/hardware interface, programming models/compilers, and performance models/optimization. First, the architecture is revisited to utilize the NDP hardware to build an active memory system that supports intelligent data prefetch and speculative data push. Next, the system software is redesigned to support NDP function calls, data-push operations, and virtualization. Then, with new system abstractions, a new programming model is proposed to allow programmers to specify which tasks can run on the NDP resources, and to support efficient NDP-to-NDP communication. Lastly, a new system performance model and optimization framework are incorporated. By putting the four pieces together, the proposed system support can maximize the performance of memory-centric computing with new system abstractions and theories.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Peng",
+   "pi_last_name": "Jiang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Peng Jiang",
+   "pi_email_addr": "peng-jiang@uiowa.edu",
+   "nsf_id": "000807788",
+   "pi_start_date": "2020-08-24",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Iowa",
+  "inst_street_address": "105 JESSUP HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "IOWA CITY",
+  "inst_state_code": "IA",
+  "inst_state_name": "Iowa",
+  "inst_phone_num": "3193352123",
+  "inst_zip_code": "522421316",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "IA01",
+  "org_lgl_bus_name": "THE UNIVERSITY OF IOWA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "Z1H9VJS8NG16"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Iowa",
+  "perf_str_addr": "201G McLean Hall",
+  "perf_city_name": "Iowa City",
+  "perf_st_code": "IA",
+  "perf_st_name": "Iowa",
+  "perf_zip_code": "522421419",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "IA01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "042Y00",
+   "pgm_ele_name": "PPoSS-PP of Scalable Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 64525.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Unlike traditional von Neumann computer architecture where CPU is separated from main memory, Processing-In-Memory (PIM) is an emerging architecture design that has computing units within the memory. By offloading some of the computations into memory, PIM is supposed to reduce data movement between CPU and memory for data-intensive applications. Previous research efforts mainly focus on the designing of PIM hardware for different applications. It is still unclear how PIM can be integrated into the existing high-performance computers and benefit a broad class of applications.&nbsp;</p>\n<p>Motivated by the challenges of integrating PIM, this project studies the programming and performance optimization of data-intensive applications on PIM architectures. Specifically, we focus on a graph pattern-matching algorithm whose performance is bottlenecked by the set operations on the neighbor lists of graphs. We found that, although PIM reduces the loading of neighbor lists from memory to CPU by performing the set operations within memory, it brings little performance improvement. Our main observation is that the computation on different PIM cores suffers from severe load imbalance, and the communication between the PIM cores incurs a large data movement overhead within the memory.&nbsp;</p>\n<p>Based on the observation, we proposed a hierarchical load-balancing technique that considers the hierarchical connections between the computing units on PIM. We also proposed a novel data placement strategy that minimizes the communication between PIM cores. These two techniques effectively remove the performance bottleneck of graph pattern matching on PIM architecture, achieving significant speedups against previous systems running on PIM, CPU, and GPU.&nbsp;</p>\n<p>While the techniques were proposed for graph pattern matching algorithms, they generally apply to other data-intensive applications. The knowledge will help to improve the usability of PIM hardware and make memory-centric computing paradigm more usable and pervasive. This project was funded by the Principles and Practice of Scalable Systems (PPoSS) program in the Division of Computing and Communication Foundations (CCF-2028825).&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/17/2023<br>\n\t\t\t\t\tModified by: Peng&nbsp;Jiang</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2023/2028825/2028825_10701199_1673988838969_overview--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/2028825/2028825_10701199_1673988838969_overview--rgov-800width.jpg\" title=\"A computer system integrated with PIM hardware\"><img src=\"/por/images/Reports/POR/2023/2028825/2028825_10701199_1673988838969_overview--rgov-66x44.jpg\" alt=\"A computer system integrated with PIM hardware\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">An overview of our cross-layer collaborative research that improves the usability and performance of computer systems with PIM hardware.</div>\n<div class=\"imageCredit\">Rujia Wang</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Peng&nbsp;Jiang</div>\n<div class=\"imageTitle\">A computer system integrated with PIM hardware</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nUnlike traditional von Neumann computer architecture where CPU is separated from main memory, Processing-In-Memory (PIM) is an emerging architecture design that has computing units within the memory. By offloading some of the computations into memory, PIM is supposed to reduce data movement between CPU and memory for data-intensive applications. Previous research efforts mainly focus on the designing of PIM hardware for different applications. It is still unclear how PIM can be integrated into the existing high-performance computers and benefit a broad class of applications. \n\nMotivated by the challenges of integrating PIM, this project studies the programming and performance optimization of data-intensive applications on PIM architectures. Specifically, we focus on a graph pattern-matching algorithm whose performance is bottlenecked by the set operations on the neighbor lists of graphs. We found that, although PIM reduces the loading of neighbor lists from memory to CPU by performing the set operations within memory, it brings little performance improvement. Our main observation is that the computation on different PIM cores suffers from severe load imbalance, and the communication between the PIM cores incurs a large data movement overhead within the memory. \n\nBased on the observation, we proposed a hierarchical load-balancing technique that considers the hierarchical connections between the computing units on PIM. We also proposed a novel data placement strategy that minimizes the communication between PIM cores. These two techniques effectively remove the performance bottleneck of graph pattern matching on PIM architecture, achieving significant speedups against previous systems running on PIM, CPU, and GPU. \n\nWhile the techniques were proposed for graph pattern matching algorithms, they generally apply to other data-intensive applications. The knowledge will help to improve the usability of PIM hardware and make memory-centric computing paradigm more usable and pervasive. This project was funded by the Principles and Practice of Scalable Systems (PPoSS) program in the Division of Computing and Communication Foundations (CCF-2028825). \n\n\t\t\t\t\tLast Modified: 01/17/2023\n\n\t\t\t\t\tSubmitted by: Peng Jiang"
+ }
+}

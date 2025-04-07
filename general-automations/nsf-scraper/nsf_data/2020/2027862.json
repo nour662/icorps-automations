@@ -1,0 +1,109 @@
+{
+ "awd_id": "2027862",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RAPID: Collaborative Research: Using Phylodynamics and Line Lists for Adaptive COVID-19 Monitoring",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032922568",
+ "po_email": "wnilsen@nsf.gov",
+ "po_sign_block_name": "Wendy Nilsen",
+ "awd_eff_date": "2020-07-01",
+ "awd_exp_date": "2022-06-30",
+ "tot_intn_awd_amt": 50000.0,
+ "awd_amount": 50000.0,
+ "awd_min_amd_letter_date": "2020-06-16",
+ "awd_max_amd_letter_date": "2020-06-16",
+ "awd_abstract_narration": "It has been difficult to track and control the COVID-19 pandemic due to various factors such as asymptomatic transmission, high incubation period, human mobility, weather patterns and limited number of tests available. Especially as the number of cases rise, it will become hard to monitor, and request quarantine appropriately, as experience in other countries shows. Hence, this project aims to improve COVID-19 monitoring by designing more targeted and adaptive testing and intervention in a data-driven fashion. With both monitoring and intervention applications, this project directly attacks the problem through development of processes and actions to address this pandemic and also model and understand its spread. Apart from the immediate applications to the COVID-19 pandemic, the tools developed should be more broadly useful for other infectious disease settings (e.g. influenza). \r\n\r\nThe team of Data Science, Network Science, Public Health and Phylogenetic analysis experts main approach for this question is to integrate several novel datasets via inference algorithms. The project focuses on two tasks: Task 1: Aligning phylodynamics data (PD) with line lists; and Task 2: Inferring transmission chains to new infections using aligned data. The teams prior works on interventions and monitoring have been highly successful in this regard. These inferred transmission chains naturally give guidance on whom to adaptively monitor and quarantine among the new infections. The project will release its methods as research code, which should be usable by both practitioners and modelers for faster monitoring under resource constraints.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "B Aditya",
+   "pi_last_name": "Prakash",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "B Aditya Prakash",
+   "pi_email_addr": "badityap@cc.gatech.edu",
+   "nsf_id": "000630929",
+   "pi_start_date": "2020-06-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Institute of Technology",
+  "perf_str_addr": "225 North Ave NW",
+  "perf_city_name": "Atlanta",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "158Y00",
+   "pgm_ele_name": "COVID-19 Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "096Z",
+   "pgm_ref_txt": "COVID-19 Research"
+  },
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "7914",
+   "pgm_ref_txt": "RAPID"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "1N20",
+   "app_name": "R&RA CARES Act DEFC N",
+   "app_symb_id": "040100",
+   "fund_code": "010N2021DB",
+   "fund_name": "R&RA CARES Act DEFC N",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 50000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><div class=\"page\" title=\"Page 1\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><span>The focus of this timely project was to improve COVID-19 surveillance by more targeted and adaptive testing and surveillance in a data-driven fashion. E<span>stimating the true magnitude of infections was one of the significant challenges in combatting the COVID-19 outbreak early on. Our inability in doing so allowed unreported infections to drive up disease spread in numerous regions in the US and worldwide. Even today, identifying the true magnitude (the number of total infections) is still challenging, despite the use of surveillance-based methods such as serological studies, due to their costs and biases. Similarly, there is substantial revisions and noise in real-time reporting data which makes surveilance challenging. Additionally testing specifc sensors for detecting network outbreaks is also a challenging problem.&nbsp;</span></span></p>\n<p>We developed several novel frameworks to tackle the above problems, aligning multiple datasets in doing so. First we gave a new information theoretic method to automatically&nbsp;<span>estimate total infections accurately given only the observed reported infections. Our method is based on the&nbsp;Minimum Description Length principle which chooses the right number which 'best' describes the observed outbreak. We also developed machine learning methods which can handle data-revisions in realtime for COVID forecasting and more rigorous optimization based methods to identify the best sensors to detect outbreaks fast. We also developed new methods to use WiFI data on campus to model disease spread and suggest more targeted interventions</span>.</p>\n<p>The impact of the grant was high especially during an unprecedented pandemic. Our methods were used in the national response to COVID namely as part of the CDC ensemble for predicting deaths and hospitalizations where our methods were among the top performing ones. The work was published at top venues in the field such as ICLR, AAAI and WWW. Several papers are also under submission. &nbsp;</p>\n</div>\n</div>\n</div>\n<p>This grant supported a PhD. student. Material from this research appeared in graduate classes, invited talks at national labs, agencies and companies, and in lectures at NSF REU summer schools and at invited tutorials to public health practioners. The website run by the PI during the early parts of the COVID pandemic was also heavily visited from users all over the world.&nbsp;</p>\n<p>In addition to the immediate technical impact, turther the broader impact is also high as propagation-style processes on networks appear in many other settings like viral marketing, cyber security (malware), social media like Twitter and blogs etc.&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/21/2023<br>\n\t\t\t\t\tModified by: B Aditya&nbsp;Prakash</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\n\n\nThe focus of this timely project was to improve COVID-19 surveillance by more targeted and adaptive testing and surveillance in a data-driven fashion. Estimating the true magnitude of infections was one of the significant challenges in combatting the COVID-19 outbreak early on. Our inability in doing so allowed unreported infections to drive up disease spread in numerous regions in the US and worldwide. Even today, identifying the true magnitude (the number of total infections) is still challenging, despite the use of surveillance-based methods such as serological studies, due to their costs and biases. Similarly, there is substantial revisions and noise in real-time reporting data which makes surveilance challenging. Additionally testing specifc sensors for detecting network outbreaks is also a challenging problem. \n\nWe developed several novel frameworks to tackle the above problems, aligning multiple datasets in doing so. First we gave a new information theoretic method to automatically estimate total infections accurately given only the observed reported infections. Our method is based on the Minimum Description Length principle which chooses the right number which 'best' describes the observed outbreak. We also developed machine learning methods which can handle data-revisions in realtime for COVID forecasting and more rigorous optimization based methods to identify the best sensors to detect outbreaks fast. We also developed new methods to use WiFI data on campus to model disease spread and suggest more targeted interventions.\n\nThe impact of the grant was high especially during an unprecedented pandemic. Our methods were used in the national response to COVID namely as part of the CDC ensemble for predicting deaths and hospitalizations where our methods were among the top performing ones. The work was published at top venues in the field such as ICLR, AAAI and WWW. Several papers are also under submission.  \n\n\n\n\nThis grant supported a PhD. student. Material from this research appeared in graduate classes, invited talks at national labs, agencies and companies, and in lectures at NSF REU summer schools and at invited tutorials to public health practioners. The website run by the PI during the early parts of the COVID pandemic was also heavily visited from users all over the world. \n\nIn addition to the immediate technical impact, turther the broader impact is also high as propagation-style processes on networks appear in many other settings like viral marketing, cyber security (malware), social media like Twitter and blogs etc. \n\n\t\t\t\t\tLast Modified: 03/21/2023\n\n\t\t\t\t\tSubmitted by: B Aditya Prakash"
+ }
+}

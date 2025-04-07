@@ -1,0 +1,133 @@
+{
+ "awd_id": "1617307",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Small: Automated Protocol Design and Refinement",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2016-08-15",
+ "awd_exp_date": "2020-07-31",
+ "tot_intn_awd_amt": 399995.0,
+ "awd_amount": 407995.0,
+ "awd_min_amd_letter_date": "2016-08-22",
+ "awd_max_amd_letter_date": "2020-03-02",
+ "awd_abstract_narration": "Online security relies on communication protocols that establish trust and authentication. New protocols are created regularly, such as when Software-as-a-Service companies expose their software through new Web services. In the ideal case, network engineers and protocol experts collaborate to develop a protocol: one responsible for its efficiency and the other for its security. Unfortunately, this ideal is rarely realized. Protocol experts are rare and their techniques are too complicated for solo network engineers to use, who instead just follow informal \"best practices.\" As a result, most of these protocols end up with security problems. This research investigates an automated protocol expert that provides the network engineer with the service normally given by the human protocol expert. The availability of this open-source expert will broadly impact the trustworthiness of cyberspace by increasing the security and reliability of the online services that use it.\r\n\r\nThe PI will construct this expert after three technical advances: first, a new security property specification language based on protocol goals, as opposed to the details of the operation of a protocol, for use by network engineers; second, a new theory of protocol construction based on the composition of disjoint authentication protocols with restrictions from linear logic used to limit the sharing of sensitive information; and third, a theory of protocol optimization based on the attack calculus already used to prove that protocols are secure. These three new theories advance their respective sub-fields and coalesce into the necessary foundation for the automated protocol expert.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jay",
+   "pi_last_name": "McCarthy",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jay A McCarthy",
+   "pi_email_addr": "jay.mccarthy@gmail.com",
+   "nsf_id": "000510364",
+   "pi_start_date": "2016-08-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Massachusetts Lowell",
+  "inst_street_address": "220 PAWTUCKET ST STE 400",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOWELL",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "9789344170",
+  "inst_zip_code": "018543573",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "MA03",
+  "org_lgl_bus_name": "UNIVERSITY OF MASSACHUSETTS LOWELL",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LTNVSTJ3R6D5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Massachusetts Lowell",
+  "perf_str_addr": "One University Avenue",
+  "perf_city_name": "Lowell",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "018542874",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "MA03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  },
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9178",
+   "pgm_ref_txt": "UNDERGRADUATE EDUCATION"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 399995.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 8000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project investigated the automatic synthesis of cryptographic protocols using linear logic as a fundamental architecture. We used the finite-ness of linear logic proofs to limit the search space of protocol designs and could successfully derive basic protocols. We extended this work with a programming language for specifying finite computations. These programs are automatically verifiable, which facilitates their use in cryptographic contexts, where the correctness of programs is paramount. This project funded multiple graduate students, as well as undergraduate research assistants. The results of this project are being used by commercial interests in the domains of cryptographic protocols and blockchain applications.&nbsp;This project led to multiple peer-reviewed research publications; specifically:</p>\n<p>Radha Nakade, Eric Mercer, Peter Aldous, Kyle Storey, Benjamin Ogles, Joshua Hooker, Sheridan Jacob Powell, and Jay McCarthy. &ldquo;Model Checking Task Parallel Programs for Data-race&rdquo;.&nbsp;<span class=\"emph\">Innovations in Systems and Software Engineering 2019</span>.&nbsp;</p>\n<p>Kimball Germane, Jay McCarthy, Michael Adams, and Matthew Might. &ldquo;Demand Control-Flow Analysis&rdquo;.&nbsp;<span class=\"emph\">VMCAI 2019</span>.</p>\n<p><span>Max S. New, Burke Fetscher, Jay McCarthy, and Robert Bruce Findler. &ldquo;Fair Enumeration Combinators&rdquo;.&nbsp;</span><span class=\"emph\">Journal of Functional Programming 27, e19, 2017</span><span>.&nbsp;</span></p>\n<p><span><span>Jay McCarthy, Burke Fetscher, Max New, Daniel Felty, and Robert Bruce Findler. &ldquo;A Coq Library For Internal Verification of Running-Times&rdquo;.&nbsp;</span><span class=\"emph\">Science of Computer Programming 2017</span><span>.</span><br /></span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/27/2020<br>\n\t\t\t\t\tModified by: Jay&nbsp;A&nbsp;Mccarthy</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project investigated the automatic synthesis of cryptographic protocols using linear logic as a fundamental architecture. We used the finite-ness of linear logic proofs to limit the search space of protocol designs and could successfully derive basic protocols. We extended this work with a programming language for specifying finite computations. These programs are automatically verifiable, which facilitates their use in cryptographic contexts, where the correctness of programs is paramount. This project funded multiple graduate students, as well as undergraduate research assistants. The results of this project are being used by commercial interests in the domains of cryptographic protocols and blockchain applications. This project led to multiple peer-reviewed research publications; specifically:\n\nRadha Nakade, Eric Mercer, Peter Aldous, Kyle Storey, Benjamin Ogles, Joshua Hooker, Sheridan Jacob Powell, and Jay McCarthy. \"Model Checking Task Parallel Programs for Data-race\". Innovations in Systems and Software Engineering 2019. \n\nKimball Germane, Jay McCarthy, Michael Adams, and Matthew Might. \"Demand Control-Flow Analysis\". VMCAI 2019.\n\nMax S. New, Burke Fetscher, Jay McCarthy, and Robert Bruce Findler. \"Fair Enumeration Combinators\". Journal of Functional Programming 27, e19, 2017. \n\nJay McCarthy, Burke Fetscher, Max New, Daniel Felty, and Robert Bruce Findler. \"A Coq Library For Internal Verification of Running-Times\". Science of Computer Programming 2017.\n\n\n\t\t\t\t\tLast Modified: 11/27/2020\n\n\t\t\t\t\tSubmitted by: Jay A Mccarthy"
+ }
+}

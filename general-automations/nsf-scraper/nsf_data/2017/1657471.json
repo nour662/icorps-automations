@@ -1,0 +1,109 @@
+{
+ "awd_id": "1657471",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: CIF: Learning with Memory Constraints: Efficient Algorithms and Information Theoretic Lower Bounds",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922981",
+ "po_email": "pregalia@nsf.gov",
+ "po_sign_block_name": "Phillip Regalia",
+ "awd_eff_date": "2017-02-15",
+ "awd_exp_date": "2020-01-31",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 175000.0,
+ "awd_min_amd_letter_date": "2017-02-10",
+ "awd_max_amd_letter_date": "2017-02-10",
+ "awd_abstract_narration": "The trade-offs between resources such as the amount of data, the amount of storage, computation time for statistical estimation tasks are at the core of modern data science. Depending on the setting, some of the resources might be more valuable than others. For example, in credit analysis and population genetics, the amount of data is vital. For applications involving mobile devices, sensor networks, or biomedical implants, the storage available is limited and is a precious resource. This project aims to advance our understanding of the trade-offs between the amount of storage and the amount of data required for statistical tasks by (i) designing efficient algorithms that require small space and (ii) establishing fundamental limits on the storage required for these tasks. The research is at the intersection of streaming algorithms, which is primarily concerned with storage requirements of algorithmic problems, and statistical learning, which studies data requirements for statistical tasks. \r\n\r\nThe investigators formulate basic statistical problems under storage constraints. The specific questions include entropy estimation of discrete distributions, a canonical problem that researchers from various fields including statistics, information theory, and computer science have studied. The paradigm of interest is the following: while the known sample-efficient entropy estimation algorithms require a lot of storage, it might be possible to reduce the storage requirements drastically by taking a little more than the optimal number of samples. The complementary side of the problem is purely information theoretic. In it, the researchers expect to develop general lower bounds that can be used to prove fundamental limits on the storage-sample trade-offs.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jayadev",
+   "pi_last_name": "Acharya",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jayadev Acharya",
+   "pi_email_addr": "acharya@cornell.edu",
+   "nsf_id": "000728718",
+   "pi_start_date": "2017-02-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Cornell University",
+  "inst_street_address": "341 PINE TREE RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "ITHACA",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6072555014",
+  "inst_zip_code": "148502820",
+  "inst_country_name": "United States",
+  "cong_dist_code": "19",
+  "st_cong_dist_code": "NY19",
+  "org_lgl_bus_name": "CORNELL UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "G56PUALJ3KT5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Cornell University",
+  "perf_str_addr": "136 Hoy Road",
+  "perf_city_name": "Ithaca",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "148533801",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "19",
+  "perf_st_cong_dist": "NY19",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7797",
+   "pgm_ref_txt": "COMM & INFORMATION FOUNDATIONS"
+  },
+  {
+   "pgm_ref_code": "7935",
+   "pgm_ref_txt": "COMM & INFORMATION THEORY"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 175000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Inferring about the underlying process from observations is a critical component of data science. In several of these applications, such inference has to be performed with a limited amount of resources such as amount of memory of the device, or amount of communication or even whether the data is sensitive and must be privatized. For example, in biomedical implants we may care about all of the above, namely the implant should be of small size, require little communication, and protects sensitive data about the individual. One basic statistical property is the entropy of the underlying process, which measures the amount of randomness present and is useful to detect anomalies, such as potentially threatening changes in functions of the organs in the body. We designed new methods for estimating the entropy of distributions that require a small space while at the same time requiring few samples. Understanding how much space is needed for different statistical tasks is a fundamental scientific question that can lead to new and more efficient applications with small memory footprint. Privatizing data of individuals is of critical importance in several applications, and often these privatization mechanisms lead to a significant blow-up in the data size causing communication bottlenecks. We designed privatization schemes using ideas from information and coding theory that have a small representation while at the same time preserving as much information about the data as possible.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/13/2020<br>\n\t\t\t\t\tModified by: Jayadev&nbsp;Acharya</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nInferring about the underlying process from observations is a critical component of data science. In several of these applications, such inference has to be performed with a limited amount of resources such as amount of memory of the device, or amount of communication or even whether the data is sensitive and must be privatized. For example, in biomedical implants we may care about all of the above, namely the implant should be of small size, require little communication, and protects sensitive data about the individual. One basic statistical property is the entropy of the underlying process, which measures the amount of randomness present and is useful to detect anomalies, such as potentially threatening changes in functions of the organs in the body. We designed new methods for estimating the entropy of distributions that require a small space while at the same time requiring few samples. Understanding how much space is needed for different statistical tasks is a fundamental scientific question that can lead to new and more efficient applications with small memory footprint. Privatizing data of individuals is of critical importance in several applications, and often these privatization mechanisms lead to a significant blow-up in the data size causing communication bottlenecks. We designed privatization schemes using ideas from information and coding theory that have a small representation while at the same time preserving as much information about the data as possible. \n\n \n\n\t\t\t\t\tLast Modified: 09/13/2020\n\n\t\t\t\t\tSubmitted by: Jayadev Acharya"
+ }
+}

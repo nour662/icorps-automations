@@ -1,0 +1,113 @@
+{
+ "awd_id": "1641042",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: Additive Parts-based Data Representation with Nonnegative Sparse Autoencoders",
+ "cfda_num": "47.041",
+ "org_code": "07010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Lawrence Goldberg",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2019-08-31",
+ "tot_intn_awd_amt": 233235.0,
+ "awd_amount": 233235.0,
+ "awd_min_amd_letter_date": "2016-07-28",
+ "awd_max_amd_letter_date": "2016-07-28",
+ "awd_abstract_narration": "One of the long-standing open problems of computational learning is its inability to produce solutions that are intuitively understandable.  Because of the limited transparency, most computed predictions are not easily justifiable by humans who need to render final decisions. This project addresses this shortcoming of machine learning predictions by investigating a class of machine learning algorithms that mimics natural processing and leads to more interpretable representations of data. Such processing decomposes visual patterns or other data into parts through unsupervised learning and produces non-negative parts only.  Since this approach allows only additive recombination of parts to reconstruct the original data, it mimics natural processing in human perception and cognition. The project advances novel data representation beyond standard computational learning approaches.  Tests are conducted with planar images or tabulated data that describe specific domain of interest. The tests objectives are to produce useful and understandable features, logic rules or verbal explanations in lower dimensional space. \r\n\r\nThis work aims at evaluating how rich data can be explored in order to be better understood. The novel paradigm is to generate non-negative, sparse and localized features and receptive fields within hierarchies of features. This is achieved through autoencoder-based transformations of visual images or of typical non-negative data matrices.  The novel autoencoders are constrained to have non-negative weights. Specific conditions to be tested include pooling, rectifying-type activation functions of neurons and select norms of activations sparsity. The project advances the following transformational challenges at the intersection of computational and human systems: (1) Representation of data with non-negative encodings only, (2)  Complexity of layers and of receptive filters (more simpler filters vs. fewer complex filters), (3) Choice of the number of layers, also in the context of hyper-parameter tuning, (4) Pooling for non-negative processing,  (5) Connections between the autoencoder-based learning and related biological evidence, and finally (6) Ability to generate explanations or understandable rules for select domains",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "ECCS",
+ "org_div_long_name": "Division of Electrical, Communications and Cyber Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jacek",
+   "pi_last_name": "Zurada",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jacek M Zurada",
+   "pi_email_addr": "jmzura02@louisville.edu",
+   "nsf_id": "000352478",
+   "pi_start_date": "2016-07-28",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Tamer",
+   "pi_last_name": "Inanc",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Tamer Inanc",
+   "pi_email_addr": "t.inanc@louisville.edu",
+   "nsf_id": "000434619",
+   "pi_start_date": "2016-07-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Louisville Research Foundation Inc",
+  "inst_street_address": "2301 S 3RD ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOUISVILLE",
+  "inst_state_code": "KY",
+  "inst_state_name": "Kentucky",
+  "inst_phone_num": "5028523788",
+  "inst_zip_code": "402081838",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "KY03",
+  "org_lgl_bus_name": "UNIVERSITY OF LOUISVILLE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "E1KJM4T54MK6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Louisville",
+  "perf_str_addr": "2301 South Third Street",
+  "perf_city_name": "Louisville",
+  "perf_st_code": "KY",
+  "perf_st_name": "Kentucky",
+  "perf_zip_code": "402920001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "KY03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "756400",
+   "pgm_ele_name": "CCSS-Comms Circuits & Sens Sys"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 233235.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Feature extraction through constrained learning of receptive fields (RFs) offers special promise and has recently become one of the important tenets of deep learning. In deep autoencoding, autoencoder (AE) performs unsupervised learning to detect feature hierarchies which shatter the data, generate distinctive features and support a recognition of an object, or allocate it to a certain class. In this process each AE layer adds an abstract representation of inputs, in effect producing a cascade of encodings. In general, as a result of learning for minimum error of reconstruction or classification, the RFs manifest themselves as quasi basis functions that are usually sparse and of the same dimensionality as the input layer (or, in general, of dimensionality of the preceding processing layer).</p>\n<p>Deep autoencoding attempts to decompose the input samples into a number of binary and/or continuous but preferably sparse concepts. The reconstruction is then achieved by adding ??parts??: ideally, it could be an additive linear combination of a number of scaled basis functions by the decoder that provides scaling coefficients. This concept has been demonstrated using a number of AE architectures with non-negative weights that produce additive decompositions layer-wise.&nbsp; Such non-negative decompositions enable better understanding and enhance explanations when inspecting the deep learning processing.</p>\n<p>This project proposed new techniques for data representation in the context of DL for stacked AEs by leveraging on the ability to agglomerate regularized sparse RFs and also by enhancing the feature generation process at the output layer via controlled feature compression. The performance of the proposed method in terms of decomposing data into parts and non-redundant feature extraction was compared for the conventional Sparse Auto-Encoder with constrained AEs (Dropout AE), Nonnegativity-Constrained Auto-Encoder, and L1/L2-AEs. This concept was illustrated using the NORB normalized-uniform object dataset, MNIST handwritten digits data and Yale Face Dataset.</p>\n<p>In sum, it has been observed that encouraging non-negativity in AEs and other deep architecture forces the layers to learn part-based representation of their input and leads to a comparable classification accuracy of the deep network and not-so-significant accuracy deterioration after fine-tuning. It has also been shown on select examples that concurrent so called L1 and L2 regularizations improve the network interpretability.</p>\n<p>More details of this project are available via summaries and full content of five articles in technical journals IEEE Transactions on Neural Networks and Learning Systems, IEEE Systems, Man and Cybernetics Magazine and Neural Networks here:</p>\n<p><a href=\"https://10.0.3.248/j.neunet.2017.04.012\">https://doi.org/10.1016/j.neunet.2017.04.012</a></p>\n<p><a href=\"file:///C:/Users/Zurada/Desktop/$$$$/2016-18-EAGER-awarded/2-FINAL-REPORT/PROJECT-OUTCOMES/10.1109/MSMC.2017.2701578\">10.1109/MSMC.2017.2701578</a><span style=\"text-decoration: underline;\">&nbsp; </span></p>\n<p><a href=\"file:///C:/Users/Zurada/Desktop/$$$$/2016-18-EAGER-awarded/2-FINAL-REPORT/PROJECT-OUTCOMES/10.1109/TNNLS.2017.2747861\">10.1109/TNNLS.2017.2747861</a></p>\n<p><a href=\"https://doi.org/10.1016/j.neunet.2019.04.021\">https://doi.org/10.1016/j.neunet.2019.04.021</a></p>\n<p><a href=\"https://doi.org/10.1109/TNNLS.2018.2885972\" target=\"_blank\">10.1109/TNNLS.2018.2885972</a></p>\n<p>Select figures on attached images show examples of receptive fields and their significance for a single written digit recognition taken from the data base MNIST (Fig 2), examples of isolated receptive fields for all MNIST digits classifier (Fig 4), and example processing of Reuters bulletin boards text processing that discovers the topic of the posting (Fig 10).&nbsp;</p>\n<p>The color picture without caption was taken on June 26, 2019 for the INSPIRE program participants from Louisville area high schools who have attended a lecture and lab demos on Deep Learning by Professor Jacek Zurada (PI) and by William Funke (Graduate Research Assistant) as a part of broadening activities.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/30/2019<br>\n\t\t\t\t\tModified by: Jacek&nbsp;M&nbsp;Zurada</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2019/1641042/1641042_10444912_1577746517343_Capture2--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2019/1641042/1641042_10444912_1577746517343_Capture2--rgov-800width.jpg\" title=\"Filtering the bitmap of digit 2 via an AE\"><img src=\"/por/images/Reports/POR/2019/1641042/1641042_10444912_1577746517343_Capture2--rgov-66x44.jpg\" alt=\"Filtering the bitmap of digit 2 via an AE\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">See the caption under the figure for details</div>\n<div class=\"imageCredit\">IEEE Trans on NN and Learning Systems</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Jacek&nbsp;M&nbsp;Zurada</div>\n<div class=\"imageTitle\">Filtering the bitmap of digit 2 via an AE</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2019/1641042/1641042_10444912_1577746915298_Capture4--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2019/1641042/1641042_10444912_1577746915298_Capture4--rgov-800width.jpg\" title=\"Display of receptive fields for MNIST digit classifiers with AE\"><img src=\"/por/images/Reports/POR/2019/1641042/1641042_10444912_1577746915298_Capture4--rgov-66x44.jpg\" alt=\"Display of receptive fields for MNIST digit classifiers with AE\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">See the detailed caption underneath the figure</div>\n<div class=\"imageCredit\">IEEE Transactions on NN and LS</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Jacek&nbsp;M&nbsp;Zurada</div>\n<div class=\"imageTitle\">Display of receptive fields for MNIST digit classifiers with AE</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2019/1641042/1641042_10444912_1577747024837_Capture10--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2019/1641042/1641042_10444912_1577747024837_Capture10--rgov-800width.jpg\" title=\"Reuters newsgroups data base processing example\"><img src=\"/por/images/Reports/POR/2019/1641042/1641042_10444912_1577747024837_Capture10--rgov-66x44.jpg\" alt=\"Reuters newsgroups data base processing example\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">See the detailed caption underneath the figure</div>\n<div class=\"imageCredit\">IEEE Transactions on NN and LS</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Jacek&nbsp;M&nbsp;Zurada</div>\n<div class=\"imageTitle\">Reuters newsgroups data base processing example</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2019/1641042/1641042_10444912_1577747217876_IMG_20190626-inspire-broad-act--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2019/1641042/1641042_10444912_1577747217876_IMG_20190626-inspire-broad-act--rgov-800width.jpg\" title=\"After the Deep Learning Lecture and Demo\"><img src=\"/por/images/Reports/POR/2019/1641042/1641042_10444912_1577747217876_IMG_20190626-inspire-broad-act--rgov-66x44.jpg\" alt=\"After the Deep Learning Lecture and Demo\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">June 26, 2019: INSPIRE program participants from Louisville, KY area high schools who have attended a lecture and lab demos on Deep Learning by Professor Jacek Zurada (PI) and by William Funke (Graduate Research Assistant) as a part of broadening activities</div>\n<div class=\"imageCredit\">Jacek Zurada</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Jacek&nbsp;M&nbsp;Zurada</div>\n<div class=\"imageTitle\">After the Deep Learning Lecture and Demo</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nFeature extraction through constrained learning of receptive fields (RFs) offers special promise and has recently become one of the important tenets of deep learning. In deep autoencoding, autoencoder (AE) performs unsupervised learning to detect feature hierarchies which shatter the data, generate distinctive features and support a recognition of an object, or allocate it to a certain class. In this process each AE layer adds an abstract representation of inputs, in effect producing a cascade of encodings. In general, as a result of learning for minimum error of reconstruction or classification, the RFs manifest themselves as quasi basis functions that are usually sparse and of the same dimensionality as the input layer (or, in general, of dimensionality of the preceding processing layer).\n\nDeep autoencoding attempts to decompose the input samples into a number of binary and/or continuous but preferably sparse concepts. The reconstruction is then achieved by adding ??parts??: ideally, it could be an additive linear combination of a number of scaled basis functions by the decoder that provides scaling coefficients. This concept has been demonstrated using a number of AE architectures with non-negative weights that produce additive decompositions layer-wise.  Such non-negative decompositions enable better understanding and enhance explanations when inspecting the deep learning processing.\n\nThis project proposed new techniques for data representation in the context of DL for stacked AEs by leveraging on the ability to agglomerate regularized sparse RFs and also by enhancing the feature generation process at the output layer via controlled feature compression. The performance of the proposed method in terms of decomposing data into parts and non-redundant feature extraction was compared for the conventional Sparse Auto-Encoder with constrained AEs (Dropout AE), Nonnegativity-Constrained Auto-Encoder, and L1/L2-AEs. This concept was illustrated using the NORB normalized-uniform object dataset, MNIST handwritten digits data and Yale Face Dataset.\n\nIn sum, it has been observed that encouraging non-negativity in AEs and other deep architecture forces the layers to learn part-based representation of their input and leads to a comparable classification accuracy of the deep network and not-so-significant accuracy deterioration after fine-tuning. It has also been shown on select examples that concurrent so called L1 and L2 regularizations improve the network interpretability.\n\nMore details of this project are available via summaries and full content of five articles in technical journals IEEE Transactions on Neural Networks and Learning Systems, IEEE Systems, Man and Cybernetics Magazine and Neural Networks here:\n\nhttps://doi.org/10.1016/j.neunet.2017.04.012\n\n10.1109/MSMC.2017.2701578  \n\n10.1109/TNNLS.2017.2747861\n\nhttps://doi.org/10.1016/j.neunet.2019.04.021\n\n10.1109/TNNLS.2018.2885972\n\nSelect figures on attached images show examples of receptive fields and their significance for a single written digit recognition taken from the data base MNIST (Fig 2), examples of isolated receptive fields for all MNIST digits classifier (Fig 4), and example processing of Reuters bulletin boards text processing that discovers the topic of the posting (Fig 10). \n\nThe color picture without caption was taken on June 26, 2019 for the INSPIRE program participants from Louisville area high schools who have attended a lecture and lab demos on Deep Learning by Professor Jacek Zurada (PI) and by William Funke (Graduate Research Assistant) as a part of broadening activities.\n\n \n\n \n\n \n\n\t\t\t\t\tLast Modified: 12/30/2019\n\n\t\t\t\t\tSubmitted by: Jacek M Zurada"
+ }
+}

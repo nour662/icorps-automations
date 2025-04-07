@@ -1,0 +1,105 @@
+{
+ "awd_id": "1116631",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RI: Small: Collaborative Research: Visual Attributes for Identification and Search in Images",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032924768",
+ "po_email": "jyang@nsf.gov",
+ "po_sign_block_name": "Jie Yang",
+ "awd_eff_date": "2011-07-01",
+ "awd_exp_date": "2015-06-30",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2011-06-30",
+ "awd_max_amd_letter_date": "2011-06-30",
+ "awd_abstract_narration": "The automatic identification in images of people, places, objects, and especially object categories is a central and ongoing challenge within computer vision.  This project addresses this problem using low-level image features to learn intermediate representations, ones in which objects in images are labeled with an extensive list of highly descriptive visual attributes.  This work demonstrates this approach in three domains: faces, plant species, and architecture.  In each domain, it develops techniques for deriving visual attribute vocabularies, training attribute detectors, and building compositional models to automatically label attributes in images.\r\n\r\nThe project is making four fundamental contributions to the use of visual attributes. 1) It is developing new methods by which automatic systems and humans can interact to select domain-appropriate attribute vocabularies and label large image collections. 2) It is developing compositional models that capture dependencies between attributes.  This provides more accurate attribute detection and enables inference of global properties of objects.  3) Using compositional models, the project is developing new, localizable attributes that capture the geometric relations between object parts and landmarks.  4) The project is designing algorithms that combine attributes to identify objects, search through image vast collections, and automatically annotate image databases.\r\n\r\nNot only is this research generating large datasets of labeled images that should help catalyze new research, it is also demonstrating the feasibility of new systems for analyzing images in specialized domains such as faces, plants, and architecture. For example, the project develops new software applications for analyzing and searching images of faces as well as free mobile apps for plant species identification.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "David",
+   "pi_last_name": "Jacobs",
+   "pi_mid_init": "W",
+   "pi_sufx_name": "",
+   "pi_full_name": "David W Jacobs",
+   "pi_email_addr": "djacobs@cs.umd.edu",
+   "nsf_id": "000315613",
+   "pi_start_date": "2011-06-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Maryland, College Park",
+  "inst_street_address": "3112 LEE BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE PARK",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "3014056269",
+  "inst_zip_code": "207425100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "MD04",
+  "org_lgl_bus_name": "UNIVERSITY OF MARYLAND, COLLEGE PARK",
+  "org_prnt_uei_num": "NPU8ULVAAS23",
+  "org_uei_num": "NPU8ULVAAS23"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Maryland, College Park",
+  "perf_str_addr": "3112 LEE BUILDING",
+  "perf_city_name": "COLLEGE PARK",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "207425100",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "MD04",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Our project addresses the problem of building part- and attribute-based descriptions of objects.&nbsp; We have been applying this work by building systems that recognize and describe plants and animals.&nbsp; Attributes capture properties of an object (is it old?&nbsp; furry? speckled?), while parts allow us to understand and match the common components of objects (eg., their legs, nose, or stem).</p>\n<p>&nbsp;</p>\n<p>Our project has developed new algorithms for identifying these parts in images of animals, such as people, dogs or birds.&nbsp; After finding the parts of an animal, we are able to build descriptions of their appearance, using features that are anchored to these parts.&nbsp; This has led to new recognition algorithms that allow us to identify the breed of a dog or the species of a bird from a photograph.</p>\n<p>&nbsp;</p>\n<p>We have incorporated these recognition algorithms into new, freely available apps.&nbsp; In creating apps for species identification we build on our previous work in constructing Leafsnap.&nbsp; Developed in collaboration with botanists at the Smithsonian Institution National Museum of Natural History, Leafsnap allows a user to photograph a leaf of a tree from the Northeast US, and then uses shape based search to identify species of trees that best match this leaf.&nbsp; Leafsnap has been downloaded by over 1.5 million users, and used in a variety of biodiversity studies and classrooms.&nbsp; In this project, a new version of Leafsnap, covering the trees of the United Kingdom, has been developed.&nbsp; Using our new recognition algorithms we have also developed Dogsnap and Birdsnap, apps that use computer vision to help identify the breed of a dog or species of a bird in a photograph.&nbsp; These apps have already been downloaded by over 100,000 users.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/30/2015<br>\n\t\t\t\t\tModified by: David&nbsp;W&nbsp;Jacobs</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOur project addresses the problem of building part- and attribute-based descriptions of objects.  We have been applying this work by building systems that recognize and describe plants and animals.  Attributes capture properties of an object (is it old?  furry? speckled?), while parts allow us to understand and match the common components of objects (eg., their legs, nose, or stem).\n\n \n\nOur project has developed new algorithms for identifying these parts in images of animals, such as people, dogs or birds.  After finding the parts of an animal, we are able to build descriptions of their appearance, using features that are anchored to these parts.  This has led to new recognition algorithms that allow us to identify the breed of a dog or the species of a bird from a photograph.\n\n \n\nWe have incorporated these recognition algorithms into new, freely available apps.  In creating apps for species identification we build on our previous work in constructing Leafsnap.  Developed in collaboration with botanists at the Smithsonian Institution National Museum of Natural History, Leafsnap allows a user to photograph a leaf of a tree from the Northeast US, and then uses shape based search to identify species of trees that best match this leaf.  Leafsnap has been downloaded by over 1.5 million users, and used in a variety of biodiversity studies and classrooms.  In this project, a new version of Leafsnap, covering the trees of the United Kingdom, has been developed.  Using our new recognition algorithms we have also developed Dogsnap and Birdsnap, apps that use computer vision to help identify the breed of a dog or species of a bird in a photograph.  These apps have already been downloaded by over 100,000 users.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 09/30/2015\n\n\t\t\t\t\tSubmitted by: David W Jacobs"
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "awd_id": "1216576",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Efficient Unstructured Discontinuous Galerkin Methods for Global Nonhydrostatic Atmospheric Modeling",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Leland Jameson",
+ "awd_eff_date": "2012-08-01",
+ "awd_exp_date": "2017-07-31",
+ "tot_intn_awd_amt": 357568.0,
+ "awd_amount": 357568.0,
+ "awd_min_amd_letter_date": "2012-07-29",
+ "awd_max_amd_letter_date": "2012-07-29",
+ "awd_abstract_narration": "This is a proposal to develop efficient unstructured discontinuous Galerkin (DG) methods for global non-hydrostatic atmospheric modeling. As the horizontal resolution of numerical weather prediction models increases, it becomes advantageous to model non-hydrostatic motions. The dynamics of deep convective clouds are non-hydrostatic and these clouds produce important feedbacks on the larger-scale flow that are difficult to parameterize. To represent such clouds and similar small-scale processes, the equations solved by global atmospheric models must transition from hydrostatic to non-hydrostatic formulations. A host of challenging, non-trivial numerical problems arise when one enters the non-hydrostatic regime, including: I) developing efficient time-integrators and/or \"soundproof\" equation sets to confront the fast acoustic waves supported by the governing equations; II) effectively resolving multi-scale flow features, that may require adaptive mesh refinement (AMR); and III) constructing spatial discretization methods that conserve all important quantities and can be exploited to satisfy the above two conditions. Item (I) will be addressed by designing a suite of implicit-explicit (IMEX) time-integrators for our governing equations and discrete spatial operators to allow larger explicit time-steps with better conditioned implicit parts. In addition, the fully compressible (Euler) equations will be compared to sound-proof systems (anelastic, pseudo-incompressible) in meteorologically relevant test cases. Item (II) will be addressed by testing two forms of AMR: conforming and nonconforming methods. Conforming methods are traditionally used with continuous discretization methods and require no modifications to the partial differential equation (PDE) solver since the AMR is essentially a separate method. Nonconforming methods are traditionally used with discontinuous methods but can also be used with continuous methods. Nonconforming methods couple the PDE solver with the AMR approach in a seamless fashion thereby requiring modification of the PDE solver. Item (III) will be addressed by virtue of the DG method that is capable of delivering both local and global conservation of all prognostic variables and is also well suited for handling strong gradients (e.g., discontinuities) that may be introduced by the moist variables. \r\n\r\nLong-range weather forecasting and studies of the Earth's climate use computers to simulate the weather over the entire globe. Individual thunderstorms and clusters of similar deep clouds produce rain and transport moisture, heat, and momentum vertically throughout the atmosphere. Limitations in computer power have prevented global simulations from using the fundamental equations describing fluid motion to calculate the behavior of these localized clouds. Instead, the net effects of such clouds on the global atmosphere are \"parameterized\" using necessarily crude approximations. The latest advancements in computer architecture have finally made it possible to simulate large clouds in global models, but there are major challenges that must be overcome. The mathematical equations on which global models are based must become better approximations to the fundamental equations of fluid motion, and an efficient flexible structure must be determined to hold the data describing the state of the global atmosphere. This research addresses both of these challenges.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Dale",
+   "pi_last_name": "Durran",
+   "pi_mid_init": "R",
+   "pi_sufx_name": "",
+   "pi_full_name": "Dale R Durran",
+   "pi_email_addr": "drdee@uw.edu",
+   "nsf_id": "000464029",
+   "pi_start_date": "2012-07-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Washington",
+  "inst_street_address": "4333 BROOKLYN AVE NE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SEATTLE",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "2065434043",
+  "inst_zip_code": "981951016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "WA07",
+  "org_lgl_bus_name": "UNIVERSITY OF WASHINGTON",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HD1WMN6945W6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Washington",
+  "perf_str_addr": "4333 Brookyn Ave N",
+  "perf_city_name": "Seattle",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "981051016",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "WA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "152500",
+   "pgm_ele_name": "Physical & Dynamic Meteorology"
+  },
+  {
+   "pgm_ele_code": "574000",
+   "pgm_ele_name": "Climate & Large-Scale Dynamics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1271",
+   "pgm_ref_txt": "COMPUTATIONAL MATHEMATICS"
+  },
+  {
+   "pgm_ref_code": "4444",
+   "pgm_ref_txt": "INTERDISCIPLINARY PROPOSALS"
+  },
+  {
+   "pgm_ref_code": "7215",
+   "pgm_ref_txt": "OPPORTUNITIES FOR RESEARCH CMG"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  },
+  {
+   "pgm_ref_code": "OTHR",
+   "pgm_ref_txt": "OTHER RESEARCH OR EDUCATION"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 357568.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Long-range weather forecasting and studies of the Earth's climate use computers to simulate the weather over the entire globe.&nbsp; Individual thunderstorms and clusters of similar deep cumulus clouds produce rain and transport moisture, heat, and momentum vertically throughout the atmosphere.&nbsp; Limitations in computer power have prevented global simulations from using the fundamental equations describing fluid motion to calculate the behavior of these localized clouds. Instead, the net effects of these clouds on the surrounding atmosphere are estimated using necessarily crude approximations.&nbsp; The latest advancements in computer architecture have finally made it possible to simulate deep cumulus clouds in global models, but there are major challenges that must be overcome.&nbsp; <br />&nbsp;<br />The key findings of this research address one of these challenges by improving the methods by which mathematical solution techniques that run very efficiently on &ldquo;massively parallel&rdquo; computers with hundreds of thousands of processors simulate the movement of water vapor and other chemical constituents through the air.&nbsp; In particular we have developed an improved technique to ensure that the simulated concentrations of these constituents remain non-negative even in regions where the concentration levels change very abruptly. Our approach is efficient and preserves the underlying accuracy of the mathematical solution, which would be lost if, for example, one simply set negative values to zero.<br /><br />This project contributed to the development of graduate student Devin Light as a scientific researcher and a conference presenter.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/17/2017<br>\n\t\t\t\t\tModified by: Dale&nbsp;R&nbsp;Durran</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nLong-range weather forecasting and studies of the Earth's climate use computers to simulate the weather over the entire globe.  Individual thunderstorms and clusters of similar deep cumulus clouds produce rain and transport moisture, heat, and momentum vertically throughout the atmosphere.  Limitations in computer power have prevented global simulations from using the fundamental equations describing fluid motion to calculate the behavior of these localized clouds. Instead, the net effects of these clouds on the surrounding atmosphere are estimated using necessarily crude approximations.  The latest advancements in computer architecture have finally made it possible to simulate deep cumulus clouds in global models, but there are major challenges that must be overcome.  \n \nThe key findings of this research address one of these challenges by improving the methods by which mathematical solution techniques that run very efficiently on \"massively parallel\" computers with hundreds of thousands of processors simulate the movement of water vapor and other chemical constituents through the air.  In particular we have developed an improved technique to ensure that the simulated concentrations of these constituents remain non-negative even in regions where the concentration levels change very abruptly. Our approach is efficient and preserves the underlying accuracy of the mathematical solution, which would be lost if, for example, one simply set negative values to zero.\n\nThis project contributed to the development of graduate student Devin Light as a scientific researcher and a conference presenter.\n\n\t\t\t\t\tLast Modified: 10/17/2017\n\n\t\t\t\t\tSubmitted by: Dale R Durran"
+ }
+}

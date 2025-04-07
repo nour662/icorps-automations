@@ -1,0 +1,109 @@
+{
+ "awd_id": "1209374",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Fellowship Award",
+ "awd_titl_txt": "NSF East Asia and Pacific Summer Institute for FY 2012 in China",
+ "cfda_num": "47.079",
+ "org_code": "01090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anne Emig",
+ "awd_eff_date": "2012-06-01",
+ "awd_exp_date": "2013-05-31",
+ "tot_intn_awd_amt": 5836.0,
+ "awd_amount": 5836.0,
+ "awd_min_amd_letter_date": "2012-05-23",
+ "awd_max_amd_letter_date": "2012-05-23",
+ "awd_abstract_narration": "This action funds Ella Revzin of University of Illinois-Chicago to conduct a research project, entitled \"A bootstrap procedure for linear mixed models under weak heterogeneity assumption,\" during the summer of 2012 at Soochow University Center for Advanced Statistics and Econometrics Research in Suzhou, Jiangsu,China.  The host scientist is Dr. Lijian Yang.\r\n\r\nThe Intellectual Merit of the research project is development of a simple statistical method for testing the significance of parameter estimates of a Linear Mixed Model for longitudinal and panel data.  The proposed bootstrapping procedure applies to a very general class of Linear Model specifications and provides better accuracy than asymptotic methods.   \r\n\r\nThe Broader Impacts of an EAPSI fellowship include providing the Fellow a first-hand research experience outside the U.S.; an introduction to the science, science policy, and scientific infrastructure of the respective location; and an orientation to the society, culture and language.  These activities meet the NSF goal to educate for international collaborations early in the career of its scientists, engineers, and educators, thus ensuring a globally aware U.S. scientific workforce.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "O/D",
+ "org_dir_long_name": "Office Of The Director",
+ "div_abbr": "OISE",
+ "org_div_long_name": "Office of International Science and Engineering",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ella",
+   "pi_last_name": "Revzin",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ella Revzin",
+   "pi_email_addr": "",
+   "nsf_id": "000606738",
+   "pi_start_date": "2012-05-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Revzin                  Ella",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHICAGO",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "",
+  "inst_zip_code": "606471269",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "IL03",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "Revzin                  Ella",
+  "perf_str_addr": null,
+  "perf_city_name": "CHICAGO",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "606077045",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "IL07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "731600",
+   "pgm_ele_name": "EAPSI"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5978",
+   "pgm_ref_txt": "EAST ASIA AND PACIFIC PROGRAM"
+  },
+  {
+   "pgm_ref_code": "7316",
+   "pgm_ref_txt": "EAPSI"
+  },
+  {
+   "pgm_ref_code": "9200",
+   "pgm_ref_txt": "US CHINA COOP IN BASIC SCIENCE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 5836.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><!--StartFragment-->Confidence regions for regression estimates are an important part of data analysis.  They provide a simple way to assess model fit and perform goodness of fit tests.  However, many of the usual ways in which such regions are constructed require either the practitioner to make very strict and quite technical statistical assumptions about the underlying population that they are studying or are based on asymptotic theory derived from the sample size going to infinity. &nbsp;In contrast, bootstrapping is a popular nonparametric method that requires minimal assumptions and if correctly designed work well for hypothesis tests and confidence intervals for small sample sizes. &nbsp;Still, even good bootstrap algorithms have not been used very successfully for construction of 'simultaneous' confidence bands that hold all over the entire design space (the individual experimental conditions at which a researcher has observed each of her or his data points).</p>\n<p><span>For my <span>EAPSI</span> summer project in China, I worked under the guidance of Dr. <span>Lijian</span> Yang at <span>Soochow</span> University to study the efficacy of bootstrapping to construct simultaneous confidence bands based on polynomial spline fits to univariate data. &nbsp;I formulated an algorithm to construct point wise confidence intervals and simultaneous confidence bands for the conditional mean function of independent but not identical univariate data.  The intervals are based on a a Wild bootstrap of a linear regression spline estimator of the mean, while the bands rely on a \"bootstrap principle\" type inflation factor derived from linear spline asymptotic theory.  Simulations conducted this summer indicate that the point wise intervals have similar coverage as intervals based on linear spline asymptotic theory when a correct centering estimate for the mean is used.  However, the proposed bootstrap simultaneous confidence bands fail to do better than conservative bands developed by Dr. Yang as part of earlier research and thus no improvements were achieved for small sample sizes.</span><!--EndFragment--></p>\n<p><span>However, although my algorithm did not achieve the desired small sample properties, the results of my project have informed my current and future Ph.D. thesis work. &nbsp;My findings show that the wild bootstrap does produce <span>adequete</span> confidence intervals for small and moderate sample sizes. &nbsp; However, more work is required to derive the exact distribution of the bootstrap estimates as well as some careful thought to how best to extend this</span> to construction of simultaneous confidence bands for regression.</p>\n<p>&nbsp;</p>\n<p><!--StartFragment-->In addition to my own work, I also attended many talks by visiting scholars and had the opportunity to meet with several top academicians in my field of study.  Overall, my summer research experience has proved to be an invaluable stepping stone in my development as a researcher.   By working with Dr. Yang, I have gained immense knowledge of the field of nonparametric statistics and have been exposed to some of its top practitioners as well as important future directions for my own research and career.<!--EndFragment--></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/27/2012<br>\n\t\t\t\t\tModified by: Ella&nbsp;Revzin</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nConfidence regions for regression estimates are an important part of data analysis.  They provide a simple way to assess model fit and perform goodness of fit tests.  However, many of the usual ways in which such regions are constructed require either the practitioner to make very strict and quite technical statistical assumptions about the underlying population that they are studying or are based on asymptotic theory derived from the sample size going to infinity.  In contrast, bootstrapping is a popular nonparametric method that requires minimal assumptions and if correctly designed work well for hypothesis tests and confidence intervals for small sample sizes.  Still, even good bootstrap algorithms have not been used very successfully for construction of 'simultaneous' confidence bands that hold all over the entire design space (the individual experimental conditions at which a researcher has observed each of her or his data points).\n\nFor my EAPSI summer project in China, I worked under the guidance of Dr. Lijian Yang at Soochow University to study the efficacy of bootstrapping to construct simultaneous confidence bands based on polynomial spline fits to univariate data.  I formulated an algorithm to construct point wise confidence intervals and simultaneous confidence bands for the conditional mean function of independent but not identical univariate data.  The intervals are based on a a Wild bootstrap of a linear regression spline estimator of the mean, while the bands rely on a \"bootstrap principle\" type inflation factor derived from linear spline asymptotic theory.  Simulations conducted this summer indicate that the point wise intervals have similar coverage as intervals based on linear spline asymptotic theory when a correct centering estimate for the mean is used.  However, the proposed bootstrap simultaneous confidence bands fail to do better than conservative bands developed by Dr. Yang as part of earlier research and thus no improvements were achieved for small sample sizes.\n\nHowever, although my algorithm did not achieve the desired small sample properties, the results of my project have informed my current and future Ph.D. thesis work.  My findings show that the wild bootstrap does produce adequete confidence intervals for small and moderate sample sizes.   However, more work is required to derive the exact distribution of the bootstrap estimates as well as some careful thought to how best to extend this to construction of simultaneous confidence bands for regression.\n\n \n\nIn addition to my own work, I also attended many talks by visiting scholars and had the opportunity to meet with several top academicians in my field of study.  Overall, my summer research experience has proved to be an invaluable stepping stone in my development as a researcher.   By working with Dr. Yang, I have gained immense knowledge of the field of nonparametric statistics and have been exposed to some of its top practitioners as well as important future directions for my own research and career.\n\n \n\n\t\t\t\t\tLast Modified: 11/27/2012\n\n\t\t\t\t\tSubmitted by: Ella Revzin"
+ }
+}

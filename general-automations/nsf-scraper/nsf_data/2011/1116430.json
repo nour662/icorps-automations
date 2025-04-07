@@ -1,0 +1,113 @@
+{
+ "awd_id": "1116430",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NeTS: Small: Target Monitoring with Low-Cost Sensor Networks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Thyagarajan Nandagopal",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 383887.0,
+ "awd_amount": 383887.0,
+ "awd_min_amd_letter_date": "2011-07-07",
+ "awd_max_amd_letter_date": "2012-06-12",
+ "awd_abstract_narration": "Most research on target monitoring using sensor networks requires the geographic locations of the sensors to be known. However, in practice, it is not always possible for every sensor node to have a built-in GPS-like capability. On the other hand, applying a localization procedure to all the sensor nodes can be expensive for large networks. Even if the location information of many sensors can be computed, it may never be used because targets usually appear very sparse. \r\n\r\nThis project, therefore, tackles the target monitoring problem in the context of low-cost sensor networks, where a sensor node does not need built-in capability to determine its location. Instead, hopcount information serves as the primary source of information to track the target. The challenges result from the unknown mobility and nature of the target and the coarseness of the hopcount data. The matter is more sophisticated if there are multiple moving targets and it is not known whether they move in groups or independently.\r\n\r\nThe research objective of the project is to design and implement a novel solution framework to address these challenges. This framework, based on a machine-learning approach, can be applied to a wide range of sensor networks which can have modest resource capacities or be deployed in non-conventional physical settings such as under the water or on wet ground. Building on the research, an education plan is proposed that seeks to transfer knowledge to younger generations, improve student enrollment and retention, and encourage active participation from students of under-represented groups.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Duc",
+   "pi_last_name": "Tran",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Duc A Tran",
+   "pi_email_addr": "duc.tran@umb.edu",
+   "nsf_id": "000483321",
+   "pi_start_date": "2011-07-07",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Bridget",
+   "pi_last_name": "Benson",
+   "pi_mid_init": "G",
+   "pi_sufx_name": "",
+   "pi_full_name": "Bridget G Benson",
+   "pi_email_addr": "bbenson@calpoly.edu",
+   "nsf_id": "000517498",
+   "pi_start_date": "2011-07-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Massachusetts Boston",
+  "inst_street_address": "100 WILLIAM T MORRISSEY BLVD",
+  "inst_street_address_2": "",
+  "inst_city_name": "DORCHESTER",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6172875370",
+  "inst_zip_code": "021253300",
+  "inst_country_name": "United States",
+  "cong_dist_code": "08",
+  "st_cong_dist_code": "MA08",
+  "org_lgl_bus_name": "UNIVERSITY OF MASS AT BOSTON",
+  "org_prnt_uei_num": "CGCDJ24JJLZ1",
+  "org_uei_num": "CGCDJ24JJLZ1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Massachusetts Boston",
+  "perf_str_addr": "100 WILLIAM T MORRISSEY BLVD",
+  "perf_city_name": "DORCHESTER",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021253300",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "08",
+  "perf_st_cong_dist": "MA08",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 383887.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The major goal of the project was to design techniques for target monitoring using low-cost sensor networks. A &ldquo;sensor&rdquo; is a small computing device that can read the environment and process information; it can be a mobile phone or an autonomous underwater vehicle with sensing capabilities, or &ldquo;things&rdquo; as in the emerging Internet of Things. We wanted to devise solutions that can tell us whether a special event of interest happens, when and where, quickly, accurately, and efficiently.</p>\n<p>The key challenge to achieve this goal was how to keep the cost low. A sensor node should not need a built-in capability to determine its location (e.g., by having a GPS, which is expensive and energy-inefficient). There should also not require any expensive external assisting device such as a robot to help with the tracking. Our conjecture was that given today&rsquo;s ubiquitous communications infrastructure and increasingly advanced mobile computing at cheaper price, we could achieve the quality of an expensive target monitoring solution, which is often centralized, by a decentralized, incremental approach utilizing low-cost easy-to-deploy sensing devices and easy-to-obtain information about the environment such as Wi-Fi, light, sound, and geomagnetic field information.</p>\n<p>Our research resulted in theoretical developments of a framework for fast and efficient localization and tracking of targets where the input sensing data is incomplete and noisy and a decentralized framework for quick notification upon important events that happen in a sensor network. These frameworks were aimed to support a wide range of sensor networks, which can have modest resource capacities or be deployed in non-conventional physical settings such as under the water or on wet ground.</p>\n<p>Via joint work with environmental scientists at our university, new insight was brought into how better to deploy autonomous underwater vehicles in shallow water environments for studies on location estimation (interest of computer scientists) and water conditions (interest of oceanic scientists). Educational impact was also made. The project provided opportunities to undergraduate students, especially those coming from minority communities, to involve directly in research; for example, we were able to bring two such students from our partner site in California to join our Boston group for summer research. The computing resources acquired for the project were utilized in several classes, including a class at the freshman level. The teaching curricula overall were improved. All these activities fit perfectly into the urban mission of our institution &ndash; the most diverse public university in New England.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/06/2015<br>\n\t\t\t\t\tModified by: Duc&nbsp;A&nbsp;Tran</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe major goal of the project was to design techniques for target monitoring using low-cost sensor networks. A \"sensor\" is a small computing device that can read the environment and process information; it can be a mobile phone or an autonomous underwater vehicle with sensing capabilities, or \"things\" as in the emerging Internet of Things. We wanted to devise solutions that can tell us whether a special event of interest happens, when and where, quickly, accurately, and efficiently.\n\nThe key challenge to achieve this goal was how to keep the cost low. A sensor node should not need a built-in capability to determine its location (e.g., by having a GPS, which is expensive and energy-inefficient). There should also not require any expensive external assisting device such as a robot to help with the tracking. Our conjecture was that given today\u00c6s ubiquitous communications infrastructure and increasingly advanced mobile computing at cheaper price, we could achieve the quality of an expensive target monitoring solution, which is often centralized, by a decentralized, incremental approach utilizing low-cost easy-to-deploy sensing devices and easy-to-obtain information about the environment such as Wi-Fi, light, sound, and geomagnetic field information.\n\nOur research resulted in theoretical developments of a framework for fast and efficient localization and tracking of targets where the input sensing data is incomplete and noisy and a decentralized framework for quick notification upon important events that happen in a sensor network. These frameworks were aimed to support a wide range of sensor networks, which can have modest resource capacities or be deployed in non-conventional physical settings such as under the water or on wet ground.\n\nVia joint work with environmental scientists at our university, new insight was brought into how better to deploy autonomous underwater vehicles in shallow water environments for studies on location estimation (interest of computer scientists) and water conditions (interest of oceanic scientists). Educational impact was also made. The project provided opportunities to undergraduate students, especially those coming from minority communities, to involve directly in research; for example, we were able to bring two such students from our partner site in California to join our Boston group for summer research. The computing resources acquired for the project were utilized in several classes, including a class at the freshman level. The teaching curricula overall were improved. All these activities fit perfectly into the urban mission of our institution &ndash; the most diverse public university in New England.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 10/06/2015\n\n\t\t\t\t\tSubmitted by: Duc A Tran"
+ }
+}

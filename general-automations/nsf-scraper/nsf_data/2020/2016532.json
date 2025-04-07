@@ -1,0 +1,105 @@
+{
+ "awd_id": "2016532",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CCRI: Planning: A Community-Standard, Large-Scale Synthetic 3D Scene Dataset for Scene Analysis and Synthesis",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032924768",
+ "po_email": "jyang@nsf.gov",
+ "po_sign_block_name": "Jie Yang",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2024-03-31",
+ "tot_intn_awd_amt": 50000.0,
+ "awd_amount": 50000.0,
+ "awd_min_amd_letter_date": "2020-08-11",
+ "awd_max_amd_letter_date": "2020-08-11",
+ "awd_abstract_narration": "To function as useful household assistants, robots need to understand what they are seeing and how to navigate in indoor environments. The current state-of-the-art approaches for solving these problems rely on machine learning, and in particular deep learning, which requires large quantities of labeled data (e.g. many images with per-pixel labels indicating what type of object is present at that pixel). Rather than asking people to laboriously label data captured from real-world spaces, a promising alternative approach is to use *synthetic* 3D scenes: virtual 3D models of indoor spaces. The 3D objects which populate these virtual spaces can be equipped with information such as their object type, which allows large sets of labeled training data to be created essentially \u201cfor free.\u201d This project aims to construct *the* community-standard, large-scale synthetic 3D scene dataset. While some synthetic 3D scene datasets exist, they are either too small, or they have been subject to onerous use restrictions (and even lawsuits) due to copyright issues on their 3D models, which typically come from for-profit companies. This project will construct a large-scale dataset out of freely-available 3D content. The main contribution of the project is not just this dataset, but also a *scalable pipeline* for creating such 3D scene datasets. This pipeline will be released as open source, allowing others to expand the dataset or to construct their own datasets for needs which may be difficult to anticipate today. In total, the results of this project will enable any researcher (not just those at heavily-resourced institutions) to build AI systems which leverage large-scale synthetic indoor training data.\r\n\r\nThe planned dataset construction pipeline will construct 3D scenes based on 2D floor plan datasets, which already exist at large scale. Using a machine-learning-based system previously developed by the investigators, these 2D floor plans will be converted to 3D models of empty houses. Then, each room in the house will be populated with objects in a plausible arrangement. Initially, this step will be performed by crowd workers on a platform such as Amazon Mechanical Turk. The workers will be instructed to place objects so as to match a photograph, where the photograph is chosen such that its (estimated) room geometry matches the geometry of the empty room to be populated. In a later stage of the project, rooms populated in this manner will be used to train a machine learning model which can automatically place objects based on an input photograph, thus further accelerating the dataset construction process.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Daniel",
+   "pi_last_name": "Ritchie",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Daniel Ritchie",
+   "pi_email_addr": "daniel_ritchie@brown.edu",
+   "nsf_id": "000737205",
+   "pi_start_date": "2020-08-11",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Brown University",
+  "inst_street_address": "1 PROSPECT ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "PROVIDENCE",
+  "inst_state_code": "RI",
+  "inst_state_name": "Rhode Island",
+  "inst_phone_num": "4018632777",
+  "inst_zip_code": "029129100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "RI01",
+  "org_lgl_bus_name": "BROWN UNIVERSITY",
+  "org_prnt_uei_num": "E3FDXZ6TBHW3",
+  "org_uei_num": "E3FDXZ6TBHW3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Brown University",
+  "perf_str_addr": "115 Waterman St.",
+  "perf_city_name": "Providence",
+  "perf_st_code": "RI",
+  "perf_st_name": "Rhode Island",
+  "perf_zip_code": "029129002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "RI01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735900",
+   "pgm_ele_name": "CCRI-CISE Cmnty Rsrch Infrstrc"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7359",
+   "pgm_ref_txt": "COMPUTING RES INFRASTRUCTURE"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 50000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project led to the creation of a new dataset for visual computing (computer graphics &amp; computer vision) research, as well as the development of new tools for efficiently creating this type of dataset. The dataset consists of a large number of panoramic images of indoor residential environments (e.g. bedrooms, living rooms, etc.) Each panorama is linked to a 3D version of the scene in which that panorama was taken. These 3D scenes consist of a set of 3D objects, each of which is precisely chosen, placed, and aligned such that it accurately mirrors one of the objects in the panorama.&nbsp;</p>\n<p>This type of dataset can support the development of machine-learning-based visual computing systems that must reason about the structure of 3D scenes, especially systems that must make predictions about 3D scene structure from imagery. We found that on the task of panoramic scene understanding (estimating the architectural layout of a room and the objects in it from a panorama), systems trained on our dataset performed better when applied to real-world photographic panoramas than systems trained on previously-available datasets for the same task.</p>\n<p>This dataset is applicable to other problems in computer vision and graphics, as well as to problems in robotics involving training indoor autonomous agents. In addition, the software tools we used to create this dataset could help other researchers more efficiently construct similar datasets of their own in the future.</p><br>\n<p>\n Last Modified: 06/26/2024<br>\nModified by: Daniel&nbsp;Ritchie</p></div>\n<div class=\"porSideCol\"\n><div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2024/2016532/2016532_10695694_1719448463818_Screenshot_2024_06_26_at_8.26.15_PM--rgov-214x142.png\" original=\"/por/images/Reports/POR/2024/2016532/2016532_10695694_1719448463818_Screenshot_2024_06_26_at_8.26.15_PM--rgov-800width.png\" title=\"Dataset Overview\"><img src=\"/por/images/Reports/POR/2024/2016532/2016532_10695694_1719448463818_Screenshot_2024_06_26_at_8.26.15_PM--rgov-66x44.png\" alt=\"Dataset Overview\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">An overview of the features provided by our new 3D scene dataset.</div>\n<div class=\"imageCredit\">Daniel Ritchie</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Daniel&nbsp;Ritchie\n<div class=\"imageTitle\">Dataset Overview</div>\n</div>\n</li></ul>\n</div>\n</div></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThis project led to the creation of a new dataset for visual computing (computer graphics & computer vision) research, as well as the development of new tools for efficiently creating this type of dataset. The dataset consists of a large number of panoramic images of indoor residential environments (e.g. bedrooms, living rooms, etc.) Each panorama is linked to a 3D version of the scene in which that panorama was taken. These 3D scenes consist of a set of 3D objects, each of which is precisely chosen, placed, and aligned such that it accurately mirrors one of the objects in the panorama.\n\n\nThis type of dataset can support the development of machine-learning-based visual computing systems that must reason about the structure of 3D scenes, especially systems that must make predictions about 3D scene structure from imagery. We found that on the task of panoramic scene understanding (estimating the architectural layout of a room and the objects in it from a panorama), systems trained on our dataset performed better when applied to real-world photographic panoramas than systems trained on previously-available datasets for the same task.\n\n\nThis dataset is applicable to other problems in computer vision and graphics, as well as to problems in robotics involving training indoor autonomous agents. In addition, the software tools we used to create this dataset could help other researchers more efficiently construct similar datasets of their own in the future.\t\t\t\t\tLast Modified: 06/26/2024\n\n\t\t\t\t\tSubmitted by: DanielRitchie\n"
+ }
+}

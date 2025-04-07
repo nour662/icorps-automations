@@ -1,0 +1,101 @@
+{
+ "awd_id": "1147641",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: IIS: RI: Learning in Continuous and High Dimensional Action Spaces",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032927215",
+ "po_email": "tleen@nsf.gov",
+ "po_sign_block_name": "Todd Leen",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2013-08-31",
+ "tot_intn_awd_amt": 149996.0,
+ "awd_amount": 149996.0,
+ "awd_min_amd_letter_date": "2011-08-05",
+ "awd_max_amd_letter_date": "2011-08-05",
+ "awd_abstract_narration": "The proposed research is in the general area of \"planning under uncertainty.\"  This topic addresses the problem of choosing good actions in situations where actions do not have deterministic outcomes.  Applications for this general framework include but are not limited to robotic control, medical decision making, and business optimization.  The overarching mathematical framework for this problem is that of decision theory or Markov decision processes, topics that are studied in a wide range of fields, including engineering, economics, operations research and, more recently, artificial intelligence.  \r\n\r\nRecent technical efforts in this area have sought to address large problems by combining successful statistical and machine learning techniques with decision-theoretic reasoning.  The underlying insight behind these efforts is that machine learning can generalize across similar states of the world, thereby allowing algorithms to propose good actions for new states of the world without explicitly considering every possible state or outcome, as was required by classical approaches.\r\n\r\nThe combination of classical decision theoretic methods and machine learning has shown great promise for large state spaces, but one aspect that has been under-explored is large action spaces.  Large action spaces arise naturally from a fine discretization of a continuous action space or from a large set of discrete choices, such as assignments of firefighters to regions on a map.  One way to address the general challenge would be to group actions into sets and use machine learning methods to predict which set is preferred.  By doing this multiple times over carefully arranged partitions of the action space, it should possible to achieve an exponential reduction in the effort required to select the best action.\r\n\r\nPotential applications of this research include robotic control, power grid management, and forest/fire management strategies.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ronald",
+   "pi_last_name": "Parr",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ronald Parr",
+   "pi_email_addr": "parr@cs.duke.edu",
+   "nsf_id": "000188767",
+   "pi_start_date": "2011-08-05",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Duke University",
+  "inst_street_address": "2200 W MAIN ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "DURHAM",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9196843030",
+  "inst_zip_code": "277054640",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "NC04",
+  "org_lgl_bus_name": "DUKE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "TP7EK8DZV6N5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Duke University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "277054010",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "NC04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 149996.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This was an EAGER project, which is a small project intended to fund promising new ideas that deserve further development. This bootstrapping objective was satisfied in that the ideas in the project were developed further and turned into a subsequent full NSF proposal that was funded.</p>\n<p>The goals of the EAGER project were to explore learning methods for problems that involved continuous actions and, possibly continuous states. For example, Tic-Tac-Toe involves discrete states (the configurations of the game) and discrete actions (the finite set of legal moves in a game). &nbsp;Many realistic control problems involve continuous actions and states. For example, controlling a helicopter involves position, orientation,, velocity, etc. of the helicopter (continuous state) and the control inputs used to control the helicopter (continuous actions).</p>\n<p>Previous work on learning control in the AI community typically involved discrete actions, but did consider both continuous and discrete states.</p>\n<p>Our work introduced a new way to learn to control things based upon experience where those experiences include both continuous states and continuous actions. We also considered a new method of \"exploration\" which refers to how the learning program balances trying new things with sticking to what it already knows. Our exploration algorithm is one of the first practical approaches to exploration in continuous state spaces, but it still does not handle continuous actions efficiently; this is future work.</p>\n<p>One of the impressive demonstrations we did in our work was to learn to treat an HIV patient. &nbsp;The state of the patient measures the number of free virus particles in the blood, the number of T-cells, etc. &nbsp;The actions are the quantity of two different types of drugs to administer. The learning was done using an HIV simulator and the result was a treatment regime that kept the simulated patient healthy without the need for expensive drugs that have unpleasant side effects. &nbsp;(The patient's own immune system is \"trained\" to manage the disease.) While this is an exciting result, we should remember that it is just a simulation and the simulation is probably an oversimplified model of a real human body. What it does show is that the techniques we are developing may have wide ranging application to a variety of control problems and that further study is warranted.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/13/2014<br>\n\t\t\t\t\tModified by: Ronald&nbsp;Parr</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis was an EAGER project, which is a small project intended to fund promising new ideas that deserve further development. This bootstrapping objective was satisfied in that the ideas in the project were developed further and turned into a subsequent full NSF proposal that was funded.\n\nThe goals of the EAGER project were to explore learning methods for problems that involved continuous actions and, possibly continuous states. For example, Tic-Tac-Toe involves discrete states (the configurations of the game) and discrete actions (the finite set of legal moves in a game).  Many realistic control problems involve continuous actions and states. For example, controlling a helicopter involves position, orientation,, velocity, etc. of the helicopter (continuous state) and the control inputs used to control the helicopter (continuous actions).\n\nPrevious work on learning control in the AI community typically involved discrete actions, but did consider both continuous and discrete states.\n\nOur work introduced a new way to learn to control things based upon experience where those experiences include both continuous states and continuous actions. We also considered a new method of \"exploration\" which refers to how the learning program balances trying new things with sticking to what it already knows. Our exploration algorithm is one of the first practical approaches to exploration in continuous state spaces, but it still does not handle continuous actions efficiently; this is future work.\n\nOne of the impressive demonstrations we did in our work was to learn to treat an HIV patient.  The state of the patient measures the number of free virus particles in the blood, the number of T-cells, etc.  The actions are the quantity of two different types of drugs to administer. The learning was done using an HIV simulator and the result was a treatment regime that kept the simulated patient healthy without the need for expensive drugs that have unpleasant side effects.  (The patient's own immune system is \"trained\" to manage the disease.) While this is an exciting result, we should remember that it is just a simulation and the simulation is probably an oversimplified model of a real human body. What it does show is that the techniques we are developing may have wide ranging application to a variety of control problems and that further study is warranted.\n\n \n\n\t\t\t\t\tLast Modified: 01/13/2014\n\n\t\t\t\t\tSubmitted by: Ronald Parr"
+ }
+}

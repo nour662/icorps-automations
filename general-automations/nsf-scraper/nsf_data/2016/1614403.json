@@ -1,0 +1,109 @@
+{
+ "awd_id": "1614403",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Fellowship Award",
+ "awd_titl_txt": "EAPSI: Computation of Wishart Eigenvalue Distributions for Multi-Channel Passive Radar Detection",
+ "cfda_num": "47.079",
+ "org_code": "01090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anne Emig",
+ "awd_eff_date": "2016-06-01",
+ "awd_exp_date": "2017-05-31",
+ "tot_intn_awd_amt": 5400.0,
+ "awd_amount": 5400.0,
+ "awd_min_amd_letter_date": "2016-06-16",
+ "awd_max_amd_letter_date": "2016-06-16",
+ "awd_abstract_narration": "Passive radars seek to perform the same detection and characterization of targets as an active radar, with the key difference that passive systems do not transmit a signal. Instead, passive radars rely on electromagnetic radiation already present in the environment to illuminate targets, typically from sources such as radio, cellular, and television transmitters. In order for the system to decide if there is a target traveling at a particular velocity at a given angle and range, sophisticated models of the target and noise signals are employed to construct an optimal test statistic. This research seeks to use analytic and geometric methods to enable computation of noise models in multiple receiver passive radar systems in collaboration with Professor Vaughan Clarkson at the University of Queensland, who has significant experience in the areas of detection and estimation theory. The University of Queensland also offers the unique opportunity to test these models with data drawn from a single frequency network, in which area Professor Clarkson's group has particular expertise.\r\n\r\nIn a multiple channel passive radar system, data vectors are measured at each receiver. When no signal is present, it is assumed that the data is identically distributed zero mean complex white Gaussian noise; this noise is considered additively in the case of a present signal. It has been shown that the optimal test statistic for presence of a rank one signal in such a system is the largest eigenvalue of the Grammian matrix constructed from the measured data. This Grammian matrix has a complex Wishart distribution, and closed form expressions exist for the largest eigenvalue distribution. However, expressions for the CDF involve taking the determinant of matrices with terms taking the form of ratios of gamma functions with large integer arguments, which overwhelm floating point representations for cases of practical interest. This project will utilize results expansions in terms of partial inner products with orthogonal polynomials to produce a factorization of this matrix to make computation tractable. Following completion of the theoretical portions of the work, single frequency network data gathered by the University of Queensland will be used for experimental tests.\r\n\r\nThis award under the East Asia and Pacific Summer Institutes program supports summer research by a U.S. graduate student and is jointly funded by NSF and the Australian Academy of Science.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "O/D",
+ "org_dir_long_name": "Office Of The Director",
+ "div_abbr": "OISE",
+ "org_div_long_name": "Office of International Science and Engineering",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Scott",
+   "pi_last_name": "Jones",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Scott Jones",
+   "pi_email_addr": "",
+   "nsf_id": "000681484",
+   "pi_start_date": "2016-06-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Jones                   Scott",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "Tempe",
+  "inst_state_code": "AZ",
+  "inst_state_name": "Arizona",
+  "inst_phone_num": "",
+  "inst_zip_code": "852817368",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "AZ04",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Queensland",
+  "perf_str_addr": null,
+  "perf_city_name": "St Lucia, QLD, 4072",
+  "perf_st_code": "",
+  "perf_st_name": "RI REQUIRED",
+  "perf_zip_code": "",
+  "perf_ctry_code": "AS",
+  "perf_cong_dist": "",
+  "perf_st_cong_dist": "",
+  "perf_ctry_name": "Australia",
+  "perf_ctry_flag": "0"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "731600",
+   "pgm_ele_name": "EAPSI"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5912",
+   "pgm_ref_txt": "AUSTRALIA"
+  },
+  {
+   "pgm_ref_code": "5978",
+   "pgm_ref_txt": "EAST ASIA AND PACIFIC PROGRAM"
+  },
+  {
+   "pgm_ref_code": "7316",
+   "pgm_ref_txt": "EAPSI"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 5400.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Motivated by applications to multi-channel detection in passive radar systems, this project aimed to improve techniques to calculate the probability distribution of ethe largest eigenvalue of a complex Wishart matrix. This probability distribution chracterizes the sufficient statistic for the greatest likelihood ratio test for a single target present across multiple channels. Although a closed form expression for the distribution was already known, in cases of practical interest with hundreds of thousands of data samples, large factorial terms overwhelmed the ability to calculate with floating point arithmetic. Known approximations work well in the main body of the distribution, but are not sufficiently accurate for computation of values in the tail corresponding to the very small false alarm rates necessary in remote sensing applications. The previously known expression for the distribution was reformulated by exploiting the relationship with families of orthogonal polynomials, an exact expression for the distribution was formulated in such a way that eliminated the large factorial terms overwhelming floating point arithmetic. The exact expression and some approximations derived by taking the limit in the number of data samples make it feasible to accurately calculate values of the distribution in multi-channel remote sensing systems for very large numbers of samples, thus enabling the calculation of precise detection threshold values for very low probabilities of false alarm.</p>\n<p>The research performed in the course of this project has applications in multi-channel remote sensing systems used for national security, border protection, transportation management, and in many other applications. There are academic ramifications in the fields of random matrix theory and in connections to techniques for calculating integrals on Grassmannians for the Bayesian detection.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/17/2017<br>\n\t\t\t\t\tModified by: Scott&nbsp;Jones</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMotivated by applications to multi-channel detection in passive radar systems, this project aimed to improve techniques to calculate the probability distribution of ethe largest eigenvalue of a complex Wishart matrix. This probability distribution chracterizes the sufficient statistic for the greatest likelihood ratio test for a single target present across multiple channels. Although a closed form expression for the distribution was already known, in cases of practical interest with hundreds of thousands of data samples, large factorial terms overwhelmed the ability to calculate with floating point arithmetic. Known approximations work well in the main body of the distribution, but are not sufficiently accurate for computation of values in the tail corresponding to the very small false alarm rates necessary in remote sensing applications. The previously known expression for the distribution was reformulated by exploiting the relationship with families of orthogonal polynomials, an exact expression for the distribution was formulated in such a way that eliminated the large factorial terms overwhelming floating point arithmetic. The exact expression and some approximations derived by taking the limit in the number of data samples make it feasible to accurately calculate values of the distribution in multi-channel remote sensing systems for very large numbers of samples, thus enabling the calculation of precise detection threshold values for very low probabilities of false alarm.\n\nThe research performed in the course of this project has applications in multi-channel remote sensing systems used for national security, border protection, transportation management, and in many other applications. There are academic ramifications in the fields of random matrix theory and in connections to techniques for calculating integrals on Grassmannians for the Bayesian detection.\n\n\t\t\t\t\tLast Modified: 03/17/2017\n\n\t\t\t\t\tSubmitted by: Scott Jones"
+ }
+}

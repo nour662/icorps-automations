@@ -1,0 +1,109 @@
+{
+ "awd_id": "1850054",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: SaTC: Leveraging Userland In-Memory Objects for Cybercrime Investigations and Malware Classification",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2019-06-01",
+ "awd_exp_date": "2022-05-31",
+ "tot_intn_awd_amt": 174999.0,
+ "awd_amount": 174999.0,
+ "awd_min_amd_letter_date": "2019-04-17",
+ "awd_max_amd_letter_date": "2019-04-17",
+ "awd_abstract_narration": "On mobile devices, the advancement and sophistication in application development and the great reliance on their functionality daily by many users makes them a critical piece of evidence for digital investigations. This project focuses on the reconstruction of app execution to recover user and fingerprint malware activities on mobile devices. The research will provide a methodology for investigators to easily outline user actions and strategies, and possible malware attack blueprint without the need for prior knowledge of the target application logic. This project will further advance digital forensics capabilities, by engaging both undergraduate and graduate students in memory forensics research.\r\n\r\nBy leveraging in-memory artifacts for execution reconstruction and malware classification, this project develops app-agnostic memory forensics utilities for investigating Android applications. The solution will recreate program execution slices from residual in-memory userland data objects and their metadata and then map them to the loaded images recovered from the code section of the process memory to determine the exact components and program flows that generated the user's activity. The advantage of this technique is it gives the investigator a clear picture of the program flow path, showing a sequence of user events and the data involved. The newly reconstructed in-memory program slices and loaded image files will then further serve as input feature vectors to two distinct modalities in a multimodal learning malware classification scheme. These unique features which together represent app functionality and code structure when applied in the multimodal algorithm will result in a more robust and resilient malware fingerprint that can detect similar and obfuscated variants with a high degree of accuracy.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Aisha",
+   "pi_last_name": "Ali-Gombe",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Aisha Ali-Gombe",
+   "pi_email_addr": "aaligombe@lsu.edu",
+   "nsf_id": "000764034",
+   "pi_start_date": "2019-04-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Towson University",
+  "inst_street_address": "8000 YORK RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "TOWSON",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "4107042236",
+  "inst_zip_code": "212520002",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "MD02",
+  "org_lgl_bus_name": "TOWSON UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LC3SFMP2L798"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Towson University",
+  "perf_str_addr": "8000 York Road",
+  "perf_city_name": "Towson",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "212520001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "MD02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 174999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><div class=\"page\" title=\"Page 1\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><span>In this research, we developed multi-faceted utilities for investigating Android applications leveraging userland in-memory forensics artifacts. Our work addresses the limitation of existing app-specific and malware analysis techniques by introducing a novel app-agnostic memory forensics-based approach. Task I - tools for the recovery, reconstruction, and semantic analysis of the in-memory artifacts. Task II - leveraging the in-memory artifacts for malware analysis and categorization using neural and non-neural network algorithms.</span></p>\n<p><span>In Task 1 - We developed Droidscraper and OAGen. A) Droidscraper is a tool for android in-memory object recovery and reconstruction that targets the new Android runtime (ART). From a blob of memory image DroidScraper reverses the design of the latest Android memory allocation algorithm called region-based memory management to extract running threads, enumerate objects allocated in the heap region, and decode objects based on their class definitions. The evaluation of DroidScrapershows that it can recover in-memory data allocated using Android's region-based memory allocation with a recovery percentage of almost 90%. In addition, DroidScraper can reconstruct and gives context to the extracted objects, which in practice can be utilized for detecting evidence of file and network activities, database accesses as well as recovery of cryptographic keys. Limitation ? recovered objects have no contextual relation and provenance, making it tedious to give meaning to forensically interesting data. 2) OAGen, designed to augment the limitation of DroidScraper, is a post-execution and app-agnostic semantic analysis approach designed to help investigators establish provenance and relationships between in-memory objects. We developed OAGen with three algorithms for - i) Path exploration - this algorithm establishes connectivity between two nodes of interest using the Edge-disjoint Paths algorithm; ii) Context determination - this algorithm creates a contextual subgraph by pruning the predecessor(s) nodes of a target node; and iii) Object Scope Search - this algorithm find object scope within program components such as thread. As a performance measure, the throughput of the OAG generation algorithm on our test machine is approximately 0.19Mbps. This rate represents the efficiency of our algorithm to recursively search for an allocated object in a 0.19MB (185KB) memory image, decode the object, find all of its references, add them as nodes in the graph, and create edges between them all in one second.&nbsp;</span>Finally, while our recovery can provide a new dimension to forensics and possibly malware analysis, we investigated the reliability of our memory tools by examining the impact of runtime factors such as process state and garbage collection on artifact recovery. Our result suggests that runtime factors, particularly garbage collection in conjunction with background process state, could, on average, result in about 20% data loss and hence can impede object recovery in certain circumstances</p>\n<p><span><br /></span></p>\n<p><span>In Task II the overarching objective is to bridge the gap between the static and dynamic analysis by exploring the use of memory forensics artifacts for effective malware classification. Our proposed research contributions include; 1) data collection, 2) feature engineering, and 3) malware classification and prediction. For the data collection, we developed an automated tool for Android app installation, execution, and memory imaging called&nbsp;</span><strong>adbautomate</strong><span>. We used&nbsp;</span><strong>adbautomate</strong><span>&nbsp;to capture 1404 memory images from executing 580 malware and 824 benign apps. The extracted memory images are then pre-processed using&nbsp;</span><strong>Droidscraper</strong><span>&nbsp;- a tool for post-execution object allocation recovery and reconstruction. Each app in our dataset's object allocations is recovered to form its execution pattern. Afterward, the patterns are then binarized using a sequence dictionary to form the corresponding feature vectors. Finally, for classification and prediction, we used Support Vector Machine (SVM), Decision Tree (DT), K-Nearest Neighbors (kNN), and Random Forest (RF) for the Non-Neural network's algorithms and the Convolution Neural Network (CNN) for the Neural network algorithms. The selected machine learning algorithms are designed to be diverse in terms of how core features are used for creating classification criteria. Our classification accuracy results are 80%, 80%, 80%, and 68% for SVM, DT, kNN, and RF, respectively. On the other hand, the CNN-based classification achieved a classification accuracy of 90\\% on the same test data. These results are indicative that memory forensics artifacts can indeed provide a new dimension for Android malware classification. The post-execution features, which are not impeded by any obfuscation and hooking constraints, provide a more accurate characterization of an app and, thus, more suitable for classification.</span></p>\n<p>&nbsp;</p>\n</div>\n</div>\n</div>\n</div><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/04/2022<br>\n\t\t\t\t\tModified by: Aisha&nbsp;Ali-Gombe</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662338619644_Droidscraper--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662338619644_Droidscraper--rgov-800width.jpg\" title=\"DroidScraper Workflow\"><img src=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662338619644_Droidscraper--rgov-66x44.jpg\" alt=\"DroidScraper Workflow\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">DroidScraper Workflow - Showing Acquisition, Runtime Data Structure Recovery and Object Recovery and Recon- struction modules.</div>\n<div class=\"imageCredit\">Ali-Gombe, Aisha, et al.</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Aisha&nbsp;Ali-Gombe</div>\n<div class=\"imageTitle\">DroidScraper Workflow</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662338887772_DSEval--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662338887772_DSEval--rgov-800width.jpg\" title=\"DroidScraper's Evaluation\"><img src=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662338887772_DSEval--rgov-66x44.jpg\" alt=\"DroidScraper's Evaluation\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Accuracy of DroidScraper's Objects Recovery</div>\n<div class=\"imageCredit\">Ali-Gombe, Ali et al.</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Aisha&nbsp;Ali-Gombe</div>\n<div class=\"imageTitle\">DroidScraper's Evaluation</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662338994446_OAGenAlgo--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662338994446_OAGenAlgo--rgov-800width.jpg\" title=\"OAGen Recursive Search Algorithm\"><img src=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662338994446_OAGenAlgo--rgov-66x44.jpg\" alt=\"OAGen Recursive Search Algorithm\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">OAGen recursively searching and adding nodes and edges to the graph</div>\n<div class=\"imageCredit\">Ali-Gombe, Aisha, et al.</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Aisha&nbsp;Ali-Gombe</div>\n<div class=\"imageTitle\">OAGen Recursive Search Algorithm</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662339386520_OAGen--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662339386520_OAGen--rgov-800width.jpg\" title=\"Sample Object Allocation Graph\"><img src=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662339386520_OAGen--rgov-66x44.jpg\" alt=\"Sample Object Allocation Graph\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Object allocation graph for a sample application with 3977 nodes and 6609 edges.</div>\n<div class=\"imageCredit\">Ali-Gombe, Aisha, et al.</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Aisha&nbsp;Ali-Gombe</div>\n<div class=\"imageTitle\">Sample Object Allocation Graph</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662340308234_ReliabilityAnalysis--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662340308234_ReliabilityAnalysis--rgov-800width.jpg\" title=\"Forensics Tool Reliability Workflow\"><img src=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662340308234_ReliabilityAnalysis--rgov-66x44.jpg\" alt=\"Forensics Tool Reliability Workflow\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Design Architecture for the Reliability Evaluation</div>\n<div class=\"imageCredit\">Sudhakaran, Sneha et al.</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Aisha&nbsp;Ali-Gombe</div>\n<div class=\"imageTitle\">Forensics Tool Reliability Workflow</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662340542397_MalwareClassification--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662340542397_MalwareClassification--rgov-800width.jpg\" title=\"ML Research Architecture\"><img src=\"/por/images/Reports/POR/2022/1850054/1850054_10601224_1662340542397_MalwareClassification--rgov-66x44.jpg\" alt=\"ML Research Architecture\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Android Malware Classification Leveraging in-memory forensics artifacts</div>\n<div class=\"imageCredit\">Ali-Gombe, Aisha & Sudhakaran, Sneha</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Aisha&nbsp;Ali-Gombe</div>\n<div class=\"imageTitle\">ML Research Architecture</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\n\n\n\n\nIn this research, we developed multi-faceted utilities for investigating Android applications leveraging userland in-memory forensics artifacts. Our work addresses the limitation of existing app-specific and malware analysis techniques by introducing a novel app-agnostic memory forensics-based approach. Task I - tools for the recovery, reconstruction, and semantic analysis of the in-memory artifacts. Task II - leveraging the in-memory artifacts for malware analysis and categorization using neural and non-neural network algorithms.\n\nIn Task 1 - We developed Droidscraper and OAGen. A) Droidscraper is a tool for android in-memory object recovery and reconstruction that targets the new Android runtime (ART). From a blob of memory image DroidScraper reverses the design of the latest Android memory allocation algorithm called region-based memory management to extract running threads, enumerate objects allocated in the heap region, and decode objects based on their class definitions. The evaluation of DroidScrapershows that it can recover in-memory data allocated using Android's region-based memory allocation with a recovery percentage of almost 90%. In addition, DroidScraper can reconstruct and gives context to the extracted objects, which in practice can be utilized for detecting evidence of file and network activities, database accesses as well as recovery of cryptographic keys. Limitation ? recovered objects have no contextual relation and provenance, making it tedious to give meaning to forensically interesting data. 2) OAGen, designed to augment the limitation of DroidScraper, is a post-execution and app-agnostic semantic analysis approach designed to help investigators establish provenance and relationships between in-memory objects. We developed OAGen with three algorithms for - i) Path exploration - this algorithm establishes connectivity between two nodes of interest using the Edge-disjoint Paths algorithm; ii) Context determination - this algorithm creates a contextual subgraph by pruning the predecessor(s) nodes of a target node; and iii) Object Scope Search - this algorithm find object scope within program components such as thread. As a performance measure, the throughput of the OAG generation algorithm on our test machine is approximately 0.19Mbps. This rate represents the efficiency of our algorithm to recursively search for an allocated object in a 0.19MB (185KB) memory image, decode the object, find all of its references, add them as nodes in the graph, and create edges between them all in one second. Finally, while our recovery can provide a new dimension to forensics and possibly malware analysis, we investigated the reliability of our memory tools by examining the impact of runtime factors such as process state and garbage collection on artifact recovery. Our result suggests that runtime factors, particularly garbage collection in conjunction with background process state, could, on average, result in about 20% data loss and hence can impede object recovery in certain circumstances\n\n\n\n\nIn Task II the overarching objective is to bridge the gap between the static and dynamic analysis by exploring the use of memory forensics artifacts for effective malware classification. Our proposed research contributions include; 1) data collection, 2) feature engineering, and 3) malware classification and prediction. For the data collection, we developed an automated tool for Android app installation, execution, and memory imaging called adbautomate. We used adbautomate to capture 1404 memory images from executing 580 malware and 824 benign apps. The extracted memory images are then pre-processed using Droidscraper - a tool for post-execution object allocation recovery and reconstruction. Each app in our dataset's object allocations is recovered to form its execution pattern. Afterward, the patterns are then binarized using a sequence dictionary to form the corresponding feature vectors. Finally, for classification and prediction, we used Support Vector Machine (SVM), Decision Tree (DT), K-Nearest Neighbors (kNN), and Random Forest (RF) for the Non-Neural network's algorithms and the Convolution Neural Network (CNN) for the Neural network algorithms. The selected machine learning algorithms are designed to be diverse in terms of how core features are used for creating classification criteria. Our classification accuracy results are 80%, 80%, 80%, and 68% for SVM, DT, kNN, and RF, respectively. On the other hand, the CNN-based classification achieved a classification accuracy of 90\\% on the same test data. These results are indicative that memory forensics artifacts can indeed provide a new dimension for Android malware classification. The post-execution features, which are not impeded by any obfuscation and hooking constraints, provide a more accurate characterization of an app and, thus, more suitable for classification.\n\n \n\n\n\n\n\n\t\t\t\t\tLast Modified: 09/04/2022\n\n\t\t\t\t\tSubmitted by: Aisha Ali-Gombe"
+ }
+}

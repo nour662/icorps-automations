@@ -1,0 +1,101 @@
+{
+ "awd_id": "2028832",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: PPoSS: Planning: Making Smart Use of SmartNICs",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Wei Ding",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2022-09-30",
+ "tot_intn_awd_amt": 80000.0,
+ "awd_amount": 80000.0,
+ "awd_min_amd_letter_date": "2020-08-22",
+ "awd_max_amd_letter_date": "2020-10-14",
+ "awd_abstract_narration": "Computing paradigms occasionally undergo rather dramatic shifts as underlying technologies change, significantly modifying the dominant use cases. Some of these revolutions are seen far in advance and are heralded by great fanfare, with the hype long preceding the actual payoffs. Others are more opportunistic in nature, leveraging a technology initially developed for another purpose, and the adoption of this technology starts altering practice without much notice from the broader community. Computing is now on the verge of such a \u201cquiet revolution\u201d having to do with inserting computation on the devices that connect computers to the network. This trend towards what are called SmartNICs (for computationally enhanced network interface cards) shows great promise in both making applications faster and in keeping data more secure. This project will focus on how to best leverage SmartNICs in order to improve application performance and security.\r\n\r\nSmartNICs were originally designed to offload packet-processing from the host CPU, which processing is necessary in certain settings to perform encryption and other compute-intensive tasks on the data path. SmartNICs combine this packet-processing power with three other characteristics: (i) isolation from the host CPU, (ii) direct access to memory, and (iii) general programmability. It turns out that this combination gives SmartNICs the potential to play a powerful and unique role in the overall computational ecosystem. In particular, by sitting on the boundary between the network and hosts, they can change the interfaces being exposed to both, allowing SmartNICs to substantially improve application performance while also providing greater security and privacy. However, realizing these gains requires making progress on three separate issues. First, the hardware design of SmartNICs must combine several different units (a specialized packet-handling unit, an remote direct memory access unit, and a general computation unit), and provide fast interconnections between them and with the host memory. The design space is vast, and there is little agreement on what designs represent the best trade-offs. Second, these SmartNICs must offer applications a set of primitives that can improve their performance and security. These primitives must be chosen wisely to be feasible for SmartNICs to support while being easy for applications to leverage for better performance and security. Third, verification tools are needed to ensure that the programs on the SmartNIC are correctly executed and that the overall system -- running on multiple hosts and their SmartNICs -- is correct. This will require extensions to current verification techniques.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Aurojit",
+   "pi_last_name": "Panda",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Aurojit Panda",
+   "pi_email_addr": "apanda@cs.nyu.edu",
+   "nsf_id": "000755678",
+   "pi_start_date": "2020-08-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "New York University",
+  "inst_street_address": "70 WASHINGTON SQ S",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEW YORK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "2129982121",
+  "inst_zip_code": "100121019",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "NY10",
+  "org_lgl_bus_name": "NEW YORK UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NX9PXMKW5KW8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "New York University",
+  "perf_str_addr": "60 Fifth Avenue",
+  "perf_city_name": "New York",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "100121019",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "NY10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "042Y00",
+   "pgm_ele_name": "PPoSS-PP of Scalable Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 80000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Our goal with this planning grant was to look at the potential benefits and impediments to the usage of SmartNICs, which are a new generation of network interface cards (that connect computers to the network) which can perform computation and data manipulation. These have been adopted by large datacenter owners, including Amazon, Microsoft and Google, but are not widely used by other applications. Our goal was to understand why by answering three core questions: (a) what application can benefit from SmartNICs; (b) what makes them hard to use today; and (c) can multiple users share them? We investigated these questions through a workshop and several research projects, and found that (a) several research groups and industrial prototypes have found that SmartNICs can improve application performance and efficiency, and even enable new functionality; (b) they are hard to use because they are not easily accessible for most people, and when accessible they require writing programs that make specific assumptions about the type of SmartNIC used, thus limiting where the program can be deployed; and (c) that there are currently no mechanisms available to share SmartNICs beteween users, further exacerbating the lack of availability. This proposal funded work on a new programming model that does not require strong assumptions about what type of SmartNIC is used (called Bertha), the development of hardware mechanisms for efficiently sharing SmartNIC resources; and has helped start ongoing work on how to improve the interface between SmartNICs and programs.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/12/2023<br>\n\t\t\t\t\tModified by: Aurojit&nbsp;Panda</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOur goal with this planning grant was to look at the potential benefits and impediments to the usage of SmartNICs, which are a new generation of network interface cards (that connect computers to the network) which can perform computation and data manipulation. These have been adopted by large datacenter owners, including Amazon, Microsoft and Google, but are not widely used by other applications. Our goal was to understand why by answering three core questions: (a) what application can benefit from SmartNICs; (b) what makes them hard to use today; and (c) can multiple users share them? We investigated these questions through a workshop and several research projects, and found that (a) several research groups and industrial prototypes have found that SmartNICs can improve application performance and efficiency, and even enable new functionality; (b) they are hard to use because they are not easily accessible for most people, and when accessible they require writing programs that make specific assumptions about the type of SmartNIC used, thus limiting where the program can be deployed; and (c) that there are currently no mechanisms available to share SmartNICs beteween users, further exacerbating the lack of availability. This proposal funded work on a new programming model that does not require strong assumptions about what type of SmartNIC is used (called Bertha), the development of hardware mechanisms for efficiently sharing SmartNIC resources; and has helped start ongoing work on how to improve the interface between SmartNICs and programs.\n\n\t\t\t\t\tLast Modified: 02/12/2023\n\n\t\t\t\t\tSubmitted by: Aurojit Panda"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "awd_id": "1634440",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Recalibration of OBSIP Instrument Orientations",
+ "cfda_num": "47.050",
+ "org_code": "06040200",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Deborah K. Smith",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2017-08-31",
+ "tot_intn_awd_amt": 67392.0,
+ "awd_amount": 67392.0,
+ "awd_min_amd_letter_date": "2016-08-08",
+ "awd_max_amd_letter_date": "2016-08-08",
+ "awd_abstract_narration": "Ocean bottom seismometers (OBSs) sit on the seafloor and record earthquakes.  They are deployed from a research vessel.  The instrument is released on the ocean surface, the OBS sinks and lands on the seafloor. How it lands and how the instruments are aligned with the geographic coordinate system is unknown. A gimbal system surrounding the seismometer makes sure that it is upright, but no check is made on which direction the instrument is facing. Seismometers on land can be oriented using a compass, but this is not currently possible on the seafloor. The analysis of seismic data, however, is dependent on knowing the orientation of the instrument. To address this problem, a standardized, automated tool will be developed to provide the best possible estimates for OBS instrument orientations. The tool is based on arrival angle measurements on seismic surface waves from shallow earthquakes around the globe.  After development of the new automated tool it will be validated by comparing results to older high-precision, but hands-on and time consuming measurements that have been made. The resulting code will be released publically and become a community tool.\r\n\r\nMany seismic data analyses, such as receiver functions, shear-wave splitting and Love wave dispersion, rely on the processing of a complete 3-component seismogram. For these analyses, knowledge of the alignment of the horizontal components with respect to the geographic coordinate system is a prerequisite. On land, this information is easy and routinely obtained through cross-check with a compass. In the oceans, free-fall ocean bottom seismometers (OBSs) sink with unknown orientation. Acoustic surveys of the instrument are cost-prohibitive, and the determination of the orientation of seismometer components is usually left to the individual data end user. Reorientation is done concurrently with the intended data analysis, often without detailed assessment of biases from uneven event coverage and wave propagation in complex media. This project will develop a standardized automated tool to provide optimal estimates for OBS instrument orientations. Long-period Rayleigh waves likely remain the best tool to determine instrument orientations given the restrictions and noise levels of an ocean environment. The new toolbox will be carefully bench marked against an older, well-established interactive-screen tool. The latter has proven impractical to be used by others because it contains old, non-compliant legacy code. The new tool will consist of a combination of Python and Fortran codes and will provide automated access to data at the IRIS Data Management Center.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "GEO",
+ "org_dir_long_name": "Directorate for Geosciences",
+ "div_abbr": "OCE",
+ "org_div_long_name": "Division Of Ocean Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Gabriele",
+   "pi_last_name": "Laske",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Gabriele Laske",
+   "pi_email_addr": "glaske@ucsd.edu",
+   "nsf_id": "000488296",
+   "pi_start_date": "2016-08-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-San Diego Scripps Inst of Oceanography",
+  "inst_street_address": "8622 DISCOVERY WAY # 116",
+  "inst_street_address_2": "",
+  "inst_city_name": "LA JOLLA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8585341293",
+  "inst_zip_code": "920931500",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA SAN DIEGO",
+  "org_prnt_uei_num": "QJ8HMDK7MRM3",
+  "org_uei_num": "QJ8HMDK7MRM3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Univ of Calif-San Diego Scripps Inst of Oceanography",
+  "perf_str_addr": "8602 La Jolla Shores Dr.",
+  "perf_city_name": "La Jolla",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920371508",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "162000",
+   "pgm_ele_name": "Marine Geology and Geophysics"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 67392.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>After an earthquake, a seismograph has to record ground motion in all three principal directions - two perpendicular horizontal directions and vertical - so that seismologists can assess the full extent of shaking, even at great distances. On land, seismologists strive to align the two horizontal components with geographic North and East. In the ocean, seismographs are typically deployed from a research vessel in 'free-fall' mode. This means that the package is released from the vessel and then sinks to the ocean floor.<br />Upon arrival, the seismic sensor usually lands in an arbitrary position, but a gimbal system then levels the sensor so that the nominal vertical component is alignment with Earth's gravitational force. The orientation of the two horizontal components, on the other hand, remains unknown. On the other hand, many research tools such as picking the arrival of the different seismic waves depends crucially on the knowledge of the orientation of all three components. This grant provided funds to code up an automated computer routine to determine the orientation of the horizontal components from the analysis of Rayleigh waves, one of the four principal types of seismic waves. <br /><br />Broader impacts: The computer code requires minimal 'hands-on' interaction by a data analyst. It is written in Python and should therefore perform on a wide range of platforms. A manuscript on the program was published, and the program was released for general use by others. In particular, the Incorporated Research Institutions for Seismology (IRIS), that collects and redistributes all seismic data collected during NSF-funded field campaigns, is now using this program.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/10/2017<br>\n\t\t\t\t\tModified by: M. Gabrielle&nbsp;Laske</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nAfter an earthquake, a seismograph has to record ground motion in all three principal directions - two perpendicular horizontal directions and vertical - so that seismologists can assess the full extent of shaking, even at great distances. On land, seismologists strive to align the two horizontal components with geographic North and East. In the ocean, seismographs are typically deployed from a research vessel in 'free-fall' mode. This means that the package is released from the vessel and then sinks to the ocean floor.\nUpon arrival, the seismic sensor usually lands in an arbitrary position, but a gimbal system then levels the sensor so that the nominal vertical component is alignment with Earth's gravitational force. The orientation of the two horizontal components, on the other hand, remains unknown. On the other hand, many research tools such as picking the arrival of the different seismic waves depends crucially on the knowledge of the orientation of all three components. This grant provided funds to code up an automated computer routine to determine the orientation of the horizontal components from the analysis of Rayleigh waves, one of the four principal types of seismic waves. \n\nBroader impacts: The computer code requires minimal 'hands-on' interaction by a data analyst. It is written in Python and should therefore perform on a wide range of platforms. A manuscript on the program was published, and the program was released for general use by others. In particular, the Incorporated Research Institutions for Seismology (IRIS), that collects and redistributes all seismic data collected during NSF-funded field campaigns, is now using this program.\n\n\t\t\t\t\tLast Modified: 11/10/2017\n\n\t\t\t\t\tSubmitted by: M. Gabrielle Laske"
+ }
+}

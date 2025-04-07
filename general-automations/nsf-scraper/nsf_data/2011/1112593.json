@@ -1,0 +1,105 @@
+{
+ "awd_id": "1112593",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Improved Methods for Incompressible Viscous Flow Simulation",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032924488",
+ "po_email": "jwang@nsf.gov",
+ "po_sign_block_name": "Junping Wang",
+ "awd_eff_date": "2011-07-15",
+ "awd_exp_date": "2015-06-30",
+ "tot_intn_awd_amt": 150000.0,
+ "awd_amount": 150000.0,
+ "awd_min_amd_letter_date": "2011-07-07",
+ "awd_max_amd_letter_date": "2011-07-07",
+ "awd_abstract_narration": "The objective of this work is to investigate four fundamentally new ideas, with high potential impact, for improving accuracy and efficiency in fluid flow simulations.  Each of these ideas is a fundamentally new approach to well-known challenges in flow simulation, is built from a solid mathematical foundation, and is motivated by the idea that more physically accurate models and numerical methods will produce more accurate results. The main ideas proposed for study are 1) development of the new velocity-vorticity-helicity formulation of the Navier-Stokes equations, 2) investigation of numerical methods for improving mass conservation in finite element methods that approximate velocity with piecewise continuous elements, 3) development of enhanced physics based schemes for flow problems that enforce discrete conservation laws in addition to energy (e.g. helicity in Navier-Stokes, cross-helicity in magnetohydrodynamics), 4) improving numerical methods for approximate deconvolution models of turbulence.\r\n\r\nSimulating incompressible viscous fluid flow is an important subtask in most every engineering application involving the flow of water, oil, and/or most other liquids.  The ability to accurately and efficiently simulate these flows leads to improved engineering designs, improves turn-around time for designs, and also significant cost savings when testing is done on a computer model instead of a physical model.  However, modern computational methods for performing these simulations remain unreliable on many problems of interest.  This project will improve the state-of-the-art methods by developing/improving methods with a solid mathematical foundation, better enforcing the physical fidelity in simulations (i.e. avoiding non-physical solutions), and improving efficiency in the simulation techniques. Furthermore, the models and methods developed herein will have the potential to make an impact on the related systems of equations that govern atmospheric flow, oceanic flow, and climate modeling.  Broader impacts for this project includes training of graduate and undergraduate students in this field of research, the writing of a book on models for fluid simulation, and outreach to high school students.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Leo",
+   "pi_last_name": "Rebholz",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Leo Rebholz",
+   "pi_email_addr": "rebholz@clemson.edu",
+   "nsf_id": "000518094",
+   "pi_start_date": "2011-07-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Clemson University",
+  "inst_street_address": "201 SIKES HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "CLEMSON",
+  "inst_state_code": "SC",
+  "inst_state_name": "South Carolina",
+  "inst_phone_num": "8646562424",
+  "inst_zip_code": "296340001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "SC03",
+  "org_lgl_bus_name": "CLEMSON UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "H2BMNX7DSKU8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Clemson University",
+  "perf_str_addr": "201 SIKES HALL",
+  "perf_city_name": "CLEMSON",
+  "perf_st_code": "SC",
+  "perf_st_name": "South Carolina",
+  "perf_zip_code": "296340001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "SC03",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 150000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This projected investigated, and made significant progress on, several related numerical methods/algorithms for fluid flow simulation (e.g. water, air, oil, etc.).&nbsp; Computer simulations are widely used across the spectrum in engineering to reduce costs and overall design time, by using simulations to whittle down designs before building and testing.&nbsp; The goal of this project was to improve both the speed and accuracy of such simulations.</p>\n<p>A central theme to the work on this project is to include more physics in the computational solutions; that is, for example, even though energy and mass are conserved in the physical equations that predict fluid motion, many existing computer algorithm solutions will not exactly conserve these, as well as other, important conserved quantities. Over longer time intervals, such errors can pollute and destroy computed solutions.&nbsp; We aimed to improve computed solutions by injecting more physics into the computational algorithms, but with the goal of minimal (or no) additional cost over existing algorithms.&nbsp; Our work was successful in this effort, and is documented in over 30 publications, many of which are in the top journal in the field of computational mathematics.&nbsp; Additionally, several new projects were spawned from this work, which led to improvements in solvers for linear algebraic saddle point problems.</p>\n<p>The research involved in this project helped to train 9 Ph.D students, 8 M.S. students, and 4 B.S. students.&nbsp; Over half of these students involved are from underrepresented groups.&nbsp; The students wrote many papers and gave many professional talks, and the graduates have all obtained good positions and/or continued their education.</p>\n<p>Two books were written as part of this project, one a research level text, and the other an undergraduate textbook on Numerical Methods.&nbsp; The undergraduate textbook is published by DeGruyter, which is a low-cost publisher (the PI and coauthor purposely chose a low-cost publsher, and the paperback will sell for $19.90)</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/03/2015<br>\n\t\t\t\t\tModified by: Leo&nbsp;Rebholz</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis projected investigated, and made significant progress on, several related numerical methods/algorithms for fluid flow simulation (e.g. water, air, oil, etc.).  Computer simulations are widely used across the spectrum in engineering to reduce costs and overall design time, by using simulations to whittle down designs before building and testing.  The goal of this project was to improve both the speed and accuracy of such simulations.\n\nA central theme to the work on this project is to include more physics in the computational solutions; that is, for example, even though energy and mass are conserved in the physical equations that predict fluid motion, many existing computer algorithm solutions will not exactly conserve these, as well as other, important conserved quantities. Over longer time intervals, such errors can pollute and destroy computed solutions.  We aimed to improve computed solutions by injecting more physics into the computational algorithms, but with the goal of minimal (or no) additional cost over existing algorithms.  Our work was successful in this effort, and is documented in over 30 publications, many of which are in the top journal in the field of computational mathematics.  Additionally, several new projects were spawned from this work, which led to improvements in solvers for linear algebraic saddle point problems.\n\nThe research involved in this project helped to train 9 Ph.D students, 8 M.S. students, and 4 B.S. students.  Over half of these students involved are from underrepresented groups.  The students wrote many papers and gave many professional talks, and the graduates have all obtained good positions and/or continued their education.\n\nTwo books were written as part of this project, one a research level text, and the other an undergraduate textbook on Numerical Methods.  The undergraduate textbook is published by DeGruyter, which is a low-cost publisher (the PI and coauthor purposely chose a low-cost publsher, and the paperback will sell for $19.90)\n\n \n\n \n\n\t\t\t\t\tLast Modified: 07/03/2015\n\n\t\t\t\t\tSubmitted by: Leo Rebholz"
+ }
+}

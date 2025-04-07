@@ -1,0 +1,101 @@
+{
+ "awd_id": "1929215",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRI: CI-EN: Collaborative Research: An Experimental Infrastructure and a Database of Real Faults to Foster Reproducibility in Software Engineering Research",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2018-09-01",
+ "awd_exp_date": "2021-07-31",
+ "tot_intn_awd_amt": 581914.0,
+ "awd_amount": 581914.0,
+ "awd_min_amd_letter_date": "2019-04-30",
+ "awd_max_amd_letter_date": "2019-04-30",
+ "awd_abstract_narration": "A core tenet of the scientific method is reproducibility of experiments. To reproduce an empirical study in software engineering research, it is necessary to use the same experimental subjects and equivalent experimental infrastructure. Reproducibility in software engineering research is an important topic, as is evident from the recent establishment of artifact evaluation committees and from publication of papers with conflicting results. Prior efforts to establish reusable artifacts for specific software engineering domains are based on artificial data, are too small, are not uniformly organized, and/or lack extensible infrastructure. This holds the software engineering research community back, hampers reproducibility and comparability, and reduces confidence in empirical results.\r\n\r\nThis project promotes reproducibility and comparability in software engineering research, through a large-scale database of real software defects and a standardized infrastructure that enables controlled experiments. It enhances an existing prototype (Defects4J) by adding new artifacts, adding infrastructure for labeling and experimenting with the artifacts, and improving usability. Specifically, this project provides (1) the world's largest database of isolated and annotated real software defects, (2) an extensible mining infrastructure that supports automated defect mining and isolation, (3) an extensible experimental infrastructure that also includes a statistics and replication package component, and (4) tutorials and training materials for researchers and educators.\r\n\r\nThis project advances software engineering research in three ways. (1) It enables researchers to perform more realistic experiments, using real instead of artificial defects. (2) It frees researchers from the burden of (re-)developing an experimental infrastructure, allowing them to focus on research ideas. (3) It fosters reproducibility and comparability by providing reusable artifacts and data sets.  Furthermore, this project advances software engineering education at the undergraduate and graduate level: students can experiment with existing techniques, reproduce published results, or quickly evaluate new ideas.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Rene",
+   "pi_last_name": "Just",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Rene Just",
+   "pi_email_addr": "rjust@cs.washington.edu",
+   "nsf_id": "000710352",
+   "pi_start_date": "2019-04-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Washington",
+  "inst_street_address": "4333 BROOKLYN AVE NE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SEATTLE",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "2065434043",
+  "inst_zip_code": "981951016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "WA07",
+  "org_lgl_bus_name": "UNIVERSITY OF WASHINGTON",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HD1WMN6945W6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Washington",
+  "perf_str_addr": "Box 352350",
+  "perf_city_name": "Seattle",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "981952350",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "WA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735900",
+   "pgm_ele_name": "CCRI-CISE Cmnty Rsrch Infrstrc"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7359",
+   "pgm_ref_txt": "COMPUTING RES INFRASTRUCTURE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 581914.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>One goal of software engineering research is to improve software testing and debugging. Experiments that empirically validate such research rely on datasets of known defects. Defect datasets are at the heart of rapid and reliable research progress, and they must be easy to use, extensible, and properly curated with well-defined characteristics.</p>\n<p>This project developed Defects4J, a large database of real software defects together with a unified infrastructure to support the software engineering research community. Specifically, Defects4J provides (1) a database of more than 1,000 curated and annotated software defects, (2) a unified interface to all its artifacts and their metadata as well as an extensible infrastructure to support downstream research, (3) an automated and extensible infrastructure for mining and reproducing defects from version control history and issue trackers, and (4) tutorials and training materials for researchers and educators. Additionally, Defects4J accounts for the fact that programming languages, compilers, and development environments evolve -- as do the types of defects developers can make. Therefore, it provides infrastructure to reproduce defects with modern development environments to assess which defects remain realistic and which ones are obsolete and should be removed.</p>\n<p>Since its inception, Defects4J has been publicly available and open-source, and it already had a significant impact on the software engineering community. It has enabled the empirical studies of hundreds of research papers, including multiple distinguished papers on software testing, fault localization, and automated program repair. Additionally, it has served as the benchmark for competitions and challenge cases. Finally, educational materials based on Defects4J are used at colleges and universities world-wide.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/21/2021<br>\n\t\t\t\t\tModified by: Rene&nbsp;Just</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOne goal of software engineering research is to improve software testing and debugging. Experiments that empirically validate such research rely on datasets of known defects. Defect datasets are at the heart of rapid and reliable research progress, and they must be easy to use, extensible, and properly curated with well-defined characteristics.\n\nThis project developed Defects4J, a large database of real software defects together with a unified infrastructure to support the software engineering research community. Specifically, Defects4J provides (1) a database of more than 1,000 curated and annotated software defects, (2) a unified interface to all its artifacts and their metadata as well as an extensible infrastructure to support downstream research, (3) an automated and extensible infrastructure for mining and reproducing defects from version control history and issue trackers, and (4) tutorials and training materials for researchers and educators. Additionally, Defects4J accounts for the fact that programming languages, compilers, and development environments evolve -- as do the types of defects developers can make. Therefore, it provides infrastructure to reproduce defects with modern development environments to assess which defects remain realistic and which ones are obsolete and should be removed.\n\nSince its inception, Defects4J has been publicly available and open-source, and it already had a significant impact on the software engineering community. It has enabled the empirical studies of hundreds of research papers, including multiple distinguished papers on software testing, fault localization, and automated program repair. Additionally, it has served as the benchmark for competitions and challenge cases. Finally, educational materials based on Defects4J are used at colleges and universities world-wide.\n\n\t\t\t\t\tLast Modified: 12/21/2021\n\n\t\t\t\t\tSubmitted by: Rene Just"
+ }
+}

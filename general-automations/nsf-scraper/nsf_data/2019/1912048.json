@@ -1,0 +1,101 @@
+{
+ "awd_id": "1912048",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Advances in Robust Multilevel Preconditioning Methods for Sparse Linear Systems",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2019-08-01",
+ "awd_exp_date": "2023-07-31",
+ "tot_intn_awd_amt": 299999.0,
+ "awd_amount": 299999.0,
+ "awd_min_amd_letter_date": "2019-06-05",
+ "awd_max_amd_letter_date": "2019-06-05",
+ "awd_abstract_narration": "Solving linear systems of equations is at the heart of many large scale numerical simulations in sciences and engineering. These systems can have tens or hundreds of millions simulations in the aerodynamic design of airplanes and equilibrium models in macro-economics. In most common situations, the equations encountered in these applications are 'sparse' in the sense that each equation involves a small number of unknowns or parameters. This project is about the effective solution of such systems by a class of methods that are termed 'iterative'. An iterative method does not attempt to compute an exact solution by the age-old method of elimination. Instead, it generates a sequence of approximations that gradually approaches the solution. However, in spite of the numerous advances made in past decades in iterative solution methods for linear systems, practitioners still face difficulties when applying these methods to certain types of problems. The proposal aims at advancing the state-of-the art in a specific class called Preconditioning Krylov subspace methods. In essence, the techniques proposed combine preconditioners (making the problem easier to solve by exploiting approximate elimination), with good acceleration methods (combining successive iterates to accelerate convergence) and Domain Decomposition ideas (decomposing the problem into parts so as  to exploit parallel treatment of each part).\r\n\r\nThis project focuses on the class of Preconditioned Krylov Subspace Methods (PKSMs) for solving linear systems of equations. These methods try to reach a compromise between generality and efficiency by combining an accelerator (e.g., GMRES) and a preconditioner (e.g., Incomplete LU or Algebraic Multi-Grid). It is now well-known that the preconditioner holds the key to the success of this combination. The primary goal of this project is to address the two most important weaknesses of these methods. Their first weakness is their lack robustness in some situations, e.g., when the linear system at hand is highly indefinite or ill-conditioned. In the past researchers have often limited their attention to diagonally dominant systems that arise from discretizing Poisson-like equations. However, the more realistic problems addressed by engineers and scientists have become much harder to solve, leading to a demand for new types of preconditioners. The second weakness of iterative methods is that preconditioners have traditionally been developed with sequential environments in mind, and therefore they often perform poorly in parallel environments. An effort must be made to develop better, more scalable, parallel methods by adopting a view-point that is based on domain-decomposition from the start. To improve the parallel efficiency of preconditioners it is vital to incorporate ideas that exploit a multilevel paradigm. A second avenue to be explored in this project aims primarily at improving robustness by a class of methods that will extend and optimize a strategy based on the Cauchy integral formula for developing preconditioners. The starting point of the project is to expand the PI's research on Multi-Level Low-Rank (MLR) approximation techniques, focusing on a parallel Domain Decomposition framework. MLR techniques have shown a great potential in addressing the issues raised above. First, they rely on an approximate inverse viewpoint and as such these methods tend to be far more robust than their Incomplete LU (ILU) counterparts. They can handle highly indefinite linear systems, such as those arising from wave scattering simulations, more effectively than existing methods. Second, MLRs do not require factorizations and are excellent candidates for high-performance computers, e.g., ones equipped with Graphical Processing Units (GPUs). Finally, they are easy to update in that it is inexpensive to augment or refine them in order to improve their accuracy in the situation when their observed performance is not satisfactory. Different ways to define low-rank approximations will be explored which are all rooted in the Domain-Decomposition framework and Schur complement techniques. The second part of the planned work is to consider extensions of the idea of incorporating complex shifts when solving linear systems. The techniques to be developed here will aim specifically at highly indefinite systems such as those that arise from wave propagation phenomena (Helmholtz, Maxwell). The broader impacts of this project include the free distribution of general purpose codes developed by the PI's research team, and the training of graduate and undergraduate students at a time where demand for specialists in computational mathematics is strong. Among other training activities, the PI will continue the practice of freely disseminating books (two books currently available), lecture notes (three courses currently posted), and MATLAB scripts for educational purposes, as these can play a major role in promoting knowledge and know-how in the theory and application of numerical linear algebra.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Yousef",
+   "pi_last_name": "Saad",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yousef Saad",
+   "pi_email_addr": "saad@umn.edu",
+   "nsf_id": "000303745",
+   "pi_start_date": "2019-06-05",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Minnesota-Twin Cities",
+  "inst_street_address": "2221 UNIVERSITY AVE SE STE 100",
+  "inst_street_address_2": "",
+  "inst_city_name": "MINNEAPOLIS",
+  "inst_state_code": "MN",
+  "inst_state_name": "Minnesota",
+  "inst_phone_num": "6126245599",
+  "inst_zip_code": "554143074",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "MN05",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF MINNESOTA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "KABJZBBJ4B54"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Minnesota",
+  "perf_str_addr": "4-192 Keller Hall, 200 Union St.",
+  "perf_city_name": "Minneapolis",
+  "perf_st_code": "MN",
+  "perf_st_name": "Minnesota",
+  "perf_zip_code": "554550167",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "MN05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 299999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>&nbsp;Solving linear systems of equations is often at the core of large computations in science and engineering. In many situations the problem at hand is to solve a linear system of equations that is large as well as sparse, i.e., the entries of the coefficient matrix are mostly zeros. Classical direct solution methods - based on Gaussian elimination - have been adapted with some success to sparse systems, but a number of characteristics of the systems commonly encountered in real-life applications, can make these methods too expensive. In particular, for three-dimensional simulations, the large number of nonzero entries obtained at the end of the solution process can be excessive. In such cases iterative methods offer an appealing alternative.</p>\n<p>This project investigated the solution of sparse linear systens by iterative techniques, i.e., techniques that compute a sequence of&nbsp; approximations that converge to the solution of the linear system. In contrast to direct methods, memory requirements for iterative are&nbsp; quite modest. In addition, iterative methods can otain an approximate solution in a time that can be orders of magnitude smaller than that&nbsp; required by direct methods.&nbsp; However, the other side to this appealing picture is that iterative solution methods are not&nbsp; ``general-purpose\" in the same way as direct methods are, i.e., they may fail in some situations.&nbsp; The primary focus of the project has&nbsp; been to develop techniques that tend to reach a compromise between efficiency and robustness.&nbsp; Among these techniques, those based on a&nbsp; combination of preconditioning and projection on Krylov subspaces are the most populat among practioners. A preconditioner is a process for&nbsp; obtaining inexpensively an approximate solution to the original system.&nbsp; For example, common preconditining techniques are those based on&nbsp; Incomplete LU (ILU) factorizations that approximately factor the original matrix into the product of a lower triangular matrix L and an&nbsp; upper triangular matrix U.&nbsp; These preconditioners tend to work well for linear systems that have large entries on the diagonal (diagonally&nbsp; dominant) but may do poorly for other systems, e.g., systems that are indefinite (i.e., that have eigenvalues on both sides of the&nbsp; imaginary axis). The primary focus of this project has been to develop preconditioners that are robust, i.e., techniques that can deal with&nbsp; highly indefinite or ill-conditioned linear systems.&nbsp; The research emphasized 'multilevel techniques' as well as techniques that perform&nbsp; well on high-performance computers.</p>\n<p>One of the main contributions of this project has been the development of a class of Multilevel Low-rank (MLR) preconditioners. The initial motivation for this approach was the pratcical attraction of working with low-rank dense matrices in the preconditioning operations. Indeed, these lead to dense linear algebra, an attribute that is very appealing when solving the related systems on performance on machines equipped with GPUs.&nbsp; It was later found that the methods in this class have many other favorable characteristics. For example, MLR preconditoners are not as sensitive to indefiniteness as ILU-type preconditioners.&nbsp; Thus, one of the preconditioners developed provided an effective solution techniques for highly indefinite linear systems such as those that arise from wave propagation phenomena, which are currently among the most difficult to solve by iterative methods.</p>\n<p>The research has unraveled a new approach for developing preconditioning techniques.&nbsp; Past research has focused on finding an approximate factorization to the original matrix, an ILU factorization or an algebraic multigrid technique for example, which is then used as a preconditioner.&nbsp; Preserving sparsity is a major goal of these techniques.&nbsp; What this research has shown is that good approximate inverse methods can be developed provided low-rank approximations are exploited to correct some initial approximation. In this approach sparsity is no longer the main focus.&nbsp; Thus, while ILUs are not enough and low-rank approximation techniques by themselves have not been proven effective in the past, certain combinations of these two completely different methodologies can lead to very efficient solution techniques. This does not seem to have been observed so far.&nbsp; The broader impacts of the proposal include the dissemination of software and the training of students in an area that is in vital need of growth. In addition, there is a clear potential impact of this line of work in the applications areas.&nbsp; Good iterative solution techniques are crucial in a wide range of scientific and engineering disciplines.&nbsp; This work may lead the way to alternative techniques for building preconditioners for these iterative solvers that may be far more effective than those currently in use. The team has produced a comprehensive software package call GeMSLR written in C, which is publically available.</p>\n<p>This project has been renewed -under slightly different titles and by different NSF programs - for several 3-year periods, going back to early 2000.&nbsp; The PI does not plan on renewing this work and expresses his gratitute to NSF for supporting this work throughout these past years.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/02/2023<br>\n\t\t\t\t\tModified by: Yousef&nbsp;Saad</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n Solving linear systems of equations is often at the core of large computations in science and engineering. In many situations the problem at hand is to solve a linear system of equations that is large as well as sparse, i.e., the entries of the coefficient matrix are mostly zeros. Classical direct solution methods - based on Gaussian elimination - have been adapted with some success to sparse systems, but a number of characteristics of the systems commonly encountered in real-life applications, can make these methods too expensive. In particular, for three-dimensional simulations, the large number of nonzero entries obtained at the end of the solution process can be excessive. In such cases iterative methods offer an appealing alternative.\n\nThis project investigated the solution of sparse linear systens by iterative techniques, i.e., techniques that compute a sequence of  approximations that converge to the solution of the linear system. In contrast to direct methods, memory requirements for iterative are  quite modest. In addition, iterative methods can otain an approximate solution in a time that can be orders of magnitude smaller than that  required by direct methods.  However, the other side to this appealing picture is that iterative solution methods are not  ``general-purpose\" in the same way as direct methods are, i.e., they may fail in some situations.  The primary focus of the project has  been to develop techniques that tend to reach a compromise between efficiency and robustness.  Among these techniques, those based on a  combination of preconditioning and projection on Krylov subspaces are the most populat among practioners. A preconditioner is a process for  obtaining inexpensively an approximate solution to the original system.  For example, common preconditining techniques are those based on  Incomplete LU (ILU) factorizations that approximately factor the original matrix into the product of a lower triangular matrix L and an  upper triangular matrix U.  These preconditioners tend to work well for linear systems that have large entries on the diagonal (diagonally  dominant) but may do poorly for other systems, e.g., systems that are indefinite (i.e., that have eigenvalues on both sides of the  imaginary axis). The primary focus of this project has been to develop preconditioners that are robust, i.e., techniques that can deal with  highly indefinite or ill-conditioned linear systems.  The research emphasized 'multilevel techniques' as well as techniques that perform  well on high-performance computers.\n\nOne of the main contributions of this project has been the development of a class of Multilevel Low-rank (MLR) preconditioners. The initial motivation for this approach was the pratcical attraction of working with low-rank dense matrices in the preconditioning operations. Indeed, these lead to dense linear algebra, an attribute that is very appealing when solving the related systems on performance on machines equipped with GPUs.  It was later found that the methods in this class have many other favorable characteristics. For example, MLR preconditoners are not as sensitive to indefiniteness as ILU-type preconditioners.  Thus, one of the preconditioners developed provided an effective solution techniques for highly indefinite linear systems such as those that arise from wave propagation phenomena, which are currently among the most difficult to solve by iterative methods.\n\nThe research has unraveled a new approach for developing preconditioning techniques.  Past research has focused on finding an approximate factorization to the original matrix, an ILU factorization or an algebraic multigrid technique for example, which is then used as a preconditioner.  Preserving sparsity is a major goal of these techniques.  What this research has shown is that good approximate inverse methods can be developed provided low-rank approximations are exploited to correct some initial approximation. In this approach sparsity is no longer the main focus.  Thus, while ILUs are not enough and low-rank approximation techniques by themselves have not been proven effective in the past, certain combinations of these two completely different methodologies can lead to very efficient solution techniques. This does not seem to have been observed so far.  The broader impacts of the proposal include the dissemination of software and the training of students in an area that is in vital need of growth. In addition, there is a clear potential impact of this line of work in the applications areas.  Good iterative solution techniques are crucial in a wide range of scientific and engineering disciplines.  This work may lead the way to alternative techniques for building preconditioners for these iterative solvers that may be far more effective than those currently in use. The team has produced a comprehensive software package call GeMSLR written in C, which is publically available.\n\nThis project has been renewed -under slightly different titles and by different NSF programs - for several 3-year periods, going back to early 2000.  The PI does not plan on renewing this work and expresses his gratitute to NSF for supporting this work throughout these past years.\n\n\t\t\t\t\tLast Modified: 11/02/2023\n\n\t\t\t\t\tSubmitted by: Yousef Saad"
+ }
+}

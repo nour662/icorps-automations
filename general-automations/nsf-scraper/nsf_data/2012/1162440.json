@@ -1,0 +1,137 @@
+{
+ "awd_id": "1162440",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Reduced-Order Dynamical Models for Effective Power Management in Computer Systems",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Atul Kelkar",
+ "awd_eff_date": "2012-08-15",
+ "awd_exp_date": "2016-07-31",
+ "tot_intn_awd_amt": 299698.0,
+ "awd_amount": 311698.0,
+ "awd_min_amd_letter_date": "2012-08-03",
+ "awd_max_amd_letter_date": "2013-01-06",
+ "awd_abstract_narration": "This project concerns reduced-order modeling and forecasting techniques for reducing power use in microprocessor chips.  Modern power management solutions for these systems employ extremely simple control strategies---e.g., lowering the clock frequency by a fixed, pre-determined amount if a processor's load crosses some threshold.  The methods developed by the control theory and nonlinear dynamics communities have long since moved beyond this level of sophistication.  Model-based prediction, in particular, could enable vastly improved power management, but only if the models involved are accurate.  If one could predict that a particular thread of computation would be bogged down for the next 0.6 seconds waiting for data from the computer's memory, for instance, one could put that thread on a low-power hold for that time period.  Prediction of the future behavior of a complex nonlinear dynamical system like a modern computer is a serious challenge, however---and it is all but impossible if one uses mathematics that assumes linearity and/or time invariance, as has been the rule until recently in the computer systems community.  The approach proposed here uses a novel reduced-order modeling strategy that first transforms the time-series data into a 2D representation called a tau-return map.  The power of this representation is that it brings out temporal relationships explicitly, `unfolding' the temporal patterns in the time series into a spatial dimension.  Forecast models working on this transformed data can be used to create accurate predictions of processor and memory loads in multicore processors: information that can be used to dynamically adapt the computation to the resources, and vice versa.\r\n\r\nReducing the power use of microprocessor chips, one of the most critical classes of engineered systems in use today, is an important challenge in the modern world of ubiquitous computation.  In order to manage power use effectively, one must be able to dynamically adapt the computation to the resources.  Monitoring is one key element in solving that problem: if one knew which processing units in a multi-core processor were busy and which ones were idle, for instance, one could re-route work from the former to the latter.  Forecasting is another key element: doing that kind of reallocation reactively is good, but doing it PROACTIVELY---based on a prediction of those loads and levels---would be far better.  The complexity of modern computer systems makes prediction very difficult, however.  These systems have large numbers of internal variables that interact in complex, nonlinear ways, and only a few of those variables can be monitored.  The approach proposed here uses a mathematical mapping to tease the important temporal relationships out of these narrow streams of data that can be measured from a running computer.  It builds forecast models in that new space using mathematics that fully respects the complexity and nonlinearity of the underlying system---unlike traditional approaches, which generally treat computer systems as linear and time-invariant.  It uses those forecast models to save power by tailoring the computational load to the available resources, and vice versa.  The potential impact of this work is significant, particularly in view of the recent design evolution of multicore processors and the rapid proliferation of mobile devices.  Because computers are so common and so critical, this work has the potential to contribute to science, engineering, and well beyond.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Elizabeth",
+   "pi_last_name": "Bradley",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Elizabeth Bradley",
+   "pi_email_addr": "lizb@cs.colorado.edu",
+   "nsf_id": "000152918",
+   "pi_start_date": "2012-08-03",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Colorado at Boulder",
+  "inst_street_address": "3100 MARINE ST",
+  "inst_street_address_2": "STE 481 572 UCB",
+  "inst_city_name": "Boulder",
+  "inst_state_code": "CO",
+  "inst_state_name": "Colorado",
+  "inst_phone_num": "3034926221",
+  "inst_zip_code": "803090001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "CO02",
+  "org_lgl_bus_name": "THE REGENTS OF THE UNIVERSITY OF COLORADO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "SPVKK1RC2MZ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Colorado at Boulder",
+  "perf_str_addr": "3100 Marine Street, Room 479",
+  "perf_city_name": "Boulder",
+  "perf_st_code": "CO",
+  "perf_st_name": "Colorado",
+  "perf_zip_code": "803090572",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "CO02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "747800",
+   "pgm_ele_name": "DYNAMICAL SYSTEMS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "034E",
+   "pgm_ref_txt": "Dynamical systems"
+  },
+  {
+   "pgm_ref_code": "035E",
+   "pgm_ref_txt": "NOISE, ACOUSTICS, VIBRATIONS"
+  },
+  {
+   "pgm_ref_code": "116E",
+   "pgm_ref_txt": "RESEARCH EXP FOR UNDERGRADS"
+  },
+  {
+   "pgm_ref_code": "8024",
+   "pgm_ref_txt": "Complex Systems"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  },
+  {
+   "pgm_ref_code": "9178",
+   "pgm_ref_txt": "UNDERGRADUATE EDUCATION"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0113",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001314DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 299698.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2013,
+   "fund_oblg_amt": 12000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Prediction of the future behavior of a system requires a \"model\" of that system: a mathematical representation that describes how it works. Models can be as simple as knowledge that the level of water in a bucket will rise if one puts a hose in it, or as complex as the forecast models used by TV weather reporters. If the model is wrong in some fundamental way&mdash;too simple, for instance, or with a wrong term in the equation&mdash;the prediction will be inaccurate.</p>\n<p>The goal of this project was to predict the behavior of a modern computer as it runs complicated programs: not the results that it produces, but <em>how the processors and memory loads evolve over the course of the run</em>. &nbsp;If one could do that, one could allocate those resources \"on the fly\" to fit the needs of the program, thereby potentially accelerating the computation and/or saving power.</p>\n<p>The challenge was the issue outlined above: what model to use. &nbsp;We were able to show that the traditional models used in the computer systems community are <strong>not</strong> accurate: i.e., that they generate incorrect forecasts. &nbsp;Using the mathematics of nonlinear dynamics&mdash;\"chaos theory\"&mdash;we were able to develop improved forecast models that generated better predictions, as shown in the image that accompanies this report. We observed, however, that these forecasting methods were not always successful, so we developed techniques based in information theory to assess a given signal to see if it contained any predictive structure at all&mdash;without which&nbsp;<strong>no</strong>&nbsp;prediction strategy can work.&nbsp; We found that many computer performance traces do not have any such structure.</p>\n<p>The <em>intellectual merit</em> of this project consists of (1) the proof that the traditional models used in the computer systems community are not accurate (2) a suite of new and better models that are more accurate and (3) a way to assess a given signal to know whether <em>any</em>&nbsp;forecast model will work. &nbsp;These results were reported in two refereed conference papers (one of which won a best-paper award), half a dozen journal publications, and dozens of oral presentations at conferences, universities, national labs, and industrial research operations.</p>\n<p><em>The broader impact</em> of this project includes, but is not limited to, the potential impacts of the technical contributions described above, such as power savings in computers (viz., &nbsp;extended battery life in electronic devices, reduced power and cooling loads in cloud storage systems) and advance warning of nascent effects captured in sensor data from engineered systems (viz., failure of a lathe bearing or a bridge abutment), among many others. &nbsp;This project also provided training and workforce development for a number of young scientists&mdash;a postdoctoral scholar, a PhD student, and a \"Research Experiences for Undergraduates\" apprentice. &nbsp;The research performed under the aegis of this grant was also featured in a massive open online course (MOOC) taught by the principal investigator to thousands of online students around the world.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/02/2016<br>\n\t\t\t\t\tModified by: Elizabeth&nbsp;Bradley</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2016/1162440/1162440_10197272_1475423190472_outcome--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1162440/1162440_10197272_1475423190472_outcome--rgov-800width.jpg\" title=\"Comparison of traditional and nonlinear forecast models\"><img src=\"/por/images/Reports/POR/2016/1162440/1162440_10197272_1475423190472_outcome--rgov-66x44.jpg\" alt=\"Comparison of traditional and nonlinear forecast models\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Forecasting computer performance: the red points are the forecasts of the processor load; the blue xs are the true behavior.  The nonlinear model developed in this project is far more accurate.</div>\n<div class=\"imageCredit\">Elizabeth Bradley and Joshua Garland</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Elizabeth&nbsp;Bradley</div>\n<div class=\"imageTitle\">Comparison of traditional and nonlinear forecast models</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nPrediction of the future behavior of a system requires a \"model\" of that system: a mathematical representation that describes how it works. Models can be as simple as knowledge that the level of water in a bucket will rise if one puts a hose in it, or as complex as the forecast models used by TV weather reporters. If the model is wrong in some fundamental way&mdash;too simple, for instance, or with a wrong term in the equation&mdash;the prediction will be inaccurate.\n\nThe goal of this project was to predict the behavior of a modern computer as it runs complicated programs: not the results that it produces, but how the processors and memory loads evolve over the course of the run.  If one could do that, one could allocate those resources \"on the fly\" to fit the needs of the program, thereby potentially accelerating the computation and/or saving power.\n\nThe challenge was the issue outlined above: what model to use.  We were able to show that the traditional models used in the computer systems community are not accurate: i.e., that they generate incorrect forecasts.  Using the mathematics of nonlinear dynamics&mdash;\"chaos theory\"&mdash;we were able to develop improved forecast models that generated better predictions, as shown in the image that accompanies this report. We observed, however, that these forecasting methods were not always successful, so we developed techniques based in information theory to assess a given signal to see if it contained any predictive structure at all&mdash;without which no prediction strategy can work.  We found that many computer performance traces do not have any such structure.\n\nThe intellectual merit of this project consists of (1) the proof that the traditional models used in the computer systems community are not accurate (2) a suite of new and better models that are more accurate and (3) a way to assess a given signal to know whether any forecast model will work.  These results were reported in two refereed conference papers (one of which won a best-paper award), half a dozen journal publications, and dozens of oral presentations at conferences, universities, national labs, and industrial research operations.\n\nThe broader impact of this project includes, but is not limited to, the potential impacts of the technical contributions described above, such as power savings in computers (viz.,  extended battery life in electronic devices, reduced power and cooling loads in cloud storage systems) and advance warning of nascent effects captured in sensor data from engineered systems (viz., failure of a lathe bearing or a bridge abutment), among many others.  This project also provided training and workforce development for a number of young scientists&mdash;a postdoctoral scholar, a PhD student, and a \"Research Experiences for Undergraduates\" apprentice.  The research performed under the aegis of this grant was also featured in a massive open online course (MOOC) taught by the principal investigator to thousands of online students around the world.\n\n\t\t\t\t\tLast Modified: 10/02/2016\n\n\t\t\t\t\tSubmitted by: Elizabeth Bradley"
+ }
+}

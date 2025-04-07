@@ -1,0 +1,105 @@
+{
+ "awd_id": "1115948",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TC: Small: Server-side Verification of Client Behavior in Distributed Applications",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 472502.0,
+ "awd_amount": 472502.0,
+ "awd_min_amd_letter_date": "2011-08-07",
+ "awd_max_amd_letter_date": "2011-08-07",
+ "awd_abstract_narration": "This research will develop techniques that enable a server to verify the behavior of a client with which it is communicating as being consistent with the sanctioned client software.  A client's behavior might deviate from the sanctioned client software due to manipulation of the client software or its data structures by an adversary with physical access to the client computer or by malware that has infected the client.  This manipulation may yield incorrect state at the client; examples might include modifications to shared state in a collaborative application that should not have been possible, or an input to an imminent server-side invocation containing content that the sanctioned client software would not have allowed.  If this state is authoritative within a larger distributed application or otherwise dangerous to the server or other clients, then this incorrect state may compromise the integrity of the application.  The techniques developed in this proposed work will detect client behaviors arising from such modifications or, more specifically, any client-to-server messages that are inconsistent with the sanctioned client software.\r\n\r\nA central challenge in validating client behavior is that this behavior is the result of client processing with inputs that are potentially unknown to the server.  These unknown inputs can include environmental inputs at the client (e.g., values sensed at the client location), user inputs (e.g., the user's keystrokes), and even which server messages were processed by the client at the point at which it sent the message being verified.  To permit verification despite this obstacle, this project will investigate the use of symbolic execution of the sanctioned client software and constraint solving to enable the server to determine whether there are any inputs that could have given rise to this client message.  If it finds that no inputs could have given rise to this message, then it detects the client behavior as being inconsistent with the sanctioned client software.  The project will produce new research results and tools to enable this analysis to be performed efficiently.  Moreover, the use of computer games as one vehicle to demonstrate this research makes this project ideal for outreach to high-school students and undergraduates, with whom computer games are immensely popular.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Michael",
+   "pi_last_name": "Reiter",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Michael Reiter",
+   "pi_email_addr": "michael.reiter@duke.edu",
+   "nsf_id": "000161868",
+   "pi_start_date": "2011-08-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of North Carolina at Chapel Hill",
+  "inst_street_address": "104 AIRPORT DR STE 2200",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHAPEL HILL",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9199663411",
+  "inst_zip_code": "275995023",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "NC04",
+  "org_lgl_bus_name": "UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL",
+  "org_prnt_uei_num": "D3LHU66KBLD5",
+  "org_uei_num": "D3LHU66KBLD5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of North Carolina at Chapel Hill",
+  "perf_str_addr": "104 AIRPORT DR STE 2200",
+  "perf_city_name": "CHAPEL HILL",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "275995023",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "NC04",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779500",
+   "pgm_ele_name": "TRUSTWORTHY COMPUTING"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7795",
+   "pgm_ref_txt": "TRUSTWORTHY COMPUTING"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 472502.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Tampering with clients in client-server protocols or applications is<br />an ingredient in numerous abuses.&nbsp; These abuses can involve exploits<br />on the server directly, or manipulation of application state for which<br />the client is authoritative.&nbsp; An example of the former is the<br />high-profile \"Heartbleed\" vulnerability, which enabled a tampered TLS<br />client to extract contents of server memory. Examples of the latter<br />are \"invalid command\" game cheats that permit clients greater<br />powers/resources in the game.<br /><br />The ideal defense would be to implement formally verified servers that<br />incorporate all necessary input validation and application-specific<br />checking. However, in practice, current production servers have<br />codebases too large to retrofit into a formally verified model.&nbsp; Since<br />it is generally impossible to anticipate all such abuses, in this<br />project we explored a holistic approach to validating client behavior as<br />consistent with a sanctioned client program. In this approach, a<br />behavioral verifier monitors each client message as it is delivered to<br />the server, to determine whether the sequence of messages received<br />from the client so far is consistent with the program the client is<br />believed to be running and the messages that the server has sent to<br />the client. Performing this verification is challenging primarily<br />because inputs or nondeterministic events at the client may be unknown<br />to the verifier, and thus, the verifier must solve for whether there<br />exist inputs that could have driven the client software to send the<br />messages it did. Furthermore, some of those inputs may be protected by<br />cryptographic guarantees (private keys in asymmetric cryptography),<br />and maliciously crafted fields may themselves be hidden by encryption,<br />as is the case with Heartbleed.<br /><br />Our central contribution has been to show that legitimate client<br />behavior can in fact be verified, not against a simplified protocol<br />model but against the client program, in two types of applications<br />(game clients and cryptographic protocols). Intuitively, we limit an<br />attacker to only behaviors that could be effected by a legitimate<br />client. We believe this advance to be important: in showing that<br />messages from a client can be quickly verified as legitimate or<br />potentially malicious, we narrow the time between zero-day exploit and<br />detection to mere seconds.&nbsp; Moreover, our examination of 70 OpenSSL<br />CVEs from 2014-2016 showed that 23 out of 37 TLS/DTLS server-side<br />vulnerabilities required tampering with feasible client behavior as an<br />ingredient in exploitation. Our technique accomplishes verification<br />with no vulnerability-specific configuration and, indeed, could have<br />discovered all of these client exploit attempts even prior to the<br />vulnerabilities&rsquo; disclosure.<br /><br />Our verifier compares client messages against a specific client<br />implementation, and so it is most appropriate in scenarios where an<br />expected client implementation is known. For example, while a plethora<br />of TLS implementations exist on the open internet, only a few TLS<br />clients are likely to be part of a corporate deployment where<br />installed software is tightly controlled.&nbsp; Similarly, a game typically<br />has relatively few sanctioned game clients.&nbsp; Knowledge of the<br />implementation might also arise by the client revealing its<br />identification string explicitly (e.g., as in SSH) or by particulars<br />of its handshake (e.g., as in TLS). That said, we also made progress<br />on generalizing our verifier to apply across multiple minor revisions.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/16/2016<br>\n\t\t\t\t\tModified by: Michael&nbsp;Reiter</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nTampering with clients in client-server protocols or applications is\nan ingredient in numerous abuses.  These abuses can involve exploits\non the server directly, or manipulation of application state for which\nthe client is authoritative.  An example of the former is the\nhigh-profile \"Heartbleed\" vulnerability, which enabled a tampered TLS\nclient to extract contents of server memory. Examples of the latter\nare \"invalid command\" game cheats that permit clients greater\npowers/resources in the game.\n\nThe ideal defense would be to implement formally verified servers that\nincorporate all necessary input validation and application-specific\nchecking. However, in practice, current production servers have\ncodebases too large to retrofit into a formally verified model.  Since\nit is generally impossible to anticipate all such abuses, in this\nproject we explored a holistic approach to validating client behavior as\nconsistent with a sanctioned client program. In this approach, a\nbehavioral verifier monitors each client message as it is delivered to\nthe server, to determine whether the sequence of messages received\nfrom the client so far is consistent with the program the client is\nbelieved to be running and the messages that the server has sent to\nthe client. Performing this verification is challenging primarily\nbecause inputs or nondeterministic events at the client may be unknown\nto the verifier, and thus, the verifier must solve for whether there\nexist inputs that could have driven the client software to send the\nmessages it did. Furthermore, some of those inputs may be protected by\ncryptographic guarantees (private keys in asymmetric cryptography),\nand maliciously crafted fields may themselves be hidden by encryption,\nas is the case with Heartbleed.\n\nOur central contribution has been to show that legitimate client\nbehavior can in fact be verified, not against a simplified protocol\nmodel but against the client program, in two types of applications\n(game clients and cryptographic protocols). Intuitively, we limit an\nattacker to only behaviors that could be effected by a legitimate\nclient. We believe this advance to be important: in showing that\nmessages from a client can be quickly verified as legitimate or\npotentially malicious, we narrow the time between zero-day exploit and\ndetection to mere seconds.  Moreover, our examination of 70 OpenSSL\nCVEs from 2014-2016 showed that 23 out of 37 TLS/DTLS server-side\nvulnerabilities required tampering with feasible client behavior as an\ningredient in exploitation. Our technique accomplishes verification\nwith no vulnerability-specific configuration and, indeed, could have\ndiscovered all of these client exploit attempts even prior to the\nvulnerabilities? disclosure.\n\nOur verifier compares client messages against a specific client\nimplementation, and so it is most appropriate in scenarios where an\nexpected client implementation is known. For example, while a plethora\nof TLS implementations exist on the open internet, only a few TLS\nclients are likely to be part of a corporate deployment where\ninstalled software is tightly controlled.  Similarly, a game typically\nhas relatively few sanctioned game clients.  Knowledge of the\nimplementation might also arise by the client revealing its\nidentification string explicitly (e.g., as in SSH) or by particulars\nof its handshake (e.g., as in TLS). That said, we also made progress\non generalizing our verifier to apply across multiple minor revisions.\n\n\t\t\t\t\tLast Modified: 12/16/2016\n\n\t\t\t\t\tSubmitted by: Michael Reiter"
+ }
+}

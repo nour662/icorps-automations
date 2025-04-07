@@ -1,0 +1,113 @@
+{
+ "awd_id": "1046946",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SBIR Phase I:  vCore: Realizing an Accelerated Virtual Core on Commodity Multicore Processors",
+ "cfda_num": "47.084",
+ "org_code": "15030000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Arkilic Errol",
+ "awd_eff_date": "2011-01-01",
+ "awd_exp_date": "2011-06-30",
+ "tot_intn_awd_amt": 150000.0,
+ "awd_amount": 150000.0,
+ "awd_min_amd_letter_date": "2010-11-16",
+ "awd_max_amd_letter_date": "2010-11-16",
+ "awd_abstract_narration": "This Small Business Innovation Research Phase I project aims to prove the technical and commercial feasibility of a virtualization technology for multicore computer systems, from mobile clients to server clouds. Although multicore processors offer tremendous performance potential, most existing applications are sequential and many new applications are written in sequential languages because the majority of mainstream programmers are most comfortable with sequential programming. Even when applications are parallel, achieving high performance is tedious as programmers must customize their code to each target system. As the number of cores per processor continues to increase, the key challenge is how to make use of these cores to deliver increased performance. Multicore processors execute code in parallel, but writing and debugging explicitly parallel programs is significantly more difficult than writing and debugging a sequential program. The goal of this proposal is to demonstrate that the proposed technology brings realizable, scalable performance to multicore systems which will leverage the current predominant architecture and bring about enhanced performance promised by multicore platforms.\r\n\r\nThe superior performance and energy efficiency delivered by the proposed technology will, if successfully deployed, enable innovative applications and services that were not possible on a single-core platform. The technology allows software developers to continue to focus on such applications and services rather than dividing their efforts with the extraction and debugging of parallelism for the underlying hardware. Software users can readily tap into expertise in program optimization to accelerate high-value applications. The technology provides manufacturers of mobile devices and PCs with the ability to dramatically improve the end user experience, to differentiate their products in these fiercely-competitive markets.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "TIP",
+ "org_dir_long_name": "Directorate for Technology, Innovation, and Partnerships",
+ "div_abbr": "TI",
+ "org_div_long_name": "Translational Impacts",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jae-Wook",
+   "pi_last_name": "Lee",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jae-Wook Lee",
+   "pi_email_addr": "leejw@parakinetics.com",
+   "nsf_id": "000553422",
+   "pi_start_date": "2010-11-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Parakinetics Incorporated",
+  "inst_street_address": "195 Nassau St.",
+  "inst_street_address_2": "Suite #25",
+  "inst_city_name": "Princeton",
+  "inst_state_code": "NJ",
+  "inst_state_name": "New Jersey",
+  "inst_phone_num": "6099242334",
+  "inst_zip_code": "085427004",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "NJ12",
+  "org_lgl_bus_name": null,
+  "org_prnt_uei_num": null,
+  "org_uei_num": null
+ },
+ "perf_inst": {
+  "perf_inst_name": "Parakinetics Incorporated",
+  "perf_str_addr": "195 Nassau St.",
+  "perf_city_name": "Princeton",
+  "perf_st_code": "NJ",
+  "perf_st_name": "New Jersey",
+  "perf_zip_code": "085427004",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "NJ12",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "537100",
+   "pgm_ele_name": "SBIR Phase I"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5371",
+   "pgm_ref_txt": "SMALL BUSINESS PHASE I"
+  },
+  {
+   "pgm_ref_code": "6850",
+   "pgm_ref_txt": "DIGITAL SOCIETY&TECHNOLOGIES"
+  },
+  {
+   "pgm_ref_code": "9139",
+   "pgm_ref_txt": "INFORMATION INFRASTRUCTURE & TECH APPL"
+  },
+  {
+   "pgm_ref_code": "HPCC",
+   "pgm_ref_txt": "HIGH PERFORMANCE COMPUTING & COMM"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 150000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Microprocessors with more than one processing core, called multicore processors, are already commonplace in all scales of computing systems from mobile clients to server clouds. The core count per chip is predicted to double every two years. &nbsp;However, doubling core count does not result in speedup for most applications. To benefit from multicores, applications must be decomposed into smaller tasks that can be executed in parallel, and these parallel tasks must be tuned for the target multicore system. Currently, this process of parallelizing and tuning an application is almost entirely manual. This manual process is complex, time-consuming, and error-prone because it requires expertise in both the application and the underlying hardware platform. Seamless application parallelization and tuning is critical to restore the generational performance gains that have powered the US semiconductor industry for the past 30 years.</p>\n<p>This project aims to fill the gap between the potential and the actual performance of an application on systems with multicore processors. The technology under development, called vCore, enables both existing and new applications to use a multicore processor as if it were an exceptionally powerful single-core processor that is many times faster than any processing core realizable with today's technology. With vCore, multicore computer systems can use less power and do more work in less time. The superior performance and energy efficiency delivered by vCore enables innovative applications and services that were not possible on single-core platforms.</p>\n<p>In Phase I of this project, we have demonstrated the feasibility of vCore technology by successfully parallelizing and accelerating a killer application in the mobile domain: the mobile web browser. The accelerated web browser significantly improves the user experience and can bring more applications to the web with richer and more interactive content. The underlying technology is being expanded to cover other important applications. Efficient parallelism delivered by vCore technology will accelerate computational research in a range of science and engineering fields.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/29/2011<br>\n\t\t\t\t\tModified by: Jae-Wook&nbsp;Lee</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMicroprocessors with more than one processing core, called multicore processors, are already commonplace in all scales of computing systems from mobile clients to server clouds. The core count per chip is predicted to double every two years.  However, doubling core count does not result in speedup for most applications. To benefit from multicores, applications must be decomposed into smaller tasks that can be executed in parallel, and these parallel tasks must be tuned for the target multicore system. Currently, this process of parallelizing and tuning an application is almost entirely manual. This manual process is complex, time-consuming, and error-prone because it requires expertise in both the application and the underlying hardware platform. Seamless application parallelization and tuning is critical to restore the generational performance gains that have powered the US semiconductor industry for the past 30 years.\n\nThis project aims to fill the gap between the potential and the actual performance of an application on systems with multicore processors. The technology under development, called vCore, enables both existing and new applications to use a multicore processor as if it were an exceptionally powerful single-core processor that is many times faster than any processing core realizable with today's technology. With vCore, multicore computer systems can use less power and do more work in less time. The superior performance and energy efficiency delivered by vCore enables innovative applications and services that were not possible on single-core platforms.\n\nIn Phase I of this project, we have demonstrated the feasibility of vCore technology by successfully parallelizing and accelerating a killer application in the mobile domain: the mobile web browser. The accelerated web browser significantly improves the user experience and can bring more applications to the web with richer and more interactive content. The underlying technology is being expanded to cover other important applications. Efficient parallelism delivered by vCore technology will accelerate computational research in a range of science and engineering fields.\n\n\t\t\t\t\tLast Modified: 09/29/2011\n\n\t\t\t\t\tSubmitted by: Jae-Wook Lee"
+ }
+}

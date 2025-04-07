@@ -1,0 +1,113 @@
+{
+ "awd_id": "1911460",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "CSR: Medium: Resource-Efficient Implementation of Mixed-Criticality Systems",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2017-10-31",
+ "awd_exp_date": "2021-09-30",
+ "tot_intn_awd_amt": 429731.0,
+ "awd_amount": 429731.0,
+ "awd_min_amd_letter_date": "2019-02-22",
+ "awd_max_amd_letter_date": "2019-02-22",
+ "awd_abstract_narration": "In safety-critical embedded systems, functionalities with different criticalities are often supported upon shared hardware platforms, to enable size, weight, and power (SWaP) reductions.  For example, in an automotive system, highly critical vehicle-control functions and less critical driver-alert functions might be hosted on the same hardware platform.  While such platform integration may be essential to make more efficient use of platform resources, care must be taken to isolate failures of less-critical components so that more-critical components are not affected. This project is directed at developing new tools, techniques, and methodologies for deriving mixed-criticality system designs that ensure such isolation, particularly on platforms that utilize multicore processors.\r\n\r\nThe thesis explored in this project is that ensuring both correctness and resource-efficiency in mixed-criticality systems requires the development of fundamentally new perspectives on the modeling of these systems, and different approaches to resource allocation and scheduling.  Specific goals include devising new models for representing mixed-criticality systems, new metrics for quantifying the effectiveness of techniques for designing such systems, and new methods for performing resource allocation and scheduling upon integrated architectures that support mixed-criticality systems.  These new models, metrics, and methods inform the development of new tools and methodologies for deriving mixed-criticality system designs that are both correct by construction and implementable in a resource-efficient manner.  Continuing collaborations with partners in the avionics and automotive industries enable these results to push research on mixed-criticality systems forward to address national industrial needs.  This project is also expected to produce new open-source software and tools, new course content, and public outreach through participation in UNC's demo program (which is aimed at K-12 students, college students, and school teachers) and lectures and seminars by the investigators at national and international forums.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Sanjoy",
+   "pi_last_name": "Baruah",
+   "pi_mid_init": "K",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sanjoy K Baruah",
+   "pi_email_addr": "Baruah@wustl.edu",
+   "nsf_id": "000762080",
+   "pi_start_date": "2019-02-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Washington University",
+  "inst_street_address": "1 BROOKINGS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "SAINT LOUIS",
+  "inst_state_code": "MO",
+  "inst_state_name": "Missouri",
+  "inst_phone_num": "3147474134",
+  "inst_zip_code": "631304862",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "MO01",
+  "org_lgl_bus_name": "WASHINGTON UNIVERSITY, THE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "L6NFUM28LQM5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Washington University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "MO",
+  "perf_st_name": "Missouri",
+  "perf_zip_code": "631304862",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "MO01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 108617.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 321114.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Mixed-criticality systems comprise multiple functionalities that are of different degrees of importance (or <em>criticalities</em>) and implemented upon a shared platform. Although such platform integration is essential to make more efficient use of platform resources, care must be taken to prevent failures of non-critical components from compromising the safety prperties of the critical components.</p>\n<p>This project validated the thesis that <em>ensuring both correctness and resource-efficiency in mixed-criticality systems requires the development of fundamentally new perspectives on the <strong>modeling </strong>of such systems, and of new approaches to <strong>resource allocation</strong> and <strong>scheduling</strong></em>. &nbsp;The central idea explored was that a single mixed-criticality system should be modeled in multiple different ways, with each model evaluated for correctness according to different criteria that reflect the different criticalities of different functionalities. &nbsp;Accordingly, it developed a comprehensive framework within which mixed-criticality systems may be modeled and analyzed: this framework both encompassed prior results concerning the analysis of mixed-criticality systems, and developed new theory that significantly extended the kinds of systems that are amenable to such analysis. &nbsp;This required the introduction of new models for representing mixed-criticality systems, new metrics for quantifying the effectiveness of techniques for designing such systems, and novel methods for doing resource allocation and scheduling in integrated architectures that support mixed-criticality systems.</p>\n<p>The technical outcomes of this project were disseminated extensively via research publications in major journals, and presentation in, and publication in the proceedings of, flagship international conferences. &nbsp;The PI helped organize events and forums such as a recurring Workshop on Mixed Criticality (WMC), a pair of Dagstuhl Seminars, and special sessions at conferences.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/06/2021<br>\n\t\t\t\t\tModified by: Sanjoy&nbsp;K&nbsp;Baruah</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMixed-criticality systems comprise multiple functionalities that are of different degrees of importance (or criticalities) and implemented upon a shared platform. Although such platform integration is essential to make more efficient use of platform resources, care must be taken to prevent failures of non-critical components from compromising the safety prperties of the critical components.\n\nThis project validated the thesis that ensuring both correctness and resource-efficiency in mixed-criticality systems requires the development of fundamentally new perspectives on the modeling of such systems, and of new approaches to resource allocation and scheduling.  The central idea explored was that a single mixed-criticality system should be modeled in multiple different ways, with each model evaluated for correctness according to different criteria that reflect the different criticalities of different functionalities.  Accordingly, it developed a comprehensive framework within which mixed-criticality systems may be modeled and analyzed: this framework both encompassed prior results concerning the analysis of mixed-criticality systems, and developed new theory that significantly extended the kinds of systems that are amenable to such analysis.  This required the introduction of new models for representing mixed-criticality systems, new metrics for quantifying the effectiveness of techniques for designing such systems, and novel methods for doing resource allocation and scheduling in integrated architectures that support mixed-criticality systems.\n\nThe technical outcomes of this project were disseminated extensively via research publications in major journals, and presentation in, and publication in the proceedings of, flagship international conferences.  The PI helped organize events and forums such as a recurring Workshop on Mixed Criticality (WMC), a pair of Dagstuhl Seminars, and special sessions at conferences.\n\n \n\n\t\t\t\t\tLast Modified: 12/06/2021\n\n\t\t\t\t\tSubmitted by: Sanjoy K Baruah"
+ }
+}

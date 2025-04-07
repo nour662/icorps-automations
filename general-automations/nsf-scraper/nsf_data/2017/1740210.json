@@ -1,0 +1,129 @@
+{
+ "awd_id": "1740210",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SI2-SSE: C11Tester: Scaling Testing of C/C++11 Atomics to Real-World Systems",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Seung-Jong Park",
+ "awd_eff_date": "2017-10-01",
+ "awd_exp_date": "2022-09-30",
+ "tot_intn_awd_amt": 399999.0,
+ "awd_amount": 415999.0,
+ "awd_min_amd_letter_date": "2017-08-30",
+ "awd_max_amd_letter_date": "2020-06-11",
+ "awd_abstract_narration": "We have long relied on increased raw computing power to drive technological progress. However, processors are now reaching their limits in terms of raw computing power, and continuing progress will require increased productivity in developing parallel software. Fully leveraging the performance of multi-core processors will in many cases require developers to make use of low-level \"atomic\" (or indivisible) operations such as those provided by the C11 and C++11 languages, so that can make very fine-grained optimizations to their code, and take full advantage of the computing power these processors offer them. Unfortunately, using C/C++ atomics is extremely difficult to do correctly and it is very easy to introduce subtle bugs in the use of these constructs. Testing for concurrency bugs in code that uses C/C++11 atomics can be extremely difficult as a bug can depend on the schedule, the state of the processor's memory subsystem, the specific processor, and the compiler. The C11Tester project will develop tools for testing concurrent code that makes use of C/C++11 atomics and make these tools available to both researchers and practitioners.\r\n\r\nThe C/C++11 standard introduced a relaxed memory model with atomic operations into the C and C++ languages. While C/C++11 atomics can provide significant performance benefits, using C/C++11 atomics correctly is extremely difficult. Existing tools such as CDSChecker can only find bugs in small unit tests of concurrent data structures.  Bugs can also arise due to the interaction of subtle memory model semantics and the composition of software components. The C11Tester project will develop new techniques for testing and debugging complete concurrent applications that make use of C/C++11 atomics. The C11Tester project will make the following contributions: (1) it will develop new approaches for testing the correctness of concurrent applications, (2) it will develop new approaches for debugging concurrent applications, and (3) it will develop and make available a robust implementation of the approach in the C11Tester tool.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Brian",
+   "pi_last_name": "Demsky",
+   "pi_mid_init": "C",
+   "pi_sufx_name": "",
+   "pi_full_name": "Brian C Demsky",
+   "pi_email_addr": "bdemsky@uci.edu",
+   "nsf_id": "000399342",
+   "pi_start_date": "2017-08-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Irvine",
+  "inst_street_address": "160 ALDRICH HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "IRVINE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9498247295",
+  "inst_zip_code": "926970001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "47",
+  "st_cong_dist_code": "CA47",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA IRVINE",
+  "org_prnt_uei_num": "MJC5FCYQTPE6",
+  "org_uei_num": "MJC5FCYQTPE6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Irvine",
+  "perf_str_addr": "4414 Engineering Hall",
+  "perf_city_name": "Irvine",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "926173067",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "47",
+  "perf_st_cong_dist": "CA47",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "800400",
+   "pgm_ele_name": "Software Institutes"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "077Z",
+   "pgm_ref_txt": "CSSI-1: Cyberinfr for Sustained Scientif"
+  },
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "8004",
+   "pgm_ref_txt": "Software Institutes"
+  },
+  {
+   "pgm_ref_code": "8005",
+   "pgm_ref_txt": "Scientific Software Elements"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 399999.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 16000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Modern computing systems often include processors with multiple cores. &nbsp;Realizing the full performance of such systems can require developers to utilize advance techniques that make use of special atomic operation instructions that modern processors provide. &nbsp;While such techniques can provide a number of benefits, they make it more difficult to develop reliable software. &nbsp;The 2011 release of the C++ standard added support for atomic operations to the language and further work rigorously formalized their behavior. &nbsp;This has enabled researchers to actively develop tools and techniques to help software developers find and fix bugs in such code. &nbsp;Much of this research has required researchers to incur significant overheads to implement infrastructure code that is necessary to develop tools and explore potential techniques.</p>\n<p><br />The C11Tester project has developed the C11Tester framework that provides a common platform for researchers to build tools to explore validation and verification of multi-threaded C and C++ code. &nbsp;The C11Tester framework supports testing multi-threaded C and C++ code that makes use of atomic operations. &nbsp;Prior work on model checking tools was limited to testing small unit tests due to challenges scaling model checking. &nbsp;C11Tester scales well beyond previous model checking tools and can effectively test real world multi-threaded applications such as the JavaScript engine from the FireFox webbrowser. &nbsp;The C11Tester framework enables better coverage ofpotentially bug revealing executions than prior work. &nbsp;The project developed and implemented a new constraint-based approach to efficiently generating concurrent executions that are consistent with the C and C++ memory model while the same time can generate a more diverse set of executions that prior techniques. &nbsp;The C11Tester framework has been used both at UCI and other institutions for research on multi-threaded code and persistent memory technologies. Other researchers have built tools using the C11Tester framework and have also compared against the C11Tester tool.<br />The broader impacts of the project include improving the reliability of concurrent software, improving the productivity of developers who write concurrent software, and enabling other researchers to more easily explore concurrency research. &nbsp;Software developed by this project has been made freely available. &nbsp;Other researchers have used and built on the software developed as part of this project. &nbsp;The project has helped train both PhD students and undergraduate students.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/23/2023<br>\n\t\t\t\t\tModified by: Brian&nbsp;C&nbsp;Demsky</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nModern computing systems often include processors with multiple cores.  Realizing the full performance of such systems can require developers to utilize advance techniques that make use of special atomic operation instructions that modern processors provide.  While such techniques can provide a number of benefits, they make it more difficult to develop reliable software.  The 2011 release of the C++ standard added support for atomic operations to the language and further work rigorously formalized their behavior.  This has enabled researchers to actively develop tools and techniques to help software developers find and fix bugs in such code.  Much of this research has required researchers to incur significant overheads to implement infrastructure code that is necessary to develop tools and explore potential techniques.\n\n\nThe C11Tester project has developed the C11Tester framework that provides a common platform for researchers to build tools to explore validation and verification of multi-threaded C and C++ code.  The C11Tester framework supports testing multi-threaded C and C++ code that makes use of atomic operations.  Prior work on model checking tools was limited to testing small unit tests due to challenges scaling model checking.  C11Tester scales well beyond previous model checking tools and can effectively test real world multi-threaded applications such as the JavaScript engine from the FireFox webbrowser.  The C11Tester framework enables better coverage ofpotentially bug revealing executions than prior work.  The project developed and implemented a new constraint-based approach to efficiently generating concurrent executions that are consistent with the C and C++ memory model while the same time can generate a more diverse set of executions that prior techniques.  The C11Tester framework has been used both at UCI and other institutions for research on multi-threaded code and persistent memory technologies. Other researchers have built tools using the C11Tester framework and have also compared against the C11Tester tool.\nThe broader impacts of the project include improving the reliability of concurrent software, improving the productivity of developers who write concurrent software, and enabling other researchers to more easily explore concurrency research.  Software developed by this project has been made freely available.  Other researchers have used and built on the software developed as part of this project.  The project has helped train both PhD students and undergraduate students.\n\n \n\n\t\t\t\t\tLast Modified: 02/23/2023\n\n\t\t\t\t\tSubmitted by: Brian C Demsky"
+ }
+}

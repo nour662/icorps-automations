@@ -1,0 +1,109 @@
+{
+ "awd_id": "1217891",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Collaborative Research: Reusable Tools for Formal Modeling",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2012-08-01",
+ "awd_exp_date": "2015-07-31",
+ "tot_intn_awd_amt": 218710.0,
+ "awd_amount": 218710.0,
+ "awd_min_amd_letter_date": "2012-07-10",
+ "awd_max_amd_letter_date": "2012-07-10",
+ "awd_abstract_narration": "Recent advances in program verification show that we are on the verge of being able to prove correctness of safety and security critical software systems. But the proofs only establish correctness with respect to a model of the underlying processor on which the code executes.  Unfortunately, the community lacks high-fidelity, carefully tested specifications of widely-used processors, such as Intel's x86 family of processors. This severely limits efforts in making software reliable and secure, from software assurance to malware analysis to sandboxing technologies. The goal of this project is to provide tools for building, reasoning about, and validating models of widely-used processors.  The proposed research will result in public specifications of common processors, which will benefit a wide range of software applications. It will help improve the dependability and security of critical software applications.\r\n \r\nThe investigators' approach to building processor models is carefully designed to support reuse of components across different architectures and different applications.  In particular, they propose to formalize two domain-specific languages that will make it easy to specify decoders and instruction semantics.  The tools for these languages will include support for efficient execution so that the models can be tested against implementations.  To demonstrate the efficacy of these tools, the investigators will build and validate models of both the x86 and ARM families of processors.  They will also investigate applications of these models by building correctness proofs of verifiers for inlined reference monitors and by integrating them as the target languages of a verified compiler. The investigators plan to expend efforts on building a community of researchers for formal processor models and to involve this community to give feedback, improve, and use the models. The project will also provide excellent opportunities for training undergraduate students and for developing new curriculum materials on formal methods.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "John",
+   "pi_last_name": "Morrisett",
+   "pi_mid_init": "G",
+   "pi_sufx_name": "",
+   "pi_full_name": "John G Morrisett",
+   "pi_email_addr": "greg.morrisett@cornell.edu",
+   "nsf_id": "000347145",
+   "pi_start_date": "2012-07-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Harvard University",
+  "inst_street_address": "1033 MASSACHUSETTS AVE STE 3",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6174955501",
+  "inst_zip_code": "021385366",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "MA05",
+  "org_lgl_bus_name": "PRESIDENT AND FELLOWS OF HARVARD COLLEGE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LN53LCFJFL45"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Harvard University",
+  "perf_str_addr": "29 Oxford Street",
+  "perf_city_name": "Cambridge",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021382933",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "MA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7943",
+   "pgm_ref_txt": "PROGRAMMING LANGUAGES"
+  },
+  {
+   "pgm_ref_code": "7944",
+   "pgm_ref_txt": "SOFTWARE ENG & FORMAL METHODS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 218710.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Safety and security-critical software is incredibly hard to build without introducing bugs that can lead to failures or attacks. &nbsp;One promising approach to solving this problem is to build a formal proof (a mathematical audit trail) that the software does not have bugs, and which can be independently checked by a third-party.</p>\n<p>To realize this goal, we need formal models of the machines on which the software is running. &nbsp;The primary goal of this project is to provide a framework for specifying these models, and to automatically generate tools that can be used for building robust software that is provably correct. &nbsp;We used this framework to provide a model of the most widely used machine architecture (the Intel x86) and used this model to prove the correctness of some security-critical tools that Google uses to secure its Chrome web-browser. &nbsp;</p>\n<p>Of course, these proofs of correctness or security are only as good as the models. &nbsp;That is, a bug in the model could invalidate the entire proof. &nbsp;Thus, a big component of this project was validating the model against real machines. &nbsp;In turn, this required us to build efficient (but still proven correct) tools for executing the model so we could compare it to real machines. &nbsp;Along the way, we discovered new techniques for building efficient, but provably correct interpreters that should be usable in a much broader range of contexts. &nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/12/2015<br>\n\t\t\t\t\tModified by: J. Gregory&nbsp;Morrisett</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nSafety and security-critical software is incredibly hard to build without introducing bugs that can lead to failures or attacks.  One promising approach to solving this problem is to build a formal proof (a mathematical audit trail) that the software does not have bugs, and which can be independently checked by a third-party.\n\nTo realize this goal, we need formal models of the machines on which the software is running.  The primary goal of this project is to provide a framework for specifying these models, and to automatically generate tools that can be used for building robust software that is provably correct.  We used this framework to provide a model of the most widely used machine architecture (the Intel x86) and used this model to prove the correctness of some security-critical tools that Google uses to secure its Chrome web-browser.  \n\nOf course, these proofs of correctness or security are only as good as the models.  That is, a bug in the model could invalidate the entire proof.  Thus, a big component of this project was validating the model against real machines.  In turn, this required us to build efficient (but still proven correct) tools for executing the model so we could compare it to real machines.  Along the way, we discovered new techniques for building efficient, but provably correct interpreters that should be usable in a much broader range of contexts.  \n\n\t\t\t\t\tLast Modified: 08/12/2015\n\n\t\t\t\t\tSubmitted by: J. Gregory Morrisett"
+ }
+}

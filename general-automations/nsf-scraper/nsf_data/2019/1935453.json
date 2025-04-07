@@ -1,0 +1,109 @@
+{
+ "awd_id": "1935453",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "War on Boundary Conditions - A Control-Oriented Framework for Partial Differential Equations",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": "7032922633",
+ "po_email": "aleoness@nsf.gov",
+ "po_sign_block_name": "Alex Leonessa",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2023-08-31",
+ "tot_intn_awd_amt": 259981.0,
+ "awd_amount": 259981.0,
+ "awd_min_amd_letter_date": "2019-08-19",
+ "awd_max_amd_letter_date": "2019-08-19",
+ "awd_abstract_narration": "The joke goes like this: \"Fusion power is just 20 years away and always will be\". Why 20 years? Because that is how long it takes to build a tokamak fusion reactor. Why always? Because for a tokamak to produce energy, it must control a 10M degree plasma using a magnetic field, a dynamic process governed by six coupled nonlinear Partial-Differential Equations (PDEs) in two spatial variables and no real progress has ever been made on feedback control of such systems. The goal of the project, then, is to make substantial progress on the control of coupled PDEs. Such progress is through foundational advances in mathematics and software infrastructure which will enable the broader PDE controls community to grow. Specifically, by developing a universal, easily-understood and applied computational framework for the control of PDEs, this research will provide the tools needed to allow controls engineers with limited or no PDE experience to design reliable and effective controllers for these systems. Since nuclear fusion reactors have no long-term radioactive waste, and since fuel for these reactors can be extracted from sea water, progress in this area has the potential for creating an unlimited supply of clean energy. Furthermore, this work has the potential to advance several applications beyond nuclear fusion including hypersonic vehicles, traffic management, soft robotics, cavitation, flow control, and vibration suppression.\r\n\r\nThe goal of the project is to replace Partial Differential Equations (PDEs) with Partial Integral Equations (PIEs). Historically, PDEs are defined by three sometimes contradictory sets of equations and constraints: the PDE itself, which moves the state; the Boundary Conditions (BCs), which implicitly constrain the motion of the state; and the continuity conditions, which couple the BCs to constraints on the motion of the state. By contrast, PIEs combine PDE, BCs, and continuity conditions into a single equation, defined by bounded Partial-Integral (PI) operators, any solution to which satisfies the original PDE and requires no boundary conditions or continuity constraints. PI operators are bounded, form an algebra, and can be parameterized using matrices. Further, positivity of PI operators can be enforced using Linear Matrix Inequalities (LMIs). This means that algorithms developed for control of ODEs using LMIs can be generalized to control of PIEs with relatively little effort. This project will pursue the generalization of several such LMIs to PDEs.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Matthew",
+   "pi_last_name": "Peet",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Matthew Peet",
+   "pi_email_addr": "mpeet@asu.edu",
+   "nsf_id": "000511753",
+   "pi_start_date": "2019-08-19",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Arizona State University",
+  "inst_street_address": "660 S MILL AVENUE STE 204",
+  "inst_street_address_2": "",
+  "inst_city_name": "TEMPE",
+  "inst_state_code": "AZ",
+  "inst_state_name": "Arizona",
+  "inst_phone_num": "4809655479",
+  "inst_zip_code": "852813670",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "AZ04",
+  "org_lgl_bus_name": "ARIZONA STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NTLHJXM55KZ6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Arizona State University",
+  "perf_str_addr": "PO Box 876106",
+  "perf_city_name": "Tempe",
+  "perf_st_code": "AZ",
+  "perf_st_name": "Arizona",
+  "perf_zip_code": "852876106",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "AZ04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "756900",
+   "pgm_ele_name": "Dynamics, Control and System D"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "030E",
+   "pgm_ref_txt": "CONTROL SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "034E",
+   "pgm_ref_txt": "Dynamical systems"
+  },
+  {
+   "pgm_ref_code": "8024",
+   "pgm_ref_txt": "Complex Systems"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 259981.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>While Partial Differential Equations (PDEs) are a powerful modelling tool, current approaches to analysis, control and simulation of PDEs are ad-hoc and require significant effort and mathematical expertise. As a result, the field of PDE modelling, analysis and control has a high barrier to entry -- preventing the rapid prototyping and data-based modeling commonly used in the simpler state-space framework of Ordinary Differential Equations (ODEs).</span></p>\n<p><span>The goal of this project was to develop a computational framework for representation of PDE systems in a manner which allows us to leverage the optimization-based tools which are widely used by practicing engineers and scientists for control of state-space ODE models. This framework is based on representation of the PDE as a Partial Integral Equation (PIE) and the development of algorithms for manipulation and optimization of Partial Integral (PI) operators. Through the course of the project, we have had much success in developing this framework and extending it to a large class PDE models and optimal control problems. </span></p>\n<p><span>Representation of PDEs as PIEs: The significance of the PIE framework is tied to its ability to represent large classes of speculative and data-based PDE models. While early work was limited to simple 2nd&nbsp;order 1D PDEs, the project has expanded its scope to n-th order PDEs in multiple spatial dimensions with a variety of boundary conditions -- including coupling with ODEs and with inputs and disturbances at the boundary. Such representations allow us to model problems of optimal estimation and control of PDEs as well as study large scale network interconnections with delay and PDEs with delay. In addition, recent work has shown that nonlinear PDE models also admit PIE representations through a PI parameterization of polynomials on a distributed state. </span></p>\n<p><span>Analysis, Control and Estimation of PDEs: Numerical linear algebra (manipulation of matrices) is the basis for almost all algorithms. For this reason, the Partial Integral Equation framework was intentionally designed to be parameterized by the numerical linear algebra of PI operators. As a result, many of the matrix-based algorithms for analysis, control and simulation of ODEs can be generalized to PIEs. Specifically, we have generalized several Linear Matrix Inequality-based algorithms to PIE systems -- including algorithms for: stability analysis; H2 and Hinfty gain analysis; optimal estimator design; robust and optimal control; and simulation.</span></p>\n<p><span>Robust and User-Friendly Software: The practical significance of the PIE framework is premised on its ability to simplify the problems of numerical modelling, analysis, control, and simulation of PDEs. That is, the user should be able to perform these tasks without any specialized expertise in the mathematics of PDEs, numerical simulation of PDEs, or the design of optimization algorithms. To achieve this, however, we need simple and reliable software which automates the mathematical and numerical aspects of the PIE framework and which does not require any specialized knowledge to use. One of the most significant outcomes of this project, therefore, has been the development of the PIETOOLS software suite. This software uses intuitive command linear and graphical interfaces to simplify construction of PDE models. Given the PDE model, conversion to a PIE and the tasks of analysis, control, and simulation are all automated -- yielding a tool for rapid prototyping, analysis, control and simulation of speculative and data-based PDE models suitable for a wide variety of applications including recently developed data-based models of Tokamak nuclear fusion power generation.</span></p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 01/07/2024<br>\nModified by: Matthew&nbsp;Peet</p></div>\n<div class=\"porSideCol\"\n><div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2024/1935453/1935453_10635842_1704659476209_pietools_flow--rgov-214x142.png\" original=\"/por/images/Reports/POR/2024/1935453/1935453_10635842_1704659476209_pietools_flow--rgov-800width.png\" title=\"The PIETOOLS software package\"><img src=\"/por/images/Reports/POR/2024/1935453/1935453_10635842_1704659476209_pietools_flow--rgov-66x44.png\" alt=\"The PIETOOLS software package\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">PIETOOLS is a comprehensive software package for modelling, analysis, control, and simulation of PDE systems.\n\nPIETOOLS is open source and available from the distribution site:\n\nhttps://control.asu.edu/pietools/pietools</div>\n<div class=\"imageCredit\">Matthew Peet</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Matthew&nbsp;Peet\n<div class=\"imageTitle\">The PIETOOLS software package</div>\n</div>\n</li></ul>\n</div>\n</div></div>\n</div>\n",
+  "por_txt_cntn": "\n\nWhile Partial Differential Equations (PDEs) are a powerful modelling tool, current approaches to analysis, control and simulation of PDEs are ad-hoc and require significant effort and mathematical expertise. As a result, the field of PDE modelling, analysis and control has a high barrier to entry -- preventing the rapid prototyping and data-based modeling commonly used in the simpler state-space framework of Ordinary Differential Equations (ODEs).\n\n\nThe goal of this project was to develop a computational framework for representation of PDE systems in a manner which allows us to leverage the optimization-based tools which are widely used by practicing engineers and scientists for control of state-space ODE models. This framework is based on representation of the PDE as a Partial Integral Equation (PIE) and the development of algorithms for manipulation and optimization of Partial Integral (PI) operators. Through the course of the project, we have had much success in developing this framework and extending it to a large class PDE models and optimal control problems. \n\n\nRepresentation of PDEs as PIEs: The significance of the PIE framework is tied to its ability to represent large classes of speculative and data-based PDE models. While early work was limited to simple 2ndorder 1D PDEs, the project has expanded its scope to n-th order PDEs in multiple spatial dimensions with a variety of boundary conditions -- including coupling with ODEs and with inputs and disturbances at the boundary. Such representations allow us to model problems of optimal estimation and control of PDEs as well as study large scale network interconnections with delay and PDEs with delay. In addition, recent work has shown that nonlinear PDE models also admit PIE representations through a PI parameterization of polynomials on a distributed state. \n\n\nAnalysis, Control and Estimation of PDEs: Numerical linear algebra (manipulation of matrices) is the basis for almost all algorithms. For this reason, the Partial Integral Equation framework was intentionally designed to be parameterized by the numerical linear algebra of PI operators. As a result, many of the matrix-based algorithms for analysis, control and simulation of ODEs can be generalized to PIEs. Specifically, we have generalized several Linear Matrix Inequality-based algorithms to PIE systems -- including algorithms for: stability analysis; H2 and Hinfty gain analysis; optimal estimator design; robust and optimal control; and simulation.\n\n\nRobust and User-Friendly Software: The practical significance of the PIE framework is premised on its ability to simplify the problems of numerical modelling, analysis, control, and simulation of PDEs. That is, the user should be able to perform these tasks without any specialized expertise in the mathematics of PDEs, numerical simulation of PDEs, or the design of optimization algorithms. To achieve this, however, we need simple and reliable software which automates the mathematical and numerical aspects of the PIE framework and which does not require any specialized knowledge to use. One of the most significant outcomes of this project, therefore, has been the development of the PIETOOLS software suite. This software uses intuitive command linear and graphical interfaces to simplify construction of PDE models. Given the PDE model, conversion to a PIE and the tasks of analysis, control, and simulation are all automated -- yielding a tool for rapid prototyping, analysis, control and simulation of speculative and data-based PDE models suitable for a wide variety of applications including recently developed data-based models of Tokamak nuclear fusion power generation.\n\n\n\t\t\t\t\tLast Modified: 01/07/2024\n\n\t\t\t\t\tSubmitted by: MatthewPeet\n"
+ }
+}

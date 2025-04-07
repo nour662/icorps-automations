@@ -1,0 +1,105 @@
+{
+ "awd_id": "1657124",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: SaTC: A Principled Approach Aiding the Development of a Compliant Internet PKI",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032922981",
+ "po_email": "pregalia@nsf.gov",
+ "po_sign_block_name": "Phillip Regalia",
+ "awd_eff_date": "2017-06-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 174958.0,
+ "awd_amount": 174958.0,
+ "awd_min_amd_letter_date": "2017-01-25",
+ "awd_max_amd_letter_date": "2017-01-25",
+ "awd_abstract_narration": "Transport layer security (TLS) and secure socket layer (SSL) protocols aim to establish a secure channel with confidentiality and integrity guarantees over an insecure network. SSL/TLS is currently being used to protect a large number of servers and websites including banks, file servers, and social networks. In fact, 37% of North America's network traffic is now protected by SSL/TLS. To avoid impersonation attacks in SSL/TLS, users initiating an SSL/TLS communication are recommended to authenticate their communication peer to ensure they are interacting with the intended party and not an impostor. The X.509 public-key infrastructure (PKI) compensates for the Internet's inherent lack of trust by providing a cryptography-backed authentication framework in which entities are organized hierarchically based on trust, and each entity can obtain a certificate confirming its identity. While there is open-source software that implements the X.509 prescribed authentication checks, bugs in this software can leave users vulnerable to impersonation attacks. The X.509 open-source standard implementations, unlike SSL/TLS, have escaped rigorous security evaluations despite the fact that the security of SSL/TLS critically hinges on a correct X.509 implementation. This project seeks to reduce the attack surface of SSL/TLS and other applications that use X.509 as the authentication provider by developing an automatic technique for detecting logical bugs in X.509 implementations. \r\n\r\nThis project will take advantage of the insight that a given X.509 implementation partitions the certificate input universe into accepting (certificates considered valid by the implementation) and rejecting (certificates considered invalid) universes. One can use symbolic execution to automatically extract an approximation of the two universes from a given X.509 implementation and represent them with logical formulas. The project then aims to precisely capture the X.509 standard specification in some formal logic and also develop a reference implementation of the X.509 standard. To prove the compliance of the reference implementation against the formal specification, the research will leverage a combination of model checking and deductive verification techniques. With the provably correct reference implementation, say R, at hand, it will be possible to detect logical bugs and inconsistencies in a given X.509 implementation, T, by checking whether T deviates from R. Deviations will be efficiently calculated by comparing the certificate universes of R and T. In addition to its research impact, the techniques and research findings of this project will have a positive impact on the training of the future generation of computer security professionals.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Omar Haider",
+   "pi_last_name": "Chowdhury",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Omar Haider Chowdhury",
+   "pi_email_addr": "omar@cs.stonybrook.edu",
+   "nsf_id": "000728845",
+   "pi_start_date": "2017-01-25",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Iowa",
+  "inst_street_address": "105 JESSUP HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "IOWA CITY",
+  "inst_state_code": "IA",
+  "inst_state_name": "Iowa",
+  "inst_phone_num": "3193352123",
+  "inst_zip_code": "522421316",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "IA01",
+  "org_lgl_bus_name": "THE UNIVERSITY OF IOWA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "Z1H9VJS8NG16"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Iowa",
+  "perf_str_addr": "14 MacLean Hall",
+  "perf_city_name": "Iowa city",
+  "perf_st_code": "IA",
+  "perf_st_name": "Iowa",
+  "perf_zip_code": "522421419",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "IA01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 174958.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project focused on developing an automatic testing approach for checking compliance of an X.509 Public Key Infrastructure (PKI)&nbsp; implementation with RFC 5280. The tools and foundational techniques developed in this project can identify noncompliances during the early development stage of implementation. This way, it is possible to avoid the security repercussions of non-compliance during deployment. The testing approach comprises of two logical components: (a) a testing approach that can find behavioral deviations of two different X.509 implementations using symbolic execution; (b) a reference implementation that faithfully follows the requirements of RFC 5280. For testing the compliance of a given implementation s, one would use component (a) to test the deviations between s and the reference implementation developed in (b).&nbsp;&nbsp;</p>\n<p>In this project, as part of component (a) mentioned above, we developed an open-source tool to generate a custom certificate chain containing concrete and symbolic values, called SymCert. The next component of (a) then uses such SymCerts for symbolically executing an implementation under test for approximating the logic. The final component of (a) uses a satisfiability modulo theory (SMT) solver to compare the extracted logic of two different implementations. Our evaluation demonstrates that this approach can recognize differences between implementations that are hard for fuzzing based techniques to discover. Additionally, for testing the PKCS#1 v1.5 signature verification checks, performed as part of certificate chain validation, we developed an automatic, custom tool that uses a two-stage search combining brute-force and symbolic execution. This tool includes a constraint provenance tracker (CPT) that keeps track of the source code fragment that contributed to a particular constraint during symbolic execution. The evaluation of these tools with real open-source cryptographic libraries have discovered real vulnerabilities and noncompliances that have been fixed by the stakeholders.&nbsp;&nbsp;</p>\n<p>For component (b), dubbed CERES, the project takes a different approach than a typical workflow used for developing a formally verified implementation. In CERES, we use the novel notion of executable specification, which allows a custom interpreter to execute the specification directly and consequently giving us a reference implementation with little to no cost. We observed that it is possible to develop such an executable specification for X.509 standard. Such a specification is feasible due to the partitioning of the specification into syntactic and semantic rules. For capturing the syntactic requirements of an X.509 certificate according to RFC 5280, we use a restricted fragment of the attribute grammar. This identified fragment of attribute grammar induces efficient parsers that do not require backtracking. For capturing semantic restrictions, we observed that a quantifier-free first-order logic (QF-FOL) fragment is sufficient. An SMT solver can thus check semantic requirements expressed in this QF-FOL fragment. Using an SMT solver for checking semantic requirements has the following benefits: (I)&nbsp;it is possible to check the absence of conflicting requirements; (II) the SMT solver can provide the causes and proof of non-compliance; (III) one can easily extend the semantic requirements to add newer requirements with little cost. An empirical evaluation comparing CERES and other open-source cryptographic libraries show that CERES is more restrictive while generating rich diagnostic information of non-compliance.</p>\n<p>Along with the aforementioned technical innovations and open-source tools, the project has enabled and inspired the PI to pursue the relevant area of the practical deployment challenges of a PKI. In the context of SSL/TLS, we developed testing platforms that can check whether a mobile app or data-saving-web-browser faithfully establishes an SSL/TLS connection in the presence of a proxy. Our testing platforms revealed severe weaknesses of the mobile data-saving-web-browsers that can jeopardize user's security and privacy. Also, this project has supported the development of cellular network protocol testers like LTEInspector and 5GReasoner. These two tools have helped us discover real vulnerabilities in the cellular network protocols and have induced changes to the protocol standard.&nbsp; &nbsp;</p>\n<p>This project has helped the PI train three different students in the early stages of their Ph.D. careers, among which one of them is under-represented. The tools and techniques developed in this project have contributed materials to the curriculum of an advanced topic on security and privacy course taught by the PI. The results of this project have been disseminated in research manuscripts published in top-tier security venues. All the software artifacts will be available with open-source licenses from the PI's institutional webpage: https://homepage.divms.uiowa.edu/~comarhaider/NSFPKI/index.html</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/30/2020<br>\n\t\t\t\t\tModified by: Omar Haider&nbsp;Chowdhury</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2020/1657124/1657124_10470497_1609348828202_x509_latest--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1657124/1657124_10470497_1609348828202_x509_latest--rgov-800width.jpg\" title=\"Executable Specification of X.509 PKI\"><img src=\"/por/images/Reports/POR/2020/1657124/1657124_10470497_1609348828202_x509_latest--rgov-66x44.jpg\" alt=\"Executable Specification of X.509 PKI\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Workflow of Executable Specification of X.509 PKI</div>\n<div class=\"imageCredit\">Joyanta Debnath</div>\n<div class=\"imageSubmitted\">Omar Haider&nbsp;Chowdhury</div>\n<div class=\"imageTitle\">Executable Specification of X.509 PKI</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThis project focused on developing an automatic testing approach for checking compliance of an X.509 Public Key Infrastructure (PKI)  implementation with RFC 5280. The tools and foundational techniques developed in this project can identify noncompliances during the early development stage of implementation. This way, it is possible to avoid the security repercussions of non-compliance during deployment. The testing approach comprises of two logical components: (a) a testing approach that can find behavioral deviations of two different X.509 implementations using symbolic execution; (b) a reference implementation that faithfully follows the requirements of RFC 5280. For testing the compliance of a given implementation s, one would use component (a) to test the deviations between s and the reference implementation developed in (b).  \n\nIn this project, as part of component (a) mentioned above, we developed an open-source tool to generate a custom certificate chain containing concrete and symbolic values, called SymCert. The next component of (a) then uses such SymCerts for symbolically executing an implementation under test for approximating the logic. The final component of (a) uses a satisfiability modulo theory (SMT) solver to compare the extracted logic of two different implementations. Our evaluation demonstrates that this approach can recognize differences between implementations that are hard for fuzzing based techniques to discover. Additionally, for testing the PKCS#1 v1.5 signature verification checks, performed as part of certificate chain validation, we developed an automatic, custom tool that uses a two-stage search combining brute-force and symbolic execution. This tool includes a constraint provenance tracker (CPT) that keeps track of the source code fragment that contributed to a particular constraint during symbolic execution. The evaluation of these tools with real open-source cryptographic libraries have discovered real vulnerabilities and noncompliances that have been fixed by the stakeholders.  \n\nFor component (b), dubbed CERES, the project takes a different approach than a typical workflow used for developing a formally verified implementation. In CERES, we use the novel notion of executable specification, which allows a custom interpreter to execute the specification directly and consequently giving us a reference implementation with little to no cost. We observed that it is possible to develop such an executable specification for X.509 standard. Such a specification is feasible due to the partitioning of the specification into syntactic and semantic rules. For capturing the syntactic requirements of an X.509 certificate according to RFC 5280, we use a restricted fragment of the attribute grammar. This identified fragment of attribute grammar induces efficient parsers that do not require backtracking. For capturing semantic restrictions, we observed that a quantifier-free first-order logic (QF-FOL) fragment is sufficient. An SMT solver can thus check semantic requirements expressed in this QF-FOL fragment. Using an SMT solver for checking semantic requirements has the following benefits: (I) it is possible to check the absence of conflicting requirements; (II) the SMT solver can provide the causes and proof of non-compliance; (III) one can easily extend the semantic requirements to add newer requirements with little cost. An empirical evaluation comparing CERES and other open-source cryptographic libraries show that CERES is more restrictive while generating rich diagnostic information of non-compliance.\n\nAlong with the aforementioned technical innovations and open-source tools, the project has enabled and inspired the PI to pursue the relevant area of the practical deployment challenges of a PKI. In the context of SSL/TLS, we developed testing platforms that can check whether a mobile app or data-saving-web-browser faithfully establishes an SSL/TLS connection in the presence of a proxy. Our testing platforms revealed severe weaknesses of the mobile data-saving-web-browsers that can jeopardize user's security and privacy. Also, this project has supported the development of cellular network protocol testers like LTEInspector and 5GReasoner. These two tools have helped us discover real vulnerabilities in the cellular network protocols and have induced changes to the protocol standard.   \n\nThis project has helped the PI train three different students in the early stages of their Ph.D. careers, among which one of them is under-represented. The tools and techniques developed in this project have contributed materials to the curriculum of an advanced topic on security and privacy course taught by the PI. The results of this project have been disseminated in research manuscripts published in top-tier security venues. All the software artifacts will be available with open-source licenses from the PI's institutional webpage: https://homepage.divms.uiowa.edu/~comarhaider/NSFPKI/index.html\n\n\t\t\t\t\tLast Modified: 12/30/2020\n\n\t\t\t\t\tSubmitted by: Omar Haider Chowdhury"
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "awd_id": "1108174",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Fellowship Award",
+ "awd_titl_txt": "EAPSI: Functional Electrical Stimulation of a Human Arm",
+ "cfda_num": "47.079",
+ "org_code": "01090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anne Emig",
+ "awd_eff_date": "2011-06-01",
+ "awd_exp_date": "2012-05-31",
+ "tot_intn_awd_amt": 5700.0,
+ "awd_amount": 5700.0,
+ "awd_min_amd_letter_date": "2011-05-18",
+ "awd_max_amd_letter_date": "2011-05-18",
+ "awd_abstract_narration": null,
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "O/D",
+ "org_dir_long_name": "Office Of The Director",
+ "div_abbr": "OISE",
+ "org_div_long_name": "Office of International Science and Engineering",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Philip",
+   "pi_last_name": "Thomas",
+   "pi_mid_init": "S",
+   "pi_sufx_name": "",
+   "pi_full_name": "Philip S Thomas",
+   "pi_email_addr": "",
+   "nsf_id": "000578831",
+   "pi_start_date": "2011-05-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Thomas                  Philip         S",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "Amherst",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "",
+  "inst_zip_code": "010020000",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "MA02",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "Thomas                  Philip         S",
+  "perf_str_addr": "",
+  "perf_city_name": "Amherst",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "010020000",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "MA02",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "731600",
+   "pgm_ele_name": "EAPSI"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5921",
+   "pgm_ref_txt": "JAPAN"
+  },
+  {
+   "pgm_ref_code": "5978",
+   "pgm_ref_txt": "EAST ASIA AND PACIFIC PROGRAM"
+  },
+  {
+   "pgm_ref_code": "7316",
+   "pgm_ref_txt": "EAPSI"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 5700.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>Markov decision processes (MDPs) are a common formalization of sequential decision problems. One important type of sequential decision problem is that of controlling a robot. At each moment, the robot must observe the state of the world around it and select an action to take. When the robot achieves a desired task, it is given a reward. The goal of the robot is to maximize the amount of reward that it receives. Methods for solving MDPs (finding good decision rules) have become quite powerful recently. However, they struggle when the action space is high-dimensional. A high-dimensional action space occurs when the robot has many \"muscles\" for which it must select an action at each moment. In the case of robots, these are actuators and not really muscles.</span></p>\n<p><span>&nbsp;</span></p>\n<p><span>In this work, we derived inspiration from how animals use motor primitives to control large numbers of muscles. Rather than selecting an action for each muscle individually, animals select actions for a small number of motor primitives, each of which results in a pattern of activation over all of the actual muscles. If there are significantly fewer motor primitives than muscles, this simplifies the problem from a high-dimensional one (selecting activation levels for many muscles) to a low-dimensional one (selecting activation levels for a few motor primitives).</span></p>\n<p><span>&nbsp;</span></p>\n<p><span>In our research, we developed a method for automatically searching for the motor primitives that will perform best for a system (e.g. a particular robot). Once these motor primitives have been found, learning new tasks becomes easier.</span></p>\n<p><span>&nbsp;</span></p>\n<p><span>We performed experiments using a simulated arm with 18 to 36 muscles, and found that we could control it well using only two motor primitives, though learning did best with four motor primitives. Hence, we compressed the action-space from an 18 to 36-dimensional one down to a 2 to 4-dimensional one. We then showed that learning did indeed progress much faster in this lower-dimensional space.</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/09/2011<br>\n\t\t\t\t\tModified by: Philip&nbsp;S&nbsp;Thomas</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMarkov decision processes (MDPs) are a common formalization of sequential decision problems. One important type of sequential decision problem is that of controlling a robot. At each moment, the robot must observe the state of the world around it and select an action to take. When the robot achieves a desired task, it is given a reward. The goal of the robot is to maximize the amount of reward that it receives. Methods for solving MDPs (finding good decision rules) have become quite powerful recently. However, they struggle when the action space is high-dimensional. A high-dimensional action space occurs when the robot has many \"muscles\" for which it must select an action at each moment. In the case of robots, these are actuators and not really muscles.\n\n \n\nIn this work, we derived inspiration from how animals use motor primitives to control large numbers of muscles. Rather than selecting an action for each muscle individually, animals select actions for a small number of motor primitives, each of which results in a pattern of activation over all of the actual muscles. If there are significantly fewer motor primitives than muscles, this simplifies the problem from a high-dimensional one (selecting activation levels for many muscles) to a low-dimensional one (selecting activation levels for a few motor primitives).\n\n \n\nIn our research, we developed a method for automatically searching for the motor primitives that will perform best for a system (e.g. a particular robot). Once these motor primitives have been found, learning new tasks becomes easier.\n\n \n\nWe performed experiments using a simulated arm with 18 to 36 muscles, and found that we could control it well using only two motor primitives, though learning did best with four motor primitives. Hence, we compressed the action-space from an 18 to 36-dimensional one down to a 2 to 4-dimensional one. We then showed that learning did indeed progress much faster in this lower-dimensional space.\n\n \n\n\t\t\t\t\tLast Modified: 11/09/2011\n\n\t\t\t\t\tSubmitted by: Philip S Thomas"
+ }
+}

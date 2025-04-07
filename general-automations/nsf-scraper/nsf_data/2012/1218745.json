@@ -1,0 +1,101 @@
+{
+ "awd_id": "1218745",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small: Exploiting 3D Integration for Power Management in Embedded Processors",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2017-08-31",
+ "tot_intn_awd_amt": 450000.0,
+ "awd_amount": 450000.0,
+ "awd_min_amd_letter_date": "2012-08-24",
+ "awd_max_amd_letter_date": "2012-08-24",
+ "awd_abstract_narration": "The complexity and power demands for System-on-Chips are projected to grow in coming years, making low-power design and low-loss power delivery critical for power-efficiency of future embedded systems. The objective of the proposed research is to explore innovative technology and methodologies for effective power management in embedded processors considering the interdependence between power delivery and low-power design. A system platform is being developed in which the power management unit, consisting of the power delivery and the power control circuits, is integrated vertically with a processor using 3D heterogeneous integration. An integrated approach is pursued that couples the circuit innovations in the 3D power management tier with the on-line control of the processor power to maximize the power-efficiency of the system while ensuring reliable operation. \r\n\r\nEmbedded systems are ubiquitous in modern society in various applications including medical systems, handheld devices, aviation systems, networking, and security, to name a few. Power management is often considered to be the most critical problem for future embedded systems. The 3D approach to power management can enable transformative solutions to the power problem in embedded systems, removing barriers to major advancements in their power-performance, relaxing packaging constraints, and reducing system footprint. The research results are disseminated through conference and journal publications, short-courses, tutorials, and project website and integrated in the graduate and undergraduate VLSI courses. The project is engaged with the Summer Undergraduate Research in Engineering/Science (SURE) and Facilitating Academic Careers in Engineering and Science (FACES) programs to increase participation of undergraduate and under-represented students in computer systems research.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Saibal",
+   "pi_last_name": "Mukhopadhyay",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Saibal Mukhopadhyay",
+   "pi_email_addr": "saibal@ece.gatech.edu",
+   "nsf_id": "000083185",
+   "pi_start_date": "2012-08-24",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Institue of Technology",
+  "perf_str_addr": "225 North Avenue, NW",
+  "perf_city_name": "Atlanta",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 450000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><strong>Overview:</strong></p>\n<p>The complexity and power demands for System-on-Chips are continuously growing with the scaling of CMOS technology. Higher average power, coupled with increased current fluctuation, generates noise in the power supply, leading to reduced power-efficiency in embedded systems. This project has developed effective power management techniques to reduce supply noise and enhance power-efficiency via tighter integration of voltage regulator modules and digital system coupled with innovative circuit techniques and control principles.</p>\n<p><strong>Outcomes (Intellectual Merit):</strong></p>\n<p>The research has presented the concept 3D power management where an inductor based DC-DC converter and voltage regulator module, hereafter, referred to as an integrated voltage regulator (IVR) is integrated as a separate die with the digital processor. The analysis showed that 3D integration of IVR improves impedance of the power delivery network but the effectiveness depends on the design of the IVR and feasibility of on-package/on-chip integration of inductance/capacitance. Hence, co-design of IVR and packaging scenarios have been developed to maximally exploit the advantage of 3D stacking.&nbsp;</p>\n<p>To support integrated power management, the project has developed IVRs that can quickly respond to changes in the load current to reduce supply noise, and enable fast dynamic voltage frequency scaling. The key outcomes are:</p>\n<p>1)&nbsp;&nbsp;&nbsp; A Single Inductor Multiple Output (SIMO) regulator with innovative controller and power stage filter is demonstrated in 130nm CMOS. The design operated at ~20MHz of frequency, used a single 500nH inductor to provide regulated voltage to four (4) outputs. The measurements demonstrated one of highest reported power density (150mW/mH-mF) and fastest reported dynamic voltage scaling (120mV/&mu;s) for SIMO designs.</p>\n<p>2)&nbsp;&nbsp;&nbsp; An IVR is demonstrated in 130nm operating at 125MHz with 11.6nH wirebond inductance and 3.2nF on-chip capacitance. An all-digital architecture using multi-sampled compensator with reduced precision computation and a resistive transient assist scheme improves performance, while a lightweight auto-tuning engine optimizes transient response under variation in passives.&nbsp; The 130nm test-chip demonstrated a peak efficiency of 71% and a 2.9V/us output slew during large reference transient.</p>\n<p>3)&nbsp;&nbsp;&nbsp; A CMOS test-chip is designed to demonstrate integration of power management and low-power techniques. In particular, a system is demonstrated where on-chip adaptive clocking is coupled with high-frequency IVR to enable fast dynamic voltage and frequency scaling. In the proposed approach only the voltage is scaled dynamically, and the clock frequency responds automatically, thanks to adaptive clocking, to avoid timing failure. The chip measurement demonstrated the functionality of the integrated approach. &nbsp;</p>\n<p>The project has showed that a major challenge in tighter integration of IVR and processor is the heat dissipation in the IVR, which increases overall temperature. A higher package temperature further increases the power loss in IVR, and can worsen supply noise. Therefore, a coupled electro-thermal analysis is necessary to design an integrated solution. Moreover, the project has developed a test-bed for characterizing the effects of electro-thermal coupling and advanced cooling technologies, specifically focusing on closed-loop management of cooling and its integration with dynamic voltage frequency scaling solutions. Using this test-bed, the project has experimentally demonstrated in-package fluidic cooling in a commercial SoC; and showed potential for improved power-efficiency even after accounting for the pumping power.</p>\n<p>An interesting outcomes of the project was the observation that the integrated voltage regulation can significantly modulate the power and electromagnetic signature of a chip. The observation has led to collaborative research on exploiting integrated voltage regulators to reduce side-channel information leakage from encryption engines.</p>\n<p><strong>Outcomes (Broader Impact)</strong>: This research has led to six journal and ten conference publications. The research results have contributed to doctoral thesis of three graduated PhD students. The PI has presented results from this work in his invited talks and discussions at industrial seminars, international workshops, and conferences. Further, the research has contributed topics on power management and voltage regulation to undergraduate and graduate courses on Very Large Scale Integration and Digital Systems.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/08/2017<br>\n\t\t\t\t\tModified by: Saibal&nbsp;Mukhopadhyay</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOverview:\n\nThe complexity and power demands for System-on-Chips are continuously growing with the scaling of CMOS technology. Higher average power, coupled with increased current fluctuation, generates noise in the power supply, leading to reduced power-efficiency in embedded systems. This project has developed effective power management techniques to reduce supply noise and enhance power-efficiency via tighter integration of voltage regulator modules and digital system coupled with innovative circuit techniques and control principles.\n\nOutcomes (Intellectual Merit):\n\nThe research has presented the concept 3D power management where an inductor based DC-DC converter and voltage regulator module, hereafter, referred to as an integrated voltage regulator (IVR) is integrated as a separate die with the digital processor. The analysis showed that 3D integration of IVR improves impedance of the power delivery network but the effectiveness depends on the design of the IVR and feasibility of on-package/on-chip integration of inductance/capacitance. Hence, co-design of IVR and packaging scenarios have been developed to maximally exploit the advantage of 3D stacking. \n\nTo support integrated power management, the project has developed IVRs that can quickly respond to changes in the load current to reduce supply noise, and enable fast dynamic voltage frequency scaling. The key outcomes are:\n\n1)    A Single Inductor Multiple Output (SIMO) regulator with innovative controller and power stage filter is demonstrated in 130nm CMOS. The design operated at ~20MHz of frequency, used a single 500nH inductor to provide regulated voltage to four (4) outputs. The measurements demonstrated one of highest reported power density (150mW/mH-mF) and fastest reported dynamic voltage scaling (120mV/&mu;s) for SIMO designs.\n\n2)    An IVR is demonstrated in 130nm operating at 125MHz with 11.6nH wirebond inductance and 3.2nF on-chip capacitance. An all-digital architecture using multi-sampled compensator with reduced precision computation and a resistive transient assist scheme improves performance, while a lightweight auto-tuning engine optimizes transient response under variation in passives.  The 130nm test-chip demonstrated a peak efficiency of 71% and a 2.9V/us output slew during large reference transient.\n\n3)    A CMOS test-chip is designed to demonstrate integration of power management and low-power techniques. In particular, a system is demonstrated where on-chip adaptive clocking is coupled with high-frequency IVR to enable fast dynamic voltage and frequency scaling. In the proposed approach only the voltage is scaled dynamically, and the clock frequency responds automatically, thanks to adaptive clocking, to avoid timing failure. The chip measurement demonstrated the functionality of the integrated approach.  \n\nThe project has showed that a major challenge in tighter integration of IVR and processor is the heat dissipation in the IVR, which increases overall temperature. A higher package temperature further increases the power loss in IVR, and can worsen supply noise. Therefore, a coupled electro-thermal analysis is necessary to design an integrated solution. Moreover, the project has developed a test-bed for characterizing the effects of electro-thermal coupling and advanced cooling technologies, specifically focusing on closed-loop management of cooling and its integration with dynamic voltage frequency scaling solutions. Using this test-bed, the project has experimentally demonstrated in-package fluidic cooling in a commercial SoC; and showed potential for improved power-efficiency even after accounting for the pumping power.\n\nAn interesting outcomes of the project was the observation that the integrated voltage regulation can significantly modulate the power and electromagnetic signature of a chip. The observation has led to collaborative research on exploiting integrated voltage regulators to reduce side-channel information leakage from encryption engines.\n\nOutcomes (Broader Impact): This research has led to six journal and ten conference publications. The research results have contributed to doctoral thesis of three graduated PhD students. The PI has presented results from this work in his invited talks and discussions at industrial seminars, international workshops, and conferences. Further, the research has contributed topics on power management and voltage regulation to undergraduate and graduate courses on Very Large Scale Integration and Digital Systems. \n\n \n\n\t\t\t\t\tLast Modified: 11/08/2017\n\n\t\t\t\t\tSubmitted by: Saibal Mukhopadhyay"
+ }
+}

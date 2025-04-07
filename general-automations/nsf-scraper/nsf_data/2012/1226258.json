@@ -1,0 +1,101 @@
+{
+ "awd_id": "1226258",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Fellowship Award",
+ "awd_titl_txt": "Scalable Electronic Structure Calculations",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Sushil K Prasad",
+ "awd_eff_date": "2012-08-01",
+ "awd_exp_date": "2015-07-31",
+ "tot_intn_awd_amt": 240000.0,
+ "awd_amount": 240000.0,
+ "awd_min_amd_letter_date": "2012-07-27",
+ "awd_max_amd_letter_date": "2012-07-27",
+ "awd_abstract_narration": "The efficient simulation of nanoscale systems with quantum mechanical precision is vital for many disciplines including physics, chemistry, biology and materials. Density functional theory (DFT) has been very successful in the accurate description of material properties with moderate computational effort. Traditional DFT calculations with full diagonalization of the Hamiltonian have long been recognized as too computationally expensive and as a result improvements have been sought. Recently, efforts have been focused on developing order-N methods, where computational time increases linearly with the number of atoms in the system, and on parallel algorithms that scale to thousands of processors. Current state-of-the-art software scales to around 10, 000 CPU cores. However, next-generation systems currently under construction have an order of magnitude more CPU cores or contain a very large number of GPU co-processors. For example, the Titan project at Oak Ridge National Lab will contain 299,008 CPU cores and may additionally have GPUs when completed in late 2012. The primary goal of this project is to research and develop an open-source DFT package based on the \"Lagrange function\" family of basis functions with parallel scalability a priority from the beginning. Concurrent with code development, studies of large bio-molecules and nanoscale devices will be performed with the dual purpose of advancing scientific knowledge in those areas and providing suitable test cases for the method and software capabilities. Research problems to be investigated include molecular electronics, electronic transport in multi terminal nanodevices, carbon based device design (graphene and nanotubes) and predition of properties of nanowires with varying dopant and defect distributions.\r\n\r\nThe work is expected to have significant broader impact. Release of the code with an open source license will allow contribution to and application of the method by diverse research groups. The lack of fees or onerous restrictions will encourage adoption by many groups, particularly those in smaller institutions lacking the budget for currently available codes. In contrast to other open source packages such ABINIT and GPAW the method will be able to simulate systems containing many atoms (of order 10,000) with very modest computational resources such as a few multi-core workstations. The open nature of the website and project is intended to foster collaboration and build partnerships.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Brandon",
+   "pi_last_name": "Cook",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Brandon Cook",
+   "pi_email_addr": "",
+   "nsf_id": "000576647",
+   "pi_start_date": "2012-07-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Cook                    Brandon",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "Nashville",
+  "inst_state_code": "TN",
+  "inst_state_name": "Tennessee",
+  "inst_phone_num": "",
+  "inst_zip_code": "372043320",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "TN05",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "Oak Ridge National Lab",
+  "perf_str_addr": null,
+  "perf_city_name": "",
+  "perf_st_code": "TN",
+  "perf_st_name": "Tennessee",
+  "perf_zip_code": "378310365",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "TN03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "769600",
+   "pgm_ele_name": "CI Fellowships"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 240000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Electronic structure calculations are commonly done to investigate the properties of materials and molecules where quantum effects are important. These types of calculations give insight into the inner workings of materials and provide the basis for understanding experimental works and for designing new experiments. These calculations can be very expensive computationally and without the use of supercomputers simulations could take days, weeks or months to finish. However, the architecture of modern supercomputers and standard algorithms and computational methods in the field are not always harmonious. I investigated the suitability of several techniques to allow these simulations to more effectively use modern computational resources. I applied electronic structure methods to understand new two-dimensional materials and catalytic nanoparticles.</p>\n<p>One method to solve electronic structure problems numerically is to expand in the quantum equations using \"Lagrange functions.\" This method has a number of attractive properties: controllable accuracy, memory efficient representation, flexibility, etc. However, the \"nonlocality\" of the kinetic operator limits the distribution of the computations to multiple machines. Fortunately, the high ratio of math operations to memory access makes it suitable for graphics card co-processors, a feature of modern computers. Depending on the specifics of the simulation, my GPU implementation of this method is up to 120 times faster than an optimized CPU algorithm. This speedup allows the simulation of larger systems and enables efficient simulation of time-dependent processes. To share these developments,  I created an open-source Python package for electronic structure, lfdft. This package is designed to be easy to obtain, use and modify with computational performance to ensure its usefulness for real simulations.&nbsp;</p>\n<p>Two-dimensional materials, such a graphene, are widely touted as materials for the future due to their remarkable optical, electronic and structural properties. Understanding these properties and how the can be controlled is key for the development of these materials. It was shown that the work-function (a measure of how much energy is needed to remove an electron from a system) of a sheet of graphene on a copper surface can be tuned by inserting different concentrations of Alkali metal atoms between the two materials. Simulations of a realistic interface between two related materials showed the spatial distribution of the quantum energy levels responsible for the optically active junction. This work can guide the engineering of better interfaces. Vibrational properties of TaSe<sub>2</sub>, a two-dimensional material which has until now received little attention, were thoroughly described.&nbsp;</p>\n<p>The interaction of acid gases and catalytic materials is a very important process and the precise understanding of this interaction allows more efficient chemical reactions and more effective catalytic converters in automobiles. An important issue is sulfur poisoning of ceria based catalysts, exposure to this acid gas degrades performance over time. Nanoparticles with controllable surfaces in combination with detailed atomic models and simulation were developed to understand the interaction of SO<sub>x</sub> gas with CeO<sub>2</sub> surfaces.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/29/2015<br>\n\t\t\t\t\tModified by: Brandon&nbsp;Cook</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nElectronic structure calculations are commonly done to investigate the properties of materials and molecules where quantum effects are important. These types of calculations give insight into the inner workings of materials and provide the basis for understanding experimental works and for designing new experiments. These calculations can be very expensive computationally and without the use of supercomputers simulations could take days, weeks or months to finish. However, the architecture of modern supercomputers and standard algorithms and computational methods in the field are not always harmonious. I investigated the suitability of several techniques to allow these simulations to more effectively use modern computational resources. I applied electronic structure methods to understand new two-dimensional materials and catalytic nanoparticles.\n\nOne method to solve electronic structure problems numerically is to expand in the quantum equations using \"Lagrange functions.\" This method has a number of attractive properties: controllable accuracy, memory efficient representation, flexibility, etc. However, the \"nonlocality\" of the kinetic operator limits the distribution of the computations to multiple machines. Fortunately, the high ratio of math operations to memory access makes it suitable for graphics card co-processors, a feature of modern computers. Depending on the specifics of the simulation, my GPU implementation of this method is up to 120 times faster than an optimized CPU algorithm. This speedup allows the simulation of larger systems and enables efficient simulation of time-dependent processes. To share these developments,  I created an open-source Python package for electronic structure, lfdft. This package is designed to be easy to obtain, use and modify with computational performance to ensure its usefulness for real simulations. \n\nTwo-dimensional materials, such a graphene, are widely touted as materials for the future due to their remarkable optical, electronic and structural properties. Understanding these properties and how the can be controlled is key for the development of these materials. It was shown that the work-function (a measure of how much energy is needed to remove an electron from a system) of a sheet of graphene on a copper surface can be tuned by inserting different concentrations of Alkali metal atoms between the two materials. Simulations of a realistic interface between two related materials showed the spatial distribution of the quantum energy levels responsible for the optically active junction. This work can guide the engineering of better interfaces. Vibrational properties of TaSe2, a two-dimensional material which has until now received little attention, were thoroughly described. \n\nThe interaction of acid gases and catalytic materials is a very important process and the precise understanding of this interaction allows more efficient chemical reactions and more effective catalytic converters in automobiles. An important issue is sulfur poisoning of ceria based catalysts, exposure to this acid gas degrades performance over time. Nanoparticles with controllable surfaces in combination with detailed atomic models and simulation were developed to understand the interaction of SOx gas with CeO2 surfaces.\n\n\t\t\t\t\tLast Modified: 10/29/2015\n\n\t\t\t\t\tSubmitted by: Brandon Cook"
+ }
+}

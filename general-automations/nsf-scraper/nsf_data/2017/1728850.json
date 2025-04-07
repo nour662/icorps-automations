@@ -1,0 +1,113 @@
+{
+ "awd_id": "1728850",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF:Medium:Collaborative Research:A comprehensive methodology to pursue reproducible accuracy in ensemble scientific simulations on multi- and many-core platforms",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927498",
+ "po_email": "achtchel@nsf.gov",
+ "po_sign_block_name": "Almadena Chtchelkanova",
+ "awd_eff_date": "2017-01-01",
+ "awd_exp_date": "2020-05-31",
+ "tot_intn_awd_amt": 370233.0,
+ "awd_amount": 370233.0,
+ "awd_min_amd_letter_date": "2017-02-07",
+ "awd_max_amd_letter_date": "2017-02-07",
+ "awd_abstract_narration": "Ensemble simulations of scientific phenomena typically run for weeks or even months on high-performance computing clusters. The already high level of concurrency of these computing environments is expected to significantly increase in the near future, causing simulations to suffer not only from numerical errors due to limited arithmetic precision but also from the non-determinism in the execution associated with multithreading. Ultimately this trend can compromise the simulation results and break the scientific community's trust in ensemble simulations. This project tackles this problem and defines a methodology to enable the reproducible accuracy of large ensemble simulations on exascale platforms that include multi- and many-core processors. \r\n This project moves along two major fronts. First, the investigators identify common sources of accuracy errors and study their accumulation, propagation, and runtime effects in a controlled environment. This phase includes three research activities: (i) generating code motifs that model those computations that may lead to accuracy errors; (ii) providing multiple implementations of these motifs, called code inspectors, targeting different parallel platforms; and (iii) evaluating the accuracy and runtime of these implementations using a variety of datasets and stress conditions. Second, by installing these code inspectors in real scientific code bases, the investigators study their behavior in uncertain environments. This phase includes two research activities: (i) prioritizing code segments based on quantitative impact scores and matching segments to inspector motifs; and (ii) finding the optimal code inspector implementations and patching the code with them so as to optimize the overall result variance. The applications targeted in this project are deterministic chaotic applications including n-body atomic system simulations and astrophysical simulations.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Michela",
+   "pi_last_name": "Becchi",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Michela Becchi",
+   "pi_email_addr": "mbecchi@ncsu.edu",
+   "nsf_id": "000573363",
+   "pi_start_date": "2017-02-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "North Carolina State University",
+  "inst_street_address": "2601 WOLF VILLAGE WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "RALEIGH",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9195152444",
+  "inst_zip_code": "276950001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "NC02",
+  "org_lgl_bus_name": "NORTH CAROLINA STATE UNIVERSITY",
+  "org_prnt_uei_num": "U3NVH931QJJ3",
+  "org_uei_num": "U3NVH931QJJ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "North Carolina State University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "276957003",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "NC02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  },
+  {
+   "pgm_ref_code": "7942",
+   "pgm_ref_txt": "HIGH-PERFORMANCE COMPUTING"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0115",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001516DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2015,
+   "fund_oblg_amt": 370233.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"Para2\">Many high-performance computing applications from various scientific domains, such as molecular dynamics, climate modeling, astrophysical simulations, and experimental mathematics, use floating-point arithmetic. Floating-point arithmetic is by definition approximate since real numbers are not guaranteed to be represented exactly by a finite number of bits. The approximate nature of floating-point numbers can lead to inaccuracy and reproducibility issues, which can be especially problematic for long-running applications. Indeed, previous work has shown that 64-bit IEEE floating-point arithmetic can be insufficient for many computations and applications, such as ill-conditioned linear systems, large summations, long-time or large-scale physical simulations, and experimental mathematics.</p>\n<p class=\"Para2\">Several high-precision libraries encoding real numbers using more than 64 bits are available. While the need for high accuracy can be met through the use of these libraries, they can result in a significant cost in execution time. For example, we have observed an 80x slowdown when porting a Computational Fluid Dynamics application from double (i.e., 64-bit) to 256-bit precision (using a popular high precision library). A performance drop of this magnitude can make the execution time of large-scale scientific simulations prohibitive. One approach to mitigate this problem is to use high-precision arithmetic for only a subset of the variables and operations in a given program, thus trading off accuracy and performance. This requires determining the variables and operations that are most critical to the program?s accuracy. Previous efforts, focused on single and double precision, have proposed tuning assistants that explore the search space resulting from assigning different precisions to the floating-point variables within a given program. These methods, however, typically require many runs of the program. This can even result, on a single input, in hours of tuning for programs with execution times on the order of few seconds.</p>\n<p class=\"Para2\">In this project, we have broadened the analysis to applications that require high-precision arithmetic to guarantee a sufficient level of accuracy, and we have proposed mechanisms and tools to balance accuracy and performance by providing mixed-precision versions of these applications. Because of the high cost of high-precision arithmetic, reducing the size of the search space is in this case critical. This holds particularly for applications that have long runtimes even when using double-precision arithmetic alone. In addition, having a tuning methodology that leads to results that are consistent across different inputs is equally important, since the tuning overhead is justifiable only if the application is run multiple times on different inputs. The most significant contributions of this work are the following.</p>\n<p class=\"Para2\">First, to limit the tuning time and the sensitivity of the tuning results to the inputs, we have designed a tuning method that leverages compiler analysis. In particular, we have observed that frequently executed loops tend to affect not only performance, but also accuracy, especially if they implement repeated summations and multiplications and include a large number of data-dependent floating-point operations. Based on this observation, we have designed a loop-aware tuning strategy, and we have used it to analyze the effect of tuning down subsets of operations incrementally. Our tuning strategy uses the following criteria: the number of occurrences of a particular variable or operation throughout the code, the presence of the variable or operation in accumulation-like computation patterns (e.g., global summations), and the execution frequency of the block of code containing that operation. We have implemented our tuning strategy in an autotuner for CPU applications that follows a two-step approach. First, it uses compiler analysis to generate a tuning plan specific to the program but largely independent of its input data. The tuning plan consists of a sequence of iterations, each specifying a set of operations to be tuned down from higher to lower precision. Second, the tool executes the tuning plan by modifying the program and running it with a given input and a prescribed error bound.</p>\n<p class=\"Para2\">Second, we have extended the proposed tuning method to GPU applications. To this end, we have performed an extensive analysis of the floating-point support offered by modern GPUs. Our analysis has targeted single-precision, double-precision and various high precision libraries, and has covered resource requirements (e.g., registers), operations? latency, throughput, and memory transfer costs. Based on this analysis, we have proposed a mixed-precision autotuner for floating-point applications running on GPU. Our tuner supports single, double and 128-bit composite precision, and can be easily extended to other arithmetic precisions. To reduce the tuning space while identifying representative tuning points, our autotuner leverages compiler analysis. In particular, our tuning strategy considers code patterns prone to error propagation and performance degradation when using high precision data types (e.g., loops, accumulation patterns, floating-point intensive code sections), and GPU-specific considerations (CPU-GPU memory transfers, kernel configurations, shared memory variables and atomic operations). We have evaluated both our CPU and GPU tools on a set of scientific applications from open-source benchmark suites.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/27/2020<br>\n\t\t\t\t\tModified by: Michela&nbsp;Becchi</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "Many high-performance computing applications from various scientific domains, such as molecular dynamics, climate modeling, astrophysical simulations, and experimental mathematics, use floating-point arithmetic. Floating-point arithmetic is by definition approximate since real numbers are not guaranteed to be represented exactly by a finite number of bits. The approximate nature of floating-point numbers can lead to inaccuracy and reproducibility issues, which can be especially problematic for long-running applications. Indeed, previous work has shown that 64-bit IEEE floating-point arithmetic can be insufficient for many computations and applications, such as ill-conditioned linear systems, large summations, long-time or large-scale physical simulations, and experimental mathematics.\nSeveral high-precision libraries encoding real numbers using more than 64 bits are available. While the need for high accuracy can be met through the use of these libraries, they can result in a significant cost in execution time. For example, we have observed an 80x slowdown when porting a Computational Fluid Dynamics application from double (i.e., 64-bit) to 256-bit precision (using a popular high precision library). A performance drop of this magnitude can make the execution time of large-scale scientific simulations prohibitive. One approach to mitigate this problem is to use high-precision arithmetic for only a subset of the variables and operations in a given program, thus trading off accuracy and performance. This requires determining the variables and operations that are most critical to the program?s accuracy. Previous efforts, focused on single and double precision, have proposed tuning assistants that explore the search space resulting from assigning different precisions to the floating-point variables within a given program. These methods, however, typically require many runs of the program. This can even result, on a single input, in hours of tuning for programs with execution times on the order of few seconds.\nIn this project, we have broadened the analysis to applications that require high-precision arithmetic to guarantee a sufficient level of accuracy, and we have proposed mechanisms and tools to balance accuracy and performance by providing mixed-precision versions of these applications. Because of the high cost of high-precision arithmetic, reducing the size of the search space is in this case critical. This holds particularly for applications that have long runtimes even when using double-precision arithmetic alone. In addition, having a tuning methodology that leads to results that are consistent across different inputs is equally important, since the tuning overhead is justifiable only if the application is run multiple times on different inputs. The most significant contributions of this work are the following.\nFirst, to limit the tuning time and the sensitivity of the tuning results to the inputs, we have designed a tuning method that leverages compiler analysis. In particular, we have observed that frequently executed loops tend to affect not only performance, but also accuracy, especially if they implement repeated summations and multiplications and include a large number of data-dependent floating-point operations. Based on this observation, we have designed a loop-aware tuning strategy, and we have used it to analyze the effect of tuning down subsets of operations incrementally. Our tuning strategy uses the following criteria: the number of occurrences of a particular variable or operation throughout the code, the presence of the variable or operation in accumulation-like computation patterns (e.g., global summations), and the execution frequency of the block of code containing that operation. We have implemented our tuning strategy in an autotuner for CPU applications that follows a two-step approach. First, it uses compiler analysis to generate a tuning plan specific to the program but largely independent of its input data. The tuning plan consists of a sequence of iterations, each specifying a set of operations to be tuned down from higher to lower precision. Second, the tool executes the tuning plan by modifying the program and running it with a given input and a prescribed error bound.\nSecond, we have extended the proposed tuning method to GPU applications. To this end, we have performed an extensive analysis of the floating-point support offered by modern GPUs. Our analysis has targeted single-precision, double-precision and various high precision libraries, and has covered resource requirements (e.g., registers), operations? latency, throughput, and memory transfer costs. Based on this analysis, we have proposed a mixed-precision autotuner for floating-point applications running on GPU. Our tuner supports single, double and 128-bit composite precision, and can be easily extended to other arithmetic precisions. To reduce the tuning space while identifying representative tuning points, our autotuner leverages compiler analysis. In particular, our tuning strategy considers code patterns prone to error propagation and performance degradation when using high precision data types (e.g., loops, accumulation patterns, floating-point intensive code sections), and GPU-specific considerations (CPU-GPU memory transfers, kernel configurations, shared memory variables and atomic operations). We have evaluated both our CPU and GPU tools on a set of scientific applications from open-source benchmark suites.\n\n \n\n\t\t\t\t\tLast Modified: 09/27/2020\n\n\t\t\t\t\tSubmitted by: Michela Becchi"
+ }
+}

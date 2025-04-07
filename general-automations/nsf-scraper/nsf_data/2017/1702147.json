@@ -1,0 +1,96 @@
+{
+ "awd_id": "1702147",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "GEM: Multi-scale Empirical Geomagnetic Field Modeling",
+ "cfda_num": "47.050",
+ "org_code": "06020200",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Lisa Winter",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 335193.0,
+ "awd_amount": 335193.0,
+ "awd_min_amd_letter_date": "2017-08-31",
+ "awd_max_amd_letter_date": "2017-08-31",
+ "awd_abstract_narration": "Sophisticated empirical models of the Earth's magnetic field have been built over decades of data collected from spaceborne instruments. These models are a necessary compliment to the physics-based first-principles models. The project goals are to improve one such empirical model of the magnetosphere to include longer, solar cycle time scales and shorter, substorm time scales. This will vastly improve understanding of the near-Earth environment, which is important for ultimately protecting modern technology. The effort will promote hands-on research training for a graduate student and a summer student.\r\n\r\nThis project is to fundamentally upgrade the storm-scale empirical geomagnetic field TS07D model to include geomagnetic variations on time scales both longer and shorter than those of storms. The former are caused by the solar cycle variations of the solar radiation (quantified by the F10.7 flux). The latter represent substorm effects quantified by auroral indices. The work will address what  the impact of the solar irradiance on the structure of the geomagnetic field and underlying current system is, and how substorm thinning and dipolarization of the magnetotail affect the empirical picture of the geomagnetic field. The new model upgrade, which is aimed to answer these questions, employs multiple expansions of equatorial currents with different current sheet thickness values as well as an improved description of the field aligned current system. It combines the system science approach, when the evolution of a few global parameters of the magnetosphere is reconstructed empirically, with the physics-based approach, which is used to constrain spatio-temporal scales and structure of the empirical model.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "GEO",
+ "org_dir_long_name": "Directorate for Geosciences",
+ "div_abbr": "AGS",
+ "org_div_long_name": "Division of Atmospheric and Geospace Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Mikhail",
+   "pi_last_name": "Sitnov",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mikhail Sitnov",
+   "pi_email_addr": "Mikhail.Sitnov@jhuapl.edu",
+   "nsf_id": "000231150",
+   "pi_start_date": "2017-08-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Johns Hopkins University",
+  "inst_street_address": "3400 N CHARLES ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "BALTIMORE",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "4439971898",
+  "inst_zip_code": "212182608",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MD07",
+  "org_lgl_bus_name": "THE JOHNS HOPKINS UNIVERSITY",
+  "org_prnt_uei_num": "GS4PNKTRNKL3",
+  "org_uei_num": "FTMTDMBR29C7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Johns Hopkins University Applied Physics Laboratory",
+  "perf_str_addr": "11100 Johns Hopkins Rd.",
+  "perf_city_name": "Laurel",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "207236099",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "MD03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "575000",
+   "pgm_ele_name": "MAGNETOSPHERIC PHYSICS"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 335193.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this project was to reconstruct the magnetic field structure of the global magnetic shield of our planet, the magnetosphere and its evolution during active periods, magnetic storms and substorms. A new feature of this investigation is mining data in multidecade archives of the spaceborne magnetometer data. This machine learning technique uses the recurrent nature of storms and substorms to overcome the data paucity problem of spacecraft observations: At any moment, only less than a dozen probes are available for in-situ space observations. The historical data archives were mined first in the space of global parameters of the storm and substorm activity, the so-called geomagnetic indices. The mining procedure also took into account the energy input of the solar wind plasma interacting with the magnetosphere and driving storms and substorms. The resulting database subset selected for further magnetic field reconstruction contains not only a few points available at the moment of interest, but also their nearest neighbors, tens of thousands of points neighboring the point of interest in the multi-dimensional space formed by storm and substorm indices, as well as the solar wind input parameters, its induced electric field. At the second step, the magnetometer data from the selected subset of the nearest neighbors, the moments in time when the magnetosphere was in states similar to the event of interest, was used to create an instant event-oriented model of the magnetosphere using the representation of its magnetic field in the form of a set of basis functions.&nbsp;</p>\n<p>As a result, the storm and substorm structure of the magnetosphere has been reconstructed in many important details. This includes the reconstruction of the storm-time, so-called ring current in the inner magnetosphere, including its innermost eastward component, which is critical for further reconstruction of the ring current plasma pressure, a key distribution used in many first-principles models of storms. It is shown that the mining procedure can be significantly improved to take into account the distance from each nearest neighbor to the event of interest. This distance-weighted mining becomes particularly efficient in the reconstruction of strong storms, responsible for the extreme space weather events that may affect the spaceborne assets, astronauts, as well as the ground-based infrastructure, including pipelines and extended power grids.</p>\n<p>Magnetospheric substorms differ from storms by smaller time scales (hours instead of days) and the high latitude of their main magnetic disturbances. Due to their frequent recurrence, they can also be successfully reconstructed in spite of the fact that the corresponding reconfiguration of the magnetosphere is more complex, compared to storms. During substorms, the magnetospheric magnetic field first stretches on the night side in the antisunward direction and then contracts forming a new current system, the so-called substorm current wedge. In past, its configuration could only be qualitatively described using ground-based magnetic field observations and global magnetohydrodynamic simulations. Its current structure is shown in the attached figure by orange lines for the 8 March 2009 substorm (Stephens et al., Journal of Geophysical Research, 2019). Currents present are obtained by taking the curl of the difference between the magnetic fields in the expansion and growth phase currents. Blue lines show the symmetric ring current. The green lines show currents connecting the ring current with the ionosphere, a relatively thin shell of partially ionized plasma surrounding the Earth at low altitudes. The inset shows the distribution of these currents in the ionosphere. Thus, the new machine learning approach provides a substantial advance in the empirical description of the magnetosphere and its evolution.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/14/2021<br>\n\t\t\t\t\tModified by: Mikhail&nbsp;Sitnov</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2021/1702147/1702147_10520178_1639499414170_Outcomes_Fig_2--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/1702147/1702147_10520178_1639499414170_Outcomes_Fig_2--rgov-800width.jpg\" title=\"New electric current systems forming during a substorm\"><img src=\"/por/images/Reports/POR/2021/1702147/1702147_10520178_1639499414170_Outcomes_Fig_2--rgov-66x44.jpg\" alt=\"New electric current systems forming during a substorm\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">3-D reconstruction of the substorm current wedge (SCW) for the 8 March 2009 substorm.</div>\n<div class=\"imageCredit\">Stephens, G. K., et al. (2019). Journal of Geophysical Research: Space Physics, 124, 1085-10.</div>\n<div class=\"imagePermisssions\">Copyright owner is an institution with an existing agreement allowing use by NSF</div>\n<div class=\"imageSubmitted\">Mikhail&nbsp;Sitnov</div>\n<div class=\"imageTitle\">New electric current systems forming during a substorm</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThe goal of this project was to reconstruct the magnetic field structure of the global magnetic shield of our planet, the magnetosphere and its evolution during active periods, magnetic storms and substorms. A new feature of this investigation is mining data in multidecade archives of the spaceborne magnetometer data. This machine learning technique uses the recurrent nature of storms and substorms to overcome the data paucity problem of spacecraft observations: At any moment, only less than a dozen probes are available for in-situ space observations. The historical data archives were mined first in the space of global parameters of the storm and substorm activity, the so-called geomagnetic indices. The mining procedure also took into account the energy input of the solar wind plasma interacting with the magnetosphere and driving storms and substorms. The resulting database subset selected for further magnetic field reconstruction contains not only a few points available at the moment of interest, but also their nearest neighbors, tens of thousands of points neighboring the point of interest in the multi-dimensional space formed by storm and substorm indices, as well as the solar wind input parameters, its induced electric field. At the second step, the magnetometer data from the selected subset of the nearest neighbors, the moments in time when the magnetosphere was in states similar to the event of interest, was used to create an instant event-oriented model of the magnetosphere using the representation of its magnetic field in the form of a set of basis functions. \n\nAs a result, the storm and substorm structure of the magnetosphere has been reconstructed in many important details. This includes the reconstruction of the storm-time, so-called ring current in the inner magnetosphere, including its innermost eastward component, which is critical for further reconstruction of the ring current plasma pressure, a key distribution used in many first-principles models of storms. It is shown that the mining procedure can be significantly improved to take into account the distance from each nearest neighbor to the event of interest. This distance-weighted mining becomes particularly efficient in the reconstruction of strong storms, responsible for the extreme space weather events that may affect the spaceborne assets, astronauts, as well as the ground-based infrastructure, including pipelines and extended power grids.\n\nMagnetospheric substorms differ from storms by smaller time scales (hours instead of days) and the high latitude of their main magnetic disturbances. Due to their frequent recurrence, they can also be successfully reconstructed in spite of the fact that the corresponding reconfiguration of the magnetosphere is more complex, compared to storms. During substorms, the magnetospheric magnetic field first stretches on the night side in the antisunward direction and then contracts forming a new current system, the so-called substorm current wedge. In past, its configuration could only be qualitatively described using ground-based magnetic field observations and global magnetohydrodynamic simulations. Its current structure is shown in the attached figure by orange lines for the 8 March 2009 substorm (Stephens et al., Journal of Geophysical Research, 2019). Currents present are obtained by taking the curl of the difference between the magnetic fields in the expansion and growth phase currents. Blue lines show the symmetric ring current. The green lines show currents connecting the ring current with the ionosphere, a relatively thin shell of partially ionized plasma surrounding the Earth at low altitudes. The inset shows the distribution of these currents in the ionosphere. Thus, the new machine learning approach provides a substantial advance in the empirical description of the magnetosphere and its evolution.\n\n\t\t\t\t\tLast Modified: 12/14/2021\n\n\t\t\t\t\tSubmitted by: Mikhail Sitnov"
+ }
+}

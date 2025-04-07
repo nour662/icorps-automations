@@ -1,0 +1,113 @@
+{
+ "awd_id": "1758043",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "CSR: Medium: Salt: combining ACID and BASE in a distributed database",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2017-07-01",
+ "awd_exp_date": "2019-09-30",
+ "tot_intn_awd_amt": 373823.0,
+ "awd_amount": 373823.0,
+ "awd_min_amd_letter_date": "2017-09-20",
+ "awd_max_amd_letter_date": "2017-09-20",
+ "awd_abstract_narration": "Most large web applications are built using distributed databases.                                  \r\nThis project tackles a fundamental question: as these applications                                  \r\ngrow, leading to more query and update processing, can we scale                                    \r\napplication performance without requiring a massive reprogramming                                  \r\neffort.  The premise of this project is that today's two leading database                          \r\nparadigms -- ACID and BASE -- are profoundly unsatisfying. ACID implementations                      \r\nprovide strong properties that make it easy to develop an application                              \r\nand reason about its correctness, but they struggle to keep up in                                  \r\nperformance and availability as the volume of accesses to the database                              \r\ngrows; and while the BASE programming paradigm can meet these needs,                                \r\nthe price is to give up all ACID guarantees, drastically increasing                                \r\nboth development time and the possibility of introducing bugs.  This                                \r\nproject aims to develop the new theoretical framework necessary to                                  \r\novercome this impasse and simultaneously support consistency, availability,                        \r\nand scalability; and to build a database prototype that implements the                              \r\nmechanisms necessary to support this new framework.                                                \r\n                                                                                                    \r\nThe project introduces a new programming framework that combines the ease                          \r\nof ACID transactions with the performance of a BASE implementation                                  \r\nby introducing a new abstraction, BASE transactions. The                                            \r\nsyntax and semantics of BASE transactions are driven by two                                        \r\ngoals. First, BASE transactions should achieve high performance and                                \r\navailability by loosening the overly-tight coupling between atomicity                              \r\nand isolation of the ACID paradigm, while nonetheless retaining its                                \r\nability to express and enforce the atomicity requirements motivated by                              \r\na given applications semantics. Second, it should be possible to                                  \r\nsurgically transform performance-critical ACID transactions into BASE                              \r\ntransactions without affecting either the correctness or the                                        \r\nperformance of the unmodified ACID transactions.                                                    \r\n                                                                                                    \r\nTo demonstrate this new programing framework, this project will develop                            \r\nSalt, a database that combines the desirable qualities of both ACID and BASE                        \r\nparadigms.  The project will apply this work to Health Care IT through a partnership                \r\nwith a 501(c)(3) entity in central Texas charged with providing health information                  \r\ntechnology solutions to local health care infrastructure.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Lorenzo",
+   "pi_last_name": "Alvisi",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Lorenzo Alvisi",
+   "pi_email_addr": "la13@cornell.edu",
+   "nsf_id": "000217257",
+   "pi_start_date": "2017-09-20",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Cornell University",
+  "inst_street_address": "341 PINE TREE RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "ITHACA",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6072555014",
+  "inst_zip_code": "148502820",
+  "inst_country_name": "United States",
+  "cong_dist_code": "19",
+  "st_cong_dist_code": "NY19",
+  "org_lgl_bus_name": "CORNELL UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "G56PUALJ3KT5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Cornell University",
+  "perf_str_addr": "413a Gates Hall",
+  "perf_city_name": "Ithaca",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "148535169",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "19",
+  "perf_st_cong_dist": "NY19",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0115",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001516DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2015,
+   "fund_oblg_amt": 64822.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 309001.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>Government, businesses, and individuals are showing ever growing interest in extracting value from large volumes of data, and distributed databases are the backbone of the infrastructure used to store and process that data.</span></p>\n<p><span>Scaling the performance of these systems to match the growing demands placed on them is hard. Trying to address this challenge, during the last decade several researchers in industry and academia have argued that the overhead of the &nbsp;traditional paradigm used to interact with databases (where data is accessed via transactions that &nbsp;offer strong correctness guarantees, even in the presence of failures--the so-called ACID guarantees) is too high.</span></p>\n<p><span>Instead, they have proposed an alternative approach, called BASE,&nbsp;&nbsp;that offers more limited correctness guarantees and a more streamlined interface for accessing data. Several studies have shown that code written in the BASE style can yield higher performance; however, it also significantly harder to get right. Applications need to be rewritten from scratch in the BASE style and, without the support of the stronger ACID guarantees, it is very easy for programmers to introduce subtle and not-so-subtle bugs in their code.</span></p>\n<p><span>In light of this tension between the ACID and BASE paradigms, this project started with the goal of answering a fundamental question: what is the right abstraction to support scalable and available storage and retrieval of data in a distributed database? &nbsp;</span></p>\n<p><span>This project aimed to restore the promise of ease of programming combined with availability and performance that has become a casualty of the ACID vs BASE debate--and its results have been quite encouraging.</span></p>\n<p><span>The first major outcome is a Salt isolation, technique&nbsp; that, starting from an application written in the easier-to-get-right ACID style, can boost the performance of applications by an order of magnitude, while requiring programmers to modify in BASE-like style only handful of performance critical transactions, leaving all others unmodified. The second major outcome is a novel approach to regulating conflicts between concurrently executing transactions, called Modular Concurrency Control (MCC). &nbsp;ACID applications running on top of MCC can, without requiring programmers to perform any code changes, come very close to matching Salt's performance figures. Both techniques have been evaluated through prototypes obtained by modifying a MySQL Cluster, a widely-used, open-source, distributed database.&nbsp;</span></p>\n<p><span>This work has resulted in several papers at the flagship venues for databases and distributed systems, formed the basis for three PhD theses,&nbsp; (and the core of the research of two ongoing Ph.D.s) and earned two Google Research Awards and a Facebook Faculty Research Award.</span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/02/2019<br>\n\t\t\t\t\tModified by: Lorenzo&nbsp;Alvisi</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nGovernment, businesses, and individuals are showing ever growing interest in extracting value from large volumes of data, and distributed databases are the backbone of the infrastructure used to store and process that data.\n\nScaling the performance of these systems to match the growing demands placed on them is hard. Trying to address this challenge, during the last decade several researchers in industry and academia have argued that the overhead of the  traditional paradigm used to interact with databases (where data is accessed via transactions that  offer strong correctness guarantees, even in the presence of failures--the so-called ACID guarantees) is too high.\n\nInstead, they have proposed an alternative approach, called BASE,  that offers more limited correctness guarantees and a more streamlined interface for accessing data. Several studies have shown that code written in the BASE style can yield higher performance; however, it also significantly harder to get right. Applications need to be rewritten from scratch in the BASE style and, without the support of the stronger ACID guarantees, it is very easy for programmers to introduce subtle and not-so-subtle bugs in their code.\n\nIn light of this tension between the ACID and BASE paradigms, this project started with the goal of answering a fundamental question: what is the right abstraction to support scalable and available storage and retrieval of data in a distributed database?  \n\nThis project aimed to restore the promise of ease of programming combined with availability and performance that has become a casualty of the ACID vs BASE debate--and its results have been quite encouraging.\n\nThe first major outcome is a Salt isolation, technique  that, starting from an application written in the easier-to-get-right ACID style, can boost the performance of applications by an order of magnitude, while requiring programmers to modify in BASE-like style only handful of performance critical transactions, leaving all others unmodified. The second major outcome is a novel approach to regulating conflicts between concurrently executing transactions, called Modular Concurrency Control (MCC).  ACID applications running on top of MCC can, without requiring programmers to perform any code changes, come very close to matching Salt's performance figures. Both techniques have been evaluated through prototypes obtained by modifying a MySQL Cluster, a widely-used, open-source, distributed database. \n\nThis work has resulted in several papers at the flagship venues for databases and distributed systems, formed the basis for three PhD theses,  (and the core of the research of two ongoing Ph.D.s) and earned two Google Research Awards and a Facebook Faculty Research Award.\n\n\t\t\t\t\tLast Modified: 12/02/2019\n\n\t\t\t\t\tSubmitted by: Lorenzo Alvisi"
+ }
+}

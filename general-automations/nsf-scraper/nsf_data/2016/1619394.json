@@ -1,0 +1,109 @@
+{
+ "awd_id": "1619394",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RI: Small: Recognizing Implicit Personal States in Natural Language",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tatiana Korelsky",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2019-06-30",
+ "tot_intn_awd_amt": 300000.0,
+ "awd_amount": 300000.0,
+ "awd_min_amd_letter_date": "2016-06-30",
+ "awd_max_amd_letter_date": "2016-06-30",
+ "awd_abstract_narration": "Narrative texts and personal conversations typically revolve around situations that people find themselves in. Current natural language systems extract only the literal meaning of events, failing to recognize how people are impacted by them.  For example, if a man says that he has been laid off or diagnosed with cancer, then a system should understand that he is in a negative situation. If a woman says that she just graduated from college or has been promoted at work, then a system should understand that she is in a positive situation. This project develops technology to automatically identify situations that positively or negatively impact people. Affective knowledge is essential for applications such as sentiment and social media analysis, for example to recognize at-risk individuals experiencing adverse situations that may make them a danger to themselves or others.\r\n\r\nThis research develops natural language processing technology to recognize implicit affective states associated with events.  Events and states are represented as situation frames and automatically harvested from large text corpora.  Implicating situations are learned from blogs using semi-supervised label propagation with context graphs to propagate positive/negative evidence based on topic clustering, event-event co-occurrence, and discourse relations. Implicating situations are learned from tweets using bootstrapping methods applied to affective and sarcastic tweets. Each affective situation is automatically assigned a polarity and connotative strength. This research advances human language technology toward fundamentally deeper language understanding about affective states, motivations, and goals for narrative text and conversational dialogue.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ellen",
+   "pi_last_name": "Riloff",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ellen M Riloff",
+   "pi_email_addr": "riloff@cs.utah.edu",
+   "nsf_id": "000204558",
+   "pi_start_date": "2016-06-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Utah",
+  "inst_street_address": "201 PRESIDENTS CIR",
+  "inst_street_address_2": "",
+  "inst_city_name": "SALT LAKE CITY",
+  "inst_state_code": "UT",
+  "inst_state_name": "Utah",
+  "inst_phone_num": "8015816903",
+  "inst_zip_code": "841129049",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "UT01",
+  "org_lgl_bus_name": "UNIVERSITY OF UTAH",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LL8GLEVH6MG3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Utah",
+  "perf_str_addr": "75 South 2000 East",
+  "perf_city_name": "Salt Lake City",
+  "perf_st_code": "UT",
+  "perf_st_name": "Utah",
+  "perf_zip_code": "841128930",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "UT01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 300000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>This project developed new human language technology (HLT) and&nbsp;</span>resources for recognizing \"affective events\" in natural language text. Affective events are situations that positively or negatively impact people.&nbsp; For example, if a man says that he has been laid off or diagnosed with cancer, then an HLT system should understand that he is in a negative situation. Or if a woman says that she just graduated from college or has been promoted at work, then an HLT system should understand that she is in a positive situation. Recognizing affective events is critical for many applications of human language techology, including implicit sentiment analysis, social media analysis, understanding narrative texts, conversational dialogue systems, and tools for assessing mental health (for example to identify at-risk individuals experiencing adverse situations that may make them a danger to themselves or others).</p>\n<p><span>This research produced a new weakly supervised algorithm for&nbsp;</span>identifying affective events from a large text collection and labeling them with polarity (positive or negative). This new Semantic Consistency (SC) model is an iterative algorithm that adjusts polarity values across a large graph of extracted events by optimizing for consistency across 3 types of semantic relations: semantic similarity, semantic opposition, and phrasal components. As input, the model relies only on existing sentiment analysis resources. The SC model outperformed previous methods, improving precision from 67.5% for the best competing model to 75.2% for the SC model, with an improvement to recall as well. As another line of work, this project also developed methods for automatically extracting affective events from Twitter. Twitter&nbsp;provides a continuous stream of natural language conversation among people from a diverse cross-section of the population, and much of the conversation focuses on events that affect people's lives on a daily basis. We developed a new weakly supervised method for harvesting affective events from Twitter that uses an existing sentiment lexicon for seeding followed by an iterative bootstrapping process that extracts probable affective events and learns new sentiment terms.</p>\n<p><span>This project also produced new methods to automatically classify&nbsp;</span>affective events with respect to human needs categories, which psychologists have proposed can often explain people's motivations, desires, and overall well-being. Specifically, this research developed new methods to identify whether an event satisfies/violates 7 basic human need categories: Physiological, Health, Leisure, Social, Financial, Cognition, and Freedom.&nbsp; This research produced a novel co-training model for this task that learns from both labeled and unlabeled data. The model uses two classifiers with complementary views of the data: one model uses only the words in a phrase, and the other model uses the contexts surrounding instances of a phrase.&nbsp; The co-training model achieved better results than classifiers trained only with labeled data, yielding gains in both precision and recall. A subsequent model further improved results by incorporating a new method for lightly supervised semantic classification of terms.</p>\n<p><span>The results of this research have been made publicly available,&nbsp;</span>including publications, evaluation data sets, and an Affective Events Knowledge Base (AffectEventKB). The AffectEventKB was automatically produced by applying the new SC model to a large collection of blog posts and contains over 175,000 affective event phrases: 82,000 positive events and 93,000 negative events.&nbsp; This collection of affective event phrases is freely available for other researchers to use, to improve affective text analysis for other HLT tasks and for relevant applications such as mental health analysis, social media analysis of public health, and social science research.</p>\n<div><span><br /></span></div>\n<p><span><br /></span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/29/2019<br>\n\t\t\t\t\tModified by: Ellen&nbsp;M&nbsp;Riloff</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project developed new human language technology (HLT) and resources for recognizing \"affective events\" in natural language text. Affective events are situations that positively or negatively impact people.  For example, if a man says that he has been laid off or diagnosed with cancer, then an HLT system should understand that he is in a negative situation. Or if a woman says that she just graduated from college or has been promoted at work, then an HLT system should understand that she is in a positive situation. Recognizing affective events is critical for many applications of human language techology, including implicit sentiment analysis, social media analysis, understanding narrative texts, conversational dialogue systems, and tools for assessing mental health (for example to identify at-risk individuals experiencing adverse situations that may make them a danger to themselves or others).\n\nThis research produced a new weakly supervised algorithm for identifying affective events from a large text collection and labeling them with polarity (positive or negative). This new Semantic Consistency (SC) model is an iterative algorithm that adjusts polarity values across a large graph of extracted events by optimizing for consistency across 3 types of semantic relations: semantic similarity, semantic opposition, and phrasal components. As input, the model relies only on existing sentiment analysis resources. The SC model outperformed previous methods, improving precision from 67.5% for the best competing model to 75.2% for the SC model, with an improvement to recall as well. As another line of work, this project also developed methods for automatically extracting affective events from Twitter. Twitter provides a continuous stream of natural language conversation among people from a diverse cross-section of the population, and much of the conversation focuses on events that affect people's lives on a daily basis. We developed a new weakly supervised method for harvesting affective events from Twitter that uses an existing sentiment lexicon for seeding followed by an iterative bootstrapping process that extracts probable affective events and learns new sentiment terms.\n\nThis project also produced new methods to automatically classify affective events with respect to human needs categories, which psychologists have proposed can often explain people's motivations, desires, and overall well-being. Specifically, this research developed new methods to identify whether an event satisfies/violates 7 basic human need categories: Physiological, Health, Leisure, Social, Financial, Cognition, and Freedom.  This research produced a novel co-training model for this task that learns from both labeled and unlabeled data. The model uses two classifiers with complementary views of the data: one model uses only the words in a phrase, and the other model uses the contexts surrounding instances of a phrase.  The co-training model achieved better results than classifiers trained only with labeled data, yielding gains in both precision and recall. A subsequent model further improved results by incorporating a new method for lightly supervised semantic classification of terms.\n\nThe results of this research have been made publicly available, including publications, evaluation data sets, and an Affective Events Knowledge Base (AffectEventKB). The AffectEventKB was automatically produced by applying the new SC model to a large collection of blog posts and contains over 175,000 affective event phrases: 82,000 positive events and 93,000 negative events.  This collection of affective event phrases is freely available for other researchers to use, to improve affective text analysis for other HLT tasks and for relevant applications such as mental health analysis, social media analysis of public health, and social science research.\n\n\n\n\n\n\n \n\n\t\t\t\t\tLast Modified: 10/29/2019\n\n\t\t\t\t\tSubmitted by: Ellen M Riloff"
+ }
+}

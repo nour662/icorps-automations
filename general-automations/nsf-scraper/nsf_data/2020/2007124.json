@@ -1,0 +1,101 @@
+{
+ "awd_id": "2007124",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CNS Core: Small: Re-engineering Applications for Tensor Processing Units",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2020-07-15",
+ "awd_exp_date": "2024-06-30",
+ "tot_intn_awd_amt": 495000.0,
+ "awd_amount": 495000.0,
+ "awd_min_amd_letter_date": "2020-07-10",
+ "awd_max_amd_letter_date": "2020-07-10",
+ "awd_abstract_narration": "To overcome the inefficiency of conventional processors for machine learning (ML) and artificial intelligence (AI) computing applications, hardware accelerators that provide operators to compute on tensors/matrices directly emerge in all types of computer systems. Any application that naturally consumes and produces tensors/matrices may take advantage of these accelerators. However, these accelerators might only be used for ML/AI applications due to the lack of an appropriate programming interface and system support. This project will bridge the gap of making these accelerators available for more applications. This project will redesign applications to use these accelerators to improve performance and energy.\r\n\r\nThis project will (1) build real systems using commercialized ML/AI accelerators (e.g., Google's Tensor Processing Units (TPUs)), (2) develop a programming interface that allows programmers to create any type of application on the built system, (3) redesign the algorithms of applications to use efficiently the operators that TPUs offer, (4) compose library functions and runtime systems to process efficiently tasks but hide complexity from programmers, and (5) revisit the design of the storage subsystem to supply data more efficiently. Through these aforementioned tasks, this project will demonstrate the challenges and analyze the potentials of extending the applications of TPUs. \r\n\r\nThis project, if successful, will provide the first general-purpose programming platform for TPUs. By making the outcomes available to the public, this project will be available to all research areas that depend on computation/analytics of tensor/matrix datasets. In fact, the target applications in this project already cover database systems, bioinformatics algorithms and physics simulations.  This project will also offer research/learning opportunities for a general audience, interdisciplinary researchers, and minority groups by classroom teaching, publications, talks and undergraduate summer interns.\r\n\r\nThe research outcomes will be made through peer-reviewed conference and journal papers. The code developed and the configurations of hardware platforms will be publicly available through third party repository services (https://github.com/escalab/) after the research outcome is published. A cloud data storage service will be used to store all raw experimental data, copies of source code and applications datasets for at least three years and make them available upon appropriate requests.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Hung-Wei",
+   "pi_last_name": "Tseng",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Hung-Wei Tseng",
+   "pi_email_addr": "htseng@ucr.edu",
+   "nsf_id": "000728421",
+   "pi_start_date": "2020-07-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Riverside",
+  "inst_street_address": "200 UNIVERSTY OFC BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "RIVERSIDE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9518275535",
+  "inst_zip_code": "925210001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "39",
+  "st_cong_dist_code": "CA39",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF CALIFORNIA AT RIVERSIDE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "MR5QC5FCAVH5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Riverside",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "925210001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "39",
+  "perf_st_cong_dist": "CA39",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7354",
+   "pgm_ref_txt": "COMPUTER SYSTEMS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 495000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><br />As Dennard scaling is discontinued, computer architects seek performance scaling with improved process technologies through domain/application-specific accelerators. The most significant domain-specific accelerator that becomes ubiquitous during the project period is indeed the one this project targets: tensor accelerators, or more specifically, AI/ML accelerators. However, before this project, these accelerators were only available for AI/ML accelerators despite their mathematical functions serving as the cores of many applications beyond the domains of AI and ML.&nbsp;</p>\n<p><br />This work democratizes AI/ML accelerators, focusing on commercialized tensor processing units (TPUs) and tensor cores. It produces several critical software/hardware systems and programming interfaces that promote a broader spectrum of applications beyond AI/ML using both accelerators.&nbsp;</p>\n<p><br />The first is the GPTPU system, which provides an OpenCL-like programming interface to facilitate the authoring of applications outside the AI/ML domain. Through library functions accelerating the core matrix multiplications/convolutions in various applications covering various domains, this project demonstrates 2.46x speedup over more power-consuming CPU cores. More importantly, we show a 40% reduction in energy consumption and also reduced carbon footprints.&nbsp;</p>\n<p><br />The second system is a database system, TCUDB, where we transformed the entrenched hash-join algorithms that optimize for CPU architecture to leverage the matrix multiplication hardware that Tensor Cores feature. The resulting system shows 288x speedup compared with the state-of-the-art database engines in the critical entity matching problems for data mining. As the developed engine supports standard SQL query languages, the system also accepts and accelerates any database request that requires join operations.</p>\n<p><br />The third system is a hardware/software co-designed architecture, SIMD^2, where we proposed using matrix-semiring as a programming paradigm for matrix-based hardware accelerators. With matrix semi-ring as the theoretical background, we generalized the semantics of matrix multiplications to solve shortest path problems, spanning tree problems, and nearest neighbors problems. Through the implicit, massive parallelism in matrix-semiring theory, SIMD^2 can parallelize the path and tree problems without efficient parallel implementations on modern hardware. The extension of hardware to support operations beyond matrix multiplications accounts for 5% of the area overhead due to the large reuse of processing elements. The resulting system achieves up to 39x speedup compared to state-of-the-art GPU implementations of solvers for the same problem.</p>\n<p><br />In addition to the three large-scale systems, the project also lead to the development of TPUPoint, a profiling tool of Cloud TPUs. This project uses the insights that TPUPoint generates to guide and motivate the proposed approaches/systems. Leveraging a similar idea as TCUDB, this project also revisited a set of computer vision algorithms and tensorized those critical preprocessing stages in ML pipelines to maximize the use of tensor processing units instead of letting them idle and waste energy. We also released a benchmark suite, Accel-Bench, that contains our exploration of tensorizing applications and expects to inspire future research along the same line of research.&nbsp;</p>\n<p><br />The project also leads to developing an innovative data storage system, NDS. The system breaks the conventional rule of linear address spaces in storage system abstractions but promotes the concept of multi-dimensional building blocks to more efficiently support the multi-dimensional processing models for modern AI/ML accelerators. The result also shows a 5.7x speedup without upgrading GPU/accelerator hardware components.&nbsp;</p>\n<p><br />This work resulted in the release of 7 open-source projects on GitHub, ten papers, an award paper (top picks in computer architecture, recognizing the top research publications from the prior year), several invited research, and distinguished lecture talks at universities and industry locations. The result of the work also becomes part of the materials in the PI's operating systems and computer architecture classes. Among the students who have worked on the project and the PI mentored, four have joined the industry, one in the National Laboratory.</p><br>\n<p>\n Last Modified: 09/11/2024<br>\nModified by: Hung-Wei&nbsp;Tseng</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\n\nAs Dennard scaling is discontinued, computer architects seek performance scaling with improved process technologies through domain/application-specific accelerators. The most significant domain-specific accelerator that becomes ubiquitous during the project period is indeed the one this project targets: tensor accelerators, or more specifically, AI/ML accelerators. However, before this project, these accelerators were only available for AI/ML accelerators despite their mathematical functions serving as the cores of many applications beyond the domains of AI and ML.\n\n\n\nThis work democratizes AI/ML accelerators, focusing on commercialized tensor processing units (TPUs) and tensor cores. It produces several critical software/hardware systems and programming interfaces that promote a broader spectrum of applications beyond AI/ML using both accelerators.\n\n\n\nThe first is the GPTPU system, which provides an OpenCL-like programming interface to facilitate the authoring of applications outside the AI/ML domain. Through library functions accelerating the core matrix multiplications/convolutions in various applications covering various domains, this project demonstrates 2.46x speedup over more power-consuming CPU cores. More importantly, we show a 40% reduction in energy consumption and also reduced carbon footprints.\n\n\n\nThe second system is a database system, TCUDB, where we transformed the entrenched hash-join algorithms that optimize for CPU architecture to leverage the matrix multiplication hardware that Tensor Cores feature. The resulting system shows 288x speedup compared with the state-of-the-art database engines in the critical entity matching problems for data mining. As the developed engine supports standard SQL query languages, the system also accepts and accelerates any database request that requires join operations.\n\n\n\nThe third system is a hardware/software co-designed architecture, SIMD^2, where we proposed using matrix-semiring as a programming paradigm for matrix-based hardware accelerators. With matrix semi-ring as the theoretical background, we generalized the semantics of matrix multiplications to solve shortest path problems, spanning tree problems, and nearest neighbors problems. Through the implicit, massive parallelism in matrix-semiring theory, SIMD^2 can parallelize the path and tree problems without efficient parallel implementations on modern hardware. The extension of hardware to support operations beyond matrix multiplications accounts for 5% of the area overhead due to the large reuse of processing elements. The resulting system achieves up to 39x speedup compared to state-of-the-art GPU implementations of solvers for the same problem.\n\n\n\nIn addition to the three large-scale systems, the project also lead to the development of TPUPoint, a profiling tool of Cloud TPUs. This project uses the insights that TPUPoint generates to guide and motivate the proposed approaches/systems. Leveraging a similar idea as TCUDB, this project also revisited a set of computer vision algorithms and tensorized those critical preprocessing stages in ML pipelines to maximize the use of tensor processing units instead of letting them idle and waste energy. We also released a benchmark suite, Accel-Bench, that contains our exploration of tensorizing applications and expects to inspire future research along the same line of research.\n\n\n\nThe project also leads to developing an innovative data storage system, NDS. The system breaks the conventional rule of linear address spaces in storage system abstractions but promotes the concept of multi-dimensional building blocks to more efficiently support the multi-dimensional processing models for modern AI/ML accelerators. The result also shows a 5.7x speedup without upgrading GPU/accelerator hardware components.\n\n\n\nThis work resulted in the release of 7 open-source projects on GitHub, ten papers, an award paper (top picks in computer architecture, recognizing the top research publications from the prior year), several invited research, and distinguished lecture talks at universities and industry locations. The result of the work also becomes part of the materials in the PI's operating systems and computer architecture classes. Among the students who have worked on the project and the PI mentored, four have joined the industry, one in the National Laboratory.\t\t\t\t\tLast Modified: 09/11/2024\n\n\t\t\t\t\tSubmitted by: Hung-WeiTseng\n"
+ }
+}

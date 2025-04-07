@@ -1,0 +1,125 @@
+{
+ "awd_id": "1912716",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "High Order Numerical Methods for Gravitational Wave Computations",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2019-07-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 275000.0,
+ "awd_amount": 275000.0,
+ "awd_min_amd_letter_date": "2019-06-20",
+ "awd_max_amd_letter_date": "2019-06-20",
+ "awd_abstract_narration": "The research area of black hole astrophysics has experienced a major transformation as a result of multiple recent breakthroughs -- a Nobel Prize-winning discovery of gravitational waves from black hole and neutron star binary systems by the US LIGO detectors, and the first-ever image of the horizon of a black hole by the Event Horizon Telescope. Gravitational waves were predicted by Einstein himself a century ago and had never been directly observed before. Ongoing observations of these waves from compact binary systems will be used to obtain additional information about exotic astrophysical objects in the universe like black holes and neutron stars. LIGO has also generated significant spin-off technologies and strongly drawn public attention towards STEM disciplines. This proposed project aids in the development of advanced computational models that will play a very critical role in the future success of LIGO and upcoming space-borne missions like LISA. The main objective of the proposed project is to develop new computational techniques to meet the high-accuracy and high-efficiency requirements set by the LIGO and LISA data-analysis effort. This project includes support for students (including women and minorities) and therefore directly contributes to student mentorship, traineeship, and retention in an important STEM area. The computational skills that the students develop are broadly applicable, and therefore would allow them access to a variety of career options, including in areas of great national need. Previous research projects by the PIs have been discussed in the general media, and this work also has great potential at being successful for outreach to the general public.\r\n\r\nThe proposed work addresses the \"Windows on the Universe\" challenge by developing and adapting spatial and time-evolution methods for use in gravitational wave simulations. Specifically, Aim 1 will develop a one dimensional discontinuous Galerkin method to solve the Teukolsky equations. This method tracks the particle and keeps it at the domain interfaces while computing the derivatives of the Dirac delta functions as matching conditions at the boundary of the domain. This approach simulates the in-spiral phase to extremely high accuracy. However, for an accurate simulation of the plunge and ring-down phase we require a shock capturing scheme that can handle derivatives of the Dirac delta function and provide highly efficient and accurate multi-dimensional numerical results. For this, Aim 2 will develop a very high order WENO solver that will include the ability to handle up to third derivatives of the Dirac delta function and be made highly efficient in the regions away from the discontinuity. Finally, efficient and accurate time evolution approaches must be tailored to the spatial schemes in Aims 1 and 2. For this, Aim 3 will develop stable and efficient time-discretizations tailored for the spatial schemes in Aims 1 and 2. For each spatial discretization, time-discretization approaches such as Runge-Kutta and multi-step Runge-Kutta methods will be tailored such that the methods are low storage, computationally efficient, have small dispersion errors, small error constants, and stability regions that are tailored to the spatial discretization, and (for WENO) optimal SSP time-steps. The proposed developments in both spatial and temporal discretizations will lead to more efficient methods that can accurately and efficiently handle long time-integration and the presence of Dirac delta functions and its derivatives. Furthermore, the development of an accurate, efficient numerical solver capable of generating waveforms over sizable portions of the parameter space is a major advance in the computation of gravitational waves, and will thus have a major impact on the field of gravitational wave science.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Scott",
+   "pi_last_name": "Field",
+   "pi_mid_init": "E",
+   "pi_sufx_name": "",
+   "pi_full_name": "Scott E Field",
+   "pi_email_addr": "sfield@umassd.edu",
+   "nsf_id": "000606773",
+   "pi_start_date": "2019-06-20",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Sigal",
+   "pi_last_name": "Gottlieb",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sigal Gottlieb",
+   "pi_email_addr": "sgottlieb@umassd.edu",
+   "nsf_id": "000242545",
+   "pi_start_date": "2019-06-20",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Gaurav",
+   "pi_last_name": "Khanna",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Gaurav Khanna",
+   "pi_email_addr": "gkhanna@uri.edu",
+   "nsf_id": "000209429",
+   "pi_start_date": "2019-06-20",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Massachusetts, Dartmouth",
+  "inst_street_address": "285 OLD WESTPORT RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "NORTH DARTMOUTH",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "5089998953",
+  "inst_zip_code": "027472356",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "MA09",
+  "org_lgl_bus_name": "UNIVERSITY OF MASSACHUSETTS DARTMOUTH",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "PMMKPCKNN9R2"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Massachusetts, Dartmouth",
+  "perf_str_addr": "285 Old Westport Rd",
+  "perf_city_name": "North Dartmouth",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "027472300",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "09",
+  "perf_st_cong_dist": "MA09",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 275000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The project's primary goal is to develop new computational techniques to meet the high-accuracy and high-efficiency requirements set by next-generation gravitational-wave observatory data analysis efforts. Two different numerical methodologies have been developed to accomplish this goal. A novel mixed-precision, higher-order mixed-precision weighted essentially non-oscillatory (WENO) solver that outperforms higher-order finite-difference methods was developed. Furthermore, the solver's performance was evaluated using ORNL's Summit, the largest GPU system in the United States. We also developed a spectrally accurate Discontinuous Galerkin (DG) method for linear wave equations involving distributional source terms and applied this technique to a test problem relevant to the astrophysically critical gravitational radiation case.&nbsp;</p>\n<p><br />The developed computational models are leading to a much deeper understanding of black hole systems. Our WENO solver was used to produce numerous high-impact scientific results by computing accurate gravitational waveforms, in addition to other scientific studies, including surrogate model building and Bayesian inference using these models. Our high-accuracy waveform model produced with the newly developed mixed precision WENO solver contributed to the open-source black hole perturbation toolkit. With our mixed precision WENO code, we also explored a special kind of black hole that violates black hole uniqueness, the so-called \"no hair\" theorem. Specifically, a computational study of extremal black holes -- holes that are \"saturated\" with the maximum charge or spin they can possibly carry -- found that there is a quantity that can be constructed from the spacetime curvature at the black hole horizon that is conserved and potentially measurable by a distant observer.</p>\n<p>Work supported by this NSF grant has been featured in Wired, Quanta, various international publications, and public outreach talks given by the investigators. In addition, this NSF grant supported education and mentorship for five STEM students at various career levels (Ph.D., MS, and undergraduate) and backgrounds, including multiple students from underrepresented groups. These students continue to follow a STEM career path in academics and industry, an area of national need. The investigators have been involved in the organization of a semester-long program at ICERM@Brown in Fall 2020 titled Advances in Computational Relativity. The program featured four workshops and also a public event with 2017 Nobel Laureate Dr. Kip S. Thorne. The project's investigators were deeply involved with other aspects of mathematics outreach, including supporting Hack.Diversity's Data Science Project and lecturing on computational mathematics for students supported through the&nbsp; National Research Experience for Undergraduates Program (NREUP).</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 01/23/2024<br>\nModified by: Scott&nbsp;E&nbsp;Field</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe project's primary goal is to develop new computational techniques to meet the high-accuracy and high-efficiency requirements set by next-generation gravitational-wave observatory data analysis efforts. Two different numerical methodologies have been developed to accomplish this goal. A novel mixed-precision, higher-order mixed-precision weighted essentially non-oscillatory (WENO) solver that outperforms higher-order finite-difference methods was developed. Furthermore, the solver's performance was evaluated using ORNL's Summit, the largest GPU system in the United States. We also developed a spectrally accurate Discontinuous Galerkin (DG) method for linear wave equations involving distributional source terms and applied this technique to a test problem relevant to the astrophysically critical gravitational radiation case.\n\n\n\nThe developed computational models are leading to a much deeper understanding of black hole systems. Our WENO solver was used to produce numerous high-impact scientific results by computing accurate gravitational waveforms, in addition to other scientific studies, including surrogate model building and Bayesian inference using these models. Our high-accuracy waveform model produced with the newly developed mixed precision WENO solver contributed to the open-source black hole perturbation toolkit. With our mixed precision WENO code, we also explored a special kind of black hole that violates black hole uniqueness, the so-called \"no hair\" theorem. Specifically, a computational study of extremal black holes -- holes that are \"saturated\" with the maximum charge or spin they can possibly carry -- found that there is a quantity that can be constructed from the spacetime curvature at the black hole horizon that is conserved and potentially measurable by a distant observer.\n\n\nWork supported by this NSF grant has been featured in Wired, Quanta, various international publications, and public outreach talks given by the investigators. In addition, this NSF grant supported education and mentorship for five STEM students at various career levels (Ph.D., MS, and undergraduate) and backgrounds, including multiple students from underrepresented groups. These students continue to follow a STEM career path in academics and industry, an area of national need. The investigators have been involved in the organization of a semester-long program at ICERM@Brown in Fall 2020 titled Advances in Computational Relativity. The program featured four workshops and also a public event with 2017 Nobel Laureate Dr. Kip S. Thorne. The project's investigators were deeply involved with other aspects of mathematics outreach, including supporting Hack.Diversity's Data Science Project and lecturing on computational mathematics for students supported through the National Research Experience for Undergraduates Program (NREUP).\n\n\n\t\t\t\t\tLast Modified: 01/23/2024\n\n\t\t\t\t\tSubmitted by: ScottEField\n"
+ }
+}

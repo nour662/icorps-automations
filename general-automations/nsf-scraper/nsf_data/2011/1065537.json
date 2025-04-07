@@ -1,0 +1,105 @@
+{
+ "awd_id": "1065537",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TC: Medium: Collaborative Research: Securing Web Advertisements: Fixing the Short-term Crisis and Addressing Long-term Challenges",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Nan Zhang",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2016-09-30",
+ "tot_intn_awd_amt": 615823.0,
+ "awd_amount": 615823.0,
+ "awd_min_amd_letter_date": "2011-04-18",
+ "awd_max_amd_letter_date": "2011-04-18",
+ "awd_abstract_narration": "Malicious and exploitable web advertisements (ads) are widely recognized as a major emerging source of online attacks and privacy violations.  Rogue ads can often escape existing weak defenses employed by ad networks and websites, inflicting much harm on end-users. This ad security crisis is exacerbated by several factors: complex mechanisms by which web ads are produced, distributed and deployed; weak filtering strategies of ad networks; web sites' inability to control content supplied by ad networks; and poor browser-level primitives for ad isolation and confinement.\r\n\r\nThis project tackles the ad crisis by developing a comprehensive framework that integrates and extends recent research on browser-level script sandboxing, bytecode in-lined reference monitoring, information flow analysis, and binary code certification. A key priority is to transparently preserve important web ad technologies, such as ad-billing, Flash-JavaScript interoperability, cross-site scripting, and ad network contextual targeting. The complementary strengths of the two PIs forms a natural synergy that lends itself to an elegant and easily adoptable framework for protecting users from the severe online security and privacy risks currently posed by malicious ads.\r\n\r\nWith the web advertisement industry estimated to be at a USD $50 billion mark in 2010, the techniques developed by this project are contributing to the vitality of this industry.  To maximize impact, the PIs are transitioning results from this research to the industrial sector engaged in the development of ads as well as their dissemination.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Venkat",
+   "pi_last_name": "Venkatakrishnan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Venkat Venkatakrishnan",
+   "pi_email_addr": "venkat@uic.edu",
+   "nsf_id": "000150699",
+   "pi_start_date": "2011-04-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Illinois at Chicago",
+  "inst_street_address": "809 S MARSHFIELD AVE M/C 551",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHICAGO",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "3129962862",
+  "inst_zip_code": "606124305",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "IL07",
+  "org_lgl_bus_name": "UNIVERSITY OF ILLINOIS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "W8XEAJDKMXH3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Illinois at Chicago",
+  "perf_str_addr": "809 S MARSHFIELD AVE M/C 551",
+  "perf_city_name": "CHICAGO",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "606124305",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "IL07",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779500",
+   "pgm_ele_name": "TRUSTWORTHY COMPUTING"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7795",
+   "pgm_ref_txt": "TRUSTWORTHY COMPUTING"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 615823.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p id=\"docs-internal-guid-0b3b2e01-573e-3548-80a0-2c3df323912c\" dir=\"ltr\"><span>This project tackled the problem of securing web advertisements (ads) by looking at this problem through the lens of various principals involved in the advertising ecosystem (four, consisting of end-users, publishers, ad networks, and ad authors). We developed separate layers of security assurance that protect the interests of each principal. Individually, we envisioned each of these security assurance layers to be functional and offer security independent of the other principals. Additionally, in case of mutual collaboration, our solution was designed to offer end-to-end protection guarantees.&nbsp;</span></p>\n<p dir=\"ltr\">&nbsp;</p>\n<p dir=\"ltr\"><span>An important technical goal of the project was to develop this framework to support the safe execution of ads from a vast majority of Internet resources. This meant that we support secure execution of ads written in JavaScript and Flash, the two predominant languages for authoring web-based ads. &nbsp;</span>We were successful in meeting this goal; and the resulting system, which we call FlashJaX, addresses current security vulnerabilities that span Flash and JavaScript domains. It, therefore, improves over other approaches that consider each domain in isolation. FlashJaX provides certain key features that distinguish it from prior work that includes &nbsp;policies that constrain the behaviors of interoperating Flash/JavaScript content and providing cross-language, temporal (trace) policies.&nbsp;</p>\n<p id=\"docs-internal-guid-8ef9323f-5742-ad49-eeeb-7d5406456bf7\" dir=\"ltr\"><span>Our second thrust area involves assisting publishers (e.g., sites like New York Times or Hotmail) to effectively specify security policies on advertisement content and enforce them. Our main goal of this thrust area is to extend the browser-level enforcement technologies described earlier above to operate efficiently by leveraging resources available to the publisher.</span></p>\n<p><span>We developed a platform for analysis of server- side applications. This platform uses dynamic taint analysis and symbolic execution to analyze the server-side code.&nbsp;<span id=\"docs-internal-guid-8ef9323f-5743-b843-232c-0e1b477a4e19\">that is able to offer protection from basic threats to publishers by offering&nbsp;</span></span>security guarantees. We also focused on&nbsp;<span id=\"docs-internal-guid-8ef9323f-5744-6e65-59ca-7544d73586d1\">software validation approaches for server-side scripting, binary, and bytecode languages in which such software is typically written. &nbsp;</span></p>\n<p><span>Overall, the project developed a number of broad technical approaches that improved the security of web publishers, advertisers, and end users. The results from this project were published in over two dozen papers in peer-reviewed conferences. Additionally, Ph.D. students, postdocs, and undergraduate students who worked on this project gained valuable research experience in the area of web security, programming languages and formal methods.</span></p>\n<p><span><br /></span></p>\n<p><span><span><br /></span></span></p>\n<p><span><br /></span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/19/2017<br>\n\t\t\t\t\tModified by: V. N.&nbsp;Venkatakrishnan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "This project tackled the problem of securing web advertisements (ads) by looking at this problem through the lens of various principals involved in the advertising ecosystem (four, consisting of end-users, publishers, ad networks, and ad authors). We developed separate layers of security assurance that protect the interests of each principal. Individually, we envisioned each of these security assurance layers to be functional and offer security independent of the other principals. Additionally, in case of mutual collaboration, our solution was designed to offer end-to-end protection guarantees. \n \nAn important technical goal of the project was to develop this framework to support the safe execution of ads from a vast majority of Internet resources. This meant that we support secure execution of ads written in JavaScript and Flash, the two predominant languages for authoring web-based ads.  We were successful in meeting this goal; and the resulting system, which we call FlashJaX, addresses current security vulnerabilities that span Flash and JavaScript domains. It, therefore, improves over other approaches that consider each domain in isolation. FlashJaX provides certain key features that distinguish it from prior work that includes  policies that constrain the behaviors of interoperating Flash/JavaScript content and providing cross-language, temporal (trace) policies. \nOur second thrust area involves assisting publishers (e.g., sites like New York Times or Hotmail) to effectively specify security policies on advertisement content and enforce them. Our main goal of this thrust area is to extend the browser-level enforcement technologies described earlier above to operate efficiently by leveraging resources available to the publisher.\n\nWe developed a platform for analysis of server- side applications. This platform uses dynamic taint analysis and symbolic execution to analyze the server-side code. that is able to offer protection from basic threats to publishers by offering security guarantees. We also focused on software validation approaches for server-side scripting, binary, and bytecode languages in which such software is typically written.  \n\nOverall, the project developed a number of broad technical approaches that improved the security of web publishers, advertisers, and end users. The results from this project were published in over two dozen papers in peer-reviewed conferences. Additionally, Ph.D. students, postdocs, and undergraduate students who worked on this project gained valuable research experience in the area of web security, programming languages and formal methods.\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\tLast Modified: 02/19/2017\n\n\t\t\t\t\tSubmitted by: V. N. Venkatakrishnan"
+ }
+}

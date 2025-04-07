@@ -1,0 +1,101 @@
+{
+ "awd_id": "1943649",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SBIR Phase I:  Development of an automated, cost-effective bat activity and mortality monitoring system",
+ "cfda_num": "47.084",
+ "org_code": "15030000",
+ "po_phone": "7032928772",
+ "po_email": "patherto@nsf.gov",
+ "po_sign_block_name": "Peter Atherton",
+ "awd_eff_date": "2020-03-15",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 224617.0,
+ "awd_amount": 224617.0,
+ "awd_min_amd_letter_date": "2020-03-03",
+ "awd_max_amd_letter_date": "2020-03-03",
+ "awd_abstract_narration": "The broader impact of this Small Business Innovation Research (SBIR) Phase I project will be to facilitate the use of wind energy.  While wind turbines are a carbon-free energy source, they may impact the habitats of birds and bats; recently, bats have emerged as a critical focus for the wind industry since there are several threatened and endangered North American bat species whose territories overlap with existing and planned wind development sites. The current method of determining an onshore wind turbine\u2019s impact on wildlife requires biologists to walk transects in cleared plots around the turbines looking for carcasses.  This method is not only expensive, it also leads to uncertain impact estimates.  For offshore wind turbines there is currently no method for determining impacts, which may hinder the ability to permit projects. This project will provide a tool for automatically assessing bat mortality around industrial wind turbines. \r\n\r\nThis Small Business Innovation Research Phase I project will use structured light imaging and advanced computer vision to detect bat mortality around utility-scale wind turbines.  The concept is to mount near-infrared (NIR) cameras and illuminators to the turbine and continuously record images at night during bat activity.  Image processing techniques will be used to identify bat activity along so-called \"tracks\" as two-dimensional flight paths. Projecting a known NIR source into the image field in a structured light imaging process generates a reference for depth calculations, allowing the measurement of the heading and range of a carcass.  These measurements will enable the development of systems to prevent wildlife injuries in the future.  During this Phase I project a prototype system will be built and tested at an operational wind turbine.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "TIP",
+ "org_dir_long_name": "Directorate for Technology, Innovation, and Partnerships",
+ "div_abbr": "TI",
+ "org_div_long_name": "Translational Impacts",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Brogan",
+   "pi_last_name": "Morton",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Brogan Morton",
+   "pi_email_addr": "brogan@wildlifeimagingsystems.com",
+   "nsf_id": "000806365",
+   "pi_start_date": "2020-03-03",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "WILDLIFE IMAGING SYSTEMS LLC",
+  "inst_street_address": "328 MECHANICSVILLE RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "HINESBURG",
+  "inst_state_code": "VT",
+  "inst_state_name": "Vermont",
+  "inst_phone_num": "8023439889",
+  "inst_zip_code": "054619152",
+  "inst_country_name": "United States",
+  "cong_dist_code": "00",
+  "st_cong_dist_code": "VT00",
+  "org_lgl_bus_name": "WILDLIFE IMAGING SYSTEMS LLC",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HG37VNH2YKN8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "WILDLIFE IMAGING SYSTEMS LLC",
+  "perf_str_addr": "328 MECHANICSVILLE RD",
+  "perf_city_name": "HINESBURG",
+  "perf_st_code": "VT",
+  "perf_st_name": "Vermont",
+  "perf_zip_code": "054619152",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "00",
+  "perf_st_cong_dist": "VT00",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "537100",
+   "pgm_ele_name": "SBIR Phase I"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8033",
+   "pgm_ref_txt": "Hardware Software Integration"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 224617.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Wildlife Imaging Systems developed and successfully tested a prototype system to automatically detect wildlife mortality around utility-scale wind turbines using a night vision camera system coupled with computer vision and machine learning algorithms. The current method of determining a wind turbine&rsquo;s impact on wildlife requires biologists to walk transects in cleared plots around the turbines looking for carcasses. This method is not only expensive, it also leads to uncertain impact estimates. For offshore wind turbine&rsquo;s there is currently no methods for determining impacts, which may hinder the ability to permit projects.</p>\n<p>Our system went through two rounds of testing.&nbsp; The first we call &lsquo;proof-of-concept&rsquo; testing and involved capturing raw video footage from a single camera then applying the algorithms to the video stream after the fact.&nbsp; This allowed us to do two things; prove that the algorithmic detection of wildlife at night was possible using infrared light and to experiment with both physical hardware settings and algorithmic hyperparameters to find optimal performance. Once we found the best performance, we moved to the &lsquo;prototype&rsquo; testing phase.&nbsp; This involved using multiple cameras and an edge computing device running production code to perform the image capture, object detection in real-time, and logging of the results into a database on-board the edge device.&nbsp; We successfully tested the exact hardware configuration that we intend to deploy in field trials on actual wind turbines next year.</p>\n<p>While the initial focus of the system was on detecting bat mortality at night, our customer discovery research revealed that birds, especially eagles, were also an important species to consider. Due to the difference in both the performance required and price sensitivity of the eagle and bat use cases, a single system that tries to solve all the use cases has little chance of finding commercial success. Instead, we took a platform approach where the software will remain constant, but the cameras and illumination (if required) will be modular and can be scaled to hit the right price point.</p>\n<p>During the latter half of our efforts, we were able to perform cost modeling to better understand the price point the system would have to hit to gain market traction.&nbsp; The price point was lower than our initial estimates and did send us back to the drawing board to optimize the system. The main sticking point was that the automated system still requires a human to retrieve the carcass for speciation, so the reduction in labor was not as pronounced as hoped.&nbsp; This leads to a solution that was not going to be an obvious commercial improvement over the status quo and would require several years of validation before market acceptance. The most important thing that we realized was that the most unique aspect of the automated system, its ability to find the exact time of wildlife mortality, did not yield any direct benefits when the system was used only as a replacement for mortality monitoring for bats.</p>\n<p>This led to a significant pivot for the project, instead of worrying about detecting bat carcasses over a wide range (&gt;50m), we are now going to focus on detecting the carcass time of arrival exclusively using less expensive cameras, lighting, and edge computing at a shorter range (&lt;25m), which is where many carcasses fall.&nbsp; This &lsquo;supplemental&rsquo; information should be much more valuable and does not require a human to find the carcass once the system is validated.&nbsp; Based on further conversations with wind industry environmental managers we believe that this will provide significant value and should allow them to reduce the current levels of bat mortality through site specific risk modeling.</p>\n<p>We did not pursue an NSF Phase 2 SBIR grant.&nbsp; Instead, we responded to a Department of Energy SBIR topic that aligned with the goals of our NSF SBIR project.&nbsp; We were awarded a Phase 1 DOE SBIR grant and will continue our wildlife detection work using both cameras and millimeter-wave radar, which may provide a less costly option. We intend to perform in-field prototype testing at operational wind turbines in 2022.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/01/2021<br>\n\t\t\t\t\tModified by: Brogan&nbsp;Morton</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nWildlife Imaging Systems developed and successfully tested a prototype system to automatically detect wildlife mortality around utility-scale wind turbines using a night vision camera system coupled with computer vision and machine learning algorithms. The current method of determining a wind turbine\u2019s impact on wildlife requires biologists to walk transects in cleared plots around the turbines looking for carcasses. This method is not only expensive, it also leads to uncertain impact estimates. For offshore wind turbine\u2019s there is currently no methods for determining impacts, which may hinder the ability to permit projects.\n\nOur system went through two rounds of testing.  The first we call \u2018proof-of-concept\u2019 testing and involved capturing raw video footage from a single camera then applying the algorithms to the video stream after the fact.  This allowed us to do two things; prove that the algorithmic detection of wildlife at night was possible using infrared light and to experiment with both physical hardware settings and algorithmic hyperparameters to find optimal performance. Once we found the best performance, we moved to the \u2018prototype\u2019 testing phase.  This involved using multiple cameras and an edge computing device running production code to perform the image capture, object detection in real-time, and logging of the results into a database on-board the edge device.  We successfully tested the exact hardware configuration that we intend to deploy in field trials on actual wind turbines next year.\n\nWhile the initial focus of the system was on detecting bat mortality at night, our customer discovery research revealed that birds, especially eagles, were also an important species to consider. Due to the difference in both the performance required and price sensitivity of the eagle and bat use cases, a single system that tries to solve all the use cases has little chance of finding commercial success. Instead, we took a platform approach where the software will remain constant, but the cameras and illumination (if required) will be modular and can be scaled to hit the right price point.\n\nDuring the latter half of our efforts, we were able to perform cost modeling to better understand the price point the system would have to hit to gain market traction.  The price point was lower than our initial estimates and did send us back to the drawing board to optimize the system. The main sticking point was that the automated system still requires a human to retrieve the carcass for speciation, so the reduction in labor was not as pronounced as hoped.  This leads to a solution that was not going to be an obvious commercial improvement over the status quo and would require several years of validation before market acceptance. The most important thing that we realized was that the most unique aspect of the automated system, its ability to find the exact time of wildlife mortality, did not yield any direct benefits when the system was used only as a replacement for mortality monitoring for bats.\n\nThis led to a significant pivot for the project, instead of worrying about detecting bat carcasses over a wide range (&gt;50m), we are now going to focus on detecting the carcass time of arrival exclusively using less expensive cameras, lighting, and edge computing at a shorter range (&lt;25m), which is where many carcasses fall.  This \u2018supplemental\u2019 information should be much more valuable and does not require a human to find the carcass once the system is validated.  Based on further conversations with wind industry environmental managers we believe that this will provide significant value and should allow them to reduce the current levels of bat mortality through site specific risk modeling.\n\nWe did not pursue an NSF Phase 2 SBIR grant.  Instead, we responded to a Department of Energy SBIR topic that aligned with the goals of our NSF SBIR project.  We were awarded a Phase 1 DOE SBIR grant and will continue our wildlife detection work using both cameras and millimeter-wave radar, which may provide a less costly option. We intend to perform in-field prototype testing at operational wind turbines in 2022.\n\n\t\t\t\t\tLast Modified: 09/01/2021\n\n\t\t\t\t\tSubmitted by: Brogan Morton"
+ }
+}

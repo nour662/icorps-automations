@@ -1,0 +1,105 @@
+{
+ "awd_id": "1718477",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NeTS:Small:Optimal Learning Times for Task-Oriented Communication Networks",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922981",
+ "po_email": "pregalia@nsf.gov",
+ "po_sign_block_name": "Phillip Regalia",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2022-08-31",
+ "tot_intn_awd_amt": 477478.0,
+ "awd_amount": 477478.0,
+ "awd_min_amd_letter_date": "2017-08-30",
+ "awd_max_amd_letter_date": "2017-08-30",
+ "awd_abstract_narration": "Communication networks must support a diverse set of tasks while quickly adapting to time-varying conditions. This project seeks to develop and characterize fast and adaptive network control methods. The methods respect the energy, computation, communication, and sensing resources of the network while maintaining high quality execution of each task and providing fair sharing across all users. The goal is to create smarter networks with faster response times and lower delays while adapting to changes in user mobility and device functionality. The research has broad applications to control theory, operations research, smart grid scheduling, economics, and game theory. This project will also train several graduate students on these topics.\r\n\r\nThis work is challenging because of time variation, mobility, and asynchronous start and stop times of each task. The fundamental optimization problems involve nonconvex ratios of time averages that have not been significantly explored. The optimal convergence times are unknown. Preliminary work of the principal investigator develops a new method for improving convergence time of subgradient-based convex programming. This project seeks to extend this method and to develop new methods for solving the more difficult problems of task-oriented stochastic networking. Another component of this work is the development of fundamental lower bounds on convergence times in this context. This can have a high impact on broader areas of optimization, stochastic control, online decision making, and machine learning.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Michael",
+   "pi_last_name": "Neely",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Michael Neely",
+   "pi_email_addr": "mikejneely@gmail.com",
+   "nsf_id": "000228307",
+   "pi_start_date": "2017-08-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Southern California",
+  "inst_street_address": "3720 S FLOWER ST FL 3",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOS ANGELES",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "2137407762",
+  "inst_zip_code": "90033",
+  "inst_country_name": "United States",
+  "cong_dist_code": "34",
+  "st_cong_dist_code": "CA34",
+  "org_lgl_bus_name": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "G88KLJR3KYT5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Southern California",
+  "perf_str_addr": "3740 McClintock Ave, EEB 520",
+  "perf_city_name": "Los Angeles",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "900892565",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "37",
+  "perf_st_cong_dist": "CA37",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779700",
+   "pgm_ele_name": "Comm & Information Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7935",
+   "pgm_ref_txt": "COMM & INFORMATION THEORY"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 477478.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"p1\">This project considered the fundamental learning time required to optimize and control data networks and related decision-making systems. Such systems change over time based on random events that arise. The system controller does not know the probabilities associated with the random events. The controller must learn enough about these probabilities to make informed decisions that lead to desirable performance. The goal is to optimize system characteristics such as energy, throughput, throughput utility, fairness, cost, or combinations of these.<span>&nbsp;</span></p>\n<p class=\"p1\"><span>&nbsp;</span>For example, in a multi-user wireless network with time-varying channels, the channel conditions across each network link can change randomly. It is important to know the system probabilities when making decisions about which link to use and how much power to spend. However, the total number of channel configurations can be larger than the number of atoms in the universe. Thus, it is impossible to accurately learn the probabilities associated with each configuration. Fortunately, it can be shown that simpler functional representations of these probabilities can be learned very quickly. The particular representations needed depend on the network task and the control goals. Prior work of the principal investigator develops virtual queue and drift-plus-penalty algorithms that learn to make decisions (in reasonable time) to maximize criteria such as network throughput, throughput utility, and fairness. The central goal of this project was to pin down the&nbsp;precise learning times that are needed for different classes of problems.&nbsp; Are the algorithms we already have the best we can do? If not, can better algorithms be developed?&nbsp;</p>\n<p class=\"p2\">One important class of problems, called \"opportunistic scheduling problems,\"&nbsp; allow the network controller to look at current link conditions at each time step (without knowing the probabilities of future conditions). A key finding in this project is a fundamental bound on the learning time of any algorithm for such problems. It was shown that no algorithm can have an optimality gap that decays faster than log(t)/t, where t is time the algorithm has spent in operation (the value t can also be viewed as the learning time). This result was presented at the INFOCOM 2020 conference, a top conference in the area of data networks, and was nominated (but did not receive) the best paper award at the conference. It was also invited for fast-track journal publication in the IEEE Transactions on Networking. A related finding was that an existing algorithm, called a stochastic Frank-Wolfe algorithm, can have a stepsize parameter chosen in such a way that this log(t)/t bound is achieved. This was published as a separate paper in the IEEE Transactions on Networking. These results accomplish a proposed goal of the project: Establishing a theory of learning times for opportunistic scheduling. &nbsp;</p>\n<p class=\"p2\">Building on this work, the project investigated learning times for more challenging problem settings. The corresponding results were published in leading conferences and journals on machine learning. One result, published in the Journal of Machine Learning Research 2021, established the fundamental learning time for opportunistic scheduling for \"regenerative systems\" with variable length tasks. This result includes a new algorithm that builds on a Robbins-Monro technique to achieve the fastest learning. This project also developed fundamental results on \"online convex optimization with constraints\" (Journal of Machine Learning Research 2020, Neural Information Processing conference 2017, 2018, ACM Meas. Analysis and Computing Systems journal 2020). These results extend an existing theory of online convex optimization, which did not involve stochastic constraints, to show that general stochastic constraints (such as average power constraints) can be incorporated without incurring a slowdown in learning speed. One paper in this body of work considers the problem of energy harvesting: Random bursts of energy arise to a system (such as by unpredictable wind or solar sources) and are stored in a battery. The battery manager makes careful decisions about how much energy to take from the battery to accomplish certain tasks&nbsp; (ACM Meas. Analysis and Computing Systems journal 2020). This is challenging because the battery must not be depleted, yet, the future energy bursts and task demands are unknown.&nbsp;</p>\n<p class=\"p2\">The research of this project also led to improved algorithms for multi-hop network routing.&nbsp; Utilizing a method of fast convex programming developed by the PI in prior work, this project developed a new \"backpressure\" routing method that is significantly faster than what was previously believed to be possible. Specifically, the new method was proven to have fast convergence to optimal utility and fairness, and does this without a corresponding increase in network delay.&nbsp; This was in stark contrast to prior work that shows optimal utility can only be approached with a corresponding increase in network delay.&nbsp; This result was published in the IEEE Transactions on Networking (2018).&nbsp;</p>\n<p class=\"p1\">Overall, this project developed a theory of learning time in data networks and related stochastic decision systems. It developed optimization techniques, algorithms, and fundamental performance bounds.<span>&nbsp;</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/13/2023<br>\n\t\t\t\t\tModified by: Michael&nbsp;Neely</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "This project considered the fundamental learning time required to optimize and control data networks and related decision-making systems. Such systems change over time based on random events that arise. The system controller does not know the probabilities associated with the random events. The controller must learn enough about these probabilities to make informed decisions that lead to desirable performance. The goal is to optimize system characteristics such as energy, throughput, throughput utility, fairness, cost, or combinations of these. \n For example, in a multi-user wireless network with time-varying channels, the channel conditions across each network link can change randomly. It is important to know the system probabilities when making decisions about which link to use and how much power to spend. However, the total number of channel configurations can be larger than the number of atoms in the universe. Thus, it is impossible to accurately learn the probabilities associated with each configuration. Fortunately, it can be shown that simpler functional representations of these probabilities can be learned very quickly. The particular representations needed depend on the network task and the control goals. Prior work of the principal investigator develops virtual queue and drift-plus-penalty algorithms that learn to make decisions (in reasonable time) to maximize criteria such as network throughput, throughput utility, and fairness. The central goal of this project was to pin down the precise learning times that are needed for different classes of problems.  Are the algorithms we already have the best we can do? If not, can better algorithms be developed? \nOne important class of problems, called \"opportunistic scheduling problems,\"  allow the network controller to look at current link conditions at each time step (without knowing the probabilities of future conditions). A key finding in this project is a fundamental bound on the learning time of any algorithm for such problems. It was shown that no algorithm can have an optimality gap that decays faster than log(t)/t, where t is time the algorithm has spent in operation (the value t can also be viewed as the learning time). This result was presented at the INFOCOM 2020 conference, a top conference in the area of data networks, and was nominated (but did not receive) the best paper award at the conference. It was also invited for fast-track journal publication in the IEEE Transactions on Networking. A related finding was that an existing algorithm, called a stochastic Frank-Wolfe algorithm, can have a stepsize parameter chosen in such a way that this log(t)/t bound is achieved. This was published as a separate paper in the IEEE Transactions on Networking. These results accomplish a proposed goal of the project: Establishing a theory of learning times for opportunistic scheduling.  \nBuilding on this work, the project investigated learning times for more challenging problem settings. The corresponding results were published in leading conferences and journals on machine learning. One result, published in the Journal of Machine Learning Research 2021, established the fundamental learning time for opportunistic scheduling for \"regenerative systems\" with variable length tasks. This result includes a new algorithm that builds on a Robbins-Monro technique to achieve the fastest learning. This project also developed fundamental results on \"online convex optimization with constraints\" (Journal of Machine Learning Research 2020, Neural Information Processing conference 2017, 2018, ACM Meas. Analysis and Computing Systems journal 2020). These results extend an existing theory of online convex optimization, which did not involve stochastic constraints, to show that general stochastic constraints (such as average power constraints) can be incorporated without incurring a slowdown in learning speed. One paper in this body of work considers the problem of energy harvesting: Random bursts of energy arise to a system (such as by unpredictable wind or solar sources) and are stored in a battery. The battery manager makes careful decisions about how much energy to take from the battery to accomplish certain tasks  (ACM Meas. Analysis and Computing Systems journal 2020). This is challenging because the battery must not be depleted, yet, the future energy bursts and task demands are unknown. \nThe research of this project also led to improved algorithms for multi-hop network routing.  Utilizing a method of fast convex programming developed by the PI in prior work, this project developed a new \"backpressure\" routing method that is significantly faster than what was previously believed to be possible. Specifically, the new method was proven to have fast convergence to optimal utility and fairness, and does this without a corresponding increase in network delay.  This was in stark contrast to prior work that shows optimal utility can only be approached with a corresponding increase in network delay.  This result was published in the IEEE Transactions on Networking (2018). \nOverall, this project developed a theory of learning time in data networks and related stochastic decision systems. It developed optimization techniques, algorithms, and fundamental performance bounds. \n\n \n\n\t\t\t\t\tLast Modified: 01/13/2023\n\n\t\t\t\t\tSubmitted by: Michael Neely"
+ }
+}

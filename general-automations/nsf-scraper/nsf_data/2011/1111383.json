@@ -1,0 +1,101 @@
+{
+ "awd_id": "1111383",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NeTS: Large: Collaborative Research: HyperFlow - A Hybrid IP/Optical Flow Network Architecture",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Ann Von Lehmen",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2017-01-31",
+ "tot_intn_awd_amt": 1080075.0,
+ "awd_amount": 1080075.0,
+ "awd_min_amd_letter_date": "2011-08-10",
+ "awd_max_amd_letter_date": "2011-08-10",
+ "awd_abstract_narration": "This project will create and demonstrate experimentally key features of a new optical network architecture, 'HyperFlow' which is a hybrid future Internet architecture that include key designs for both hardware and algorithms. The network is designed to be dynamic (both agile and adaptive), and significantly more cost effective and power efficient for future growth in data volumes and number of users. The architecture relies on a novel optical network infrastructure comprising new transport mechanisms and a new comprehensive control mechanism including the physical hardware, algorithms and applications. \r\n\r\nBetween locations that exchange large volumes of data - say, Los Angeles and New York City ? the flow switching mechanism of HyperFlow would establish a dedicated path across the network. The allotment of bandwidth would change constantly. As traffic between New York and Los Angeles increased, new, dedicated wavelengths would be recruited to handle it; as the traffic tailed off, the wavelengths would be relinquished. The goal is to develop network management protocols that can perform new session allocations in a matter of sub-seconds. HyperFlow can easily increase the data rates of optical networks 100-fold with the new network management scheme to be addressed in this program, with corresponding decrease in cost per bit and power consumption as well.\r\n\r\nIntellectual Merit: HyperFlow creates a complete hybrid flow/IP network architecture spanning local to wide areas, sharing the same unified control plane. The network provides both guaranteed end-to-end multi-Gbps flow service and conventional Internet Packet services throughout the network down to individual users. To achieve that goal, HyperFlow includes novel access and long haul core network technologies designed to support end-to-end flows as well as conventional IP network services. This approach achieves a breakthrough with respect to previous approaches by providing both services end-to-end with a unified control plane. HyperFlow includes major innovations based on highly efficient, agile and control of pools of shared tunable lasers and passive optical devices, a fast MAC, partitioned routing strategy and a new transport protocol for flows. \r\n\r\nBroader impact: If successful the proposed HyperFlow technology will have a profound influence on the way the future Internet is designed and perceived by the society, as the new on-demand cost-effective gigabit service will enable applications that are hard or costly to support today with existing broadband access, such as instantly-available 3D distributed virtual-reality systems, cloud computing and instant file transfer services including telemedicine, education, 3D movies, concerts, sporting events, and government services. The concept of the new Hyperflow development will be brought into industry forums such as IETF/IRTF during the project, so that the best minds of the industry can be leveraged for conceptual validation.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Vincent",
+   "pi_last_name": "Chan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Vincent Chan",
+   "pi_email_addr": "chan@mit.edu",
+   "nsf_id": "000099838",
+   "pi_start_date": "2011-08-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Massachusetts Institute of Technology",
+  "inst_street_address": "77 MASSACHUSETTS AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6172531000",
+  "inst_zip_code": "021394301",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+  "org_prnt_uei_num": "E2NYLCDML6V1",
+  "org_uei_num": "E2NYLCDML6V1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Massachusetts Institute of Technology",
+  "perf_str_addr": "77 MASSACHUSETTS AVE",
+  "perf_city_name": "CAMBRIDGE",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021394301",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7925",
+   "pgm_ref_txt": "LARGE PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 1080075.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Throughout this program, we have conducted research on the data plane architecture of an optical flow switched network. The first two years were dedicated to the design of a transport layer protocol for optical flow switching. The transport layer protocol guarantees the reliable delivery of large data files (&ldquo;elephant&rdquo; flows) over an all-optical end-to-end flow-switched network which can be modeled as a burst-error channel. We show that TCP performs poorly in networks that experience burst errors. Instead, we propose and optimized a transport protocol that uses file segmentation and reassembly, interleaving with forward error-correction, and frame retransmission to combat burst errors achieving close 99% efficiency.</p>\n<p>We also considered the design and performance analysis of an optically flow switched data center network architecture. We compare the performance of a hybrid flow architecture to the performance of a traditional Ethernet only architecture, where the performance metric is delay. Delay is a key performance metric for data center networks because of the need to provide fast analytics result to user requests and the network will become a bottle neck. The hybrid flow optical network allows the dynamic allocation of wavelength channels, where traditional packet switched networks assume a static wavelength allocation. As data center link rates scale from 1-100 Gbps to greater than 1 Tbps and beyond, the performance gains of the hybrid flow architecture greatly increases.</p>\n<p>We further proposed and evaluated a broadcast network architecture for intra-data center networks. We investigate the scalability and power requirements of an out of amplifier band optical broadcast architecture for intra-data center communication. The broadcast architecture is limited by splitting loss and not fiber loss for short distance communication. We showed that the broadcast architecture requires much fewer optical fiber lengths and optical switches than traditional switched network architectures.</p>\n<p>Another major focus of the program is the design of a network architecture that leads to both a scalable control plane and an efficient data plane. The network management and control aspect of fast circuit-oriented switching (OFS time scale is ~100mS) has raised many objections to flows because of lack of proof of scalability in the control plane to large number of sessions and large number of users. Systematically, we have studied the essential network management and control of OFS networks elements and the corresponding functionalities. We focused on the scheduling problem of OFS because its processing power and generated control traffic increase with traffic demand, network size, and are closely correlated with the chosen data network architecture, while other routine maintenance type network management and control functionalities contribute either a fixed amount or negligibly to the total efforts.</p>\n<p>We consider two possible Wide Area Network architectures: meshed or tunneled, and developed a unified model for data plane performance to provide a common platform for the performance comparison of the control plane. We have also developed a framework to analyze network management and control efforts from the perspectives of processing complexity and control traffic as functions of network architecture, traffic demand, and network resources. The presence of switching-induced physical-layer impairments in EDFA-amplified optical links creates more challenges to network management and control. To incorporate the effects of the physical-layer impairments into the scheduling algorithm to guarantee the quality of the scheduled lightpath, we have developed models for the quality of EDFA-amplified optical links and impairment-aware scheduling algorithms. A major conclusion of our theoretical and experimental study is that if a network control algorithm requires full network link states and perform exhaustive search to find feasible routing and wavelength assignment, the amount of link state to be transported is unwieldily huge and the computation effort for routing is very excessive, of the order of many supercomputers. Our new theoretical model that has been verified by experimental data allows us to simplify the algorithm complexity substantially to one which can be managed by modest processors and the link state information to be gathered is also modest.</p>\n<p>Our analysis of the data plane performance has shown that with aggregation of at least two wavelengths of traffic and allowing about two transactions per wavelength to be scheduled into the future, the tunneled architecture provides comparable data plane performance as the meshed architecture. However, the tunneled architecture reduces the processing power and the control traffic by orders of magnitude. With impairment-aware scheduling, our results show that if detailed channel configuration information is reported in the control plane, link impairment updates lead to huge control traffic, e.g., 250 Gbps per-edge peak control traffic with distributed scheduling over the meshed architecture. However, if the worst case of impairment is known to be when there is no \"On\" channel in a fiber, using the tunneled architecture, both the processing power and the control traffic are reduced to manageable amounts.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/01/2017<br>\n\t\t\t\t\tModified by: Vincent&nbsp;Chan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThroughout this program, we have conducted research on the data plane architecture of an optical flow switched network. The first two years were dedicated to the design of a transport layer protocol for optical flow switching. The transport layer protocol guarantees the reliable delivery of large data files (\"elephant\" flows) over an all-optical end-to-end flow-switched network which can be modeled as a burst-error channel. We show that TCP performs poorly in networks that experience burst errors. Instead, we propose and optimized a transport protocol that uses file segmentation and reassembly, interleaving with forward error-correction, and frame retransmission to combat burst errors achieving close 99% efficiency.\n\nWe also considered the design and performance analysis of an optically flow switched data center network architecture. We compare the performance of a hybrid flow architecture to the performance of a traditional Ethernet only architecture, where the performance metric is delay. Delay is a key performance metric for data center networks because of the need to provide fast analytics result to user requests and the network will become a bottle neck. The hybrid flow optical network allows the dynamic allocation of wavelength channels, where traditional packet switched networks assume a static wavelength allocation. As data center link rates scale from 1-100 Gbps to greater than 1 Tbps and beyond, the performance gains of the hybrid flow architecture greatly increases.\n\nWe further proposed and evaluated a broadcast network architecture for intra-data center networks. We investigate the scalability and power requirements of an out of amplifier band optical broadcast architecture for intra-data center communication. The broadcast architecture is limited by splitting loss and not fiber loss for short distance communication. We showed that the broadcast architecture requires much fewer optical fiber lengths and optical switches than traditional switched network architectures.\n\nAnother major focus of the program is the design of a network architecture that leads to both a scalable control plane and an efficient data plane. The network management and control aspect of fast circuit-oriented switching (OFS time scale is ~100mS) has raised many objections to flows because of lack of proof of scalability in the control plane to large number of sessions and large number of users. Systematically, we have studied the essential network management and control of OFS networks elements and the corresponding functionalities. We focused on the scheduling problem of OFS because its processing power and generated control traffic increase with traffic demand, network size, and are closely correlated with the chosen data network architecture, while other routine maintenance type network management and control functionalities contribute either a fixed amount or negligibly to the total efforts.\n\nWe consider two possible Wide Area Network architectures: meshed or tunneled, and developed a unified model for data plane performance to provide a common platform for the performance comparison of the control plane. We have also developed a framework to analyze network management and control efforts from the perspectives of processing complexity and control traffic as functions of network architecture, traffic demand, and network resources. The presence of switching-induced physical-layer impairments in EDFA-amplified optical links creates more challenges to network management and control. To incorporate the effects of the physical-layer impairments into the scheduling algorithm to guarantee the quality of the scheduled lightpath, we have developed models for the quality of EDFA-amplified optical links and impairment-aware scheduling algorithms. A major conclusion of our theoretical and experimental study is that if a network control algorithm requires full network link states and perform exhaustive search to find feasible routing and wavelength assignment, the amount of link state to be transported is unwieldily huge and the computation effort for routing is very excessive, of the order of many supercomputers. Our new theoretical model that has been verified by experimental data allows us to simplify the algorithm complexity substantially to one which can be managed by modest processors and the link state information to be gathered is also modest.\n\nOur analysis of the data plane performance has shown that with aggregation of at least two wavelengths of traffic and allowing about two transactions per wavelength to be scheduled into the future, the tunneled architecture provides comparable data plane performance as the meshed architecture. However, the tunneled architecture reduces the processing power and the control traffic by orders of magnitude. With impairment-aware scheduling, our results show that if detailed channel configuration information is reported in the control plane, link impairment updates lead to huge control traffic, e.g., 250 Gbps per-edge peak control traffic with distributed scheduling over the meshed architecture. However, if the worst case of impairment is known to be when there is no \"On\" channel in a fiber, using the tunneled architecture, both the processing power and the control traffic are reduced to manageable amounts.\n\n \n\n \n\n \n\n\t\t\t\t\tLast Modified: 05/01/2017\n\n\t\t\t\t\tSubmitted by: Vincent Chan"
+ }
+}

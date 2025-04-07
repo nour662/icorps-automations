@@ -1,0 +1,101 @@
+{
+ "awd_id": "1938064",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: Detecting and Avoiding Side-Channel Attacks with Security Conscious Prediction",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032920000",
+ "po_email": "doliveir@nsf.gov",
+ "po_sign_block_name": "Daniela Oliveira",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 220000.0,
+ "awd_amount": 220000.0,
+ "awd_min_amd_letter_date": "2019-07-19",
+ "awd_max_amd_letter_date": "2019-07-19",
+ "awd_abstract_narration": "For many years, computers have been using a technique called \"speculation\" to achieve good performance. Computers also implement security policies that prevent private data from being revealed to unauthorized entities. Recently, researchers have learned that speculation can unintentionally allow private information to be leaked. An attacker can manipulate speculation to communicate data through a \"side-channel,\" defeating security policies. This project will explore ways to use machine learning to detect whether a computer is under a side-channel attack and trigger defenses that will keep private data from being leaked. The work will enable secure computing while maintaining the benefits of speculation.\r\n\r\nA predictor will be trained to detect whether the system is under attack, providing a level of confidence in the prediction. Input to the predictor will be features such as counts of microarchitectural events. The predictor will be trained offline and implemented in hardware to be used during execution. Using measurements from real and simulated systems, features correlated with malicious behavior will be explored. Predictors based on neural learning will be trained with those features. The predictor will be prototyped and evaluated in a microarchitectural and circuit simulator. Mitigations based on the predictor confidence will also be prototyped.\r\n\r\nSide-channel attacks threaten the continued use of speculation to provide high performance. It is expected that this work will enable the continued use of speculation with high confidence in the security of private user data while continuing the much needed level of performance demanded by today's mobile, server, and embedded applications. Students from under-represented groups will be encouraged to participate in the research. The research will be featured in classroom teaching at Texas A&M University.\r\n\r\nThe project code and data will be made available for at least two years following the completion of the project. The products of this project including technical papers, code archive, and datasets will be made available at http://taco.cse.tamu.edu/secure/.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Daniel",
+   "pi_last_name": "Jimenez",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Daniel A Jimenez",
+   "pi_email_addr": "djimenez@acm.org",
+   "nsf_id": "000373616",
+   "pi_start_date": "2019-07-19",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Texas A&M Engineering Experiment Station",
+  "inst_street_address": "3124 TAMU",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE STATION",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "9798626777",
+  "inst_zip_code": "778433124",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "TX10",
+  "org_lgl_bus_name": "TEXAS A&M ENGINEERING EXPERIMENT STATION",
+  "org_prnt_uei_num": "QD1MX6N5YTN4",
+  "org_uei_num": "QD1MX6N5YTN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Texas A&M Engineering Experiment Station",
+  "perf_str_addr": "710 Ross St.",
+  "perf_city_name": "College Station",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "778433112",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "TX10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 220000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"p1\"><span class=\"s1\">Modern microprocessors use advanced techniques to achieve high performance. Unfortunately, these techniques can increase the processor's vulnerability to information leakage. In particular, the processor attempts to predict the near-term future program behavior in order to get the right instructions and data into the processor as fast as possible. These prediction techniques, for instance caching and branch prediction, can be exploited to leak information about private program data through timing the accesses to on-chip structure. Our research focused on detecting when this kind of attack is occurring by incorporating machine learning into the processor hardware. We train a simple neural predictor to recognize and distinguish benign and malicious program behavior and test the predictor using known attacks. We have demonstrated that our technique is general enough to identify some new attacks before they are explicitly discovered and reported.</span></p>\n<p class=\"p1\"><span class=\"s1\">Our research resulted in a publication in the IEEE/ACM International Symposium on Microarchitecture, a top computer science publication venue. During the project, we realized that our machine learning technique has the potential to identify a large variety of program behaviors that can be corrected beyond the kinds of attacks we initially considered. Research enabled by this project has appeared in other top computer science publication venues.<span>&nbsp;</span></span></p>\n<p class=\"p1\"><span class=\"s1\">The project has had broader impact in terms of workforce development and diversity. Several graduate students have participated in the project. Dr. Samira Mirbagher, a former graduate student at Texas A&amp;M, was the driving force behind the initial work of the project. She is now an assistant professor at North Carolina State University. Dr. Elba Garza also worked on the project as a graduate student and is now a teaching assistant professor at the University of Washington in Seattle. We have discussed the project extensively with researchers at Intel who are prototyping extensions to their microprocessor designs based on our research.</span></p><br>\n<p>\n Last Modified: 03/04/2024<br>\nModified by: Daniel&nbsp;A&nbsp;Jimenez</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nModern microprocessors use advanced techniques to achieve high performance. Unfortunately, these techniques can increase the processor's vulnerability to information leakage. In particular, the processor attempts to predict the near-term future program behavior in order to get the right instructions and data into the processor as fast as possible. These prediction techniques, for instance caching and branch prediction, can be exploited to leak information about private program data through timing the accesses to on-chip structure. Our research focused on detecting when this kind of attack is occurring by incorporating machine learning into the processor hardware. We train a simple neural predictor to recognize and distinguish benign and malicious program behavior and test the predictor using known attacks. We have demonstrated that our technique is general enough to identify some new attacks before they are explicitly discovered and reported.\n\n\nOur research resulted in a publication in the IEEE/ACM International Symposium on Microarchitecture, a top computer science publication venue. During the project, we realized that our machine learning technique has the potential to identify a large variety of program behaviors that can be corrected beyond the kinds of attacks we initially considered. Research enabled by this project has appeared in other top computer science publication venues.\n\n\nThe project has had broader impact in terms of workforce development and diversity. Several graduate students have participated in the project. Dr. Samira Mirbagher, a former graduate student at Texas A&M, was the driving force behind the initial work of the project. She is now an assistant professor at North Carolina State University. Dr. Elba Garza also worked on the project as a graduate student and is now a teaching assistant professor at the University of Washington in Seattle. We have discussed the project extensively with researchers at Intel who are prototyping extensions to their microprocessor designs based on our research.\t\t\t\t\tLast Modified: 03/04/2024\n\n\t\t\t\t\tSubmitted by: DanielAJimenez\n"
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "awd_id": "1130286",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Momentum Based Motion Planning for Manipulators with Heavy Loads",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": "7032925365",
+ "po_email": "jberg@nsf.gov",
+ "po_sign_block_name": "Jordan Berg",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2014-08-31",
+ "tot_intn_awd_amt": 249966.0,
+ "awd_amount": 249966.0,
+ "awd_min_amd_letter_date": "2011-08-19",
+ "awd_max_amd_letter_date": "2011-08-19",
+ "awd_abstract_narration": "This research focuses on the development of computationally efficient motion planning algorithms that enable a manipulator robot to dramatically increase its lifting capacity over most current algorithms, which only enable a robot to lift loads that can be supported statically at each point along the manipulator path.  In a more general sense, this research is concerned with momentum based motion planning using dynamic models. The planning will be accomplished using a recently developed motion planning algorithm, Sampling Based Model Predictive Optimization (SBMPO), which may be viewed as a sampling-based generalization of the A* algorithm to optimal motion planning using a dynamic model.  The research will develop answers to fundamental questions related to the use of SBMPO for the direct development of trajectories that have appropriate momentum characteristics. One is what model - for example the open loop dynamic model, the closed loop dynamic model, or even an ?extended kinematic model? (i.e., a kinematic model preceded by one or more integrators) - is the most effective at incorporating information about the manipulator dynamics and torque limits? A related critical issue is the development of ?optimistic A* heuristics? (i.e, rigorous lower bounds on the chosen cost) that are not overly conservative and hence can allow for efficient trajectory generation.  . A major contribution will also be the incorporation of learning, so that when a lifting or throwing problems is encountered that is similar to a previously solved problem, the planning algorithm executes more quickly based on the prior experience\r\n\r\nManipulator lifting and throwing capabilities are considerably underutilized because current planning algorithms generate paths based on kinematic models that are not capable of modeling the torque limitations of the motors or the inertial characteristics of the loaded manipulator and hence cannot plan trajectories with the required momentum to lift or throw heavy loads. This research provides motion planning algorithms that increase the lifting and throwing capacity of any manipulator that has a control system designed to follow trajectories characterized in terms of acceleration, velocity, and position. A primary application of this is service robots (e.g., humanoid robots), which are light weight and relatively weak compared to their industrial counterparts. These robots will be able to perform important lifting tasks such as the lifting of luggage, groceries, one gallon milk jugs, and book bags in home environments. The research will also increase the capacity of robots used to clear heavy outdoor debris such as logs, bricks, and large rocks. It is expected that if a robot is given this increased capacity, other applications will follow. This research will be applicable to mobile robotics as well since environments with steep hills, viscous mud or deep sand patches, and high stiff vegetation require momentum based planning.  In general, this research will help to connect the fields of control and planning in new ways, with the primary motivation being the development of reliable and computationally efficient trajectory generation algorithms for momentum based planning.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Emmanuel",
+   "pi_last_name": "Collins",
+   "pi_mid_init": "G",
+   "pi_sufx_name": "Jr",
+   "pi_full_name": "Emmanuel G Collins",
+   "pi_email_addr": "ecollins@eng.fsu.edu",
+   "nsf_id": "000239503",
+   "pi_start_date": "2011-08-19",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Florida State University",
+  "inst_street_address": "874 TRADITIONS WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "TALLAHASSEE",
+  "inst_state_code": "FL",
+  "inst_state_name": "Florida",
+  "inst_phone_num": "8506445260",
+  "inst_zip_code": "323060001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "FL02",
+  "org_lgl_bus_name": "FLORIDA STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "JF2BLNN4PJC3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Florida State University",
+  "perf_str_addr": "874 Traditions Way, 3rd Floor",
+  "perf_city_name": "TALLAHASSEE",
+  "perf_st_code": "FL",
+  "perf_st_name": "Florida",
+  "perf_zip_code": "323064166",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "FL02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "163200",
+   "pgm_ele_name": "CONTROL SYSTEMS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "030E",
+   "pgm_ref_txt": "CONTROL SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "031E",
+   "pgm_ref_txt": "MECHATRONICS"
+  },
+  {
+   "pgm_ref_code": "034E",
+   "pgm_ref_txt": "Dynamical systems"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 249966.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>An important problem in control systems technology is developing control techniques for problems with one or more of the following features: 1) the system to be controlled is nonlinear, 2) the system changes with time, 3) there are constraints on the systems' inputs and outputs that are important to take into account, 4) the control input must be updated within fractions of a second.&nbsp; This research tackled this problem and applied the results to control (in simulation) a power plant combustion process and to control (in hardware) a two link manipulator lifting a heavy load.</p>\n<p>Time varyng systems require an approach that is able to adapt the model of the system and use this updated model in computing the control inputs to the system.&nbsp; The adaptive approach developed in this research is called Adaptive Sampling Based Model Predictive Control (SBMPC) and relies on a control optimization approach called Sampling Based Model Predictive Optimization (SBMPO).&nbsp; This new method differs substantially from prior methods for Nonlinear Model Predictive Control (NMPC).&nbsp; In particular, it does not rely on linearizing the system or any type of gradient based optimization.&nbsp; Instead for each time period it uses sampling to reduce the possible number of system inputs from an infinite number to a finite number, hence creating a tree graph that is searched using LPA*, an efficient graph search method.</p>\n<p>When applied to a non-physical, transparent benchmark problem with many local minima, Adaptive SBMPC, unlike Neural Generalized Predictive Control (GPC), was shown to be able to converge to the global minimum due to its unique properties.&nbsp; When applied to the more complex power plant combustion problem, Adaptive SBMPC was shown to converge much faster than Neural GPC and also avoid violation of the important input constraints for this problem.&nbsp; These results and the accompanying theory lead to the expectation that the computatonial pardigm of Adaptive SBMPC will have a major impact in the field of controls.</p>\n<p>Particular attention was also given to robot trajectory planning problems in which the actuator torque constraints are active.&nbsp; These problems include a mobile robot traversing a steep hill that limits the acceleration of the robot due to the torque constraints of the motors or engine or a manipulator lifting task in which the load is sufficiently heavy that the torque constraints of the robot's motor prevent it from statically supporting the load in certain positions.&nbsp; A general methodology, based on SBMPO, was developed for this class of problem and experimentally verified for the heavy lifting problem using a two-link manipulator.</p>\n<p>Adaptive SBMPC has the potential to impact numerous applications.&nbsp; Part of the evidence for this is that linear Model Predictive Control (MPC) has found wide spread use in industry, despite its limitations such as linearization of a nonlinear plant and inability to adapt to changing plants.&nbsp; A large international energy company has already shown substantial interest in this technology for power system control as has a large domestic automotive engine developer and manufacturer.</p>\n<p>As it is undesirable to use large robot manipulators in home applications, the technology for heavy lifting is expected to have a substantial impact as more robot helpers are developed for home use.&nbsp; This will enable relatively small and light robots to use momentum to occassionally lift luggage and other heavy objects just as humans due.&nbsp; (Think of how you use a slight back-swing to develop the momentum to lift your heavy luggage on to a stand or bed.)</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/01/2014<br>\n\t\t\t\t\tModified by: Emmanuel&nbsp;G&nbsp;Collins</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nAn important problem in control systems technology is developing control techniques for problems with one or more of the following features: 1) the system to be controlled is nonlinear, 2) the system changes with time, 3) there are constraints on the systems' inputs and outputs that are important to take into account, 4) the control input must be updated within fractions of a second.  This research tackled this problem and applied the results to control (in simulation) a power plant combustion process and to control (in hardware) a two link manipulator lifting a heavy load.\n\nTime varyng systems require an approach that is able to adapt the model of the system and use this updated model in computing the control inputs to the system.  The adaptive approach developed in this research is called Adaptive Sampling Based Model Predictive Control (SBMPC) and relies on a control optimization approach called Sampling Based Model Predictive Optimization (SBMPO).  This new method differs substantially from prior methods for Nonlinear Model Predictive Control (NMPC).  In particular, it does not rely on linearizing the system or any type of gradient based optimization.  Instead for each time period it uses sampling to reduce the possible number of system inputs from an infinite number to a finite number, hence creating a tree graph that is searched using LPA*, an efficient graph search method.\n\nWhen applied to a non-physical, transparent benchmark problem with many local minima, Adaptive SBMPC, unlike Neural Generalized Predictive Control (GPC), was shown to be able to converge to the global minimum due to its unique properties.  When applied to the more complex power plant combustion problem, Adaptive SBMPC was shown to converge much faster than Neural GPC and also avoid violation of the important input constraints for this problem.  These results and the accompanying theory lead to the expectation that the computatonial pardigm of Adaptive SBMPC will have a major impact in the field of controls.\n\nParticular attention was also given to robot trajectory planning problems in which the actuator torque constraints are active.  These problems include a mobile robot traversing a steep hill that limits the acceleration of the robot due to the torque constraints of the motors or engine or a manipulator lifting task in which the load is sufficiently heavy that the torque constraints of the robot's motor prevent it from statically supporting the load in certain positions.  A general methodology, based on SBMPO, was developed for this class of problem and experimentally verified for the heavy lifting problem using a two-link manipulator.\n\nAdaptive SBMPC has the potential to impact numerous applications.  Part of the evidence for this is that linear Model Predictive Control (MPC) has found wide spread use in industry, despite its limitations such as linearization of a nonlinear plant and inability to adapt to changing plants.  A large international energy company has already shown substantial interest in this technology for power system control as has a large domestic automotive engine developer and manufacturer.\n\nAs it is undesirable to use large robot manipulators in home applications, the technology for heavy lifting is expected to have a substantial impact as more robot helpers are developed for home use.  This will enable relatively small and light robots to use momentum to occassionally lift luggage and other heavy objects just as humans due.  (Think of how you use a slight back-swing to develop the momentum to lift your heavy luggage on to a stand or bed.)\n\n \n\n\t\t\t\t\tLast Modified: 12/01/2014\n\n\t\t\t\t\tSubmitted by: Emmanuel G Collins"
+ }
+}

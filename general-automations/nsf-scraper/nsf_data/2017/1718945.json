@@ -1,0 +1,105 @@
+{
+ "awd_id": "1718945",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RI: SMALL: Efficient Implementations of Goal-Directed Solvers for Answer Set Programming",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Roger Mailler",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 420000.0,
+ "awd_amount": 420000.0,
+ "awd_min_amd_letter_date": "2017-08-04",
+ "awd_max_amd_letter_date": "2017-08-04",
+ "awd_abstract_narration": "The goal of this project is to develop efficient implementation techniques for realizing automated reasoning systems that emulate human-style common sense reasoning. Automating common sense reasoning is important for developing advanced applications of artificial intelligence (AI), particularly, in areas where the thought process of an expert needs to be automated, e.g., reasoning performed by a medical doctor during diagnosis and prescribing a treatment. Human reasoning is difficult to emulate on a computer, as humans simplify reasoning by using default conclusions (e.g., if Tweety is a bird, it must fly) coupled with raising exceptions (if Tweety turns out to be a penguin later, retract the conclusion about Tweety's flying abilities). Because of this peculiar nature of human reasoning, approaches based on standard logic do not work very well: one has to resort to a non-monotonic logic, i.e., a logic in which conclusions reached now may be withdrawn later as new information becomes available. Research conducted in this project will result in efficient, query-driven implementations of these non-monotonic logics. Successful completion of this project will result in advanced applications such as an automated system that can advise a physician on how to treat a particular disease, or a self-driving car's decision-making system that can emulate a human's driving expertise.\r\n\r\nThe project will rely on the paradigm of answer set programming (ASP) to represent common sense knowledge. An answer set program consists of rules containing (possibly negated) predicates. Current ASP systems rely on first grounding the answer set program to obtain an equivalent propositional program, and then using a Boolean satisfiability (SAT) solver to find models of this propositional program that contain the answer that is sought by the user. The grounding requirement restricts the range of programs that can be executed. This project builds upon earlier research on directly executing predicate answer set programs, i.e., without grounding them first. It aims to realize faster implementations of such systems by designing a virtual machine to which an answer set programs will be compiled to and executed.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Gopal",
+   "pi_last_name": "Gupta",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Gopal Gupta",
+   "pi_email_addr": "gupta@utdallas.edu",
+   "nsf_id": "000249848",
+   "pi_start_date": "2017-08-04",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Dallas",
+  "inst_street_address": "800 WEST CAMPBELL RD.",
+  "inst_street_address_2": "SP2.25",
+  "inst_city_name": "RICHARDSON",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "9728832313",
+  "inst_zip_code": "750803021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "24",
+  "st_cong_dist_code": "TX24",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT DALLAS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "EJCVPNN1WFS5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Dallas",
+  "perf_str_addr": "800 W Campbell Rd",
+  "perf_city_name": "Richardson",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "750803021",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "24",
+  "perf_st_cong_dist": "TX24",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 420000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of the project is to develop efficient implementations of  goal-directed answer set programming (ASP) systems as well as develop novel applications facilitated by such systems. ASP is a paradigm of programming based on logic that is highly suited for knowledge representation and reasoning. Specifically, it facilitates the modeling of automated commonsense reasoning in AI. The project culminated in the s(CASP) goal-directed ASP system. The system is freely available and is being used to develop a large number of novel applications. The s(CASP) system technology has also been incorporated into SWI-Prolog system, the most widely-used Prolog system available today. A major application of ASP and s(CASP) is in automating commonsense reasoning. As part of the project, thus, a framework for automating commonsense reasoning was also developed. A number of applications that rely on this commonsense reasoning framework and the s(CASP) system were also developed.</p>\n<p><strong>Intellectual Merit:</strong> The project led to the development of novel goal-directed answer set programming system called s(CASP). Current ASP systems execute an answer set program by first <em>grounding</em> it into a propositional program and then using a SAT solver to find the solutions of the grounded program. The requirement of grounding limits the applications of such SAT-solver based ASP systems. The goal-directed s(CASP) system does not require grounding and can execute predicates directly under the stable model semantics of logic programming. The s(CASP) system has resulted in novel applications in knowledge representation and reasoning being realized that were hitherto not possible. A number of such novel applications were developed in the project. Techniques that make s(CASP) system efficient have also been developed. These include dynamically re-ordering the subgoals at execution time so that the search for a soluiton can be realized more efficiently, and incorporating support for constraint solving. Novel applications developed include using s(CASP) for (i) natural language question answering and aiming to develop chatbots that \"understand\" a human conversation, (ii) autonomous vehicle driving, (iii) automating the software assurance process, (iv) modeling cyberphysical systems requirements in avionics (v) modeling expert knowledge, e.g., modeling expertise of a cardiologist in treating congestive heart failure based on published guidelines.</p>\n<p><strong>Broader Impact: </strong>The project has had significant broad impact. Project research resulted in three Ph.D. theses and three more that are forthcoming. A number of undergraduate students were also involved in project research. A postdoctoral fellow was also trained. The s(CASP) system and framework for automating commonsense reasoning developed in the project was incorporated in graduate and undergraduate courses in computaitonal logic. A hackathon (called HackReason) was also organized in which participants were provided 5 hours of training on answer set programming and the s(CASP) system and were asked to develop an application based on automating commonsense reasoning. Approximately 50 undergraduate and graduate students participated in the hackathon. The technology developed has also had impact in other areas: guideline-based disease treatment, software assurance, modeling requirements of cyber-physical systems, natural language processing, and autonomous driving.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/31/2021<br>\n\t\t\t\t\tModified by: Gopal&nbsp;Gupta</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of the project is to develop efficient implementations of  goal-directed answer set programming (ASP) systems as well as develop novel applications facilitated by such systems. ASP is a paradigm of programming based on logic that is highly suited for knowledge representation and reasoning. Specifically, it facilitates the modeling of automated commonsense reasoning in AI. The project culminated in the s(CASP) goal-directed ASP system. The system is freely available and is being used to develop a large number of novel applications. The s(CASP) system technology has also been incorporated into SWI-Prolog system, the most widely-used Prolog system available today. A major application of ASP and s(CASP) is in automating commonsense reasoning. As part of the project, thus, a framework for automating commonsense reasoning was also developed. A number of applications that rely on this commonsense reasoning framework and the s(CASP) system were also developed.\n\nIntellectual Merit: The project led to the development of novel goal-directed answer set programming system called s(CASP). Current ASP systems execute an answer set program by first grounding it into a propositional program and then using a SAT solver to find the solutions of the grounded program. The requirement of grounding limits the applications of such SAT-solver based ASP systems. The goal-directed s(CASP) system does not require grounding and can execute predicates directly under the stable model semantics of logic programming. The s(CASP) system has resulted in novel applications in knowledge representation and reasoning being realized that were hitherto not possible. A number of such novel applications were developed in the project. Techniques that make s(CASP) system efficient have also been developed. These include dynamically re-ordering the subgoals at execution time so that the search for a soluiton can be realized more efficiently, and incorporating support for constraint solving. Novel applications developed include using s(CASP) for (i) natural language question answering and aiming to develop chatbots that \"understand\" a human conversation, (ii) autonomous vehicle driving, (iii) automating the software assurance process, (iv) modeling cyberphysical systems requirements in avionics (v) modeling expert knowledge, e.g., modeling expertise of a cardiologist in treating congestive heart failure based on published guidelines.\n\nBroader Impact: The project has had significant broad impact. Project research resulted in three Ph.D. theses and three more that are forthcoming. A number of undergraduate students were also involved in project research. A postdoctoral fellow was also trained. The s(CASP) system and framework for automating commonsense reasoning developed in the project was incorporated in graduate and undergraduate courses in computaitonal logic. A hackathon (called HackReason) was also organized in which participants were provided 5 hours of training on answer set programming and the s(CASP) system and were asked to develop an application based on automating commonsense reasoning. Approximately 50 undergraduate and graduate students participated in the hackathon. The technology developed has also had impact in other areas: guideline-based disease treatment, software assurance, modeling requirements of cyber-physical systems, natural language processing, and autonomous driving.\n\n\t\t\t\t\tLast Modified: 12/31/2021\n\n\t\t\t\t\tSubmitted by: Gopal Gupta"
+ }
+}

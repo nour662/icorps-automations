@@ -1,0 +1,133 @@
+{
+ "awd_id": "2003307",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CDS&E: An Effective Thermal Simulation Methodology for GPGPUs Enabled by Data-Driven Model Reduction",
+ "cfda_num": "47.041",
+ "org_code": "07010000",
+ "po_phone": "7032927360",
+ "po_email": "jenlin@nsf.gov",
+ "po_sign_block_name": "Jenshan Lin",
+ "awd_eff_date": "2020-07-01",
+ "awd_exp_date": "2024-06-30",
+ "tot_intn_awd_amt": 375000.0,
+ "awd_amount": 383000.0,
+ "awd_min_amd_letter_date": "2020-04-30",
+ "awd_max_amd_letter_date": "2022-12-28",
+ "awd_abstract_narration": "Demands for general purpose graphics processing units (GPGPUs) in recent years have increased rapidly due to the needs for scientific, engineering and statistical computing.  Meanwhile, GPGPUs are also quickly becoming an essential part of data centers around the globe. The number of data centers are growing drastically due to the recent explosion of social networking, movie streaming, online shopping, big data, internet of things, etc.  With hundreds or thousands of cores running in each GPGPU, severe heating is a serious challenge which   can significantly degrade GPGPU performance, reliability and energy efficiency unless effective cooling is employed.  However, effective cooling of data centers requires enormous expenditure of energy.  To ease all these problems, effective thermal management and thermal-aware task scheduling for GPGPU operation are needed, which however requires an accurate simulation tool that is able to offer efficient dynamic thermal prediction with a reasonable spatial resolution.   Currently, there is a lack of thermal simulation tools that offer high efficiency and accuracy with a reasonable resolution. The proposed work aims to develop an efficient simulation methodology based on a reduced learning algorithm that is capable of predicting accurate dynamic temperature distributions with a high resolution in GPGPUs.  With this novel approach implemented in GPGPUs, effective thermal management and task scheduling will become possible and will improve GPGPU performance and reliability.  This will also improve energy savings in cooling, computing and streaming and minimize the earth\u2019s environmental stress.  This project will also contribute to interdisciplinary workforce training and prepare students for the emerging challenge of heating problems in GPGPU computing. Research related to the proposed work will be integrated into several courses taught by the PIs. Course projects will be developed by the Ph.D. and undergraduate students working on the proposed work. This will offer undergraduate and graduate students a useful learning experience beyond the textbooks and lectures. The PIs will also expand and integrate several ongoing activities to broaden participation of underrepresented groups in STEM, e.g. through the Co-PI's NSF REU site. A special effort will be made to recruit and mentor Native Americans from an Indian Reservation near the PI\u2019s university to join STEM activities and to pursue their careers in STEM.\r\nThe goal of this project is to develop a multi-block simulation methodology for efficient, accurate prediction of dynamic thermal profiles of GPGPUs derived from a reduced learning algorithm. To reduce simulation space and thus the computational time while maintaining accurate thermal solution, the domain structure of a GPGPU is projected onto a functional space described by a set of basis functions obtained from the reduced learning method.  This projection learning process however requires collection of massive amounts of thermal data for the entire GPGPU and is computationally prohibitive. Domain decomposition is therefore applied to partition the GPGPU domain into hundreds of smaller generic building blocks. This building-block approach enables more efficient training of the basis functions to develop the multi-block thermal model.  This methodology offers a reduction in the computational time by several orders of magnitude for thermal simulation of semiconductor chips, compared with the direct numerical simulation.  Currently, thermal simulations of GPGPUs rely on the efficient compact resistance-capacitance (RC) thermal model that provides poor resolution and inaccurate thermal profiles. It is expected that the developed thermal simulation model will be even more efficient than the compact RC model.  Also, the multi-block approach possesses a natural advantage of effective parallel computing. This project will implement the developed multi-block model in hundreds of cores in a GPGPU to perform parallel GPGPU computing that will further speed up the thermal simulation of GPGPUs.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "ECCS",
+ "org_div_long_name": "Division of Electrical, Communications and Cyber Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ming-Cheng",
+   "pi_last_name": "Cheng",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ming-Cheng Cheng",
+   "pi_email_addr": "mcheng@clarkson.edu",
+   "nsf_id": "000178485",
+   "pi_start_date": "2020-04-30",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Yu",
+   "pi_last_name": "Liu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yu Liu",
+   "pi_email_addr": "yuliu@clarkson.edu",
+   "nsf_id": "000762662",
+   "pi_start_date": "2020-04-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Clarkson University",
+  "inst_street_address": "8 CLARKSON AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "POTSDAM",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "3152686475",
+  "inst_zip_code": "136761401",
+  "inst_country_name": "United States",
+  "cong_dist_code": "21",
+  "st_cong_dist_code": "NY21",
+  "org_lgl_bus_name": "CLARKSON UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "SL2PF6R7MRN1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Clarkson University",
+  "perf_str_addr": "8 Clarkson Avenue",
+  "perf_city_name": "Potsdam",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "136999000",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "21",
+  "perf_st_cong_dist": "NY21",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "756400",
+   "pgm_ele_name": "CCSS-Comms Circuits & Sens Sys"
+  },
+  {
+   "pgm_ele_code": "808400",
+   "pgm_ele_name": "CDS&E"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8084",
+   "pgm_ref_txt": "CDS&E"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "",
+   "app_name": "",
+   "app_symb_id": "",
+   "fund_code": "01002324DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 375000.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2023,
+   "fund_oblg_amt": 8000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Data science and AI have recently been proven to be extremely important in nearly all industrial sectors. Intensive computing is needed in data analysis and AI training due to the massive data needed in these applications. Intensive computing for AI and data analytics heavily relies on many-core microprocessors, especially GPUs with tens of thousands of cores. Such massive parallel computing inevitably leads to severe joule heating and hot-spot formation that could significantly deteriorate GPU performance, reliability and energy efficiency. To ease these problems, effective cooling and real-time thermal management are needed. The former could be expensive and environmentally hazardous. The latter, however, can be effective by implementing real-time thermal-aware task scheduling to assign new tasks away (or relocate some workloads elsewhere) from overheated cores to minimize chip overheating and hot-spot formation. This will also minimize cooling costs and environmental hazards. To achieve this effectively, one must be able to locate the highest-temperature cores in real time, which requires fast and accurate dynamic thermal simulation with high resolution to capture hot spots.</p>\n<p>This project has developed and demonstrated three fast, accurate and high-resolution projection-based learning models with their basis functions (or modes) generated from training data. These models can be applied to real-time thermal-aware task scheduling for many-core microprocessors. Using training data, optimal modes are generated by a learning technique based on proper orthogonal decomposition (POD). Physical principles of heat transfer are then utilized to close and construct the models. These models are thus guided by heat-transfer principles during simulations, which significantly enhance their efficiency and accuracy with extrapolation capability. These models are described below.</p>\n<p><strong>Global POD-Galerkin-Projection (GPOD-GP) model:</strong> This model trains the entire chip globally and has been applied to examine its learning ability, accuracy and efficiency influenced by training data quality in 4-core and 18-core CPUs. Studies have revealed that a finer training mesh offers higher numerical accuracy that improves prediction accuracy with a small number of modes (i.e., faster simulation). Additionally, the model exhibits a remarkable extrapolation ability beyond training. However, data quality is also influenced by how thorough the variation is in the training power maps (PMs), i.e., power distributions over all heat sources. For microprocessors with hundreds or thousands of cores, it is however computationally prohibitive to include thorough variations of training PMs.</p>\n<p><strong>Ensemble POD-GP (EnPOD-GP) model:</strong> For this approach, a microprocessor is partitioned into several heat source blocks (HSBs), each of which includes only a small number of heat sources to improve training effectiveness. Instead of training the entire chip, one POD basis set is trained for one HSB whose thermal domain covers the entire chip. The temperature solution thus includes temperatures induced by all HSBs. The training then only involves dynamic power excitations in each HSB without training PMs. This approach leads to a fast and accurate prediction with a least square error near much less than 1% for any test PM for CPUs, compared to DNS. Although fast and accurate, the training needs to be performed over the entire chip for each HSB and becomes intolerable for GPUs with thousands of or more cores. <strong></strong></p>\n<p><strong>Local EnPOD-GP (LEnPOD-GP) model:</strong> To minimize the training burden for GPUs with a huge number of cores, local domain truncation, together with standard building HSBs, is applied to the thermal domain of each HBS toreduce the number of trained HBSs, which ignores temperature induced by each HSB beyond 5 thermal lengths. The approach is demonstrated in thermal simulation of Tesla Volta&trade; GV100, an NVIDIA GPU with 13,400 cores. The initial test for this demonstration selected 404 HSBs, each of which includes one to 42 functional units (FUs, such as cores), and only 16 standard HSBs are trained to represent all 404 HSBs. Using LEnPOD-GP, training time in this demonstration is reduced by 40-50 times, compared to EnPOD-GP but the accuracy slightly suffers due to domain truncation. Demonstration of this prototype model showed that the prediction of the maximum temperature in the entire GPU is nearly 1 million times more efficient than the finite element method with an error of 1.2<sup>o</sup>C. If only the temperature profile in the device layer is needed, more than 3,000-time speedup can be achieved with a least square error below 1.4%.</p>\n<p>Resulting from this project, 16 refereed journal and conference papers have been published and four software packages have been posted at github.com/orgs/CompResearchLab. 7 invited talks on subjects related to POD-GP applications have been delivered in the US and Europe. Additionally, efforts have been made to attract undergraduate researchers from underrepresented groups in STEM. There have been 13 ungraduated students engaged in research on POD-GP related subjects, including two native Americans from the local St Regis Mohawk tribe, one African American, one LGBTQ student, and 2 female students. Among them, 3 are currently pursuing their Ph.D. degrees and 2 are in M.S. programs.</p><br>\n<p>\n Last Modified: 10/07/2024<br>\nModified by: Ming-Cheng&nbsp;Cheng</p></div>\n<div class=\"porSideCol\"\n><div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2024/2003307/2003307_10667303_1728229623683_POD_GP_step_by_step_procedure_--rgov-214x142.png\" original=\"/por/images/Reports/POR/2024/2003307/2003307_10667303_1728229623683_POD_GP_step_by_step_procedure_--rgov-800width.png\" title=\"Physics-Drived POD-Galerkin for PDEs\"><img src=\"/por/images/Reports/POR/2024/2003307/2003307_10667303_1728229623683_POD_GP_step_by_step_procedure_--rgov-66x44.png\" alt=\"Physics-Drived POD-Galerkin for PDEs\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">This provide a brief graphic presentation of the step-by-step procedure to derive POD-Galerkin models for PDEs</div>\n<div class=\"imageCredit\">supported by this projet, published at https://www.sciencedirect.com/science/article/pii/S2215016123002030</div>\n<div class=\"imagePermisssions\">Royalty-free (unrestricted use)</div>\n<div class=\"imageSubmitted\">Ming-Cheng&nbsp;Cheng\n<div class=\"imageTitle\">Physics-Drived POD-Galerkin for PDEs</div>\n</div>\n</li><li>\n<a href=\"/por/images/Reports/POR/2024/2003307/2003307_10667303_1728230030716_Thermal_POD_GP_Variants--rgov-214x142.png\" original=\"/por/images/Reports/POR/2024/2003307/2003307_10667303_1728230030716_Thermal_POD_GP_Variants--rgov-800width.png\" title=\"Variants of POD-GP\"><img src=\"/por/images/Reports/POR/2024/2003307/2003307_10667303_1728230030716_Thermal_POD_GP_Variants--rgov-66x44.png\" alt=\"Variants of POD-GP\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Graphic presentations of several variants of the POD-GP methodology for simulations of many-core microprocessors</div>\n<div class=\"imageCredit\">Graphics presented at Itherm2024 in May 2024. The conference paper will appear at IEEE Xplore soon. This work was supported by this project</div>\n<div class=\"imagePermisssions\">Royalty-free (unrestricted use)</div>\n<div class=\"imageSubmitted\">Ming-Cheng&nbsp;Cheng\n<div class=\"imageTitle\">Variants of POD-GP</div>\n</div>\n</li><li>\n<a href=\"/por/images/Reports/POR/2024/2003307/2003307_10667303_1728306509008_2022_ITherm_Award--rgov-214x142.png\" original=\"/por/images/Reports/POR/2024/2003307/2003307_10667303_1728306509008_2022_ITherm_Award--rgov-800width.png\" title=\"Itherm 2022 Award\"><img src=\"/por/images/Reports/POR/2024/2003307/2003307_10667303_1728306509008_2022_ITherm_Award--rgov-66x44.png\" alt=\"Itherm 2022 Award\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">A presentation at Itherm-2024 delivered by a Ph.D. working on POD-GP simulation methodology received an award in \"The Emerging Technologies and Fundamentals\" Track</div>\n<div class=\"imageCredit\">The work was supported by this NSF project</div>\n<div class=\"imagePermisssions\">Royalty-free (unrestricted use)</div>\n<div class=\"imageSubmitted\">Ming-Cheng&nbsp;Cheng\n<div class=\"imageTitle\">Itherm 2022 Award</div>\n</div>\n</li></ul>\n</div>\n</div></div>\n</div>\n",
+  "por_txt_cntn": "\n\nData science and AI have recently been proven to be extremely important in nearly all industrial sectors. Intensive computing is needed in data analysis and AI training due to the massive data needed in these applications. Intensive computing for AI and data analytics heavily relies on many-core microprocessors, especially GPUs with tens of thousands of cores. Such massive parallel computing inevitably leads to severe joule heating and hot-spot formation that could significantly deteriorate GPU performance, reliability and energy efficiency. To ease these problems, effective cooling and real-time thermal management are needed. The former could be expensive and environmentally hazardous. The latter, however, can be effective by implementing real-time thermal-aware task scheduling to assign new tasks away (or relocate some workloads elsewhere) from overheated cores to minimize chip overheating and hot-spot formation. This will also minimize cooling costs and environmental hazards. To achieve this effectively, one must be able to locate the highest-temperature cores in real time, which requires fast and accurate dynamic thermal simulation with high resolution to capture hot spots.\n\n\nThis project has developed and demonstrated three fast, accurate and high-resolution projection-based learning models with their basis functions (or modes) generated from training data. These models can be applied to real-time thermal-aware task scheduling for many-core microprocessors. Using training data, optimal modes are generated by a learning technique based on proper orthogonal decomposition (POD). Physical principles of heat transfer are then utilized to close and construct the models. These models are thus guided by heat-transfer principles during simulations, which significantly enhance their efficiency and accuracy with extrapolation capability. These models are described below.\n\n\nGlobal POD-Galerkin-Projection (GPOD-GP) model: This model trains the entire chip globally and has been applied to examine its learning ability, accuracy and efficiency influenced by training data quality in 4-core and 18-core CPUs. Studies have revealed that a finer training mesh offers higher numerical accuracy that improves prediction accuracy with a small number of modes (i.e., faster simulation). Additionally, the model exhibits a remarkable extrapolation ability beyond training. However, data quality is also influenced by how thorough the variation is in the training power maps (PMs), i.e., power distributions over all heat sources. For microprocessors with hundreds or thousands of cores, it is however computationally prohibitive to include thorough variations of training PMs.\n\n\nEnsemble POD-GP (EnPOD-GP) model: For this approach, a microprocessor is partitioned into several heat source blocks (HSBs), each of which includes only a small number of heat sources to improve training effectiveness. Instead of training the entire chip, one POD basis set is trained for one HSB whose thermal domain covers the entire chip. The temperature solution thus includes temperatures induced by all HSBs. The training then only involves dynamic power excitations in each HSB without training PMs. This approach leads to a fast and accurate prediction with a least square error near much less than 1% for any test PM for CPUs, compared to DNS. Although fast and accurate, the training needs to be performed over the entire chip for each HSB and becomes intolerable for GPUs with thousands of or more cores. \n\n\nLocal EnPOD-GP (LEnPOD-GP) model: To minimize the training burden for GPUs with a huge number of cores, local domain truncation, together with standard building HSBs, is applied to the thermal domain of each HBS toreduce the number of trained HBSs, which ignores temperature induced by each HSB beyond 5 thermal lengths. The approach is demonstrated in thermal simulation of Tesla Volta GV100, an NVIDIA GPU with 13,400 cores. The initial test for this demonstration selected 404 HSBs, each of which includes one to 42 functional units (FUs, such as cores), and only 16 standard HSBs are trained to represent all 404 HSBs. Using LEnPOD-GP, training time in this demonstration is reduced by 40-50 times, compared to EnPOD-GP but the accuracy slightly suffers due to domain truncation. Demonstration of this prototype model showed that the prediction of the maximum temperature in the entire GPU is nearly 1 million times more efficient than the finite element method with an error of 1.2oC. If only the temperature profile in the device layer is needed, more than 3,000-time speedup can be achieved with a least square error below 1.4%.\n\n\nResulting from this project, 16 refereed journal and conference papers have been published and four software packages have been posted at github.com/orgs/CompResearchLab. 7 invited talks on subjects related to POD-GP applications have been delivered in the US and Europe. Additionally, efforts have been made to attract undergraduate researchers from underrepresented groups in STEM. There have been 13 ungraduated students engaged in research on POD-GP related subjects, including two native Americans from the local St Regis Mohawk tribe, one African American, one LGBTQ student, and 2 female students. Among them, 3 are currently pursuing their Ph.D. degrees and 2 are in M.S. programs.\t\t\t\t\tLast Modified: 10/07/2024\n\n\t\t\t\t\tSubmitted by: Ming-ChengCheng\n"
+ }
+}

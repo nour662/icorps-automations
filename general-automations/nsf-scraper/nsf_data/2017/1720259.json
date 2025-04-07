@@ -1,0 +1,113 @@
+{
+ "awd_id": "1720259",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Matrix Functions and Network Analysis",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Leland Jameson",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 150000.0,
+ "awd_amount": 150000.0,
+ "awd_min_amd_letter_date": "2017-08-21",
+ "awd_max_amd_letter_date": "2017-08-21",
+ "awd_abstract_narration": "Networks are important subjects of study in several fields, including biology, social sciences, and security. Two important properties of networks that are often overlooked are that they are dynamic (change over time), and have features that are relevant at different scales. Thus, it is important to study networks from a dynamic and multiscale point of view. A natural model is to assume that we have not just one network, but a family of networks, indexed by one parameter (or may be more). That parameter can track changes as time passes, or as one change one's focus to different scales. In this project the PIs will develop analysis tools and techniques that provide useful insights, but are also efficiently computable for large networks, even when dealing with many values for the parameter. They concentrate on several measures of interest in the network analysis literature, like measures of centrality, hubs and authorities, good broadcasters and good receivers. The study of these measures becomes more difficult for larger networks.\r\n\r\nMethods for discovering important features of a network are often based on matrix functions. Two of them are the matrix exponential and the resolvent; these can be heuristically justified as measuring connectivity between nodes by weighted sums of paths connecting them, and modifications of these functions can be easily devised to stress some features of the network over others. The PIs have developed methods for approximate computation and error estimation that can be applied to a wide class matrix functions. They will adapt and develop methods of approximate computation, and determine error estimates for these methods, as relevant to the project setting. Some quantifications of network features involve matrix decompositions, like the eigenvalue or singular value decompositions, while others involve only simple matrix summaries, like the diagonal entries, or row and column sums. The PIs will devise approaches for carrying out decompositions that take advantage of the closeness between the matrices when the parameters are close, in order to reduce the computational burden and to better keep track of the parts of the decomposition that rise or fall in importance as the parameter changes.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Lothar",
+   "pi_last_name": "Reichel",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Lothar Reichel",
+   "pi_email_addr": "reichel@math.kent.edu",
+   "nsf_id": "000341820",
+   "pi_start_date": "2017-08-21",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Omar",
+   "pi_last_name": "De La Cruz Cabrera",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Omar De La Cruz Cabrera",
+   "pi_email_addr": "odelacru@kent.edu",
+   "nsf_id": "000740319",
+   "pi_start_date": "2017-08-21",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Kent State University",
+  "inst_street_address": "1500 HORNING RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "KENT",
+  "inst_state_code": "OH",
+  "inst_state_name": "Ohio",
+  "inst_phone_num": "3306722070",
+  "inst_zip_code": "442420001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "14",
+  "st_cong_dist_code": "OH14",
+  "org_lgl_bus_name": "KENT STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "KXNVA7JCC5K6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Kent State University",
+  "perf_str_addr": "",
+  "perf_city_name": "Kent",
+  "perf_st_code": "OH",
+  "perf_st_name": "Ohio",
+  "perf_zip_code": "442420001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "14",
+  "perf_st_cong_dist": "OH14",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 150000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Many complex phenomena, natural and human-made, can be usefully modeled as networks, that is, a collection of nodes and connections among them, called edges. Like all useful models, networks simplify reality by ignoring information deemed irrelevant; indeed, in the simplest network models, neither nodes nor edges have any attributes and all complexity arises only from the patterns of connectivity. This simplification makes it possible to apply powerful quantitative methods to extract information about a complex system that might not be easily accessible otherwise. In particular, a full description of a graph can be encoded in the so-called adjacency matrix, which for each pair of nodes indicates whether there is an edge between them (and possibly the \"strength\" of the connection).</p>\n<p>Although conceptually simple, graph-theoretic models of networks can exhibit many of the complex phenomena of real networks, and many aspects of such phenomena can be studied through mathematical and statistical analyses of the underlying graph. However, analytical approaches that work well for small and medium-sized networks (tens to thousands of nodes) lead to serious computational challenges at larger sizes. In this project, we developed computational methods tailored for network analysis, while simultaneously extending the theory of modeling network properties using matrix functions.</p>\n<p>Matrix functions extend many of the well-known functions of calculus (polynomials, exponentials, sine, cosine, etc.) to the realm of matrices. Two functions were of particular interest to us: the matrix exponential and the resolvent. When applied to the adjacency matrix of a network, each of them yields insights into the connectivity patterns, local and global, within the network. In fact, several popular measures of node centrality and connectivity are based on the use of the matrix exponential and the resolvent. In this project we developed and adapted methods for approximate computation of expressions involving matrix functions, suitable for large matrices, and devised inexpensively computable error estimates that can be applied to a wide class of matrix functions. Although our main focus is on network analysis, the results are useful in other areas in which matrix functions are used, including inverse and ill-posed problems, as well as ordinary, partial, and stochastic differential equations.</p>\n<p>This project also expanded the application of matrix functions in network analysis. Modifications of the existing approaches were introduced to stress some qualities of a network over others; in particular, this involved the introduction of a parameter that modifies the scale at which the analysis is carried out. This brings out important connections between network analysis and kernel methods in multivariate data analysis, with important consequences for the interpretation of results in both fields.</p>\n<p>The results of this project enable more detailed and accurate analyses of larger networks. This will have an impact in fields like the life and biomedical sciences, national security, engineering of communication and power networks, and many more. Furthermore, matrix functions are used in many other fields of Applied Mathematics, which will also benefit from our methods. For maximum impact, the theoretical results we obtained were disseminated through relevant peer-reviewed publications. As befits our academic environment, this research project helped in the training of students, through their doctoral dissertation work, as well as through special topics courses that we offered at our institution and in international settings.&nbsp;</p>\n<p>This project yielded advances in the fields of mathematical network analysis, statistical network analysis, and numerical analysis. We have expanded the scope of the matrix function framework as a flexible and expressive general approach for the analysis of networks. We also improved ways to approximate matrix functions for the efficient analysis of large networks, making it possible to investigate larger problems as well as to evaluate error estimates. New measures of node and edge importance extend previous concepts, extending their applicability, but also clarifying the range of applicability of the existing and new methods. Investigations into the sensitivity of network communicability measures to small changes allows us to answer questions like: What edge can be added to increase global communicability the most? What edge, if removed, would lead to the greatest loss in communicability? How fragile or resilient is a given network? What edges or nodes must be protected to defend a valuable network? What edges or nodes should be attacked to disrupt a dangerous network (e.g., a disease contagion network)?</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/31/2021<br>\n\t\t\t\t\tModified by: Omar&nbsp;De La Cruz Cabrera</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMany complex phenomena, natural and human-made, can be usefully modeled as networks, that is, a collection of nodes and connections among them, called edges. Like all useful models, networks simplify reality by ignoring information deemed irrelevant; indeed, in the simplest network models, neither nodes nor edges have any attributes and all complexity arises only from the patterns of connectivity. This simplification makes it possible to apply powerful quantitative methods to extract information about a complex system that might not be easily accessible otherwise. In particular, a full description of a graph can be encoded in the so-called adjacency matrix, which for each pair of nodes indicates whether there is an edge between them (and possibly the \"strength\" of the connection).\n\nAlthough conceptually simple, graph-theoretic models of networks can exhibit many of the complex phenomena of real networks, and many aspects of such phenomena can be studied through mathematical and statistical analyses of the underlying graph. However, analytical approaches that work well for small and medium-sized networks (tens to thousands of nodes) lead to serious computational challenges at larger sizes. In this project, we developed computational methods tailored for network analysis, while simultaneously extending the theory of modeling network properties using matrix functions.\n\nMatrix functions extend many of the well-known functions of calculus (polynomials, exponentials, sine, cosine, etc.) to the realm of matrices. Two functions were of particular interest to us: the matrix exponential and the resolvent. When applied to the adjacency matrix of a network, each of them yields insights into the connectivity patterns, local and global, within the network. In fact, several popular measures of node centrality and connectivity are based on the use of the matrix exponential and the resolvent. In this project we developed and adapted methods for approximate computation of expressions involving matrix functions, suitable for large matrices, and devised inexpensively computable error estimates that can be applied to a wide class of matrix functions. Although our main focus is on network analysis, the results are useful in other areas in which matrix functions are used, including inverse and ill-posed problems, as well as ordinary, partial, and stochastic differential equations.\n\nThis project also expanded the application of matrix functions in network analysis. Modifications of the existing approaches were introduced to stress some qualities of a network over others; in particular, this involved the introduction of a parameter that modifies the scale at which the analysis is carried out. This brings out important connections between network analysis and kernel methods in multivariate data analysis, with important consequences for the interpretation of results in both fields.\n\nThe results of this project enable more detailed and accurate analyses of larger networks. This will have an impact in fields like the life and biomedical sciences, national security, engineering of communication and power networks, and many more. Furthermore, matrix functions are used in many other fields of Applied Mathematics, which will also benefit from our methods. For maximum impact, the theoretical results we obtained were disseminated through relevant peer-reviewed publications. As befits our academic environment, this research project helped in the training of students, through their doctoral dissertation work, as well as through special topics courses that we offered at our institution and in international settings. \n\nThis project yielded advances in the fields of mathematical network analysis, statistical network analysis, and numerical analysis. We have expanded the scope of the matrix function framework as a flexible and expressive general approach for the analysis of networks. We also improved ways to approximate matrix functions for the efficient analysis of large networks, making it possible to investigate larger problems as well as to evaluate error estimates. New measures of node and edge importance extend previous concepts, extending their applicability, but also clarifying the range of applicability of the existing and new methods. Investigations into the sensitivity of network communicability measures to small changes allows us to answer questions like: What edge can be added to increase global communicability the most? What edge, if removed, would lead to the greatest loss in communicability? How fragile or resilient is a given network? What edges or nodes must be protected to defend a valuable network? What edges or nodes should be attacked to disrupt a dangerous network (e.g., a disease contagion network)?\n\n\t\t\t\t\tLast Modified: 12/31/2021\n\n\t\t\t\t\tSubmitted by: Omar De La Cruz Cabrera"
+ }
+}

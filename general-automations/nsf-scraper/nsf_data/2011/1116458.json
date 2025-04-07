@@ -1,0 +1,121 @@
+{
+ "awd_id": "1116458",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "III: Small: Spectral Methods for Active Clustering and Bi-Clustering",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032927347",
+ "po_email": "sspengle@nsf.gov",
+ "po_sign_block_name": "Sylvia Spengler",
+ "awd_eff_date": "2011-07-01",
+ "awd_exp_date": "2014-06-30",
+ "tot_intn_awd_amt": 372765.0,
+ "awd_amount": 388765.0,
+ "awd_min_amd_letter_date": "2011-06-28",
+ "awd_max_amd_letter_date": "2012-05-07",
+ "awd_abstract_narration": "Clustering or organization of data into groups is a fundamental problem that forms the basis of exploratory data analysis and aids in data management. However, there is often a significant resource and computational cost associated with obtaining and analyzing large-scale datasets that routinely arise in modern systems, such as the Internet, biological and social networks. The ability to discover meaningful clusters in high-dimensional data that is plagued with high noise, outliers and missing observations, will have a significant impact on understanding these systems. \r\n \r\nThis project aims to develop robust clustering methods that can identify clusters very efficiently by selectively querying for the most informative data measurements. Spectral clustering is a popular technique that identifies clusters by analyzing the eigenvectors of a matrix of similarity values between the data points. This project investigates the effect of missing and erroneous data on the eigenvector structure, and leverages this understanding to develop active methods that intelligently guide subsequent data queries.\r\n \r\nRobust and efficient clustering methods are crucial for identifying groups of proteins and drugs that interact with each other, paving the way for transformative health technologies. These methods are also important for learning and maintaining the organization of computer and social networks, thus promoting seamless exchange of ideas and technology. This PI is involved in disseminating the research through collaborations with the CMU Lane Center for Computational Biology, publishing results and software online (http://www.cs.cmu.edu/~aarti/research_projects), developing and teaching inter-disciplinary courses, as well as the Opportunities for undergraduate women research in Computer Science (OurCS) program at Carnegie Mellon University.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Aarti",
+   "pi_last_name": "Singh",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Aarti Singh",
+   "pi_email_addr": "aartisingh@cmu.edu",
+   "nsf_id": "000552803",
+   "pi_start_date": "2011-06-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Carnegie-Mellon University",
+  "inst_street_address": "5000 FORBES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4122688746",
+  "inst_zip_code": "152133815",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "CARNEGIE MELLON UNIVERSITY",
+  "org_prnt_uei_num": "U3NKNFLNQ613",
+  "org_uei_num": "U3NKNFLNQ613"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Carnegie-Mellon University",
+  "perf_str_addr": "5000 FORBES AVE",
+  "perf_city_name": "PITTSBURGH",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152133815",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736400",
+   "pgm_ele_name": "Info Integration & Informatics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 372765.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 16000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Identifying groups of similar objects, a task known as clustering, is important in many scientific fields. Despite its ubiquity, the effect of noise, outliers, and missing data (characteristics that plague any modern dataset) on clustering algorithms is not well understood. In this project, we 1) investigated noise and outlier tolerance properties of spectral clustering algorithms and 2) developed new clustering methods that use judicious choice of which data to collect, store and compute to enable learning clusters from partial observations.</p>\n<p>Towards the first goal, we developed a precise characterization of the noise tolerance of spectral clustering, a popular clustering algorithm. Our results indicate how the noise robustness depends on number of objects to be clustered, amount of noise and outliers, variations in similarity between and within clusters, and the resolution of the finest cluster of interest. We also developed a similar characterization for the biclustering setting, where the goal is to cluster pairs of objects such as drugs and genes. Towards the second goal, we modified existing spectral methods and developed new methods to learn clusters from partial observations. Specifically, we investigated ``active&rdquo; methods that employ judicious choice of which similarities to measure or compute to enable learning of clusters of a desired resolution from few selective measurements. A natural issue that comes up is that clustering methods that can learn from partial observations are less robust to noise. To address this, we developed adaptive methods that can tradeoff noise tolerance vs. number of measurements in a principled way, as per the resource constraints and needs of the application. Additionally, our work on noise tolerant active clustering also provided insights to solutions for other related problems such as adaptive noisy matrix completion and recovering latent trees from selective end-to-end measurements as in network tomography.</p>\n<p>Broad impact: Ability to cluster data into homogeneous groups is a critical first step in myriad applications, including biomedical and healthcare data analysis, neuroscience, computer and social networks. In all these applications, the data is corrupt and often missing due to resource constraints. The algorithms we have developed allow practitioners to tradeoff competing requirements such as robustness, runtime and data collection budget in a principled way, unleashing the potential of modern datasets. Specifically, we applied our methods to cluster asthma patients according to their phenotypes and cluster brain fibers, in collaboration with domain experts. The project trained undergraduate and graduate students in cutting-edge tools at the intersection of machine learning, statistics, and signal processing. Components of the research were also incorporated in existing and new inter-disciplinary courses taught by the PI. Additionally, the research results were used for demonstration and inspiration in high-school STEM events, as well as encouraging women students to pursue careers in computer science.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/27/2014<br>\n\t\t\t\t\tModified by: Aarti&nbsp;Singh</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIdentifying groups of similar objects, a task known as clustering, is important in many scientific fields. Despite its ubiquity, the effect of noise, outliers, and missing data (characteristics that plague any modern dataset) on clustering algorithms is not well understood. In this project, we 1) investigated noise and outlier tolerance properties of spectral clustering algorithms and 2) developed new clustering methods that use judicious choice of which data to collect, store and compute to enable learning clusters from partial observations.\n\nTowards the first goal, we developed a precise characterization of the noise tolerance of spectral clustering, a popular clustering algorithm. Our results indicate how the noise robustness depends on number of objects to be clustered, amount of noise and outliers, variations in similarity between and within clusters, and the resolution of the finest cluster of interest. We also developed a similar characterization for the biclustering setting, where the goal is to cluster pairs of objects such as drugs and genes. Towards the second goal, we modified existing spectral methods and developed new methods to learn clusters from partial observations. Specifically, we investigated ``active\" methods that employ judicious choice of which similarities to measure or compute to enable learning of clusters of a desired resolution from few selective measurements. A natural issue that comes up is that clustering methods that can learn from partial observations are less robust to noise. To address this, we developed adaptive methods that can tradeoff noise tolerance vs. number of measurements in a principled way, as per the resource constraints and needs of the application. Additionally, our work on noise tolerant active clustering also provided insights to solutions for other related problems such as adaptive noisy matrix completion and recovering latent trees from selective end-to-end measurements as in network tomography.\n\nBroad impact: Ability to cluster data into homogeneous groups is a critical first step in myriad applications, including biomedical and healthcare data analysis, neuroscience, computer and social networks. In all these applications, the data is corrupt and often missing due to resource constraints. The algorithms we have developed allow practitioners to tradeoff competing requirements such as robustness, runtime and data collection budget in a principled way, unleashing the potential of modern datasets. Specifically, we applied our methods to cluster asthma patients according to their phenotypes and cluster brain fibers, in collaboration with domain experts. The project trained undergraduate and graduate students in cutting-edge tools at the intersection of machine learning, statistics, and signal processing. Components of the research were also incorporated in existing and new inter-disciplinary courses taught by the PI. Additionally, the research results were used for demonstration and inspiration in high-school STEM events, as well as encouraging women students to pursue careers in computer science. \n\n \n\n\t\t\t\t\tLast Modified: 09/27/2014\n\n\t\t\t\t\tSubmitted by: Aarti Singh"
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "awd_id": "1553873",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CAREER: A Compositional Approach to Modular Cyber-Physical Control System Design",
+ "cfda_num": "47.041",
+ "org_code": "07010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Lawrence Goldberg",
+ "awd_eff_date": "2016-02-15",
+ "awd_exp_date": "2022-09-30",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 500000.0,
+ "awd_min_amd_letter_date": "2016-01-27",
+ "awd_max_amd_letter_date": "2016-01-27",
+ "awd_abstract_narration": "Complex, networked, distributed cyber-physical systems (CPSs) are emerging in many safety-critical application domains such as aerospace and automotive. Design of such systems heavily relies on insights and experiences of engineers as principled design methodologies that can cope with the complexity of these systems are lacking. As a result, extensive testing and fine-tuning is required to ensure that the final product satisfies the design objectives. As a principled alternative, this project proposes to use modularity for managing complexity during both the design- and the life-cycles of cyber-physical systems. The objective is to develop the scientific foundation and associated algorithmic tools for the design of modular cyber-physical control systems. If successful, in the long-run this research will lead to a \"plug and play\" integration framework for CPSs supported by automated design tools, where one can replace a subsystem with another one or perform upgrades to subsystems while maintaining operational correctness guarantees. Results from this research will be relevant to many application domains, including next generation air vehicles, automotive systems and robotics. Its potential transformative impact will be on the way CPSs in these domains are designed and operated. Translation to the economy will proceed by actively seeking and engaging industrial partners. This research effort will be complemented by an education plan where interdisciplinary research and thinking in the area of CPS will be fostered among undergraduate and graduate students to prepare the next generation of CPS researchers and practitioners.\r\n\r\nTo be specific, the project will develop theoretical foundations and associated algorithmic tools for distributed synthesis of provably correct control protocols that give rise to compositional design principles for cyber-physical control systems. In particular, algorithms for decompositions of system requirements at the discrete/logic level and of the system states at the continuous/system level will be developed. The main idea is a novel separation between external and internal factors affecting each subsystem that allows internal interactions required for the successful operation of a subsystem to be computed explicitly. These internal interactions, namely interface rules, are captured in terms of assumption and guarantee pairs that are used for solving local synthesis problems to obtain local controllers in a distributed manner, while maintaining global correctness guarantees when these controllers are deployed simultaneously. The modularity-performance trade-off space will be explored by introducing proper partial orders on these interface rules and by tuning the complexity of the interface rules according to these order relations. Tools from control theory (decentralized and robust control, model reduction, discrete event systems) and formal methods (temporal logics, compositional verification, distributed reactive synthesis) will be brought to bear to address these problems.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "ECCS",
+ "org_div_long_name": "Division of Electrical, Communications and Cyber Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Necmiye",
+   "pi_last_name": "Ozay",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Necmiye Ozay",
+   "pi_email_addr": "necmiye@umich.edu",
+   "nsf_id": "000599056",
+   "pi_start_date": "2016-01-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Regents of the University of Michigan - Ann Arbor",
+  "inst_street_address": "1109 GEDDES AVE STE 3300",
+  "inst_street_address_2": "",
+  "inst_city_name": "ANN ARBOR",
+  "inst_state_code": "MI",
+  "inst_state_name": "Michigan",
+  "inst_phone_num": "7347636438",
+  "inst_zip_code": "481091015",
+  "inst_country_name": "United States",
+  "cong_dist_code": "06",
+  "st_cong_dist_code": "MI06",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF MICHIGAN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GNJ7BBP73WE9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Michigan Ann Arbor",
+  "perf_str_addr": "",
+  "perf_city_name": "Ann Arbor",
+  "perf_st_code": "MI",
+  "perf_st_name": "Michigan",
+  "perf_zip_code": "481091274",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "MI06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "760700",
+   "pgm_ele_name": "EPCN-Energy-Power-Ctrl-Netwrks"
+  },
+  {
+   "pgm_ele_code": "791800",
+   "pgm_ele_name": "CPS-Cyber-Physical Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1045",
+   "pgm_ref_txt": "CAREER-Faculty Erly Career Dev"
+  },
+  {
+   "pgm_ref_code": "7918",
+   "pgm_ref_txt": "CYBER-PHYSICAL SYSTEMS (CPS)"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 500000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Complex cyber-physical systems (CPSs) underlie many technological systems of societal importance. Feedback controllers are critical for smooth, safe, and reliable operation of such CPSs. The main goal of this project was to develop rigorous and scalable methods for automatically synthesizing control systems for complex CPSs that are guaranteed to enforce the satisfaction of given requirements.&nbsp;</p>\n<p>The approach that was develop was based on formal decomposition and composition techniques for breaking up a complex control synthesis problem into smaller pieces (e.g., over interacting subsystems), and the guaranteed integration of the resulting controllers based on set-valued assume-guarantee contracts. In this framework, each subsystem guarantees the satisfaction of its specifications under the assumption that other subsystems guarantee certain other specifications. Since such local problems are smaller than a monolithic problem, they can be solved more efficiently. Moreover, structural properties for reducing the complexity of the control synthesis tasks were also established. The developed theory and algorithms are broadly applicable but we demonstrated their use in automative safety systems, power systems, and robotics applications.&nbsp;</p>\n<p>The major problems that were investigated are as follows:<br />1. Compositional construction of controlled invariant sets, sets from where the system can be guaranteed to remain safe indefinitely with proper choice of control inputs.&nbsp;<br />2. Identification of structural properties of systems (e.g., mixed monotonicity) and specifications (e.g., counting constraints) that can be leveraged for significantly improving the computational efficiency of control synthesis algorithms.&nbsp;<br />3. Algorithms and theory for control synthesis in partial information settings.&nbsp;<br />4. Real world demonstration of automatically synthesized adaptive cruise control and lane keeping controllers on a real vehicle in Mcity, University of Michigan's autonomous vehicle test facility, in addition to demonstrations on university-scale platforms and simulation environments.</p>\n<p>The research conducted in this project resulted in rigorous methodologies for the design of cyber-physical systems and associated software tools (available on public software repositories) that have the potential to significantly impact a large class of technological systems that are of great societal importance. Results were published in archival journals and conference proceedings, and disseminated via invited talks.&nbsp;</p>\n<p>This project contributed to the training of several undergraduate and graduate students at the University of Michigan in the important area of safe and modular design of cyber-physical systems.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/01/2023<br>\n\t\t\t\t\tModified by: Necmiye&nbsp;Ozay</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nComplex cyber-physical systems (CPSs) underlie many technological systems of societal importance. Feedback controllers are critical for smooth, safe, and reliable operation of such CPSs. The main goal of this project was to develop rigorous and scalable methods for automatically synthesizing control systems for complex CPSs that are guaranteed to enforce the satisfaction of given requirements. \n\nThe approach that was develop was based on formal decomposition and composition techniques for breaking up a complex control synthesis problem into smaller pieces (e.g., over interacting subsystems), and the guaranteed integration of the resulting controllers based on set-valued assume-guarantee contracts. In this framework, each subsystem guarantees the satisfaction of its specifications under the assumption that other subsystems guarantee certain other specifications. Since such local problems are smaller than a monolithic problem, they can be solved more efficiently. Moreover, structural properties for reducing the complexity of the control synthesis tasks were also established. The developed theory and algorithms are broadly applicable but we demonstrated their use in automative safety systems, power systems, and robotics applications. \n\nThe major problems that were investigated are as follows:\n1. Compositional construction of controlled invariant sets, sets from where the system can be guaranteed to remain safe indefinitely with proper choice of control inputs. \n2. Identification of structural properties of systems (e.g., mixed monotonicity) and specifications (e.g., counting constraints) that can be leveraged for significantly improving the computational efficiency of control synthesis algorithms. \n3. Algorithms and theory for control synthesis in partial information settings. \n4. Real world demonstration of automatically synthesized adaptive cruise control and lane keeping controllers on a real vehicle in Mcity, University of Michigan's autonomous vehicle test facility, in addition to demonstrations on university-scale platforms and simulation environments.\n\nThe research conducted in this project resulted in rigorous methodologies for the design of cyber-physical systems and associated software tools (available on public software repositories) that have the potential to significantly impact a large class of technological systems that are of great societal importance. Results were published in archival journals and conference proceedings, and disseminated via invited talks. \n\nThis project contributed to the training of several undergraduate and graduate students at the University of Michigan in the important area of safe and modular design of cyber-physical systems.\n\n\t\t\t\t\tLast Modified: 02/01/2023\n\n\t\t\t\t\tSubmitted by: Necmiye Ozay"
+ }
+}

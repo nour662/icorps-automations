@@ -1,0 +1,109 @@
+{
+ "awd_id": "1614309",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Fellowship Award",
+ "awd_titl_txt": "EAPSI: Applying Machine Learning Techniques to Predict Task High Performance Computing Performance on a Variety of Execution Platforms",
+ "cfda_num": "47.079",
+ "org_code": "01090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anne Emig",
+ "awd_eff_date": "2016-06-15",
+ "awd_exp_date": "2017-05-31",
+ "tot_intn_awd_amt": 5400.0,
+ "awd_amount": 5400.0,
+ "awd_min_amd_letter_date": "2016-07-05",
+ "awd_max_amd_letter_date": "2016-07-05",
+ "awd_abstract_narration": "Ten years ago, the highest performing computing systems in the world were homogeneous and specialized: they were composed of a single processor architecture and they executed primarily scientific workloads. Today, we see much more diversity in both the hardware platforms and applications. Many of the world's largest computing clusters contain multiple processor architectures and execute a wider variety of application workloads applications in science, data analytics, genomics, and medical imaging. The choice of software execution platforms has expanded. This increased complexity in multiple dimensions makes efficiently scheduling workloads on high-performance computing (HPC) systems more challenging. Even worse, our ability to reason about the behavior of automated scheduling systems usually diminishes as system complexity increases. This project takes steps to address these problems by experimenting with machine learning techniques for predicting task performance on a variety of execution platforms, including the Java Virtual Machine (JVM), native CPU threads, and native GPU threads. This research will be conducted under the mentorship of Professor Hironori Kasahara, Director of the Advanced Multicore Processor Research Institute at Waseda University in Tokyo, Japan. The work has the potential to positively impact present and future high-performance computing applications in both industry and research las that run on heterogeneous platforms. \r\n\r\nThe project will focus on the development of a novel framework for automatic platform selection in the area of heterogeneous systems, as well as an understanding of how efficient, accurate, and analyzable modern techniques are at offline and online performance model training. Our proposed approach is hybrid, using both one-time offline training of performance models as well as continuous online training to produce a predictive performance model. We will construct and open source a general-purpose automatic platform selection framework to validate our approach. Rather than focusing on evaluating a single technique, we will use this framework to perform a comprehensive survey of proposed machine learning techniques for automatic platform selection to understand the tradeoffs of each in terms of performance, accuracy, and analyzability.\r\n\r\nThis award under the East Asia and Pacific Summer Institutes program supports summer research by a U.S. graduate student and is jointly funded by NSF and the Japan Society for the Promotion of Science.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "O/D",
+ "org_dir_long_name": "Office Of The Director",
+ "div_abbr": "OISE",
+ "org_div_long_name": "Office of International Science and Engineering",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jonathan",
+   "pi_last_name": "Grossman",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jonathan M Grossman",
+   "pi_email_addr": "",
+   "nsf_id": "000711257",
+   "pi_start_date": "2016-07-05",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Grossman                Jonathan       M",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "Houston",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "",
+  "inst_zip_code": "770303282",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "TX07",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "Waseda University",
+  "perf_str_addr": null,
+  "perf_city_name": "Tokyo",
+  "perf_st_code": "",
+  "perf_st_name": "RI REQUIRED",
+  "perf_zip_code": "",
+  "perf_ctry_code": "JA",
+  "perf_cong_dist": "",
+  "perf_st_cong_dist": "",
+  "perf_ctry_name": "Japan",
+  "perf_ctry_flag": "0"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "731600",
+   "pgm_ele_name": "EAPSI"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5921",
+   "pgm_ref_txt": "JAPAN"
+  },
+  {
+   "pgm_ref_code": "5978",
+   "pgm_ref_txt": "EAST ASIA AND PACIFIC PROGRAM"
+  },
+  {
+   "pgm_ref_code": "7316",
+   "pgm_ref_txt": "EAPSI"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 5400.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In this work, our goal was to design and build a software system for analyzing the performance of important computational workloads, using that analysis to predict the performance of previously unseen workloads across a wide range of hardware platforms. In many cases, the same workload or type of workload will be run across several national computing centers, each with their own hardware platform. Being able to efficiently map that workload across platforms is crucial to improving the flexibility of large-scale software systems.</p>\n<p>Unfortunately, these workloads are often massively complex and difficult to predict, and their behavior varies dynamically based on runtime inputs. Many past approaches to this problem do not properly account for this dynamism and try to understand the whole workload. This often leads to automated systems biting off more than they can chew.</p>\n<p>In our approach, we focus on first decomposing these workloads into smaller, more predictable chunks of code. We then focus on generating accurate predictions of the performance and behavior of these small code slices, and construct full workload performance estimates by stitching together predictions for the different pieces of the workload.</p>\n<p>We evaluated this approach on a wide range of computational kernels and hardware platforms, including Intel x86 and GPU processors. Initial results demonstrate the efficacy of this approach. For ~42% of all tested kernels, the relative performance predictions made between x86 and GPU processors were within 10% of the true value. With this order of accuracy, these performance predictions are sufficient to support engineers and automatic systems in mapping important scientific workloads to complex hardware platforms.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/15/2017<br>\n\t\t\t\t\tModified by: Jonathan&nbsp;M&nbsp;Grossman</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIn this work, our goal was to design and build a software system for analyzing the performance of important computational workloads, using that analysis to predict the performance of previously unseen workloads across a wide range of hardware platforms. In many cases, the same workload or type of workload will be run across several national computing centers, each with their own hardware platform. Being able to efficiently map that workload across platforms is crucial to improving the flexibility of large-scale software systems.\n\nUnfortunately, these workloads are often massively complex and difficult to predict, and their behavior varies dynamically based on runtime inputs. Many past approaches to this problem do not properly account for this dynamism and try to understand the whole workload. This often leads to automated systems biting off more than they can chew.\n\nIn our approach, we focus on first decomposing these workloads into smaller, more predictable chunks of code. We then focus on generating accurate predictions of the performance and behavior of these small code slices, and construct full workload performance estimates by stitching together predictions for the different pieces of the workload.\n\nWe evaluated this approach on a wide range of computational kernels and hardware platforms, including Intel x86 and GPU processors. Initial results demonstrate the efficacy of this approach. For ~42% of all tested kernels, the relative performance predictions made between x86 and GPU processors were within 10% of the true value. With this order of accuracy, these performance predictions are sufficient to support engineers and automatic systems in mapping important scientific workloads to complex hardware platforms.\n\n\t\t\t\t\tLast Modified: 03/15/2017\n\n\t\t\t\t\tSubmitted by: Jonathan M Grossman"
+ }
+}

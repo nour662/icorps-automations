@@ -1,0 +1,101 @@
+{
+ "awd_id": "2051197",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AitF: Collaborative Research: Topological Algorithms for 3D/4D Cardiac Images: Understanding Complex and Dynamic Structures",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tracy Kimbrel",
+ "awd_eff_date": "2020-08-15",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 80867.0,
+ "awd_amount": 80867.0,
+ "awd_min_amd_letter_date": "2020-09-10",
+ "awd_max_amd_letter_date": "2020-10-14",
+ "awd_abstract_narration": "The interiors of ventricles of a human heart are spanned by a fine net of muscle fibers that are difficult to resolve, even in high resolution CT images.  An accurate account of these structures, however, could improve diagnosis of cardiac disease, evaluation of cardiac function, assessment of stroke risk, and simulation of cardiac blood flow. Topology is the branch of abstract mathematics that deals with connections; this project uses the theory of persistent homology to identify crucial topological handles that can be useful for accurate reconstruction and analysis of the complex cardiac dynamics from these CT images. The outcome of the project will not only advance our understanding of cardiac function, but also generate novel computational topology methods that are more efficient and effective for practical applications. This project not only bridges the gap between the theory of computational topology and the practical problem of cardiac image analysis, but also trains the next generation of researchers and educators to do so by a carefully integrated education plan. The PIs will engage undergraduate students, high school students, women and other underrepresented students in their proposed research.\r\n\r\nThe goal of this project is to develop a topological approach to unveil the intrinsic structures from complex and dynamic 3D/4D cardiac data, and furthermore, to provide principled tools to quantitatively analyze these structures. The PIs will create new computational topology methodologies and algorithms to extract rich information from the intrinsic structure of cardiac data. They will develop novel methodologies to extract localized topological features and to track them based on their spatial and temporal coherence. They also plan to design new algorithms to untangle ambiguous and uncertain situations for tracking structures through time sequence data. The resulting techniques and software will be validated on cardiac CT data to produce quantitative assessments of accuracy and to characterize the advantages and limitations of these approaches. Domain experts will validate the quality of the approaches via scientific hypotheses and data exploration. The methods to be developed are general and will impact other scientific fields where intrinsic complex and dynamic structures exist.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Yusu",
+   "pi_last_name": "Wang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yusu Wang",
+   "pi_email_addr": "yusuwang@ucsd.edu",
+   "nsf_id": "000250744",
+   "pi_start_date": "2020-09-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-San Diego",
+  "inst_street_address": "9500 GILMAN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "LA JOLLA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8585344896",
+  "inst_zip_code": "920930021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "UYTTZT6G9DT1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-San Diego",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920930621",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "723900",
+   "pgm_ele_name": "Algorithms in the Field"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 80866.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The overarching goal of this collaborative project is to use topological methods to help discover and analyze intricate and potentially complex structures in medical images. In particular, we are interested in cardiac data (e.g, CT scans of heart), which contains many trabecular structures. Topological methods are particularly effective in capturing and describing such structures. The goals of this collaborative project are to develop efficient algorithms to identify and find such topological structures with desirable properties (e.g., of short length/size) in cardiac images, as well as to apply the developed methods to analyze cardiac images, with a particular focus on trabeculation and their characterization. &nbsp;<br /><br />In particular, the trabecular structures can be naturally captured and characterized by 1-dimensional cycles from topology. On the methodology front, the PIs developed several efficient methods to identify &ldquo;good&rdquo; 1-dimensional cycles with certain optimality properties. One such line of work is by using the so-called optimal generating cycles corresponding to important 1-dimensional features as specified by persistent homology. However, the computation of such optimal generating cycles is NP-hard. We thus designed efficient practical algorithms based on A-star searching framework. An alternative direction is to use the so-called discrete Morse (DM) theory, and we showed that a DM-based persistence guided graph skeletonization framework can in fact output a graph that containing a set of so-called lexicographical-optimal cycles.</p>\n<p>A second main theme of our investigation lies in the integration of these topological ideas with neural network architectures for image analysis. Indeed, while there are many powerful neural network (NN) architectures (e.g., CNN, Unet) developed for image analysis (e.g., segmentation), these NN architectures can be &ldquo;structure oblivious&rdquo;: For example, missing a small number of pixels from a segmented output may not matter for the performance of NN, but it can cause a trabecular segment to be broken and thus highly undesirable. We developed several novel methodologies to inject topological constraints or priors into NNs so that it can become more structure-aware in image segmentation. Through the course, we also tackled a fundamental problem on \"differentiating\" a loss function based on topological information (e.g., topological persistence). <br /><br />Results from our investigation have been disseminated to the broader scientific communities both via publications (in top venues), talks and git-hubs. These results help advance the integration of topological methods with machine learning (which is a new and promising field), as well as medical image analysis. The project also provided valuable material for a course on topological data analysis that PI is developing, as well as for a forthcoming textbook that the PI co-authored. Several graduate students worked on this project and obtained training both in topological algorithms and in machine learning.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/16/2021<br>\n\t\t\t\t\tModified by: Yusu&nbsp;Wang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe overarching goal of this collaborative project is to use topological methods to help discover and analyze intricate and potentially complex structures in medical images. In particular, we are interested in cardiac data (e.g, CT scans of heart), which contains many trabecular structures. Topological methods are particularly effective in capturing and describing such structures. The goals of this collaborative project are to develop efficient algorithms to identify and find such topological structures with desirable properties (e.g., of short length/size) in cardiac images, as well as to apply the developed methods to analyze cardiac images, with a particular focus on trabeculation and their characterization.  \n\nIn particular, the trabecular structures can be naturally captured and characterized by 1-dimensional cycles from topology. On the methodology front, the PIs developed several efficient methods to identify \"good\" 1-dimensional cycles with certain optimality properties. One such line of work is by using the so-called optimal generating cycles corresponding to important 1-dimensional features as specified by persistent homology. However, the computation of such optimal generating cycles is NP-hard. We thus designed efficient practical algorithms based on A-star searching framework. An alternative direction is to use the so-called discrete Morse (DM) theory, and we showed that a DM-based persistence guided graph skeletonization framework can in fact output a graph that containing a set of so-called lexicographical-optimal cycles.\n\nA second main theme of our investigation lies in the integration of these topological ideas with neural network architectures for image analysis. Indeed, while there are many powerful neural network (NN) architectures (e.g., CNN, Unet) developed for image analysis (e.g., segmentation), these NN architectures can be \"structure oblivious\": For example, missing a small number of pixels from a segmented output may not matter for the performance of NN, but it can cause a trabecular segment to be broken and thus highly undesirable. We developed several novel methodologies to inject topological constraints or priors into NNs so that it can become more structure-aware in image segmentation. Through the course, we also tackled a fundamental problem on \"differentiating\" a loss function based on topological information (e.g., topological persistence). \n\nResults from our investigation have been disseminated to the broader scientific communities both via publications (in top venues), talks and git-hubs. These results help advance the integration of topological methods with machine learning (which is a new and promising field), as well as medical image analysis. The project also provided valuable material for a course on topological data analysis that PI is developing, as well as for a forthcoming textbook that the PI co-authored. Several graduate students worked on this project and obtained training both in topological algorithms and in machine learning.\n\n\t\t\t\t\tLast Modified: 12/16/2021\n\n\t\t\t\t\tSubmitted by: Yusu Wang"
+ }
+}

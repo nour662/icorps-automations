@@ -1,0 +1,121 @@
+{
+ "awd_id": "1664373",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small:Taming Small Data Writes to Block Storage Devices for Higher I/O Efficiency",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2019-09-30",
+ "tot_intn_awd_amt": 441397.0,
+ "awd_amount": 456397.0,
+ "awd_min_amd_letter_date": "2016-10-04",
+ "awd_max_amd_letter_date": "2017-11-02",
+ "awd_abstract_narration": "Storage systems are one of the most critical infrastructures in large-scale data centers.  Much effort has been directed to allow data to be scalable and efficiently accessed on storage devices. While big data poses big challenges to storage systems, small data presents equally serious access efficiency challenges and begs for innovative research solutions. Almost all storage devices use block interface, which can hardly be replaced. Accessing small data potentially results in wasted device bandwidth and significantly reduced input/output (I/O) efficiency which leads to substantially higher hardware and energy costs and compromised service quality to end users. This research project, based on preliminary results that have shown consistent effectiveness in various application scenarios, will employ a disruptive process using data compression techniques to hide or remove small data writes. \r\n\r\nBecause of demand on immediate data persistency, writes of the small-data continue to be the Achilles' heel of block devices. There are multiple software layers across the I/O stack interacting with the block interface, where small-data writes can inflict a substantial performance penalty. The layers include virtual block devices, I/O schedulers, and file systems. Instead of relying on special hardware support or demanding interface changes, the proposed solution leverages data compression techniques. It allows small data to efficiently pass through the rigid but necessary block interface adopted by almost all storage devices to provide persistency and atomicity without extra block write and flush operations. The proposed strategy would effectively address the issue with small writes to a great extent and profoundly benefit the industry. The expected software artifacts will be built into Linux and file systems such as Ext3, and be open to the community for sharing.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Song",
+   "pi_last_name": "Jiang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Song Jiang",
+   "pi_email_addr": "song.jiang@uta.edu",
+   "nsf_id": "000240353",
+   "pi_start_date": "2016-10-04",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Arlington",
+  "inst_street_address": "701 S NEDDERMAN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "ARLINGTON",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "8172722105",
+  "inst_zip_code": "760199800",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT ARLINGTON",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LMLUKUPJJ9N3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Arlington",
+  "perf_str_addr": "202 E. Border St.",
+  "perf_city_name": "Arlington",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "760190001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "25",
+  "perf_st_cong_dist": "TX25",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  },
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0115",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001516DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2015,
+   "fund_oblg_amt": 441397.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 15000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project was proposed in the context of processing big data in a system with storage devices and memory of large capacities. This large data set often includes a huge amount of small data items, such as metadata describing data items and small data objects that are often seen in the Internet-wide services. Management of these small data items poses major challenges in today&rsquo;s computer systems. One is their incompatibility with the block interface of storage devices, such as hard disks and SSDs. When writing a small data item, the system often has to write the entire block containing the item to the disk. And the block size can be many times as large as the item&rsquo;s size, leading to a very large write amplification and compromised write efficiency. The other challenge is that the data management efficiency (either on the disk or in the memory) deteriorates with increase of data item count. While the small data issue constantly becomes a performance barrier, this project designs and implements strategies to address the issue and remove the barrier from various perspectives.&nbsp; &nbsp; &nbsp;&nbsp;</p>\n<p>&nbsp;</p>\n<p>After years of extensive research on the issues, the PI and his team obtained three major outcomes demonstrating intellectual merits of the project. First, they use data compression technique to remove explicit writes of metadata. As the metadata are usually required to be synchronously written with their corresponding data blocks for high data reliability, the solution is to embed the small metadata into compressed data blocks, and makes writing of these small data almost free. To demonstrate its efficacy, the solution has been implemented into virtual disks, I/O schedulers, file systems, and deduplication systems. Experiment results reported in the publications reveal consistent and often significant performance improvements. Second, to address the challenge posed by the very large data item count in the memory, they design and implement the Wormhole data structure and its associated algorithms. It integrates merits of multiple existing sorted data structures and avoids their respective limitations. Meanwhile, to address the challenge about small data on the disk, they design and implement WipDB, a key-value store that minimizes write amplification in its internal data reorganization. It has been observed that its write throughput can be 3X-5X higher than similar systems developed by Google and Facebook. Third, deduplication is a major technique to reduce write traffic. To be effective, the unit of deduplication, chunk, must be formed based on file content. However, such a chunking operation is expensive. In the project, they develop a chunking approach, named RapidCDC, that can accelerate the operation often by tens of times, making the deduplication technique that can effectively write traffic practical.&nbsp;&nbsp;</p>\n<p>&nbsp;</p>\n<p>The broader impacts of the project are demonstrated by the prototyped and open-sourced systems, publications, as well as human resource training opportunities produced during execution of the project. In particular, the PI and his team prototyped multiple systems. They are those incorporating the data compression technique to avoid explicit metadata writes in virtual disks and file systems (Selfie) and in a deduplication system (ThinDedup), those for management of a huge number of small data items in the memory (Wormhole) and on the disk (WipDB), and that for accelerating chunking operation to enable a more effective deduplication for reduced data writes (WipDB). The proposal and design of the Wormhole and RapidCDC techniques represent breakthroughs in the data structure and deduplication research areas, respectively. All the systems have been extensively evaluated demonstrating their performance advantages. There are over ten papers published resulting from the project, including some on top-tier conferences, such as ACM SoCC, ICS, Eurosys, and SYSTOR conferences. Two Ph.D students and two Master students had graduated with this project as major parts of their thesis work. One of them had been accepted a job offer from University of Illinois at Chicago as a tenure track assistant professor. There are two more Ph.D students who had been substantially involved in the project. Six undergraduate students, majority of whom are minority students, including female, African-American, and Hispanic students, participated in the project. They learned skills for workload characterization, problem formulation and solving, and coding. This project&rsquo;s research findings have been incorporated into &nbsp;&ldquo;CSE6350 Advanced Topics in Computer Architecture&rdquo; regularly taught by the PI.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/27/2020<br>\n\t\t\t\t\tModified by: Song&nbsp;Jiang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project was proposed in the context of processing big data in a system with storage devices and memory of large capacities. This large data set often includes a huge amount of small data items, such as metadata describing data items and small data objects that are often seen in the Internet-wide services. Management of these small data items poses major challenges in today\u2019s computer systems. One is their incompatibility with the block interface of storage devices, such as hard disks and SSDs. When writing a small data item, the system often has to write the entire block containing the item to the disk. And the block size can be many times as large as the item\u2019s size, leading to a very large write amplification and compromised write efficiency. The other challenge is that the data management efficiency (either on the disk or in the memory) deteriorates with increase of data item count. While the small data issue constantly becomes a performance barrier, this project designs and implements strategies to address the issue and remove the barrier from various perspectives.      \n\n \n\nAfter years of extensive research on the issues, the PI and his team obtained three major outcomes demonstrating intellectual merits of the project. First, they use data compression technique to remove explicit writes of metadata. As the metadata are usually required to be synchronously written with their corresponding data blocks for high data reliability, the solution is to embed the small metadata into compressed data blocks, and makes writing of these small data almost free. To demonstrate its efficacy, the solution has been implemented into virtual disks, I/O schedulers, file systems, and deduplication systems. Experiment results reported in the publications reveal consistent and often significant performance improvements. Second, to address the challenge posed by the very large data item count in the memory, they design and implement the Wormhole data structure and its associated algorithms. It integrates merits of multiple existing sorted data structures and avoids their respective limitations. Meanwhile, to address the challenge about small data on the disk, they design and implement WipDB, a key-value store that minimizes write amplification in its internal data reorganization. It has been observed that its write throughput can be 3X-5X higher than similar systems developed by Google and Facebook. Third, deduplication is a major technique to reduce write traffic. To be effective, the unit of deduplication, chunk, must be formed based on file content. However, such a chunking operation is expensive. In the project, they develop a chunking approach, named RapidCDC, that can accelerate the operation often by tens of times, making the deduplication technique that can effectively write traffic practical.  \n\n \n\nThe broader impacts of the project are demonstrated by the prototyped and open-sourced systems, publications, as well as human resource training opportunities produced during execution of the project. In particular, the PI and his team prototyped multiple systems. They are those incorporating the data compression technique to avoid explicit metadata writes in virtual disks and file systems (Selfie) and in a deduplication system (ThinDedup), those for management of a huge number of small data items in the memory (Wormhole) and on the disk (WipDB), and that for accelerating chunking operation to enable a more effective deduplication for reduced data writes (WipDB). The proposal and design of the Wormhole and RapidCDC techniques represent breakthroughs in the data structure and deduplication research areas, respectively. All the systems have been extensively evaluated demonstrating their performance advantages. There are over ten papers published resulting from the project, including some on top-tier conferences, such as ACM SoCC, ICS, Eurosys, and SYSTOR conferences. Two Ph.D students and two Master students had graduated with this project as major parts of their thesis work. One of them had been accepted a job offer from University of Illinois at Chicago as a tenure track assistant professor. There are two more Ph.D students who had been substantially involved in the project. Six undergraduate students, majority of whom are minority students, including female, African-American, and Hispanic students, participated in the project. They learned skills for workload characterization, problem formulation and solving, and coding. This project\u2019s research findings have been incorporated into  \"CSE6350 Advanced Topics in Computer Architecture\" regularly taught by the PI.\n\n \n\n\t\t\t\t\tLast Modified: 01/27/2020\n\n\t\t\t\t\tSubmitted by: Song Jiang"
+ }
+}

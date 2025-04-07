@@ -1,0 +1,109 @@
+{
+ "awd_id": "2019309",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "FMitF: Track II: Usability, Robustness, and Performance Improvements for CIVL",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922585",
+ "po_email": "pprabhak@nsf.gov",
+ "po_sign_block_name": "Pavithra Prabhakar",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2023-03-31",
+ "tot_intn_awd_amt": 100000.0,
+ "awd_amount": 100000.0,
+ "awd_min_amd_letter_date": "2020-06-16",
+ "awd_max_amd_letter_date": "2020-06-16",
+ "awd_abstract_narration": "Scientific and high-performance computing software deals with issues of fundamental importance to science, engineering, and society more generally.  Examples include applications to predict earthquake damage, model the global climate, perform atomic-level simulations of chemical and biological systems, and to investigate the electronic structure of matter.  These programs inform both profound scientific conclusions and decisions of the utmost importance to society.  For these reasons, it is imperative to develop effective methods for debugging and verifying scientific programs.  This project enhances the usability, performance, and robustness of the Concurrent Intermediate Verification Language (CIVL), a verification tool for scientific programs based on symbolic execution and model checking.  The project's novelties are (1) an expanded ability to verify programs that use a variety of parallel-programming Application Programming Interfaces (APIs), and (2) the capability to verify that two versions of a program are equivalent.  The project's impacts are seen in the improved productivity of the software developers using CIVL to help debug their code, and in the increased confidence in the correctness of the resulting software.\r\n\r\nThe project improves CIVL along three lines: usability, robustness and language coverage, and performance.  Usability improvements include improved error reporting and the ability to control precisely what CIVL checks.  Language coverage is improved by correcting limitations in CIVL's array model, and increasing coverage of the C standard library.  Performance is being improved by parallelizing CIVL's model-checking engine and streamlining its expression-evaluation algorithm.  These improvements are guided by ongoing interaction with scientific-software development teams who are using CIVL and providing feedback.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Stephen",
+   "pi_last_name": "Siegel",
+   "pi_mid_init": "F",
+   "pi_sufx_name": "",
+   "pi_full_name": "Stephen F Siegel",
+   "pi_email_addr": "siegel@udel.edu",
+   "nsf_id": "000264334",
+   "pi_start_date": "2020-06-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Delaware",
+  "inst_street_address": "550 S COLLEGE AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEWARK",
+  "inst_state_code": "DE",
+  "inst_state_name": "Delaware",
+  "inst_phone_num": "3028312136",
+  "inst_zip_code": "197131324",
+  "inst_country_name": "United States",
+  "cong_dist_code": "00",
+  "st_cong_dist_code": "DE00",
+  "org_lgl_bus_name": "UNIVERSITY OF DELAWARE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "T72NHKM259N3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Delaware",
+  "perf_str_addr": "210 Hullihen Hall",
+  "perf_city_name": "Newark",
+  "perf_st_code": "DE",
+  "perf_st_name": "Delaware",
+  "perf_zip_code": "197162553",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "00",
+  "perf_st_cong_dist": "DE00",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "094Y00",
+   "pgm_ele_name": "FMitF: Formal Methods in the F"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "071Z",
+   "pgm_ref_txt": "FMitF-Formal Methods in the Field"
+  },
+  {
+   "pgm_ref_code": "8206",
+   "pgm_ref_txt": "Formal Methods and Verification"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 100000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project led to numerous improvements to the CIVL Model Checker, with the aim of making it a more useful verification tool for developers of scientific software.<br />CIVL is a software verification tool for C programs, especially parallel programs and programs used for scientific computation. &nbsp; A developer of such programs can use CIVL to check for the presence of various program defects, such as buffer overflows, assertion violations, illegal pointer operations, deadlocks, and data races. &nbsp; CIVL may also be used to verify that two versions of a program are \"functionally equivalent.\" &nbsp; The programs may use C in combination with message-passing (MPI) and/or multithreading APIs (OpenMP or Pthreads).<br />Improvements were made for usability, robustness, and performance. &nbsp; A new language manual and related reference material were authored and published on the web at http://civl.dev. &nbsp;Tool output has been made more comprehensible and precise. &nbsp;A number of defects in the CIVL code base were discovered and corrected. &nbsp;A new \"partial order reduction\" scheme has been implemented to improve performance (speed) of the model checking engine. &nbsp;Many internal improvements were carried out, such as consolidating four separate open-source projects into one, and updating the code base to use an up-to-date version of Java.<br />The CIVL Model Checker is now being applied to a number of scientific computing applications, including those that perform sparse linear algebra operations. &nbsp;CIVL has also performed well in the international verification competition VerifyThis, winning second place in 2022.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/25/2023<br>\n\t\t\t\t\tModified by: Stephen&nbsp;F&nbsp;Siegel</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2023/2019309/2019309_10677641_1690315604664_CivlManual--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/2019309/2019309_10677641_1690315604664_CivlManual--rgov-800width.jpg\" title=\"CIVL Manual\"><img src=\"/por/images/Reports/POR/2023/2019309/2019309_10677641_1690315604664_CivlManual--rgov-66x44.jpg\" alt=\"CIVL Manual\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">CIVL Manual: language reference.  http://civl.dev</div>\n<div class=\"imageCredit\">Stephen F. Siegel</div>\n<div class=\"imagePermisssions\">Creative Commons</div>\n<div class=\"imageSubmitted\">Stephen&nbsp;F&nbsp;Siegel</div>\n<div class=\"imageTitle\">CIVL Manual</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2023/2019309/2019309_10677641_1690315713415_scopeCodeExample--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/2019309/2019309_10677641_1690315713415_scopeCodeExample--rgov-800width.jpg\" title=\"CIVL-C Program and Scopes\"><img src=\"/por/images/Reports/POR/2023/2019309/2019309_10677641_1690315713415_scopeCodeExample--rgov-66x44.jpg\" alt=\"CIVL-C Program and Scopes\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">A CIVL-C program skeleton with scopes numbered.  Form CIVL Manual, http://civl.dev.</div>\n<div class=\"imageCredit\">Stephen F. Siegel</div>\n<div class=\"imagePermisssions\">Creative Commons</div>\n<div class=\"imageSubmitted\">Stephen&nbsp;F&nbsp;Siegel</div>\n<div class=\"imageTitle\">CIVL-C Program and Scopes</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThis project led to numerous improvements to the CIVL Model Checker, with the aim of making it a more useful verification tool for developers of scientific software.\nCIVL is a software verification tool for C programs, especially parallel programs and programs used for scientific computation.   A developer of such programs can use CIVL to check for the presence of various program defects, such as buffer overflows, assertion violations, illegal pointer operations, deadlocks, and data races.   CIVL may also be used to verify that two versions of a program are \"functionally equivalent.\"   The programs may use C in combination with message-passing (MPI) and/or multithreading APIs (OpenMP or Pthreads).\nImprovements were made for usability, robustness, and performance.   A new language manual and related reference material were authored and published on the web at http://civl.dev.  Tool output has been made more comprehensible and precise.  A number of defects in the CIVL code base were discovered and corrected.  A new \"partial order reduction\" scheme has been implemented to improve performance (speed) of the model checking engine.  Many internal improvements were carried out, such as consolidating four separate open-source projects into one, and updating the code base to use an up-to-date version of Java.\nThe CIVL Model Checker is now being applied to a number of scientific computing applications, including those that perform sparse linear algebra operations.  CIVL has also performed well in the international verification competition VerifyThis, winning second place in 2022.\n\n\t\t\t\t\tLast Modified: 07/25/2023\n\n\t\t\t\t\tSubmitted by: Stephen F Siegel"
+ }
+}

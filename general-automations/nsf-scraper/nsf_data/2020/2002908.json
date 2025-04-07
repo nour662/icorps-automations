@@ -1,0 +1,105 @@
+{
+ "awd_id": "2002908",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: MLWiNS: Deep Neural Networks Meet Physical Layer Communications -- Learning with Knowledge of Structure",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032922981",
+ "po_email": "pregalia@nsf.gov",
+ "po_sign_block_name": "Phillip Regalia",
+ "awd_eff_date": "2020-08-01",
+ "awd_exp_date": "2023-07-31",
+ "tot_intn_awd_amt": 269854.0,
+ "awd_amount": 269854.0,
+ "awd_min_amd_letter_date": "2020-05-29",
+ "awd_max_amd_letter_date": "2020-05-29",
+ "awd_abstract_narration": "Machine learning techniques are expected to be the main driving force for performance gains in future wireless networks. In practice, the difficulty in applying learning algorithms in communication systems comes from a paradigm shift in the methodology: From conventional model-based analytical solutions to data-driven empirical-result-based approaches. While learning algorithms offer better flexibility and efficiency in using computational resources, the lack of guarantees in the performance, robustness and security raise issues when adopting into engineering designs. The goal of this project is to combine learning-based data-driven approaches with conventional model-based analysis, to design novel learning algorithms that can utilize the structural knowledge of engineering systems, thus reaping the advantages of both methods.\r\n\r\nThis project focuses on the physical layer of wireless networks, where analytical solutions, clearly defined performance benchmarks, as well as clearly isolated modeling deficiencies are usually present. They key challenge is to utilize the analytical results whenever possible, and focus the learning power on those parts of the system where the conventional approach fails, including non-linear, non-Gaussian, and non-stationary elements.  Three problem areas are identified to test such new hybrid design methods, including 1) symbol-detection for MIMO fading interference channels, 2) massive MIMO with low resolution analog-to-digital converters, and 3) MIMO-OFDM waveform analysis in non-linear radio channels.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Lizhong",
+   "pi_last_name": "Zheng",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Lizhong Zheng",
+   "pi_email_addr": "lizhong@mit.edu",
+   "nsf_id": "000489589",
+   "pi_start_date": "2020-05-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Massachusetts Institute of Technology",
+  "inst_street_address": "77 MASSACHUSETTS AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6172531000",
+  "inst_zip_code": "021394301",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+  "org_prnt_uei_num": "E2NYLCDML6V1",
+  "org_uei_num": "E2NYLCDML6V1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Massachusetts Institute of Technology",
+  "perf_str_addr": "77 Massachusetts Ave",
+  "perf_city_name": "Cambridge",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021394301",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "021Z",
+   "pgm_ref_txt": "Industry Partnerships"
+  },
+  {
+   "pgm_ref_code": "8585",
+   "pgm_ref_txt": "NSF/Intel Partnership Projects"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 269854.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>\n<div>This project aimed to apply deep neural networks in wireless communication and networks. The goal is to demonstrate superior performance in communication systems using learning-based methods and simultaneously develop systematic approaches to incorporate the domain knowledge of specific engineering problems in designing deep neural networks.</div>\n<div></div>\n<div>In this project's final year, we have made significant progress in the above directions. In particular, we developed a theoretical approach to understand and analyze the use of Reservoir Computing (RC). RC is a special type of recurrent neural network (RNN) with interconnections between neurons randomly chosen and frozen. It has the advantage in practice, compared to other types of RNNs, in a significantly reduced number of parameters to train. Surprisingly, some empirical results were reported that RC-based receivers are very powerful in time-series analysis. In particular, for communication systems, RCs are known to be powerful ways to design equalizers for wireless ISI channels.</div>\n<div></div>\n<div>The key new ingredient in our work is a new framework with which we can quantitatively analyze how well a frozen reservoir can be used to approximate the theoretical optimal equalizer. To our knowledge, this is the first theoretic work to analyze the performance of RCs from the perspective of functional approximation. Equipped with this new theoretic tool, we found the scaling law of approximation error to the size of the reservoir. Based on this, we can optimally choose a reservoir's size, topology, and initial weights to improve from the known performance.</div>\n<div></div>\n<div>The significance of our work is not limited to improved solutions to a single problem but rather the general method of quantitatively analyzing neural networks in the context of an engineering system and the approaches to incorporate domain knowledge of engineering systems in the design of neural networks. Such methodology is precisely what we hoped to study with this project. It can impact a broad range of engineering problems by seamlessly integrating learning-based modules.</div>\n<div></div>\n<div>The results of our work are reported as publications submitted to the IEEE Wireless Communication Letters, Journal of Selected Topics in Signal Processing, and the Milcom conference.&nbsp;</div>\n</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/30/2023<br>\n\t\t\t\t\tModified by: Lizhong&nbsp;Zheng</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\nThis project aimed to apply deep neural networks in wireless communication and networks. The goal is to demonstrate superior performance in communication systems using learning-based methods and simultaneously develop systematic approaches to incorporate the domain knowledge of specific engineering problems in designing deep neural networks.\n\nIn this project's final year, we have made significant progress in the above directions. In particular, we developed a theoretical approach to understand and analyze the use of Reservoir Computing (RC). RC is a special type of recurrent neural network (RNN) with interconnections between neurons randomly chosen and frozen. It has the advantage in practice, compared to other types of RNNs, in a significantly reduced number of parameters to train. Surprisingly, some empirical results were reported that RC-based receivers are very powerful in time-series analysis. In particular, for communication systems, RCs are known to be powerful ways to design equalizers for wireless ISI channels.\n\nThe key new ingredient in our work is a new framework with which we can quantitatively analyze how well a frozen reservoir can be used to approximate the theoretical optimal equalizer. To our knowledge, this is the first theoretic work to analyze the performance of RCs from the perspective of functional approximation. Equipped with this new theoretic tool, we found the scaling law of approximation error to the size of the reservoir. Based on this, we can optimally choose a reservoir's size, topology, and initial weights to improve from the known performance.\n\nThe significance of our work is not limited to improved solutions to a single problem but rather the general method of quantitatively analyzing neural networks in the context of an engineering system and the approaches to incorporate domain knowledge of engineering systems in the design of neural networks. Such methodology is precisely what we hoped to study with this project. It can impact a broad range of engineering problems by seamlessly integrating learning-based modules.\n\nThe results of our work are reported as publications submitted to the IEEE Wireless Communication Letters, Journal of Selected Topics in Signal Processing, and the Milcom conference. \n\n\n\t\t\t\t\tLast Modified: 08/30/2023\n\n\t\t\t\t\tSubmitted by: Lizhong Zheng"
+ }
+}

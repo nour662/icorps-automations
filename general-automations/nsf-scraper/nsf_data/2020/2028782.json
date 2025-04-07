@@ -1,0 +1,121 @@
+{
+ "awd_id": "2028782",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: SARE: Detecting Zero-Day Side-channel Attacks in Sensor Rich Cyber-Physical Systems",
+ "cfda_num": "47.041",
+ "org_code": "07010000",
+ "po_phone": "7032928103",
+ "po_email": "rlukasze@nsf.gov",
+ "po_sign_block_name": "Ale Lukaszew",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 300000.0,
+ "awd_amount": 300000.0,
+ "awd_min_amd_letter_date": "2020-07-27",
+ "awd_max_amd_letter_date": "2020-07-27",
+ "awd_abstract_narration": "This project introduces a method using an automated flow to detect side channel attacks over sensor-rich cyber-physical systems. The approach has the ability to identify, almost instantly and with high precision, anomalous behaviors indicative of possibly hazardous situations with either a known signature or never encountered during pre-deployment testing. The goal of this project is to have a prototype demonstrating its readiness for transition to practice and eventual deployment. Three types of threats are tackled: (1) Deliberate intrusions employing zero-day attacks and sophisticated evasion techniques; (2) Insider threats: abuse of privileges by insiders with or without spoofing of user identities; (3) Anomalous behaviors never encountered during pre-deployment testing of safety-critical systems and possibly indicative of malfunctioning. These anomalies include accidental or inadvertent failures due to bugs as well as physical side channel attacks that gives rise to execution of emergency actions. Anomalies in many safety-critical cyber-physical systems are particularly dangerous. For example, attacks against a car such as antilock-braking system (ABS) sensor spoofing, wireless command injection, and engine control unit (ECU) infiltration have been demonstrated, leading ultimately to a car crash or significant drift off the road. The importance of the research cannot be overstated when it comes to safety-critical and mission-critical cyber-physical systems that are increasingly relying on artificial intelligence and machine learning for decision making, situational awareness, and general reasoning. The explainability conundrum of deep learning algorithms and models coupled with the need to certify the overall system for safety and security points to the criticality of imposing continuous checks on these two criteria (safety and security) during operation to safeguard not only against unanticipated behavior but also the potential bugs and failures in system hardware including sensors/actuators. The research will create a framework allowing cyber-physical systems to be certified for safety and security through the ability to detect and diagnose unsafe and insecure anomalous situations.\r\n\r\nThe research combines a scalable Runtime Verification (RV) framework intended for embedded systems and a Paraminer specification mining tool for Anomaly Detection (AD). A critical feature in this RV+AD approach is the ability to monitor properties using not only traces relevant to CPU execution, but also other system components such as memories, buses, sensors, and actuators. This observability across both the cyber and physical states adds significant capabilities to deal with physical side channel attacks which are extremely hard to detect or thwart. This can be achieved by correlating traces from both program execution on the CPU(s) and sensor data. In a power side channel attack, for example, the current sensor data can be correlated with execution of critical advanced encryption standard (AES) encryption algorithms running on the CPU to detect periods of potential vulnerability, and engage obfuscation measures to thwart such attacks. The approach in this project is hardware-based whereas the prior state-of-the-art approaches have been software-based.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "ECCS",
+ "org_div_long_name": "Division of Electrical, Communications and Cyber Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Fadi",
+   "pi_last_name": "Kurdahi",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Fadi J Kurdahi",
+   "pi_email_addr": "kurdahi@uci.edu",
+   "nsf_id": "000454968",
+   "pi_start_date": "2020-07-27",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Nikil",
+   "pi_last_name": "Dutt",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "Nikil D Dutt",
+   "pi_email_addr": "dutt@uci.edu",
+   "nsf_id": "000207740",
+   "pi_start_date": "2020-07-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Irvine",
+  "inst_street_address": "160 ALDRICH HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "IRVINE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9498247295",
+  "inst_zip_code": "926970001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "47",
+  "st_cong_dist_code": "CA47",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA IRVINE",
+  "org_prnt_uei_num": "MJC5FCYQTPE6",
+  "org_uei_num": "MJC5FCYQTPE6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Irvine",
+  "perf_str_addr": "3207 Engineering Hall",
+  "perf_city_name": "Irvine",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "926970001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "47",
+  "perf_st_cong_dist": "CA47",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "756400",
+   "pgm_ele_name": "CCSS-Comms Circuits & Sens Sys"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "152E",
+   "pgm_ref_txt": "Cyber-Physical Systems"
+  },
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 300000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Cyber Physical Systems (CPS) are systems-of-systems that tightly couple their cyber (i.e. computation, communication and control), and physical components (sensing and actuation) in the context of applications such as (but not limited to): automotive and transportation, manufacturing, power distribution grid, medical and healthcare, robotics, civil infrastructure, and &nbsp;avionics. A&nbsp;Cyber-physical system (CPS) is a nonterminating system continuously reacting to external inputs that can, maliciously or inadvertently, steer its behavior in unanticipated ways, i.e.,&nbsp; trigger an emergent behavior. Thus, CPSs must usually operate within stringent safety and security constraints. Malfunction due to hardware or software failures, or compromise by an adversary or an insider can be unacceptable when lives, large investments or valuable assets are at stake. Anomaly detection systems (ADSs) have emerged due to the difficulty of ensuring that a complex computing system is free of security flaws and immune to attacks or emergent behavior, which consists of unexpected operations that can arise at runtime and lead the system to potentially unsafe conditions. We explored the detection of emergent behavior in two domains: automotive systems and wearable sensor networks.</p>\n<p>For automotive systems, the SAFER framework allows users to model systems using Periodic State Machines and automatically generates code from a specification. It then creates a model that learns safe execution based on execution traces from the code. The applicability of SAFER is demonstrated through four case studies: Producer-Consumer, Collision Avoidance, Integer Overflow, and Stack Overflow. These case studies showcase the framework&rsquo;s ability to deal with emergent behaviors for different classes of applications.&nbsp;Across all case studies and experiments, SAFER showed an average of 83.82% F1 score for anomaly detection. This score is on par with the current state-of-art, with the advantage of being applicable to diverse systems. Lastly, due to its flexible overhead and the fact that AD models can detect emergent behaviors early, we believe that SAFER can work as a first line of safety checks for systems to prevent them from reaching critical states. In such cases, systems could still have more taxing last-case solutions in case an emergent behavior goes undetected by the AD and RV models. SAFER lays the groundwork for a rich set of future work, including complex verification with anomaly detection via unmodified open-source projects that have been affected by Common Weakness Enumeration (CWE) issues, detection latency analysis, and hardware implementation for non-intrusive monitoring for detection.&nbsp;</p>\n<p>For wearable sensor networks, we design multiturn flexible planar coils made&nbsp;of metal (aluminum and/or copper) foils as resonators to be integrated into the clothing textile. Unlike traditional Body Area Networks (BANs) that utilize coils connected by wire, here, the inter-resonator magnetic coupling enables complex network architectures with user-friendly extensions. When integrated into clothing, it allows for the BAN&rsquo;s complex signal paths to span across multiple layers of disconnected clothing (e.g., from pants to shirts). This allows conventional Near -Field Communication (NFC)-enabled smartphones to operate as compatible readers. This ecosystem can facilitate real-time healthcare and status monitoring in various clinical, athletic, and daily routines. For<br />instance, integration into hospital patient uniforms could allow&nbsp;for seamless patient monitoring where sensors are dragged-and-dropped across clothing. Professional sports clubs or federations may develop highly customized networks integrated with their branding and optimized to serve specific athletic training and monitoring needs. However, the usage of NFC technology which covers short-range communication, makes it vulnerable to various security attacks to steal private data, manipulate the data, bypass authentication, or deny the system service. For the first time to the best of our knowledge, this project investigates multi-device NFC security and demonstrates the potential threats and attacks against the system. Specifically, we target to mitigate wearable device reliability and security issues through anomaly detection. Wearable devices fall into the CPS category, meaning they interact with the physical&nbsp;world as well as the cyber domain. Sharing the physical environment, wearable sensors are influenced by physical phenomena and share a context. This shared context is particularly bold in wearable devices as the physical environment is the same for all components, the human body. Therefore, we take advantage of the sensor correlation and propose a context aware anomaly detection model. We also add adaptability to the model by fine-tuning the base model for each user to reduce the error-inducing impact of personal variation. The experimental results reveal that the proposed system can detect anomalies with 97% accuracy and a 91% F1 score, demonstrating superior performance.</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 02/09/2024<br>\nModified by: Fadi&nbsp;J&nbsp;Kurdahi</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nCyber Physical Systems (CPS) are systems-of-systems that tightly couple their cyber (i.e. computation, communication and control), and physical components (sensing and actuation) in the context of applications such as (but not limited to): automotive and transportation, manufacturing, power distribution grid, medical and healthcare, robotics, civil infrastructure, and avionics. ACyber-physical system (CPS) is a nonterminating system continuously reacting to external inputs that can, maliciously or inadvertently, steer its behavior in unanticipated ways, i.e., trigger an emergent behavior. Thus, CPSs must usually operate within stringent safety and security constraints. Malfunction due to hardware or software failures, or compromise by an adversary or an insider can be unacceptable when lives, large investments or valuable assets are at stake. Anomaly detection systems (ADSs) have emerged due to the difficulty of ensuring that a complex computing system is free of security flaws and immune to attacks or emergent behavior, which consists of unexpected operations that can arise at runtime and lead the system to potentially unsafe conditions. We explored the detection of emergent behavior in two domains: automotive systems and wearable sensor networks.\n\n\nFor automotive systems, the SAFER framework allows users to model systems using Periodic State Machines and automatically generates code from a specification. It then creates a model that learns safe execution based on execution traces from the code. The applicability of SAFER is demonstrated through four case studies: Producer-Consumer, Collision Avoidance, Integer Overflow, and Stack Overflow. These case studies showcase the frameworks ability to deal with emergent behaviors for different classes of applications.Across all case studies and experiments, SAFER showed an average of 83.82% F1 score for anomaly detection. This score is on par with the current state-of-art, with the advantage of being applicable to diverse systems. Lastly, due to its flexible overhead and the fact that AD models can detect emergent behaviors early, we believe that SAFER can work as a first line of safety checks for systems to prevent them from reaching critical states. In such cases, systems could still have more taxing last-case solutions in case an emergent behavior goes undetected by the AD and RV models. SAFER lays the groundwork for a rich set of future work, including complex verification with anomaly detection via unmodified open-source projects that have been affected by Common Weakness Enumeration (CWE) issues, detection latency analysis, and hardware implementation for non-intrusive monitoring for detection.\n\n\nFor wearable sensor networks, we design multiturn flexible planar coils madeof metal (aluminum and/or copper) foils as resonators to be integrated into the clothing textile. Unlike traditional Body Area Networks (BANs) that utilize coils connected by wire, here, the inter-resonator magnetic coupling enables complex network architectures with user-friendly extensions. When integrated into clothing, it allows for the BANs complex signal paths to span across multiple layers of disconnected clothing (e.g., from pants to shirts). This allows conventional Near -Field Communication (NFC)-enabled smartphones to operate as compatible readers. This ecosystem can facilitate real-time healthcare and status monitoring in various clinical, athletic, and daily routines. For\ninstance, integration into hospital patient uniforms could allowfor seamless patient monitoring where sensors are dragged-and-dropped across clothing. Professional sports clubs or federations may develop highly customized networks integrated with their branding and optimized to serve specific athletic training and monitoring needs. However, the usage of NFC technology which covers short-range communication, makes it vulnerable to various security attacks to steal private data, manipulate the data, bypass authentication, or deny the system service. For the first time to the best of our knowledge, this project investigates multi-device NFC security and demonstrates the potential threats and attacks against the system. Specifically, we target to mitigate wearable device reliability and security issues through anomaly detection. Wearable devices fall into the CPS category, meaning they interact with the physicalworld as well as the cyber domain. Sharing the physical environment, wearable sensors are influenced by physical phenomena and share a context. This shared context is particularly bold in wearable devices as the physical environment is the same for all components, the human body. Therefore, we take advantage of the sensor correlation and propose a context aware anomaly detection model. We also add adaptability to the model by fine-tuning the base model for each user to reduce the error-inducing impact of personal variation. The experimental results reveal that the proposed system can detect anomalies with 97% accuracy and a 91% F1 score, demonstrating superior performance.\n\n\n\t\t\t\t\tLast Modified: 02/09/2024\n\n\t\t\t\t\tSubmitted by: FadiJKurdahi\n"
+ }
+}

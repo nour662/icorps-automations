@@ -1,0 +1,101 @@
+{
+ "awd_id": "1913277",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Filtering Strategies for Radiation Transport Equations",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2019-08-01",
+ "awd_exp_date": "2023-07-31",
+ "tot_intn_awd_amt": 99992.0,
+ "awd_amount": 99992.0,
+ "awd_min_amd_letter_date": "2019-07-30",
+ "awd_max_amd_letter_date": "2019-07-30",
+ "awd_abstract_narration": "Radiation is the fundamental mechanism of energy exchange in many physical processes and in the operations of devices for energy and medical applications.  In addition, radiation is used as an experimental tool to explore the basic structure of materials. Improved mathematical algorithms and analysis of radiation transport equations will enable important advances in these areas. More generally, these equations serve as a mathematical prototype for a variety of kinetic models that are used to describe dilute gases, plasmas, and multiphase flows. They also demonstrate the fundamental multi-scale nature of driven-dissipative systems. Historically, radiation transport equations have been a driver for many fundamental developments in basic numerical methods research.  That trend will continue with this project.  On the education side, this project will support and train a student for a career in computational mathematics. This includes support for travel to attend conferences and workshops in order to share research and provide networking opportunities. This grant will support 1 graduate student per year for 3 years.\r\n\r\nThis project seeks to address one of the fundamental challenges in the kinetic description of radiation: the onset of ray effects in the discrete ordinates approximation of the radiation transport equation. The approach proposed here is based on the use of filters, which smooth the mathematical solution of these equations in a specified manner, in order to improve the fidelity of numerical solutions computed with under-resolved meshes.  The project will advance numerical methods for radiation transport equations and, more generally, for kinetic equations and complex multi-physics systems. It will enable to the development of spectral approximation techniques and the synthesis of such techniques into the solution of large scale equations. It will introduce analysis tools to better understand and improve the accuracy of numerical approximation that are under-resolved, and it will establish connections with other types of filtering and sub-scale modeling approaches that are currently used in the simulation of fluids.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Cory",
+   "pi_last_name": "Hauck",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "Cory D Hauck",
+   "pi_email_addr": "chauck@utk.edu",
+   "nsf_id": "000579478",
+   "pi_start_date": "2019-07-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Tennessee Knoxville",
+  "inst_street_address": "201 ANDY HOLT TOWER",
+  "inst_street_address_2": "",
+  "inst_city_name": "KNOXVILLE",
+  "inst_state_code": "TN",
+  "inst_state_name": "Tennessee",
+  "inst_phone_num": "8659743466",
+  "inst_zip_code": "379960001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "TN02",
+  "org_lgl_bus_name": "UNIVERSITY OF TENNESSEE",
+  "org_prnt_uei_num": "LXG4F9K8YZK5",
+  "org_uei_num": "FN2YCS2YAUW3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Tennessee Knoxville",
+  "perf_str_addr": "1 Circle Park",
+  "perf_city_name": "Knoxville",
+  "perf_st_code": "TN",
+  "perf_st_name": "Tennessee",
+  "perf_zip_code": "379960003",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "TN02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 99992.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"p1\">The focus of this project has been the design, analysis, and implementation of filtering strategies for radiation transport equations.<span>&nbsp; </span>These equations describe the movement of radiation (such as neutrons, photons, and neutrinos) through a material medium. <span>&nbsp; </span>Because these equations are high-dimensional and multi-scale in nature, numerical simulation is a significant challenge.<span>&nbsp; </span>A common approach is to use spectral methods that approximate the solution as a collection of waves.<span>&nbsp; </span>When solutions are smooth, spectral methods are highly efficient, but when the radiation profile is not smooth, they suffer from highly oscillatory numerical artifacts. <span>&nbsp; </span>Filtering is a principled mechanism for suppressing these artifacts by means of controlled, but artificial damping.</p>\n<p class=\"p2\">&nbsp;</p>\n<p class=\"p1\">Intellectual Merit:<span>&nbsp; </span>In this project, we have analyzed the behavior of filters for coarse approximations, where artifacts are most prevalent and filters are most useful.<span>&nbsp; </span>This analysis indicates how to tune filters in order to apply the correct amount of damping.<span>&nbsp; </span>In addition, we have extended filtering concepts to discrete ordinate methods, developing mollifiers that smooth away numerical artifacts known as ray effects.<span>&nbsp; </span>We have also performed rigorous analysis on discontinuous finite element methods, a type of spatial discretization method that captures the asymptotic diffusion limit of radiation transport equations when the radiation equilibrates with the material medium.<span>&nbsp;</span></p>\n<p class=\"p2\">&nbsp;</p>\n<p class=\"p1\">Broader Impact:<span>&nbsp; </span>Filtering is a common numerical tool used to improve accuracy when the physical behavior of a system at the smallest scales cannot be fully resolved.<span>&nbsp; </span>The work here on radiation transport equations can be extended to develop computational methods for other physical problem such as fluid flow and plasma physics.<span>&nbsp; </span>More generally, radiation is an important component of many physical phenomena and engineering systems, mainly for its ability to transfer energy between different materials.<span>&nbsp; &nbsp; </span>The tools developed in this project will enable simulations of radiation for applications including imaging, medicine, nuclear energy, oil and gas exploration, and astrophysics.</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 12/09/2023<br>\nModified by: Cory&nbsp;D&nbsp;Hauck</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe focus of this project has been the design, analysis, and implementation of filtering strategies for radiation transport equations. These equations describe the movement of radiation (such as neutrons, photons, and neutrinos) through a material medium.  Because these equations are high-dimensional and multi-scale in nature, numerical simulation is a significant challenge. A common approach is to use spectral methods that approximate the solution as a collection of waves. When solutions are smooth, spectral methods are highly efficient, but when the radiation profile is not smooth, they suffer from highly oscillatory numerical artifacts.  Filtering is a principled mechanism for suppressing these artifacts by means of controlled, but artificial damping.\n\n\n\n\n\nIntellectual Merit: In this project, we have analyzed the behavior of filters for coarse approximations, where artifacts are most prevalent and filters are most useful. This analysis indicates how to tune filters in order to apply the correct amount of damping. In addition, we have extended filtering concepts to discrete ordinate methods, developing mollifiers that smooth away numerical artifacts known as ray effects. We have also performed rigorous analysis on discontinuous finite element methods, a type of spatial discretization method that captures the asymptotic diffusion limit of radiation transport equations when the radiation equilibrates with the material medium.\n\n\n\n\n\nBroader Impact: Filtering is a common numerical tool used to improve accuracy when the physical behavior of a system at the smallest scales cannot be fully resolved. The work here on radiation transport equations can be extended to develop computational methods for other physical problem such as fluid flow and plasma physics. More generally, radiation is an important component of many physical phenomena and engineering systems, mainly for its ability to transfer energy between different materials.  The tools developed in this project will enable simulations of radiation for applications including imaging, medicine, nuclear energy, oil and gas exploration, and astrophysics.\n\n\n\t\t\t\t\tLast Modified: 12/09/2023\n\n\t\t\t\t\tSubmitted by: CoryDHauck\n"
+ }
+}

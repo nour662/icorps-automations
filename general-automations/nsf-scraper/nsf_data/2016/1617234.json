@@ -1,0 +1,105 @@
+{
+ "awd_id": "1617234",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CHS: Small: Collaborative Research: Detailed Shape and Reflectance Capture with Light Field Cameras",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Ephraim Glinert",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2016-07-18",
+ "awd_max_amd_letter_date": "2016-07-18",
+ "awd_abstract_narration": "A major transformation is occurring in the way we sense the visual world.  Traditional 2D photography is increasingly being replaced with light-field sensors that capture the full spatial and angular variation of the incoming light field, rather than simply pixels that integrate over incoming directions.  This development opens up the possibility of ubiquitous 3D imaging of our visual world.  Light-field sensors are particularly attractive as a depth acquisition device, since they are completely passive without needing to project light into the scene, and they do not experience a reduction in performance outdoors.  Moreover, the rich ray-space of light fields provides significant cues for recovering fine-scale depth.  However, current RGBD and light-field systems produce only coarse depth; while useful for tasks like refocusing images, the depth channel offers little benefit for photography beyond conventional 2D RGB images.  This research seeks to address these challenges, by developing practical algorithms for detailed 3D shape and reflectance capture with light-field cameras, coupled with a theoretical and experimental analysis of the achievable accuracy.  Project outcomes will have broad impact on diverse fields including computer graphics and virtual/augmented reality, enabling acquisition of high-quality detailed 3D shape and the subsequent use of the 3D geometry with computer-generated synthetic objects.  Methods to acquire 3D images, including on mobile sensors, will transform the photographic process from 2D to 3D, with immense industrial and societal impact.\r\n\r\nThe PIs will address four important problems in light-field shape acquisition.  First, they will exploit the rich nature of light-field data, combining multiple cues (defocus, correspondence, shading, specularity) in a unified way to obtain the overall global 3D shape.  Moreover, they will seek to go beyond the common Lambertian reflectance assumption, developing a novel BRDF-invariant framework for surface reconstruction with general glossy materials like metals, plastics, or ceramics, while supporting textures and spatially-varying reflectance.  Another key objective will be to ground the practical results in a theoretical framework that can establish the limits of light-field camera shape resolution, and the signal-to-noise accuracy, and how this relates to novel designs for light-field cameras to obtain the best achievable resolution in 3D shape capture.  Finally, the PIs will move from overall shape to fine-scale surface detail, proposing new methods for shape/reflectance capture for fine-scale geometry like hair.  The ultimate goal is to enable a full 3D processing pipeline for photography, computer graphics and applications like virtual and augmented reality.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ravi",
+   "pi_last_name": "Ramamoorthi",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ravi Ramamoorthi",
+   "pi_email_addr": "ravir@cs.ucsd.edu",
+   "nsf_id": "000486826",
+   "pi_start_date": "2016-07-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-San Diego",
+  "inst_street_address": "9500 GILMAN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "LA JOLLA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8585344896",
+  "inst_zip_code": "920930021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "UYTTZT6G9DT1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-San Diego",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920930404",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736700",
+   "pgm_ele_name": "HCC-Human-Centered Computing"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7367",
+   "pgm_ref_txt": "Cyber-Human Systems"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project dealt with using light field cameras for detailed shape and reflectance capture.&nbsp; Light Field cameras store the full distribution of light in the scene.&nbsp; A conventional camera captures a 2D image, with each point or each pixel considering the combined light over the entire aperture of the camera.&nbsp; On the other hand, the light field camera also records the direction of incident light, capturing a 4D function.&nbsp; In effect, it's like an array of tiny micro-cameras along the aperture of the main lens.&nbsp; This enables novel photographic effects like refocusing after capture, but this project sought to investigate other applications of light field cameras, including their ability to capture the detailed shape and reflectance of objects, to allow the objects to be included in new scenes and composed with computer-generated imagery.</p>\n<p>The key results of this project are with reference to the uploaded images:</p>\n<p>1. We have developed a method to use light field cameras to capture the shape of even objects that have sharp highlights and complex reflectance.&nbsp; This is a new robust method, leveraging a solution that is invariant to the reflectance properties.&nbsp; In this example, we show that the turtle shape is accurately recovered by our method from the image taken with a light field camera.</p>\n<p>2. Light Fields enable new types of applications.&nbsp; Here, we demonstrate that we can deblur the motion in an image captured with a light field camera significantly more effectively than when the image is captured by a conventional camera.&nbsp; Note that motion blur and motion deblurring is a key aspect of photography, especially for fast-moving scenes.</p>\n<p>3. While much of this project focuses on photographs taken with a light field camera, even greater opportunity is enabled by light field video.&nbsp; However, the amount of data generated is too large for light field cameras to capture 60fps video.&nbsp; We show that by coupling a conventional video camera with a light field camera, we can obtain 60fps light field video.&nbsp; This enables exciting capabilities like refocusing the video while it is playing, changing one's viewpoint slightly or focus tracking.</p>\n<p>4. Increasingly, the world is moving to imaging on mobile phones.&nbsp; As such, we seek methods to acquire light fields from simple mobile phone captures, and ultimately to leverage the multiple mobile phone cameras as a light field camera.&nbsp; We are able to show that with very few images casually captured in a semi-regular grid with a standard cell phone, we can create a light field and enable view synthesis with robust sampling guidelines for how far apart and where new images should be captured.</p>\n<p>5. The ability to capture light fields from sparse images opens up the door to capture detailed shape and reflectance from a set of sparse images on a mobile phone.&nbsp; This not just allows one to view the scene from new directions, but also to relight objects in the scene.&nbsp; We show that we can enable relightable scene reconstructions from a sparse set of input images with greatest realism obtained by using a volumetric representation of the scene.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/08/2020<br>\n\t\t\t\t\tModified by: Ravi&nbsp;Ramamoorthi</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599606207452_teaser--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599606207452_teaser--rgov-800width.jpg\" title=\"Robust Energy Minimization for BRDF-Invariant Shape from Light Fields\"><img src=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599606207452_teaser--rgov-66x44.jpg\" alt=\"Robust Energy Minimization for BRDF-Invariant Shape from Light Fields\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Our method accurately recovers the 3D shape of an object from an image taken with a light field camera, even if the object has complex textures and reflectance.  This provides a new capability to robustly enable 3D photography, and invariant to surface reflectance.</div>\n<div class=\"imageCredit\">Robust Energy Minimization for BRDF-Invariant Shape from Light Fields by Li, Xu, Ramamoorthi and Chandraker.  CVPR 2017.</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Ravi&nbsp;Ramamoorthi</div>\n<div class=\"imageTitle\">Robust Energy Minimization for BRDF-Invariant Shape from Light Fields</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599606482911_lfmb--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599606482911_lfmb--rgov-800width.jpg\" title=\"Light Field Blind Motion Deblurring\"><img src=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599606482911_lfmb--rgov-66x44.jpg\" alt=\"Light Field Blind Motion Deblurring\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">In photographing fast moving scenes, or when the camera shakes in manual photography, motion blur is common and a key photographic challenge is to minimize or enable deblurring.  We show theoretically and practically that light field cameras enable more effective motion deblurring.</div>\n<div class=\"imageCredit\">Light Field Motion Deblurring by Srinivasan, Ng and Ramamoorthi, CVPR 2017</div>\n<div class=\"imageSubmitted\">Ravi&nbsp;Ramamoorthi</div>\n<div class=\"imageTitle\">Light Field Blind Motion Deblurring</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599607056759_teaser_highres--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599607056759_teaser_highres--rgov-800width.jpg\" title=\"Light Field Video Capture Using a Learning-Based Hybrid Imaging System\"><img src=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599607056759_teaser_highres--rgov-66x44.jpg\" alt=\"Light Field Video Capture Using a Learning-Based Hybrid Imaging System\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Light Field Video is important, but data rates limit it to 3fps.  We show that by combining this data with a conventional video camera, we can achieve light field video at 30fps.  This enables exciting applications such as interactively refocused video or focus tracking.</div>\n<div class=\"imageCredit\">Wang, Zhu, Kalantari, Efros, Ramamoorthi.  Light Field Video Capture Using a Learning-Based Hybrid Imaging System, SIGGRAPH 2017</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Ravi&nbsp;Ramamoorthi</div>\n<div class=\"imageTitle\">Light Field Video Capture Using a Learning-Based Hybrid Imaging System</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599608013394_llff--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599608013394_llff--rgov-800width.jpg\" title=\"Local Light Field Fusion: Practical View Synthesis with Prescriptive Sampling Guidelines\"><img src=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599608013394_llff--rgov-66x44.jpg\" alt=\"Local Light Field Fusion: Practical View Synthesis with Prescriptive Sampling Guidelines\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">We develop a new efficient and robust method to capture light fields from a sparse set of images taken with a standard mobile phone.  Our method enables a simple app that tells one to take casually captured images on a semi-regular grid, then view the scene in augmented reality on the mobile device.</div>\n<div class=\"imageCredit\">Mildenhall, Srinivasan, Ortiz-Cayon, Kalantari, Ramamoorthi, Ng, Kar.  Local Light Field Fusion: Practical View Synthesis with Prescriptive Sampling Guidelines.  SIGGRAPH 2019</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Ravi&nbsp;Ramamoorthi</div>\n<div class=\"imageTitle\">Local Light Field Fusion: Practical View Synthesis with Prescriptive Sampling Guidelines</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599608355883_saibi_eccv20--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599608355883_saibi_eccv20--rgov-800width.jpg\" title=\"Deep Reflectance Volumes: Relightable Reconstructions from Multi-View Photometric Images\"><img src=\"/por/images/Reports/POR/2020/1617234/1617234_10441592_1599608355883_saibi_eccv20--rgov-66x44.jpg\" alt=\"Deep Reflectance Volumes: Relightable Reconstructions from Multi-View Photometric Images\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">From only a sparse sampling of the views of a light field, one can reconstruct relightable scene representations, which enable one to change both viewpoint and lighting.  The most realistic results are obtained using a volumetric representation of the scene.</div>\n<div class=\"imageCredit\">Bi, Xu, Sunkavalli, Hasan, Hold-Geoffroy, Kriegman, Ramamoorthi.  Deep Reflectance Volumes: Relightable Reconstructions from Multi-View Photometric Images.  ECCV 2020</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Ravi&nbsp;Ramamoorthi</div>\n<div class=\"imageTitle\">Deep Reflectance Volumes: Relightable Reconstructions from Multi-View Photometric Images</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThis project dealt with using light field cameras for detailed shape and reflectance capture.  Light Field cameras store the full distribution of light in the scene.  A conventional camera captures a 2D image, with each point or each pixel considering the combined light over the entire aperture of the camera.  On the other hand, the light field camera also records the direction of incident light, capturing a 4D function.  In effect, it's like an array of tiny micro-cameras along the aperture of the main lens.  This enables novel photographic effects like refocusing after capture, but this project sought to investigate other applications of light field cameras, including their ability to capture the detailed shape and reflectance of objects, to allow the objects to be included in new scenes and composed with computer-generated imagery.\n\nThe key results of this project are with reference to the uploaded images:\n\n1. We have developed a method to use light field cameras to capture the shape of even objects that have sharp highlights and complex reflectance.  This is a new robust method, leveraging a solution that is invariant to the reflectance properties.  In this example, we show that the turtle shape is accurately recovered by our method from the image taken with a light field camera.\n\n2. Light Fields enable new types of applications.  Here, we demonstrate that we can deblur the motion in an image captured with a light field camera significantly more effectively than when the image is captured by a conventional camera.  Note that motion blur and motion deblurring is a key aspect of photography, especially for fast-moving scenes.\n\n3. While much of this project focuses on photographs taken with a light field camera, even greater opportunity is enabled by light field video.  However, the amount of data generated is too large for light field cameras to capture 60fps video.  We show that by coupling a conventional video camera with a light field camera, we can obtain 60fps light field video.  This enables exciting capabilities like refocusing the video while it is playing, changing one's viewpoint slightly or focus tracking.\n\n4. Increasingly, the world is moving to imaging on mobile phones.  As such, we seek methods to acquire light fields from simple mobile phone captures, and ultimately to leverage the multiple mobile phone cameras as a light field camera.  We are able to show that with very few images casually captured in a semi-regular grid with a standard cell phone, we can create a light field and enable view synthesis with robust sampling guidelines for how far apart and where new images should be captured.\n\n5. The ability to capture light fields from sparse images opens up the door to capture detailed shape and reflectance from a set of sparse images on a mobile phone.  This not just allows one to view the scene from new directions, but also to relight objects in the scene.  We show that we can enable relightable scene reconstructions from a sparse set of input images with greatest realism obtained by using a volumetric representation of the scene.\n\n \n\n \n\n \n\n \n\n \n\n\t\t\t\t\tLast Modified: 09/08/2020\n\n\t\t\t\t\tSubmitted by: Ravi Ramamoorthi"
+ }
+}

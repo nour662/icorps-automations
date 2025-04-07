@@ -1,0 +1,101 @@
+{
+ "awd_id": "1937540",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "IIBR:Informatics:Toward an Automated RNA-seq Bioinformatician",
+ "cfda_num": "47.074",
+ "org_code": "08080000",
+ "po_phone": "7032922224",
+ "po_email": "jweller@nsf.gov",
+ "po_sign_block_name": "Jennifer Weller",
+ "awd_eff_date": "2020-06-01",
+ "awd_exp_date": "2023-05-31",
+ "tot_intn_awd_amt": 546148.0,
+ "awd_amount": 546148.0,
+ "awd_min_amd_letter_date": "2020-03-13",
+ "awd_max_amd_letter_date": "2020-03-13",
+ "awd_abstract_narration": "Measurement of gene expression --- which genes are active in which conditions --- is an indispensable tool for understanding biological systems.  Analysis of gene expression from modern genomic sequencing technologies requires the use of sophisticated software such as read mappers, transcript assemblers, and expression abundance estimators. A software program implementing one of these steps typically has a large number of user-settable parameters that influence how the analysis algorithm performs.  Scientists,biologists, and clinical researchers must often tune these parameters by hand or through other ad hoc means. The goal of this project is to automate this process by designing and implementing a framework for automatically learning high-performing parameters for gene expression analysis software. This project also aims to develop algorithms, software, and methodology to make this framework practical and useful. This will allow more researchers to obtain high-quality gene expression analyses with significantly less effort and will also enable improved analysis of large data sets where per-sample parameter tuning by hand is impractical. Reproducibility of biological results will also be enhanced since the choice of parameters is explicitly ceded to an automated, repeatable process. This research will make biological studies involving gene expression more accurate and less costly. A number of educational and outreach activities for various levels of students (elementary through undergraduate) are planned to enhance community understanding of gene expression and its analysis.\r\n\r\nThe developed processes will be implemented in several wrapper tools for parameter optimization that can be dropped into existing RNA-seq analysis pipelines to improve accuracy at each step.  The research to design these tools will be broken down into several more tractable steps. The first step will be learning, for each tool, a collection of representative parameter vectors by analyzing large collections of existing RNA-seq samples. In the second step, machine learning methods, based on a combination of techniques such as Bayesian Optimization, genetic algorithms, and classification approaches, will be used to design techniques to select parameter vectors from these sets that are predicted to offer high performance. In the third step, techniques for providing human-interpretable rationales for the automatic parameter choices will be designed and implemented. The design of this system will also enhance our practical knowledge of techniques for such parameter optimization in other application domains within biology. Results from the project can be foun\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "BIO",
+ "org_dir_long_name": "Directorate for Biological Sciences",
+ "div_abbr": "DBI",
+ "org_div_long_name": "Division of Biological Infrastructure",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Carleton",
+   "pi_last_name": "Kingsford",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Carleton Kingsford",
+   "pi_email_addr": "carlk@cs.cmu.edu",
+   "nsf_id": "000623889",
+   "pi_start_date": "2020-03-13",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Carnegie-Mellon University",
+  "inst_street_address": "5000 FORBES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4122688746",
+  "inst_zip_code": "152133815",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "CARNEGIE MELLON UNIVERSITY",
+  "org_prnt_uei_num": "U3NKNFLNQ613",
+  "org_uei_num": "U3NKNFLNQ613"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Carnegie-Mellon University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152133890",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "084Y00",
+   "pgm_ele_name": "Infrastructure Innovation for"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1165",
+   "pgm_ref_txt": "ADVANCES IN BIO INFORMATICS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 546148.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project developed new computational methods to automate the use of computational analysis tools for genomic analysis. In order to make sense of genomic sequencing data, sophisticated computational tools must typically be run. Examples of these tools are transcript assemblers that predict the sequence of specific versions of genes and read mappers that align sequenced segments to a reference genome sequence. These tools typically have many parameters that must be set by the user that influence the accuracy of their results. Typically, these parameters are set by hand using expertise or trial and error. The goal of this project is to develop artificial intelligence and machine learning methods to help automate this process. These methods reduce the time it takes to analyze sequencing data, increase accuracy, and increase reproducibility.</p>\n<p>We have developed a number of such tools. We have developed a computational technique for selecting a representative set of sequencing samples from a large collection of samples for testing these methods. We have developed new computational approaches that can optimize many parameters at once, and we have developed computational systems to specifically optimize parameters for transcript assemblers and for liquid handler robots. These new computational methods enable building better approaches for automatically learning how to best run data collection and genomic analysis computational tools. The methods also extend our understanding of computational optimization techniques. All of these methods have been released as open source for use by other researchers.</p>\n<p>The project has also helped trained several Ph.D. and MS students in the intersection of computer science and biology and provided them experience to develop new computational methods to solve biological problems.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/27/2023<br>\n\t\t\t\t\tModified by: Carleton&nbsp;Kingsford</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project developed new computational methods to automate the use of computational analysis tools for genomic analysis. In order to make sense of genomic sequencing data, sophisticated computational tools must typically be run. Examples of these tools are transcript assemblers that predict the sequence of specific versions of genes and read mappers that align sequenced segments to a reference genome sequence. These tools typically have many parameters that must be set by the user that influence the accuracy of their results. Typically, these parameters are set by hand using expertise or trial and error. The goal of this project is to develop artificial intelligence and machine learning methods to help automate this process. These methods reduce the time it takes to analyze sequencing data, increase accuracy, and increase reproducibility.\n\nWe have developed a number of such tools. We have developed a computational technique for selecting a representative set of sequencing samples from a large collection of samples for testing these methods. We have developed new computational approaches that can optimize many parameters at once, and we have developed computational systems to specifically optimize parameters for transcript assemblers and for liquid handler robots. These new computational methods enable building better approaches for automatically learning how to best run data collection and genomic analysis computational tools. The methods also extend our understanding of computational optimization techniques. All of these methods have been released as open source for use by other researchers.\n\nThe project has also helped trained several Ph.D. and MS students in the intersection of computer science and biology and provided them experience to develop new computational methods to solve biological problems.\n\n\t\t\t\t\tLast Modified: 09/27/2023\n\n\t\t\t\t\tSubmitted by: Carleton Kingsford"
+ }
+}

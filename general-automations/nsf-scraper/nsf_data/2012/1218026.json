@@ -1,0 +1,109 @@
+{
+ "awd_id": "1218026",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Collaborative Research: Diversity and Feedback in Random Testing for Systems Software",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 249036.0,
+ "awd_amount": 249036.0,
+ "awd_min_amd_letter_date": "2012-08-01",
+ "awd_max_amd_letter_date": "2012-08-01",
+ "awd_abstract_narration": "Testing is an extremely important part of any software development effort, especially for programs that have access to sensitive resources (personal information, sensor data, etc.) and that can be reached through the Internet. The PIs' work will improve the state of the art in software testing for mobile applications running on the open source Android platform, resulting in fewer bugs and reduced testing effort.\r\n\r\nThe foundation of the PIs' work is random testing, where random numbers are used as inputs to an algorithm for constructing test cases. Although random testing has been shown to be highly effective for discovering serious bugs in complex software systems, it suffers from various problems including the fact that it is very difficult to engineer a random tester that doesn't spend a lot of time re-exploring the same application behaviors over and over again. The PIs will build upon their \"swarm testing\" work, which has been shown to be an inexpensive way to increase the diversity of random test cases, and also to increase their effectiveness in discovering bugs. Additionally, the PIs are investigating how to marry random testing with modern symbolic execution methods, and how to use feedback from executions of the software under test in order to improve the efficacy of random testing.\r\n\r\nThe development of more efficient and effective testing techniques and tools will lower the cost and raise the quality of software.  Test coverage is a challenging, open problem that is being addressed here in a novel way.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "John",
+   "pi_last_name": "Regehr",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "John D Regehr",
+   "pi_email_addr": "regehr@cs.utah.edu",
+   "nsf_id": "000310362",
+   "pi_start_date": "2012-08-01",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Utah",
+  "inst_street_address": "201 PRESIDENTS CIR",
+  "inst_street_address_2": "",
+  "inst_city_name": "SALT LAKE CITY",
+  "inst_state_code": "UT",
+  "inst_state_name": "Utah",
+  "inst_phone_num": "8015816903",
+  "inst_zip_code": "841129049",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "UT01",
+  "org_lgl_bus_name": "UNIVERSITY OF UTAH",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LL8GLEVH6MG3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Utah",
+  "perf_str_addr": "201 PRESIDENTS CIRCLE ROOM 201",
+  "perf_city_name": "SALT LAKE CITY",
+  "perf_st_code": "UT",
+  "perf_st_name": "Utah",
+  "perf_zip_code": "841128930",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "UT01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7944",
+   "pgm_ref_txt": "SOFTWARE ENG & FORMAL METHODS"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 249036.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Software is often buggier than we would like, or than we are willing to tolerate, despite the fact that a typical software development effort spends a lot of effort trying to find and fix bugs. Random testing, also called fuzzing, is an effective way to find defects in software; it is particularly useful for finding security-related bugs in software such as web servers that operate across a trust boundary. There are, however, major gaps in our understanding of fuzzing: When and why does it work, or not work? How can we construct highly effective fuzzers? The research done on this project helps answer these questions.<br />The first part of our effort was done in collaboration with Alex Groce at Oregon State University. We developed the idea of \"swarm testing\" -- a method for cheaply increasing the diversity of test cases emitted by a random tester. Diversity is important for finding bugs: a random tester that fails to generate diverse test cases will waste time testing the same part of the target system over and over again. We investigated the idea that \"features\" -- properties of randomly generated test cases -- can suppress bugs instead of triggering them, and looked at the implications of suppressors during a testing campaign. We investigated the \"fuzzer taming problem\" where the goal is to tame the flood of bug-triggering test cases coming from a fuzzer by using lightweight machine learning techniques to group together test cases that all are likely to be triggering the same bug, in order to make it easier for developers to interact with a fuzzer. In short, this thread of the project investigated a number of fundamental issues in random testing that Alex and I felt were important and that were not being addressed (or not being addressed enough) by the software testing community.<br />In the second part of our effort we applied our ideas towards the goal of finding bugs in Android, the most widely deployed OS for smart phones. We fuzzed the \"intent\" subsystem of Android: it is used for applications to communicate with each other, and with aspects of the operating system. Since different apps have different privileges, intents are a trust boundary (for example, you do not want the game you just downloaded to start posting to your Facebook account). We found defects in the intent processing of almost every application that we tested. We reported a number of bugs in core Android services to the Android security team, including a defect in Android 4.4.2 that permitted an untrusted application to lock up a phone, forcing it to reboot.<br />The broader impacts of this project include contributing to the body of knowledge on fuzzing, improving the quality of the Android OS, and training several undergraduate research students.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/18/2015<br>\n\t\t\t\t\tModified by: John&nbsp;D&nbsp;Regehr</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nSoftware is often buggier than we would like, or than we are willing to tolerate, despite the fact that a typical software development effort spends a lot of effort trying to find and fix bugs. Random testing, also called fuzzing, is an effective way to find defects in software; it is particularly useful for finding security-related bugs in software such as web servers that operate across a trust boundary. There are, however, major gaps in our understanding of fuzzing: When and why does it work, or not work? How can we construct highly effective fuzzers? The research done on this project helps answer these questions.\nThe first part of our effort was done in collaboration with Alex Groce at Oregon State University. We developed the idea of \"swarm testing\" -- a method for cheaply increasing the diversity of test cases emitted by a random tester. Diversity is important for finding bugs: a random tester that fails to generate diverse test cases will waste time testing the same part of the target system over and over again. We investigated the idea that \"features\" -- properties of randomly generated test cases -- can suppress bugs instead of triggering them, and looked at the implications of suppressors during a testing campaign. We investigated the \"fuzzer taming problem\" where the goal is to tame the flood of bug-triggering test cases coming from a fuzzer by using lightweight machine learning techniques to group together test cases that all are likely to be triggering the same bug, in order to make it easier for developers to interact with a fuzzer. In short, this thread of the project investigated a number of fundamental issues in random testing that Alex and I felt were important and that were not being addressed (or not being addressed enough) by the software testing community.\nIn the second part of our effort we applied our ideas towards the goal of finding bugs in Android, the most widely deployed OS for smart phones. We fuzzed the \"intent\" subsystem of Android: it is used for applications to communicate with each other, and with aspects of the operating system. Since different apps have different privileges, intents are a trust boundary (for example, you do not want the game you just downloaded to start posting to your Facebook account). We found defects in the intent processing of almost every application that we tested. We reported a number of bugs in core Android services to the Android security team, including a defect in Android 4.4.2 that permitted an untrusted application to lock up a phone, forcing it to reboot.\nThe broader impacts of this project include contributing to the body of knowledge on fuzzing, improving the quality of the Android OS, and training several undergraduate research students.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 12/18/2015\n\n\t\t\t\t\tSubmitted by: John D Regehr"
+ }
+}

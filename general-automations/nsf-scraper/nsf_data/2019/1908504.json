@@ -1,0 +1,105 @@
+{
+ "awd_id": "1908504",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: A Composable,  Sound Optimization Framework for Loops and Recursion",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 450000.0,
+ "awd_amount": 450000.0,
+ "awd_min_amd_letter_date": "2019-06-13",
+ "awd_max_amd_letter_date": "2023-11-22",
+ "awd_abstract_narration": "Over the last several decades, researchers have developed numerous general frameworks to optimize programs that manipulate matrices, grids, and other \"regular\" structures by using loops. These optimizations can improve parallelism and performance and hence are critical to developing high-performance software. However, a large class of programs does not use loops but instead uses recursive formulations; these programs are inaccessible to existing general frameworks, and heretofore have only been optimized by ad hoc, narrowly-focused techniques. This means that optimization strategies that work for one program, or one domain, often have to be re-thought and re-implemented for new applications. This project's novelties are developing new program representations, transformation strategies, and analysis techniques to build a new, general framework for optimizing programs that use recursion. This project's impacts will be to open up the power of general optimizations and transformations to a broader range of applications that use recursion, which arise in domains ranging from graphics to data mining to simulation.\r\n\r\nThe general framework developed by the investigator in this project leverages several novel components. First, it captures the schedule of computations of recursive applications using computational constructs called multi-tape finite automata, that allow the framework to distinguish between computations that arise from different parts of the program. Second, it represents transformations of that schedule--which can restructure a computation to improve locality or parallelism--using multi-tape finite transducers. Third, it captures dependences in the computation--which restrict the space of legal computation schedules--using a novel abstraction called witness tuples. Finally, the project develops new, decidable algorithms for determining whether a particular transformation is safe. The work is then extended to identify promising transformation strategies, handle more general types of recursive programs, and generate high-performance code in a more effective manner.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Milind",
+   "pi_last_name": "Kulkarni",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Milind Kulkarni",
+   "pi_email_addr": "milind@purdue.edu",
+   "nsf_id": "000549148",
+   "pi_start_date": "2019-06-13",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Purdue University",
+  "inst_street_address": "2550 NORTHWESTERN AVE # 1100",
+  "inst_street_address_2": "",
+  "inst_city_name": "WEST LAFAYETTE",
+  "inst_state_code": "IN",
+  "inst_state_name": "Indiana",
+  "inst_phone_num": "7654941055",
+  "inst_zip_code": "479061332",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "IN04",
+  "org_lgl_bus_name": "PURDUE UNIVERSITY",
+  "org_prnt_uei_num": "YRXVL4JYCEF5",
+  "org_uei_num": "YRXVL4JYCEF5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Purdue University",
+  "perf_str_addr": "465 Northwestern Avenue",
+  "perf_city_name": "West Lafayette",
+  "perf_st_code": "IN",
+  "perf_st_name": "Indiana",
+  "perf_zip_code": "479072035",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "IN04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7943",
+   "pgm_ref_txt": "PROGRAMMING LANGUAGES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 450000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Many software algorithms operate over recursive data structures such as trees and lists. The computations of those algorithms are most readily structured as <em>recursive</em>&nbsp;programs that invoke the same function repeatedly on each element of the data structure. However, modern compilers are limited in their ability to optimize recursive algorithms to improve parallelism, locality, and performance. The goal of this project was to develop new frameworks that can reason about and safely optimize recursive programs, using a number of novel abstractions and targeting new hardware. This project has the potential to transform several fields of computational research, such as cosmological and particle simulation, data mining, and graphics, by allowing programmers to write applications in a natural style while still achieving high performance.</p>\r\n<p>Over the lifetime of this project, it has delivered several substantial achievements, including: (i) the first framework for reasoning about recursive programs that <em>generalizes</em>&nbsp;frameworks that work over loop-based programs. (In other words, our framework has all of the capabilities of loop-based frameworks plus can handle a broader class of applications); (ii) a new, more general approach to reasoning about and transforming sparse tensor workloads, of the type that arise in machine learning applicaitons; and (iii) the first approach for mapping recursive traversal programs to novel ray tracing cores on graphics processing units -- even though those traversals have nothing to do with ray tracing. This project has shown that complex, irregular applications are a tractable optimization target for sufficiently sophisticated compiler analyses and transformations.</p><br>\n<p>\n Last Modified: 03/25/2025<br>\nModified by: Milind&nbsp;Kulkarni</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nMany software algorithms operate over recursive data structures such as trees and lists. The computations of those algorithms are most readily structured as recursiveprograms that invoke the same function repeatedly on each element of the data structure. However, modern compilers are limited in their ability to optimize recursive algorithms to improve parallelism, locality, and performance. The goal of this project was to develop new frameworks that can reason about and safely optimize recursive programs, using a number of novel abstractions and targeting new hardware. This project has the potential to transform several fields of computational research, such as cosmological and particle simulation, data mining, and graphics, by allowing programmers to write applications in a natural style while still achieving high performance.\r\n\n\nOver the lifetime of this project, it has delivered several substantial achievements, including: (i) the first framework for reasoning about recursive programs that generalizesframeworks that work over loop-based programs. (In other words, our framework has all of the capabilities of loop-based frameworks plus can handle a broader class of applications); (ii) a new, more general approach to reasoning about and transforming sparse tensor workloads, of the type that arise in machine learning applicaitons; and (iii) the first approach for mapping recursive traversal programs to novel ray tracing cores on graphics processing units -- even though those traversals have nothing to do with ray tracing. This project has shown that complex, irregular applications are a tractable optimization target for sufficiently sophisticated compiler analyses and transformations.\t\t\t\t\tLast Modified: 03/25/2025\n\n\t\t\t\t\tSubmitted by: MilindKulkarni\n"
+ }
+}

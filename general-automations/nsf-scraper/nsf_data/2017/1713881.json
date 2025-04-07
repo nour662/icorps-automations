@@ -1,0 +1,109 @@
+{
+ "awd_id": "1713881",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Fellowship Award",
+ "awd_titl_txt": "EAPSI: Providing Smart User Feedback Based on Bayesian Models",
+ "cfda_num": "47.079",
+ "org_code": "01090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anne Emig",
+ "awd_eff_date": "2017-06-01",
+ "awd_exp_date": "2018-05-31",
+ "tot_intn_awd_amt": 5400.0,
+ "awd_amount": 5400.0,
+ "awd_min_amd_letter_date": "2017-05-08",
+ "awd_max_amd_letter_date": "2017-05-08",
+ "awd_abstract_narration": "Anthropogenic climate change is one of the biggest challenges of the century and part of the solution lies with people adopting more sustainable behavior; this has led to the development of eco-feedback devices for water consumption, power use, and most importantly driving behavior. However, despite the plethora of eco-driving feedback devices, very few of them tailor their feedback based on user behavior and situation. There is a need for proactive situation-aware feedback like \"leave 30 minutes early to avoid traffic\" because it drastically reduces emissions as compared to a reactive feedback that tells a driver \"use your brakes less\"  every morning when they are stuck in traffic. This research will build the framework for such a situationally aware feedback device by combining on-board diagnostic and global positioning system (OBD/GPS) data, belonging to Dr. Lynette Cheah of the Singapore University of Technology and Design (SUTD), with traffic and weather data to create training data for a Bayesian Network (BN) structure learning algorithm. The resulting BN will act as a behavior and situation specific model capable of determining what variables are the root cause of poor fuel economy.\r\n\r\nThe BN of the system that characterizes driving in Singapore will be learned from a dataset created from the combination of multiple datasets. The amalgamation of multiple datasets and the involvement of human decisions in that data?s generation mean that the training dataset will be noisy and filled with outliers. The goal of this research is to learn the BN that best describes the true nature of the system given this type of training data. To learn the best BN, different BN learning algorithms drawing upon different mathematical principles will be investigated. These different learning algorithm?s results will be compared to a human expert generated BN. The BN learning algorithm that most faithfully recreates the human expert generated network will be identified and the future eco-feedback device will be built off this algorithm.\r\n\r\nThis award, under the East Asia and Pacific Summer Institutes program, supports summer research by a U.S. graduate student is jointly funded by NSF and the National Research Foundation of Singapore.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "O/D",
+ "org_dir_long_name": "Office Of The Director",
+ "div_abbr": "OISE",
+ "org_div_long_name": "Office of International Science and Engineering",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "William",
+   "pi_last_name": "Martin",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "William D Martin",
+   "pi_email_addr": "",
+   "nsf_id": "000734709",
+   "pi_start_date": "2017-05-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Martin                  William        D",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "Atlanta",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "",
+  "inst_zip_code": "303171353",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "Singapore University of Technology and Design",
+  "perf_str_addr": null,
+  "perf_city_name": "",
+  "perf_st_code": "",
+  "perf_st_name": "RI REQUIRED",
+  "perf_zip_code": "",
+  "perf_ctry_code": "SN",
+  "perf_cong_dist": "",
+  "perf_st_cong_dist": "",
+  "perf_ctry_name": "Singapore",
+  "perf_ctry_flag": "0"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "731600",
+   "pgm_ele_name": "EAPSI"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5927",
+   "pgm_ref_txt": "EAST ASIA, OTHER"
+  },
+  {
+   "pgm_ref_code": "5978",
+   "pgm_ref_txt": "EAST ASIA AND PACIFIC PROGRAM"
+  },
+  {
+   "pgm_ref_code": "7316",
+   "pgm_ref_txt": "EAPSI"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 5400.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-9790dfb9-2790-5e9a-62e2-264287fd777a\"> </span></p>\n<p dir=\"ltr\"><span>Project Outcomes Report for the General Public</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>The outcomes of the EAPSI research project in Singapore can be grouped into two areas. The first set of outcomes is associated with the original dataset proposed in the fellowship application. That original dataset was from vehicles traveling around Singapore and was composed of board diagnostic (OBD) data for eighteen vehicles. The second set of outcomes is associated with the research dataset that was actually investigated during the majority of the fellowship. This second dataset is global positioning system (GPS) data for commercial freight vehicles moving around Singapore. This GPS data was supplemented with information about the loads the vehicles (primarily trucks) were carrying and information about the vehicles themselves. </span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>The On Board Diagnostic (OBD) data that was initially identified in the EAPSI project proposal was used as part of an investigation into the efficacy of using bayesian network structure learning algorithms to gain system understanding. This understanding was gained by interpreting the bayesian network structure learned from the OBD data as a causal diagram for the vehicle. Showing that bayesian network structure learning algorithms could be used in this way for a well understood mechanical system provides a justification that the methodology can be extended to more complex systems. An example of a more complex system is something like the utilization rate of bike shares in the chicago metropolitan area. So the work done with Dr. Cheah&rsquo;s data laid the groundwork and served as a point of comparison for later work done with more complicated less understood systems like the bikeshare in chicago. The time spent in Singapore working on this dataset was a launching point for the investigation of more complicated datasets.</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>The work done with the global positioning system data for commercial freight vehicles in the second phase of the project resulted in two deliverables. The first deliverable was the generation of a large lookup table which could be used to calculate the emissions for different vehicles moving at different speeds under different conditions. This look up table could be combined with GPS data to generate an emissions profile for a particular journey of a particular vehicle. The second deliverable was a set of recommendations for the database currently being used by the Future Urban Mobility project at the National University of Singapore. These recommendations were designed to modify the existing datasets so that they could be easily used with the lookup tables previously mentioned and provided guidelines for future data collection efforts. With these two components combined a better understanding of emissions in the Singaporean metropolitan area can be developed. This same model can then be extended to American cities. </span></p>\n<div><span><br /></span></div>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/14/2018<br>\n\t\t\t\t\tModified by: William&nbsp;D&nbsp;Martin</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \nProject Outcomes Report for the General Public\n\n \nThe outcomes of the EAPSI research project in Singapore can be grouped into two areas. The first set of outcomes is associated with the original dataset proposed in the fellowship application. That original dataset was from vehicles traveling around Singapore and was composed of board diagnostic (OBD) data for eighteen vehicles. The second set of outcomes is associated with the research dataset that was actually investigated during the majority of the fellowship. This second dataset is global positioning system (GPS) data for commercial freight vehicles moving around Singapore. This GPS data was supplemented with information about the loads the vehicles (primarily trucks) were carrying and information about the vehicles themselves. \n\n \nThe On Board Diagnostic (OBD) data that was initially identified in the EAPSI project proposal was used as part of an investigation into the efficacy of using bayesian network structure learning algorithms to gain system understanding. This understanding was gained by interpreting the bayesian network structure learned from the OBD data as a causal diagram for the vehicle. Showing that bayesian network structure learning algorithms could be used in this way for a well understood mechanical system provides a justification that the methodology can be extended to more complex systems. An example of a more complex system is something like the utilization rate of bike shares in the chicago metropolitan area. So the work done with Dr. Cheah?s data laid the groundwork and served as a point of comparison for later work done with more complicated less understood systems like the bikeshare in chicago. The time spent in Singapore working on this dataset was a launching point for the investigation of more complicated datasets.\n\n \nThe work done with the global positioning system data for commercial freight vehicles in the second phase of the project resulted in two deliverables. The first deliverable was the generation of a large lookup table which could be used to calculate the emissions for different vehicles moving at different speeds under different conditions. This look up table could be combined with GPS data to generate an emissions profile for a particular journey of a particular vehicle. The second deliverable was a set of recommendations for the database currently being used by the Future Urban Mobility project at the National University of Singapore. These recommendations were designed to modify the existing datasets so that they could be easily used with the lookup tables previously mentioned and provided guidelines for future data collection efforts. With these two components combined a better understanding of emissions in the Singaporean metropolitan area can be developed. This same model can then be extended to American cities. \n\n\n\n \n\n \n\n\t\t\t\t\tLast Modified: 03/14/2018\n\n\t\t\t\t\tSubmitted by: William D Martin"
+ }
+}

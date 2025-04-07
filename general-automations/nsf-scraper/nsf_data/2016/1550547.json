@@ -1,0 +1,137 @@
+{
+ "awd_id": "1550547",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: SI2-SSI: Integrating Data with Complex Predictive Models under Uncertainty: An Extensible Software Framework for Large-Scale Bayesian Inversion",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Seung-Jong Park",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 475000.0,
+ "awd_amount": 475000.0,
+ "awd_min_amd_letter_date": "2016-08-10",
+ "awd_max_amd_letter_date": "2016-08-10",
+ "awd_abstract_narration": "Scientists often use mathematical models to predict the behavior of natural and engineered systems. These models are therefore fundamental to scientific and engineering progress and hence relevant to NSF's science mission. Most models of realistic physical systems  use complex formulae (such as, partial differential equations) involving many variables. When using such a model for predicting the future behavior of a system, a scientist has to provide initial values for all the variables.  This can be difficult because input values may not be directly measureable. Thus, scientists often must use \"inverse\" computations to calculate the initial input values of the variables of a system model based on external observations of the real world. In other words, scientists seek to infer inputs to a computer model of a physical process from real observational data of the outputs. There are many examples of inverse computations, ranging from computing the important dimensions of an organ from its CAT scan, reconstructing the source of a sound by measuring its volume and frequency at various places, calculating the density of the Earth from measurements of its gravity field, or calculating the initial condition of the atmosphere (temperature, pressure, etc.) from satellite and weather station observations over a time interval. Inverse problems are ubiquitous across all of science and engineering (and beyond). Many solutions exist for inverse problems, i.e. solutions that fit the data to the observations. However, there are variations in the solutions identified. That is, the solutions of an inverse problem are subject to uncertainty. Bayesian inferencing provides a systematic mathematical framework for characterizing this uncertainty. However, the Bayesian solution of inverse problems for large-scale complex models require enormous computational power. Only recently have algorithms begun to emerge that are computationally tractable. However, these algorithms have remained out of the reach of the mainstream of scientists who solve inverse problems, due to their complexity and the need for deeper information from the forward model. This project aims to develop, distribute, and support open-source software that encodes state-of-the-art algorithms for the solution of large-scale complex Bayesian inverse problems and is robust, scalable, flexible, modular, widely accessible, and easy to use.\r\n\r\nThe project builds heavily on two complementary open-source software libraries the team has been developing: MUQ at MIT, and hIPPYlib at UT-Austin/UC-Merced. MUQ provides a spectrum of powerful Bayesian inversion models and algorithms, but expects forward models to come equipped with gradients/Hessians to permit large-scale solution. hIPPYlib implements powerful large-scale gradient/Hessian-based inverse solvers in an environment that can automatically generate needed derivatives, but it lacks full Bayesian capabilities. By integrating these two complementary libraries, the project will result in a robust, scalable, and efficient software framework that realizes the benefits of each to tackle complex large-scale Bayesian inverse problems across a broad spectrum of scientific and engineering disciplines. The resulting software, that will be distributed under an open-source license, will provide an environment for rapid development of inverse models equipped with gradient/Hessian information; benchmark problems for evaluation and comparison of algorithms; and tutorial problems for training and testing purposes.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Noemi",
+   "pi_last_name": "Petra",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Noemi Petra",
+   "pi_email_addr": "npetra@ucmerced.edu",
+   "nsf_id": "000698730",
+   "pi_start_date": "2016-08-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California - Merced",
+  "inst_street_address": "5200 N LAKE RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "MERCED",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "2092012039",
+  "inst_zip_code": "953435001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "CA13",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, MERCED",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "FFM7VPAG8P92"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California - Merced",
+  "perf_str_addr": "5200 N. Lake Road",
+  "perf_city_name": "Merced",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "953435705",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "CA13",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126300",
+   "pgm_ele_name": "PROBABILITY"
+  },
+  {
+   "pgm_ele_code": "126600",
+   "pgm_ele_name": "APPLIED MATHEMATICS"
+  },
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  },
+  {
+   "pgm_ele_code": "800400",
+   "pgm_ele_name": "Software Institutes"
+  },
+  {
+   "pgm_ele_code": "806900",
+   "pgm_ele_name": "CDS&E-MSS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "4444",
+   "pgm_ref_txt": "INTERDISCIPLINARY PROPOSALS"
+  },
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "8004",
+   "pgm_ref_txt": "Software Institutes"
+  },
+  {
+   "pgm_ref_code": "8009",
+   "pgm_ref_txt": "Scientifc Software Integration"
+  },
+  {
+   "pgm_ref_code": "8251",
+   "pgm_ref_txt": "Math Sci Innovation Incubator"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 475000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The overarching goal of this collaborative project between UT Austin,&nbsp;MIT, and UC Merced was the development and dissemination of a&nbsp;high-performance, open-source software framework incorporating a suite&nbsp;of advanced algorithms for the solution of Bayesian inverse problems.&nbsp;Bayesian inference provides a systematic framework for integration of data with mathematical models to quantify the uncertainty in the solution of the inverse problem. However, solution of Bayesian inverse problems governed by complex forward models described by partial differential equations (PDEs) remains prohibitive with black-box Markov chain Monte Carlo (MCMC) methods. Under this grant, we extended and interfaced two complementary open source software packages, hIPPYlib and MUQ. hIPPYlib solves PDE-constrained inverse problems using adjoint-based first and second derivatives, but it lacks full Bayesian capabilities. MUQ provides a spectrum of powerful Bayesian inversion models and algorithms that accelerate MCMC sampling by exploiting the geometry and intrinsic low-dimensionality of parameter space via derivative information and low rank approximation. However, MUQ expects forward models to come equipped with gradients and Hessians to permit large-scale solution. By combining these two complementary libraries, we created hIPPYlib-MUQ, a robust, scalable, and efficient software framework that realizes the benefits of each and allows researchers to tackle complex large-scale Bayesian inverse problems across a broad spectrum of scientific and engineering disciplines.&nbsp;</p>\n<p>Extensive research efforts have been devoted to overcome the prohibitiveness of Bayesian inverse problems governed by large-scale complex PDE-based models. With rapid progress in high-performance computing, and advances in scalable PDE solvers, repeated evaluations of forward PDE models for different input parameters are becoming more tractable. Furthermore, structure-exploiting MCMC methods have effectively facilitated the exploration of complex posterior distributions. Finally, dimension reduction methods have proved to significantly reduce the computational cost of MCMC simulations. However, applying and combining these advanced techniques can be extremely challenging. Our goal with this project were twofold: (i) to make these advanced Bayesian inversion algorithms accessible to domain scientists; (ii) to provide an environment that expedites the development of new algorithms, and that helps developers benchmark their work. In particular, the major scientific and broader impact outcomes of our project include:</p>\n<p>1.&nbsp;<strong>Software public releases</strong>: hIPPYlib&nbsp;<span>(<a href=\"https://hippylib.github.io/download/\">https://hippylib.github.io/download/</a>)</span> and hIPPYlib-MUQ (<a href=\"https://github.com/hippylib/hippylib2muq\">https://github.com/hippylib/hippylib2muq</a>)&nbsp;</p>\n<p>2.&nbsp;<strong>Docker images&nbsp;</strong>containing&nbsp;<strong>pre-installed softwares and tutorial examples</strong>: hIPPYlib:&nbsp;<a href=\"https://hub.docker.com/r/hippylib/toms\">https://hub.docker.com/r/hippylib/toms</a> and hIPPYlib-MUQ: <a href=\"https://hub.docker.com/r/ktkimyu/hippylib2muq\">https://hub.docker.com/r/ktkimyu/hippylib2muq</a></p>\n<p>3.&nbsp;<strong>Documentations</strong>: hIPPYlib (<a href=\"https://hippylib.github.io/tutorial_v2.3.0/\">https://hippylib.github.io/tutorial_v2.3.0/</a>) and hIPPYlib-MUQ (<a href=\"https://hippylib2muq.readthedocs.io/en/latest/)\">https://hippylib2muq.readthedocs.io/en/latest/)</a></p>\n<p>4.&nbsp;<strong>Two ACM TOMS papers&nbsp;</strong>describing the hIPPYlib (published, <a href=\"https://arxiv.org/abs/1909.03948\">https://arxiv.org/abs/1909.03948</a>) and hIPPYlib-MUQ (submitted, <a href=\"https://arxiv.org/abs/2112.00713\">https://arxiv.org/abs/2112.00713</a>) software frameworks.</p>\n<p class=\"p2\">5.&nbsp;<strong>Development of teaching materials and tutorials:&nbsp;</strong>the capabilities of the hIPPYlib and hIPPYlib-MUQ software frameworks have been demonstrated and shared in the form of Jupyter notebooks (interactive tutorials that mix instruction and theory with editable and runnable code).&nbsp;</p>\n<p>6.&nbsp;<strong>hIPPYlib-MUQ as research tool:</strong>&nbsp;hIPPYlib and hIPPYlib-MUQ are being applied to a broad spectrum of challenging Bayesian inverse problems, including inference of ice sheet basal friction from InSAR-based surface velocities, statistical treatment of inverse problems constrained by stochastic model, accounting for model errors in inverse problems, etc. As such, several articles (published, submitted, or in preparation) and PhD thesis resulted from hIPPYlib and hIPPYlib-MUQ's algorithms and their applications to a spectrum of challenging inverse problems.&nbsp;A comprehensive list of applications and list of publications can be found at&nbsp;<a href=\"https://hippylib.github.io/research/\">https://hippylib.github.io/research/</a>.</p>\n<p class=\"p1\">7.&nbsp;<strong>hIPPYlib-MUQ as teaching tool</strong>: hIPPYlib was used as the computational foundation for one graduate-level inverse problems course at UC Merced (hIPPYlib has been used in inverse problems courses at a number of other universities as well.) In addition, hIPPYlib and MUQ&nbsp;were heavily employed at various workshops and summer schools including ICERM (Summer 2015), SAMSI (Summer 2016), the 2018 SIAM Gene Golub Summer School (co-organized by the PIs of this grant), where graduate students or early career researchers have been trained in the field of computational inverse problems. More recently, the PI introduced hIPPYlib-MUQ at the \"Women in Inverse Problems\" workshop orginized by the&nbsp;<span>Banff International Research Station for Mathematical Innovation and Discovery (BIRS).</span></p>\n<p class=\"p2\">8.&nbsp;<strong>Mentorship and training at UC Merced</strong>: this grant offered support and training opportunities in Bayesian inversion theory, algorithms, and software for three postdoctoral researchers, several graduate students (via the PI's research group and her graduate-level inverse problems class), and three undergraduate students.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/04/2022<br>\n\t\t\t\t\tModified by: Noemi&nbsp;Petra</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe overarching goal of this collaborative project between UT Austin, MIT, and UC Merced was the development and dissemination of a high-performance, open-source software framework incorporating a suite of advanced algorithms for the solution of Bayesian inverse problems. Bayesian inference provides a systematic framework for integration of data with mathematical models to quantify the uncertainty in the solution of the inverse problem. However, solution of Bayesian inverse problems governed by complex forward models described by partial differential equations (PDEs) remains prohibitive with black-box Markov chain Monte Carlo (MCMC) methods. Under this grant, we extended and interfaced two complementary open source software packages, hIPPYlib and MUQ. hIPPYlib solves PDE-constrained inverse problems using adjoint-based first and second derivatives, but it lacks full Bayesian capabilities. MUQ provides a spectrum of powerful Bayesian inversion models and algorithms that accelerate MCMC sampling by exploiting the geometry and intrinsic low-dimensionality of parameter space via derivative information and low rank approximation. However, MUQ expects forward models to come equipped with gradients and Hessians to permit large-scale solution. By combining these two complementary libraries, we created hIPPYlib-MUQ, a robust, scalable, and efficient software framework that realizes the benefits of each and allows researchers to tackle complex large-scale Bayesian inverse problems across a broad spectrum of scientific and engineering disciplines. \n\nExtensive research efforts have been devoted to overcome the prohibitiveness of Bayesian inverse problems governed by large-scale complex PDE-based models. With rapid progress in high-performance computing, and advances in scalable PDE solvers, repeated evaluations of forward PDE models for different input parameters are becoming more tractable. Furthermore, structure-exploiting MCMC methods have effectively facilitated the exploration of complex posterior distributions. Finally, dimension reduction methods have proved to significantly reduce the computational cost of MCMC simulations. However, applying and combining these advanced techniques can be extremely challenging. Our goal with this project were twofold: (i) to make these advanced Bayesian inversion algorithms accessible to domain scientists; (ii) to provide an environment that expedites the development of new algorithms, and that helps developers benchmark their work. In particular, the major scientific and broader impact outcomes of our project include:\n\n1. Software public releases: hIPPYlib (https://hippylib.github.io/download/) and hIPPYlib-MUQ (https://github.com/hippylib/hippylib2muq) \n\n2. Docker images containing pre-installed softwares and tutorial examples: hIPPYlib: https://hub.docker.com/r/hippylib/toms and hIPPYlib-MUQ: https://hub.docker.com/r/ktkimyu/hippylib2muq\n\n3. Documentations: hIPPYlib (https://hippylib.github.io/tutorial_v2.3.0/) and hIPPYlib-MUQ (https://hippylib2muq.readthedocs.io/en/latest/)\n\n4. Two ACM TOMS papers describing the hIPPYlib (published, https://arxiv.org/abs/1909.03948) and hIPPYlib-MUQ (submitted, https://arxiv.org/abs/2112.00713) software frameworks.\n5. Development of teaching materials and tutorials: the capabilities of the hIPPYlib and hIPPYlib-MUQ software frameworks have been demonstrated and shared in the form of Jupyter notebooks (interactive tutorials that mix instruction and theory with editable and runnable code). \n\n6. hIPPYlib-MUQ as research tool: hIPPYlib and hIPPYlib-MUQ are being applied to a broad spectrum of challenging Bayesian inverse problems, including inference of ice sheet basal friction from InSAR-based surface velocities, statistical treatment of inverse problems constrained by stochastic model, accounting for model errors in inverse problems, etc. As such, several articles (published, submitted, or in preparation) and PhD thesis resulted from hIPPYlib and hIPPYlib-MUQ's algorithms and their applications to a spectrum of challenging inverse problems. A comprehensive list of applications and list of publications can be found at https://hippylib.github.io/research/.\n7. hIPPYlib-MUQ as teaching tool: hIPPYlib was used as the computational foundation for one graduate-level inverse problems course at UC Merced (hIPPYlib has been used in inverse problems courses at a number of other universities as well.) In addition, hIPPYlib and MUQ were heavily employed at various workshops and summer schools including ICERM (Summer 2015), SAMSI (Summer 2016), the 2018 SIAM Gene Golub Summer School (co-organized by the PIs of this grant), where graduate students or early career researchers have been trained in the field of computational inverse problems. More recently, the PI introduced hIPPYlib-MUQ at the \"Women in Inverse Problems\" workshop orginized by the Banff International Research Station for Mathematical Innovation and Discovery (BIRS).\n8. Mentorship and training at UC Merced: this grant offered support and training opportunities in Bayesian inversion theory, algorithms, and software for three postdoctoral researchers, several graduate students (via the PI's research group and her graduate-level inverse problems class), and three undergraduate students.\n\n\t\t\t\t\tLast Modified: 01/04/2022\n\n\t\t\t\t\tSubmitted by: Noemi Petra"
+ }
+}

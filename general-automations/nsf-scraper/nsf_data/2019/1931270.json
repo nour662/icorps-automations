@@ -1,0 +1,109 @@
+{
+ "awd_id": "1931270",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "A Convex Computational Framework for Understanding and Controlling Nonlinear Systems",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": "7032922576",
+ "po_email": "mcanova@nsf.gov",
+ "po_sign_block_name": "Marcello Canova",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2024-08-31",
+ "tot_intn_awd_amt": 267752.0,
+ "awd_amount": 267752.0,
+ "awd_min_amd_letter_date": "2019-07-25",
+ "awd_max_amd_letter_date": "2019-07-25",
+ "awd_abstract_narration": "Complicated engineered systems have become increasingly common and autonomous, with examples including underwater vehicles, UAVs, and self-driving cars, as well as less visible systems such as power inverters, battery storage devices, network routers, and data storage devices. Extended periods of autonomy inevitably lead to such unexpected changes as: altered or degraded system configuration; failures of actuators or sensors; and evolution of the working environment. Without an automated mechanism for identification of and adaptation to such changes, it is likely that the technological foundation of our society will become increasingly unreliable. The goal of the project is to improve autonomy in complicated systems. Specifically, optimization algorithms are used to learn the environment, analyze this information, and design control strategies. Based on fundamental theory of how dynamical systems operate, these algorithms provide a rigorous basis for cognizance and adaptability. The impact of this work will be a more safe and reliable technological infrastructure, both on earth and in space. Increasing the reliability and duration of autonomous systems will lead to, for example, faster and cheaper exploration of space, safer transportation networks, and more reliable communication networks.\r\n\r\nRecently, Sum-of-Squares (SOS) algorithms have become a powerful tool for understanding nonlinear dynamical systems. The power of SOS lies in its convex parametrization of non-quadratic Lyapunov functions. Unfortunately, however, this convex formulation assumes the dynamics are known and has not been extended to estimating the Region of Attraction (ROA), Minimum Invariant Set (MIS), and Forward Reachability (FRS). At the core of this project is the novel observation that the ROA/MIS/FRS problems can be expressed using sub- or super-solutions to a value function defined by the solution to a Hamilton-Jacobi-Bellman (HJB) equation. The first part of the project exploits this equivalence to show that the ROA/MIS/FRS problems can be posed as SOS optimization problems wherein the objective is volume minimization or maximization of sublevel sets of a sub/super-value function. The second part of the project uses new convex volume metrics to solve these SOS volume optimization problems.  The third part of the project considers the case where the dynamics are unknown and uses trajectory data to directly estimate the ROA and FRS without use of a dynamic model. The algorithms are also applied to control of spacecraft attitude dynamics.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Matthew",
+   "pi_last_name": "Peet",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Matthew Peet",
+   "pi_email_addr": "mpeet@asu.edu",
+   "nsf_id": "000511753",
+   "pi_start_date": "2019-07-25",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Arizona State University",
+  "inst_street_address": "660 S MILL AVENUE STE 204",
+  "inst_street_address_2": "",
+  "inst_city_name": "TEMPE",
+  "inst_state_code": "AZ",
+  "inst_state_name": "Arizona",
+  "inst_phone_num": "4809655479",
+  "inst_zip_code": "852813670",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "AZ04",
+  "org_lgl_bus_name": "ARIZONA STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NTLHJXM55KZ6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Arizona State University",
+  "perf_str_addr": "",
+  "perf_city_name": "Tempe",
+  "perf_st_code": "AZ",
+  "perf_st_name": "Arizona",
+  "perf_zip_code": "852816011",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "AZ04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "756900",
+   "pgm_ele_name": "Dynamics, Control and System D"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "030E",
+   "pgm_ref_txt": "CONTROL SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "034E",
+   "pgm_ref_txt": "Dynamical systems"
+  },
+  {
+   "pgm_ref_code": "8024",
+   "pgm_ref_txt": "Complex Systems"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 267752.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Complex engineered systems have become increasingly common and autonomous, with examples including spacecraft, underwater vehicles, UAVs, and self-driving cars. Extended periods of autonomy inevitably leads to such unexpected changes as: altered or degraded system configuration; failures of actuators or sensors; and changes in the operational environment. The goal of this project, then, was to leverage advances in computation and optimization algorithms to enable autonomous systems to rapidly evaluate their operating environment, analyze this information, and design control strategies to mitigate changes in this environment.&nbsp;</p>\r\n<p><br />In additional to significantly improving the fundamentals of optimization-based analysis and control, the project has led to three major outcomes. First, the project created a new and more accurate method for rapid evaluation of the operating environment. Specifically, models of the operating environment of autonomous systems typically include parameterized differential equations. However, the parameters in these models may be inaccurate of change with the environment. By using data and optimization to track changes in these parameters, the algorithms developed in this project provide a mechanism for continuous and automated improvement in models of the environment.</p>\r\n<p><br />The second major accomplishment was to develop automated methods for using complex models of the environment to accurately characterize regions of space in terms of stable sets, safe sets, and reachable sets. Such a characterization allows the autonomous system to maintain reliable operation while navigating its environment. Furthermore, these methods rely on a form of optimization known as sum-of-squares (SOS) programming and the project has made significant improvements in efficiency to the algorithms which underly SOS programming (including development of the software package SOSTOOLS 4). These improvements have led to several order-of-magnitude reductions in computation time for analysis of complex environmental models.</p>\r\n<p><br />The third major accomplishment has been to extend and improve methods for creation of control and navigation strategies based on complex models of the environment. These strategies are based on solving navigation problems using variations of the classical Hamilton-Jacobi-Bellman equation. The results obtained use optimization to find solutions to this equation and then verify safety and performance of the resulting control and navigation strategies.</p>\r\n<p><br />By improving the ability of autonomous systems to model, analyze, and navigate in changing environmental conditions, the outcomes of this project will increase the reliability and duration of autonomous systems, resulting in, e.g., faster and cheaper exploration of space, safer transportation, and more reliable robots.</p><br>\n<p>\n Last Modified: 01/01/2025<br>\nModified by: Matthew&nbsp;Peet</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nComplex engineered systems have become increasingly common and autonomous, with examples including spacecraft, underwater vehicles, UAVs, and self-driving cars. Extended periods of autonomy inevitably leads to such unexpected changes as: altered or degraded system configuration; failures of actuators or sensors; and changes in the operational environment. The goal of this project, then, was to leverage advances in computation and optimization algorithms to enable autonomous systems to rapidly evaluate their operating environment, analyze this information, and design control strategies to mitigate changes in this environment.\r\n\n\n\nIn additional to significantly improving the fundamentals of optimization-based analysis and control, the project has led to three major outcomes. First, the project created a new and more accurate method for rapid evaluation of the operating environment. Specifically, models of the operating environment of autonomous systems typically include parameterized differential equations. However, the parameters in these models may be inaccurate of change with the environment. By using data and optimization to track changes in these parameters, the algorithms developed in this project provide a mechanism for continuous and automated improvement in models of the environment.\r\n\n\n\nThe second major accomplishment was to develop automated methods for using complex models of the environment to accurately characterize regions of space in terms of stable sets, safe sets, and reachable sets. Such a characterization allows the autonomous system to maintain reliable operation while navigating its environment. Furthermore, these methods rely on a form of optimization known as sum-of-squares (SOS) programming and the project has made significant improvements in efficiency to the algorithms which underly SOS programming (including development of the software package SOSTOOLS 4). These improvements have led to several order-of-magnitude reductions in computation time for analysis of complex environmental models.\r\n\n\n\nThe third major accomplishment has been to extend and improve methods for creation of control and navigation strategies based on complex models of the environment. These strategies are based on solving navigation problems using variations of the classical Hamilton-Jacobi-Bellman equation. The results obtained use optimization to find solutions to this equation and then verify safety and performance of the resulting control and navigation strategies.\r\n\n\n\nBy improving the ability of autonomous systems to model, analyze, and navigate in changing environmental conditions, the outcomes of this project will increase the reliability and duration of autonomous systems, resulting in, e.g., faster and cheaper exploration of space, safer transportation, and more reliable robots.\t\t\t\t\tLast Modified: 01/01/2025\n\n\t\t\t\t\tSubmitted by: MatthewPeet\n"
+ }
+}

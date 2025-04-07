@@ -1,0 +1,109 @@
+{
+ "awd_id": "1718086",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: CORE: Small: Expanding TrustZone: Enabling Mobile Apps to Transparently Leverage TrustZone for Attestation and Data Protection",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032920000",
+ "po_email": "doliveir@nsf.gov",
+ "po_sign_block_name": "Daniela Oliveira",
+ "awd_eff_date": "2017-08-15",
+ "awd_exp_date": "2021-07-31",
+ "tot_intn_awd_amt": 497296.0,
+ "awd_amount": 497296.0,
+ "awd_min_amd_letter_date": "2017-07-18",
+ "awd_max_amd_letter_date": "2017-07-18",
+ "awd_abstract_narration": "Mobile device security is critical to millions of users and mobile operating system vulnerabilities can lead to exposure of sensitive data (e.g., passwords, credit card numbers, medical data) or compromise of sensitive operations (e.g., banking transactions). This research project is working to answer the following question: If the device's operating system is compromised, is it still possible to protect user's sensitive data and operations? The researchers are using new hardware technology, \"Trusted Execution Environments (TEEs),\" to enable such protection.\r\n\r\nMany new processors offer a TEE, which is isolated from the normal operating system (OS) environment.  Code and data inside the TEE is protected even when the OS running in the normal environment is compromised.  In the mobile computing environment, only apps provided by the mobile system vendors are typically able to make use of the TEE, as some of the app logic must be installed within the TEE.  This research project is developing techniques to enable device-neutral integration of third party apps with mobile TEEs, focusing on (1) app interaction with the TEE user interface, and (2) TEE-assisted interaction between app and server. The research team is designing interaction logic to hide TEE-specific details within the mobile OS, enabling third party app developers to use the TEE capabilities transparently from the mobile OS interface.  The team is also designing app-to-cloud-server attestation techniques, to allow a mobile app to prove that communication (e.g., email, HTTP requests, phone calls, or SMS messages) was initiated by the app on the mobile device and not spoofed by a compromised mobile OS.  The researchers are building their own TEE-enabled Android smartphone to support the security features developed by the project.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Wenliang",
+   "pi_last_name": "Du",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Wenliang Du",
+   "pi_email_addr": "wedu@syr.edu",
+   "nsf_id": "000483547",
+   "pi_start_date": "2017-07-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Syracuse University",
+  "inst_street_address": "900 S CROUSE AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SYRACUSE",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "3154432807",
+  "inst_zip_code": "13244",
+  "inst_country_name": "United States",
+  "cong_dist_code": "22",
+  "st_cong_dist_code": "NY22",
+  "org_lgl_bus_name": "SYRACUSE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "C4BXLBC11LC6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Syracuse University",
+  "perf_str_addr": "",
+  "perf_city_name": "Syracuse",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "132441200",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "22",
+  "perf_st_cong_dist": "NY22",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 497296.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Mobile device security is critical to millions of users and mobile operating system vulnerabilities can lead to exposure of sensitive data (e.g., passwords, credit card numbers, medical data) or compromise of sensitive operations (e.g., banking transactions). This research project is working to answer the following question: If the device's operating system is compromised, is it still possible to protect user's sensitive data and operations? The researchers are using new hardware technology, \"Trusted Execution Environments (TEEs),\" to enable such protection.</p>\n<p>The main objective of this project is to integrate the TEE functionality in ARM processors with mobile operating systems, so normal-world apps can leverage the TEE functionalities. The project addresses two important aspects of the integration: app's interaction with the user interface (UI) inside TEE, and TEE-assisted interaction between app and server. The proposed work focuses on changing the operating system, so that the way apps interact with UI and server remains the same as before, even though the underlying interaction is quite different due to the involvement of TEE.</p>\n<p>Several ideas have been proposed and implemented in this project. They mainly focus on the same theme: splitting the implementation of a particular system, so a small part of it (those depending on the TrustZone-protected information) is conducted inside the TrustZone, while the other part (the majority part) is still conducted inside the rich OS. Such splitting minimizes the size of the code added to the TrustZone, while still being transparent to applications. Several systems have been split in such a way, including the SSL library, the UI-interaction system, the GPS system, bar-code scanning system, voice-over-IP system, etc. The success of these split systems demonstrates the effectiveness and feasibility of the splitting idea. The idea can be generalized to other types of systems.</p>\n<p>Testing the work on TrustZone has been very challenging. To solve this problem, we have developed a TrustZone emulator, and used it to conduct testing. This success of this emulator inspired us to look at other similar challenging settings, thinking about whether they can be emulated. That has led to our Internet Emulator idea, which is to develop an emulator for the Internet, so we can conduct activities, especially education-related activities, which are difficult, or even illegal, to conduct on the real Internet. This outcome has a potential impact in cybersecurity and networking education.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/06/2021<br>\n\t\t\t\t\tModified by: Wenliang&nbsp;Du</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMobile device security is critical to millions of users and mobile operating system vulnerabilities can lead to exposure of sensitive data (e.g., passwords, credit card numbers, medical data) or compromise of sensitive operations (e.g., banking transactions). This research project is working to answer the following question: If the device's operating system is compromised, is it still possible to protect user's sensitive data and operations? The researchers are using new hardware technology, \"Trusted Execution Environments (TEEs),\" to enable such protection.\n\nThe main objective of this project is to integrate the TEE functionality in ARM processors with mobile operating systems, so normal-world apps can leverage the TEE functionalities. The project addresses two important aspects of the integration: app's interaction with the user interface (UI) inside TEE, and TEE-assisted interaction between app and server. The proposed work focuses on changing the operating system, so that the way apps interact with UI and server remains the same as before, even though the underlying interaction is quite different due to the involvement of TEE.\n\nSeveral ideas have been proposed and implemented in this project. They mainly focus on the same theme: splitting the implementation of a particular system, so a small part of it (those depending on the TrustZone-protected information) is conducted inside the TrustZone, while the other part (the majority part) is still conducted inside the rich OS. Such splitting minimizes the size of the code added to the TrustZone, while still being transparent to applications. Several systems have been split in such a way, including the SSL library, the UI-interaction system, the GPS system, bar-code scanning system, voice-over-IP system, etc. The success of these split systems demonstrates the effectiveness and feasibility of the splitting idea. The idea can be generalized to other types of systems.\n\nTesting the work on TrustZone has been very challenging. To solve this problem, we have developed a TrustZone emulator, and used it to conduct testing. This success of this emulator inspired us to look at other similar challenging settings, thinking about whether they can be emulated. That has led to our Internet Emulator idea, which is to develop an emulator for the Internet, so we can conduct activities, especially education-related activities, which are difficult, or even illegal, to conduct on the real Internet. This outcome has a potential impact in cybersecurity and networking education.\n\n\t\t\t\t\tLast Modified: 11/06/2021\n\n\t\t\t\t\tSubmitted by: Wenliang Du"
+ }
+}

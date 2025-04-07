@@ -1,0 +1,109 @@
+{
+ "awd_id": "1907610",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CDS&E: Two- and Three-point Correlations for Large Data Sets with TreeCorr",
+ "cfda_num": "47.049",
+ "org_code": "03020000",
+ "po_phone": "7032924905",
+ "po_email": "nsharp@nsf.gov",
+ "po_sign_block_name": "Nigel Sharp",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2023-08-31",
+ "tot_intn_awd_amt": 269085.0,
+ "awd_amount": 269085.0,
+ "awd_min_amd_letter_date": "2019-08-15",
+ "awd_max_amd_letter_date": "2019-08-15",
+ "awd_abstract_narration": "This researcher has developed the leading software for measuring two-point correlation functions on large data sets in astronomy and elsewhere.  However, for very large datasets the current version must be split across multiple computer nodes, which can be complicated to do correctly and efficiently.  This project will enhance the software to use the Message Passing Interface (MPI) to split a job efficiently over a given number of nodes.  Other software changes will further increase efficiency, add capabilities for three-point cross correlations, and include a more accurate shear estimation method.  All of these modifications have been explicitly requested by current users of the software, and will make it especially useful for future experiments with much larger data volumes and tighter accuracy requirements.  These improvements will help many scientists to carry out their research more efficiently and effectively.  Throughout the project, the principal investigator will continue his campaign to improve the coding skills of other astronomers, helping them with code design, algorithm choices, good development workflow, and other software development issues.  Some of his lessons are already freely available through YouTube.\r\n\r\nThe software, TreeCorr, uses a very efficient ball-tree algorithm to compute correlations in O(N log N) time, making it significantly faster than other available options.   TreeCorr uses OpenMP within a single computer node, and adding MPI will provide optimum overall efficiency.  Other improvements include changing internal code for how TreeCorr decides when to stop traversing its tree, allowing arbitrary binning and arbitrarily small bin slop.  Three-point auto-correlations are already supported at O(N log N) complexity, but the three-point cross-correlations that enable studies such as count-count-shear have been unavailable due to the complex bookkeeping required: this limitation will be removed.  The new shear method, MetaCalibration, requires additional calculations that again can be somewhat complicated to do correctly.  Correct and efficient code for MetaCalibration will be built into TreeCorr.  This software has been downloaded via pip over 40,000 times and is used by many research teams working on current and forthcoming surveys: they will all benefit greatly from the algorithmic advances to be made by this study.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "AST",
+ "org_div_long_name": "Division Of Astronomical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Robert",
+   "pi_last_name": "Jarvis",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Robert M Jarvis",
+   "pi_email_addr": "michael@jarvis.net",
+   "nsf_id": "000201079",
+   "pi_start_date": "2019-08-15",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Pennsylvania",
+  "inst_street_address": "3451 WALNUT ST STE 440A",
+  "inst_street_address_2": "",
+  "inst_city_name": "PHILADELPHIA",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "2158987293",
+  "inst_zip_code": "191046205",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "PA03",
+  "org_lgl_bus_name": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA, THE",
+  "org_prnt_uei_num": "GM1XX56LEP58",
+  "org_uei_num": "GM1XX56LEP58"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Pennsylvania",
+  "perf_str_addr": "209 South 33rd Street",
+  "perf_city_name": "Philadelphia",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "191046396",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "PA03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "121700",
+   "pgm_ele_name": "EXTRAGALACTIC ASTRON & COSMOLO"
+  },
+  {
+   "pgm_ele_code": "808400",
+   "pgm_ele_name": "CDS&E"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1206",
+   "pgm_ref_txt": "THEORETICAL & COMPUTATIONAL ASTROPHYSICS"
+  },
+  {
+   "pgm_ref_code": "8084",
+   "pgm_ref_txt": "CDS&E"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 269085.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"p1\"><span class=\"s1\">This NSF-funded project focused on the advanced development of TreeCorr, an established software package that can efficiently compute correlation functions of points on the sky. In astronomical contexts, these points often represent galaxies, galaxy clusters, and occasionally stars or other cosmic objects. The correlation function is a standard statistic that quantifies the correlations between various attributes of these entities based on their spatial separation.</span></p>\n<p class=\"p1\"><span class=\"s1\">One of TreeCorr's core uses is the exploration of the universe's large-scale structure. The clustering of massive galaxies in the universe manifests in positional correlations. Moreover, the phenomenon of weak gravitational lensing, where massive bodies such as galaxies or clusters bend the light from background galaxies, gives rise to distinctive two-point correlation functions of the galaxy ellipticities. Analyzing these functions offers insights into theories of gravity and of the universe's expansion and growth dynamics.</span></p>\n<p class=\"p1\"><span class=\"s1\">TreeCorr has been the leading software for making these measurements for many years. Numerous scientists, including those in the Dark Energy Survey (DES), the Kilo Degree Survey (KiDS), and the Hyper-Suprime Cam Survey (HSC), have employed it extensively. Furthermore, it underpins the cosmological analysis software for the forthcoming Rubin Telescope's Legacy Survey of Space and Time (LSST) and the Roman Space Telescope's High Latitude Wide Area Survey.</span></p>\n<p class=\"p1\"><span class=\"s1\">However, the burgeoning sizes of astronomical data sets have increasingly challenged TreeCorr's capabilities. For instance, the DES catalog contains 300 million galaxies, with about 200 million providing viable shape measurements. LSST's projected 10-year observations are expected to encompass around 20 billion galaxies. Managing such voluminous data sets necessitates efficient parallelization across numerous computing nodes.</span></p>\n<p class=\"p1\"><span class=\"s1\">A significant enhancement supported by this grant is TreeCorr's augmented ability to segment large data sets into discrete patches, enabling several crucial new functionalities. TreeCorr can perform this division automatically using the K-Means algorithm, or the user can manually assign patches if they prefer.</span></p>\n<p class=\"p1\"><span class=\"s1\">Notably, the patch-based calculation allows for the full computation to be distributed and parallelized over multiple nodes through the Message Passing Interface (MPI). Each node processes a fraction of the full calculation, with the combined results yielding the final correlation function. Additionally, this method reduces the memory requirement per node, since only one or two patches need to be loaded into memory at a time, a critical factor as the sizes of data sets increase.</span></p>\n<p class=\"p1\"><span class=\"s1\">The patch-based approach also streamlines the computation of empirical covariance matrices, crucial for measuring uncertainties, particularly when analytic estimates are challenging. These matrices can be computed using jack-knife or bootstrap methods, with negligible overhead once the main correlation function computation has completed.</span></p>\n<p class=\"p1\"><span class=\"s1\">Another significant advancement funded by this grant has been the addition of new data types to be correlated. Previously limited to scalar fields, positions, and ellipticities (spin-2 fields), TreeCorr now accommodates vector (spin-1) fields as well as spin-3 and spin-4 fields (i.e. quantities with three-fold and four-fold rotational symmetry, respectively), enabling correlations of features with these spin properties. The last of these in particular is required for modern shape measurement methods to accurately calibrate the corresponding ellipticity correlation functions.</span></p>\n<p class=\"p1\"><span class=\"s1\">Finally, the grant has facilitated the implementation of three-point cross-correlation functions. The only three-point correlations TreeCorr had previously supported were auto-correlations of a single field. It now can compute three-point cross-correlations of two or three different fields. This is useful to scientists who study how a single physical effect can have measurable impacts across multiple different measurements.</span></p>\n<p class=\"p1\"><span class=\"s1\">As the funding period concludes, TreeCorr's development continues. I remain committed to addressing feature requests and bug reports from our extensive user base. The NSF's support has been instrumental in accelerating these critical developments, already being used by many scientists around the world to empower their research. This grant has not only expedited the advancement of TreeCorr but has also significantly expanded the scope and depth of scientific exploration possible in the field of astronomy. I am very grateful to the NSF for their support in this effort.</span></p><br>\n<p>\n Last Modified: 02/15/2024<br>\nModified by: Robert&nbsp;M&nbsp;Jarvis</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThis NSF-funded project focused on the advanced development of TreeCorr, an established software package that can efficiently compute correlation functions of points on the sky. In astronomical contexts, these points often represent galaxies, galaxy clusters, and occasionally stars or other cosmic objects. The correlation function is a standard statistic that quantifies the correlations between various attributes of these entities based on their spatial separation.\n\n\nOne of TreeCorr's core uses is the exploration of the universe's large-scale structure. The clustering of massive galaxies in the universe manifests in positional correlations. Moreover, the phenomenon of weak gravitational lensing, where massive bodies such as galaxies or clusters bend the light from background galaxies, gives rise to distinctive two-point correlation functions of the galaxy ellipticities. Analyzing these functions offers insights into theories of gravity and of the universe's expansion and growth dynamics.\n\n\nTreeCorr has been the leading software for making these measurements for many years. Numerous scientists, including those in the Dark Energy Survey (DES), the Kilo Degree Survey (KiDS), and the Hyper-Suprime Cam Survey (HSC), have employed it extensively. Furthermore, it underpins the cosmological analysis software for the forthcoming Rubin Telescope's Legacy Survey of Space and Time (LSST) and the Roman Space Telescope's High Latitude Wide Area Survey.\n\n\nHowever, the burgeoning sizes of astronomical data sets have increasingly challenged TreeCorr's capabilities. For instance, the DES catalog contains 300 million galaxies, with about 200 million providing viable shape measurements. LSST's projected 10-year observations are expected to encompass around 20 billion galaxies. Managing such voluminous data sets necessitates efficient parallelization across numerous computing nodes.\n\n\nA significant enhancement supported by this grant is TreeCorr's augmented ability to segment large data sets into discrete patches, enabling several crucial new functionalities. TreeCorr can perform this division automatically using the K-Means algorithm, or the user can manually assign patches if they prefer.\n\n\nNotably, the patch-based calculation allows for the full computation to be distributed and parallelized over multiple nodes through the Message Passing Interface (MPI). Each node processes a fraction of the full calculation, with the combined results yielding the final correlation function. Additionally, this method reduces the memory requirement per node, since only one or two patches need to be loaded into memory at a time, a critical factor as the sizes of data sets increase.\n\n\nThe patch-based approach also streamlines the computation of empirical covariance matrices, crucial for measuring uncertainties, particularly when analytic estimates are challenging. These matrices can be computed using jack-knife or bootstrap methods, with negligible overhead once the main correlation function computation has completed.\n\n\nAnother significant advancement funded by this grant has been the addition of new data types to be correlated. Previously limited to scalar fields, positions, and ellipticities (spin-2 fields), TreeCorr now accommodates vector (spin-1) fields as well as spin-3 and spin-4 fields (i.e. quantities with three-fold and four-fold rotational symmetry, respectively), enabling correlations of features with these spin properties. The last of these in particular is required for modern shape measurement methods to accurately calibrate the corresponding ellipticity correlation functions.\n\n\nFinally, the grant has facilitated the implementation of three-point cross-correlation functions. The only three-point correlations TreeCorr had previously supported were auto-correlations of a single field. It now can compute three-point cross-correlations of two or three different fields. This is useful to scientists who study how a single physical effect can have measurable impacts across multiple different measurements.\n\n\nAs the funding period concludes, TreeCorr's development continues. I remain committed to addressing feature requests and bug reports from our extensive user base. The NSF's support has been instrumental in accelerating these critical developments, already being used by many scientists around the world to empower their research. This grant has not only expedited the advancement of TreeCorr but has also significantly expanded the scope and depth of scientific exploration possible in the field of astronomy. I am very grateful to the NSF for their support in this effort.\t\t\t\t\tLast Modified: 02/15/2024\n\n\t\t\t\t\tSubmitted by: RobertMJarvis\n"
+ }
+}

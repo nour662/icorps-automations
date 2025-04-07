@@ -1,0 +1,117 @@
+{
+ "awd_id": "1718771",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CIF:Small:Model-Based Blind Demixing for Signal Processing and Machine Learning",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922981",
+ "po_email": "pregalia@nsf.gov",
+ "po_sign_block_name": "Phillip Regalia",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 499703.0,
+ "awd_amount": 499703.0,
+ "awd_min_amd_letter_date": "2017-08-31",
+ "awd_max_amd_letter_date": "2018-08-28",
+ "awd_abstract_narration": "The research centers on novel numerical methods and supporting theory for the multichannel convolutive blind demixing (MCBD) problem, where the responses for a set of inter-related time-invariant systems are estimated by observing only their outputs. The MCBD problem arises in many well-known applications in signal processing and communications; one of our goals for this project is to provide a unified framework for solving these problems that has a firm algorithmic and theoretical foundation. The goals are to provide a fundamental analysis of the information theoretic limits of MCBD, along with scalable algorithms that operate with provable performance guarantee at or near these limits. New applications of the MCBD problem will also be explored in the area of machine learning. In particular, the investigators will study how solutions to the MCBD problem can be used as an efficient method for both for the initialization in training deep convolutional neural networks, and for solving inverse problems associated with generative models.\r\n\r\nThe work will combine classical statistical approaches and modern optimization-based techniques for constrained inverse problems. Of particular interest is the role that structure plays on making the problem identifiable, and on the stability of the solutions when the observations are corrupted by noise. Scenarios where this structure comes from domain-specific knowledge will be considered, along with scenarios where the model is data-driven. The algorithms developed in the project will be validated on applications in astronomical imaging, neuroimaging, medical imaging, seismic imaging, underwater acoustics, and deep learning. The proposed research has direct relevance to next-generation array processing for massive MIMO communications, device-to-device communication for the Internet-of-Things, and new integrated circuit RF transmitters. The work also may open a new direction in parallel MRI. The research activities will be complemented by new graduate courses focusing on modern mathematical methods for the next generation of data scientists.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Justin",
+   "pi_last_name": "Romberg",
+   "pi_mid_init": "K",
+   "pi_sufx_name": "",
+   "pi_full_name": "Justin K Romberg",
+   "pi_email_addr": "jrom@ece.gatech.edu",
+   "nsf_id": "000238919",
+   "pi_start_date": "2017-08-31",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Kiryung",
+   "pi_last_name": "Lee",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Kiryung Lee",
+   "pi_email_addr": "lee.8763@osu.edu",
+   "nsf_id": "000673077",
+   "pi_start_date": "2017-08-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Institute of Technology",
+  "perf_str_addr": "225 North Avenue",
+  "perf_city_name": "Atlanta",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779700",
+   "pgm_ele_name": "Comm & Information Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7936",
+   "pgm_ref_txt": "SIGNAL PROCESSING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 499703.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In many real world applications, signals of interest are observed through an unknown or partially known system. For example, in the functional MRI modality, neural activities are measured only through hemodynamic response. Resolving both signal and system is referred to blind deconvolution and enables practical imaging systems often without calibration. There are a few more sources of nonliearities which make the system realistic but make the reconstruction more challenging. This project has addressed key issues in solving a class of nonlinear inverse problems in these contexts.</p>\n<p>A core result leveraged the statistics of the observed data to perform the separation by focusing on the system part. This statistical approach significantly improves upon similar methods developed for communications in 1990s by incorporating modern model-based optimization. In particular, we provide robust estimation backed by rigorous non-asymptotic analysis for a variety of scenarios.</p>\n<p>Another core result presents a unified low-rank recovery from observations via structured measurement matrices. Nuclear norm has been shown a promising regularizer for many inverse problems finding a low-rank solution. When the observations are constrained with respect to certain forms given in applications, a more sophisticated modeling further reduces the sufficient number of observations for recovery. We generalized the classical LASSO estimator with a class of tensor norm and provided near optimal estimation theory that matches fundamental lower bound.</p>\n<p>These findings will promote our general understanding of a wide range of nonlinear inverse problem sharing similar mathematical structure. Mathematical tools developed along with core theoretical results will also be useful in understanding these related problems.</p>\n<p>The nonlinear inverse problems in the project are fundamental formulation arising in numerous real-world applications in signal processing, communications, and machine learning. Therefore, the developed core results are of broad interest to the academic communities in those fields. New algorithms and a deeper mathematical understanding of how to reliably estimate convolutive channels with limited information will advance the core technology in medical and underwater acoustic imaging. The project demonstrated prelminary results in applying the core results to these domains through collaborative research. PIs have developed new courses on mathematical foundations of data science and high dimensional probability to disseminate findings in the project to the utility in broad context.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/05/2022<br>\n\t\t\t\t\tModified by: Justin&nbsp;K&nbsp;Romberg</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIn many real world applications, signals of interest are observed through an unknown or partially known system. For example, in the functional MRI modality, neural activities are measured only through hemodynamic response. Resolving both signal and system is referred to blind deconvolution and enables practical imaging systems often without calibration. There are a few more sources of nonliearities which make the system realistic but make the reconstruction more challenging. This project has addressed key issues in solving a class of nonlinear inverse problems in these contexts.\n\nA core result leveraged the statistics of the observed data to perform the separation by focusing on the system part. This statistical approach significantly improves upon similar methods developed for communications in 1990s by incorporating modern model-based optimization. In particular, we provide robust estimation backed by rigorous non-asymptotic analysis for a variety of scenarios.\n\nAnother core result presents a unified low-rank recovery from observations via structured measurement matrices. Nuclear norm has been shown a promising regularizer for many inverse problems finding a low-rank solution. When the observations are constrained with respect to certain forms given in applications, a more sophisticated modeling further reduces the sufficient number of observations for recovery. We generalized the classical LASSO estimator with a class of tensor norm and provided near optimal estimation theory that matches fundamental lower bound.\n\nThese findings will promote our general understanding of a wide range of nonlinear inverse problem sharing similar mathematical structure. Mathematical tools developed along with core theoretical results will also be useful in understanding these related problems.\n\nThe nonlinear inverse problems in the project are fundamental formulation arising in numerous real-world applications in signal processing, communications, and machine learning. Therefore, the developed core results are of broad interest to the academic communities in those fields. New algorithms and a deeper mathematical understanding of how to reliably estimate convolutive channels with limited information will advance the core technology in medical and underwater acoustic imaging. The project demonstrated prelminary results in applying the core results to these domains through collaborative research. PIs have developed new courses on mathematical foundations of data science and high dimensional probability to disseminate findings in the project to the utility in broad context.\n\n \n\n\t\t\t\t\tLast Modified: 01/05/2022\n\n\t\t\t\t\tSubmitted by: Justin K Romberg"
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "awd_id": "1612924",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "On Statistical Modeling and Parameter Estimation for High Dimensional Systems",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032927299",
+ "po_email": "yzeng@nsf.gov",
+ "po_sign_block_name": "Yong Zeng",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2018-01-31",
+ "tot_intn_awd_amt": 150000.0,
+ "awd_amount": 150000.0,
+ "awd_min_amd_letter_date": "2016-08-23",
+ "awd_max_amd_letter_date": "2016-08-23",
+ "awd_abstract_narration": "The dramatic improvements in data collection and acquisition technologies over the last decades have enabled scientists to collect massive amounts of high-dimensional data that allow for monitoring and studying of complex systems.  Due to their intrinsic nature, many of the high-dimensional datasets, such as omics and genome-wide association study (GWAS) data, have a much smaller sample size compared to the dimension (referred to as the small-n-large-P problem). Current research on statistical modeling of small-n-large-P data focuses on linear and generalized linear models. However, these approaches are often not adequate for modeling complex systems, and estimation of the model parameters is challenging.  This project addresses two fundamental problems, statistical modeling and parameter estimation, toward a valid statistical analysis of high-dimensional data.  Successful completion of this project will generate hands-on tools for statistical inference of high-dimensional complex systems, which can benefit researchers in many areas of science and technology.  In particular, the proposed applications to biomedical studies will lead to accurate tools for detecting biomarkers associated with disease processes and tailoring optimal therapy for individual patients with complex diseases. The research results will be disseminated to the statistical and biomedical communities, via collaboration, conference presentations, books, and articles to be published in academic journals. The project will also have significant impact on education through the involvement of graduate students in the project, and incorporation of results into undergraduate and graduate courses.  In addition, the R package developed under this project will provide a valuable tool for statistical analysis of high-dimensional data.\r\n\r\nThe current approach to modeling small-n-large-P data focuses on linear and generalized linear models, and casts the problem as variable selection by imposing a sparsity constraint on parameter values.  Although these models have many advantages, such as simplicity and computational efficiency, estimation of the parameters is still a challenging problem.  While regularization is often used in these situations, it can perform poorly when the sample size is small and the variables are highly correlated.  Two new methods are proposed to address these concerns, namely, Bayesian neural network (BNN) and blockwise coordinate consistency (BCC).  The BNN method works by first fitting the data with a feed-forward neural network, conducting variable selection through network structure selection under a Bayesian framework, and resolving the associated computational difficulty via parallel computing. Compared to existing methods, BNN can lead to much more precise selection of relevant variables and outcome prediction for high-dimensional nonlinear systems.  The BCC method works by maximizing a new objective function, the expectation of the log-likelihood function, using a cyclic algorithm and iteratively finding consistent estimates for each block of parameters conditional on the current estimates of the other parameters.  The BCC method reduces the high-dimensional parameter estimation problem to a series of low-dimensional parameter estimation problems.  The preliminary results indicate that BCC can provide a drastic improvement in both parameter estimation and variable selection over regularization methods. The validity of the proposed methods will be rigorously studied and applied to biomarker discovery, precision medicine, and joint estimation of the regression coefficients and precision matrix for high-dimensional multivariate regression.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Faming",
+   "pi_last_name": "Liang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Faming Liang",
+   "pi_email_addr": "fmliang@purdue.edu",
+   "nsf_id": "000490214",
+   "pi_start_date": "2016-08-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Florida",
+  "inst_street_address": "1523 UNION RD RM 207",
+  "inst_street_address_2": "",
+  "inst_city_name": "GAINESVILLE",
+  "inst_state_code": "FL",
+  "inst_state_name": "Florida",
+  "inst_phone_num": "3523923516",
+  "inst_zip_code": "326111941",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "FL03",
+  "org_lgl_bus_name": "UNIVERSITY OF FLORIDA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NNFQH1JAPEP3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Florida",
+  "perf_str_addr": "",
+  "perf_city_name": "Gainesville",
+  "perf_st_code": "FL",
+  "perf_st_name": "Florida",
+  "perf_zip_code": "326112002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "FL03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126900",
+   "pgm_ele_name": "STATISTICS"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 29342.0
+  }
+ ],
+ "por": null
+}

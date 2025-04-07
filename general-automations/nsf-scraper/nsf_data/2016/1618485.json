@@ -1,0 +1,121 @@
+{
+ "awd_id": "1618485",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RI: Small: An Optimization Framework for Understanding Deep Networks",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Rebecca Hwa",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2020-06-30",
+ "tot_intn_awd_amt": 450000.0,
+ "awd_amount": 458000.0,
+ "awd_min_amd_letter_date": "2016-06-07",
+ "awd_max_amd_letter_date": "2018-05-08",
+ "awd_abstract_narration": "The past few years have seen a dramatic increase in the performance of pattern recognition systems due to the introduction of deep neural networks. However, the mathematical reasons for this success remain elusive. A key challenge is that the problem of learning the parameters of a neural network is a non-convex optimization problem, which makes finding the globally optimal parameters extremely difficult. Another challenge is that there is currently very limited theory about how the network architecture should be constructed (i.e., number of layers, number of neurons per layer, connectivity patterns, etc.). The goal of this project is to develop an optimization framework that provides theoretical insights for the success of current network architectures and guides the design of novel architectures with guarantees of global optimality.\r\n \r\nThis project will develop a mathematical framework for the analysis of a broad class of non-convex optimization problems, including matrix factorization, tensor factorization, and deep learning. In particular, this project will study the problem of minimizing the sum of a loss function and a regularization function, both of which can be non-convex, but should satisfy a certain \"positive homogeneity\" property. By properly designing positively homogeneous regularizers that constrain the \"network size,\" this project aims to show that, under certain conditions, all local minima are globally optimal, and one can find a global minimum from any initialization using a local descent strategy. A deeper understanding of the mathematical properties of deep networks will impact not only machine learning and optimization, where our understanding of non-convex problems continues to be very limited, but also application areas such as computer vision, speech and natural language processing, where deep networks currently give state-of-the-art results.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Rene",
+   "pi_last_name": "Vidal",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Rene Vidal",
+   "pi_email_addr": "vidalr@upenn.edu",
+   "nsf_id": "000486258",
+   "pi_start_date": "2016-06-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Johns Hopkins University",
+  "inst_street_address": "3400 N CHARLES ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "BALTIMORE",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "4439971898",
+  "inst_zip_code": "212182608",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MD07",
+  "org_lgl_bus_name": "THE JOHNS HOPKINS UNIVERSITY",
+  "org_prnt_uei_num": "GS4PNKTRNKL3",
+  "org_uei_num": "FTMTDMBR29C7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Johns Hopkins University",
+  "perf_str_addr": "3400 N Charles Street",
+  "perf_city_name": "Baltimore",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "212182608",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MD07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 450000.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 8000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><strong>Overview:&nbsp;</strong>&nbsp;The past few years have seen a dramatic increase in the performance of pattern recognition systems due to the introduction of deep networks for representation learning. However, the mathematical reasons for this success remain elusive. A key challenge is that the training problem is non-convex, hence optimization algorithms can get stuck in non-global minima. Currently, there is no theory guaranteeing that all local minima are global, nor is there an algorithm guaranteed to give a global minima. Moreover, there is no theory regarding how the network architecture should be constructed (i.e., number of layers, number of neurons per layer, connectivity patterns, etc.) nor how the network weights should be regularized. This project developed an optimization framework for the analysis of the optimization landscape of several classes of deep networks.&nbsp;</p>\n<p><strong>Intellectual Merit :&nbsp;</strong>This project developed a mathematical framework for the analysis of a broad class of non-convex optimization problems, including matrix factorization, tensor factorization, and deep learning. In particular, we studied the problem of minimizing the sum of a loss function and a regularization function, both of which can be non-convex, but should satisfy a certain &rdquo;positive homogeneity&rdquo; property. By properly designing positively homogeneous regularizers that measure the &rdquo;network size,&rdquo; we showed that, under certain conditions, all local minima are global, and one can find a global minima from any initialization using a local descent strategy. We showed that this is the case for matrix factorization problems, where size is measured by the matrix rank; neural networks with one hidden layer, where size is measured by the number of neurons in the hidden layer; and multiple deep networks of a fixed architecture connected in parallel, where size is measured by the number of parallel networks. We validated our theoretical findings in applications in computer vision and medical imaging.</p>\n<p><strong>Broader Impacts :&nbsp;</strong>This project significantly broadened the applicability of optimization algorithms to more complex non-convex optimization problems arising in machine learning, including matrix factorization, tensor factorization and neural network training. This project impacted many diversity outreach activities, including undergraduate students joining ongoing REU programs, students from the Society of Hispanic Professional Engineers (SHPE), and students from the STEM Achievement in Baltimore Elementary Schools (SABES) program. This project trained three PhD students and two undergraduate students at the intersection of machine learning, computer vision and optimization. This project produced one book chapter, 2 journal papers, and 7 conference papers. This project also impacted the research community through the organization of workshops in geometric learning, deep learning, and semantic information. Datasets and code will be made publicly accessible for research and educational purposes.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/29/2020<br>\n\t\t\t\t\tModified by: Rene&nbsp;Vidal</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOverview:  The past few years have seen a dramatic increase in the performance of pattern recognition systems due to the introduction of deep networks for representation learning. However, the mathematical reasons for this success remain elusive. A key challenge is that the training problem is non-convex, hence optimization algorithms can get stuck in non-global minima. Currently, there is no theory guaranteeing that all local minima are global, nor is there an algorithm guaranteed to give a global minima. Moreover, there is no theory regarding how the network architecture should be constructed (i.e., number of layers, number of neurons per layer, connectivity patterns, etc.) nor how the network weights should be regularized. This project developed an optimization framework for the analysis of the optimization landscape of several classes of deep networks. \n\nIntellectual Merit : This project developed a mathematical framework for the analysis of a broad class of non-convex optimization problems, including matrix factorization, tensor factorization, and deep learning. In particular, we studied the problem of minimizing the sum of a loss function and a regularization function, both of which can be non-convex, but should satisfy a certain \"positive homogeneity\" property. By properly designing positively homogeneous regularizers that measure the \"network size,\" we showed that, under certain conditions, all local minima are global, and one can find a global minima from any initialization using a local descent strategy. We showed that this is the case for matrix factorization problems, where size is measured by the matrix rank; neural networks with one hidden layer, where size is measured by the number of neurons in the hidden layer; and multiple deep networks of a fixed architecture connected in parallel, where size is measured by the number of parallel networks. We validated our theoretical findings in applications in computer vision and medical imaging.\n\nBroader Impacts : This project significantly broadened the applicability of optimization algorithms to more complex non-convex optimization problems arising in machine learning, including matrix factorization, tensor factorization and neural network training. This project impacted many diversity outreach activities, including undergraduate students joining ongoing REU programs, students from the Society of Hispanic Professional Engineers (SHPE), and students from the STEM Achievement in Baltimore Elementary Schools (SABES) program. This project trained three PhD students and two undergraduate students at the intersection of machine learning, computer vision and optimization. This project produced one book chapter, 2 journal papers, and 7 conference papers. This project also impacted the research community through the organization of workshops in geometric learning, deep learning, and semantic information. Datasets and code will be made publicly accessible for research and educational purposes.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 10/29/2020\n\n\t\t\t\t\tSubmitted by: Rene Vidal"
+ }
+}

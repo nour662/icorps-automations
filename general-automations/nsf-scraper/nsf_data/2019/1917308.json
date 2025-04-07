@@ -1,0 +1,101 @@
+{
+ "awd_id": "1917308",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Risk Assessment of Power Systems to Extreme Events using Polynomial-Chaos-based Methods",
+ "cfda_num": "47.041",
+ "org_code": "07010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Aranya Chakrabortty",
+ "awd_eff_date": "2019-08-01",
+ "awd_exp_date": "2023-07-31",
+ "tot_intn_awd_amt": 470546.0,
+ "awd_amount": 470546.0,
+ "awd_min_amd_letter_date": "2019-06-21",
+ "awd_max_amd_letter_date": "2022-04-11",
+ "awd_abstract_narration": "Modern power systems involve numerous uncertainties induced by random load variations, renewable energy variations, and random outages of generating units, lines, and transformers. As a result, they have been subject to an increasing risk of cascading failures leading to large-scale blackouts. The computational burden current methods is prohibitively large for large-scale systems, restricting their practicability when assessing the risk of cascading failures under topology and power injection uncertainties. To address these challenges, this proposal will resort to polynomial-chaos methods and uncertainty quantification theory to develop a new risk assessment framework for power systems subject to extreme events. The developed framework will enhance power system planning, operations, online monitoring and local and global controls. Besides, the uncertainty quantification methods can be generalized to provide great improvement in the control and design procedures of many other engineering fields, such as aircraft design and control, vehicle and train control, among others.  The developed framework will be validated on two real power systems, namely the Southern Brazil power system and the Dominion Virginia Power 500-KV transmission system. The project also contains an integrated educational agenda for K-12 students, undergraduates and graduate students who are interested in the STEM (Science Technology Engineering and Mathematics) area.\r\n\r\nCurrently, Monte-Carlo-based methods are widely used in power system planning and operation. The computational burden of these methods for the problem of interest in this proposal is very high.  In this project, a new risk assessment framework for power systems subject to extreme events and large uncertainties will be developed based on polynomial-chaos methods and uncertainty quantification theory. Specifically, our proposal will aim to 1) designing a new polynomial chaos-based algorithm that can handle arbitrary probability distributions assumed for the random inputs while providing accurate results for both short-time and long-time simulations, and 2) providing fast calculation speed when the developed algorithm is applied to a highly nonlinear system subject to high-dimensional uncertain inputs. This is achieved by initiating a hybrid approach to conduct dimension reduction for very high-dimension data, which consists of two steps.  In the first step, a kernel-based principle component analysis (PCA) is applied to obtain intermediate dimension reduction results. In the second step, we use an analysis of variance (ANOVA) or sliced-inverse-regression to obtain a more active central subspace.  Furthermore, scenario-based multi-element polynomial chaos expansion to handle system topology changes will be initiated.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "ECCS",
+ "org_div_long_name": "Division of Electrical, Communications and Cyber Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Lamine",
+   "pi_last_name": "Mili",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Lamine Mili",
+   "pi_email_addr": "lmili@vt.edu",
+   "nsf_id": "000242823",
+   "pi_start_date": "2019-06-21",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Virginia Polytechnic Institute and State University",
+  "inst_street_address": "300 TURNER ST NW",
+  "inst_street_address_2": "STE 4200",
+  "inst_city_name": "BLACKSBURG",
+  "inst_state_code": "VA",
+  "inst_state_name": "Virginia",
+  "inst_phone_num": "5402315281",
+  "inst_zip_code": "240603359",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "VA09",
+  "org_lgl_bus_name": "VIRGINIA POLYTECHNIC INSTITUTE & STATE UNIVERSITY",
+  "org_prnt_uei_num": "X6KEFGLHSJX7",
+  "org_uei_num": "QDE5UHE5XD16"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Virginia Polytechnic Institute and State University",
+  "perf_str_addr": "7054 Haycock Road",
+  "perf_city_name": "Falls Church",
+  "perf_st_code": "VA",
+  "perf_st_name": "Virginia",
+  "perf_zip_code": "220432311",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "08",
+  "perf_st_cong_dist": "VA08",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "760700",
+   "pgm_ele_name": "EPCN-Energy-Power-Ctrl-Netwrks"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "155E",
+   "pgm_ref_txt": "Electric power networks"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 470546.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Modern power systems involve numerous uncertainties induced by random load variations, renewable energy intermittencies, and random outages of generating units, lines, and transformers, to cite a few. These uncertainties have placed power systems at great risk of low probability cascading failures that may lead to large-scale blackouts. However, the current Monte-Carlo-based methods used in large-scale power system planning, operation, and control are unable to cope with these uncertainties in a computationally efficient and reliable manner. Even though the sample size can be reduced by variance reduction techniques such as importance sampling, the speedup factor is still very low. To address this issue, we have first used polynomial-chaos based methods to construct multiple surrogate models for the power grid.&nbsp; For large-scale power systems, the surrogate model is constructed only for the topologies with higher probability. Here, hybrid surrogate-model based approach is used to capture the low-frequency events. Importance sampling and cross-entropy method has been developed to reduce the sample size.&nbsp; Furthermore, we developed data-driven approach to relax the chance-constraints and effectively quantify the decision-making under uncertainty. We developed a quadratic affine form in characterizing the power flow and the optimal power flow outputs with partially known uncertain power injections in a simple form based on Dempster-Shafer structure, yielding further computational efficiency improvement without the loss of accuracy.&nbsp;The notable characteristic of the proposed method is that the chance constraints with wind curtailment can be explicitly and accurately handled without any distribution assumptions, which provides great convenience for the power dispatch under a high percentage of renewables. Case studies performed on the IEEE 118-bus systems show that the proposed method outperforms existing methods by producing more economic and secure solutions for the chance-constrained energy and reserve scheduling problem under uncertainties. Presentations were given at Dominion Virginia Power, IEEE PES, PacifiCorp, ISO New England, Eversource Energy, NREL and LLNL. The industrial partners have shown great interest in collaborating in the developed method.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/02/2023<br>\n\t\t\t\t\tModified by: Lamine&nbsp;Mili</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nModern power systems involve numerous uncertainties induced by random load variations, renewable energy intermittencies, and random outages of generating units, lines, and transformers, to cite a few. These uncertainties have placed power systems at great risk of low probability cascading failures that may lead to large-scale blackouts. However, the current Monte-Carlo-based methods used in large-scale power system planning, operation, and control are unable to cope with these uncertainties in a computationally efficient and reliable manner. Even though the sample size can be reduced by variance reduction techniques such as importance sampling, the speedup factor is still very low. To address this issue, we have first used polynomial-chaos based methods to construct multiple surrogate models for the power grid.  For large-scale power systems, the surrogate model is constructed only for the topologies with higher probability. Here, hybrid surrogate-model based approach is used to capture the low-frequency events. Importance sampling and cross-entropy method has been developed to reduce the sample size.  Furthermore, we developed data-driven approach to relax the chance-constraints and effectively quantify the decision-making under uncertainty. We developed a quadratic affine form in characterizing the power flow and the optimal power flow outputs with partially known uncertain power injections in a simple form based on Dempster-Shafer structure, yielding further computational efficiency improvement without the loss of accuracy. The notable characteristic of the proposed method is that the chance constraints with wind curtailment can be explicitly and accurately handled without any distribution assumptions, which provides great convenience for the power dispatch under a high percentage of renewables. Case studies performed on the IEEE 118-bus systems show that the proposed method outperforms existing methods by producing more economic and secure solutions for the chance-constrained energy and reserve scheduling problem under uncertainties. Presentations were given at Dominion Virginia Power, IEEE PES, PacifiCorp, ISO New England, Eversource Energy, NREL and LLNL. The industrial partners have shown great interest in collaborating in the developed method.\n\n \n\n\t\t\t\t\tLast Modified: 08/02/2023\n\n\t\t\t\t\tSubmitted by: Lamine Mili"
+ }
+}

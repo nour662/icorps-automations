@@ -1,0 +1,109 @@
+{
+ "awd_id": "1657020",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: CHS: Scalable Interactive Image Segmentation through Hierarchical, Query-Driven Processing",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Ephraim Glinert",
+ "awd_eff_date": "2017-08-15",
+ "awd_exp_date": "2020-07-31",
+ "tot_intn_awd_amt": 126962.0,
+ "awd_amount": 126962.0,
+ "awd_min_amd_letter_date": "2017-02-28",
+ "awd_max_amd_letter_date": "2017-02-28",
+ "awd_abstract_narration": "Image segmentation is an indispensable processing tool due to its wide applications in science, medicine, and the arts.  The most successful segmentation algorithms map pixels onto a graph, define an energy function on this graph, and cast segmentation as a minimization of this discrete space using graph theory to compute minimum cuts, minimum paths, minimum spanning trees, or random walks on the graph.  While segmentations can be calculated automatically, semi-automatic interactive approaches based on user input are often preferred because segmentations can be ill-defined, ambiguous, and/or subjective for many applications.  Furthermore, while efficient for small images, graph-based algorithms scale poorly for large imagery, and in recent years consumer and scientific imagery has exploded in size.  This work will lay the foundation for novel algorithms for robust interactive segmentation of large imagery that provide actionable real-time feedback independent of the image size, fluid interactions that scale with the segmented object, interactivity without the need for a significant high-performance backend, and the ability to run on modest hardware like mobile devices.  The techniques developed in this research will not only provide fundamental contributions within computer science, but will enable significant advancements in applications across the sciences, in medicine and the arts.  More immediately, the project will support a graduate student who is a member of an underrepresented minority, and will provide the groundwork for a high-impact dissertation.\r\n\r\nThe work will focus on scalable algorithms for minimum cut and minimum path segmentations.  First, the research will target robust, hierarchical segmentation through the use of improved image filtering and the computation of multiple narrow bands.  This will improve on the state-of-the-art which currently either produces poor segmentations due to falling into local minima during the optimization, needs a significant high-performance backend, or relies on heavy heuristically-driven preprocessing.  Second, the work will design a novel query-driven, view-dependent segmentation that is produced as a user explores the large image and manipulates the segmentation without the need of the full resolution solution.  This enables the deferment of the expensive full optimization until after the interaction is completed.  User effort for interactions will be independent of the scale of the segmented object.  Assuring that the local, view-dependent solution is a valid representation of the full optimization without knowing the solution a priori will constitute a significant advancement to the state-of-the-art in image segmentation.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Brian",
+   "pi_last_name": "Summa",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Brian Summa",
+   "pi_email_addr": "bsumma@tulane.edu",
+   "nsf_id": "000727235",
+   "pi_start_date": "2017-02-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Tulane University",
+  "inst_street_address": "6823 SAINT CHARLES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEW ORLEANS",
+  "inst_state_code": "LA",
+  "inst_state_name": "Louisiana",
+  "inst_phone_num": "5048654000",
+  "inst_zip_code": "701185665",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "LA01",
+  "org_lgl_bus_name": "THE ADMINISTRATORS OF TULANE EDUCATIONAL FUND",
+  "org_prnt_uei_num": "XNY5ULPU8EN6",
+  "org_uei_num": "XNY5ULPU8EN6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Tulane University",
+  "perf_str_addr": "Department of Computer Science",
+  "perf_city_name": "New Orleans",
+  "perf_st_code": "LA",
+  "perf_st_name": "Louisiana",
+  "perf_zip_code": "701185698",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "LA01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7367",
+   "pgm_ref_txt": "Cyber-Human Systems"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 126962.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-b6fe9ef8-7fff-f1d5-0006-df8ff5aeff29\">&nbsp;</span></p>\n<p dir=\"ltr\"><span>The major goal of this project was the design of foundational technology for robust, scalable interactive image segmentation.&nbsp; In particular, this work focused on two popular segmentation approaches: live-wire and graph cuts. Over the course of this award several advances to image segmentation and large image processing were made through its support.&nbsp; First, while segmentations of images are often considered stable and certain, they are rarely so due to small changes in image data or through variations in user input.&nbsp; As part of this work, a novel visualization of this uncertainty was developed that illustrates both the stability of a segmentation, but also where a segmentation might have gone if input was even slightly changed.&nbsp; Second, this work provided a new, generalized formulation for live-wire segmentation.&nbsp; As traditionally defined, live-wire requires pixel-level precision from users as they semi-automatically segment an image.&nbsp; This project developed a new approach that raised this precise requirement to imprecise sets or areas of pixels.&nbsp; This far more accessible live-wire input allows users to be less precise and enables, for example, natural live-wire input on touch-screen devices.&nbsp; Moreover, the generality of the approach allows for a wide variety of new interactions to be developed. Third, this award supported work in image analysis with a new approach to visualize the stability of critical points in large image ensembles. Fourth, this project developed a novel, unified data layout that allows systems to query a large image at any resolution and at any degree of precision.&nbsp; This new flexibility is transformative for large data storage, allowing for a single data storage approach that can be customized to any application.&nbsp; In addition, the data layout allows for progressive refinement of resolution and/or precision with efficient, minimal data reads and transfers. Fifth, this award has supported the design of a new compositing pipeline for variable resolution images that provides a high-quality alternative to large mosaics.&nbsp; These images give the sensation of a deep-zoom mosaic but only use a fraction of the pixels.&nbsp; This approach required new advancements to allow graph cuts segmentations to operate on inset imagery along with a new navigation approach to allow users to easily browse this alternative deep-zoom image. Finally, this award not only provided advancements in computer science, but aspects of the above work have already begun to be extended into image applications in geoscience and high-resolution microscopy.</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/04/2020<br>\n\t\t\t\t\tModified by: Brian&nbsp;Summa</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607111480500_teaser--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607111480500_teaser--rgov-800width.jpg\" title=\"Adaptive Compositing and Navigation of Variable Resolution Images\"><img src=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607111480500_teaser--rgov-66x44.jpg\" alt=\"Adaptive Compositing and Navigation of Variable Resolution Images\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">A new compositing pipeline provides high-quality variable resolution images.  These images provide the deep-zoom of large mosaics, but only using a fraction of the pixels.</div>\n<div class=\"imageCredit\">In \"Adaptive Compositing and Navigation of Variable Resolution Images\", Computer Graphics Forum</div>\n<div class=\"imagePermisssions\">Copyright owner is an institution with an existing agreement allowing use by NSF</div>\n<div class=\"imageSubmitted\">Brian&nbsp;Summa</div>\n<div class=\"imageTitle\">Adaptive Compositing and Navigation of Variable Resolution Images</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607113275702_flexible_live-wire--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607113275702_flexible_live-wire--rgov-800width.jpg\" title=\"Flexible Live-Wire: Image Segmentation with Floating Anchors\"><img src=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607113275702_flexible_live-wire--rgov-66x44.jpg\" alt=\"Flexible Live-Wire: Image Segmentation with Floating Anchors\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Generalized live-wire user input (a) allows new types of user interactions and (b) intuitive, imprecise input.</div>\n<div class=\"imageCredit\">In \"Flexible Live-Wire: Image Segmentation with Floating Anchors\" , Computer Graphics Forum 37(2):321-328</div>\n<div class=\"imagePermisssions\">Copyright owner is an institution with an existing agreement allowing use by NSF</div>\n<div class=\"imageSubmitted\">Brian&nbsp;Summa</div>\n<div class=\"imageTitle\">Flexible Live-Wire: Image Segmentation with Floating Anchors</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607113610290_minpath_stability--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607113610290_minpath_stability--rgov-800width.jpg\" title=\"Visualizing the Uncertainty of Graph-based 2D Segmentation with Min-path Stability\"><img src=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607113610290_minpath_stability--rgov-66x44.jpg\" alt=\"Visualizing the Uncertainty of Graph-based 2D Segmentation with Min-path Stability\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Live-wire or graph cuts segmentations can be unstable given slight changes in the input image or user interactions. This new approach visualizes this uncertainty.</div>\n<div class=\"imageCredit\">In \"Visualizing the Uncertainty of Graph-based 2D Segmentation with Min-path Stability\" Computer Graphics Forum, 36(3):133-143</div>\n<div class=\"imageSubmitted\">Brian&nbsp;Summa</div>\n<div class=\"imageTitle\">Visualizing the Uncertainty of Graph-based 2D Segmentation with Min-path Stability</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607118498750_unified--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607118498750_unified--rgov-800width.jpg\" title=\"Efficient and Flexible Hierarchical Data Layouts for a Unified Encoding of Scalar Field Precision and Resolution\"><img src=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607118498750_unified--rgov-66x44.jpg\" alt=\"Efficient and Flexible Hierarchical Data Layouts for a Unified Encoding of Scalar Field Precision and Resolution\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">This work provides a hierarchical data layout that allows queries based on both precision and resolution. A data set's (a) precision-resolution reduction is explored (b) by three approximations (c,d,e) with increasing quality.</div>\n<div class=\"imageCredit\">In \"Efficient and Flexible Hierarchical Data Layouts for a Unified Encoding of Scalar Field Precision and Resolution\", TVCG</div>\n<div class=\"imageSubmitted\">Brian&nbsp;Summa</div>\n<div class=\"imageTitle\">Efficient and Flexible Hierarchical Data Layouts for a Unified Encoding of Scalar Field Precision and Resolution</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607118957858_atlas--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607118957858_atlas--rgov-800width.jpg\" title=\"Persistence Atlas for Critical Point Variability in Ensembles\"><img src=\"/por/images/Reports/POR/2020/1657020/1657020_10474824_1607118957858_atlas--rgov-66x44.jpg\" alt=\"Persistence Atlas for Critical Point Variability in Ensembles\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Persistence atlas for an ensemble of vortex streets. Critical points show distinct patterns (a). Previous approaches for ensemble variability identify only one region per side (b).  Our persistence atlas can be clustered into five clusters (c) corresponding to five viscosity regimes (d-h).</div>\n<div class=\"imageCredit\">In \"Persistence Atlas for Critical Point Variability in Ensembles\", TVCG 25(1): 1152-1162</div>\n<div class=\"imagePermisssions\">Copyright owner is an institution with an existing agreement allowing use by NSF</div>\n<div class=\"imageSubmitted\">Brian&nbsp;Summa</div>\n<div class=\"imageTitle\">Persistence Atlas for Critical Point Variability in Ensembles</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\n \nThe major goal of this project was the design of foundational technology for robust, scalable interactive image segmentation.  In particular, this work focused on two popular segmentation approaches: live-wire and graph cuts. Over the course of this award several advances to image segmentation and large image processing were made through its support.  First, while segmentations of images are often considered stable and certain, they are rarely so due to small changes in image data or through variations in user input.  As part of this work, a novel visualization of this uncertainty was developed that illustrates both the stability of a segmentation, but also where a segmentation might have gone if input was even slightly changed.  Second, this work provided a new, generalized formulation for live-wire segmentation.  As traditionally defined, live-wire requires pixel-level precision from users as they semi-automatically segment an image.  This project developed a new approach that raised this precise requirement to imprecise sets or areas of pixels.  This far more accessible live-wire input allows users to be less precise and enables, for example, natural live-wire input on touch-screen devices.  Moreover, the generality of the approach allows for a wide variety of new interactions to be developed. Third, this award supported work in image analysis with a new approach to visualize the stability of critical points in large image ensembles. Fourth, this project developed a novel, unified data layout that allows systems to query a large image at any resolution and at any degree of precision.  This new flexibility is transformative for large data storage, allowing for a single data storage approach that can be customized to any application.  In addition, the data layout allows for progressive refinement of resolution and/or precision with efficient, minimal data reads and transfers. Fifth, this award has supported the design of a new compositing pipeline for variable resolution images that provides a high-quality alternative to large mosaics.  These images give the sensation of a deep-zoom mosaic but only use a fraction of the pixels.  This approach required new advancements to allow graph cuts segmentations to operate on inset imagery along with a new navigation approach to allow users to easily browse this alternative deep-zoom image. Finally, this award not only provided advancements in computer science, but aspects of the above work have already begun to be extended into image applications in geoscience and high-resolution microscopy.\n\n \n\n\t\t\t\t\tLast Modified: 12/04/2020\n\n\t\t\t\t\tSubmitted by: Brian Summa"
+ }
+}

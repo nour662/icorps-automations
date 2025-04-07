@@ -1,0 +1,129 @@
+{
+ "awd_id": "1808342",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CDS&E: Fast, Scalable GPU-Enabled Software for Predictive Materials Design",
+ "cfda_num": "47.049",
+ "org_code": "03070000",
+ "po_phone": "7032924942",
+ "po_email": "dhess@nsf.gov",
+ "po_sign_block_name": "Daryl Hess",
+ "awd_eff_date": "2019-05-15",
+ "awd_exp_date": "2023-04-30",
+ "tot_intn_awd_amt": 628000.0,
+ "awd_amount": 628000.0,
+ "awd_min_amd_letter_date": "2019-04-17",
+ "awd_max_amd_letter_date": "2019-04-17",
+ "awd_abstract_narration": "NONTECHNICAL SUMMARY\r\nThe Division of Materials Research and the Chemistry Division contribute funds to this award. It supports theoretical and computational research, computational tool development, and education in support of the prediction of new materials and their properties by computer simulation. Materials scientists can model the \"building blocks\" of new materials, from atoms to molecules to nanoparticles, and solve those models on fast computers. Although much work is still needed to improve the fidelity of models with additional physics, inform the models with measurements from experiments, and develop faster algorithms on modern architectures to solve these models, the paradigm of predictive materials simulation is well in hand.  Predictive materials simulation can be thought of as a \"forward-type\" simulation, where one essentially runs computer experiments from initial conditions for a given system and observes the result. \r\n\r\nMaterials scientists are now at the threshold of a paradigm shift in materials simulation, where it is becoming feasible to design for materials structure and properties, rather than simply predicting them based on physical models. This use of molecular simulation for the \"inverse problem\" approach to design materials - that is, the determination of attributes of building blocks such that those building blocks will self-assemble into materials with specific structural, optical, mechanical, thermodynamic or other properties - would represent a major leap forward.\r\n\r\nMoving into an era of inverse materials design requires new computational tools capable of performing simulations that flip the usual forward-type simulations on their head. These tools must be scientifically valid, robust, accessible and easy to use, and should exploit the fastest available hardware. This project will develop computational tools, share them broadly with an existing and rapidly growing user base, and apply them to the important problems of nanoparticle self-assembly and colloidal crystallization. The new tools will run efficiently on laptops, desktops, and even massive GPU (graphics processing units) supercomputers, thereby serving multiple user types. The approaches and tools developed under this award are transferable and will be of immediate and even broader interest to the materials, engineering, and chemistry communities interested in inverse design.\r\n\r\nTECHNICAL SUMMARY \r\nThe Division of Materials Research and the Chemistry Division contribute funds to this award. It supports theoretical and computational research, computational tool development, and education in support of the prediction of new materials and their properties by computer simulation. Missing in today's computational materials research ecosystem is inverse-type predictive software; that is, software that enables materials design starting from desired properties. In \"inverse problem\" simulations for design, a target materials property, behavior, and/or structure, is specified and the building blocks and thermodynamic conditions that will achieve that target are predicted. Inverse design methods may still require molecular dynamics, Monte Carlo, or other workhorse algorithms, but the entire conceptual approach is flipped on its head. \r\nThe PI and her group recently developed an inverse design algorithm called \"digital alchemy.\"  The algorithm is grounded rigorously in statistical thermodynamics, and is based on the idea of generalized thermodynamic ensembles. They have developed a way to simulate materials in an \"alchemical ensemble,\" where particle attributes like shape or interparticle interactions are treated as thermodynamic variables, and change during the course of the simulation, sampling many millions of possibilities in minutes.  In these simulations, a target structure is defined, and the simulation finds the optimal set of building block attributes that will self-assemble the target structure. They have applied digital alchemy to the design of nanoparticle and colloidal particle shapes for target, one-component colloidal crystal structures, including some very complex ones.\r\nUnder this project, the PI will fully develop digital alchemy into a method that can treat other, experimentally relevant particle attributes and implement the method into the publicly available, open source, particle simulation toolkit, HOOMD-blue. HOOMD-blue will be able to \"discover\" building block attributes and thermodynamic conditions optimized for a target structure, target properties, and/or target behavior.  The research team will demonstrate the use of this new inverse design capability of HOOMD-blue to design multicomponent colloidal crystals, colloidal crystals of patchy particles, and reconfigurable colloidal crystals. \r\nThe overarching goals of this project are to provide open-source software capable of inverse materials design to the materials community, and demonstrate the power and possibilities of GPU-enabled inverse design simulations via several scientific use cases relevant to nanoparticle self-assembly and colloidal crystallization.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMR",
+ "org_div_long_name": "Division Of Materials Research",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Sharon",
+   "pi_last_name": "Glotzer",
+   "pi_mid_init": "C",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sharon C Glotzer",
+   "pi_email_addr": "sglotzer@umich.edu",
+   "nsf_id": "000472028",
+   "pi_start_date": "2019-04-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Regents of the University of Michigan - Ann Arbor",
+  "inst_street_address": "1109 GEDDES AVE STE 3300",
+  "inst_street_address_2": "",
+  "inst_city_name": "ANN ARBOR",
+  "inst_state_code": "MI",
+  "inst_state_name": "Michigan",
+  "inst_phone_num": "7347636438",
+  "inst_zip_code": "481091015",
+  "inst_country_name": "United States",
+  "cong_dist_code": "06",
+  "st_cong_dist_code": "MI06",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF MICHIGAN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GNJ7BBP73WE9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Michigan Ann Arbor",
+  "perf_str_addr": "3003 South State StreetRoom 1062",
+  "perf_city_name": "Ann Arbor",
+  "perf_st_code": "MI",
+  "perf_st_name": "Michigan",
+  "perf_zip_code": "481081274",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "MI06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "176500",
+   "pgm_ele_name": "CONDENSED MATTER & MAT THEORY"
+  },
+  {
+   "pgm_ele_code": "688100",
+   "pgm_ele_name": "Chem Thry, Mdls & Cmptnl Mthds"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "054Z",
+   "pgm_ref_txt": "(MGI) Materials Genome Initiative"
+  },
+  {
+   "pgm_ref_code": "7237",
+   "pgm_ref_txt": "NANO NON-SOLIC SCI & ENG AWD"
+  },
+  {
+   "pgm_ref_code": "7569",
+   "pgm_ref_txt": "CYBERINFRASTRUCTURE/SCIENCE"
+  },
+  {
+   "pgm_ref_code": "8084",
+   "pgm_ref_txt": "CDS&E"
+  },
+  {
+   "pgm_ref_code": "9216",
+   "pgm_ref_txt": "ADVANCED SOFTWARE TECH & ALGOR"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 628000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This CDS&amp;E project supported the development of new capabilities in the open-source particle simulation toolkit <em>HOOMD-blue</em> to enable the simulation and <em>inverse design</em> of colloids that self-assemble into complex crystalline structures with designable material properties.&nbsp; We demonstrated the use of this new inverse design capability of HOOMD-blue to design multicomponent colloidal crystals, colloidal crystals of patchy particles, and reconfigurable colloidal crystals.</p>\n<p>Specifically, we added the following methods:</p>\n<ul>\n<li><strong>Digital alchemy component for Hard Particle Monte Carlo (HPMC). </strong>Implemented as a <em>shape updater</em> within HOOMD-blue, the alchemical-Monte Carlo (Alch-MC) algorithm includes a shape change as a possible MC move within the main HPMC loop (in addition to the standard translational and rotational moves), natively supporting <em>vertex moves</em> for hard polyhedron systems. HOOMD-blue 3.0's enhanced API, simplifies the inclusion of additional pair potentials with alchemical degrees of freedom.</li>\n</ul>\n<ul>\n</ul>\n<ul>\n<li><strong>Digital alchemy component for Molecular Dynamics. </strong>In contrast to the straightforward trial moves performed on the alchemical variables within Alch-MC (e.g., hard particle shape), alchemical molecular dynamics (Alch-MD) integrates the equations of motion for the alchemical variables, which naturally guides them towards optimal regions of design space as the system relaxes towards equilibrium. Alch-MD was included in the 3.1.0 release of HOOMD-blue along with a Lennard-Jones-Gauss pair potential whose parameters may serve as alchemical variables; additional choices of pairwise forces are easily added.</li>\n</ul>\n<ul>\n<li><strong>Anisotropic MD for HOOMD-blue. </strong>We developed an anisotropic pair potential based on a mean field approximation derived from a general consideration of pair potentials that are functions of both particle positions and relative orientations. This pair potential was included in the 3.0.0-beta14 release of HOOMD-blue.</li>\n</ul>\n<p style=\"padding-left: 60px;\">See release notes for full list of new methods in each version.</p>\n<p>New science enabled by these methods:</p>\n<ul>\n<li>Alchemical inverse design of particle shape for solid--solid transitions (Alch-MC)</li>\n<li>Alchemical inverse design of pair potentials for crystal structure and material properties (Alch-MD)</li>\n<li>The design of complementary shapes for multicomponent colloidal crystals</li>\n<li>Inverse design of patchy particles for the self-assembly of specific colloidal crystals</li>\n</ul>\n<p>This award has resulted in ten peer-reviewed publications, including publications in Proceedings of the National Academy of Sciences, Soft Matter, the Journal of Chemical Physics, and the Journal of Open Source Software. Additional publications are in preparation. During this 4-yr CDS&amp;E award, graduate students and postdocs gave 25 contributed talks at national and international conferences; 48 invited talks, colloquia and seminars were given by either the PI Sharon C. Glotzer or by lead HOOMD-blue developer Dr. Joshua A. Anderson. HOOMD-blue is publicly available under a BSD-3 clause license on GitHub: https://github.com/glotzerlab /hoomd-blue. Binary packages are published on conda-forge. We provide Docker and Singularity images which bundle HOOMD-blue along with many other tools commonly used in simulation and analysis workflows. These are prebuilt images that users can execute on Mac, Linux, and HPC clusters. We specifically support NSF ACCESS's SDSC Expanse, PSC Bridges-2, and NCSA Delta clusters, as well as our campus cluster, and we have provided assistance to users running on other clusters. CUDA and MPI operate with native performance on supported HPC systems. Details at https://glotzerlab-software.readthedocs.io/.&nbsp; We presented tutorial-type workshops at the 2019 AIChE Annual Meeting, 2019 MolSSI Interoperability Workshop, 2021 MolSSI Workshop on HPC in Computational Chemistry and Materials Science, 2022 Foundations of Molecular Modeling and Simulation Conference, and the 2023 American Physical Society March Meeting. We estimate that as many as 275 students, postdocs, and senior researchers participated in these workshops; many of them learned to do simulations on GPUs for the first time at these workshops. More than 6,500 users browsed the HOOMD-blue online documentation during the first 6 months of 2023.&nbsp; As of August 2023, more than 505 peer-reviewed publications citing HOOMD-blue have appeared in the literature.</p>\n<p>This use of molecular simulation for the inverse design of materials -- that is, the determination of attributes of building blocks such that those building blocks will self-assemble into materials with the desired specific structural, optical, mechanical, thermodynamic or other properties -- is a major leap forward for the materials research community. The software will optimally design nanoparticles that can be made today in the laboratory. Our experimental colleagues were already able use our computational inverse design rules to target the necessary parameters for generating desirable nanoparticle structures much more quickly than was previously possible.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/31/2023<br>\n\t\t\t\t\tModified by: Sharon&nbsp;C&nbsp;Glotzer</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693453964007_1808342Outcomes_Glotzer_Page_1--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693453964007_1808342Outcomes_Glotzer_Page_1--rgov-800width.jpg\" title=\"Project Introduction\"><img src=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693453964007_1808342Outcomes_Glotzer_Page_1--rgov-66x44.jpg\" alt=\"Project Introduction\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Introduction to the Digital Alchemy framework implemented in HOOMD-blue.</div>\n<div class=\"imageCredit\">Glotzer Group, University of Michigan</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Sharon&nbsp;C&nbsp;Glotzer</div>\n<div class=\"imageTitle\">Project Introduction</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693457877725_1808342Outcomes_Glotzer_Page_2--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693457877725_1808342Outcomes_Glotzer_Page_2--rgov-800width.jpg\" title=\"New methods and algorithms\"><img src=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693457877725_1808342Outcomes_Glotzer_Page_2--rgov-66x44.jpg\" alt=\"New methods and algorithms\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">New methods and algorithms enabling inverse design with HOOMD-blue</div>\n<div class=\"imageCredit\">Glotzer Group, University of Michigan</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Sharon&nbsp;C&nbsp;Glotzer</div>\n<div class=\"imageTitle\">New methods and algorithms</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693458027982_1808342Outcomes_Glotzer_Page_3--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693458027982_1808342Outcomes_Glotzer_Page_3--rgov-800width.jpg\" title=\"New science: Multicomponent Colloidal Crystals\"><img src=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693458027982_1808342Outcomes_Glotzer_Page_3--rgov-66x44.jpg\" alt=\"New science: Multicomponent Colloidal Crystals\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Example science enabled by Digital Alchemy methods and Algorithms</div>\n<div class=\"imageCredit\">Glotzer Group, University of Michigan</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Sharon&nbsp;C&nbsp;Glotzer</div>\n<div class=\"imageTitle\">New science: Multicomponent Colloidal Crystals</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693458097841_1808342Outcomes_Glotzer_Page_4--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693458097841_1808342Outcomes_Glotzer_Page_4--rgov-800width.jpg\" title=\"New science: Digital Alchemy for Patchy Particles\"><img src=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693458097841_1808342Outcomes_Glotzer_Page_4--rgov-66x44.jpg\" alt=\"New science: Digital Alchemy for Patchy Particles\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Digital Alchemy for Patchy Particles</div>\n<div class=\"imageCredit\">Glotzer Group, University of Michigan</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Sharon&nbsp;C&nbsp;Glotzer</div>\n<div class=\"imageTitle\">New science: Digital Alchemy for Patchy Particles</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693458177530_1808342Outcomes_Glotzer_Page_5--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693458177530_1808342Outcomes_Glotzer_Page_5--rgov-800width.jpg\" title=\"Open-source software packages\"><img src=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693458177530_1808342Outcomes_Glotzer_Page_5--rgov-66x44.jpg\" alt=\"Open-source software packages\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">List of open source software resulting from this project</div>\n<div class=\"imageCredit\">Glotzer Group, University of Michigan</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Sharon&nbsp;C&nbsp;Glotzer</div>\n<div class=\"imageTitle\">Open-source software packages</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693458292626_1808342Outcomes_Glotzer_Page_6--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693458292626_1808342Outcomes_Glotzer_Page_6--rgov-800width.jpg\" title=\"Community training and support\"><img src=\"/por/images/Reports/POR/2023/1808342/1808342_10601137_1693458292626_1808342Outcomes_Glotzer_Page_6--rgov-66x44.jpg\" alt=\"Community training and support\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Community training and user support provided under this project.</div>\n<div class=\"imageCredit\">Glotzer Group, University of Michigan</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Sharon&nbsp;C&nbsp;Glotzer</div>\n<div class=\"imageTitle\">Community training and support</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThis CDS&amp;E project supported the development of new capabilities in the open-source particle simulation toolkit HOOMD-blue to enable the simulation and inverse design of colloids that self-assemble into complex crystalline structures with designable material properties.  We demonstrated the use of this new inverse design capability of HOOMD-blue to design multicomponent colloidal crystals, colloidal crystals of patchy particles, and reconfigurable colloidal crystals.\n\nSpecifically, we added the following methods:\n\nDigital alchemy component for Hard Particle Monte Carlo (HPMC). Implemented as a shape updater within HOOMD-blue, the alchemical-Monte Carlo (Alch-MC) algorithm includes a shape change as a possible MC move within the main HPMC loop (in addition to the standard translational and rotational moves), natively supporting vertex moves for hard polyhedron systems. HOOMD-blue 3.0's enhanced API, simplifies the inclusion of additional pair potentials with alchemical degrees of freedom.\n\n\n\n\nDigital alchemy component for Molecular Dynamics. In contrast to the straightforward trial moves performed on the alchemical variables within Alch-MC (e.g., hard particle shape), alchemical molecular dynamics (Alch-MD) integrates the equations of motion for the alchemical variables, which naturally guides them towards optimal regions of design space as the system relaxes towards equilibrium. Alch-MD was included in the 3.1.0 release of HOOMD-blue along with a Lennard-Jones-Gauss pair potential whose parameters may serve as alchemical variables; additional choices of pairwise forces are easily added.\n\n\nAnisotropic MD for HOOMD-blue. We developed an anisotropic pair potential based on a mean field approximation derived from a general consideration of pair potentials that are functions of both particle positions and relative orientations. This pair potential was included in the 3.0.0-beta14 release of HOOMD-blue.\n\nSee release notes for full list of new methods in each version.\n\nNew science enabled by these methods:\n\nAlchemical inverse design of particle shape for solid--solid transitions (Alch-MC)\nAlchemical inverse design of pair potentials for crystal structure and material properties (Alch-MD)\nThe design of complementary shapes for multicomponent colloidal crystals\nInverse design of patchy particles for the self-assembly of specific colloidal crystals\n\n\nThis award has resulted in ten peer-reviewed publications, including publications in Proceedings of the National Academy of Sciences, Soft Matter, the Journal of Chemical Physics, and the Journal of Open Source Software. Additional publications are in preparation. During this 4-yr CDS&amp;E award, graduate students and postdocs gave 25 contributed talks at national and international conferences; 48 invited talks, colloquia and seminars were given by either the PI Sharon C. Glotzer or by lead HOOMD-blue developer Dr. Joshua A. Anderson. HOOMD-blue is publicly available under a BSD-3 clause license on GitHub: https://github.com/glotzerlab /hoomd-blue. Binary packages are published on conda-forge. We provide Docker and Singularity images which bundle HOOMD-blue along with many other tools commonly used in simulation and analysis workflows. These are prebuilt images that users can execute on Mac, Linux, and HPC clusters. We specifically support NSF ACCESS's SDSC Expanse, PSC Bridges-2, and NCSA Delta clusters, as well as our campus cluster, and we have provided assistance to users running on other clusters. CUDA and MPI operate with native performance on supported HPC systems. Details at https://glotzerlab-software.readthedocs.io/.  We presented tutorial-type workshops at the 2019 AIChE Annual Meeting, 2019 MolSSI Interoperability Workshop, 2021 MolSSI Workshop on HPC in Computational Chemistry and Materials Science, 2022 Foundations of Molecular Modeling and Simulation Conference, and the 2023 American Physical Society March Meeting. We estimate that as many as 275 students, postdocs, and senior researchers participated in these workshops; many of them learned to do simulations on GPUs for the first time at these workshops. More than 6,500 users browsed the HOOMD-blue online documentation during the first 6 months of 2023.  As of August 2023, more than 505 peer-reviewed publications citing HOOMD-blue have appeared in the literature.\n\nThis use of molecular simulation for the inverse design of materials -- that is, the determination of attributes of building blocks such that those building blocks will self-assemble into materials with the desired specific structural, optical, mechanical, thermodynamic or other properties -- is a major leap forward for the materials research community. The software will optimally design nanoparticles that can be made today in the laboratory. Our experimental colleagues were already able use our computational inverse design rules to target the necessary parameters for generating desirable nanoparticle structures much more quickly than was previously possible.\n\n \n\n\t\t\t\t\tLast Modified: 08/31/2023\n\n\t\t\t\t\tSubmitted by: Sharon C Glotzer"
+ }
+}

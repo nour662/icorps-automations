@@ -1,0 +1,105 @@
+{
+ "awd_id": "1849971",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: III: Scalable Noise-filtering and Community Queries on User-generated Data",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032927347",
+ "po_email": "sspengle@nsf.gov",
+ "po_sign_block_name": "Sylvia Spengler",
+ "awd_eff_date": "2019-08-15",
+ "awd_exp_date": "2022-07-31",
+ "tot_intn_awd_amt": 174854.0,
+ "awd_amount": 174854.0,
+ "awd_min_amd_letter_date": "2019-08-15",
+ "awd_max_amd_letter_date": "2019-08-15",
+ "awd_abstract_narration": "This project investigates novel indexing and querying techniques that enable scientists to analyze and extract meaningful data from large repositories of user-generated data. The need for such techniques is significant, especially for user-generated social media data, which is the major repository of user-generated data and the largest archived and real-time source of human behavior and information. Thus, scientists are widely using this data in disciplines as disparate as sociology, behavioral sciences, education, spatial sciences, food sciences, medical studies, and political sciences. This project focuses on innovative indexing and querying techniques to enable scientists to effectively exploit user-generated data at a large scale.\r\n\r\nThe planned research adds new data management infrastructure modules to support: (1) Scalable noise filtering queries, a subset of selection queries that are needed repeatedly and are expressed in SQL-based systems as multiple nested queries, which is not efficient for large datasets. To support this, the project investigates techniques for: (a) Advanced query conjunctions, e.g., BUT-NOT and EITHER-XOR, to scale up complex-predicate queries beyond basic search queries that are currently supported in data management systems. (b) Scalable contextual scoring of data records, e.g., based on sentiment or semantics, so irrelevant records are pruned early and the search space is downsized significantly. (2) Scalable community-centric queries that enables scientists to ask queries about communities with large numbers of users while having real-time query response beyond what is currently supported by graph data management technology. The project investigates indexing, query processing, and storage optimization techniques that scale up such queries at a system-level.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Amr",
+   "pi_last_name": "Magdy",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Amr Magdy",
+   "pi_email_addr": "amr@cs.ucr.edu",
+   "nsf_id": "000757107",
+   "pi_start_date": "2019-08-15",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Riverside",
+  "inst_street_address": "200 UNIVERSTY OFC BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "RIVERSIDE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9518275535",
+  "inst_zip_code": "925210001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "39",
+  "st_cong_dist_code": "CA39",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF CALIFORNIA AT RIVERSIDE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "MR5QC5FCAVH5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Riverside",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "925210001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "39",
+  "perf_st_cong_dist": "CA39",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736400",
+   "pgm_ele_name": "Info Integration & Informatics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 174854.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>User-generated social media data, such as Twitter, is the major source of user-generated data and the largest archived and live source of human behavior and information. It is overwhelmingly exploited in several scientific disciplines. The National Science Foundation's database constantly shows hundreds of active grants with \"social media\" or \"Twitter\" in the title, with hundreds of millions portfolio across all directorates.</p>\n<p><strong>&nbsp;</strong></p>\n<p>This project innovates new methods to extract meaningful information from large user-generated datasets. We worked on two goals. The first goal is to innovate effective methods to filter out noisy data that overwhelm search results. For example, getting data for foodborne cases in Chipotle restaurants by searching for \"Chipotle sick\" will generate a lot of noisy tweets such as \"Chipotle sauce\", \"sick of that team\", etc. We need to eliminate such noise in many applications effectively. This boils down to multiple technical problems in data management, namely, selectivity estimation models on highly dynamic data and exploring composite conjunctions for textual query predicates. The second goal is to analyze online communities on social media. This technology will provide computing techniques that enable scientists who deal with groups of people, such as social scientists, to analyze large online groups with millions of users effectively.</p>\n<p>&nbsp;</p>\n<p>The project has developed a set of modules that enable effective processing and filtering of social media data using textual, spatial, and temporal attributes and considering social bonds. First, we developed a machine-learning-based estimation model that works effectively for spatial and textual data. Given a location and a set of words, this module estimates the number of tweets that exist in this location and contain these words. The module adapts to changing data and search workloads to support dynamic changes Twitter-like data, such as trend changes over time. Second, we developed a search module that filters out undesired words from search results. We allow users to include different combinations of words to provide flexible search abilities and effective noise filtering.</p>\n<p>&nbsp;</p>\n<p>The project also developed search modules for analyzing online communities. The modules propose different indexing paradigms that organize social media data based on different attributes, social, spatial, temporal, and textual attributes. The modules handle large communities by pre-computing major components of search results. When a search query comes, the pre-computed elements are combined on the fly to provide fast and accurate answers. The modules also handle dynamic memberships of users in communities, given that users join and leave communities dynamically. The proposed index structure provides the system administrators with database-like indexing tools that enable them to tune the performance based on the application performance and data updates. To enable location-based search, we appended the module to organize social media posts based on location, combining them with social and temporal attributes in filtering answers.</p>\n<p>&nbsp;</p>\n<p>All research outcomes have been published in major research venues, conferences and journals, in data management and spatial information management.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/27/2022<br>\n\t\t\t\t\tModified by: Amr&nbsp;Magdy</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nUser-generated social media data, such as Twitter, is the major source of user-generated data and the largest archived and live source of human behavior and information. It is overwhelmingly exploited in several scientific disciplines. The National Science Foundation's database constantly shows hundreds of active grants with \"social media\" or \"Twitter\" in the title, with hundreds of millions portfolio across all directorates.\n\n \n\nThis project innovates new methods to extract meaningful information from large user-generated datasets. We worked on two goals. The first goal is to innovate effective methods to filter out noisy data that overwhelm search results. For example, getting data for foodborne cases in Chipotle restaurants by searching for \"Chipotle sick\" will generate a lot of noisy tweets such as \"Chipotle sauce\", \"sick of that team\", etc. We need to eliminate such noise in many applications effectively. This boils down to multiple technical problems in data management, namely, selectivity estimation models on highly dynamic data and exploring composite conjunctions for textual query predicates. The second goal is to analyze online communities on social media. This technology will provide computing techniques that enable scientists who deal with groups of people, such as social scientists, to analyze large online groups with millions of users effectively.\n\n \n\nThe project has developed a set of modules that enable effective processing and filtering of social media data using textual, spatial, and temporal attributes and considering social bonds. First, we developed a machine-learning-based estimation model that works effectively for spatial and textual data. Given a location and a set of words, this module estimates the number of tweets that exist in this location and contain these words. The module adapts to changing data and search workloads to support dynamic changes Twitter-like data, such as trend changes over time. Second, we developed a search module that filters out undesired words from search results. We allow users to include different combinations of words to provide flexible search abilities and effective noise filtering.\n\n \n\nThe project also developed search modules for analyzing online communities. The modules propose different indexing paradigms that organize social media data based on different attributes, social, spatial, temporal, and textual attributes. The modules handle large communities by pre-computing major components of search results. When a search query comes, the pre-computed elements are combined on the fly to provide fast and accurate answers. The modules also handle dynamic memberships of users in communities, given that users join and leave communities dynamically. The proposed index structure provides the system administrators with database-like indexing tools that enable them to tune the performance based on the application performance and data updates. To enable location-based search, we appended the module to organize social media posts based on location, combining them with social and temporal attributes in filtering answers.\n\n \n\nAll research outcomes have been published in major research venues, conferences and journals, in data management and spatial information management.\n\n \n\n\t\t\t\t\tLast Modified: 11/27/2022\n\n\t\t\t\t\tSubmitted by: Amr Magdy"
+ }
+}

@@ -1,0 +1,137 @@
+{
+ "awd_id": "1931950",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CPS: Small: Mitigating Uncertainties in Computer Numerical Control (CNC) as a Cloud Service using Data-Driven Transfer Learning",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Bruce Kramer",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2023-08-31",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 500000.0,
+ "awd_min_amd_letter_date": "2019-08-14",
+ "awd_max_amd_letter_date": "2019-08-14",
+ "awd_abstract_narration": "Computer numerical control (CNC) is a critical feature of modern manufacturing machines. It provides automated control based on a set of programmed instructions, which traditionally run on a local computer that is physically tethered to the machine. This work envisions a future where manufacturing machines are controlled remotely over the Internet using CNC installed on cloud computers. Among several benefits over traditional CNC, cloud-based CNC holds promise to significantly improve the speed and accuracy of manufacturing machines at low cost. However, a major challenge with cloud-based CNC is that, somewhat like video streaming, it controls manufacturing machines primarily using pre-calculated commands that must be buffered to mitigate Internet transmission delays. For this reason, cloud-based CNC is susceptible to anomalies that result from delayed transmission of information on how the controlled machine is actually behaving. The award supports a scientific investigation into approaches for predicting impending anomalies from data gathered from past experience, and using the predictions to avoid incorrect control actions resulting from inadequate feedback. The U.S. stands to benefit economically from a transition from traditional to cloud-based CNC, since the U.S. is by far the market leader in cloud-based services.  The project also will include outreach to U.S. companies, educational curriculum development to increase the U.S. talent pool in manufacturing and data analytics, and activities for middle schoolers in the Detroit area to inspire them to pursue careers in engineering.\r\n\r\nThe objective of the project is to mitigate uncertainties associated with real-time control of manufacturing machines from the cloud using data-driven transfer learning. The knowledge gained will boost the performance of manufacturing machines at low cost by providing the machines with reliable cloud-based CNC. In cloud-based CNC, advanced feedforward control functionalities are transitioned to the cloud while fast feedback loops are retained locally. However, with emphasis on feedforward control, uncertainties in modeling the dynamic behavior of machines could degrade the reliability and performance of cloud-based CNC by causing failures, due to inaccurate control actions. The system will predict failures using measured signals and mitigate them in a redundant, cloud-based CNC architecture by switching control authority from a cloud controller to a back-up local controller in the event of an impending failure. To this end, a data-driven transfer learning framework will predict and minimize uncertainties using data obtained from other machines connected to cloud-based CNC. Such transfer learning leverages data from one source to learn a different, but related, target source. The framework will allow cloud-based CNC to: (i) learn from a combination of condition monitoring signals and past failure data to predict impending failures, (ii) reduce uncertainties by leveraging condition monitoring data to calibrate physical models whose parameters are functions of their inputs, and (iii) plan feasible trajectories for switching from a cloud to a local controller when an impending failure is detected. The project will address the shortcomings of existing transfer learning methods by: (i) predicting failure events from a combination of condition monitoring and past failure data, and (ii) calibration of physics-based models with functional parameters from condition monitoring data. The methods will be evaluated experimentally on a CPS test bed consisting of a 3D printer controlled from the cloud using a cloud-based CNC prototype.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Chinedum",
+   "pi_last_name": "Okwudire",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Chinedum Okwudire",
+   "pi_email_addr": "okwudire@umich.edu",
+   "nsf_id": "000615300",
+   "pi_start_date": "2019-08-14",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Raed",
+   "pi_last_name": "Al Kontar",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Raed Al Kontar",
+   "pi_email_addr": "alkontar@umich.edu",
+   "nsf_id": "000784848",
+   "pi_start_date": "2019-08-14",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Regents of the University of Michigan - Ann Arbor",
+  "inst_street_address": "1109 GEDDES AVE STE 3300",
+  "inst_street_address_2": "",
+  "inst_city_name": "ANN ARBOR",
+  "inst_state_code": "MI",
+  "inst_state_name": "Michigan",
+  "inst_phone_num": "7347636438",
+  "inst_zip_code": "481091015",
+  "inst_country_name": "United States",
+  "cong_dist_code": "06",
+  "st_cong_dist_code": "MI06",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF MICHIGAN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GNJ7BBP73WE9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Michigan Ann Arbor",
+  "perf_str_addr": "",
+  "perf_city_name": "Ann Arbor",
+  "perf_st_code": "MI",
+  "perf_st_name": "Michigan",
+  "perf_zip_code": "481091274",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "MI06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "791800",
+   "pgm_ele_name": "CPS-Cyber-Physical Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "016Z",
+   "pgm_ref_txt": "Cybermanufacturing Systems"
+  },
+  {
+   "pgm_ref_code": "082E",
+   "pgm_ref_txt": "MFG MACHINES & METROLOGY"
+  },
+  {
+   "pgm_ref_code": "152E",
+   "pgm_ref_txt": "Cyber-Physical Systems"
+  },
+  {
+   "pgm_ref_code": "7918",
+   "pgm_ref_txt": "CYBER-PHYSICAL SYSTEMS (CPS)"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  },
+  {
+   "pgm_ref_code": "MANU",
+   "pgm_ref_txt": "MANUFACTURING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 500000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"BodyText-NoIndent\">Computer numerical control (or CNC for short) is a critical feature in modern manufacturing machines. It provides automated control of manufacturing machines based on a set of programmed instructions which traditionally run on a local computer physically tethered to the machine it controls. The proposed work envisions a future where manufacturing machines are controlled remotely over the Internet using CNC installed on cloud computers. Among several benefits over traditional CNC, cloud-based CNC holds promise to significantly improve the performance (e.g., speed and accuracy) of manufacturing machines at low cost. However, a major challenge with cloud-based CNC is that, somewhat like video streaming, it controls manufacturing machines primarily using pre-calculated commands that can be buffered to mitigate Internet transmission delays. For this reason, cloud-based CNC is susceptible to anomalies which may result from inadequate feedback (i.e., not immediately knowing how the controlled machine is actually behaving). This award has supported a scientific investigation into approaches for predicting impending anomalies from data gathered from past experience, and using the predictions to avoid deleterious control actions that may result from inadequate feedback.</p>\n<p class=\"BodyText-NoIndent\"><strong>Intellectual Merit</strong></p>\n<p class=\"BodyText-NoIndent\">The research objective was to mitigate uncertainties associated with real-time control of manufacturing machines from the cloud using data-driven transfer learning. This intellectual merit was achieved by carrying out three tasks, namely:</p>\n<p class=\"BodyText-NoIndent\">Task 1: Determination of Uncertainty Prediction Horizon using Reachability Analysis</p>\n<p class=\"BodyText-NoIndent\">Task 2:&nbsp;Predicting Event Probabilities via Joint Models</p>\n<p class=\"BodyText-NoIndent\">Task 3: Calibrating Physics-based Models having Functional Parameters</p>\n<p class=\"BodyText-NoIndent\">As part of Task 1, the team developed a strategy to determine when and how to switch from an advanced controller to a backup local controller. The proposed method was tested using an advanced algorithm that optimizes the speed of manufacturing machines using linear programming. Whenever the algorithm experienced uncertainty or infeasibility, it switched to a backup algorithm. The algorithm was demonstrated on a 3D printer where it achieved up to 25% improvement in motion speed without sacrificing motion accuracy.</p>\n<p class=\"BodyText-NoIndent\">As part of Task 2, the team developed a method to predict future failure events based on joint modeling of both longitudinal and time-to-event data. The methods achieved the state of art performance in joint models. In addition, the team developed a method for extrapolating multi-stream longitudinal data where multiple signals from different units are collected in real-time. It demonstrated a non-parametric approach to predict the evolution of multi-stream longitudinal data for an in-service unit through borrowing strength from other historical units.</p>\n<p class=\"BodyText-NoIndent\">As part of Task 3, the team developed a controller that calibrates a physics-based model using data gathered online during operation. The uncertainty from the physics based and data-driven models were incorporated into the controller. This resulted in an uncertainty-aware digital twin. The outcomes of using this uncertainty-aware digital twin were demonstrated experimentally on a 3D printer and machine tool; it led to cycle time reductions of up to 38% and 17% respectively, without sacrificing motion accuracy.</p>\n<p class=\"BodyText-NoIndent\"><strong>Broader Impacts</strong></p>\n<p class=\"BodyText-NoIndent\">Some of the results of this project are being translated to industry through collaborations with two U.S. companies. The first is Ulendo Technologies, Inc., a start-up company that is leveraging the cloud infrastructure to provide calibration as a service to 3D printers. The second is CISCO, Inc., which is collaborating with the project team to translate the machine-learning related aspects of the findings to an infrastructure the company has developed for distributed computing.</p>\n<p class=\"BodyText-NoIndent\">Through the project, four PhD students have been trained, including a female student. Two of the students have graduated and have taken up positions as assistant professors at U.S. universities. Another graduate trained through this project has taken up a position as an engineer at a semiconductor manufacturing company. The fourth Ph.D. student is working towards his graduation.</p>\n<p class=\"BodyText-NoIndent\">The results of this project have been disseminated at manufacturing and controls conferences. They have also been published in very reputable journals in manufacturing, controls, mechatronics and statistics. A total of 10 journal papers have been published or submitted based on this project.</p><br>\n<p>\n Last Modified: 12/20/2023<br>\nModified by: Chinedum&nbsp;Okwudire</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nComputer numerical control (or CNC for short) is a critical feature in modern manufacturing machines. It provides automated control of manufacturing machines based on a set of programmed instructions which traditionally run on a local computer physically tethered to the machine it controls. The proposed work envisions a future where manufacturing machines are controlled remotely over the Internet using CNC installed on cloud computers. Among several benefits over traditional CNC, cloud-based CNC holds promise to significantly improve the performance (e.g., speed and accuracy) of manufacturing machines at low cost. However, a major challenge with cloud-based CNC is that, somewhat like video streaming, it controls manufacturing machines primarily using pre-calculated commands that can be buffered to mitigate Internet transmission delays. For this reason, cloud-based CNC is susceptible to anomalies which may result from inadequate feedback (i.e., not immediately knowing how the controlled machine is actually behaving). This award has supported a scientific investigation into approaches for predicting impending anomalies from data gathered from past experience, and using the predictions to avoid deleterious control actions that may result from inadequate feedback.\n\n\nIntellectual Merit\n\n\nThe research objective was to mitigate uncertainties associated with real-time control of manufacturing machines from the cloud using data-driven transfer learning. This intellectual merit was achieved by carrying out three tasks, namely:\n\n\nTask 1: Determination of Uncertainty Prediction Horizon using Reachability Analysis\n\n\nTask 2:Predicting Event Probabilities via Joint Models\n\n\nTask 3: Calibrating Physics-based Models having Functional Parameters\n\n\nAs part of Task 1, the team developed a strategy to determine when and how to switch from an advanced controller to a backup local controller. The proposed method was tested using an advanced algorithm that optimizes the speed of manufacturing machines using linear programming. Whenever the algorithm experienced uncertainty or infeasibility, it switched to a backup algorithm. The algorithm was demonstrated on a 3D printer where it achieved up to 25% improvement in motion speed without sacrificing motion accuracy.\n\n\nAs part of Task 2, the team developed a method to predict future failure events based on joint modeling of both longitudinal and time-to-event data. The methods achieved the state of art performance in joint models. In addition, the team developed a method for extrapolating multi-stream longitudinal data where multiple signals from different units are collected in real-time. It demonstrated a non-parametric approach to predict the evolution of multi-stream longitudinal data for an in-service unit through borrowing strength from other historical units.\n\n\nAs part of Task 3, the team developed a controller that calibrates a physics-based model using data gathered online during operation. The uncertainty from the physics based and data-driven models were incorporated into the controller. This resulted in an uncertainty-aware digital twin. The outcomes of using this uncertainty-aware digital twin were demonstrated experimentally on a 3D printer and machine tool; it led to cycle time reductions of up to 38% and 17% respectively, without sacrificing motion accuracy.\n\n\nBroader Impacts\n\n\nSome of the results of this project are being translated to industry through collaborations with two U.S. companies. The first is Ulendo Technologies, Inc., a start-up company that is leveraging the cloud infrastructure to provide calibration as a service to 3D printers. The second is CISCO, Inc., which is collaborating with the project team to translate the machine-learning related aspects of the findings to an infrastructure the company has developed for distributed computing.\n\n\nThrough the project, four PhD students have been trained, including a female student. Two of the students have graduated and have taken up positions as assistant professors at U.S. universities. Another graduate trained through this project has taken up a position as an engineer at a semiconductor manufacturing company. The fourth Ph.D. student is working towards his graduation.\n\n\nThe results of this project have been disseminated at manufacturing and controls conferences. They have also been published in very reputable journals in manufacturing, controls, mechatronics and statistics. A total of 10 journal papers have been published or submitted based on this project.\t\t\t\t\tLast Modified: 12/20/2023\n\n\t\t\t\t\tSubmitted by: ChinedumOkwudire\n"
+ }
+}

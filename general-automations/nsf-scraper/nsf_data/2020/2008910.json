@@ -1,0 +1,101 @@
+{
+ "awd_id": "2008910",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: CNS Core: Small: Internet-Scale Measurement of TCP/IP Implementation Weaknesses",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032922935",
+ "po_email": "dmedhi@nsf.gov",
+ "po_sign_block_name": "Deepankar Medhi",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 258250.0,
+ "awd_amount": 258250.0,
+ "awd_min_amd_letter_date": "2020-08-10",
+ "awd_max_amd_letter_date": "2023-01-10",
+ "awd_abstract_narration": "This project will uncover network protocol implementations that are common on the Internet and are susceptible to side channel attacks.  This can have serious security implications for applications such as Virtual Private Networks (VPNs) and Domain Validation ((DV), that proves an organization owns an Internet domain such as www.example.com before issuing a certificate that the organization can present to web browsers as authentication).  A side channel is a mechanism where information flows where it was not intended to flow according to the design of a system.  An analogy might be a foreign government counting the number of pizza deliveries to the Pentagon and inferring last-minute planning for a big event when the number of pizzas increases sharply.  In other contexts, side channels have led to fundamental breakdowns in the basic security mechanisms that separate processes in an operating system (see Meltdown and Spectre, which are vulnerabilities in the way computers enforce the most basic separation of security contexts), and have been used to crack even then strongest cryptography.  The TCP and IP protocols lay the foundation for the Internet, but are known to be susceptible to side channels if certain requirements are not met.  Requests for Comments (RFCs), (the documents that develop and define Internet standards) describe how, for example, certain numbers must be chosen in an unpredictable manner, or limiting the rate at which packets are sent must be applied in a specific way, in order to mitigate the effects of TCP/IP side channels.  Failure to follow these RFCs undermines the most basic assumption of Internet security: that in order for an attacker to infer the existence of, interfere with, or inject their own data into a communication the attacker must control a part of the network in between the two parties that are communicating.\r\n\r\nViolating this basic assumption can be devastating for Internet users that are acting in the U.S.'s interest, such as journalists, activists, and non-governmental organizations (NGOs) overseas that use tunneling of some kind to bypass Internet controls in their own country.  A major technical challenge that the project will address is to explore the astronomically large number of possibilities for how sequences of probes sent by researchers might result in predictable patterns in the responses given by different Internet hosts.  Predictable patterns indicate a vulnerability because the security model assumes an attacker will not be able to guess the numbers that protocols use for sequencing and other purposes.\r\n\r\nThis project combines expertise in network security and data mining to search the Internet for patterns where there should be none.  Through a combination of carefully designed experiments to measure how Internet hosts respond to different combinations of probes, temporal data mining to uncover patterns, and an infrastructure for measuring the entire Internet longitudinally, the project will reveal how custom network stacks have created a situation where a significant fraction of Internet servers do not protect against side channel attacks.  These custom TCP/IP implementations are commonly developed for the cloud, \"middleboxes\" such as load balancers and firewalls, and the Internet of Things.  The proposed work will address this situation through the ethical disclosure process, engaging Internet standards bodies, and educating researchers and users about these threats.  Educational activities and outreach will leverage the unique population of the Southwestern U.S. and the expertise of the PIs to support diversification of the field and workforce development.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Abdullah",
+   "pi_last_name": "Mueen",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Abdullah A Mueen",
+   "pi_email_addr": "mueen@cs.unm.edu",
+   "nsf_id": "000645700",
+   "pi_start_date": "2020-08-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of New Mexico",
+  "inst_street_address": "1 UNIVERSITY OF NEW MEXICO",
+  "inst_street_address_2": "",
+  "inst_city_name": "ALBUQUERQUE",
+  "inst_state_code": "NM",
+  "inst_state_name": "New Mexico",
+  "inst_phone_num": "5052774186",
+  "inst_zip_code": "871310001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "NM01",
+  "org_lgl_bus_name": "UNIVERSITY OF NEW MEXICO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "F6XLTRUQJEN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of New Mexico",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NM",
+  "perf_st_name": "New Mexico",
+  "perf_zip_code": "871310001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "NM01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 258250.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-bc08a2ef-7fff-14df-481a-f98ddeb70268\"> </span></p>\r\n<p dir=\"ltr\"><span>Transmission Control Protocol (TCP) of the Internet requires the communicating devices to establish a secure connection between them. Authoritative regimes are exploiting the weaknesses of this decades old protocols to \"look into\" the \"information packets\" being transmitted between two parties, and thus, either block or delay the transmission to control information flow and to carry out the policies in ways that harm U.S. interests (e.g., by censoring informative websites).</span></p>\r\n<p dir=\"ltr\"><span>In this project, we developed data analytics tools to analyze time measurements of millions of TCP connections to understand the effort made in \"looking into\" the packets being transmitted. We analyzed the data from three perspectives: the source, the target and the DNS resolver of a TCP connection. We discover that time to perform certain packet exchange is slowly increasing over the years. We also observe drastic increases in conjunction with massive deployment of centralized control devices and with events of political conflicts. We observe that the censorship of an authoritative regime may have a disproportionate effect on the cloud services and hosting companies. We observe that small autonomous systems (e.g. universities, financial companies, etc.) perform independent website specific censorships (e.g. social networking websites, gambling websites, etc.) and often are the most restrictive.</span></p>\r\n<p dir=\"ltr\"><span>The project supported two PhD students to write their dissertations. The datasets collected and curated for this project are used in graduate level Data Mining class. The project supported the PI to contribute in processing and understanding time series data, in general. Finally, as part of the PI's commitment to outreach, the PI volunteered in K12 school field-trip to science museum.</span></p>\r\n<div><span><br /></span></div>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 01/03/2025<br>\nModified by: Abdullah&nbsp;A&nbsp;Mueen</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\n \r\n\n\nTransmission Control Protocol (TCP) of the Internet requires the communicating devices to establish a secure connection between them. Authoritative regimes are exploiting the weaknesses of this decades old protocols to \"look into\" the \"information packets\" being transmitted between two parties, and thus, either block or delay the transmission to control information flow and to carry out the policies in ways that harm U.S. interests (e.g., by censoring informative websites).\r\n\n\nIn this project, we developed data analytics tools to analyze time measurements of millions of TCP connections to understand the effort made in \"looking into\" the packets being transmitted. We analyzed the data from three perspectives: the source, the target and the DNS resolver of a TCP connection. We discover that time to perform certain packet exchange is slowly increasing over the years. We also observe drastic increases in conjunction with massive deployment of centralized control devices and with events of political conflicts. We observe that the censorship of an authoritative regime may have a disproportionate effect on the cloud services and hosting companies. We observe that small autonomous systems (e.g. universities, financial companies, etc.) perform independent website specific censorships (e.g. social networking websites, gambling websites, etc.) and often are the most restrictive.\r\n\n\nThe project supported two PhD students to write their dissertations. The datasets collected and curated for this project are used in graduate level Data Mining class. The project supported the PI to contribute in processing and understanding time series data, in general. Finally, as part of the PI's commitment to outreach, the PI volunteered in K12 school field-trip to science museum.\r\n\n\r\n\n\n\r\n\n\n\t\t\t\t\tLast Modified: 01/03/2025\n\n\t\t\t\t\tSubmitted by: AbdullahAMueen\n"
+ }
+}

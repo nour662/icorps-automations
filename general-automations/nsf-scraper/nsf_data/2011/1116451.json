@@ -1,0 +1,105 @@
+{
+ "awd_id": "1116451",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR:Small: Multi-Bottlenecks: What They Are and How to Find Them",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anita La Salle",
+ "awd_eff_date": "2011-08-15",
+ "awd_exp_date": "2014-07-31",
+ "tot_intn_awd_amt": 224996.0,
+ "awd_amount": 224996.0,
+ "awd_min_amd_letter_date": "2011-08-08",
+ "awd_max_amd_letter_date": "2011-08-08",
+ "awd_abstract_narration": "This project addresses computing clouds, large-scale shared infrastructures that offer practically unlimited hardware to most users and applications. In order to achieve scalable performance, all components of the system, from hardware to operating system, middleware, various servers, and the application itself, need to cooperate. Bottlenecks in components can slow down the entire system. In traditional computer systems (e.g., as modeled by queuing theory), a typical assumption is that their workloads consist of independent jobs. This assumption, which is valid for old-style batch-oriented processing and interactive users, guarantees the appearance of single bottlenecks for an entire system. Single bottlenecks can be relatively easily detected, since they appear as resources reaching saturation (e.g., 100% utilization).\r\n\r\nThe \"independent jobs\" model does not hold for the important class of web-facing applications (e.g., e-commerce) that rely on the popular n-tier architecture. N-tier systems divide the system into a pipeline of processing components, e.g., consisting of web servers, application servers, and database servers. While the n-tier architecture supports good performance scalability at the web server and application server tiers, it also introduces several (sometimes unexpected) strong dependencies among other tiers and components. These dependencies produce an interesting phenomenon called multi-bottleneck. Multi-bottlenecks are characterized by system throughput limited by a ceiling regardless of additional hardware, and no single resource shows average utilization anywhere near saturation. (Anecdotally, this is an increasingly common situation in practice.) Multi-bottlenecks are difficult to find, diagnose, and remove when using traditional performance evaluation methods. They are also important in clouds since they will be the only bottlenecks left after the removal of easily spotted single bottlenecks.\r\n\r\nThis project develops, evaluates, and refines a systematic search method, called Telescoping, to find multi-bottlenecks by running large scale experiments on production clouds. A simulator generates well-defined multi-bottlenecks to help refine the Telescoping search method and tune its parameters. Then, n-tier benchmarks such as RUBiS and RUBBoS (e-commerce applications) on production clouds such as Open Cirrus, Amazon EC2, and Emulab, gather experimental evidence on multi-bottlenecks. These experiments shed light on a little-known phenomenon in a rich, but unexplored area (performance limits of jobs with dependencies). Success can lead to significant new developments in the theoretical understanding of jobs with dependencies and improve practical uses of clouds by n-tier systems.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Calton",
+   "pi_last_name": "Pu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Calton Pu",
+   "pi_email_addr": "calton@cc.gatech.edu",
+   "nsf_id": "000432066",
+   "pi_start_date": "2011-08-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Institute of Technology",
+  "perf_str_addr": "225 NORTH AVE NW",
+  "perf_city_name": "ATLANTA",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7354",
+   "pgm_ref_txt": "COMPUTER SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 224996.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>One of the most interesting and puzzling trends in cloud computing is the persistent low utilization of machines in data centers (Gartner reports average utilization of around 18% through late 2000&rsquo;s and early 10&rsquo;s). Managerially, this is a suboptimal situation since low utilization means low return on investment.</p>\n<p>Anecdotally, it has been known in the cloud community that the quality of service of mission-critical web-facing applications running in clouds and data centers can show significant perturbations (especially in the critical dimension of response time) even at moderate utilization levels, e.g., less than 50%. The main hypothesis of this project is that previously unconfirmed phenomena such as multi-bottlenecks are some of the causes that perturb the quality of service of cloud-based applications.</p>\n<p>The major outcomes from this project are a set of experiments that confirm this main hypothesis. Using the automated experiment management tools from the Elba project, a large number of n-tier application benchmark runs have been carried out in several data centers and clouds. These results confirm the existence and prevalence of transient bottlenecks, which only last a very short time (tens to hundreds of milliseconds) during the execution of n-tier benchmarks in data center environments. Through fine-grain monitoring (at a typical interval of 50ms), abundant experimental data show that such very short and transient bottlenecks can cause wide response time variations of up to several seconds for requests that usually only take a few milliseconds to return.</p>\n<p>Such long response time delays happen because of a causal chain of events in the n-tier system. The chain of events is triggered by a transient bottleneck that saturates a server CPU for tens to hundreds of milliseconds. The rapid job arrival rate of typical web-facing application workloads (thousands of requests per second), quickly overwhelms important internal software resources such as the thread pool in a server (e.g., web server or application server). The queue overflow propagates the waiting upstream, causing longer queues at the beginning of n-tier application. This queue propagation process eventually saturates the main soft resources in a key server (usually the web server), causing dropped network packets and packet retransmissions after 3 seconds.</p>\n<p>In the attached figure, a sample chain of events that link a transient bottleneck to long response times is illustrated by the case study on Java Virtual Machine garbage collector (JVM 1.5). On the left side, the top graph shows the occurrences of garbage collection episodes. The middle graph shows that the Tomcat application server CPU becomes saturated for a short time (between 100ms and 200ms), coinciding with garbage collection. The bottom graph shows that at the same time, Tomcat queues become full (magenta curve at the bottom), causing the web server queue (Apache, blue curve at the top) to overflow, in a process we call queue amplification. On the right side, the top graph repeats the Apache queues for reference, and the middle graph shows the increase in system response time at the same time. The bottom right graph shows the increase is due to a number of requests that have very long response time caused by dropped packets and retransmission. These chained events form a multi-bottleneck, since the queues in Tomcat and Apache are causally related. In this case, the highest average CPU utilization of all servers is only about 61%, since the processors are saturated only for a short time. At other times, the system is not busy at all, lowering the average CPU utilization.</p>\n<p>During the course of the project, several instances of transient bottlenecks at several system layers have been confirmed experimentally. The example in the attached figure (Java garbage collection) resides in the system software layer....",
+  "por_txt_cntn": "\nOne of the most interesting and puzzling trends in cloud computing is the persistent low utilization of machines in data centers (Gartner reports average utilization of around 18% through late 2000\u00c6s and early 10\u00c6s). Managerially, this is a suboptimal situation since low utilization means low return on investment.\n\nAnecdotally, it has been known in the cloud community that the quality of service of mission-critical web-facing applications running in clouds and data centers can show significant perturbations (especially in the critical dimension of response time) even at moderate utilization levels, e.g., less than 50%. The main hypothesis of this project is that previously unconfirmed phenomena such as multi-bottlenecks are some of the causes that perturb the quality of service of cloud-based applications.\n\nThe major outcomes from this project are a set of experiments that confirm this main hypothesis. Using the automated experiment management tools from the Elba project, a large number of n-tier application benchmark runs have been carried out in several data centers and clouds. These results confirm the existence and prevalence of transient bottlenecks, which only last a very short time (tens to hundreds of milliseconds) during the execution of n-tier benchmarks in data center environments. Through fine-grain monitoring (at a typical interval of 50ms), abundant experimental data show that such very short and transient bottlenecks can cause wide response time variations of up to several seconds for requests that usually only take a few milliseconds to return.\n\nSuch long response time delays happen because of a causal chain of events in the n-tier system. The chain of events is triggered by a transient bottleneck that saturates a server CPU for tens to hundreds of milliseconds. The rapid job arrival rate of typical web-facing application workloads (thousands of requests per second), quickly overwhelms important internal software resources such as the thread pool in a server (e.g., web server or application server). The queue overflow propagates the waiting upstream, causing longer queues at the beginning of n-tier application. This queue propagation process eventually saturates the main soft resources in a key server (usually the web server), causing dropped network packets and packet retransmissions after 3 seconds.\n\nIn the attached figure, a sample chain of events that link a transient bottleneck to long response times is illustrated by the case study on Java Virtual Machine garbage collector (JVM 1.5). On the left side, the top graph shows the occurrences of garbage collection episodes. The middle graph shows that the Tomcat application server CPU becomes saturated for a short time (between 100ms and 200ms), coinciding with garbage collection. The bottom graph shows that at the same time, Tomcat queues become full (magenta curve at the bottom), causing the web server queue (Apache, blue curve at the top) to overflow, in a process we call queue amplification. On the right side, the top graph repeats the Apache queues for reference, and the middle graph shows the increase in system response time at the same time. The bottom right graph shows the increase is due to a number of requests that have very long response time caused by dropped packets and retransmission. These chained events form a multi-bottleneck, since the queues in Tomcat and Apache are causally related. In this case, the highest average CPU utilization of all servers is only about 61%, since the processors are saturated only for a short time. At other times, the system is not busy at all, lowering the average CPU utilization.\n\nDuring the course of the project, several instances of transient bottlenecks at several system layers have been confirmed experimentally. The example in the attached figure (Java garbage collection) resides in the system software layer. A second instance of transient bottlenecks was found in connection with DVFS (Dynamic Voltage and Frequ..."
+ }
+}

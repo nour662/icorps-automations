@@ -1,0 +1,129 @@
+{
+ "awd_id": "1223588",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Small: Caging Libraries To Control Software Faults",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 499879.0,
+ "awd_amount": 515879.0,
+ "awd_min_amd_letter_date": "2012-08-13",
+ "awd_max_amd_letter_date": "2013-05-30",
+ "awd_abstract_narration": "The vast majority of the code in most applications comes from the libraries it imports, rather than the program itself. As a result, hackers often exploit flaws in libraries like glibc or openssl that are used across multiple applications instead of attacking individual flaws in code specific to the application. This makes it easier for an attacker to compromise many applications at once with a single exploit. This work isolates the impact of flaws in a deployed program into the smallest area possible.  This will dramatically increase the security of applications in the cloud, on mobile phones, and everything in between.\r\n\r\nTo achieve this goal, this research develops a new abstraction that acts as a lightweight and extremely efficient intra-process isolation mechanism that builds on recent advances from operating system virtualization and memory-safe code execution (such as SFI). This abstraction, called a cage, allows different pieces of code that execute in the same process to be isolated from each other. This means that a flaw within a piece of code can only be used to exploit the code within that cage. Each cage also conceptually is its own process from an resource accounting standpoint. In addition, calls between cages are extremely lightweight and do not require a context switch or OS intervention.  The cage abstraction provides an isolation mechanism that is  high-performance and with very low overhead while improving application security.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Justin",
+   "pi_last_name": "Cappos",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Justin Cappos",
+   "pi_email_addr": "jcappos@nyu.edu",
+   "nsf_id": "000600621",
+   "pi_start_date": "2012-08-13",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "New York University",
+  "inst_street_address": "70 WASHINGTON SQ S",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEW YORK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "2129982121",
+  "inst_zip_code": "100121019",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "NY10",
+  "org_lgl_bus_name": "NEW YORK UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NX9PXMKW5KW8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Polytechnic University of New York",
+  "perf_str_addr": "6 Metrotech Center",
+  "perf_city_name": "Brooklyn",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "112013840",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "NY07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  },
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9178",
+   "pgm_ref_txt": "UNDERGRADUATE EDUCATION"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0113",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001314DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 499879.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2013,
+   "fund_oblg_amt": 16000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In this project, we discovered techniques that dramatically improve the security of programs. &nbsp;The key findings revolve around improving isolation of programs on the same computer (i.e., restricting the ability for different programs to interfere or compromise other programs). &nbsp;Our findings fall in two basic categories. &nbsp;</p>\n<p>&nbsp;</p>\n<p>First, we show how to write sandboxes or virtual machines (technologies commonly used for isolation) in a way that minimizes the risk of them being compromised by an attacker. &nbsp;This is done by reducing the reliance on paths in the underlying operating system that are at greater risk of having security vulnerabilities. &nbsp;(Note, that our work also uncovered an effective technique to find the location of these paths.) &nbsp;The end result is that virtual machine technologies and sandboxes, like those used in web browsers or cloud computing systems, can be much more effectively secured. &nbsp;We are currently working with some major companies that build these systems to move these findings into practice.</p>\n<p>&nbsp;</p>\n<p>Second, we show that it is possible to have better performance isolation for programs than was previously thought. &nbsp;Performance isolation involves reducing the ability for a program to do actions such as drain the battery, slow down other programs, or use a lot of memory on the computer. &nbsp;Our findings show that it is possible to build much more effective ways to control this than what OS maintainers are currently providing. &nbsp;We not only tested this in our lab, but also deployed our software on the Seattle testbed (which over its lifetime has run on tens of thousands of computers). &nbsp;This provides us with increased confidence in the feasibility and applicability of these results.</p>\n<p>&nbsp;</p>\n<p>In addition to our research findings, we also used this support to create and utilize educational materials that teach students how to better build secure software. &nbsp;We included materials that utilize the research findings above in the classroom, which were then used in over a dozen classes spanning liberal arts schools and major research institutions. &nbsp;Our findings show that hands on experience with these techniques improves the ability of students to write secure code. &nbsp;Thus as a result, hundreds of students of students have benefitted from these assignments and entered the workforce more prepared for today's computer security challenges.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/01/2016<br>\n\t\t\t\t\tModified by: Justin&nbsp;Cappos</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIn this project, we discovered techniques that dramatically improve the security of programs.  The key findings revolve around improving isolation of programs on the same computer (i.e., restricting the ability for different programs to interfere or compromise other programs).  Our findings fall in two basic categories.  \n\n \n\nFirst, we show how to write sandboxes or virtual machines (technologies commonly used for isolation) in a way that minimizes the risk of them being compromised by an attacker.  This is done by reducing the reliance on paths in the underlying operating system that are at greater risk of having security vulnerabilities.  (Note, that our work also uncovered an effective technique to find the location of these paths.)  The end result is that virtual machine technologies and sandboxes, like those used in web browsers or cloud computing systems, can be much more effectively secured.  We are currently working with some major companies that build these systems to move these findings into practice.\n\n \n\nSecond, we show that it is possible to have better performance isolation for programs than was previously thought.  Performance isolation involves reducing the ability for a program to do actions such as drain the battery, slow down other programs, or use a lot of memory on the computer.  Our findings show that it is possible to build much more effective ways to control this than what OS maintainers are currently providing.  We not only tested this in our lab, but also deployed our software on the Seattle testbed (which over its lifetime has run on tens of thousands of computers).  This provides us with increased confidence in the feasibility and applicability of these results.\n\n \n\nIn addition to our research findings, we also used this support to create and utilize educational materials that teach students how to better build secure software.  We included materials that utilize the research findings above in the classroom, which were then used in over a dozen classes spanning liberal arts schools and major research institutions.  Our findings show that hands on experience with these techniques improves the ability of students to write secure code.  Thus as a result, hundreds of students of students have benefitted from these assignments and entered the workforce more prepared for today's computer security challenges.\n\n\t\t\t\t\tLast Modified: 10/01/2016\n\n\t\t\t\t\tSubmitted by: Justin Cappos"
+ }
+}

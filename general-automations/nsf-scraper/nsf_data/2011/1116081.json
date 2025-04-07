@@ -1,0 +1,101 @@
+{
+ "awd_id": "1116081",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NeTS: Small: Collaborative Research: Boosting Inter-Domain Scheduled Dynamic Circuit Services (SDCS)",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Darleen Fisher",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2016-07-31",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2011-08-06",
+ "awd_max_amd_letter_date": "2011-08-06",
+ "awd_abstract_narration": "A variety of applications in the nascent field of cloud computing and in other fields requires stable, low-delay network connectivity together with capabilities of co-scheduling network and server resources. As a result, several network providers have recently started to deploy scheduled dynamic circuit services (SDCS). Under such services, a network provider allows its customers to place scheduling requests for a fixed-rate circuit lasting for a fixed duration, for either earliest possible usage or scheduled usage at a desired point of time in the future.\r\n\r\nWhile carrying significant potential impact, SDCS currently provide little support for dynamic routing and scheduling of circuits across different administrative domains. This lack of adequate support for inter-domain routing represents a major hurdle to the full-scale deployment of SDCS. The main objective of this project is to tackle this challenge by devising distributed solutions supporting scheduled dynamic circuit services across domains. The project consists of two inter-related thrusts: (i) theory, which focuses on the problem of devising distributed routing algorithms for SDCS that provably converge and provide performance guarantees on user-performance metrics;   and (ii) protocol design and implementation, which focuses on the design, development, and real network prototyping of a new inter-domain routing protocol for SDCS, referred to as the scheduled circuit routing protocol (SCRP).\r\n\r\nBroader Impact: Successful completion of this project promises to impact a wide array of high-throughput and real-time applications belonging to medical, scientific and commercial domains, and facilitate the creation of a new ecosystem for communication networks. The project is further striving for high impact through collaborations with international academic and industrial partners, and network operators. Students at all levels will be engaged in real network experiments and in the development of innovative applications enabled by SDCS, such as haptic-based communication.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Malathi",
+   "pi_last_name": "Veeraraghavan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Malathi Veeraraghavan",
+   "pi_email_addr": "mv5g@virginia.edu",
+   "nsf_id": "000254309",
+   "pi_start_date": "2011-08-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Virginia Main Campus",
+  "inst_street_address": "1001 EMMET ST N",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHARLOTTESVILLE",
+  "inst_state_code": "VA",
+  "inst_state_name": "Virginia",
+  "inst_phone_num": "4349244270",
+  "inst_zip_code": "229034833",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "VA05",
+  "org_lgl_bus_name": "RECTOR & VISITORS OF THE UNIVERSITY OF VIRGINIA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "JJG6HU8PA4S5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Virginia Main Campus",
+  "perf_str_addr": "1001 EMMET ST N",
+  "perf_city_name": "CHARLOTTESVILLE",
+  "perf_st_code": "VA",
+  "perf_st_name": "Virginia",
+  "perf_zip_code": "229034833",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "VA05",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Today, the Internet offers a basic best-effort service for data delivery. This service is comparable to the type of transportation service offered by the roadways network. Users do not make reservations prior to driving. Similarly, when a communication application such as a Web client or Web server needs to send data, it simply starts sending data into the Internet in the form of packets. If the total arrival rate of packets is greater than the rate at which a transmitter can send packets on to a communication link, there will be packet drops due to router buffer overflows.</p>\n<p>In this project, we contributed towards the development of a new type of Internet service called Scheduled Dynamic Circuit Services (SDCS). This service is comparable to the airline mode of transportation. It will offer users a higher quality of servic; specifically it will provide users rate guarantees. To support this service, advance-reservation schedulers are required just as with the airline service. What makes this problem of resource reservation on communication networks more challenging is that computer applications have a wide-ranging set of requirements.</p>\n<p>In this project, we considered two classes of service: User-Specified Start Times (USST) calls (for applications such as remote visualization or 4K immersive video-conferencing), and Earliest-Start Time (EST) calls (for high-speed large file transfers). We developed two path-selection algorithms, Earliest Available Path (EAP) and Shortest Available Path (SAP), and simulated these algorithms on a high-performance computing system to evaluate their performance. Our findings are: (i) EAP should be used to keep EST mean waiting time low and to offer more USST calls their first start-time options, (ii) EST calls should be limited to half the link capacity to avoid long waiting (scheduling) delays even under low loads, (iii) inter-class effects were observed when the USST start-time options were assumed to follow a Zipf distribution, whereby the high rate allocations for EST calls early in the advance-reservation window caused a high call blocking probability for USST calls, and (iv) the best solution to mitigate these effects was to increase the number of USST start-time options; an alternative, using SAP for EST calls, had the negative effect of causing EST mean waiting time to increase.</p>\n<p>Another effort undertaken as part of this project was a trial deployment of a multi-domain software defined network with support for inter-domain dynamic Layer-2 (L2) rate-guaranteed service. This&nbsp; work demonstrated that inter-domain L2 paths can be created and released automatically on multi-domain paths, i.e., without administrator involvement, by using distributed per-domain SDN controllers. We offered insights into this complex deployment process and identified modifications required to the protocols and controllers for improved user experience and scalability of this dynamic L2 path service. Our data-plane experiments showed that a combination of Circuit-TCP (CTCP) designed for rate-guaranteed L2 paths and the Token Bucket Filter (TBF) queueing discipline for rate limiting at the sending NIC allowed for high-throughput transfers with almost 0 packet losses. After experimenting with different values for certain critical parameters, we recommend a TBF burst size of 100 KB, a TBF limit size that is two times the bandwidth-delay product BDP, and a CTCP fixed congestion window value that is slightly larger than BDP.</p>\n<p>Towards achieving our goals of having a broader impact, we disseminated our results through papers and our Web site. We incorporated research topics from this project in our graduate teaching. We recruited and supported three female graduate students on this project. Three students obtained their MS degrees on this project, and two PhD students were also supported on this project. These students learned many technical and teamwork skills. They had the opportunity to work with Internet2 network engineers to learn about practical deployment problems.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/30/2016<br>\n\t\t\t\t\tModified by: Malathi&nbsp;Veeraraghavan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nToday, the Internet offers a basic best-effort service for data delivery. This service is comparable to the type of transportation service offered by the roadways network. Users do not make reservations prior to driving. Similarly, when a communication application such as a Web client or Web server needs to send data, it simply starts sending data into the Internet in the form of packets. If the total arrival rate of packets is greater than the rate at which a transmitter can send packets on to a communication link, there will be packet drops due to router buffer overflows.\n\nIn this project, we contributed towards the development of a new type of Internet service called Scheduled Dynamic Circuit Services (SDCS). This service is comparable to the airline mode of transportation. It will offer users a higher quality of servic; specifically it will provide users rate guarantees. To support this service, advance-reservation schedulers are required just as with the airline service. What makes this problem of resource reservation on communication networks more challenging is that computer applications have a wide-ranging set of requirements.\n\nIn this project, we considered two classes of service: User-Specified Start Times (USST) calls (for applications such as remote visualization or 4K immersive video-conferencing), and Earliest-Start Time (EST) calls (for high-speed large file transfers). We developed two path-selection algorithms, Earliest Available Path (EAP) and Shortest Available Path (SAP), and simulated these algorithms on a high-performance computing system to evaluate their performance. Our findings are: (i) EAP should be used to keep EST mean waiting time low and to offer more USST calls their first start-time options, (ii) EST calls should be limited to half the link capacity to avoid long waiting (scheduling) delays even under low loads, (iii) inter-class effects were observed when the USST start-time options were assumed to follow a Zipf distribution, whereby the high rate allocations for EST calls early in the advance-reservation window caused a high call blocking probability for USST calls, and (iv) the best solution to mitigate these effects was to increase the number of USST start-time options; an alternative, using SAP for EST calls, had the negative effect of causing EST mean waiting time to increase.\n\nAnother effort undertaken as part of this project was a trial deployment of a multi-domain software defined network with support for inter-domain dynamic Layer-2 (L2) rate-guaranteed service. This  work demonstrated that inter-domain L2 paths can be created and released automatically on multi-domain paths, i.e., without administrator involvement, by using distributed per-domain SDN controllers. We offered insights into this complex deployment process and identified modifications required to the protocols and controllers for improved user experience and scalability of this dynamic L2 path service. Our data-plane experiments showed that a combination of Circuit-TCP (CTCP) designed for rate-guaranteed L2 paths and the Token Bucket Filter (TBF) queueing discipline for rate limiting at the sending NIC allowed for high-throughput transfers with almost 0 packet losses. After experimenting with different values for certain critical parameters, we recommend a TBF burst size of 100 KB, a TBF limit size that is two times the bandwidth-delay product BDP, and a CTCP fixed congestion window value that is slightly larger than BDP.\n\nTowards achieving our goals of having a broader impact, we disseminated our results through papers and our Web site. We incorporated research topics from this project in our graduate teaching. We recruited and supported three female graduate students on this project. Three students obtained their MS degrees on this project, and two PhD students were also supported on this project. These students learned many technical and teamwork skills. They had the opportunity to work with Internet2 network engineers to learn about practical deployment problems.\n\n \n\n\t\t\t\t\tLast Modified: 10/30/2016\n\n\t\t\t\t\tSubmitted by: Malathi Veeraraghavan"
+ }
+}

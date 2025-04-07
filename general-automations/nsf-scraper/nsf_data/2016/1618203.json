@@ -1,0 +1,121 @@
+{
+ "awd_id": "1618203",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF:SMALL:Certified cost recurrences for higher-order functional programs",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2016-06-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 461830.0,
+ "awd_amount": 461830.0,
+ "awd_min_amd_letter_date": "2016-05-31",
+ "awd_max_amd_letter_date": "2016-05-31",
+ "awd_abstract_narration": "One of the main jobs of a computer scientist is inventing new solutions to computational problems.  There are often many different ways of solving the same problem, and running these different solutions on a computer can cost drastically different amounts of time, memory, power, money, or other resources.  Given limited resources, it is often the case that one solution will accomplish a desired goal, while another solution will fail to do so -- not because the solution is wrong in principle, but because it would cost too much. Therefore, programmers need to be able to predict how much a solution will cost before actually running it, in order to predict whether a proposed solution will successfully accomplish the desired goals.  In this project, the principal investigators, along with a postdoctoral fellow and students, are investigating new techniques for predicting the resources used by programs.  The intellectual merits of the project are advancing the state of the art in interactive reasoning about program cost, building on several different areas of computer science research.  The project is investigating methods that can be implemented in interactive tools, so that a computer can help with making these cost predictions and checking that programmers' predictions are correct.  The project's broader significance and importance are improving the quality of software, by making it easier for programmers to both code in a high-level language and reason precisely and formally about the cost of their programs, leading to faster and more maintainable code.  The project is training undergraduate, graduate, and postdoctoral researchers for scientific careers.  Finally, the techniques developed by this project may inform the development of pedagogical tools for computer science students.\r\n\r\nMore technically, this project is developing the foundations of a tool that programmers can use to semi-automatically analyze the execution cost of programs, in the style of an interactive theorem prover or proof assistant. The main topic of investigation is formally certified methods for the extraction and solution of cost recurrences from source code -- a method of cost analysis that allows a smooth transition between automated and manual verification methods, and is applicable to a wide class of programs.  The investigators' prior work in this area shows that the process of extracting recurrences from higher-order functional programs on programmer-defined inductive datatypes can be viewed as a translation from the source language to a complexity language, followed by a semantic interpretation of the complexity language. This method is certified by a bounding theorem, proved by logical relations, which implies that the cost predicted by the recurrences bounds the execution cost of the program on all inputs. This project is extending these techniques to more fully-featured source languages (e.g., supporting general recursion and coinductive datatypes); to other forms of cost analyses (e.g., parallel cost and amortized analysis); and to deeper analysis of extracted recurrences (e.g., methods for solving higher-order recurrences; a syntactic logic for manipulating recurrences). The project is developing formalizations and implementations of the proposed techniques, and applying the techniques to verifying compiler optimizations.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Norman",
+   "pi_last_name": "Danner",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Norman Danner",
+   "pi_email_addr": "ndanner@wesleyan.edu",
+   "nsf_id": "000457361",
+   "pi_start_date": "2016-05-31",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Daniel",
+   "pi_last_name": "Licata",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Daniel Licata",
+   "pi_email_addr": "dlicata@wesleyan.edu",
+   "nsf_id": "000705562",
+   "pi_start_date": "2016-05-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Wesleyan University",
+  "inst_street_address": "237 HIGH ST",
+  "inst_street_address_2": "FL 3",
+  "inst_city_name": "MIDDLETOWN",
+  "inst_state_code": "CT",
+  "inst_state_name": "Connecticut",
+  "inst_phone_num": "8606853683",
+  "inst_zip_code": "064593208",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "CT01",
+  "org_lgl_bus_name": "WESLEYAN UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "ZETJL6DKF963"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Wesleyan University",
+  "perf_str_addr": "237 High St.",
+  "perf_city_name": "Middletown",
+  "perf_st_code": "CT",
+  "perf_st_name": "Connecticut",
+  "perf_zip_code": "064593208",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "CT01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7943",
+   "pgm_ref_txt": "PROGRAMMING LANGUAGES"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 461830.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Correctness of software is a paramount concern to many aspects of modern&nbsp;life, including the economy and security, and one important aspect of&nbsp;correctness is resource usage.&nbsp; An example of resource usage analysis is to&nbsp;quantify the time it takes to execute a given program on inputs of varying&nbsp;size based only on the structure of the program (i.e., without actually&nbsp;executing it).&nbsp; Resource analysis via cost recurrences is a well-known&nbsp;technique learned by all computer scientists.&nbsp; However, it is most often&nbsp;applied informally, as \"pen-and-paper\" work that is not mathematically&nbsp;connected to the program being analyzed.&nbsp; This project aims to bring&nbsp;well-established techniques from the Programming Languages discipline to&nbsp;cost recurrence analysis by formalizing the process by which a cost&nbsp;recurrence is extracted from a program and rigorously proving that the&nbsp;resulting recurrence in fact measures the resource usage of the program it&nbsp;was extracted from.&nbsp; We have accomplished these goals by formalizing&nbsp;resource analysis via cost recurrences for fully-featured languages&nbsp;(higher-order languages with inductive types, recursion, and parametric&nbsp;polymorphism) and sophisticated analyses such as the banker's method of&nbsp;amortized analysis.&nbsp; There are other approaches to formalizing resource&nbsp;analysis, but few of them keep the formal approach as close to the informal&nbsp;techniques that computer scientists learn.&nbsp; By doing so, we open the&nbsp;possibility of tools that are more easily usable and learnable by both&nbsp;practitioners and students.&nbsp; The project has directly supported one&nbsp;postdoctoral fellow, and another researcher at the PIs' institution also&nbsp;contributed, thus resulting in the training of two researchers.&nbsp; Multiple&nbsp;undergraduates, including several from groups traditionally underrepresented&nbsp;in Computer Science, also took part, with contributions in the form of&nbsp;preliminary software implementations, formalizations in Agda, and research&nbsp;and presentations at major conferences.&nbsp;&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/27/2020<br>\n\t\t\t\t\tModified by: Norman&nbsp;Danner</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nCorrectness of software is a paramount concern to many aspects of modern life, including the economy and security, and one important aspect of correctness is resource usage.  An example of resource usage analysis is to quantify the time it takes to execute a given program on inputs of varying size based only on the structure of the program (i.e., without actually executing it).  Resource analysis via cost recurrences is a well-known technique learned by all computer scientists.  However, it is most often applied informally, as \"pen-and-paper\" work that is not mathematically connected to the program being analyzed.  This project aims to bring well-established techniques from the Programming Languages discipline to cost recurrence analysis by formalizing the process by which a cost recurrence is extracted from a program and rigorously proving that the resulting recurrence in fact measures the resource usage of the program it was extracted from.  We have accomplished these goals by formalizing resource analysis via cost recurrences for fully-featured languages (higher-order languages with inductive types, recursion, and parametric polymorphism) and sophisticated analyses such as the banker's method of amortized analysis.  There are other approaches to formalizing resource analysis, but few of them keep the formal approach as close to the informal techniques that computer scientists learn.  By doing so, we open the possibility of tools that are more easily usable and learnable by both practitioners and students.  The project has directly supported one postdoctoral fellow, and another researcher at the PIs' institution also contributed, thus resulting in the training of two researchers.  Multiple undergraduates, including several from groups traditionally underrepresented in Computer Science, also took part, with contributions in the form of preliminary software implementations, formalizations in Agda, and research and presentations at major conferences.  \n\n\t\t\t\t\tLast Modified: 10/27/2020\n\n\t\t\t\t\tSubmitted by: Norman Danner"
+ }
+}

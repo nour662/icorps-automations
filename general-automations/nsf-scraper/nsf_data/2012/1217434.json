@@ -1,0 +1,105 @@
+{
+ "awd_id": "1217434",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Parallel Pattern Driven Adaptive Manycore Computer Architectures",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tao Li",
+ "awd_eff_date": "2012-07-01",
+ "awd_exp_date": "2015-06-30",
+ "tot_intn_awd_amt": 400002.0,
+ "awd_amount": 400002.0,
+ "awd_min_amd_letter_date": "2012-06-25",
+ "awd_max_amd_letter_date": "2012-06-25",
+ "awd_abstract_narration": "The past decade has redefined the path of computer design in all aspects of computing. Whether the application is high-performance or general-purpose processors, the push is for improved performance through parallelism in the face of device constraints, bandwidth constraints, and power constraints. Area on chip is now \"virtually free,\" while power and bandwidth are precious commodities. Recent research has proposed many approaches to tackling this problem, including heterogeneous architectures, specialized function units, reconfigurable cores and 3D-integration. However, this decade, computer designers must work within the design constraints wherein not all of the chip can be turned on simultaneously. Computer designers must find a way to classify programs by their architectural needs, and find the best configurations for each classification. This need, combined with the increased diversity in parallel algorithms, presents a challenge: finding \"shapes\" of computation that are meaningful both to the programmer and architect. It also presents the challenge of designing architectures for each computational classification. \r\n\r\nThis project will tackle this important problem by detecting algorithmic level parallel programming patterns, exploring a classification system using these patterns, and proposing computer features that are beneficial for each pattern.  We will design a pattern-based dynamic architecture that includes pattern-specific hardware optimizations that are in turn enabled only when needed. For detection, we will investigate both programmer supplied inference detection as well as online dynamic detection. \r\n\r\nThis activity will promote teaching, training, and learning. It will be a goal of this project to involve the participation of underrepresented groups both through REU activities and through the selection of the graduate student involved in this project. The results of this research will be disseminated broadly via high-profile conference proceedings, scientific journals and via the Internet. Since we believe strongly that parallel patterns will drive computer design in the future, we propose developing PatternBench, a benchmark suite that encapsulates the space of all possible parallel patterns. Our plan is to make this benchmark suite available to aid in dissemination of this research. The broader impact to society of this work is to make future computers more power-efficient and to allow for continued performance scaling in the new era.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Thomas",
+   "pi_last_name": "Conte",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Thomas M Conte",
+   "pi_email_addr": "conte@cc.gatech.edu",
+   "nsf_id": "000238429",
+   "pi_start_date": "2012-06-25",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Institute of Technology",
+  "perf_str_addr": "225 NORTH AVE NW",
+  "perf_city_name": "Atlanta",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7941",
+   "pgm_ref_txt": "COMPUTER ARCHITECTURE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 400002.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Computing today is accelerated via doing things in parallel.&nbsp; Such parallel processing requires complex programming skills.&nbsp; These programs are so complex that at times their behavior when executed is unexpected.&nbsp; This project provided a tool for looking into how parallel programs run in real world hardware.&nbsp; Using this tool, called Contech, the programmer can make his or her program run many, many times faster.&nbsp; Fast programs matter.&nbsp; This is because these programs are used today to solve problems that affect all of our lives, from modeling and designing new drugs, to predicting the weather, to finding a cure for cancer.</p>\n<p>&nbsp;</p>\n<p>As hardware changes and programs grow increasingly more complex, people who build computer hardware also need improved support from simulators and tools. Current approaches have been targeted to specific problems and the fields are without unified frameworks to represent and analyze modern programs. Developing new analyses requires identifying the data required, preparing the appropriate instrumentation, and then significant effort to ensure that this instrumentation does not disrupt the phenomena being measured.</p>\n<p>&nbsp;</p>\n<p>This project&rsquo;s most important contribution is Contech's task graph representation, that is capable of supporting a diversity of parallel programs across both different computer languages and parallel programming styles. The Contech framework provides high performance instrumentation for collecting a task graph from a program's execution with minimal performance perturbation. The framework support for program analysis has been demonstrated with a diversity of the kinds of analysese that can be carried out. This demonstration included an extensive analysis of a reconfigurable computer hardware designs modeled and driven using Contech.</p>\n<p>&nbsp;</p>\n<p>In summary, this work has produced Contech: a framework to collect a rich parallel program representation across a diversity of languages and paradigms and do so with a low overhead from the high performance instrumentation, along with new ways for constructing program analyses utilizing Contech's task graph representation.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/22/2016<br>\n\t\t\t\t\tModified by: Thomas&nbsp;M&nbsp;Conte</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nComputing today is accelerated via doing things in parallel.  Such parallel processing requires complex programming skills.  These programs are so complex that at times their behavior when executed is unexpected.  This project provided a tool for looking into how parallel programs run in real world hardware.  Using this tool, called Contech, the programmer can make his or her program run many, many times faster.  Fast programs matter.  This is because these programs are used today to solve problems that affect all of our lives, from modeling and designing new drugs, to predicting the weather, to finding a cure for cancer.\n\n \n\nAs hardware changes and programs grow increasingly more complex, people who build computer hardware also need improved support from simulators and tools. Current approaches have been targeted to specific problems and the fields are without unified frameworks to represent and analyze modern programs. Developing new analyses requires identifying the data required, preparing the appropriate instrumentation, and then significant effort to ensure that this instrumentation does not disrupt the phenomena being measured.\n\n \n\nThis project\u00c6s most important contribution is Contech's task graph representation, that is capable of supporting a diversity of parallel programs across both different computer languages and parallel programming styles. The Contech framework provides high performance instrumentation for collecting a task graph from a program's execution with minimal performance perturbation. The framework support for program analysis has been demonstrated with a diversity of the kinds of analysese that can be carried out. This demonstration included an extensive analysis of a reconfigurable computer hardware designs modeled and driven using Contech.\n\n \n\nIn summary, this work has produced Contech: a framework to collect a rich parallel program representation across a diversity of languages and paradigms and do so with a low overhead from the high performance instrumentation, along with new ways for constructing program analyses utilizing Contech's task graph representation.\n\n\t\t\t\t\tLast Modified: 06/22/2016\n\n\t\t\t\t\tSubmitted by: Thomas M Conte"
+ }
+}

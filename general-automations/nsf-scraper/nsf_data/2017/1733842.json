@@ -1,0 +1,96 @@
+{
+ "awd_id": "1733842",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AiTF: Collaborative Research: Algorithms for Smartphone Peer-to-Peer Networks",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "A. Funda Ergun",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 319578.0,
+ "awd_amount": 319578.0,
+ "awd_min_amd_letter_date": "2017-08-10",
+ "awd_max_amd_letter_date": "2017-08-10",
+ "awd_abstract_narration": "The growing ubiquity of smartphones, combined with the rapid improvement of operating system support for direct wireless communication between nearby devices, creates a compelling opportunity for the emergence of easy to deploy and widely used smartphone peer-to-peer applications. There are several use cases for such applications. For example, in many user environments, cellular data minutes are bought in small blocks and carefully conserved by users, generating an interest in networking operations that can avoid infrastructure.  In addition, smartphone peer-to-peer networks can bring connectivity to settings such as disaster zones, festivals, or wilderness where traditional cellular and WiFi coverage is compromised, overwhelmed, or non-existent. This project aims to develop network algorithms and tools that simplify the design of useful distributed systems on top of local peer-to-peer connections. The project has the potential for significant societal impact by enabling compelling new applications for smartphone peer-to-peer networks. The project is also expected to have significant educational impact.\r\n \r\nThe project focuses on designing and analyzing provably correct and efficient network computation algorithms that can run on top of existing smartphone peer-to-peer services, and simplify the design of peer-to-peer systems that can be deployed on existing smartphone hardware. The project consists of two major research directions. The first research direction is experimental in nature. It will study and evaluate peer-to-peer services available in commodity smartphone operating systems and define a small number of validated abstractions that capture their capabilities and behavior. The second research direction is theoretical in nature. It will describe and analyze solutions to well-motivated network computation primitives using these abstractions. The problems studied will include consensus, leader election, rumor spreading, gossip and function computation. The project will seek both provably correct and efficient algorithms as well as lower bounds that establish fundamental limits for useful computation in this setting.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Calvin",
+   "pi_last_name": "Newport",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Calvin Newport",
+   "pi_email_addr": "cnewport@cs.georgetown.edu",
+   "nsf_id": "000608649",
+   "pi_start_date": "2017-08-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgetown University",
+  "inst_street_address": "MAIN CAMPUS",
+  "inst_street_address_2": "",
+  "inst_city_name": "WASHINGTON",
+  "inst_state_code": "DC",
+  "inst_state_name": "District of Columbia",
+  "inst_phone_num": "2026250100",
+  "inst_zip_code": "20057",
+  "inst_country_name": "United States",
+  "cong_dist_code": "00",
+  "st_cong_dist_code": "DC00",
+  "org_lgl_bus_name": "GEORGETOWN UNIVERSITY",
+  "org_prnt_uei_num": "TF2CMKY1HMX9",
+  "org_uei_num": "TF2CMKY1HMX9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgetown University",
+  "perf_str_addr": "37th & O St NW",
+  "perf_city_name": "Washington",
+  "perf_st_code": "DC",
+  "perf_st_name": "District of Columbia",
+  "perf_zip_code": "200571789",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "00",
+  "perf_st_cong_dist": "DC00",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "723900",
+   "pgm_ele_name": "Algorithms in the Field"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 319578.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Few wireless devices are more ubiquitous worldwide than smartphones. Most network communication with these devices occurs over a one-hop wireless connection to either a cell tower or a WiFi access point. Modern smartphone operating systems, however, enable another mode of interaction: peer-to-peer. Using the libraries built into the iOS and Android operating systems, it is possible for one smartphone to establish a wireless data connection with a nearby smartphone without any cell towers or access points involved.</p>\n<p>In recent years, it has been observed that these local direct connections can be used to create large scale peer-to-peer mesh networks over many different users in the same area, without the need for infrastructure. Early chat applications built on using this idea have been deployed around the world in settings where use of infrastructure is not possible, including in pro-democracy protests (where the authorities can shut down or monitor cell towers), and disaster relief (where the wired network connections are temporarily disabled).</p>\n<p>This network platform has vast potential given the vast number of peer-to-peer enabled smartphones that are already deployed. Little is known, however, about either the capabilities of these meshes or the best strategies for leveraging them to solve useful problems. This project set out to address these limitations in our knowledge. It had three major goals. The first was to establish tractable theoretical models, motivated by the actual interfaces and capabilities of this technology, that enable the rigorous formal study of smartphone peer-to-peer networking. The second was to establish the theoretical foundations for this study through original research on this model that explores both fundamental limits to these networks and powerful algorithmic techniques for making the most of them. The third goal was to explore methods by which to close the gap between these theoretical investigations and real network deployments.</p>\n<p><br />This project made significant progress on all three of these goals.</p>\n<p><br />We introduced the mobile telephone model (MTM), a simple to understand, round-based network model that captures the fundamental scan-and-connect interface of existing smartphone peer-to-peer libraries. In a series of original peer-reviewed papers, we laid down foundations for studying this model, that begin with novel graph theory results on which we then built new algorithms and proved new lower bounds. Among other problems, we described and analyzed efficient strategies for solving epidemic rumor spreading, leader election, load balancing, spanning tree construction. and all-to-all gossip in these networks. In doing so, we identified multiple tools and analysis techniques that can aid the study of solutions for more involved problems in the future. We also proved fundamental limits on the capacity of such networks.</p>\n<p><br />We then worked to minimize the gap between theory and practice in this setting by introducing what we call the asynchronous mobile telephone model (aMTM), which more directly captures the behavior of real smartphone peer-to-peer libraries. In recent work we directly implemented the exact interface of the aMTM model in iOS. This allows any algorithm described and analyzed in the aMTM model to be directly implemented on existing iPhone hardware, effectively eliminating the gap between theory and practice.</p>\n<p>Stepping back, it is important to emphasize that computer science researchers on all points of the theoretical to practical spectrum have been studying ad hoc and peer-to-peer wireless settings for multiple decades. One of the major impediments to such efforts is the difficulty of designing, deploying, and maintaining custom wireless ad hoc network devices. The introduction of peer-to-peer capability in commodity smartphones eliminates this obstacle, as now we have a deployment of peer-to-peer enabled wireless devices at a massive scale. We are convinced that smartphone peer-to-peer networks will play a major role in the future of wireless networking, as their potential broader impacts in contexts such as disaster relief, censorship evasion, and performance enhancement are significant. This project helped lay foundations on which this future can be built.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/11/2020<br>\n\t\t\t\t\tModified by: Calvin&nbsp;Newport</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nFew wireless devices are more ubiquitous worldwide than smartphones. Most network communication with these devices occurs over a one-hop wireless connection to either a cell tower or a WiFi access point. Modern smartphone operating systems, however, enable another mode of interaction: peer-to-peer. Using the libraries built into the iOS and Android operating systems, it is possible for one smartphone to establish a wireless data connection with a nearby smartphone without any cell towers or access points involved.\n\nIn recent years, it has been observed that these local direct connections can be used to create large scale peer-to-peer mesh networks over many different users in the same area, without the need for infrastructure. Early chat applications built on using this idea have been deployed around the world in settings where use of infrastructure is not possible, including in pro-democracy protests (where the authorities can shut down or monitor cell towers), and disaster relief (where the wired network connections are temporarily disabled).\n\nThis network platform has vast potential given the vast number of peer-to-peer enabled smartphones that are already deployed. Little is known, however, about either the capabilities of these meshes or the best strategies for leveraging them to solve useful problems. This project set out to address these limitations in our knowledge. It had three major goals. The first was to establish tractable theoretical models, motivated by the actual interfaces and capabilities of this technology, that enable the rigorous formal study of smartphone peer-to-peer networking. The second was to establish the theoretical foundations for this study through original research on this model that explores both fundamental limits to these networks and powerful algorithmic techniques for making the most of them. The third goal was to explore methods by which to close the gap between these theoretical investigations and real network deployments.\n\n\nThis project made significant progress on all three of these goals.\n\n\nWe introduced the mobile telephone model (MTM), a simple to understand, round-based network model that captures the fundamental scan-and-connect interface of existing smartphone peer-to-peer libraries. In a series of original peer-reviewed papers, we laid down foundations for studying this model, that begin with novel graph theory results on which we then built new algorithms and proved new lower bounds. Among other problems, we described and analyzed efficient strategies for solving epidemic rumor spreading, leader election, load balancing, spanning tree construction. and all-to-all gossip in these networks. In doing so, we identified multiple tools and analysis techniques that can aid the study of solutions for more involved problems in the future. We also proved fundamental limits on the capacity of such networks.\n\n\nWe then worked to minimize the gap between theory and practice in this setting by introducing what we call the asynchronous mobile telephone model (aMTM), which more directly captures the behavior of real smartphone peer-to-peer libraries. In recent work we directly implemented the exact interface of the aMTM model in iOS. This allows any algorithm described and analyzed in the aMTM model to be directly implemented on existing iPhone hardware, effectively eliminating the gap between theory and practice.\n\nStepping back, it is important to emphasize that computer science researchers on all points of the theoretical to practical spectrum have been studying ad hoc and peer-to-peer wireless settings for multiple decades. One of the major impediments to such efforts is the difficulty of designing, deploying, and maintaining custom wireless ad hoc network devices. The introduction of peer-to-peer capability in commodity smartphones eliminates this obstacle, as now we have a deployment of peer-to-peer enabled wireless devices at a massive scale. We are convinced that smartphone peer-to-peer networks will play a major role in the future of wireless networking, as their potential broader impacts in contexts such as disaster relief, censorship evasion, and performance enhancement are significant. This project helped lay foundations on which this future can be built.\n\n\t\t\t\t\tLast Modified: 12/11/2020\n\n\t\t\t\t\tSubmitted by: Calvin Newport"
+ }
+}

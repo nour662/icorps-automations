@@ -1,0 +1,113 @@
+{
+ "awd_id": "1919223",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SPX: Parallel Models and Algorithms for Emerging Memory Systems",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 1200000.0,
+ "awd_amount": 1200000.0,
+ "awd_min_amd_letter_date": "2019-07-12",
+ "awd_max_amd_letter_date": "2019-07-12",
+ "awd_abstract_narration": "With the advent of highly-parallel many-core (computing) machines, memory has increasingly become a limiting factor in continued performance improvement and scalability, in terms of energy usage, component density, latency, bandwidth, and reliability. To help deal with these and other problems, the semiconductor industry has been developing new byte-addressable nonvolatile random access memory (NVRAM) technologies. These offer the promise of significantly lower energy needs and higher density than standard dynamic random access memory (DRAM), while not losing their state on power loss. However, in NVRAM technology, operations that write to memory are more costly in terms of throughput and energy than operations that read from memory. This project is developing and testing new abstractions for emerging large and extreme-scale computer systems based on NVRAM, and how to effectively leverage this asymmetry for better performance in large computing systems. The focus will be on combining theory and practice, and considering issues across multiple levels of abstraction, from the hardware itself, to high-level algorithms and programming models. The project will include an educational component that will teach students about the new technology and how to effectively use it.\r\n\r\nThe project consists of three main components: (1) developing methodologies for systems combining volatile and nonvolatile memory that allow individual processors to fail while permitting the overall system to continue correctly, (2) developing efficient algorithms and caching policies for settings where writes are more expensive than reads, and (3) developing techniques to take advantage of the significant computing capability in each memory controller. In the first component, the project is studying how to automatically convert arbitrary concurrent programs into a setting where processors can fail so that the overhead for both running the converted program and recovering from a failure is low. In the second component, the project is developing general purpose techniques to reduce the numbers of writes compared to reads, or reduce the fraction of the memory that needs to be written to, and applying the techniques across a broad class of algorithms. The research team will both develop theory and experimentally measure the effectiveness of these techniques and algorithms. In the third component, the project is looking at how to use the memory controllers to reduce the cost of fault tolerance and allow for weaker memory models, with the purpose of scaling to large systems. A key intellectual challenge is to ensure that the models, techniques, and algorithms are simultaneously simple, elegant, and practical.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Guy",
+   "pi_last_name": "Blelloch",
+   "pi_mid_init": "E",
+   "pi_sufx_name": "",
+   "pi_full_name": "Guy E Blelloch",
+   "pi_email_addr": "guyb@cs.cmu.edu",
+   "nsf_id": "000196851",
+   "pi_start_date": "2019-07-12",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Phillip",
+   "pi_last_name": "Gibbons",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Phillip Gibbons",
+   "pi_email_addr": "gibbons@cs.cmu.edu",
+   "nsf_id": "000270775",
+   "pi_start_date": "2019-07-12",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Carnegie-Mellon University",
+  "inst_street_address": "5000 FORBES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4122688746",
+  "inst_zip_code": "152133815",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "CARNEGIE MELLON UNIVERSITY",
+  "org_prnt_uei_num": "U3NKNFLNQ613",
+  "org_uei_num": "U3NKNFLNQ613"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Carnegie-Mellon University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152133890",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "042Y00",
+   "pgm_ele_name": "PPoSS-PP of Scalable Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 1200000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p id=\"docs-internal-guid-a65ab4e4-7fff-9469-8c93-7b1ca51996f4\" style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\"><span style=\"font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">The overarching goal of the project is to develop models, techniques and algorithms for taking advantage of emerging memory technologies. Towards this end the project made several contributions outlined here.</span></p>\r\n<p><span style=\"font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">We developed models and algorithms for non-volatile RAM (NVRAM).&nbsp; In NVRAM reading memory can be significantly cheaper than writing it. &nbsp; Furthermore writing to NVRAM is undesirable since it can wear out the memory.&nbsp; &nbsp; However, machines with NVRAM almost always also contain a smaller standard RAM memory.&nbsp; &nbsp; We developed the Parallel Semi-Asymmetric Model (PSAM) to account for this asymmetry between reads and writes and applied it to develop several efficient graph algorithms. &nbsp; In graphs the model assumes the vertices can fit in standard RAM while the edges must be placed in the NVRAM because of their size. &nbsp; With this model we developed over a dozen graph algorithms that can write to space proportional to the number of vertices but only read from the edges (or possibly cache information about edges).&nbsp; &nbsp; These were packaged as a publicly available graph engine called SAGE.&nbsp; &nbsp; This work was published in VLDB 2020 and APOCS 2021.</span></p>\r\n<p><span style=\"font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">We developed approaches for implementing durable data structures on NVRAM. &nbsp; The goal here is to take advantage of the non-volatility of NVRAM so data can be properly recovered when the processor and main memory crash.&nbsp; We developed&nbsp; a general transformation that takes a lock-free data structure from a general class called traversal data structures (that we formally define) and transforms it into an implementation of the data structure for the NVRAM setting with proven durable linearizability and with high efficiency. &nbsp; This work was published at PLDI 2020. &nbsp; We later followed up on this work by developing a simple to use library, FLIT, for implementing durable data structures and algorithms using these techniques.&nbsp; This was published in PPoPP 2022.</span></p>\r\n<p><span style=\"font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">Motivated by the high cost of writes in NVRAM we developed writeback-aware caching strategies. &nbsp; This problem modifies the traditional caching problem by explicitly accounting for the cost of writing data to memory. &nbsp; This work was published in APOCS 2020 and received the best paper award.&nbsp;&nbsp;&nbsp;</span></p>\r\n<p id=\"docs-internal-guid-505fbd33-7fff-efe5-9ce7-e762fc0a8ff3\" style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\"><span style=\"font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">Motivated by emerging systems that support processing in memory (PIM) we developed models and algorithms for such systems. &nbsp; In a PIM system, there is a standard multicore CPU, but also many small processors available in the memory banks. &nbsp; The particular system we worked with was the UPMEM system, although we developed the &ldquo;PIM model&rdquo; that is agnostic to the details of a system.  Based on the model we developed various data structures. &nbsp; Our original theoretical results appeared in SPAA 2021.&nbsp; &nbsp; We then developed an efficient index (ordered map) data structure for the model and implemented it on the UPMEM system. &nbsp; These results appeared in VLDB 2022, where it won the best-paper runner up. &nbsp; We later also developed a trie data structure for the PIM model, which appeared in SPAA 2023, and a kd-tree data structure for nearest neighbor queries, which is work in progress.&nbsp;</span></p>\r\n<p><span style=\"font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">We developed various tools for easily implementing concurrent data structures on shared memory machines.&nbsp; &nbsp; This includes a portable lock-free reference counting library for C++ (PLDI 2022), a general approach for supporting lock-free locks (SPAA 2022 and PODC 2022), and an approach for taking efficiently taking snapshots of the memory state of a concurrent algorithm (PPoPP 2021 and PPoPP 2024).&nbsp;</span></p>\r\n<p style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\"><span style=\"font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">Most of the systems we developed are open source and many are reasonably widely used. &nbsp; This include FLIT (library for persistent algorithms), PBBS (a benchmark suite of parallel algorithms), ParlayLib (a library for developing parallel algorithms), Verlib (a library supporting lock-free locks and snapshotting), and SAGE (our library of graph algorithms for NVRAM). &nbsp; We are actively providing feedback to UPMEM, a startup selling first-generation PIM products, based on our research findings. We have developed and made publically available a streamlined version of UPMEM's CPU-PIM API.&nbsp; We are also providing feedback to Samsung and other companies that are exploring PIM.</span></p>\r\n<p style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\">&nbsp;</p>\r\n<p style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\"><span style=\"font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">The project supported 8 graduate students, four of which have received their PhD degrees, and all four have gone to faculty positions. &nbsp; Two of them have since won the Principles of Distributed Computation Doctoral Dissertation award, and one was a co-recipient of the Kanellakis theory and practice award.</span></p>\r\n<p>&nbsp;</p>\r\n<p><br /><br /></p><br>\n<p>\n Last Modified: 01/30/2025<br>\nModified by: Guy&nbsp;E&nbsp;Blelloch</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe overarching goal of the project is to develop models, techniques and algorithms for taking advantage of emerging memory technologies. Towards this end the project made several contributions outlined here.\r\n\n\nWe developed models and algorithms for non-volatile RAM (NVRAM). In NVRAM reading memory can be significantly cheaper than writing it.  Furthermore writing to NVRAM is undesirable since it can wear out the memory.  However, machines with NVRAM almost always also contain a smaller standard RAM memory.  We developed the Parallel Semi-Asymmetric Model (PSAM) to account for this asymmetry between reads and writes and applied it to develop several efficient graph algorithms.  In graphs the model assumes the vertices can fit in standard RAM while the edges must be placed in the NVRAM because of their size.  With this model we developed over a dozen graph algorithms that can write to space proportional to the number of vertices but only read from the edges (or possibly cache information about edges).  These were packaged as a publicly available graph engine called SAGE.  This work was published in VLDB 2020 and APOCS 2021.\r\n\n\nWe developed approaches for implementing durable data structures on NVRAM.  The goal here is to take advantage of the non-volatility of NVRAM so data can be properly recovered when the processor and main memory crash. We developed a general transformation that takes a lock-free data structure from a general class called traversal data structures (that we formally define) and transforms it into an implementation of the data structure for the NVRAM setting with proven durable linearizability and with high efficiency.  This work was published at PLDI 2020.  We later followed up on this work by developing a simple to use library, FLIT, for implementing durable data structures and algorithms using these techniques. This was published in PPoPP 2022.\r\n\n\nMotivated by the high cost of writes in NVRAM we developed writeback-aware caching strategies.  This problem modifies the traditional caching problem by explicitly accounting for the cost of writing data to memory.  This work was published in APOCS 2020 and received the best paper award.\r\n\n\nMotivated by emerging systems that support processing in memory (PIM) we developed models and algorithms for such systems.  In a PIM system, there is a standard multicore CPU, but also many small processors available in the memory banks.  The particular system we worked with was the UPMEM system, although we developed the PIM model that is agnostic to the details of a system.  Based on the model we developed various data structures.  Our original theoretical results appeared in SPAA 2021.  We then developed an efficient index (ordered map) data structure for the model and implemented it on the UPMEM system.  These results appeared in VLDB 2022, where it won the best-paper runner up.  We later also developed a trie data structure for the PIM model, which appeared in SPAA 2023, and a kd-tree data structure for nearest neighbor queries, which is work in progress.\r\n\n\nWe developed various tools for easily implementing concurrent data structures on shared memory machines.  This includes a portable lock-free reference counting library for C++ (PLDI 2022), a general approach for supporting lock-free locks (SPAA 2022 and PODC 2022), and an approach for taking efficiently taking snapshots of the memory state of a concurrent algorithm (PPoPP 2021 and PPoPP 2024).\r\n\n\nMost of the systems we developed are open source and many are reasonably widely used.  This include FLIT (library for persistent algorithms), PBBS (a benchmark suite of parallel algorithms), ParlayLib (a library for developing parallel algorithms), Verlib (a library supporting lock-free locks and snapshotting), and SAGE (our library of graph algorithms for NVRAM).  We are actively providing feedback to UPMEM, a startup selling first-generation PIM products, based on our research findings. We have developed and made publically available a streamlined version of UPMEM's CPU-PIM API. We are also providing feedback to Samsung and other companies that are exploring PIM.\r\n\n\n\r\n\n\nThe project supported 8 graduate students, four of which have received their PhD degrees, and all four have gone to faculty positions.  Two of them have since won the Principles of Distributed Computation Doctoral Dissertation award, and one was a co-recipient of the Kanellakis theory and practice award.\r\n\n\n\r\n\n\n\n\n\t\t\t\t\tLast Modified: 01/30/2025\n\n\t\t\t\t\tSubmitted by: GuyEBlelloch\n"
+ }
+}

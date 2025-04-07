@@ -1,0 +1,117 @@
+{
+ "awd_id": "1562578",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Sparse Integer Programming",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": "7032922443",
+ "po_email": "gaklutke@nsf.gov",
+ "po_sign_block_name": "Georgia-Ann Klutke",
+ "awd_eff_date": "2016-08-01",
+ "awd_exp_date": "2020-07-31",
+ "tot_intn_awd_amt": 293712.0,
+ "awd_amount": 293712.0,
+ "awd_min_amd_letter_date": "2016-06-02",
+ "awd_max_amd_letter_date": "2016-06-02",
+ "awd_abstract_narration": "Mixed-integer linear programming is a mathematical optimization framework that allows modeling discrete optimization problems that arise in various fields of engineering and business, such as chemical engineering, finance, forestry, health care, power systems, and supply-chain design. Most mixed-integer programming formulations that appear in these different areas of application involve very sparse constraint matrices. Many areas of scientific computing and optimization have been very successful in harnessing the effect of such sparsity of input data to improve the efficacy of algorithms. However, the use of sparsity of input data is a very under-explored direction of research in the context of mixed-integer linear programming algorithms. This award supports fundamental research for advancement of mixed-integer linear programming solver techniques for instances with sparse constraint matrices. Any improvement of the solvers obtained could result in significant gains to a large number of different applications. This project will support and train one PhD student who will be involved with all aspects of the research and dissemination of the results.\r\n\r\nThe goal of this research is to systematically investigate the mathematical implications of sparse data matrices and to use this as a starting point for development of new and improved algorithms for solving mixed-integer linear programs that exploit sparsity in a holistic fashion. If successful, this project will be able to uncover formal mathematical explanation for various empirically observed behavior of mixed-integer linear programs, such as: Why does selection of sparse cutting-planes for mixed-integer linear programs with sparse constraint matrix work well in many cases? Why does feasibility pump, an important primal heuristic, work much better on average for mixed-integer linear programs with sparse constraint matrices? Why does the proportion of integral vertices to the total number of vertices of the linear programming relaxation of binary mixed-integer linear programs increase on an average as the formulations become more sparse? Using such insights, the research project will explore various avenues of improving mixed-integer linear programming solvers in order to better exploit sparsity, such as a new paradigm for sparse cut selection, increasing sparsity by use of extended formulations and combining new and different types of heuristics targeted towards better performance on sparse mixed-integer programming instances.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Santanu",
+   "pi_last_name": "Dey",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Santanu Dey",
+   "pi_email_addr": "santanu.dey@isye.gatech.edu",
+   "nsf_id": "000557978",
+   "pi_start_date": "2016-06-02",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Tech Research Corporation",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320420",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "006Y00",
+   "pgm_ele_name": "OE Operations Engineering"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "071E",
+   "pgm_ref_txt": "MFG ENTERPRISE OPERATIONS"
+  },
+  {
+   "pgm_ref_code": "072E",
+   "pgm_ref_txt": "NETWORKS & QUEUING SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "073E",
+   "pgm_ref_txt": "OPTIMIZATION & DECISION MAKING"
+  },
+  {
+   "pgm_ref_code": "077E",
+   "pgm_ref_txt": "SIMULATION MODELS"
+  },
+  {
+   "pgm_ref_code": "078E",
+   "pgm_ref_txt": "ENTERPRISE DESIGN & LOGISTICS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 293712.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Mixed integer linear programming (MILP) technology has made significant progress over the last fifty years. MILP has a wide range of application: supply chair design, financial applications, power systems design and analysis, production planning, scheduling, IMRT treatment planning, etc. Commercial state-of-the-art MILP codes are stable and can quite often solve instances with up to tens of thousands of variables. However, numerous instances and classes of problems remain challenging to solve. In this project, we exploit the one consistent characteristic of most practical integer programming models: sparsity of the input data. Consider the following statistics: The average number of non-zero entries in the constraint matrix of MIPLIB 2010 instances (the standard benchmark instances) is 1.63%. Indeed, one never sees formulations of IPs where the matrix is very dense, for example all the variables appearing in all the constraints. Surprisingly, the use of sparsity of input data is a very under explored direction of research in the context of Integer Programming.</p>\n<p>Intellectual merit: In this project, we have made multiple theoretical in-roads into better understanding sparsity in the context of MILPs. The first question we consider is the use of sparse cutting-planes. Adding sparse cutting-planes promotes and maintains sparsity of the constraints matrix. This use of sparse cutting-planes may be viewed as a compromise between two competing objectives. On the one hand, the use of sparse cutting-planes aids in solving the linear programs encountered in the branch-&amp;-bound tree faster. On the other hand, it is possible that `important' facet-defining or valid inequalities for the convex hull of the feasible solutions are dense and thus without adding these cuts, one may not be able to attain significant integrality gap closure. This may lead to a larger branch-&amp;-bound tree and thus result in the solution time to increase. In order to answer these questions, we study the question of how well polytopes that represent convex of integer solutions can be approximated using sparse inequalities. We demonstrate conditions under which polytopes can be approximated well using sparse constraints. For example, we show that polytopes with \"few extreme\" (polynomial in dimension) extreme points can be well approximated using sparse inequalities. We then study how sparsity of the original formulation leads to prediction of correct support of sparse cuts to be used. In particular, we verify how for packing and covering integer programs, adding sparse cutting planes that match the sparsity of the original formulation, leads to strong cuts. &nbsp;In our second main study, we examine the role of sparsity in design of heuristics of general MILPs. We take a well-known heuristic for mixed integer linear program, the so-called feasibility pump. We show how taking sparsity into account can lead to the first provably convergent version of this heuristic. Finally, we study the question of using sparse cutting planes for semi-definite programming relaxations of integer programs. We are able to analyze the strength of such cuts.&nbsp;</p>\n<p>Broader impact: Our project has lead to algorithmic enhancements for solving integer programs faster. In particular, this work has lead to faster and better separation of certain kinds of cuts. It has lead to faster and better heuristics for MILPs. Improvement obtained via this project could potentially benefit users of MILP solvers.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/02/2020<br>\n\t\t\t\t\tModified by: Santanu&nbsp;Dey</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMixed integer linear programming (MILP) technology has made significant progress over the last fifty years. MILP has a wide range of application: supply chair design, financial applications, power systems design and analysis, production planning, scheduling, IMRT treatment planning, etc. Commercial state-of-the-art MILP codes are stable and can quite often solve instances with up to tens of thousands of variables. However, numerous instances and classes of problems remain challenging to solve. In this project, we exploit the one consistent characteristic of most practical integer programming models: sparsity of the input data. Consider the following statistics: The average number of non-zero entries in the constraint matrix of MIPLIB 2010 instances (the standard benchmark instances) is 1.63%. Indeed, one never sees formulations of IPs where the matrix is very dense, for example all the variables appearing in all the constraints. Surprisingly, the use of sparsity of input data is a very under explored direction of research in the context of Integer Programming.\n\nIntellectual merit: In this project, we have made multiple theoretical in-roads into better understanding sparsity in the context of MILPs. The first question we consider is the use of sparse cutting-planes. Adding sparse cutting-planes promotes and maintains sparsity of the constraints matrix. This use of sparse cutting-planes may be viewed as a compromise between two competing objectives. On the one hand, the use of sparse cutting-planes aids in solving the linear programs encountered in the branch-&amp;-bound tree faster. On the other hand, it is possible that `important' facet-defining or valid inequalities for the convex hull of the feasible solutions are dense and thus without adding these cuts, one may not be able to attain significant integrality gap closure. This may lead to a larger branch-&amp;-bound tree and thus result in the solution time to increase. In order to answer these questions, we study the question of how well polytopes that represent convex of integer solutions can be approximated using sparse inequalities. We demonstrate conditions under which polytopes can be approximated well using sparse constraints. For example, we show that polytopes with \"few extreme\" (polynomial in dimension) extreme points can be well approximated using sparse inequalities. We then study how sparsity of the original formulation leads to prediction of correct support of sparse cuts to be used. In particular, we verify how for packing and covering integer programs, adding sparse cutting planes that match the sparsity of the original formulation, leads to strong cuts.  In our second main study, we examine the role of sparsity in design of heuristics of general MILPs. We take a well-known heuristic for mixed integer linear program, the so-called feasibility pump. We show how taking sparsity into account can lead to the first provably convergent version of this heuristic. Finally, we study the question of using sparse cutting planes for semi-definite programming relaxations of integer programs. We are able to analyze the strength of such cuts. \n\nBroader impact: Our project has lead to algorithmic enhancements for solving integer programs faster. In particular, this work has lead to faster and better separation of certain kinds of cuts. It has lead to faster and better heuristics for MILPs. Improvement obtained via this project could potentially benefit users of MILP solvers.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 08/02/2020\n\n\t\t\t\t\tSubmitted by: Santanu Dey"
+ }
+}

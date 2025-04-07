@@ -1,0 +1,98 @@
+{
+ "awd_id": "2008884",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: CNS Core: Small: Scalable ACID Transactions for Persistent Memory Databases",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Erik Brunvand",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2022-05-31",
+ "tot_intn_awd_amt": 284985.0,
+ "awd_amount": 284985.0,
+ "awd_min_amd_letter_date": "2020-08-13",
+ "awd_max_amd_letter_date": "2020-10-19",
+ "awd_abstract_narration": "This project addresses the inability of current database systems to keep up with the ever growing demands of applications that analyze and extract information from machine-generated data sets, such as Internet-of-Things sensors and machine-learning systems. Intuitively, doubling a system's computing resources should double the load that the system can process per unit of time, but that is not true of today's databases: beyond a fairly modest system size, adding more computing resources does not scale to proportionate gains in performance.  The key reason is that databases, to perform correctly, must limit concurrent access to some critical data structures: adding more resources increases competition for access to these data structures, creating a bottleneck for the system's performance.  This project introduces a key innovation towards scalable databases. It frees the database from the need, whenever a databases record is modified,  to  immediately update  range indexes---a common form of data organization in databases that tend to become  a hotspot when databases try to scale up their computing resources. To remove this bottleneck, this project develops a  new scalable interface: per-processor-core queues absorb index updates and merge them  in the shared range index data structures periodically, in the background. Eliminating synchronous updates to range indices does not weaken the database guarantees:  the standard correctness criterion of serializability is achieved by globally ordering transactional updates using multi-part timestamps derived from a system-wide clock; data durability is achieved by storing per-core queues in non-volatile memory;  and a new data structure ensures that reads performed on individual records return their most-recently committed value.\r\n\r\nDatabases are a critical component of modern planet-scale applications. By eliminating scalability bottlenecks and leveraging emerging non volatile memory technology, this project will dramatically reduce the cost to provision databases. In particular, a large fraction of operational cost in multi-billion-dollar data centers is spent on powering a growing number of servers. Improving the scalability of multiple processor cores will increase the density of database deployments, reducing drastically the number of servers required to provision a database: the savings can defer the need for new data centers and storage devices, as more useful work is achieved with existing servers, or reduce energy consumption for existing workloads. The work will also influence  the education of the next generation of database engineers. Proposed lecture and project materials will prepare students to identify scalable database designs when responding to future changes in hardware and application workloads.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Simon",
+   "pi_last_name": "Peter",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Simon Peter",
+   "pi_email_addr": "simpeter@cs.washington.edu",
+   "nsf_id": "000724078",
+   "pi_start_date": "2020-08-13",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "The University of Texas at Austin",
+  "perf_str_addr": "3925 W Braker Lane, Suite 3340",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787595316",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "37",
+  "perf_st_cong_dist": "TX37",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 135295.0
+  }
+ ],
+ "por": null
+}

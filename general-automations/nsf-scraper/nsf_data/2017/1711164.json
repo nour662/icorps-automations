@@ -1,0 +1,105 @@
+{
+ "awd_id": "1711164",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "First Deployment of a Novel Imaging Correlator for Radio Astronomy with the Long Wavelength Array",
+ "cfda_num": "47.049",
+ "org_code": "03020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Zoran Ninkov",
+ "awd_eff_date": "2017-08-01",
+ "awd_exp_date": "2020-07-31",
+ "tot_intn_awd_amt": 112662.0,
+ "awd_amount": 112662.0,
+ "awd_min_amd_letter_date": "2017-07-21",
+ "awd_max_amd_letter_date": "2017-07-21",
+ "awd_abstract_narration": "Astronomical radio interferometry means combining signals from multiple radio telescopes to form a single coherent image.  Advances in computer hardware enable increasingly large-scale interferometers.  Such instruments will probe the early Universe and explore the radio sky in real-time.  This project will implement a new algorithm to enable computationally efficient interferometry on large arrays.  The algorithm has been shown to be effective in theory. Thyagarajan and collaborators will demonstrate it on real data.  They will use the Long Wavelength Array in La Sevilleta, New Mexico.  They will encode this algorithm in specialized hardware to enable a survey of astronomical radio transients. In addition to benefitting astronomy, this algorithm may find application wherever interferometry is used.  Applications include radar, acoustic interferometry used in oceanography, national security applications and medicine.\r\n\r\nComing advances in radio astronomy will be enabled by extremely large interferometers driven by high-performance, low-cost digital signal processing.  Progress toward large scale interferometry requires rethinking the correlator of an interferometer.  The correlator is the radio equivalent of a camera in an optical system. It cross-correlates signals from pairwise combinations of antennae.  Its computational requirements scale as O(N^2), where N is the number of antennae.  It dominates the cost and power consumption of large arrays.  This project will implement the Modular Optimal Frequency Fourier (MOFF) correlator concept, in which spatial Fast Fourier Transforms in the aperture plane reduce the computational complexity to O(N log N).  This potentially transformative advance enables larger arrays and the study of fast transients.  This project will implement the algorithm and demonstrate it on real-world data from the Long Wavelength Array at La Sevilleta, deploy a Graphical Processing Unit (GPU) based implementation, and use this method to demonstrate a transient search pipeline.  This project will demonstrate feasibility for future large scale interferometry projects such as HERA phase III.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "AST",
+ "org_div_long_name": "Division Of Astronomical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Gregory",
+   "pi_last_name": "Taylor",
+   "pi_mid_init": "B",
+   "pi_sufx_name": "",
+   "pi_full_name": "Gregory B Taylor",
+   "pi_email_addr": "gbtaylor@unm.edu",
+   "nsf_id": "000480714",
+   "pi_start_date": "2017-07-21",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of New Mexico",
+  "inst_street_address": "1 UNIVERSITY OF NEW MEXICO",
+  "inst_street_address_2": "",
+  "inst_city_name": "ALBUQUERQUE",
+  "inst_state_code": "NM",
+  "inst_state_name": "New Mexico",
+  "inst_phone_num": "5052774186",
+  "inst_zip_code": "871310001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "NM01",
+  "org_lgl_bus_name": "UNIVERSITY OF NEW MEXICO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "F6XLTRUQJEN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of New Mexico",
+  "perf_str_addr": "1 University of New Mexico",
+  "perf_city_name": "Albuquerque",
+  "perf_st_code": "NM",
+  "perf_st_name": "New Mexico",
+  "perf_zip_code": "871310001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "NM01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "121800",
+   "pgm_ele_name": "ADVANCED TECHNOLOGIES & INSTRM"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1207",
+   "pgm_ref_txt": "OBSERVATIONAL ASTRONOMY"
+  },
+  {
+   "pgm_ref_code": "7697",
+   "pgm_ref_txt": "INSTRUMENTATION"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 112662.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Through this award we implemented the first real-time deploymentof an all-sky, high time-resolution direct imager at radio&nbsp;frequencies.&nbsp; This capability makes use of our new E-field Parallel Imaging&nbsp;Correlator (EPIC) implemented at the Sevilleta station of the&nbsp;Long Wavelength Array (LWA-SV) in central New Mexico.&nbsp; The LWA-SV station consists of an array of 256 dipoles spread out over a&nbsp;100-m aperture and operates at frequencies between 3 and 90 MHz.&nbsp;&nbsp;A comparison between EPIC and traditional methods (see comparison image) reveals that the EPIC images faithfully reproduce the sky.&nbsp; A major advantage of EPIC over traditional methods is the higher time resolution achievable.&nbsp; This allows us to catch short duration events (timescales of 50 milliseconds or less) such as the meteor reflection event shown in the accompanying image.&nbsp;&nbsp;</p>\n<p>The LWA-SV station synthesizes a telescope with the equivalent sensitivity and resolution as a 100-m single dish telescope. Future radio telescopes may be comprised of thousands of individual elements as these are far more cost-effective than monolithic single dishes.&nbsp; Traditional synthesis imaging methods for radio antenna arrays require the cross correlation of each element with every other element in the array.&nbsp; This process, known as aperture synthesis, takes time and also requires large amounts of disk space if high time resolution is desired.&nbsp; EPIC works faster and more efficiently by directly imaging the signals from the individual elements.&nbsp; This new technique may allow astronomers to image large regions of the sky at high time resolution, thus revealing the dynamic radio sky.</p>\n<p>The recent discovery of mysterious Fast Radio Bursts (FRBs) has created a strong demand for sensitive new instruments to probe the sky at high time resolution.&nbsp; These FRBs may be visible for just a few milliseconds, and with the exception of a handful of repeating sources, can appear anywhere in the sky.&nbsp; At the same time, improvements in our knowledge require not just detection, but precise localization of the FRBs so that we can identify their origin. Pulsars with periods of just a few milliseconds are also of considerable current interest and even more exotic sources could be waiting for discovery.&nbsp;</p>\n<p>Furthermore, imaging techniques developed for astronomy have found other applications in the past.&nbsp; Aperture synthesis imaging is widely used for biological studies, medical applications, and navigation to name just a few examples.&nbsp; The higher speed imaging enabled by EPIC could potentially find important new applications.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/10/2020<br>\n\t\t\t\t\tModified by: Gregory&nbsp;B&nbsp;Taylor</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2020/1711164/1711164_10505188_1599706720105_comparison2--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1711164/1711164_10505188_1599706720105_comparison2--rgov-800width.jpg\" title=\"Comparison between EPIC and a traditional imaging algorithm (wsclean)\"><img src=\"/por/images/Reports/POR/2020/1711164/1711164_10505188_1599706720105_comparison2--rgov-66x44.jpg\" alt=\"Comparison between EPIC and a traditional imaging algorithm (wsclean)\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">An image of the sky made with our new EPIC direct imaging algorithm and an image made from the same data using traditional methods (wsclean).  Both images are quite similar with the bright radio galaxy Cygnus A prominent and embedded in galactic emission running N-S.</div>\n<div class=\"imageCredit\">The EPIC collaboration</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Gregory&nbsp;B&nbsp;Taylor</div>\n<div class=\"imageTitle\">Comparison between EPIC and a traditional imaging algorithm (wsclean)</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1711164/1711164_10505188_1599707019457_meteor--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1711164/1711164_10505188_1599707019457_meteor--rgov-800width.jpg\" title=\"Detection of a meteor with EPIC\"><img src=\"/por/images/Reports/POR/2020/1711164/1711164_10505188_1599707019457_meteor--rgov-66x44.jpg\" alt=\"Detection of a meteor with EPIC\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">All-sky image showing a meteor reflection detection (upper-center) during an observation using the LWA-SV site. The plasma left by the meteor impacting the atmosphere reflects the signal from a 55.25 MHz TV transmitter located beyond the horizon.</div>\n<div class=\"imageCredit\">The EPIC collaboration</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Gregory&nbsp;B&nbsp;Taylor</div>\n<div class=\"imageTitle\">Detection of a meteor with EPIC</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThrough this award we implemented the first real-time deploymentof an all-sky, high time-resolution direct imager at radio frequencies.  This capability makes use of our new E-field Parallel Imaging Correlator (EPIC) implemented at the Sevilleta station of the Long Wavelength Array (LWA-SV) in central New Mexico.  The LWA-SV station consists of an array of 256 dipoles spread out over a 100-m aperture and operates at frequencies between 3 and 90 MHz.  A comparison between EPIC and traditional methods (see comparison image) reveals that the EPIC images faithfully reproduce the sky.  A major advantage of EPIC over traditional methods is the higher time resolution achievable.  This allows us to catch short duration events (timescales of 50 milliseconds or less) such as the meteor reflection event shown in the accompanying image.  \n\nThe LWA-SV station synthesizes a telescope with the equivalent sensitivity and resolution as a 100-m single dish telescope. Future radio telescopes may be comprised of thousands of individual elements as these are far more cost-effective than monolithic single dishes.  Traditional synthesis imaging methods for radio antenna arrays require the cross correlation of each element with every other element in the array.  This process, known as aperture synthesis, takes time and also requires large amounts of disk space if high time resolution is desired.  EPIC works faster and more efficiently by directly imaging the signals from the individual elements.  This new technique may allow astronomers to image large regions of the sky at high time resolution, thus revealing the dynamic radio sky.\n\nThe recent discovery of mysterious Fast Radio Bursts (FRBs) has created a strong demand for sensitive new instruments to probe the sky at high time resolution.  These FRBs may be visible for just a few milliseconds, and with the exception of a handful of repeating sources, can appear anywhere in the sky.  At the same time, improvements in our knowledge require not just detection, but precise localization of the FRBs so that we can identify their origin. Pulsars with periods of just a few milliseconds are also of considerable current interest and even more exotic sources could be waiting for discovery. \n\nFurthermore, imaging techniques developed for astronomy have found other applications in the past.  Aperture synthesis imaging is widely used for biological studies, medical applications, and navigation to name just a few examples.  The higher speed imaging enabled by EPIC could potentially find important new applications.\n\n \n\n\t\t\t\t\tLast Modified: 09/10/2020\n\n\t\t\t\t\tSubmitted by: Gregory B Taylor"
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "awd_id": "1600818",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Research Initiation Award: Uncertainty Quantification of Multi-Phase Porous Media Flows on GPUs",
+ "cfda_num": "47.076",
+ "org_code": "11060000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Emanuel WAddell",
+ "awd_eff_date": "2016-06-01",
+ "awd_exp_date": "2021-05-31",
+ "tot_intn_awd_amt": 299208.0,
+ "awd_amount": 299208.0,
+ "awd_min_amd_letter_date": "2016-05-06",
+ "awd_max_amd_letter_date": "2016-05-06",
+ "awd_abstract_narration": "Research Initiation Awards provide support for junior and mid-career faculty at Historically Black Colleges and Universities who are building new research programs or redirecting and rebuilding existing research programs. It is expected that the award helps to further the faculty member's research capability and effectiveness, improves research and teaching at his home institution, and involves undergraduate students in research experiences. The award to Central State University has potential broader impact in a number of areas. The project seeks to employ a Bayesian framework on Graphics Processing Units (GPUs) for forecasting flows of the spatial distribution of subsurface properties, such as permeability and porosity. Undergraduate students will be involved in the project and a new course in high performance computing will be developed. \r\n\r\nIn oil recovery, carbon dioxide sequestration, or monitoring and remediation of aquifer contamination, it is often required to forecast quantities such as the fraction of oil in the produced fluid, carbon dioxide concentration, or concentration of contaminants, using subsurface fluid flow models with limited data. In this work, a Bayesian framework on Graphics Processing Units for forecasting flows will be employed. The main objectives of the project are to: expand the subsurface characterization in an existing Bayesian framework that employs a flow simulator on GPUs; improve experimental data fitting using the Bayesian statistical framework; and extend the improved framework to include a three-dimensional flow simulator on GPUs. To improve the characterization, a huff-puff technique will be employed, which consists of injecting a tracer for a short period of time into the subsurface during the huff phase, and monitoring the tracer during the puff phase.  Additionally, an ensemble Kalman filter for integrating permeability and porosity data at different spatial scales for reconstructing fine-scale spatial distributions of permeability and porosity will be used. Through collaboration with industry, the proposed Bayesian framework can be used to detect contaminants in water aquifers equipped with sensors.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "EDU",
+ "org_dir_long_name": "Directorate for STEM Education",
+ "div_abbr": "EES",
+ "org_div_long_name": "Div. of Equity for Excellence in STEM",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Arunasalam",
+   "pi_last_name": "Rahunanthan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Arunasalam Rahunanthan",
+   "pi_email_addr": "arahunanthan@centralstate.edu",
+   "nsf_id": "000695339",
+   "pi_start_date": "2016-05-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Central State University",
+  "inst_street_address": "1400 BRUSH ROW RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "WILBERFORCE",
+  "inst_state_code": "OH",
+  "inst_state_name": "Ohio",
+  "inst_phone_num": "5133766011",
+  "inst_zip_code": "453845800",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "OH10",
+  "org_lgl_bus_name": "CENTRAL STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "UZUVJXMDNZY6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Central State University",
+  "perf_str_addr": "1400 Brush Row Road",
+  "perf_city_name": "Wilberforce",
+  "perf_st_code": "OH",
+  "perf_st_name": "Ohio",
+  "perf_zip_code": "453841004",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "OH10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "159400",
+   "pgm_ele_name": "Hist Black Colleges and Univ"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9178",
+   "pgm_ref_txt": "UNDERGRADUATE EDUCATION"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0416",
+   "app_name": "NSF Education & Human Resource",
+   "app_symb_id": "040106",
+   "fund_code": "04001617DB",
+   "fund_name": "NSF Education & Human Resource",
+   "fund_symb_id": "040106"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 299208.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In oil recovery, carbon sequestration, or monitoring and remediation of aquifer contamination, it is often required to forecast quantities of interest, such as the fraction of oil in the produced fluid, carbon concentration, or concentration of contaminants, using subsurface fluid flow models with limited data. In this forecasting subsurface characterization is an important step. To characterize subsurface properties, one could establish a statistical description of the subsurface properties that are conditioned to existing dynamic data. A Markov Chain Monte Carlo (MCMC) algorithm in a Bayesian statistical description can be used to reconstruct the spatial distribution of subsurface properties, such as permeability and porosity.</p>\n<p>We considered a Bayesian statistical approach to characterize the permeability field in an aquifer. The MCMC algorithm requires the computation of the likelihood function for each proposal, which involves solving a set of partial differential equations and is computationally very expensive. Running a long MCMC chain for a very long period makes the method less attractive for the characterization of subsurface. In contrast, several short MCMC chains can substantially reduce computation time and can make the approach more suitable for our problem. However, the convergence of such MCMC chains should be carefully studied. In [1] we investigated the statistical convergence of a multi-MCMC approach. We determined that, although the rigorous convergence criterion may require more than 35000 MCMC iterations for convergence within a stochastic space of dimension 20, the primary quantity of interest for porous media flow applications can, in fact, be accurately estimated with about 10000 iterations. Thus, this finding makes MCMC methods more attractive for subsurface flow problems.</p>\n<p>In monitoring aquifer contamination, we considered multiple chains of a MCMC algorithm to sample the permeability field. In [2] we proposed a fitting procedure for the Multivariate Potential Scale Reduction Factor (MPSRF) data that allows us to estimate the number of iterations for convergence. Then we presented a careful analysis of ensembles of fractional curves. This analysis suggests that the number of iterations required for convergence through the MPSRF analysis was excessive. Thus, for practical applications in forecasting subsurface flows, our results give an indication that an analysis of the posterior distributions of quantities of interest provides a reliable criterion to terminate MCMC simulations.</p>\n<p>Using a GPU-based single-phase flow simulator we compared two frequently used MCMCs, the two-stage algorithm based on a random walk sampler and the DREAM in [3]. We confirmed that the DREAM converges much faster than the two-stage MCMC by comparing the corresponding PRSF and MPRSF curves. Moreover, a careful statistical analysis of ensembles of accepted fractional flow curves, produced by the two MCMCs, reveals that such ensembles share essentially the same average behavior. However, significant differences have been observed in the time-dependent variance curves as well as in the posterior distributions for those ensembles. This provides an indication that, for the purpose of making Monte Carlo predictive simulations, one might observe considerable differences in the results.</p>\n<p>Reduction of uncertainty can be accomplished by incorporating measurements at sparse locations in the prior distribution. In [4] we presented a new method to condition Gaussian fields to available sparse measurements. As in the previous work, a truncated Karhunen-Lo`eve Expansion (KLE) is used for the dimensional reduction. In the proposed method the imposition of static data is made through the projection of a sample onto the nullspace of a data matrix, that is defined in terms of the KLE. The numerical implementation of the proposed method is straightforward. Through numerical experiments for a model of second-order elliptic equation, we showed that the proposed method in multi-MCMC studies converges much faster than the MCMC method without conditioning.</p>\n<p>The project has produced four peer-reviewed publications. The results of the project have been presented in several local, national and international conferences. Several undergraduate students at the Central State University and two graduate students at the University of Texas at Dallas were trained in the simulation studies.</p>\n<p><strong>Related Publications:</strong></p>\n<p>[1] A. Mamun, F. Pereira, and A. Rahunanthan (2018), Convergence analysis of MCMC methods for subsurface flow problems. In Osvaldo Gervasi et al. (eds), Computational Science and Its Applications - ICCSA 2018, pages 305-317, Springer, Cham&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\n<p>[2] A. Mamun, J. Barber, V. Ginting, F. Pereira, and A. Rahunanthan (2020), Contaminant Transport Forecasting in the Subsurface Using a Bayesian Framework, Journal of Applied Mathematics and Computation, https://doi.org/10.1016/j.amc.2019.124980&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\n<p>[3] A. Ali, A. Al-Mamun, F. Pereira, A. Rahunanthan (2020), Markov Chain Monte Carlo Methods for Fluid Flow Forecasting in the Subsurface. In: Krzhizhanovskaya V. et al. (eds) Computational Science ? ICCS 2020, Lecture Notes in Computer Science, vol 1214, pages 757-771, Springer, Cham</p>\n<p>[4] A. Ali, A. Al Mamun, F. Pereira, and A. Rahunanthan (2021), Conditioning by Projection for the Sampling from Prior Gaussian Distributions. In Osvaldo Gervasi et al. (eds), Computational Science and Its Applications - ICCSA 2021, pages 653-669, Springer, Cham</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/28/2021<br>\n\t\t\t\t\tModified by: Arunasalam&nbsp;Rahunanthan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIn oil recovery, carbon sequestration, or monitoring and remediation of aquifer contamination, it is often required to forecast quantities of interest, such as the fraction of oil in the produced fluid, carbon concentration, or concentration of contaminants, using subsurface fluid flow models with limited data. In this forecasting subsurface characterization is an important step. To characterize subsurface properties, one could establish a statistical description of the subsurface properties that are conditioned to existing dynamic data. A Markov Chain Monte Carlo (MCMC) algorithm in a Bayesian statistical description can be used to reconstruct the spatial distribution of subsurface properties, such as permeability and porosity.\n\nWe considered a Bayesian statistical approach to characterize the permeability field in an aquifer. The MCMC algorithm requires the computation of the likelihood function for each proposal, which involves solving a set of partial differential equations and is computationally very expensive. Running a long MCMC chain for a very long period makes the method less attractive for the characterization of subsurface. In contrast, several short MCMC chains can substantially reduce computation time and can make the approach more suitable for our problem. However, the convergence of such MCMC chains should be carefully studied. In [1] we investigated the statistical convergence of a multi-MCMC approach. We determined that, although the rigorous convergence criterion may require more than 35000 MCMC iterations for convergence within a stochastic space of dimension 20, the primary quantity of interest for porous media flow applications can, in fact, be accurately estimated with about 10000 iterations. Thus, this finding makes MCMC methods more attractive for subsurface flow problems.\n\nIn monitoring aquifer contamination, we considered multiple chains of a MCMC algorithm to sample the permeability field. In [2] we proposed a fitting procedure for the Multivariate Potential Scale Reduction Factor (MPSRF) data that allows us to estimate the number of iterations for convergence. Then we presented a careful analysis of ensembles of fractional curves. This analysis suggests that the number of iterations required for convergence through the MPSRF analysis was excessive. Thus, for practical applications in forecasting subsurface flows, our results give an indication that an analysis of the posterior distributions of quantities of interest provides a reliable criterion to terminate MCMC simulations.\n\nUsing a GPU-based single-phase flow simulator we compared two frequently used MCMCs, the two-stage algorithm based on a random walk sampler and the DREAM in [3]. We confirmed that the DREAM converges much faster than the two-stage MCMC by comparing the corresponding PRSF and MPRSF curves. Moreover, a careful statistical analysis of ensembles of accepted fractional flow curves, produced by the two MCMCs, reveals that such ensembles share essentially the same average behavior. However, significant differences have been observed in the time-dependent variance curves as well as in the posterior distributions for those ensembles. This provides an indication that, for the purpose of making Monte Carlo predictive simulations, one might observe considerable differences in the results.\n\nReduction of uncertainty can be accomplished by incorporating measurements at sparse locations in the prior distribution. In [4] we presented a new method to condition Gaussian fields to available sparse measurements. As in the previous work, a truncated Karhunen-Lo`eve Expansion (KLE) is used for the dimensional reduction. In the proposed method the imposition of static data is made through the projection of a sample onto the nullspace of a data matrix, that is defined in terms of the KLE. The numerical implementation of the proposed method is straightforward. Through numerical experiments for a model of second-order elliptic equation, we showed that the proposed method in multi-MCMC studies converges much faster than the MCMC method without conditioning.\n\nThe project has produced four peer-reviewed publications. The results of the project have been presented in several local, national and international conferences. Several undergraduate students at the Central State University and two graduate students at the University of Texas at Dallas were trained in the simulation studies.\n\nRelated Publications:\n\n[1] A. Mamun, F. Pereira, and A. Rahunanthan (2018), Convergence analysis of MCMC methods for subsurface flow problems. In Osvaldo Gervasi et al. (eds), Computational Science and Its Applications - ICCSA 2018, pages 305-317, Springer, Cham             \n\n[2] A. Mamun, J. Barber, V. Ginting, F. Pereira, and A. Rahunanthan (2020), Contaminant Transport Forecasting in the Subsurface Using a Bayesian Framework, Journal of Applied Mathematics and Computation, https://doi.org/10.1016/j.amc.2019.124980                                                                        \n\n[3] A. Ali, A. Al-Mamun, F. Pereira, A. Rahunanthan (2020), Markov Chain Monte Carlo Methods for Fluid Flow Forecasting in the Subsurface. In: Krzhizhanovskaya V. et al. (eds) Computational Science ? ICCS 2020, Lecture Notes in Computer Science, vol 1214, pages 757-771, Springer, Cham\n\n[4] A. Ali, A. Al Mamun, F. Pereira, and A. Rahunanthan (2021), Conditioning by Projection for the Sampling from Prior Gaussian Distributions. In Osvaldo Gervasi et al. (eds), Computational Science and Its Applications - ICCSA 2021, pages 653-669, Springer, Cham\n\n \n\n \n\n\t\t\t\t\tLast Modified: 09/28/2021\n\n\t\t\t\t\tSubmitted by: Arunasalam Rahunanthan"
+ }
+}

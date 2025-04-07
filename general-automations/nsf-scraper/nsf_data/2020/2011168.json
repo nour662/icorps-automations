@@ -1,0 +1,113 @@
+{
+ "awd_id": "2011168",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: FoMR: Taming the Instruction Bottleneck in Modern Datacenter Applications",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Danella Zhao",
+ "awd_eff_date": "2020-07-01",
+ "awd_exp_date": "2023-06-30",
+ "tot_intn_awd_amt": 30000.0,
+ "awd_amount": 30000.0,
+ "awd_min_amd_letter_date": "2020-06-29",
+ "awd_max_amd_letter_date": "2020-06-29",
+ "awd_abstract_narration": "Data centers are the power plants that drive the digital economy. These warehouses filled with acres of computers, operated by the likes of Google, Facebook and Amazon, run the websites and apps that we use every day. Yet, as vast as these computing resources are, the amount of code they are tasked with running is larger still and growing at around 20% each year. This project will explore new hardware and software mechanisms to allow large data center programs to better fit within their limited computing resources, to improve data center program performance and energy efficiency, and reduce the toll that power-hungry data centers take on our planet.\r\n\r\nThis project will unfold in three stages. The first stage will leverage new hardware mechanisms for profiling program execution, to obtain an accurate picture of how a data center program is running at the hardware level. The second stage will use that profiling information to adjust the code of the program at runtime to make better use of on-chip caches. The third stage will use the profiling information from the first stage, integrated with new hardware support for code prefetching and code-aware cache replacement, to drive cache utilization even higher than in stage two. Taken together, these optimizations will accelerate data center programs and improve data center energy efficiency.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Joseph",
+   "pi_last_name": "Devietti",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Joseph Devietti",
+   "pi_email_addr": "devietti@cis.upenn.edu",
+   "nsf_id": "000642229",
+   "pi_start_date": "2020-06-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Pennsylvania",
+  "inst_street_address": "3451 WALNUT ST STE 440A",
+  "inst_street_address_2": "",
+  "inst_city_name": "PHILADELPHIA",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "2158987293",
+  "inst_zip_code": "191046205",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "PA03",
+  "org_lgl_bus_name": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA, THE",
+  "org_prnt_uei_num": "GM1XX56LEP58",
+  "org_uei_num": "GM1XX56LEP58"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Pennsylvania",
+  "perf_str_addr": "3330 WALNUT ST",
+  "perf_city_name": "PHILADELPHIA",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "191046389",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "PA03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "021Z",
+   "pgm_ref_txt": "Industry Partnerships"
+  },
+  {
+   "pgm_ref_code": "7798",
+   "pgm_ref_txt": "SOFTWARE & HARDWARE FOUNDATION"
+  },
+  {
+   "pgm_ref_code": "7941",
+   "pgm_ref_txt": "COMPUTER ARCHITECTURE"
+  },
+  {
+   "pgm_ref_code": "8585",
+   "pgm_ref_txt": "NSF/Intel Partnership Projects"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 30000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Data centers are the power plants that drive the digital economy. These warehouses filled with acres of computers, operated by the likes of Google, Facebook and Amazon, run the websites and apps that we use every day. Yet, as vast as these computing resources are, the amount of code they are tasked with running is larger still and growing at around 20% each year. This project explored new hardware and software mechanisms to allow large data center programs to better fit within their limited computing resources, to improve data center program performance and energy efficiency, and reduce the toll that power-hungry data centers take on our planet.</p>\n<p><br />Our work explored new techniques to adapt hardware and software to the specific program being run. We evaluated the benefits of intelligent management of capacity-limited first-level instruction caches, through new processor instructions for prefetching and cache evictions. We also evaluated similar hints for other front-end microarchitectural structures like branch target buffers. Finally, we proposed ways to adapt a program's code while it is running, to take better advantage of limited front-end resources by reorganizing the code around the control-flow paths that are taken most frequently.&nbsp;</p>\n<p><br />Research from this project resulted in papers at a range of top computer architecture conferences, several research awards for the undergraduates involved in these projects, one best paper award, and one graduated PhD student who took a tenure-track faculty position.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/30/2023<br>\n\t\t\t\t\tModified by: Joseph&nbsp;Devietti</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nData centers are the power plants that drive the digital economy. These warehouses filled with acres of computers, operated by the likes of Google, Facebook and Amazon, run the websites and apps that we use every day. Yet, as vast as these computing resources are, the amount of code they are tasked with running is larger still and growing at around 20% each year. This project explored new hardware and software mechanisms to allow large data center programs to better fit within their limited computing resources, to improve data center program performance and energy efficiency, and reduce the toll that power-hungry data centers take on our planet.\n\n\nOur work explored new techniques to adapt hardware and software to the specific program being run. We evaluated the benefits of intelligent management of capacity-limited first-level instruction caches, through new processor instructions for prefetching and cache evictions. We also evaluated similar hints for other front-end microarchitectural structures like branch target buffers. Finally, we proposed ways to adapt a program's code while it is running, to take better advantage of limited front-end resources by reorganizing the code around the control-flow paths that are taken most frequently. \n\n\nResearch from this project resulted in papers at a range of top computer architecture conferences, several research awards for the undergraduates involved in these projects, one best paper award, and one graduated PhD student who took a tenure-track faculty position.\n\n \n\n\t\t\t\t\tLast Modified: 10/30/2023\n\n\t\t\t\t\tSubmitted by: Joseph Devietti"
+ }
+}

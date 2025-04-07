@@ -1,0 +1,113 @@
+{
+ "awd_id": "1620396",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Parallel Multiscale Algorithms for Dynamical Systems",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Leland Jameson",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2019-08-31",
+ "tot_intn_awd_amt": 349983.0,
+ "awd_amount": 349983.0,
+ "awd_min_amd_letter_date": "2016-09-03",
+ "awd_max_amd_letter_date": "2016-09-03",
+ "awd_abstract_narration": "The proposed research will open important problem classes for realistic computer simulation on future massively parallel computer architectures. The targeted areas are dynamical phenomena with strong variations in time. Typical processes that will benefit from this improved simulation capability are, for example, molecular dynamics for chemical and biological systems, vibrating mechanical systems, systems biological phenomena, atmospheric flow and seismic wave propagation. The novel computational methods and theoretical understanding will introduce new paradigms in the numerical solutions of challenging dynamical systems with a potential for many future realistic applications. The training of students in these fields is also very important, as they will shape the future of the development of multiscale modeling and high performance computing in academia and industry.\r\n\r\nTime dependent systems that have highly oscillatory solutions can be found in many important fields of science and engineering, and they present great challenges both in analysis and in scientific computation. A major focus of research activities has been on the development of multiscale methods for such systems that focus on the effective behavior of these systems without resolution of all details. The PIs propose to develop a new framework addressing some of the core problems of scientific computing for the coming years. This will be done in two directions. In one the earlier techniques will be generalized to infinite dimensional oscillatory systems with application to seismic wave propagation. The other direction will exploit next generation massively parallel computer systems. The multiscale models for effective behavior will be used as coarse solvers to resolve important obstacles in the challenging parallel-in-time or parareal computation. The results will facilitate further synergistic advancement in the field of multiscale modeling in general.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Bjorn",
+   "pi_last_name": "Engquist",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Bjorn Engquist",
+   "pi_email_addr": "engquist@math.utexas.edu",
+   "nsf_id": "000455499",
+   "pi_start_date": "2016-09-03",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Yen-Hsi",
+   "pi_last_name": "Tsai",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yen-Hsi Tsai",
+   "pi_email_addr": "ytsai@math.utexas.edu",
+   "nsf_id": "000490208",
+   "pi_start_date": "2016-09-03",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Institute for Computational Engineering and Sciences",
+  "perf_str_addr": "201 E. 24th Street, MS: CO200",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787121229",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "25",
+  "perf_st_cong_dist": "TX25",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 349983.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>We have proposed a framework for developing new algorithms that are capable of further exploiting the capability of new supercomputers.&nbsp;</p>\n<p>The framework enables and regulates the use of&nbsp;computed&nbsp;data to enhance new computations in a specific way that improves the stability of the overall process as well as the accuracy in the final simulations.&nbsp;</p>\n<p>Under this framework, we have developed some algorithms and tested them on some important model problems.&nbsp;</p>\n<p>The algorithms&nbsp;allow many CPUs to be used simultaneously to compute dynamical systems whose solutions have features in many different time scales. This project targeted at time-dependent&nbsp;problems in which very little diffusion is present --- this means that small errors made in any approximation will typically not disappear and thus algorithms tend to be less stable. Our analysis reveals that it is possible to use already computed data to improve the stability --- the way in how data is used may vary depending on the properties of the phenomena being simulated.&nbsp;</p>\n<p>For certain challenging problems, the more classical approaches may face bottlenecks that are difficult to overcome. Our finding suggests that the framework can serve as a platform to incorporate deep learning style supervised algorithms as components, and thus opens the door to simulate complex scenarios that are beyond the reach of the more classical approaches (given a fixed computational budget).</p>\n<p>This project has provided training opportunities to more than 6 graduate students. Two students have obtained their PhDs with topics coming out of this project. Two more will graduate this year.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/14/2019<br>\n\t\t\t\t\tModified by: Yen-Hsi&nbsp;Tsai</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2019/1620396/1620396_10458660_1571078285785_Marmousi-errors--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2019/1620396/1620396_10458660_1571078285785_Marmousi-errors--rgov-800width.jpg\" title=\"Errors in the simulation using the Marmousi wave speed\"><img src=\"/por/images/Reports/POR/2019/1620396/1620396_10458660_1571078285785_Marmousi-errors--rgov-66x44.jpg\" alt=\"Errors in the simulation using the Marmousi wave speed\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Errors in the wave energy as iteration increases from top left to bottom right.</div>\n<div class=\"imageCredit\">Hieu Nguyen and Richard Tsai</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Yen-Hsi&nbsp;Tsai</div>\n<div class=\"imageTitle\">Errors in the simulation using the Marmousi wave speed</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2019/1620396/1620396_10458660_1571071478924_Kepler-improvement-diagram--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2019/1620396/1620396_10458660_1571071478924_Kepler-improvement-diagram--rgov-800width.jpg\" title=\"Kepler's two body problem in 3D\"><img src=\"/por/images/Reports/POR/2019/1620396/1620396_10458660_1571071478924_Kepler-improvement-diagram--rgov-66x44.jpg\" alt=\"Kepler's two body problem in 3D\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Two comparisons of the developed algorithm (right column) and a previous state-of-the-art (left column). The colors in the plots reveal the number of correct digits indicated by the vertical bars. The two rows correspond to different setups of the problem.</div>\n<div class=\"imageCredit\">Hieu Nguyen</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Yen-Hsi&nbsp;Tsai</div>\n<div class=\"imageTitle\">Kepler's two body problem in 3D</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nWe have proposed a framework for developing new algorithms that are capable of further exploiting the capability of new supercomputers. \n\nThe framework enables and regulates the use of computed data to enhance new computations in a specific way that improves the stability of the overall process as well as the accuracy in the final simulations. \n\nUnder this framework, we have developed some algorithms and tested them on some important model problems. \n\nThe algorithms allow many CPUs to be used simultaneously to compute dynamical systems whose solutions have features in many different time scales. This project targeted at time-dependent problems in which very little diffusion is present --- this means that small errors made in any approximation will typically not disappear and thus algorithms tend to be less stable. Our analysis reveals that it is possible to use already computed data to improve the stability --- the way in how data is used may vary depending on the properties of the phenomena being simulated. \n\nFor certain challenging problems, the more classical approaches may face bottlenecks that are difficult to overcome. Our finding suggests that the framework can serve as a platform to incorporate deep learning style supervised algorithms as components, and thus opens the door to simulate complex scenarios that are beyond the reach of the more classical approaches (given a fixed computational budget).\n\nThis project has provided training opportunities to more than 6 graduate students. Two students have obtained their PhDs with topics coming out of this project. Two more will graduate this year. \n\n \n\n\t\t\t\t\tLast Modified: 10/14/2019\n\n\t\t\t\t\tSubmitted by: Yen-Hsi Tsai"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1617892",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: S3: Statistical and Structural Analysis for Spreadsheets",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 347400.0,
+ "awd_amount": 347400.0,
+ "awd_min_amd_letter_date": "2016-08-26",
+ "awd_max_amd_letter_date": "2016-08-26",
+ "awd_abstract_narration": "Spreadsheets are the most commonly used programming environment in the world; there are more than 750 million users of Microsoft Excel alone. Spreadsheets are widely used in government, scientific, and financial settings; over 95% of US firms use them for financial reporting and 85% use them for budgeting and forecasting. Unfortunately, errors are endemic to spreadsheets; a recent study found an error rate of over 95%. Spreadsheet errors have had catastrophic consequences, leading to losses of billions of dollars. This project uses automatic analysis techniques designed specifically for spreadsheets to (a) automatically detect and help prevent errors in spreadsheets, dramatically increasing the reliability of their calculations, (b) reduce the risks of serious mistakes, and (c) potentially save the economy millions if not billions of dollars.\r\n\r\nThis project develops statistical and structural analyses for spreadsheets (S3). Spreadsheets have unique features that make them different from standard programming languages, and thus demand new program analyses that exploit their characteristics. S3 employs statistical analyses over the spatial and deep structure of spreadsheet formulas to identify spreadsheet cells that are highly  anomalous and thus likely to be wrong. S3 reduces the problem of finding data and formula errors to that of finding anomalous structures via a novel vector representation that combines spatial and structural information (including patterns of dependencies). Applying statistical analyses across these vectors can then identify formulas that are highly unusual in any dimension, and thus likely to be wrong. S3 operates both at an individual spreadsheet level and also incorporates learned models of spreadsheet usage from large bodies of existing spreadsheets to condition the analysis and further reduce false positive rates.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Emery",
+   "pi_last_name": "Berger",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "Emery D Berger",
+   "pi_email_addr": "emery@cs.umass.edu",
+   "nsf_id": "000483414",
+   "pi_start_date": "2016-08-26",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Massachusetts Amherst",
+  "inst_street_address": "101 COMMONWEALTH AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "AMHERST",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "4135450698",
+  "inst_zip_code": "010039252",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "MA02",
+  "org_lgl_bus_name": "UNIVERSITY OF MASSACHUSETTS",
+  "org_prnt_uei_num": "VGJHK59NMPK9",
+  "org_uei_num": "VGJHK59NMPK9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Massachusetts Amherst",
+  "perf_str_addr": "70 Butterfield Terrace",
+  "perf_city_name": "Amherst",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "010039242",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "MA02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7944",
+   "pgm_ref_txt": "SOFTWARE ENG & FORMAL METHODS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 347400.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-fc008fc8-7fff-c089-7680-78d322cc9762\"> </span></p>\n<p dir=\"ltr\"><span>Spreadsheets are the most widely used programming tool. There are an estimated two billion users of the most popular spreadsheet applications, Microsoft Excel and Google Sheets. Because spreadsheets are used in a settings where correctness is essential, from scientific research to financial modeling, spreadsheet errors can have dramatic consequences.&nbsp;Spreadsheet errors have led to incorrect scientific conclusions and billions of dollars of losses.</span></p>\n<p dir=\"ltr\"><span>Our work addresses the challenge of identifying these errors. Unlike conventional text-based programming languages, which contain numerous facilities that help prevent errors (including testing and type checking), spreadsheet programs are much more flexible and therefore more prone to error. For example, users are free to write any value or formula in any cell. This freedom makes it easy for users to create spreadsheets but also easy to accidentally introduce errors. It also makes it impossible to apply the many techniques used to prevent errors in conventional programming languages.</span></p>\n<p dir=\"ltr\"><span>Our key insight is that spreadsheet calculations are partially structured: while they are technically free to write spreadsheets in any form they choose, users do not typically do so. Instead, spreadsheets are often structured into regions of rows and columns. One explanation for this structure is that spreadsheet applications incentivize rectangular layouts by providing tools that work best on data in that form. For example, summing a row or a column just requires entering the start and end cells of the region, but summing a number of arbitrary cells requires entering every single cell.</span></p>\n<p dir=\"ltr\"><span>We developed a tool called ExceLint that finds spreadsheet errors with high accuracy. ExceLint works by inferring a program's regular structure and then identifies those formulas with \"surprising\" differences as likely errors. Our notion of \"surprise\" borrows from a concept called ?entropy? from the field of information theory.&nbsp; Surprise captures whether a formula is unusual when compared against neighboring regions of a spreadsheet. When a surprising cell is identified, ExceLint performs a simple experiment: it attempts to fix a cell by replacing it with one of its neighbors. If any replacement has a large effect on the overall entropy of the spreadsheet, reducing its overall surprise, ExceLint considers it a likely error.</span></p>\n<p dir=\"ltr\"><span>ExceLint is highly effective: in our experiments, when ExceLint reports an error, it is almost always an actual spreadsheet error. Because ExceLint's model of surprise relies on generating a candidate fix, in recent work, we have modified ExceLint to generate this fix and present it to the user. Our evaluation shows that these fixes are almost always correct.</span></p>\n<p dir=\"ltr\"><span>Recently, we have also extended the ExceLint algorithm to address a related but different problem: formula autocompletion. Again, we use ExceLint's model of spreadsheet surprise, but in autocompletion mode, ExceLint generates the least surprising formula for a given blank cell.</span></p>\n<p dir=\"ltr\"><span>As long as the spreadsheet contains some contextual information---like any other formulas---ExceLint can generate good suggestions. In our testing, this approach is highly effective; we are in the process of evaluating the effectiveness of this approach at scale.</span></p>\n<p dir=\"ltr\"><span>Since spreadsheet users are generally not expert programmers, we designed ExceLint&nbsp; specifically to provide assistance with intuitive visualizations and user prompts. ExceLint runs in either a whole sheet audit mode (where the user clicks and ExceLint analyzes the entire spreadsheet) or incrementally (updating whenever the user types a formula).</span></p>\n<p dir=\"ltr\"><span>When whole sheet auditing is activated, ExceLint displays a color map, a high-level visualization of a spreadsheet's \"regions of formula similarity.\" ExceLint overlays colors on the spreadsheet, with different formulas colored differently. This approach makes surprising \"outliers\" immediately visible to the eye. The audit mode also captures this intuition to perform an analysis automatically, providing the user with a rank ordering of the most surprising cells, and the corresponding proposed fixes.</span></p>\n<p dir=\"ltr\"><span>ExceLint's incremental analysis updates whenever the user presses a key while typing a formula. It presents the user with a small set of rank-ordered suggestions from an inline menu, from the moment they start entering a formula.</span></p>\n<p dir=\"ltr\"><span>ExceLint is currently available as an optional open source add-in to Excel; we are currently working with our partners at Microsoft to integrate ExceLint into Microsoft Excel. This effort has led to a number of innovations. For example, while the original ExceLint sheet audit task took between 5 and 30 seconds to run, Microsoft needed it to complete in one millisecond. To meet this goal, we needed to make ExceLint run almost 10,000 times faster while providing the same level of accuracy. We achieved this dramatic improvement by a number of technical improvements, including reformulating the core algorithm to drastically reduce the work that ExceLint performs. Instead of performing an analysis all at once, ExceLint instead performs a partial analysis at each keypress, incrementally accumulating data as it runs. We continue to work with Microsoft to evaluate ExceLint's functionality in the context of the company's stringent privacy constraints.</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/02/2022<br>\n\t\t\t\t\tModified by: Emery&nbsp;Berger</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2022/1617892/1617892_10455275_1654214689366_ScreenShot2022-06-02at7.57.38PM--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1617892/1617892_10455275_1654214689366_ScreenShot2022-06-02at7.57.38PM--rgov-800width.jpg\" title=\"ExceLint whole sheet analysis\"><img src=\"/por/images/Reports/POR/2022/1617892/1617892_10455275_1654214689366_ScreenShot2022-06-02at7.57.38PM--rgov-66x44.jpg\" alt=\"ExceLint whole sheet analysis\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">A demonstration of ExceLint's whole sheet analysis, running inside Microsoft Excel as an add-in. ExceLint colors rectangular regions containing the same function structure with the same color, making errors visually obvious. The right side of the pane lists errors ranked by their likelihood.</div>\n<div class=\"imageCredit\">Emery Berger</div>\n<div class=\"imagePermisssions\">Royalty-free (unrestricted use)</div>\n<div class=\"imageSubmitted\">Emery&nbsp;Berger</div>\n<div class=\"imageTitle\">ExceLint whole sheet analysis</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\n \nSpreadsheets are the most widely used programming tool. There are an estimated two billion users of the most popular spreadsheet applications, Microsoft Excel and Google Sheets. Because spreadsheets are used in a settings where correctness is essential, from scientific research to financial modeling, spreadsheet errors can have dramatic consequences. Spreadsheet errors have led to incorrect scientific conclusions and billions of dollars of losses.\nOur work addresses the challenge of identifying these errors. Unlike conventional text-based programming languages, which contain numerous facilities that help prevent errors (including testing and type checking), spreadsheet programs are much more flexible and therefore more prone to error. For example, users are free to write any value or formula in any cell. This freedom makes it easy for users to create spreadsheets but also easy to accidentally introduce errors. It also makes it impossible to apply the many techniques used to prevent errors in conventional programming languages.\nOur key insight is that spreadsheet calculations are partially structured: while they are technically free to write spreadsheets in any form they choose, users do not typically do so. Instead, spreadsheets are often structured into regions of rows and columns. One explanation for this structure is that spreadsheet applications incentivize rectangular layouts by providing tools that work best on data in that form. For example, summing a row or a column just requires entering the start and end cells of the region, but summing a number of arbitrary cells requires entering every single cell.\nWe developed a tool called ExceLint that finds spreadsheet errors with high accuracy. ExceLint works by inferring a program's regular structure and then identifies those formulas with \"surprising\" differences as likely errors. Our notion of \"surprise\" borrows from a concept called ?entropy? from the field of information theory.  Surprise captures whether a formula is unusual when compared against neighboring regions of a spreadsheet. When a surprising cell is identified, ExceLint performs a simple experiment: it attempts to fix a cell by replacing it with one of its neighbors. If any replacement has a large effect on the overall entropy of the spreadsheet, reducing its overall surprise, ExceLint considers it a likely error.\nExceLint is highly effective: in our experiments, when ExceLint reports an error, it is almost always an actual spreadsheet error. Because ExceLint's model of surprise relies on generating a candidate fix, in recent work, we have modified ExceLint to generate this fix and present it to the user. Our evaluation shows that these fixes are almost always correct.\nRecently, we have also extended the ExceLint algorithm to address a related but different problem: formula autocompletion. Again, we use ExceLint's model of spreadsheet surprise, but in autocompletion mode, ExceLint generates the least surprising formula for a given blank cell.\nAs long as the spreadsheet contains some contextual information---like any other formulas---ExceLint can generate good suggestions. In our testing, this approach is highly effective; we are in the process of evaluating the effectiveness of this approach at scale.\nSince spreadsheet users are generally not expert programmers, we designed ExceLint  specifically to provide assistance with intuitive visualizations and user prompts. ExceLint runs in either a whole sheet audit mode (where the user clicks and ExceLint analyzes the entire spreadsheet) or incrementally (updating whenever the user types a formula).\nWhen whole sheet auditing is activated, ExceLint displays a color map, a high-level visualization of a spreadsheet's \"regions of formula similarity.\" ExceLint overlays colors on the spreadsheet, with different formulas colored differently. This approach makes surprising \"outliers\" immediately visible to the eye. The audit mode also captures this intuition to perform an analysis automatically, providing the user with a rank ordering of the most surprising cells, and the corresponding proposed fixes.\nExceLint's incremental analysis updates whenever the user presses a key while typing a formula. It presents the user with a small set of rank-ordered suggestions from an inline menu, from the moment they start entering a formula.\nExceLint is currently available as an optional open source add-in to Excel; we are currently working with our partners at Microsoft to integrate ExceLint into Microsoft Excel. This effort has led to a number of innovations. For example, while the original ExceLint sheet audit task took between 5 and 30 seconds to run, Microsoft needed it to complete in one millisecond. To meet this goal, we needed to make ExceLint run almost 10,000 times faster while providing the same level of accuracy. We achieved this dramatic improvement by a number of technical improvements, including reformulating the core algorithm to drastically reduce the work that ExceLint performs. Instead of performing an analysis all at once, ExceLint instead performs a partial analysis at each keypress, incrementally accumulating data as it runs. We continue to work with Microsoft to evaluate ExceLint's functionality in the context of the company's stringent privacy constraints.\n\n \n\n\t\t\t\t\tLast Modified: 06/02/2022\n\n\t\t\t\t\tSubmitted by: Emery Berger"
+ }
+}

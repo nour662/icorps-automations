@@ -1,0 +1,137 @@
+{
+ "awd_id": "1740218",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NSCI: SI2-SSE: An Extensible Model to Support Scalable Checkpoint-Restart for DMTCP Across Multiple Disciplines",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Seung-Jong Park",
+ "awd_eff_date": "2018-01-01",
+ "awd_exp_date": "2021-12-31",
+ "tot_intn_awd_amt": 400000.0,
+ "awd_amount": 408000.0,
+ "awd_min_amd_letter_date": "2017-08-29",
+ "awd_max_amd_letter_date": "2020-10-15",
+ "awd_abstract_narration": "Checkpointing is a technique that periodically saves the state of a long-running computer program to disk.  If a computer crash occurs during the running of the program, one can then restart the program state from a previously saved \"checkpoint\" file on disk. The goal of this project is to discover, implement and deploy novel techniques for adapting checkpointing so as to provide a more robust capability easily usable across applications supporting the research of a variety of scientific and engineering disciplines. In particular, a problem with the classic (transparent) checkpoint model is that these packages do not model, and hence cannot recreate upon restart, communications between the original program and other external processes or programs.  In this project, a virtualization model for commonly used mechanisms for communication will be developed so that on restart, external communications are emulated. Checkpointing is used across academia, industry, and government,  particularly  by those with long-running high performance computing programs.  Thus, the project  outcomes have broad applicability and value.  The project has the added benefit of educating the next generation of students in valuable and highly transferable system skills. \r\n\r\nToday, transparent checkpoint-restart today is used primarily for fault tolerance, and primarily in closed systems with no external communication.  DMTCP is a twelve-year old open source checkpointing project.  Its currently evolving process virtualization model of checkpointing enables an application to support complex applications that interact with external subsystems.  The project explores and extends a model of process virtualization in order to adapt checkpoint-restart to multiple, novel applications, and to extend its use across multiple scientific and engineering disciplines.  Example disciplines that will benefit include:  supercomputing (and in particular, forging a path toward practical exascale checkpointing); novel strategies for flexible resource managers (batch queues) for computer clusters that adapt to the current workload; and better support for hardware circuit emulators for Electronic Design Automation (EDA).  Example challenges include the need to support transparent checkpointing over the newer low-latency networks such as Omni-Path, integration of application-specific checkpointing with transparent DMTCP-style checkpointing, the need to avoid \"flooding\" back-end storage during checkpointing in high-end clusters, and new types of resource managers that benefit from the flexibility of arbitrarily suspending running jobs through checkpointing.  Rather than build ad hoc solutions for each of the above, this work will provide a simple model allowing end users to easily build their own extensions to support checkpointing of the external subsystems.  The simple model will be derived by generalizing over solutions to many of the example challenges described above.  In addition to fault tolerance, the technology holds advantages for:  fast startup (checkpoint after process initialization,in order to restart and skip this phase in future sessions); debugging (e.g. checkpoint every 30 seconds); reproducible bug reports; extended interactive sessions (e.g. checkpoint before dinner and restart the next day); and so on.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Gene",
+   "pi_last_name": "Cooperman",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Gene Cooperman",
+   "pi_email_addr": "gene@ccs.neu.edu",
+   "nsf_id": "000191040",
+   "pi_start_date": "2017-08-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Northeastern University",
+  "inst_street_address": "360 HUNTINGTON AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "BOSTON",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6173735600",
+  "inst_zip_code": "021155005",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "NORTHEASTERN UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HLTMVS2JZBS6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Northeastern University",
+  "perf_str_addr": "360 Huntington Avenue",
+  "perf_city_name": "Boston",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021155005",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "723100",
+   "pgm_ele_name": "CYBERINFRASTRUCTURE"
+  },
+  {
+   "pgm_ele_code": "800400",
+   "pgm_ele_name": "Software Institutes"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "077Z",
+   "pgm_ref_txt": "CSSI-1: Cyberinfr for Sustained Scientif"
+  },
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "8004",
+   "pgm_ref_txt": "Software Institutes"
+  },
+  {
+   "pgm_ref_code": "8005",
+   "pgm_ref_txt": "Scientific Software Elements"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 400000.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 8000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Checkpoint-restart is the ability to save the state of a running application to disk, and then to restore it later and continue executing it.&nbsp; The outcomes relate to scalable checkpoint-restart.&nbsp; Most of the results were created by extending DMTCP, a checkpoint-restart package that has been developed and extended over 15 years.&nbsp; In order to accomplish this, a new split-process model was developed that can support the newer RDMA-based networks that are being developed for High Performance Computing (HPC).</p>\n<p>A notable accomplishment is to use the split-process model to develop a robust, efficient package, MANA, on top of DMTCP, for checkpointing large MPI-based parallel computations.&nbsp; As a result of this work, a more robust version of MANA has been developed in collaboration with the NERSC supercomputing center, and it is being tested for eventual use in production workloads.</p>\n<p>Similarly, CRAC is a package based on DMTCP that can checkpoint GPU-based computations.&nbsp; GPUs are being used increasingly as an accelerator for large parallel computations.</p>\n<p>Other examples of the outcomes include: migration in HPC clusters; the development of \"in-vivo model checking\"; a technique that in combination with checkpointing, will be effective for debugging software; and the application of related ideas to the Cloud and deployment of containers (e.g., of Docker) in the Cloud.</p>\n<p>Dissemination of these ideas in the scientific community has been accomplished in numerous ways.&nbsp; As examples:&nbsp; the PI gave a keynote talk, \"Why Can't I Checkpoint That?\" at the <span>First International Symposium on Checkpointing for Supercomputing (SuperCheck21) in 2021; and the PI gave a talk at Microsoft Research Laboratory, \"Checkpointing the Un-checkpointable: the Split-Process Approach for MPI and Formal Verification\", in 2019 .&nbsp; Both talks are available on the web as slides and as videos of the talks.</span></p>\n<p><span>Separately, the latest versions of the MANA and CRAC open-source code are available on github.com.&nbsp; And several conference proceedings in the open literature report on all of the topics described above.</span></p>\n<p><span>As part of extending this work to make it available to scientists, the PI has worked on multiple, high-profile scientific applications, including VASP, Gromacs, and SPAdes.&nbsp; Feedback from scientists and HPC system administrators was used in setting priorities and in steering the future development of MANA and DMTCP.</span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/05/2022<br>\n\t\t\t\t\tModified by: Gene&nbsp;Cooperman</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2022/1740218/1740218_10519200_1649789841614_mana-split-process--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1740218/1740218_10519200_1649789841614_mana-split-process--rgov-800width.jpg\" title=\"Split Process concept for MANA/MPI\"><img src=\"/por/images/Reports/POR/2022/1740218/1740218_10519200_1649789841614_mana-split-process--rgov-66x44.jpg\" alt=\"Split Process concept for MANA/MPI\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">The upper half and lower half are two independently loaded programs in a single address space for a single process. At checkpoint time, the upper half memory is saved into a checkpoint image file. At restart time, a new lower-half program is launched, which restores the upper-half from a ckpt file.</div>\n<div class=\"imageCredit\">Rohan Garg, Gregory Price, and Gene Cooperman</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Gene&nbsp;Cooperman</div>\n<div class=\"imageTitle\">Split Process concept for MANA/MPI</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2022/1740218/1740218_10519200_1649790161925_split-process-detail--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1740218/1740218_10519200_1649790161925_split-process-detail--rgov-800width.jpg\" title=\"Split-process detail:  binding upper and lower half\"><img src=\"/por/images/Reports/POR/2022/1740218/1740218_10519200_1649790161925_split-process-detail--rgov-66x44.jpg\" alt=\"Split-process detail:  binding upper and lower half\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">The details of binding the upper and lower half of a split process are shown, using the example of MPI.  The same technique works for CUDA and other examples.  On restart, a fresh program is launched, which restores the upper half, and then re-binds the upper half to the lower half.</div>\n<div class=\"imageCredit\">Twinkle Jain and Gene Cooperman</div>\n<div class=\"imagePermisssions\">Creative Commons</div>\n<div class=\"imageSubmitted\">Gene&nbsp;Cooperman</div>\n<div class=\"imageTitle\">Split-process detail:  binding upper and lower half</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nCheckpoint-restart is the ability to save the state of a running application to disk, and then to restore it later and continue executing it.  The outcomes relate to scalable checkpoint-restart.  Most of the results were created by extending DMTCP, a checkpoint-restart package that has been developed and extended over 15 years.  In order to accomplish this, a new split-process model was developed that can support the newer RDMA-based networks that are being developed for High Performance Computing (HPC).\n\nA notable accomplishment is to use the split-process model to develop a robust, efficient package, MANA, on top of DMTCP, for checkpointing large MPI-based parallel computations.  As a result of this work, a more robust version of MANA has been developed in collaboration with the NERSC supercomputing center, and it is being tested for eventual use in production workloads.\n\nSimilarly, CRAC is a package based on DMTCP that can checkpoint GPU-based computations.  GPUs are being used increasingly as an accelerator for large parallel computations.\n\nOther examples of the outcomes include: migration in HPC clusters; the development of \"in-vivo model checking\"; a technique that in combination with checkpointing, will be effective for debugging software; and the application of related ideas to the Cloud and deployment of containers (e.g., of Docker) in the Cloud.\n\nDissemination of these ideas in the scientific community has been accomplished in numerous ways.  As examples:  the PI gave a keynote talk, \"Why Can't I Checkpoint That?\" at the First International Symposium on Checkpointing for Supercomputing (SuperCheck21) in 2021; and the PI gave a talk at Microsoft Research Laboratory, \"Checkpointing the Un-checkpointable: the Split-Process Approach for MPI and Formal Verification\", in 2019 .  Both talks are available on the web as slides and as videos of the talks.\n\nSeparately, the latest versions of the MANA and CRAC open-source code are available on github.com.  And several conference proceedings in the open literature report on all of the topics described above.\n\nAs part of extending this work to make it available to scientists, the PI has worked on multiple, high-profile scientific applications, including VASP, Gromacs, and SPAdes.  Feedback from scientists and HPC system administrators was used in setting priorities and in steering the future development of MANA and DMTCP.\n\n\t\t\t\t\tLast Modified: 05/05/2022\n\n\t\t\t\t\tSubmitted by: Gene Cooperman"
+ }
+}

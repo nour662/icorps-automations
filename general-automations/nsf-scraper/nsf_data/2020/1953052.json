@@ -1,0 +1,105 @@
+{
+ "awd_id": "1953052",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Geometric and Semantic Structures for Two- and Three-Dimensional Shape Understanding",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032927299",
+ "po_email": "yzeng@nsf.gov",
+ "po_sign_block_name": "Yong Zeng",
+ "awd_eff_date": "2020-06-01",
+ "awd_exp_date": "2024-05-31",
+ "tot_intn_awd_amt": 160000.0,
+ "awd_amount": 160000.0,
+ "awd_min_amd_letter_date": "2020-03-13",
+ "awd_max_amd_letter_date": "2020-03-13",
+ "awd_abstract_narration": "True computer vision will provide end-to-end image analysis, where images are decomposed into objects of interest, those objects are decomposed into parts, and the parts and objects are recognized. Performing integrated tasks with an image, such as shape generation, animation, editing, or partial matching, requires structure-aware shape processing. A full shape structure consists of a decomposition into parts, an understanding of which parts are more significant than others, and an ability to measure similarity of parts moving toward recognition. A pipeline that takes as input two- or three-dimensional images, performs accurate segmentation to determine shapes of interest, extracts a shape structure, then recognizes the parts and the shapes would represent a fundamental step forward in artificial vision. The task is challenging because human visual perception does not follow computational rules. For example, two shapes can both be similar to a third shape without being similar to each other. For another, our understanding of meaning of shapes adds a semantic level to our geometric perception: if someone is seated on an object, we classify that object as a chair regardless of its shape. Any useful shape analysis must explicitly model the interplay between semantics and geometric shape. This project aims to develop the foundational theory of shape structure and provide robust implementations of the resulting techniques while maintaining the connection to human semantic perception through benchmarking to user studies.\r\n\r\nThe Blum medial axis gives a skeletal decomposition of a closed region in Euclidean space. For spatial dimensions 2 and 3, these regions can be interpreted as 2D and 3D shapes, with the skeletal model providing a lower-dimensional representation of the shape. The skeleton, a Whitney stratified set, is a deformation retract of the shape boundary that captures complete geometric information about the boundary of the shape. This project will introduce functions on the medial axis that encode shape geometry in a way that allows for the determination of a parts decomposition and hierarchy within a shape, as well as similarity between parts, for shapes of any finite genus. Based on that analysis, the research will develop formal measures of shape complexity and benchmark results through human perception studies. Finally, the project aims to connect the new shape structure characterization to current approaches using neural networks for image understanding by developing network architectures that learn the geometry of a shape skeleton from its natural or binary image representation.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Kathryn",
+   "pi_last_name": "Leonard",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Kathryn Leonard",
+   "pi_email_addr": "kleonardci@gmail.com",
+   "nsf_id": "000078849",
+   "pi_start_date": "2020-03-13",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Occidental College",
+  "inst_street_address": "1600 CAMPUS RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOS ANGELES",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "3232591414",
+  "inst_zip_code": "900413314",
+  "inst_country_name": "United States",
+  "cong_dist_code": "34",
+  "st_cong_dist_code": "CA34",
+  "org_lgl_bus_name": "OCCIDENTAL COLLEGE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "DCQQX5TRCYN9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Occidental College",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "900413314",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "34",
+  "perf_st_cong_dist": "CA34",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126700",
+   "pgm_ele_name": "TOPOLOGY"
+  },
+  {
+   "pgm_ele_code": "806900",
+   "pgm_ele_name": "CDS&E-MSS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 160000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The development of a visual system for a computer that can function analogously to the human visual system requires a process for understanding shape structure, A full shape structure must include a decomposition of a shape into parts, a hierarchy of importance of those parts, and the relative part similarity (e.g., the shape has four legs). Performing integrated tasks with a shape such as shape generation, animation, editing, or partial matching requires a well-developed shape structure that matches with human perception.</p>\n<p>This project developed foundational theoretical results, robust implementations, and links with human perception as part of a shape structure framework based on the medial axis of a shape and the functions defined on it.</p>\n<p>The interior Blum medial axis of a shape is a skeleton of the shape together with a distance to the shape boundary for each &nbsp;point in the skeleton. Defining functions on the medial axis that capture the geometry of the shape creates a framework for a shape structure, Our theoretical results demonstrate that different such functions extract the parts, the hierarchy, and the similarity, and do so for 2D and 3D shapes of any finite genus. Our theoretical results also show that these functions are stable functions that behave well for shapes that themselves behave well.</p>\n<p>Based on the theoretical results, we developed and tested algorithms for implementation. We have shared robust implementations of all code through github repositories. Finally, through user experiements, we also show that these functions capture important components of human perception of shape complexity.</p>\n<p>The project also supported several activities in the broader community, including annual Deep Geometric Learning conferences associated with CVPR, annual SkelNetOn challenges for using deep learning to learn clean skeletal representations of 2D shapes from images (resulting in two successful approaches from the computer vision community), and the Summer Geometry Intensive at MIT, an annual online 8-week research experience for students all over the world to work on a collection of 1-2 week research projects in applied geometry. In addition, the project hosted a research collaboration workshop (WiSH 2021), where 50 participants worked for one week on open research questions in shape modeling at BIRS-Oaxaca (online because of the pandemic).</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 09/29/2024<br>\nModified by: Kathryn&nbsp;Leonard</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe development of a visual system for a computer that can function analogously to the human visual system requires a process for understanding shape structure, A full shape structure must include a decomposition of a shape into parts, a hierarchy of importance of those parts, and the relative part similarity (e.g., the shape has four legs). Performing integrated tasks with a shape such as shape generation, animation, editing, or partial matching requires a well-developed shape structure that matches with human perception.\n\n\nThis project developed foundational theoretical results, robust implementations, and links with human perception as part of a shape structure framework based on the medial axis of a shape and the functions defined on it.\n\n\nThe interior Blum medial axis of a shape is a skeleton of the shape together with a distance to the shape boundary for each point in the skeleton. Defining functions on the medial axis that capture the geometry of the shape creates a framework for a shape structure, Our theoretical results demonstrate that different such functions extract the parts, the hierarchy, and the similarity, and do so for 2D and 3D shapes of any finite genus. Our theoretical results also show that these functions are stable functions that behave well for shapes that themselves behave well.\n\n\nBased on the theoretical results, we developed and tested algorithms for implementation. We have shared robust implementations of all code through github repositories. Finally, through user experiements, we also show that these functions capture important components of human perception of shape complexity.\n\n\nThe project also supported several activities in the broader community, including annual Deep Geometric Learning conferences associated with CVPR, annual SkelNetOn challenges for using deep learning to learn clean skeletal representations of 2D shapes from images (resulting in two successful approaches from the computer vision community), and the Summer Geometry Intensive at MIT, an annual online 8-week research experience for students all over the world to work on a collection of 1-2 week research projects in applied geometry. In addition, the project hosted a research collaboration workshop (WiSH 2021), where 50 participants worked for one week on open research questions in shape modeling at BIRS-Oaxaca (online because of the pandemic).\n\n\n\n\n\n\n\n\n\t\t\t\t\tLast Modified: 09/29/2024\n\n\t\t\t\t\tSubmitted by: KathrynLeonard\n"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1909291",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CIF: Small: Collaborative Research: Acceleration Algorithms for Large-scale Nonconvex Optimization",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922981",
+ "po_email": "pregalia@nsf.gov",
+ "po_sign_block_name": "Phillip Regalia",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2019-08-05",
+ "awd_max_amd_letter_date": "2019-08-05",
+ "awd_abstract_narration": "Non-convex optimization problems are ubiquitous in data science, machine learning and artificial intelligence. Non-convexity, together with the high dimension of the model parameters and the large volume of uncertain data, presents significant challenges for solving these problems. Although popular methods have been proposed to speed up optimization algorithms for solving practical large-scale problems, these algorithms do not necessarily converge for non-convex problems, and some of them do not even converge in the convex setting. The primary goal of this project is to develop principled approaches for designing acceleration algorithms with provable theoretical convergence guarantees and superior practical performance for large-scale non-convex optimization. The developed algorithms will be applicable to big data problems in various domains, including deep learning, computer vision, medical image processing, social network learning, etc.\r\n\r\nThis project will design novel, fast, and scalable acceleration algorithms for solving a variety of large-scale non-convex problems including constrained, composite, and saddle point optimization problems. This will include the development of both novel direct acceleration methods  inspired by Nesterov's approach, and of indirect acceleration methods via proximal point methods for different types of problems. The performance of these acceleration methods will be explored when combined with randomization methods in order to enhance their scalability with data dimension and volume. Comprehensive numerical validations will be conducted for application problems arising in large-scale data analysis. This project will contribute to a synthesis of optimization with data science, and will be incorporated into curriculum development, and in the training of students and future big data researchers and practitioners.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Yingbin",
+   "pi_last_name": "Liang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yingbin Liang",
+   "pi_email_addr": "liang.889@osu.edu",
+   "nsf_id": "000502099",
+   "pi_start_date": "2019-08-05",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Ohio State University",
+  "inst_street_address": "1960 KENNY RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLUMBUS",
+  "inst_state_code": "OH",
+  "inst_state_name": "Ohio",
+  "inst_phone_num": "6146888735",
+  "inst_zip_code": "432101016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "OH03",
+  "org_lgl_bus_name": "OHIO STATE UNIVERSITY, THE",
+  "org_prnt_uei_num": "MN4MDDMN8529",
+  "org_uei_num": "DLWBSLWAJWR1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Ohio State University",
+  "perf_str_addr": "606 Dreese Lab, 2015 Neil Avenue",
+  "perf_city_name": "Columbus",
+  "perf_st_code": "OH",
+  "perf_st_name": "Ohio",
+  "perf_zip_code": "432101016",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "OH03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779700",
+   "pgm_ele_name": "Comm & Information Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7936",
+   "pgm_ref_txt": "SIGNAL PROCESSING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this research program is to develop principled approaches for designing novel, fast, and scalable acceleration algorithms for solving a variety of large-scale nonconvex problems including unconstrained, composite, and saddle point optimization problems. The proposed research consists of four thrusts: (a) development of novel direct acceleration inspired by Nesterov's approach and indirect acceleration via proximal point method for nonconvex optimization; (b) design of new stochastic direct acceleration schemes with guaranteed global and local convergence rates; (c) design of novel randomization schemes based on the indirect acceleration approach; and (d) numerical validations of proposed acceleration algorithms.</p>\n<p>1. We proposed several novel accelerated algorithms for various nonconvex optimization problems, including a proximal gradient algorithm with momentum and parameter restart for solving nonconvex and nonsmooth problems, a momentum scheme to accelerate the proximal SPIDER (i.e., an accelerated stochastic variance reduction algorithm) for composite optimization where the objective function contains a nonconvex component and a convex but nonsmooth component; and an improved algorithm for generalized-smooth functions in which the smoothness parameters scale with the gradient norm in various ways. We further showed that these algorithms have improved computational complexity compared to the previously known algorithms, and numerically validated their superb performance.&nbsp;</p>\n<p>2. We studied the stochastic gradient descent (SGD) algorithms with highly dependent data samples. We showed that online SGD with mini-batch sampling achieves an orderwise lower sample complexity than both the standard online SGD and the online SGD with data subsampling. Our study reveals that the widely used mini-batch sampling scheme can effectively reduce the bias caused by data dependence without sacrificing data efficiency.</p>\n<p>3. We explored bilevel optimization, which has recently attracted growing interests due to its wide applications in modern machine learning problems. We proposed an accelerated bilevel optimizer and established tighter complexity bounds, which achieves the optimal results for certain problems. We further explored the impact of implementation loops on the overall computational costs of bilevel algorithms. Our analysis tools are general and can be extended to stochastic and acceleration bilevel optimizers.</p>\n<p>4. We investigated online nonconvex optimization from a local regret minimization perspective, where only limited number of oracles are available. We studied three settings including window-smoothed single gradient oracle feedback, window-smoothed single function value oracle feedback, and window-smoothed multiple function value oracle feedback. We proposed novel online algorithms for those settings and showed that they achieve near-optimal regret performance under various settings.&nbsp;</p>\n<p>5. We investigated policy optimization problems in reinforcement learning, where data samples follow Markov decision processes over time. We proposed several accelerated algorithms including Adam-type Q-learning with the momentum restart scheme and Q-learning that incorporates Nesterov's and Polyak's momentum schemes, and established their convergence rate. We also studied the framework, which jointly optimizes the policy and the reward based on expert sample trajectories. We characterized the global convergence for a broad range of commonly used policy gradient algorithms.</p>\n<p>6. We studied the nonconvex constrained Markov decision process (MDP) problem, where an agent explores the environment to maximize an expected total reward as the main optimization objective, and meanwhile avoids violation of certain constraints on a number of expected total costs. We proposed a primal approach for such a constrained problem, and showed that our algorithm converges to the global optimal policy in the constrained policy set. We further proposed a novel primal-dual approach, which provably accelerates constrained nonconvex optimization with zero duality gap by exploiting the geometries such as the gradient dominance condition.</p>\n<p>The results and findings of this project have been disseminated through journal and conference publications as well as conference presentations in several research communities, including signal processing, machine learning, optimization, and information theory. The PI Liang gave seminar talks about the findings of this project at several universities. Based on the findings of this project, the PI Liang gave a three-session tutorial talk on &ldquo;Bilevel Optimization and Applications in Deep Learning&rdquo; in DeepLearn 2023 Spring, tutorial on \"Optimization Meets Reinforcement Learning\" at 2021 IEEE BigData conference and 2022 IEEE ICASSP conference, and tutorial on \"Recent Advances in Reinforcement Learning Theory\" at 2021 IEEE ISIT conference.</p>\n<p>The students working on the project learned the topics of nonconvex optimization, bilevel optimization, reinforcement learning, and machine learning as well as mathematical tools to analyze algorithms for the optimization problems arising in those fields. They also had opportunities to present the research results at various conferences.&nbsp;</p><br>\n<p>\n Last Modified: 01/18/2024<br>\nModified by: Yingbin&nbsp;Liang</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe goal of this research program is to develop principled approaches for designing novel, fast, and scalable acceleration algorithms for solving a variety of large-scale nonconvex problems including unconstrained, composite, and saddle point optimization problems. The proposed research consists of four thrusts: (a) development of novel direct acceleration inspired by Nesterov's approach and indirect acceleration via proximal point method for nonconvex optimization; (b) design of new stochastic direct acceleration schemes with guaranteed global and local convergence rates; (c) design of novel randomization schemes based on the indirect acceleration approach; and (d) numerical validations of proposed acceleration algorithms.\n\n\n1. We proposed several novel accelerated algorithms for various nonconvex optimization problems, including a proximal gradient algorithm with momentum and parameter restart for solving nonconvex and nonsmooth problems, a momentum scheme to accelerate the proximal SPIDER (i.e., an accelerated stochastic variance reduction algorithm) for composite optimization where the objective function contains a nonconvex component and a convex but nonsmooth component; and an improved algorithm for generalized-smooth functions in which the smoothness parameters scale with the gradient norm in various ways. We further showed that these algorithms have improved computational complexity compared to the previously known algorithms, and numerically validated their superb performance.\n\n\n2. We studied the stochastic gradient descent (SGD) algorithms with highly dependent data samples. We showed that online SGD with mini-batch sampling achieves an orderwise lower sample complexity than both the standard online SGD and the online SGD with data subsampling. Our study reveals that the widely used mini-batch sampling scheme can effectively reduce the bias caused by data dependence without sacrificing data efficiency.\n\n\n3. We explored bilevel optimization, which has recently attracted growing interests due to its wide applications in modern machine learning problems. We proposed an accelerated bilevel optimizer and established tighter complexity bounds, which achieves the optimal results for certain problems. We further explored the impact of implementation loops on the overall computational costs of bilevel algorithms. Our analysis tools are general and can be extended to stochastic and acceleration bilevel optimizers.\n\n\n4. We investigated online nonconvex optimization from a local regret minimization perspective, where only limited number of oracles are available. We studied three settings including window-smoothed single gradient oracle feedback, window-smoothed single function value oracle feedback, and window-smoothed multiple function value oracle feedback. We proposed novel online algorithms for those settings and showed that they achieve near-optimal regret performance under various settings.\n\n\n5. We investigated policy optimization problems in reinforcement learning, where data samples follow Markov decision processes over time. We proposed several accelerated algorithms including Adam-type Q-learning with the momentum restart scheme and Q-learning that incorporates Nesterov's and Polyak's momentum schemes, and established their convergence rate. We also studied the framework, which jointly optimizes the policy and the reward based on expert sample trajectories. We characterized the global convergence for a broad range of commonly used policy gradient algorithms.\n\n\n6. We studied the nonconvex constrained Markov decision process (MDP) problem, where an agent explores the environment to maximize an expected total reward as the main optimization objective, and meanwhile avoids violation of certain constraints on a number of expected total costs. We proposed a primal approach for such a constrained problem, and showed that our algorithm converges to the global optimal policy in the constrained policy set. We further proposed a novel primal-dual approach, which provably accelerates constrained nonconvex optimization with zero duality gap by exploiting the geometries such as the gradient dominance condition.\n\n\nThe results and findings of this project have been disseminated through journal and conference publications as well as conference presentations in several research communities, including signal processing, machine learning, optimization, and information theory. The PI Liang gave seminar talks about the findings of this project at several universities. Based on the findings of this project, the PI Liang gave a three-session tutorial talk on Bilevel Optimization and Applications in Deep Learning in DeepLearn 2023 Spring, tutorial on \"Optimization Meets Reinforcement Learning\" at 2021 IEEE BigData conference and 2022 IEEE ICASSP conference, and tutorial on \"Recent Advances in Reinforcement Learning Theory\" at 2021 IEEE ISIT conference.\n\n\nThe students working on the project learned the topics of nonconvex optimization, bilevel optimization, reinforcement learning, and machine learning as well as mathematical tools to analyze algorithms for the optimization problems arising in those fields. They also had opportunities to present the research results at various conferences.\t\t\t\t\tLast Modified: 01/18/2024\n\n\t\t\t\t\tSubmitted by: YingbinLiang\n"
+ }
+}

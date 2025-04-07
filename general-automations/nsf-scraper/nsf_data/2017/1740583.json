@@ -1,0 +1,113 @@
+{
+ "awd_id": "1740583",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Collaborative Research: The Automata Programming Paradigm for Genomic Analysis",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927498",
+ "po_email": "achtchel@nsf.gov",
+ "po_sign_block_name": "Almadena Chtchelkanova",
+ "awd_eff_date": "2017-03-01",
+ "awd_exp_date": "2019-07-31",
+ "tot_intn_awd_amt": 234744.0,
+ "awd_amount": 234744.0,
+ "awd_min_amd_letter_date": "2017-05-04",
+ "awd_max_amd_letter_date": "2017-05-04",
+ "awd_abstract_narration": "Inferring knowledge from genetic data will drive future advances in the life sciences.  However, DNA sequences are being generated faster than they can be analyzed with existing computing technologies and algorithms. The core computations performed by many genomic applications involve pattern matching. This operation is normally implemented using automata-based algorithms and can be efficiently mapped onto non-general purpose platforms such as Field Programmable Gate Arrays (FPGA) and Micron?s recently announced Automata Processor (AP). However, the lack of high-level programming interfaces for these devices hampers their adoption in the bioinformatics community.\r\n\r\nThis project fills this gap by developing novel programmatic descriptions of several genomic analyses and mapping them onto these two non-traditional architectures. The work advances the state-of-the-art in several ways. At an algorithmic level, new methods to address the biological problems of genome-scale orthology inference and regulatory motif search are being developed. At a computational abstraction level, the researchers are designing an extended finite automaton abstraction suitable to support diverse computations, and are mapping new and existing computational kernels onto it. At a hardware mapping level, automatic tuning techniques for the effective deployment of automata-based computations on FPGA and Micron?s AP are being developed. \r\n\r\n\tThis interdisciplinary project will facilitate the adoption of FPGA and Micron?s Automata Processor by biologists by providing a new library of pattern matching routines and a high-level automata-based programming interface for these platforms. In addition, the researchers are developing instructional material in a variety of topics, such as genomic analysis, pattern matching, automata processing and high-performance computing. Finally, this project provides research opportunities and access to pre-production hardware to undergraduate and graduate students, interdisciplinary training, and technology transfer to industry. The results of this research will be made available through the release of software tools and publication in international conferences and journals.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Michela",
+   "pi_last_name": "Becchi",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Michela Becchi",
+   "pi_email_addr": "mbecchi@ncsu.edu",
+   "nsf_id": "000573363",
+   "pi_start_date": "2017-05-04",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "North Carolina State University",
+  "inst_street_address": "2601 WOLF VILLAGE WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "RALEIGH",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9195152444",
+  "inst_zip_code": "276950001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "NC02",
+  "org_lgl_bus_name": "NORTH CAROLINA STATE UNIVERSITY",
+  "org_prnt_uei_num": "U3NVH931QJJ3",
+  "org_uei_num": "U3NVH931QJJ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "North Carolina State University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "276957003",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "NC02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7942",
+   "pgm_ref_txt": "HIGH-PERFORMANCE COMPUTING"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0114",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001415DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2014,
+   "fund_oblg_amt": 234744.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Many established and emerging applications perform at their core some form of pattern matching, a computation that maps naturally onto <em>finite automata</em> abstractions. In biology, for example, several genomics tasks, such as motif discovery, orthology inference, shotgun and de novo assembly, involve string-matching operations on genomics data. In turn, advances in DNA sequencing technology have led to increasingly large volumes of data available for these applications, resulting in a significant increase in their computational requirements. This project focuses on high-speed automata processing and makes contributions in two domains: parallel computing and biology.</p>\n<p>In the field of parallel computing, this project has enhanced our understanding of automata processing, and it has contributed with algorithmic optimizations and hardware mapping schemes to allow high-speed automata processing for large datasets on a variety of hardware platforms. From a practical perspective, it has allowed the design and implementation of a software stack for the effective and seamless deployment of <em>non-deterministic finite automata</em> (one kind of finite automata, briefly known as NFA) on GPU, Intel Knights Corner, Knights Landing and Skylake processors, FPGA, and Micron's Automata Processor. This toolchain has also allowed an apples-to-apples comparison between these parallel platforms, touching performance, resource utililization, preprocessing time and power consumption. The toolchain, illustrated in Fig. 1, includes automata-level and platform-specific optimizations, as well as a novel NFA partitioning algorithm that minimizes the number of state replications required to maintain functional equivalence with an unpartitioned NFA. Additionally, we have proposed a novel memory-efficient NFA implementation suitable for SIMD platforms. Fig. 2 illustrates our compiler toolchain for this SIMD-friendly design. The toolchain maps large datasets consisting of fixed-topology NFA (corresponding to patterns with the same structure) onto GPU, Intel processors and coprocessors equipped with vector units, and FPGA. Furthermore, we have proposed a hash-based pattern matching implementation for GPU, and we have used this tool to perform several genomics analyses.</p>\n<p>In the field of biology, the project has supported research on two topics. The <em>first project </em>involved computational modeling of how doubled genomes evolve. Many species, including humans, descend from an ancestor that was the result of a hybridization event between two different species that gave rise to a new daughter species whose doubled genome had two copies of every gene. We studied two groups of organisms with such an event in their history: a group of roundworms that attack crop plants, and bony fish. In Fig. 3, we show a region of 8 fish genomes that show this doubled pattern, even though many of the doubled genes have been lost over evolutionary time. With the tools developed in this project, we have shown that genome doubling probably gave rise to a new form of retina in these fishes that has some innovative features lacking even in humans. We have also put the resulting software on a public website so that anyone in the world may use it free of charge. In our <em>second project</em>, we studied the gut <em>microbiome</em> of animals like cattle, sheep and deer (known as ruminants). The microbiome consists of all the microorganisms that live in a particular environment, like the intestinal tract of an animal. Ruminants, unlike humans, are able to digest tough plant material like grass because they play host to a large group of microbes that do the difficult chemical work of digesting that material. It is now possible to use DNA sequencing to capture all of the microbial genes present in such an environment. Over the course of this project, we developed fast computational tools to infer the chemical transformations that the microbiome was conducting from these sequences. In Fig. 4, we show an example of our results: we can connect the chemical processes seen in the microbes (right) with those in the host animal (left) and ask how changing the kind of food the animal eats alters the chemistry the microbes perform. In this case, we found that feeding sheep a maize-based diet caused their microbes to perform chemistry that was more similar to the host chemistry than when the animals were feed grasses.</p>\n<p>This research is at the core of the dissertations of two Ph.D. students and the theses of two M.S. students. In addition, we have involved several undergraduate students in research projects related to this work.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/19/2019<br>\n\t\t\t\t\tModified by: Michela&nbsp;Becchi</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2019/1740583/1740583_10322292_1576788390909_toolchain--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2019/1740583/1740583_10322292_1576788390909_toolchain--rgov-800width.jpg\" title=\"Toolchain\"><img src=\"/por/images/Reports/POR/2019/1740583/1740583_10322292_1576788390909_toolchain--rgov-66x44.jpg\" alt=\"Toolchain\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Fig. 1: Compiler toolchain that maps large NFA onto various hardware platforms, including GPUs, Intel many-core processors and coprocessors, Micron's Automata Processor and FPGA.</div>\n<div class=\"imageCredit\">Michela Becchi</div>\n<div class=\"imageSubmitted\">Michela&nbsp;Becchi</div>\n<div class=\"imageTitle\">Toolchain</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2019/1740583/1740583_10322292_1576784740516_Figure1--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2019/1740583/1740583_10322292_1576784740516_Figure1--rgov-800width.jpg\" title=\"Inferred doubled genomes in bony fish\"><img src=\"/por/images/Reports/POR/2019/1740583/1740583_10322292_1576784740516_Figure1--rgov-66x44.jpg\" alt=\"Inferred doubled genomes in bony fish\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Fig. 3: Two regions of eight fish genomes that were doubled in an ancient hybridization 300 million years ago. The evolutionary tree on the left shows how the species are related and indicates the number of doubled genes lost at each stage of the species\ufffd evolution.</div>\n<div class=\"imageCredit\">Gavin Conant</div>\n<div class=\"imageSubmitted\">Michela&nbsp;Becchi</div>\n<div class=\"imageTitle\">Inferred doubled genomes in bony fish</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2019/1740583/1740583_10322292_1576788356971_SIMD-NFA--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2019/1740583/1740583_10322292_1576788356971_SIMD-NFA--rgov-800width.jpg\" title=\"SIMD-NFA toolchain\"><img src=\"/por/images/Reports/POR/2019/1740583/1740583_10322292_1576788356971_SIMD-NFA--rgov-66x44.jpg\" alt=\"SIMD-NFA toolchain\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Fig. 2: Compiler toolchain that deploys our SIMD-friendly NFA implementation on GPU, Intel processors equipped with vector units, and FPGA.</div>\n<div class=\"imageCredit\">Michela Becchi</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Michela&nbsp;Becchi</div>\n<div class=\"imageTitle\">SIMD-NFA toolchain</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2019/1740583/1740583_10322292_1576784561237_Figure2crop_CCF--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2019/1740583/1740583_10322292_1576784561237_Figure2crop_CCF--rgov-800width.jpg\" title=\"Effects of diet change on sheep microbial ecology\"><img src=\"/por/images/Reports/POR/2019/1740583/1740583_10322292_1576784561237_Figure2crop_CCF--rgov-66x44.jpg\" alt=\"Effects of diet change on sheep microbial ecology\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Fig. 4: The relationship between the chemical reactions (circles) carried out by the microbes living in sheep intestines (right) and the chemical reactions that the sheep itself can carry out (left).</div>\n<div class=\"imageCredit\">Gavin Conant</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Michela&nbsp;Becchi</div>\n<div class=\"imageTitle\">Effects of diet change on sheep microbial ecology</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nMany established and emerging applications perform at their core some form of pattern matching, a computation that maps naturally onto finite automata abstractions. In biology, for example, several genomics tasks, such as motif discovery, orthology inference, shotgun and de novo assembly, involve string-matching operations on genomics data. In turn, advances in DNA sequencing technology have led to increasingly large volumes of data available for these applications, resulting in a significant increase in their computational requirements. This project focuses on high-speed automata processing and makes contributions in two domains: parallel computing and biology.\n\nIn the field of parallel computing, this project has enhanced our understanding of automata processing, and it has contributed with algorithmic optimizations and hardware mapping schemes to allow high-speed automata processing for large datasets on a variety of hardware platforms. From a practical perspective, it has allowed the design and implementation of a software stack for the effective and seamless deployment of non-deterministic finite automata (one kind of finite automata, briefly known as NFA) on GPU, Intel Knights Corner, Knights Landing and Skylake processors, FPGA, and Micron's Automata Processor. This toolchain has also allowed an apples-to-apples comparison between these parallel platforms, touching performance, resource utililization, preprocessing time and power consumption. The toolchain, illustrated in Fig. 1, includes automata-level and platform-specific optimizations, as well as a novel NFA partitioning algorithm that minimizes the number of state replications required to maintain functional equivalence with an unpartitioned NFA. Additionally, we have proposed a novel memory-efficient NFA implementation suitable for SIMD platforms. Fig. 2 illustrates our compiler toolchain for this SIMD-friendly design. The toolchain maps large datasets consisting of fixed-topology NFA (corresponding to patterns with the same structure) onto GPU, Intel processors and coprocessors equipped with vector units, and FPGA. Furthermore, we have proposed a hash-based pattern matching implementation for GPU, and we have used this tool to perform several genomics analyses.\n\nIn the field of biology, the project has supported research on two topics. The first project involved computational modeling of how doubled genomes evolve. Many species, including humans, descend from an ancestor that was the result of a hybridization event between two different species that gave rise to a new daughter species whose doubled genome had two copies of every gene. We studied two groups of organisms with such an event in their history: a group of roundworms that attack crop plants, and bony fish. In Fig. 3, we show a region of 8 fish genomes that show this doubled pattern, even though many of the doubled genes have been lost over evolutionary time. With the tools developed in this project, we have shown that genome doubling probably gave rise to a new form of retina in these fishes that has some innovative features lacking even in humans. We have also put the resulting software on a public website so that anyone in the world may use it free of charge. In our second project, we studied the gut microbiome of animals like cattle, sheep and deer (known as ruminants). The microbiome consists of all the microorganisms that live in a particular environment, like the intestinal tract of an animal. Ruminants, unlike humans, are able to digest tough plant material like grass because they play host to a large group of microbes that do the difficult chemical work of digesting that material. It is now possible to use DNA sequencing to capture all of the microbial genes present in such an environment. Over the course of this project, we developed fast computational tools to infer the chemical transformations that the microbiome was conducting from these sequences. In Fig. 4, we show an example of our results: we can connect the chemical processes seen in the microbes (right) with those in the host animal (left) and ask how changing the kind of food the animal eats alters the chemistry the microbes perform. In this case, we found that feeding sheep a maize-based diet caused their microbes to perform chemistry that was more similar to the host chemistry than when the animals were feed grasses.\n\nThis research is at the core of the dissertations of two Ph.D. students and the theses of two M.S. students. In addition, we have involved several undergraduate students in research projects related to this work.\n\n\t\t\t\t\tLast Modified: 12/19/2019\n\n\t\t\t\t\tSubmitted by: Michela Becchi"
+ }
+}

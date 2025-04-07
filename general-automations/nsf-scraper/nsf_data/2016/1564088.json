@@ -1,0 +1,105 @@
+{
+ "awd_id": "1564088",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Medium: Collaborative: New Protocols and Systems for RAM-Based Secure Computation",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927991",
+ "po_email": "namla@nsf.gov",
+ "po_sign_block_name": "Nina Amla",
+ "awd_eff_date": "2016-05-15",
+ "awd_exp_date": "2020-09-30",
+ "tot_intn_awd_amt": 371035.0,
+ "awd_amount": 371035.0,
+ "awd_min_amd_letter_date": "2016-05-17",
+ "awd_max_amd_letter_date": "2016-05-17",
+ "awd_abstract_narration": "Secure computation allows users to collaboratively compute any program on their private data, while ensuring that they learn nothing beyond the output of the computation. Existing protocols for secure computation primarily rely on a boolean-circuit representation for the program being evaluated, which can be highly inefficient. This project focuses on developing secure-computation protocols in the RAM model of computation. Particularly challenging here is the need to ensure that memory accesses are oblivious, and do not leak information about private data. The investigators are designing efficient oblivious data structures that can be used as general-purpose building blocks for secure protocols in the RAM model of computation. \r\n\r\nThis project develops a framework that enables programmers to write high-level code that can then be compiled by a back-end algorithm that analyzes the code and makes use of the oblivious data structures we provide. This work is influenced by the needs of real applications, and the techniques to analyze the exact requirements of the program will evaluated and to tailor the resulting protocol to those requirements. This project aims to develop tools making secure computation more accessible to non-specialists, so it can be more broadly used to perform computations on private data. The Principal Investigators on this project mentor both graduate and undergraduate students and actively encourage involvement of minority students. The project develops new course materials and interact with the broader community through involvement in the IEEE cybersecurity initiative and the Maryland Cybersecurity Council.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Samuel",
+   "pi_last_name": "Gordon",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "Samuel D Gordon",
+   "pi_email_addr": "gordon@GMU.EDU",
+   "nsf_id": "000702485",
+   "pi_start_date": "2016-05-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "George Mason University",
+  "inst_street_address": "4400 UNIVERSITY DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "FAIRFAX",
+  "inst_state_code": "VA",
+  "inst_state_name": "Virginia",
+  "inst_phone_num": "7039932295",
+  "inst_zip_code": "220304422",
+  "inst_country_name": "United States",
+  "cong_dist_code": "11",
+  "st_cong_dist_code": "VA11",
+  "org_lgl_bus_name": "GEORGE MASON UNIVERSITY",
+  "org_prnt_uei_num": "H4NRWLFCDF43",
+  "org_uei_num": "EADLFP7Z72E5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "George Mason University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "VA",
+  "perf_st_name": "Virginia",
+  "perf_zip_code": "222030442",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "08",
+  "perf_st_cong_dist": "VA08",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 371035.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-87460738-7fff-c61d-bec9-d727d8f36f19\"> </span></p>\n<p dir=\"ltr\"><span>Secure computation protocols enable multiple distrusting parties, each with their own private input, to interact and perform some agreed upon computation, revealing nothing in the process beyond the result of that computation.&nbsp; Traditionally, protocols for secure computation are designed in the </span><span>circuit model</span><span>.&nbsp; One benefit of this approach is that circuits are stateless, which precludes the participants from learning something about the other user inputs through memory access patterns. Unfortunately, the reliance on a circuit representation is also limiting, as access to memory can provide algorithms that are asymptotically faster than circuit-based computation.&nbsp; Oblivious RAM protocols allow us to fix this problem, by providing a method for accessing memory obliviously -- that is, without revealing which location in memory has been fetched.&nbsp;&nbsp;</span></p>\n<p dir=\"ltr\"><span>The use of ORAM in secure computation was relatively unexplored prior to our work in this project. The fact that it can be used generically had been observed twenty years ago, but since that time, researchers in the field have begun to optimize constructions of secure computation with an eye on concrete performance.&nbsp; The concrete performance of a generic approach to using Oblivious RAM inside a secure computation is prohibitively expensive.&nbsp;&nbsp;</span></p>\n<p dir=\"ltr\"><span>In this project, we have explored several directions for improving the use of oblivious memory access in secure computation:&nbsp;</span></p>\n<p dir=\"ltr\"><strong>Constructing new ORAM protocols</strong><span><strong>.</strong>&nbsp; ORAM was originally designed for a client/server model in which the client has storage constraints, but is allowed to see all data.&nbsp; In secure computation, all parties have similar storage constraints, but none may see the data.&nbsp; We designed new ORAM protocols for this setting, improving efficiency by leveraging the fact that the parties have linear storage.&nbsp; Additionally, our protocols are faster to instantiate than existing constructions in the client/server model.&nbsp; In this same direction, we have designed new oblivious data structures that have better memory locality, allowing the server to reduce the total number of physical memory accesses while preserving privacy.</span></p>\n<p dir=\"ltr\"><strong>Constructing new languages</strong><span><strong>.</strong> We developed a new programming language, called L_obliv, for writing oblivious algorithms and data structures (including ORAM).&nbsp; We have proven that type-correct programs in L-obliv offer probabilistic obliviousness: no matter the values of secrets, the distribution of publicly observable traces is unaffected.&nbsp;</span></p>\n<p dir=\"ltr\"><strong>Exploring other notions of data obliviousness.</strong><span> We have begun the investigation of alternatives to fully oblivious computation.&nbsp; Specifically, we have investigated a security definition that allows some leakage in the form of memory access patterns, but admits a proof that the leakage preserves differential privacy for the users that have contributed data.</span></p>\n<p><strong>Leveraging data oblivious computation in program analysis.</strong><span>&nbsp; We have explored methods for securely performing static analysis without revealing the details of the program.&nbsp; This allows us to formally verify properties of the given code while maintaining privacy. </span></p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/15/2021<br>\n\t\t\t\t\tModified by: Samuel&nbsp;Gordon</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \nSecure computation protocols enable multiple distrusting parties, each with their own private input, to interact and perform some agreed upon computation, revealing nothing in the process beyond the result of that computation.  Traditionally, protocols for secure computation are designed in the circuit model.  One benefit of this approach is that circuits are stateless, which precludes the participants from learning something about the other user inputs through memory access patterns. Unfortunately, the reliance on a circuit representation is also limiting, as access to memory can provide algorithms that are asymptotically faster than circuit-based computation.  Oblivious RAM protocols allow us to fix this problem, by providing a method for accessing memory obliviously -- that is, without revealing which location in memory has been fetched.  \nThe use of ORAM in secure computation was relatively unexplored prior to our work in this project. The fact that it can be used generically had been observed twenty years ago, but since that time, researchers in the field have begun to optimize constructions of secure computation with an eye on concrete performance.  The concrete performance of a generic approach to using Oblivious RAM inside a secure computation is prohibitively expensive.  \nIn this project, we have explored several directions for improving the use of oblivious memory access in secure computation: \nConstructing new ORAM protocols.  ORAM was originally designed for a client/server model in which the client has storage constraints, but is allowed to see all data.  In secure computation, all parties have similar storage constraints, but none may see the data.  We designed new ORAM protocols for this setting, improving efficiency by leveraging the fact that the parties have linear storage.  Additionally, our protocols are faster to instantiate than existing constructions in the client/server model.  In this same direction, we have designed new oblivious data structures that have better memory locality, allowing the server to reduce the total number of physical memory accesses while preserving privacy.\nConstructing new languages. We developed a new programming language, called L_obliv, for writing oblivious algorithms and data structures (including ORAM).  We have proven that type-correct programs in L-obliv offer probabilistic obliviousness: no matter the values of secrets, the distribution of publicly observable traces is unaffected. \nExploring other notions of data obliviousness. We have begun the investigation of alternatives to fully oblivious computation.  Specifically, we have investigated a security definition that allows some leakage in the form of memory access patterns, but admits a proof that the leakage preserves differential privacy for the users that have contributed data.\n\nLeveraging data oblivious computation in program analysis.  We have explored methods for securely performing static analysis without revealing the details of the program.  This allows us to formally verify properties of the given code while maintaining privacy. \n\n \n\n \n\n\t\t\t\t\tLast Modified: 02/15/2021\n\n\t\t\t\t\tSubmitted by: Samuel Gordon"
+ }
+}

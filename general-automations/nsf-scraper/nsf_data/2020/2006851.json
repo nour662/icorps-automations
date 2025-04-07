@@ -1,0 +1,114 @@
+{
+ "awd_id": "2006851",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RI: Small: Extracting and Representing Commonsense Knowledge Using Language Models",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032924286",
+ "po_email": "yduan@nsf.gov",
+ "po_sign_block_name": "Andy Duan",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2025-09-30",
+ "tot_intn_awd_amt": 470000.0,
+ "awd_amount": 470000.0,
+ "awd_min_amd_letter_date": "2020-08-07",
+ "awd_max_amd_letter_date": "2020-08-07",
+ "awd_abstract_narration": "As computers advance from serving as our tools to becoming our helpers and collaborators, they must be capable of commonsense reasoning--for example, knowing that a person needs to use their hand to open a door (and that this might be a problem if they are carrying groceries).  This kind of commonsense reasoning is a longstanding, elusive goal of artificial intelligence, but is becoming within reach today due to the availability of vast amounts of data and more powerful computational models for learning from those data.  This project is aimed at a key step in enabling commonsense reasoning by machines: the automatic acquisition of common sense knowledge.  The project\u2019s approach builds upon recent breakthroughs in language models that learn by reading large amounts of text, and combines these in novel ways with explicit commonsense knowledge gathered from humans.  The project probes new, scalable methods for humans to impart their commonsense knowledge to the system, by using existing dictionaries and encyclopedias, building curricula that help machines build to commonsense mastery step by step, and by directly enforcing key logical constraints (for example, that if one item is bigger than another, then the second item must be smaller than the first).  Success in this project could help power new virtual assistants, medical diagnosis and treatment systems, improved search engines, and other important applications of AI.  The work also aims to enable the development of better language models themselves---improving current commercial technologies such as speech recognition and machine translation, and ultimately helping to power the next generation of computer systems capable of communicating with people more naturally using language.  Along the way, the project will help train the next generation of students about these approaches and technologies, via education and outreach activities.\r\n\r\nThe technical strategy used in the project involves learning unsupervised neural language models (LMs) to capture textual distributions, and then extracting common sense knowledge from those models.  This approach is challenging because common sense knowledge is multifarious and massive, and yet is not often explicitly stated in text.  The project aims to overcome this challenge using several methods for scalably incorporating human input in concert with neural language models.  First, the project studies how to use explicit lexical knowledge found in dictionaries to improve LMs, extending prior work in modeling the definitions of terms with neural LMs.  Next, the project is investigating a \u201cscaffold\u201d of semantic tasks (a task curriculum of increasing complexity) incrementally constructing models for each task in turn in a way that aims to improve the learning of each subsequent task.  Third, the project is developing methods for encoding commonsense logical constraints within neural language models.  Lastly, because time and energy cost is a potential barrier to the application of the proposed techniques, the project is also studying how to make its approaches efficient.  In particular, the project is investigating ways to scale-up LMs to larger corpora while reducing the significant computational and energy cost in LM training, by learning how to automatically identify text that will be more informative for training.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Douglas",
+   "pi_last_name": "Downey",
+   "pi_mid_init": "C",
+   "pi_sufx_name": "",
+   "pi_full_name": "Douglas C Downey",
+   "pi_email_addr": "dougd@allenai.org",
+   "nsf_id": "000534948",
+   "pi_start_date": "2020-08-07",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Larry",
+   "pi_last_name": "Birnbaum",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Larry Birnbaum",
+   "pi_email_addr": "l-birnbaum@northwestern.edu",
+   "nsf_id": "000229312",
+   "pi_start_date": "2020-08-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Northwestern University",
+  "inst_street_address": "633 CLARK ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "EVANSTON",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "3125037955",
+  "inst_zip_code": "602080001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "IL09",
+  "org_lgl_bus_name": "NORTHWESTERN UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "EXZVPWZBLUE8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Northwestern University",
+  "perf_str_addr": "2233 Tech Drive",
+  "perf_city_name": "Evanston",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "602080001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "09",
+  "perf_st_cong_dist": "IL09",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 470000.0
+  }
+ ],
+ "por": null
+}

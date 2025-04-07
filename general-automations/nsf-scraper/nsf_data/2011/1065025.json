@@ -1,0 +1,113 @@
+{
+ "awd_id": "1065025",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "G&V: Medium: Collaborative Research: Large Data Visualization Using An Interactive Machine Learning Framework",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Ephraim Glinert",
+ "awd_eff_date": "2011-06-01",
+ "awd_exp_date": "2015-05-31",
+ "tot_intn_awd_amt": 542002.0,
+ "awd_amount": 542002.0,
+ "awd_min_amd_letter_date": "2011-03-30",
+ "awd_max_amd_letter_date": "2011-03-30",
+ "awd_abstract_narration": "Abstract - Machiraju, Rangarajan, and Thompson\r\n\r\nAs computer power continues to increase, the complexity of simulations also increases thereby producing datasets of unprecedented size.  Without effective analysis tools, results from these large-scale simulations cannot be utilized to their fullest extent. This research addresses the problem of large-data visualization and exploration by employing interactive multi-scale machine learning, which exploits an efficient feature-based, multi-resolution representation of the data. The investigators are leveraging methods from the field of machine learning to perform two distinct tasks: identify regions of interest and enhance robustness of feature detection algorithms. The primary outcome of this effort is the realization of a framework for exploring large datasets. Further, this work is introducing a large body of work in machine learning to the field of visualization. Successful completion of this research will help overcome the brittleness of existing visualization methods and foster expedient discovery in many areas of science and engineering.\r\n\r\nThe multi-resolution techniques developed here will employ a two-fold strategy. First, semi-supervised learning based on training with the domain expert is used to develop strategies for selective spatial and temporal refinement of the data.  A classifier is constructed to tag the output of the coarse resolution feature detection (i.e. regions) as either interesting or not interesting. Then at the finest scale, interesting local data chunks containing features of interest are identified for further analysis. Second, several local feature detection algorithms, or weak classifiers, are combined into a single, more robust compound classifier using adaptive boosting, or AdaBoost, and a data adaptive variant called CAVIAR that facilitates validated feature detection. Ideally, the compound classifier combines the best of all weak classifiers as they respond to the underlying physical signal. This research is demonstrating the effectiveness of these methods by applying existing local detection algorithms for visualizing vortices in turbulent flow fields.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Raghu",
+   "pi_last_name": "Machiraju",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Raghu Machiraju",
+   "pi_email_addr": "machiraju.1@osu.edu",
+   "nsf_id": "000258097",
+   "pi_start_date": "2011-03-30",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Han-Wei",
+   "pi_last_name": "Shen",
+   "pi_mid_init": "h",
+   "pi_sufx_name": "",
+   "pi_full_name": "Han-Wei h Shen",
+   "pi_email_addr": "hwshen@cse.ohio-state.edu",
+   "nsf_id": "000124930",
+   "pi_start_date": "2011-03-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Ohio State University",
+  "inst_street_address": "1960 KENNY RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLUMBUS",
+  "inst_state_code": "OH",
+  "inst_state_name": "Ohio",
+  "inst_phone_num": "6146888735",
+  "inst_zip_code": "432101016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "OH03",
+  "org_lgl_bus_name": "OHIO STATE UNIVERSITY, THE",
+  "org_prnt_uei_num": "MN4MDDMN8529",
+  "org_uei_num": "DLWBSLWAJWR1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Ohio State University",
+  "perf_str_addr": "1960 KENNY RD",
+  "perf_city_name": "COLUMBUS",
+  "perf_st_code": "OH",
+  "perf_st_name": "Ohio",
+  "perf_zip_code": "432101016",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "OH03",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "745300",
+   "pgm_ele_name": "GRAPHICS & VISUALIZATION"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 542002.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><div>\n<p>This project seeks to exploit the locality of certain feature detection algorithms in order to develop a feature-based representation framework tailored for large and complex data that can extract features in a multi-resolutional setting. Such a framework can mitigate uncertainty and infuse robustness to the framework through the use of boosted and enssemble versions of existing local feature detection algorithms. This larger objective is being achieved through the realization of the following four goals:</p>\n<p><strong>Goal 1</strong>: We aim to discover interesting data chunks at each level of a multi-resolution hierarchy using supervised learning. At the finest scale, it is our goal to localize interesting data chunks that are replete with features of interest.</p>\n<p><strong>Goal 2</strong>: &nbsp;Our proposed approach is to combine several local feature detection algorithms into a single compound classifier using AdaBoost that results in validated and robust feature detection. Ideally, the compound classifier would combine the best of all local classifiers as they respond to the underlying physical signal.</p>\n<p><strong>Goal 3:</strong>&nbsp; We aim to quantify uncertainty (localization error) and robustness (detection error) by examining the generalization performance across the temporal domain and across datasets.</p>\n<p><strong>Goal 4</strong>:&nbsp; We aim to demonstrate the feasibility and effectiveness of our feature-based representation framework by deploying local vortex detection algorithms on large-scale turbulent flow fields.</p>\n<p>The project was undertaken at three different universities namely, The Ohio State Univiersity (Machiraju, Shen), Mississippi State University (Thompson, Walters), and the University of Florida (Rangarajan). It required the combined collaboration from four disparate topic areas namely visualization, machine learning, data analysis and computational fluid dynamics.&nbsp;</p>\n</div>\n<div>The following were the key outcomes of the project.</div>\n<ol>\n<li>We successfully adapted boosting techniques to complex flow data.</li>\n<li>We identified salient flow features to be used in clasifiers and established the working dimensionality of the underlying classification problem.</li>\n<li>We identified useful data sets that could be used to benchmark detector and classifier performance.&nbsp;</li>\n<li>We clarified the role of the expert user and created a viable protocol for creating test data for the particular machine learing problem-at-hand.</li>\n<li>We adhered closely to the underlying physics (e.g. Galilean invariance) while proposing local techniques that best characterize the statistics of the flow field and being amenable to the requirements of existing machine learning techniques.</li>\n</ol><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/20/2015<br>\n\t\t\t\t\tModified by: Raghu&nbsp;Machiraju</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2015/1065025/1065025_10081869_1445359275097_BS-B32-Comp--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2015/1065025/1065025_10081869_1445359275097_BS-B32-Comp--rgov-800width.jpg\" title=\"Rearward facing step - AdaBoost Classifier\"><img src=\"/por/images/Reports/POR/2015/1065025/1065025_10081869_1445359275097_BS-B32-Comp--rgov-66x44.jpg\" alt=\"Rearward facing step - AdaBoost Classifier\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Rearward facing step: The nodes marked by thecompound clas...",
+  "por_txt_cntn": "\n\nThis project seeks to exploit the locality of certain feature detection algorithms in order to develop a feature-based representation framework tailored for large and complex data that can extract features in a multi-resolutional setting. Such a framework can mitigate uncertainty and infuse robustness to the framework through the use of boosted and enssemble versions of existing local feature detection algorithms. This larger objective is being achieved through the realization of the following four goals:\n\nGoal 1: We aim to discover interesting data chunks at each level of a multi-resolution hierarchy using supervised learning. At the finest scale, it is our goal to localize interesting data chunks that are replete with features of interest.\n\nGoal 2:  Our proposed approach is to combine several local feature detection algorithms into a single compound classifier using AdaBoost that results in validated and robust feature detection. Ideally, the compound classifier would combine the best of all local classifiers as they respond to the underlying physical signal.\n\nGoal 3:  We aim to quantify uncertainty (localization error) and robustness (detection error) by examining the generalization performance across the temporal domain and across datasets.\n\nGoal 4:  We aim to demonstrate the feasibility and effectiveness of our feature-based representation framework by deploying local vortex detection algorithms on large-scale turbulent flow fields.\n\nThe project was undertaken at three different universities namely, The Ohio State Univiersity (Machiraju, Shen), Mississippi State University (Thompson, Walters), and the University of Florida (Rangarajan). It required the combined collaboration from four disparate topic areas namely visualization, machine learning, data analysis and computational fluid dynamics. \n\nThe following were the key outcomes of the project.\n\nWe successfully adapted boosting techniques to complex flow data.\nWe identified salient flow features to be used in clasifiers and established the working dimensionality of the underlying classification problem.\nWe identified useful data sets that could be used to benchmark detector and classifier performance. \nWe clarified the role of the expert user and created a viable protocol for creating test data for the particular machine learing problem-at-hand.\nWe adhered closely to the underlying physics (e.g. Galilean invariance) while proposing local techniques that best characterize the statistics of the flow field and being amenable to the requirements of existing machine learning techniques.\n\n\n\t\t\t\t\tLast Modified: 10/20/2015\n\n\t\t\t\t\tSubmitted by: Raghu Machiraju"
+ }
+}

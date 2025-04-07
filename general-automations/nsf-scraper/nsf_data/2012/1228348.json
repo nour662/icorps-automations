@@ -1,0 +1,125 @@
+{
+ "awd_id": "1228348",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Statistical Theory and Methods for D&R Analysis of Large Complex Data",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032927299",
+ "po_email": "yzeng@nsf.gov",
+ "po_sign_block_name": "Yong Zeng",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2017-08-31",
+ "tot_intn_awd_amt": 314995.0,
+ "awd_amount": 314995.0,
+ "awd_min_amd_letter_date": "2012-08-14",
+ "awd_max_amd_letter_date": "2012-08-14",
+ "awd_abstract_narration": "In Divide and Recombine (D&R) the data are divided into subsets by the data analyst. These are the S computations because they create the subsets. Statistical and visualization methods are applied to each subset without communication among the computations. These are the W computations because they are within subsets. Then the W computation outputs are recombined across subsets. These are the B computations because they are between subsets. One goal of D&R is deep analysis, an ability to study the data in detail despite the size and complexity. A second goal is an ability to carry out analysis wholly from within an interactive language for data analysis (ILDA) such as R. D&R achieves the goals by introducing a simple parallelization, not of the analysis methods themselves which is very complex, but of the data. This results in ``embarrassingly parallel'' computations that can be efficiently carried out by a distributed computational environment like Hadoop. Also, Hadoop can be merged with an ILDA.  The investigators will research two areas of statistical theory and methods for D&R. The first is development of D&R statistical division and recombination procedures. This is very broad because there are many analysis methods, and the procedures need to change with the methods and the data structures they address. The second topic is a foundational mathematical theory. In the current fundamental paradigm for statistics, an analysis method is applied directly to all of the data in one big computation.  The S, W, and B computations use all of the data too, but the results are in general not the same as those for direct computation and have different statistical properties. This introduces a new fundamental paradigm for statistical accuracy and optimality.\r\n\r\nIn Divide and Recombine (D&R), large complex data are divided into subsets. Statistical and visualization methods are applied to each of the subsets separately. Then the results of each method are recombined across subsets. This new analysis framework for large complex data can readily exploit current distributed computational environments because it leads to very simple parallel computation.  The investigators will develop statistical procedures for division and recombination that result in good statistical accuracy for the analysis methods. Accuracy tends to be less than that from direct computation on all of the data in one big computation, which is impractically long or simply infeasible. D&R trades some accuracy for computational feasibility. The result is that almost any statistical or visualization method can be successfully applied to large complex data. This enables a deep, detailed analysis that does not risk losing important information in the data, which is feasible today only with small data.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "William",
+   "pi_last_name": "Cleveland",
+   "pi_mid_init": "S",
+   "pi_sufx_name": "",
+   "pi_full_name": "William S Cleveland",
+   "pi_email_addr": "wsc@purdue.edu",
+   "nsf_id": "000194006",
+   "pi_start_date": "2012-08-14",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Chuanhai",
+   "pi_last_name": "Liu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Chuanhai Liu",
+   "pi_email_addr": "chuanhai@purdue.edu",
+   "nsf_id": "000096911",
+   "pi_start_date": "2012-08-14",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Bowei",
+   "pi_last_name": "Xi",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Bowei Xi",
+   "pi_email_addr": "xbw@purdue.edu",
+   "nsf_id": "000330282",
+   "pi_start_date": "2012-08-14",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Purdue University",
+  "inst_street_address": "2550 NORTHWESTERN AVE # 1100",
+  "inst_street_address_2": "",
+  "inst_city_name": "WEST LAFAYETTE",
+  "inst_state_code": "IN",
+  "inst_state_name": "Indiana",
+  "inst_phone_num": "7654941055",
+  "inst_zip_code": "479061332",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "IN04",
+  "org_lgl_bus_name": "PURDUE UNIVERSITY",
+  "org_prnt_uei_num": "YRXVL4JYCEF5",
+  "org_uei_num": "YRXVL4JYCEF5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Purdue University",
+  "perf_str_addr": "Department of Statistics",
+  "perf_city_name": "West Lafayette",
+  "perf_st_code": "IN",
+  "perf_st_name": "Indiana",
+  "perf_zip_code": "479072114",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "IN04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806900",
+   "pgm_ele_name": "CDS&E-MSS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 314995.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The project has developed statistical methods and theory, and high performance computing environment for deep analysis of big data. The end result allows data analysts to analyze and visualize the detailed data for model building and checking, not just analyze summary statistics or the outputs of data-reduction algorithms without study of the detailed data. The computing environment provides feasible, practical computing over wide ranges of sizes, complexities, and hardware power. The hardware/software environment allows computation to be done in parallel, and analyze datasets that are larger than the physical memory. <br /><br />A statistical approach, divide and recombine (D&amp;R), has been developed for deep analysis of big complex data. The data are divided into subsets, each of&nbsp; a collection of analytic methods is applied to the subsets independently without communication in the subset&nbsp; computations. The computations are &ldquo;embarrassingly parallel&rdquo;, the simplest parallel computation. The&nbsp; subset outputs of each analytic method are then recombined. In this case, there is communication between&nbsp; outputs, but often there is a component of embarrassingly parallel computation. Normally, the outputs are&nbsp; collectively much smaller than the original data, and the reduced size helps to make recombination computations&nbsp; high performing. The design of the recombination method can play a role here too in maintaining good&nbsp; computational performance. The design of D&amp;R makes it easy to exploit distributed, parallel computational&nbsp; environments to achieve high computational performance.&nbsp;&nbsp; <br /><br />DeltaRho is a software system for deep analysis of big data using D&amp;R. At the DeltaRho front end,&nbsp; the analyst programs in R and uses&nbsp; our DeltaRho datadr R package. datadr is a language for D&amp;R.&nbsp; Analyst R programming using datadr specifies divisions, analytic methods to be used, and recombinations. <br />It protects the analyst from from the details of distributed parallel computing, make programming D&amp;R very&nbsp; time-efficient. The DeltaRho backend is a distributed parallel computational environment running on a cluster. So far, the backend has been Hadoop. The Hadoop Distributed File System (HDFS) distributes subsets and outputs&nbsp; across the disks of the cluster nodes. Hadoop Map and Reduce distributed computational tasking distribute&nbsp; computations of D&amp;R across the cores of the cluster nodes. Package Trelliscope is written for visualization that uses D&amp;R. Trelliscope provides a way to create&nbsp; displays with a very large number of panels and an interactive viewer that allows the analyst to sort, filter,&nbsp; and sample the panels in a meaningful way. This provides<br />visualization of the detailed data, a critical part&nbsp; of the deep analysis described above.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/16/2017<br>\n\t\t\t\t\tModified by: Bowei&nbsp;Xi</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe project has developed statistical methods and theory, and high performance computing environment for deep analysis of big data. The end result allows data analysts to analyze and visualize the detailed data for model building and checking, not just analyze summary statistics or the outputs of data-reduction algorithms without study of the detailed data. The computing environment provides feasible, practical computing over wide ranges of sizes, complexities, and hardware power. The hardware/software environment allows computation to be done in parallel, and analyze datasets that are larger than the physical memory. \n\nA statistical approach, divide and recombine (D&amp;R), has been developed for deep analysis of big complex data. The data are divided into subsets, each of  a collection of analytic methods is applied to the subsets independently without communication in the subset  computations. The computations are \"embarrassingly parallel\", the simplest parallel computation. The  subset outputs of each analytic method are then recombined. In this case, there is communication between  outputs, but often there is a component of embarrassingly parallel computation. Normally, the outputs are  collectively much smaller than the original data, and the reduced size helps to make recombination computations  high performing. The design of the recombination method can play a role here too in maintaining good  computational performance. The design of D&amp;R makes it easy to exploit distributed, parallel computational  environments to achieve high computational performance.   \n\nDeltaRho is a software system for deep analysis of big data using D&amp;R. At the DeltaRho front end,  the analyst programs in R and uses  our DeltaRho datadr R package. datadr is a language for D&amp;R.  Analyst R programming using datadr specifies divisions, analytic methods to be used, and recombinations. \nIt protects the analyst from from the details of distributed parallel computing, make programming D&amp;R very  time-efficient. The DeltaRho backend is a distributed parallel computational environment running on a cluster. So far, the backend has been Hadoop. The Hadoop Distributed File System (HDFS) distributes subsets and outputs  across the disks of the cluster nodes. Hadoop Map and Reduce distributed computational tasking distribute  computations of D&amp;R across the cores of the cluster nodes. Package Trelliscope is written for visualization that uses D&amp;R. Trelliscope provides a way to create  displays with a very large number of panels and an interactive viewer that allows the analyst to sort, filter,  and sample the panels in a meaningful way. This provides\nvisualization of the detailed data, a critical part  of the deep analysis described above.\n\n\t\t\t\t\tLast Modified: 10/16/2017\n\n\t\t\t\t\tSubmitted by: Bowei Xi"
+ }
+}

@@ -1,0 +1,114 @@
+{
+ "awd_id": "2001161",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: TTP: Medium: Reducing Container Kernel Attack Surface with TRACKS",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925147",
+ "po_email": "dmassey@nsf.gov",
+ "po_sign_block_name": "Daniel F. Massey",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2025-09-30",
+ "tot_intn_awd_amt": 1200000.0,
+ "awd_amount": 1200000.0,
+ "awd_min_amd_letter_date": "2020-09-01",
+ "awd_max_amd_letter_date": "2020-10-15",
+ "awd_abstract_narration": "The infrastructure that powers modern cloud computing environments uses isolated environments called containers to help keep users' data safe. Unfortunately, containers are still vulnerable to flaws in the core operating system (the Linux kernel), which can be used to compromise the security and integrity of container environments. The TRACKS (TRimming Augments Container Kernel Security) project aims to strengthen the security of container environments by hardening the Linux kernel.  The project's novelties are its use of how frequently code is encountered as a way to measure how likely it is to have security flaws.  Prior NSF-supported research has found that frequently-used code is less likely to have serious security vulnerabilities; TRACKS will transition this security metric to practice by placing security monitoring and additional checks into the portions of the Linux kernel that are most likely to be vulnerable and working to incorporate these kernels into real-world cloud environments.  One benefit of this approach is that since the checks are placed in code that is rarely used, the additional security comes at a very low performance cost.  The project's impacts are expected to be a significant improvement in the security of containers using the Linux kernel, which in turn will help protect the safety and privacy of millions of users.\r\n\r\nTRACKS works by first profiling the execution of the Linux kernel under a wide variety of common container workloads, creating a profile of the most commonly executed code paths. Next, the least commonly used code is instrumented using an LLVM-based compiler pass that can, according to user-defined policies, insert logging, add exploit mitigations such as bounds checking and control flow integrity, or even trigger a shut down of the container when rare code is encountered. In prior work, the investigators found that around 95% of kernel vulnerabilities were located in rarely executed code; as a result, the investigators expect that by creating these hardened kernels and working with cloud infrastructure providers to incorporate them into production environments, a significant improvement in cloud container security can be achieved.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Brendan",
+   "pi_last_name": "Dolan-Gavitt",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Brendan Dolan-Gavitt",
+   "pi_email_addr": "bd52@nyu.edu",
+   "nsf_id": "000701772",
+   "pi_start_date": "2020-09-01",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Justin",
+   "pi_last_name": "Cappos",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Justin Cappos",
+   "pi_email_addr": "jcappos@nyu.edu",
+   "nsf_id": "000600621",
+   "pi_start_date": "2020-09-01",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "New York University",
+  "inst_street_address": "70 WASHINGTON SQ S",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEW YORK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "2129982121",
+  "inst_zip_code": "100121019",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "NY10",
+  "org_lgl_bus_name": "NEW YORK UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NX9PXMKW5KW8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "New York University",
+  "perf_str_addr": "70 Washington Square S",
+  "perf_city_name": "New York",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "100121019",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "NY10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 1200000.0
+  }
+ ],
+ "por": null
+}

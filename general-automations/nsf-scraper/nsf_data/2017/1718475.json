@@ -1,0 +1,117 @@
+{
+ "awd_id": "1718475",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: CORE: Small: Batch Techniques for Practical Private Information Retrieval",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Wei-Shinn Ku",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 322598.0,
+ "awd_amount": 322598.0,
+ "awd_min_amd_letter_date": "2017-08-16",
+ "awd_max_amd_letter_date": "2017-08-16",
+ "awd_abstract_narration": "Private information retrieval (PIR) is a cryptographic primitive that solves the seemingly impossible problem of letting users fetch records from untrusted and remote database servers without letting those servers learn which records the users are fetching. The research literature on PIR is vast; for over two decades, the cryptography, privacy, and theory research communities have studied PIR intensively and from a variety of perspectives; compelling applications for PIR abound in the resulting research literature. Alas, despite a series of significant advances, existing PIR techniques remain notoriously inefficient and none of the numerous PIR-based applications proposed in the research literature have been deployed at scale to protect the privacy of users \"in the wild\". This project entails an integrated research agenda that couples a strong theoretical component with an ambitious practical component centered around developing, analyzing, and implementing novel \"batch\" IT-PIR techniques, which can potentially alleviate the \"prohibitive cost\" problem for so-called information-theoretic private information retrieval (IT-PIR), the most performant and well-studied category of PIR protocols. Beyond improving performance, the new batch techniques also improve the \"expressiveness\" of PIR, exposing intuitive APIs through which applications can safely, easily, and efficiently interact with IT-PIR protocols.\r\n\r\nPIR has long provided compelling solutions in theory to a wide array of important problems, but it has seen little adoption in practice due in part to the inefficiency and limited expressiveness of existing techniques. Indeed, traditional PIR constructions let users fetch just one data record at a time by encoding the record's index (i.e., its physical locations relative to the other records in the database) in a cryptographically protected query. This project builds on preliminary results by the PI, which extend that basic functionality to not only let users fetch several records (i.e., a \"batch\" of records) for a lower cost than that of fetching each record separately, but also to let users fetch such batches of records using \"contextual\" queries that specify which data they seek, as opposed to \"positional\" queries that specify where those data happen to reside in the database. The main research goals are to (i) develop theoretical frameworks to better understand the mathematics underlying batch IT-PIR, to (ii) use insights gained from these frameworks to improve upon and generalize the known constructions, and to (iii) use the improved constructions to implement practical, privacy-respecting alternatives to a selection of existing privacy-agnostic products and services. The new batch IT-PIR constructions will be incorporated into the open-source Percy++ library, an effort which will deeply involve both graduate and undergraduate students.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ryan",
+   "pi_last_name": "Henry",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ryan Henry",
+   "pi_email_addr": "henry@indiana.edu",
+   "nsf_id": "000702603",
+   "pi_start_date": "2017-08-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Indiana University",
+  "inst_street_address": "107 S INDIANA AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "BLOOMINGTON",
+  "inst_state_code": "IN",
+  "inst_state_name": "Indiana",
+  "inst_phone_num": "3172783473",
+  "inst_zip_code": "474057000",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "IN09",
+  "org_lgl_bus_name": "TRUSTEES OF INDIANA UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "YH86RTW2YVJ4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Indiana University",
+  "perf_str_addr": "150 S. Woodlawn Avenue",
+  "perf_city_name": "Bloomington",
+  "perf_st_code": "IN",
+  "perf_st_name": "Indiana",
+  "perf_zip_code": "474017104",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "09",
+  "perf_st_cong_dist": "IN09",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9178",
+   "pgm_ref_txt": "UNDERGRADUATE EDUCATION"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 322598.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project investigated approaches to improving the performance and scalability of multi-server private information retrieval using the concept of \"batching\". Intuitively, batching refers to the techniques that can amortize the cost of PIR query processing by (i) encoding several queries into a single, multiblock query, (ii) encoding databases in ways that facilitate more efficient retrieval of multiple datablocks at once, (iii) processing unrelated requests in parallel in ways that reduce the server-borne cost per request, or (iv) some combination of the above.<br /><br />The primary outcomes of the research include<br /><br />&nbsp;&nbsp; &nbsp;1) new construction allowing the flexible tradeoffs between communication cost, server-side computation cost, and Byzantine robustness in IT-PIR based on Shamir secret sharing (and related ramp schemes);<br />&nbsp;&nbsp; &nbsp;<br />&nbsp;&nbsp; &nbsp;2) a novel technique that allows single-round keyword-like (batch) retrieval in multiserver PIR schemes via a primitive called \"indexes of queries\";<br />&nbsp;&nbsp; &nbsp;<br />&nbsp;&nbsp; &nbsp;3) a new many-server PIR protocol that provides provably optimal download and server-side computation costs, with extremely low (albeit, not provably optimal) upload and client-side computation costs;<br /><br />&nbsp;&nbsp; &nbsp;4) new techniques for using secure multiparty computation to train collaborative filtering models and render collaborative filtering recommendations over compact multiserver PIR queries in the context of PIR-backed media streaming services;<br /><br />&nbsp;&nbsp; &nbsp;5) open-source implementations of each of the above.<br /><br />Not only do these findings significantly advance the state of the art with respect to scalable and efficient multi-server PIR, but they also illuminate several promising areas for future work. For example, efforts are underway to extend the work on indexes of queries (contribution 2 above) to work with arbitrary PIR protocols and with less structured database schemas, which will significantly expand set range of use cases for which non-experts can safely employ PIR techniques; the many-sever PIR protocol (contribution 3 above) demonstrates that PIR can be significantly faster than previously believed, while raising questions around lower bounds on upload cost and the relation between upload and download cost in optimal-rate protocols; and the work on collaborative filtering (contribution 4 above) demonstrates that practically efficient PIR-based internet services could indeed be feasibly deployed. The open-source implementations make it easy for others to replicate these findings, improve on them, and incorporate them into new systems.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/17/2021<br>\n\t\t\t\t\tModified by: Ryan&nbsp;Henry</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project investigated approaches to improving the performance and scalability of multi-server private information retrieval using the concept of \"batching\". Intuitively, batching refers to the techniques that can amortize the cost of PIR query processing by (i) encoding several queries into a single, multiblock query, (ii) encoding databases in ways that facilitate more efficient retrieval of multiple datablocks at once, (iii) processing unrelated requests in parallel in ways that reduce the server-borne cost per request, or (iv) some combination of the above.\n\nThe primary outcomes of the research include\n\n    1) new construction allowing the flexible tradeoffs between communication cost, server-side computation cost, and Byzantine robustness in IT-PIR based on Shamir secret sharing (and related ramp schemes);\n    \n    2) a novel technique that allows single-round keyword-like (batch) retrieval in multiserver PIR schemes via a primitive called \"indexes of queries\";\n    \n    3) a new many-server PIR protocol that provides provably optimal download and server-side computation costs, with extremely low (albeit, not provably optimal) upload and client-side computation costs;\n\n    4) new techniques for using secure multiparty computation to train collaborative filtering models and render collaborative filtering recommendations over compact multiserver PIR queries in the context of PIR-backed media streaming services;\n\n    5) open-source implementations of each of the above.\n\nNot only do these findings significantly advance the state of the art with respect to scalable and efficient multi-server PIR, but they also illuminate several promising areas for future work. For example, efforts are underway to extend the work on indexes of queries (contribution 2 above) to work with arbitrary PIR protocols and with less structured database schemas, which will significantly expand set range of use cases for which non-experts can safely employ PIR techniques; the many-sever PIR protocol (contribution 3 above) demonstrates that PIR can be significantly faster than previously believed, while raising questions around lower bounds on upload cost and the relation between upload and download cost in optimal-rate protocols; and the work on collaborative filtering (contribution 4 above) demonstrates that practically efficient PIR-based internet services could indeed be feasibly deployed. The open-source implementations make it easy for others to replicate these findings, improve on them, and incorporate them into new systems.\n\n\t\t\t\t\tLast Modified: 05/17/2021\n\n\t\t\t\t\tSubmitted by: Ryan Henry"
+ }
+}

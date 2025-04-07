@@ -1,0 +1,137 @@
+{
+ "awd_id": "1937460",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RTML: Small: Collaborative: A Programming Model and Platform Architecture for Real-time Machine Learning for Sub-second Systems",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927843",
+ "po_email": "sabasu@nsf.gov",
+ "po_sign_block_name": "Sankar Basu",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 240000.0,
+ "awd_amount": 248000.0,
+ "awd_min_amd_letter_date": "2019-09-12",
+ "awd_max_amd_letter_date": "2023-06-09",
+ "awd_abstract_narration": "This project develops and evaluates novel frameworks for achieving real-time machine learning; that is, for a given target application that is producing a lot of data, how to process that data to concurrently prediction what comes next while learning from the past data at the same pace of the target application. The developed framework will produce adaptive models suitable to predict the behavior of the complex dynamics found in sub-second systems.  Such systems include adaptive airbag deployment mechanisms, hypersonic vehicles, and active impact mitigation systems. Solutions will be developed to learn the dynamics at the data rates required to enable real-time decision-making systems such as those used for active control and adaptive operations.  These solutions are designed for direct integration into sub-second systems to increase their resilience, robustness, safety, and viability. It follows that this research will impact society by enabling sub-second systems and empowering decision-making capabilities at speeds never reached before. Several undergraduate students will be included in the project with an emphasis on providing research experiences to underrepresented, first-generation, and low-income students by leveraging existing and valuable resources at both the University of South Carolina and Iowa State University.  This project will also produce two multidisciplinary Ph.D. students with expertise in machine learning, high-rate dynamics, and control. \r\n\r\nThe novelty of the approach taken in this project is to tune hyper-parameters to facilitate the use of an array of concurrent models to hide training latency.  More specifically, field programmable gate arrays (FPGAs) are used to store and update the parameters of multiple concurrent long short-term memory networks as well as embed physical knowledge at the neurons' input level. This will require that the machine learning algorithm learn the temporal dependencies across operating regimes and adapt to varying dynamics. The resulting algorithm is a novel type of long short-term memory recurrent neural network that enables the prediction of nonlinear and non-stationary time series. Multiple iterations of this algorithm will be run in parallel on a single FPGA where the training time of one algorithm can be effectively hidden by another algorithm performing inference in parallel. The formulated algorithm will advance the field of real-time machine learning by furthering knowledge on: 1) how parallel models interact to hide training latency; 2)  the effect of automated tuning of model parameters; 3) the role of physical knowledge in designing input spaces; 4) the benefits of subdividing non-stationary time series into local stationary systems; and 5) sustaining sufficient accuracy while meeting real-time constraints in the micro-second realm.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Simon",
+   "pi_last_name": "Laflamme",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Simon Laflamme",
+   "pi_email_addr": "laflamme@iastate.edu",
+   "nsf_id": "000601956",
+   "pi_start_date": "2019-09-12",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Chao",
+   "pi_last_name": "Hu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Chao Hu",
+   "pi_email_addr": "chao.hu@uconn.edu",
+   "nsf_id": "000701442",
+   "pi_start_date": "2019-09-12",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Iowa State University",
+  "inst_street_address": "1350 BEARDSHEAR HALL",
+  "inst_street_address_2": "515 MORRILL ROAD",
+  "inst_city_name": "AMES",
+  "inst_state_code": "IA",
+  "inst_state_name": "Iowa",
+  "inst_phone_num": "5152945225",
+  "inst_zip_code": "500112103",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "IA04",
+  "org_lgl_bus_name": "IOWA STATE UNIVERSITY OF SCIENCE AND TECHNOLOGY",
+  "org_prnt_uei_num": "DQDBM7FGJPC5",
+  "org_uei_num": "DQDBM7FGJPC5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Iowa State University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "IA",
+  "perf_st_name": "Iowa",
+  "perf_zip_code": "500112105",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "IA04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "756400",
+   "pgm_ele_name": "CCSS-Comms Circuits & Sens Sys"
+  },
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "082Z",
+   "pgm_ref_txt": "RTML-Real Time Machine Learning"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  },
+  {
+   "pgm_ref_code": "7945",
+   "pgm_ref_txt": "DES AUTO FOR MICRO & NANO SYST"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 240000.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 8000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project developed and evaluated frameworks for achieving real-time machine learning (RTML) tailored for high-rate dynamic systems. These systems, characterized by their rapid and complex behaviors, demand real-time decision-making capabilities that traditional computational methods struggle to meet. By designing adaptive machine learning models capable of learning from and predicting data at the same pace as its generation, this project delivered foundational advancements in enabling mechanical/structural systems to respond in real-time.</p>\r\n<p>A significant achievement of this project was the development of long short-term memory (LSTM) networks tailored for high-rate systems while considering hardware-aware algorithm design. The LSTM models were optimized to predict nonlinear and non-stationary time series with sub-millisecond latency. A key innovation was the creation of an ensemble-based approach where multiple LSTMs handled different temporal features, leveraging dynamic attention layers to combine predictions into actionable information. The design was rooted in physics-informed machine learning, blending domain knowledge with data-driven methods to enhance predictive accuracy while ensuring computational efficiency.</p>\r\n<p>The project advanced automated machine learning training using multi-objective Bayesian optimization, enabling simultaneous optimization of hyperparameters to balance accuracy and computational efficiency. By targeting objectives like accuracy and computational demands, Pareto-optimal network configurations were identified for deployment on resource-constrained field-programmable gate arrays (FPGAs). Dynamic resource allocation strategies ensured ultra-low latency without sacrificing predictive performance. Incorporating domain-specific physical knowledge further improved the models' ability to capture complex nonlinear behaviors.</p>\r\n<p>Experimental validation of the LSTM models and hardware-software co-design frameworks developed in this project was conducted using a series of custom-built test structures designed to simulate relevant high-rate dynamic environments. A significant achievement was the creation of experimental setups capable of subjecting electronic components, such as printed circuit boards (PCBs), to repeated high-energy shocks, enabling the real-time evaluation of structural integrity. For example, high-speed measurements from these tests were used to validate LSTM models for predicting the health state of electronic systems with millisecond-level accuracy. Complementary finite element models were also developed to simulate shock events, providing insights into actuator placement for future active control strategies.</p>\r\n<p>The project prioritized collaboration and knowledge sharing, working to create datasets and tools that align with FAIR principles (Findable, Accessible, Interoperable, and Reusable). A public GitHub organization was established to host multiple repositories, featuring datasets, algorithms, and tools, including resources for shock loading on electronic components and high-rate dynamic tests. These repositories include detailed documentation, working examples, and scripts to support reproducibility and accessibility. Links to the repositories are provided in the project&rsquo;s publications, ensuring researchers and industry practitioners can easily access and apply the tools and data to advance their work.</p>\r\n<p>The broader impacts of this project extend beyond technical achievements, significantly contributing to education and workforce development. It provided research experiences to over 30 students, including undergraduates, graduate students, and senior design teams, with a strong focus on engaging underrepresented, first-generation, and low-income students. All students had the opportunity to present their work at the monthly High-Rate Structural Monitoring, Damage Detection, Prognostics, and Reactions working group meetings, which united academia, industry, and government. These meetings fostered collaboration, exposed students to real-world applications, and offered invaluable presentation opportunities. Notably, the meetings have continued beyond the project&rsquo;s completion, highlighting the lasting impact of the funds and the project's success in building a collaborative community.</p>\r\n<p>Several students involved in the project have gone on to work at national laboratories, government research institutions, or pursue graduate education, significantly contributing to the nation's intellectual and technical capacity. At USC, an REU participant earned a prestigious Science, Mathematics, and Research for Transformation (SMART) Department of Defense Fellowship, leading to a position with the Navy focused on research related to structural systems. Another participant earned the highly competitive NSF Graduate Research Fellowship Program (GRFP) and is now pursuing graduate studies at an institution outside USC. Additionally, several other students from USC and ISU worked with the Air Force Research Laboratory on seven separate occasions over the project period, reflecting the high demand for the skills developed through this project. Furthermore, five students chose to continue their education at USC, pursuing advanced graduate degrees in engineering.</p>\r\n<p>The broader impacts of this project extend beyond the academic sphere. By addressing key challenges in real-time machine learning for high-rate dynamic systems, the developed methodologies hold promise for applications in autonomous vehicles, robotics, hypersonics, and supercomputing. The ability to make accurate predictions and decisions in real-time enhances resilience, robustness, and safety in next-generation engineering systems, driving innovation and potentially transforming industries dependent on high-speed operations.</p>\r\n<p>Overall, the project advanced real-time machine learning, fostered collaboration across academia, industry, and government, and built the nation&rsquo;s intellectual and technical capacity. By mentoring a diverse group of students and sharing cutting-edge research, it fulfilled the NSF's mission: to promote the progress of science; to advance the national health, prosperity, and welfare; or to secure the national defense.</p><br>\n<p>\n Last Modified: 01/27/2025<br>\nModified by: Simon&nbsp;Laflamme</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThis project developed and evaluated frameworks for achieving real-time machine learning (RTML) tailored for high-rate dynamic systems. These systems, characterized by their rapid and complex behaviors, demand real-time decision-making capabilities that traditional computational methods struggle to meet. By designing adaptive machine learning models capable of learning from and predicting data at the same pace as its generation, this project delivered foundational advancements in enabling mechanical/structural systems to respond in real-time.\r\n\n\nA significant achievement of this project was the development of long short-term memory (LSTM) networks tailored for high-rate systems while considering hardware-aware algorithm design. The LSTM models were optimized to predict nonlinear and non-stationary time series with sub-millisecond latency. A key innovation was the creation of an ensemble-based approach where multiple LSTMs handled different temporal features, leveraging dynamic attention layers to combine predictions into actionable information. The design was rooted in physics-informed machine learning, blending domain knowledge with data-driven methods to enhance predictive accuracy while ensuring computational efficiency.\r\n\n\nThe project advanced automated machine learning training using multi-objective Bayesian optimization, enabling simultaneous optimization of hyperparameters to balance accuracy and computational efficiency. By targeting objectives like accuracy and computational demands, Pareto-optimal network configurations were identified for deployment on resource-constrained field-programmable gate arrays (FPGAs). Dynamic resource allocation strategies ensured ultra-low latency without sacrificing predictive performance. Incorporating domain-specific physical knowledge further improved the models' ability to capture complex nonlinear behaviors.\r\n\n\nExperimental validation of the LSTM models and hardware-software co-design frameworks developed in this project was conducted using a series of custom-built test structures designed to simulate relevant high-rate dynamic environments. A significant achievement was the creation of experimental setups capable of subjecting electronic components, such as printed circuit boards (PCBs), to repeated high-energy shocks, enabling the real-time evaluation of structural integrity. For example, high-speed measurements from these tests were used to validate LSTM models for predicting the health state of electronic systems with millisecond-level accuracy. Complementary finite element models were also developed to simulate shock events, providing insights into actuator placement for future active control strategies.\r\n\n\nThe project prioritized collaboration and knowledge sharing, working to create datasets and tools that align with FAIR principles (Findable, Accessible, Interoperable, and Reusable). A public GitHub organization was established to host multiple repositories, featuring datasets, algorithms, and tools, including resources for shock loading on electronic components and high-rate dynamic tests. These repositories include detailed documentation, working examples, and scripts to support reproducibility and accessibility. Links to the repositories are provided in the projects publications, ensuring researchers and industry practitioners can easily access and apply the tools and data to advance their work.\r\n\n\nThe broader impacts of this project extend beyond technical achievements, significantly contributing to education and workforce development. It provided research experiences to over 30 students, including undergraduates, graduate students, and senior design teams, with a strong focus on engaging underrepresented, first-generation, and low-income students. All students had the opportunity to present their work at the monthly High-Rate Structural Monitoring, Damage Detection, Prognostics, and Reactions working group meetings, which united academia, industry, and government. These meetings fostered collaboration, exposed students to real-world applications, and offered invaluable presentation opportunities. Notably, the meetings have continued beyond the projects completion, highlighting the lasting impact of the funds and the project's success in building a collaborative community.\r\n\n\nSeveral students involved in the project have gone on to work at national laboratories, government research institutions, or pursue graduate education, significantly contributing to the nation's intellectual and technical capacity. At USC, an REU participant earned a prestigious Science, Mathematics, and Research for Transformation (SMART) Department of Defense Fellowship, leading to a position with the Navy focused on research related to structural systems. Another participant earned the highly competitive NSF Graduate Research Fellowship Program (GRFP) and is now pursuing graduate studies at an institution outside USC. Additionally, several other students from USC and ISU worked with the Air Force Research Laboratory on seven separate occasions over the project period, reflecting the high demand for the skills developed through this project. Furthermore, five students chose to continue their education at USC, pursuing advanced graduate degrees in engineering.\r\n\n\nThe broader impacts of this project extend beyond the academic sphere. By addressing key challenges in real-time machine learning for high-rate dynamic systems, the developed methodologies hold promise for applications in autonomous vehicles, robotics, hypersonics, and supercomputing. The ability to make accurate predictions and decisions in real-time enhances resilience, robustness, and safety in next-generation engineering systems, driving innovation and potentially transforming industries dependent on high-speed operations.\r\n\n\nOverall, the project advanced real-time machine learning, fostered collaboration across academia, industry, and government, and built the nations intellectual and technical capacity. By mentoring a diverse group of students and sharing cutting-edge research, it fulfilled the NSF's mission: to promote the progress of science; to advance the national health, prosperity, and welfare; or to secure the national defense.\t\t\t\t\tLast Modified: 01/27/2025\n\n\t\t\t\t\tSubmitted by: SimonLaflamme\n"
+ }
+}

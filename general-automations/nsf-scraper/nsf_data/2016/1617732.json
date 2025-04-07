@@ -1,0 +1,117 @@
+{
+ "awd_id": "1617732",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: DeSCPar: Decoupled Supply-Compute Communication Management for Heterogeneous, Accelerator-Oriented Parallelism",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Danella Zhao",
+ "awd_eff_date": "2016-08-01",
+ "awd_exp_date": "2022-07-31",
+ "tot_intn_awd_amt": 300000.0,
+ "awd_amount": 300000.0,
+ "awd_min_amd_letter_date": "2016-07-28",
+ "awd_max_amd_letter_date": "2021-07-02",
+ "awd_abstract_narration": "Over the past decade, the deceleration of Moore's Law and Dennard Scaling has required computing to make a dramatic shift towards the use of on-chip parallelism in order to achieve computer systems performance scaling at acceptable power budgets. Beyond that, systems have also dramatically increased their use of heterogeneous processing elements and specialized accelerators. Much of the complexity of this heterogeneous, accelerator-oriented parallelism is exposed without sufficient abstraction to programmers and compiler writers. As a result, achieving high performance often requires that programs include detailed, platform-specific tailoring, particularly regarding the staging of data as it moves between memory and compute elements, and from one compute element to another. This platform-specific tailoring limits the portability of such programs; when a new chip implementation is released, extensive software reworks are often required to reclaim that high performance. Overall, the result is that heterogeneous parallelism is reducing the performance portability of application software. The DeSCPar research attacks this problem and represents important research in improving programmability. Developed tools will be distributed as free software, including a DeSCPar simulator and design tools. In addition, the project includes a broad set of activities around improving the diversity of the computing workforce.\r\n\r\nThe DeSCPar approach uses Decoupled Supply-Compute Parallelism to achieve portable performance on highly parallel highly-heterogeneous systems. Inspired by Decoupled Access-Execute approaches, DeSCPar likewise decouples value computations from the memory accesses and address computations that \"feed\" them. By using automated slicing techniques to split code into a data supply portion and a computation portion, high-performance memory optimizations can be achieved while retaining high-level application portability. In DeSCPar, value computation operations are targeted to run on a CompD which may be a hardware accelerator, a specifically-optimized CPU, or a general-purpose CPU. Likewise, memory supply code is aimed at a SuppD, which can be specifically optimized for its task. By employing varied combinations of SuppD and CompD units, richly heterogeneous systems can be built, and software can be automatically mapped onto them. This project: (i) proposes and prototypes automated compiler techniques (based on LLVM) for slicing and optimizing DeSCPar code; and (ii) proposes and evaluates hardware design optimizations based on the DeSCPar organizational structure.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Former Principal Investigator",
+   "pi_first_name": "Margaret",
+   "pi_last_name": "Martonosi",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Margaret Martonosi",
+   "pi_email_addr": "martonosi@princeton.edu",
+   "nsf_id": "000395997",
+   "pi_start_date": "2016-07-28",
+   "pi_end_date": "2019-11-25"
+  },
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Esin",
+   "pi_last_name": "Tureci",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Esin Tureci",
+   "pi_email_addr": "esin.tureci@princeton.edu",
+   "nsf_id": "000813245",
+   "pi_start_date": "2019-11-25",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Princeton University",
+  "inst_street_address": "1 NASSAU HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "PRINCETON",
+  "inst_state_code": "NJ",
+  "inst_state_name": "New Jersey",
+  "inst_phone_num": "6092583090",
+  "inst_zip_code": "085442001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "NJ12",
+  "org_lgl_bus_name": "THE TRUSTEES OF PRINCETON UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NJ1YPQXQG7U5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Princeton University",
+  "perf_str_addr": "35 Olden St.",
+  "perf_city_name": "Princeton",
+  "perf_st_code": "NJ",
+  "perf_st_name": "New Jersey",
+  "perf_zip_code": "085405233",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "NJ12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7941",
+   "pgm_ref_txt": "COMPUTER ARCHITECTURE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 300000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Challenges in supplying data from memory to compute elements have been present and growing for over three decades now. These have become even</p>\n<p>more difficult in the era of specialized accelerators since the success of a specialized accelerator at speeding up a particular problem (e.g., encryption,</p>\n<p>graph analytics, image analysis) in turn makes memory latency look, from a relative perspective, even larger. Therefore, accelerators widen the gap</p>\n<p>between the computation capability and data accesses and make the memory wall even more severe. These memory latency and bandwidth concerns,</p>\n<p>that directly impact the emergence of specialized hardware accelerators for tackling memory bound applications, have led to a resurgence of interest in</p>\n<p>decoupled approaches (drawing from the early Decoupled Access Execute -DAE- approach from J.E. Smith). These approaches seek to mitigate the</p>\n<p>performance impact of memory latency by decoupling the memory access operations from the compute operations that subsequently operate on those</p>\n<p>values. Instead of relying on manual programmer effort, these approaches can use compiler support to automatically generate separate code slices for the</p>\n<p>access portion (i.e., data supply) of the application and for the execute portion (i.e., compute). Compared to the generic CPU used for access in the original</p>\n<p>DAE, recent decoupled approaches specialize and optimize the Decoupled Data Supplier (DDS) Unit specifically to minimize the memory latency exposed</p>\n<p>to the Compute Unit (CU).</p>\n<p>&nbsp;</p>\n<p>These previous approaches have the following shortcomings: 1. In applications with control flow dependency these approaches fail to slice supplier</p>\n<p>instructions efficiently causing loss of decoupling. 2. While one-to-one pairing offers single-threaded speedup it is far from optimal use of resources. 3.</p>\n<p>Once the memory latency limitation is lifted, memory bandwidth is hit quickly since the irregular accesses exhibit poor locality and variable reuse that</p>\n<p>trouble cache replacement policies. Consequently, such accesses inefficiently waste memory traffic. We targeted all three of these issues in our research. The outcomes of this research is as follows:</p>\n<p>&nbsp;</p>\n<ol>\n<li>We developed Mercury,&nbsp;decoupled data supply system which parallelizes the DeSC approach. This work was published in the ACM Transactions on Architecture and Compiler Optimization (TACO).</li>\n<li>We built on this work to develop an LLVM based compiler that can slice programs irregular memory accesses even in the presence of control-flow dependencies. This approach when coupled with a hardware design that allows for tracking of multiple memory requests allows efficient decoupling of memory and compute operations and pipelining through on-chip communication of the supply and compute units.</li>\n<li>We developed a configurable memory hierarchy approach that optimizes cache utilization and significantly improves the memory bandwidth utilization in the presence of frequent indirect memory accesses.</li>\n</ol>\n<p>4.&nbsp;&nbsp;&nbsp;&nbsp;Finally, we recently improved our simulator to handle up to 500 cores which can now enable us to test our tools on significantly larger systems.</p>\n<p>Together the above research made great strides towards achieving minimal apparent memory latency for applications that have irregular access patterns</p>\n<p>as well as optimal bandwidth use.</p>\n<p>&nbsp;</p>\n<p>Finally, this project supported the training and research of two graduate students, Aninda Manocha and Marcelo Oneres-Vera and allowed for training of multiple undergraduate students through course work and research projects.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/24/2023<br>\n\t\t\t\t\tModified by: Esin&nbsp;Tureci</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nChallenges in supplying data from memory to compute elements have been present and growing for over three decades now. These have become even\n\nmore difficult in the era of specialized accelerators since the success of a specialized accelerator at speeding up a particular problem (e.g., encryption,\n\ngraph analytics, image analysis) in turn makes memory latency look, from a relative perspective, even larger. Therefore, accelerators widen the gap\n\nbetween the computation capability and data accesses and make the memory wall even more severe. These memory latency and bandwidth concerns,\n\nthat directly impact the emergence of specialized hardware accelerators for tackling memory bound applications, have led to a resurgence of interest in\n\ndecoupled approaches (drawing from the early Decoupled Access Execute -DAE- approach from J.E. Smith). These approaches seek to mitigate the\n\nperformance impact of memory latency by decoupling the memory access operations from the compute operations that subsequently operate on those\n\nvalues. Instead of relying on manual programmer effort, these approaches can use compiler support to automatically generate separate code slices for the\n\naccess portion (i.e., data supply) of the application and for the execute portion (i.e., compute). Compared to the generic CPU used for access in the original\n\nDAE, recent decoupled approaches specialize and optimize the Decoupled Data Supplier (DDS) Unit specifically to minimize the memory latency exposed\n\nto the Compute Unit (CU).\n\n \n\nThese previous approaches have the following shortcomings: 1. In applications with control flow dependency these approaches fail to slice supplier\n\ninstructions efficiently causing loss of decoupling. 2. While one-to-one pairing offers single-threaded speedup it is far from optimal use of resources. 3.\n\nOnce the memory latency limitation is lifted, memory bandwidth is hit quickly since the irregular accesses exhibit poor locality and variable reuse that\n\ntrouble cache replacement policies. Consequently, such accesses inefficiently waste memory traffic. We targeted all three of these issues in our research. The outcomes of this research is as follows:\n\n \n\nWe developed Mercury, decoupled data supply system which parallelizes the DeSC approach. This work was published in the ACM Transactions on Architecture and Compiler Optimization (TACO).\nWe built on this work to develop an LLVM based compiler that can slice programs irregular memory accesses even in the presence of control-flow dependencies. This approach when coupled with a hardware design that allows for tracking of multiple memory requests allows efficient decoupling of memory and compute operations and pipelining through on-chip communication of the supply and compute units.\nWe developed a configurable memory hierarchy approach that optimizes cache utilization and significantly improves the memory bandwidth utilization in the presence of frequent indirect memory accesses.\n\n\n4.    Finally, we recently improved our simulator to handle up to 500 cores which can now enable us to test our tools on significantly larger systems.\n\nTogether the above research made great strides towards achieving minimal apparent memory latency for applications that have irregular access patterns\n\nas well as optimal bandwidth use.\n\n \n\nFinally, this project supported the training and research of two graduate students, Aninda Manocha and Marcelo Oneres-Vera and allowed for training of multiple undergraduate students through course work and research projects.\n\n \n\n\t\t\t\t\tLast Modified: 01/24/2023\n\n\t\t\t\t\tSubmitted by: Esin Tureci"
+ }
+}

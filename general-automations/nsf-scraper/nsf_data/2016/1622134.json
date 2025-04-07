@@ -1,0 +1,105 @@
+{
+ "awd_id": "1622134",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CDS&E-MSS: Recovery of High-Dimensional Structured Functions",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Christopher Stark",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 99535.0,
+ "awd_amount": 99535.0,
+ "awd_min_amd_letter_date": "2016-08-30",
+ "awd_max_amd_letter_date": "2016-08-30",
+ "awd_abstract_narration": "Many scientific problems of crucial importance for the United States involve a very large number of parameters. This high dimensionality has long been a challenge for the numerical treatment of physical, chemical, and biological processes, and now it also represents an obstacle in data science, especially for the task of extracting useful information from only a limited amount of observations. Propitiously, the high-dimensional objects prevailing in real-life problems often possess some underlying structure simplifying their manipulation. The purpose of this project is to exploit this structure in order to develop a consistent theoretical framework and to conceive novel computational methods for the exact recovery (or good approximation) of the high-dimensional objects sketchily acquired.\r\n\r\nMore specifically, the objects considered in this project are functions of very many variables. Handling them via traditional numerical methods is doomed by the so-called curse of dimensionality. But modern ideas such as sparsity and variable reduction make it possible to bypass the curse and thus are revolutionizing the approach to high-dimensional problems. Building upon the fundamentals from the theory of compressive sensing, the project will consider sparse recovery and simultaneously structured recovery as part of the more general recovery of high-dimensional functions depending on few reduced variables. The research strategy starts by investigating the theoretical limitations of any recovery method within a model, then continues by refining the model through confrontation with real-life problems, and finishes by implementing the algorithms proven to perform optimally. Since the project features interactions with several applied fields (in particular, Engineering and Bioinformatics), the novel numerical methods are to be tested in these areas, which will in turn provide fresh mathematical insight. A final part of the project is devoted to the integration of emerging concepts into the culture of the next scientific generation and in particular to the training of mathematicians in computational and data-related aspects.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Simon",
+   "pi_last_name": "Foucart",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Simon Foucart",
+   "pi_email_addr": "foucart@tamu.edu",
+   "nsf_id": "000662067",
+   "pi_start_date": "2016-08-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Texas A&M University",
+  "inst_street_address": "400 HARVEY MITCHELL PKY S STE 300",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE STATION",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "9798626777",
+  "inst_zip_code": "778454375",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "TX10",
+  "org_lgl_bus_name": "TEXAS A & M UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "JF6XLNB4CDJ5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Texas A&M University Main Campus",
+  "perf_str_addr": "TAMU 3368",
+  "perf_city_name": "College Station",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "778433368",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "TX10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806900",
+   "pgm_ele_name": "CDS&E-MSS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8083",
+   "pgm_ref_txt": "Big Data Science &Engineering"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 99535.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The project focused on scientific problems involving a large number of parameters but for which only a limited amount of observational information is available. From this limited information, the goal is to recover the mathematical objects underlying the specific problem. This goal is achievable if one has some prior knowledge about an inherent structure of the manipulated objects. For instance, in the modern theory of compressive sensing, the objects are high-dimensional vectors and their structure is sparsity -- they have few nonzero entries.<br /><br />The project considered different scenarios that extend the realm of compressive sensing by developing their theoretical framework and by devising and implementing associated recovery algorithms. In one scenario, at the heart of the project, the objects are functions of many variables and their structure is variable reduction -- they have few active variables. Under a monotonicity assumption, the recovery problem was completely solved: a recovery algorithm was proposed and an observation scheme was uncovered. In another scenario, the objects are high-dimensional matrices and their structure is in fact a simultaneity of two structures: low-rankness and sparsity. In this case, it was revealed that iterative-thresholding-based algorithms are preferable to more popular optimization-based algorithms.<br /><br />The situation where the observation scheme cannot be freely chosen was also studied. There, the inherent structure was expressed through a novel approximability model. With the worst-case setting in mind, it was determined how to perform the recovery in an optimal way. These findings were applied in Engineering (system identification) and Atmospheric Science (computation of average temperatures).<br /><br />The project's results were communicated through 20+ peer-reviewed publications, 30+ presentations at international scientific meetings, and computational codes made freely available online. The project also promoted the training of mathematicians in computational and data-related aspects: topics related to the project were not only taught in graduate courses in the investigator's own institution, but also presented in two short courses delivered abroad.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/05/2020<br>\n\t\t\t\t\tModified by: Simon&nbsp;Foucart</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe project focused on scientific problems involving a large number of parameters but for which only a limited amount of observational information is available. From this limited information, the goal is to recover the mathematical objects underlying the specific problem. This goal is achievable if one has some prior knowledge about an inherent structure of the manipulated objects. For instance, in the modern theory of compressive sensing, the objects are high-dimensional vectors and their structure is sparsity -- they have few nonzero entries.\n\nThe project considered different scenarios that extend the realm of compressive sensing by developing their theoretical framework and by devising and implementing associated recovery algorithms. In one scenario, at the heart of the project, the objects are functions of many variables and their structure is variable reduction -- they have few active variables. Under a monotonicity assumption, the recovery problem was completely solved: a recovery algorithm was proposed and an observation scheme was uncovered. In another scenario, the objects are high-dimensional matrices and their structure is in fact a simultaneity of two structures: low-rankness and sparsity. In this case, it was revealed that iterative-thresholding-based algorithms are preferable to more popular optimization-based algorithms.\n\nThe situation where the observation scheme cannot be freely chosen was also studied. There, the inherent structure was expressed through a novel approximability model. With the worst-case setting in mind, it was determined how to perform the recovery in an optimal way. These findings were applied in Engineering (system identification) and Atmospheric Science (computation of average temperatures).\n\nThe project's results were communicated through 20+ peer-reviewed publications, 30+ presentations at international scientific meetings, and computational codes made freely available online. The project also promoted the training of mathematicians in computational and data-related aspects: topics related to the project were not only taught in graduate courses in the investigator's own institution, but also presented in two short courses delivered abroad.\n\n\t\t\t\t\tLast Modified: 12/05/2020\n\n\t\t\t\t\tSubmitted by: Simon Foucart"
+ }
+}

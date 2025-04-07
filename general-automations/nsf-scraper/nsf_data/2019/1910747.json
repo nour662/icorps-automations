@@ -1,0 +1,121 @@
+{
+ "awd_id": "1910747",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Collaborative Research: A Parallel Graph-Based Paradigm for HPC Parallel File System Checkers",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927498",
+ "po_email": "achtchel@nsf.gov",
+ "po_sign_block_name": "Almadena Chtchelkanova",
+ "awd_eff_date": "2019-07-15",
+ "awd_exp_date": "2023-06-30",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 299999.0,
+ "awd_min_amd_letter_date": "2019-07-09",
+ "awd_max_amd_letter_date": "2019-08-15",
+ "awd_abstract_narration": "Modern high performance computing (HPC) platforms rely on large-scale parallel file systems for serving data accesses of scientific applications. These parallel file systems often run on expensive hardware and are usually well-maintained, but they may still experience failures and run into inconsistent states for various reasons (e.g., hardware faults, software bugs, configuration errors). When the state becomes inconsistent, a checking and repairing program called checker is the last line of defense to bring the system back to consistency. Nevertheless, today's checkers are error-prone and time-consuming to run. With the scale and complexity keeps increasing, the situation will likely get worse. This project aims to enable scalable, high performance checking and repairing of widely used parallel file systems through a new parallel graph-based model.  The success of this project will dramatically change how parallel file system checkers would be used. Such an effort is a fundamental step towards building highly reliable future HPC parallel file systems for scientific discovery. In addition, this project integrates the research activities with education and outreach efforts to train broadly inclusive and globally competitive science workforce.\r\n \r\nThe project consists of three thrusts. The first task focuses on constructing a general graph-based metadata model to abstract key metadata and consistency rules; the second task focuses on efficiently retrieving metadata from real systems and instantiating metadata graphs; the third task focuses on building a graph-based consistency checking runtime engine to conduct the checking in parallel to gain scalable high performance.  This includes constructing a generic graph structure for representing different file system metadata, extracting the consistency rules among metadata items for checking, and defining a set of interfaces to facilitate building the graph model for other file systems. The project will explore compiling all consistency rules into a unified executable called ?blob?, which can be run in parallel in all compute nodes, and optimize the runtime graph engine to accommodate dependencies and achieve high performance.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Mai",
+   "pi_last_name": "Zheng",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mai Zheng",
+   "pi_email_addr": "mai@iastate.edu",
+   "nsf_id": "000702453",
+   "pi_start_date": "2019-07-09",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Iowa State University",
+  "inst_street_address": "1350 BEARDSHEAR HALL",
+  "inst_street_address_2": "515 MORRILL ROAD",
+  "inst_city_name": "AMES",
+  "inst_state_code": "IA",
+  "inst_state_name": "Iowa",
+  "inst_phone_num": "5152945225",
+  "inst_zip_code": "500112103",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "IA04",
+  "org_lgl_bus_name": "IOWA STATE UNIVERSITY OF SCIENCE AND TECHNOLOGY",
+  "org_prnt_uei_num": "DQDBM7FGJPC5",
+  "org_uei_num": "DQDBM7FGJPC5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Iowa State University",
+  "perf_str_addr": "",
+  "perf_city_name": "Ames",
+  "perf_st_code": "IA",
+  "perf_st_name": "Iowa",
+  "perf_zip_code": "500112207",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": null,
+  "perf_st_cong_dist": "IA",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "689200",
+   "pgm_ele_name": "CI REUSE"
+  },
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "6892",
+   "pgm_ref_txt": "CI REUSE"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7942",
+   "pgm_ref_txt": "HIGH-PERFORMANCE COMPUTING"
+  },
+  {
+   "pgm_ref_code": "8004",
+   "pgm_ref_txt": "Software Institutes"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 299999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><strong>Overview</strong></p>\n<p>Modern parallel file systems (PFSes) serve as the foundation for data access in high-performance computing platforms. As they grow larger and more complex due to increasing data access demands, PFSes face significant challenges in ensuring the data remains safe and correct. Unexpected events, such as hardware failures, power outages, and software bugs, further complicate the situation. This project addresses this key challenge by designing new runtime tools to detect, identify, and fix potential anomalies or data inconsistencies in PFSes.<br /><br /><strong>Project Outcomes and Findings</strong></p>\n<p>We have achieved multiple major outcomes. First, we have analyzed the failure recovery and handling of major PFSes and their checkers in depth and identified multiple optimization opportunities.</p>\n<p>Second, we designed a novel method to identify data inconsistencies in PFSes. Specifically, we transitioned from the state-of-the-art rule-based file system checking to graph-based checking. We designed and implemented FaultyRank, which models the PFS metadata as graphs and runs an iterative algorithm to calculate data correctness. As an offline checker, FaultyRank operates on an existing file system as per administrators' needs. Compared with existing solutions, FaultyRank achieves a much higher checking speed (more than 5x) and can identify complex cases with greater accuracy.</p>\n<p>Third, we explored how machine learning algorithms can assist in identifying runtime anomalies in PFSes. Specifically, we designed and implemented Drill and SentiLog to more precisely pinpoint the abnormal behaviors of PFSes. These tools operate as background services in HPC clusters, continuously monitoring the runtime logs generated by PFSes and identifying and reporting potential errors simultaneously.</p>\n<p><strong>Summary</strong></p>\n<p>Through this project, we have systematically examined how existing PFSes handle faults or anomalies. We pinpointed their primary limitations and designed innovative methods/tools to considerably enhance the performance and efficacy of such systems. We believe our findings hold considerable promise for real-world systems and expect them to be used in real world software.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/29/2023<br>\n\t\t\t\t\tModified by: Mai&nbsp;Zheng</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOverview\n\nModern parallel file systems (PFSes) serve as the foundation for data access in high-performance computing platforms. As they grow larger and more complex due to increasing data access demands, PFSes face significant challenges in ensuring the data remains safe and correct. Unexpected events, such as hardware failures, power outages, and software bugs, further complicate the situation. This project addresses this key challenge by designing new runtime tools to detect, identify, and fix potential anomalies or data inconsistencies in PFSes.\n\nProject Outcomes and Findings\n\nWe have achieved multiple major outcomes. First, we have analyzed the failure recovery and handling of major PFSes and their checkers in depth and identified multiple optimization opportunities.\n\nSecond, we designed a novel method to identify data inconsistencies in PFSes. Specifically, we transitioned from the state-of-the-art rule-based file system checking to graph-based checking. We designed and implemented FaultyRank, which models the PFS metadata as graphs and runs an iterative algorithm to calculate data correctness. As an offline checker, FaultyRank operates on an existing file system as per administrators' needs. Compared with existing solutions, FaultyRank achieves a much higher checking speed (more than 5x) and can identify complex cases with greater accuracy.\n\nThird, we explored how machine learning algorithms can assist in identifying runtime anomalies in PFSes. Specifically, we designed and implemented Drill and SentiLog to more precisely pinpoint the abnormal behaviors of PFSes. These tools operate as background services in HPC clusters, continuously monitoring the runtime logs generated by PFSes and identifying and reporting potential errors simultaneously.\n\nSummary\n\nThrough this project, we have systematically examined how existing PFSes handle faults or anomalies. We pinpointed their primary limitations and designed innovative methods/tools to considerably enhance the performance and efficacy of such systems. We believe our findings hold considerable promise for real-world systems and expect them to be used in real world software.\n\n \n\n\t\t\t\t\tLast Modified: 10/29/2023\n\n\t\t\t\t\tSubmitted by: Mai Zheng"
+ }
+}

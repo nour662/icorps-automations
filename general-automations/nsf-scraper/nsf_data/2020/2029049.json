@@ -1,0 +1,149 @@
+{
+ "awd_id": "2029049",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "PPoSS: Planning: Inflight Analytics to Control Large-Scale Heterogeneous Systems",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922232",
+ "po_email": "sdraghic@nsf.gov",
+ "po_sign_block_name": "Sorin Draghici",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2020-08-21",
+ "awd_max_amd_letter_date": "2023-05-24",
+ "awd_abstract_narration": "The goal of this project is to fundamentally reinvent the design of the system, from hardware to application, using fast, novel inflight analytics to control and optimize large-scale heterogeneous computer systems to meet the performance and resiliency requirements of emerging applications such as data mining, artificial intelligence, and individualized medicine. Towards that goal, advanced machine-learning (ML) methods along with domain knowledge will be employed to support real-time system-state estimation and decision-making, including resource management, congestion/failure detection and mitigation, preemptive intrusion detection, and configuration management. Innovations across the system stack will be needed to achieve optimal results by taking full advantage of contextual information collected from multiple layers of the system and adapting rapidly to the deployment environment, workloads, and application requirements. ML-driven inflight analytics methods, developed in this effort, will be demonstrated on a heterogeneous \u201crack-scale\u201d computing system, with the ultimate future objective of scaling up the framework to a warehouse-scale computing system.\r\n\r\nThe project will be organized around the following research activities. (i) Work with noisy and incomplete telemetry data (e.g., hardware telemetry, OS-level logs, and application-level traces) available from monitors across the system stack to perform system-state estimation (e.g., resource utilization). Telemetry data are often noisy and inconsistent in terms of semantics, modalities, and time granularities, making systems only partially observable. Bayesian deep-learning models will be developed to accurately capture system states and cope with data noise and incompleteness. (ii) Design models and algorithms for practical inflight analytics that make decisions (e.g., on scheduling or failure mitigation) based on the estimated system state to enhance system performance, reliability, and security. Such a framework will consist of an ensemble of interdependent ML models based on partially observable Markov decision processes (POMDPs) augmented with domain knowledge (e.g., interconnect topology) and trained in real time. (iii) Synthesize hardware accelerators for fast, low-cost inflight analytic. Toward that end, a compiler and a runtime framework will be developed that take high-level declarative probabilistic programs (i.e., the POMDPs), automatically compile them onto accelerators, and plan their execution across heterogeneous hardware (FPGAs, ASICs, and CPUs/GPUs). (iv) Assess the trustworthiness of inflight analytics. For that, a trust-assessment framework will be created to evaluate resiliency to failures and attacks due to residual imperfections of heterogeneous components, input uncertainty, and the use of stochastic ML algorithms.  While in the planning stage, this project will focus on design of inflight analytics in the context of rack-scale systems. The methods and algorithms developed will be useful in helping smaller-scale sites with limited resources manage their systems more efficiently. Students involved in this project will have a rare opportunity to participate in the design of heterogeneous ML-driven systems with broad applicability. The integration of ML methods and algorithms into real systems can be attractive to a diverse range of individuals, including underrepresented minority students. The goal is to raise awareness of scientific and engineering challenges in design and deployment of next-generation computing systems to support emerging applications.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ravishankar",
+   "pi_last_name": "Iyer",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ravishankar Iyer",
+   "pi_email_addr": "rkiyer@illinois.edu",
+   "nsf_id": "000444242",
+   "pi_start_date": "2020-08-21",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Wen-mei",
+   "pi_last_name": "Hwu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Wen-mei Hwu",
+   "pi_email_addr": "w-hwu@illinois.edu",
+   "nsf_id": "000469830",
+   "pi_start_date": "2020-08-21",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Klara",
+   "pi_last_name": "Nahrstedt",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Klara Nahrstedt",
+   "pi_email_addr": "klara@cs.uiuc.edu",
+   "nsf_id": "000222062",
+   "pi_start_date": "2020-08-21",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "William",
+   "pi_last_name": "Kramer",
+   "pi_mid_init": "T",
+   "pi_sufx_name": "",
+   "pi_full_name": "William T Kramer",
+   "pi_email_addr": "wtkramer@illinois.edu",
+   "nsf_id": "000179975",
+   "pi_start_date": "2020-08-21",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Tianyin",
+   "pi_last_name": "Xu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Tianyin Xu",
+   "pi_email_addr": "tyxu@illinois.edu",
+   "nsf_id": "000767698",
+   "pi_start_date": "2020-08-21",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Illinois at Urbana-Champaign",
+  "inst_street_address": "506 S WRIGHT ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "URBANA",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "2173332187",
+  "inst_zip_code": "618013620",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "IL13",
+  "org_lgl_bus_name": "UNIVERSITY OF ILLINOIS",
+  "org_prnt_uei_num": "V2PHZ2CSCH63",
+  "org_uei_num": "Y8CWNJRCNN91"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Illinois at Urbana-Champaign",
+  "perf_str_addr": "Henry Admin Bldg, 506 S. Wright",
+  "perf_city_name": "Urbana",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "618013620",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "IL13",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "042Y00",
+   "pgm_ele_name": "PPoSS-PP of Scalable Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span style=\"text-decoration: underline;\">Year One</span></p>\r\n<ul>\r\n<li>Designed and developed a multi-level ML-based resource management      framework to manage shared resources, demonstrating the use of inflight      analytics to model system state and manage system resources to mitigate      service level objective violations without overprovisioning resources.</li>\r\n<li>Designed and developed NetScope,      a network congestion mitigation framework based on delay sensitivity      estimation and leveraging estimated delay sensitivity to augment      mitigation.</li>\r\n<li>Created BayesPerf, a system that      quantifies and corrects errors in hardware performance reporting thus      decreasing the noisy and incomplete data provided to downstream      inflight-analytics.</li>\r\n<li>Created Linux kernel extensions      (IntelliKernel) that make the operating system aware of all machine      learning-based controllers deployed in the computing stack. IntelliKernel      coordinates between multiple models (agents) enabling cross-model      optimization using multi-agent optimization by using multi-agent      reinforcement learning (RL) and game theoretic framework.</li>\r\n<li>Showcased the design of a      low-cost failure detection technique to detect silent failures in hardware      and software executing machine learning workloads supporting the      assessment of the trustworthiness of inflight analytics.</li>\r\n</ul>\r\n<p>&nbsp;<span style=\"text-decoration: underline;\">Year Two</span></p>\r\n<ul>\r\n<li>Designed and developed SIMPPO, a highly      scalable multi-agent reinforcement learning framework that enables each online      learning agent to train to convergence and coexist in the same shared      environment, which alleviates the multi-tenancy and scalability challenges      in the proposed inflight analytics framework.</li>\r\n<li>Inflight analytics was assessed through      a measurement study of the performance and cost tradeoffs in management      policies in serverless platforms. Findings included      Latency-Utilization-Power Trade-off, Latency Variability due to Shared      Resource Contention, and Breakdown of End-to-end Latency.</li>\r\n<li>Using the IBM ThymesisFlow      testbed system, we characterized the impact of network latency in      disaggregated memory systems. Emulated network latency to develop insights      into how reliability and resource allocation mechanisms should evolve to      support hardware memory disaggregation beyond rack-scale in data centers.</li>\r\n<li>Developed a causal model to      assess the resilience of multi-cloud systems, allowing for seamless      critical component detection with reduced retraining cost compared to      existing approaches.</li>\r\n</ul>\r\n<p>&nbsp;<span style=\"text-decoration: underline;\">Year Three</span></p>\r\n<ul>\r\n<li>Demonstrated the use of      reinforcement learning models and multi-agent algorithms in the design of      inflight analytics techniques to monitor, manage/control, and optimize      large-scale serverless cloud platforms (based on our proposed framework      SIMPPO).</li>\r\n<li>Designed and implemented AWARE, a      general ML model deployment and operation framework that supports      deploying and running online learning-based controllers in production      cloud systems with high application-defined robustness and reliability.</li>\r\n<li>Designed a novel page migration      mechanism (INDIGO) that addresses the drawbacks of existing page migration      mechanisms in hardware memory disaggregation. Our evaluation shows that      INIDGO offers up to 50-70% improvement in application performance compared      to other state-of-the-art page migration policies and reduces network      traffic up to three times.</li>\r\n<li>Assessed the resilience of      systems using a causal model to diagnose the root cause of resilience      issues in cloud systems. Kubernetes, a container orchestrations framework,      was assessed for vulnerabilities using an automatic fault injector capable      of continuously injecting over one thousand faults. This work determines      the class of faults affecting the control plane and applications, the      percentage of faults leading to failure, and identifies the drawbacks in      the resilience mechanisms in Kubernetes.</li>\r\n<li>Worked on improving the safety      and robustness of ML/AI-driven autonomy systems (e.g., self-driving      vehicles) in highly dynamic environments by applying counterfactual      reasoning, risk assessment, and reinforcement learning.</li>\r\n</ul>\r\n<p>&nbsp;<span style=\"text-decoration: underline;\">Year Four</span></p>\r\n<ul>\r\n<li>Demonstrated the use of machine      learning, reinforcement learning, and meta-learning algorithms in the      design of inflight analytics to monitor, manage, control, and optimize      large-scale serverless cloud platforms. A power-aware deep learning model      (&mu; -Serve) was designed and developed to optimize energy consumption in      large deep learning model inference/serving frameworks.</li>\r\n<li>Designed and implemented FLASH, a      general model training framework that systematically introduces      meta-learning and a pretrain-finetune paradigm to machine learning-based      cloud system management tasks in a manner that can rapidly adapt to      changing applications or environments.</li>\r\n<li>Proposed QLM, a multimodal queue      management framework for LLM serving, using model swapping, request      eviction, GPU-CPU state swapping, load balancing, and warm model start.      QLM improves service level objective attainment and throughput while      maintaining or improving device utilization.</li>\r\n<li>Proposed Chiron, an autoscaling      framework for LLM serving that uses the idea of hierarchical backpressure      estimated from queue size, utilization, and SLOs as a metric. Chiron      improves SLO satisfaction while improving device utilization in elastic      cloud allocations.</li>\r\n<li>Characterized failures in Delta,      the latest large-scale NSF AI system with over 1000 GPUs. Revealed      vulnerabilities in GPU peripheral hardware, improvements in main system      resilience compared to previous generations, and low availability      translating to application failures.</li>\r\n<li>Combining system dynamic models      with counterfactual reasoning to quantify risks and threats arising from      external states, we built a safety mitigation controller that improves      safety and robustness and minimizes operational risk, independent of the      underlying system.</li>\r\n<li>Analyzed and classified      real-world failures of Kubernetes by developing a framework to perform a      fault/error injection campaign and comparing the results with real-world      failures. This work indicates that controlled fault/error injection-based      testing should be employed to proactively assess Kubernetes&rsquo; resiliency      and guide the design of failure mitigation strategies.</li>\r\n</ul><br>\n<p>\n Last Modified: 01/02/2025<br>\nModified by: Ravishankar&nbsp;Iyer</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nYear One\r\n\r\nDesigned and developed a multi-level ML-based resource management      framework to manage shared resources, demonstrating the use of inflight      analytics to model system state and manage system resources to mitigate      service level objective violations without overprovisioning resources.\r\nDesigned and developed NetScope,      a network congestion mitigation framework based on delay sensitivity      estimation and leveraging estimated delay sensitivity to augment      mitigation.\r\nCreated BayesPerf, a system that      quantifies and corrects errors in hardware performance reporting thus      decreasing the noisy and incomplete data provided to downstream      inflight-analytics.\r\nCreated Linux kernel extensions      (IntelliKernel) that make the operating system aware of all machine      learning-based controllers deployed in the computing stack. IntelliKernel      coordinates between multiple models (agents) enabling cross-model      optimization using multi-agent optimization by using multi-agent      reinforcement learning (RL) and game theoretic framework.\r\nShowcased the design of a      low-cost failure detection technique to detect silent failures in hardware      and software executing machine learning workloads supporting the      assessment of the trustworthiness of inflight analytics.\r\n\r\n\n\nYear Two\r\n\r\nDesigned and developed SIMPPO, a highly      scalable multi-agent reinforcement learning framework that enables each online      learning agent to train to convergence and coexist in the same shared      environment, which alleviates the multi-tenancy and scalability challenges      in the proposed inflight analytics framework.\r\nInflight analytics was assessed through      a measurement study of the performance and cost tradeoffs in management      policies in serverless platforms. Findings included      Latency-Utilization-Power Trade-off, Latency Variability due to Shared      Resource Contention, and Breakdown of End-to-end Latency.\r\nUsing the IBM ThymesisFlow      testbed system, we characterized the impact of network latency in      disaggregated memory systems. Emulated network latency to develop insights      into how reliability and resource allocation mechanisms should evolve to      support hardware memory disaggregation beyond rack-scale in data centers.\r\nDeveloped a causal model to      assess the resilience of multi-cloud systems, allowing for seamless      critical component detection with reduced retraining cost compared to      existing approaches.\r\n\r\n\n\nYear Three\r\n\r\nDemonstrated the use of      reinforcement learning models and multi-agent algorithms in the design of      inflight analytics techniques to monitor, manage/control, and optimize      large-scale serverless cloud platforms (based on our proposed framework      SIMPPO).\r\nDesigned and implemented AWARE, a      general ML model deployment and operation framework that supports      deploying and running online learning-based controllers in production      cloud systems with high application-defined robustness and reliability.\r\nDesigned a novel page migration      mechanism (INDIGO) that addresses the drawbacks of existing page migration      mechanisms in hardware memory disaggregation. Our evaluation shows that      INIDGO offers up to 50-70% improvement in application performance compared      to other state-of-the-art page migration policies and reduces network      traffic up to three times.\r\nAssessed the resilience of      systems using a causal model to diagnose the root cause of resilience      issues in cloud systems. Kubernetes, a container orchestrations framework,      was assessed for vulnerabilities using an automatic fault injector capable      of continuously injecting over one thousand faults. This work determines      the class of faults affecting the control plane and applications, the      percentage of faults leading to failure, and identifies the drawbacks in      the resilience mechanisms in Kubernetes.\r\nWorked on improving the safety      and robustness of ML/AI-driven autonomy systems (e.g., self-driving      vehicles) in highly dynamic environments by applying counterfactual      reasoning, risk assessment, and reinforcement learning.\r\n\r\n\n\nYear Four\r\n\r\nDemonstrated the use of machine      learning, reinforcement learning, and meta-learning algorithms in the      design of inflight analytics to monitor, manage, control, and optimize      large-scale serverless cloud platforms. A power-aware deep learning model      ( -Serve) was designed and developed to optimize energy consumption in      large deep learning model inference/serving frameworks.\r\nDesigned and implemented FLASH, a      general model training framework that systematically introduces      meta-learning and a pretrain-finetune paradigm to machine learning-based      cloud system management tasks in a manner that can rapidly adapt to      changing applications or environments.\r\nProposed QLM, a multimodal queue      management framework for LLM serving, using model swapping, request      eviction, GPU-CPU state swapping, load balancing, and warm model start.      QLM improves service level objective attainment and throughput while      maintaining or improving device utilization.\r\nProposed Chiron, an autoscaling      framework for LLM serving that uses the idea of hierarchical backpressure      estimated from queue size, utilization, and SLOs as a metric. Chiron      improves SLO satisfaction while improving device utilization in elastic      cloud allocations.\r\nCharacterized failures in Delta,      the latest large-scale NSF AI system with over 1000 GPUs. Revealed      vulnerabilities in GPU peripheral hardware, improvements in main system      resilience compared to previous generations, and low availability      translating to application failures.\r\nCombining system dynamic models      with counterfactual reasoning to quantify risks and threats arising from      external states, we built a safety mitigation controller that improves      safety and robustness and minimizes operational risk, independent of the      underlying system.\r\nAnalyzed and classified      real-world failures of Kubernetes by developing a framework to perform a      fault/error injection campaign and comparing the results with real-world      failures. This work indicates that controlled fault/error injection-based      testing should be employed to proactively assess Kubernetes resiliency      and guide the design of failure mitigation strategies.\r\n\t\t\t\t\tLast Modified: 01/02/2025\n\n\t\t\t\t\tSubmitted by: RavishankarIyer\n"
+ }
+}

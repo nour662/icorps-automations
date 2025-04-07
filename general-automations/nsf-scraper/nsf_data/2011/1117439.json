@@ -1,0 +1,105 @@
+{
+ "awd_id": "1117439",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CIF: Small: RUI: Fixation-Driven Contour Integration of Natural Images for Early Visual Processing",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "John Cozzens",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2015-07-31",
+ "tot_intn_awd_amt": 170619.0,
+ "awd_amount": 170619.0,
+ "awd_min_amd_letter_date": "2011-07-16",
+ "awd_max_amd_letter_date": "2011-07-16",
+ "awd_abstract_narration": "A reliable system for automated image understanding can have immense impacts on many applications including image search, video surveillance, autonomous vehicles, and robotics, to name a few. However, the progress of the technology has been slow compared to text understanding and speech recognition. The problem can be attributed to lacking ways of breaking an image into a set of meaningful components analogous to words in text and speech processing. This research will develop an algorithm to partition a digital image into such meaningful components efficiently and effectively. To reach the goal, the investigators focus on discontinuities in color and brightness often called \"edges\" and study algorithmic ways to group them and delineate objects found in the image. Undergraduate students will actively participate in interdisciplinary research involving computer science, mathematics, statistics, psychology and biology. The PI will also develop an interdisciplinary course that integrates cognitive, neuro, and computer sciences. The resulting source code, software tools, data, and visual materials will be made publicly available to promote STEM education.\r\n\r\nMore specifically, the study centers on two recent innovations developed by the investigators: semi-group smoothing with a matrix of linear filters, and successive partitioning of a graph with increasing complexity. The former is an affine commutative linear operator that is shown to be effective in extracting high-curvature points while robust against aliasing. It will be used to smoothen, partition, and characterize contour fragments. The latter generates a set of closed contours surrounding a focal point successively from a simple shape to more complex ones. Furthermore, the study investigates new context sensitive perceptual saliency metrics that quantify the importance of edges based on their surroundings.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Toshiro",
+   "pi_last_name": "Kubota",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Toshiro Kubota",
+   "pi_email_addr": "kubota@susqu.edu",
+   "nsf_id": "000342748",
+   "pi_start_date": "2011-07-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Susquehanna University",
+  "inst_street_address": "514 University Ave",
+  "inst_street_address_2": "",
+  "inst_city_name": "Selinsgrove",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "5703724571",
+  "inst_zip_code": "178701164",
+  "inst_country_name": "United States",
+  "cong_dist_code": "15",
+  "st_cong_dist_code": "PA15",
+  "org_lgl_bus_name": "SUSQUEHANNA UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "QMBVUGC2JVH4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Susquehanna University",
+  "perf_str_addr": "514 University Ave",
+  "perf_city_name": "Selinsgrove",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "178701164",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "15",
+  "perf_st_cong_dist": "PA15",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779700",
+   "pgm_ele_name": "Comm & Information Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7936",
+   "pgm_ref_txt": "SIGNAL PROCESSING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 170619.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Automated analysis and understanding of images are important problems and recent advances in machine learning algorithms and big data infrastructures have contributed significant advances in the fields. However, the majority of current approaches look at images as a collection of patches with no understanding of objects and their layout. This lack of contextual understanding by the algorithms brings inaccurate signatures of objects since patches can sit between the objects and the background, and has caused some strange results that are far detached from our human cognition.&nbsp;</p>\n<p>This project tries to organize image features such as edges, corners, and motions so that they can be grouped cohesively and bring contextual information of the image to succeeding algorithms such as object recognition. The problems are often called perceptual organization in psychology and feature grouping in computer vision.</p>\n<p>The main contribution of the project is a new algorithm for grouping a set of isolated points or <em>dot patterns</em>.&nbsp; Dots are color-less entities that compactly represent the content of the image. Currently, we use sparsely sampled edge points as the dot pattern, thus the algorithm performs traditionally known as edge grouping. However, other entities such as textures and motion vectors can be considered. Unlike other edge grouping algorithms that treat edges as line fragments, we treat edges as polygons that expand to fill the space. As polygons expand, they collide with one another. Each collision corresponds to grouping of edges represented by the colliding polygons. This treatment gives three advantages. First, it places less emphasis on end-points or any particular points, as polygons can collide at anywhere. Second, it can accommodate both foreground and background ownerships, as polygons expand in opposite directions. Third, it is applicable to any geometric shapes, as polygons are more powerful than line fragments.</p>\n<p>We found that expansion governed by the straight offset polygon interpolation was particularly suited for the perceptual organization of edges. The attached figure shows the results of our approach. The figure contains 23 pairs of images. Each pair shows the input dot pattern and five salient contours in red. For presentation purposes, the contours are superimposed on the image used to derive the dot pattern. Some contours appear jagged because we used only proximity information to form the initial polygons.&nbsp; More elaborate initial set-up could amend this perceptual shortcoming.</p>\n<p>Another important objective of this project is to increase participation of undergraduate students in computing at small liberal arts colleges. An institution like Susquehanna University lacks resources often enjoyed at large research universities. Students do not find many peers and support groups, either. Thus, approaches advocated by other large institutes are not applicable.&nbsp; We approached the objective in two ways: showcasing opportunities through summer research programs and incorporating programming to general education courses. We have made some notable progress on this front as well; we completed 20 diverse summer projects such as depth and size perception, studies on illusory contours, full moon illusion in virtual reality, face recognition on android devices, and a small self-maneuvering robot with Arduino.&nbsp; Students presented their results at regional and national conferences. We believe that the programs have helped students prepare their career in STEM fields, strengthened research oriented environment on campus, and stimulated collaboration and synergy among other institutions and communities in this area. We nearly tripled the number of students in introductory programming courses over the 3-year span. We used R programming language in an introduction to statistics course and Processing language in an intr...",
+  "por_txt_cntn": "\nAutomated analysis and understanding of images are important problems and recent advances in machine learning algorithms and big data infrastructures have contributed significant advances in the fields. However, the majority of current approaches look at images as a collection of patches with no understanding of objects and their layout. This lack of contextual understanding by the algorithms brings inaccurate signatures of objects since patches can sit between the objects and the background, and has caused some strange results that are far detached from our human cognition. \n\nThis project tries to organize image features such as edges, corners, and motions so that they can be grouped cohesively and bring contextual information of the image to succeeding algorithms such as object recognition. The problems are often called perceptual organization in psychology and feature grouping in computer vision.\n\nThe main contribution of the project is a new algorithm for grouping a set of isolated points or dot patterns.  Dots are color-less entities that compactly represent the content of the image. Currently, we use sparsely sampled edge points as the dot pattern, thus the algorithm performs traditionally known as edge grouping. However, other entities such as textures and motion vectors can be considered. Unlike other edge grouping algorithms that treat edges as line fragments, we treat edges as polygons that expand to fill the space. As polygons expand, they collide with one another. Each collision corresponds to grouping of edges represented by the colliding polygons. This treatment gives three advantages. First, it places less emphasis on end-points or any particular points, as polygons can collide at anywhere. Second, it can accommodate both foreground and background ownerships, as polygons expand in opposite directions. Third, it is applicable to any geometric shapes, as polygons are more powerful than line fragments.\n\nWe found that expansion governed by the straight offset polygon interpolation was particularly suited for the perceptual organization of edges. The attached figure shows the results of our approach. The figure contains 23 pairs of images. Each pair shows the input dot pattern and five salient contours in red. For presentation purposes, the contours are superimposed on the image used to derive the dot pattern. Some contours appear jagged because we used only proximity information to form the initial polygons.  More elaborate initial set-up could amend this perceptual shortcoming.\n\nAnother important objective of this project is to increase participation of undergraduate students in computing at small liberal arts colleges. An institution like Susquehanna University lacks resources often enjoyed at large research universities. Students do not find many peers and support groups, either. Thus, approaches advocated by other large institutes are not applicable.  We approached the objective in two ways: showcasing opportunities through summer research programs and incorporating programming to general education courses. We have made some notable progress on this front as well; we completed 20 diverse summer projects such as depth and size perception, studies on illusory contours, full moon illusion in virtual reality, face recognition on android devices, and a small self-maneuvering robot with Arduino.  Students presented their results at regional and national conferences. We believe that the programs have helped students prepare their career in STEM fields, strengthened research oriented environment on campus, and stimulated collaboration and synergy among other institutions and communities in this area. We nearly tripled the number of students in introductory programming courses over the 3-year span. We used R programming language in an introduction to statistics course and Processing language in an introduction to programming course for non-majors. These efforts can be duplicated at other small liberal arts colleges.\n\n \n..."
+ }
+}

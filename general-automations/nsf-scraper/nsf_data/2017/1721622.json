@@ -1,0 +1,105 @@
+{
+ "awd_id": "1721622",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SBIR Phase I:  Using Machine Learning and NLP tools to expedite the review and analysis of legal contracts",
+ "cfda_num": "47.084",
+ "org_code": "15030000",
+ "po_phone": "7032928772",
+ "po_email": "patherto@nsf.gov",
+ "po_sign_block_name": "Peter Atherton",
+ "awd_eff_date": "2017-07-01",
+ "awd_exp_date": "2018-06-30",
+ "tot_intn_awd_amt": 225000.0,
+ "awd_amount": 225000.0,
+ "awd_min_amd_letter_date": "2017-06-28",
+ "awd_max_amd_letter_date": "2017-06-28",
+ "awd_abstract_narration": "The broader impact/commercial potential of this Small Business Innovation Research (SBIR) Phase I project is to provide a new approach to analyzing and understanding concisely structured documents such as legal contracts. The success of this project would provide a technological disruption in the way legal documents are processed. This will result in reduced processing time and financial savings in the review of legal contracts. Moreover, achieving this level of disruption within the legal market has the potential to open the door to automate processing, improve quality, and reduce the cost of many other legal services impacting the entire economy. With a market size of $437 Billion within the US alone, the legal industry is ready for a technological disruption that would bring this market up to par with other industries that have been significantly improved with the adoption of cutting edge Machine Learning and Natural Language Processing (NLP) technologies. This underlines the massive commercial potential for the technology under development.\r\n\r\nThis Small Business Innovation Research (SBIR) Phase I project pursues a new innovative approach to understanding and analyzing contracts with accuracy comparable to what can be achieved by humans. Regardless of the technology, accuracy is the most important metric for lawyers to trust and adopt this innovation. Standard NLP techniques cannot generate the desired level of accuracy without a new approach to the problem.  The approach proposed for this project creates innovative custom-defined rules that operate using standard NLP technologies to break a contract into a data structure capturing different aspects of the contract meaning and allowing a higher level of understanding for the contract. In order to achieve the desired accuracy, a new innovative recurrent neural network (RNN) is designed to learn over the extracted contract-meaning-data-structure which significantly improves the accuracy of the entire system. These two steps form somewhat orthogonal learning processes and when coupled with human-supervised-learning can produce the desired accuracy. This project will allow a full assessment of the underlying technology by training the core engine on a sufficiently large corpus of contracts to test the hypothesis on a larger scale.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "TIP",
+ "org_dir_long_name": "Directorate for Technology, Innovation, and Partnerships",
+ "div_abbr": "TI",
+ "org_div_long_name": "Translational Impacts",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ghaith",
+   "pi_last_name": "Hammouri",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ghaith M Hammouri",
+   "pi_email_addr": "g@xr.ai",
+   "nsf_id": "000740084",
+   "pi_start_date": "2017-06-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "XR.AI Inc.",
+  "inst_street_address": "114 Forrest St Apt 2B",
+  "inst_street_address_2": "",
+  "inst_city_name": "Brooklyn",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "2038873492",
+  "inst_zip_code": "112064712",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "NY07",
+  "org_lgl_bus_name": null,
+  "org_prnt_uei_num": null,
+  "org_uei_num": "NJENKADMBJ93"
+ },
+ "perf_inst": {
+  "perf_inst_name": "XR.AI Inc.",
+  "perf_str_addr": "114 Forrest St., 2B",
+  "perf_city_name": "Brooklyn",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "112064712",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "NY07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "537100",
+   "pgm_ele_name": "SBIR Phase I"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5371",
+   "pgm_ref_txt": "SMALL BUSINESS PHASE I"
+  },
+  {
+   "pgm_ref_code": "8032",
+   "pgm_ref_txt": "Software Services and Applications"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 225000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This NSF project was driven by our goal at Xr.AI to build a software capable to automating contract review and analysis. Our end goal is to have a machine completely able to understanding a contract to a point where it can point out contradictions,&nbsp; lack of coverage, fairness, potential of arbitration, etc., basically to replace a human lawyer with regards to reviewing contracts. The attraction to this problem came from the realization that legal contracts are quite logical documents that seem to be closely related to decision trees and finite state machines. The hope is that due to this nature, it might be possible to completely transform a contract into a logical language which lends itself to auto checking and analysis.</p>\n<p>Through this NSF project a software tool to aid Lawyers in the process of Reading and Analyzing Legal Contracts was produced. This entailed two main layers:</p>\n<ul>\n<li><strong>The Legal Graph:</strong> A core software engine for converting Legal contracst into a data-structure that correponds into a viewable logical graph.</li>\n<li><strong>Amikai:</strong>&nbsp;A software product that allows a user to inteact with the Logical Graph reflecting the legal contrct.&nbsp;</li>\n</ul>\n<p>Through these technical innovations we are able to get closer to a understanding the core challenges face by any Natural Language Engine attempting to understand Natural Languages used by people in our eveyday life.&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/10/2018<br>\n\t\t\t\t\tModified by: Ghaith&nbsp;M&nbsp;Hammouri</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis NSF project was driven by our goal at Xr.AI to build a software capable to automating contract review and analysis. Our end goal is to have a machine completely able to understanding a contract to a point where it can point out contradictions,  lack of coverage, fairness, potential of arbitration, etc., basically to replace a human lawyer with regards to reviewing contracts. The attraction to this problem came from the realization that legal contracts are quite logical documents that seem to be closely related to decision trees and finite state machines. The hope is that due to this nature, it might be possible to completely transform a contract into a logical language which lends itself to auto checking and analysis.\n\nThrough this NSF project a software tool to aid Lawyers in the process of Reading and Analyzing Legal Contracts was produced. This entailed two main layers:\n\nThe Legal Graph: A core software engine for converting Legal contracst into a data-structure that correponds into a viewable logical graph.\nAmikai: A software product that allows a user to inteact with the Logical Graph reflecting the legal contrct. \n\n\nThrough these technical innovations we are able to get closer to a understanding the core challenges face by any Natural Language Engine attempting to understand Natural Languages used by people in our eveyday life. \n\n \n\n \n\n \n\n\t\t\t\t\tLast Modified: 10/10/2018\n\n\t\t\t\t\tSubmitted by: Ghaith M Hammouri"
+ }
+}

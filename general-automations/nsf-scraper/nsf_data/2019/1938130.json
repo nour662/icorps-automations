@@ -1,0 +1,105 @@
+{
+ "awd_id": "1938130",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: Enabling Secure Data Recovery for Mobile Devices against Malicious Attacks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032920000",
+ "po_email": "doliveir@nsf.gov",
+ "po_sign_block_name": "Daniela Oliveira",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2022-09-30",
+ "tot_intn_awd_amt": 199975.0,
+ "awd_amount": 199975.0,
+ "awd_min_amd_letter_date": "2019-07-22",
+ "awd_max_amd_letter_date": "2019-07-22",
+ "awd_abstract_narration": "Mainstream mobile computing devices, such as, smart phones and tablets, currently rely on remote backups for data recovery upon failures. For example, an iPhone periodically stores a recent snapshot to iCloud, that can get restored if needed. Such a commonly used \"off-device\" backup mechanism, however, suffers from a fundamental limitation, namely, the backup in the remote server is not always synchronized with data stored in the local device. Therefore, when a mobile device suffers from a malware attack, it can only be restored to a historical state using the remote backup, rather than the exact state right before the attack occurs. Data are extremely valuable for both organizations and individuals, and thus after the malware attack, it is of paramount importance to restore the data to the exact point (i.e., the corruption point) right before they are corrupted. This, however, is a challenging problem. The project addresses this problem in mobile devices and its outcome could benefit billions of mobile users. The project also provides opportunities for training for graduate students specially from underrepresented minority groups. \r\n\r\nA primary goal of the project is to enable recovery of mobile devices to the corruption point after malware attacks. The malware being considered is the OS-level malware which can compromise the OS and obtain the OS-level privilege. To achieve this goal, the project combines both the traditional off-device data backup and recovery and a novel in-device data recovery. Especially, the following research activities are undertaken: 1) Designing a novel malware detector which runs in flash translation layer (FTL), a firmware layer staying between OS and flash memory hardware. The FTL-based malware detector ensures that data being committed to the remote server will not be tampered with by the OS-level malware. 2) Developing a novel approach which ensures that the OS-level malware is not able to corrupt data changes (i.e., delta) which have not yet been committed to the remote server. This is achieved by hiding the delta in the flash memory using flash storage's special hardware features, i.e., out-of-place update and strong physical isolation. 3) Developing a user-friendly approach which can allow users to conveniently and efficiently retrieve the delta hidden in the flash memory for data recovery after malware attacks.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Bo",
+   "pi_last_name": "Chen",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Bo Chen",
+   "pi_email_addr": "bchen@mtu.edu",
+   "nsf_id": "000735748",
+   "pi_start_date": "2019-07-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Michigan Technological University",
+  "inst_street_address": "1400 TOWNSEND DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "HOUGHTON",
+  "inst_state_code": "MI",
+  "inst_state_name": "Michigan",
+  "inst_phone_num": "9064871885",
+  "inst_zip_code": "499311200",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "MI01",
+  "org_lgl_bus_name": "MICHIGAN TECHNOLOGICAL UNIVERSITY",
+  "org_prnt_uei_num": "GKMSN3DA6P91",
+  "org_uei_num": "GKMSN3DA6P91"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Michigan Technological University",
+  "perf_str_addr": "1400 Townsend Drive",
+  "perf_city_name": "Houghton",
+  "perf_st_code": "MI",
+  "perf_st_name": "Michigan",
+  "perf_zip_code": "499311295",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "MI01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 199975.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>A primary goal of the project is to enable recovery of mobile devices to the corruption point after malware attacks. &nbsp;To achieve this goal, the PI's group has designed the first flash-based malware detector, which runs in the lower flash translation layer (FTL), and detects the presence of malware by analyzing the flash memory I/Os. The designs of the flash-based malware detector appeared in IEEE S&amp;P 2020, SCI 2021 (in conjunction with ACNS 2021) and Journal of Cybersecurity and Privacy (2022). After the malware has been detected, a significant issue would be recovering the data compromised by the malware. This is achieved by hiding the newly generated delta data in the flash memory using its special hardware features and, retrieving the delta data for data recovery upon needed. The PI's group has developed multiple data recovery schemes and tools, and the results have appeared in SecureComm 2022, ACM CCS 2022, ACM AsiaCCS 2022, and Journal of Cybersecurity and Privacy (2022). The PI also presented the project results in Flash Memory Summit 2022. All the relevant results and presentations have been distributed to the public.</p>\n<p>The project has generated a few artifacts including three tools (FDRecovery, FFRecovery, and mobiDR) and one dataset (MITON). FDRecovery is a user-friendly forensic data recovery tool which can be used to restore data deleted by users accidentally. Compared to existing forensic data recovery tools (e.g., TestDisk, PhotoRec, Foremost), FDRecovery can provide the user a candidate list of potential files to be recovered, and can restore the specific file selected by the user. In addition, the recovery process of FDRecovery is much more efficient. FFRecovery is a user-friendly malware defense tool for mobile devices which can support fine-grained data recovery after malware attacks. The tool can recover a file corrupted by the malware by combining both file system forensics and raw data extraction from the flash translation layer. A limitation of FFRecovery is that the local flash storage may not have sufficient storage to keep the historical data for data recovery. Therefore, mobiDR has been developed to address the limitation of FFRecovery by building a virtual secure version control system across the mobile device and the version control server under an adversarial setting, such that the most recent delta data are correctly maintained in the mobile device and the historical delta data are correctly stored in the remote server and, any data corrupted by the malware is always recoverable. The source code of the developed tools has been made publicly available in the project website and GitHub.The dataset MITON was generated by analyzing more than 130 malware/software samples, collecting traces of each sample in the NAND flash memory based on a self-built flash memory testbed. The MITON dataset is publicly available in the project website.</p>\n<p>The project directly supported two PhD students and one MS student to conduct malware analysis and data recovery research. The project also involved three additional MS students and one undergraduate student. The project has well trained participants with cybersecurity expertise and well prepared them for their future careers. The PhD student supported by the project, Niusen Chen, successfully passed his PhD dissertation proposal in Fall 2021, and has received a Finishing Fellowship from MTU graduate school to support him to finish his dissertation in Spring 2023. Three of the MS students who have worked in the project before have graduated and are now working in Los Alamos National Lab, AT&amp;T, and Hitachi America.</p>\n<p>For education and outreach, the PI has incorporated project results into two graduate-level courses (CS5740 - Development of Trusted Software and CS5472 - Advanced Topics in Computer Security) and one undergraduate-level course (CS4740 - Development of Trusted Software) in MTU Computer Science Department, which are core courses of MTU cybersecurity MS/BS programs. In addition, the PI has broadly distributed the cybersecurity knowledge to MTU undergraduate/graduate students via MTU CS cybersecurity reading group, MTU RedTeam, MTU NCL cyber competition team, and MTU CyberCorps Scholarship for Service program. MTU RedTeam has participated into various Capture-the-Flag (CTF) competitions in Grrcon 2022, DEF CON 30, CyberSEED 2022, etc. MTU NCL cyber competition team has achieved a national ranking of 6<sup>th</sup> in Fall 2022 and 10<sup>th</sup> in Fall 2021, respectively. Lastly, the PI has broadcast the security knowledge created in the project to K-12 students in the surrounding areas including Michigan, Wisconsin and Minnesota, by organizing the cybersecurity track in MTU Women in Computer Science (WiCS) Summer Program during Summer 2022 and Summer 2021. In the WiCS events, the PI has trained more than 30 female K-12 students to incorporate security features into flash memory firmware. The PI also trained a few underrepresented students - including African American students - from Wayne County Community College District via the MiCUP program in both Summer 2022 and Summer 2021.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/18/2022<br>\n\t\t\t\t\tModified by: Bo&nbsp;Chen</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nA primary goal of the project is to enable recovery of mobile devices to the corruption point after malware attacks.  To achieve this goal, the PI's group has designed the first flash-based malware detector, which runs in the lower flash translation layer (FTL), and detects the presence of malware by analyzing the flash memory I/Os. The designs of the flash-based malware detector appeared in IEEE S&amp;P 2020, SCI 2021 (in conjunction with ACNS 2021) and Journal of Cybersecurity and Privacy (2022). After the malware has been detected, a significant issue would be recovering the data compromised by the malware. This is achieved by hiding the newly generated delta data in the flash memory using its special hardware features and, retrieving the delta data for data recovery upon needed. The PI's group has developed multiple data recovery schemes and tools, and the results have appeared in SecureComm 2022, ACM CCS 2022, ACM AsiaCCS 2022, and Journal of Cybersecurity and Privacy (2022). The PI also presented the project results in Flash Memory Summit 2022. All the relevant results and presentations have been distributed to the public.\n\nThe project has generated a few artifacts including three tools (FDRecovery, FFRecovery, and mobiDR) and one dataset (MITON). FDRecovery is a user-friendly forensic data recovery tool which can be used to restore data deleted by users accidentally. Compared to existing forensic data recovery tools (e.g., TestDisk, PhotoRec, Foremost), FDRecovery can provide the user a candidate list of potential files to be recovered, and can restore the specific file selected by the user. In addition, the recovery process of FDRecovery is much more efficient. FFRecovery is a user-friendly malware defense tool for mobile devices which can support fine-grained data recovery after malware attacks. The tool can recover a file corrupted by the malware by combining both file system forensics and raw data extraction from the flash translation layer. A limitation of FFRecovery is that the local flash storage may not have sufficient storage to keep the historical data for data recovery. Therefore, mobiDR has been developed to address the limitation of FFRecovery by building a virtual secure version control system across the mobile device and the version control server under an adversarial setting, such that the most recent delta data are correctly maintained in the mobile device and the historical delta data are correctly stored in the remote server and, any data corrupted by the malware is always recoverable. The source code of the developed tools has been made publicly available in the project website and GitHub.The dataset MITON was generated by analyzing more than 130 malware/software samples, collecting traces of each sample in the NAND flash memory based on a self-built flash memory testbed. The MITON dataset is publicly available in the project website.\n\nThe project directly supported two PhD students and one MS student to conduct malware analysis and data recovery research. The project also involved three additional MS students and one undergraduate student. The project has well trained participants with cybersecurity expertise and well prepared them for their future careers. The PhD student supported by the project, Niusen Chen, successfully passed his PhD dissertation proposal in Fall 2021, and has received a Finishing Fellowship from MTU graduate school to support him to finish his dissertation in Spring 2023. Three of the MS students who have worked in the project before have graduated and are now working in Los Alamos National Lab, AT&amp;T, and Hitachi America.\n\nFor education and outreach, the PI has incorporated project results into two graduate-level courses (CS5740 - Development of Trusted Software and CS5472 - Advanced Topics in Computer Security) and one undergraduate-level course (CS4740 - Development of Trusted Software) in MTU Computer Science Department, which are core courses of MTU cybersecurity MS/BS programs. In addition, the PI has broadly distributed the cybersecurity knowledge to MTU undergraduate/graduate students via MTU CS cybersecurity reading group, MTU RedTeam, MTU NCL cyber competition team, and MTU CyberCorps Scholarship for Service program. MTU RedTeam has participated into various Capture-the-Flag (CTF) competitions in Grrcon 2022, DEF CON 30, CyberSEED 2022, etc. MTU NCL cyber competition team has achieved a national ranking of 6th in Fall 2022 and 10th in Fall 2021, respectively. Lastly, the PI has broadcast the security knowledge created in the project to K-12 students in the surrounding areas including Michigan, Wisconsin and Minnesota, by organizing the cybersecurity track in MTU Women in Computer Science (WiCS) Summer Program during Summer 2022 and Summer 2021. In the WiCS events, the PI has trained more than 30 female K-12 students to incorporate security features into flash memory firmware. The PI also trained a few underrepresented students - including African American students - from Wayne County Community College District via the MiCUP program in both Summer 2022 and Summer 2021.\n\n\t\t\t\t\tLast Modified: 12/18/2022\n\n\t\t\t\t\tSubmitted by: Bo Chen"
+ }
+}

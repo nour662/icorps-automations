@@ -1,0 +1,113 @@
+{
+ "awd_id": "1217798",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "III: Small: Provisioning for Autonomous Data Analysis and Scenario Exploration",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Nan Zhang",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 500000.0,
+ "awd_min_amd_letter_date": "2012-08-27",
+ "awd_max_amd_letter_date": "2012-08-27",
+ "awd_abstract_narration": "In business intelligence and data-driven science, users often wish to consider various \"what-if scenarios\": hypothetical updates and query refinements.  Unfortunately current techniques do not support this type of exploration when query answers have high latency, when data sources charge fees, or in mobile, disconnected settings.  This project considers how, given a particular set of query aspects and updates, one can precompute a special data representation that can be stored on a client machine and can be used to directly answer queries under a variety of updates and what-if scenarios, without direct access to the data sources.  The project achieves this goal by developing \"provisioned representations\" that capture a form of parameterized data instances, from which complex queries (even with multiple levels of aggregation) can be answered.  The work develops: (1) the provisioned representation (PR) formalism, (2) means of encoding and storing PRs, (3) a query system and query processing techniques for PRs, (4) a \"wizard\" for generating PRs from parameterized scenarios, and (5) interactive tools for exploring changes to data and queries over PRs.  The work will improve decision support systems and help enable \"information foresight\" - the ability to provide, given a question, answers that include additional data relevant to a user's interests.  The project supports Ph.D. students, and also develops a new course on networked information management for the University of Pennsylvania's innovative Market and Social Systems Engineering undergraduate degree program on networks and markets.  Data and code will be disseminated through public collaborative portals (GitHub, Google Code) and the project Web site (https://dbappserv.cis.upenn.edu/home/?q=node/173).",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Val",
+   "pi_last_name": "Tannen",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Val Tannen",
+   "pi_email_addr": "val@cis.upenn.edu",
+   "nsf_id": "000186637",
+   "pi_start_date": "2012-08-27",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Zachary",
+   "pi_last_name": "Ives",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Zachary Ives",
+   "pi_email_addr": "zives@cis.upenn.edu",
+   "nsf_id": "000468327",
+   "pi_start_date": "2012-08-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Pennsylvania",
+  "inst_street_address": "3451 WALNUT ST STE 440A",
+  "inst_street_address_2": "",
+  "inst_city_name": "PHILADELPHIA",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "2158987293",
+  "inst_zip_code": "191046205",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "PA03",
+  "org_lgl_bus_name": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA, THE",
+  "org_prnt_uei_num": "GM1XX56LEP58",
+  "org_uei_num": "GM1XX56LEP58"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Trustees of the University of Pennsylvania",
+  "perf_str_addr": "3451 Walnut Street",
+  "perf_city_name": "Philadelphia",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "191046205",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "PA03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736400",
+   "pgm_ele_name": "Info Integration & Informatics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 500000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>With the advent of large scientific community repositories, business-to-business cooperatives, and enterprise warehouses &mdash; there are increasingly many settings with large numbers of data sources whether within a single database instance or across multiple distributed sites. Such sources of data may be used to answer a vast array of different questions. However, a typical end user of the data will likely be interested in a fairly restricted set of information: e.g., an account executive may care about the data and customers within his or her region, or a scientist may care about specific organisms or genes. A data analytics computation is applied to the data sources to produce the data of interest.<br />The users of such data (let's call them \"analysts\") often need to make decisions based on it. They practice <em>what if analysis</em>, a common technique for investigating the impact of decisions on outcomes in science or business. It almost always involves a complex data analytics computation. Nowadays such a computation typically processes very large amounts of data and thus may be expensive to perform, especially repeatedly. An analyst is interested in exploring the impact of multiple <em>scenarios</em> that assume modifications of the input to the analysis problem. Our general aim is to avoid repeating expensive computations for each scenario.&nbsp;<br />For a given problem, and starting from a given set of potential scenarios, we wish to perform just one possibly expensive computation producing a small <em>sketch</em> (i.e., a compressed representation of the input) such that the answer for any of the given scenarios can be derived rapidly from the sketch, without accessing the original (typically very large) input. We say that the sketch is &ldquo;provisioned&rdquo; to deal with the problem under any of the scenarios and we call the whole approach <em>provisioning</em>. Again, the goal of provisioning is to allow an analyst to efficiently explore a multitude of scenarios, using only the sketch and thus avoiding expensive recomputations for each scenario.<br />The computational burden in provisioning depends on two measures. One is the size of the data given as input to the data analytics computation. The theoretical and practical studies that we have done in this project show that sketches of size polylogarithmic in the size of the input are achievable and constitute a good measure of tractability or provisioning. The other measure for the computational burden is the number of \"atomic\" scenarios, what we call <em>hypotheticals</em>. Each hypothetical defines a subset of the input data. Scenarios of interest are then obtained by \"switching on/off\" the hypotheticals. Thus with K hypotheticals we have 2^K scenarios. A trivial solution to provisioning is to compute the answers for each of these 2^K scenarios and package it in the sketch. From our studies it follows that polynomial (in K) upper bounds on the size of the sketch are a good achievable choice for many problems. For other problems we prove that such bounds are mathematically impossible to achieve. For such scenarios, practical solutions are still achievable, using the techniques developed in previous work on data provenance.<br />Ideally, the analylist will interact with the results of the data analytics computation via an interactive application &mdash; whether a domain-specific application used by the analyst, a spreadsheet interface over a database management system, a visualization software tool, or even a conventional spreadsheet. Today, such a spreadsheet might not even be hosted on a conventional PC, but rather on a tablet or a phone. We have built proof-of-concept implementations that demonstrate that provisioning is feasible and desirable: using sketches is t<em>hree orders of magnitude faster</em> than recomputation for each scenario.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLas...",
+  "por_txt_cntn": "\nWith the advent of large scientific community repositories, business-to-business cooperatives, and enterprise warehouses &mdash; there are increasingly many settings with large numbers of data sources whether within a single database instance or across multiple distributed sites. Such sources of data may be used to answer a vast array of different questions. However, a typical end user of the data will likely be interested in a fairly restricted set of information: e.g., an account executive may care about the data and customers within his or her region, or a scientist may care about specific organisms or genes. A data analytics computation is applied to the data sources to produce the data of interest.\nThe users of such data (let's call them \"analysts\") often need to make decisions based on it. They practice what if analysis, a common technique for investigating the impact of decisions on outcomes in science or business. It almost always involves a complex data analytics computation. Nowadays such a computation typically processes very large amounts of data and thus may be expensive to perform, especially repeatedly. An analyst is interested in exploring the impact of multiple scenarios that assume modifications of the input to the analysis problem. Our general aim is to avoid repeating expensive computations for each scenario. \nFor a given problem, and starting from a given set of potential scenarios, we wish to perform just one possibly expensive computation producing a small sketch (i.e., a compressed representation of the input) such that the answer for any of the given scenarios can be derived rapidly from the sketch, without accessing the original (typically very large) input. We say that the sketch is \"provisioned\" to deal with the problem under any of the scenarios and we call the whole approach provisioning. Again, the goal of provisioning is to allow an analyst to efficiently explore a multitude of scenarios, using only the sketch and thus avoiding expensive recomputations for each scenario.\nThe computational burden in provisioning depends on two measures. One is the size of the data given as input to the data analytics computation. The theoretical and practical studies that we have done in this project show that sketches of size polylogarithmic in the size of the input are achievable and constitute a good measure of tractability or provisioning. The other measure for the computational burden is the number of \"atomic\" scenarios, what we call hypotheticals. Each hypothetical defines a subset of the input data. Scenarios of interest are then obtained by \"switching on/off\" the hypotheticals. Thus with K hypotheticals we have 2^K scenarios. A trivial solution to provisioning is to compute the answers for each of these 2^K scenarios and package it in the sketch. From our studies it follows that polynomial (in K) upper bounds on the size of the sketch are a good achievable choice for many problems. For other problems we prove that such bounds are mathematically impossible to achieve. For such scenarios, practical solutions are still achievable, using the techniques developed in previous work on data provenance.\nIdeally, the analylist will interact with the results of the data analytics computation via an interactive application &mdash; whether a domain-specific application used by the analyst, a spreadsheet interface over a database management system, a visualization software tool, or even a conventional spreadsheet. Today, such a spreadsheet might not even be hosted on a conventional PC, but rather on a tablet or a phone. We have built proof-of-concept implementations that demonstrate that provisioning is feasible and desirable: using sketches is three orders of magnitude faster than recomputation for each scenario.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 11/30/2015\n\n\t\t\t\t\tSubmitted by: Val Tannen"
+ }
+}

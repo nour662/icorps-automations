@@ -1,0 +1,105 @@
+{
+ "awd_id": "1718695",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AF:Small:Mathematical Programming for Average-Case Problems",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tracy Kimbrel",
+ "awd_eff_date": "2017-08-01",
+ "awd_exp_date": "2020-07-31",
+ "tot_intn_awd_amt": 499999.0,
+ "awd_amount": 499999.0,
+ "awd_min_amd_letter_date": "2017-06-19",
+ "awd_max_amd_letter_date": "2017-06-19",
+ "awd_abstract_narration": "Optimization, perhaps the most ubiquitous computational task of all, consists of finding a solution that either maximizes or minimizes a certain function while satisfying a set of constraints.   If the space of solutions to the problem is finite and discrete, then such problems are referred to as \"combinatorial optimization\" problems. Unfortunately, most combinatorial optimization problems are computationally intractable to solve exactly, i.e., it is widely believed that finding the optimal solution would be prohibitively time-consuming.  To cope with this computational intractability, it is natural to try to find an approximate solution to the optimization problem.  A classic approach to find approximate solutions that has been studied for more than four decades now, is the use of ``convex relaxations\".  The idea of convex relaxation is to convert the underlying optimization task into a convex optimization task, since efficient algorithms are known for convex optimization.  Intuitively, a convex optimization problem is one whose underlying solution space is continuous, and for every pair of solutions, their average is also a solution.  Converting an arbitrary combinatorial optimization problem in to a convex optimization task is inherently lossy, in that we only recover an approximate solution to the original problem in the process.  The question then is, how good is the approximation?  and which convex relaxation yield the best approximation?\r\n\r\nOver the last two decades, these questions have been extensively studied for two fundamental classes of convex relaxations widely used in algorithms -- namely linear and semi-defintie programming.  However, the study of convex relaxations have been mostly centered around the ``worst-case\" where the goal is to demonstrate guarantees on the approximation obtained by the convex relaxation, on every instance of the underlying problem.  Although worst case analysis is useful in that it yields a guaranteed approximation on every instance of the underlying problem, it is too pessimistic at times.  In many real-life settings, the underlying input to the optimization problem is chosen from a natural probability distribution.  For example, the optimization problem could be set on a social network, wherein the connections are not completely arbitrary (worst case), but have distinct structure that can be modeled using a probability distribution.  Another example, is that of recovering a signal in presence of noise,  the noise is typically not completely arbitrary (worst case), but somewhat random (average case).\r\n\r\nThis proposal aims to study the performance of convex relaxation techniques namely linear and semidefinite programming in the average-case setting.  The proposal will develop new algorithms using convex relaxations and characterize the approximation obtained via convex relaxations in the average case setting.  Algorithms for the average case might translate to better approximations in practical applications.  Furthermore, the techniques developed and the questions raised will advance the state-of the-art in many different areas including, approximation algorithms, computational complexity theory, probability and random matrix theory and convex optimization.  The PI will disseminate the deeper insights so gained, to a broader of audience through designing a graduate course on convex relaxations, supervising research projects for undergraduates, and organizing a workshop, apart from delivering conference talks and seminars.    \r\n\r\nTechnical Overview:\r\nA majority of the work on mathematical programming for combinatorial optimization is devoted to algorithms on worst-case inputs. In other words, these algorithms have approximation or run-time guarantees on every input. This research project is concerned with understanding the power of mathematical-programming based algorithms in the average case, where the inputs to the algorithm are assumed to sampled from a natural underlying distribution. A new and growing body of work studies a diverse set of problems like random constraint satisfaction problems, statistical block models, planted clique, sparse PCA , tensor completion, tensor PCA, compressed sensing and matrix completion, where the underlying instance is drawn from a probability distribution.\r\nThis project intends to develop a theory characterizing the power of mathematical programming, especially the sum-of-squares (SoS) SDP hierarchy in this context. Our approach has the potential to yield remarkably simple necessary and su cient conditions which precisely predict the efficacy of LP and SDP hierarchies for broad classes of distributional problems. It begins with a seemingly trite, but important conceptual shift in our approach for analyzing SoS SDPs in distributional settings, namely cast the distributional problems as the task of distinguishing samples from two diferent distributions. Viewing the problem from this standpoint, exposes the central thesis underlying this proposal that for broad classes of average-case problems, the power of LP or SDP hierarchies are characterized by simple families of distinguishing functions. For example, we argue that the power of SoS SDP relaxations for distinguishability are characterized by so-called low-degree spectral distinguishers. These are functions that compute a matrix whose entries are low-degree polynomials of the input and then output a simple function of the eigenvalues, say the largest one. This characterization opens up several exciting research avenues, both to prove lower bounds against and to devise algorithms for distributional problems. By translating these problems in to the realm of indistinguishability with respect to simple families of distinguishers, it makes them amenable to tools from random matrix theory and pseudorandomness.\r\n\r\nOn the one hand, this research program is likely spur and be accompanied by, corresponding advances in random matrix theory. On the other, it holds the promise to shed light on the computational complexity of several basic tasks in high-dimensional statistics and unsupervised learning such as sparse PCA, tensor PCA and statistical block models. For average-case problems like these, in the absence of conventional complexity theoretic notions such as NP-completeness, characterizing the power of LP/SDP relaxations is possibly the most compelling evidence of their complexity that one can hope to produce.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Prasad",
+   "pi_last_name": "Raghavendra",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Prasad Raghavendra",
+   "pi_email_addr": "nrprasad@gmail.com",
+   "nsf_id": "000567499",
+   "pi_start_date": "2017-06-19",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Berkeley",
+  "inst_street_address": "1608 4TH ST STE 201",
+  "inst_street_address_2": "",
+  "inst_city_name": "BERKELEY",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "5106433891",
+  "inst_zip_code": "947101749",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "CA12",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF CALIFORNIA, THE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GS3YEVSS12N6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Regents of University of California",
+  "perf_str_addr": "623 Soda Hall",
+  "perf_city_name": "Berkeley",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "947201776",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "CA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7926",
+   "pgm_ref_txt": "ALGORITHMS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 499999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span style=\"white-space: pre;\"> </span>The PI Prasad Raghavendra engaged in research on the use of mathematical programming&nbsp; on average-case problems, especially those emerging out of statistics.&nbsp; The project work led to new algorithmic techniques for solving statistical problems either in presence of overwhelming amounts of noise or when the underlying data is not well-behaved.</p>\n<p><span style=\"white-space: pre;\"> </span>One of the oldest problems in statistics is that of linear regression.&nbsp; In linear regression, one observes the values of some function on a set of data points.&nbsp; The goal of linear regression is to find the linear function that best fits the observed data.&nbsp; An enormous body of literature has studied this problem over the decades yet there were no efficient algorithms for linear regression that were robust to outliers.&nbsp; More precisely, suppose a fraction of the data points are corrupted/ produced by an adversary, then until recently, there were no known algorithms with provable guarantees.&nbsp; In a recent work, Klivans, Kothari and Meka constructed the first efficient algorithm that could handle a small constant fraction of adversarial outliers in the data.&nbsp;&nbsp;</p>\n<p><span style=\"white-space: pre;\"> </span>In this project, the PI considered the problem of linear regression in presence of an overwhelming fraction of outliers.&nbsp; Specifically, a small fraction of the data set is the true data, while all else is corrupted or adversarially inserted.&nbsp; In this setup known as \"list-decodable learning\", an algorithm will necessarily have to output a small list of candidate linear functions each of which fits a fraction of the data.&nbsp; The PI and their student designed an algorithm for list-decodable linear regression based on the convex optimization technique known as sum-of-squares semidefinite programming.&nbsp; This also led to a general framework for list-decodable learning using the sum-of-squares SDP, which has subsequently been applied to other problems like robust subspace recovery.</p>\n<p><span style=\"white-space: pre;\"> </span>Even if there is no adversarially inserted outliers in the data, real data can often be ``heavy-tailed\", that is it may exhibit significant deviations from its mean.&nbsp; Classically, linear regression is often studied when the deviations in the data are sub-Gaussian, i.e, deviations from the mean are exponentially rare.&nbsp; However, real-world data often exhibits so-called power-law distributions and are heavy-tailed, i.e., they exhibit large deviations from the mean.&nbsp; Recent work in statistics by Mendelson et. al, exhibited the first algorithms (exponential time) for linear regression under heavy-tailed distributions, that achieve the optimal tradeoff between accuracy and number of samples.&nbsp; However, this work was not algorithmic in that the underlying algorithms were inefficient (exponential time).&nbsp; &nbsp;In this project, PI and co-authors obtained efficient algorithms for linear regression under heavy-tailed distributions, again using the technique of sum-of-squares SDPs.</p>\n<p><span style=\"white-space: pre;\"> </span>The PI and his students also demonstrated limitations of the technique of sum-of-squares SDPs, by showing specific problems inspired from statistical physics wherein the algorithmic technique doesn't yield any improvement over a somewhat naive algorithm.&nbsp; Apart from the above described algorithmic advances, the project has highlighted several interesting research avenues for using sum-of-squares SDPs in high-dimensional statistics.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/24/2021<br>\n\t\t\t\t\tModified by: Prasad&nbsp;Raghavendra</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n The PI Prasad Raghavendra engaged in research on the use of mathematical programming  on average-case problems, especially those emerging out of statistics.  The project work led to new algorithmic techniques for solving statistical problems either in presence of overwhelming amounts of noise or when the underlying data is not well-behaved.\n\n One of the oldest problems in statistics is that of linear regression.  In linear regression, one observes the values of some function on a set of data points.  The goal of linear regression is to find the linear function that best fits the observed data.  An enormous body of literature has studied this problem over the decades yet there were no efficient algorithms for linear regression that were robust to outliers.  More precisely, suppose a fraction of the data points are corrupted/ produced by an adversary, then until recently, there were no known algorithms with provable guarantees.  In a recent work, Klivans, Kothari and Meka constructed the first efficient algorithm that could handle a small constant fraction of adversarial outliers in the data.  \n\n In this project, the PI considered the problem of linear regression in presence of an overwhelming fraction of outliers.  Specifically, a small fraction of the data set is the true data, while all else is corrupted or adversarially inserted.  In this setup known as \"list-decodable learning\", an algorithm will necessarily have to output a small list of candidate linear functions each of which fits a fraction of the data.  The PI and their student designed an algorithm for list-decodable linear regression based on the convex optimization technique known as sum-of-squares semidefinite programming.  This also led to a general framework for list-decodable learning using the sum-of-squares SDP, which has subsequently been applied to other problems like robust subspace recovery.\n\n Even if there is no adversarially inserted outliers in the data, real data can often be ``heavy-tailed\", that is it may exhibit significant deviations from its mean.  Classically, linear regression is often studied when the deviations in the data are sub-Gaussian, i.e, deviations from the mean are exponentially rare.  However, real-world data often exhibits so-called power-law distributions and are heavy-tailed, i.e., they exhibit large deviations from the mean.  Recent work in statistics by Mendelson et. al, exhibited the first algorithms (exponential time) for linear regression under heavy-tailed distributions, that achieve the optimal tradeoff between accuracy and number of samples.  However, this work was not algorithmic in that the underlying algorithms were inefficient (exponential time).   In this project, PI and co-authors obtained efficient algorithms for linear regression under heavy-tailed distributions, again using the technique of sum-of-squares SDPs.\n\n The PI and his students also demonstrated limitations of the technique of sum-of-squares SDPs, by showing specific problems inspired from statistical physics wherein the algorithmic technique doesn't yield any improvement over a somewhat naive algorithm.  Apart from the above described algorithmic advances, the project has highlighted several interesting research avenues for using sum-of-squares SDPs in high-dimensional statistics.\n\n\t\t\t\t\tLast Modified: 10/24/2021\n\n\t\t\t\t\tSubmitted by: Prasad Raghavendra"
+ }
+}

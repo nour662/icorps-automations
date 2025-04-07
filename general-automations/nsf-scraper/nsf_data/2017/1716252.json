@@ -1,0 +1,117 @@
+{
+ "awd_id": "1716252",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CCF-BSF: AF: Small: Collaborative Research: The Dictionary Problem Considered",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "A. Funda Ergun",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2022-08-31",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2017-06-19",
+ "awd_max_amd_letter_date": "2017-06-19",
+ "awd_abstract_narration": "The performance of databases, file systems, and other data-storage systems depends on how the data is organized on disk.  The data-organization parts of these systems are called dictionaries.  Even though dictionaries have been studied for decades, some very basic questions remain unanswered. This grant will support research to address several of these questions. This research has the potential to improve performance of data-storage systems and applications based on these systems in many environments, including large-scale data analysis and high-performance computing.  Dictionaries are so fundamental that theoretical advances in dictionaries are quickly picked up by practitioners, and thus this research has strong potential for tech transfer.\r\n \r\nSpecifically, the project will tackle foundational problems in dictionaries using techniques in write-optimization pioneered by the PIs. How are systems of dictionaries different than individual dictionaries?  How can dictionaries take advantage of variations in the rate of queries and updates?  How can one comprehensively compare dictionary data structures?  How can one bring the benefits of write-optimization to dictionaries on more complex data types?  Write-optimized dictionaries have fundamentally changed the landscape of databases, and this research will improve our understanding of the complexity of operations on such systems.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Michael",
+   "pi_last_name": "Bender",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Michael A Bender",
+   "pi_email_addr": "bender@cs.stonybrook.edu",
+   "nsf_id": "000092778",
+   "pi_start_date": "2017-06-19",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Rob",
+   "pi_last_name": "Johnson",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Rob Johnson",
+   "pi_email_addr": "rob@cs.stonybrook.edu",
+   "nsf_id": "000252323",
+   "pi_start_date": "2017-06-19",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "SUNY at Stony Brook",
+  "inst_street_address": "W5510 FRANKS MELVILLE MEMORIAL LIBRARY",
+  "inst_street_address_2": "",
+  "inst_city_name": "STONY BROOK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6316329949",
+  "inst_zip_code": "117940001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "NY01",
+  "org_lgl_bus_name": "THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK",
+  "org_prnt_uei_num": "M746VC6XMNH9",
+  "org_uei_num": "M746VC6XMNH9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "SUNY at Stony Brook",
+  "perf_str_addr": "Department of Computer Scienced",
+  "perf_city_name": "Stony Brook",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "117944400",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "NY01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7926",
+   "pgm_ref_txt": "ALGORITHMS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Dictionaries are data structures, which means that they organize data on disks so that the data can be updated and queried. &nbsp;Dictionaries allow one to determine if an item is in a set, and some dictionaries allow one to find the successor of a key, which is the smallest item in the set that is larger than the query. &nbsp;All databases and file systems rely heavily on dictionaries.<br /><br />Even though dictionaries are one of the most highly studied data structures and even though they are deployed in all computer systems, there are many surprisingly fundamental questions about dictionaries that had not been answered.<br /><br />The work in this project was to answer many of these questions. &nbsp;We published papers in the top venues on the following questions related to dictionaries:<br /><br />-- Filters are approximate dictionaries, in that they are highly compressed but may answer some queries incorrectly. &nbsp;In \"Bloom filters, adaptivity, and the dictionary problem\" we showed that filters could adapt to query sequences against even very clever and malicious adversaries, which means, for example, that they can be made resistant to such internet phenomena as denial-of-service attacks.<br /><br />-- In a series of papers, culminating in \"Flushing without cascades\", we showed how to reduce the variability of performance in large-data dictionaries. &nbsp;Performance variability is a critical issue in the design of databases. &nbsp;<br /><br />-- In \"Optimal ball recycling\", we showed that so-called insertion buffers, one of the most common ways to speed up databases, has limited utility and that it is worth using more sophisticated methods that yield much better improvements. &nbsp;<br /><br />-- And in a series of papers, we have solved some of the most basic open problems in hashing. &nbsp;We have established that our results can be used, at least in theory, to speed up address translation, a fundamental operation that computers must perform as part of all computations.<br /><br /><br />In short, we have&nbsp;<br /><br />-- solved well-known open problems,<br /><br />-- given new techniques to analyze the way people use dictionaries in real systems,<br /><br />-- introduced exciting new problems that are already generating followup work in the community.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/24/2022<br>\n\t\t\t\t\tModified by: Michael&nbsp;A&nbsp;Bender</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nDictionaries are data structures, which means that they organize data on disks so that the data can be updated and queried.  Dictionaries allow one to determine if an item is in a set, and some dictionaries allow one to find the successor of a key, which is the smallest item in the set that is larger than the query.  All databases and file systems rely heavily on dictionaries.\n\nEven though dictionaries are one of the most highly studied data structures and even though they are deployed in all computer systems, there are many surprisingly fundamental questions about dictionaries that had not been answered.\n\nThe work in this project was to answer many of these questions.  We published papers in the top venues on the following questions related to dictionaries:\n\n-- Filters are approximate dictionaries, in that they are highly compressed but may answer some queries incorrectly.  In \"Bloom filters, adaptivity, and the dictionary problem\" we showed that filters could adapt to query sequences against even very clever and malicious adversaries, which means, for example, that they can be made resistant to such internet phenomena as denial-of-service attacks.\n\n-- In a series of papers, culminating in \"Flushing without cascades\", we showed how to reduce the variability of performance in large-data dictionaries.  Performance variability is a critical issue in the design of databases.  \n\n-- In \"Optimal ball recycling\", we showed that so-called insertion buffers, one of the most common ways to speed up databases, has limited utility and that it is worth using more sophisticated methods that yield much better improvements.  \n\n-- And in a series of papers, we have solved some of the most basic open problems in hashing.  We have established that our results can be used, at least in theory, to speed up address translation, a fundamental operation that computers must perform as part of all computations.\n\n\nIn short, we have \n\n-- solved well-known open problems,\n\n-- given new techniques to analyze the way people use dictionaries in real systems,\n\n-- introduced exciting new problems that are already generating followup work in the community.\n\n\t\t\t\t\tLast Modified: 12/24/2022\n\n\t\t\t\t\tSubmitted by: Michael A Bender"
+ }
+}

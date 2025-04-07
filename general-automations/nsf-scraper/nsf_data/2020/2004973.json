@@ -1,0 +1,178 @@
+{
+ "awd_id": "2004973",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Frameworks: Community-Based Weather and Climate Simulation With a Global Storm-Resolving Model",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": "7032922656",
+ "po_email": "vchandol@nsf.gov",
+ "po_sign_block_name": "Varun Chandola",
+ "awd_eff_date": "2020-08-01",
+ "awd_exp_date": "2026-07-31",
+ "tot_intn_awd_amt": 1993269.0,
+ "awd_amount": 1993269.0,
+ "awd_min_amd_letter_date": "2020-08-07",
+ "awd_max_amd_letter_date": "2023-01-09",
+ "awd_abstract_narration": "Global Earth System Models (ESMs) use mathematical equations to simulate both weather and climate. ESMs include the dynamics of the atmosphere, oceans, land surface, ice, and vegetation. They can be used to make predictions of use to the public and policymakers. Today\u2019s ESMs use coarse grids with cells about 100 km wide. Important weather systems like thunderstorms are too small to be simulated with such grids. One way to improve ESMs is to use finer grids that can directly simulate thunderstorms, but such models can only be run on very powerful computers. This project, called EarthWorks, will create an ESM capable of resolving storms by taking advantage of recent developments in high performance computing. EarthWorks will also use artificial intelligence to improve and speed up the model, and state-of-the-art methods to limit the amount of data produced as the model runs. The EarthWorks ESM will be built by spinning off and modifying a copy of the most recent version of the widely used Community Earth System Model. The modified model will represent the atmosphere, the oceans, and the land surface on a single very high-resolution grid, with grid cells about 4 km wide. It will have improved forecast skill, and produce more realistic simulations of past, present, and future climates. The project will make the model and its output openly available for use by all scientists.\r\n\r\nThe open-source Community Earth System Model (CESM) is both developed and applied to scientific problems by a large community of researchers. It is critical infrastructure for the U.S. climate research community. In the atmosphere and ocean components of the CESM, the adiabatic terms of the partial differential equations that express conservation of mass, momentum, and thermodynamic energy are solved numerically using what is called a dynamical core. Atmosphere and ocean models also include parametric representations, called parameterizations, that are designed to include the effects of storm and cloud processes that occur on scales too small to be represented on the model's grid. Despite decades of work by many scientists, today's parameterizations are still problematic and limit the utility of ESMs for many applications of societal relevance. Fortunately, recent advances in computer power have made it possible to parameterize less, by using grid spacings on the order of a few kilometers over the entire globe. These \"global storm-resolving models\" (GSRMs) can only be run on today's fastest computers. GSRMs are under very active development at a dozen or so modeling centers around the world. Unfortunately,  however, the current formulation of the CESM prevents it from being run as a GSRM. This project, called EarthWorks, will create a new, openly available GSRM by spinning off and intensively modifying a copy of the CESM. To accomplish this goal, the researchers will use recently developed and closely related dynamical cores for the atmosphere and ocean. All components of the model will use the same very high-resolution grid. This high resolution will make it possible to eliminate the particularly troublesome parameterization of deep cumulus convection (i.e., thunderstorms), and thereby reduce systematic biases that plague current ESMs. Earthworks will exploit the pre-exascale and exascale technologies now being brought to market by high performance computing vendors. The new exascale ESM will run the most computationally intensive components on powerful graphics processor units (GPUs), and exploit node-level task parallelism to execute the rest of the model asynchronously. The component model codes are close to completion and are currently being tested on GPUs. EarthWorks will use a simplified component-coupling approach, incorporate machine learning where feasible, and leverage lossy compression techniques and parallel I/O tools to deal with the enormous data volumes that will be generated as the model runs. The completed model will be simple, powerful, and well documented. The project will apply it to pressing scientific problems in both numerical weather prediction and climate simulation. The model and its input datasets will be made openly available to the broad research community, via GitHub.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "William",
+   "pi_last_name": "Skamarock",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "William Skamarock",
+   "pi_email_addr": "skamaroc@ucar.edu",
+   "nsf_id": "000098371",
+   "pi_start_date": "2023-01-09",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Former Principal Investigator",
+   "pi_first_name": "Andrew",
+   "pi_last_name": "Gettelman",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Andrew Gettelman",
+   "pi_email_addr": "andrew@ucar.edu",
+   "nsf_id": "000456705",
+   "pi_start_date": "2020-08-07",
+   "pi_end_date": "2023-01-09"
+  },
+  {
+   "pi_role": "Former Co-Principal Investigator",
+   "pi_first_name": "William",
+   "pi_last_name": "Skamarock",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "William Skamarock",
+   "pi_email_addr": "skamaroc@ucar.edu",
+   "nsf_id": "000098371",
+   "pi_start_date": "2020-08-07",
+   "pi_end_date": "2023-01-09"
+  },
+  {
+   "pi_role": "Former Co-Principal Investigator",
+   "pi_first_name": "Richard",
+   "pi_last_name": "Loft",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "Richard D Loft",
+   "pi_email_addr": "loft@ucar.edu",
+   "nsf_id": "000467810",
+   "pi_start_date": "2020-08-07",
+   "pi_end_date": "2021-08-23"
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Thomas",
+   "pi_last_name": "Hauser",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Thomas Hauser",
+   "pi_email_addr": "thauser@ucar.edu",
+   "nsf_id": "000345076",
+   "pi_start_date": "2021-08-23",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Brian",
+   "pi_last_name": "Medeiros",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Brian Medeiros",
+   "pi_email_addr": "brianpm@ucar.edu",
+   "nsf_id": "000697726",
+   "pi_start_date": "2023-01-09",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University Corporation For Atmospheric Res",
+  "inst_street_address": "3090 CENTER GREEN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "BOULDER",
+  "inst_state_code": "CO",
+  "inst_state_name": "Colorado",
+  "inst_phone_num": "3034971000",
+  "inst_zip_code": "803012252",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "CO02",
+  "org_lgl_bus_name": "UNIVERSITY CORPORATION FOR ATMOSPHERIC RESEARCH",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "YEZEE8W5JKA3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "National Center for Atmospheric Research",
+  "perf_str_addr": "1850 Table Mesa Drive",
+  "perf_city_name": "Boulder",
+  "perf_st_code": "CO",
+  "perf_st_name": "Colorado",
+  "perf_zip_code": "803055602",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "CO02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "800400",
+   "pgm_ele_name": "Software Institutes"
+  },
+  {
+   "pgm_ele_code": "807400",
+   "pgm_ele_name": "EarthCube"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "077Z",
+   "pgm_ref_txt": "CSSI-1: Cyberinfr for Sustained Scientif"
+  },
+  {
+   "pgm_ref_code": "4444",
+   "pgm_ref_txt": "INTERDISCIPLINARY PROPOSALS"
+  },
+  {
+   "pgm_ref_code": "7925",
+   "pgm_ref_txt": "LARGE PROJECT"
+  },
+  {
+   "pgm_ref_code": "8004",
+   "pgm_ref_txt": "Software Institutes"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 1993269.0
+  }
+ ],
+ "por": null
+}

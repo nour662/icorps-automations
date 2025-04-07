@@ -1,0 +1,101 @@
+{
+ "awd_id": "2031570",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Dynamic Data Analytics for the Power Grid via Koopman and Perron-Frobenius Operators",
+ "cfda_num": "47.041",
+ "org_code": "07010000",
+ "po_phone": "7032922303",
+ "po_email": "eabed@nsf.gov",
+ "po_sign_block_name": "Eyad Abed",
+ "awd_eff_date": "2020-09-15",
+ "awd_exp_date": "2024-08-31",
+ "tot_intn_awd_amt": 203890.0,
+ "awd_amount": 203890.0,
+ "awd_min_amd_letter_date": "2020-07-28",
+ "awd_max_amd_letter_date": "2020-07-28",
+ "awd_abstract_narration": "The modern power grid is becoming increasingly complex. Ensuring stable grid operation is becoming more and more challenging. Classical tools for stability assessment for power systems largely rely on accurate system models. Such models are becoming less reliable as the grid continues to aggressively integrate new renewable, and often distributed, energy resources. Efficient computational tools are necessary to ensure reliable operation. This proposal seeks to develop such tools for stability monitoring, combining both coarse model information and real-time data streams from the power grid. Existing relationships with the power industry will play a crucial role in disseminating the research findings. Students working on this project will learn to utilize powerful techniques from modern data science that have applications in power systems. Research outcomes will be seamlessly integrated in multiple existing courses at both universities. \r\n\r\nThe proposed work leverages a linear transfer operator-based framework to build computational tools for stability monitoring, involving the Koopman and Perron-Frobenius operators. These operators are used to lift the nonlinear dynamics from state space to linear dynamics in the space of functions of the states. The eigenvalues and eigenfunctions of these operators are rich in information that is relevant to stability monitoring for a power grid. This work builds a framework to combine measurements of a subset of the states of a power system and a potentially coarse power system model to adaptively compute eigenvalues and eigenfunctions using kernel methods from machine learning. The eigenfunctions are then leveraged to estimate region of attraction of power system dynamics and propagate uncertainties in initial condition and model parameters. Special attention is paid to scalability of the approach to viably evaluate power system stability, in (almost) real-time. The proposed methods are fundamentally different from techniques that rely on local linearization that cannot capture the complex nonlinear behavior of power system dynamics. These methods are deeply rooted in dynamical systems theory and offer a natural mechanism to harness both model information and measurements from sensors within a unified framework.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "ECCS",
+ "org_div_long_name": "Division of Electrical, Communications and Cyber Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Subhonmesh",
+   "pi_last_name": "Bose",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Subhonmesh Bose",
+   "pi_email_addr": "boses@illinois.edu",
+   "nsf_id": "000698948",
+   "pi_start_date": "2020-07-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Illinois at Urbana-Champaign",
+  "inst_street_address": "506 S WRIGHT ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "URBANA",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "2173332187",
+  "inst_zip_code": "618013620",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "IL13",
+  "org_lgl_bus_name": "UNIVERSITY OF ILLINOIS",
+  "org_prnt_uei_num": "V2PHZ2CSCH63",
+  "org_uei_num": "Y8CWNJRCNN91"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Illinois at Urbana-Champaign",
+  "perf_str_addr": "506 S. Wright Street",
+  "perf_city_name": "Urbana",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "618013620",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "IL13",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "760700",
+   "pgm_ele_name": "EPCN-Energy-Power-Ctrl-Netwrks"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "155E",
+   "pgm_ref_txt": "Electric power networks"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 203890.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"p1\"><strong>Intellectual Merit:</strong> A dynamical system can be studied through what the dynamics does to functions or probability distributions of states of the system, formalized through the notion of transfer operators. This project developed algorithms to learn sparse representations of these transfer operators from data and characterized their performance guarantees. The work combined powerful tools from functional analysis and probability theory to both architect learning algorithms and analyze their finite sample performance. Once learned, these operators provide valuable information about the dynamical system&mdash;a property that proved useful in exploring its application to address classical questions in the domain of power system dynamics and stability. Two questions were of particular interest within this project. First was the question of transient stability that seeks ways to ensure that a power system will reach a stable state after a large perturbation, e.g., after a line fault. The second question concerns possible trajectories along which the states of a power system might evolve when&nbsp;the initial state is unknown.&nbsp;</p>\r\n<p class=\"p1\"><strong>Broader Merit:</strong> The project derived its technological impact from the development of algorithms that harnessed advances in modern data science that come with provable guarantees and leveraged them to important practical questions in power system operations. The students and postdoctoral scholars who were partially funded by this project worked on both theoretical and practical aspects of algorithm design and its applications in power systems. As a result, the training was multi-disciplinary, a feature that will aid them in their career paths. Two of the postdoctoral scholars who were partially funded by this project have since pursued faculty positions. The prolific female graduate student funded by this grant will undoubtedly serve to inspire other women to pursue careers in STEM research. The research conducted under this grant have already informed courses on power system operations in Illinois. The practical aspects of dynamical system analysis with data is envisioned to become part of future offerings of advanced statistical learning classes.</p>\r\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 03/08/2025<br>\nModified by: Subhonmesh&nbsp;Bose</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nIntellectual Merit: A dynamical system can be studied through what the dynamics does to functions or probability distributions of states of the system, formalized through the notion of transfer operators. This project developed algorithms to learn sparse representations of these transfer operators from data and characterized their performance guarantees. The work combined powerful tools from functional analysis and probability theory to both architect learning algorithms and analyze their finite sample performance. Once learned, these operators provide valuable information about the dynamical systema property that proved useful in exploring its application to address classical questions in the domain of power system dynamics and stability. Two questions were of particular interest within this project. First was the question of transient stability that seeks ways to ensure that a power system will reach a stable state after a large perturbation, e.g., after a line fault. The second question concerns possible trajectories along which the states of a power system might evolve whenthe initial state is unknown.\r\n\n\nBroader Merit: The project derived its technological impact from the development of algorithms that harnessed advances in modern data science that come with provable guarantees and leveraged them to important practical questions in power system operations. The students and postdoctoral scholars who were partially funded by this project worked on both theoretical and practical aspects of algorithm design and its applications in power systems. As a result, the training was multi-disciplinary, a feature that will aid them in their career paths. Two of the postdoctoral scholars who were partially funded by this project have since pursued faculty positions. The prolific female graduate student funded by this grant will undoubtedly serve to inspire other women to pursue careers in STEM research. The research conducted under this grant have already informed courses on power system operations in Illinois. The practical aspects of dynamical system analysis with data is envisioned to become part of future offerings of advanced statistical learning classes.\r\n\n\n\t\t\t\t\tLast Modified: 03/08/2025\n\n\t\t\t\t\tSubmitted by: SubhonmeshBose\n"
+ }
+}

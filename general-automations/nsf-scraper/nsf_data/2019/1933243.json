@@ -1,0 +1,101 @@
+{
+ "awd_id": "1933243",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Optimizing Risk in a Gauss-Markov Process - Energy Storage Strategies for Renewable Integration",
+ "cfda_num": "47.041",
+ "org_code": "07010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Aranya Chakrabortty",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2023-08-31",
+ "tot_intn_awd_amt": 304590.0,
+ "awd_amount": 304590.0,
+ "awd_min_amd_letter_date": "2019-08-22",
+ "awd_max_amd_letter_date": "2019-08-22",
+ "awd_abstract_narration": "All power derived from renewable energy resources such as wind and solar depends on the weather. Changes in power from renewables can be predictable, e.g. due to the rising and setting of the sun - or can be hard to predict, e.g. due to clouds blocking out the sun. Consumer demand for power, likewise, has always been partly predictable and partly random. The amount of power a utility must generate is the consumer demand minus the renewable power generated. As power from renewables increases, the unpredictable part of this required generation also increases. Utilities have begun to respond to this increased risk by investing in battery storage and quick-start generators. However, there is currently no way to quantify the risk caused by renewable energy resources meaning utilities don't know how many batteries to buy or how to use them efficiently. For example, a utility might buy 1 GWh of battery storage. However, the 1 GWh is useless if it is discharged too early in the day and is unavailable when a storm blows in and reduces solar production unexpectedly. The goal of this project, then, is to develop accurate weather-based models to forecast the probability that renewable generators will experience large drops in production. The project then proposes algorithms to use these risk models to determine optimal battery charge-discharge programs for both consumers and utilities. In addition, the project uses these models to determine optimal electricity pricing structures including demand charges for a regulated utility. The project includes several educational and outreach activities. An established program at Arizona State University called Science is Fun will be utilized for outreach to K-12 students.\r\n\r\nThis project has three areas of focus. The first focus is to develop useful Gauss-Markov (G-M) models of solar generation. These models are based on datasets provided by Wunderground and Arizona utility SRP and condition on pressure changes, humidity and temperature. Machine Learning is then used to map daily forecast data to the model which is most effective at reducing cost. The second focus is to solve stochastic Dynamic Programming (DP) problems with non-separable objective functions. Specifically, minimizing the expected maximum of a G-M process and computing the probability distribution of the maximum of a G-M process over a finite time-interval. Such stochastic DPs are reformulated using the recently proposed Naturally Forward Separable (NFS) framework which allows them to be solved recursively using the Bellman equation with minimal computation time. The third focus is to apply the NFS DP framework to newly developed models of solar generation and produce algorithms for optimal battery programming and associated spinning reserve.  These algorithms are then used to propose a model for optimal utility pricing of consumption and demand charges based on principles of feedback and not based on marginal pricing. The algorithms are also used to evaluate the impact on risk and cost of utility-owned solar vs rooftop solar.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "ECCS",
+ "org_div_long_name": "Division of Electrical, Communications and Cyber Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Matthew",
+   "pi_last_name": "Peet",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Matthew Peet",
+   "pi_email_addr": "mpeet@asu.edu",
+   "nsf_id": "000511753",
+   "pi_start_date": "2019-08-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Arizona State University",
+  "inst_street_address": "660 S MILL AVENUE STE 204",
+  "inst_street_address_2": "",
+  "inst_city_name": "TEMPE",
+  "inst_state_code": "AZ",
+  "inst_state_name": "Arizona",
+  "inst_phone_num": "4809655479",
+  "inst_zip_code": "852813670",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "AZ04",
+  "org_lgl_bus_name": "ARIZONA STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NTLHJXM55KZ6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Arizona State University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "AZ",
+  "perf_st_name": "Arizona",
+  "perf_zip_code": "852876106",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "AZ04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "760700",
+   "pgm_ele_name": "EPCN-Energy-Power-Ctrl-Netwrks"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "155E",
+   "pgm_ref_txt": "Electric power networks"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 304590.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The problem of optimal utilization of limited resources (such as batteries) under uncertain conditions (such as solar and wind power generation) is challenging -- especially when the uncertainty is persistent in that it is governed by a hidden and unmeasurable process (such as cloud formation and wind). The goal of this project has been to develop new algorithms both for data-based modeling of persistent uncertain processes and for leveraging those models to design mechanisms for optimal utilization of limited resources across decentralized networks with limited sensing and actuation (such as a power grid). This project is a collaboration with local utility Salt River Project (SRP), which provided data on renewable power generation and consumer demand.</p>\n<p><strong>Modelling of persistent uncertainty:</strong> First, we have the case where measurements are based on an unknown data generating mechanism. While Gaussian distributions are commonly used to model such data generating mechanisms, such Gaussian models cannot represent the distributions of data commonly encountered in measurements of solar irradiance or wind speed. Our solution to this problem was to parameterize a new class of so-called \"sliced normal\" distributions which can represent any data generating mechanism arbitrarily well. Furthermore, we have developed convex (efficient and accurate) algorithms for finding such sliced normal distributions and applied these algorithms to real world datasets.</p>\n<p>Second, we consider how to design robust machine learning algorithms to represent unknown data generating mechanisms. Specifically, we use kernel functions to represent the data in a higher dimensional space. Then, we propose a new convex parameterization of kernels which can maximize separation of this data in the higher dimensional space. By selecting the kernel which maximizes separation of the data in higher dimensional space, we ensure that our learned representation of the data generating mechanism is insensitive to noise and errors in measurement.</p>\n<p>Finally, we have recently considered the case of persistent uncertainty with hidden states where the hidden states of the data generating mechanism cannot be measured directly or regularly. Furthermore, we assume the evolution of the hidden states has a given nonlinear structure but that the parameters of this structure are unknown. We then use Picard iteration to represent the map from inputs to measurements and use this map to determine the optimal values of the parameters. The result is a robust and highly accurate method of estimating the parameters of a nonlinear uncertain process using limited data.</p>\n<p><strong>Optimal resource utilization in distributed networks under uncertainty:</strong> Our first major accomplishment was to propose an extension to the stochastic dynamics programming framework to allow for optimal use of energy storage when faced with non-separable costs. Non-separable costs occur when consumers are charged based on maximum electricity usage (demand pricing) or when the power utility company has a cost associated with peak generation (associated with the number of generators or transmission capacity). This framework allows the consumers to program batteries more efficiently or program thermostats to better utilize the thermal storage capacity of interior walls and surfaces. It also provides guidance to power utilities on how to utilize energy storage, forecast generation needs, and set optimal electricity prices.</p>\n<p>Second, we considered how to use our extension of the dynamic programming framework for path planning and the design of feedback controllers through the Bellman inequality and Hamilton Jacobi Bellman equation. This work also resulted in new ways of using data to estimate stability margins in uncertain nonlinear systems and we applied these methods to power transmission and generation in a Single Machine Infinite Bus System. It also resulted in improved software for analysis of nonlinear systems.</p>\n<p>Finally, we considered the question of optimal regulation of large-scale distributed networks with uncertainty and delay in the network interconnection. For this we utilized a new convex approach to representation and control of systems with delay and developed efficient and easy to use software for the design of feedback controllers for such systems. &nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 01/06/2024<br>\nModified by: Matthew&nbsp;Peet</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe problem of optimal utilization of limited resources (such as batteries) under uncertain conditions (such as solar and wind power generation) is challenging -- especially when the uncertainty is persistent in that it is governed by a hidden and unmeasurable process (such as cloud formation and wind). The goal of this project has been to develop new algorithms both for data-based modeling of persistent uncertain processes and for leveraging those models to design mechanisms for optimal utilization of limited resources across decentralized networks with limited sensing and actuation (such as a power grid). This project is a collaboration with local utility Salt River Project (SRP), which provided data on renewable power generation and consumer demand.\n\n\nModelling of persistent uncertainty: First, we have the case where measurements are based on an unknown data generating mechanism. While Gaussian distributions are commonly used to model such data generating mechanisms, such Gaussian models cannot represent the distributions of data commonly encountered in measurements of solar irradiance or wind speed. Our solution to this problem was to parameterize a new class of so-called \"sliced normal\" distributions which can represent any data generating mechanism arbitrarily well. Furthermore, we have developed convex (efficient and accurate) algorithms for finding such sliced normal distributions and applied these algorithms to real world datasets.\n\n\nSecond, we consider how to design robust machine learning algorithms to represent unknown data generating mechanisms. Specifically, we use kernel functions to represent the data in a higher dimensional space. Then, we propose a new convex parameterization of kernels which can maximize separation of this data in the higher dimensional space. By selecting the kernel which maximizes separation of the data in higher dimensional space, we ensure that our learned representation of the data generating mechanism is insensitive to noise and errors in measurement.\n\n\nFinally, we have recently considered the case of persistent uncertainty with hidden states where the hidden states of the data generating mechanism cannot be measured directly or regularly. Furthermore, we assume the evolution of the hidden states has a given nonlinear structure but that the parameters of this structure are unknown. We then use Picard iteration to represent the map from inputs to measurements and use this map to determine the optimal values of the parameters. The result is a robust and highly accurate method of estimating the parameters of a nonlinear uncertain process using limited data.\n\n\nOptimal resource utilization in distributed networks under uncertainty: Our first major accomplishment was to propose an extension to the stochastic dynamics programming framework to allow for optimal use of energy storage when faced with non-separable costs. Non-separable costs occur when consumers are charged based on maximum electricity usage (demand pricing) or when the power utility company has a cost associated with peak generation (associated with the number of generators or transmission capacity). This framework allows the consumers to program batteries more efficiently or program thermostats to better utilize the thermal storage capacity of interior walls and surfaces. It also provides guidance to power utilities on how to utilize energy storage, forecast generation needs, and set optimal electricity prices.\n\n\nSecond, we considered how to use our extension of the dynamic programming framework for path planning and the design of feedback controllers through the Bellman inequality and Hamilton Jacobi Bellman equation. This work also resulted in new ways of using data to estimate stability margins in uncertain nonlinear systems and we applied these methods to power transmission and generation in a Single Machine Infinite Bus System. It also resulted in improved software for analysis of nonlinear systems.\n\n\nFinally, we considered the question of optimal regulation of large-scale distributed networks with uncertainty and delay in the network interconnection. For this we utilized a new convex approach to representation and control of systems with delay and developed efficient and easy to use software for the design of feedback controllers for such systems. \n\n\n\t\t\t\t\tLast Modified: 01/06/2024\n\n\t\t\t\t\tSubmitted by: MatthewPeet\n"
+ }
+}

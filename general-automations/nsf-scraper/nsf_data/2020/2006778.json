@@ -1,0 +1,105 @@
+{
+ "awd_id": "2006778",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: AF: Small: Combinatorial Optimization for Stochastic Inputs",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922182",
+ "po_email": "pbrass@nsf.gov",
+ "po_sign_block_name": "Peter Brass",
+ "awd_eff_date": "2020-07-01",
+ "awd_exp_date": "2024-06-30",
+ "tot_intn_awd_amt": 249967.0,
+ "awd_amount": 249967.0,
+ "awd_min_amd_letter_date": "2020-06-17",
+ "awd_max_amd_letter_date": "2020-06-17",
+ "awd_abstract_narration": "A central theme in algorithm design is that of making decisions in the presence of uncertainty. In contrast to the usual setting where all the information is available up-front, often the input is not known precisely when we have to make the decisions, but is revealed along the way. We face such decision-making situations all the time, e.g., when deciding on driving routes in the presence of traffic, or dividing our time between chores that take uncertain amounts of time. This project aims to design algorithms for a wide class of such problems using only predictions about the future input. Research on decision-making under uncertainty started nearly seventy years ago, but it has gained much momentum in recent years. This is partly due to numerous applications in scheduling, transportation, electronic commerce etc., and partly because of the vast amounts of data that allow us to make good predictions about the future. This project will model a collection of fundamental and practically relevant problems in this area, and develop techniques to obtain algorithms with provable guarantees on their performance. Research results from this project can bring together communities in computer science with those in operations research, stochastic control and machine learning. The educational component of this project includes the engagement of graduate and undergraduate students in research, and the development of a new graduate course in this subject.\r\n\r\nThe project will model predictions about the uncertain input using probabilistic models. This approach, called stochastic optimization, is one of the most widely-used approaches to model uncertainty. This project aims to make progress on basic problems in scheduling, path-planning and routing, packing and covering, and submodular maximization, in this stochastic setting. The focus of this project will be on two kinds of algorithms for optimization in these settings: non-adaptive algorithms (where all decisions are made in one shot), and adaptive ones (where the decisions are made incrementally, based on random outcomes observed along the way). One of the goals is to broaden the scope of investigation further by considering settings where the underlying random quantities exhibit correlations; this is in contrast to the usual assumptions of independence.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Viswanath",
+   "pi_last_name": "Nagarajan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Viswanath Nagarajan",
+   "pi_email_addr": "viswa@umich.edu",
+   "nsf_id": "000688435",
+   "pi_start_date": "2020-06-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Regents of the University of Michigan - Ann Arbor",
+  "inst_street_address": "1109 GEDDES AVE STE 3300",
+  "inst_street_address_2": "",
+  "inst_city_name": "ANN ARBOR",
+  "inst_state_code": "MI",
+  "inst_state_name": "Michigan",
+  "inst_phone_num": "7347636438",
+  "inst_zip_code": "481091015",
+  "inst_country_name": "United States",
+  "cong_dist_code": "06",
+  "st_cong_dist_code": "MI06",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF MICHIGAN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GNJ7BBP73WE9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Regents of the University of Michigan",
+  "perf_str_addr": "3003 South State Street",
+  "perf_city_name": "Ann Arbor",
+  "perf_st_code": "MI",
+  "perf_st_name": "Michigan",
+  "perf_zip_code": "481091274",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "MI06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7926",
+   "pgm_ref_txt": "ALGORITHMS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 249967.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this project was designing provably-good algorithms for problems with stochastic input. We obtained algorithms that find approximately optimal static solutions (given by a fixed set of decisions) as well as adaptive solutions (which involve a sequence of dynamically chosen decisions). We also quantified the gap between these two solution types.</p>\n<p>One specific goal was to understand when static solutions suffice for stochastic problems, and to obtain efficient algorithms that find such solutions. In this direction, we obtained approximation algorithms for stochastic load balancing on unrelated machines and a class of geometric load balancing problems such as packing intervals and rectangles. We also obtained the first constant-factor approximation algorithm for the score classification problem, improving on a prior logarithmic approximation ratio.</p>\n<p>Another specific goal was to design adaptive algorithms in situations where static solutions are inadequate. In this direction, we obtained an improved (and best possible) approximation ratio for the adaptive submodular cover problem. We also obtained algorithms for a stochastic path planning with applications in robotics.</p>\n<p>In addition to the usual setting of independent distributions, we also considered some models with correlated distributions, which led to the development of new tools in the analysis of algorithms. We also validated our theoretical results through computational experiments.</p>\n<p>This project also involved the mentoring of several students (four PhD, two Masters and four undergraduate), development of new course material and the organization of a workshop for prospective graduate students from non-traditional backgrounds.</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 07/30/2024<br>\nModified by: Viswanath&nbsp;Nagarajan</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe goal of this project was designing provably-good algorithms for problems with stochastic input. We obtained algorithms that find approximately optimal static solutions (given by a fixed set of decisions) as well as adaptive solutions (which involve a sequence of dynamically chosen decisions). We also quantified the gap between these two solution types.\n\n\nOne specific goal was to understand when static solutions suffice for stochastic problems, and to obtain efficient algorithms that find such solutions. In this direction, we obtained approximation algorithms for stochastic load balancing on unrelated machines and a class of geometric load balancing problems such as packing intervals and rectangles. We also obtained the first constant-factor approximation algorithm for the score classification problem, improving on a prior logarithmic approximation ratio.\n\n\nAnother specific goal was to design adaptive algorithms in situations where static solutions are inadequate. In this direction, we obtained an improved (and best possible) approximation ratio for the adaptive submodular cover problem. We also obtained algorithms for a stochastic path planning with applications in robotics.\n\n\nIn addition to the usual setting of independent distributions, we also considered some models with correlated distributions, which led to the development of new tools in the analysis of algorithms. We also validated our theoretical results through computational experiments.\n\n\nThis project also involved the mentoring of several students (four PhD, two Masters and four undergraduate), development of new course material and the organization of a workshop for prospective graduate students from non-traditional backgrounds.\n\n\n\t\t\t\t\tLast Modified: 07/30/2024\n\n\t\t\t\t\tSubmitted by: ViswanathNagarajan\n"
+ }
+}

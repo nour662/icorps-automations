@@ -1,0 +1,101 @@
+{
+ "awd_id": "2026835",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "ATD: Collaborative Research: Computationally Efficient Algorithms for Detecting Anomalous Atmospheric Emissions",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032924885",
+ "po_email": "tbartosz@nsf.gov",
+ "po_sign_block_name": "Tomek Bartoszynski",
+ "awd_eff_date": "2020-08-15",
+ "awd_exp_date": "2024-10-31",
+ "tot_intn_awd_amt": 161984.0,
+ "awd_amount": 161984.0,
+ "awd_min_amd_letter_date": "2020-08-12",
+ "awd_max_amd_letter_date": "2020-08-12",
+ "awd_abstract_narration": "Large-scale anomalous emissions of greenhouse gases and air pollution pose threats to human health in the vicinity of the emissions, compromise state emissions targets, and threaten energy security.  Two recent, high-profile natural gas blowouts underscore the need for early detection and intervention. Several new and forthcoming satellites have the specific purpose of detecting and monitoring greenhouse gas emissions, and recent studies have demonstrated the potential of detecting such events using satellite data. However, there are enormous computational challenges in quantifying these emission anomalies or super-emitters due to the massive amounts of satellite data to be processed and the fine-scale resolution at which reconstructions are needed for threat detection. This project aims to tackle these challenges by developing improved computational methods for use in detection of atmospheric emissions. The project supports one graduate per year at each of the three universities.\r\n\r\nThe project aims to address fundamental issues in the development of computationally efficient solvers for inverse problems, and to push the traditional boundaries of threat detection via satellites by enabling researchers to detect and monitor anomalous atmospheric emissions quickly, accurately, and with quantifiable uncertainty. The main thrusts of this project are (i) efficient incorporation of prior information and parameter selection, (ii) improved spatio-temporal inverse modeling with multiple stochastic components and cost-cutting inexact and sampling approaches to handle expensive adjoint models, and (iii) evaluations, testing, and integration of the developed methods via case studies with synthetic satellite data. The aim of this project is to help identify potential immediate threats (e.g., oil and gas blowouts) using satellites, which have significant broader impacts not only in disaster response and recovery but also in minimizing the long-term environmental risks.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Scot",
+   "pi_last_name": "Miller",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Scot M Miller",
+   "pi_email_addr": "smill191@jhu.edu",
+   "nsf_id": "000690504",
+   "pi_start_date": "2020-08-12",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Johns Hopkins University",
+  "inst_street_address": "3400 N CHARLES ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "BALTIMORE",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "4439971898",
+  "inst_zip_code": "212182608",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MD07",
+  "org_lgl_bus_name": "THE JOHNS HOPKINS UNIVERSITY",
+  "org_prnt_uei_num": "GS4PNKTRNKL3",
+  "org_uei_num": "FTMTDMBR29C7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Johns Hopkins University",
+  "perf_str_addr": "3400 N Charles Street",
+  "perf_city_name": "Baltimore",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "212182608",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MD07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "046Y00",
+   "pgm_ele_name": "ATD-Algorithms for Threat Dete"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "6877",
+   "pgm_ref_txt": "ALGORITHMS IN THREAT DETECTION"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 161984.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Super-emitters are individual facilities that emit an anomalously large quantities of greenhouse gases or air pollutants. In recent years, super-emitters have played an increasing role in the national conversation about greenhouse gas and air pollution emissions because of the threats they pose to energy security (i.e., the availability of natural resources for energy consumption), public health and safety. Super-emitters can not only threaten state greenhouse gas emissions targets but also threaten the reliability and efficiency of the energy supply chain, occupational safety at oil and natural gas facilities, human health in the vicinity of emissions, and contribute to air pollution exceedances. The overarching goals of the proposed research were to develop computational tools to enable fast and accurate detection and quantification of super-emitters. We aimed to (1) advance computational techniques to detect and monitor super-emitter facilities, (2) develop robust algorithms, with data-informed automatic parameter selection, that can incorporate complex priors and handle very large geospatial datasets, and (3) establish a robust evaluation and feedback procedure for working with new remote sensing satellite data to detect super-emitters.</p>\r\n<p>We made significant advances for each of the three research goal. For the first research goal, we developed an approach to inverse modeling that is both computationally efficient and uses a flexible prior, and we published the corresponding code on Github and Zenodo. We also developed and published an inverse modeling framework that includes both smooth and sparse components, where the sparse component is designed to capture sparse super-emitters that are scattered across the landscape. For the second research goal, we developed efficient methods for estimating the covariance matrix parameters (i.e., hyperparameters) required in inverse modeling and a method for selecting predictor variables for the prior model within the inverse model. At the time of writing, we have published two manuscripts in this area and have a third manuscript in review. For the third research goal, we paired our approach to inverse modeling with satellite observations of methane to evaluate the algorithm performance and understand when and where we can detect large methane super-emitters using satellite observations. We are drafting a manuscript for publication based on these results.</p>\r\n<p>Overall, this project had several broader impacts. Notably, this research project advanced techniques for inverse modeling of very large, spatially heterogeneous problems, and the techniques developed in this project have potential application to a wide range of inverse problems. Our work also has critical applications to the detection of emissions threats, specifically super-emitters of greenhouse gasses and air pollution. Super-emitters are a growing scientific and engineering concern. These emissions are challenging to quantify, are rarely included in government emissions inventory reporting, and pose a threat to public health and safety. The project also provided educational training opportunities; we trained five PhD students, a masters student, and two postdoctoral fellows. We also advised four high school research interns from Baltimore City Public Schools.</p><br>\n<p>\n Last Modified: 12/27/2024<br>\nModified by: Scot&nbsp;M&nbsp;Miller</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nSuper-emitters are individual facilities that emit an anomalously large quantities of greenhouse gases or air pollutants. In recent years, super-emitters have played an increasing role in the national conversation about greenhouse gas and air pollution emissions because of the threats they pose to energy security (i.e., the availability of natural resources for energy consumption), public health and safety. Super-emitters can not only threaten state greenhouse gas emissions targets but also threaten the reliability and efficiency of the energy supply chain, occupational safety at oil and natural gas facilities, human health in the vicinity of emissions, and contribute to air pollution exceedances. The overarching goals of the proposed research were to develop computational tools to enable fast and accurate detection and quantification of super-emitters. We aimed to (1) advance computational techniques to detect and monitor super-emitter facilities, (2) develop robust algorithms, with data-informed automatic parameter selection, that can incorporate complex priors and handle very large geospatial datasets, and (3) establish a robust evaluation and feedback procedure for working with new remote sensing satellite data to detect super-emitters.\r\n\n\nWe made significant advances for each of the three research goal. For the first research goal, we developed an approach to inverse modeling that is both computationally efficient and uses a flexible prior, and we published the corresponding code on Github and Zenodo. We also developed and published an inverse modeling framework that includes both smooth and sparse components, where the sparse component is designed to capture sparse super-emitters that are scattered across the landscape. For the second research goal, we developed efficient methods for estimating the covariance matrix parameters (i.e., hyperparameters) required in inverse modeling and a method for selecting predictor variables for the prior model within the inverse model. At the time of writing, we have published two manuscripts in this area and have a third manuscript in review. For the third research goal, we paired our approach to inverse modeling with satellite observations of methane to evaluate the algorithm performance and understand when and where we can detect large methane super-emitters using satellite observations. We are drafting a manuscript for publication based on these results.\r\n\n\nOverall, this project had several broader impacts. Notably, this research project advanced techniques for inverse modeling of very large, spatially heterogeneous problems, and the techniques developed in this project have potential application to a wide range of inverse problems. Our work also has critical applications to the detection of emissions threats, specifically super-emitters of greenhouse gasses and air pollution. Super-emitters are a growing scientific and engineering concern. These emissions are challenging to quantify, are rarely included in government emissions inventory reporting, and pose a threat to public health and safety. The project also provided educational training opportunities; we trained five PhD students, a masters student, and two postdoctoral fellows. We also advised four high school research interns from Baltimore City Public Schools.\t\t\t\t\tLast Modified: 12/27/2024\n\n\t\t\t\t\tSubmitted by: ScotMMiller\n"
+ }
+}

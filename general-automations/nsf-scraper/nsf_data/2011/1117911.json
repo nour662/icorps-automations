@@ -1,0 +1,113 @@
+{
+ "awd_id": "1117911",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Collaborative Research: High-performance hybrid micromagnetic-electromagnetic simulators for memory and high-performance data storage devices",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927498",
+ "po_email": "achtchel@nsf.gov",
+ "po_sign_block_name": "Almadena Chtchelkanova",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2015-02-28",
+ "tot_intn_awd_amt": 237195.0,
+ "awd_amount": 237195.0,
+ "awd_min_amd_letter_date": "2011-07-07",
+ "awd_max_amd_letter_date": "2011-07-07",
+ "awd_abstract_narration": "Data is at the heart of the digital revolution. Changing work habits, increasingly stringent electronic record-keeping mandates, and developments in the health care, energy, and retail sectors all suggest a growing demand for data storage and memories for the foreseeable future. Fast, low-power, ultra-high density, and non-volatile magnetic storage and memory systems are projected to accommodate the bulk of the global data storage needs for decades to come and spawn revolutionary data-intensive computing modalities along the way. Their timely development, however, critically depends on the availability of fast and accurate computational tools capable of simulating electromagnetic field and magnetization dynamics in complete magnetic data storage and memory systems. Unfortunately, current simulators are not up to this task. \r\nThis project focuses on the development of high-performance hybrid micromagnetic-electromagnetic simulators for modeling next-generation magnetic memory and data storage systems. The simulators leverage analytically preconditioned time-domain integral equation methods to solve the Maxwell and Landau-Lifshitz-Gilbert-Slonczewski equations, which govern coupled electromagnetic field and magnetization phenomena. To facilitate the analysis of such phenomena in complex systems involving billions of degrees of freedom, the simulators are implemented on massively parallel Central Processing Unit (CPU) and Graphics Processing Unit (GPU) computers. These simulators are used for the design of next generation magnetic random memory devices as well as bit patterned media and heat-assisted magnetic recording storage systems. Such advanced memory and storage systems are to be essential to future high-performance computing systems.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Vitaliy",
+   "pi_last_name": "Lomakin",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Vitaliy Lomakin",
+   "pi_email_addr": "vlomakin@eng.ucsd.edu",
+   "nsf_id": "000297993",
+   "pi_start_date": "2011-07-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-San Diego",
+  "inst_street_address": "9500 GILMAN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "LA JOLLA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8585344896",
+  "inst_zip_code": "920930021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "UYTTZT6G9DT1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-San Diego",
+  "perf_str_addr": "9500 GILMAN DR",
+  "perf_city_name": "LA JOLLA",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920930021",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7942",
+   "pgm_ref_txt": "HIGH-PERFORMANCE COMPUTING"
+  },
+  {
+   "pgm_ref_code": "9218",
+   "pgm_ref_txt": "BASIC RESEARCH & HUMAN RESORCS"
+  },
+  {
+   "pgm_ref_code": "HPCC",
+   "pgm_ref_txt": "HIGH PERFORMANCE COMPUTING & COMM"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 237195.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of the project was to develop multi-physics numerical simulators that describe the magnetization dynamics in complex nano-magnetic devices by accurately accounting for electromagnetic interactions. The project led to the creation of mathematical formulations that couple Maxwell&rsquo;s equations describing the electromagnetic interactions and the Landau-Lifshit-Gilbert (LLG) equation describing the magnetization dynamics. These formulations required developing methods for rapidly computing superposition integrals and differential operators for computing electromagnetic fields. These formulations and methods were implemented in high-performance numerical codes. The code high performance derived from efficient methods for organizing data structure and parallelization of multi-core Central Processing Unit (CPU) computing architectures and new Graphics Processing Unit (GPU) computing architectures. The GPU codes are particularly efficient, achieving speed-ups of 20-400 times for various problem times as compared to single-core CPU codes. The developed simulators can run on inexpensive desktop systems, achieving the performance typically characteristic of a middle-range CPU computing cluster, or on GPU computer clusters, achieving ultra-high performance.</p>\n<p>&nbsp;</p>\n<p>The developed formulations of coupled Maxwell&rsquo;s &ndash; LLG equations allowed modeling highly complex nanomagnetic devices. In particular, the simulators allow modeling realistic magnetic write heads, which are characterized by the overall size of tens of micrometers and features of tens of nanometers, and have the magnetization dynamics spatial variations on the length-scale of sub-10 nanometers. Modeling such devices showed that eddy currents that appear due to time variations of the magnetic field generated by the magnetization dynamics lead to significant effect of the device performance. The effects include increased damping, which determines how fast the magnetization is relaxed to its equilibrium or steady-state condition. These additional damping was found dependent of the device size, geometry, and material composition.</p>\n<p><br />The project has impact in the field of high-performance computing, computational mathematics, and computations physics as well as in other related fields. The developed fast implementations of computing integral and differential transformation can be used in many other fields of computer science, computational physics, and computational chemistry, e.g. molecular dynamics and dynamics of chemical reactions. Understanding the eddy current interactions is expected to improve the operation of various devices. In particular, anticipated improvements in the magnetic write head operation may contribute to higher recording densities. Higher recording densities directly impact many areas where information needs to be stored, which impacts a large part of the population. The project educated one Ph.D. student and engaged undergraduate students in research. The developed methods and formulations contributed to the course development in the areas of Computational and Applied Electromagnetics.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/04/2016<br>\n\t\t\t\t\tModified by: Vitaliy&nbsp;Lomakin</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of the project was to develop multi-physics numerical simulators that describe the magnetization dynamics in complex nano-magnetic devices by accurately accounting for electromagnetic interactions. The project led to the creation of mathematical formulations that couple Maxwell\u00c6s equations describing the electromagnetic interactions and the Landau-Lifshit-Gilbert (LLG) equation describing the magnetization dynamics. These formulations required developing methods for rapidly computing superposition integrals and differential operators for computing electromagnetic fields. These formulations and methods were implemented in high-performance numerical codes. The code high performance derived from efficient methods for organizing data structure and parallelization of multi-core Central Processing Unit (CPU) computing architectures and new Graphics Processing Unit (GPU) computing architectures. The GPU codes are particularly efficient, achieving speed-ups of 20-400 times for various problem times as compared to single-core CPU codes. The developed simulators can run on inexpensive desktop systems, achieving the performance typically characteristic of a middle-range CPU computing cluster, or on GPU computer clusters, achieving ultra-high performance.\n\n \n\nThe developed formulations of coupled Maxwell\u00c6s &ndash; LLG equations allowed modeling highly complex nanomagnetic devices. In particular, the simulators allow modeling realistic magnetic write heads, which are characterized by the overall size of tens of micrometers and features of tens of nanometers, and have the magnetization dynamics spatial variations on the length-scale of sub-10 nanometers. Modeling such devices showed that eddy currents that appear due to time variations of the magnetic field generated by the magnetization dynamics lead to significant effect of the device performance. The effects include increased damping, which determines how fast the magnetization is relaxed to its equilibrium or steady-state condition. These additional damping was found dependent of the device size, geometry, and material composition.\n\n\nThe project has impact in the field of high-performance computing, computational mathematics, and computations physics as well as in other related fields. The developed fast implementations of computing integral and differential transformation can be used in many other fields of computer science, computational physics, and computational chemistry, e.g. molecular dynamics and dynamics of chemical reactions. Understanding the eddy current interactions is expected to improve the operation of various devices. In particular, anticipated improvements in the magnetic write head operation may contribute to higher recording densities. Higher recording densities directly impact many areas where information needs to be stored, which impacts a large part of the population. The project educated one Ph.D. student and engaged undergraduate students in research. The developed methods and formulations contributed to the course development in the areas of Computational and Applied Electromagnetics.\n\n\t\t\t\t\tLast Modified: 05/04/2016\n\n\t\t\t\t\tSubmitted by: Vitaliy Lomakin"
+ }
+}

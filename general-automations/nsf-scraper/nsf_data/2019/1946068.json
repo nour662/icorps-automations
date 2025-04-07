@@ -1,0 +1,109 @@
+{
+ "awd_id": "1946068",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Small: Collaborative: Automated Detection and Repair of Error Handling Bugs in SSL/TLS Implementations",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2019-01-01",
+ "awd_exp_date": "2019-10-31",
+ "tot_intn_awd_amt": 43077.0,
+ "awd_amount": 43077.0,
+ "awd_min_amd_letter_date": "2019-08-16",
+ "awd_max_amd_letter_date": "2019-08-16",
+ "awd_abstract_narration": "Secure Sockets Layer (SSL)/Transport Layer Security (TLS) protocols are critical to internet security. However, the software that implements SSL/TLS protocols is especially vulnerable to security flaws and the consequences can be disastrous.  A large number of security flaws in SSL/TLS implementations (such as man-in-the-middle attacks, denial-of-service attacks, and buffer overflow attacks) result from incorrect error handling.  These errors are often hard to detect and localize using existing techniques because many of them do not display any obvious erroneous behaviors (e.g., crash, assertion failure, etc.) but they cause subtle inaccuracies that completely violate the security and privacy guarantees of SSL/TLS. This project aims to improve error handling mechanisms in SSL/TLS implementations by building novel tools that reduce developer effort in writing and maintaining correct error handling code while making SSL/TLS implementations more secure and robust. \r\n\r\nThis project develops a framework for improving the robustness of error handling code in SSL/TLS  implementations. The framework has three main objectives. First, error specifications for different SSL/TLS functions are automatically inferred to learn how they communicate the failures. Next, the inferred specifications are used to build a tool for automatically detecting error handling bugs. Finally, the framework also provides new program repair tools that can automatically fix the detected bugs. Therefore, the framework provides end-to-end assistance in maintaining error-handling code in SSL/TLS implementations and thus significantly improves internet security.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Baishakhi",
+   "pi_last_name": "Ray",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Baishakhi Ray",
+   "pi_email_addr": "rayb@cs.columbia.edu",
+   "nsf_id": "000701468",
+   "pi_start_date": "2019-08-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Columbia University",
+  "inst_street_address": "615 W 131ST ST",
+  "inst_street_address_2": "MC 8741",
+  "inst_city_name": "NEW YORK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "2128546851",
+  "inst_zip_code": "100277922",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "NY13",
+  "org_lgl_bus_name": "THE TRUSTEES OF COLUMBIA UNIVERSITY IN THE CITY OF NEW YORK",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "F4N1QNPB95M4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Columbia University",
+  "perf_str_addr": "",
+  "perf_city_name": "New York",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "100276902",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "NY13",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 43077.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-d7a5742c-7fff-38c8-83e3-6c4de45d528d\"> </span></p>\n<p><span id=\"docs-internal-guid-1e44743a-7fff-2d70-e7c7-65e1f200eceb\"> </span></p>\n<p dir=\"ltr\"><span>Correct error handling is essential for building reliable and secure systems. Unfortunately, low-level languages like C often do not support any error handling primitives and leave it up to the developers to create their own mechanisms for error propagation and handling. However, in practice, the developers often make mistakes while writing the repetitive and tedious error handling code and inadvertently introduce bugs. Such error handling bugs often have severe consequences undermining the security and reliability of the affected systems. Fixing these bugs is also tiring&mdash;they are repetitive and cumbersome to implement. As such this project was aimed at automatically detecting and fixing error handling bugs.&nbsp; There were four significant outcomes:</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>[1] In order to understand the true nature of error handling bugs that occur widely in practice, we conducted a comprehensive study of real error handling bugs from 6 large open-source software including OpenSSL, GnuTLS, WolfSSL, Curl, Httpd, and Linux. We created a taxonomy of these bugs to understand their underlying causes. Our results indicate that error handling bugs usually occur due to four causes: Incorrect/Missing Error Checks, Incorrect/Missing Error Propagation, Incorrect/Missing Error Outputs, and Incorrect/Missing Resource Release. While existing bug-finding tools can partially detect some of these bugs, a large proportion of them remains yet undetected. This empirical knowledge motivates the design of our error detection and repair tool.&nbsp;</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>[2]&nbsp; We design and implement a tool that can detect and categorize all classes of error handling bugs. Using symbolic execution, the tool first explores all the error paths&mdash;the paths along which a function can fail. If a function fails, the error needs to be handled properly along the error path. To ensure that, the tool uses a combination of static analysis techniques and verify whether the error value returned from the failing function is checked, propagated upstream, or logged. If none of these happen, the tool reports error handling bugs. The tool further ensures that a program can fail gracefully by releasing all the allocated resources. If resources are not freed along an error path, the tool reports those cases as bugs. We find that the tool can detect error handling bugs with 100% to 84% precision and around 95% recall. To provide developers more information about the underlying causes of the bugs, the tool also categorizes these bugs with 83% to 96% precision and above 90% recall. We discovered 102 new error handling bugs across different programs&mdash;at least 53 of which lead to security flaws that break the security guarantees of SSL/TLS.&nbsp;</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>[3] We propose an algorithm to automatically generate patches for fixing different types of error handling bugs. This algorithm modifies the Abstract Syntax Tree (AST) of the buggy code to introduce the bug-fixes. One of the key characteristics of our patch generation algorithm is that the generated patches not only fix the corresponding error handling bugs but also blend into the existing error handling code seamlessly. Therefore, such patches are more useful to the developers as demonstrated by the fact that several of our automatically generated patches are already accepted by OpenSSL developers as bug-fixes without any further modifications. Overall, the bug-fixing phase generates acceptable patches with 72% to 84% precision.</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>[4] Manually creating error specifications is tedious and error-prone. We further present a new technique that automatically infers error specifications of API functions based on their usage patterns in C programs. Our key insight is that error-handling code tend to have fewer branching points and program statements than the code implementing regular functionality. Our scheme leverages this property to automatically identify error handling code at API call sites and infer the corresponding error constraints. We found that our technique can infer correct API error specifications with an average precision of 77% and recall of 47%.&nbsp;</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>We further leverage the knowledge gained from this project to identify and fix general-purpose bugs. For such purpose, we </span><span>use Machine Learning techniques to increase scalability for the larger codebase. We also have broadened the scope of the project to include Machine Learning based software. Since such software are fundamentally different in their implementations (e.g., neural network vs. finite state machine), we incorporate a new type of code analysis technique. To this end, </span><span>the interdisciplinary nature of the team helped bring together advances and applications in three different fields: Security, Software Engineering, and Machine Learning.&nbsp;</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/10/2020<br>\n\t\t\t\t\tModified by: Baishakhi&nbsp;Ray</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \n\n \nCorrect error handling is essential for building reliable and secure systems. Unfortunately, low-level languages like C often do not support any error handling primitives and leave it up to the developers to create their own mechanisms for error propagation and handling. However, in practice, the developers often make mistakes while writing the repetitive and tedious error handling code and inadvertently introduce bugs. Such error handling bugs often have severe consequences undermining the security and reliability of the affected systems. Fixing these bugs is also tiring&mdash;they are repetitive and cumbersome to implement. As such this project was aimed at automatically detecting and fixing error handling bugs.  There were four significant outcomes:\n\n \n[1] In order to understand the true nature of error handling bugs that occur widely in practice, we conducted a comprehensive study of real error handling bugs from 6 large open-source software including OpenSSL, GnuTLS, WolfSSL, Curl, Httpd, and Linux. We created a taxonomy of these bugs to understand their underlying causes. Our results indicate that error handling bugs usually occur due to four causes: Incorrect/Missing Error Checks, Incorrect/Missing Error Propagation, Incorrect/Missing Error Outputs, and Incorrect/Missing Resource Release. While existing bug-finding tools can partially detect some of these bugs, a large proportion of them remains yet undetected. This empirical knowledge motivates the design of our error detection and repair tool. \n\n \n[2]  We design and implement a tool that can detect and categorize all classes of error handling bugs. Using symbolic execution, the tool first explores all the error paths&mdash;the paths along which a function can fail. If a function fails, the error needs to be handled properly along the error path. To ensure that, the tool uses a combination of static analysis techniques and verify whether the error value returned from the failing function is checked, propagated upstream, or logged. If none of these happen, the tool reports error handling bugs. The tool further ensures that a program can fail gracefully by releasing all the allocated resources. If resources are not freed along an error path, the tool reports those cases as bugs. We find that the tool can detect error handling bugs with 100% to 84% precision and around 95% recall. To provide developers more information about the underlying causes of the bugs, the tool also categorizes these bugs with 83% to 96% precision and above 90% recall. We discovered 102 new error handling bugs across different programs&mdash;at least 53 of which lead to security flaws that break the security guarantees of SSL/TLS. \n\n \n[3] We propose an algorithm to automatically generate patches for fixing different types of error handling bugs. This algorithm modifies the Abstract Syntax Tree (AST) of the buggy code to introduce the bug-fixes. One of the key characteristics of our patch generation algorithm is that the generated patches not only fix the corresponding error handling bugs but also blend into the existing error handling code seamlessly. Therefore, such patches are more useful to the developers as demonstrated by the fact that several of our automatically generated patches are already accepted by OpenSSL developers as bug-fixes without any further modifications. Overall, the bug-fixing phase generates acceptable patches with 72% to 84% precision.\n\n \n[4] Manually creating error specifications is tedious and error-prone. We further present a new technique that automatically infers error specifications of API functions based on their usage patterns in C programs. Our key insight is that error-handling code tend to have fewer branching points and program statements than the code implementing regular functionality. Our scheme leverages this property to automatically identify error handling code at API call sites and infer the corresponding error constraints. We found that our technique can infer correct API error specifications with an average precision of 77% and recall of 47%. \n\n \nWe further leverage the knowledge gained from this project to identify and fix general-purpose bugs. For such purpose, we use Machine Learning techniques to increase scalability for the larger codebase. We also have broadened the scope of the project to include Machine Learning based software. Since such software are fundamentally different in their implementations (e.g., neural network vs. finite state machine), we incorporate a new type of code analysis technique. To this end, the interdisciplinary nature of the team helped bring together advances and applications in three different fields: Security, Software Engineering, and Machine Learning. \n\n \n\n\t\t\t\t\tLast Modified: 03/10/2020\n\n\t\t\t\t\tSubmitted by: Baishakhi Ray"
+ }
+}

@@ -1,0 +1,113 @@
+{
+ "awd_id": "1717417",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: CORE: Small: Differentially Private Data Synthesis via Muji: Multiplicative Weights Update via Jackknifed Influence",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "James Joshi",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 271649.0,
+ "awd_amount": 271649.0,
+ "awd_min_amd_letter_date": "2017-08-18",
+ "awd_max_amd_letter_date": "2017-08-18",
+ "awd_abstract_narration": "Protection of individual privacy is a top concern when releasing and sharing data.  This project seeks better and more practical ways to enhance the utility of released individual-level data without compromising individual privacy. Differential privacy provides a robust concept for privacy protection in mathematical terms without making assumptions about the background knowledge of  data intruders. Despite a strong interest in practice to adopt differential privacy when releasing data, reluctance exists because of various reasons - e.g., potentially a high level of noise injected into the original data to achieve differential privacy, especially in high-dimensional data; and the lack of user-friendly software and tools to implement differentially private algorithms in practice.  This project develops techniques and tools to create synthetic \"surrogate datasets\" with the same structure as the original data, satisfying differential privacy while offering sufficient information for valid and accurate population-level statistical analysis. The project evaluates the proposed work with simulated data, the census-record-based ADULT dataset frequently used in anonymization studies, and a medical dataset with clinical, biospecimen, and genetic attributes from Parkinson's patients, benchmarked against current practice for releasing different private data. The work is being featured in several community outreach programs to stimulate interests in STEM careers among K-12 students.\r\n\r\nThe project first establishes theoretical and methodological foundations, including but not limited to extending the multiplicative weighting mechanism to handle nonlinear queries and numerical data, establishing a theory that guarantees individual privacy protection in the released surrogate data, and focusing on achieving the statistical validity of inferences based on the surrogate data. The reduction of the necessary noise level to achieve differential privacy leverages the state-of-the-art dimensional reduction techniques and the inherent properties of the multiplicative weighting mechanism.  The method is evaluated by simulation studies and applications to real-life datasets (including social/financial data and health care data) benchmarked against other methodologies for releasing individual-level data. Finally, open-source software is being developed for release on the Comprehensive R Archive Network and GitHub that produces surrogate datasets, along with examples and documents to explain the disclosure risk and the supported utility of data analysis.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Fang",
+   "pi_last_name": "Liu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Fang Liu",
+   "pi_email_addr": "Fang.Liu.131@nd.edu",
+   "nsf_id": "000606444",
+   "pi_start_date": "2017-08-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Notre Dame",
+  "inst_street_address": "940 GRACE HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "NOTRE DAME",
+  "inst_state_code": "IN",
+  "inst_state_name": "Indiana",
+  "inst_phone_num": "5746317432",
+  "inst_zip_code": "465565708",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "IN02",
+  "org_lgl_bus_name": "UNIVERSITY OF NOTRE DAME DU LAC",
+  "org_prnt_uei_num": "FPU6XGFXMBE9",
+  "org_uei_num": "FPU6XGFXMBE9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Notre Dame",
+  "perf_str_addr": "940 Grace Hall",
+  "perf_city_name": "Notre Dame",
+  "perf_st_code": "IN",
+  "perf_st_name": "Indiana",
+  "perf_zip_code": "465565708",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "IN02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 271649.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The project solves data privacy issues using the state-of-the-art differential privacy (DP) concept. The group that worked on the project included one PI and involved 6 graduate students at various stages of the project. During the project, the group has developed multiple approaches and frameworks to protect the privacy of individual information when releasing data and information to the public, including methods for differentially private data synthesis, statistical modeling and inferences, and machine learning of various data types (tabular data, graphs, and relational data, and location data). The project also incorporated a special topic in the project that was not pre-planned -- which is the study of privacy risk during the COVID-19 pandemic including contact tracing and ways to preserve privacy.&nbsp;</p>\n<p><br />The group applied the developed methods and mechanisms and compared them with existing methods in simulated data and real-life data (Census data, GPS data, network data, business data, etc) to examine their practical feasibility and statistical and machine learning utility after sanitization. The group is currently developing open-source codes software on commonly used DP statistical and machine learning procedures. The group has published 11 manuscripts in peer-reviewed journals and conference proceedings, including high-impact journals such as Statistical Science, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Mobile Computing (there are additionally 7 more manuscripts currently under review). The total citations of the papers per Google Scholar are 168 as of 12/30/2021. The new incorporated work on data privacy during the pandemic was also published in a special issue on COVID-19 in the journal of CHANCE and was featured in a video presentation at https://www.routledge.com/go/taylor-and-francis-experts-on-statistical-data-and-modeling-around-covid-19 (Taylor &amp; Francis Experts on Statistical Data and Modeling around COVID-19).&nbsp;</p>\n<p><br />Various members of the group have also traveled to international and national symposiums and conferences, and institution/organization seminars/colloquia to present the project outcomes and findings. On average, there are about 5 to 7 presentations per year. Besides the academic presentations,&nbsp; the PI has also given presentations on data privacy to lay audience, such as at the Privacy Day webinar sponsored by the American Statistical Association Committee on Privacy and Confidentiality and in the Saturday Science Lectures Series on gamedays at the University of Notre Dame.</p>\n<p><br />This project has also provided students at the University of Notre Dame with an excellent training opportunity in a cutting-edge research area of paramount practical significance. Seven doctoral students have worked/are still working on various aspects of this project. Four Ph.D. graduates successfully defended their dissertations and currently work full-time in national labs, academia, non-profit organization, and industry. Finally, the group participated in various outreach programs offered by the University of Notre Dame, such as the Expand your Horizon program for middle-school girls and the Saturday Science Lectures Series on game days, to raise awareness of data privacy and to educate the public about the NSF-funded research on data privacy.&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/31/2021<br>\n\t\t\t\t\tModified by: Fang&nbsp;Liu</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe project solves data privacy issues using the state-of-the-art differential privacy (DP) concept. The group that worked on the project included one PI and involved 6 graduate students at various stages of the project. During the project, the group has developed multiple approaches and frameworks to protect the privacy of individual information when releasing data and information to the public, including methods for differentially private data synthesis, statistical modeling and inferences, and machine learning of various data types (tabular data, graphs, and relational data, and location data). The project also incorporated a special topic in the project that was not pre-planned -- which is the study of privacy risk during the COVID-19 pandemic including contact tracing and ways to preserve privacy. \n\n\nThe group applied the developed methods and mechanisms and compared them with existing methods in simulated data and real-life data (Census data, GPS data, network data, business data, etc) to examine their practical feasibility and statistical and machine learning utility after sanitization. The group is currently developing open-source codes software on commonly used DP statistical and machine learning procedures. The group has published 11 manuscripts in peer-reviewed journals and conference proceedings, including high-impact journals such as Statistical Science, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Mobile Computing (there are additionally 7 more manuscripts currently under review). The total citations of the papers per Google Scholar are 168 as of 12/30/2021. The new incorporated work on data privacy during the pandemic was also published in a special issue on COVID-19 in the journal of CHANCE and was featured in a video presentation at https://www.routledge.com/go/taylor-and-francis-experts-on-statistical-data-and-modeling-around-covid-19 (Taylor &amp; Francis Experts on Statistical Data and Modeling around COVID-19). \n\n\nVarious members of the group have also traveled to international and national symposiums and conferences, and institution/organization seminars/colloquia to present the project outcomes and findings. On average, there are about 5 to 7 presentations per year. Besides the academic presentations,  the PI has also given presentations on data privacy to lay audience, such as at the Privacy Day webinar sponsored by the American Statistical Association Committee on Privacy and Confidentiality and in the Saturday Science Lectures Series on gamedays at the University of Notre Dame.\n\n\nThis project has also provided students at the University of Notre Dame with an excellent training opportunity in a cutting-edge research area of paramount practical significance. Seven doctoral students have worked/are still working on various aspects of this project. Four Ph.D. graduates successfully defended their dissertations and currently work full-time in national labs, academia, non-profit organization, and industry. Finally, the group participated in various outreach programs offered by the University of Notre Dame, such as the Expand your Horizon program for middle-school girls and the Saturday Science Lectures Series on game days, to raise awareness of data privacy and to educate the public about the NSF-funded research on data privacy. \n\n \n\n \n\n \n\n\t\t\t\t\tLast Modified: 12/31/2021\n\n\t\t\t\t\tSubmitted by: Fang Liu"
+ }
+}

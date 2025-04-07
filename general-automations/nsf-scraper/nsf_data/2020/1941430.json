@@ -1,0 +1,101 @@
+{
+ "awd_id": "1941430",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: An Experiment-Based Framework for Turbulent Combustion Modeling",
+ "cfda_num": "47.041",
+ "org_code": "07020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "John Daily",
+ "awd_eff_date": "2019-12-01",
+ "awd_exp_date": "2022-06-30",
+ "tot_intn_awd_amt": 100000.0,
+ "awd_amount": 100000.0,
+ "awd_min_amd_letter_date": "2019-11-20",
+ "awd_max_amd_letter_date": "2019-11-20",
+ "awd_abstract_narration": "The prediction of turbulent combustion processes that is relevant to the design and optimization of combustion devices (e.g. spark ignition and diesel engines, aircraft and rocket engines) presents critical challenges. These challenges can be attributed to the complexity of predicting turbulent flows, chemical reactions involving thousands of chemical species and the coupling between turbulence and chemistry. The increasing availability of experimental data obtained using laser-based non-intrusive methods has enabled new paradigms for predicting turbulent combustion processes. These paradigms are based on constructing turbulent combustion models starting from experimental data that can be carried out in combustion devices through optical access. Such data-based paradigms overcome the most limiting assumptions associated with traditional models for turbulent combustion to overcome the complex, multiscale nature of turbulent combustion processes.\r\n\r\nThe present effort exploits the emergence of high-fidelity experimental data to develop a novel data-based modeling framework for turbulent combustion. The approach targets specifically an experimental approach that gathers measurements for temperature and key chemical species that represent the complexity of the combustion problem. Such measurements are carried out on small or point volumes at relatively high frequencies that enable an adequate assessment of the statistical moments and distributions of the measured quantities. The novel framework elements include: 1) the development of a model reduction strategy to generate a reduced description of the chemical system using principal component analysis, 2) methods for recovering unmeasured chemical species, which are needed for a complete description of the fuel chemistry, and 3) methods for combining statistical distributions to construct means of quantities needed to assess the flame structure and the combustion performance. Principal component analysis produces a reduced description of the chemical system, which translates into an efficient computational implementation of the framework, especially for practical combustion devices. Since the measurements involve a partial account for the chemical system (only a fraction of the chemical species is measured), a principal challenge is related to the recovery of the unmeasured species. This recovery is achieved through a stochastic simulation model that mixes and reacts the individual measurements to evolve an estimate of the missing species. The project will involve both validation of the framework elements as well as numerical studies based on the developed framework using available experimental and computational data.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CBET",
+ "org_div_long_name": "Division of Chemical, Bioengineering, Environmental, and Transport Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Tarek",
+   "pi_last_name": "Echekki",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Tarek Echekki",
+   "pi_email_addr": "techekk@ncsu.edu",
+   "nsf_id": "000467512",
+   "pi_start_date": "2019-11-20",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "North Carolina State University",
+  "inst_street_address": "2601 WOLF VILLAGE WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "RALEIGH",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9195152444",
+  "inst_zip_code": "276950001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "NC02",
+  "org_lgl_bus_name": "NORTH CAROLINA STATE UNIVERSITY",
+  "org_prnt_uei_num": "U3NVH931QJJ3",
+  "org_uei_num": "U3NVH931QJJ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "North Carolina State University",
+  "perf_str_addr": "911 Oval Drive - Campus Box 7910",
+  "perf_city_name": "Raleigh",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "276957910",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "NC02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "140700",
+   "pgm_ele_name": "CFS-Combustion & Fire Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 100000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The project is centered on an effort to construct a framework for developing a turbulent combustion modeling framework starting from multiscalar measurements of major species and temperature. The framework relies on the development of a low-dimensional state space constructed from the measurements using principal component analysis (PCA), a dimensionality reduction method. This reduction results in a small number of variables, called principal components (PCs), which represent the complexity of the multiscalar state space of a particular problem. The transport equations for the PCs look very similar in form to the transport equations for chemical species, which may include unsteady, advective and turbulent transport, difussion and chemical reaction. The modeling for the chemical reaction terms required the recovery of unmeasured species needed for a full description of the chemistry. The resulting modeling framework was validated on published and a range of experimental data with excellent agreement between model and experimental statistics. The work accomplished in this project is a first of its kind work in turbulent combustion modeling where data was used to construct turbulent combustion models in the form of partial differential equations (i.e. variations in space and time). 4 journal publications in addition to presentation at conferences are related to this work.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/18/2022<br>\n\t\t\t\t\tModified by: Tarek&nbsp;Echekki</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe project is centered on an effort to construct a framework for developing a turbulent combustion modeling framework starting from multiscalar measurements of major species and temperature. The framework relies on the development of a low-dimensional state space constructed from the measurements using principal component analysis (PCA), a dimensionality reduction method. This reduction results in a small number of variables, called principal components (PCs), which represent the complexity of the multiscalar state space of a particular problem. The transport equations for the PCs look very similar in form to the transport equations for chemical species, which may include unsteady, advective and turbulent transport, difussion and chemical reaction. The modeling for the chemical reaction terms required the recovery of unmeasured species needed for a full description of the chemistry. The resulting modeling framework was validated on published and a range of experimental data with excellent agreement between model and experimental statistics. The work accomplished in this project is a first of its kind work in turbulent combustion modeling where data was used to construct turbulent combustion models in the form of partial differential equations (i.e. variations in space and time). 4 journal publications in addition to presentation at conferences are related to this work.\n\n\t\t\t\t\tLast Modified: 08/18/2022\n\n\t\t\t\t\tSubmitted by: Tarek Echekki"
+ }
+}

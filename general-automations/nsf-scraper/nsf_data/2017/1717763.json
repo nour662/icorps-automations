@@ -1,0 +1,101 @@
+{
+ "awd_id": "1717763",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small: IRON: Reducing Workload Interference on Massively Parallel Platforms",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032922594",
+ "po_email": "kkaravan@nsf.gov",
+ "po_sign_block_name": "Karen Karavanic",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2022-08-31",
+ "tot_intn_awd_amt": 497213.0,
+ "awd_amount": 497213.0,
+ "awd_min_amd_letter_date": "2017-08-24",
+ "awd_max_amd_letter_date": "2017-08-24",
+ "awd_abstract_narration": "Interconnection networks based on dragonfly and fat tree designs are becoming increasingly dominant in high-performance computing facilities and data centers. A key challenge of managing such networks is workload interference. In a multi-user computing environment, interference among applications for shared network resources can cause a vicious cycle of events (workload interference, low productivity, selfish user behavior, and poor scheduling) aggravating each other. This project seeks to tackle the vicious circle of workload interference.\r\nThis project aims to develop a software framework to systematically analyze and mitigate workload interference on dragonfly and fat tree systems. Completion of the project will create novel interference-aware scheduling policies and scalable software tools for interference analysis and reduction on dragonfly and fat tree networks. The resulting data and tools collected from simulations and experiments will be made available to the broad community under an open source license. An integrated education and outreach plan will enhance the Computer Science curriculum, broaden the participation by underrepresented groups, and outreach to the surrounding communities that are predominantly African-American and Latino.\r\n\r\n\r\nThe proposed research focuses on three inter-related research thrusts: (1) high-fidelity network simulation to gain insights into network interference among applications, (2) interference aware scheduling to avoid or mitigate network contention among applications, and (3) real-world experiments to quantitatively measure workload interference of representative applications on production systems and assess interference aware scheduling. The resulting IRON will provide an integrated interference analysis and reduction framework for advancing the research of workload interference on massively parallel platforms.  The project website (http://www.cs.iit.edu/~lan/iron.html) provides all the information about the project (publications, software tools, data, etc.). This project repository will be maintained for at least five years after the project completion.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Zhiling",
+   "pi_last_name": "Lan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Zhiling Lan",
+   "pi_email_addr": "zlan@uic.edu",
+   "nsf_id": "000304384",
+   "pi_start_date": "2017-08-24",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Illinois Institute of Technology",
+  "inst_street_address": "10 W 35TH ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHICAGO",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "3125673035",
+  "inst_zip_code": "606163717",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "IL01",
+  "org_lgl_bus_name": "ILLINOIS INSTITUTE OF TECHNOLOGY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "E2NDENMDUEG8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Illinois Institute of Technology",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "606163717",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "IL01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 497213.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>In any massively parallel system, interconnect network is a critical component as it serves as a \"central nervous system\" for data exchange between computer nodes. A key challenge of managing interconnect networks is workload interference. In a multi-user computing environment, interference among applications for shared network resources can cause a vicious cycle of events --- a cycle of events (workload interference, low productivity, selfish user behavior, and poor scheduling) aggravating each other. &nbsp;The goal of this project is to address this fundamental problem by developing IRON (Interference ReductiON) for interference analysis and reduction on large-scale systems.</span></p>\n<p><span>The project has three key outcomes. First is the experimental study to quantitatively measure workload interference of representative applications on production systems. The second is the development of high-fidelity modeling tool to simulate and study complex network interference on high-performance computing systems. The third is the design of interference aware methods, including routing and scheduling, to reduce network contention among applications.&nbsp; The resulting network models, along with the large amount of the simulation data, provide a deeper understanding of workload interference under different routing and job placement configurations. The discrete event driven scheduling simulator developed in the project bridges the gap between cluster scheduling and reinforcement learning by enabling users to flexibly evaluate reinforcement leaning based scheduling agents for cluster scheduling. </span></p>\n<p><span>This project provides effective methodologies and open-source software artifacts for interference analysis and reduction on high-performance interconnect networks. It impacts not only the computer system research, but also a broad range of application domains that utilize enormous computing power provided by parallel systems.</span></p>\n<p>This project results in about 20 technical papers at premier conferences and journals, a network interference modeling toolkit, an intelligent routing mechanism and its implementation, deep reinforcement learning agents for cluster scheduling, and a large amount of experimental and simulation data. The software artifacts and the data are all freely available to the community. Another key impact is the training of a group of twelve students, ranging from undergraduate students to doctoral students, in the field of high-performance computing. The PI is dedicated to enhancing diversity in computing. Among the participating students, four are from underrepresented groups.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/30/2022<br>\n\t\t\t\t\tModified by: Zhiling&nbsp;Lan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIn any massively parallel system, interconnect network is a critical component as it serves as a \"central nervous system\" for data exchange between computer nodes. A key challenge of managing interconnect networks is workload interference. In a multi-user computing environment, interference among applications for shared network resources can cause a vicious cycle of events --- a cycle of events (workload interference, low productivity, selfish user behavior, and poor scheduling) aggravating each other.  The goal of this project is to address this fundamental problem by developing IRON (Interference ReductiON) for interference analysis and reduction on large-scale systems.\n\nThe project has three key outcomes. First is the experimental study to quantitatively measure workload interference of representative applications on production systems. The second is the development of high-fidelity modeling tool to simulate and study complex network interference on high-performance computing systems. The third is the design of interference aware methods, including routing and scheduling, to reduce network contention among applications.  The resulting network models, along with the large amount of the simulation data, provide a deeper understanding of workload interference under different routing and job placement configurations. The discrete event driven scheduling simulator developed in the project bridges the gap between cluster scheduling and reinforcement learning by enabling users to flexibly evaluate reinforcement leaning based scheduling agents for cluster scheduling. \n\nThis project provides effective methodologies and open-source software artifacts for interference analysis and reduction on high-performance interconnect networks. It impacts not only the computer system research, but also a broad range of application domains that utilize enormous computing power provided by parallel systems.\n\nThis project results in about 20 technical papers at premier conferences and journals, a network interference modeling toolkit, an intelligent routing mechanism and its implementation, deep reinforcement learning agents for cluster scheduling, and a large amount of experimental and simulation data. The software artifacts and the data are all freely available to the community. Another key impact is the training of a group of twelve students, ranging from undergraduate students to doctoral students, in the field of high-performance computing. The PI is dedicated to enhancing diversity in computing. Among the participating students, four are from underrepresented groups.\n\n \n\n\t\t\t\t\tLast Modified: 10/30/2022\n\n\t\t\t\t\tSubmitted by: Zhiling Lan"
+ }
+}

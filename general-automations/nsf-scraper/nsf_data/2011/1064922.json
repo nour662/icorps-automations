@@ -1,0 +1,113 @@
+{
+ "awd_id": "1064922",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Medium: Collaborative Research: Semantics Engineering for Scripting Languages",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2011-07-01",
+ "awd_exp_date": "2015-06-30",
+ "tot_intn_awd_amt": 406548.0,
+ "awd_amount": 406548.0,
+ "awd_min_amd_letter_date": "2011-03-21",
+ "awd_max_amd_letter_date": "2011-03-21",
+ "awd_abstract_narration": "Over the last decade, scripting languages have assumed a huge role. Initially web developers used Perl and Python to enrich the content of web servers; later Ruby on Rails took the scene by storm. Over the same period, JavaScript has become the dominant language on the client side of the web. Additionally, the popularity of scripting language has inspired developers to use them for the construction of many other kinds of systems, including mission-critical real-time systems. \r\n\r\nWhile scripting languages are productive tools for the exploration of design ideas, their use also introduces several new kinds of problems into the software cycle. Most basically, scripting languages tend to lack a type system, which tends to raise the debugging and maintenance costs for systems. Worse, even though scripting languages tend to be safe, their flexible primitive operations induce difficult-to-predict behavior in programs and thus creates novel kinds of security holes. At the same time, scripting languages do not come with a well-defined semantics, making it nearly impossible to validate the soundness of a program analysis for safety or security properties.\r\n\r\nIn response to these observations, this proposal promises to re-engineer the semantics of scripting languages. Specifically, the PIs propose to investigate the construction of executable semantics for three scripting languages: JavaScript, Python, and Racket. They will use the language-level test suites to check that the semantics model the implementations adequately. In addition, the PIs will use the semantics to design and validate type systems and program analyses for these scripting languages. \r\n\r\nOver the long run, the proposal should impact the world at large in three ways. First, the type systems and analyses for scripting languages should help software developers improve the safety of their software and reduce their maintenance cost. Second, the semantics for the scripting languages will help researchers validate their ideas concerning program analyses. Finally, the PIs will develop a process for semantic re-engineering that should be useful to many additional scripting language communities.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Matthias",
+   "pi_last_name": "Felleisen",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Matthias Felleisen",
+   "pi_email_addr": "matthias@ccs.neu.edu",
+   "nsf_id": "000286813",
+   "pi_start_date": "2011-03-21",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Northeastern University",
+  "inst_street_address": "360 HUNTINGTON AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "BOSTON",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6173735600",
+  "inst_zip_code": "021155005",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "NORTHEASTERN UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HLTMVS2JZBS6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Northeastern University",
+  "perf_str_addr": "360 HUNTINGTON AVE",
+  "perf_city_name": "BOSTON",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021155005",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  },
+  {
+   "pgm_ref_code": "7943",
+   "pgm_ref_txt": "PROGRAMMING LANGUAGES"
+  },
+  {
+   "pgm_ref_code": "9218",
+   "pgm_ref_txt": "BASIC RESEARCH & HUMAN RESORCS"
+  },
+  {
+   "pgm_ref_code": "HPCC",
+   "pgm_ref_txt": "HIGH PERFORMANCE COMPUTING & COMM"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 406548.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><br />A practical programming language is an organically grown, highly complexartifact. This statement is particularly true for so-called scriptinglanguages, say Python and JavaScript, which emerged with and for the web.Most programmers therefore have a difficult time understand code in theselanguages after some time has passed and explaining it to others.</p>\n<p><br />This grant supported the process of re-engineering models from theselanguages. In other words, the goal was to create a framework and tools foranalyzing such scripting languages and modeling them in a concisemanner. Based on such models, the principal investigators wanted to developvariants of these scripting languages that were more like ordinary, typedmainstream programming languages. In particular, the goal was to develop atype system for the kinds of class systems that come with scriptinglanguages.&nbsp;</p>\n<p><br />Felleisen and his Northeastern team of PhD students focused on two aspectsof the project. On one hand, they used Findler's Redex tool to modelparticularly difficult-to-understand parts of scripting languages. Forexample, they were able to model a class system in which classes themselvesare objects, that is, instances of classes. Python and Racket fall intothis class of languages. On the other hand, they used models of first-classclasses to create a gradual type system for such class systems. A gradualtype system allows programmers to attach type annotations to one classmodule at a time; run-time checks guarantee the soundness of interactionbetween classes with types and those without. Programmers can use thesetypes to reduce the maintenance costs for scripts as well as to improvetheir security.&nbsp;</p>\n<p><br />While the project team realized the set goals of the project, their workalso exposes potential problems in both fields, scripting languagere-engineering with Redex as well as gradual type systems for scriptinglanguages. The work shows that Redex is a useful tool, but it has too manyshort-comings for scientists who are unfamiliar with itsimplementation. Similarly, our current work on gradual type systems revealsthat the run-time checks between typed and untyped classes are tooexpensive for any practical use. Additional work is needed to solve thesenew problems.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/03/2015<br>\n\t\t\t\t\tModified by: Matthias&nbsp;Felleisen</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\nA practical programming language is an organically grown, highly complexartifact. This statement is particularly true for so-called scriptinglanguages, say Python and JavaScript, which emerged with and for the web.Most programmers therefore have a difficult time understand code in theselanguages after some time has passed and explaining it to others.\n\n\nThis grant supported the process of re-engineering models from theselanguages. In other words, the goal was to create a framework and tools foranalyzing such scripting languages and modeling them in a concisemanner. Based on such models, the principal investigators wanted to developvariants of these scripting languages that were more like ordinary, typedmainstream programming languages. In particular, the goal was to develop atype system for the kinds of class systems that come with scriptinglanguages. \n\n\nFelleisen and his Northeastern team of PhD students focused on two aspectsof the project. On one hand, they used Findler's Redex tool to modelparticularly difficult-to-understand parts of scripting languages. Forexample, they were able to model a class system in which classes themselvesare objects, that is, instances of classes. Python and Racket fall intothis class of languages. On the other hand, they used models of first-classclasses to create a gradual type system for such class systems. A gradualtype system allows programmers to attach type annotations to one classmodule at a time; run-time checks guarantee the soundness of interactionbetween classes with types and those without. Programmers can use thesetypes to reduce the maintenance costs for scripts as well as to improvetheir security. \n\n\nWhile the project team realized the set goals of the project, their workalso exposes potential problems in both fields, scripting languagere-engineering with Redex as well as gradual type systems for scriptinglanguages. The work shows that Redex is a useful tool, but it has too manyshort-comings for scientists who are unfamiliar with itsimplementation. Similarly, our current work on gradual type systems revealsthat the run-time checks between typed and untyped classes are tooexpensive for any practical use. Additional work is needed to solve thesenew problems. \n\n \n\n\t\t\t\t\tLast Modified: 08/03/2015\n\n\t\t\t\t\tSubmitted by: Matthias Felleisen"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1618460",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RI: Small: Collaborative Research: Unsupervised Transcription of Early Modern Documents",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tatiana Korelsky",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 249876.0,
+ "awd_amount": 249876.0,
+ "awd_min_amd_letter_date": "2016-06-03",
+ "awd_max_amd_letter_date": "2016-06-03",
+ "awd_abstract_narration": "Recently, researchers in the social sciences and humanities have made increasing use of digital technologies in their work, seeking to answer important questions about human artifacts based on new kinds of analyses. However, since many of their methods are statistical in nature, they require a large amount of digitally readable text to operate. For example, to ask statistical questions about how the legal rights of women have changed during the past five centuries, a large and unbiased sample of court proceedings spanning that time period has to be accessible in digital form. Unfortunately, for many time periods this data is not available, not because the historical documents have been lost, but because they cannot be efficiently transcribed. In particular, the 400 years just after the invention of the printing press (the early modern period, ca. 1450-1850) represents a critical dark period for such research because documents from this period are notoriously hard to transcribe into machine-readable text with automatic methods for three reasons: they use obscure and unknown fonts, their text differs from modern language, and historical printing processes were imprecise. This proposal seeks to address these issues by treating transcription as a type of code-breaking and using machine learning to induce font and text structure directly from unannotated document images without relying on annotated examples,  an approach called unsupervised learning. As a result, the proposal aims not just to digitize existing early modern corpora in major libraries, but also to produce a tool that researchers can use to digitize data at scale themselves and that is sufficiently flexible to develop new representations, for example, of non-standard character sets. \r\n\r\nThe proposed approach treats the problem of document transcription as a linguistic decipherment problem, leveraging modeling techniques from work on decrypting historical ciphers. The key idea is that while properties like font and text structure are document-specific and therefore difficult to treat generally with supervised techniques, these phenomena are in fact regular within individual documents. For example, while the shape of a particular character in an obscure historical font may be unknown to the system, that shape is in fact regular;  every time the character is printed it uses the same template. Models that leverage this kind of regularity by incorporating it as an assumption can constrain the otherwise difficult unsupervised learning problem and make it feasible. This proposal introduces a class of generative models with this goal in mind, designed to learn fonts and predict accurate transcriptions in an unsupervised fashion by capturing the core properties of the process that generated the input data: the historical printing process. These models represent the specific types of printing and typesetting noise exhibited by early modern documents, treat typesetting as a latent variable, and jointly consider possible character segmentations and transcriptions during inference. Their parameters can be estimated efficiently, directly from images of historical documents without accompanying transcriptions. Further, by treating damaged portions of the input documents as latent variables, this proposal aims to automatically reconstruct damaged documents using the same approach. The unsupervised techniques developed here may have uses in other areas of natural language processing where annotated training data is hard to obtain; for example, in personalized speech recognition and grounded semantics.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Dan",
+   "pi_last_name": "Klein",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Dan Klein",
+   "pi_email_addr": "klein@cs.berkeley.edu",
+   "nsf_id": "000226381",
+   "pi_start_date": "2016-06-03",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Berkeley",
+  "inst_street_address": "1608 4TH ST STE 201",
+  "inst_street_address_2": "",
+  "inst_city_name": "BERKELEY",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "5106433891",
+  "inst_zip_code": "947101749",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "CA12",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF CALIFORNIA, THE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GS3YEVSS12N6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Berkeley",
+  "perf_str_addr": "Sponsored Projects Office",
+  "perf_city_name": "Berkeley",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "947045940",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "CA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 249876.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Our team explored three main research directions relating to the machine learning of human languages.</p>\n<p>DIGITAL VOICING OF SILENT SPEECH:&nbsp; Imagine moving your mouth silently on a phone call and having a headset that reconstructs what your voice would have sounded like if you had spoken aloud.&nbsp; This reconstruction is the goal of voicing silent speech.&nbsp; Standard microphone-based headsets capture live sounds and transmit them to a remote listener, and so are vulnerable to noise and privacy concerns.&nbsp; We instead used surface electrodes on the face to capture traces of muscle movement (electromyography) rather than sound.&nbsp; We then trained a structured neural network model to predict what the corresponding speech sounds would be, in the user's own voice.&nbsp; Our results show greatly improved intelligibility on this task over prior work, including error rates below 5% in the most closed settings.<sup>1</sup></p>\n<p>GRAMMAR INDUCTION:&nbsp; How might a machine learn the grammatical structure of a human language?&nbsp; We presented a new unsupervised learning method that operationalizes how linguists test for syntactic structure, but that uses machine learning to automate the process.&nbsp; Our method applies a set of classic linguistic criteria that modify sentences and check whether the results are still grammatical and meaning preserving.&nbsp; &nbsp;However, unlike classical tests, our approach uses an automated neural language model to judge whether the resulting modificationa are well-formed.&nbsp; For example: in a sentence like \"the cat chased the mouse\", \"the cat\" and \"the mouse\" can be replaced by the pronoun \"it\" without making the sentence ungrammatical or overly changing the meaning, which suggests that those pieces are of the same type as \"it\" (i.e., a noun phrase).&nbsp; By using a structured consensus of such tests, our method substantially improved on past state-of-the-art results for this task.</p>\n<p>SEPARATION OF STYLE AND CONTENT:&nbsp; Consider characters in a computer font.&nbsp; Each symbol, such as the Times New Roman glyph for the letter \"A\", is a combination of the content (the aspects that make it an \"A\" rather than a \"B\") and the style (the aspects that make it Times New Roman rather than Helvetica).&nbsp; We presented a system that looks at a range of letters across a range of fonts and uses machine learning to automatically separate the latent variables behind these two components.&nbsp; This model can, for example, predict what an unknown letter in a new font might look like on the basis of a few known letters in that font.&nbsp; More broadly, our work presents a general approach to computing this separation of observed data into style and content, which applies beyond the test case of visual fonts.</p>\n<p>1 This work was recognized with the Best Paper Award at EMNLP 2020.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/05/2022<br>\n\t\t\t\t\tModified by: Dan&nbsp;Klein</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOur team explored three main research directions relating to the machine learning of human languages.\n\nDIGITAL VOICING OF SILENT SPEECH:  Imagine moving your mouth silently on a phone call and having a headset that reconstructs what your voice would have sounded like if you had spoken aloud.  This reconstruction is the goal of voicing silent speech.  Standard microphone-based headsets capture live sounds and transmit them to a remote listener, and so are vulnerable to noise and privacy concerns.  We instead used surface electrodes on the face to capture traces of muscle movement (electromyography) rather than sound.  We then trained a structured neural network model to predict what the corresponding speech sounds would be, in the user's own voice.  Our results show greatly improved intelligibility on this task over prior work, including error rates below 5% in the most closed settings.1\n\nGRAMMAR INDUCTION:  How might a machine learn the grammatical structure of a human language?  We presented a new unsupervised learning method that operationalizes how linguists test for syntactic structure, but that uses machine learning to automate the process.  Our method applies a set of classic linguistic criteria that modify sentences and check whether the results are still grammatical and meaning preserving.   However, unlike classical tests, our approach uses an automated neural language model to judge whether the resulting modificationa are well-formed.  For example: in a sentence like \"the cat chased the mouse\", \"the cat\" and \"the mouse\" can be replaced by the pronoun \"it\" without making the sentence ungrammatical or overly changing the meaning, which suggests that those pieces are of the same type as \"it\" (i.e., a noun phrase).  By using a structured consensus of such tests, our method substantially improved on past state-of-the-art results for this task.\n\nSEPARATION OF STYLE AND CONTENT:  Consider characters in a computer font.  Each symbol, such as the Times New Roman glyph for the letter \"A\", is a combination of the content (the aspects that make it an \"A\" rather than a \"B\") and the style (the aspects that make it Times New Roman rather than Helvetica).  We presented a system that looks at a range of letters across a range of fonts and uses machine learning to automatically separate the latent variables behind these two components.  This model can, for example, predict what an unknown letter in a new font might look like on the basis of a few known letters in that font.  More broadly, our work presents a general approach to computing this separation of observed data into style and content, which applies beyond the test case of visual fonts.\n\n1 This work was recognized with the Best Paper Award at EMNLP 2020.\n\n\t\t\t\t\tLast Modified: 07/05/2022\n\n\t\t\t\t\tSubmitted by: Dan Klein"
+ }
+}

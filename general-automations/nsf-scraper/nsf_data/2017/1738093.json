@@ -1,0 +1,117 @@
+{
+ "awd_id": "1738093",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: SC2: A Simple, Robust, and Flexible Framework for Collaborative Spectrum Sharing",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Thyagarajan Nandagopal",
+ "awd_eff_date": "2017-04-01",
+ "awd_exp_date": "2019-03-31",
+ "tot_intn_awd_amt": 100000.0,
+ "awd_amount": 100000.0,
+ "awd_min_amd_letter_date": "2017-03-24",
+ "awd_max_amd_letter_date": "2017-03-24",
+ "awd_abstract_narration": "Wireless communications are affecting deeply the daily lives of the overwhelming majority of people on this planet. The insatiable demand for network capacity has motivated an entirely different approach on spectrum utilization. The work in this project will enable new collaborative spectrum sharing approaches that will impact the lives of anybody relying directly or indirectly on wireless communications. \r\n\r\nThe main objective of this project is to research, develop, and implement technical solution concepts for collaborative spectrum sharing and to test their performance in head-to-head scrimmages with other competing approaches. The key research areas focus on agile, reconfigurable radios, RF environmental understanding, network wide contextualization, reasoning and collaboration with other collaborating, and yet competing, radio networks. The project will address key building blocks to create a collaborative intelligent radio using simple but robust techniques building on machine learning principles.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Mihail",
+   "pi_last_name": "Sichitiu",
+   "pi_mid_init": "L",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mihail L Sichitiu",
+   "pi_email_addr": "mlsichit@ncsu.edu",
+   "nsf_id": "000292666",
+   "pi_start_date": "2017-03-24",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Ismail",
+   "pi_last_name": "Guvenc",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ismail Guvenc",
+   "pi_email_addr": "iguvenc@ncsu.edu",
+   "nsf_id": "000723719",
+   "pi_start_date": "2017-03-24",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "North Carolina State University",
+  "inst_street_address": "2601 WOLF VILLAGE WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "RALEIGH",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9195152444",
+  "inst_zip_code": "276950001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "NC02",
+  "org_lgl_bus_name": "NORTH CAROLINA STATE UNIVERSITY",
+  "org_prnt_uei_num": "U3NVH931QJJ3",
+  "org_uei_num": "U3NVH931QJJ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "North Carolina State University",
+  "perf_str_addr": "890 Oval Drive",
+  "perf_city_name": "Raleigh, NC",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "276957911",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "NC02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "164000",
+   "pgm_ele_name": "Information Technology Researc"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7363",
+   "pgm_ref_txt": "RES IN NETWORKING TECH & SYS"
+  },
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 100000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The main effort in this project was in the design and implementation of techniques for collaborative spectrum sharing, and using the developed Collaborative Intelligent Radio (CIR) for participation in DARPA's SC2 challenge.<br /><br />This project allowed the Wolfpack team to participate in this fantastic competition, by designing a full networking stack, based (literally) on an agile and flexible physical layer capable of sensing the spectrum and then using the available spectrum without seriously interfering with other participants. <br /><br />As a result of this project the Wolfpack team was able to participate in the first two years of the competition and developed several new physical layer techniques as well as medium access control (MAC) layers capable of collaborative spectrum sharing. <br /><br />Key outcomes:<br /><br />- We have designed and implemented several new physical layers, initially based on Liquid DSP's framework, and later on GNU radio, suitable for the Colosseum implementation: the main challenge for this part was to overcome the huge (2-4ms) delay between the host computer and the USRP which prevented an effective carrier sense.<br /><br />- We have designed and implemented Barritus, an adaptive MAC layer that adapts underlying PHY parameters and spectrum utilization to the current offered load, thus allowing for efficient spectrum utilization both between different competitors as well as between nodes of the same network. Barritus has an independent modulation, coding and power control in each of the channels under its control, while taking collaborative messages into the overall scheme.<br /><br />- We have implemented the theoretical concepts in a practical USRP that qualified for the skirmishes organized throughout the preliminary event one, and then qualified us for the second event.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/30/2019<br>\n\t\t\t\t\tModified by: Mihail&nbsp;L&nbsp;Sichitiu</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe main effort in this project was in the design and implementation of techniques for collaborative spectrum sharing, and using the developed Collaborative Intelligent Radio (CIR) for participation in DARPA's SC2 challenge.\n\nThis project allowed the Wolfpack team to participate in this fantastic competition, by designing a full networking stack, based (literally) on an agile and flexible physical layer capable of sensing the spectrum and then using the available spectrum without seriously interfering with other participants. \n\nAs a result of this project the Wolfpack team was able to participate in the first two years of the competition and developed several new physical layer techniques as well as medium access control (MAC) layers capable of collaborative spectrum sharing. \n\nKey outcomes:\n\n- We have designed and implemented several new physical layers, initially based on Liquid DSP's framework, and later on GNU radio, suitable for the Colosseum implementation: the main challenge for this part was to overcome the huge (2-4ms) delay between the host computer and the USRP which prevented an effective carrier sense.\n\n- We have designed and implemented Barritus, an adaptive MAC layer that adapts underlying PHY parameters and spectrum utilization to the current offered load, thus allowing for efficient spectrum utilization both between different competitors as well as between nodes of the same network. Barritus has an independent modulation, coding and power control in each of the channels under its control, while taking collaborative messages into the overall scheme.\n\n- We have implemented the theoretical concepts in a practical USRP that qualified for the skirmishes organized throughout the preliminary event one, and then qualified us for the second event.\n\n\t\t\t\t\tLast Modified: 05/30/2019\n\n\t\t\t\t\tSubmitted by: Mihail L Sichitiu"
+ }
+}

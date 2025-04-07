@@ -1,0 +1,105 @@
+{
+ "awd_id": "1907547",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CHS: Small: Learning to Automatically Design Interior Spaces",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032922533",
+ "po_email": "hshen@nsf.gov",
+ "po_sign_block_name": "Han-Wei Shen",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2024-06-30",
+ "tot_intn_awd_amt": 498333.0,
+ "awd_amount": 498333.0,
+ "awd_min_amd_letter_date": "2019-09-05",
+ "awd_max_amd_letter_date": "2019-09-05",
+ "awd_abstract_narration": "People spend a large part of their lives indoors, in bedrooms, living rooms, offices, kitchens, etc.  The demand for virtual versions of these spaces has never been higher; robotics, computer vision, architecture, interior design, virtual and augmented reality -- all of these fields need to create high-fidelity digital instances of real-world indoor scenes. To meet this need, this project will develop new generative models of indoor scenes that can rapidly synthesize novel environments. To achieve this goal, a scene synthesis system should be data driven, be able to quickly generate a variety of plausible and visually appealing results, and be user-controllable. While prior work has addressed indoor scene synthesis, no existing approach satisfies all of these requirements. Not only will this project achieve that goal, it also includes efforts to use the new software system for training robots to navigate.   Broader impact of project outcomes will be enhanced through industrial technology transfer in collaboration with two furniture and interior design companies.  The research will create freely available online demos, and will engage and mentor female students as research assistants.\r\n\r\nThe first component of the envisaged system will be a new scene generative model based on deep convolutional neural networks that unifies a detailed, image-based representation of scenes based on floor plans with a discrete, symbolic representation of scenes based on object relationship graphs, thereby gaining the benefits of both to generate a variety of plausible scenes. Convolutions on both graphs and images will be employed to make synthesis decisions based on the relevant spatial context in the scene; the resulting model will be fast, controllable, and fully data driven. The system's second component will be a model of the visual compatibility of scene objects, which is necessary for generating visually appealing scenes. This model will exploit a convolutional network to analyze rendered views of the scene, capturing the visual appearance of the scene and objects in it; the network will be trained on a new dataset of professionally designed interior scenes.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Daniel",
+   "pi_last_name": "Ritchie",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Daniel Ritchie",
+   "pi_email_addr": "daniel_ritchie@brown.edu",
+   "nsf_id": "000737205",
+   "pi_start_date": "2019-09-05",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Brown University",
+  "inst_street_address": "1 PROSPECT ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "PROVIDENCE",
+  "inst_state_code": "RI",
+  "inst_state_name": "Rhode Island",
+  "inst_phone_num": "4018632777",
+  "inst_zip_code": "029129100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "RI01",
+  "org_lgl_bus_name": "BROWN UNIVERSITY",
+  "org_prnt_uei_num": "E3FDXZ6TBHW3",
+  "org_uei_num": "E3FDXZ6TBHW3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Brown University",
+  "perf_str_addr": "Office of Sponsored Projects",
+  "perf_city_name": "Providence",
+  "perf_st_code": "RI",
+  "perf_st_name": "Rhode Island",
+  "perf_zip_code": "029129093",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "RI01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736700",
+   "pgm_ele_name": "HCC-Human-Centered Computing"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7367",
+   "pgm_ref_txt": "Cyber-Human Systems"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 498333.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this project was to develop machine-learning-based methods to automatically generate interior spaces (e.g. residential spaces such as bedrooms and living rooms; workplace spaces such as conference rooms and offices; etc.) The ability to synthetize such environments automatically has a variety of applications, including producing virtual environments for VR simulation, populating indoor spaces for architectural design &amp; visualization, enabling intelligent consumer-facing interior design tools, and producing large-scale synthetic scene datasets to be used as training data for learning-based computer vision and robotics systems.</p>\n<p>During its lifetime, this award supported the research and development of several prototype systems for learning-based indoor scene generation, including:</p>\n<ul>\n<li>A system for generating indoor scenes by (a) first synthesizing the list of objects in the scene and the relationships that should exist between them (e.g. \"the bed should be against the wall\") and then (b) synthesizing precise layouts of all objects which respect these relationships (see supporting image 1)</li>\n<li>A system for generating building-sized indoor scenes (i.e. an entire residential house) by learning to retrieve existing 3D rooms from a database and assembling them together (see supporting image 2). The system focuses on databases of 3D rooms which were scanned from real-world spaces, making it especially useful for generating simulated training environments for autonomous robots which must learn to navigate multi-room indoor environments in the real world.</li>\n<li>A system which synthesizes indoor scenes based on a textual description of that scene (see supporting image 3).</li>\n</ul><br>\n<p>\n Last Modified: 10/28/2024<br>\nModified by: Daniel&nbsp;Ritchie</p></div>\n<div class=\"porSideCol\"\n><div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2024/1907547/1907547_10640320_1730141468343_Screenshot_2024_10_28_at_7.48.54_PM--rgov-214x142.png\" original=\"/por/images/Reports/POR/2024/1907547/1907547_10640320_1730141468343_Screenshot_2024_10_28_at_7.48.54_PM--rgov-800width.png\" title=\"Supporting image 2\"><img src=\"/por/images/Reports/POR/2024/1907547/1907547_10640320_1730141468343_Screenshot_2024_10_28_at_7.48.54_PM--rgov-66x44.png\" alt=\"Supporting image 2\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Learning to generate house-scale scenes by retrieving and re-assembling 3D rooms from a database.</div>\n<div class=\"imageCredit\">Daniel Ritchie</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Daniel&nbsp;Ritchie\n<div class=\"imageTitle\">Supporting image 2</div>\n</div>\n</li><li>\n<a href=\"/por/images/Reports/POR/2024/1907547/1907547_10640320_1730141413829_Screenshot_2024_10_28_at_7.48.14_PM--rgov-214x142.png\" original=\"/por/images/Reports/POR/2024/1907547/1907547_10640320_1730141413829_Screenshot_2024_10_28_at_7.48.14_PM--rgov-800width.png\" title=\"Supporting image 1\"><img src=\"/por/images/Reports/POR/2024/1907547/1907547_10640320_1730141413829_Screenshot_2024_10_28_at_7.48.14_PM--rgov-66x44.png\" alt=\"Supporting image 1\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Learning to generate indoor scenes by first generating an object relationship graph and then generating a layout which respects these relationships.</div>\n<div class=\"imageCredit\">Daniel Ritchie</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Daniel&nbsp;Ritchie\n<div class=\"imageTitle\">Supporting image 1</div>\n</div>\n</li><li>\n<a href=\"/por/images/Reports/POR/2024/1907547/1907547_10640320_1730141538286_Screenshot_2024_10_28_at_7.47.50_PM--rgov-214x142.png\" original=\"/por/images/Reports/POR/2024/1907547/1907547_10640320_1730141538286_Screenshot_2024_10_28_at_7.47.50_PM--rgov-800width.png\" title=\"Supporting image 3\"><img src=\"/por/images/Reports/POR/2024/1907547/1907547_10640320_1730141538286_Screenshot_2024_10_28_at_7.47.50_PM--rgov-66x44.png\" alt=\"Supporting image 3\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Generating indoor scenes from textual descriptions using a system built atop a large language model.</div>\n<div class=\"imageCredit\">Daniel Ritchie</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Daniel&nbsp;Ritchie\n<div class=\"imageTitle\">Supporting image 3</div>\n</div>\n</li></ul>\n</div>\n</div></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe goal of this project was to develop machine-learning-based methods to automatically generate interior spaces (e.g. residential spaces such as bedrooms and living rooms; workplace spaces such as conference rooms and offices; etc.) The ability to synthetize such environments automatically has a variety of applications, including producing virtual environments for VR simulation, populating indoor spaces for architectural design & visualization, enabling intelligent consumer-facing interior design tools, and producing large-scale synthetic scene datasets to be used as training data for learning-based computer vision and robotics systems.\n\n\nDuring its lifetime, this award supported the research and development of several prototype systems for learning-based indoor scene generation, including:\n\nA system for generating indoor scenes by (a) first synthesizing the list of objects in the scene and the relationships that should exist between them (e.g. \"the bed should be against the wall\") and then (b) synthesizing precise layouts of all objects which respect these relationships (see supporting image 1)\nA system for generating building-sized indoor scenes (i.e. an entire residential house) by learning to retrieve existing 3D rooms from a database and assembling them together (see supporting image 2). The system focuses on databases of 3D rooms which were scanned from real-world spaces, making it especially useful for generating simulated training environments for autonomous robots which must learn to navigate multi-room indoor environments in the real world.\nA system which synthesizes indoor scenes based on a textual description of that scene (see supporting image 3).\n\t\t\t\t\tLast Modified: 10/28/2024\n\n\t\t\t\t\tSubmitted by: DanielRitchie\n"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1661732",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Optimization in the Small-Data Regime",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": "7032922443",
+ "po_email": "gaklutke@nsf.gov",
+ "po_sign_block_name": "Georgia-Ann Klutke",
+ "awd_eff_date": "2017-05-01",
+ "awd_exp_date": "2021-04-30",
+ "tot_intn_awd_amt": 221592.0,
+ "awd_amount": 221592.0,
+ "awd_min_amd_letter_date": "2017-05-02",
+ "awd_max_amd_letter_date": "2017-05-02",
+ "awd_abstract_narration": "Modern decision making under uncertainty frequently involves the need to make many simultaneous decisions at a highly granular level, often in a time varying environment.  As a result, the amount of relevant data per decision is often quite small.  Conventional techniques in data-driven optimization have provably poor performance under these conditions.  This project aims to develop a new class of data-driven methods specifically tailored for the \"small-data\" regime, offering a new perspective on data-driven methods. The prevalence of the small-data regime in applications ranging from epidemiology to inventory management to new product launches underscores the potential of a successful research program to have cross-disciplinary impact.  On the educational side, the project will create web-based educational tools that highlight the unique challenges of the small-data regime, and foster project collaborations between graduate students and local government.\r\n\r\nThe project's approach will blend large-scale linear programming, robust optimization and empirical Bayes estimation.  These key ideas exploit the large-scale structure of these optimization problems to attempt to overcome the challenges of insufficient data.  The research will focus on: 1) formulating a general framework for the \"small-data\" decision regime, 2) developing methods that are provably best possible as the size of the optimization problem grows large for a fixed amount of data, and 3) illustrating the techniques through case-studies of high-impact applications.  The award will support the PI's ongoing collaborations with decision makers in both the public and private sectors who will make use of these decision tools.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Vishal",
+   "pi_last_name": "Gupta",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Vishal Gupta",
+   "pi_email_addr": "guptavis@usc.edu",
+   "nsf_id": "000726664",
+   "pi_start_date": "2017-05-02",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Southern California",
+  "inst_street_address": "3720 S FLOWER ST FL 3",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOS ANGELES",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "2137407762",
+  "inst_zip_code": "90033",
+  "inst_country_name": "United States",
+  "cong_dist_code": "34",
+  "st_cong_dist_code": "CA34",
+  "org_lgl_bus_name": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "G88KLJR3KYT5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Southern California",
+  "perf_str_addr": "3720 S Flower Street",
+  "perf_city_name": "Los Angeles",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "900890001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "37",
+  "perf_st_cong_dist": "CA37",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "006Y00",
+   "pgm_ele_name": "OE Operations Engineering"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "073E",
+   "pgm_ref_txt": "OPTIMIZATION & DECISION MAKING"
+  },
+  {
+   "pgm_ref_code": "078E",
+   "pgm_ref_txt": "ENTERPRISE DESIGN & LOGISTICS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 221592.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>Modern decision-making problems under uncertainty depend upon a huge number (thousands) of uncertain parameters.&nbsp; In many settings, however, we only have a small number of relevant data points (tens) about each uncertain parameter.&nbsp; Hence, estimates of these parameters are necessarily imprecise.&nbsp; Such settings naturally arise in applications with highly granular decisions such as precision medicine (customizing treatments to an individual patient) or limited historical data such as infrastructure expansions in rural areas.&nbsp;&nbsp;</span><br /><br />This proposal aimed to (1) develop the first framework for analyzing optimization problems in this ``small-data, large-scale'' regime, (2) formulate new methods decision-making algorithms tailored to this regime and (3) promote the adoption of these methods through open-source software and implementation on real-world problems.</p>\n<p><br /><strong>Intellectual Merits:<br /></strong>We first establish that traditional optimization methods can have poor performance, both theoretically and practically, in the small-data, large-scale regime. These negative results highlight the need for new models and algorithms.&nbsp;&nbsp;</p>\n<p><br />We then study problems in which the objective function depends linearly on the uncertain parameters.&nbsp; Such problems model applications in logistics, inventory management, and capacity planning.&nbsp; We propose two new methods for these types of problems and show that both methods achieve best-in-class performance in <span style=\"text-decoration: underline;\"><em>both</em></span> the traditional large-sample regime, and our new small-data,large-scale regime.&nbsp; These ``best-of-both\" worlds type results show that it is possible to design algorithms that retain the strong performance of traditional methods but add superior performance in small-data settings.&nbsp;&nbsp;<br /><br />We then study problems in which the objective function might depend non-linearly on the uncertain parameters with a special emphasis on data-pooling techniques.&nbsp; Indeed, aggregating data for different ``related\" uncertain parameters (e.g., demand data for similar products) is a natural way to resolve the challenges of small-data.&nbsp; However, defining ``related\" or \"similar\" is non-trivial.&nbsp; We show that traditional statistical approaches to data-pooling do not achieve best-possible performance.&nbsp; We propose new optimization-aware approaches that are simple to implement, are theoretically best-in-class, and perform well in practice.<br /><br /><strong>Broader Impacts:<br /></strong>This work has been shared with the community via several academic papers and a number of conference and invited seminar presentations.&nbsp; The PI is also currently drafting a chapter for an upcoming book.&nbsp; Open-source code implementing all algorithms is available.<br /><br />Educationally, the PI has designed a PhD course and given several guest lectures on these topics.&nbsp; &nbsp; The grant partially supported two doctoral students and provided a research opportunity for an aspiring undergraduate researcher.<br /><span>Beyond the OR community, the PI and co-authors published case studies using these methods on real data from applications in <span>online</span> advertising, emergency medical response and inventory management.&nbsp; Most recently, as part of the <span>COVID</span>-19 pandemic response, the PI partnered with researchers in Greece to design and deploy a targeted testing system to screen incoming tourists for <span>COVID</span>-19 despite limited data and limited testing resources.&nbsp; Overall, we hope these applications showcase the effectiveness of these methods and promote their widespread adoption and impact.</span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/28/2021<br>\n\t\t\t\t\tModified by: Vishal&nbsp;Gupta</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nModern decision-making problems under uncertainty depend upon a huge number (thousands) of uncertain parameters.  In many settings, however, we only have a small number of relevant data points (tens) about each uncertain parameter.  Hence, estimates of these parameters are necessarily imprecise.  Such settings naturally arise in applications with highly granular decisions such as precision medicine (customizing treatments to an individual patient) or limited historical data such as infrastructure expansions in rural areas.  \n\nThis proposal aimed to (1) develop the first framework for analyzing optimization problems in this ``small-data, large-scale'' regime, (2) formulate new methods decision-making algorithms tailored to this regime and (3) promote the adoption of these methods through open-source software and implementation on real-world problems.\n\n\nIntellectual Merits:\nWe first establish that traditional optimization methods can have poor performance, both theoretically and practically, in the small-data, large-scale regime. These negative results highlight the need for new models and algorithms.  \n\n\nWe then study problems in which the objective function depends linearly on the uncertain parameters.  Such problems model applications in logistics, inventory management, and capacity planning.  We propose two new methods for these types of problems and show that both methods achieve best-in-class performance in both the traditional large-sample regime, and our new small-data,large-scale regime.  These ``best-of-both\" worlds type results show that it is possible to design algorithms that retain the strong performance of traditional methods but add superior performance in small-data settings.  \n\nWe then study problems in which the objective function might depend non-linearly on the uncertain parameters with a special emphasis on data-pooling techniques.  Indeed, aggregating data for different ``related\" uncertain parameters (e.g., demand data for similar products) is a natural way to resolve the challenges of small-data.  However, defining ``related\" or \"similar\" is non-trivial.  We show that traditional statistical approaches to data-pooling do not achieve best-possible performance.  We propose new optimization-aware approaches that are simple to implement, are theoretically best-in-class, and perform well in practice.\n\nBroader Impacts:\nThis work has been shared with the community via several academic papers and a number of conference and invited seminar presentations.  The PI is also currently drafting a chapter for an upcoming book.  Open-source code implementing all algorithms is available.\n\nEducationally, the PI has designed a PhD course and given several guest lectures on these topics.    The grant partially supported two doctoral students and provided a research opportunity for an aspiring undergraduate researcher.\nBeyond the OR community, the PI and co-authors published case studies using these methods on real data from applications in online advertising, emergency medical response and inventory management.  Most recently, as part of the COVID-19 pandemic response, the PI partnered with researchers in Greece to design and deploy a targeted testing system to screen incoming tourists for COVID-19 despite limited data and limited testing resources.  Overall, we hope these applications showcase the effectiveness of these methods and promote their widespread adoption and impact.\n\n\t\t\t\t\tLast Modified: 08/28/2021\n\n\t\t\t\t\tSubmitted by: Vishal Gupta"
+ }
+}

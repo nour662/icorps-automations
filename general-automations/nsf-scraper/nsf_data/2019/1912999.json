@@ -1,0 +1,105 @@
+{
+ "awd_id": "1912999",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Sub-Linear Complexity Methods for Multiscale Problems Without Scale Separation",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2019-08-01",
+ "awd_exp_date": "2023-01-31",
+ "tot_intn_awd_amt": 99839.0,
+ "awd_amount": 99839.0,
+ "awd_min_amd_letter_date": "2019-07-30",
+ "awd_max_amd_letter_date": "2019-07-30",
+ "awd_abstract_narration": "Many problems in science and engineering involve complicated interactions between a wide range of scales in space and time, which are computationally challenging to solve for all relevant scales due to a huge simulation cost. The proposed work aims to extract salient features of multiscale problems with a significantly reduced simulation cost. This research will enable fast simulation methods for large-scale computational problems, including optimal design of material properties such as conductivity, elasticity, and long-life cycle of batteries, etc. Also, seismology and acoustic scientific communities will benefit from the proposed work in investigating and studying underground and underwater physics such as object detection, localization, material classification, etc. The project also considers applications in numerical weather forecast methods that significantly improve the prediction accuracy using a large number of samples to quantify uncertainties in the weather forecast models.  This project will fund one graduate student in year 2 of the project.\r\n\r\nThe overarching goal of the project is novel sub-linear complexity methods that apply to non-separable multiscale problems. The sub-linear complexity provides a significantly improved efficiency that extracts essential and salient features of the problems without computationally resolving all active scales. The basis of the project is the extraction of effective behaviors through a seamless application of the standard method for separated scale problems. The proposed research offers a unique way to tackle non-separable scale problems without ad-hoc parameter tuning while maintaining a low simulation cost. The mathematical methods to be developed allow judicious applications of the homogenization theory for two-scale problems. Thus, the project has a significant potential to enhance the applicability of the standard computational methods developed for two-scale problems to a wide range of problems. Also, the application and validation in the context of the numerical weather forecast will contribute to connecting deterministic and stochastic multiscale modeling frameworks.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Yoonsang",
+   "pi_last_name": "Lee",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yoonsang Lee",
+   "pi_email_addr": "Yoonsang.Lee@dartmouth.edu",
+   "nsf_id": "000791837",
+   "pi_start_date": "2019-07-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Dartmouth College",
+  "inst_street_address": "7 LEBANON ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "HANOVER",
+  "inst_state_code": "NH",
+  "inst_state_name": "New Hampshire",
+  "inst_phone_num": "6036463007",
+  "inst_zip_code": "037552170",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "NH02",
+  "org_lgl_bus_name": "TRUSTEES OF DARTMOUTH COLLEGE",
+  "org_prnt_uei_num": "T4MWFG59C6R3",
+  "org_uei_num": "EB8ASJBCFER9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Dartmouth College",
+  "perf_str_addr": "6188 Kemeny",
+  "perf_city_name": "Hanover",
+  "perf_st_code": "NH",
+  "perf_st_name": "New Hampshire",
+  "perf_zip_code": "037553546",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "NH02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 99839.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The project has focused on incorporating neural networks to represent multi-scale solutions of complex systems. The goal was to maintain sub-linear complexity to capture the solution without exploring/observing variations of all active scales, which can be computationally expensive and not trainable.</p>\n<p>&nbsp;The project approached this goal in two directions: 1) loss formulation to represent the solution with sub-linear complexity and 2) efficient and fast solver for training the neural network. For the first direction, the project investigated a stochastic representation of a class of partial differential operators involving multiscale characteristics, such as nonlinear diffusion in heterogeneous media. The benefit of the stochastic formulation is to avoid the need for explicit scale separation used in the standard mathematical homogenization theory. The stochastic formulation bypasses this unrealistic assumption and can capture the correct multiscale solution without using a big training data set. Also, the stochastic representation avoids the heavy derivative calculations of the network, and thus the proposed method can achieve fast computation time compared to other network-based methods.</p>\n<p>&nbsp;Regarding the second direction, the project developed a non-convex optimization solver for sparse signals and a hierarchical learning method. Multiscale solutions have local oscillatory behavior; thus, the training to capture such solutions can end up at a local minimum. Also, the wide spectrum of the multiscale solution can hinder the standard training process of neural networks. The main interest of the non-convex optimization method is that it uses an ensemble (i.e., several runs of the problem) to avoid non-convexity while achieving sparse signal recovery. The hierarchical learning approach borrows the idea of multigrid methods. The hierarchical approach utilizes different characteristic scales of various networks so that the hierarchical training process can cover all possible ranges of scales of the multiscale solutions by focusing on the characteristic scale of a corresponding network.</p>\n<p>The project also involved undergraduate student projects, including three honors theses (two in mathematics and one in data science).&nbsp;</p>\n<p>&nbsp;</p>\n<p>Publications:</p>\n<p>Z.Chen, A.Gelb, and Y.Lee, Designing Neural Networks for Hyperbolic Conservation Laws, in revision, arxiv:2211.14375</p>\n<p>G. Pease, Y. Lee, A. Gelb, and B. Keller, A Bayesian formulation for estimating the composition of Earth&rsquo;s crust, AGU Geophysical Research Letters, in revision.</p>\n<p>T. Li, A. Gelb, and Y. Lee, Improving numerical accuracy for the viscous-plastic formulation of sea ice, Journal of Computational Physics, 487 112184, 2023, doi.org/10.1016/j.jcp.2023.112184.</p>\n<p>J. Han and Y. Lee, Hierarchical Learning to Solve Partial Differential Equations Using Physics-Informed Neural Networks Lecture Notes in Computer Science, Vol 10475, 2023</p>\n<p>J.Han and Y.Lee, A Neural Network Approach for Homogenization of Multiscale Problems, SIAM Multiscale Modeling and Simulation, 21(2), 2023, doi.org/10.1137/22M1500903</p>\n<p>J. Han and Y. Lee, Inhomogenous Regularization in Inverse Problems, Journal of Computational and Applied Mathematics, 428 115193, 2023, doi.org/10.1016/j.cam.2023.115193</p>\n<p>Y. Lee, lp-regularization for Ensemble Kalman Inversion, SIAM Journal on Scientific Computing, 43(5), A3417&ndash;A3437, 2021, doi.org/10.1137/20M1365168</p>\n<p>Y. Lee, Parameter estimation in the stochastic superparameterization of two-layer quasigeostrophic flows, Research in Mathematical Sciences, 7(14), 2020. doi.org/10.1007/s40687-020-00213-8.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/15/2023<br>\n\t\t\t\t\tModified by: Yoonsang&nbsp;Lee</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe project has focused on incorporating neural networks to represent multi-scale solutions of complex systems. The goal was to maintain sub-linear complexity to capture the solution without exploring/observing variations of all active scales, which can be computationally expensive and not trainable.\n\n The project approached this goal in two directions: 1) loss formulation to represent the solution with sub-linear complexity and 2) efficient and fast solver for training the neural network. For the first direction, the project investigated a stochastic representation of a class of partial differential operators involving multiscale characteristics, such as nonlinear diffusion in heterogeneous media. The benefit of the stochastic formulation is to avoid the need for explicit scale separation used in the standard mathematical homogenization theory. The stochastic formulation bypasses this unrealistic assumption and can capture the correct multiscale solution without using a big training data set. Also, the stochastic representation avoids the heavy derivative calculations of the network, and thus the proposed method can achieve fast computation time compared to other network-based methods.\n\n Regarding the second direction, the project developed a non-convex optimization solver for sparse signals and a hierarchical learning method. Multiscale solutions have local oscillatory behavior; thus, the training to capture such solutions can end up at a local minimum. Also, the wide spectrum of the multiscale solution can hinder the standard training process of neural networks. The main interest of the non-convex optimization method is that it uses an ensemble (i.e., several runs of the problem) to avoid non-convexity while achieving sparse signal recovery. The hierarchical learning approach borrows the idea of multigrid methods. The hierarchical approach utilizes different characteristic scales of various networks so that the hierarchical training process can cover all possible ranges of scales of the multiscale solutions by focusing on the characteristic scale of a corresponding network.\n\nThe project also involved undergraduate student projects, including three honors theses (two in mathematics and one in data science). \n\n \n\nPublications:\n\nZ.Chen, A.Gelb, and Y.Lee, Designing Neural Networks for Hyperbolic Conservation Laws, in revision, arxiv:2211.14375\n\nG. Pease, Y. Lee, A. Gelb, and B. Keller, A Bayesian formulation for estimating the composition of Earth\u2019s crust, AGU Geophysical Research Letters, in revision.\n\nT. Li, A. Gelb, and Y. Lee, Improving numerical accuracy for the viscous-plastic formulation of sea ice, Journal of Computational Physics, 487 112184, 2023, doi.org/10.1016/j.jcp.2023.112184.\n\nJ. Han and Y. Lee, Hierarchical Learning to Solve Partial Differential Equations Using Physics-Informed Neural Networks Lecture Notes in Computer Science, Vol 10475, 2023\n\nJ.Han and Y.Lee, A Neural Network Approach for Homogenization of Multiscale Problems, SIAM Multiscale Modeling and Simulation, 21(2), 2023, doi.org/10.1137/22M1500903\n\nJ. Han and Y. Lee, Inhomogenous Regularization in Inverse Problems, Journal of Computational and Applied Mathematics, 428 115193, 2023, doi.org/10.1016/j.cam.2023.115193\n\nY. Lee, lp-regularization for Ensemble Kalman Inversion, SIAM Journal on Scientific Computing, 43(5), A3417&ndash;A3437, 2021, doi.org/10.1137/20M1365168\n\nY. Lee, Parameter estimation in the stochastic superparameterization of two-layer quasigeostrophic flows, Research in Mathematical Sciences, 7(14), 2020. doi.org/10.1007/s40687-020-00213-8.\n\n\t\t\t\t\tLast Modified: 06/15/2023\n\n\t\t\t\t\tSubmitted by: Yoonsang Lee"
+ }
+}

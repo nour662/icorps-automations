@@ -1,0 +1,109 @@
+{
+ "awd_id": "1613817",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Fellowship Award",
+ "awd_titl_txt": "EAPSI: Establishing New Mathematical Methods for Analyzing Simulated Models of Fuel Combustion",
+ "cfda_num": "47.079",
+ "org_code": "01090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anne Emig",
+ "awd_eff_date": "2016-06-15",
+ "awd_exp_date": "2017-05-31",
+ "tot_intn_awd_amt": 5400.0,
+ "awd_amount": 5400.0,
+ "awd_min_amd_letter_date": "2016-07-05",
+ "awd_max_amd_letter_date": "2016-07-05",
+ "awd_abstract_narration": "A form of internal combustion called homogeneous-charge compression ignition (HCCI) results in relatively low emissions and high efficiency. The fuel and oxidizer are mixed and then compressed to the point of auto-ignition, though it is currently unknown how to control the exact timing of the ignition, an aspect that requires a precise understanding in order to be implemented commercially. Dr. Takashi Ishihara of Nagoya University has hypothesized that introducing stirring, or movement, in the fuel flow field will control the timing of the onset of ignition, and initial studies on simulated data support this idea. In this project, the EAPSI fellow will study 3D combustion simulations to understand how introducing a flow in the fuel chamber controls the timing of the onset of ignition. This investigation will require the development of new mathematical tools, which in turn will have further implications in problems of fluid analysis, e.g. weather simulations and the study of ocean currents.\r\n\r\nNumerical simulations of time-varying 3D fluid models tracking temperature, velocity, and chemical species, will be studied using a mathematical tool in topological data analysis called persistent homology. With this method, each time point in the simulation will generate a collection of mathematical objects called persistence diagrams, which encode the relationships of the critical points of the simulated data (e.g. local minima, maxima, and saddle points). This data will then be mined using established statistical techniques to uncover correlations with existing measurements of interest to physicists and gain insight into the mechanisms by which the dynamics of the fluid control the timing of the onset of ignition. \r\n\r\nThis award under the East Asia and Pacific Summer Institutes program supports summer research by a U.S. graduate student and is jointly funded by NSF and the Japan Society for the Promotion of Science.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "O/D",
+ "org_dir_long_name": "Office Of The Director",
+ "div_abbr": "OISE",
+ "org_div_long_name": "Office of International Science and Engineering",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Rachel",
+   "pi_last_name": "Levanger",
+   "pi_mid_init": "L",
+   "pi_sufx_name": "",
+   "pi_full_name": "Rachel L Levanger",
+   "pi_email_addr": "",
+   "nsf_id": "000709272",
+   "pi_start_date": "2016-07-05",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Levanger                Rachel         L",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "New York",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "",
+  "inst_zip_code": "100274675",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "NY13",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "Nagoya University",
+  "perf_str_addr": null,
+  "perf_city_name": "Nagoya",
+  "perf_st_code": "",
+  "perf_st_name": "RI REQUIRED",
+  "perf_zip_code": "",
+  "perf_ctry_code": "JA",
+  "perf_cong_dist": "",
+  "perf_st_cong_dist": "",
+  "perf_ctry_name": "Japan",
+  "perf_ctry_flag": "0"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "731600",
+   "pgm_ele_name": "EAPSI"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5921",
+   "pgm_ref_txt": "JAPAN"
+  },
+  {
+   "pgm_ref_code": "5978",
+   "pgm_ref_txt": "EAST ASIA AND PACIFIC PROGRAM"
+  },
+  {
+   "pgm_ref_code": "7316",
+   "pgm_ref_txt": "EAPSI"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 5400.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>We undertook a systematic investigation of a large simulation of <strong>homogeneous charge compression ignition</strong>, using tools from the field of <strong>topological data analysis</strong>. While our original goal was to determine how changing the initial velocity of the fuel impacted the timing of the onset of ignition, once we began the research, it became clear that there was a large amount of work in establishing our methods before we could be confident in the analysis of any outcomes.</p>\n<p>As a result of this project, we established&nbsp;<strong>persistent homology</strong>&nbsp;as a viable tool for studying such large combustion simulations. Our investigation showed that our methods aid in the efficient analysis of such a large simulation:</p>\n<ul>\n<li>33 chemical species (e.g. fuel, oxygen, carbon dioxide, etc.)</li>\n<li>Additional scalar fields (e.g. temperature, heat release)</li>\n<li>38 elementary chemical reactions</li>\n<li>60 time points</li>\n</ul>\n<p><strong>Figure All speed profiles</strong>&nbsp;shows how much better persistent homology is at distinguishing the roles each chemical species plays in the combustion reaction process versus traditional methods. Additionally, each of the speed profiles from persistent homology is interpretable, encoding specific phenomena that could then be used a a proxy for understanding the underlying chemical reaction. (Compare to the usual Lp methods, which do not encode this sort of meaning.)</p>\n<p><strong>Figure Persistent Homology Dendrogram</strong>&nbsp;shows that our method gives a robust signature of the chemical reaction and that it is no overly-sensitive to changes in the initial velocity.</p>\n<p>The work we undertook during this reporting period provided the foundation for futher studies that will hope to answer our initial question.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/14/2017<br>\n\t\t\t\t\tModified by: Rachel&nbsp;L&nbsp;Levanger</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2017/1613817/1613817_10437689_1489505848017_all_speedprofiles--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2017/1613817/1613817_10437689_1489505848017_all_speedprofiles--rgov-800width.jpg\" title=\"All speed profiles\"><img src=\"/por/images/Reports/POR/2017/1613817/1613817_10437689_1489505848017_all_speedprofiles--rgov-66x44.jpg\" alt=\"All speed profiles\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Persistent homology speed profiles (left) and usual Lp speed profiles (right) for the combustion simulation under two different initial velocities (dashed vs. solid).</div>\n<div class=\"imageCredit\">Rachel Levanger</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Rachel&nbsp;L&nbsp;Levanger</div>\n<div class=\"imageTitle\">All speed profiles</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2017/1613817/1613817_10437689_1489506017730_pd_sp_dendrogram_linkage_average--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2017/1613817/1613817_10437689_1489506017730_pd_sp_dendrogram_linkage_average--rgov-800width.jpg\" title=\"Persistent Homology Dendrogram\"><img src=\"/por/images/Reports/POR/2017/1613817/1613817_10437689_1489506017730_pd_sp_dendrogram_linkage_average--rgov-66x44.jpg\" alt=\"Persistent Homology Dendrogram\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Average linkage dendrogram showing similarity of speed profiles across two simulations with different initial velocities. The structure of the dendrogram is rich, and remains fairly consistent across the two datasets, indicating that persistent homology is a good signature for the chemical reaction.</div>\n<div class=\"imageCredit\">Rachel Levanger</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Rachel&nbsp;L&nbsp;Levanger</div>\n<div class=\"imageTitle\">Persistent Homology Dendrogram</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nWe undertook a systematic investigation of a large simulation of homogeneous charge compression ignition, using tools from the field of topological data analysis. While our original goal was to determine how changing the initial velocity of the fuel impacted the timing of the onset of ignition, once we began the research, it became clear that there was a large amount of work in establishing our methods before we could be confident in the analysis of any outcomes.\n\nAs a result of this project, we established persistent homology as a viable tool for studying such large combustion simulations. Our investigation showed that our methods aid in the efficient analysis of such a large simulation:\n\n33 chemical species (e.g. fuel, oxygen, carbon dioxide, etc.)\nAdditional scalar fields (e.g. temperature, heat release)\n38 elementary chemical reactions\n60 time points\n\n\nFigure All speed profiles shows how much better persistent homology is at distinguishing the roles each chemical species plays in the combustion reaction process versus traditional methods. Additionally, each of the speed profiles from persistent homology is interpretable, encoding specific phenomena that could then be used a a proxy for understanding the underlying chemical reaction. (Compare to the usual Lp methods, which do not encode this sort of meaning.)\n\nFigure Persistent Homology Dendrogram shows that our method gives a robust signature of the chemical reaction and that it is no overly-sensitive to changes in the initial velocity.\n\nThe work we undertook during this reporting period provided the foundation for futher studies that will hope to answer our initial question.\n\n\t\t\t\t\tLast Modified: 03/14/2017\n\n\t\t\t\t\tSubmitted by: Rachel L Levanger"
+ }
+}

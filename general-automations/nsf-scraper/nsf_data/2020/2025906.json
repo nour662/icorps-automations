@@ -1,0 +1,105 @@
+{
+ "awd_id": "2025906",
+ "agcy_id": "NSF",
+ "tran_type": "CoopAgrmnt",
+ "awd_istr_txt": "Cooperative Agreement",
+ "awd_titl_txt": "SBIR Phase II:  Early Detection of Anomalies in Large-Scale Gas Networks",
+ "cfda_num": "47.084",
+ "org_code": "15030000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anna Brady-Estevez",
+ "awd_eff_date": "2020-08-01",
+ "awd_exp_date": "2022-07-31",
+ "tot_intn_awd_amt": 999855.0,
+ "awd_amount": 999855.0,
+ "awd_min_amd_letter_date": "2020-08-19",
+ "awd_max_amd_letter_date": "2020-10-13",
+ "awd_abstract_narration": "The broader impact/commercial potential of this Small Business Innovation Research (SBIR) Phase II project is to reduce the incidence of natural gas pipeline failures across the country within the next 3 to 5 years. Every year there are a few hundred 'significant' pipeline accidents (fatalities or significant property damage) causing massive damage to life and property, dispersing hazardous materials and disrupting gas delivery services. Such events can have severe consequences for a utility including bankruptcy, billions of dollars in liabilities, civil/criminal penalties and higher insurance premiums. This proposed scalable and economical capability to proactively identify potential issues prior to catastrophic failure will significantly reduce the likelihood of such failures without requiring additional infrastructure. The project will also help prevent unauthorized third-party activity near pipelines, a leading cause of accidents. The methods developed in this project can be directly applied to improve detection accuracy in other contexts such as power-grids, computer cluster management and financial fraud detection.\r\n\r\nThis SBIR Phase II project proposes to detect anomalies in large-scale gas-utility networks through statistical inference from continuously observed time-series data on pressure, temperature, and network characteristics. Anomalies within gas-utility networks occur for various reasons, such as sulphur or ice buildup, regulator malfunction, corrosion/aging of hardware, and human error. Such failures are often preceded by detectable signatures in the time-series of gas-pressure data. Early detection of such signatures with significant advance warning (90 minutes or more) allows corrective action that will avoid loss of life, property damage and service disruption. This project proposes new methods for the rapid estimation of short and medium timescale models of gas pressure behavior from real-time pipeline data, along with methods for constructing prediction bands through Monte Carlo and stochastic optimization techniques. Such methods are non-generic and their success relies crucially on exploiting specific structural properties unique to network-level gas-pressure time series. The proposed stochastic optimization techniques will probabilistically classify identified anomalies into failure type, allowing the prioritizing of network level emergency operations. The project will also develop scalable automated high-dimensional classification models to detect construction activity from satellite and other image data, to initiate preventive action.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "TIP",
+ "org_dir_long_name": "Directorate for Technology, Innovation, and Partnerships",
+ "div_abbr": "TI",
+ "org_div_long_name": "Translational Impacts",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Krishna",
+   "pi_last_name": "Karambakkam",
+   "pi_mid_init": "P",
+   "pi_sufx_name": "",
+   "pi_full_name": "Krishna P Karambakkam",
+   "pi_email_addr": "krishna@eigenpatterns.com",
+   "nsf_id": "000713352",
+   "pi_start_date": "2020-08-19",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "EigenPatterns Inc.",
+  "inst_street_address": "1527 ILIKAI AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SAN JOSE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "7324292804",
+  "inst_zip_code": "951181943",
+  "inst_country_name": "United States",
+  "cong_dist_code": "16",
+  "st_cong_dist_code": "CA16",
+  "org_lgl_bus_name": "EIGENPATTERNS INC",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "X21KCLCN4MQ1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "EigenPatterns Inc.",
+  "perf_str_addr": "1527 Ilikai Avenue",
+  "perf_city_name": "San Jose",
+  "perf_st_code": "",
+  "perf_st_name": "RI REQUIRED",
+  "perf_zip_code": "951181943",
+  "perf_ctry_code": "CA",
+  "perf_cong_dist": "16",
+  "perf_st_cong_dist": "16",
+  "perf_ctry_name": "Canada",
+  "perf_ctry_flag": "0"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "537300",
+   "pgm_ele_name": "SBIR Phase II"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1064",
+   "pgm_ref_txt": "URBAN INFRASTRUCTURE"
+  },
+  {
+   "pgm_ref_code": "8033",
+   "pgm_ref_txt": "Hardware Software Integration"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 999855.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In this NSF SBIR Phase II effort algorithms and tools were built and deployed for the early detection of potentially catastrophic failures in large-scale gas distribution networks. Many existing alert systems are designed to trigger when pressure exceeds hardcoded thresholds that are typically set close to operational limits and leave no time for remediation. Proactive detection entails the use of real-time operational and contextual data to infer anomalous behavior soon after its emergence, and while ensuring a low likelihood of false alarms.</p>\n<p>New and scalable approaches were developed for the comparison of time series across different time scales and with non-uniform observations, and to perform large searches in interactive time. The monitoring system is infinitely scalable with no performance degradation and can be securely accessed from the large cloud providers. Real-time performance was demonstrated. The platform can also be used to perform scalable and fast operations to cluster large sets of time series patterns and to identify specific types of anomalies. Technically the outcomes represent a clear performance improvement over existing systems, enabled by advanced models and analytics customized for the domain. The detection algorithms are currently deployed across the gas pipeline network of one of the world&rsquo;s largest utilities.</p>\n<p>The capability developed in this project has the potential to significantly improve safety and reliability of gas delivery and reduce environmental impact. Natural gas pipeline explosions cause massive damage to life and property. Existing remedies include the use of slam-shut valves to stop pressure excursions. However, that approach will also disrupt gas distribution services, leaving significant areas without gas supply, for many days and the effort/expense to re-light these homes. The proposed approach proactively prevents pipeline accidents and improves reliability without significant downsides. The detection system is available as a real-time scalable plug and play service, for quick installation. Users can access the product in the cloud or install on-premises, facilitating wide adoption and enhance safety industry-wide. The availability of such systems will be especially valuable as we deal with an increase in extreme climate patterns including cold-waves and flooding.</p>\n<p>The project created multiple opportunities for training and professional development by providing internships in the areas of data science and engineering, offering real world experience in collaboration with a diverse team, exposure to state of the art industry practices, expertise in the development and rigorous benchmarking of new algorithms and real-world product development. The project also provided opportunities in the development of automated, scalable and secure applications, and their deployment in the cloud.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/30/2022<br>\n\t\t\t\t\tModified by: Krishna&nbsp;P&nbsp;Karambakkam</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIn this NSF SBIR Phase II effort algorithms and tools were built and deployed for the early detection of potentially catastrophic failures in large-scale gas distribution networks. Many existing alert systems are designed to trigger when pressure exceeds hardcoded thresholds that are typically set close to operational limits and leave no time for remediation. Proactive detection entails the use of real-time operational and contextual data to infer anomalous behavior soon after its emergence, and while ensuring a low likelihood of false alarms.\n\nNew and scalable approaches were developed for the comparison of time series across different time scales and with non-uniform observations, and to perform large searches in interactive time. The monitoring system is infinitely scalable with no performance degradation and can be securely accessed from the large cloud providers. Real-time performance was demonstrated. The platform can also be used to perform scalable and fast operations to cluster large sets of time series patterns and to identify specific types of anomalies. Technically the outcomes represent a clear performance improvement over existing systems, enabled by advanced models and analytics customized for the domain. The detection algorithms are currently deployed across the gas pipeline network of one of the world\u2019s largest utilities.\n\nThe capability developed in this project has the potential to significantly improve safety and reliability of gas delivery and reduce environmental impact. Natural gas pipeline explosions cause massive damage to life and property. Existing remedies include the use of slam-shut valves to stop pressure excursions. However, that approach will also disrupt gas distribution services, leaving significant areas without gas supply, for many days and the effort/expense to re-light these homes. The proposed approach proactively prevents pipeline accidents and improves reliability without significant downsides. The detection system is available as a real-time scalable plug and play service, for quick installation. Users can access the product in the cloud or install on-premises, facilitating wide adoption and enhance safety industry-wide. The availability of such systems will be especially valuable as we deal with an increase in extreme climate patterns including cold-waves and flooding.\n\nThe project created multiple opportunities for training and professional development by providing internships in the areas of data science and engineering, offering real world experience in collaboration with a diverse team, exposure to state of the art industry practices, expertise in the development and rigorous benchmarking of new algorithms and real-world product development. The project also provided opportunities in the development of automated, scalable and secure applications, and their deployment in the cloud.\n\n \n\n\t\t\t\t\tLast Modified: 10/30/2022\n\n\t\t\t\t\tSubmitted by: Krishna P Karambakkam"
+ }
+}

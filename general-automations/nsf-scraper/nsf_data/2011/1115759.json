@@ -1,0 +1,105 @@
+{
+ "awd_id": "1115759",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Numerical methods for linear and nonlinear implicit PDE simulation ---- Domain Decomposition and Nonlinear Multigrid Methods",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032924488",
+ "po_email": "jwang@nsf.gov",
+ "po_sign_block_name": "Junping Wang",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 79368.0,
+ "awd_amount": 79368.0,
+ "awd_min_amd_letter_date": "2011-06-27",
+ "awd_max_amd_letter_date": "2011-06-27",
+ "awd_abstract_narration": "This project combines mathematical analysis and numerical algorithm design for the solution of linear and nonlinear partial differential equations (PDEs). Algorithms will be incorporated in the scientific software library PETSc which is widely used in the scientific community for physical modeling. These algorithms are bscalable, and easily parallelizable, and thus useful for large scale multidisciplinary simulations. Additionally the PI's research  provides a solid theoretical support for the algorithms.\r\n The PI's research promises to have a major impact in several areas: computational fluid dynamics, material sciences, and acoustic scattering. The PI and her collaborators plan to publish archival articles on the new algorithms and also present  results in conferences. Graduate students at the University of Kansas are impacted through the PI's plans to incorporate research results into her graduate level class on numerical methods. This course is available to a broad group of students from mathematical and engineering departments.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Xuemin",
+   "pi_last_name": "Tu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Xuemin Tu",
+   "pi_email_addr": "xtu@math.ku.edu",
+   "nsf_id": "000582101",
+   "pi_start_date": "2011-06-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Kansas Center for Research Inc",
+  "inst_street_address": "2385 IRVING HILL RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "LAWRENCE",
+  "inst_state_code": "KS",
+  "inst_state_name": "Kansas",
+  "inst_phone_num": "7858643441",
+  "inst_zip_code": "660457563",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "KS01",
+  "org_lgl_bus_name": "UNIVERSITY OF KANSAS CENTER FOR RESEARCH INC",
+  "org_prnt_uei_num": "SSUJB3GSH8A5",
+  "org_uei_num": "SSUJB3GSH8A5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Kansas Center for Research Inc",
+  "perf_str_addr": "2385 IRVING HILL RD",
+  "perf_city_name": "LAWRENCE",
+  "perf_st_code": "KS",
+  "perf_st_name": "Kansas",
+  "perf_zip_code": "660457563",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "KS01",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 79368.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Parallel and distributed computing systems are increasing widespread and they are now often used in many fields. Designing numerical algorithms that are suitable for parallel and distributed computing systems, and&nbsp;providing theoretical support for them become crucial in the high performance computation. Domain decomposition algorithms reduce large problems into collections of smaller problems by decomposing computational domains into smaller subdomains. Computationally, these subdomain-based smaller problems are easier to solve than the original problem, and most or all of them can be solved independently. Domain decomposition algorithms have become a common paradigm for&nbsp;large-scale simulation on massively parallel, hierarchical memory computers.&nbsp;The PI and her collaborators developed a class of domain decomposition methods for saddle point problems arising from computational fluid dynamics. These algorithms allow more general discretization methods and the components of these algorithms are simpler and more computationally efficient than existing algorithms of this type. &nbsp;The analysis&nbsp;developed for these algorithms &nbsp;can be applied to previous existing algorithms and largely simplify their analyses. &nbsp;<br /><br />Large-scale algebraic solvers for nonlinear partial differential equations (PDEs) are an essential component of modern simulation. Newton-Krylov methods are the most popular methods in practice.&nbsp;These methods are generally robust and may be built from pre-existing linear solvers and preconditioners. However, Newton&rsquo;s methods&nbsp;have several drawbacks as a stand-alone solver. They need repeated construction of the linearization of the nonlinear operator and to find a solution to huge&nbsp;sparse linear system. This causes memory bandwidth and communication&nbsp;bottlenecks with regard to computing performance.&nbsp;When the initial guess is far from the solution, there is also a possible lack of convergence robustness. A large design space for nonlinear solvers&nbsp;exists to complement, improve, or replace Newton&rsquo;s methods. Only a small part of this space has yet been explored either experimentally or theoretically.&nbsp;The PI and her collaborators proposed &nbsp;a framework to construct efficient nonlinear&nbsp;solvers based on two building blocks, nonlinear composite combination&nbsp;and preconditioning.&nbsp;Many existing nonlinear solvers can be composed using these two techniques. &nbsp;For some difficult nonlinear test problems, &nbsp;the Newton's method can be dramatically improved by additive or multiplicative composite combination with other methods. All the building blocks for the solvers are available in the PETSc library and&nbsp;users can easily to explore the possible combination and reach the best performance for their own problems of interest.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/26/2015<br>\n\t\t\t\t\tModified by: Xuemin&nbsp;Tu</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nParallel and distributed computing systems are increasing widespread and they are now often used in many fields. Designing numerical algorithms that are suitable for parallel and distributed computing systems, and providing theoretical support for them become crucial in the high performance computation. Domain decomposition algorithms reduce large problems into collections of smaller problems by decomposing computational domains into smaller subdomains. Computationally, these subdomain-based smaller problems are easier to solve than the original problem, and most or all of them can be solved independently. Domain decomposition algorithms have become a common paradigm for large-scale simulation on massively parallel, hierarchical memory computers. The PI and her collaborators developed a class of domain decomposition methods for saddle point problems arising from computational fluid dynamics. These algorithms allow more general discretization methods and the components of these algorithms are simpler and more computationally efficient than existing algorithms of this type.  The analysis developed for these algorithms  can be applied to previous existing algorithms and largely simplify their analyses.  \n\nLarge-scale algebraic solvers for nonlinear partial differential equations (PDEs) are an essential component of modern simulation. Newton-Krylov methods are the most popular methods in practice. These methods are generally robust and may be built from pre-existing linear solvers and preconditioners. However, Newton\u00c6s methods have several drawbacks as a stand-alone solver. They need repeated construction of the linearization of the nonlinear operator and to find a solution to huge sparse linear system. This causes memory bandwidth and communication bottlenecks with regard to computing performance. When the initial guess is far from the solution, there is also a possible lack of convergence robustness. A large design space for nonlinear solvers exists to complement, improve, or replace Newton\u00c6s methods. Only a small part of this space has yet been explored either experimentally or theoretically. The PI and her collaborators proposed  a framework to construct efficient nonlinear solvers based on two building blocks, nonlinear composite combination and preconditioning. Many existing nonlinear solvers can be composed using these two techniques.  For some difficult nonlinear test problems,  the Newton's method can be dramatically improved by additive or multiplicative composite combination with other methods. All the building blocks for the solvers are available in the PETSc library and users can easily to explore the possible combination and reach the best performance for their own problems of interest.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 10/26/2015\n\n\t\t\t\t\tSubmitted by: Xuemin Tu"
+ }
+}

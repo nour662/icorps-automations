@@ -1,0 +1,101 @@
+{
+ "awd_id": "1718980",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NeTS: Small: Convertible Data Center Networks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Ann Von Lehmen",
+ "awd_eff_date": "2017-07-01",
+ "awd_exp_date": "2022-06-30",
+ "tot_intn_awd_amt": 499999.0,
+ "awd_amount": 499999.0,
+ "awd_min_amd_letter_date": "2017-06-28",
+ "awd_max_amd_letter_date": "2017-06-28",
+ "awd_abstract_narration": "Part 1:\r\nIncreasingly, the main drivers for scientific discoveries and technological advances are data intensive computations that are performed in massive networked computing infrastructures called data centers. Such computations involve moving data between servers and processors across the data center network.   It is important to be able to adapt the network to match changing and evolving network communication demands in order to keep data centers scalable, cost effective, and energy efficient. This project is aimed at solving that problem.  It will develop a new approach for data center networking called 'network convertibility'.   A convertible data center network transforms its structure dynamically and adapts to different network communication demands from data-intensive computations. In doing so, it can provide optimal performance for a wide range of applications without any manual network re-structuring, resulting in a more efficient data infrastructure to serve the many application areas that rely on data analytics.\r\n \r\nPart 2:\r\nThis project will develop a network convertibility approach which leverages small port-count converter switches to convert topologies dynamically. The converter switches are strategically placed and finely integrated into the physical data center network design, and serve as the agents for convertibility that can fundamentally alter the network's properties such as average hop count, topological regularity, clustering properties, etc. to adapt to the application needs. The network convertibility approach has the potential to enable bandwidth to be moved to transmission hot spots in a fine-grained manner as needed.  It also has the potential to achieve both easy implementation and high bandwidth performance by allowing the data center network to be organized/implemented as a hierarchical Clos network, but with the ability to convert it to a flatter and less hierarchical network like a random graph. The project will address multiple challenging sub-problems that are broadly classified into (1) building block designs, (2) convertible network designs, and (3) control algorithm designs.  Given a convertible network design, algorithms will be developed to maximize the benefits of the available convertibility for different use cases.  The project will also perform implementation and experimental evaluation on server clusters in the PI's lab.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Tze Sing",
+   "pi_last_name": "Ng",
+   "pi_mid_init": "E",
+   "pi_sufx_name": "",
+   "pi_full_name": "Tze Sing E Ng",
+   "pi_email_addr": "eugeneng@rice.edu",
+   "nsf_id": "000428452",
+   "pi_start_date": "2017-06-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "William Marsh Rice University",
+  "inst_street_address": "6100 MAIN ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "Houston",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "7133484820",
+  "inst_zip_code": "770051827",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "TX09",
+  "org_lgl_bus_name": "WILLIAM MARSH RICE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "K51LECU1G8N3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "William Marsh Rice University",
+  "perf_str_addr": "6100 Main St",
+  "perf_city_name": "Houston",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "770051827",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "09",
+  "perf_st_cong_dist": "TX09",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 499999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Increasingly, the main drivers for scientific discoveries and technological advances are data intensive computations that are performed in massive networked computing infrastructures called datacenters. To keep up with the network communication demands of data intensive computations, data center networks must become adaptive to the ever evolving network communication demands, and at the same time remain scalable, cost effective, and energy efficient. This project has developed a new approach for data center networking called network convertibility. Analogous to a convertible car that adapts to the driver's desire, a convertible data center network transforms itsstructure dynamically and adapts to different network communication demands from data intensive computations. In doing so, a convertible network can provide optimal performance for a wide range of data intensive computations without any manual network re-structuring, yet remain cost effective to construct and manage, and be more energy efficient than conventional data center networks to operate.<br />To show that network convertibility can improve network resilience,we have developed sharable backup as a novel solution to failure recovery in data center networks. It allows the entire network to share a small pool of backup devices. This approach is grounded in three key observations. First, the traditional rerouting-based failure recovery is ineffective, because bandwidth loss from failures degrades application performance drastically. Therefore, failed devices should be replaced to restore bandwidth. Second, failures in data centers are rare but destructive, so it is desirable to seek cost-effective backup options. Third, the emergence of configurable data center network architectures promises feasibility of bringing backup devices online dynamically. We have designed the ShareBackup prototype architecture to realize this idea. Compared to rerouting-based solutions, ShareBackup provides more bandwidth with short path length at low cost.<br />To show that network convertibility can bring improved performance at lower energy than static networks, we have developed a rackless data center (RDC) architecture that removes the logical rack boundary of traditional data centers and the inefficiencies that come with it. As modern applications generate more and more inter-rack traffic, the traditional architecture suffers from contention at the core, imbalanced bandwidth utilization across racks, and longer network paths; it also suffers from network disconnection when Top-of-Rack switches fail. RDC addresses these limitations by enabling servers to logically move across the rack boundary at runtime. We have designed and implemented this architecture by inserting circuit switches at the network edge between the ToR switches and the servers, and by reconfiguring the circuits to regroup servers across racks based on the traffic patterns or switch failures. We have performed extensive evaluations of RDC and showed that RDC is up to 2.4x better in performance per watt than a conventional static non-blocking network.<br />At the application level, leveraging application requirements expressed in Coflows has been shown to improve application-level communicationefficiency. However, most existing works assume all application traffic is serviced by one monolithic network. This over-simplified assumption is no longer sufficient in a modern, evolving data center which operates on multiple generations of network fabrics, as well as emerging reconfigurable hybrid packet and circuit networks, anarchitecture that we define as Heterogeneous Parallel Networks(HPNs). We have developed the first scheduler, called Weaver, that addresses the Coflow management problem in HPNs and achieves near optimal performance in HPNs.<br />Our work has shedded light on the path towards all-optical circuit-switched datacenter network. All-optical circuit switched network is the holy grail for the next-generation datacenter architectures, as electrical packet switches are struggling to cope up with increasing challenges posed bythe end of Mooreb's law. However, traffic skewness is the biggest enemy of such all-optical networks comprising of a simple round-robincircuit-scheduling abstraction. Existing Valiant load balancing solutions require a significant amount of excess bandwidth and thus they fall short in most of the practical scenarios. In this project, we have explored using RDC to mitigate the skewness at the network edge while keeping the optical core simple. This approach is fundamentally different and can enable the all-optical network core to achieve good performance in practice.<br />This project has also provided many exciting training opportunities incutting edge networking technologies to seven graduate students. Tobroaden participation by under-represented groups in STEM, thisproject has provided training opportunities to three female graduatestudents. Five of the graduate students, including the three women,partially supported by this project have already received thePh.D. degree. Two additional student partially supported by this project is expected to receive the Ph.D. degree in the near future.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/01/2022<br>\n\t\t\t\t\tModified by: T. S. Eugene&nbsp;Ng</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIncreasingly, the main drivers for scientific discoveries and technological advances are data intensive computations that are performed in massive networked computing infrastructures called datacenters. To keep up with the network communication demands of data intensive computations, data center networks must become adaptive to the ever evolving network communication demands, and at the same time remain scalable, cost effective, and energy efficient. This project has developed a new approach for data center networking called network convertibility. Analogous to a convertible car that adapts to the driver's desire, a convertible data center network transforms itsstructure dynamically and adapts to different network communication demands from data intensive computations. In doing so, a convertible network can provide optimal performance for a wide range of data intensive computations without any manual network re-structuring, yet remain cost effective to construct and manage, and be more energy efficient than conventional data center networks to operate.\nTo show that network convertibility can improve network resilience,we have developed sharable backup as a novel solution to failure recovery in data center networks. It allows the entire network to share a small pool of backup devices. This approach is grounded in three key observations. First, the traditional rerouting-based failure recovery is ineffective, because bandwidth loss from failures degrades application performance drastically. Therefore, failed devices should be replaced to restore bandwidth. Second, failures in data centers are rare but destructive, so it is desirable to seek cost-effective backup options. Third, the emergence of configurable data center network architectures promises feasibility of bringing backup devices online dynamically. We have designed the ShareBackup prototype architecture to realize this idea. Compared to rerouting-based solutions, ShareBackup provides more bandwidth with short path length at low cost.\nTo show that network convertibility can bring improved performance at lower energy than static networks, we have developed a rackless data center (RDC) architecture that removes the logical rack boundary of traditional data centers and the inefficiencies that come with it. As modern applications generate more and more inter-rack traffic, the traditional architecture suffers from contention at the core, imbalanced bandwidth utilization across racks, and longer network paths; it also suffers from network disconnection when Top-of-Rack switches fail. RDC addresses these limitations by enabling servers to logically move across the rack boundary at runtime. We have designed and implemented this architecture by inserting circuit switches at the network edge between the ToR switches and the servers, and by reconfiguring the circuits to regroup servers across racks based on the traffic patterns or switch failures. We have performed extensive evaluations of RDC and showed that RDC is up to 2.4x better in performance per watt than a conventional static non-blocking network.\nAt the application level, leveraging application requirements expressed in Coflows has been shown to improve application-level communicationefficiency. However, most existing works assume all application traffic is serviced by one monolithic network. This over-simplified assumption is no longer sufficient in a modern, evolving data center which operates on multiple generations of network fabrics, as well as emerging reconfigurable hybrid packet and circuit networks, anarchitecture that we define as Heterogeneous Parallel Networks(HPNs). We have developed the first scheduler, called Weaver, that addresses the Coflow management problem in HPNs and achieves near optimal performance in HPNs.\nOur work has shedded light on the path towards all-optical circuit-switched datacenter network. All-optical circuit switched network is the holy grail for the next-generation datacenter architectures, as electrical packet switches are struggling to cope up with increasing challenges posed bythe end of Mooreb's law. However, traffic skewness is the biggest enemy of such all-optical networks comprising of a simple round-robincircuit-scheduling abstraction. Existing Valiant load balancing solutions require a significant amount of excess bandwidth and thus they fall short in most of the practical scenarios. In this project, we have explored using RDC to mitigate the skewness at the network edge while keeping the optical core simple. This approach is fundamentally different and can enable the all-optical network core to achieve good performance in practice.\nThis project has also provided many exciting training opportunities incutting edge networking technologies to seven graduate students. Tobroaden participation by under-represented groups in STEM, thisproject has provided training opportunities to three female graduatestudents. Five of the graduate students, including the three women,partially supported by this project have already received thePh.D. degree. Two additional student partially supported by this project is expected to receive the Ph.D. degree in the near future.\n\n\t\t\t\t\tLast Modified: 11/01/2022\n\n\t\t\t\t\tSubmitted by: T. S. Eugene Ng"
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "awd_id": "1642441",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SI2-SSE: BONSAI: An Open Software Infrastructure for Parallel Autotuning of Computational Kernels",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Rob Beverly",
+ "awd_eff_date": "2016-11-01",
+ "awd_exp_date": "2019-10-31",
+ "tot_intn_awd_amt": 499977.0,
+ "awd_amount": 499977.0,
+ "awd_min_amd_letter_date": "2016-09-12",
+ "awd_max_amd_letter_date": "2016-09-12",
+ "awd_abstract_narration": "Most supercomputers today accelerate the computations by using processors with many cores to solve important problems in science and engineering. Although this reduces the cost of the hardware system, it greatly increases the complexity of writing and optimizing (\"tuning\") software. This project extends a previously funded NSF project:  Benchtesting Environment for Automated Software Tuning (BEAST) program to create a software toolkit that allows for semi-automatic optimization of software, thereby reducing the programming overhead. This project, BEAST OpeN Software Autotuning Infrastructure (BONSAI) will greatly increase the efficiency of scientists and engineers to develop fast and efficient programs to solve their problems. BONSAI has tremendous support from various computer processor manufacturing companies and academic institutions. The BONSAI system will be available as open-source software for academic and commercial use and many students will be trained in using the software.\r\n\r\nThe emergence and growing dominance of hybrid systems that incorporate accelerator processors, such as GPUs and coprocessors, have made it far more difficult to optimize the performance of the different computational kernels that do the majority of the work in most research applications. The BONSAI project aims to create a transformative solution to this problem by developing a software infrastructure that uses parallel hybrid machines to enable large autotuning sweeps on computational kernels for GPU accelerators and many-core coprocessors. The system will go beyond just measuring runtimes, allowing for collection and analysis of non-trivial amount of data from hardware performance counters and power meters. The system will have a modular architecture and rely on standard data formats and interfaces to easily connect with mainstream tools for data analytics and visualization. The BONSAI project will leverage the experiences of the BEAST project, which established a successful autotuning methodology and validated an autotuning workflow. BONSAI will equip the community with a software environment for applying parallel resources to the tuning and performance analysis of computational kernels. Specifically, the work will be organized around the following objectives: (1) Harden and extend the programming language called BeastLang, which was created during prior research as a way of defining the search space that the autotuning infrastructure generates and explores. BeastLang enables users to create parameterized kernel specifications that encode the interplay between the kernels themselves, the compilation tools, and the target hardware. It will be integrated with the other components of BONSAI, have its Python syntax enhanced and extended, its compiler improved, and be supplemented with a runtime that supports it with multi-way parallelism for the autotuning process. (2) Develop and test a benchtesting engine for making large scale parallel tuning sweeps, using large numbers of GPU accelerators or many-core coprocessors. This engine will support both parallel compilation and parallel tests of the resulting kernels, using many distributed memory nodes and multithreading within each node, with dynamic load balancing. It will produce an extensive collection of performance information from hardware counters, and possibly energy meters, as well as collection of information about the saturation of the compiled code with different classes of instructions. (3) Develop and test a software infrastructure for collecting, preprocessing, and analyzing BONSAI performance data. The system will a) simplify the task of instrumenting the kernel and provide a simple interface for selecting the metrics to be collected with sensible defaults; b) simplify the process of collecting hardware counters and performance data from various open source and vendor specific libraries; and c) provide tools that allow the user to quickly and efficiently transform output data to a format that can be easily read and analyzed using mainstream tools such as R and Python. (4) Document and illustrate the process of using BONSAI to tune various different types of kernels. These model case studies will include discussions of how BeastLang was applied to create the parameterized kernel stencil, how the parallel benchtesting engine is invoked to generate and explore the search space, and how the data collected from the operation of the engine can be analyzed and visualized to gain insights that can correct or refine the process for another iteration. The BONSAI project has the potential to fundamentally transform autotuning research by: 1) Making autotuning accessible to a broad audience of developers from a broad range of computing disciplines, as opposed to a few selected individuals with the wizardry to set up a successful experiment within the confines of serial execution. 2) Changing the general perception of autotuning as not just the means of producing fast code, but as a general technique for performance analysis and reasoning about the complex software and hardware interactions, and positioning the technique as one of primary tools for hardware-software co-design. 3) Boosting interest in exploring neglected avenues of computing, such as exploration of unorthodox data layouts, and challenge the status quo of legacy software interfaces. BONSAI has the potential to bring autotuning to the forefront of software development and to help position autotuning as a pillar of software engineering.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jakub",
+   "pi_last_name": "Kurzak",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jakub Kurzak",
+   "pi_email_addr": "kurzak@icl.utk.edu",
+   "nsf_id": "000595685",
+   "pi_start_date": "2016-09-12",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Piotr",
+   "pi_last_name": "Luszczek",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Piotr Luszczek",
+   "pi_email_addr": "luszczek@icl.utk.edu",
+   "nsf_id": "000296500",
+   "pi_start_date": "2016-09-12",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Tennessee Knoxville",
+  "inst_street_address": "201 ANDY HOLT TOWER",
+  "inst_street_address_2": "",
+  "inst_city_name": "KNOXVILLE",
+  "inst_state_code": "TN",
+  "inst_state_name": "Tennessee",
+  "inst_phone_num": "8659743466",
+  "inst_zip_code": "379960001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "TN02",
+  "org_lgl_bus_name": "UNIVERSITY OF TENNESSEE",
+  "org_prnt_uei_num": "LXG4F9K8YZK5",
+  "org_uei_num": "FN2YCS2YAUW3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Tennessee Knoxville",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "TN",
+  "perf_st_name": "Tennessee",
+  "perf_zip_code": "379960003",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "TN02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "800400",
+   "pgm_ele_name": "Software Institutes"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "8004",
+   "pgm_ref_txt": "Software Institutes"
+  },
+  {
+   "pgm_ref_code": "8005",
+   "pgm_ref_txt": "Scientific Software Elements"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 499977.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-5082c8d7-7fff-1c4e-b33d-a2da33070a96\"> <span id=\"docs-internal-guid-c166441b-7fff-292c-4ddb-cc720b313b03\">\n<p dir=\"ltr\"><span>The overarching goal of the Benchtesting OpeN Software Autotuning Infrastructure (BONSAI) project was to develop a software infrastructure for leveraging parallel hybrid systems&mdash;at any scale&mdash;to carry out large, concurrent autotuning sweeps to dramatically accelerate the optimization process of computational kernels for graphics processing unit (GPU) accelerators and many-core coprocessors.</span></p>\n<p dir=\"ltr\"><span>In thorough testing of the BONSAI engine, we observed outstanding speedups of the execution time. Actually, in most experiments, the speedup factor exceeds the number of GPUs in the system. This is due to the compilation of kernels (by the CPU cores) overlapping with the execution of kernels by GPU devices. It is also more parallel, as there are usually more CPU cores than GPU devices.</span></p>\n<p dir=\"ltr\"><span>The important outcomes are: (1) the successful application of the BONSAI engine to tuning of a number of GPU kernels, which subsequently enriched the MAGMA BLAS collection, (2) publication of the software architecture at a top-ranked computer science conference (ICPP 2019), and (3) presentation of BONSAI tutorial material at another top-ranked computer science conference (SC19).</span></p>\n<p dir=\"ltr\"><span>Throughout this effort, the BONSAI team actively engaged a number of collaborators, including: the Matrix Algebra on GPU and Multicore Architectures (MAGMA) team at the University of Tennessee (led by Stan Tomov), the SparseKaffe team from the CSE Department at Texas A&amp;M University (led by Tim Davis), and the Numerical Computing team at RIKEN, Japan (Toshiyuki Imamura et al.).</span></p>\n</span></span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/25/2020<br>\n\t\t\t\t\tModified by: Jakub&nbsp;Kurzak</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \nThe overarching goal of the Benchtesting OpeN Software Autotuning Infrastructure (BONSAI) project was to develop a software infrastructure for leveraging parallel hybrid systems&mdash;at any scale&mdash;to carry out large, concurrent autotuning sweeps to dramatically accelerate the optimization process of computational kernels for graphics processing unit (GPU) accelerators and many-core coprocessors.\nIn thorough testing of the BONSAI engine, we observed outstanding speedups of the execution time. Actually, in most experiments, the speedup factor exceeds the number of GPUs in the system. This is due to the compilation of kernels (by the CPU cores) overlapping with the execution of kernels by GPU devices. It is also more parallel, as there are usually more CPU cores than GPU devices.\nThe important outcomes are: (1) the successful application of the BONSAI engine to tuning of a number of GPU kernels, which subsequently enriched the MAGMA BLAS collection, (2) publication of the software architecture at a top-ranked computer science conference (ICPP 2019), and (3) presentation of BONSAI tutorial material at another top-ranked computer science conference (SC19).\nThroughout this effort, the BONSAI team actively engaged a number of collaborators, including: the Matrix Algebra on GPU and Multicore Architectures (MAGMA) team at the University of Tennessee (led by Stan Tomov), the SparseKaffe team from the CSE Department at Texas A&amp;M University (led by Tim Davis), and the Numerical Computing team at RIKEN, Japan (Toshiyuki Imamura et al.).\n\n\n\t\t\t\t\tLast Modified: 02/25/2020\n\n\t\t\t\t\tSubmitted by: Jakub Kurzak"
+ }
+}

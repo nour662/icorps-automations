@@ -1,0 +1,101 @@
+{
+ "awd_id": "1717262",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small: Cost Function Based Management of Computational and Energy Resources in Embedded Controllers",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Jason Hallstrom",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2022-08-31",
+ "tot_intn_awd_amt": 300001.0,
+ "awd_amount": 300001.0,
+ "awd_min_amd_letter_date": "2017-07-14",
+ "awd_max_amd_letter_date": "2017-07-14",
+ "awd_abstract_narration": "In recent years, many embedded applications have emerged where the speed of the computer's response to external demands is as important as the correctness of its output. These are real-time systems, where tasks must meet specified deadlines. Such task deadlines are based on the specific needs of the application, from moment to moment. Typically, applications are served by a cluster of processors, collaborating together on deadline-bound tasks. To do this effectively requires efficient management of the processor and energy resources available to the system. Obtaining application-sensitive resource management techniques is the focus of this proposal.\r\n\r\nThe intellectual merit lies in the integrated way in which the individual elements associated with embedded systems are managed. Cost functions are defined that provide an interface between the computer and control domains of the embedded system, conveying the urgency of computational tasks with respect to the control domain. Such cost functions, once defined, can be used by the computational domain to effectively manage computational and energy resources; obtaining them is the first thrust of the project. Using such cost functions to dynamically manage the resources pertinent to the computer domain (so as to optimize control-domain performance over a specified mission) is the second thrust.\r\n\r\nThe broader impact of the project arises from the economic and social importance of embedded systems in today's world. Such systems range from small implantable medical devices to country-wide networked systems; their efficient functioning is of great importance. This project occupies an interdisciplinary area involving both computer and control domains. The results of this work, along with associated background material, will be migrated in the form of accessible modules to both the graduate and undergraduate curriculum; these will contribute to the training of a diverse workforce that can work with confidence in the interacting worlds of computation, control and networking.\r\n\r\nA project repository will be maintained containing code, course modules, technical/research documents, and other relevant technical material associated with this project. Its purpose is to make possible a wide and free dissemination of project-generated materials. The University of Massachusetts library system runs a repository (scholarworks@UMassAmherst; URL: http://scholarworks.umass.edu/ece/) that will be used for this purpose. The material will be maintained until, in the judgement of the Principal Investigator, it becomes obsolete. Care will be taken to ensure that there are no privacy or intellectual property violations in making this material widely available.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "C",
+   "pi_last_name": "Krishna",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "C M Krishna",
+   "pi_email_addr": "krishna@ecs.umass.edu",
+   "nsf_id": "000180745",
+   "pi_start_date": "2017-07-14",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Massachusetts Amherst",
+  "inst_street_address": "101 COMMONWEALTH AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "AMHERST",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "4135450698",
+  "inst_zip_code": "010039252",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "MA02",
+  "org_lgl_bus_name": "UNIVERSITY OF MASSACHUSETTS",
+  "org_prnt_uei_num": "VGJHK59NMPK9",
+  "org_uei_num": "VGJHK59NMPK9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Massachusetts Amherst",
+  "perf_str_addr": "151 Holdsworth Way",
+  "perf_city_name": "Amherst",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "010039284",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "MA02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 300001.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Cyber-physical systems (CPSs), where some physical process is controlled by a computational platform, have migrated from specialized and expensive applications (like aerospace) to occupy a wide range of uses in today's economy.&nbsp; Many of these applications are life-critical, meaning that fault-tolerance must be used to ensure that the probability of total system failure is kept acceptably low. For instance, an oft-cited rule of thumb for civil aircraft is a systemic, critical, failure rate of no more than 1.0E-9 per flight hour.</p>\n<p>An important trend has been an increase in the cost-sensivity of the typical CPS application.&nbsp; In particular, applications in the consumer domain are generally highly cost-sensitive, and effective cost-control has therefore become more important.</p>\n<p>Originally, individual processors or controllers were dedicated to individual functions within a CPS. More recently, a<em> federated </em>approach has emerged where a common pool of computational resources is used to meet the totality of the CPS functions.&nbsp; Such an approach is more economical since it allows resources to be dynamically focused on the tasks that are most important and urgent <em>at the time</em>. It also provides a common resource base that allows functionality to degrade gracefully in the event of failure by remapping resources to functions as components fail.</p>\n<p>It is a common misconception of life-critical CPSs that every control deadline must be met. This is simply not true. The criticality of a control task depends on the current state of the controlled plant, where the plant may range from a very simple unified entity such as a microwave oven to a complex networked, multinode system spanning an entire state.&nbsp; The same control task can vary from being non-critical to being vital to the application's safety, depending on the application state.</p>\n<p>CPSs often work in resource-constrained environment: think of battery-powered applications, for example. In such cases, it is important to ensure that energy is spent wisely and not frittered away running less critical tasks at too high a dispatch rate. There is also another important issue with power consumption: power consumed must eventually be dissipated as heat. Heat kill electronics: a rule of thumb is that a 10 degree C rise in temperature halves the expected lifetime. For these reasons, energy consumption must be kept low while meeting the constraints of the system. That has been the overall aim of this project.</p>\n<p>In this work, we have developed adaptive approaches to tailor the amoung of fault-tolerance provided to the needs of the controlled plant; these needs are a function of the current plant state. We have shown how, in some cases, increasing task dispatch rates can, counter-intuitively, actually lower computational costs and extend expected processor lifetime, by keeping the controlled plant in a state-space region requiring less (or no) fault-tolerance.</p>\n<p>We have developed dynamic voltage/frequency scaling (DVFS) techniques to reduce computational energy consumption. Energy consumption tends to increase roughly as a square of the supply voltage while circuit delays increase approximately linearly. DVFS techniques have been widely studied since they offer very significant energy and power reductions without meaningfully degrading performance as perceived by the application. Our algorithms use, for each computational task, profiling information about the cumulative distribution function of execution time as well as its activity factor. This allows one to focus slowdown (thus increasing energy savings) on those tasks whose slowdown yields the greatest energy reduction per unit execution time increase. It also allows us to sequence tasks in such a way that those tasks which tend to finish well before their worst-case execution times are run earlier. This way, there is a greater chance of more time being released earlier by better-than-worst-case task completion: such early completion allows later tasks to often be run at a slower rate, thereby saving more energy and reducing thermal stress.</p>\n<p>Cyber-physical systems are multidisciplinary in nature, involving as they do the fields of computing and of control. While traditional university training produces specialists in each of these domains, students who can bridge the gap between these two fields are in relatively short supply. This project has helped train several such students who can then go on to fruitful related careers in industry.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/13/2022<br>\n\t\t\t\t\tModified by: C&nbsp;M&nbsp;Krishna</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nCyber-physical systems (CPSs), where some physical process is controlled by a computational platform, have migrated from specialized and expensive applications (like aerospace) to occupy a wide range of uses in today's economy.  Many of these applications are life-critical, meaning that fault-tolerance must be used to ensure that the probability of total system failure is kept acceptably low. For instance, an oft-cited rule of thumb for civil aircraft is a systemic, critical, failure rate of no more than 1.0E-9 per flight hour.\n\nAn important trend has been an increase in the cost-sensivity of the typical CPS application.  In particular, applications in the consumer domain are generally highly cost-sensitive, and effective cost-control has therefore become more important.\n\nOriginally, individual processors or controllers were dedicated to individual functions within a CPS. More recently, a federated approach has emerged where a common pool of computational resources is used to meet the totality of the CPS functions.  Such an approach is more economical since it allows resources to be dynamically focused on the tasks that are most important and urgent at the time. It also provides a common resource base that allows functionality to degrade gracefully in the event of failure by remapping resources to functions as components fail.\n\nIt is a common misconception of life-critical CPSs that every control deadline must be met. This is simply not true. The criticality of a control task depends on the current state of the controlled plant, where the plant may range from a very simple unified entity such as a microwave oven to a complex networked, multinode system spanning an entire state.  The same control task can vary from being non-critical to being vital to the application's safety, depending on the application state.\n\nCPSs often work in resource-constrained environment: think of battery-powered applications, for example. In such cases, it is important to ensure that energy is spent wisely and not frittered away running less critical tasks at too high a dispatch rate. There is also another important issue with power consumption: power consumed must eventually be dissipated as heat. Heat kill electronics: a rule of thumb is that a 10 degree C rise in temperature halves the expected lifetime. For these reasons, energy consumption must be kept low while meeting the constraints of the system. That has been the overall aim of this project.\n\nIn this work, we have developed adaptive approaches to tailor the amoung of fault-tolerance provided to the needs of the controlled plant; these needs are a function of the current plant state. We have shown how, in some cases, increasing task dispatch rates can, counter-intuitively, actually lower computational costs and extend expected processor lifetime, by keeping the controlled plant in a state-space region requiring less (or no) fault-tolerance.\n\nWe have developed dynamic voltage/frequency scaling (DVFS) techniques to reduce computational energy consumption. Energy consumption tends to increase roughly as a square of the supply voltage while circuit delays increase approximately linearly. DVFS techniques have been widely studied since they offer very significant energy and power reductions without meaningfully degrading performance as perceived by the application. Our algorithms use, for each computational task, profiling information about the cumulative distribution function of execution time as well as its activity factor. This allows one to focus slowdown (thus increasing energy savings) on those tasks whose slowdown yields the greatest energy reduction per unit execution time increase. It also allows us to sequence tasks in such a way that those tasks which tend to finish well before their worst-case execution times are run earlier. This way, there is a greater chance of more time being released earlier by better-than-worst-case task completion: such early completion allows later tasks to often be run at a slower rate, thereby saving more energy and reducing thermal stress.\n\nCyber-physical systems are multidisciplinary in nature, involving as they do the fields of computing and of control. While traditional university training produces specialists in each of these domains, students who can bridge the gap between these two fields are in relatively short supply. This project has helped train several such students who can then go on to fruitful related careers in industry.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 11/13/2022\n\n\t\t\t\t\tSubmitted by: C M Krishna"
+ }
+}

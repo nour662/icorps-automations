@@ -1,0 +1,105 @@
+{
+ "awd_id": "1116619",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CGV: Small: Collaborative Research: From Virtual to Real",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Ephraim Glinert",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2015-07-31",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2011-07-16",
+ "awd_max_amd_letter_date": "2011-07-16",
+ "awd_abstract_narration": "From Virtual to Real\r\nWojciech Matusik, MIT, and Hanspeter Pfister, Harvard University\r\n\r\nNovel and innovative digital output devices, such as stereoscopic TVs, passive (e-Ink) displays, and 3D printers, are entering the mass market. They are rapidly improving in quality and decreasing in price. This trend empowers users to consume and produce digital media like never before. However, while there has been tremendous progress in the hardware development of these output devices, the provided digital content creation software, algorithms, and tools are largely underdeveloped. For example, creating a 3D hardcopy of an animated computer graphics character is well beyond the reach of consumers, and to approximate the character's appearance and deformation behavior using multi-material 3D printers is difficult or perhaps even impossible for professionals. The main issues are a lack of accurate previews of how the output will look like, a lack of standardization between devices with similar capabilities, and a lack of accurate conversion tools and algorithms to go from the virtual (i.e., the computer model) to the real (i.e., the physical output).\r\n\r\nThis research involves the development of a complete process and software framework that allows moving from abstract computer models to their physical counterparts efficiently and accurately. Designing this process is posing the following fundamental computational challenges: (1) accurate and efficient simulation methods that can predict the properties and behavior of an output without physically generating it; (2) efficient methods to compute an output gamut that describe physically-realizable outputs for a given device; (3) general gamut mapping algorithms that convert abstract computer models to realizable points in the device gamut; and (4) accurate perceptual metrics that allow comparing different output elements during the gamut mapping algorithm. This research is focusing on two emerging classes of important output devices: multi-view auto-stereoscopic displays and multi-material 3D printers. The research is creating a complete and general software architecture that will support both existing and future output devices.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Hanspeter",
+   "pi_last_name": "Pfister",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Hanspeter Pfister",
+   "pi_email_addr": "pfister@seas.harvard.edu",
+   "nsf_id": "000185558",
+   "pi_start_date": "2011-07-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Harvard University",
+  "inst_street_address": "1033 MASSACHUSETTS AVE STE 3",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6174955501",
+  "inst_zip_code": "021385366",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "MA05",
+  "org_lgl_bus_name": "PRESIDENT AND FELLOWS OF HARVARD COLLEGE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LN53LCFJFL45"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Harvard University",
+  "perf_str_addr": "1033 MASSACHUSETTS AVE STE 3",
+  "perf_city_name": "CAMBRIDGE",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021385366",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "MA05",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "745300",
+   "pgm_ele_name": "GRAPHICS & VISUALIZATION"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7453",
+   "pgm_ref_txt": "GRAPHICS & VISUALIZATION"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Computational fabrication, such as 3D printing, allows us to democratize the manufacture of complex objects. With this ability, we allow novice users to create new physical objects which will exist in the real world, and which must act within or react to natural physical phenomena. For instance, with 3D printing, we can fabricate robot designs easily; however, the user is still faced with the challenge of successfully designing a robot with legs that doesn't fall over when it tries to walk. The design of objects is critical to their function: without good predictions of how the object will interact with the floor, the design task becomes very difficult and ends up requiring specific domain knowledge or intuition from years of experience.</p>\n<p>Computational design is the process of using physical simulation models to aid in the design task, and so reduce or remove the requirement for domain-specific knowledge. Our work has focused on two applications of computational design - robot automata and glockenspiel musical instruments - which place the user as an initial designer with a goal, and pose the computer as a 'refiner' which brings this design into compliance with real-world restrictions while also satisfying the user goal.</p>\n<p>For robot automata, we ask users to specify an initial configuration of legs for a tri- or quadruped construction. These legs are defined as linkage systems, similar in principle to the famous Jansen linkage of Strandbeest, which allow the automata to walk. However, these leg configurations are complex, and the initial user design most often leads to failure where the automata falls over. Our computational design approach allows the computer to refine the design by testing different variations of the initial design and simulating their performance. As the simulation is physically based, this produces a robot which walks stably in the real world once fabricated.</p>\n<p>For metallophone musical instruments, we wish to expand the shape design space of glockenspiels. Almost all glockenspiels are made from bars because the task of tuning other shapes is too complex for most people. We begin with a 2D or 3D shape from the user - we tried animal shapes - and a target musical note. Our computational design process then refines the shape itself so that, when struck with a mallet, the physically-fabricated object would vibrate in a way which produces the correct frequency. Further, this design-by-user, refine-by-optimization scheme allows us control over the amplitudes of harmonic frequencies in the spectra, and even control over non-harmonic frequencies and amplitudes. We demonstrate this by creating glockenspiel keys which produce chords when struck - not one note, but three.</p>\n<p>These works improve the underlying optimization schemes to find better solutions through hybrid local/global search strategies, and by pre-processing feasible sub-problems so that computational design happens faster. These techniques will help improve computational design of other kinds of objects, and so reduce the skill barrier needed to create interesting or surprising new objects with computational fabrication.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/30/2015<br>\n\t\t\t\t\tModified by: Hanspeter&nbsp;Pfister</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2015/1116619/1116619_10109134_1443560428279_teaser1_Page_1--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2015/1116619/11...",
+  "por_txt_cntn": "\nComputational fabrication, such as 3D printing, allows us to democratize the manufacture of complex objects. With this ability, we allow novice users to create new physical objects which will exist in the real world, and which must act within or react to natural physical phenomena. For instance, with 3D printing, we can fabricate robot designs easily; however, the user is still faced with the challenge of successfully designing a robot with legs that doesn't fall over when it tries to walk. The design of objects is critical to their function: without good predictions of how the object will interact with the floor, the design task becomes very difficult and ends up requiring specific domain knowledge or intuition from years of experience.\n\nComputational design is the process of using physical simulation models to aid in the design task, and so reduce or remove the requirement for domain-specific knowledge. Our work has focused on two applications of computational design - robot automata and glockenspiel musical instruments - which place the user as an initial designer with a goal, and pose the computer as a 'refiner' which brings this design into compliance with real-world restrictions while also satisfying the user goal.\n\nFor robot automata, we ask users to specify an initial configuration of legs for a tri- or quadruped construction. These legs are defined as linkage systems, similar in principle to the famous Jansen linkage of Strandbeest, which allow the automata to walk. However, these leg configurations are complex, and the initial user design most often leads to failure where the automata falls over. Our computational design approach allows the computer to refine the design by testing different variations of the initial design and simulating their performance. As the simulation is physically based, this produces a robot which walks stably in the real world once fabricated.\n\nFor metallophone musical instruments, we wish to expand the shape design space of glockenspiels. Almost all glockenspiels are made from bars because the task of tuning other shapes is too complex for most people. We begin with a 2D or 3D shape from the user - we tried animal shapes - and a target musical note. Our computational design process then refines the shape itself so that, when struck with a mallet, the physically-fabricated object would vibrate in a way which produces the correct frequency. Further, this design-by-user, refine-by-optimization scheme allows us control over the amplitudes of harmonic frequencies in the spectra, and even control over non-harmonic frequencies and amplitudes. We demonstrate this by creating glockenspiel keys which produce chords when struck - not one note, but three.\n\nThese works improve the underlying optimization schemes to find better solutions through hybrid local/global search strategies, and by pre-processing feasible sub-problems so that computational design happens faster. These techniques will help improve computational design of other kinds of objects, and so reduce the skill barrier needed to create interesting or surprising new objects with computational fabrication.\n\n\t\t\t\t\tLast Modified: 09/30/2015\n\n\t\t\t\t\tSubmitted by: Hanspeter Pfister"
+ }
+}

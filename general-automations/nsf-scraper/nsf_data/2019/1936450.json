@@ -1,0 +1,105 @@
+{
+ "awd_id": "1936450",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: Transactional Memory Foundations for Distributed Multiprocessor Systems",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "A. Funda Ergun",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2021-09-30",
+ "tot_intn_awd_amt": 199977.0,
+ "awd_amount": 199977.0,
+ "awd_min_amd_letter_date": "2019-06-28",
+ "awd_max_amd_letter_date": "2019-06-28",
+ "awd_abstract_narration": "Being able to program with concurrency will be an important and necessary skill in the future. Processor speeds are no longer increasing as processors are hitting the ceiling of their physical limitations. The chip manufacturers avoided this problem by putting more cores in a single processor chip. Each new generation of processor chips are having an increasing number of cores. So in the future, in order to get a computation to run faster, the computation has to be split up into concurrent pieces and run in parallel as much as possible. The major challenge is concurrency control: (i) how to coordinate accesses to resources that are shared among concurrent pieces and (ii) how to ensure the correct sequencing of interactions between the computing cores. This project will explore the power and limitations of transactional memory which has emerged as a paradigm for concurrency control. Due to conceptual simplicity, it is believed that transactional memory will encourage non-expert users in writing concurrent programs, reaching beyond the current use of concurrent programming only among expert users. The outcomes of this project will have impacts on the practice of concurrent programming. Industry is also embracing transactional memory by incorporating it in their recent processor lines. The PI will make the prototype system publicly available. Some results will be incorporated in classes the PI teaches. The PI will also focus on the mentoring and education of K-12, undergraduate, and graduate students in concurrent computing, including female, minority, and first-generation computer science students. The PI and students will seek out broad dissemination of the progress of research through presentations at major conferences, workshops, and seminars. The PI will also participate in outreach events individually and in collaboration with the programs within Kent State University, such as K-12 science experience, summer undergraduate research experience (SURE), choose Ohio first (COF), summer bootcamp, Northeast Ohio Computer Science and Information Systems Colloquium, etc. \r\n\r\n\r\nTransactional memory has emerged as an appealing paradigm, addressing the downsides of traditional barriers and locks-based techniques to this problem. However, the past research has examined transactional memory mostly in the context of tightly-coupled systems, consisting of a set of processors that share the same physical main memory. The goal of this project is to study transactional memory in the context of loosely-coupled systems, consisting of a collection of relatively autonomous processors each having its own memory. Due to recent architectural and computational trends, loosely-coupled systems are becoming increasingly popular and transactional memory is predicted to be useful for concurrency control in these systems. Particularly, this project establishes solid theoretical as well as practical foundations under different execution models and practical scenarios, significantly advancing the current understanding of transactional memory in loosely-coupled systems. The specific goals of this project include: (i) establishing impossibility and lower bound results for transactional memory in loosely-coupled systems, (ii) designing and formally analyzing provably-efficient scheduling algorithms with (near-)optimal performance guarantees for both arbitrary and specialized workloads arise in practice, and (iii) implementing a prototype distributed transactional memory system employing the designed provably-efficient algorithms and evaluating it thoroughly using diverse real-world benchmarks and applications to inform theory from practice.  The main challenge to overcome is that loosely-coupled systems have to deal with non-uniformity in memory-access latency for processors, which was of no concern in tightly-coupled systems. This non-uniformity affects the completion time of concurrent pieces of code as well as other related network parameters such as communication cost and congestion. The techniques for minimizing completion time may not necessarily minimize other parameters, and alternatively, the techniques for minimizing other parameters may result significantly worse completion time. Therefore, a major challenge of this project lies in developing tools and techniques to understand the effects of non-uniform latency in concurrency control.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Gokarna",
+   "pi_last_name": "Sharma",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Gokarna Sharma",
+   "pi_email_addr": "gsharma2@kent.edu",
+   "nsf_id": "000703567",
+   "pi_start_date": "2019-06-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Kent State University",
+  "inst_street_address": "1500 HORNING RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "KENT",
+  "inst_state_code": "OH",
+  "inst_state_name": "Ohio",
+  "inst_phone_num": "3306722070",
+  "inst_zip_code": "442420001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "14",
+  "st_cong_dist_code": "OH14",
+  "org_lgl_bus_name": "KENT STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "KXNVA7JCC5K6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Kent State University",
+  "perf_str_addr": "POBOX 5190",
+  "perf_city_name": "Kent",
+  "perf_st_code": "OH",
+  "perf_st_name": "Ohio",
+  "perf_zip_code": "442420001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "14",
+  "perf_st_cong_dist": "OH14",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  },
+  {
+   "pgm_ref_code": "7934",
+   "pgm_ref_txt": "PARAL/DISTRIBUTED ALGORITHMS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 199977.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>Being able to program with concurrency will be an important and necessary skill in the future. Each new generation of processor chips is having an increasing number of cores and is called multiprocessor system. For a computation to run faster in a multiprocessor system, it has to be split up into concurrent pieces and run in parallel in the available processors as much as possible. The major challenge is concurrency control: (i) how to coordinate accesses to resources that are shared among concurrent pieces and (ii) how to ensure the correct sequencing of interactions between the computing processors. The traditional approach is to use locks/monitors for concurrency control. Lately, t<span>ransactional memory has emerged as an appealing paradigm for concurrency control, addressing the limitations of traditional approaches such as deadlocks, priority inversion, burden on the programmer in assigning lock/unlock to shared resources in a correct order, etc. However, the past research on transactional memory was devoted mostly for tightly-coupled shared memory systems, where&nbsp;<span>processors share the same physical main memory. </span></span></span></p>\n<p>This project&nbsp;studied transactional memory for the first time in the context of loosely-coupled systems, where processors are relatively autonomous each having its own memory. Due to recent architectural and computational trends, such systems are getting increasing popular. This project established theoretical as well as practical foundations under the data-flow model (where transactions are static on the nodes they are initiated and shared objects move to the nodes where transactions requesting those objects are executing), significantly advancing the current understanding of transactional memory in loosely-coupled systems. Particularly, this project established the following five major results:&nbsp;</p>\n<p><span><span><span><span><span>(i) It developed provably efficient transaction scheduling algorithms minimizing simultaneously both execution time and communication cost metrics for distributed systemS that have special underlying graph topoligy such as Clique, Line, Grid, Star, Cluster, Butterfly, and Hypercube. This project studied scheduling algorithms for both the batch transactions that are known a priori as well as the dynamic online transactions that arrive continuously over time.&nbsp;</span></span></span></span></span></p>\n<p><span><span><span><span><span>(ii)&nbsp; It developed provably efficient transaction scheduling algorithms&nbsp;minimizing either execution time or communication cost, or both for both batch and dynamic online transactions that have to be schedule according to a predefined priority.&nbsp;</span></span></span></span></span></p>\n<p><span><span><span><span><span>(iii) It developed a distributed directory protocol that minimizes both communication cost and processing load (node congestion) while accessing a shared object in the network. This is the first protocol achieving provable bounds for both the metrics. Previous protocols only minimized communication cost but not the processing load.</span></span></span></span></span></p>\n<p><span><span><span><span><span>(iv) It developed a versioning approach, called adaptive, that switches between redo and undo versioning on-the-fly at runtime so that the transactional applications can be run faster minimizing execution time as well as number of transaction aborts compared to running the applications either using redo&nbsp; versioning or undo versioning separately.</span></span></span></span></span></p>\n<p><span><span><span><span><span>(v)&nbsp; Finally, it developed a prototype experimentation system, called GraphTM, that facilitates running experiments against diverse set of benchmarks for the different scheduling algorithms designed for&nbsp; executing transactions in loosely-coupled systems with different underlying communication topology.&nbsp;</span></span></span></span></span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/09/2022<br>\n\t\t\t\t\tModified by: Gokarna&nbsp;Sharma</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nBeing able to program with concurrency will be an important and necessary skill in the future. Each new generation of processor chips is having an increasing number of cores and is called multiprocessor system. For a computation to run faster in a multiprocessor system, it has to be split up into concurrent pieces and run in parallel in the available processors as much as possible. The major challenge is concurrency control: (i) how to coordinate accesses to resources that are shared among concurrent pieces and (ii) how to ensure the correct sequencing of interactions between the computing processors. The traditional approach is to use locks/monitors for concurrency control. Lately, transactional memory has emerged as an appealing paradigm for concurrency control, addressing the limitations of traditional approaches such as deadlocks, priority inversion, burden on the programmer in assigning lock/unlock to shared resources in a correct order, etc. However, the past research on transactional memory was devoted mostly for tightly-coupled shared memory systems, where processors share the same physical main memory. \n\nThis project studied transactional memory for the first time in the context of loosely-coupled systems, where processors are relatively autonomous each having its own memory. Due to recent architectural and computational trends, such systems are getting increasing popular. This project established theoretical as well as practical foundations under the data-flow model (where transactions are static on the nodes they are initiated and shared objects move to the nodes where transactions requesting those objects are executing), significantly advancing the current understanding of transactional memory in loosely-coupled systems. Particularly, this project established the following five major results: \n\n(i) It developed provably efficient transaction scheduling algorithms minimizing simultaneously both execution time and communication cost metrics for distributed systemS that have special underlying graph topoligy such as Clique, Line, Grid, Star, Cluster, Butterfly, and Hypercube. This project studied scheduling algorithms for both the batch transactions that are known a priori as well as the dynamic online transactions that arrive continuously over time. \n\n(ii)  It developed provably efficient transaction scheduling algorithms minimizing either execution time or communication cost, or both for both batch and dynamic online transactions that have to be schedule according to a predefined priority. \n\n(iii) It developed a distributed directory protocol that minimizes both communication cost and processing load (node congestion) while accessing a shared object in the network. This is the first protocol achieving provable bounds for both the metrics. Previous protocols only minimized communication cost but not the processing load.\n\n(iv) It developed a versioning approach, called adaptive, that switches between redo and undo versioning on-the-fly at runtime so that the transactional applications can be run faster minimizing execution time as well as number of transaction aborts compared to running the applications either using redo  versioning or undo versioning separately.\n\n(v)  Finally, it developed a prototype experimentation system, called GraphTM, that facilitates running experiments against diverse set of benchmarks for the different scheduling algorithms designed for  executing transactions in loosely-coupled systems with different underlying communication topology. \n\n\t\t\t\t\tLast Modified: 03/09/2022\n\n\t\t\t\t\tSubmitted by: Gokarna Sharma"
+ }
+}

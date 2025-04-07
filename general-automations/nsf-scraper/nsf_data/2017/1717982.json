@@ -1,0 +1,121 @@
+{
+ "awd_id": "1717982",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small: Algorithms and Abstractions for Efficient Virtual-Memory Streaming and Big-Data Computing",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Erik Brunvand",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 471008.0,
+ "awd_amount": 487008.0,
+ "awd_min_amd_letter_date": "2017-07-14",
+ "awd_max_amd_letter_date": "2018-05-21",
+ "awd_abstract_narration": "As the field stands today, operating systems provide a poor interface for data-intensive computing, requiring programmers to engage in tedious, non-reconfigurable, and error-prone code development. These  software-engineering practices often lead to easily exploitable vulnerabilities and devastating security breaches. This project builds various algorithms and implementations for a virtual-stream interface  that enables our society to develop big-data software that is more  easily managed, simpler to understand, inherently faster, and less buggy. \r\n\r\nOperating systems have used virtual memory and paging for decades;  however, user-level applications are still required to process input/output in blocks of fixed size. This project takes a different approach by creating a zero-copy streaming abstraction that offers  sequential access to bulk data with unprecedented simplicity, flexibility, and speed. The outcomes of this research not only improve the internal functionality of operating systems and hardware, but also permit reuse of existing libraries in external-memory operation, lead to significantly faster in-place sorting and inter-thread communication, and pave the way to more scalable database computing.  \r\n\r\nThe project delivers novel system-level concepts and prototypes that simplify algorithm design, enable faster processing of large-scale data streams, reduce software cost, and help produce better technology for the 21st century. The project also engages students at Texas A&M  University in research-intensive education in cross-disciplinary fields, broadens integration of fundamental research into classroom teaching, mentors students, and permits related research in the industry and institutions around the world through publicly  shared outcomes of our work.\r\n\r\nProject data will be maintained online for as long as it is feasible. The shared products include publications, data, software, and various research artifacts. The project URL is http://irl.cs.tamu.edu/projects/streams/",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Dmitri",
+   "pi_last_name": "Loguinov",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Dmitri Loguinov",
+   "pi_email_addr": "dmitri@cs.tamu.edu",
+   "nsf_id": "000410005",
+   "pi_start_date": "2017-07-14",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Texas A&M Engineering Experiment Station",
+  "inst_street_address": "3124 TAMU",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE STATION",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "9798626777",
+  "inst_zip_code": "778433124",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "TX10",
+  "org_lgl_bus_name": "TEXAS A&M ENGINEERING EXPERIMENT STATION",
+  "org_prnt_uei_num": "QD1MX6N5YTN4",
+  "org_uei_num": "QD1MX6N5YTN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Texas A&M Engineering Experiment Station",
+  "perf_str_addr": "TEES State Headquarters Bldg.",
+  "perf_city_name": "College Station",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "778454645",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "TX10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  },
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 471008.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 16000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Applications in data analytics, information retrieval, and cluster computing often process huge amounts of information. The complexity of involved algorithms and massive scale of data require a programming model that can not only offer a simple abstraction to the user, but also squeeze maximum performance out of the available hardware. While these are usually conflicting goals, this does not have to be the case for sequentially-processed data, i.e., in streaming applications. Our proposed virtual-stream interface, which we call Vortex, is a novel paradigm that addresses key deficiencies in the existing inter-thread and I/O communication models of the operating system, while offering additional benefits -- zero-copy data transfer, ability to reuse existing libraries on input of unlimited size, significantly faster in-place sorting, and more scalable MapReduce computation. More generally, Vortex enables society to develop big-data software that is more easily managed, simpler to understand, inherently faster, and bug-free. This approach reshapes user-level programming principles of the 21st century and brings new ideas into various research communities, laying the groundwork for future innovations in hardware and software support for infinite streams.&nbsp;</p>\n<p>As data-intensive applications, languages, and analytics frameworks have a significant economical, social, and educational impact on humanity, long-term contributions of this project are expected to be substantial. Efficient knowledge engineering and rapid information dissemination will continue revolutionizing our interaction with the physical world, scientific findings, everyday processes, and each other. It is the role of computer science to offer an array of algorithms, tools, and implementations that make these applications and underlying technology possible.<em> </em>To this end, our project delivers novel system-level concepts and prototypes that simplify algorithm design, lower cost of code development, and enable faster processing of large-scale data streams. As a result, the ourcomes of this project impact not only a narrow field of researchers, but also the broader population by paving the way for modern software that is both more affordable and less demanding on hardware. The last point is especially important since enormous server clusters are already imposing substantial cooling and electrical demands, which can only get worse in the future.&nbsp;</p>\n<p>This work blended a variety of inter-disciplinary scientific areas including operating systems, networking, databases, core algorithms, architecture, external-memory sorting, compilers, data streaming, optimization, distributed systems, and experimentation. The educational component of this project reached out to the student population at Texas A&amp;M and engaged them in research activities from early stages of their careers. This included attraction of students to the REU program, training of well-rounded PhD, MS, and BS students proficient in both theoretical and practical aspects of future technology, and sharing of our software, models, datasets, and various results with the public, educating them in the process.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/17/2022<br>\n\t\t\t\t\tModified by: Dmitri&nbsp;Loguinov</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nApplications in data analytics, information retrieval, and cluster computing often process huge amounts of information. The complexity of involved algorithms and massive scale of data require a programming model that can not only offer a simple abstraction to the user, but also squeeze maximum performance out of the available hardware. While these are usually conflicting goals, this does not have to be the case for sequentially-processed data, i.e., in streaming applications. Our proposed virtual-stream interface, which we call Vortex, is a novel paradigm that addresses key deficiencies in the existing inter-thread and I/O communication models of the operating system, while offering additional benefits -- zero-copy data transfer, ability to reuse existing libraries on input of unlimited size, significantly faster in-place sorting, and more scalable MapReduce computation. More generally, Vortex enables society to develop big-data software that is more easily managed, simpler to understand, inherently faster, and bug-free. This approach reshapes user-level programming principles of the 21st century and brings new ideas into various research communities, laying the groundwork for future innovations in hardware and software support for infinite streams. \n\nAs data-intensive applications, languages, and analytics frameworks have a significant economical, social, and educational impact on humanity, long-term contributions of this project are expected to be substantial. Efficient knowledge engineering and rapid information dissemination will continue revolutionizing our interaction with the physical world, scientific findings, everyday processes, and each other. It is the role of computer science to offer an array of algorithms, tools, and implementations that make these applications and underlying technology possible. To this end, our project delivers novel system-level concepts and prototypes that simplify algorithm design, lower cost of code development, and enable faster processing of large-scale data streams. As a result, the ourcomes of this project impact not only a narrow field of researchers, but also the broader population by paving the way for modern software that is both more affordable and less demanding on hardware. The last point is especially important since enormous server clusters are already imposing substantial cooling and electrical demands, which can only get worse in the future. \n\nThis work blended a variety of inter-disciplinary scientific areas including operating systems, networking, databases, core algorithms, architecture, external-memory sorting, compilers, data streaming, optimization, distributed systems, and experimentation. The educational component of this project reached out to the student population at Texas A&amp;M and engaged them in research activities from early stages of their careers. This included attraction of students to the REU program, training of well-rounded PhD, MS, and BS students proficient in both theoretical and practical aspects of future technology, and sharing of our software, models, datasets, and various results with the public, educating them in the process.\n\n\t\t\t\t\tLast Modified: 02/17/2022\n\n\t\t\t\t\tSubmitted by: Dmitri Loguinov"
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "awd_id": "2008688",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AF: Small: Online Algorithms and Approximation Methods in Learning",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922095",
+ "po_email": "kwimmer@nsf.gov",
+ "po_sign_block_name": "Karl Wimmer",
+ "awd_eff_date": "2020-07-01",
+ "awd_exp_date": "2024-06-30",
+ "tot_intn_awd_amt": 349999.0,
+ "awd_amount": 349999.0,
+ "awd_min_amd_letter_date": "2020-06-29",
+ "awd_max_amd_letter_date": "2020-06-29",
+ "awd_abstract_narration": "Modern machine-learning applications aim to solve difficult computational problems accurately, quickly and at scale. This has led to significant algorithmic challenges that are compounded by practical considerations like robustness to noise and the distributed nature of data. The goal of the project is to develop a formal understanding of when efficient learning is possible, and to develop novel algorithmic insights. The techniques developed in the project will lead to progress in approximation algorithms, optimization, sublinear algorithms, and computational complexity. The project includes a plan to develop courses that teach undergraduate and graduate students to formally reason about machine-learning systems and to understand their power and limitations. The courses will help train the next generation of the workforce, and will be offered at the University of Utah, with much of the material being publicly accessible.\r\n\r\nThe project aims to address two core questions in reasoning about machine learning. The first one is related to the computational hardness of learning problems. For problems such as sparse coding and learning low-depth neural networks, all the known algorithms require strong structural assumptions in order to obtain learning guarantees. The project will study methods (for these and other problems) that enable one to weaken these assumptions, while obtaining weaker yet practically relevant guarantees. The second question is related to learning in online arrival models, motivated by recommender systems and signal processing. Here, many of the known theoretical results fall short when data is noisy or is only partially observed, and the project will develop formal models and algorithmic results for these settings.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Aditya",
+   "pi_last_name": "Bhaskara",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Aditya Bhaskara",
+   "pi_email_addr": "bhaskara@cs.utah.edu",
+   "nsf_id": "000727508",
+   "pi_start_date": "2020-06-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Utah",
+  "inst_street_address": "201 PRESIDENTS CIR",
+  "inst_street_address_2": "",
+  "inst_city_name": "SALT LAKE CITY",
+  "inst_state_code": "UT",
+  "inst_state_name": "Utah",
+  "inst_phone_num": "8015816903",
+  "inst_zip_code": "841129049",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "UT01",
+  "org_lgl_bus_name": "UNIVERSITY OF UTAH",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LL8GLEVH6MG3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Utah",
+  "perf_str_addr": "School of Computing, 50 S Centra",
+  "perf_city_name": "Salt Lake City",
+  "perf_st_code": "UT",
+  "perf_st_name": "Utah",
+  "perf_zip_code": "841129205",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "UT01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "287800",
+   "pgm_ele_name": "Special Projects - CCF"
+  },
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "075Z",
+   "pgm_ref_txt": "Artificial Intelligence (AI)"
+  },
+  {
+   "pgm_ref_code": "079Z",
+   "pgm_ref_txt": "Machine Learning Theory"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7926",
+   "pgm_ref_txt": "ALGORITHMS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 349999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Clustering, dimension reduction, and \"data reduction\", are all fundamental tools in data analysis and machine learning, each serving as a cornerstone in understanding and organizing complex datasets. Clustering aims to group a collection of points such that points within the same group are \"closer\" (as measured by some defined metric) compared to points in different groups. This process is critical in various applications, including market segmentation, social network analysis, and image recognition. On the other hand, dimensionality reduction (often achieved via low-rank approximation) seeks to identify the underlying low-dimensional structure in a dataset, assuming such structure exists. This technique is central to applications such as data compression, visualization, and noise reduction. Data reduction, often called \"coresets\", aims to reduce the size of a dataset, while preserving its essential structure, thereby allowing one to build ML and other models more efficiently.<br /><br />All three problems have been rigorously explored from the perspective of \"approximation algorithms\" in several settings. The goal is to design computationally efficient methods that produce solutions whose \"cost\" &mdash;defined based on metrics like within-cluster variance or reconstruction error&mdash; is comparable to that of an optimal solution. However, practical constraints often render classical algorithms less suitable for real-world scenarios. This project focused on advancing the state of the art by addressing several practical challenges:<br /><br />1. Online Arrival Models: In many real-world settings, data points arrive sequentially, necessitating algorithms that make decisions upon the arrival of each point. This contrasts with offline models, where the entire dataset is available upfront. We developed algorithms tailored for this online model, ensuring robust and efficient performance under streaming conditions.<br /><br />2. Generalized Low-Rank Approximation: Extending beyond classical settings, we addressed significant generalizations, including:<br />&nbsp;&nbsp; - Weighted versions: Where points or features carry varying levels of importance.<br />&nbsp;&nbsp; - Lp-norm approximations: Providing flexibility by considering alternative norms (e.g., L1 or L-infinity norms) to capture reconstruction error, accommodating a broader range of applications.<br />&nbsp;&nbsp; - Matrix completion: Tackling scenarios with missing data, ensuring accurate recovery of the underlying low-rank structure despite incomplete observations.<br /><br />3. Fairness Constraints: Real-world datasets often contain subpopulations or demographic groups that require equitable treatment. We formulated and solved versions of clustering and low-rank approximation that explicitly incorporate fairness constraints. Here, the aim was to ensure that the \"costs\" (e.g., clustering or approximation errors) are distributed equitably across groups, mitigating biases inherent in traditional methods.<br /><br />Beyond these central goals, the project yielded additional notable results:<br />- We established precise bounds on the size of \"spanners\"&mdash;compact representations of datasets preserving essential geometric properties. Spanners serve as an efficient and interpretable data summary, enabling faster downstream analysis.<br />- A significant offshoot of this work involved constructing \"coresets\"&mdash;reduced, representative subsets of the data&mdash;that satisfy both performance guarantees and fairness constraints. This aspect is particularly valuable for resource-constrained environments where processing the full dataset is infeasible.<br /><br />The impact of this project is evident through its dissemination in prestigious academic conferences, including NeurIPS, ICML, AISTATS, and FAccT. These venues reflect the relevance of the research, addressing both theoretical foundations and practical implications.<br /><br />Additionally, the project supported the academic growth of two PhD students, who played pivotal roles in advancing these research directions. They led the development of several publications, gaining expertise and contributing to the broader scientific community. The project also inspired ongoing collaborative efforts, aiming to deepen our understanding of clustering, matrix approximation, and fairness in data analysis. The project also supported curriculum development at the University of Utah, specifically for two courses: Theory of Machine Learning (Spring 2022), and Algorithms, Randomness, and Optimization (Spring 2024). Creating more advanced yet accessible courses has been a priority of the PI (and the Department) to help improve student training, and both of these courses helped achieve this goal.</p><br>\n<p>\n Last Modified: 01/21/2025<br>\nModified by: Aditya&nbsp;Bhaskara</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nClustering, dimension reduction, and \"data reduction\", are all fundamental tools in data analysis and machine learning, each serving as a cornerstone in understanding and organizing complex datasets. Clustering aims to group a collection of points such that points within the same group are \"closer\" (as measured by some defined metric) compared to points in different groups. This process is critical in various applications, including market segmentation, social network analysis, and image recognition. On the other hand, dimensionality reduction (often achieved via low-rank approximation) seeks to identify the underlying low-dimensional structure in a dataset, assuming such structure exists. This technique is central to applications such as data compression, visualization, and noise reduction. Data reduction, often called \"coresets\", aims to reduce the size of a dataset, while preserving its essential structure, thereby allowing one to build ML and other models more efficiently.\n\nAll three problems have been rigorously explored from the perspective of \"approximation algorithms\" in several settings. The goal is to design computationally efficient methods that produce solutions whose \"cost\" defined based on metrics like within-cluster variance or reconstruction error is comparable to that of an optimal solution. However, practical constraints often render classical algorithms less suitable for real-world scenarios. This project focused on advancing the state of the art by addressing several practical challenges:\n\n1. Online Arrival Models: In many real-world settings, data points arrive sequentially, necessitating algorithms that make decisions upon the arrival of each point. This contrasts with offline models, where the entire dataset is available upfront. We developed algorithms tailored for this online model, ensuring robust and efficient performance under streaming conditions.\n\n2. Generalized Low-Rank Approximation: Extending beyond classical settings, we addressed significant generalizations, including:\n - Weighted versions: Where points or features carry varying levels of importance.\n - Lp-norm approximations: Providing flexibility by considering alternative norms (e.g., L1 or L-infinity norms) to capture reconstruction error, accommodating a broader range of applications.\n - Matrix completion: Tackling scenarios with missing data, ensuring accurate recovery of the underlying low-rank structure despite incomplete observations.\n\n3. Fairness Constraints: Real-world datasets often contain subpopulations or demographic groups that require equitable treatment. We formulated and solved versions of clustering and low-rank approximation that explicitly incorporate fairness constraints. Here, the aim was to ensure that the \"costs\" (e.g., clustering or approximation errors) are distributed equitably across groups, mitigating biases inherent in traditional methods.\n\nBeyond these central goals, the project yielded additional notable results:\n- We established precise bounds on the size of \"spanners\"compact representations of datasets preserving essential geometric properties. Spanners serve as an efficient and interpretable data summary, enabling faster downstream analysis.\n- A significant offshoot of this work involved constructing \"coresets\"reduced, representative subsets of the datathat satisfy both performance guarantees and fairness constraints. This aspect is particularly valuable for resource-constrained environments where processing the full dataset is infeasible.\n\nThe impact of this project is evident through its dissemination in prestigious academic conferences, including NeurIPS, ICML, AISTATS, and FAccT. These venues reflect the relevance of the research, addressing both theoretical foundations and practical implications.\n\nAdditionally, the project supported the academic growth of two PhD students, who played pivotal roles in advancing these research directions. They led the development of several publications, gaining expertise and contributing to the broader scientific community. The project also inspired ongoing collaborative efforts, aiming to deepen our understanding of clustering, matrix approximation, and fairness in data analysis. The project also supported curriculum development at the University of Utah, specifically for two courses: Theory of Machine Learning (Spring 2022), and Algorithms, Randomness, and Optimization (Spring 2024). Creating more advanced yet accessible courses has been a priority of the PI (and the Department) to help improve student training, and both of these courses helped achieve this goal.\t\t\t\t\tLast Modified: 01/21/2025\n\n\t\t\t\t\tSubmitted by: AdityaBhaskara\n"
+ }
+}

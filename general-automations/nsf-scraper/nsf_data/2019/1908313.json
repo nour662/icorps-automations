@@ -1,0 +1,113 @@
+{
+ "awd_id": "1908313",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: CORE: Small: Reasoning about dependencies and information flow in dynamic code",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 515265.0,
+ "awd_amount": 515265.0,
+ "awd_min_amd_letter_date": "2019-08-20",
+ "awd_max_amd_letter_date": "2019-08-20",
+ "awd_abstract_narration": "This project aims to investigate software whose code can change during its execution.  Such code is ubiquitous in modern systems. For example, all modern web browsers contain a component, known as a JIT compiler, that creates or modifies code during execution.  Reasoning about relationships between the code that carries out the runtime modifications, and the code that is created or modified as a result, is important for a number of software security applications.  For example, bugs in a JIT compiler can result in vulnerabilities that can be exploited by hackers.  Currently, such reasoning is performed manually.  Because of the size and complexity of software that uses code that is created or modified during execution, such manual reasoning is difficult, slow, tedious, and error-prone.  This project aims to develop concepts, techniques, and tools to automate this process and make it faster and easier to reason about and understand the behavior of such software.  Potential benefits of the project include improved software security and training undergraduate and graduate students, including members of underrepresented minorities, in advanced research techniques.\r\n\r\nThe project will focus on developing concepts, techniques, and algorithms for reasoning about code that can be created or modified at runtime (\"dynamic code\") that are not predicated on specific technologies or implementation artifacts, and will articulate clearly any underlying assumptions.   Its research activities will focus on the following topics:  (1) identification of suitable representations for the computational structure of dynamic code so as to make it possible to reason about end-to-end information flow, i.e.,information flow between the code that performs dynamic code modification and the code that is modified as a result; (2) identification of appropriate notions of dependency that can adequately capture end-to-end information flow in dynamic code; extension of analyses developed for static code to work on dynamic code in a natural way. (3) the evaluation of these ideas to determine how well they work in practice in the context of real-world applications such as bug localization in JIT compilers.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Saumya",
+   "pi_last_name": "Debray",
+   "pi_mid_init": "K",
+   "pi_sufx_name": "",
+   "pi_full_name": "Saumya K Debray",
+   "pi_email_addr": "debray@cs.arizona.edu",
+   "nsf_id": "000120753",
+   "pi_start_date": "2019-08-20",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Arizona",
+  "inst_street_address": "845 N PARK AVE RM 538",
+  "inst_street_address_2": "",
+  "inst_city_name": "TUCSON",
+  "inst_state_code": "AZ",
+  "inst_state_name": "Arizona",
+  "inst_phone_num": "5206266000",
+  "inst_zip_code": "85721",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "AZ07",
+  "org_lgl_bus_name": "UNIVERSITY OF ARIZONA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "ED44Y3W6P7B9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Arizona",
+  "perf_str_addr": "1040 E. 4th Street",
+  "perf_city_name": "Tucson",
+  "perf_st_code": "AZ",
+  "perf_st_name": "Arizona",
+  "perf_zip_code": "857210077",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "AZ07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9178",
+   "pgm_ref_txt": "UNDERGRADUATE EDUCATION"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 515265.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Computer software is executed using machine code that instructs the computer what computations it should perform.&nbsp; In many modern applications (e.g., web browsers), these machine code instructions are created on the fly; this allows the executing code to be customized to the specifics of the data being processed, thereby achieving better performance.&nbsp; However, machine code created on the fly (which we refer to as \"dynamic code\") can be difficult to reason about, and bugs in the process of creating dynamic code can give rise to significant security problems.&nbsp; This project investigated techniques and tools to reason about dynamic code, with the goal of improving the quality, security, and reliability of software used by millions of people on a daily basis.<br /><br />One of the most fundamental questions that comes up when reasoning about software is how that software is represented.&nbsp; Previously-developed representations for software tacitly assume that the software does not change as it executes.&nbsp; This simplifies the representation but also makes such representations inadequate for representing dynamic code, where the executing software can change based on newly created code.&nbsp; As a starting point, we considered the following question: how should we represent dynamic code so that we can reason about its behavior?&nbsp; We developed a code representation, called \"dynamic control flow graphs\", that is able to show how the software evolved as a result of dynamic code generation and allowed reasoning about such software.<br /><br />Following this result, we applied our ideas to an important practical problem: that of automatically identifying possible locations of bugs in dynamic code generators, in order to speed up the process of fixing such bugs and thereby quickly mitigating any associated security issues.&nbsp; Previous work on automatic bug localization aimed to be general-purpose and so avoided relying on information specific to the applications being analyzed.&nbsp; Unfortunately, when applied to dynamic code generation bugs, this led to results that were so imprecise that they were useless.&nbsp; We decided, instead, to explicitly model the behavior of the dynamic code generators in a way that nevertheless allowed for general analysis algorithms that were not dependent on the internal details of the systems being analyzed.&nbsp; Using a prototype implementation, which we tested on \"real\" bugs in \"real\" dynamic code generators (which form part of web browser applications from Google and Mozilla), we demonstrated that this approach produced significantly more accurate bug localization results for dynamic code generation bugs than previous work in this area.<br /><br />In summary, this project investigated the problem of reasoning about dynamic code, i.e., machine code instructions that are created and executed on the fly.&nbsp; It addressed two fundamental questions: (1) how can we represent dynamic code, and (2) how can we reason about bugs in the process of generating dynamic code?&nbsp; In each case, it developed techniques and algorithms that helped advance the state of the art in analyzing dynamic code.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/25/2023<br>\n\t\t\t\t\tModified by: Saumya&nbsp;K&nbsp;Debray</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nComputer software is executed using machine code that instructs the computer what computations it should perform.  In many modern applications (e.g., web browsers), these machine code instructions are created on the fly; this allows the executing code to be customized to the specifics of the data being processed, thereby achieving better performance.  However, machine code created on the fly (which we refer to as \"dynamic code\") can be difficult to reason about, and bugs in the process of creating dynamic code can give rise to significant security problems.  This project investigated techniques and tools to reason about dynamic code, with the goal of improving the quality, security, and reliability of software used by millions of people on a daily basis.\n\nOne of the most fundamental questions that comes up when reasoning about software is how that software is represented.  Previously-developed representations for software tacitly assume that the software does not change as it executes.  This simplifies the representation but also makes such representations inadequate for representing dynamic code, where the executing software can change based on newly created code.  As a starting point, we considered the following question: how should we represent dynamic code so that we can reason about its behavior?  We developed a code representation, called \"dynamic control flow graphs\", that is able to show how the software evolved as a result of dynamic code generation and allowed reasoning about such software.\n\nFollowing this result, we applied our ideas to an important practical problem: that of automatically identifying possible locations of bugs in dynamic code generators, in order to speed up the process of fixing such bugs and thereby quickly mitigating any associated security issues.  Previous work on automatic bug localization aimed to be general-purpose and so avoided relying on information specific to the applications being analyzed.  Unfortunately, when applied to dynamic code generation bugs, this led to results that were so imprecise that they were useless.  We decided, instead, to explicitly model the behavior of the dynamic code generators in a way that nevertheless allowed for general analysis algorithms that were not dependent on the internal details of the systems being analyzed.  Using a prototype implementation, which we tested on \"real\" bugs in \"real\" dynamic code generators (which form part of web browser applications from Google and Mozilla), we demonstrated that this approach produced significantly more accurate bug localization results for dynamic code generation bugs than previous work in this area.\n\nIn summary, this project investigated the problem of reasoning about dynamic code, i.e., machine code instructions that are created and executed on the fly.  It addressed two fundamental questions: (1) how can we represent dynamic code, and (2) how can we reason about bugs in the process of generating dynamic code?  In each case, it developed techniques and algorithms that helped advance the state of the art in analyzing dynamic code.\n\n\t\t\t\t\tLast Modified: 10/25/2023\n\n\t\t\t\t\tSubmitted by: Saumya K Debray"
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "awd_id": "2008240",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "III: Small: Applying Relational Database Design Principles to Machine Learning System Design",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032924481",
+ "po_email": "hmunoz@nsf.gov",
+ "po_sign_block_name": "Hector Munoz-Avila",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2025-09-30",
+ "tot_intn_awd_amt": 499999.0,
+ "awd_amount": 499999.0,
+ "awd_min_amd_letter_date": "2020-08-18",
+ "awd_max_amd_letter_date": "2020-10-19",
+ "awd_abstract_narration": "Modern machine learning systems such as TensorFlow and PyTorch have revolutionized the development of machine learning models, making it possible to produce new and complex models in a short period of time. However, these systems have significant limitations. They are difficult to use for training large models over large data sets. A user must manually map computations and data to hardware in a distributed setting. Doing so incorrectly leads to system failure. Models cannot easily be decomposed and trained in parallel across different hardware infrastructures. When a user wishes to speed learning by adding more machines/workers, the result will in many cases be a longer training time. This project considers the fundamental question: What is the foundation upon which machine learning systems should be built so that they can easily facilitate distributed training of the largest models over the largest data sets?\r\n\r\nThe project will investigate use of the relational model as the basis for machine learning system design, where matrices and tensors are decomposed and stored in relations. The relational model has long been the basis for database systems, which successfully process huge data sets using large clusters of machines. However, a number of research problems need to be addressed for relational systems to be the preferred platform for machine learning system implementation. First, there are many ways that a tensor can be decomposed and stored in a relation. There are complex interactions between the data representation, the computation being run, and the mapping of the computation to hardware. How can all of these be co-optimized? Second, unlike classical relational computations, machine learning computations are iterative, repeating the same computation many times. The compute kernels (matrix multiplications, convolutions, etc.) are very expensive, making cost-based optimization difficult. The project will investigate an entirely new paradigm for relational optimization, where rather than being statically optimized, a relational computation that is executed iteratively is treated as a Markov decision process that must be optimized over its lifetime of executions, so as to achieve minimum cost over all executions. Finally, when machine learning computations are expressed relationally, the underlying tuples store pieces of decomposed tensors. Those tuples are very large, and have constraints such as continuity of keys that are not present in general, relational computations. The project will investigate the use of optimization-based relational algorithms that use those constraints to carefully place the data and plan communication so as to minimize the communication of such large objects.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Christopher",
+   "pi_last_name": "Jermaine",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Christopher M Jermaine",
+   "pi_email_addr": "Christopher.m.jermaine@rice.edu",
+   "nsf_id": "000439407",
+   "pi_start_date": "2020-08-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "William Marsh Rice University",
+  "inst_street_address": "6100 MAIN ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "Houston",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "7133484820",
+  "inst_zip_code": "770051827",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "TX09",
+  "org_lgl_bus_name": "WILLIAM MARSH RICE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "K51LECU1G8N3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "William Marsh Rice University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "770051827",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "09",
+  "perf_st_cong_dist": "TX09",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736400",
+   "pgm_ele_name": "Info Integration & Informatics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 499999.0
+  }
+ ],
+ "por": null
+}

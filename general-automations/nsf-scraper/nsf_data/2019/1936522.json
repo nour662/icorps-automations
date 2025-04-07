@@ -1,0 +1,129 @@
+{
+ "awd_id": "1936522",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: EAGER: Towards Self-Adaptive Dynamic Analysis for Distributed Software",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2019-08-01",
+ "awd_exp_date": "2022-07-31",
+ "tot_intn_awd_amt": 150000.0,
+ "awd_amount": 166000.0,
+ "awd_min_amd_letter_date": "2019-07-30",
+ "awd_max_amd_letter_date": "2021-06-08",
+ "awd_abstract_narration": "Due to growing demands for computing performance and scalability, distributed software systems are increasingly developed and deployed. Most of the critical software and services being used today, such as financial systems and medical networks, are distributed systems in nature. The quality, including various factors (e.g., reliability and security), of these systems is thus of paramount importance to the modern society and economy. Dynamic program analysis, a  methodology that models and reasons about the behavior of programs using their execution information, has been a key enabler for powerful quality assurance tool support. However, conventional dynamic analysis is known to suffer from scalability challenges due to its substantial overheads. It also has been a standing challenge to balance the effectiveness (e.g., precision) and cost (e.g., time) of the analysis, as reflected in many analysis techniques that are efficient but do not provide a practically useful level of precision and those that are usefully precise but at unacceptable cost. To dynamic analysis of distributed software, these challenges are exacerbated because of the typically large code size and greater complexity of those software systems, in addition to unbounded execution information as a result of the fact that distributed systems commonly run as continuous (uninterrupted) services. This project will address these challenges by investigating self-adaptive dynamic analysis, a fundamentally new paradigm of dynamic program analysis, which continuously adapts its cost and effectiveness to the optimal tradeoff within user-specified budget bounds. The state of the art in dynamic analysis will be significantly advanced by this new paradigm and its superior scalability and cost-effectiveness optimality, especially in the challenging context of distributed software. \r\n\r\nThis project will develop the foundational underpinning of self-adaptive dynamic analysis, including (1) the formulation of an integrated dynamic analysis infrastructure featured by hybrid dependence modeling and a built-in cost-benefit model, and (2) the design of self-adaptive and distributed dynamic-analysis algorithms focusing on dependence abstraction as empowered by the infrastructure and guided by the cost-benefit model. Compared to conventional dynamic analysis, which commonly adopts a fixed algorithmic configuration throughout the entire analysis, the studied framework exploits differences in the complexity, and accordingly those in the analysis overheads (for the same level of precision), of different regions of programs and different segments of program executions. These differences will be sensed through various monitoring utilities in the infrastructure and leveraged to adjust the algorithmic configuration (e.g., granularity and selection of the dynamic data used by the analysis). With intelligent uses of assorted program information and analysis configurations, the new framework will provide flexible cost-effectiveness balances to meet diverse budgetary needs. Meanwhile, it will attain high scalability through automatic, distributed control of the distributed analysis. By making smart decisions at runtime, the analysis will achieve and sustain optimal cost-benefit tradeoffs with respect to given constraints (e.g., resources limits) and changing run-time environment conditions during continuous system executions.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Haipeng",
+   "pi_last_name": "Cai",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Haipeng Cai",
+   "pi_email_addr": "haipengc@buffalo.edu",
+   "nsf_id": "000736543",
+   "pi_start_date": "2019-07-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Washington State University",
+  "inst_street_address": "240 FRENCH ADMINISTRATION BLDG",
+  "inst_street_address_2": "",
+  "inst_city_name": "PULLMAN",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "5093359661",
+  "inst_zip_code": "991640001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "WA05",
+  "org_lgl_bus_name": "WASHINGTON STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "XRJSGX384TD6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Washington State University",
+  "perf_str_addr": "280 Lighty",
+  "perf_city_name": "PULLMAN",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "991641060",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "WA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  },
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  },
+  {
+   "pgm_ref_code": "7944",
+   "pgm_ref_txt": "SOFTWARE ENG & FORMAL METHODS"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0121",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002122DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 150000.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2021,
+   "fund_oblg_amt": 16000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Modern software systems have increasingly become distributed by design in order to leverage the growing power of contemporary computing infrastructures and resources hence addressing rising demands for performance and scalability. As a result, our society has seen increasing reliance on the quality of distributed software systems. Dynamic analysis has long been a fundamental methodology for analyzing program behaviors to validate quality related properties of today&rsquo;s complex software. Despite its promising merits, a key challenge that impedes the practical adoption of this methodology lies in achieving desirable cost-effectiveness balance in the dynamic analysis design space. Without a proper tradeoff, a precise analysis could be too expensive to scale to real-world, large-scale, complex systems, while a scalable analysis could be too imprecise to offer meaningfully usable results.</p>\n<p>The project explored a new paradigm of dynamic program analysis, called self-adaptive dynamic analysis, to enable the autonomy in balancing the cost and effectiveness of dynamic analysis in the context of assuring distributed software systems. The project has developed a novel framework, which instantiated this paradigm, to automatically tune the algorithmic configuration of a given dynamic analysis (e.g., forward dynamic dependence analysis) so that it adapts itself to the dynamics of both the analyzed system execution and that of the run-time environment, hence attaining and sustaining desirable cost-effectiveness tradeoffs on the fly during the continuous system operation. At the core of this framework is the close integration of a-priori human knowledge about the precision levels of different analysis configurations with learning-based modeling of how the analysis algorithm behaves (in terms of its cost and effectiveness) under varying subject execution and environment dynamics. In all, the major goals of this project are (1) to understand the cost-effectiveness balancing challenge in dynamic analysis of large-scale distributed software systems, and (2) to address this challenge through a self-adaptive design of the analysis algorithm.</p>\n<p>In order to validate the intellectual merits of the proposed work, this project has also conducted extensive empirical studies to assess the pros and cons of the self-adaptive dynamic analysis framework for distributed systems, against such systems widely used in the real-world organizations and use scenarios as study subjects. To that end, concrete application analyses immediately supporting common quality assurance tasks, including regression testing and information flow security analysis, have been developed as well. &nbsp;Through these practically useful tools, the empirical results demonstrated the significant advantages of the proposed self-adaptive analysis versus traditional approaches of a fixed cost-effectiveness setting, in terms of the analysis overhead such as run-time slowdown, average precision, and scalability. Through the application analyses based on the self-adaptive dynamic analysis, additional results clearly showed the substantial merits of the proposed methodology in addressing the studied quality assurance tasks for distributed systems.</p>\n<p>The broader impacts of this project include the insights and new knowledge about designing cost-effective program analysis to enable more scalable and precise software quality assurance tool support beyond the studied domain of distributed software. Two PhD students were supported by this grant, of which one has graduated with the doctoral degree in computer science. In addition, one undergraduate student researcher officially participated in the project through the REU component, who was also part of one of the resulting research publications. Additionally, regarding educational impacts, the research findings and resulting tools have been incorporated into a graduate-level course through lectures and course projects. This integration helped the graduate students better understand latest advances in software testing and analysis techniques that are at the core of many software quality assurance methods. Finally, research results were presented at leading software engineering and computer security conferences and journals, and the proposed framework and tool implementations as well as study findings and experimental datasets have been shared publicly as open-source artifacts.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/02/2022<br>\n\t\t\t\t\tModified by: Haipeng&nbsp;Cai</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nModern software systems have increasingly become distributed by design in order to leverage the growing power of contemporary computing infrastructures and resources hence addressing rising demands for performance and scalability. As a result, our society has seen increasing reliance on the quality of distributed software systems. Dynamic analysis has long been a fundamental methodology for analyzing program behaviors to validate quality related properties of today\u2019s complex software. Despite its promising merits, a key challenge that impedes the practical adoption of this methodology lies in achieving desirable cost-effectiveness balance in the dynamic analysis design space. Without a proper tradeoff, a precise analysis could be too expensive to scale to real-world, large-scale, complex systems, while a scalable analysis could be too imprecise to offer meaningfully usable results.\n\nThe project explored a new paradigm of dynamic program analysis, called self-adaptive dynamic analysis, to enable the autonomy in balancing the cost and effectiveness of dynamic analysis in the context of assuring distributed software systems. The project has developed a novel framework, which instantiated this paradigm, to automatically tune the algorithmic configuration of a given dynamic analysis (e.g., forward dynamic dependence analysis) so that it adapts itself to the dynamics of both the analyzed system execution and that of the run-time environment, hence attaining and sustaining desirable cost-effectiveness tradeoffs on the fly during the continuous system operation. At the core of this framework is the close integration of a-priori human knowledge about the precision levels of different analysis configurations with learning-based modeling of how the analysis algorithm behaves (in terms of its cost and effectiveness) under varying subject execution and environment dynamics. In all, the major goals of this project are (1) to understand the cost-effectiveness balancing challenge in dynamic analysis of large-scale distributed software systems, and (2) to address this challenge through a self-adaptive design of the analysis algorithm.\n\nIn order to validate the intellectual merits of the proposed work, this project has also conducted extensive empirical studies to assess the pros and cons of the self-adaptive dynamic analysis framework for distributed systems, against such systems widely used in the real-world organizations and use scenarios as study subjects. To that end, concrete application analyses immediately supporting common quality assurance tasks, including regression testing and information flow security analysis, have been developed as well.  Through these practically useful tools, the empirical results demonstrated the significant advantages of the proposed self-adaptive analysis versus traditional approaches of a fixed cost-effectiveness setting, in terms of the analysis overhead such as run-time slowdown, average precision, and scalability. Through the application analyses based on the self-adaptive dynamic analysis, additional results clearly showed the substantial merits of the proposed methodology in addressing the studied quality assurance tasks for distributed systems.\n\nThe broader impacts of this project include the insights and new knowledge about designing cost-effective program analysis to enable more scalable and precise software quality assurance tool support beyond the studied domain of distributed software. Two PhD students were supported by this grant, of which one has graduated with the doctoral degree in computer science. In addition, one undergraduate student researcher officially participated in the project through the REU component, who was also part of one of the resulting research publications. Additionally, regarding educational impacts, the research findings and resulting tools have been incorporated into a graduate-level course through lectures and course projects. This integration helped the graduate students better understand latest advances in software testing and analysis techniques that are at the core of many software quality assurance methods. Finally, research results were presented at leading software engineering and computer security conferences and journals, and the proposed framework and tool implementations as well as study findings and experimental datasets have been shared publicly as open-source artifacts.\n\n\t\t\t\t\tLast Modified: 08/02/2022\n\n\t\t\t\t\tSubmitted by: Haipeng Cai"
+ }
+}

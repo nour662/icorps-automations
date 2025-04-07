@@ -1,0 +1,96 @@
+{
+ "awd_id": "1656030",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Nonlinear partial differential equations and continuum limits for large discrete sorting problems",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Edward Taylor",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2017-06-30",
+ "tot_intn_awd_amt": 37107.0,
+ "awd_amount": 37107.0,
+ "awd_min_amd_letter_date": "2016-08-10",
+ "awd_max_amd_letter_date": "2016-08-10",
+ "awd_abstract_narration": "The goal of this project is to study algorithms for sorting large amounts of high-dimensional data. Sorting, or ordering, data is one of the most fundamental problems in computational science, and in today's data-driven world, there is a need to develop new algorithms and tools for handling massive amounts of data in novel ways. Many sorting algorithms are computationally intensive, but have a highly predictable structure when applied to very large amounts of data. A deep mathematical understanding of this structure will lead to new insights that have the potential to significantly improve performance. Applications of sorting are ubiquitous in science and engineering, and include the analysis of DNA sequences, sorting of hits in web searches, and fingerprint identification. A significant improvement in any sorting algorithm would have a broad impact on many fields of science and engineering. \r\n\r\nThis project will study two algorithms for sorting multivariate data: non-dominated sorting, and convex hull ordering. Non-dominated sorting is fundamental in multi-objective optimization, which is commonly used in scientific and engineering contexts. It has recently been shown that non-dominated sorting of random points in Euclidean space has a continuum limit that corresponds to solving a Hamilton-Jacobi equation. The first objective of this project is to study the regularity of viscosity solutions of this Hamilton-Jacobi equation, and to develop highly accurate numerical schemes for approximating its solution. The second, and main objective, is to study convex hull ordering, which is widely used in robust statistics. It is conjectured that convex hull ordering has a continuum limit that corresponds to affine invariant curvature motion. This project aims to study, and prove rigorously, this conjectured continuum limit. This result provides an asymptotic distributional theory for convex hull ordering, which is an open problem in robust statistics. Another goal of this project is to exploit this continuum limit to develop a fast algorithm for approximate convex hull ordering that can handle massive amounts of data.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jeffrey",
+   "pi_last_name": "Calder",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jeffrey Calder",
+   "pi_email_addr": "jwcalder@umn.edu",
+   "nsf_id": "000677566",
+   "pi_start_date": "2016-08-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Minnesota-Twin Cities",
+  "inst_street_address": "2221 UNIVERSITY AVE SE STE 100",
+  "inst_street_address_2": "",
+  "inst_city_name": "MINNEAPOLIS",
+  "inst_state_code": "MN",
+  "inst_state_name": "Minnesota",
+  "inst_phone_num": "6126245599",
+  "inst_zip_code": "554143074",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "MN05",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF MINNESOTA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "KABJZBBJ4B54"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Minnesota-Twin Cities",
+  "perf_str_addr": "3 Morrill Hall 100 Church St. S.E.",
+  "perf_city_name": "Mineapollis",
+  "perf_st_code": "MN",
+  "perf_st_name": "Minnesota",
+  "perf_zip_code": "554552070",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "MN05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "128100",
+   "pgm_ele_name": "ANALYSIS PROGRAM"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0115",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001516DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2015,
+   "fund_oblg_amt": 37107.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Many problems in science and engineering, particularly in machine learning and data science, require the sorting or ordering of a large amount of data. This project studies two such algorithms: nondominated sorting and convex hull peeling. Both nondominated sorting and convex hull peeling sort, or arrange, points in Euclidean space into layers by repeatedly removing boundary points (the notion of boundary point is different in each algorithm). This gives an ordering of the data into layers that is important in many practical problems, such as multi-objective optimization and robust statistics.</p>\n<p>Prior work by the PI established a continuum limit for nondominated sorting that corresponds to solving a Hamilton-Jacobi partial differential equation. This means that instead of sorting a large number of points, one can solve a Hamilton-Jacobi equation, which in some cases may be simpler and more efficient.</p>\n<p>The first major outcome of this work was developing and analyzing efficient and accurate schemes for numerically solving the Hamilton-Jacobi continuum limit of nondominated sorting. It is generally impossible to solve (i.e., find close form solutions) partial differential equations, so efficient and accurate numerical schemes are essential in practice. We proposed three different schemes for solving the Hamilton-Jacobi equation, proved convergence rates for all three schemes, and ran extensive numerical simulations. This work has the potential to have a broad impact in applications of nondominated sorting, which is ubiquitous in science and engineering.</p>\n<p>The second major outcome of this work was applying the Hamilton-Jacobi equation continuum limit of nondominated sorting to the problem of real-time anomaly detection and classification. We considered the problem of detecting anomalous pedestrian trajectories in video surveillance in an unsupervised setting. The goal was to design an algorithm that can in real-time watch a video surveillance feed and detect anomalous behavior. Our algorithm utilized the Hamilton-Jacobi continuum limit of nondominated sorting to significantly improve the training time of the algorithm so that it could be updated in real-time and adapt to changing behaviors. While we chose anomaly detection in this work, the ideas are far more general and can beapplied to any application of nondominated sorting.</p>\n<p>The third major outcome of this work was establishing a new proof of the Hamilton-Jacobi equation continuum limit of nondominated sorting. The new proof uses a less restrictive set of tools (namely, it avoids variational arguments), so the ideas can be applied in other contexts. Indeed, we use many of the same ideas to prove the continuum limit of convex hull peeling, which is another major outcome of the award.</p>\n<p>The final outcome of this work was proving rigorously our conjectured continuum limit for convex hull peeling. The continuum limit for convex hull peeling corresponds to solving a partial differential equation called affine invariant curvature motion. Affine invariant curvature motion has a long history in the field of partial differential equations, computer vision, and convex geometry, and our work connects it to convex hull peeling, which is used in data science and machine learning. This connection is new and unexpected, and may lead to new insights in both fields in the future.</p>\n<p>All of the outcomes in this work are related to the problem of understanding the behavior of discrete algorithms in the big data regime. In general, we have shown that some discrete algorithms (convex hull peeling and nondominated sorting) have a simple and elegant mathematical structure in the big data regime. This simple mathematical structure can be exploited to gain a better understanding of what the algorithms are actually doing, and to develop new and fast approximate versions of the algorithms. The algorithms that we study are commonly used in science and engineering, and so any improvement in the performance of these algorithms has the potential to have a broad societal impact.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/26/2017<br>\n\t\t\t\t\tModified by: Jeffrey&nbsp;Calder</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMany problems in science and engineering, particularly in machine learning and data science, require the sorting or ordering of a large amount of data. This project studies two such algorithms: nondominated sorting and convex hull peeling. Both nondominated sorting and convex hull peeling sort, or arrange, points in Euclidean space into layers by repeatedly removing boundary points (the notion of boundary point is different in each algorithm). This gives an ordering of the data into layers that is important in many practical problems, such as multi-objective optimization and robust statistics.\n\nPrior work by the PI established a continuum limit for nondominated sorting that corresponds to solving a Hamilton-Jacobi partial differential equation. This means that instead of sorting a large number of points, one can solve a Hamilton-Jacobi equation, which in some cases may be simpler and more efficient.\n\nThe first major outcome of this work was developing and analyzing efficient and accurate schemes for numerically solving the Hamilton-Jacobi continuum limit of nondominated sorting. It is generally impossible to solve (i.e., find close form solutions) partial differential equations, so efficient and accurate numerical schemes are essential in practice. We proposed three different schemes for solving the Hamilton-Jacobi equation, proved convergence rates for all three schemes, and ran extensive numerical simulations. This work has the potential to have a broad impact in applications of nondominated sorting, which is ubiquitous in science and engineering.\n\nThe second major outcome of this work was applying the Hamilton-Jacobi equation continuum limit of nondominated sorting to the problem of real-time anomaly detection and classification. We considered the problem of detecting anomalous pedestrian trajectories in video surveillance in an unsupervised setting. The goal was to design an algorithm that can in real-time watch a video surveillance feed and detect anomalous behavior. Our algorithm utilized the Hamilton-Jacobi continuum limit of nondominated sorting to significantly improve the training time of the algorithm so that it could be updated in real-time and adapt to changing behaviors. While we chose anomaly detection in this work, the ideas are far more general and can beapplied to any application of nondominated sorting.\n\nThe third major outcome of this work was establishing a new proof of the Hamilton-Jacobi equation continuum limit of nondominated sorting. The new proof uses a less restrictive set of tools (namely, it avoids variational arguments), so the ideas can be applied in other contexts. Indeed, we use many of the same ideas to prove the continuum limit of convex hull peeling, which is another major outcome of the award.\n\nThe final outcome of this work was proving rigorously our conjectured continuum limit for convex hull peeling. The continuum limit for convex hull peeling corresponds to solving a partial differential equation called affine invariant curvature motion. Affine invariant curvature motion has a long history in the field of partial differential equations, computer vision, and convex geometry, and our work connects it to convex hull peeling, which is used in data science and machine learning. This connection is new and unexpected, and may lead to new insights in both fields in the future.\n\nAll of the outcomes in this work are related to the problem of understanding the behavior of discrete algorithms in the big data regime. In general, we have shown that some discrete algorithms (convex hull peeling and nondominated sorting) have a simple and elegant mathematical structure in the big data regime. This simple mathematical structure can be exploited to gain a better understanding of what the algorithms are actually doing, and to develop new and fast approximate versions of the algorithms. The algorithms that we study are commonly used in science and engineering, and so any improvement in the performance of these algorithms has the potential to have a broad societal impact.\n\n \n\n\t\t\t\t\tLast Modified: 09/26/2017\n\n\t\t\t\t\tSubmitted by: Jeffrey Calder"
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "awd_id": "1939553",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CIF: Small: Communication-efficient and robust learning from distributed data",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032920000",
+ "po_email": "ahero@nsf.gov",
+ "po_sign_block_name": "Alfred Hero",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 423100.0,
+ "awd_amount": 423100.0,
+ "awd_min_amd_letter_date": "2020-06-23",
+ "awd_max_amd_letter_date": "2020-06-23",
+ "awd_abstract_narration": "There is an increasing trend of allocating machine learning workflows over a distributed network of connected devices or data centers. For distributed data networks supporting big data applications, the communication cost of moving either data or model parameters among computing nodes has become a common bottleneck of all distributed machine learning algorithms. This project develops communication-efficient and robust techniques for distributed learning, particularly for decentralized networks in the absence of central coordination. The key idea is to enforce communication censoring, in which distributed nodes transmit their local updates infrequently based on autonomous assessment of the significance of local information changes. The outcomes of this research are expected to benefit a plethora of resource-constrained distributed learning applications, such as structural monitoring for critical infrastructure, location-aware services, Internet of Things, and mobile healthcare. \r\n\r\nThe goal of this project is to develop communication-efficient and robust approaches to distributed stochastic optimization, for learning from locally stored private data in big data computing. A communication-censoring framework is introduced into the design of variance-reduced stochastic optimization techniques in order to effectively reduce message movement among distributed nodes, while globally optimizing a shared learning model with provable convergence, even in the absence of any central coordination or synchronism. Further, distributed robust aggregation techniques are developed to combat the impacts of malicious attacks, malfunctional nodes and transmission link failure, with added protection of data privacy. The developed theory and mechanisms on communication censoring and robust aggregation feature in key ideas for distributed nodes to collaboratively evaluate the informativeness of computing and jointly assess robust statistics without data sharing, even in the absence of central coordination. Rigorous analyses are conducted to delineate the convergence conditions, convergence rates, and tradeoff between efficiency and robustness. Such advances offer vital tools to propel the successful implementation of practical distributed machine learning systems in broad applications.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Zhi",
+   "pi_last_name": "Tian",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Zhi Tian",
+   "pi_email_addr": "ztian1@gmu.edu",
+   "nsf_id": "000244907",
+   "pi_start_date": "2020-06-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "George Mason University",
+  "inst_street_address": "4400 UNIVERSITY DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "FAIRFAX",
+  "inst_state_code": "VA",
+  "inst_state_name": "Virginia",
+  "inst_phone_num": "7039932295",
+  "inst_zip_code": "220304422",
+  "inst_country_name": "United States",
+  "cong_dist_code": "11",
+  "st_cong_dist_code": "VA11",
+  "org_lgl_bus_name": "GEORGE MASON UNIVERSITY",
+  "org_prnt_uei_num": "H4NRWLFCDF43",
+  "org_uei_num": "EADLFP7Z72E5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "George Mason University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "VA",
+  "perf_st_name": "Virginia",
+  "perf_zip_code": "220304422",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "11",
+  "perf_st_cong_dist": "VA11",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "287800",
+   "pgm_ele_name": "Special Projects - CCF"
+  },
+  {
+   "pgm_ele_code": "779700",
+   "pgm_ele_name": "Comm & Information Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "075Z",
+   "pgm_ref_txt": "Artificial Intelligence (AI)"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7935",
+   "pgm_ref_txt": "COMM & INFORMATION THEORY"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 423100.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Technological advances in data collection and storage have led to an unprecedented surge in data, often gathered from distributed nodes. While this data holds the potential to drive innovation, its large volume, variety, and velocity pose significant challenges for developing efficient distributed learning algorithms and implementations. In this project, we have developed a suite of communication-efficient and robust approaches to distributed stochastic optimization for learning from locally stored private data in big data computing. These algorithmic advancements, along with theoretical analyses of their convergence behavior, offer vital tools to propel the successful implementation of practical distributed machine learning systems in broad applications.</p>\r\n<p>A major challenge in distributed learning is the high communication overhead between decentralized nodes. To address this, we introduced a communication-censoring framework that selectively reduces unnecessary message exchanges to reduce the communication costs substantially, while preserving the learning performance with provable convergence guarantees. This framework was applied to variance-reduced stochastic optimization techniques, resulting in improved convergence behavior through selective communication rules, enhanced learning efficiency with reduced bandwidth consumption, and seamless integration into both centrally coordinated and fully decentralized federated learning systems. We also incorporated quantization and compressed sensing into federated learning over-the-air, optimizing worker scheduling and power scaling to balance communication efficiency with learning accuracy.</p>\r\n<p>In distributed settings, robustness against adversarial threats and non-uniform data distributions is critical. We developed a novel robust learning algorithm capable of simultaneously handling distributional shifts and Byzantine attacks, making it one of the first approaches to effectively tackle both challenges. We introduced a norm-based screening method for robust aggregation, enabling distributed learning systems to be resilient to both distributional shifts and Byzantine attacks. Compared with many other robust statistical methods, norm-based screening offers theoretically provable convergence guarantees in the presence of the potentially conflicting tradeoffs between robustness to distributional shifts and Byzantine robustness. These results were further extended by incorporating a fairness-enforcing objective into the federated learning optimization framework, applicable to both parameter-server-based architectures and fully decentralized networks.</p>\r\n<p>Online learning enables sequential data processing for continuous model adaptation without storing the entire dataset, which not only significantly reduces communication and computation costs, but also makes it essential for handling streaming data and non-stationary environments. We analyzed the impact of Byzantine attacks on distributed online learning and developed strategies to minimize adversarial effects. Key findings include analytical insights into adversarial regret bounds for Byzantine-robust distributed gradient descent, sublinear stochastic regret bounds for Byzantine-robust online momentum-based learning under IID assumptions, and adaptive communication-censored decentralized kernel learning, enabling real-time machine learning from streaming data at low computational and communication costs.</p>\r\n<p>We explored the trade-offs between communication efficiency and robustness, developing strategies that balance competing objectives. This resulted in optimized design metrics for communication efficiency, Byzantine resilience, user fairness, and data heterogeneity. Additionally, a primal-dual Byzantine-resilient decentralized resource allocation algorithm was developed, leveraging dual-domain defenses to mitigate adversarial influences.</p><br>\n<p>\n Last Modified: 02/25/2025<br>\nModified by: Zhi&nbsp;Tian</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nTechnological advances in data collection and storage have led to an unprecedented surge in data, often gathered from distributed nodes. While this data holds the potential to drive innovation, its large volume, variety, and velocity pose significant challenges for developing efficient distributed learning algorithms and implementations. In this project, we have developed a suite of communication-efficient and robust approaches to distributed stochastic optimization for learning from locally stored private data in big data computing. These algorithmic advancements, along with theoretical analyses of their convergence behavior, offer vital tools to propel the successful implementation of practical distributed machine learning systems in broad applications.\r\n\n\nA major challenge in distributed learning is the high communication overhead between decentralized nodes. To address this, we introduced a communication-censoring framework that selectively reduces unnecessary message exchanges to reduce the communication costs substantially, while preserving the learning performance with provable convergence guarantees. This framework was applied to variance-reduced stochastic optimization techniques, resulting in improved convergence behavior through selective communication rules, enhanced learning efficiency with reduced bandwidth consumption, and seamless integration into both centrally coordinated and fully decentralized federated learning systems. We also incorporated quantization and compressed sensing into federated learning over-the-air, optimizing worker scheduling and power scaling to balance communication efficiency with learning accuracy.\r\n\n\nIn distributed settings, robustness against adversarial threats and non-uniform data distributions is critical. We developed a novel robust learning algorithm capable of simultaneously handling distributional shifts and Byzantine attacks, making it one of the first approaches to effectively tackle both challenges. We introduced a norm-based screening method for robust aggregation, enabling distributed learning systems to be resilient to both distributional shifts and Byzantine attacks. Compared with many other robust statistical methods, norm-based screening offers theoretically provable convergence guarantees in the presence of the potentially conflicting tradeoffs between robustness to distributional shifts and Byzantine robustness. These results were further extended by incorporating a fairness-enforcing objective into the federated learning optimization framework, applicable to both parameter-server-based architectures and fully decentralized networks.\r\n\n\nOnline learning enables sequential data processing for continuous model adaptation without storing the entire dataset, which not only significantly reduces communication and computation costs, but also makes it essential for handling streaming data and non-stationary environments. We analyzed the impact of Byzantine attacks on distributed online learning and developed strategies to minimize adversarial effects. Key findings include analytical insights into adversarial regret bounds for Byzantine-robust distributed gradient descent, sublinear stochastic regret bounds for Byzantine-robust online momentum-based learning under IID assumptions, and adaptive communication-censored decentralized kernel learning, enabling real-time machine learning from streaming data at low computational and communication costs.\r\n\n\nWe explored the trade-offs between communication efficiency and robustness, developing strategies that balance competing objectives. This resulted in optimized design metrics for communication efficiency, Byzantine resilience, user fairness, and data heterogeneity. Additionally, a primal-dual Byzantine-resilient decentralized resource allocation algorithm was developed, leveraging dual-domain defenses to mitigate adversarial influences.\t\t\t\t\tLast Modified: 02/25/2025\n\n\t\t\t\t\tSubmitted by: ZhiTian\n"
+ }
+}

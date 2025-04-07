@@ -1,0 +1,109 @@
+{
+ "awd_id": "1656958",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: III: Scalable and Interactive Dependency Visualization to Accelerate Parallel Program Analysis",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032924481",
+ "po_email": "hmunoz@nsf.gov",
+ "po_sign_block_name": "Hector Munoz-Avila",
+ "awd_eff_date": "2017-07-01",
+ "awd_exp_date": "2021-05-31",
+ "tot_intn_awd_amt": 174518.0,
+ "awd_amount": 174518.0,
+ "awd_min_amd_letter_date": "2017-02-23",
+ "awd_max_amd_letter_date": "2017-02-23",
+ "awd_abstract_narration": "Computer simulations allow scientists and engineers to explore and analyze processes that would be infeasible to observe experimentally such as the physics leading to fusion, possible future climate scenarios, and the aerodynamics of new vehicle designs. Computing larger, more accurate, and more realistic simulations requires large clusters of computing devices working in parallel. Using these parallel computing resources efficiently is difficult. By analyzing the behavior of the simulation programs, scientists and programmers can achieve significant efficiency improvements enabling better simulations and more useful results. This program analysis often involves visualizing the graph of dependencies between different parts of the program and different parallel computing resources. However, there may be hundreds of thousands of parallel devices and thousands of computer instructions involved. Current visualizations are difficult to interpret at this size. This project develops visualization approaches that overcome this limitation, giving programmers the support to analyze and optimize large-scale simulations and ultimately accomplish more science. At the same time, this project furthers the understanding of how to design scalable visualizations which may then be applied to other large and complex data.\r\n \r\nThe objective of this research is the creation of visual encodings and interaction techniques supporting the exploration and analysis of computing dependencies at scale. This project will study how visual design factors affect the interpretability of visual depictions as well as how parallel computing experts interact with the data during exploration. As dependency graphs are generated programmatically, they often exhibit a high degree of regularity. This project will test the efficacy of different depictions of this regularity through controlled user studies. In determining the interactivity needs of program analysts, this project will conduct a design study resulting in an interactive visual approach for exploring program control and data flow. The expected results of this project are a set of validated design guidelines for representing and interacting with program dependency data and an interactive visual tool for analyzing program dependency graphs. All products resulting from this project will be linked from the project website (http://hdc-arizona.github.io/projects/dependencies).",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Katherine",
+   "pi_last_name": "Isaacs",
+   "pi_mid_init": "E",
+   "pi_sufx_name": "",
+   "pi_full_name": "Katherine E Isaacs",
+   "pi_email_addr": "kisaacs@acm.org",
+   "nsf_id": "000728913",
+   "pi_start_date": "2017-02-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Arizona",
+  "inst_street_address": "845 N PARK AVE RM 538",
+  "inst_street_address_2": "",
+  "inst_city_name": "TUCSON",
+  "inst_state_code": "AZ",
+  "inst_state_name": "Arizona",
+  "inst_phone_num": "5206266000",
+  "inst_zip_code": "85721",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "AZ07",
+  "org_lgl_bus_name": "UNIVERSITY OF ARIZONA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "ED44Y3W6P7B9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Arizona",
+  "perf_str_addr": "888 N Euclid Ave",
+  "perf_city_name": "Tucson",
+  "perf_st_code": "AZ",
+  "perf_st_name": "Arizona",
+  "perf_zip_code": "857194824",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "AZ07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 174518.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>To optimize and scale computation to meet demands across a variety of use cases, including scientific simulations and data analysis, computer scientists need to understand dependencies within that computation. To do so, they may employ visual methods of representing those dependencies. The focus of this project was on improving visualization of these dependencies so computer scientists can more effectively interpret them.</p>\n<p>&nbsp;</p>\n<p>A common source of dependencies in computing is a control flow graph (CFG). It is used to translate and optimize human-written programs for a computer. The outcomes of this project include a new approach to drawing CFGs as well as analysis and guidelines for supporting the visualization needs of computer scientists who examine them. We have publicly released software and documentation describing these outcomes. This software has been used by computer scientists in multiple research teams to study CFGs for their projects. Additionally, the drawing approach developed in this work has been adopted and refined in research beyond this project.</p>\n<p>&nbsp;</p>\n<p>Another source of dependencies is communication between different computational resources in a parallel system. This communication can be a source of inefficiency. The outcomes of this project include a new approach to drawing patterns of communication, designed for large-scale parallelism and the design and implementation of a visualization system for displaying the data from these large-scale situations. The new drawing approach led to increased accuracy in recognizing dependency patterns where evaluated in a study with participants familiar with computing. Software for the visualization system is available publicly and has been used by computer scientists to study the efficiency of large-scale computing paradigms.&nbsp;</p>\n<p>&nbsp;</p>\n<p>This project has also supported and broadening participation endeavors. Five students, one an undergraduate, were mentored in research through this project and supported in their studies. Findings and outcomes of this work were integrated into a new undergraduate course in human-computer interaction and an existing course in data visualization.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/09/2021<br>\n\t\t\t\t\tModified by: Katherine&nbsp;E&nbsp;Isaacs</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2021/1656958/1656958_10474290_1628539714058_cfgexplorer-with-text--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/1656958/1656958_10474290_1628539714058_cfgexplorer-with-text--rgov-800width.jpg\" title=\"Control Flow Graph (CFG) laid out and rendered by CFGExplorer. It displays the CFG of the mini-flux benchmark from Catherine Olschanowsky. The orange color indicates a series of six-deep nested loops.\"><img src=\"/por/images/Reports/POR/2021/1656958/1656958_10474290_1628539714058_cfgexplorer-with-text--rgov-66x44.jpg\" alt=\"Control Flow Graph (CFG) laid out and rendered by CFGExplorer. It displays the CFG of the mini-flux benchmark from Catherine Olschanowsky. The orange color indicates a series of six-deep nested loops.\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Control Flow Graph (CFG) laid out and rendered by CFGExplorer. It displays the CFG of the mini-flux benchmark from Catherine Olschanowsky. Each box is a basic block containing instructions. The orange colors indicates the extents of a loop, with darker colors showing nesting.</div>\n<div class=\"imageCredit\">Sabin Devkota</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Katherine&nbsp;E&nbsp;Isaacs</div>\n<div class=\"imageTitle\">Control Flow Graph (CFG) laid out and rendered by CFGExplorer. It displays the CFG of the mini-flux benchmark from Catherine Olschanowsky. The orange color indicates a series of six-deep nested loops.</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2021/1656958/1656958_10474290_1628539334376_traveler--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/1656958/1656958_10474290_1628539334376_traveler--rgov-800width.jpg\" title=\"Traveler performance visualization framework, showing five views of a parallel application trace. The first column shows a Gantt chart, utilization overview, and histogram of primitive durations. The second column shows source code and an expression tree.\"><img src=\"/por/images/Reports/POR/2021/1656958/1656958_10474290_1628539334376_traveler--rgov-66x44.jpg\" alt=\"Traveler performance visualization framework, showing five views of a parallel application trace. The first column shows a Gantt chart, utilization overview, and histogram of primitive durations. The second column shows source code and an expression tree.\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Traveler performance visualization framework, showing five views of a trace from an asynchronous multi-tasking (parallel) application. The first column shows a Gantt chart, utilization overview, and histogram of primitive durations. The second column shows source code and an expression tree</div>\n<div class=\"imageCredit\">Sayef Sakin, Alex Bigelow, & Katy Williams</div>\n<div class=\"imagePermisssions\">Creative Commons</div>\n<div class=\"imageSubmitted\">Katherine&nbsp;E&nbsp;Isaacs</div>\n<div class=\"imageTitle\">Traveler performance visualization framework, showing five views of a parallel application trace. The first column shows a Gantt chart, utilization overview, and histogram of primitive durations. The second column shows source code and an expression tree.</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2021/1656958/1656958_10474290_1628539024558_gantt_designs--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/1656958/1656958_10474290_1628539024558_gantt_designs--rgov-800width.jpg\" title=\"Scale-agnostic designs for communication patterns in Gantt charts. This shows the general design for three communication patterns with variants for offsets and groupings among patterns.\"><img src=\"/por/images/Reports/POR/2021/1656958/1656958_10474290_1628539024558_gantt_designs--rgov-66x44.jpg\" alt=\"Scale-agnostic designs for communication patterns in Gantt charts. This shows the general design for three communication patterns with variants for offsets and groupings among patterns.\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Scale-agnostic designs for communication patterns in Gantt charts. This shows the general design for three communication patterns with variants for offsets and groupings among patterns.</div>\n<div class=\"imageCredit\">Connor Scully-Allison</div>\n<div class=\"imagePermisssions\">Creative Commons</div>\n<div class=\"imageSubmitted\">Katherine&nbsp;E&nbsp;Isaacs</div>\n<div class=\"imageTitle\">Scale-agnostic designs for communication patterns in Gantt charts. This shows the general design for three communication patterns with variants for offsets and groupings among patterns.</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2021/1656958/1656958_10474290_1628539944606_CFGExplorer-both-views--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/1656958/1656958_10474290_1628539944606_CFGExplorer-both-views--rgov-800width.jpg\" title=\"Screenshot from CFGExplorer showing both the CFG view and the instruction trace view. Basic blocks in the CFG are shaded in blue where they match the corresponding blocks in the instruction trace.\"><img src=\"/por/images/Reports/POR/2021/1656958/1656958_10474290_1628539944606_CFGExplorer-both-views--rgov-66x44.jpg\" alt=\"Screenshot from CFGExplorer showing both the CFG view and the instruction trace view. Basic blocks in the CFG are shaded in blue where they match the corresponding blocks in the instruction trace.\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Screenshot from CFGExplorer showing both the CFG view and the instruction trace view. Basic blocks in the CFG are shaded in blue where they match the corresponding blocks in the instruction trace. Scrolling in the trace will update the CFG view highlighting and centering.</div>\n<div class=\"imageCredit\">Sabin Devkota</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Katherine&nbsp;E&nbsp;Isaacs</div>\n<div class=\"imageTitle\">Screenshot from CFGExplorer showing both the CFG view and the instruction trace view. Basic blocks in the CFG are shaded in blue where they match the corresponding blocks in the instruction trace.</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nTo optimize and scale computation to meet demands across a variety of use cases, including scientific simulations and data analysis, computer scientists need to understand dependencies within that computation. To do so, they may employ visual methods of representing those dependencies. The focus of this project was on improving visualization of these dependencies so computer scientists can more effectively interpret them.\n\n \n\nA common source of dependencies in computing is a control flow graph (CFG). It is used to translate and optimize human-written programs for a computer. The outcomes of this project include a new approach to drawing CFGs as well as analysis and guidelines for supporting the visualization needs of computer scientists who examine them. We have publicly released software and documentation describing these outcomes. This software has been used by computer scientists in multiple research teams to study CFGs for their projects. Additionally, the drawing approach developed in this work has been adopted and refined in research beyond this project.\n\n \n\nAnother source of dependencies is communication between different computational resources in a parallel system. This communication can be a source of inefficiency. The outcomes of this project include a new approach to drawing patterns of communication, designed for large-scale parallelism and the design and implementation of a visualization system for displaying the data from these large-scale situations. The new drawing approach led to increased accuracy in recognizing dependency patterns where evaluated in a study with participants familiar with computing. Software for the visualization system is available publicly and has been used by computer scientists to study the efficiency of large-scale computing paradigms. \n\n \n\nThis project has also supported and broadening participation endeavors. Five students, one an undergraduate, were mentored in research through this project and supported in their studies. Findings and outcomes of this work were integrated into a new undergraduate course in human-computer interaction and an existing course in data visualization. \n\n \n\n\t\t\t\t\tLast Modified: 08/09/2021\n\n\t\t\t\t\tSubmitted by: Katherine E Isaacs"
+ }
+}

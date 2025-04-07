@@ -1,0 +1,101 @@
+{
+ "awd_id": "1662442",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Theoretical and Algorithmic Advances in Sequential Adaptive Decisions",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": "7032922443",
+ "po_email": "gaklutke@nsf.gov",
+ "po_sign_block_name": "Georgia-Ann Klutke",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2021-12-31",
+ "tot_intn_awd_amt": 350000.0,
+ "awd_amount": 350000.0,
+ "awd_min_amd_letter_date": "2017-06-27",
+ "awd_max_amd_letter_date": "2017-06-27",
+ "awd_abstract_narration": "A wide range of modern operational decisions can be modeled as data driven optimization problems where a controller must act without full knowledge of certain parameters of a model. The basic situation involves a controller who must repeatedly choose an action, resulting in an outcome, from an existing set of potentially different courses of actions. For instance, in adaptive clinical trials, subjects must be sequentially assigned to a treatment or control group, with the outcome being the health of the subject. In this problem context, the controller would like to efficiently manage between \"discovery\" (exploration) and \"refinement\" (exploitation) based on the revealed sequence of outcomes. Such a strategy has the potential to gather information more efficiently and may lead to improved decision making. This award will support fundamental research that relaxes many of the restrictions of existing models. The results of this project have applications in many different areas, including data driven operations management, online learning and optimization, health care, and adaptive routing. The award will support the participation of talented graduate students in this research, and the PIs will create level course modules to integrate these results in courses on stochastic processes.\u00a0\r\n\r\nTraditional assumptions for this framework include independent and identically distributed samples from independent populations, learning the outcome of a trial only upon activation, and unlimited computational resources. The primary goal of this project is to extend the frontiers of knowledge in the following directions: 1) consideration of models constrained by some known relation or property, so that data from one course of actions is potentially informative about any or all other courses of action; 2) investigation of models where the optimization is with respect to more general objectives such as the median, the quantile, or the variability; 3) extension of the underlying theory to models where at each stage a \"context\" is made known that modifies the value of the reward in a predetermined fashion; and 4) consideration of models where the distribution of rewards for each course of action may change over time. The research is expected to lead to new theoretical results, efficient algorithms, and analytical tools for collecting and utilizing data in optimal or near optimal ways.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Sheldon",
+   "pi_last_name": "Ross",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sheldon M Ross",
+   "pi_email_addr": "smross@usc.edu",
+   "nsf_id": "000157418",
+   "pi_start_date": "2017-06-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Southern California",
+  "inst_street_address": "3720 S FLOWER ST FL 3",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOS ANGELES",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "2137407762",
+  "inst_zip_code": "90033",
+  "inst_country_name": "United States",
+  "cong_dist_code": "34",
+  "st_cong_dist_code": "CA34",
+  "org_lgl_bus_name": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "G88KLJR3KYT5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Southern California",
+  "perf_str_addr": "3720 S. Flower St.",
+  "perf_city_name": "Los Angeles",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "900890001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "37",
+  "perf_st_cong_dist": "CA37",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "006Y00",
+   "pgm_ele_name": "OE Operations Engineering"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "073E",
+   "pgm_ref_txt": "OPTIMIZATION & DECISION MAKING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 350000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"p1\">This project is concerned with determining optimal procedures<span>&nbsp; </span>for finding a good item. For instance, we may want to test a series of different vaccines to find one&nbsp; whose efficacy is at least some specified value. We have to decide when the data enables us to accept a vaccine,&nbsp;&nbsp;as well as<span>&nbsp; </span>when to&nbsp; move on to a new one.<span>&nbsp; We</span>&nbsp;determined&nbsp; procedures that find an acceptable<span>&nbsp; </span>vaccine in a relatively short amount of testing time.<span>&nbsp;</span></p>\n<p class=\"p2\">&nbsp;</p>\n<p class=\"p1\">In a variety of situations, rather than testing an item by itself we learn by making comparisons between pairs of items to see which one is preferred. For instance, a patient may simultaneously<span>&nbsp; </span>be given 2 treatments and it is determined which works better for them.<span>&nbsp; </span>Assuming that each treatment has an unknown<span>&nbsp; </span>value and that when treatments<span>&nbsp; </span>with values v and w are compared, the one with value v will be preferred with probability v/(v+w), we were able to <span>&nbsp; </span>determine policies under which<span>&nbsp; </span>the treatment having largest value was frequently<span>&nbsp; </span>used.</p>\n<p class=\"p2\">&nbsp;</p>\n<p class=\"p1\">We have considered the problem of using pairwise comparisons to decide which item has the largest value. Here we are only allowed to stop making comparisons when we can say with<span>&nbsp; </span>a certain guaranteed confidence&nbsp; that a specified item has the largest value. We present a procedure that starts by randomly pairing up&nbsp; the items and then continually comparing each pair until one of the items has been preferred a given number of times more than the other. Those items then move to the next round, where a similar procedure is performed. We show that the winner of the final round meets the selection criterion.<span>&nbsp;</span></p>\n<p class=\"p2\">&nbsp;</p>\n<p class=\"p1\"><span>&nbsp;</span>We have also considered situations where the procedure for deciding which of the items has largest value<span>&nbsp; </span>is specified and the objective is to determine the probabilities that each item will be chosen as the one with largest value. For instance, the format may be that each pair of items is compared the same number of times, and the item with the largest number of times being preferred (e.g., wins) is chosen as best. We have analyzed this model and, among other things, showed<span>&nbsp; &nbsp; </span>(a) the<span>&nbsp; </span>intuitive result that the probability that a given item has the largest number of wins&nbsp; is increasing in the number of wins of that item; and (b) the counterintuitive result that the probability that a given item has the largest number of wins would not necessarily become larger if&nbsp; the others had lower values.<span>&nbsp;</span></p>\n<p class=\"p2\">&nbsp;</p>\n<p class=\"p1\"><span>&nbsp;</span>We have also considered other type problems. Motivated by the Covid pandemic, we considered ways of using pooled testing to determine which members of a population are positive when the number of test kits are limited. In particular we analyzed the halving scheme, where the population is divided<span>&nbsp; </span>into separate groups and each<span>&nbsp; </span>group is tested as a single entity, with the test indicating whether at least one member of the group is positive. If the pooled group comes back positive, that group is&nbsp; randomly split in two, and each subgroup is then tested as a single entity, and so on.<span>&nbsp; </span>We showed how to determine the average number of tests needed to classify all members of the population, and also the optimal group size.</p>\n<p class=\"p2\"><span>&nbsp;</span></p>\n<p class=\"p1\"><span>&nbsp;</span>We also considered a model for distributing&nbsp; organs to a set of patients requiring&nbsp; transplants. We focused on fair rules which are<span>&nbsp; </span>ones that do not take the patent's identity into account when deciding on who receives a newly arrived organ, but only consider whether a patient can make use of that particular organ (e.g., is eligible for it). For instance, one such rule would be to<span>&nbsp; </span>give an organ to a randomly chosen eligible patient;<span>&nbsp; </span>another is to initially randomly permute the patients and then give a new organ to the eligible patient that is highest up in the permutation.<span>&nbsp;</span>We were able to show that&nbsp; a smaller average time until all patients have received&nbsp; organs is obtained when the latter rule is in use. We also showed that if one is able to take into consideration information about previously arrived organs then the best policy is the one that gives a new organ to the eligible patient who has been eligible the fewest number of times in the past.&nbsp;</p>\n<p class=\"p2\"><span>&nbsp;</span></p>\n<p class=\"p1\"><span>&nbsp;</span>We have also studied&nbsp; a social network model where it is supposed that each member of a population has a value and that the probability that two individuals will be friends depends on their values. Among other things we considered are probabilities concerning the number of individuals that are without friends,<span>&nbsp; </span>as well as<span>&nbsp; </span>the strength of the friendship paradox that states that the number of friends of a randomly chosen person tends to be less than the number of friends of a randomly chosen friend of that person. <span>&nbsp; &nbsp; &nbsp;</span></p>\n<p class=\"p2\">&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/09/2022<br>\n\t\t\t\t\tModified by: Sheldon&nbsp;M&nbsp;Ross</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "This project is concerned with determining optimal procedures  for finding a good item. For instance, we may want to test a series of different vaccines to find one  whose efficacy is at least some specified value. We have to decide when the data enables us to accept a vaccine,  as well as  when to  move on to a new one.  We determined  procedures that find an acceptable  vaccine in a relatively short amount of testing time. \n \nIn a variety of situations, rather than testing an item by itself we learn by making comparisons between pairs of items to see which one is preferred. For instance, a patient may simultaneously  be given 2 treatments and it is determined which works better for them.  Assuming that each treatment has an unknown  value and that when treatments  with values v and w are compared, the one with value v will be preferred with probability v/(v+w), we were able to   determine policies under which  the treatment having largest value was frequently  used.\n \nWe have considered the problem of using pairwise comparisons to decide which item has the largest value. Here we are only allowed to stop making comparisons when we can say with  a certain guaranteed confidence  that a specified item has the largest value. We present a procedure that starts by randomly pairing up  the items and then continually comparing each pair until one of the items has been preferred a given number of times more than the other. Those items then move to the next round, where a similar procedure is performed. We show that the winner of the final round meets the selection criterion. \n \n We have also considered situations where the procedure for deciding which of the items has largest value  is specified and the objective is to determine the probabilities that each item will be chosen as the one with largest value. For instance, the format may be that each pair of items is compared the same number of times, and the item with the largest number of times being preferred (e.g., wins) is chosen as best. We have analyzed this model and, among other things, showed    (a) the  intuitive result that the probability that a given item has the largest number of wins  is increasing in the number of wins of that item; and (b) the counterintuitive result that the probability that a given item has the largest number of wins would not necessarily become larger if  the others had lower values. \n \n We have also considered other type problems. Motivated by the Covid pandemic, we considered ways of using pooled testing to determine which members of a population are positive when the number of test kits are limited. In particular we analyzed the halving scheme, where the population is divided  into separate groups and each  group is tested as a single entity, with the test indicating whether at least one member of the group is positive. If the pooled group comes back positive, that group is  randomly split in two, and each subgroup is then tested as a single entity, and so on.  We showed how to determine the average number of tests needed to classify all members of the population, and also the optimal group size.\n \n We also considered a model for distributing  organs to a set of patients requiring  transplants. We focused on fair rules which are  ones that do not take the patent's identity into account when deciding on who receives a newly arrived organ, but only consider whether a patient can make use of that particular organ (e.g., is eligible for it). For instance, one such rule would be to  give an organ to a randomly chosen eligible patient;  another is to initially randomly permute the patients and then give a new organ to the eligible patient that is highest up in the permutation. We were able to show that  a smaller average time until all patients have received  organs is obtained when the latter rule is in use. We also showed that if one is able to take into consideration information about previously arrived organs then the best policy is the one that gives a new organ to the eligible patient who has been eligible the fewest number of times in the past. \n \n We have also studied  a social network model where it is supposed that each member of a population has a value and that the probability that two individuals will be friends depends on their values. Among other things we considered are probabilities concerning the number of individuals that are without friends,  as well as  the strength of the friendship paradox that states that the number of friends of a randomly chosen person tends to be less than the number of friends of a randomly chosen friend of that person.      \n \n\n \n\n\t\t\t\t\tLast Modified: 03/09/2022\n\n\t\t\t\t\tSubmitted by: Sheldon M Ross"
+ }
+}

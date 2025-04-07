@@ -1,0 +1,105 @@
+{
+ "awd_id": "1649372",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: A New Framework for Mobile Network Monitoring, Learning and Control",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Alexander Sprintson",
+ "awd_eff_date": "2016-10-01",
+ "awd_exp_date": "2019-09-30",
+ "tot_intn_awd_amt": 299730.0,
+ "awd_amount": 299730.0,
+ "awd_min_amd_letter_date": "2016-08-15",
+ "awd_max_amd_letter_date": "2016-08-15",
+ "awd_abstract_narration": "Mobile devices generate an ever-increasing volume of traffic, are used for a range of applications from communication to financial transactions, and have access to personal information. Since mobile user behavior as well as third-party activities eventually manifest themselves through using the network, passive network monitoring offers a unique opportunity to detect both legitimate and malicious activity patterns on the mobile device. This project proposes AntMonitor - a new framework for real-time, on-device, passive network monitoring and crowd-sourcing. The goal is to understand, learn and control patterns in network activity, for applications related to privacy, security, performance, and behavioral analysis. The research agenda promotes transparency of mobile data, puts the user in control of how her data are shared or monetized, and can inform policy makers. Given today's size and personal nature of mobile data, changing the practices of how mobile devices handle and share our information can have significant societal impact, primarily in terms of privacy and security and secondarily in terms of the economics of personal data. In addition, the project will train students and minorities, and will provide software tools and data sets to the research community.\r\n \r\nThis project will build and deploy AntMonitor - a system for collection and analysis of fine-grained, large-scale, passive network measurements from mobile devices. Design challenges that will be addressed include high performance in terms of network throughput and battery consumption, and modular design so as to support different applications including (i) privacy leaks detection and prevention (ii) learning of user and app behavior and anomaly detection and (iii) network performance monitoring. Each of these application domains requires its own module in the AntMonitor framework and faces its own challenges in terms of system design, algorithms and data analysis. Overall, the project will advance the state-of-the-art in mobile network monitoring and will improve our understanding of patterns in mobile network activity. It will produce novel algorithms and data analysis methods that enhance the performance, security and privacy of mobile devices. A unique challenge lies in crowd-sourcing and deploying AntMonitor with real users in the wild. To this end, the project will explore different ways to popularize the technology, including user-facing apps, libraries, open-source software, and data-sets available to the community.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Athina",
+   "pi_last_name": "Markopoulou",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Athina Markopoulou",
+   "pi_email_addr": "athina@uci.edu",
+   "nsf_id": "000488344",
+   "pi_start_date": "2016-08-15",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Irvine",
+  "inst_street_address": "160 ALDRICH HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "IRVINE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9498247295",
+  "inst_zip_code": "926970001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "47",
+  "st_cong_dist_code": "CA47",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA IRVINE",
+  "org_prnt_uei_num": "MJC5FCYQTPE6",
+  "org_uei_num": "MJC5FCYQTPE6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Irvine",
+  "perf_str_addr": "CalIT2 Bldg",
+  "perf_city_name": "Irvine",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "926970001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "47",
+  "perf_st_cong_dist": "CA47",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 299730.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"p1\">INTELLECTUAL MERIT. Mobile devices carry sensitive information that is routinely transmitted over the network and is often collected for analytics and targeted advertising purposes. Users are typically unaware of this data collection and have little control over their information. In this&nbsp; project, we develop mobile software and machine learning techniques that provide users with more transparency and control over their mobile data.</p>\n<p class=\"p1\">We follow a network traffic-based approach: we develop AntMonitor: a user space app and SDK that can inspect, analyze and block, in real-time, all network traffic coming in and out of the mobile device. We then develop three distinct applications on top of AntMonitor. First, we develop AntShield, to detect and block outgoing traffic that contains personally identifiable information. Second, we develop NoMoAds: the first mobile-specific, cross-app, machine learning-based ad-blocker, and we show that it outperforms state-of-the-art filter lists. Third, we build AutoLabel: a system for automatically labeling which packets are generated by third-party advertisement or analytics libraries. This eliminates the need for manual labeling, which was the major bottleneck in creating filter lists and classifiers, and enables the detection of trackers (<a href=\"https://petsymposium.org/2020/files/papers/issue2/popets-2020-0017.pdf\">NoMoATS</a> in PETS 2018) in addition to ads (<a href=\"https://www.petsymposium.org/2018/files/papers/issue4/popets-2018-0035.pdf\">NoMoAds</a> in PETS 2020).</p>\n<p class=\"p1\">BROADER IMPACT: All the software and datasets from this project are made publicly available at:&nbsp;<a href=\"https://athinagroup.eng.uci.edu/projects/antmonitor/\">https://athinagroup.eng.uci.edu/projects/antmonitor/</a>. The project trained several graduate students, and led to interactions with non-profits and developer communities. The NoMoAds paper was the recipient of the&nbsp;<a href=\"https://petsymposium.org/student-paper-award.php\">Andreas Pfitzmann Best Student Paper Award&nbsp;</a><span>2018.</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/05/2020<br>\n\t\t\t\t\tModified by: Athina&nbsp;Markopoulou</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588655962584_overview--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588655962584_overview--rgov-800width.jpg\" title=\"Project Overview\"><img src=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588655962584_overview--rgov-66x44.jpg\" alt=\"Project Overview\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">First, we developed AntMonitor: a system for intercepting and analyzing traffic on a mobile device. Then, we trained classifiers to detect and block outgoing packets that contain: (1) exposure of personally identifiable information, (2) ad requests, or (3) third-party trackers.</div>\n<div class=\"imageCredit\">Anastasis Shuba</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Athina&nbsp;Markopoulou</div>\n<div class=\"imageTitle\">Project Overview</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588656120805_menu--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588656120805_menu--rgov-800width.jpg\" title=\"Main Menu\"><img src=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588656120805_menu--rgov-66x44.jpg\" alt=\"Main Menu\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Screenshot of the AntMonitor App.</div>\n<div class=\"imageCredit\">Anastasia Shuba</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Athina&nbsp;Markopoulou</div>\n<div class=\"imageTitle\">Main Menu</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588656275987_visualization--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588656275987_visualization--rgov-800width.jpg\" title=\"Real-Time Visualization\"><img src=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588656275987_visualization--rgov-66x44.jpg\" alt=\"Real-Time Visualization\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Screenshot of the AntMonitor app: real-time visualization of  TCP connections between apps running on the mobile device and remote servers.</div>\n<div class=\"imageCredit\">Anastasia Shuba</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Athina&nbsp;Markopoulou</div>\n<div class=\"imageTitle\">Real-Time Visualization</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588656765345_NoMoAds-system-png--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588656765345_NoMoAds-system-png--rgov-800width.jpg\" title=\"The NoMoAds System\"><img src=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588656765345_NoMoAds-system-png--rgov-66x44.jpg\" alt=\"The NoMoAds System\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">A. Shuba, A. Markopoulou, and Z. Shafiq, \"NoMoAds: Effective and Efficient Cross-App Mobile Ad-Blocking\", PETS/PoPETS 2018.  Recipient of the Andreas Pfitzmann Best Student Paper Award 2018.</div>\n<div class=\"imageCredit\">Anastasia Shuba</div>\n<div class=\"imageSubmitted\">Athina&nbsp;Markopoulou</div>\n<div class=\"imageTitle\">The NoMoAds System</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588657133573_treeURLheadersPII--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588657133573_treeURLheadersPII--rgov-800width.jpg\" title=\"Example NoMoAds Classifier\"><img src=\"/por/images/Reports/POR/2020/1649372/1649372_10450767_1588657133573_treeURLheadersPII--rgov-66x44.jpg\" alt=\"Example NoMoAds Classifier\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Example of a NoMoAds classifier: it predicts whether an outgoing packet contains an advertisement request, using features extracted from the URL, HTTP headers and other packet fields.</div>\n<div class=\"imageCredit\">Anastasia Shuba</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Athina&nbsp;Markopoulou</div>\n<div class=\"imageTitle\">Example NoMoAds Classifier</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "INTELLECTUAL MERIT. Mobile devices carry sensitive information that is routinely transmitted over the network and is often collected for analytics and targeted advertising purposes. Users are typically unaware of this data collection and have little control over their information. In this  project, we develop mobile software and machine learning techniques that provide users with more transparency and control over their mobile data.\nWe follow a network traffic-based approach: we develop AntMonitor: a user space app and SDK that can inspect, analyze and block, in real-time, all network traffic coming in and out of the mobile device. We then develop three distinct applications on top of AntMonitor. First, we develop AntShield, to detect and block outgoing traffic that contains personally identifiable information. Second, we develop NoMoAds: the first mobile-specific, cross-app, machine learning-based ad-blocker, and we show that it outperforms state-of-the-art filter lists. Third, we build AutoLabel: a system for automatically labeling which packets are generated by third-party advertisement or analytics libraries. This eliminates the need for manual labeling, which was the major bottleneck in creating filter lists and classifiers, and enables the detection of trackers (NoMoATS in PETS 2018) in addition to ads (NoMoAds in PETS 2020).\nBROADER IMPACT: All the software and datasets from this project are made publicly available at: https://athinagroup.eng.uci.edu/projects/antmonitor/. The project trained several graduate students, and led to interactions with non-profits and developer communities. The NoMoAds paper was the recipient of the Andreas Pfitzmann Best Student Paper Award 2018.\n\n \n\n\t\t\t\t\tLast Modified: 05/05/2020\n\n\t\t\t\t\tSubmitted by: Athina Markopoulou"
+ }
+}

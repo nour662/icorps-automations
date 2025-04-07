@@ -1,0 +1,125 @@
+{
+ "awd_id": "1657596",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: RI: Enabling Manipulation of Object Collections via Self-Supervised Robot Learning",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "David Miller",
+ "awd_eff_date": "2017-03-01",
+ "awd_exp_date": "2019-02-28",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 183000.0,
+ "awd_min_amd_letter_date": "2017-02-23",
+ "awd_max_amd_letter_date": "2018-06-27",
+ "awd_abstract_narration": "While manipulation of individual objects in cluttered, real-world settings has received substantial attention, the problem of directly manipulating collections of objects has been left unexplored. This project investigates to what extent robots can autonomously manipulate such object collections. This project facilitates autonomous manipulation methods suitable for use in home robotic assistants. Such assistive robots stand to make a substantial impact in increasing the quality of life of older adults and persons with certain degenerative diseases. Additionally, the robot skills investigated in this project are suitable for manipulation in areas damaged in natural or man-made disasters, where building rubble and other debris need to be cleared. The project supports the development and presentation of an interactive robotics lecture for low-income school children, teaching them fundamentals of computer programming.\r\n\r\n\r\nThe research goal of this project is to enable robots to manipulate and reason about groups of objects en masse. The hypothesis of this project is that treating object collections as single entities enables data-efficient, self-supervised learning of contact locations for pushing and grasping grouped objects. This project investigates a novel neural network architecture for self-supervised manipulation learning. The convolutional neural network model takes as input sensory data and a robot hand configuration. The network learns to predict as output a manipulation quality score for the given inputs. When presented with a novel scene, the robot can perform manipulation inference by evaluating the current sensory data, while directly optimizing the manipulation score predicted by the network over different hand configurations. The project supports the development of experimental protocols and the collection of associated data for dissemination to stimulate research activity in manipulation of object collections.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Tucker",
+   "pi_last_name": "Hermans",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Tucker Hermans",
+   "pi_email_addr": "thermans@cs.utah.edu",
+   "nsf_id": "000701391",
+   "pi_start_date": "2017-02-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Utah",
+  "inst_street_address": "201 PRESIDENTS CIR",
+  "inst_street_address_2": "",
+  "inst_city_name": "SALT LAKE CITY",
+  "inst_state_code": "UT",
+  "inst_state_name": "Utah",
+  "inst_phone_num": "8015816903",
+  "inst_zip_code": "841129049",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "UT01",
+  "org_lgl_bus_name": "UNIVERSITY OF UTAH",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LL8GLEVH6MG3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Utah",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "UT",
+  "perf_st_name": "Utah",
+  "perf_zip_code": "841128930",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "UT01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  },
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 175000.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 8000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p dir=\"ltr\">This project developed a novel approach to robot grasp planning; the problem of a robot selecting the correct hand shape and location to hold and lift an object without dropping it. In particular this project examined the problem of a robot lifting an object about which the robot has no previous knowledge or experience. In order to achieve this we focused on taking a data-driven approach, where the robot autonomously attempts grasps on various objects and uses its own sensors to measure if the object was successfully lifted and held. The robot then uses this data to learn a function that takes a camera image of an object and the associated hand shape and pose as input and predicts if the grasp will be successful. We learn a neural network as the function enabling the robot to generalize its predictions to different images of objects either previously seen or unseen, and different grasp configurations.</p>\n<p>&nbsp;</p>\n<p dir=\"ltr\">We show how the robot can then use this learned function to plan grasps for new objects. We encode this planning problem as a continuous optimization, where the learned function acts as the cost to be maximized and additional constraints can be added to ensure the planner respects the position limits imposed by the robot's joints. We demonstrated that this approach outperforms alternative grasp planning formulations commonly used in learning. Our results further show that by learning separate functions for grasps of qualitatively different types, fingertip grasps versus wrap grasps, the robot can further improve performance in terms of successful grasp execution on previously unseen objects.</p>\n<p>&nbsp;</p>\n<p dir=\"ltr\">This project additionally examined robot in-hand manipulation, the problem of repositioning an already grasped object relative to the robot's palm, without first placing the object down. Our approach defines a novel optimization problem enabling the robot to plan in-hand manipulation sequences using only knowledge of an object's shape, not requiring mass, friction, or inertia knowledge required by previously proposed approaches.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 04/01/2019<br>\n\t\t\t\t\tModified by: Tucker&nbsp;Hermans</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "This project developed a novel approach to robot grasp planning; the problem of a robot selecting the correct hand shape and location to hold and lift an object without dropping it. In particular this project examined the problem of a robot lifting an object about which the robot has no previous knowledge or experience. In order to achieve this we focused on taking a data-driven approach, where the robot autonomously attempts grasps on various objects and uses its own sensors to measure if the object was successfully lifted and held. The robot then uses this data to learn a function that takes a camera image of an object and the associated hand shape and pose as input and predicts if the grasp will be successful. We learn a neural network as the function enabling the robot to generalize its predictions to different images of objects either previously seen or unseen, and different grasp configurations.\n\n \nWe show how the robot can then use this learned function to plan grasps for new objects. We encode this planning problem as a continuous optimization, where the learned function acts as the cost to be maximized and additional constraints can be added to ensure the planner respects the position limits imposed by the robot's joints. We demonstrated that this approach outperforms alternative grasp planning formulations commonly used in learning. Our results further show that by learning separate functions for grasps of qualitatively different types, fingertip grasps versus wrap grasps, the robot can further improve performance in terms of successful grasp execution on previously unseen objects.\n\n \nThis project additionally examined robot in-hand manipulation, the problem of repositioning an already grasped object relative to the robot's palm, without first placing the object down. Our approach defines a novel optimization problem enabling the robot to plan in-hand manipulation sequences using only knowledge of an object's shape, not requiring mass, friction, or inertia knowledge required by previously proposed approaches.\n\n \n\n\t\t\t\t\tLast Modified: 04/01/2019\n\n\t\t\t\t\tSubmitted by: Tucker Hermans"
+ }
+}

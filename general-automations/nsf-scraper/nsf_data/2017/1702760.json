@@ -1,0 +1,121 @@
+{
+ "awd_id": "1702760",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: CORE: Medium: Developing for Differential Privacy with Formal Methods and Counterexamples",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2017-07-01",
+ "awd_exp_date": "2023-06-30",
+ "tot_intn_awd_amt": 1200000.0,
+ "awd_amount": 1200000.0,
+ "awd_min_amd_letter_date": "2017-05-31",
+ "awd_max_amd_letter_date": "2017-05-31",
+ "awd_abstract_narration": "Differential privacy is an elegant formulation of conditions an algorithm must meet in order to avoid leaking personal information contained in its inputs. It is becoming mainstream in many research communities and has been deployed in practice in the private sector and some government agencies. Accompanying this growth is an unfortunate, but expected, difficulty: many algorithms that are claimed to be differentially private are incorrect. This phenomenon affects both new-comers and seasoned veterans of the differential privacy field because of the difficulty and subtlety of developing new differentially private algorithms.\r\n\r\nThis proposal outlines a research plan for the development of a system called DevDP, whose purpose is to enable novice and expert users to develop prototypes and explore differentially private algorithms. In particular, the project will develop program analysis tools and theory that leverage both programming language and machine learning technology to aid the development of correct differentially private programs by automating much of the verification and reasoning about errors. As part of broader impacts, DevDP also has the potential to help educate students and less-technical members of the scientific community by providing interactive software tools. A solid understanding of differential privacy will become crucial as it makes its way into public policy.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Daniel",
+   "pi_last_name": "Kifer",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Daniel Kifer",
+   "pi_email_addr": "duk17@psu.edu",
+   "nsf_id": "000519235",
+   "pi_start_date": "2017-05-31",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Danfeng",
+   "pi_last_name": "Zhang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Danfeng Zhang",
+   "pi_email_addr": "danfeng.zhang@duke.edu",
+   "nsf_id": "000702947",
+   "pi_start_date": "2017-05-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Pennsylvania State Univ University Park",
+  "inst_street_address": "201 OLD MAIN",
+  "inst_street_address_2": "",
+  "inst_city_name": "UNIVERSITY PARK",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "8148651372",
+  "inst_zip_code": "168021503",
+  "inst_country_name": "United States",
+  "cong_dist_code": "15",
+  "st_cong_dist_code": "PA15",
+  "org_lgl_bus_name": "THE PENNSYLVANIA STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NPM2J7MSCF61"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Pennsylvania State Univ University Park",
+  "perf_str_addr": "360F IST Building",
+  "perf_city_name": "State College",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "168021400",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "15",
+  "perf_st_cong_dist": "PA15",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 1200000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Data about individuals are routinely collected by organizations in the private and public sector. Most of our interactions with online services, such as email, browers, and even interactions with mobile phones are often saved in some form on remote servers. Such data are often needed to improve the quality of the services (better search recommendations, predictive keyboards, identifying malware sits). Administrative records and survey data are also collected by statistical government agencies in order to produce reports about population trends and the economy. These datasets are studied by statisticians, economists, and social scientists. They are also used by policymakers. A major example is data from the Decennial Census, which is used to draw political boundaries and allocate federal, state, and local funds.</p>\n<p>While there are clear benefits of collecting such information, there are also clear risks to individuals as the collected data are often personal and sensitive in nature. One way to protect individuals from disclosure risk while still allowing the collected datasets to have utility is to carefully inject noise to provide plausible deniability for the sensitive information about any individual. If this noise infusion is performed carefully, the disclosure risk is mitigated even against powerful adversaries who possess significant amounts of side information, computational ability, and ingenuity. If the noise infusion is performed incorrectly, privacy risks could remain substantial. Fortunately, Differential Privacy is a framework that guides the noise infusion process. Algorithms/Software that follow this framework will provide those strong protections on privacy and confidentiality.</p>\n<p>The focus of this grant was the question of \"what if those algorithms are implemented incorrectly and bugs are introduced\"? The intellectual merit of the funded activities lies in the creation of new proof techniques that:</p>\n<p>1) Simplify the manual effort needed to verify that an algorithm is correct.</p>\n<p>2) Allow automated software to check for bugs and to explain them to the developer.</p>\n<p>3) Allow auomated software to check that the differentiall privacy components in an algorithm have been implemented correctly and provide the correct privacy levels.</p>\n<p>4) In some cases, allow differentially private programs to be synthesized from programs that start out with no privacy protections at all.</p>\n<p>Along the way, our ability to carefully analyze the privacy properties of algorithms and code have allowed us to create new versions of existing differentially private algorithms that provide more information at the same privacy levels. This means that data scientists would be able to study the data better and policy makers would be able to make better decisions from data without increasing the risk to anyone's privacy.<br /><br />As part of the work on this project, we have produced teaching materials (slides, recordings, jupyter notebooks) that help teach and train specialists in the tricky subject of differential privacy (with the goal of making the learning curve less daunting). The frameworks we have developed have also been used to help test/debug and even design components of the disclosure avoidance system used to protect respondent confidentiality in the 2020 Decennial Census of Population and Housing. These are some of the main broader impacts of our work.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/03/2023<br>\n\t\t\t\t\tModified by: Daniel&nbsp;Kifer</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nData about individuals are routinely collected by organizations in the private and public sector. Most of our interactions with online services, such as email, browers, and even interactions with mobile phones are often saved in some form on remote servers. Such data are often needed to improve the quality of the services (better search recommendations, predictive keyboards, identifying malware sits). Administrative records and survey data are also collected by statistical government agencies in order to produce reports about population trends and the economy. These datasets are studied by statisticians, economists, and social scientists. They are also used by policymakers. A major example is data from the Decennial Census, which is used to draw political boundaries and allocate federal, state, and local funds.\n\nWhile there are clear benefits of collecting such information, there are also clear risks to individuals as the collected data are often personal and sensitive in nature. One way to protect individuals from disclosure risk while still allowing the collected datasets to have utility is to carefully inject noise to provide plausible deniability for the sensitive information about any individual. If this noise infusion is performed carefully, the disclosure risk is mitigated even against powerful adversaries who possess significant amounts of side information, computational ability, and ingenuity. If the noise infusion is performed incorrectly, privacy risks could remain substantial. Fortunately, Differential Privacy is a framework that guides the noise infusion process. Algorithms/Software that follow this framework will provide those strong protections on privacy and confidentiality.\n\nThe focus of this grant was the question of \"what if those algorithms are implemented incorrectly and bugs are introduced\"? The intellectual merit of the funded activities lies in the creation of new proof techniques that:\n\n1) Simplify the manual effort needed to verify that an algorithm is correct.\n\n2) Allow automated software to check for bugs and to explain them to the developer.\n\n3) Allow auomated software to check that the differentiall privacy components in an algorithm have been implemented correctly and provide the correct privacy levels.\n\n4) In some cases, allow differentially private programs to be synthesized from programs that start out with no privacy protections at all.\n\nAlong the way, our ability to carefully analyze the privacy properties of algorithms and code have allowed us to create new versions of existing differentially private algorithms that provide more information at the same privacy levels. This means that data scientists would be able to study the data better and policy makers would be able to make better decisions from data without increasing the risk to anyone's privacy.\n\nAs part of the work on this project, we have produced teaching materials (slides, recordings, jupyter notebooks) that help teach and train specialists in the tricky subject of differential privacy (with the goal of making the learning curve less daunting). The frameworks we have developed have also been used to help test/debug and even design components of the disclosure avoidance system used to protect respondent confidentiality in the 2020 Decennial Census of Population and Housing. These are some of the main broader impacts of our work.\n\n\t\t\t\t\tLast Modified: 08/03/2023\n\n\t\t\t\t\tSubmitted by: Daniel Kifer"
+ }
+}

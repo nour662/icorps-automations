@@ -1,0 +1,118 @@
+{
+ "awd_id": "1118047",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF:  Small: Improving single core performance via compiler-assisted out-of-order commit",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2011-07-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 298808.0,
+ "awd_amount": 350897.0,
+ "awd_min_amd_letter_date": "2011-06-27",
+ "awd_max_amd_letter_date": "2015-06-27",
+ "awd_abstract_narration": "The performance growth in uniprocessor (single core) performance resulting from improvements in semiconductor technology has recently slowed down significantly.  Sequential applications or sequential portions of parallel applications require further advances to improve their performance. Today's processors complete instructions in their program order, which is a major performance bottleneck because any long-latency instruction, such as access to memory, delays completion of all subsequent instructions. This project aims to achieve higher single core performance by defining a new, compiler assisted mechanism for out of order instruction completion. It investigates how the use of compile-time program knowledge can be passed to the hardware and be used to simplify the architectural checks required for such out of order completion. The architecture of a standard processor is fully preserved and legacy software can execute without modification.\r\nThe out-of-order instruction commit mechanism will use a novel compiler/architecture interface. The compiler provides information about instruction ``blocks'' and the processor uses the block information to decide which instructions can be committed out of order and when. Some blocks are guaranteed to be data independent blocks which allows instructions from different such blocks be committed simultaneously and out of order. Other blocks have data or control dependencies and require in-order execution and in-order commit. Micro-architectural support for the new commit mode is driven by the block information, which significantly simplifies the hardware. Exception handling is also simplified with compiler assistance. The new commit mechanism will effectively increase the size of the instruction window allowing more cache misses to be overlapped for both L1 and L2 caches. The project will also investigate additional compiler and architecture optimizations to further improve performance.\r\n",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Alexander",
+   "pi_last_name": "Veidenbaum",
+   "pi_mid_init": "V",
+   "pi_sufx_name": "",
+   "pi_full_name": "Alexander V Veidenbaum",
+   "pi_email_addr": "alexv@ics.uci.edu",
+   "nsf_id": "000181882",
+   "pi_start_date": "2011-06-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Irvine",
+  "inst_street_address": "160 ALDRICH HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "IRVINE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9498247295",
+  "inst_zip_code": "926970001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "47",
+  "st_cong_dist_code": "CA47",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA IRVINE",
+  "org_prnt_uei_num": "MJC5FCYQTPE6",
+  "org_uei_num": "MJC5FCYQTPE6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Irvine",
+  "perf_str_addr": "160 ALDRICH HALL",
+  "perf_city_name": "IRVINE",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "926970001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "47",
+  "perf_st_cong_dist": "CA47",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7329",
+   "pgm_ref_txt": "COMPILERS"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7943",
+   "pgm_ref_txt": "PROGRAMMING LANGUAGES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0115",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001516DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 298808.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2015,
+   "fund_oblg_amt": 52089.0
+  }
+ ],
+ "por": null
+}

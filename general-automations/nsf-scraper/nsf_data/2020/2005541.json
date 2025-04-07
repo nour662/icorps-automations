@@ -1,0 +1,96 @@
+{
+ "awd_id": "2005541",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Viscous Extension of the Classical Theory of Unsteady Aerodynamics",
+ "cfda_num": "47.041",
+ "org_code": "07020000",
+ "po_phone": "7032927030",
+ "po_email": "rjoslin@nsf.gov",
+ "po_sign_block_name": "Ron Joslin",
+ "awd_eff_date": "2020-05-15",
+ "awd_exp_date": "2024-04-30",
+ "tot_intn_awd_amt": 300000.0,
+ "awd_amount": 300000.0,
+ "awd_min_amd_letter_date": "2020-04-30",
+ "awd_max_amd_letter_date": "2020-04-30",
+ "awd_abstract_narration": "The current state-of-the-art of fluid dynamic models of the flow over wing sections are either computationally too expensive to be used in preliminary design phases or overly simplified, neglecting some essential physics. The objective of this proposal is to fill this gap by developing efficient aerodynamic models that capture the main physics of the flow dynamics. Relying on a unique combination of the fundamental knowledge of basic unsteady aerodynamics and the recent advances in data science (for example, machine learning techniques), this project will yield more realistic computations of the aerodynamic loads. The developed theory will be indispensable for preliminary design of next generation flying vehicles (flying taxis, micro-air-vehicles, and drones) and wind turbines, which will improve national security and economic prosperity. The project will include the development of a graduate course on unsteady aerodynamics based on this research, plans are underway to develop a textbook on the subject, and undergraduate students will be involved byway of aerodynamic-related senior projects.\r\n\r\nRealizing that the lift generation and vorticity production are essentially viscous processes, a viscous extension of the classical theory of unsteady aerodynamics is proposed. This extension will be achieved by coupling the potential theory with a special boundary layer theory that resolves the flow details in the vicinity of the trailing edge. This approach will provide the circulation dynamics without any need for an auxiliary condition (i.e., Kutta-like condition). Moreover, to generalize this approach, machine learning tools will be employed to extract information about the circulation dynamics from high-fidelity simulations. This modeling approach can be conceptually described by a bow tie architecture: a compressive mapping taking a high-dimensional input space (e.g., flow field from high-fidelity simulation) to a smaller, more compact lower-dimensional core model (e.g., one-dimensional circulation dynamics). Then, the potential flow theory, with the accurate circulation dynamics, will be used to recover a high-dimensional output space of the flow field.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CBET",
+ "org_div_long_name": "Division of Chemical, Bioengineering, Environmental, and Transport Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Haithem",
+   "pi_last_name": "Taha",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Haithem Taha",
+   "pi_email_addr": "hetaha@uci.edu",
+   "nsf_id": "000680369",
+   "pi_start_date": "2020-04-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Irvine",
+  "inst_street_address": "160 ALDRICH HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "IRVINE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9498247295",
+  "inst_zip_code": "926970001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "47",
+  "st_cong_dist_code": "CA47",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA IRVINE",
+  "org_prnt_uei_num": "MJC5FCYQTPE6",
+  "org_uei_num": "MJC5FCYQTPE6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California, Irvine",
+  "perf_str_addr": "4200 Engineering Gtwy",
+  "perf_city_name": "Irvine",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "926973975",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "47",
+  "perf_st_cong_dist": "CA47",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "144300",
+   "pgm_ele_name": "FD-Fluid Dynamics"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 300000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>All airplanes look the same, which indicates that a critical technology like aviation, which is very vital for our prosperity and national security, is saturated. Let me provide our perspective on the reasons behind this. To begin with, how can engineers typically advance a given technology or boost it to the next level?&nbsp;</p>\n<p>We simply need to try many designs, to get insights and lessons and also investigate exotic configurations for big leaps to the future. However, in aviation one single trial is exhorbitatnly expensive. So, we heavily rely on simulations. Here comes the main hurdle in our opinion. Every engineering field has governing equations (e.g., Maxwell equations in electromagnetism, Cauchy's equations of elasticity in solid mechanics, Einstein Field equations in general relativity). In fluid mechanics, they are the Navier-Stokes equations. So, ideally aeronautical engineers should unleash their imagination to come up with exotic dsesigns, and if it's not possible to build them, we at least should be able to simulate their behaviors by solving Navier-Stokes equations. However, the most powerful supercomputer on the planet cannot solve Navier-Stokes equations on an actual wing under realistic operating conditions. And it will not happen in the forseeable future. So, if we truly aspire to propose unconventional designs for the future of aviation, we are in a bad need for reduced-order models that are (i) efficient enough to be amenable for preliminary design optimization where thousands of design alternatives are being investigated, and (ii) rich enough to capture the main features of fluid flows. This project is one step in this direction with particular emphasis on the unsteady lift behavior.</p>\n<p>The early pioneers managed to obtain efficient models for th eunsteady lift behavior asusming an ideal fluid model (i.e., no viscosity), which is a fair assumption given the small viscosity of air. However, the resulting model was not satifactory in capturing the lift dynamics (e.g., how lift builds up on a wing from zero value to steady state conditions such as cruise). The actual lift tends to build up more slowly than the modelled lift. In engineering terms, we call it \"lag\".&nbsp;</p>\n<p>In this project, we managed to close this gap that remained open for century. For the first time, we developed an efficient model for the viscous unsteady lift dynamics, which provides an estimate for the viscosity-induced lag.</p>\n<p>This lag is critical since it directly impacts the timing of lift behavior during an oscillatory cylce. When an airplane wing experiences some turbulence, the wing oscillates and, hence, the corresponding lift oscillates, though with this additional lag. The timing between the wing (i.e., structure) oscillation and the lift oscillation may cause instability, called flutter. In this flutter phenomenon, the wing \"flutters\" up and down in a dangerous situation that typically leads to breakage of the wing. Since this flutter instability is sensitive to the timing between the wing and lift oscillations, our model that accurately captures the lag between their dynamics will be crucial for aeronautical engineers to predict flutter instability and, hence, avoid it. In particular, the fact the developed model is quite efficient and compact, it can be easily incorporated in design optimization, aeroelastic analysis, and/or flight mechanics and control design.&nbsp;</p>\n<p>A similar aspect may impact flight control design. Typically flight controllers are designed ignoring the lift dynamics; for simplicity, it is typically assumed that when an airplane control surface is deflected by the pilot, the lift force changes immediately. However, in reality, there is a non-trivial lag between the moment the pilot applies an input (e.g., steering or pitching) and the corresponding change in lift. This lag is typically ignored in preliminary design of flight controllers. On the other hand, it is known that when a control system experiences an unomelded dynamics (or lag), its robustness is jeopardized. In this project, we also studied the impact of the lag in the response of the viscous unsteady lift on robustness of flight controllers.&nbsp;</p><br>\n<p>\n Last Modified: 09/05/2024<br>\nModified by: Haithem&nbsp;Taha</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nAll airplanes look the same, which indicates that a critical technology like aviation, which is very vital for our prosperity and national security, is saturated. Let me provide our perspective on the reasons behind this. To begin with, how can engineers typically advance a given technology or boost it to the next level?\n\n\nWe simply need to try many designs, to get insights and lessons and also investigate exotic configurations for big leaps to the future. However, in aviation one single trial is exhorbitatnly expensive. So, we heavily rely on simulations. Here comes the main hurdle in our opinion. Every engineering field has governing equations (e.g., Maxwell equations in electromagnetism, Cauchy's equations of elasticity in solid mechanics, Einstein Field equations in general relativity). In fluid mechanics, they are the Navier-Stokes equations. So, ideally aeronautical engineers should unleash their imagination to come up with exotic dsesigns, and if it's not possible to build them, we at least should be able to simulate their behaviors by solving Navier-Stokes equations. However, the most powerful supercomputer on the planet cannot solve Navier-Stokes equations on an actual wing under realistic operating conditions. And it will not happen in the forseeable future. So, if we truly aspire to propose unconventional designs for the future of aviation, we are in a bad need for reduced-order models that are (i) efficient enough to be amenable for preliminary design optimization where thousands of design alternatives are being investigated, and (ii) rich enough to capture the main features of fluid flows. This project is one step in this direction with particular emphasis on the unsteady lift behavior.\n\n\nThe early pioneers managed to obtain efficient models for th eunsteady lift behavior asusming an ideal fluid model (i.e., no viscosity), which is a fair assumption given the small viscosity of air. However, the resulting model was not satifactory in capturing the lift dynamics (e.g., how lift builds up on a wing from zero value to steady state conditions such as cruise). The actual lift tends to build up more slowly than the modelled lift. In engineering terms, we call it \"lag\".\n\n\nIn this project, we managed to close this gap that remained open for century. For the first time, we developed an efficient model for the viscous unsteady lift dynamics, which provides an estimate for the viscosity-induced lag.\n\n\nThis lag is critical since it directly impacts the timing of lift behavior during an oscillatory cylce. When an airplane wing experiences some turbulence, the wing oscillates and, hence, the corresponding lift oscillates, though with this additional lag. The timing between the wing (i.e., structure) oscillation and the lift oscillation may cause instability, called flutter. In this flutter phenomenon, the wing \"flutters\" up and down in a dangerous situation that typically leads to breakage of the wing. Since this flutter instability is sensitive to the timing between the wing and lift oscillations, our model that accurately captures the lag between their dynamics will be crucial for aeronautical engineers to predict flutter instability and, hence, avoid it. In particular, the fact the developed model is quite efficient and compact, it can be easily incorporated in design optimization, aeroelastic analysis, and/or flight mechanics and control design.\n\n\nA similar aspect may impact flight control design. Typically flight controllers are designed ignoring the lift dynamics; for simplicity, it is typically assumed that when an airplane control surface is deflected by the pilot, the lift force changes immediately. However, in reality, there is a non-trivial lag between the moment the pilot applies an input (e.g., steering or pitching) and the corresponding change in lift. This lag is typically ignored in preliminary design of flight controllers. On the other hand, it is known that when a control system experiences an unomelded dynamics (or lag), its robustness is jeopardized. In this project, we also studied the impact of the lag in the response of the viscous unsteady lift on robustness of flight controllers.\t\t\t\t\tLast Modified: 09/05/2024\n\n\t\t\t\t\tSubmitted by: HaithemTaha\n"
+ }
+}

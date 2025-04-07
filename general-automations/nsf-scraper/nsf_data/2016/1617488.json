@@ -1,0 +1,117 @@
+{
+ "awd_id": "1617488",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Collaborative Research:   ALETHEIA: A Framework for Automatic Detection/Correction of Corruptions in Extreme Scale Scientific Executions",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927498",
+ "po_email": "achtchel@nsf.gov",
+ "po_sign_block_name": "Almadena Chtchelkanova",
+ "awd_eff_date": "2016-06-15",
+ "awd_exp_date": "2021-05-31",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2016-06-03",
+ "awd_max_amd_letter_date": "2016-06-03",
+ "awd_abstract_narration": "Trusting scientific applications requires guaranteeing the validity of computed results. Unfortunately, many examples of scientific computations have led to incorrect results, sometimes with catastrophic consequences. Currently known validation techniques cover only a fraction of the possible corruptions that numerical simulation and data analytics applications may suffer during execution. As science processes grow in size and complexity, the reliability and validity of their constituent steps is increasingly difficult to ascertain. Assessing validity in the presence of potential data corruptions is a serious and insufficiently recognized problem. Corruption may occur at all levels of computing, from the hardware to the application. An important aspect of these corruptions is that until they are discovered, all executions are at risk of being corrupted silently. In some documented cases, months have elapsed between the discovery of a corruption and notification to users. In the meantime, a potentially large number of executions may be corrupted, and incorrect conclusions may result. It may be difficult, after the fact, to check whether executions have actually been corrupted or not, so that even if corruptions do not lead to mistakes, they may lead to significant productivity losses. Virtually all simulations producing very large results need to reduce their data volume in some way before saving it --one technique is called lossy compression. \r\nThis project strives to validate the end result of the simulation coupled with lossy compression. This approach is useful for scientific simulations in such diverse areas as climate, cosmology, fluid dynamics, weather, and astrophysics --the drivers of this project. \r\nThis collaborative project applies the principle of an external algorithmic observer (EAO), where the product of a scientific application is compared with that of a surrogate function of much lower complexity. Corruptions are corrected using a variation of triple modular redundancy: if a corruption is detected, a second surrogate function is executed, and the correct value is chosen from the two results that are most in agreement. This new online detection/correction approach involves approximate comparison of the lossy compressed results of the scientific application and the surrogate function. The project explores the detection performance of surrogate functions, lossy compressors, and approximate comparison techniques. The project also explores how to select the surrogate, lossy compression, and approximate functions to optimize objectives and constraints set by the users. The evaluation considers a set of five applications spanning different computational methods, producing large datasets with I/O bottlenecks, and covering a variety of science problem domains relevant to the NSF. \r\nIn addition to serving the needs of scientists working in the fields listed above, this project will enhance the research experience of undergraduate students. A summer school focused on resilience is planned for summer 2016, and corruption detection/correction will be a major topic. The project is also organizing tutorials in major science conferences that include online detection/correction of numerical simulations.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Marc",
+   "pi_last_name": "Snir",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Marc Snir",
+   "pi_email_addr": "snir@illinois.edu",
+   "nsf_id": "000165753",
+   "pi_start_date": "2016-06-03",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Franck",
+   "pi_last_name": "Cappello",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Franck Cappello",
+   "pi_email_addr": "cappello@uchicago.edu",
+   "nsf_id": "000595076",
+   "pi_start_date": "2016-06-03",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Illinois at Urbana-Champaign",
+  "inst_street_address": "506 S WRIGHT ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "URBANA",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "2173332187",
+  "inst_zip_code": "618013620",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "IL13",
+  "org_lgl_bus_name": "UNIVERSITY OF ILLINOIS",
+  "org_prnt_uei_num": "V2PHZ2CSCH63",
+  "org_uei_num": "Y8CWNJRCNN91"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Illinois at Urbana-Champaign",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "618012302",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "IL13",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7942",
+   "pgm_ref_txt": "HIGH-PERFORMANCE COMPUTING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Results of HPC executions can be affected by two types of errors: uncontrolled ones (silent data corruption) and controlled ones (lossy compression). This project investigates the detection and impact of these different errors and the challenge raised by their potential concurrent occurrence.</p>\n<p>Silent data corruption: Computer circuitry continues to become denser, as gate sizes continue to shrink, and the number of layers continues to grow. With denser circuits, it is increasingly harder to prevent transient hardware errors. Furthermore, the power consumption of circuits and their manufacturing costs can be reduced if more frequent errors can be tolerated.</p>\n<p>The standard practice for error recovery in HPC is to store periodic checkpoints and the restart from the last checkpoint if an error is detected. It is critical that errors be detected before a corrupted checkpoint is stored. This motivates our research: Can silent errors (i.e., hardware errors not detected by hardware) be detected by software?</p>\n<p>The approach we took is to focus on single bit flips (reasonable, if errors are rare) and on iterative numerical algorithms. A bit flip may have a negligible impact on the computation. If it is significant, then we expect to see in the simulation a point perturbance that propagates over successive iterations. We consider a correct simulation as &ldquo;noise&rdquo; and try to detect the superimposed &ldquo;signal&rdquo; of the perturbation caused by the bit flip. We do so using machine learning: A Convolutional Neural network (CNN) is trained to distinguish normal simulations from perturbed ones.</p>\n<p>We tested our approach using various configurations of the FLASH code that is widely used for magneto-hydrodynamic simulations. We achieve almost perfect recall, with a false positive rate between 0 and 2.4%, depending on configuration, if the classifier is run at the end of the iteration when the error occurred. Furthermore, a high recall rate is maintained, in many cases, even if the diagnostic is run up to 10 iterations after the error occurred.</p>\n<p>Lossy compression: Data reduction is becoming a necessity for many numerical simulations that generate more data than can be stored, communicated, and analyzed. Error bounded lossy compression provides a reliable way to reduce scientific datasets while respecting user requirements regarding point wise accuracy. To be usable, lossy compression needs to be fast and users must be able to understand its impacts not only on data points, but also globally using statistics and on users&rsquo; analysis.</p>\n<p>To increase the speed of lossy compression, we optimized cuSZ, a cuda version of SZ and we optimized the Huffman coding specifically for GPUs. The new version (cuSZ+) improves the compression throughputs and ratios by up to 18.4&times; and 5.3&times;, respectively, over CUSZ for seven real-world HPC application datasets on NVIDIA V100 and A100 GPUs. Concerning Huffman coding we parallelized the entire algorithm, including codebook construction and we proposed a novel reduction based encoding scheme that can efficiently merge the codewords on GPUs. Experiments show that our solution can improve the encoding throughput by up to 6.8X on NVIDIA V100 over the state-of-the-art GPU Huffman encoder.</p>\n<p>Ultimately, users&rsquo; trust in lossy compression relies on the preservation of science: same conclusions should be drawn from computations or analysis done from lossy compressed data. In order to better understand the impact of lossy compression error on scientific data and on post-hoc analysis, we analyzed 8 different use-cases and studied 3 different levels of error analysis: visualization&nbsp; (L1), quantitative error analysis (L2) and quantitative analysis of user analysis deviation (L3). Experience from scientific simulations, and instruments show that these three levels of analysis are necessary to quickly detect unacceptable compression generated artifacts, assess the profound nature of the compression error and analyze quantitively the impact of compression error on user analysis. These 3 levels were used to tune and improve lossy compression pipelines in these 8 use-cases to fulfil users accuracy requirements on data and post-hoc analysis.&nbsp;</p>\n<p>SDC mitigation/Compression interplay: To detect and correct SDC happening during lossy compression, we designed and implemented the first algorithm-based fault tolerance (ABFT) algorithm for lossy compression. Our solution incurs negligible execution overhead in the fault-free situation. Should soft errors occur, it ensures decompressed data is strictly bounded within user's requirement, with a very limited degradation of compression ratio and low overhead.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/15/2021<br>\n\t\t\t\t\tModified by: Marc&nbsp;Snir</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nResults of HPC executions can be affected by two types of errors: uncontrolled ones (silent data corruption) and controlled ones (lossy compression). This project investigates the detection and impact of these different errors and the challenge raised by their potential concurrent occurrence.\n\nSilent data corruption: Computer circuitry continues to become denser, as gate sizes continue to shrink, and the number of layers continues to grow. With denser circuits, it is increasingly harder to prevent transient hardware errors. Furthermore, the power consumption of circuits and their manufacturing costs can be reduced if more frequent errors can be tolerated.\n\nThe standard practice for error recovery in HPC is to store periodic checkpoints and the restart from the last checkpoint if an error is detected. It is critical that errors be detected before a corrupted checkpoint is stored. This motivates our research: Can silent errors (i.e., hardware errors not detected by hardware) be detected by software?\n\nThe approach we took is to focus on single bit flips (reasonable, if errors are rare) and on iterative numerical algorithms. A bit flip may have a negligible impact on the computation. If it is significant, then we expect to see in the simulation a point perturbance that propagates over successive iterations. We consider a correct simulation as \"noise\" and try to detect the superimposed \"signal\" of the perturbation caused by the bit flip. We do so using machine learning: A Convolutional Neural network (CNN) is trained to distinguish normal simulations from perturbed ones.\n\nWe tested our approach using various configurations of the FLASH code that is widely used for magneto-hydrodynamic simulations. We achieve almost perfect recall, with a false positive rate between 0 and 2.4%, depending on configuration, if the classifier is run at the end of the iteration when the error occurred. Furthermore, a high recall rate is maintained, in many cases, even if the diagnostic is run up to 10 iterations after the error occurred.\n\nLossy compression: Data reduction is becoming a necessity for many numerical simulations that generate more data than can be stored, communicated, and analyzed. Error bounded lossy compression provides a reliable way to reduce scientific datasets while respecting user requirements regarding point wise accuracy. To be usable, lossy compression needs to be fast and users must be able to understand its impacts not only on data points, but also globally using statistics and on users\u2019 analysis.\n\nTo increase the speed of lossy compression, we optimized cuSZ, a cuda version of SZ and we optimized the Huffman coding specifically for GPUs. The new version (cuSZ+) improves the compression throughputs and ratios by up to 18.4&times; and 5.3&times;, respectively, over CUSZ for seven real-world HPC application datasets on NVIDIA V100 and A100 GPUs. Concerning Huffman coding we parallelized the entire algorithm, including codebook construction and we proposed a novel reduction based encoding scheme that can efficiently merge the codewords on GPUs. Experiments show that our solution can improve the encoding throughput by up to 6.8X on NVIDIA V100 over the state-of-the-art GPU Huffman encoder.\n\nUltimately, users\u2019 trust in lossy compression relies on the preservation of science: same conclusions should be drawn from computations or analysis done from lossy compressed data. In order to better understand the impact of lossy compression error on scientific data and on post-hoc analysis, we analyzed 8 different use-cases and studied 3 different levels of error analysis: visualization  (L1), quantitative error analysis (L2) and quantitative analysis of user analysis deviation (L3). Experience from scientific simulations, and instruments show that these three levels of analysis are necessary to quickly detect unacceptable compression generated artifacts, assess the profound nature of the compression error and analyze quantitively the impact of compression error on user analysis. These 3 levels were used to tune and improve lossy compression pipelines in these 8 use-cases to fulfil users accuracy requirements on data and post-hoc analysis. \n\nSDC mitigation/Compression interplay: To detect and correct SDC happening during lossy compression, we designed and implemented the first algorithm-based fault tolerance (ABFT) algorithm for lossy compression. Our solution incurs negligible execution overhead in the fault-free situation. Should soft errors occur, it ensures decompressed data is strictly bounded within user's requirement, with a very limited degradation of compression ratio and low overhead.\n\n \n\n\t\t\t\t\tLast Modified: 11/15/2021\n\n\t\t\t\t\tSubmitted by: Marc Snir"
+ }
+}

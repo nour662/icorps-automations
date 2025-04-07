@@ -1,0 +1,101 @@
+{
+ "awd_id": "1953199",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Algorithms for Optimal Adaptive Enrichment Design in Randomized Trial",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032927299",
+ "po_email": "yzeng@nsf.gov",
+ "po_sign_block_name": "Yong Zeng",
+ "awd_eff_date": "2020-06-01",
+ "awd_exp_date": "2023-05-31",
+ "tot_intn_awd_amt": 100000.0,
+ "awd_amount": 100000.0,
+ "awd_min_amd_letter_date": "2020-03-18",
+ "awd_max_amd_letter_date": "2020-03-18",
+ "awd_abstract_narration": "The increasing costs of clinical trials negatively impact public health by reducing drug companies' willingness to undertake clinical trials and delaying new drug development.  A typical clinical trial may cost millions of U.S. dollars, depending on therapeutic areas and scientific goals. In designing clinical trials, one needs to balance (typically conflicting) aims in scientific/biological aspects, statistical power, and cost. This decision-making problem is very complicated in personalized medicine, where multiple subpopulations need to be simultaneously considered. Existing approaches for designing adaptive trials either do not involve optimization of objectives or optimize in very restrictive settings. This project considers adaptive enrichment design, a flexible trial design framework that allows trial administrators to adjust patient enrollment rules during the trials. It has been shown to often provide superior cost effectiveness and better statistical power. The research aims to design new methods and algorithms to optimize adaptive enrichment design.\r\n\r\nThe optimal design problem with two planning stages and two subpopulations is formulated as a large-scale linear programming model, which can be solved by off-the-shelf LP solvers. Due to the exponentially increasing LP size, such LP solvers cannot be directly applied to the practical situations with more planning stages and subpopulations. This project will develop specialized algorithms and modelling techniques to fully exploit problem structures to solve two-stage two-subpopulation models much faster, and extend them to larger models previously regarded as unsolvable. Furthermore, user-friendly open-source software will be developed to enable scientists to construct their own optimal adaptive enrichment designs.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Guanghui",
+   "pi_last_name": "Lan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Guanghui Lan",
+   "pi_email_addr": "george.lan@isye.gatech.edu",
+   "nsf_id": "000545078",
+   "pi_start_date": "2020-03-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Institute of Technology",
+  "perf_str_addr": "225 North Avenue NW",
+  "perf_city_name": "Atlanta",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806900",
+   "pgm_ele_name": "CDS&E-MSS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 100000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project considers adaptive enrichment design, an especially flexible trial design framework that allows trial administrators to change patient enrollment rules during the trials. It has been shown to often provide superior economic metrics and better statistical power. However existing approaches for designing adaptive trials either do not involve optimization of objectives or optimize in very restrictive settings. A recent work (by one of the PI's and one collaborator of this proposal) shows the substantial gain (in statistical as well as economic aspects) by applying optimization techniques in adaptive enrichment design. A large scale linear programming (LP) model is formulated to solve the optimal design problem with two planning stages and two subpopulations. Off-the-shelf LP solvers were used in their approach. This computational approach cannot be extended to the more practical situations with more planning stages and subpopulations, mainly due to the exponentially increasing LP size. This project aims to study specialized algorithms that exploit problem structures to solve the two-stage two-subpopulation models much faster, and to extend them to larger models previously regarded as unsolvable.</p>\n<p>This is joint project between Georgia Tech, Penn State University, and Duke University. The PI at Georgia Tech focuses on the design and analysis of stochastic algorithms for multi-stage stochastic optimization with possibly complicated expectation constraints. Furthermore, the proposed algorithms can be applied to solve general sequential decision problems. The PI at Georgia Tech has made a few fundamental progresses on complexity analysis of stochastic dual dynamic programming, development of policy mirror descent method for reinforcement learning, and optimal algorithms for convex nested stochastic composite optimization, among other developments supported by this grant.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/29/2023<br>\n\t\t\t\t\tModified by: Guanghui&nbsp;Lan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project considers adaptive enrichment design, an especially flexible trial design framework that allows trial administrators to change patient enrollment rules during the trials. It has been shown to often provide superior economic metrics and better statistical power. However existing approaches for designing adaptive trials either do not involve optimization of objectives or optimize in very restrictive settings. A recent work (by one of the PI's and one collaborator of this proposal) shows the substantial gain (in statistical as well as economic aspects) by applying optimization techniques in adaptive enrichment design. A large scale linear programming (LP) model is formulated to solve the optimal design problem with two planning stages and two subpopulations. Off-the-shelf LP solvers were used in their approach. This computational approach cannot be extended to the more practical situations with more planning stages and subpopulations, mainly due to the exponentially increasing LP size. This project aims to study specialized algorithms that exploit problem structures to solve the two-stage two-subpopulation models much faster, and to extend them to larger models previously regarded as unsolvable.\n\nThis is joint project between Georgia Tech, Penn State University, and Duke University. The PI at Georgia Tech focuses on the design and analysis of stochastic algorithms for multi-stage stochastic optimization with possibly complicated expectation constraints. Furthermore, the proposed algorithms can be applied to solve general sequential decision problems. The PI at Georgia Tech has made a few fundamental progresses on complexity analysis of stochastic dual dynamic programming, development of policy mirror descent method for reinforcement learning, and optimal algorithms for convex nested stochastic composite optimization, among other developments supported by this grant.\n\n \n\n\t\t\t\t\tLast Modified: 09/29/2023\n\n\t\t\t\t\tSubmitted by: Guanghui Lan"
+ }
+}

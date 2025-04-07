@@ -1,0 +1,121 @@
+{
+ "awd_id": "1216611",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF:Small:Disciplined Approximate Programming for Energy-Efficient Computing",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2012-10-01",
+ "awd_exp_date": "2015-09-30",
+ "tot_intn_awd_amt": 300000.0,
+ "awd_amount": 300000.0,
+ "awd_min_amd_letter_date": "2012-09-06",
+ "awd_max_amd_letter_date": "2012-09-06",
+ "awd_abstract_narration": "This research aims to make computing systems more energy-efficient, leading to longer battery life for mobile devices and lower energy bills for end users and data centers.  The key approach is to identify and exploit portions of computations where approximate results or occasional errors are allowable and use this flexibility to save energy.  While sacrificing precision may initially seem unthinkable for computers, it is appropriate for the energy-intensive portions of many applications, such as programs related to multimedia, sensing, or random simulation.  While allowing some approximation, one must still insist that only data and code specifically annotated as \"approximate\" by the programmer is allowed to be imprecise.  Moreover, this research will develop techniques for monitoring and enforcing \"quality of service\", which in this context means the impact that approximation has on the observable output.\r\n\r\nThe research necessarily crosses several layers of the conventional computing execution stack.  The best way to save energy is via novel hardware that, thanks to approximation, can save energy via various means such as voltage scaling or lower cache refresh rates.  But only higher levels of abstraction know where approximation is appropriate, so we need language design and language implementation to communicate this information to the hardware.  In addition, programmers need software-development tools for debugging and profiling applications that leverage approximation.  The results of this research will include advances in computer architecture, programming language design and implementation, and software tools.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Luis",
+   "pi_last_name": "Ceze",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Luis Ceze",
+   "pi_email_addr": "luisceze@cs.washington.edu",
+   "nsf_id": "000083036",
+   "pi_start_date": "2012-09-06",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Daniel",
+   "pi_last_name": "Grossman",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Daniel J Grossman",
+   "pi_email_addr": "djg@cs.washington.edu",
+   "nsf_id": "000400274",
+   "pi_start_date": "2012-09-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Washington",
+  "inst_street_address": "4333 BROOKLYN AVE NE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SEATTLE",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "2065434043",
+  "inst_zip_code": "981951016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "WA07",
+  "org_lgl_bus_name": "UNIVERSITY OF WASHINGTON",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HD1WMN6945W6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Washington",
+  "perf_str_addr": "185 Stevens Way",
+  "perf_city_name": "Seattle",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "981952350",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "WA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7329",
+   "pgm_ref_txt": "COMPILERS"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7943",
+   "pgm_ref_txt": "PROGRAMMING LANGUAGES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 300000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><strong>Accomplishments:&nbsp; </strong></p>\n<p>This project aimed at developing \"disciplined\" approximate programming models, in which programmers can declare which parts of programs are amenable to approximate computing. This approach can enable large energy savings without compromising the integrity of critical parts of the computation. Specifically, this research aims to develop energy-aware programming across the system stack by: (a) designing language and runtime monitoring/control techniques to express quality-of-service metrics where errors can be tolerated to achieve energy savings, (b) implementing tools for helping programmers use these techniques and for compilers to communicate the information to the hardware, and (c) designing hardware that can better leverage this information.</p>\n<p>&nbsp;</p>\n<p><strong>Major Activities:&nbsp;&nbsp; </strong></p>\n<p>We worked on three research efforts:&nbsp; (1)&nbsp; approximate synthesis from precise implementations; (2)&nbsp; debugging and testing support for approximate programs; and (3)&nbsp; understanding the limits of approximate computing techniques.&nbsp; We devoted work to understand the limits of approximation, explored ways to debug approximate programs, and explore using modern synthesis techniques in the context of approximate computing.&nbsp; We showed that approximate synthesis has great potential to generate approximate code starting from a precise implementation. We developed a new technique to debug approximate programs that uses statistical techniques to determine portions of the code most correlated to quality degradations. We exhaustively studied the space of approximate computing techniques and built a taxonomy, along with a limit study of their effects.</p>\n<p>&nbsp;</p>\n<p><strong>Training and Professional Development:</strong></p>\n<p>This project has contributed pieces of three PhD thesis as well as a MS thesis and several undergraduate research experiences.</p>\n<p>&nbsp;</p>\n<p><strong>Results Dissemination:</strong></p>\n<p>We published papers in ASPLOS&rsquo;15, POPL&rsquo;16, SNAPL&rsquo;15, OOPSLA&rsquo;15 and ASPLOS&rsquo;16.&nbsp; We released all our infrastructure, including compiler (http://accept.rocks), our benchmarks, and are now releasing our FPGA design for neural acceleration.</p>\n<p>&nbsp;</p>\n<p><strong>Impacts:</strong></p>\n<p>Approximate computing is a very promising approach to improving performance and energy efficiency of modern computer systems. For it to work, though, it invariably needs to be explored across the system stack.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/05/2016<br>\n\t\t\t\t\tModified by: Luis&nbsp;Ceze</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nAccomplishments:  \n\nThis project aimed at developing \"disciplined\" approximate programming models, in which programmers can declare which parts of programs are amenable to approximate computing. This approach can enable large energy savings without compromising the integrity of critical parts of the computation. Specifically, this research aims to develop energy-aware programming across the system stack by: (a) designing language and runtime monitoring/control techniques to express quality-of-service metrics where errors can be tolerated to achieve energy savings, (b) implementing tools for helping programmers use these techniques and for compilers to communicate the information to the hardware, and (c) designing hardware that can better leverage this information.\n\n \n\nMajor Activities:   \n\nWe worked on three research efforts:  (1)  approximate synthesis from precise implementations; (2)  debugging and testing support for approximate programs; and (3)  understanding the limits of approximate computing techniques.  We devoted work to understand the limits of approximation, explored ways to debug approximate programs, and explore using modern synthesis techniques in the context of approximate computing.  We showed that approximate synthesis has great potential to generate approximate code starting from a precise implementation. We developed a new technique to debug approximate programs that uses statistical techniques to determine portions of the code most correlated to quality degradations. We exhaustively studied the space of approximate computing techniques and built a taxonomy, along with a limit study of their effects.\n\n \n\nTraining and Professional Development:\n\nThis project has contributed pieces of three PhD thesis as well as a MS thesis and several undergraduate research experiences.\n\n \n\nResults Dissemination:\n\nWe published papers in ASPLOS\u00c615, POPL\u00c616, SNAPL\u00c615, OOPSLA\u00c615 and ASPLOS\u00c616.  We released all our infrastructure, including compiler (http://accept.rocks), our benchmarks, and are now releasing our FPGA design for neural acceleration.\n\n \n\nImpacts:\n\nApproximate computing is a very promising approach to improving performance and energy efficiency of modern computer systems. For it to work, though, it invariably needs to be explored across the system stack.\n\n \n\n\t\t\t\t\tLast Modified: 01/05/2016\n\n\t\t\t\t\tSubmitted by: Luis Ceze"
+ }
+}

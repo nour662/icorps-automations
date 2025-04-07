@@ -1,0 +1,105 @@
+{
+ "awd_id": "1565581",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AF:  Small:  Approximation Techniques for Combinatorial Optimization",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Rahul Shah",
+ "awd_eff_date": "2015-08-01",
+ "awd_exp_date": "2016-07-31",
+ "tot_intn_awd_amt": 130617.0,
+ "awd_amount": 130617.0,
+ "awd_min_amd_letter_date": "2015-10-05",
+ "awd_max_amd_letter_date": "2015-10-05",
+ "awd_abstract_narration": "Approximation techniques are valuable in the design of algorithms for combinatorial optimization problems. Mathematical programming relaxations provide tractable versions of hard optimization problems that are useful in the design of good algorithms -- in some cases, these relaxations and their duals serve as a guide for the design of algorithms and lower bound proofs. Such approximation techniques are useful not just in traditional optimization problems, but also for problems in online algorithms and other areas. This project proposes to study a variety of problems where approximation techniques play a crucial role -- many of these questions are about basic problems in approximation algorithms, but many are about questions where insights from mathematical relaxations and other approximation techniques play an important role. The broad goals of this project include (a) Obtaining a better understanding of the use of lift-and-project relaxations for optimization problems like coloring and the closely related question of developing algorithmic techniques for graphs of low threshold rank, (b) Attempting to close gaps in our understanding of classical optimization problems like the traveling salesman problem and bin packing, and (c) Shedding light on newer problems like online versions of weighted matching and new flow formulations.\r\n\r\nOptimization problems are ubiquitous and for many such problems of interest, we have strong evidence that it is impossible to obtain exact efficient solutions. To circumvent this intractability, we design efficient heuristics that may not find the best solution necessarily, but have guarantees that the solution they produce is not far from the optimal (i.e. is approximately optimal). Mathematical programming is a very important tool in designing such approximation algorithms. Successfully achieving the project goals will require advances in our knowledge of this area, and especially new insights into the powerful and versatile mathematical programming toolkit. As part of this project, graduate and undergraduate students will be trained by involving them in these research activities. Course materials for graduate and undergraduate courses will be developed distilling research results of this project, as well as new developments in the field.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Moses",
+   "pi_last_name": "Charikar",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Moses Charikar",
+   "pi_email_addr": "moses@cs.stanford.edu",
+   "nsf_id": "000488746",
+   "pi_start_date": "2015-10-05",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Stanford University",
+  "inst_street_address": "450 JANE STANFORD WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "STANFORD",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "6507232300",
+  "inst_zip_code": "943052004",
+  "inst_country_name": "United States",
+  "cong_dist_code": "16",
+  "st_cong_dist_code": "CA16",
+  "org_lgl_bus_name": "THE LELAND STANFORD JUNIOR UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HJD6G4D6TJY5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Stanford University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "943041212",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "16",
+  "perf_st_cong_dist": "CA16",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7926",
+   "pgm_ref_txt": "ALGORITHMS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 130617.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project started in July 2012, funded by NSF grant #1218687. PI Charikar moved to Stanford University in 2015. The project and remaining funding was transferred to Stanford, as NSF grant #1565581. This report refers to the outcomes of the entire project covered by these two grant numbers.</p>\n<p><strong>Intellectual merit:</strong></p>\n<p>Progress was made in several different directions, including:</p>\n<p>&nbsp;1. Tensor decomposition: This is a generalization of matrix decomposition for d-dimensional arrays. Although potentially very useful, algorithms are hard to obtain in the traditional worst-case analysis framework. A smoothed analysis model was suggested and analyzed, and new results on uniqueness of tensor decompositions with noise were established.</p>\n<p>&nbsp;2. Online matching: In the online model, vertices of a bipartite graph arrive as a sequence of updates and the goal is to match vertices. Two problems were studied: weighted matching where the edge weights are the sum of vertex weights (here we beat the best known &frac12; competitive ratio). The other setting studied was motivated by matching in ride sharing services. Here, edge weights are distances, vertices can be made to wait, but the algorithm pays a cost proportional to the waiting time. A logarithmic competitive ratio was obtained and lower bounds on the competitive ratio were established.</p>\n<p>&nbsp;3. k-means: Several aspects of the popular k-means objective function were studied. The first hardness of approximation result was established for Euclidean k-means. Convex relaxations for k-means were investigated for their ability to recover planted cluster structure. Finally, motivated by a semidefinite relaxation for k-means, a new objective function for graph partitioning was proposed which sheds light on popular methods for spectral clustering.</p>\n<p>&nbsp;4. Target set selection: Here one is given a network and a process that models the propagation of influence. The goal is to activate a small set of vertices (the target set) initially so that activation eventually spreads to all vertices. The first sublinear factor approximation algorithm for the bounded round version was given and a polynomial hardness result was obtained using the conjectured hardness of planted dense subgraph.</p>\n<p>&nbsp;5. Crowdsourcing with unreliable raters: A model was introduced and studied in which n workers are asked to rate the quality of n items. An unknown fraction of workers give reliable ratings where the remaining behave arbitrarily and possibly adversarially. A small number of items can be manually evaluated and the goal is to obtain a list of the high-quality items with at most eps contamination by low-quality items. It was shown (somewhat surprisingly) that the number of ratings per person required to achieve this does not scale with n.</p>\n<p>&nbsp;6. Broadcast scheduling: Here a single server holds n pages and the goal is to schedule broadcasts of these pages so as to satisfy a sequence of requests and minimize the average response time. &nbsp;A connection was established between this problem and the discrepancy of set systems. This connection was exploited to improve both the upper bound (algorithm) as well as the lower bounds (hardness results and integrality gaps).</p>\n<p>&nbsp;</p>\n<p><strong>Broader impact:</strong></p>\n<p>Several of these results are of interest more broadly outside of theoretical computer science. The results on tensor decomposition and the new spectral clustering objective are interesting for machine learning and statistics. The results (and the analysis model) for crowdsourcing are potentially interesting to researchers who are engaged in the design of practical crowdsourcing systems.</p>\n<p>Three PhD students were trained over the duration of this project. One is currently a faculty member at Northeastern University, one a faculty at the University of Buffalo and the other is a researcher at Amazon.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/22/2017<br>\n\t\t\t\t\tModified by: Moses&nbsp;Charikar</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project started in July 2012, funded by NSF grant #1218687. PI Charikar moved to Stanford University in 2015. The project and remaining funding was transferred to Stanford, as NSF grant #1565581. This report refers to the outcomes of the entire project covered by these two grant numbers.\n\nIntellectual merit:\n\nProgress was made in several different directions, including:\n\n 1. Tensor decomposition: This is a generalization of matrix decomposition for d-dimensional arrays. Although potentially very useful, algorithms are hard to obtain in the traditional worst-case analysis framework. A smoothed analysis model was suggested and analyzed, and new results on uniqueness of tensor decompositions with noise were established.\n\n 2. Online matching: In the online model, vertices of a bipartite graph arrive as a sequence of updates and the goal is to match vertices. Two problems were studied: weighted matching where the edge weights are the sum of vertex weights (here we beat the best known &frac12; competitive ratio). The other setting studied was motivated by matching in ride sharing services. Here, edge weights are distances, vertices can be made to wait, but the algorithm pays a cost proportional to the waiting time. A logarithmic competitive ratio was obtained and lower bounds on the competitive ratio were established.\n\n 3. k-means: Several aspects of the popular k-means objective function were studied. The first hardness of approximation result was established for Euclidean k-means. Convex relaxations for k-means were investigated for their ability to recover planted cluster structure. Finally, motivated by a semidefinite relaxation for k-means, a new objective function for graph partitioning was proposed which sheds light on popular methods for spectral clustering.\n\n 4. Target set selection: Here one is given a network and a process that models the propagation of influence. The goal is to activate a small set of vertices (the target set) initially so that activation eventually spreads to all vertices. The first sublinear factor approximation algorithm for the bounded round version was given and a polynomial hardness result was obtained using the conjectured hardness of planted dense subgraph.\n\n 5. Crowdsourcing with unreliable raters: A model was introduced and studied in which n workers are asked to rate the quality of n items. An unknown fraction of workers give reliable ratings where the remaining behave arbitrarily and possibly adversarially. A small number of items can be manually evaluated and the goal is to obtain a list of the high-quality items with at most eps contamination by low-quality items. It was shown (somewhat surprisingly) that the number of ratings per person required to achieve this does not scale with n.\n\n 6. Broadcast scheduling: Here a single server holds n pages and the goal is to schedule broadcasts of these pages so as to satisfy a sequence of requests and minimize the average response time.  A connection was established between this problem and the discrepancy of set systems. This connection was exploited to improve both the upper bound (algorithm) as well as the lower bounds (hardness results and integrality gaps).\n\n \n\nBroader impact:\n\nSeveral of these results are of interest more broadly outside of theoretical computer science. The results on tensor decomposition and the new spectral clustering objective are interesting for machine learning and statistics. The results (and the analysis model) for crowdsourcing are potentially interesting to researchers who are engaged in the design of practical crowdsourcing systems.\n\nThree PhD students were trained over the duration of this project. One is currently a faculty member at Northeastern University, one a faculty at the University of Buffalo and the other is a researcher at Amazon.\n\n \n\n\t\t\t\t\tLast Modified: 09/22/2017\n\n\t\t\t\t\tSubmitted by: Moses Charikar"
+ }
+}

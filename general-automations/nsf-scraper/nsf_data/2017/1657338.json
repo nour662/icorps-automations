@@ -1,0 +1,102 @@
+{
+ "awd_id": "1657338",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: III: Real-World Machine Learning: Adaptation Methods for Addressing Temporal, Geographic, and Demographic Confounds in User-Generated Content",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032927347",
+ "po_email": "sspengle@nsf.gov",
+ "po_sign_block_name": "Sylvia Spengler",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 174117.0,
+ "awd_amount": 174117.0,
+ "awd_min_amd_letter_date": "2017-02-28",
+ "awd_max_amd_letter_date": "2017-02-28",
+ "awd_abstract_narration": "There is a rapidly growing body of research that uses user-generated content from the web, e.g., social media messages, to draw conclusions about the world.  Using machine learning and natural language processing methods, it is possible to estimate public opinion, consumer sentiment, and population health based on what people are publicly sharing about their thoughts and actions online.  For example, if someone writes that they have a fever, we might infer that they have the flu; if we aggregate all messages like this, we can track the prevalence and spread of the flu at a population level.  However, a challenge with applying machine learning to user-generated content is that the characteristics of the content are highly dependent on the Who, When, and Where of the users.  Online discussions evolve rapidly; a system built in one year might not work well in the next, and a system built for one community of users might not work for another.  The proposed project seeks to create machine learning methods that are robust to variations in time, geography, and demographics of content and content creators.  Related to domain adaptation techniques in machine learning, the PI proposes methods that learn to generalize across these various content attributes.  The general goal is to create robust, open source tools that can be easily adopted by other researchers.  One particular outcome of the project will be to improve the machine learning classifiers used in prior work on social media-based disease surveillance.  The output of the PI's health analysis systems will be integrated into HealthTweets.org, a publicly accessible website that shares daily estimates of disease prevalence for other researchers and health officials. \r\n\r\n\r\nThe project will create hierarchical Bayesian models for training classifiers that can be adapted across different content attributes.  The specific attributes of interest include time, geography, and demographic group of the author, but the proposed models do not depend on the specific attributes, and can be broadly applied to other machine learning settings.  As a starting point, a predictive model (classification or regression) will be constructed that can be adapted across one attribute at a time.  The PI will then create novel extensions to the model that can adapt across conjunctions of multiple attributes, such as time AND location.  These extensions are related to the PI's prior work on building structured topic models that learn relationships between different features of content.  Finally, in addition to creating predictive models, the PI will also build models of content that can be used to infer missing attributes (e.g., the location of a user if it is unknown), which can be combined with the predictive models to jointly perform inference and classification. Classification performance in new settings on a variety of datasets and exploration of the effects of, and sensitivity to, different parameters will be tested.  Specific deliverables include the improvement a classifier for detecting influenza infection on Twitter, and integrating the classifier into the website, HealthTweets.org.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Michael",
+   "pi_last_name": "Paul",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Michael J Paul",
+   "pi_email_addr": "mpaul@colorado.edu",
+   "nsf_id": "000710316",
+   "pi_start_date": "2017-02-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Colorado at Boulder",
+  "inst_street_address": "3100 MARINE ST",
+  "inst_street_address_2": "STE 481 572 UCB",
+  "inst_city_name": "Boulder",
+  "inst_state_code": "CO",
+  "inst_state_name": "Colorado",
+  "inst_phone_num": "3034926221",
+  "inst_zip_code": "803090001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "CO02",
+  "org_lgl_bus_name": "THE REGENTS OF THE UNIVERSITY OF COLORADO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "SPVKK1RC2MZ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Colorado at Boulder",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CO",
+  "perf_st_name": "Colorado",
+  "perf_zip_code": "803031058",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "CO02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 174117.0
+  }
+ ],
+ "por": null
+}

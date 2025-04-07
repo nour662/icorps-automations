@@ -1,0 +1,101 @@
+{
+ "awd_id": "2028001",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Operator theoretic methods for identification and verification of dynamical systems",
+ "cfda_num": "47.041",
+ "org_code": "07010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anthony Kuh",
+ "awd_eff_date": "2020-08-15",
+ "awd_exp_date": "2024-07-31",
+ "tot_intn_awd_amt": 229935.0,
+ "awd_amount": 229935.0,
+ "awd_min_amd_letter_date": "2020-08-10",
+ "awd_max_amd_letter_date": "2020-08-10",
+ "awd_abstract_narration": "Widespread use of automation in many sectors of society has yielded a large amount of data regarding historical behaviors for a variety of dynamical systems, such as unmanned aerial, marine, and ground vehicles, biological systems, and weather systems. This project aims to develop novel algorithms to discover governing rules that explain the observed behaviors (i.e., trajectories) of dynamical systems. Discovery of underlying models, while useful for analysis and control, can be computationally challenging. For example, traditional modeling methods rely on derivatives, and can be hampered by even modest amounts of measurement noise that derails numerical differentiation. Such methods treat each measurement of the output of a dynamical system as a separate data point. The data points are then related back to the underlying model using numerical differentiation. Instead, in this project, the entire trajectory is treated as a unit of interest. The sequence of measured data points is treated as a sampled, noisy representation of that trajectory, and is related back to the underlying model using numerical integration. It is hypothesized that treating trajectories of dynamical systems as the fundamental unit of data can yield better data-driven techniques for analysis and control of dynamical systems, and this project aims to develop such data-driven identification and verification techniques. To broaden the impact of the research, the team will also develop week-long workshops for undergraduate students that teach data science and artificial intelligence (AI) concepts through video games. To facilitate early introduction to machine learning, the team will also develop versions of the AI workshops that are suitable to be offered during high school summer camps.\r\n \r\nThe specific aim of this project is to develop a new theoretical framework to process a large amount of time-series data and to apply the framework to yield robust and flexible tools for the study of nonlinear dynamical systems. In the proposed approach, trajectory information is embedded in a reproducing kernel Hilbert space (RKHS) through what are called occupation kernels. The occupation kernels are tied to the original dynamics through a densely defined operator, the Liouville operator. Occupation kernels and Liouville operators result in a nontrivial generalization of contemporary methods that study finite-dimensional nonlinear optimization problems by lifting them into infinite dimensional linear programs over the spaces of measures. The proposed approach facilitates lifting into linear programs over function spaces instead of measure spaces, and as a result, tools from function theory and approximation theory become available for design and analysis of algorithms. The specific aims of the project include: studying fundamental properties of occupation kernels and Liouville operators over RKHSs, applications to nonlinear system identification, study of the pre-inner product space that results from the action of the adjoint of a Liouville operator on an occupation kernel, and applications of the framework to solve motion tomography problems. The developed tools will be validated by solving identification and verification problems for unmanned ground, air, or underwater vehicles.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "ECCS",
+ "org_div_long_name": "Division of Electrical, Communications and Cyber Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Taylor",
+   "pi_last_name": "Johnson",
+   "pi_mid_init": "T",
+   "pi_sufx_name": "",
+   "pi_full_name": "Taylor T Johnson",
+   "pi_email_addr": "taylor.johnson@gmail.com",
+   "nsf_id": "000663375",
+   "pi_start_date": "2020-08-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Vanderbilt University",
+  "inst_street_address": "110 21ST AVE S",
+  "inst_street_address_2": "",
+  "inst_city_name": "NASHVILLE",
+  "inst_state_code": "TN",
+  "inst_state_name": "Tennessee",
+  "inst_phone_num": "6153222631",
+  "inst_zip_code": "372032416",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "TN05",
+  "org_lgl_bus_name": "VANDERBILT UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GTNBNWXJ12D5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Vanderbilt University",
+  "perf_str_addr": "1025 16th Avenue South Suite 102",
+  "perf_city_name": "Nashville",
+  "perf_st_code": "TN",
+  "perf_st_name": "Tennessee",
+  "perf_zip_code": "372122328",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "TN05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "760700",
+   "pgm_ele_name": "EPCN-Energy-Power-Ctrl-Netwrks"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "092E",
+   "pgm_ref_txt": "Control systems & applications"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 229935.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project establishes a framework for learning problems in nonlinear dynamical systems theory. Specifically, it has developed machine learning approaches to perform system identification, namely to infer dynamical systems models from time-series data, with applications in robotics and other domains.<br /><br />The core outcomes and contributions of this project are new approaches for nonlinear system identification that leverage the concept of occupation kernels. Occupation kernels provide robustness against signal noise, and preliminary experiments demonstrate accurate parameter estimates. The approach exploits a relation between occupation kernels and the adjoint of Liouville operators, which results in a new pre-inner product space. This has been applied to integrate data streams measured using distributed mobile sensors to model vector fields. This method leverages models of interaction between the vector field and the mobile sensor and estimates the vector field using trajectory deviations inferred from occupation kernels. The approaches have been experimentally validated illustrating the utility and the effectiveness of the proposed framework, including with their implementation in publicly available software frameworks.&nbsp;<br /><br />Intellectual merit: The intellectual merit of this project is in the development of kernelized methods for dynamical systems. Occupation kernels represent a nontrivial generalization of the concept of occupation measures that are currently being leveraged to answer questions in optimal control theory by exploiting the Banach space duality between continuous functions and signed measures. By adjusting the function space to be that of reproducing kernel Hilbert spaces changes the duality, and thus makes available many tools from function theory that were hitherto unavailable to occupation measures. These tools in turn allow the embedding of trajectory information into reproducing kernel Hilbert spaces in a way that engenders a wide range of applications in dynamical systems theory. The evaluation of these new tools through this project as well, along with the resulting publication products, illustrate the potential impact of these fundamental developments.<br /><br />Broader impacts: The mathematical foundations of the tools developed in this project have potential applications in the fields of dynamical systems and imagining, where occupation kernel techniques can be leveraged for both mechanical and biological systems. Moreover, the basis functions developed in this project can be leveraged for other forms of tomography, such as Computed Tomography. Successful completion of this project will lead to improved guidance, navigation, and, control of autonomous aerial and autonomous underwater vehicles (AAVs and AUVs) by laying a foundation for computationally efficient identification of nonlinear dynamical systems and sensing of large-scale geophysical flows such as atmospheric boundary layer turbulence, littoral ocean currents, and particulate transport, using a multitude of small, inexpensive, minimally-invasive, and mobile sensors. The results of this project have been integrated into courses and the project supported undergraduate and graduate students working on these topics.</p><br>\n<p>\n Last Modified: 11/28/2024<br>\nModified by: Taylor&nbsp;T&nbsp;Johnson</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThis project establishes a framework for learning problems in nonlinear dynamical systems theory. Specifically, it has developed machine learning approaches to perform system identification, namely to infer dynamical systems models from time-series data, with applications in robotics and other domains.\n\nThe core outcomes and contributions of this project are new approaches for nonlinear system identification that leverage the concept of occupation kernels. Occupation kernels provide robustness against signal noise, and preliminary experiments demonstrate accurate parameter estimates. The approach exploits a relation between occupation kernels and the adjoint of Liouville operators, which results in a new pre-inner product space. This has been applied to integrate data streams measured using distributed mobile sensors to model vector fields. This method leverages models of interaction between the vector field and the mobile sensor and estimates the vector field using trajectory deviations inferred from occupation kernels. The approaches have been experimentally validated illustrating the utility and the effectiveness of the proposed framework, including with their implementation in publicly available software frameworks.\n\nIntellectual merit: The intellectual merit of this project is in the development of kernelized methods for dynamical systems. Occupation kernels represent a nontrivial generalization of the concept of occupation measures that are currently being leveraged to answer questions in optimal control theory by exploiting the Banach space duality between continuous functions and signed measures. By adjusting the function space to be that of reproducing kernel Hilbert spaces changes the duality, and thus makes available many tools from function theory that were hitherto unavailable to occupation measures. These tools in turn allow the embedding of trajectory information into reproducing kernel Hilbert spaces in a way that engenders a wide range of applications in dynamical systems theory. The evaluation of these new tools through this project as well, along with the resulting publication products, illustrate the potential impact of these fundamental developments.\n\nBroader impacts: The mathematical foundations of the tools developed in this project have potential applications in the fields of dynamical systems and imagining, where occupation kernel techniques can be leveraged for both mechanical and biological systems. Moreover, the basis functions developed in this project can be leveraged for other forms of tomography, such as Computed Tomography. Successful completion of this project will lead to improved guidance, navigation, and, control of autonomous aerial and autonomous underwater vehicles (AAVs and AUVs) by laying a foundation for computationally efficient identification of nonlinear dynamical systems and sensing of large-scale geophysical flows such as atmospheric boundary layer turbulence, littoral ocean currents, and particulate transport, using a multitude of small, inexpensive, minimally-invasive, and mobile sensors. The results of this project have been integrated into courses and the project supported undergraduate and graduate students working on these topics.\t\t\t\t\tLast Modified: 11/28/2024\n\n\t\t\t\t\tSubmitted by: TaylorTJohnson\n"
+ }
+}

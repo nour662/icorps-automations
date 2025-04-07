@@ -1,0 +1,113 @@
+{
+ "awd_id": "1909204",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AF: Small: Efficient Algorithms for Nonconvex Regression",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922182",
+ "po_email": "pbrass@nsf.gov",
+ "po_sign_block_name": "Peter Brass",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2024-08-31",
+ "tot_intn_awd_amt": 399802.0,
+ "awd_amount": 399802.0,
+ "awd_min_amd_letter_date": "2019-06-27",
+ "awd_max_amd_letter_date": "2019-06-27",
+ "awd_abstract_narration": "The problem of fitting a line to noisy data, also known as regression, is a classic and fundamental tool from statistics. Fast, provably efficient algorithms for solving regression are at the heart of traditional systems for artificial intelligence and data science. As modeling problems have become more complex, however, linear regression often fails to capture the high-dimensional relationships that arise in modern tasks. As such, researchers rely on sophisticated generalizations of regression, but the computational complexity of solving such problems is typically unknown (or thought to be intractable in general). The primary research goal of this project is to develop provably efficient algorithms for solving non-convex and nonlinear variants of classical linear regression and give applications to related problems in machine learning. Since tools for machine learning are now ubiquitous in science, these algorithms will have broad use across many fields. Also, these algorithms will be benchmarked experimentally against commonly used heuristics, giving rise to a wealth of projects appropriate for students at all levels.\r\n\r\nThe project centers around two open problems. First, is it possible to develop provably efficient algorithms for learning generalized linear models? In this scenario, the goal is to fit a (mildly) nonlinear function to data with respect to square loss, where the nonlinearity arises from a monotone, increasing function applied to the underlying linear form. As it turns out, algorithms for learning generalized linear models give rise to solutions for learning the dependency graph of a graphical model. This means that rich information about the features of a data set can be extracted by fitting a nonlinear function to the conditional distributions. The second problem is performing linear regression but in the presence of adversarially corrupted training sets. For example, if 90% of a data set is fit well by a linear function, it is often useful to remove the remaining 10% as outliers. Finding these outliers, however, is a difficult combinatorial problem. This project explores connections between these robust linear-regression problems and a new subfield of theoretical computer science that applies high-dimensional convex relaxations.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Adam",
+   "pi_last_name": "Klivans",
+   "pi_mid_init": "R",
+   "pi_sufx_name": "",
+   "pi_full_name": "Adam R Klivans",
+   "pi_email_addr": "klivans@cs.utexas.edu",
+   "nsf_id": "000284027",
+   "pi_start_date": "2019-06-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Austin",
+  "perf_str_addr": "2317 Speedway, Stop D9500",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787121757",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "25",
+  "perf_st_cong_dist": "TX25",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "287800",
+   "pgm_ele_name": "Special Projects - CCF"
+  },
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "075Z",
+   "pgm_ref_txt": "Artificial Intelligence (AI)"
+  },
+  {
+   "pgm_ref_code": "079Z",
+   "pgm_ref_txt": "Machine Learning Theory"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 399802.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The focus of this project is the development of provably efficient algorithms for core nonconvex regression tasks.&nbsp; Algorithms for linear regression are some of the most fundamental tools in machine learning and statistics, but even simple generalizations (e.g., generalized linear models or regression with adversarial noise) have remained unsolved.&nbsp; Understanding the computational landscape of these problems have applications to training deep networks and the creation of more powerful AI generative models.</p>\r\n<p><br />In this project, we both 1) gave the first provably efficient algorithms for a wide range of generalized regression tasks and 2) showed which problems are most likely beyond the reach of efficient algorithms.&nbsp; Further, we introduced new theoretical models for studying nonconvex regression that can sidestep decades of known hardness results from computational learning theory.&nbsp; This opens new avenues for average-case algorithm design for problems that seem intractable in the worst case.</p>\r\n<p><br />Concretely, our algorithms give new methods for performing regression when there is a large amount of noise in the training data, as can often be the case in many practical data sets for problems in Biology.&nbsp; By making new connections to techniques for fairness in machine learning, we gave state of the art algorithms for learning single index models, a widely-used nonconvex generalization of linear regression.&nbsp;&nbsp;</p>\r\n<p><br />We gave the first provably efficient algorithms (polynomial-time in the ambient dimension) for learning deep neural networks.&nbsp; Given the importance of training deep nets, any new algorithmic developments can have huge downstream impact for generative AI.&nbsp; Our work on efficient score-based estimation gives the first rigorous explanation for how diffusion models (a commonly used tool in generative AI) can learn interesting classes of probability distributions (e.g., mixtures of Gaussians).</p>\r\n<p><br />Finally, we proved several new hardness results for learning noisy activations (including ones that routinely appear for training and inference in deep learning), clarifying barriers for future efficient algorithm design for even simple neural networks.</p>\r\n<p><br />We continued to develop new curriculum for UT's recently launched online masters in AI program, which has recently admitted over 700 students in its first cohort.&nbsp; This is now the only online masters in AI program that works at scale in the country.&nbsp; We also designed a new graduate seminar in machine learning theory to address the rapidly changing landscape of research in generative AI.&nbsp;</p><br>\n<p>\n Last Modified: 01/02/2025<br>\nModified by: Adam&nbsp;R&nbsp;Klivans</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe focus of this project is the development of provably efficient algorithms for core nonconvex regression tasks. Algorithms for linear regression are some of the most fundamental tools in machine learning and statistics, but even simple generalizations (e.g., generalized linear models or regression with adversarial noise) have remained unsolved. Understanding the computational landscape of these problems have applications to training deep networks and the creation of more powerful AI generative models.\r\n\n\n\nIn this project, we both 1) gave the first provably efficient algorithms for a wide range of generalized regression tasks and 2) showed which problems are most likely beyond the reach of efficient algorithms. Further, we introduced new theoretical models for studying nonconvex regression that can sidestep decades of known hardness results from computational learning theory. This opens new avenues for average-case algorithm design for problems that seem intractable in the worst case.\r\n\n\n\nConcretely, our algorithms give new methods for performing regression when there is a large amount of noise in the training data, as can often be the case in many practical data sets for problems in Biology. By making new connections to techniques for fairness in machine learning, we gave state of the art algorithms for learning single index models, a widely-used nonconvex generalization of linear regression.\r\n\n\n\nWe gave the first provably efficient algorithms (polynomial-time in the ambient dimension) for learning deep neural networks. Given the importance of training deep nets, any new algorithmic developments can have huge downstream impact for generative AI. Our work on efficient score-based estimation gives the first rigorous explanation for how diffusion models (a commonly used tool in generative AI) can learn interesting classes of probability distributions (e.g., mixtures of Gaussians).\r\n\n\n\nFinally, we proved several new hardness results for learning noisy activations (including ones that routinely appear for training and inference in deep learning), clarifying barriers for future efficient algorithm design for even simple neural networks.\r\n\n\n\nWe continued to develop new curriculum for UT's recently launched online masters in AI program, which has recently admitted over 700 students in its first cohort. This is now the only online masters in AI program that works at scale in the country. We also designed a new graduate seminar in machine learning theory to address the rapidly changing landscape of research in generative AI.\t\t\t\t\tLast Modified: 01/02/2025\n\n\t\t\t\t\tSubmitted by: AdamRKlivans\n"
+ }
+}

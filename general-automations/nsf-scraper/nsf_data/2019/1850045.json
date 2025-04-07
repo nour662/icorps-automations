@@ -1,0 +1,109 @@
+{
+ "awd_id": "1850045",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: SHF Software and Hardware Architecture Co-Design for Deep Learning on Mobile Device",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927498",
+ "po_email": "achtchel@nsf.gov",
+ "po_sign_block_name": "Almadena Chtchelkanova",
+ "awd_eff_date": "2019-02-15",
+ "awd_exp_date": "2022-01-31",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 175000.0,
+ "awd_min_amd_letter_date": "2019-02-11",
+ "awd_max_amd_letter_date": "2019-02-11",
+ "awd_abstract_narration": "Smartphones have become an indispensable part of our lives, acting as the primary tool for many essential functions. A smartphone carries a rich set of data with all kinds of personal information. Powered by machine learning, mobile applications are utilizing these data for better quality of service. Current practice requires users to offload computation tasks to the cloud with incumbent challenges on privacy, performance and user experience fronts. Boosted by the dramatic increase in mobile processing power, this project seeks to bring machine intelligence to mobile devices. The results are expected to inspire both theoretical and system research in the areas of software foundations for embedded machine intelligence. Lessons learned through this project will be fundamentally important in the designs of the next generation mobile operating system and hardware architecture. The results will be disseminated through publications and talks. \r\n \r\nThis project seeks to develop a high-performance, privacy-preserving and energy-efficient mobile-based platform, with an application of behavioral authentication. The research will study the optimal representation of sensing data and develop a compact and powerful neural network architecture. All computation including both inference and training will be performed on the mobile device. A protocol to enable feature transfer between the mobile and the cloud will be developed to reduce overfitting and speed up model convergence, along with a new training algorithm to exploit cache locality and mitigate the memory bottleneck. The optimal combinations of batch size and learning rate will be explored within memory constraints and accuracy requirements to minimize training time. The problem of when and how training should be scheduled on a mobile device will be investigated by considering low-level operation with high-level user interaction to achieve a good balance between performance and resource consumption. All these modules will be integrated and implemented in Android and evaluated on various smartphone models.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Cong",
+   "pi_last_name": "Wang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Cong Wang",
+   "pi_email_addr": "cwang51@gmu.edu",
+   "nsf_id": "000749763",
+   "pi_start_date": "2019-02-11",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Old Dominion University Research Foundation",
+  "inst_street_address": "4111 MONARCH WAY STE 204",
+  "inst_street_address_2": "",
+  "inst_city_name": "NORFOLK",
+  "inst_state_code": "VA",
+  "inst_state_name": "Virginia",
+  "inst_phone_num": "7576834293",
+  "inst_zip_code": "235082561",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "VA03",
+  "org_lgl_bus_name": "OLD DOMINION UNIVERSITY RESEARCH FOUNDATION",
+  "org_prnt_uei_num": "DSLXBD7UWRV6",
+  "org_uei_num": "DSLXBD7UWRV6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Old Dominion University",
+  "perf_str_addr": "5115 Hampton Blvd.",
+  "perf_city_name": "Norfolk",
+  "perf_st_code": "VA",
+  "perf_st_name": "Virginia",
+  "perf_zip_code": "235290001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "VA03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7798",
+   "pgm_ref_txt": "SOFTWARE & HARDWARE FOUNDATION"
+  },
+  {
+   "pgm_ref_code": "7942",
+   "pgm_ref_txt": "HIGH-PERFORMANCE COMPUTING"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 175000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>As our personal devices are continuously gathering data about us, companies want to learn and monetarize from these data. However, recent legislations impose restrictions on the usage of private data, which become a major hurdle to the development of AI technologies. This project brings an enabling technology to tackle this dilemma by implementing machine intelligence on mobile devices, so private data never leaves the device. It integrates research from deep learning,&nbsp;mobile computing and security, and addresses a comprehensive set of issues to improve learning accuracy, computational and energy efficiency under the device&rsquo;s memory capacity.</p>\n<p>&nbsp;</p>\n<p>A new framework is developed to incorporate the entire training process on mobile devices. It leverages and optimizes computing resources in the mobile architecture for various downstream tasks. First, a behavioral biometric authentication is developed such that the entire pipeline of sensing data collection, learning and decision making are all executed on-device, without sending private data to the cloud. This way, the system can also adapt to dynamic changes in the mobile environment with high accuracy. Second, the research improves the computational and statistical efficiency when mobile devices perform collaborative learning. A scheduling mechanism is developed by proportionally distributing workloads among the participants with different computational speeds. The process is jointly optimized considering different data types owned by different participants to guarantee high performance.</p>\n<p>&nbsp;</p>\n<p>This project has opened up a new dimension of cutting-edge research and exciting education opportunities. Under the dominating trend of migrating computations to the edge, this project provides a stack of solutions not only to host machine learning applications on device, but also system-wide useability, energy efficiency, high performance and security when these complex dynamics interact with each other. It has created new opportunities for undergraduate research and important results are disseminated in the research community via conference, journal publications and workshop presentations.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/20/2022<br>\n\t\t\t\t\tModified by: Cong&nbsp;Wang</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653097865810_1--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653097865810_1--rgov-800width.jpg\" title=\"System architecture of behavioral biometric authentication\"><img src=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653097865810_1--rgov-66x44.jpg\" alt=\"System architecture of behavioral biometric authentication\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">System architecture of the deep authentication application. The input takes raw sensor inputs, transforms them into mid-level representations and processed by the neural network on-device. A distance metric is computed for inference and the error is backpropagated if training is enabled.</div>\n<div class=\"imageCredit\">N/A</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Cong&nbsp;Wang</div>\n<div class=\"imageTitle\">System architecture of behavioral biometric authentication</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653098279114_2--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653098279114_2--rgov-800width.jpg\" title=\"Noise injection to defend against sensing side-channel sniffing\"><img src=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653098279114_2--rgov-66x44.jpg\" alt=\"Noise injection to defend against sensing side-channel sniffing\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Preliminary assessment of simple noise injection of raw sensing data with/without noise, relevant spectrogram and the attacker's success ratio.</div>\n<div class=\"imageCredit\">N/A</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Cong&nbsp;Wang</div>\n<div class=\"imageTitle\">Noise injection to defend against sensing side-channel sniffing</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653098636569_3--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653098636569_3--rgov-800width.jpg\" title=\"Resource requirement vs. accuracy for different network architectures\"><img src=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653098636569_3--rgov-66x44.jpg\" alt=\"Resource requirement vs. accuracy for different network architectures\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Evaluation of resource requirement vs. accuracy on GPU and mobile platforms with different neural network architectures.</div>\n<div class=\"imageCredit\">N/A</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Cong&nbsp;Wang</div>\n<div class=\"imageTitle\">Resource requirement vs. accuracy for different network architectures</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653098779186_5--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653098779186_5--rgov-800width.jpg\" title=\"Benchmark of training time on different mobile devices\"><img src=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653098779186_5--rgov-66x44.jpg\" alt=\"Benchmark of training time on different mobile devices\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Benchmark of training time on different mobile devices using the MNIST dataset for LeNet and VGG6.</div>\n<div class=\"imageCredit\">N/A</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Cong&nbsp;Wang</div>\n<div class=\"imageTitle\">Benchmark of training time on different mobile devices</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653099119621_6--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653099119621_6--rgov-800width.jpg\" title=\"Computation vs. communication time of collaborative training on-device\"><img src=\"/por/images/Reports/POR/2022/1850045/1850045_10591605_1653099119621_6--rgov-66x44.jpg\" alt=\"Computation vs. communication time of collaborative training on-device\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Computation vs. communication time of training on MNIST samples per epoch of LeNet and VGG6 neural network architectures.</div>\n<div class=\"imageCredit\">N/A</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Cong&nbsp;Wang</div>\n<div class=\"imageTitle\">Computation vs. communication time of collaborative training on-device</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nAs our personal devices are continuously gathering data about us, companies want to learn and monetarize from these data. However, recent legislations impose restrictions on the usage of private data, which become a major hurdle to the development of AI technologies. This project brings an enabling technology to tackle this dilemma by implementing machine intelligence on mobile devices, so private data never leaves the device. It integrates research from deep learning, mobile computing and security, and addresses a comprehensive set of issues to improve learning accuracy, computational and energy efficiency under the device\u2019s memory capacity.\n\n \n\nA new framework is developed to incorporate the entire training process on mobile devices. It leverages and optimizes computing resources in the mobile architecture for various downstream tasks. First, a behavioral biometric authentication is developed such that the entire pipeline of sensing data collection, learning and decision making are all executed on-device, without sending private data to the cloud. This way, the system can also adapt to dynamic changes in the mobile environment with high accuracy. Second, the research improves the computational and statistical efficiency when mobile devices perform collaborative learning. A scheduling mechanism is developed by proportionally distributing workloads among the participants with different computational speeds. The process is jointly optimized considering different data types owned by different participants to guarantee high performance.\n\n \n\nThis project has opened up a new dimension of cutting-edge research and exciting education opportunities. Under the dominating trend of migrating computations to the edge, this project provides a stack of solutions not only to host machine learning applications on device, but also system-wide useability, energy efficiency, high performance and security when these complex dynamics interact with each other. It has created new opportunities for undergraduate research and important results are disseminated in the research community via conference, journal publications and workshop presentations.\n\n \n\n\t\t\t\t\tLast Modified: 05/20/2022\n\n\t\t\t\t\tSubmitted by: Cong Wang"
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "awd_id": "1725728",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SPX: Collaborative Research: Dependence Programming and Optimization of Scalable Irregular Numerical Applications",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Damian Dechev",
+ "awd_eff_date": "2017-08-15",
+ "awd_exp_date": "2022-07-31",
+ "tot_intn_awd_amt": 400000.0,
+ "awd_amount": 400000.0,
+ "awd_min_amd_letter_date": "2017-08-02",
+ "awd_max_amd_letter_date": "2017-08-02",
+ "awd_abstract_narration": "Dynamic and irregular applications, such as in the Multiresolution Adaptive Numerical Environment for Scientific Simulation framework, are notoriously hard to implement efficiently, especially on emerging complex and heterogeneous high-performance computing platforms. This is further compounded by the lack of suitable programming models capable of expressing these kinds of applications, while at the same time allowing the tools to efficiently map the applications on a variety of hardware. The intellectual merits of this project are in advancing the state of the art in dependence-based programming models, compiler technologies and runtime techniques that address these issues.  The project's broader significance and importance are in laying down the intellectual foundations for the composition and optimization of irregular scalable algorithms, focusing on challenging and highly-significant spatial-tree algorithms.  This project enables design and implementation of high-performance, portable irregular applications, as well as training of the future employees of companies and government who work in these domains.\r\n\r\nThis project redefines the prevailing abstractions by unifying and extending the Concurrent Collections (CnC) dependence-based programming model with novel compiler and runtime techniques, and applying these to a very important class of dynamic, irregular numerical computations such as the ones found in the above simulation framework. Innovations in the programming model allow the programmers to separate the specification of the algorithm from a specification of how to efficiently map the application on a variety of different platforms with a variety of different tuning goals. Compiler innovations enable previously elusive optimizations of irregular applications, while runtime techniques enable efficient execution on modern, heterogeneous and distributed machines.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Zoran",
+   "pi_last_name": "Budimlic",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Zoran Budimlic",
+   "pi_email_addr": "zoran@rice.edu",
+   "nsf_id": "000492284",
+   "pi_start_date": "2017-08-02",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "William Marsh Rice University",
+  "inst_street_address": "6100 MAIN ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "Houston",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "7133484820",
+  "inst_zip_code": "770051827",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "TX09",
+  "org_lgl_bus_name": "WILLIAM MARSH RICE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "K51LECU1G8N3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "William Marsh Rice University",
+  "perf_str_addr": "6100 Main St",
+  "perf_city_name": "Houston",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "770051827",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "09",
+  "perf_st_cong_dist": "TX09",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "042Y00",
+   "pgm_ele_name": "PPoSS-PP of Scalable Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 400000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project has resulted in a hierarchy-aware, shared-memory AND<br />distributed-memory implementation of a declarative programming model,<br />called Concurrent Collections (CnC). This models allows execution of<br />both element-wise and tiled (hierarchical) CnC programs, while<br />providing the user a streamlined interface to how data items and<br />computation steps are stored in and restored from the internal<br />representation.<br /><br />The runtime incorporates a novel, \"Micro-Runtimes\" language concept<br />that allows the programmer to create a group of micro-tasks that are<br />all ready to execute and schedule that group of micro-steps for<br />sequential execution, allowing the runtime to increase granularity of<br />computation by grouping together micro-steps that form a computation<br />tile, and executing that group sequentially or in a SIMD parallel<br />manner.<br /><br />Guided by the hints from the compiler, this runtime can execute an<br />optimized, precompiled version of a \"Super Task\", that subusumes the<br />effects of executing the fine-grained tasks individually.<br /><br />We have developed domain-specific enhancements to the CnC programming<br />model to support hierarchy and irregular application dependencies.<br /><br />We have applied our hierarchical runtime techniques to other runtime<br />systems, namely the GraphBLAS linear algebra library, the StarPU<br />runtime task execution system, and the Arkouda distributed execution<br />system, and shown that our runtime techniques seamlessly apply to<br />the other systems for execution of irregular applications, not just<br />our distributed CnC implementation.<br /><br />We have presented this work in several Concurrent Collections<br />workshops from 2017 to 2021, and published several conference papers and<br />PhD/Masters theses.</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 01/31/2024<br>\nModified by: Zoran&nbsp;Budimlic</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThis project has resulted in a hierarchy-aware, shared-memory AND\ndistributed-memory implementation of a declarative programming model,\ncalled Concurrent Collections (CnC). This models allows execution of\nboth element-wise and tiled (hierarchical) CnC programs, while\nproviding the user a streamlined interface to how data items and\ncomputation steps are stored in and restored from the internal\nrepresentation.\n\nThe runtime incorporates a novel, \"Micro-Runtimes\" language concept\nthat allows the programmer to create a group of micro-tasks that are\nall ready to execute and schedule that group of micro-steps for\nsequential execution, allowing the runtime to increase granularity of\ncomputation by grouping together micro-steps that form a computation\ntile, and executing that group sequentially or in a SIMD parallel\nmanner.\n\nGuided by the hints from the compiler, this runtime can execute an\noptimized, precompiled version of a \"Super Task\", that subusumes the\neffects of executing the fine-grained tasks individually.\n\nWe have developed domain-specific enhancements to the CnC programming\nmodel to support hierarchy and irregular application dependencies.\n\nWe have applied our hierarchical runtime techniques to other runtime\nsystems, namely the GraphBLAS linear algebra library, the StarPU\nruntime task execution system, and the Arkouda distributed execution\nsystem, and shown that our runtime techniques seamlessly apply to\nthe other systems for execution of irregular applications, not just\nour distributed CnC implementation.\n\nWe have presented this work in several Concurrent Collections\nworkshops from 2017 to 2021, and published several conference papers and\nPhD/Masters theses.\n\n\n\t\t\t\t\tLast Modified: 01/31/2024\n\n\t\t\t\t\tSubmitted by: ZoranBudimlic\n"
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "awd_id": "1101007",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research:  Isogeometric Boundary Element Analysis",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Christiaan Paredis",
+ "awd_eff_date": "2011-10-01",
+ "awd_exp_date": "2014-09-30",
+ "tot_intn_awd_amt": 362929.0,
+ "awd_amount": 362929.0,
+ "awd_min_amd_letter_date": "2011-03-24",
+ "awd_max_amd_letter_date": "2011-03-24",
+ "awd_abstract_narration": "The research objective of this collaborative research award is to develop methods that allow engineers to perform stress analysis using their computer aided design (CAD) models without the time consuming mesh generation required by traditional finite element analysis. The research approach combines isogeometric analysis with boundary element technology. Isogeometric analysis uses the same basis functions that are used in the CAD models for engineering analysis. Examples of these basis functions include non-uniform rational B-splines (NURBS) and T-Splines. Traditional numerical methods, such as finite element analysis, use piecewise continuous polynomials of low degree. A mesh generation step is therefore required to convert the CAD representation of the geometry to one that the numerical analysis can use. Using CAD basis functions directly allows us to eliminate this step. The current limitation with CAD basis functions is they only represent surfaces. To sidestep this limitation, we will use boundary element technology, which works directly with surface representations. \r\n\r\nIf successful, the results of this research will allow engineers to rapidly perform structural analyses with their CAD models during the preliminary design process. The high cost of doing detailed analysis during the design phase limits the scope of the design space that engineers are able to explore, and makes truly innovative design expensive. By reducing the time and cost of analysis, design engineers will be able to produce designs that are more optimal in terms of weight, performance, and cost. Automatic design optimization will also be facilitated since the numerical analysis will work directly with the design space parameterized by the CAD models, allowing optimization programs to work with less human intervention and correction.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Thomas J",
+   "pi_last_name": "Hughes",
+   "pi_mid_init": "R",
+   "pi_sufx_name": "",
+   "pi_full_name": "Thomas J R Hughes",
+   "pi_email_addr": "hughes@ices.utexas.edu",
+   "nsf_id": "000181608",
+   "pi_start_date": "2011-03-24",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Austin",
+  "perf_str_addr": "110 INNER CAMPUS DR",
+  "perf_city_name": "AUSTIN",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787121139",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "25",
+  "perf_st_cong_dist": "TX25",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "146400",
+   "pgm_ele_name": "ESD-Eng & Systems Design"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "067E",
+   "pgm_ref_txt": "DESIGN TOOLS"
+  },
+  {
+   "pgm_ref_code": "068E",
+   "pgm_ref_txt": "DESIGN THEORY"
+  },
+  {
+   "pgm_ref_code": "073E",
+   "pgm_ref_txt": "OPTIMIZATION & DECISION MAKING"
+  },
+  {
+   "pgm_ref_code": "079E",
+   "pgm_ref_txt": "VISUALIZATION & VIRTUAL DESIGN"
+  },
+  {
+   "pgm_ref_code": "9148",
+   "pgm_ref_txt": "TOOLS & TECHNOL FOR MANUFACTURING DESIGN"
+  },
+  {
+   "pgm_ref_code": "MANU",
+   "pgm_ref_txt": "MANUFACTURING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 362929.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The integration of computer aided design (CAD) and finite element analysis (FEA) has proved a formidable problem.&nbsp; Fundamental changes must take place to fully integrate engineering design and analysis processes. &nbsp;The key to eliminating the CAD/FEA bottleneck is to create parameterized geometries in the design phase.&nbsp; The recent development of T-spline surfaces illustrates the possibilities.&nbsp; Trimmed non-uniform rational B-splines (NURBS) surfaces can be made into untrimmed T-splines, from which untrimmed NURBS can be generated.&nbsp; Either the untrimmed NURBS or T-spline surface files can be directly transferred to isogeometric analysis codes and shell structural analysis can be performed directly without the necessity of all the usual geometric clean-up, de-featuring, and mesh generation. &nbsp;Likewise, an &ldquo;isogeometric boundary element method&rdquo; could be used in the same way for the analysis of three-dimensional solid parts.&nbsp; We believe that this is logically the first and perhaps most significant step toward automating the &ldquo;design to analysis&rdquo; cycle for three-dimensional solid parts.&nbsp; It <em>ab initio</em> eliminates the need for solving the challenging problem of developing three-dimensional spline parameterizations from surfaces. &nbsp;It also creates the opportunity of integrating CAD, FEA <em>and</em> shape optimization.&nbsp; The control variables of the surface design geometry provide a concise representation that can be used as design variables.&nbsp; Once an optimal design has been obtained, the design can be returned to the CAD system directly because it will already be in the &ldquo;language&rdquo; of the system, namely, NURBS, T-splines, etc.&nbsp; The advantages of isogeometric boundary element analysis seem apparent and its development was the major goal of the research proposed herein.</p>\n<p>The boundary integral equations for Poisson problems and linear elastostatics and accompanying fundamental solutions were developed as a prelude for use in an isogeometric&nbsp;formulation. Analysis-suitable T-splines, defined over unstructured grids, were then developed. The&nbsp;construction of the T-spline basis was then detailed, with emphasis placed on basis function definition near so&nbsp;called extraordinary points (vertices whose valence or the number of edges touching the vertex is not four). This&nbsp;presentation constituted the most comprehensive description of T-spline technology to date. A collocation approach, tailored to handle unstructured grids with T-junctions, was then derived. The discretization and&nbsp;collocation of the Poisson and elastostatic boundary integral equations for both smooth and non-smooth boundaries were&nbsp;then investigated. Numerical integration techniques that account for the singular integrals arising in the&nbsp;formulation were derived. Finally, several demanding three-dimensional problems were solved, including a&nbsp;complete, exact T-spline model of a propeller, illustrating the efficiency and utility of the methodology to&nbsp;integrate the design-through-analysis process more tightly.</p>\n<p>The theme of our work has been to combine the power of new analysis-suitable computer aided&nbsp;design (CAD) technologies with established analysis methodologies, in this case, the&nbsp;boundary element method. We coupled collocated isogeometric boundary element methods&nbsp;and unstructured analysis-suitable T-spline surfaces for Poisson and linear elastostatic problems, and established the framework for extending the technology to various other engineering problems formulated as boundary integral equations. &nbsp;We&nbsp;generalized the definition of analysis-suitable T-splines to encompass unstructured control grids&nbsp;(unstructured meshes) and developed basis functions which are smooth (rational) polynomials&nbsp;defined in terms of the Bezier extraction framew...",
+  "por_txt_cntn": "\nThe integration of computer aided design (CAD) and finite element analysis (FEA) has proved a formidable problem.  Fundamental changes must take place to fully integrate engineering design and analysis processes.  The key to eliminating the CAD/FEA bottleneck is to create parameterized geometries in the design phase.  The recent development of T-spline surfaces illustrates the possibilities.  Trimmed non-uniform rational B-splines (NURBS) surfaces can be made into untrimmed T-splines, from which untrimmed NURBS can be generated.  Either the untrimmed NURBS or T-spline surface files can be directly transferred to isogeometric analysis codes and shell structural analysis can be performed directly without the necessity of all the usual geometric clean-up, de-featuring, and mesh generation.  Likewise, an \"isogeometric boundary element method\" could be used in the same way for the analysis of three-dimensional solid parts.  We believe that this is logically the first and perhaps most significant step toward automating the \"design to analysis\" cycle for three-dimensional solid parts.  It ab initio eliminates the need for solving the challenging problem of developing three-dimensional spline parameterizations from surfaces.  It also creates the opportunity of integrating CAD, FEA and shape optimization.  The control variables of the surface design geometry provide a concise representation that can be used as design variables.  Once an optimal design has been obtained, the design can be returned to the CAD system directly because it will already be in the \"language\" of the system, namely, NURBS, T-splines, etc.  The advantages of isogeometric boundary element analysis seem apparent and its development was the major goal of the research proposed herein.\n\nThe boundary integral equations for Poisson problems and linear elastostatics and accompanying fundamental solutions were developed as a prelude for use in an isogeometric formulation. Analysis-suitable T-splines, defined over unstructured grids, were then developed. The construction of the T-spline basis was then detailed, with emphasis placed on basis function definition near so called extraordinary points (vertices whose valence or the number of edges touching the vertex is not four). This presentation constituted the most comprehensive description of T-spline technology to date. A collocation approach, tailored to handle unstructured grids with T-junctions, was then derived. The discretization and collocation of the Poisson and elastostatic boundary integral equations for both smooth and non-smooth boundaries were then investigated. Numerical integration techniques that account for the singular integrals arising in the formulation were derived. Finally, several demanding three-dimensional problems were solved, including a complete, exact T-spline model of a propeller, illustrating the efficiency and utility of the methodology to integrate the design-through-analysis process more tightly.\n\nThe theme of our work has been to combine the power of new analysis-suitable computer aided design (CAD) technologies with established analysis methodologies, in this case, the boundary element method. We coupled collocated isogeometric boundary element methods and unstructured analysis-suitable T-spline surfaces for Poisson and linear elastostatic problems, and established the framework for extending the technology to various other engineering problems formulated as boundary integral equations.  We generalized the definition of analysis-suitable T-splines to encompass unstructured control grids (unstructured meshes) and developed basis functions which are smooth (rational) polynomials defined in terms of the Bezier extraction framework. We then developed a collocation procedure that correctly accounted for sharp edges and corners, extraordinary points, and T-junctions. This approach was applied to several three-dimensional problems, including a real-world T-spline model of a propeller under wind..."
+ }
+}

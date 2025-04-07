@@ -1,0 +1,105 @@
+{
+ "awd_id": "1216866",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Sparse spectral-tau methods for binary neutron star initial data",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "rosemary renaut",
+ "awd_eff_date": "2012-09-15",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 131490.0,
+ "awd_amount": 131490.0,
+ "awd_min_amd_letter_date": "2012-09-11",
+ "awd_max_amd_letter_date": "2012-09-11",
+ "awd_abstract_narration": "Binary neutron star inspiral is the most certain source of gravitational waves detectable by Earth-based observatories like the US LIGO project, and simulations of such binaries should facilitate eventual detections. These simulations require initial conditions: solutions to the initial value problem of general relativity for the coupled gravity-matter system. The conformal thin sandwich method is an excellent approach for solving the initial value problem; however, although not an intrinsic assumption of the method, in practice the approach has assumed conformal flatness (as have other valuable approaches). Conformal flatness yields unphysical junk radiation. By numerically constructing helically symmetric solutions to the Einstein equations, the PI will extract initial data (or conformal thin sandwich trial data) which does not rely on conformal flatness, and therefore contains the correct initial gravitational wave content. The mixed PDEs arising from the helical reduction of the Einstein equations (or their approximation in the post-Minkowski formalism) will be solved with innovative techniques: sparse modal spectral-tau methods with new preconditioning strategies. In part, these strategies may rely on randomized algorithms for the interpolative decomposition. Spectral methods deliver superb accuracy for smooth problems(neutron star spacetimes are smooth almost everywhere), and sparsity affords a fast matrix-vector multiply when using a Krylov-subspace method to iteratively solve a linear system. Whereas the preconditioning of nodal (collocation) spectral methods is well studied, less is known about modal preconditioning. Our techniques have been successfully applied to models of the binary neutron star problem. Moreover, the problem's physical structure has already been explored with different, but limited, techniques. \r\n\r\nThis project is to combine two sets of techniques (each already developed) and further develop the first set (spectral-tau methods), in order to obtain new results for a leading problem in gravitational wave physics. The PI will develop these mathematical methods by applying them to the specific neutron star problem described above. This strategy of specificity is often used in the development of techniques, which then prove to be more general. Because the scientific problem is of great interest, much is known about it, and results therefore exist withwhich comparisons can be made. These comparisons facilitate the development of mathematical algorithms. Conversely, new mathematical methods deliver more and/or better solutions which enhances scientific understanding.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Stephen",
+   "pi_last_name": "Lau",
+   "pi_mid_init": "R",
+   "pi_sufx_name": "",
+   "pi_full_name": "Stephen R Lau",
+   "pi_email_addr": "lau@math.unm.edu",
+   "nsf_id": "000512137",
+   "pi_start_date": "2012-09-11",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of New Mexico",
+  "inst_street_address": "1 UNIVERSITY OF NEW MEXICO",
+  "inst_street_address_2": "",
+  "inst_city_name": "ALBUQUERQUE",
+  "inst_state_code": "NM",
+  "inst_state_name": "New Mexico",
+  "inst_phone_num": "5052774186",
+  "inst_zip_code": "871310001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "NM01",
+  "org_lgl_bus_name": "UNIVERSITY OF NEW MEXICO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "F6XLTRUQJEN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of New Mexico",
+  "perf_str_addr": "Mathematics and Statistics",
+  "perf_city_name": "Albuquerque",
+  "perf_st_code": "NM",
+  "perf_st_name": "New Mexico",
+  "perf_zip_code": "871310001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "NM01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 131490.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In scientific and engineering modelling, computers are often used to<br />solve partial differential equations, the mathematical foundation&nbsp;&nbsp;&nbsp;&nbsp; <br />for many physical phenomena, for example the propagation of waves.<br />Such modelling can be done in relatively straightforward ways<br />(\"finite difference\" or basic \"finite element\" methods), but a more <br />sophisticated class of techniques, \"spectral methods,\" yield high<br />accuracy for some problems. In our work we adopt a refined spectral<br />method that features sparsity; in effect, the first step toward a<br />solution is taken through the mathematical structure itself, without<br />requiring significant computer computation. Our sparse spectral<br />approach had earlier been shown effective for some ordinary differential<br />equations, but not for the much more difficult challenge of partial<br />differential equations.<br /><br />It is often best to develop new mathematical/computational methods in<br />the context of a specific physical problem. In our case the problem<br />involves binary neutron stars. A binary pair of such stars emits<br />gravitational waves and spirals inward, a process that is described<br />by the partial differential equations of Einstein's general theory of<br />relativity. The evolution in time of the inspiral can currently be<br />computed well with highly developed computational infrastructure. What<br />is missing is a realistic starting point, the initial configuration.<br /><br />The partial differential equations that must be solved for the initial<br />configuration have proved to be a stubborn challenge, and researchers<br />have typically used a solution that is mathematically convenient, but<br />far from appropriate physically. This starting point evolves into a<br />correct solution, but it means that the evolution computation must be<br />carried out for a longer time than would be necessary for a more<br />physically correct starting solution.<br /><br />We have endeavored to use sparse spectral methods to solve for a<br />physically correct initial approximation. The magnitude of the<br />challenge has required that the problem be broken into a sequence<br />of ever more advanced projects. The first of these was the solution<br />not of the Einstein equations, but of Newton's equations for the<br />initial binary configuration. The main simplification in this model<br />is that there are no waves. Solving this \"simple\" problem turned<br />out, as anticipated, to reveal many important details and to set up<br />much of the infrastructure for a more realistic model. Indeed, many<br />unanticipated problems developed in the Newtonian model, in<br />particular, those involving the stellar surface, that were not<br />particularly \"Einsteinian.\"<br /><br />The outcome of this work is a highly precise set of computer<br />programs that solves for initial neutron star structure. We have<br />not solved the Einstein equations themselves, but rather an<br />approximation (\"post-Newtonian/post-Minkowskian\") to Einstein's<br />equations. This approximation should be more than adequate for an<br />improved initial configuration. We have, therefore, partially achieved<br />our goals for this work. Next steps include looking at the physics<br />inherent in the initial solutions themselves, and collaborating with<br />researchers who need initial configurations for their codes that<br />evolve these initial configurations.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/28/2016<br>\n\t\t\t\t\tModified by: Stephen&nbsp;R&nbsp;Lau</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIn scientific and engineering modelling, computers are often used to\nsolve partial differential equations, the mathematical foundation     \nfor many physical phenomena, for example the propagation of waves.\nSuch modelling can be done in relatively straightforward ways\n(\"finite difference\" or basic \"finite element\" methods), but a more \nsophisticated class of techniques, \"spectral methods,\" yield high\naccuracy for some problems. In our work we adopt a refined spectral\nmethod that features sparsity; in effect, the first step toward a\nsolution is taken through the mathematical structure itself, without\nrequiring significant computer computation. Our sparse spectral\napproach had earlier been shown effective for some ordinary differential\nequations, but not for the much more difficult challenge of partial\ndifferential equations.\n\nIt is often best to develop new mathematical/computational methods in\nthe context of a specific physical problem. In our case the problem\ninvolves binary neutron stars. A binary pair of such stars emits\ngravitational waves and spirals inward, a process that is described\nby the partial differential equations of Einstein's general theory of\nrelativity. The evolution in time of the inspiral can currently be\ncomputed well with highly developed computational infrastructure. What\nis missing is a realistic starting point, the initial configuration.\n\nThe partial differential equations that must be solved for the initial\nconfiguration have proved to be a stubborn challenge, and researchers\nhave typically used a solution that is mathematically convenient, but\nfar from appropriate physically. This starting point evolves into a\ncorrect solution, but it means that the evolution computation must be\ncarried out for a longer time than would be necessary for a more\nphysically correct starting solution.\n\nWe have endeavored to use sparse spectral methods to solve for a\nphysically correct initial approximation. The magnitude of the\nchallenge has required that the problem be broken into a sequence\nof ever more advanced projects. The first of these was the solution\nnot of the Einstein equations, but of Newton's equations for the\ninitial binary configuration. The main simplification in this model\nis that there are no waves. Solving this \"simple\" problem turned\nout, as anticipated, to reveal many important details and to set up\nmuch of the infrastructure for a more realistic model. Indeed, many\nunanticipated problems developed in the Newtonian model, in\nparticular, those involving the stellar surface, that were not\nparticularly \"Einsteinian.\"\n\nThe outcome of this work is a highly precise set of computer\nprograms that solves for initial neutron star structure. We have\nnot solved the Einstein equations themselves, but rather an\napproximation (\"post-Newtonian/post-Minkowskian\") to Einstein's\nequations. This approximation should be more than adequate for an\nimproved initial configuration. We have, therefore, partially achieved\nour goals for this work. Next steps include looking at the physics\ninherent in the initial solutions themselves, and collaborating with\nresearchers who need initial configurations for their codes that\nevolve these initial configurations.\n\n\t\t\t\t\tLast Modified: 11/28/2016\n\n\t\t\t\t\tSubmitted by: Stephen R Lau"
+ }
+}

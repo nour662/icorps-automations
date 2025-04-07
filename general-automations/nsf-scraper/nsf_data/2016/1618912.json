@@ -1,0 +1,101 @@
+{
+ "awd_id": "1618912",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small: Collaborative Research: Exploring Portable Data Placement on Massively Parallel Platforms with Heterogeneous Memory Architectures",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Matt Mutka",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2019-08-31",
+ "tot_intn_awd_amt": 199671.0,
+ "awd_amount": 199671.0,
+ "awd_min_amd_letter_date": "2016-08-02",
+ "awd_max_amd_letter_date": "2016-08-02",
+ "awd_abstract_narration": "Heterogeneous computing is becoming crucial for many computational fields, including simulations of the galaxy, analysis of social networks, modeling of stock transactions, and so on. Programming heterogeneous memory systems is a grand challenge, and creates a major obstacle between heterogeneous hardware and applications because of the programming complexity and fast hardware evolution. This project aims to address this obstacle, and is expected to significantly relieve programmers from handling the underlying memory system heterogeneity. The outcome from this research will also enable continuous enhancement of the computing efficiency of a number of applications on future heterogeneous systems, which is a critical condition for sustained advancement of science, health, security and other aspects of humanity.\r\n\r\nTo address the programming challenges on heterogeneous memory systems, the project investigates a software framework, consisting of a hardware specification language, a set of novel compiler and runtime techniques, and advanced memory performance modeling. The goal is to develop a systematic solution to automatically place data given a complex heterogeneous memory system, especially on massively parallel platforms. With the proposed framework, programmers are relieved from tailoring their programs to different memory systems, and at the same time, the sophisticated memory systems can get fully translated into high computing efficiency.  The framework transforms the programs such that they are customized - in terms of where data are placed in memory, when and how to migrate, etc.- to the underlying heterogeneous memory system at runtime and attain a near optimal memory usage.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Bo",
+   "pi_last_name": "Wu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Bo Wu",
+   "pi_email_addr": "bwu@mines.edu",
+   "nsf_id": "000676262",
+   "pi_start_date": "2016-08-02",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Colorado School of Mines",
+  "inst_street_address": "1500 ILLINOIS ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "GOLDEN",
+  "inst_state_code": "CO",
+  "inst_state_name": "Colorado",
+  "inst_phone_num": "3032733000",
+  "inst_zip_code": "804011887",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "CO07",
+  "org_lgl_bus_name": "TRUSTEES OF THE COLORADO SCHOOL OF MINES",
+  "org_prnt_uei_num": "JW2NGMP4NMA3",
+  "org_uei_num": "JW2NGMP4NMA3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Colorado School of Mines",
+  "perf_str_addr": "1610 Illinois Street",
+  "perf_city_name": "Golden",
+  "perf_st_code": "CO",
+  "perf_st_name": "Colorado",
+  "perf_zip_code": "804011833",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "CO07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 199671.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Modern processors often leverage massive parallelism to provide extremely high computationthroughput, exemplified by Graphic Processing Units (GPUs), Many Integrated Cores (MIC), and Accelerate Processing Units (APUs). For the massive parallelism to yield performancebenefits, the memory system should provide high bandwidth, high capacity, and low latency.However, one type of memory can satisfy at most two of these requirements, motivating theemployment of heterogeneous memory systems (HMS). An HMS consists of multiple memorycomponents with different properties. For example, an NVIDIA GPU has more than eight typesof memories (global, texture, shared, constant, and various caches), with some on-chip,some off-chip, some directly manageable by software, and some not. It is thus challengingto place data in an optimal manner to maximize the achieved throughput.</p>\n<p>The main technical objective of this project was to design a systematic approach tooptimizing data-to-memory mapping for HMS in massively parallel platforms. The projectaimed at dramatically improving the performance of important applications in multipleemerging domains, such as graph analytics and machine learning.</p>\n<p>During the NSF project, we have produced research results to deepen the understanding of1) processing very large graphs which do not fit in the global memory of GPUs, 2) placingdata on fast and slow memory to optimize aggregate bandwidth, 3) partitioning and mappingcomputation to the complex memory hierarchy of GPUs for recurrent neural networks, and 4)partitioning data between the CPU and the GPU. Based on these understandings, we showedthat better data placement could lead to up to 10X and 7X performance improvements overother systems for graph processing and serving recurrent neural networks models,respectively.</p>\n<p>We published seven papers and made two software repositories(https://github.com/zhangfengthu/FinePar and https://github.com/cmikeh2/grnn) publicthanks to the support of this award. Some papers appeared in top conferences, includingASPLOS, EuroSys, CGO, IPDPS, and PACT. Because of the high performance of the librarybased on our EuroSys paper, our collaborators at Microsoft are trying to integrate thecode in their production system for multiple applications, ranging from natural languageprocessing to text classification.</p>\n<p>The PI has integrated some of the research outcomes in three courses he has offered multiple times at Colorado School of Mines. The project has supported five graduateresearch assistants, who gained research experiences in compilers, runtime systems, graphprocessing applications, and deep learning techniques. Some of them attended academicconferences and workshops, and consider to develop their career in academia.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/28/2019<br>\n\t\t\t\t\tModified by: Bo&nbsp;Wu</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nModern processors often leverage massive parallelism to provide extremely high computationthroughput, exemplified by Graphic Processing Units (GPUs), Many Integrated Cores (MIC), and Accelerate Processing Units (APUs). For the massive parallelism to yield performancebenefits, the memory system should provide high bandwidth, high capacity, and low latency.However, one type of memory can satisfy at most two of these requirements, motivating theemployment of heterogeneous memory systems (HMS). An HMS consists of multiple memorycomponents with different properties. For example, an NVIDIA GPU has more than eight typesof memories (global, texture, shared, constant, and various caches), with some on-chip,some off-chip, some directly manageable by software, and some not. It is thus challengingto place data in an optimal manner to maximize the achieved throughput.\n\nThe main technical objective of this project was to design a systematic approach tooptimizing data-to-memory mapping for HMS in massively parallel platforms. The projectaimed at dramatically improving the performance of important applications in multipleemerging domains, such as graph analytics and machine learning.\n\nDuring the NSF project, we have produced research results to deepen the understanding of1) processing very large graphs which do not fit in the global memory of GPUs, 2) placingdata on fast and slow memory to optimize aggregate bandwidth, 3) partitioning and mappingcomputation to the complex memory hierarchy of GPUs for recurrent neural networks, and 4)partitioning data between the CPU and the GPU. Based on these understandings, we showedthat better data placement could lead to up to 10X and 7X performance improvements overother systems for graph processing and serving recurrent neural networks models,respectively.\n\nWe published seven papers and made two software repositories(https://github.com/zhangfengthu/FinePar and https://github.com/cmikeh2/grnn) publicthanks to the support of this award. Some papers appeared in top conferences, includingASPLOS, EuroSys, CGO, IPDPS, and PACT. Because of the high performance of the librarybased on our EuroSys paper, our collaborators at Microsoft are trying to integrate thecode in their production system for multiple applications, ranging from natural languageprocessing to text classification.\n\nThe PI has integrated some of the research outcomes in three courses he has offered multiple times at Colorado School of Mines. The project has supported five graduateresearch assistants, who gained research experiences in compilers, runtime systems, graphprocessing applications, and deep learning techniques. Some of them attended academicconferences and workshops, and consider to develop their career in academia.\n\n\t\t\t\t\tLast Modified: 12/28/2019\n\n\t\t\t\t\tSubmitted by: Bo Wu"
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "awd_id": "1115288",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Local properties of the finite element solutions to PDE constrained optimal control problems",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032924488",
+ "po_email": "jwang@nsf.gov",
+ "po_sign_block_name": "Junping Wang",
+ "awd_eff_date": "2011-10-01",
+ "awd_exp_date": "2014-09-30",
+ "tot_intn_awd_amt": 126383.0,
+ "awd_amount": 126383.0,
+ "awd_min_amd_letter_date": "2011-09-15",
+ "awd_max_amd_letter_date": "2011-09-15",
+ "awd_abstract_narration": "The research objective of this project is to develop a strong theoretical \r\nfoundation on local properties of finite element solutions for advection-\r\ndominated optimal control problems. The advection-diffusion partial \r\ndifferential equations (PDEs) are known to be difficult to approximate because \r\ntheir solutions often exhibit discontinuities, layers, and shocks. The \r\nstructure of the solutions to optimal control problems is even more \r\ncomplicated because of the coupling in the optimality system of the governing \r\nadvection-dominated PDE with an advection-dominated adjoint PDE. It is known \r\nthat convergence behavior of finite element methods applied to single \r\nadvection-dominated PDEs can be very different from the convergence behavior \r\nof finite element methods applied to advection-dominated optimal control \r\nproblems. Understanding the global and local convergence behavior is crucial \r\nfor reliable and efficient solution of advection-dominated optimal control \r\nproblems, especially in the presence of control and state constraints, and \r\nobjective functions that depend on pointwise state information. This project \r\nintends to deepen our understanding for various problems and to help develop \r\nreliable numerical methods.   \r\n\r\n\r\nMathematics proved to be extremely useful in modeling many real life problems \r\ncoming from environment, technology, climate, and etc. However, many \r\nmathematical models require special parameters that can not be measured \r\ndirectly. Examples can be shapes in modeling technological devises, physical \r\ncoefficients in environmental processes, controls in navigation and etc. and \r\nneed to be estimated.  Mathematically, estimation of such paramters often \r\nleads to optimization problems with constraints in the form of system partial \r\ndifferential equations (PDEs). Usually, such system of PDEs is well understood \r\nand there are many available numerical techniques to solve it. However, it \r\ndoes not immediately apply that the method that works well for the underlying \r\nsystem of PDEs will work for the constrained optimization problem.  In our \r\nprevious work, we showed such differences in the case of a simple model \r\nproblem. In this proposal we intend to investigate more complicated model \r\nproblems that cover a broader range of applications.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Dmitriy",
+   "pi_last_name": "Leykekhman",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Dmitriy Leykekhman",
+   "pi_email_addr": "dmitriy.leykekhman@uconn.edu",
+   "nsf_id": "000155274",
+   "pi_start_date": "2011-09-15",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Connecticut",
+  "inst_street_address": "438 WHITNEY RD EXTENSION UNIT 1133",
+  "inst_street_address_2": "",
+  "inst_city_name": "STORRS",
+  "inst_state_code": "CT",
+  "inst_state_name": "Connecticut",
+  "inst_phone_num": "8604863622",
+  "inst_zip_code": "062699018",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "CT02",
+  "org_lgl_bus_name": "UNIVERSITY OF CONNECTICUT",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "WNTPS995QBM7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Connecticut",
+  "perf_str_addr": "438 WHITNEY RD EXTENSION UNIT 1133",
+  "perf_city_name": "STORRS",
+  "perf_st_code": "CT",
+  "perf_st_name": "Connecticut",
+  "perf_zip_code": "062699018",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "CT02",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 126383.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Many optimal control problems with fluid and chemical-reactive flows are advection-dominated. To guarantee good approaximation and avoid nonphysical phenomena, &nbsp;numerical methods usually require a stabilization of the advection term. This poses several interesting questions.</p>\n<p>First interesting question concern the order when approxamates the problem, so called optimize-then-discretize and discretize-then-optimize approaches.&nbsp;For some stabilization techniques &nbsp;those optimize-then-discretize and discretize-then-optimize approaches do not commute.</p>\n<p>In the case of model advection-diffusion problems we analyzed in details the two approaches and run various numerical simulations to compare them numerically. The analytical and the&nbsp;numerical evidence show several possible problems with &nbsp;discretize-then-optimize approach.</p>\n<p>The second interesting question we addressed in details is the choice to treatt boundary conditions. The main result show that although &nbsp;for a single equation there is a small difference in numerical solution in treatment of boundary conditions, this difference can be substantial in the context of optimal control problems. Thus in particular the effect from the boundary layers on numerical solution in the interior of the domain can be significantly smaller if the boundary conditions are treated weakly. We provide a detailed analysis of this statement, which involves a rather technical weighted technique. We also provide various numerical simulations to support analytical findings.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/10/2014<br>\n\t\t\t\t\tModified by: Dmitriy&nbsp;Leykekhman</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMany optimal control problems with fluid and chemical-reactive flows are advection-dominated. To guarantee good approaximation and avoid nonphysical phenomena,  numerical methods usually require a stabilization of the advection term. This poses several interesting questions.\n\nFirst interesting question concern the order when approxamates the problem, so called optimize-then-discretize and discretize-then-optimize approaches. For some stabilization techniques  those optimize-then-discretize and discretize-then-optimize approaches do not commute.\n\nIn the case of model advection-diffusion problems we analyzed in details the two approaches and run various numerical simulations to compare them numerically. The analytical and the numerical evidence show several possible problems with  discretize-then-optimize approach.\n\nThe second interesting question we addressed in details is the choice to treatt boundary conditions. The main result show that although  for a single equation there is a small difference in numerical solution in treatment of boundary conditions, this difference can be substantial in the context of optimal control problems. Thus in particular the effect from the boundary layers on numerical solution in the interior of the domain can be significantly smaller if the boundary conditions are treated weakly. We provide a detailed analysis of this statement, which involves a rather technical weighted technique. We also provide various numerical simulations to support analytical findings. \n\n \n\n\t\t\t\t\tLast Modified: 10/10/2014\n\n\t\t\t\t\tSubmitted by: Dmitriy Leykekhman"
+ }
+}

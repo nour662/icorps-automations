@@ -1,0 +1,109 @@
+{
+ "awd_id": "2017863",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "FMitF: Track II: Scaling Formal Hardware Security Verification with CheckMate from Research to Practice",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922585",
+ "po_email": "pprabhak@nsf.gov",
+ "po_sign_block_name": "Pavithra Prabhakar",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2023-03-31",
+ "tot_intn_awd_amt": 100000.0,
+ "awd_amount": 100000.0,
+ "awd_min_amd_letter_date": "2020-06-17",
+ "awd_max_amd_letter_date": "2020-06-17",
+ "awd_abstract_narration": "Computers are ubiquitous and performing increasingly sophisticated tasks, from locking and unlocking smart doors to driving cars and diagnosing disease. Spectre attacks are a type of hardware security vulnerability that have been used to leak arbitrary sensitive data processed on modern computers and affect billions of shipped microprocessors. Given the widespread deployment of complex microprocessors, devising mechanisms for verifying their secure execution has become a deeply important problem. The project\u2019s novelties are advances in hardware-security verification underpinned by the goal of extending the CheckMate methodology and tool (a formal hardware-security-verification research prototype) to support the analysis of industry-scale processor designs. The project\u2019s impacts are an industrial-scale hardware-security verification technique and tool and consequently secure design and deployment for billions of future commercial microprocessors. This translates to improved security for the many important tasks to which we entrust computers today.\r\n\r\nThe project has several thrusts that support the goal of delivering an improved CheckMate, capable of automatically analyzing industrial-scale processor designs, and which is suitable for use by hardware engineers. The first thrust of the project develops an abstraction/refinement methodology that will extract microarchitectural models for security analysis directly from the Register Transfer Level description of a microprocessor. At present, CheckMate requires as input a manually constructed axiomatic microarchitectural specification, which captures all relevant processor features for a security analysis while abstracting away the irrelevant ones. The second project thrust modularizes the CheckMate tool, introducing a dedicated \"front end\" that parses a defined Domain Specific Language, handing off the result to a \"back end\" solver that can be easily swapped out. This facilitates experimentation with, and evaluation of, different approaches to solving the verification problems that CheckMate produces. The third thrust modularizes the CheckMate verification algorithm itself, allowing CheckMate to search for potential exploits across hardware module boundaries. The project features a collaboration with Arm Research to help ensure that CheckMate extensions are suitable for commercial processor verification. Furthermore, the research features an application of CheckMate to a microarchitectural description of the Arm Cortex-R8 microprocessor to evaluate the tool\u2019s ability to detect susceptibility to Spectre attacks.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Caroline",
+   "pi_last_name": "Trippel",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Caroline Trippel",
+   "pi_email_addr": "trippel@stanford.edu",
+   "nsf_id": "000819119",
+   "pi_start_date": "2020-06-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Stanford University",
+  "inst_street_address": "450 JANE STANFORD WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "STANFORD",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "6507232300",
+  "inst_zip_code": "943052004",
+  "inst_country_name": "United States",
+  "cong_dist_code": "16",
+  "st_cong_dist_code": "CA16",
+  "org_lgl_bus_name": "THE LELAND STANFORD JUNIOR UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HJD6G4D6TJY5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Stanford University",
+  "perf_str_addr": "353 Jane Stanford Way",
+  "perf_city_name": "Stanford",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "943055008",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "16",
+  "perf_st_cong_dist": "CA16",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "071Z",
+   "pgm_ref_txt": "FMitF-Formal Methods in the Field"
+  },
+  {
+   "pgm_ref_code": "8206",
+   "pgm_ref_txt": "Formal Methods and Verification"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 100000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-35c3c2fe-7fff-5f89-5e10-cf8cb1fdf157\"><span>The goal of this project was to transition the CheckMate hardware security verification approach from theory to practice. CheckMate evaluates susceptibility of an input hardware design to classes of hardware side-channel attacks (also called \"microarchitectural attacks\"); these attacks leak secrets processed by unsuspecting victim programs to attackers when they run on the hardware. A key limitation of CheckMate is that it expects the hardware design input to be provided in the guise of an abstract model, called a \"&#120525;spec model\". Unfortunately, processor designs are written in so-called hardware description languages, like Verilog or SystemVerilog, which bear no resemblance to &#120525;spec models. Prior to the work conducted for this grant, &#120525;spec models had to be written by hand based on manual inspection of hardware designs by experts. In this project, we had hoped that we would be able to achieve at least a semi-automated procedure for connecting hand-written &#120525;spec models with processor designs written in Verilog/SystemVerilog. We exceeded our own expectations and were able to propose and develop the first automated approach for synthesizing &#120525;spec models from Verilog/SystemVerilog descriptions of *simple* processor designs - e.g., in-order pipelines with no complex cache hierarchies. This result greatly advanced the state-of-the-art, which observed prohibitive execution times and scalability limitations for trying to verify adherence of some Verilog/SystemVerilog implementation to a hand-written &#120525;spec model description. Our approach and tool, rtl2&#120525;spec, can synthesize a &#120525;spec model (restricted to memory instructions) from one of these simple processor designs in a matter of minutes. Our approach is based on automatically instantiating and checking a variety of formal properties (in ?linear temporal logic?) on the hardware design using state-of-the-art formal tools, called model checkers. Our work has significant positive implications for both verifying the correctness of shared memory behavior on state-of-the-art processors as well as evaluating their security implications. The work conducted for this grant paved the way for the lead investigator's NSF CAREER proposal which outlines a plan for systematically uncovering the various ways in which an industry-scale hardware design can leak the data processed by unsuspecting victim programs to attackers. Such an approach (for uncovering the ways in which a hardware design can leak data) would be a key step forward for achieving software security that is rooted in hardware reality.</span></span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/26/2023<br>\n\t\t\t\t\tModified by: Caroline&nbsp;Trippel</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of this project was to transition the CheckMate hardware security verification approach from theory to practice. CheckMate evaluates susceptibility of an input hardware design to classes of hardware side-channel attacks (also called \"microarchitectural attacks\"); these attacks leak secrets processed by unsuspecting victim programs to attackers when they run on the hardware. A key limitation of CheckMate is that it expects the hardware design input to be provided in the guise of an abstract model, called a \"&#120525;spec model\". Unfortunately, processor designs are written in so-called hardware description languages, like Verilog or SystemVerilog, which bear no resemblance to &#120525;spec models. Prior to the work conducted for this grant, &#120525;spec models had to be written by hand based on manual inspection of hardware designs by experts. In this project, we had hoped that we would be able to achieve at least a semi-automated procedure for connecting hand-written &#120525;spec models with processor designs written in Verilog/SystemVerilog. We exceeded our own expectations and were able to propose and develop the first automated approach for synthesizing &#120525;spec models from Verilog/SystemVerilog descriptions of *simple* processor designs - e.g., in-order pipelines with no complex cache hierarchies. This result greatly advanced the state-of-the-art, which observed prohibitive execution times and scalability limitations for trying to verify adherence of some Verilog/SystemVerilog implementation to a hand-written &#120525;spec model description. Our approach and tool, rtl2&#120525;spec, can synthesize a &#120525;spec model (restricted to memory instructions) from one of these simple processor designs in a matter of minutes. Our approach is based on automatically instantiating and checking a variety of formal properties (in ?linear temporal logic?) on the hardware design using state-of-the-art formal tools, called model checkers. Our work has significant positive implications for both verifying the correctness of shared memory behavior on state-of-the-art processors as well as evaluating their security implications. The work conducted for this grant paved the way for the lead investigator's NSF CAREER proposal which outlines a plan for systematically uncovering the various ways in which an industry-scale hardware design can leak the data processed by unsuspecting victim programs to attackers. Such an approach (for uncovering the ways in which a hardware design can leak data) would be a key step forward for achieving software security that is rooted in hardware reality.\n\n\t\t\t\t\tLast Modified: 07/26/2023\n\n\t\t\t\t\tSubmitted by: Caroline Trippel"
+ }
+}

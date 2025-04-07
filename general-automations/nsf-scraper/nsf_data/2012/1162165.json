@@ -1,0 +1,117 @@
+{
+ "awd_id": "1162165",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "CSR: Medium: Collaborative Research: On Closed-Loop and Cross-Layer Design and Implementation of Data Storage Systems Utilizing Extremely Scaled NAND Flash Memory Technologies",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anita La Salle",
+ "awd_eff_date": "2012-07-01",
+ "awd_exp_date": "2014-06-30",
+ "tot_intn_awd_amt": 225000.0,
+ "awd_amount": 225000.0,
+ "awd_min_amd_letter_date": "2012-06-27",
+ "awd_max_amd_letter_date": "2013-07-15",
+ "awd_abstract_narration": "This project is developing efficient solid-state data storage device and system design solutions. Although solid-state data storage has shown a high potential to significantly advance storage systems to achieve ultra-high performance with low energy consumption, continuous semiconductor technology scaling makes it increasingly challenging to realize efficient and reliable solid-state data storage devices and systems for the storage hierarchy in large-scale systems, such as data centers and cloud systems. \r\n \r\nThe intellectual merit of this proposal lies in the theme of developing solid-state data storage design techniques from both software and hardware. Major solid-state data storage device architecture functions, including error correction coding, wear-leveling and garbage collection algorithms, are being developed. Workload and device-aware solid-state data storage system design solutions are also being developed for large data center applications. Design solutions will be evaluated using an experimental hardware platform and the Linux operating system.\r\n \r\nThe broader impact of the proposed research is that it will enable the development of highly reliable and low-cost solid-state data storage devices and systems for large-scale computing and storage systems. The adoption of the design methodology by solid-state data storage architects, system designers, and data-intensive practitioners may provide a direct benefit to this strategically important high technology sector critical to the economic health of the nation. This team will also introduce new research results into courses.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Xiaodong",
+   "pi_last_name": "Zhang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Xiaodong Zhang",
+   "pi_email_addr": "zhang@cse.ohio-state.edu",
+   "nsf_id": "000416471",
+   "pi_start_date": "2012-06-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Ohio State University",
+  "inst_street_address": "1960 KENNY RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLUMBUS",
+  "inst_state_code": "OH",
+  "inst_state_name": "Ohio",
+  "inst_phone_num": "6146888735",
+  "inst_zip_code": "432101016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "OH03",
+  "org_lgl_bus_name": "OHIO STATE UNIVERSITY, THE",
+  "org_prnt_uei_num": "MN4MDDMN8529",
+  "org_uei_num": "DLWBSLWAJWR1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Ohio State University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "OH",
+  "perf_st_name": "Ohio",
+  "perf_zip_code": "432101063",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "OH03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7354",
+   "pgm_ref_txt": "COMPUTER SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0113",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001314DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 105499.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2013,
+   "fund_oblg_amt": 119501.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Although flash-based Solid State Device (SSD) technology has shown a high potential to significantly advance storage systems to achieve ultra-high performance with low energy consumption, there are several fundamental research issues to be systematically addressed before SSDs can be efficiently and reliably merged into the storage hierarchy in large-scale production systems, such as data centers and cloud systems. One major barrier is the existing simplified system software interface with SSDs, which prevents applications from fully utilizing SSDs in a high performance and highly reliable way measured by speed, longevity, and capacity of SSDs. Another issue is related to error correction codes (ECCs) currenlty used in SSD. Conventional ECCs, such as commonly used BCH code have become increasingly inadequate for SSD as the capacity of SSD continues to increase and its reliability continues to degrade.</p>\n<p>We have made strong efftorts to address these two issuse in this project. In our new interface designs and implementation in operating system, in databases, and in virtual machine environment, we have provided mechanisms to deliver certain important information items from the system/application layers to the SSD device, such as whether the data should be placed in SSD due to performance and energy reasons, where the data should be placed inside SSD due to a non-uniform reliability distribution of blocks, what data sets in SSD should be replaced, and what data sets should be exchanged betwen SSD and hard disks. Our solutions are highly effective to best utilize the performance of SSD and hard disks in various applications.</p>\n<p>We have also studied effective methods to deploy the low-density parity-check (LDPC) code, a powerful ECC, in SSD to significanlty improve the reliability of SSD. With our methods, LDPC can be used in SSD with a small increase of response tme delay to achieve a huge gain in SSD capacity, reliability and the price reduction.</p>\n<p>A research in this project has made a direct impact to influence the design and implementation of Apple's storage product Fusion Drive. We have published our research work in the best venues of the fields under rigorous reviews, including conferences of FAST, PACT, and VLDB.</p>\n<p>Two Ph.D. students are supported for their Ph.D. dissertation in the project. The new research results have been timely introduced in the classrooms of graduate studies.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/05/2014<br>\n\t\t\t\t\tModified by: Xiaodong&nbsp;Zhang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nAlthough flash-based Solid State Device (SSD) technology has shown a high potential to significantly advance storage systems to achieve ultra-high performance with low energy consumption, there are several fundamental research issues to be systematically addressed before SSDs can be efficiently and reliably merged into the storage hierarchy in large-scale production systems, such as data centers and cloud systems. One major barrier is the existing simplified system software interface with SSDs, which prevents applications from fully utilizing SSDs in a high performance and highly reliable way measured by speed, longevity, and capacity of SSDs. Another issue is related to error correction codes (ECCs) currenlty used in SSD. Conventional ECCs, such as commonly used BCH code have become increasingly inadequate for SSD as the capacity of SSD continues to increase and its reliability continues to degrade.\n\nWe have made strong efftorts to address these two issuse in this project. In our new interface designs and implementation in operating system, in databases, and in virtual machine environment, we have provided mechanisms to deliver certain important information items from the system/application layers to the SSD device, such as whether the data should be placed in SSD due to performance and energy reasons, where the data should be placed inside SSD due to a non-uniform reliability distribution of blocks, what data sets in SSD should be replaced, and what data sets should be exchanged betwen SSD and hard disks. Our solutions are highly effective to best utilize the performance of SSD and hard disks in various applications.\n\nWe have also studied effective methods to deploy the low-density parity-check (LDPC) code, a powerful ECC, in SSD to significanlty improve the reliability of SSD. With our methods, LDPC can be used in SSD with a small increase of response tme delay to achieve a huge gain in SSD capacity, reliability and the price reduction.\n\nA research in this project has made a direct impact to influence the design and implementation of Apple's storage product Fusion Drive. We have published our research work in the best venues of the fields under rigorous reviews, including conferences of FAST, PACT, and VLDB.\n\nTwo Ph.D. students are supported for their Ph.D. dissertation in the project. The new research results have been timely introduced in the classrooms of graduate studies.\n\n \n\n\t\t\t\t\tLast Modified: 11/05/2014\n\n\t\t\t\t\tSubmitted by: Xiaodong Zhang"
+ }
+}

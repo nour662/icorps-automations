@@ -1,0 +1,105 @@
+{
+ "awd_id": "1917142",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "A New Paradigm for Large-Scale System Design Optimization",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": "7032927933",
+ "po_email": "kjabloko@nsf.gov",
+ "po_sign_block_name": "Kathryn Jablokow",
+ "awd_eff_date": "2019-08-01",
+ "awd_exp_date": "2023-07-31",
+ "tot_intn_awd_amt": 320072.0,
+ "awd_amount": 320072.0,
+ "awd_min_amd_letter_date": "2019-07-26",
+ "awd_max_amd_letter_date": "2019-07-26",
+ "awd_abstract_narration": "Design optimization is the computation of design variable values that minimize or maximize\r\nan objective subject to constraints, where the objective and constraint functions are the outputs of an engineering model. Applying large-scale optimization - which involves up to thousands of design variables - to engineering design is challenging, because of the conflicting requirements of efficient derivative computation for scalability and coupling multiple disciplines for system-level modeling.  However, state-of-the-art gradient-based optimizers, combined with the PI's recent work in developing a unified theory for multidisciplinary derivative computation, have made it feasible to solve large-scale design optimization (LSDO) problems in only hundreds of model evaluations. The objective of this project is to accelerate large-scale system design optimization algorithms by an order of magnitude compared to the state-of-the-art approach. This improvement will be achieved through a paradigm shift enabling a novel optimization algorithm that uses a hybrid of reduced-space and full-space optimization.\r\n\r\nThis project will investigate a new, intrusive paradigm in which the internal components of the model are exposed to the optimizer. An intrusive paradigm enables a novel optimization algorithm that would achieve the robustness of a reduced-space formulation and the efficiency of a full-space formulation if the two formulations can be unified. The difference between the two formulations is that full-space treats the model's states as design variables. This research will result in theoretical and algorithmic contributions to sequential quadratic programming (SQP), which is the most common optimization approach in LSDO. The research project will broaden the unification to general SQP algorithms and leverage adjoint-based error estimation and inexact Newton methods to determine methods for adaptively selecting the hybrid of reduced and full space. The resulting algorithms will be made available through open-source licensing, allowing the efficiency improvements to benefit students, researchers, and practitioners. Moreover, the hybrid algorithm removes the need for practitioners to choose between reduced and full space problem formulation; therefore, less effort and expertise will be required for LSDO. The largest impact will be on industry, where the efficiency and usability improvements will significantly lower the barrier-to-entry for using LSDO to help design complex engineered systems, which will be demonstrated in collaboration with General Atomics Aeronautical Systems.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "John",
+   "pi_last_name": "Hwang",
+   "pi_mid_init": "T",
+   "pi_sufx_name": "",
+   "pi_full_name": "John T Hwang",
+   "pi_email_addr": "jhwang@eng.ucsd.edu",
+   "nsf_id": "000785222",
+   "pi_start_date": "2019-07-26",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-San Diego",
+  "inst_street_address": "9500 GILMAN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "LA JOLLA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8585344896",
+  "inst_zip_code": "920930021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "UYTTZT6G9DT1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-San Diego",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920930934",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "072Y00",
+   "pgm_ele_name": "EDSE-Engineering Design and Sy"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "067E",
+   "pgm_ref_txt": "DESIGN TOOLS"
+  },
+  {
+   "pgm_ref_code": "073E",
+   "pgm_ref_txt": "OPTIMIZATION & DECISION MAKING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 320072.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Large-scale system design optimization (LSDO) is a class of computational methods for engineering design that formulate and solve mathematical optimization problems that minimize or maximize some design objective with respect to tens or more design variables, under some design constraints. These methods present a systematic and efficient way to leverage simulations to help design engineering systems by automating the process of searching over a high-dimensional space (that is, a large set) of candidate designs. An LSDO algorithm proceeds iteratively, starting from an initial design, and gradually improving the design until it finds an optimal solution. LSDO can be an invaluable tool in engineering design, but it is expensive because it involves running hundreds of simulations, which are often expensive, high-fidelity computer simulations.</p>\n<p>This project was aimed at investigating a new approach for LSDO with the potential for significant computational speedup. The central algorithm within this approach is called SURF (Strong Unification of Reduced-space (RS) and Full-space (FS) architectures). High-fidelity simulations are expensive because they must numerically solve a set of equations with high accuracy. However, the high accuracy can be unnecessary, especially in early optimization iterations when the design is far from the optimal solution. SURF allows the high-fidelity simulations to trade accuracy for reduced computation time early in the optimization process. Reducing simulation accuracy with no other measures taken does not work because this violates critical conditions that are necessary for the LSDO algorithm to be guaranteed to converge to a solution. The SURF algorithm enables reducing simulation accuracy (and thus its computational cost), while ensuring algorithm convergence.</p>\n<p>There were three primary outcomes from this research project. The first outcome is a set of theoretical results that provide the underpinnings of the SURF algorithm. SURF is so named because it is a hybrid of the existing RS and FS architectures, which are two well-known approaches for solving LSDO problems. It was necessary to unify these two architectures, which was achieved by showing that one can reproduce the same iterations as the RS architecture with FS, by applying a small modification to FS involving partially solving a particular system of equations. The choice of convergence criterion for this system of equations determines whether one obtains RS, FS, or a hybrid. The key products for this first outcome were a set of theorems that prove the equivalence of the RS architecture and the modified FS architecture, and a way to optimally choose this convergence criterion. The second outcome is a set of findings from numerical experiments applying SURF to various types of engineering design problems. While the results vary significantly across problems, SURF provided a computation-time reduction in nearly all cases (as low as 25% and as high as an order of magnitude) and in some cases improved algorithm robustness. The third and final outcome is a set of open-source software products centering around a new Python-based optimization library called modOpt. modOpt is unique because it facilitates the construction of optimization algorithms in a transparent and modular fashion so that users of the algorithm can easily understand its structure and effortlessly tweak or interchange the components of the algorithm. Therefore, modOpt acts as a useful pedagogical tool, as undergraduate and graduate students learning about design optimization can understand what is under the hood of the optimization algorithm they are using rather than seeing it as a black box. modOpt includes open-source implementations of common optimization algorithms as well as the SURF algorithm developed in this project. It has already been used in many research applications and in a graduate-level multidisciplinary design optimization class at UC San Diego. modOpt is well documented and has been developed to be widely usable by the broader community for both research and instructional purposes.</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 12/15/2023<br>\nModified by: John&nbsp;T&nbsp;Hwang</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nLarge-scale system design optimization (LSDO) is a class of computational methods for engineering design that formulate and solve mathematical optimization problems that minimize or maximize some design objective with respect to tens or more design variables, under some design constraints. These methods present a systematic and efficient way to leverage simulations to help design engineering systems by automating the process of searching over a high-dimensional space (that is, a large set) of candidate designs. An LSDO algorithm proceeds iteratively, starting from an initial design, and gradually improving the design until it finds an optimal solution. LSDO can be an invaluable tool in engineering design, but it is expensive because it involves running hundreds of simulations, which are often expensive, high-fidelity computer simulations.\n\n\nThis project was aimed at investigating a new approach for LSDO with the potential for significant computational speedup. The central algorithm within this approach is called SURF (Strong Unification of Reduced-space (RS) and Full-space (FS) architectures). High-fidelity simulations are expensive because they must numerically solve a set of equations with high accuracy. However, the high accuracy can be unnecessary, especially in early optimization iterations when the design is far from the optimal solution. SURF allows the high-fidelity simulations to trade accuracy for reduced computation time early in the optimization process. Reducing simulation accuracy with no other measures taken does not work because this violates critical conditions that are necessary for the LSDO algorithm to be guaranteed to converge to a solution. The SURF algorithm enables reducing simulation accuracy (and thus its computational cost), while ensuring algorithm convergence.\n\n\nThere were three primary outcomes from this research project. The first outcome is a set of theoretical results that provide the underpinnings of the SURF algorithm. SURF is so named because it is a hybrid of the existing RS and FS architectures, which are two well-known approaches for solving LSDO problems. It was necessary to unify these two architectures, which was achieved by showing that one can reproduce the same iterations as the RS architecture with FS, by applying a small modification to FS involving partially solving a particular system of equations. The choice of convergence criterion for this system of equations determines whether one obtains RS, FS, or a hybrid. The key products for this first outcome were a set of theorems that prove the equivalence of the RS architecture and the modified FS architecture, and a way to optimally choose this convergence criterion. The second outcome is a set of findings from numerical experiments applying SURF to various types of engineering design problems. While the results vary significantly across problems, SURF provided a computation-time reduction in nearly all cases (as low as 25% and as high as an order of magnitude) and in some cases improved algorithm robustness. The third and final outcome is a set of open-source software products centering around a new Python-based optimization library called modOpt. modOpt is unique because it facilitates the construction of optimization algorithms in a transparent and modular fashion so that users of the algorithm can easily understand its structure and effortlessly tweak or interchange the components of the algorithm. Therefore, modOpt acts as a useful pedagogical tool, as undergraduate and graduate students learning about design optimization can understand what is under the hood of the optimization algorithm they are using rather than seeing it as a black box. modOpt includes open-source implementations of common optimization algorithms as well as the SURF algorithm developed in this project. It has already been used in many research applications and in a graduate-level multidisciplinary design optimization class at UC San Diego. modOpt is well documented and has been developed to be widely usable by the broader community for both research and instructional purposes.\n\n\n\t\t\t\t\tLast Modified: 12/15/2023\n\n\t\t\t\t\tSubmitted by: JohnTHwang\n"
+ }
+}

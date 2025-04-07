@@ -1,0 +1,101 @@
+{
+ "awd_id": "1217979",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small: Autonomous Performance and Power Control on Virtualized Servers",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2017-08-31",
+ "tot_intn_awd_amt": 251516.0,
+ "awd_amount": 251516.0,
+ "awd_min_amd_letter_date": "2012-08-27",
+ "awd_max_amd_letter_date": "2012-08-27",
+ "awd_abstract_narration": "Modern data centers hosting popular Internet services face significant and multi-facet challenges in performance and power control. The challenges are mainly due to complex interaction of highly dynamic and heterogeneous workloads in complex virtualized computing systems. In this research project, the investigators take an organized approach to autonomic performance and power control on virtualized servers. The project designs and develops automated, agile and scalable techniques for server parameter tuning, virtual machine capacity planning, non-invasive energy-efficient performance isolation, and elastic power-aware resource provisioning. The deliverables are innovative and practical approaches and mechanisms that provide performance assurance of applications, maximize effective system throughput of data centers with resources and power budget, mitigate performance interference among heterogeneous applications, and achieve performance and power targets with flexible tradeoffs while assuring control accuracy and system stability. The research methodology integrates strengths of reinforcement learning, fast online learning neural networks, fuzzy logic control, model predictive controls and distributed and coordinated control. The project broadens impact by developing a testbed in a university prototype data center to demonstrate the orchestration of developed approaches and mechanisms for autonomous management of virtualized computing systems, middleware, and services. The project engages women, US citizens, full-time and part-time graduate and undergraduate students in computer system research. The success will guide autonomous resource management for sustainable computing in next-generation data centers. The research data is deposited at a dedicated website at the host institution and research results are disseminated to the public as published technical reports.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Xiaobo",
+   "pi_last_name": "Zhou",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Xiaobo Zhou",
+   "pi_email_addr": "xzhou@uccs.edu",
+   "nsf_id": "000330885",
+   "pi_start_date": "2012-08-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Colorado at Colorado Springs",
+  "inst_street_address": "1420 AUSTIN BLUFFS PKWY",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLORADO SPRINGS",
+  "inst_state_code": "CO",
+  "inst_state_name": "Colorado",
+  "inst_phone_num": "7192553153",
+  "inst_zip_code": "809183733",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "CO05",
+  "org_lgl_bus_name": "THE REGENTS OF THE UNIVERSITY OF COLORADO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "RH87YDXC1AY5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Colorado at Colorado Springs",
+  "perf_str_addr": "1420 Austin Bluffs Parkway",
+  "perf_city_name": "Colorado Springs",
+  "perf_st_code": "CO",
+  "perf_st_name": "Colorado",
+  "perf_zip_code": "809183733",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "CO05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 251516.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In this project, we focused on autonomic performance and power control in virtualized servers, and extended research to energy efficiency and sustainability of distributed data processing clusters.&nbsp; We made following outcomes in research deliverables, student training, outreach, curricula and technology transfer.</p>\n<p>a) Autonomic performance guarantee: We proposed an automated and agile server parameter tuning approach. The contributions lie in the design and development by coordinated learning and control, analysis of weaknesses of reinforcement learning for server parameter tuning, and the implementation and evaluation of the new approach. Further, we proposed an autonomic server provisioning approach for percentile-based delay guarantee. Its main advantages lie in the robustness to highly dynamic workload intensity as well as &nbsp;&nbsp;characteristics and change in delay target due to its self-adaptive and self-learning capabilities. &nbsp;Fairness-efficiency trade-offs have always been important issues in resource allocations in virtualization. We proposed a holistic solution, Flex, which is able to achieve allocations close to the ideal fair allocation and realizes a certain level of differentiation in virtualization. We further extended research to MapReduce applications, and developed iShuffle, a novel user-transparent shuffle service that provides optimized data shuffling to improve job performance. It decouples shuffle from reduce tasks and proactively pushes data to be shuffled to Hadoop node via a novel shuffle-on-write operation in map tasks. Our research resulted in a best paper award in USENIX ICAC 2013, two papers in IEEE IPDPS and ACM PPoPP conferences, and two papers in ACM/IEEE Transactions.</p>\n<p>&nbsp;b) Joint performance and power control: We designed and developed PERFUME that provides a coordinated and self-adaptive power and performance control in a virtualized server cluster. Its main contributions lie in the precise and proactive control of power consumption of virtualized servers, tradeoff flexibility between power and performance targets, and service differentiation among co-located applications while assuring control accuracy and system stability. Further, we designed and implemented APPLEware, a lightweight middleware solution for large-scale distributed clusters, which is pluggable on existing virtualized computing environments. The main contributions are performance guarantee of co-located Web applications on virtualized servers, energy efficiency, and scalability in large distributed systems. We also developed a self-tuning batching approach integrated with DVFS to simultaneously improve the performance of applications and energy efficiency of the server system. Our research resulted in three papers in ACM/IEEE Transactions and two papers in IEEE IWQoS and IEEE MASCOTS conferences.</p>\n<p>&nbsp;c) Energy efficiency in clusters: We proposed and developed a power-aware virtual OpenCL framework that controls the peak power consumption and improves the energy efficiency of the underlying server system through dynamic consolidation and power-phase topology aware placement of GPU workloads. It can achieve significant energy savings compared to existing power management techniques for GPU-enabled server clusters, while incurring negligible impact on performance. Further, we proposed and developed E-Ant, a self-adaptive task assignment approach that aims to improve the energy efficiency of a heterogeneous Hadoop cluster. E-Ant fits seamlessly with the Hadoop architecture, and adaptively schedules heterogeneous workloads on energy-efficient machines, without a priori knowledge of the workload properties. Research results were appeared in two papers in IEEE ICDCS conference series.</p>\n<p>&nbsp;d) Sustainable computing in datacenters: We proposed and developed a self-optimizing cloud workload management approach, sCloud, that can improve the system good-put with respect to the dynamic green power supply. Its main contributions are near-to-optimal performance, adaptive workload management and resilience to dynamic power availability. Further, we proposed and developed an elastic power-aware resource provisioning approach (ePower) for heterogeneous workloads in self-sustainable datacenters that completely rely on renewable energy. It is able to maximize the system goodput and control the system power consumption with respect to green power supply. ePower takes advantages of dynamic power supply, heterogeneous workload characteristics, and automatically optimizes elastic resource allocations to workloads. Research results were appeared in one IEEE IPDPS 2014 paper and one paper in IEEE Transactions.</p>\n<p>&nbsp;This project provided significant training and professional development for students. It cosponsored three full-time PhD students Palden Lama, Yanfei Guo, and Dazhao Cheng in conducting original quality research. Palden obtained PhD in 2013 and joined UTSA as an assistant professor in computer science. Yanfei obtained PhD in 2015 and joined Argonne National Lab as a Postdoc Fellow (now assistant scientist). Dazhao obtained PhD in 2016 and joined UNCC as an assistant professor in computer science.</p>\n<p>&nbsp;In this project, the results were disseminated to communities of interest by presenting in leading ACM/IEEE/USENIX conferences, several keynote and outreach talks in domestic and international universities, and publications in numerous ACM/IEEE Transactions. We further actively integrated research results with curricula innovations, by integrating some research results into two graduate-level courses in Cloud Computing and Computer Communications.</p>\n<p>&nbsp;This project also contributed integration of research and industry practice in a significant manner. The PI integrated research with technology development for an Air Force STTR Phase II project in joint with Colorado Engineering Inc.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/09/2017<br>\n\t\t\t\t\tModified by: Xiaobo&nbsp;Zhou</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIn this project, we focused on autonomic performance and power control in virtualized servers, and extended research to energy efficiency and sustainability of distributed data processing clusters.  We made following outcomes in research deliverables, student training, outreach, curricula and technology transfer.\n\na) Autonomic performance guarantee: We proposed an automated and agile server parameter tuning approach. The contributions lie in the design and development by coordinated learning and control, analysis of weaknesses of reinforcement learning for server parameter tuning, and the implementation and evaluation of the new approach. Further, we proposed an autonomic server provisioning approach for percentile-based delay guarantee. Its main advantages lie in the robustness to highly dynamic workload intensity as well as   characteristics and change in delay target due to its self-adaptive and self-learning capabilities.  Fairness-efficiency trade-offs have always been important issues in resource allocations in virtualization. We proposed a holistic solution, Flex, which is able to achieve allocations close to the ideal fair allocation and realizes a certain level of differentiation in virtualization. We further extended research to MapReduce applications, and developed iShuffle, a novel user-transparent shuffle service that provides optimized data shuffling to improve job performance. It decouples shuffle from reduce tasks and proactively pushes data to be shuffled to Hadoop node via a novel shuffle-on-write operation in map tasks. Our research resulted in a best paper award in USENIX ICAC 2013, two papers in IEEE IPDPS and ACM PPoPP conferences, and two papers in ACM/IEEE Transactions.\n\n b) Joint performance and power control: We designed and developed PERFUME that provides a coordinated and self-adaptive power and performance control in a virtualized server cluster. Its main contributions lie in the precise and proactive control of power consumption of virtualized servers, tradeoff flexibility between power and performance targets, and service differentiation among co-located applications while assuring control accuracy and system stability. Further, we designed and implemented APPLEware, a lightweight middleware solution for large-scale distributed clusters, which is pluggable on existing virtualized computing environments. The main contributions are performance guarantee of co-located Web applications on virtualized servers, energy efficiency, and scalability in large distributed systems. We also developed a self-tuning batching approach integrated with DVFS to simultaneously improve the performance of applications and energy efficiency of the server system. Our research resulted in three papers in ACM/IEEE Transactions and two papers in IEEE IWQoS and IEEE MASCOTS conferences.\n\n c) Energy efficiency in clusters: We proposed and developed a power-aware virtual OpenCL framework that controls the peak power consumption and improves the energy efficiency of the underlying server system through dynamic consolidation and power-phase topology aware placement of GPU workloads. It can achieve significant energy savings compared to existing power management techniques for GPU-enabled server clusters, while incurring negligible impact on performance. Further, we proposed and developed E-Ant, a self-adaptive task assignment approach that aims to improve the energy efficiency of a heterogeneous Hadoop cluster. E-Ant fits seamlessly with the Hadoop architecture, and adaptively schedules heterogeneous workloads on energy-efficient machines, without a priori knowledge of the workload properties. Research results were appeared in two papers in IEEE ICDCS conference series.\n\n d) Sustainable computing in datacenters: We proposed and developed a self-optimizing cloud workload management approach, sCloud, that can improve the system good-put with respect to the dynamic green power supply. Its main contributions are near-to-optimal performance, adaptive workload management and resilience to dynamic power availability. Further, we proposed and developed an elastic power-aware resource provisioning approach (ePower) for heterogeneous workloads in self-sustainable datacenters that completely rely on renewable energy. It is able to maximize the system goodput and control the system power consumption with respect to green power supply. ePower takes advantages of dynamic power supply, heterogeneous workload characteristics, and automatically optimizes elastic resource allocations to workloads. Research results were appeared in one IEEE IPDPS 2014 paper and one paper in IEEE Transactions.\n\n This project provided significant training and professional development for students. It cosponsored three full-time PhD students Palden Lama, Yanfei Guo, and Dazhao Cheng in conducting original quality research. Palden obtained PhD in 2013 and joined UTSA as an assistant professor in computer science. Yanfei obtained PhD in 2015 and joined Argonne National Lab as a Postdoc Fellow (now assistant scientist). Dazhao obtained PhD in 2016 and joined UNCC as an assistant professor in computer science.\n\n In this project, the results were disseminated to communities of interest by presenting in leading ACM/IEEE/USENIX conferences, several keynote and outreach talks in domestic and international universities, and publications in numerous ACM/IEEE Transactions. We further actively integrated research results with curricula innovations, by integrating some research results into two graduate-level courses in Cloud Computing and Computer Communications.\n\n This project also contributed integration of research and industry practice in a significant manner. The PI integrated research with technology development for an Air Force STTR Phase II project in joint with Colorado Engineering Inc.\n\n\t\t\t\t\tLast Modified: 10/09/2017\n\n\t\t\t\t\tSubmitted by: Xiaobo Zhou"
+ }
+}

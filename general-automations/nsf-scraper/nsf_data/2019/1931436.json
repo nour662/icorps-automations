@@ -1,0 +1,133 @@
+{
+ "awd_id": "1931436",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Elements: Enabling Accurate Thermal Transport Calculations in LAMMPS",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": "7032922656",
+ "po_email": "vchandol@nsf.gov",
+ "po_sign_block_name": "Varun Chandola",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 312867.0,
+ "awd_amount": 312867.0,
+ "awd_min_amd_letter_date": "2019-09-04",
+ "awd_max_amd_letter_date": "2020-06-02",
+ "awd_abstract_narration": "Computational thermal transport research is critical to the development of new materials that can address challenging energy and environmental problems. Molecular dynamics (MD) simulations are used extensively to study thermal transport in materials. One of the most widely used MD software packages is the Large-scale Atomic/Molecular Massively Parallel Simulator (LAMMPS). It is the primary aim of this project to create and carefully implement improved thermal transport calculation methods in LAMMPS. This problem is made challenging by the fact that this software has hundreds of thousands of users and the solution must be merged into the core LAMMPS code, as opposed to offered as a modular \"plug-in\". The three objectives of the project are: (1) to implement a corrected heat flux computation for all supported many-body potentials in LAMMPS, (2) to identify the types of molecular systems most affected by the changed heat flux computations, and (3) educate the LAMMPS community on how to implement heat flux in new potentials correctly as well as train new scientists to contribute professional-quality code to the LAMMPS code base. This research will, among other broad impacts, enable large-scale computational screening of materials to accurately predict their thermal properties, which fulfills one of the key goals of the Materials Genome Initiative (MGI). Furthermore, it is an innovative, scalable, reusable software component that supports training for the broad LAMMPS user community as well as general workforce development via training to undergraduates, and ensures the new software capacities are widely available via the open-source LAMMPS package. Additionally, the project provides professional software engineering training to graduate and undergraduate students via a highly-trained resident software developer and resources from the Center for Research Computing at the University of Pittsburgh. Due to the large user base and open source nature of LAMMPS, the research is expected to have a broad impact; these software innovations will be widely available across both industry and academia.\r\n\r\nThe most common MD technique to compute thermal conductivity, the Green-Kubo method, yields incorrect results in LAMMPS for the majority of molecular simulations. Although the ramifications of the error in the heat flux for the thousands of papers already published using LAMMPS has yet to be fully determined, preliminary data indicates that for liquid hydrocarbons, the heat flux through a many-body potential can be underreported by 95%, leading to a total error of the heat flux of 22%. Unless correct thermal transport calculations can be achieved and implemented for this widely used and highly optimized software package, research and development of materials with novel thermal properties will be significantly hindered. There is no widely available MD code that is able to correctly compute heat flux. The one exception is for molecular systems where only pair-wise interactions exist (which excludes all molecules with greater than two atoms), in which case the current LAMMPS implementation gives correct results. The heat flux computation problem in LAMMPS was identified more than four years ago, but the lack of a correct implementation in any widely used MD software package speaks to the challenge of finding and dedicating software engineers to do this important work. This project addresses the theory, implementation pathway, and validation strategy for an expansive re-implementation of heat flux computations in LAMMPS for many-body potentials.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Christopher",
+   "pi_last_name": "Wilmer",
+   "pi_mid_init": "E",
+   "pi_sufx_name": "",
+   "pi_full_name": "Christopher E Wilmer",
+   "pi_email_addr": "wilmer@pitt.edu",
+   "nsf_id": "000667213",
+   "pi_start_date": "2019-09-04",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Hasan",
+   "pi_last_name": "Babaei",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Hasan Babaei",
+   "pi_email_addr": "hasan.babaei@berkeley.edu",
+   "nsf_id": "000735523",
+   "pi_start_date": "2020-06-02",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Pittsburgh",
+  "inst_street_address": "4200 FIFTH AVENUE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4126247400",
+  "inst_zip_code": "152600001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "UNIVERSITY OF PITTSBURGH - OF THE COMMONWEALTH SYSTEM OF HIGHER EDUCATION",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "MKAGLD59JRL1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Pittsburgh",
+  "perf_str_addr": "University Club",
+  "perf_city_name": "Pittsburgh",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152132303",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "140600",
+   "pgm_ele_name": "TTP-Thermal Transport Process"
+  },
+  {
+   "pgm_ele_code": "164200",
+   "pgm_ele_name": "Special Initiatives"
+  },
+  {
+   "pgm_ele_code": "800400",
+   "pgm_ele_name": "Software Institutes"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "077Z",
+   "pgm_ref_txt": "CSSI-1: Cyberinfr for Sustained Scientif"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "8004",
+   "pgm_ref_txt": "Software Institutes"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 312867.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The overarching aim of this project was to improve one of the most popular pieces of scientific software used by materials scientists, namely the Large-scale Atomic/Molecular Massively Parallel Simulator (LAMMPS). Specifically, this project fixed a critical error related to the calculation of thermal properties. The project involved the implementation of the correct heat flux calculation method in LAMMPS and further determined which systems were affected by use of the incorrect method. Finally, ia goal of the project was to educate the LAMMPS and heat transfer community about this nuanced issue.In addition to successfully writing, testing, and implementing the code, and publishing it as a paper, we also published several additional manuscripts through the funding of this project, all on heat transfer properties of porous materials. The most high profile paper that was supported by this research was \"Observation of reduced thermal conductivity in a metal-organic framework due to the presence of adsorbates\" in Nature Communications. We also used this code to determine the thermal conductivity of defective porous metal-organic frameworks (MOFs) in the paper titled, \"Influence of missing linker defects on the thermal conductivity of metal&ndash;organic framework HKUST-1\", published in, ACS Applied Materials &amp; Interfaces. Finally, the large-scale MOF screening manuscript has been published in Nature Computational Materials.This research provided an opportunity for the graduate student involved to develop scientific research and coding skills, and for the postdoc to develop supervision and research guidance skills towards eventually becoming a future faculty member.Modeling of thermal properties at the atomic scale is widely carried out among a various disciplines, and the LAMMPS software code is very popular. The fix we have implemented in this research will broadly help all of those disciplines make more accurate predictions/simulations of heat transfer in the systems of interest to them. This will primarily help the field of nanoscale heat transfer researchers, but also those in other disciplines for whom determining thermal properties is a small part of a different research agenda (e.g., photovoltaics researchers who need to predict heat dissipation as port of their solar energy materials research).Broadly, computational thermal transport research is critical to the development of new materials for energy and environmental problems. The proposed research will, among other broad impacts, enable large-scale computational screening of materials to accurately predict their thermal properties, which fulfills one of the key goals of the Materials Genome Initiative (MGI).&nbsp;</p><br>\n<p>\n Last Modified: 11/08/2023<br>\nModified by: Christopher&nbsp;E&nbsp;Wilmer</p></div>\n<div class=\"porSideCol\"\n><div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2023/1931436/1931436_10639944_1699453422678_CoverArt_UiO_66_2400x2400--rgov-214x142.png\" original=\"/por/images/Reports/POR/2023/1931436/1931436_10639944_1699453422678_CoverArt_UiO_66_2400x2400--rgov-800width.png\" title=\"Heat transfer in MOFs with defects\"><img src=\"/por/images/Reports/POR/2023/1931436/1931436_10639944_1699453422678_CoverArt_UiO_66_2400x2400--rgov-66x44.png\" alt=\"Heat transfer in MOFs with defects\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">The corrected heat flux algorithm supported by this project allowed for the investigation of thermal transport in complex porous materials such as the ones depicted.</div>\n<div class=\"imageCredit\">Meiirbek Islamov</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Christopher&nbsp;E&nbsp;Wilmer\n<div class=\"imageTitle\">Heat transfer in MOFs with defects</div>\n</div>\n</li></ul>\n</div>\n</div></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe overarching aim of this project was to improve one of the most popular pieces of scientific software used by materials scientists, namely the Large-scale Atomic/Molecular Massively Parallel Simulator (LAMMPS). Specifically, this project fixed a critical error related to the calculation of thermal properties. The project involved the implementation of the correct heat flux calculation method in LAMMPS and further determined which systems were affected by use of the incorrect method. Finally, ia goal of the project was to educate the LAMMPS and heat transfer community about this nuanced issue.In addition to successfully writing, testing, and implementing the code, and publishing it as a paper, we also published several additional manuscripts through the funding of this project, all on heat transfer properties of porous materials. The most high profile paper that was supported by this research was \"Observation of reduced thermal conductivity in a metal-organic framework due to the presence of adsorbates\" in Nature Communications. We also used this code to determine the thermal conductivity of defective porous metal-organic frameworks (MOFs) in the paper titled, \"Influence of missing linker defects on the thermal conductivity of metalorganic framework HKUST-1\", published in, ACS Applied Materials & Interfaces. Finally, the large-scale MOF screening manuscript has been published in Nature Computational Materials.This research provided an opportunity for the graduate student involved to develop scientific research and coding skills, and for the postdoc to develop supervision and research guidance skills towards eventually becoming a future faculty member.Modeling of thermal properties at the atomic scale is widely carried out among a various disciplines, and the LAMMPS software code is very popular. The fix we have implemented in this research will broadly help all of those disciplines make more accurate predictions/simulations of heat transfer in the systems of interest to them. This will primarily help the field of nanoscale heat transfer researchers, but also those in other disciplines for whom determining thermal properties is a small part of a different research agenda (e.g., photovoltaics researchers who need to predict heat dissipation as port of their solar energy materials research).Broadly, computational thermal transport research is critical to the development of new materials for energy and environmental problems. The proposed research will, among other broad impacts, enable large-scale computational screening of materials to accurately predict their thermal properties, which fulfills one of the key goals of the Materials Genome Initiative (MGI).\t\t\t\t\tLast Modified: 11/08/2023\n\n\t\t\t\t\tSubmitted by: ChristopherEWilmer\n"
+ }
+}

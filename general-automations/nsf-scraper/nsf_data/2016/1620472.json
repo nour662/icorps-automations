@@ -1,0 +1,98 @@
+{
+ "awd_id": "1620472",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Randomized Algorithms for Matrix Computations",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Leland Jameson",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2019-04-30",
+ "tot_intn_awd_amt": 249979.0,
+ "awd_amount": 249979.0,
+ "awd_min_amd_letter_date": "2016-08-17",
+ "awd_max_amd_letter_date": "2016-08-17",
+ "awd_abstract_narration": "This project will develop mathematical techniques for accelerating computational tasks such as simulating electromagnetic scattering,  medical imaging, extracting useful information from large datasets, machine learning, and many others. In all these computations, the step that tends to be the most time-consuming, and which therefore limits how large problems can be solved, concerns the manipulation of large square or rectangular arrays of numbers, called \"matrices\". Many of the matrices that arise in practical applications have redundancies, and can be compressed to enable them to be stored using less space. Using the compressed format, computations involving the matrix can also be greatly accelerated. The problems that will be addressed are deterministic in nature, but the algorithms that will be developed are probabilistic. It turns out that by exploiting certain mathematical properties of large ensembles of independent random numbers, one can build algorithms for compressing matrices that are much faster than traditional deterministic techniques. The new randomized algorithms can in theory fail, but the likelihood of failure can be shown to  be lower than 1 time out of 10,000,000,000 runs in typical applications. Randomized algorithms of this type have recently attracted much interest due to the fact that they perform  particularly well on emerging computing platforms such as mobile computing (where conserving energy is the key priority), computing using graphical processor units (where the vast numbers of computational cores create challenges), and distributed memory parallel computers. The methods also perform very well when applied  to massively large datasets that must be stored on hard drives, or on large server farms. The project will train one doctoral student, and will lead to the release of a publicly available software package that implements the methods that will be developed. \r\n\r\nFrom a technical point of view, the objective of the project is to develop efficient algorithms for factorizing matrices and for solving large linear systems of algebraic equations. The algorithms will be based on randomized sampling, and will exploit remarkable mathematical properties of random matrices and random orthogonal projections. Such randomized algorithms require less communication  than traditional methods, which makes them particularly attractive for modern applications involving multicore processors, distributed computing, out-of-core computing, etc. Specifically, the project will address the following problems: (1) Computing full matrix factorizations (e.g. the so called \"column pivoted QR factorization\") which are core building blocks in scientific computing. Preliminary numerical experiments demonstrate speed-ups of close to an order of magnitude compared to state-of-the-art software packages. (2) Solving linear systems involving many unknowns and many equations. We expect to achieve substantial practical acceleration, and are cautiously optimistic about the possibility to develop solvers with substantially better asymptotic complexity than the cubic complexity achieved by standard techniques. (3) Developing randomized methods for accelerating computational simulations of phenomena such as electro-statics, composite materials, biochemical processes, slow fluid flows, Gaussian processes in 2 and 3 dimensions, etc. Technically, this will be achieved by developing randomized methods for compressing so called \"data-sparse\" or \"rank-structured\" matrices.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Per-Gunnar",
+   "pi_last_name": "Martinsson",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Per-Gunnar J Martinsson",
+   "pi_email_addr": "pgm@ices.utexas.edu",
+   "nsf_id": "000257904",
+   "pi_start_date": "2016-08-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Colorado at Boulder",
+  "inst_street_address": "3100 MARINE ST",
+  "inst_street_address_2": "STE 481 572 UCB",
+  "inst_city_name": "Boulder",
+  "inst_state_code": "CO",
+  "inst_state_name": "Colorado",
+  "inst_phone_num": "3034926221",
+  "inst_zip_code": "803090001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "CO02",
+  "org_lgl_bus_name": "THE REGENTS OF THE UNIVERSITY OF COLORADO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "SPVKK1RC2MZ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Colorado  Boulder",
+  "perf_str_addr": "3100 Marine Street, Room 481",
+  "perf_city_name": "Boulder",
+  "perf_st_code": "CO",
+  "perf_st_name": "Colorado",
+  "perf_zip_code": "803031058",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "CO02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 129230.0
+  }
+ ],
+ "por": null
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1218461",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AF: Small: New Directions in Cryptography: Non-Black-Box Techniques against Non-Black-Box Attacks",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Jack S. Snoeyink",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 480182.0,
+ "awd_amount": 480182.0,
+ "awd_min_amd_letter_date": "2012-07-30",
+ "awd_max_amd_letter_date": "2012-07-30",
+ "awd_abstract_narration": "Traditionally, cryptographic algorithms and protocols are geared towards protecting against attacks that  interact with the designed algorithms via well specified interfaces (such as I/O and communication). However, the increasingly sophisticated ways in which computing devices are currently used completely shatter the traditional boundaries between the attacker and the \"private internals\" of the cryptographic algorithm under attack. Algorithms are run over small and exposed machines that leak information on their internal state; they are transported to other, potentially adversarial machines which may inspect all the internal state and also misreport the result; their code is exposed and subject to adversarial tinkering.\r\n\r\nThis project is aimed at developing new algorithmic and analytical techniques for dealing with this new reality. This includes cryptographic algorithms and protocols that are resilient to leakage from and tampering with the internal states of the host machines, program obfuscation techniques, and techniques for verifying computation done on untrusted machines. A basic premise of this project is that new analytical techniques, that no longer treat the adversary as black-box, are essential. Consequently, special effort is dedicated to developing such techniques.\r\n\r\nThe project tackles a set of problems that are central to the security of modern computer systems and consequently also to the well-being and stability of modern society. But even disregarding practical applicability, the tackled problems lie at the heart of our understanding of the notion of computation, the interplay between code and data, and the ability to algorithmically \"understand\" arbitrary code.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ran",
+   "pi_last_name": "Canetti",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ran Canetti",
+   "pi_email_addr": "canetti@bu.edu",
+   "nsf_id": "000611117",
+   "pi_start_date": "2012-07-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Trustees of Boston University",
+  "inst_street_address": "1 SILBER WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "BOSTON",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6173534365",
+  "inst_zip_code": "022151703",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "TRUSTEES OF BOSTON UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "THL6A6JLE1S7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Trustees of Boston University",
+  "perf_str_addr": "881 Commonwealth Avenue",
+  "perf_city_name": "Boston",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "022151300",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7927",
+   "pgm_ref_txt": "COMPLEXITY & CRYPTOGRAPHY"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 480182.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of the project was to develop new cryptographic algorithms, analytical tools, and concepts&nbsp; that will help address the new immense challenges that face our society in terms of&nbsp; protecting the security of our information and society, while preserving the freedoms and privacy of individuals. Indeed, our current use of information and computing systems completely obliterate the traditional physical boundaries between the &ldquo;local and trusted&rdquo; and the &ldquo;external and untrusted&rdquo;. Instead, the separation is more &ldquo;logical&rdquo; and has to be enforced by &ldquo;software agents&rdquo; and their interaction with other &ldquo;software agents&rdquo;.</p>\n<p>The project made advances in the following four directions:</p>\n<ul>\n<li>Significant advances were made in constructing mechanisms for cryptographically masking (or, &nbsp;obfuscating) computer &nbsp;programs. Such mechanisms can greatly help secure software agents in a hostile computing environments. The projects&nbsp; provides new measures of security for program obfuscation, new constructions, and numerous new uses and applications of program obfuscation. Some of these implications go beyond cryptography and computer science, and have implications on game theory, mechanism design, finance and economics.</li>\n<li>New mechanisms &nbsp;were &nbsp;invented&nbsp; that allow a low-end client to verify the integrity and veracity of massive data sets and complex computations done in remote and untrusted data centers. Some of&nbsp; these mechanisms also provide protection of the privacy of the data, the computations, and the results. </li>\n<li>New mechanism were proposed for designing software that is able to preserve secrecy and integrity of data and computations even when the software is run on hardware that is ``leaky&rsquo;&rsquo; &ndash; namely it allows an external attacker to mount &ldquo;side channel attacks&rdquo;&nbsp; that measure some physical side-effects of the computation, such as power consumption, delay, electromagnetic radiation etc. Indeed, such attacks are a devastating and inevitable part of the modern computing world where computation is done on small and vulnerable devices. </li>\n<li>New proof techniques were invented that allow for asserting security of algorithms and protocols that were previously out of reach. In particular the notion of extractability in cryptographic primitives was formalized and constructions (as well as impossibility results) were proven. </li>\n</ul>\n<p><strong>&nbsp;</strong></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/01/2016<br>\n\t\t\t\t\tModified by: Ran&nbsp;Canetti</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of the project was to develop new cryptographic algorithms, analytical tools, and concepts  that will help address the new immense challenges that face our society in terms of  protecting the security of our information and society, while preserving the freedoms and privacy of individuals. Indeed, our current use of information and computing systems completely obliterate the traditional physical boundaries between the \"local and trusted\" and the \"external and untrusted\". Instead, the separation is more \"logical\" and has to be enforced by \"software agents\" and their interaction with other \"software agents\".\n\nThe project made advances in the following four directions:\n\nSignificant advances were made in constructing mechanisms for cryptographically masking (or,  obfuscating) computer  programs. Such mechanisms can greatly help secure software agents in a hostile computing environments. The projects  provides new measures of security for program obfuscation, new constructions, and numerous new uses and applications of program obfuscation. Some of these implications go beyond cryptography and computer science, and have implications on game theory, mechanism design, finance and economics.\nNew mechanisms  were  invented  that allow a low-end client to verify the integrity and veracity of massive data sets and complex computations done in remote and untrusted data centers. Some of  these mechanisms also provide protection of the privacy of the data, the computations, and the results. \nNew mechanism were proposed for designing software that is able to preserve secrecy and integrity of data and computations even when the software is run on hardware that is ``leaky?? &ndash; namely it allows an external attacker to mount \"side channel attacks\"  that measure some physical side-effects of the computation, such as power consumption, delay, electromagnetic radiation etc. Indeed, such attacks are a devastating and inevitable part of the modern computing world where computation is done on small and vulnerable devices. \nNew proof techniques were invented that allow for asserting security of algorithms and protocols that were previously out of reach. In particular the notion of extractability in cryptographic primitives was formalized and constructions (as well as impossibility results) were proven. \n\n\n \n\n \n\n\t\t\t\t\tLast Modified: 12/01/2016\n\n\t\t\t\t\tSubmitted by: Ran Canetti"
+ }
+}

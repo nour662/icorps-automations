@@ -1,0 +1,101 @@
+{
+ "awd_id": "1652925",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Context-Sensitive Decoding: Exploiting Translated ISAs for Security, Safety, Energy, and Performance",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Matt Mutka",
+ "awd_eff_date": "2016-10-01",
+ "awd_exp_date": "2019-09-30",
+ "tot_intn_awd_amt": 300000.0,
+ "awd_amount": 300000.0,
+ "awd_min_amd_letter_date": "2016-09-13",
+ "awd_max_amd_letter_date": "2016-09-13",
+ "awd_abstract_narration": "Context-Sensitive Decoding allows a processor with a translated instruction set architecture (such as x86, and often ARM) to decode a given instruction into a different set of micro-ops, depending on conditions set, for example, by the operating system.  This allows the system to transparently add features (for security, performance, energy efficiency, debugging, etc.) to executing code with no changes to the code or access to the original sources.  It could be used to add security features to unknown code with significantly reduced cost, and thus move closer to the point where such security can be always turned on.  Context-sensitive decoding can be used to add a level of specialization to general-purpose processors (an industry dominated by US-based companies) that better enables them to compete with domain-specific specialized solutions, with no significant changes to current pipelines.\r\n\r\nMany modern processors translate the programmer-visible instruction set architecture (ISA) to a separate, simpler internal ISA. This research makes that traditionally static translation dynamic, where instructions can be decoded/translated differently based on context.  For example, we can seamlessly transition from a performant (traditional) translation to a secure translation that now includes data address randomization by setting a single flag in the processor.  In addition to security, other applications abound in areas such as programming languages (e.g., on demand type safety, range checking, etc.), software engineering (full-performance debug mode), profiling and performance programming (performance counters of much greater variety than supported natively in hardware, seamlessly enabled or disabled), etc.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Dean",
+   "pi_last_name": "Tullsen",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Dean M Tullsen",
+   "pi_email_addr": "tullsen@cs.ucsd.edu",
+   "nsf_id": "000461702",
+   "pi_start_date": "2016-09-13",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-San Diego",
+  "inst_street_address": "9500 GILMAN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "LA JOLLA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8585344896",
+  "inst_zip_code": "920930021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "UYTTZT6G9DT1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-San Diego",
+  "perf_str_addr": "9500 Gilman Dr.",
+  "perf_city_name": "La Jolla",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920930404",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 300000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Modern instruction set decoders feature translation of native instructions into internal micro-ops to simplify the CPU design and improve instruction-level parallelism. However, this translation is static in most known instances. This research proposes context-sensitive decoding, a technique that enables customization of the micro-op translation based on the current execution context and/or preset hardware events. Further, it can transition between different translation modes rapidly. There are a myriad of potential applications of this technology, including on-demand security mitigation, performance and/or energy improvements, debugging and programmability, user-definable performance counting, etc.&nbsp; In particular, this research examined several effective applications of Context Sensitive Docoding.</p>\n<p>It explores a novel security defense to thwart instruction/data cache-based side-channel attacks.&nbsp; It does so by translating secret-dependent individual load accesses to sensitive data regions into multiple loads that leave no secret-dependent footprint in the cache, at minimal performance cost.</p>\n<p>It demonstrates a power management technique that performs selective devectorization to enable efficient unit-level power gating by identifying times when it is more effective to keep the vector units power gated and instead translate vector instructions as a series of scalar instructions, preserving both power and eliminating power-on delays.</p>\n<p>We also show the ability for CSD to mitigate speculation cybersecurity attacks, such as Spectre and Meltdown.&nbsp; The most common mitigation that has been deployed has been the sprinkling of fences (individual instructions that impede forward progress int the pipeline until completed and thereby preventing speculative execution) in vulerable code, at a high performance cost.&nbsp; We show that introducing these fences dynamically, only when they are required, significantly reduced the overhead of providing secure execution.&nbsp; In this work, we also identified new fence primitives that impose a much lower performance overhead, more targeted at security applications of the fence.</p>\n<p>This work also examined other security applications of CSD, including mechanisms to prevent buffer overflows that could enable hijacking of stored return values, as well as ways to dynamically prevent return instructions from directing control flow anywhere but the expected return to the calling function.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/18/2020<br>\n\t\t\t\t\tModified by: Dean&nbsp;M&nbsp;Tullsen</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nModern instruction set decoders feature translation of native instructions into internal micro-ops to simplify the CPU design and improve instruction-level parallelism. However, this translation is static in most known instances. This research proposes context-sensitive decoding, a technique that enables customization of the micro-op translation based on the current execution context and/or preset hardware events. Further, it can transition between different translation modes rapidly. There are a myriad of potential applications of this technology, including on-demand security mitigation, performance and/or energy improvements, debugging and programmability, user-definable performance counting, etc.  In particular, this research examined several effective applications of Context Sensitive Docoding.\n\nIt explores a novel security defense to thwart instruction/data cache-based side-channel attacks.  It does so by translating secret-dependent individual load accesses to sensitive data regions into multiple loads that leave no secret-dependent footprint in the cache, at minimal performance cost.\n\nIt demonstrates a power management technique that performs selective devectorization to enable efficient unit-level power gating by identifying times when it is more effective to keep the vector units power gated and instead translate vector instructions as a series of scalar instructions, preserving both power and eliminating power-on delays.\n\nWe also show the ability for CSD to mitigate speculation cybersecurity attacks, such as Spectre and Meltdown.  The most common mitigation that has been deployed has been the sprinkling of fences (individual instructions that impede forward progress int the pipeline until completed and thereby preventing speculative execution) in vulerable code, at a high performance cost.  We show that introducing these fences dynamically, only when they are required, significantly reduced the overhead of providing secure execution.  In this work, we also identified new fence primitives that impose a much lower performance overhead, more targeted at security applications of the fence.\n\nThis work also examined other security applications of CSD, including mechanisms to prevent buffer overflows that could enable hijacking of stored return values, as well as ways to dynamically prevent return instructions from directing control flow anywhere but the expected return to the calling function.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 08/18/2020\n\n\t\t\t\t\tSubmitted by: Dean M Tullsen"
+ }
+}

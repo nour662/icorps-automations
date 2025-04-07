@@ -1,0 +1,145 @@
+{
+ "awd_id": "1552309",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "CAREER: Learning the Chromatin Network from ChIP-Seq Data",
+ "cfda_num": "47.074",
+ "org_code": "08080000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Peter McCartney",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2022-06-30",
+ "tot_intn_awd_amt": 768269.0,
+ "awd_amount": 768269.0,
+ "awd_min_amd_letter_date": "2016-03-29",
+ "awd_max_amd_letter_date": "2019-09-12",
+ "awd_abstract_narration": "Each cell of an organism shares the same nuclear DNA sequence (genome), but different types of cells turn on different sets of genes to carry out their unique functions. To correctly turn on and off the needed sets of genes requires coordinated action by several hundred regulatory molecules.  The regulators interact with the genome and with each other: understanding how this happens is one of the most important questions biological researchers are trying to answer. This project will use chromatin immunoprecipitation-sequencing (ChIP-Seq) data, which measures where a particular regulator is located on the genome: this may be zero, one or a few hundred positions out of the billions possible in a genome. Regulators often act together and one may change the action of another, so another part of the proposed work is to discover sites where regulators are co-localized. However, co-localization alone does not show whether regulators interact directly, or indirectly through an intermediate. The overall goal of this project is to develop a computational framework that identifies direct and indirect interactions among regulators, using thousands of ChIP-seq datasets. This framework will develop novel statistical and machine learning techniques to overcome the limitations of existing methods. The techniques that are developed will be applied to answer the following fundamental questions: How do hundreds of regulators interact with each other to regulate the genome? How do these regulator interactions differ across cell types? How do these interactions differ across different species (human, mouse, fly and worm)? The implementation of the new methods will be made publicly available to help many other scientists to study how the human genome works. This project is interdisciplinary in nature and has significant emphasis on interdisciplinary education, through project courses and outreach activities.\r\n\r\n\r\nIdentifying the interactions among chromatin regulators, such as transcription factors and histone modifications, is of paramount importance to understand genome regulation. To infer this network of interactions, this research will compare multiple chromatin immunoprecipitation-sequencing (ChIP-seq) datasets, each measuring genome-wide localization of a chromatin regulator. Co-localization may indicate that two regulators interact directly or indirectly through transitive interactions. To identify direct interactions, the proposal aims to develop novel network inference methods to infer conditional dependence relationships (i.e., correlation not explained via any other variables in the network) among a large number of ChIP-seq datasets. While network inference has become a commonly used analysis tool for other types of data, such as gene expression data, the immense size of the ChIP-seq data sets and the strong redundancies present in the data limit the use of existing network inference methods. To resolve these challenges, this research proposes a novel machine learning (ML) framework to enable network inference from large collections of ChIP-seq data: 1) efficient ML methods to infer the chromatin network based on the entire ENCODE ChIP-seq data that contain redundancies; 2) new ML methods to jointly infer the context-specific chromatin networks and the associated genomic contexts by incorporating other types of genomic data; and 3) new ML methods to learn a conserved chromatin network across species and predict chromatin factor interactions even if the factors are not measured in the species of study. For further information see the project web site at: http://suinlee.cs.washington.edu/projects/chromnet.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "BIO",
+ "org_dir_long_name": "Directorate for Biological Sciences",
+ "div_abbr": "DBI",
+ "org_div_long_name": "Division of Biological Infrastructure",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Su-In",
+   "pi_last_name": "Lee",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Su-In Lee",
+   "pi_email_addr": "suinlee@cs.washington.edu",
+   "nsf_id": "000623897",
+   "pi_start_date": "2016-03-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Washington",
+  "inst_street_address": "4333 BROOKLYN AVE NE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SEATTLE",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "2065434043",
+  "inst_zip_code": "981951016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "WA07",
+  "org_lgl_bus_name": "UNIVERSITY OF WASHINGTON",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HD1WMN6945W6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Washington",
+  "perf_str_addr": "185 Stevens Way",
+  "perf_city_name": "Seattle",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "981952350",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "WA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "084Y00",
+   "pgm_ele_name": "Infrastructure Innovation for"
+  },
+  {
+   "pgm_ele_code": "116500",
+   "pgm_ele_name": "ADVANCES IN BIO INFORMATICS"
+  },
+  {
+   "pgm_ele_code": "919900",
+   "pgm_ele_name": "Unallocated Program Costs"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1045",
+   "pgm_ref_txt": "CAREER-Faculty Erly Career Dev"
+  },
+  {
+   "pgm_ref_code": "1165",
+   "pgm_ref_txt": "ADVANCES IN BIO INFORMATICS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 151408.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 316904.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 299957.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Research: The overarching goal of this project is to develop novel machine learning and data science technologies to solve important problems in the field of genomics to understand how genes interact with each other to regulate the genome based on large-scale data. More specifically, regulatory factors ? such as transcription factors and histone modifications ? co-localize in the genome to interact with each other to regulate gene expression.&nbsp; Identifying these interactions is crucial to understanding of genome regulation, and the availability of genomic data, such as measurements of binding events of many transcription factors across the genome, are rapidly growing. However, the key challenge is in interpreting complex machine learning models designed to capture such intricate interactions from large and noisy genomic data. &nbsp;As a simple example, identifying co-localization of transcription factors alone fails to distinguish direct links from indirect ones. Furthermore, to extract biologically meaningful knowledge from these data and the models, we need novel machine learning algorithms to interpret the model to ?explain? a binding of a certain transcription factor to a certain position on the genome based on various kinds of genomic contexts, such as DNA sequence, other transcription factors? binding activities, other kinds of genomic events, conservation patterns across species, known gene annotations, and so on. This award resulted in a number of novel machine learning algorithms that can address these challenges and novel biological findings from these algorithms in collaboration with biologists. Most of these algorithms are general machine learning frameworks which can be applied to a wide range of other problems in biology and beyond.</p>\n<p>Education: This project is highly interdisciplinary in nature because it requires advanced concepts in machine learning and statistics ? such as conditional dependence, probabilistic graphical models, complex machine learning models, and machine learning interpretability ? and in biology ? such as gene expression, gene regulation, epigenetic regulation, and various biological assays. To successfully establish the proposed research program, it was essential to develop an interdisciplinary education program as well to effectively teach these concepts so students can effectively integrate them to solve important biological problems. This award provided excellent education opportunities to students majoring in computer science by helping them to learn how to identify and formulate the research problems in the field of genomics that can be solved by using machine learning and data science, and how to interpret complex machine learning models in order to gain scientific insights from large-scale genomic data. Multiple courses offered at the University of Washington and a number of invited seminars across the country and international conferences facilitated the entry of students with varying levels of exposure to biology to the research at the intersection of machine learning and genomics.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/20/2022<br>\n\t\t\t\t\tModified by: Su-In&nbsp;Lee</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nResearch: The overarching goal of this project is to develop novel machine learning and data science technologies to solve important problems in the field of genomics to understand how genes interact with each other to regulate the genome based on large-scale data. More specifically, regulatory factors ? such as transcription factors and histone modifications ? co-localize in the genome to interact with each other to regulate gene expression.  Identifying these interactions is crucial to understanding of genome regulation, and the availability of genomic data, such as measurements of binding events of many transcription factors across the genome, are rapidly growing. However, the key challenge is in interpreting complex machine learning models designed to capture such intricate interactions from large and noisy genomic data.  As a simple example, identifying co-localization of transcription factors alone fails to distinguish direct links from indirect ones. Furthermore, to extract biologically meaningful knowledge from these data and the models, we need novel machine learning algorithms to interpret the model to ?explain? a binding of a certain transcription factor to a certain position on the genome based on various kinds of genomic contexts, such as DNA sequence, other transcription factors? binding activities, other kinds of genomic events, conservation patterns across species, known gene annotations, and so on. This award resulted in a number of novel machine learning algorithms that can address these challenges and novel biological findings from these algorithms in collaboration with biologists. Most of these algorithms are general machine learning frameworks which can be applied to a wide range of other problems in biology and beyond.\n\nEducation: This project is highly interdisciplinary in nature because it requires advanced concepts in machine learning and statistics ? such as conditional dependence, probabilistic graphical models, complex machine learning models, and machine learning interpretability ? and in biology ? such as gene expression, gene regulation, epigenetic regulation, and various biological assays. To successfully establish the proposed research program, it was essential to develop an interdisciplinary education program as well to effectively teach these concepts so students can effectively integrate them to solve important biological problems. This award provided excellent education opportunities to students majoring in computer science by helping them to learn how to identify and formulate the research problems in the field of genomics that can be solved by using machine learning and data science, and how to interpret complex machine learning models in order to gain scientific insights from large-scale genomic data. Multiple courses offered at the University of Washington and a number of invited seminars across the country and international conferences facilitated the entry of students with varying levels of exposure to biology to the research at the intersection of machine learning and genomics.\n\n\t\t\t\t\tLast Modified: 07/20/2022\n\n\t\t\t\t\tSubmitted by: Su-In Lee"
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "awd_id": "1908549",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CNS Core: Small: Collaborative Research: Scalable Penetration Test Generation for Automotive Systems",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 254936.0,
+ "awd_amount": 254936.0,
+ "awd_min_amd_letter_date": "2019-07-10",
+ "awd_max_amd_letter_date": "2019-07-10",
+ "awd_abstract_narration": "This project develops a comprehensive framework for security validation of modern automotive systems. With increasing autonomy, automotive systems are evolving into very complex distributed systems.  They contain more than a hundred electronic control units (ECU), a heterogeneous collection of sensors and actuators, several in-vehicle communication networks, and several hundred megabytes of software.  Currently security validation of these systems depends primarily on human expertise to identify vulnerabilities in design and implementation.  Clearly this does not scale to large complex systems. The project addresses this problem by introducing automated penetration testing methods capable of handling the exploding automotive system complexities. \r\n\r\nThis project develops technology for systematic analysis of diverse safety, security, and reliability requirements in current and emergent vehicles.  It enables early comprehension of conflict, trade-offs, and potential internal inconsistencies among the different requirements. The framework includes: (1) an adaptive virtual prototyping infrastructure that enables smooth integration of ECU, sensor, and actuator models; and (2) a concolic testing facility to generate penetration tests automatically for targeted adversary models. The analysis techniques developed in the research cross-cut hardware, software, and physical (sensory and actuarial) artifacts.  The framework brings together currently disparate research in security, machine intelligence, and decision science. This project promises transformative technical and societal impacts through drastically improved safety, security, and reliability of diverse cyber-physical systems in general and automotive systems in particular.  Research results will be integrated into graduate and undergraduate courses.  A new workshop will be introduced to bring together experts in automotive safety, security, and reliability, and cross-cutting areas. Hands-on training modules for undergraduate and high school students will be developed using automotive simulator platforms.   Participation of underrepresented students in the project will be actively encouraged. Industry connections will be used and actively pursued for technology transfer.\r\n\r\nAll artifacts and data generated during the course of this project will be made publicly available, enabling the broader community to reproduce and extend research results. This includes all software and tools developed, architecture and platform models, and any experimental data supporting the research conclusions. A public repository has been set up at the URL https://github.com/RaySandip/AutoSec19.git for this dissemination, and will be maintained for at least three years beyond the award period. Backup copies of the data is expected to be retained indefinitely.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Sandip",
+   "pi_last_name": "Ray",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sandip Ray",
+   "pi_email_addr": "sandip@ece.ufl.edu",
+   "nsf_id": "000082522",
+   "pi_start_date": "2019-07-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Florida",
+  "inst_street_address": "1523 UNION RD RM 207",
+  "inst_street_address_2": "",
+  "inst_city_name": "GAINESVILLE",
+  "inst_state_code": "FL",
+  "inst_state_name": "Florida",
+  "inst_phone_num": "3523923516",
+  "inst_zip_code": "326111941",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "FL03",
+  "org_lgl_bus_name": "UNIVERSITY OF FLORIDA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NNFQH1JAPEP3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Florida",
+  "perf_str_addr": "968 Center Dr., Larsen Hall 336A",
+  "perf_city_name": "Gainesville",
+  "perf_st_code": "FL",
+  "perf_st_name": "Florida",
+  "perf_zip_code": "326116200",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "FL03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 254936.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><strong>1. Key Findings&nbsp;</strong></p>\r\n<p>Recent years have seen explosive rise in the infusion of electronics and software in automotive systems.&nbsp; An unfortunate consequence of this phenomenon is the&nbsp;vulnerability of these systems to a variety of cyber-attacks.&nbsp; The over-arching goal of this project is to develop techniques for identifying attacks on automotive systems and enable systematic mitigation. The project explored unique <em>penetration testing </em>approaches, <em>i.e.</em>, techniques to identify security vulnerabilities and attacker entry points that exploit interaction between hardware, software, and cyber-physical components. The key research results from the project include the following:</p>\r\n<ul>\r\n<li>A new approach for adversary classification in automotive systems, that is particularly effective for connected vehicles (vehicles that coordinate with other vehicles or infrastructure components)</li>\r\n<li>A method for designing security solutions for automotive systems based on machine learning</li>\r\n<li>Comprehensive evaluation of the approach on a number of automotive applications, that include features in commercial connected autonomous vehicles (e.g., cooperative adaptive cruise control, platooning) and automotive fleet for specific use cases (e.g., military fleets).</li>\r\n</ul>\r\n<p>Additionally, the method resulted in interesting <em>exploration platforms.&nbsp; </em>Such platforms are effective in training newcomers the scope and challenges in automotive security and also helping experienced system designers find subtle corner cases that could result in attacker entry points.</p>\r\n<p>&nbsp;</p>\r\n<p><strong>2. Impacts</strong></p>\r\n<p><strong>Societal Impact. </strong>According to the National Highway Traffic Safety Administration, 94% of the nearly 1.3 million automobile accidents each year occur due to human errors, resulting in over $3 trillion in cost. Autonomous cars hold the promise of providing a safer transportation infrastructure. However, security represents a limiting bottleneck to their adoption. By enabling systematic validation of automotive security, our work will foster the move towards safe and secure autonomous transportation infrastructure.&nbsp;</p>\r\n<p><strong>Scientific and Technological Impact.</strong> The research resulted in over twenty publications in high-impact journals and conference proceedings.&nbsp; It resulted in one of the first comprehensive approaches to systematically design security-resilient connected vehicle applications, particularly Cooperative Adaptive Cruise Control.</p>\r\n<p><strong>Impact on Teaching and Pedagogy.</strong> The results of the research were incorporated to produce one of the first comprehensive courses in the nation on Automotive Safety and Security.&nbsp; Furthermore, the research fostered the creation of a new NSF-funded REU site on Secure, Accessible, and Sustainable Transportation.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 02/03/2025<br>\nModified by: Sandip&nbsp;Ray</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\n1. Key Findings\r\n\n\nRecent years have seen explosive rise in the infusion of electronics and software in automotive systems. An unfortunate consequence of this phenomenon is thevulnerability of these systems to a variety of cyber-attacks. The over-arching goal of this project is to develop techniques for identifying attacks on automotive systems and enable systematic mitigation. The project explored unique penetration testing approaches, i.e., techniques to identify security vulnerabilities and attacker entry points that exploit interaction between hardware, software, and cyber-physical components. The key research results from the project include the following:\r\n\r\nA new approach for adversary classification in automotive systems, that is particularly effective for connected vehicles (vehicles that coordinate with other vehicles or infrastructure components)\r\nA method for designing security solutions for automotive systems based on machine learning\r\nComprehensive evaluation of the approach on a number of automotive applications, that include features in commercial connected autonomous vehicles (e.g., cooperative adaptive cruise control, platooning) and automotive fleet for specific use cases (e.g., military fleets).\r\n\r\n\n\nAdditionally, the method resulted in interesting exploration platforms. Such platforms are effective in training newcomers the scope and challenges in automotive security and also helping experienced system designers find subtle corner cases that could result in attacker entry points.\r\n\n\n\r\n\n\n2. Impacts\r\n\n\nSocietal Impact. According to the National Highway Traffic Safety Administration, 94% of the nearly 1.3 million automobile accidents each year occur due to human errors, resulting in over $3 trillion in cost. Autonomous cars hold the promise of providing a safer transportation infrastructure. However, security represents a limiting bottleneck to their adoption. By enabling systematic validation of automotive security, our work will foster the move towards safe and secure autonomous transportation infrastructure.\r\n\n\nScientific and Technological Impact. The research resulted in over twenty publications in high-impact journals and conference proceedings. It resulted in one of the first comprehensive approaches to systematically design security-resilient connected vehicle applications, particularly Cooperative Adaptive Cruise Control.\r\n\n\nImpact on Teaching and Pedagogy. The results of the research were incorporated to produce one of the first comprehensive courses in the nation on Automotive Safety and Security. Furthermore, the research fostered the creation of a new NSF-funded REU site on Secure, Accessible, and Sustainable Transportation.\r\n\n\n\r\n\n\n\r\n\n\n\t\t\t\t\tLast Modified: 02/03/2025\n\n\t\t\t\t\tSubmitted by: SandipRay\n"
+ }
+}

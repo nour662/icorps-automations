@@ -1,0 +1,113 @@
+{
+ "awd_id": "1153558",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER:Theories and Tools for Safe Concurrent Data Structures",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927991",
+ "po_email": "namla@nsf.gov",
+ "po_sign_block_name": "Nina Amla",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 199972.0,
+ "awd_amount": 199972.0,
+ "awd_min_amd_letter_date": "2011-09-02",
+ "awd_max_amd_letter_date": "2011-09-02",
+ "awd_abstract_narration": "Existing techniques for reasoning about the behavior and correctness of software running on multi-processor computers assume that each location in the shared memory always has a single, unique value as observed by the processors. But, on modern computer systems, this assumption is false---programs executing on different processors may simultaneously observe different values for some locations in memory. As a consequence, when applied to some important classes of programs, existing reasoning techniques may falsely assert that an incorrect program is in fact correct, thus potentially leading to runtime errors or even security breaches. The goal of this research project is to develop foundational theories and automatic, practical tools for program reasoning that are correct for such modern multi-processor computer systems.\r\n\r\nThe theory consists of a Hoare-style program logic, which deeply incorporates the specifics of the x86 memory model, and which can be used to give rigorous, high-level proofs of partial correctness properties of C-like, multi-threaded programs. The logic is inspired by separation logic, and embodies a x86-specific principle of local reasoning, which allows specifications and proofs to be restricted to just those resources used at runtime, instead of the global system state. The project additionally includes program checkers based on this logic, for automatically constructing proofs of partially-specified programs. Using these tools, the project intends to target, in particular, concurrent data structures: concurrent, and typically race-prone implementations of traditional sequential data structures, which carefully omit locks and other synchronization instructions to maximize concurrent throughput.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Warren",
+   "pi_last_name": "Hunt, Jr.",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Warren A Hunt, Jr.",
+   "pi_email_addr": "hunt@cs.utexas.edu",
+   "nsf_id": "000369883",
+   "pi_start_date": "2011-09-02",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Austin",
+  "perf_str_addr": "P.O. Box 7726",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787137726",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "37",
+  "perf_st_cong_dist": "TX37",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779500",
+   "pgm_ele_name": "TRUSTWORTHY COMPUTING"
+  },
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7795",
+   "pgm_ref_txt": "TRUSTWORTHY COMPUTING"
+  },
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  },
+  {
+   "pgm_ref_code": "7944",
+   "pgm_ref_txt": "SOFTWARE ENG & FORMAL METHODS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 199972.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Our work under this contract focused on verifying the correctness of parallel programs. Most modern computers (including virtually all personal computers) have multiple processors, enabling them to run programs that ``multitask'' -- i.e., perform multiple concurrent tasks at the same time for efficiency purposes. Our goal has been to develop tools which enable programmers and software designers to understand if, and why, their parallel programs actually operate as expected. Parallel programs are generally more error-prone than sequential (that is, non-parallel) programs, because of the increased complexity required to get the various parallel components to communicate properly. &nbsp;Matters are further complicated by unintuitive behaviors caused by certain hardware optimizations, most of which are designed to be invisible for sequential programs, but become design headaches the instant parallelism is introduced.<br />To verify the correctness of parallel programs, we need to ensure that our tools are based on a realistic ``programming model'' of the underlying hardware, which should incorporate aspects of the hardware relevant to running the program. &nbsp;We need to respect those complexities in our verification environment -- we cannot present the programmer with a programming model that is too ``ideal'' and abstracts away from real-world issues.<br />To this end, we have performed extensive research on x86-TSO, the de facto specification of the ``memory model'' for the x86 microprocessor, which is found in most personal computers. This memory model was developed by Sewell et al. with the intention of making mathematically precise the ambiguous language in the Intel and AMD x86 manuals, while still being true to the reality of multiprocessor x86 machines. In particular, when multiple processors access the same memory location with reads or writes, it is sometimes difficult to discern the data values that will be read, because of certain hardware optimizations that enable processors to ``delay'' their writes under various circumstances. The x86-TSO model captures this uncertainty. We have modeled an instruction set architecture (ISA) that uses x86-TSO as its underlying memory model. All of our instructions are implemented in terms of the primitive x86-TSO transitions.<br />Traditional testing cannot find all bugs, because it can only test a small percentage of possible inputs. Our approach to software correctness employs rigorous proof based on a formal model, rather than testing. We have used our model to prove some simple programs correct, and we believe our work is a novel modeling effort -- we have formalized a rigorous memory model, which is a basis for our ISA model. This work complements a detailed formal model of the x86 ISA under development at the University of Texas at Austin. &nbsp;That x86 model is currently sequential, but could be enhanced to handle parallel programs with the modeling techniques we have developed. Indeed, that project is currently being pursued under new NSF funding.<br />Intellectual Merit<br />We have created a formal, executable ISA model, based on the x86-TSO memory model, in the ACL2 theorem proving environment. &nbsp;Moreover, we have used this model to prove correctness of several small multiprocessor programs. &nbsp;Unlike other formal approaches to multiprocessor program correctness, our approach can provide greater trust in two respects: proofs rely only on the correctness of our tools and our model, as there are no intervening abstractions to trust; and we reason directly about machine-level code, with no trust put on a compiler.<br />Broader Impact<br />Our work under this contract has been made available via github. ACL2 users and others interested in program verification with real-world memory models are free to use, or (we hope) improve upon our tools to further the goal of mathematically proving the correctness of p...",
+  "por_txt_cntn": "\nOur work under this contract focused on verifying the correctness of parallel programs. Most modern computers (including virtually all personal computers) have multiple processors, enabling them to run programs that ``multitask'' -- i.e., perform multiple concurrent tasks at the same time for efficiency purposes. Our goal has been to develop tools which enable programmers and software designers to understand if, and why, their parallel programs actually operate as expected. Parallel programs are generally more error-prone than sequential (that is, non-parallel) programs, because of the increased complexity required to get the various parallel components to communicate properly.  Matters are further complicated by unintuitive behaviors caused by certain hardware optimizations, most of which are designed to be invisible for sequential programs, but become design headaches the instant parallelism is introduced.\nTo verify the correctness of parallel programs, we need to ensure that our tools are based on a realistic ``programming model'' of the underlying hardware, which should incorporate aspects of the hardware relevant to running the program.  We need to respect those complexities in our verification environment -- we cannot present the programmer with a programming model that is too ``ideal'' and abstracts away from real-world issues.\nTo this end, we have performed extensive research on x86-TSO, the de facto specification of the ``memory model'' for the x86 microprocessor, which is found in most personal computers. This memory model was developed by Sewell et al. with the intention of making mathematically precise the ambiguous language in the Intel and AMD x86 manuals, while still being true to the reality of multiprocessor x86 machines. In particular, when multiple processors access the same memory location with reads or writes, it is sometimes difficult to discern the data values that will be read, because of certain hardware optimizations that enable processors to ``delay'' their writes under various circumstances. The x86-TSO model captures this uncertainty. We have modeled an instruction set architecture (ISA) that uses x86-TSO as its underlying memory model. All of our instructions are implemented in terms of the primitive x86-TSO transitions.\nTraditional testing cannot find all bugs, because it can only test a small percentage of possible inputs. Our approach to software correctness employs rigorous proof based on a formal model, rather than testing. We have used our model to prove some simple programs correct, and we believe our work is a novel modeling effort -- we have formalized a rigorous memory model, which is a basis for our ISA model. This work complements a detailed formal model of the x86 ISA under development at the University of Texas at Austin.  That x86 model is currently sequential, but could be enhanced to handle parallel programs with the modeling techniques we have developed. Indeed, that project is currently being pursued under new NSF funding.\nIntellectual Merit\nWe have created a formal, executable ISA model, based on the x86-TSO memory model, in the ACL2 theorem proving environment.  Moreover, we have used this model to prove correctness of several small multiprocessor programs.  Unlike other formal approaches to multiprocessor program correctness, our approach can provide greater trust in two respects: proofs rely only on the correctness of our tools and our model, as there are no intervening abstractions to trust; and we reason directly about machine-level code, with no trust put on a compiler.\nBroader Impact\nOur work under this contract has been made available via github. ACL2 users and others interested in program verification with real-world memory models are free to use, or (we hope) improve upon our tools to further the goal of mathematically proving the correctness of parallel programs.\n\n\t\t\t\t\tLast Modified: 10/09/2015\n\n\t\t\t\t\tSubmitted by: Warren A Hunt, Jr."
+ }
+}

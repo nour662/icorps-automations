@@ -1,0 +1,129 @@
+{
+ "awd_id": "1717550",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: CORE: Small: Towards Smart and Secure Non Volatile Memory",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032920000",
+ "po_email": "doliveir@nsf.gov",
+ "po_sign_block_name": "Daniela Oliveira",
+ "awd_eff_date": "2017-07-31",
+ "awd_exp_date": "2021-07-30",
+ "tot_intn_awd_amt": 474379.0,
+ "awd_amount": 480379.0,
+ "awd_min_amd_letter_date": "2017-07-21",
+ "awd_max_amd_letter_date": "2020-06-08",
+ "awd_abstract_narration": "Non-volatile memory (NVM) technologies and the 3D-integration technology reshape memory systems. Although providing many desirable features such as low leakage power and fast system restart, the non-volatility of NVM introduces the vulnerability to data remanence attacks. This project leverages the processing-in-memory (PIM), enabled by vertically stacked 3D integration of integrated circuits, to overcome the security challenge associated with NVM.\r\n\r\nIn this project, we use an attack model, in which an attacker can physically obtain the NVM chip and scan the data stored in NVM, can also snoop on the memory bus to retrieve data and addresses; and can tamper with the memory content as well as commands. Our trust base includes both the processor and the memory chip, meaning that the hardware logic and state registers inside the chips are well hidden from the attacker. To protect against data scanning and memory bus snooping, we utilize counter-mode encryption to encrypt data and obfuscate addresses. The data stored in NVM are always encrypted while the addresses are encrypted at the processor side and decrypted at the memory side. The decryption logic becomes a part of the PIM logic on NVM chips. To protect against data tampering, we develop efficient integrity checks by re-purposing error correction codes (ECC) for integrity checking such that the existing error correction logic can be used for both error detection/correction and integrity verification. Overall, we leverage PIM to protect data and access patterns and ensure the data integrity. The end result of the project is smart and secure NVM architecture designs.\r\n",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Huiyang",
+   "pi_last_name": "Zhou",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Huiyang Zhou",
+   "pi_email_addr": "hzhou@ncsu.edu",
+   "nsf_id": "000250126",
+   "pi_start_date": "2017-07-21",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "North Carolina State University",
+  "inst_street_address": "2601 WOLF VILLAGE WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "RALEIGH",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9195152444",
+  "inst_zip_code": "276950001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "NC02",
+  "org_lgl_bus_name": "NORTH CAROLINA STATE UNIVERSITY",
+  "org_prnt_uei_num": "U3NVH931QJJ3",
+  "org_uei_num": "U3NVH931QJJ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "North Carolina State University",
+  "perf_str_addr": "Campus Box 7514",
+  "perf_city_name": "Raleigh",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "276957914",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "NC02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9178",
+   "pgm_ref_txt": "UNDERGRADUATE EDUCATION"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 474379.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 6000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project develops architectural support for secure non-volatile main memory (NVMM). NVMM is coming online, offering non-volatility, good scaling potential, high density, low idle power, and byte addressability. However, due to non-volatility, data in NVMM may remain for a very long time even without power, exposing data to potential attackers. Therefore, the use of NVMM requires data to be encrypted and its integrity protected. Furthermore, NVMM provides an intriguing possibility for persistent enclaves, that retain state across crashes or reboots. In both uses, a secure NVMM with memory encryption and integrity verification would typically rely on security metadata, which complicates crash recoverability and incurs significant performance overhead. This project first investigates and identifies the invariants that must be held for secure NVMM. Then, novel architectural supports are devised to reduce the performance overhead of secure NVMM. The research scope of the project is further extended into secure memory architecture for accelerators such as Graphics Processing Units (GPUs).</p>\n<p>This project advances the state-of-the-art secure NVMM architecture, both in the correctness requirements and in the architectural design optimizations, as well as the state-of-the-art secure GPU memory architecture. It offers the participating graduate students interdisciplinary research experiences in both hardware and software development. Research findings from this project have been published in premium conferences in the computer architecture and supercomputing fields and incorporated in a graduate level course on advanced computer architecture.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/24/2021<br>\n\t\t\t\t\tModified by: Huiyang&nbsp;Zhou</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project develops architectural support for secure non-volatile main memory (NVMM). NVMM is coming online, offering non-volatility, good scaling potential, high density, low idle power, and byte addressability. However, due to non-volatility, data in NVMM may remain for a very long time even without power, exposing data to potential attackers. Therefore, the use of NVMM requires data to be encrypted and its integrity protected. Furthermore, NVMM provides an intriguing possibility for persistent enclaves, that retain state across crashes or reboots. In both uses, a secure NVMM with memory encryption and integrity verification would typically rely on security metadata, which complicates crash recoverability and incurs significant performance overhead. This project first investigates and identifies the invariants that must be held for secure NVMM. Then, novel architectural supports are devised to reduce the performance overhead of secure NVMM. The research scope of the project is further extended into secure memory architecture for accelerators such as Graphics Processing Units (GPUs).\n\nThis project advances the state-of-the-art secure NVMM architecture, both in the correctness requirements and in the architectural design optimizations, as well as the state-of-the-art secure GPU memory architecture. It offers the participating graduate students interdisciplinary research experiences in both hardware and software development. Research findings from this project have been published in premium conferences in the computer architecture and supercomputing fields and incorporated in a graduate level course on advanced computer architecture.\n\n \n\n\t\t\t\t\tLast Modified: 08/24/2021\n\n\t\t\t\t\tSubmitted by: Huiyang Zhou"
+ }
+}

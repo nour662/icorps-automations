@@ -1,0 +1,109 @@
+{
+ "awd_id": "1563880",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Medium: Collaborative Research:  Run-Time Support for Scalable Concurrent Programming",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 540000.0,
+ "awd_amount": 540000.0,
+ "awd_min_amd_letter_date": "2016-04-27",
+ "awd_max_amd_letter_date": "2016-04-27",
+ "awd_abstract_narration": "Highly-concurrent data structures lie at the heart of modern multicore software. This project will provide systematic run-time system support for several techniques that that have proved essential for constructing highly-concurrent data structures. The intellectual merits are to provide a new basis for thinking about how to scale future generations of both hardware and software, and in particular to develop novel uses of operating system kernel functionality, as well as transactional hardware and software techniques. The project's broader significance and importance is the benefit to society provided by higher performing, less expensive, and more reliable software.\r\n\r\nThe specific techniques addressed are unsynchronized traversals, in which a thread navigates through a linked data structure without writing to memory, and atomic sequences of memory operations, where race conditions are eliminated by making a sequence of individual memory operations appear to take place instantaneously. Although these techniques have been successfully deployed in many ad-hoc instances, they have never been packaged as general-purpose mechanisms because they can have complex and dangerous interactions with standard memory management schemes. This project will exploit recent developments in hardware architectures and operating system structures to develop automated, systematic run-time support, making these techniques accessible to non-specialists.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Nir",
+   "pi_last_name": "Shavit",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Nir Shavit",
+   "pi_email_addr": "shanir@csail.mit.edu",
+   "nsf_id": "000457678",
+   "pi_start_date": "2016-04-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Massachusetts Institute of Technology",
+  "inst_street_address": "77 MASSACHUSETTS AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6172531000",
+  "inst_zip_code": "021394301",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+  "org_prnt_uei_num": "E2NYLCDML6V1",
+  "org_uei_num": "E2NYLCDML6V1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Massachusetts Institute of Technology",
+  "perf_str_addr": "77 MASSACHUSETTS AVE",
+  "perf_city_name": "Cambridge",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021394301",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  },
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  },
+  {
+   "pgm_ref_code": "7943",
+   "pgm_ref_txt": "PROGRAMMING LANGUAGES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 540000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>High throughput multicore programming burdens the programmer with managing the memory and synchrionization system and not focusing purely on the concurrency and parallelism that are the basis for perfromance. To remove some of this burden from concurrent programmers, this project developed novel techniques for automated memory management, as well as concurrent langauge constructs and mechanisms for inter thread communication. We collected all of these into a single useable framework in the form of a new concurrent programming language: DEF.&nbsp;</p>\n<p>DEF is a language that&rsquo;s close to the machine for the sake of performance engineering, but which also has the needed features to provide support for concurrency. These features are designed with costs that don&rsquo;t impede code that doesn&rsquo;t use them, and preserve the flexibility enjoyed by C programmers in organizing memory layout and operations. DEF occupies the excluded middle between the two categories of languages and is suitable for high performance, scalable applications. To provide DEF with simple memory management, we&nbsp;developed ForkScan, a breakthrough practical system to provide on-demand automatic reclamation with minimal blocking to snapshot the memory. Forkscan tracks memory only of nodes declared by the user, and does not need to access all locations to collect a snapshot. Instead, it utilizes the efficiency of the fork operations of modern operating systems We developed a full running version of DEF that includes ForkScan memory management support, and added more support for transactional memory for inter-process synchronization. We showed how it could be used to easily design highly performing concurrent data structures, in particular ones like hash tables and priority queues in which in the past, the complexity of memory management caused people to simply use them with memory leaks.&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/21/2022<br>\n\t\t\t\t\tModified by: Nir&nbsp;Shavit</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nHigh throughput multicore programming burdens the programmer with managing the memory and synchrionization system and not focusing purely on the concurrency and parallelism that are the basis for perfromance. To remove some of this burden from concurrent programmers, this project developed novel techniques for automated memory management, as well as concurrent langauge constructs and mechanisms for inter thread communication. We collected all of these into a single useable framework in the form of a new concurrent programming language: DEF. \n\nDEF is a language that\u2019s close to the machine for the sake of performance engineering, but which also has the needed features to provide support for concurrency. These features are designed with costs that don\u2019t impede code that doesn\u2019t use them, and preserve the flexibility enjoyed by C programmers in organizing memory layout and operations. DEF occupies the excluded middle between the two categories of languages and is suitable for high performance, scalable applications. To provide DEF with simple memory management, we developed ForkScan, a breakthrough practical system to provide on-demand automatic reclamation with minimal blocking to snapshot the memory. Forkscan tracks memory only of nodes declared by the user, and does not need to access all locations to collect a snapshot. Instead, it utilizes the efficiency of the fork operations of modern operating systems We developed a full running version of DEF that includes ForkScan memory management support, and added more support for transactional memory for inter-process synchronization. We showed how it could be used to easily design highly performing concurrent data structures, in particular ones like hash tables and priority queues in which in the past, the complexity of memory management caused people to simply use them with memory leaks. \n\n \n\n \n\n\t\t\t\t\tLast Modified: 01/21/2022\n\n\t\t\t\t\tSubmitted by: Nir Shavit"
+ }
+}

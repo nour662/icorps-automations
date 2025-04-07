@@ -1,0 +1,101 @@
+{
+ "awd_id": "1725428",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SPX: Collaborative Research: Dependence Programming and Optimization of Scalable Irregular Numerical Applications",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2017-08-15",
+ "awd_exp_date": "2021-07-31",
+ "tot_intn_awd_amt": 200000.0,
+ "awd_amount": 200000.0,
+ "awd_min_amd_letter_date": "2017-08-02",
+ "awd_max_amd_letter_date": "2017-08-02",
+ "awd_abstract_narration": "Dynamic and irregular applications, such as in the Multiresolution Adaptive Numerical Environment for Scientific Simulation framework, are notoriously hard to implement efficiently, especially on emerging complex and heterogeneous high-performance computing platforms. This is further compounded by the lack of suitable programming models capable of expressing these kinds of applications, while at the same time allowing the tools to efficiently map the applications on a variety of hardware. The intellectual merits of this project are in advancing the state of the art in dependence-based programming models, compiler technologies and runtime techniques that address these issues.  The project's broader significance and importance are in laying down the intellectual foundations for the composition and optimization of irregular scalable algorithms, focusing on challenging and highly-significant spatial-tree algorithms.  This project enables design and implementation of high-performance, portable irregular applications, as well as training of the future employees of companies and government who work in these domains.\r\n\r\nThis project redefines the prevailing abstractions by unifying and extending the Concurrent Collections (CnC) dependence-based programming model with novel compiler and runtime techniques, and applying these to a very important class of dynamic, irregular numerical computations such as the ones found in the above simulation framework. Innovations in the programming model allow the programmers to separate the specification of the algorithm from a specification of how to efficiently map the application on a variety of different platforms with a variety of different tuning goals. Compiler innovations enable previously elusive optimizations of irregular applications, while runtime techniques enable efficient execution on modern, heterogeneous and distributed machines.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Robert",
+   "pi_last_name": "Harrison",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Robert J Harrison",
+   "pi_email_addr": "robert.harrison@stonybrook.edu",
+   "nsf_id": "000484505",
+   "pi_start_date": "2017-08-02",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "SUNY at Stony Brook",
+  "inst_street_address": "W5510 FRANKS MELVILLE MEMORIAL LIBRARY",
+  "inst_street_address_2": "",
+  "inst_city_name": "STONY BROOK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6316329949",
+  "inst_zip_code": "117940001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "NY01",
+  "org_lgl_bus_name": "THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK",
+  "org_prnt_uei_num": "M746VC6XMNH9",
+  "org_uei_num": "M746VC6XMNH9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "SUNY at Stony Brook",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "117940001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "NY01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "042Y00",
+   "pgm_ele_name": "PPoSS-PP of Scalable Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 200000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>Three of the major themes that consumed much of the project were how to express and exploit hierarchy within the Concurrent Collections (CnC) data-flow programming model.&nbsp; This included how a novel parallel runtime (developed at Rice) might help enable this expression and facilitate efficient execution, and how to leverage the powerful code-transformation and generation tools of modern compilers to reduce programmer effort and enance performance.&nbsp; This work was motivated in part by a science application (MADNESS, developed by Harrison) from physics and chemistry that used trees contruct adaptive meshes and fast algorithms.&nbsp; Recognizing that these tree-based algorithms are ultimately an efficient, but not unique, representation of computation on sparse vectors it appeared that we could start with an annotated dense code that would concisely encapsulate the algebraic properties of the algorithms as well as the hierachical nature of the underlying tree-based algorithm and data structures.&nbsp; The final proof of concept demonstrated how to express an algorithm such that the hiearchical runtime could effectively apply the proposed optimizations and transformations without requiring multiple specifications from the programmer.&nbsp; Related are classes of dynamic programming algorithms and several publications joint with multiple team member demonstrated signifncant advances in the parallel performance of several examples.&nbsp;&nbsp;</span></p>\n<p>At Stony Brook, multiple masters students (including two women) participated extensively in the project and one Ph.D. student (graduating in 2020) had the majority of his thesis work supported by the project.&nbsp; Three peer-reviewed publications in significant international conferences and multiple presentations and workshops are amoung the other outcomes.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/11/2021<br>\n\t\t\t\t\tModified by: Robert&nbsp;J&nbsp;Harrison</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThree of the major themes that consumed much of the project were how to express and exploit hierarchy within the Concurrent Collections (CnC) data-flow programming model.  This included how a novel parallel runtime (developed at Rice) might help enable this expression and facilitate efficient execution, and how to leverage the powerful code-transformation and generation tools of modern compilers to reduce programmer effort and enance performance.  This work was motivated in part by a science application (MADNESS, developed by Harrison) from physics and chemistry that used trees contruct adaptive meshes and fast algorithms.  Recognizing that these tree-based algorithms are ultimately an efficient, but not unique, representation of computation on sparse vectors it appeared that we could start with an annotated dense code that would concisely encapsulate the algebraic properties of the algorithms as well as the hierachical nature of the underlying tree-based algorithm and data structures.  The final proof of concept demonstrated how to express an algorithm such that the hiearchical runtime could effectively apply the proposed optimizations and transformations without requiring multiple specifications from the programmer.  Related are classes of dynamic programming algorithms and several publications joint with multiple team member demonstrated signifncant advances in the parallel performance of several examples.  \n\nAt Stony Brook, multiple masters students (including two women) participated extensively in the project and one Ph.D. student (graduating in 2020) had the majority of his thesis work supported by the project.  Three peer-reviewed publications in significant international conferences and multiple presentations and workshops are amoung the other outcomes.\n\n\t\t\t\t\tLast Modified: 12/11/2021\n\n\t\t\t\t\tSubmitted by: Robert J Harrison"
+ }
+}

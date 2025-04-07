@@ -1,0 +1,105 @@
+{
+ "awd_id": "2006602",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: CNS Core: Small: Server architecture optimizations for microsecond-scale RPCs",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927498",
+ "po_email": "achtchel@nsf.gov",
+ "po_sign_block_name": "Almadena Chtchelkanova",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 400000.0,
+ "awd_amount": 400000.0,
+ "awd_min_amd_letter_date": "2020-06-30",
+ "awd_max_amd_letter_date": "2020-06-30",
+ "awd_abstract_narration": "Modern datacenters host online services that are decomposed into multiple software tiers spanning thousands of servers. Servers coordinate and communicate with each other using Remote Procedure Calls (RPCs) over the internal datacenter network. The ongoing productivity-boosting software architecture trend of microservices is pushing software decomposition of deployed services to the extreme, resulting in more frequent inter-server communication and finer-grained RPCs, often with runtimes of only a few microseconds. With shrinking per-RPC runtime, networking efficiency directly impacts the performance of an online service as a whole: networking-related overheads that would otherwise be negligible are amplified by the fine-grained nature of the application-level logic triggered per RPC. A promising approach to address this challenge is to promote the role of each server\u2019s NIC\u2014the gateway between a server\u2019s compute resources and the network\u2014from simple RPC delivery to active RPC manipulation. Historically, the NIC agnostically delivers incoming packets, by writing them into memory; the packets are later picked up by a CPU core for processing, resulting in excess data movement, inter-core synchronization overheads, or inter-core load imbalance. ROAr is a new server architecture optimized for efficient handling of microsecond-scale RPCs, featuring a NIC that dynamically monitors system-wide behavior and intelligently steers incoming RPCs within the server\u2019s memory hierarchy, including direct placement in CPU cores\u2019 private caches. An RPC-oriented protocol allows the NIC to raise the level of abstraction it operates on from network packets to RPCs\u2014i.e., from data chunks to messages that trigger some computation. The more information exposed to the NIC about the computation an RPC will trigger, the better the RPC steering decision the NIC can make. In the ROAr architecture, the NIC monitors incoming RPCs and makes a number of novel decisions to judiciously distribute them within a modern server\u2019s memory hierarchy and across CPU cores. Overall, ROAr\u2019s techniques can drastically improve the efficiency and performance of handling microsecond-scale RPCs. A direct consequence is improved quality for a plethora of large-scale online services deployed on modern datacenters, which make heavy use of such RPCs. Therefore, ROAr has the potential to influence the design of future server architectures.\r\n\r\nROAr involves extensive hardware-software co-design, breaking the conventionally rigid boundaries between network and compute. The NIC\u2019s role is promoted from oblivious placement of incoming RPCs into a server\u2019s memory hierarchy to active RPC acceleration. The NIC\u2019s natural position in an RPC\u2019s processing lifetime establishes it as an excellent agent to stage the cache hierarchy for optimized data movement and reduced latency. ROAr features three main mechanisms. First, it alleviates detrimental memory-bandwidth interference by keeping all incoming RPCs within the cache hierarchy, early-rejecting requests that are predicted to miss their deadline because of excessive ongoing queuing. Second, ROAr makes dynamic inter-core balancing decisions for incoming RPCs, by taking into account real-time system load information, and steers RPCs all the way to the private cache of the selected CPU core. Third, while an RPC is queued, waiting to be executed, the NIC prefetches the RPC\u2019s corresponding instructions and critical data, thus accelerating the RPC\u2019s startup time when it is eventually picked up by the core for processing. The nature of such prefetching is novel, as decisions are not based on predictions, but on prescience: the NIC\u2019s early knowledge of an RPC\u2019s arrival from the network. The proposed research involves theoretical modeling, simulation, and prototyping. Queuing analysis on a variety of RPC service-time distributions will be conducted to develop NIC-driven inter-core load distribution policies. A cycle-accurate simulation model of ROAr will be developed to evaluate in-cache network buffer management, RPC-to-core steering, and prefetching mechanisms. Finally, the applicability of NIC-driven load-balancing policies on existing architectures featuring discrete NICs will be evaluated, with the use of a programmable FPGA-based NIC.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Alexandros",
+   "pi_last_name": "Daglis",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Alexandros Daglis",
+   "pi_email_addr": "alexandros.daglis@cc.gatech.edu",
+   "nsf_id": "000810791",
+   "pi_start_date": "2020-06-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Institute of Technology",
+  "perf_str_addr": "225 North Avenue",
+  "perf_city_name": "Atlanta",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7941",
+   "pgm_ref_txt": "COMPUTER ARCHITECTURE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 400000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Modern datacenters host online services that are decomposed into multiple software tiers spanning thousands of servers. Servers coordinate and communicate with each other using Remote Procedure Calls (RPCs) over the internal datacenter network. The ongoing productivity-boosting software architecture trend of microservices is pushing software decomposition of deployed services to the extreme, resulting in more frequent inter-server communication and finer-grained RPCs, often with runtimes of only a few microseconds. The combination of shrinking per-RPC runtime and growing communication frequency reduces the efficiency of modern server hardware in several dimensions. First, networking-related overheads that would conventionally be considered negligible are amplified by the fine-grained nature of the application-level logic triggered per RPC. Second, the considerable volume and frequency of network-associated data movement in the memory system degrades the latter&rsquo;s efficiency and performance predictability, mandating new mechanisms for explicit data movement orchestration between the network, memory system, and compute resources.</p>\r\n<p>&nbsp;</p>\r\n<p>In this project, we developed several novel computer architectures that are highly optimized for the RPC-based traffic prevalent in modern datacenters. Our proposed hardware designs evidenced that hardware enhancement of the network interface logic to natively support RPC functionality can drastically improve the efficiency and performance of next-generation server systems and, by extension, datacenters. Specific instances of our developed systems include: a hardware accelerator design that improves the efficiency of RPC software stack processing by orders of magnitude compared to a conventional processor; several hardware-software co-design techniques at the intersection of network, compute, and memory hardware resources that improve energy efficiency and performance predictability by eliminating wasteful network data movement; and integration of native load-balancing capabilities in the server&rsquo;s network interface controller to eliminate hardware resource underutilization due to load imbalance and synchronization overheads. The feasibility and performance impact of our designs were demonstrated in cycle-level architectural simulations, and partially on an implementation using reconfigurable hardware (FPGA).</p>\r\n<p>&nbsp;</p>\r\n<p>The project produced seven publications, the majority of which appeared at top-tier computer architecture conferences, as well as open-sourced software artifacts to facilitate result reproducibility and subsequent research by the community. The conducted research formed the core of a PhD thesis, contributed to two additional PhD theses, and resulted in research training of several graduate and undergraduate students who were involved in relevant activities. Research outcomes were used to enhance the graduate curriculum at Georgia Tech.</p>\r\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 01/11/2025<br>\nModified by: Alexandros&nbsp;Daglis</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nModern datacenters host online services that are decomposed into multiple software tiers spanning thousands of servers. Servers coordinate and communicate with each other using Remote Procedure Calls (RPCs) over the internal datacenter network. The ongoing productivity-boosting software architecture trend of microservices is pushing software decomposition of deployed services to the extreme, resulting in more frequent inter-server communication and finer-grained RPCs, often with runtimes of only a few microseconds. The combination of shrinking per-RPC runtime and growing communication frequency reduces the efficiency of modern server hardware in several dimensions. First, networking-related overheads that would conventionally be considered negligible are amplified by the fine-grained nature of the application-level logic triggered per RPC. Second, the considerable volume and frequency of network-associated data movement in the memory system degrades the latters efficiency and performance predictability, mandating new mechanisms for explicit data movement orchestration between the network, memory system, and compute resources.\r\n\n\n\r\n\n\nIn this project, we developed several novel computer architectures that are highly optimized for the RPC-based traffic prevalent in modern datacenters. Our proposed hardware designs evidenced that hardware enhancement of the network interface logic to natively support RPC functionality can drastically improve the efficiency and performance of next-generation server systems and, by extension, datacenters. Specific instances of our developed systems include: a hardware accelerator design that improves the efficiency of RPC software stack processing by orders of magnitude compared to a conventional processor; several hardware-software co-design techniques at the intersection of network, compute, and memory hardware resources that improve energy efficiency and performance predictability by eliminating wasteful network data movement; and integration of native load-balancing capabilities in the servers network interface controller to eliminate hardware resource underutilization due to load imbalance and synchronization overheads. The feasibility and performance impact of our designs were demonstrated in cycle-level architectural simulations, and partially on an implementation using reconfigurable hardware (FPGA).\r\n\n\n\r\n\n\nThe project produced seven publications, the majority of which appeared at top-tier computer architecture conferences, as well as open-sourced software artifacts to facilitate result reproducibility and subsequent research by the community. The conducted research formed the core of a PhD thesis, contributed to two additional PhD theses, and resulted in research training of several graduate and undergraduate students who were involved in relevant activities. Research outcomes were used to enhance the graduate curriculum at Georgia Tech.\r\n\n\n\t\t\t\t\tLast Modified: 01/11/2025\n\n\t\t\t\t\tSubmitted by: AlexandrosDaglis\n"
+ }
+}

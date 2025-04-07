@@ -1,0 +1,109 @@
+{
+ "awd_id": "1952816",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: SHF: Foundations for Stateful Network Programming",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2022-02-28",
+ "tot_intn_awd_amt": 126366.0,
+ "awd_amount": 126366.0,
+ "awd_min_amd_letter_date": "2019-09-20",
+ "awd_max_amd_letter_date": "2019-09-20",
+ "awd_abstract_narration": "Billions of people use web-based services on a daily basis for a variety of tasks, such as communication, social networking, and navigation. These services rely on correct and efficient functioning of complex networked systems, which are prone to failures that are often caused by human error. Existing technologies such as software-defined networking (SDN) seek to reduce human error by providing centralized network management and programmability via a standard API, and by separating network management (the SDN \"control-plane\") from packet forwarding (the SDN \"data-plane\"). While centralization permits a single network controller to have a global view of the network--which simplifies the control logic--it suffers from severe scalability limitations when the size of a network increases. Moreover, modern SDN data-planes feature powerful, decentralized devices that are able to perform computations and update their local state based on packet contents, thereby allowing them to implement functionality traditionally restricted to the SDN control-plane. Such decentralization requires viewing a network program as a distributed system running on network hardware, rather than as a process running on a controller and interacting with switches. This project establishes a new approach for constructing modern network programs, viewed as distributed systems. The project's novelties are (i) a new abstraction for writing network programs that takes distribution into account and ensures that a network program correctly maintains distributed views of global state; and (ii) techniques for ensuring efficiency of network programs: the techniques ensure that network performance is not penalized by maintenance of global state. The project's impacts are (i) contributions to the general understanding of how to properly build distributed systems, and (ii) development of a language and associated tools which eliminate some of the difficulties domain experts face in building these systems.\r\n\r\nThe key contribution is a thorough investigation of the network data-plane as a platform for executing dynamic, stateful code, resulting in a programming system which allows network functions to be realized in the data-plane, and ensures that network programs are verifiably correct and efficiently implementable. The project has two research thrusts. The first thrust focuses on generalizing and implementing event nets. While previous work introduced the concept of event nets (a Petri-nets-based abstraction) for event-driven programming in the context of SDN, this project enriches the event nets language with functionality needed to make it easily usable in other domains such as wireless sensor networking (WSN), internet of things (IoT), and data-centric programming. The resulting language allows programmers to write, for each of these domains, event-driven network programs that use global data structures to describe network-wide behavior, without having to handle unexpected data races during program execution on the (distributed) switches. Additionally, the project implements a compiler that produces executable code from an extended event net: specifically, the compiler automatically constructs a network program's distributed version that targets modern hardware such as Barefoot Network's Tofino chip. The second research thurst focuses on formalizing event nets. The project investigates an algebraic formalization of the extended event nets language, allowing (mechanized) formal reasoning about dynamic, stateful network programs. Finally, the project explores ways in which event nets can be used as a pedagogical tool in teaching undergraduate classes on Computer Networks.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jedidiah",
+   "pi_last_name": "McClurg",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jedidiah McClurg",
+   "pi_email_addr": "mcclurg@colostate.edu",
+   "nsf_id": "000780303",
+   "pi_start_date": "2019-09-20",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Colorado School of Mines",
+  "inst_street_address": "1500 ILLINOIS ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "GOLDEN",
+  "inst_state_code": "CO",
+  "inst_state_name": "Colorado",
+  "inst_phone_num": "3032733000",
+  "inst_zip_code": "804011887",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "CO07",
+  "org_lgl_bus_name": "TRUSTEES OF THE COLORADO SCHOOL OF MINES",
+  "org_prnt_uei_num": "JW2NGMP4NMA3",
+  "org_uei_num": "JW2NGMP4NMA3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Colorado School of Mines",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CO",
+  "perf_st_name": "Colorado",
+  "perf_zip_code": "804011887",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "CO07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7798",
+   "pgm_ref_txt": "SOFTWARE & HARDWARE FOUNDATION"
+  },
+  {
+   "pgm_ref_code": "7943",
+   "pgm_ref_txt": "PROGRAMMING LANGUAGES"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 126366.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project developed a framework for writing network programs that operate correctly and efficiently on top of modern stateful dataplanes, such as Tofino-powered devices. The project's first research thrust focused on generalizing and implementing event nets. Toward this goal, we developed callback nets, an extension of event nets, and built a corresponding compiler and runtime system. We now have a full-featured codebase that has enabled us to translate several existing applications (congestion control, heavy-hitters detection, etc.) into callback nets, compile them to P4 code, and run them in a simulated network using P4-programmable software switches. The project's second research thrust focused on formalizing the callback nets language. Toward this goal, we developed a regular-expression-based formalization of this language. Our work was published in the top SDN venue, the ACM SIGCOMM Symposium on SDN Research (SOSR).</p>\n<p><br />We also investigated some interesting related problems, namely rewrite-guidance and incrementality in regards to program synthesis, and these explorations resulted in a publication at the 30th International Conference on Parallel Architectures and Compilation Techniques (PACT) and an oral presentation at a PLDI workshop. These techniques could be used for efficient synthesis/repair of callback nets.</p>\n<p><br />A variety of educational opportunities arose from this project. Elements of the research were woven into an upper-level undergraduate course on Programming Languages, which motivated one student to pursue undergraduate research over the summer, and two students to pursue MS degrees -- one of these students has graduated with a project-focused MS, and is now a software engineer in the Bay Area. The other has already landed two internships at high-profile tech companies, and is in the process of writing a strong MS thesis. Additionally, the grant funded a PhD student, who presented some interesting new ideas at the EGRAPHS@PLDI'22 workshop.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/29/2022<br>\n\t\t\t\t\tModified by: Jedidiah&nbsp;Mcclurg</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project developed a framework for writing network programs that operate correctly and efficiently on top of modern stateful dataplanes, such as Tofino-powered devices. The project's first research thrust focused on generalizing and implementing event nets. Toward this goal, we developed callback nets, an extension of event nets, and built a corresponding compiler and runtime system. We now have a full-featured codebase that has enabled us to translate several existing applications (congestion control, heavy-hitters detection, etc.) into callback nets, compile them to P4 code, and run them in a simulated network using P4-programmable software switches. The project's second research thrust focused on formalizing the callback nets language. Toward this goal, we developed a regular-expression-based formalization of this language. Our work was published in the top SDN venue, the ACM SIGCOMM Symposium on SDN Research (SOSR).\n\n\nWe also investigated some interesting related problems, namely rewrite-guidance and incrementality in regards to program synthesis, and these explorations resulted in a publication at the 30th International Conference on Parallel Architectures and Compilation Techniques (PACT) and an oral presentation at a PLDI workshop. These techniques could be used for efficient synthesis/repair of callback nets.\n\n\nA variety of educational opportunities arose from this project. Elements of the research were woven into an upper-level undergraduate course on Programming Languages, which motivated one student to pursue undergraduate research over the summer, and two students to pursue MS degrees -- one of these students has graduated with a project-focused MS, and is now a software engineer in the Bay Area. The other has already landed two internships at high-profile tech companies, and is in the process of writing a strong MS thesis. Additionally, the grant funded a PhD student, who presented some interesting new ideas at the EGRAPHS@PLDI'22 workshop.\n\n\t\t\t\t\tLast Modified: 07/29/2022\n\n\t\t\t\t\tSubmitted by: Jedidiah Mcclurg"
+ }
+}

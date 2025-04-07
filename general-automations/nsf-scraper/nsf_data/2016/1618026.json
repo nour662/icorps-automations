@@ -1,0 +1,105 @@
+{
+ "awd_id": "1618026",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Small: Complexity Assumptions for Cryptographic Schemes",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927991",
+ "po_email": "namla@nsf.gov",
+ "po_sign_block_name": "Nina Amla",
+ "awd_eff_date": "2016-08-01",
+ "awd_exp_date": "2020-07-31",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 500000.0,
+ "awd_min_amd_letter_date": "2016-07-25",
+ "awd_max_amd_letter_date": "2016-07-25",
+ "awd_abstract_narration": "This project investigates the foundational computational underpinnings of secure systems. Cryptographic constructions such as encryption, signatures, and more rely for their security on the conjectured computational difficulty of certain problems. For example, many public key encryption currently in use would be broken if someone discovered an efficient algorithm to factor large integers. Unfortunately, the current state of art is that we are unable to prove that these problems are truly hard, and so need to rely on unproven conjectures. Moreover, a handful of these conjectures serve as the foundations of many if not most of current cryptographic schemes, and so each such conjecture is a single point of failure whose refutation could have severe consequences for a large fraction of our systems. In particular, progress in quantum computing threatens some of these conjectures, and motivates reevaluation of the right basis for cryptography.\r\n\r\nThe goal of this project is better understand and remedy these issues. Concretely, this project investigates cryptographic schemes, and particularly public key encryption, that are based on assumptions that are qualitatively different from current ones, and hence  more likely to survive technological or algorithmic advances that would break current schemes. The project obtains new forms of evidence for computational assumptions, thus deriving some assurances that current schemes are secure. The project also explores assumptions for new cryptographic primitives such as software obfuscation that are more well founded by computational complexity considerations",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Boaz",
+   "pi_last_name": "Barak",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Boaz Barak",
+   "pi_email_addr": "b@boazbarak.org",
+   "nsf_id": "000063068",
+   "pi_start_date": "2016-07-25",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Harvard University",
+  "inst_street_address": "1033 MASSACHUSETTS AVE STE 3",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6174955501",
+  "inst_zip_code": "021385366",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "MA05",
+  "org_lgl_bus_name": "PRESIDENT AND FELLOWS OF HARVARD COLLEGE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LN53LCFJFL45"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Harvard University",
+  "perf_str_addr": "33 Oxford St.",
+  "perf_city_name": "Cambridge",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021382933",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "MA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 500000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Cryptography's importance to our society is increasingly growing. Cryptographic objects are are used to secure our online interaction, and are critical to our infrastructure. Yet all of these are based on unproven computational assumptions.</p>\n<p>This project examined the underlying assumptions, providing new ways to \"stress test\" them and more principled ways to gain confidence in their veracity. The work in this project introduced a new approach of using the \"sum of squares\" convex programming hieararchy to test computational assumptions. Using this approach, we were able to break several leading candidates for the construction of \"indistinguishability obfuscation\", which is a powerful cryptographic object that has recently been the source of much excitement in the cryptographic community.&nbsp;</p>\n<p><br />Even more importantly, the sum-of-squares based attacks pointed out to properties of indistinguishable obfuscator constructions that are required for security. Using these properties as a guide, our collaborators have very recently managed to obtain the first construction of indistinguishable obfuscators based on standard assumptions.&nbsp;<br /><br />Cryptography and machine learning have an \"adversarial relationship\". Both fields deal with computational problems involving randomness (also known as \"average case complexity\"). In machine learning, we search for algorithms that can solve these problems, while in cryptography we hope to find problems that are unfeasible to solve by any efficient algorithm. Hence the same techniques can often be used to attack cryptosystem and to solve machine learning or statistical learning problems. Indeed, we have used the insights from our work to make significant progress on a central question in statistical learning - the graph matching problem.</p>\n<p>Aside from these our project also initiated the study of \"higher order cryptography\", which is cryptography in which the objects we are trying to encrypt are not strings but rather functions. This relates to the theory of programming languages, and specifically to aspects of functional programming that are increasingly relevant to practice.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 04/20/2021<br>\n\t\t\t\t\tModified by: Boaz&nbsp;Barak</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nCryptography's importance to our society is increasingly growing. Cryptographic objects are are used to secure our online interaction, and are critical to our infrastructure. Yet all of these are based on unproven computational assumptions.\n\nThis project examined the underlying assumptions, providing new ways to \"stress test\" them and more principled ways to gain confidence in their veracity. The work in this project introduced a new approach of using the \"sum of squares\" convex programming hieararchy to test computational assumptions. Using this approach, we were able to break several leading candidates for the construction of \"indistinguishability obfuscation\", which is a powerful cryptographic object that has recently been the source of much excitement in the cryptographic community. \n\n\nEven more importantly, the sum-of-squares based attacks pointed out to properties of indistinguishable obfuscator constructions that are required for security. Using these properties as a guide, our collaborators have very recently managed to obtain the first construction of indistinguishable obfuscators based on standard assumptions. \n\nCryptography and machine learning have an \"adversarial relationship\". Both fields deal with computational problems involving randomness (also known as \"average case complexity\"). In machine learning, we search for algorithms that can solve these problems, while in cryptography we hope to find problems that are unfeasible to solve by any efficient algorithm. Hence the same techniques can often be used to attack cryptosystem and to solve machine learning or statistical learning problems. Indeed, we have used the insights from our work to make significant progress on a central question in statistical learning - the graph matching problem.\n\nAside from these our project also initiated the study of \"higher order cryptography\", which is cryptography in which the objects we are trying to encrypt are not strings but rather functions. This relates to the theory of programming languages, and specifically to aspects of functional programming that are increasingly relevant to practice.\n\n\t\t\t\t\tLast Modified: 04/20/2021\n\n\t\t\t\t\tSubmitted by: Boaz Barak"
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "awd_id": "1656981",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: CPS: Secure-by-Design Synthesis of Cyber-Physical Systems",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Samee Khan",
+ "awd_eff_date": "2017-01-15",
+ "awd_exp_date": "2019-12-31",
+ "tot_intn_awd_amt": 174997.0,
+ "awd_amount": 174997.0,
+ "awd_min_amd_letter_date": "2017-01-17",
+ "awd_max_amd_letter_date": "2017-01-17",
+ "awd_abstract_narration": "Cyber-physical systems, including unmanned vehicles, networked medical devices, and smart manufacturing, are expected to autonomously perform complex tasks, while satisfying strict requirements on safety and performance. An emerging approach to designing such systems is to automatically generate a controller that captures the desired functionality of the system. The ability of the system to execute the control, however, may be impacted by malicious adversaries mounting cyber and physical attacks. The goal of this project is to develop a framework for automatically generating control actions that jointly consider safety, performance, and security. \r\n\r\nThe proposed effort contains two research thrusts. The first thrust consists of methodologies for integrating security threats into logical specifications for Cyber-physical systems (CPS), and verifying whether a CPS satisfies the specification under a given adversary model. Verification is performed via a new class of behavioral games that we develop. The second thrust consists of approaches for automatic synthesis of secure controllers that satisfy the specifications developed in the first thrust. The project aims to formulate passivity-based rules for composing multiple control laws to ensure security against multi-stage attacks, as well as methods for switching controllers based on the current estimate of the adversary actions.\r\n\r\nThis effort will contribute to development of CPS, such as autonomous vehicles and smart homes, that operate safely in the presence of cyber attacks. Algorithms developed in the project will be implemented on mobile platforms in order to demonstrate the practical feasibility of our approach and ensure successful and timely transition to practice. Research will be conducted by graduate student research assistants as part of their training, while implementation will be done in conjunction with undergraduate research projects at Worcester Polytechnic Institute. Results will be disseminated through peer-reviewed publications, intellectual property disclosures, and open-source software release via CPS Virtual Organization (CPS-VO).",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Andrew",
+   "pi_last_name": "Clark",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Andrew Clark",
+   "pi_email_addr": "andrewclark@wustl.edu",
+   "nsf_id": "000693348",
+   "pi_start_date": "2017-01-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Worcester Polytechnic Institute",
+  "inst_street_address": "100 INSTITUTE RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "WORCESTER",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "5088315000",
+  "inst_zip_code": "016092280",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "MA02",
+  "org_lgl_bus_name": "WORCESTER POLYTECHNIC INSTITUTE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HJNQME41NBU4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Worcester Polytechnic Institute",
+  "perf_str_addr": "100 Institute Road",
+  "perf_city_name": "Worcester",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "016092280",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "MA02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7354",
+   "pgm_ref_txt": "COMPUTER SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "7918",
+   "pgm_ref_txt": "CYBER-PHYSICAL SYSTEMS (CPS)"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 174997.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Cyber-physical systems (CPS), including transportation, energy, and manufacturing systems, are entrusted to perform complex tasks with autonomy. The ability to carry out such complex tasks with minimal human intervention promises to improve economic growth and environmental sustainability for decades to come. At the same time, however, autonomous CPS are inviting targets for malicious adversaries, who may aim&nbsp;to cause financial damage or even threaten human safety. High-profile recent examples include attacks on driverless cars, municipal traffic infrastructure, and the power grid.</p>\n<p>&nbsp;</p>\n<p>The goal of this research project was to model the impact of such attacks on safety and task performance, and develop tools for automatically synthesizing controllers to provide provable safety and performance guarantees in the presence of attacks. The <em>Intellectual Merit </em>of the project is described as follows. First, we proposed real-time control algorithms for ensuring that a CPS, such as an unmanned vehicle, reaches a desired target area while avoiding obstacles even when a set of onboard sensors (e.g., GPS or LIDAR) are tampered with. Second, we proposed high-level control strategies for accomplishing complex, multi-stage tasks, such as search-and-rescue, in the presence of adversaries. Our framework included cases where the adversary&rsquo;s true goals and intentions are unknown a priori, as well as where the adversary is uncertain of the system and hence exhibits error-prone decision-making.</p>\n<p>&nbsp;</p>\n<p>The <em>Broader Impact</em> of the project is described as follows. The project will enhance the resilience and security of a variety of CPS applications. Educational outcomes include the development of a graduate controls course with lectures on CPS security, mentoring three PhD students, supervising undergraduate capstone projects, and public outreach and education events at WPI.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/24/2020<br>\n\t\t\t\t\tModified by: Andrew&nbsp;Clark</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nCyber-physical systems (CPS), including transportation, energy, and manufacturing systems, are entrusted to perform complex tasks with autonomy. The ability to carry out such complex tasks with minimal human intervention promises to improve economic growth and environmental sustainability for decades to come. At the same time, however, autonomous CPS are inviting targets for malicious adversaries, who may aim to cause financial damage or even threaten human safety. High-profile recent examples include attacks on driverless cars, municipal traffic infrastructure, and the power grid.\n\n \n\nThe goal of this research project was to model the impact of such attacks on safety and task performance, and develop tools for automatically synthesizing controllers to provide provable safety and performance guarantees in the presence of attacks. The Intellectual Merit of the project is described as follows. First, we proposed real-time control algorithms for ensuring that a CPS, such as an unmanned vehicle, reaches a desired target area while avoiding obstacles even when a set of onboard sensors (e.g., GPS or LIDAR) are tampered with. Second, we proposed high-level control strategies for accomplishing complex, multi-stage tasks, such as search-and-rescue, in the presence of adversaries. Our framework included cases where the adversary\u2019s true goals and intentions are unknown a priori, as well as where the adversary is uncertain of the system and hence exhibits error-prone decision-making.\n\n \n\nThe Broader Impact of the project is described as follows. The project will enhance the resilience and security of a variety of CPS applications. Educational outcomes include the development of a graduate controls course with lectures on CPS security, mentoring three PhD students, supervising undergraduate capstone projects, and public outreach and education events at WPI.\n\n \n\n\t\t\t\t\tLast Modified: 01/24/2020\n\n\t\t\t\t\tSubmitted by: Andrew Clark"
+ }
+}

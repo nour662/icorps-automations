@@ -1,0 +1,117 @@
+{
+ "awd_id": "1116740",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Empirical Studies, Principles and Techniques for Software Systems with Complex Configuration Spaces",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2011-07-15",
+ "awd_exp_date": "2016-06-30",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 500000.0,
+ "awd_min_amd_letter_date": "2011-07-13",
+ "awd_max_amd_letter_date": "2013-07-24",
+ "awd_abstract_narration": "Today's software systems are increasingly built from flexible combinations of components that can be configured in a multitude of different ways.  For example, the popular Firefox web browser has more than a thousand configuration options.  While a high degree of configurability has many benefits, it also makes testing and reasoning about configurable software a major challenge.  The goals of this proposed work are 1) to develop new techniques to efficiently discover the structure of software systems' configuration spaces, and 2) to exploit that information to improve common software engineering tasks, specifically testing and program understanding.  In particular, this work will allow software developers to quickly and accurately answer questions such as, What are the \"right\" configurations to test a system under?  How can we avoid testing a system under \"unnecessary\" configurations?  How does software configuration change as systems evolve? We expect that, as much of the software used today is configurable, the advances made in this project in understanding and testing configurable systems will have widespread benefits in the reliability and trustworthiness of critical software.\r\n\r\nThe proposed technical approach will pursue four main directions. First, the PIs will develop a representation of \"effective\" configuration spaces---the configurations needed to achieve a specific goal---that is both usable by software engineering tools and understandable to developers.  Second, the PIs will develop novel techniques that compute the effective configuration space of a system. Third, the PIs will explore a number of software engineering applications that will make use of effective configuration space information, including configuration-aware test case selection, configuration-aware regression testing, and several program understanding tasks for configurable systems.  Finally, the PIs will conduct a wide range of fundamental empirical studies that will test the research hypotheses and evaluate the proposed approach on large scale subject systems. Among others outcomes, these studies will examine the effective configurations of a range of systems; investigate how those configurations evolve over time; and determine how failures relate to system configurations. The results will impact both practice and education.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jeffrey",
+   "pi_last_name": "Foster",
+   "pi_mid_init": "S",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jeffrey S Foster",
+   "pi_email_addr": "jeffrey.foster@tufts.edu",
+   "nsf_id": "000095036",
+   "pi_start_date": "2011-07-13",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Adam",
+   "pi_last_name": "Porter",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Adam A Porter",
+   "pi_email_addr": "aporter@cs.umd.edu",
+   "nsf_id": "000437686",
+   "pi_start_date": "2011-07-13",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Maryland, College Park",
+  "inst_street_address": "3112 LEE BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE PARK",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "3014056269",
+  "inst_zip_code": "207425100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "MD04",
+  "org_lgl_bus_name": "UNIVERSITY OF MARYLAND, COLLEGE PARK",
+  "org_prnt_uei_num": "NPU8ULVAAS23",
+  "org_uei_num": "NPU8ULVAAS23"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Maryland, College Park",
+  "perf_str_addr": "3112 LEE BUILDING",
+  "perf_city_name": "COLLEGE PARK",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "207425100",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "MD04",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7944",
+   "pgm_ref_txt": "SOFTWARE ENG & FORMAL METHODS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 500000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Today&rsquo;s software systems are increasingly built from flexible combinations of components that can be configured in a multitude of different ways. While a high degree of configurability has many benefits, it also adds combinatorial complexity to the already difficult testing problem, as in theory, each test case may need to be run under all of the tremendous number of possible system configurations. In practice this is intractable, and thus a central problem in configurable software development is choosing the right set of configurations under which to test and analyze a system.</p>\n<p><br />The goal of our research was to develop new techniques for empirically understanding the configuration space structure of today&rsquo;s software systems, and to find ways to exploit that structure to improve software engineering for configurable systems. Solutions to this problem will lower the cost andimprove the quality of creating configurable software systems.</p>\n<p><br />The main hypotheses of this project were that (1) for many practical tasks, systems, and test suites, a software system&rsquo;s effective configuration space---the configurations needed to achieve a specific goal---is a tiny subset of its full configuration space; and (2) if we can efficiently identify or approximate a system&rsquo;s effective configuration space, then we can use that information to greatly improve the cost-effectiveness of testing and analyzing configurable systems.</p>\n<p><br />Our work strongly suggests that both hypotheses are true. First, we obtained substantial empirical evidence that for many practical tasks, systems, and test suites, a software system&rsquo;s effective configuration space is a tiny subset of its full configuration space.&nbsp;</p>\n<p><br />We also developed and evaluated two new techniques to approximate a system&rsquo;s effective configuration space.</p>\n<p>The first technique, iTree, uses a novel combination of low-strength combinatorial interaction testing, runtime instrumentation, and machine learning to explore a program's effective configuration space. Our empirical results show that iTree is more likely to discover high-coverage configuration sets, and do so more rapidly, than existing techniques such as combinatorial interaction testing or random configuration testing. Our results also show that that iTree is scalable to large systems.</p>\n<p>The second technique, iGen, is a new, dynamic analysis-based approach to discovering \"interactions,\" which are formulae over configuration options that control whether certain code coverage is achievable. Thus, by knowing a system's interactions, a developer can determine useful information about configurations, e.g., given a location, determine what configurations cover it; given an interaction, determine what locations it covers; find important options and compute a minimal set of configurations to achieve certain coverage; etc.<br />iGen discovers interactions by iteratively running a subject program under a test suite and set of configurations; inferring potential interactions from the resulting coverage information; and then generating new configurations that aim to refine the inferred interactions on the next iteration. By carefully choosing new configurations in this last step, iGen is able to quickly converge to a final, precise set of interactions using only a small set of configurations.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/27/2016<br>\n\t\t\t\t\tModified by: Adam&nbsp;A&nbsp;Porter</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nToday?s software systems are increasingly built from flexible combinations of components that can be configured in a multitude of different ways. While a high degree of configurability has many benefits, it also adds combinatorial complexity to the already difficult testing problem, as in theory, each test case may need to be run under all of the tremendous number of possible system configurations. In practice this is intractable, and thus a central problem in configurable software development is choosing the right set of configurations under which to test and analyze a system.\n\n\nThe goal of our research was to develop new techniques for empirically understanding the configuration space structure of today?s software systems, and to find ways to exploit that structure to improve software engineering for configurable systems. Solutions to this problem will lower the cost andimprove the quality of creating configurable software systems.\n\n\nThe main hypotheses of this project were that (1) for many practical tasks, systems, and test suites, a software system?s effective configuration space---the configurations needed to achieve a specific goal---is a tiny subset of its full configuration space; and (2) if we can efficiently identify or approximate a system?s effective configuration space, then we can use that information to greatly improve the cost-effectiveness of testing and analyzing configurable systems.\n\n\nOur work strongly suggests that both hypotheses are true. First, we obtained substantial empirical evidence that for many practical tasks, systems, and test suites, a software system?s effective configuration space is a tiny subset of its full configuration space. \n\n\nWe also developed and evaluated two new techniques to approximate a system?s effective configuration space.\n\nThe first technique, iTree, uses a novel combination of low-strength combinatorial interaction testing, runtime instrumentation, and machine learning to explore a program's effective configuration space. Our empirical results show that iTree is more likely to discover high-coverage configuration sets, and do so more rapidly, than existing techniques such as combinatorial interaction testing or random configuration testing. Our results also show that that iTree is scalable to large systems.\n\nThe second technique, iGen, is a new, dynamic analysis-based approach to discovering \"interactions,\" which are formulae over configuration options that control whether certain code coverage is achievable. Thus, by knowing a system's interactions, a developer can determine useful information about configurations, e.g., given a location, determine what configurations cover it; given an interaction, determine what locations it covers; find important options and compute a minimal set of configurations to achieve certain coverage; etc.\niGen discovers interactions by iteratively running a subject program under a test suite and set of configurations; inferring potential interactions from the resulting coverage information; and then generating new configurations that aim to refine the inferred interactions on the next iteration. By carefully choosing new configurations in this last step, iGen is able to quickly converge to a final, precise set of interactions using only a small set of configurations.\n\n\t\t\t\t\tLast Modified: 09/27/2016\n\n\t\t\t\t\tSubmitted by: Adam A Porter"
+ }
+}

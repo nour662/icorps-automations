@@ -1,0 +1,113 @@
+{
+ "awd_id": "1107395",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "CAREER:  Scalability Limits of Wireless Networks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Min Song",
+ "awd_eff_date": "2010-09-01",
+ "awd_exp_date": "2012-12-31",
+ "tot_intn_awd_amt": 52685.0,
+ "awd_amount": 52685.0,
+ "awd_min_amd_letter_date": "2011-02-03",
+ "awd_max_amd_letter_date": "2011-02-03",
+ "awd_abstract_narration": "Large-scale wireless networks are projected to dominate the information technology sector in the future, giving rise to a new set of research problems on scalability. The main goal of this project is to develop an essential understanding of the impact of large scales on the performance of wireless networks. In particular, the project examines how the finiteness of resources (memory, computational power, etc.) at individual nodes affects the overall network performance. The developed understanding is then used to design a set of algorithms that support efficient operation of large-scale networks of nodes with very limited resources. The algorithmic aspect is particularly important given that some of widely considered algorithms require excessive resources at individual nodes and, hence, are not scalable. However, the project demonstrates the existence of algorithms that require only negligible resources but achieve comparable performance. Furthermore, the study reveals that completely new protocols are needed to support operation of large-scales wireless networks. \r\n\r\nIn contrast to the majority of earlier studies that examined either large networks with unlimited node resources or small networks with limited node resources, the focus of this project is on relationship between the network size and node resources. Most of the considered problems are impractical to be addressed experimentally due to a considerable cost of building large-scale prototypes. Moreover, even simulating such systems is often very difficult because of computational limitations. Thus, a comprehensive research agenda is based on an analytical framework that overcomes the difficulties imposed by large scales.\r\n",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Petar",
+   "pi_last_name": "Momcilovic",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Petar Momcilovic",
+   "pi_email_addr": "petar@tamu.edu",
+   "nsf_id": "000149968",
+   "pi_start_date": "2011-02-03",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Florida",
+  "inst_street_address": "1523 UNION RD RM 207",
+  "inst_street_address_2": "",
+  "inst_city_name": "GAINESVILLE",
+  "inst_state_code": "FL",
+  "inst_state_name": "Florida",
+  "inst_phone_num": "3523923516",
+  "inst_zip_code": "326111941",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "FL03",
+  "org_lgl_bus_name": "UNIVERSITY OF FLORIDA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NNFQH1JAPEP3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Florida",
+  "perf_str_addr": "1523 UNION RD RM 207",
+  "perf_city_name": "GAINESVILLE",
+  "perf_st_code": "FL",
+  "perf_st_name": "Florida",
+  "perf_zip_code": "326111941",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "FL03",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1045",
+   "pgm_ref_txt": "CAREER-Faculty Erly Career Dev"
+  },
+  {
+   "pgm_ref_code": "1187",
+   "pgm_ref_txt": "PECASE- eligible"
+  },
+  {
+   "pgm_ref_code": "9218",
+   "pgm_ref_txt": "BASIC RESEARCH & HUMAN RESORCS"
+  },
+  {
+   "pgm_ref_code": "HPCC",
+   "pgm_ref_txt": "HIGH PERFORMANCE COMPUTING & COMM"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0110",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001011DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2010,
+   "fund_oblg_amt": 52685.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The growth of modern communication infrastructures, such as the Internet and various wireless networks, over the last two decades has surpassed the expectations of everyone. Indeed, going back in time to the origins of these networks, it would have been hard to imagine the importance and scale to which these networks have developed. Projecting into the future, it is expected that this growth trend will only continue, if not accelerate. Hence, the communication devices and protocols of today must be capable of operating with the same efficiency in the very large-scale networks of the future. One of the basic concerns in building large-scale networks is that minor inefficiencies, which can be well tolerated in small networks, can accumulate and become dominant factors in large networks.</p>\n<p>Data networks are elaborate systems with multiple protocols governing their operation. For example, different algorithms deal with routing of information and scheduling of data packets for transmission. Thus, the project consisted of multiple sub-projects that dealt with specific aspects of algorithmic scalability (properties of the physical layer are governed by the fundamental laws of physics). Our main findings indicate that, while some well-known algorithms might not perform well in large-scale networks, there exist algorithms that can overcome issues imposed by large scales. For example, the shortest-path algorithm is not scalable in certain networks due to the fact that it can require excessively large amounts of information at individual nodes. However, there exist alternative algorithms that do not require large routing tables (the size of routing tables remains bounded). In general, scalable algorithms are distributed in their nature, but require network node cooperation. For example, in a network of nodes with limited buffer storage, distributed storage of information can be implemented in order to eliminate buffer bottlenecks. Moreover, randomized algorithms and algorithms with special data structures can be utilized to achieve desirable performance in the absence of full information on network states and/or system parameters. Such algorithms are preferred, since large-scale networks are often operating in time-varying environments. The high-level finding of the project is that, in many cases, scalability can be achieved by designing algorithms based on careful analyses of network models as their size increases.&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/30/2013<br>\n\t\t\t\t\tModified by: Petar&nbsp;Momcilovic</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe growth of modern communication infrastructures, such as the Internet and various wireless networks, over the last two decades has surpassed the expectations of everyone. Indeed, going back in time to the origins of these networks, it would have been hard to imagine the importance and scale to which these networks have developed. Projecting into the future, it is expected that this growth trend will only continue, if not accelerate. Hence, the communication devices and protocols of today must be capable of operating with the same efficiency in the very large-scale networks of the future. One of the basic concerns in building large-scale networks is that minor inefficiencies, which can be well tolerated in small networks, can accumulate and become dominant factors in large networks.\n\nData networks are elaborate systems with multiple protocols governing their operation. For example, different algorithms deal with routing of information and scheduling of data packets for transmission. Thus, the project consisted of multiple sub-projects that dealt with specific aspects of algorithmic scalability (properties of the physical layer are governed by the fundamental laws of physics). Our main findings indicate that, while some well-known algorithms might not perform well in large-scale networks, there exist algorithms that can overcome issues imposed by large scales. For example, the shortest-path algorithm is not scalable in certain networks due to the fact that it can require excessively large amounts of information at individual nodes. However, there exist alternative algorithms that do not require large routing tables (the size of routing tables remains bounded). In general, scalable algorithms are distributed in their nature, but require network node cooperation. For example, in a network of nodes with limited buffer storage, distributed storage of information can be implemented in order to eliminate buffer bottlenecks. Moreover, randomized algorithms and algorithms with special data structures can be utilized to achieve desirable performance in the absence of full information on network states and/or system parameters. Such algorithms are preferred, since large-scale networks are often operating in time-varying environments. The high-level finding of the project is that, in many cases, scalability can be achieved by designing algorithms based on careful analyses of network models as their size increases. \n\n\t\t\t\t\tLast Modified: 05/30/2013\n\n\t\t\t\t\tSubmitted by: Petar Momcilovic"
+ }
+}

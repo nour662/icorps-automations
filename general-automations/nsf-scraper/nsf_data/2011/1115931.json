@@ -1,0 +1,105 @@
+{
+ "awd_id": "1115931",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Fast Integral Equation Methods for High-Dimensional Diffusion Problems",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032924488",
+ "po_email": "jwang@nsf.gov",
+ "po_sign_block_name": "Junping Wang",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 129990.0,
+ "awd_amount": 129990.0,
+ "awd_min_amd_letter_date": "2011-08-08",
+ "awd_max_amd_letter_date": "2011-08-08",
+ "awd_abstract_narration": "The unifying theme of this project is the development and analysis of\r\nnumerical methods for high-dimensional diffusion problems. In\r\nparticular, the research will be focused in two areas, namely solving\r\nboundary value problems to the heat equation in three dimensions using\r\nthermal layer potentials. The second issue is the computation of the\r\ndiscrete Gauss transform for data sets in many dimensions.  Both\r\ntopics involve computations with integral operators that have a Gauss\r\nkernel. Since these operators are non-local, naive algorithms scale\r\nquadratically in the number of data points. Realistic problems can\r\ninvolve enormous data sets and are therefore tractable only if fast\r\nmethods, that exploit certain analytic properties of the kernel, are\r\napplied.  This project will employ high-order Nystrom techniques that\r\nare combined with Chebyshev and exponential expansions for the rapid\r\nevaluation of integral operators.\r\n\r\nThe ability to solve the heat equation efficiently is fundamental in\r\nmany applications of science, technology and medicine. For instance,\r\nheat conduction plays an important role in the modeling of geothermal\r\nsystems, melting, welding, and in thermography as a means to detect\r\nbreast cancer. Often, the task is to identify an unknown heat source\r\nfrom known surface temperatures and fluxes.  The solution of such\r\ninverse problems involves solving the forward problem many times,\r\ntherefore speed is essential for numerical methods.  The discrete\r\nGauss transform is used to find relations in large data sets. This can\r\nbe patterns, correlations, or accumulations in images, texts, or\r\ninternet traffic. Concrete applications are, for instance, machine\r\nrecognition of faces, voices and handwriting.  By engaging a graduate\r\nas well as undergraduate students in research, the proposed activities\r\nwill also contribute to excellence and growth in the education of the\r\nfuture workforce.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Johannes",
+   "pi_last_name": "Tausch",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Johannes Tausch",
+   "pi_email_addr": "tausch@smu.edu",
+   "nsf_id": "000417204",
+   "pi_start_date": "2011-08-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Southern Methodist University",
+  "inst_street_address": "6425 BOAZ ST RM 130",
+  "inst_street_address_2": "",
+  "inst_city_name": "DALLAS",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "2147684708",
+  "inst_zip_code": "752051902",
+  "inst_country_name": "United States",
+  "cong_dist_code": "24",
+  "st_cong_dist_code": "TX24",
+  "org_lgl_bus_name": "SOUTHERN METHODIST UNIVERSITY",
+  "org_prnt_uei_num": "S88YPE3BLV66",
+  "org_uei_num": "D33QGS3Q3DJ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Southern Methodist University",
+  "perf_str_addr": "6425 BOAZ ST RM 130",
+  "perf_city_name": "DALLAS",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "752051902",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "24",
+  "perf_st_cong_dist": "TX24",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7569",
+   "pgm_ref_txt": "CYBERINFRASTRUCTURE/SCIENCE"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 129990.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><br />Boundary element methods (BEM) are often preferred for solving large scale physical problems because they reduce the computational domainto the boundary surface and enable high order discretizations and well-conditioned formulations. &nbsp;However, integral operators are non-local and lead to dense linear algebra problems. Fast methods, e.g. wavelet discretizations or the fast multipole method, can reduce the computational complexity associated with full matrices to what isseen with sparse matrices. For problems governed by elliptic PDEs this is well researched. On the&nbsp;other hand, the state of the art for time dependent problems lags behind significantly and is a topic of current research.</p>\n<p>The main effort of this project is to develop and analyse fast Galerkin methods for boundary integral formulations of the three dimensional transient heat equation and related parabolic PDEs. Specifically, we have designed and implemented fast algorithms for the computation of all four layer potentials. This enables us to solve awide range of problems, including mixed Dirichlet Neumann boundary value problems and convective type boundary conditions.<br />In addition to the error of the discretization method, fast methods introduce a second error due to the approximate evaluation of layer potentials. &nbsp;We have obtained theoretical results that the integral operators can be evaluated with almost optimal cost. That is, the complexity is linear up to logarithmic terms while preserving the convergence rate of the classical discretization method. We were able to reproduce optimality in the numerical experiment. While analogous results were obtained in the context of elliptic problems, the optimality of fast BEM for time-dependent problems is new.</p>\n<p>The methodologies developed were applied to solve parabolic shape optimization problems; e.g., detection of a heat source in an opaque solid from the knowledge of the temperature and heat fluxes on the boundary surface. The attached figures show the actual and the reconstructed geometries. &nbsp;Further, we have applied these techniques to simulate solidification processes and hot-forming processes. The latter was done in collaboration with the WEBA GmbH, Styr, Austria. The attached figures show the discretization and the computed temperatures of a hot-forming press.<br />The research funded by this grant resulted in seven peer-reviewed publications, including two publications in SIAM journals.</p>\n<p>The grant also supported the dissertation of Young Ok Choi, who has completed her PhD in 2015. In her project she applied Galerkin methods to 3D transient Stokes flow problems. &nbsp;It turned out that this is surprisingly difficult for the Stokes and stress kernels. Her main contribution is to devise an effective method to compute these integrals using incomplete gamma functions, which resulted in a Galerkin scheme with the theoretically expected convergence behavior. A manuscript on this work is currently in review.</p>\n<p>Travis Sandy, a former mathematics major used a related method, the fast Gauss transform, to evaluate high-dimensional probability density functions efficiently and applied these techniques to machine learning problems.&nbsp;<br />Micheal Messner was a PhD student from the TU Graz, Austria, who visited SMU for two semesters. While he did not receive funding from the project, his contribution was to incorporate fast Galerkin methods into the software package HyENA, available upon request from the TUGraz. His experience with the simulation of hot forming processes helped him secure a position with Autoform, Zurich, a company thatspecializes in software for this kind of applications. &nbsp;It is expected that he will transfer the fast Galerkin methodology into the products of this company.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/17/2015<br>\n\t\t\t\t\tModified by: Johannes&nbsp;Tausch</p>\n</div>\n<div clas...",
+  "por_txt_cntn": "\n\nBoundary element methods (BEM) are often preferred for solving large scale physical problems because they reduce the computational domainto the boundary surface and enable high order discretizations and well-conditioned formulations.  However, integral operators are non-local and lead to dense linear algebra problems. Fast methods, e.g. wavelet discretizations or the fast multipole method, can reduce the computational complexity associated with full matrices to what isseen with sparse matrices. For problems governed by elliptic PDEs this is well researched. On the other hand, the state of the art for time dependent problems lags behind significantly and is a topic of current research.\n\nThe main effort of this project is to develop and analyse fast Galerkin methods for boundary integral formulations of the three dimensional transient heat equation and related parabolic PDEs. Specifically, we have designed and implemented fast algorithms for the computation of all four layer potentials. This enables us to solve awide range of problems, including mixed Dirichlet Neumann boundary value problems and convective type boundary conditions.\nIn addition to the error of the discretization method, fast methods introduce a second error due to the approximate evaluation of layer potentials.  We have obtained theoretical results that the integral operators can be evaluated with almost optimal cost. That is, the complexity is linear up to logarithmic terms while preserving the convergence rate of the classical discretization method. We were able to reproduce optimality in the numerical experiment. While analogous results were obtained in the context of elliptic problems, the optimality of fast BEM for time-dependent problems is new.\n\nThe methodologies developed were applied to solve parabolic shape optimization problems; e.g., detection of a heat source in an opaque solid from the knowledge of the temperature and heat fluxes on the boundary surface. The attached figures show the actual and the reconstructed geometries.  Further, we have applied these techniques to simulate solidification processes and hot-forming processes. The latter was done in collaboration with the WEBA GmbH, Styr, Austria. The attached figures show the discretization and the computed temperatures of a hot-forming press.\nThe research funded by this grant resulted in seven peer-reviewed publications, including two publications in SIAM journals.\n\nThe grant also supported the dissertation of Young Ok Choi, who has completed her PhD in 2015. In her project she applied Galerkin methods to 3D transient Stokes flow problems.  It turned out that this is surprisingly difficult for the Stokes and stress kernels. Her main contribution is to devise an effective method to compute these integrals using incomplete gamma functions, which resulted in a Galerkin scheme with the theoretically expected convergence behavior. A manuscript on this work is currently in review.\n\nTravis Sandy, a former mathematics major used a related method, the fast Gauss transform, to evaluate high-dimensional probability density functions efficiently and applied these techniques to machine learning problems. \nMicheal Messner was a PhD student from the TU Graz, Austria, who visited SMU for two semesters. While he did not receive funding from the project, his contribution was to incorporate fast Galerkin methods into the software package HyENA, available upon request from the TUGraz. His experience with the simulation of hot forming processes helped him secure a position with Autoform, Zurich, a company thatspecializes in software for this kind of applications.  It is expected that he will transfer the fast Galerkin methodology into the products of this company.\n\n\t\t\t\t\tLast Modified: 11/17/2015\n\n\t\t\t\t\tSubmitted by: Johannes Tausch"
+ }
+}

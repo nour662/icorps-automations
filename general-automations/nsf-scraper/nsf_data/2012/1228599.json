@@ -1,0 +1,105 @@
+{
+ "awd_id": "1228599",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Medium: Collaborative Research: Computing on Cryptographic Data",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Susanne Wetzel",
+ "awd_eff_date": "2012-10-01",
+ "awd_exp_date": "2017-09-30",
+ "tot_intn_awd_amt": 399983.0,
+ "awd_amount": 399983.0,
+ "awd_min_amd_letter_date": "2012-08-29",
+ "awd_max_amd_letter_date": "2012-08-29",
+ "awd_abstract_narration": "This project is developing new techniques for manipulating sensitive data by exploring two related areas, computing on private keys and computing on authenticated data.  Currently, a private key is an inert object that gives its holder the ability to perform a cryptographic operation on all messages, as may be the case when generating a signature.  The project is exploring a new vision, in which computing on the private key itself creates new restricted private keys that can only perform restricted operations such as, for example, signing only some messages but not others.  In the case of computing on authenticated data -- data for which integrity is important but secrecy is not -- the project is developing new tools to compute on such data and obtain authenticated results.\r\n\r\nThe project is committed to the dissemination of research results, education of students, and outreach to industry.   Overall, the proposed project will produce a next generation of technology for managing authenticated and encrypted data while advancing the field of applied cryptography and educating the next generation of researchers.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Brent",
+   "pi_last_name": "Waters",
+   "pi_mid_init": "R",
+   "pi_sufx_name": "",
+   "pi_full_name": "Brent R Waters",
+   "pi_email_addr": "bwaters@cs.utexas.edu",
+   "nsf_id": "000518000",
+   "pi_start_date": "2012-08-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Austin",
+  "perf_str_addr": "1 University Station D9500",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787137726",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "37",
+  "perf_st_cong_dist": "TX37",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 399983.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Historically we have viewed cryptography as a tool to encode inert data. For example, I want to send an encrypted email to a specific user. In this proposal we push the boundaries far beyond this with the goal of enabling computation on encrypted data. Several results in this proposal changed the state of the art for what was feasible in this realm. Here we highlight a few:</p>\n<p>&nbsp;</p>\n<p><strong>First Cryptographic Code Obfuscator</strong></p>\n<p>In 2013 I was part of a group of researchers that proposed the firstgeneral purpose cryptographic obfuscation candidate.In particular, we gave a candidate construction for obfuscating anypolynomial sized circuit family. Our construction logically dividesinto two parts. First, there is a core obfuscator that can obfuscatefamilies of matrix branching programs. By Barrington's theorem thisimplies the ability to obfuscate families of low depthcircuits. Second, we gave a bootstrapping process for combininghomomorphic encryption for polysized circuits with our core obfuscatorto obfuscate polynomial sized circuits.&nbsp; The bootstrapping works asfollows. The obfuscator encrypts a program P under the fullyhomomorphic encryption system to produce a ciphertext C. Alone thehomomorphic encryption system allows a user to compute an ciphertext$C'$ encrypting P(x), but not allow it to learn what program output P(x) actually is. This is where the core obfuscator comes in. Thecore obfuscator will take a input the ciphertext C' as well a proof (verifiable in low depth) that C' corresponds to a legitimatehomomorphic evaluation on an input x. If the proof passes, theobfuscated branching program will decrypt C' and give the output P(x). A critical ingredient to our construction is that the coreobfuscation construction was built using a newly introduced candidatemultilinear map candidate construction.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p><strong>How to Use Indistinguishability Obfuscation</strong></p>\n<p>The construction above resulted in the first general purpose candidatefor \\emph{indistinguishability obfuscation}. The notion ofindistinguishability obfuscation states that for any pair of programs (P0,P1) that are functionally equivalent i.e. forall x&nbsp; P0(x) = P1(x)) it is computationally difficult todistinguish between an obfuscation of P0 versus and obfuscation ofthe program P1. This concept was put out by Barak etal.} as an alternative weaker definition than theaforementioned VBB security. The advantage of indistinguishability obfuscationis that it does not succumb to the same impossibility results as VBB, however,when indistinguishability obfuscation was firstproposed its utility was not clear&nbsp;since it is only guarantees indistinguishability between programs thatessentially do the same thing. Indeed, Barak et. al}stated \"While it would be very interesting to construct even&nbsp; indistinguishability obfuscators, their usefulness is limited by the&nbsp; fact that they provide no a priori guarantees about obfuscations of&nbsp; circuits C1 and C2 that compute different functions.}\"<br /><br />In joint work with Amit Sahai I showed that contrary tofirst appearances indistinguishability obfuscation is a very powerfultool for advancing cryptographic capabilities. We put forth amethodology for leveraging indistinguishability obfuscation that wecalled \"punctured programming\" where one proves security by creatingan alternative program to be obfuscated that is functionallyequivalent to the original, but lacking some piece of informationneeded by an attacker.</p>\n<p>&nbsp;</p>\n<p><strong>Computing Using Turning Machines</strong></p>\n<p>In work appearing at STOC 2015) with Allison Bishop and my Ph.D. student Venkata Koppula we showed to to achieveindistinguishability obfuscation for Turning Machines without such amemory restriction.&nbsp; The idea is that instead of hardwiring the entirememory at a certain timestep into the core obfuscator we would onlyhardwire a short commitment to the memory. The obstacle in thisapproach is that for a reduction algorithm to move to the nexttimestep it needs a perfectly binding commitment to the state(i.e. Turing tape). We circumvent this by introducing a primitive wecalled a positional accumulator that is perfectly binding to a singlememory location. The memory location that it is binding to can bechosen on its creation and was computationally hidden. Using thisobject we were able to devise an intricate proof where the position the&nbsp;allowed&nbsp; accumulator is&nbsp; binding to in the reduction depends on the which memory location the&nbsp;current hybrid is reasoning about.&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/03/2017<br>\n\t\t\t\t\tModified by: Brent&nbsp;R&nbsp;Waters</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nHistorically we have viewed cryptography as a tool to encode inert data. For example, I want to send an encrypted email to a specific user. In this proposal we push the boundaries far beyond this with the goal of enabling computation on encrypted data. Several results in this proposal changed the state of the art for what was feasible in this realm. Here we highlight a few:\n\n \n\nFirst Cryptographic Code Obfuscator\n\nIn 2013 I was part of a group of researchers that proposed the firstgeneral purpose cryptographic obfuscation candidate.In particular, we gave a candidate construction for obfuscating anypolynomial sized circuit family. Our construction logically dividesinto two parts. First, there is a core obfuscator that can obfuscatefamilies of matrix branching programs. By Barrington's theorem thisimplies the ability to obfuscate families of low depthcircuits. Second, we gave a bootstrapping process for combininghomomorphic encryption for polysized circuits with our core obfuscatorto obfuscate polynomial sized circuits.  The bootstrapping works asfollows. The obfuscator encrypts a program P under the fullyhomomorphic encryption system to produce a ciphertext C. Alone thehomomorphic encryption system allows a user to compute an ciphertext$C'$ encrypting P(x), but not allow it to learn what program output P(x) actually is. This is where the core obfuscator comes in. Thecore obfuscator will take a input the ciphertext C' as well a proof (verifiable in low depth) that C' corresponds to a legitimatehomomorphic evaluation on an input x. If the proof passes, theobfuscated branching program will decrypt C' and give the output P(x). A critical ingredient to our construction is that the coreobfuscation construction was built using a newly introduced candidatemultilinear map candidate construction.\n\n \n\n \n\nHow to Use Indistinguishability Obfuscation\n\nThe construction above resulted in the first general purpose candidatefor \\emph{indistinguishability obfuscation}. The notion ofindistinguishability obfuscation states that for any pair of programs (P0,P1) that are functionally equivalent i.e. forall x  P0(x) = P1(x)) it is computationally difficult todistinguish between an obfuscation of P0 versus and obfuscation ofthe program P1. This concept was put out by Barak etal.} as an alternative weaker definition than theaforementioned VBB security. The advantage of indistinguishability obfuscationis that it does not succumb to the same impossibility results as VBB, however,when indistinguishability obfuscation was firstproposed its utility was not clear since it is only guarantees indistinguishability between programs thatessentially do the same thing. Indeed, Barak et. al}stated \"While it would be very interesting to construct even  indistinguishability obfuscators, their usefulness is limited by the  fact that they provide no a priori guarantees about obfuscations of  circuits C1 and C2 that compute different functions.}\"\n\nIn joint work with Amit Sahai I showed that contrary tofirst appearances indistinguishability obfuscation is a very powerfultool for advancing cryptographic capabilities. We put forth amethodology for leveraging indistinguishability obfuscation that wecalled \"punctured programming\" where one proves security by creatingan alternative program to be obfuscated that is functionallyequivalent to the original, but lacking some piece of informationneeded by an attacker.\n\n \n\nComputing Using Turning Machines\n\nIn work appearing at STOC 2015) with Allison Bishop and my Ph.D. student Venkata Koppula we showed to to achieveindistinguishability obfuscation for Turning Machines without such amemory restriction.  The idea is that instead of hardwiring the entirememory at a certain timestep into the core obfuscator we would onlyhardwire a short commitment to the memory. The obstacle in thisapproach is that for a reduction algorithm to move to the nexttimestep it needs a perfectly binding commitment to the state(i.e. Turing tape). We circumvent this by introducing a primitive wecalled a positional accumulator that is perfectly binding to a singlememory location. The memory location that it is binding to can bechosen on its creation and was computationally hidden. Using thisobject we were able to devise an intricate proof where the position the allowed  accumulator is  binding to in the reduction depends on the which memory location the current hybrid is reasoning about. \n\n\t\t\t\t\tLast Modified: 10/03/2017\n\n\t\t\t\t\tSubmitted by: Brent R Waters"
+ }
+}

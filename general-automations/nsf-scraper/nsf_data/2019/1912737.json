@@ -1,0 +1,109 @@
+{
+ "awd_id": "1912737",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Data-driven Path Metrics for Machine Learning",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2019-07-15",
+ "awd_exp_date": "2022-06-30",
+ "tot_intn_awd_amt": 10000.0,
+ "awd_amount": 10000.0,
+ "awd_min_amd_letter_date": "2019-07-12",
+ "awd_max_amd_letter_date": "2019-07-12",
+ "awd_abstract_narration": "The era of big data has introduced unprecedented computational and mathematical challenges. Traditional machine learning algorithms often lack scalable computational complexity, while modern approaches lack solid mathematical foundations. Moreover, high data dimensionality creates challenges for traditional methods of data analysis. The principal investigators (PIs) propose to combine classic dimension reduction methods with data-driven distances, so that both the distance and embedding procedure are data dependent. This novel approach allows for greater flexibility in balancing the density-based and geometric features of the data, achieves a density-based simplification of geometry, and insightfully represents the data in a small number of dimensions. In contrast to black box methods such as deep learning, the developed methodology can be rigorously analyzed to derive strong theoretical guarantees for several statistical and machine learning tasks. This research will contribute computational tools for cancer immunogenomics and the investigators will consult with the Rogel Cancer Center at the University of Michigan for scientific questions related to tumor immunology and T-cell biology. In addition, new data analysis tools will be made publicly available in an open source software package. \r\n\r\nThe investigators' approach is driven by the analysis of a family of data-dependent path metrics. These metrics are both density-sensitive and geometry-preserving, with the balance governed by the choice of a single parameter p. By utilizing the space of paths through data, the PIs will obtain density based metrics and embeddings while avoiding the explicit computation of a density estimator, which may be unreliable in a large number of dimensions. The PIs will propose a simple yet highly flexible data model which does not assume the data is sampled from a manifold or collection of manifolds, and investigate the continuous limit of these metrics and an associated graph Laplacian operator. By continuously varying the parameter p, the PIs will propose to create data videos which represent the data from multiple perspectives. The PIs will investigate both multidimensional scaling and graph Laplacian embeddings as mechanisms for obtaining path-based low dimensional representations, and will explore fast algorithms with scalable computational complexity for approximating these metrics. The PIs will contextualize path metrics in the larger frame work of data-driven metrics and focus specifically on the analysis of biological data.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "James",
+   "pi_last_name": "Murphy",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "James M Murphy",
+   "pi_email_addr": "jmmurphy11@gmail.com",
+   "nsf_id": "000678709",
+   "pi_start_date": "2019-07-12",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Tufts University",
+  "inst_street_address": "80 GEORGE ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "MEDFORD",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6176273696",
+  "inst_zip_code": "021555519",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "MA05",
+  "org_lgl_bus_name": "TRUSTEES OF TUFTS COLLEGE",
+  "org_prnt_uei_num": "WL9FLBRVPJJ7",
+  "org_uei_num": "WL9FLBRVPJJ7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Tufts University",
+  "perf_str_addr": "503 Boston Avenue",
+  "perf_city_name": "Medford",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021555807",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "075Z",
+   "pgm_ref_txt": "Artificial Intelligence (AI)"
+  },
+  {
+   "pgm_ref_code": "079Z",
+   "pgm_ref_txt": "Machine Learning Theory"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 10000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project advanced the theory, computation, and application of Fermat distances.&nbsp; Fermat distances are a data-adaptive metric that extracts structure in high-dimensional data through density-driven shortest paths.&nbsp; Our work in this area focused on the mathematical properties of these metrics, and their use as metrics in unsupervised and semisupervised machine learning.&nbsp;&nbsp;</p>\n<p>We developed a statistical theory for these metrics, showing precise characterizations of their convergence as the number of sample points increases.&nbsp; This is a key step towards understanding the behavior of Fermat distances in the context of spectral clustering, and facilitates discrete-to-continuum analysis of graph Laplacians built with Fermat distances.&nbsp; This lays the groundwork for theoretical analysis of unsupervised and semisupervised machine learning algorithms based on Fermat distances.&nbsp; Moreover, we developed bounds on spanners for Fermat distances, which allows us to compute Fermat distances between large numbers of points using only Euclidean nearest neighbor graphs.&nbsp; Our analysis gives precise dependencies on how many nearest neighbors are needed in terms of the key parameters in Fermat distances, and allows unsupervised and semisupervised learning algorithms using Fermat distances to scale to large, high-dimensional data sets.</p>\n<p>Our research has led to novel image segmentation algorithms based on Fermat distances, which have achieved state-of-the-art labeling accuracy on real hyperspectral images.&nbsp; Hyperspectral images are an important modality for remote sensing observation and are challenging for unsupervised learning due to their high-dimensionality and low spatial resolution.&nbsp; Our approach is particularly useful because it does not require an initial guess for the number of clusters in the image, but can estimate it automatically.&nbsp;&nbsp;</p>\n<p>During the lifetime of this grant, both undergraduate and graduate students were trained in applied mathematics, data science, machine learning, and applications.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/24/2022<br>\n\t\t\t\t\tModified by: James&nbsp;M&nbsp;Murphy</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2022/1912737/1912737_10620546_1666626523339_SIMODS2022--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1912737/1912737_10620546_1666626523339_SIMODS2022--rgov-800width.jpg\" title=\"Spanners\"><img src=\"/por/images/Reports/POR/2022/1912737/1912737_10620546_1666626523339_SIMODS2022--rgov-66x44.jpg\" alt=\"Spanners\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Scaling of number of nearest neighbors for Fermat distance scanners.</div>\n<div class=\"imageCredit\">https://doi.org/10.1137/20M1386657</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">James&nbsp;M&nbsp;Murphy</div>\n<div class=\"imageTitle\">Spanners</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2022/1912737/1912737_10620546_1666626872643_RS2021--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1912737/1912737_10620546_1666626872643_RS2021--rgov-800width.jpg\" title=\"Clustered HSI Image\"><img src=\"/por/images/Reports/POR/2022/1912737/1912737_10620546_1666626872643_RS2021--rgov-66x44.jpg\" alt=\"Clustered HSI Image\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Image clustered using p=infty Fermat distances.</div>\n<div class=\"imageCredit\">https://doi.org/10.3390/rs13050955</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">James&nbsp;M&nbsp;Murphy</div>\n<div class=\"imageTitle\">Clustered HSI Image</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThis project advanced the theory, computation, and application of Fermat distances.  Fermat distances are a data-adaptive metric that extracts structure in high-dimensional data through density-driven shortest paths.  Our work in this area focused on the mathematical properties of these metrics, and their use as metrics in unsupervised and semisupervised machine learning.  \n\nWe developed a statistical theory for these metrics, showing precise characterizations of their convergence as the number of sample points increases.  This is a key step towards understanding the behavior of Fermat distances in the context of spectral clustering, and facilitates discrete-to-continuum analysis of graph Laplacians built with Fermat distances.  This lays the groundwork for theoretical analysis of unsupervised and semisupervised machine learning algorithms based on Fermat distances.  Moreover, we developed bounds on spanners for Fermat distances, which allows us to compute Fermat distances between large numbers of points using only Euclidean nearest neighbor graphs.  Our analysis gives precise dependencies on how many nearest neighbors are needed in terms of the key parameters in Fermat distances, and allows unsupervised and semisupervised learning algorithms using Fermat distances to scale to large, high-dimensional data sets.\n\nOur research has led to novel image segmentation algorithms based on Fermat distances, which have achieved state-of-the-art labeling accuracy on real hyperspectral images.  Hyperspectral images are an important modality for remote sensing observation and are challenging for unsupervised learning due to their high-dimensionality and low spatial resolution.  Our approach is particularly useful because it does not require an initial guess for the number of clusters in the image, but can estimate it automatically.  \n\nDuring the lifetime of this grant, both undergraduate and graduate students were trained in applied mathematics, data science, machine learning, and applications.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 10/24/2022\n\n\t\t\t\t\tSubmitted by: James M Murphy"
+ }
+}

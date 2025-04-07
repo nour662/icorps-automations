@@ -1,0 +1,109 @@
+{
+ "awd_id": "1940789",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CDS&E: Compiler/Runtime Support for Developing Scalable Parallel Multi-Scale Multi-Physics",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tevfik Kosar",
+ "awd_eff_date": "2019-07-01",
+ "awd_exp_date": "2020-06-30",
+ "tot_intn_awd_amt": 70867.0,
+ "awd_amount": 70867.0,
+ "awd_min_amd_letter_date": "2019-09-23",
+ "awd_max_amd_letter_date": "2019-09-23",
+ "awd_abstract_narration": "The dramatic strides in computer speed and performance over the last few decades make it feasible to accurately model increasingly complex phenomena. However, achieving high performance on massively parallel supercomputers is an extremely challenging task. With deepening memory hierarchies, significantly higher degrees of per-chip multi-core parallelism, the task of programming compute-intensive engineering applications to attain high performance on a large scale cluster system has become increasingly difficult. It is often the case that the time and effort required to develop effective and efficient software has become the bottleneck in advancing many areas of science and engineering. This challenge can be overcome by advances in compile-time/runtime systems that can ease the burden on the programmer while delivering a high performance portable instantiation of the particular application on modern and emerging high performance platforms.\r\n\r\nTo address this challenge, this project is developing a novel framework for transforming irregular scientific/engineering applications in a global address space framework. The research is grounded in a very different and complementary research direction to most current efforts in addressing the challenge of enhancing programmer productivity, maintaining portability, and achieving good performance on scalable distributed-memory parallel systems. The project will advance compiler/runtime techniques so that users can develop annotated sequential programs, to be automatically transformed by our system for efficient execution on distributed-memory parallel systems. This approach is motivated by the success of the popular OpenMP and OpenACC pragma based approaches to transforming annotated sequential programs for parallel execution on multicore and GPU/accelerator systems, respectively. An annotation based OpenAPP (APP - Asynchronous Partitioned Parallelism) framework is proposed for source-to-source transformation of an important class of scientific/engineering programs using the inspector/executor paradigm for execution on distributed-memory parallel systems. The proposed framework will be validated using several medium to large scale applications.\r\n\r\nThe project seeks to significantly lower the entry barrier associated with effective use of scalable distributed-memory computers, which are essential if more than 100x performance improvement over sequential codes is sought. A successful outcome of this project will be transformative for computational and domain scientists and engineers who seek to use next generation parallel systems for their simulation and modeling. The developed tools will be made publicly available to the community under an open source license. The project will also organize workshops that bring together compiler/runtime experts and computational scientists developing massively parallel scientific/engineering applications.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ponnuswamy",
+   "pi_last_name": "Sadayappan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ponnuswamy Sadayappan",
+   "pi_email_addr": "saday@cs.utah.edu",
+   "nsf_id": "000182536",
+   "pi_start_date": "2019-09-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Utah",
+  "inst_street_address": "201 PRESIDENTS CIR",
+  "inst_street_address_2": "",
+  "inst_city_name": "SALT LAKE CITY",
+  "inst_state_code": "UT",
+  "inst_state_name": "Utah",
+  "inst_phone_num": "8015816903",
+  "inst_zip_code": "841129049",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "UT01",
+  "org_lgl_bus_name": "UNIVERSITY OF UTAH",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LL8GLEVH6MG3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Utah",
+  "perf_str_addr": "School of Computing",
+  "perf_city_name": "Salt Lake City",
+  "perf_st_code": "UT",
+  "perf_st_name": "Utah",
+  "perf_zip_code": "841128930",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "UT01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "808400",
+   "pgm_ele_name": "CDS&E"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "8084",
+   "pgm_ref_txt": "CDS&E"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0114",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001415DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2014,
+   "fund_oblg_amt": 70866.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The primary goal of the project was to advance compiler/runtime techniques to enable high productivity of application developers in developing high-performance parallel applications. Towards this end, new compiler optimization methodologies were developed, as well as efficient implementations of key computational library primitives for sparse matrix/tensor computations. The main outcomes were:</p>\n<p>1) Development of an optimizing \"inspector/executor\" compiler for automatically transforming a class of irregular sequential programs (that use array-based computations via indirection arrays) to efficient distributed-memory parallel programs for execution on a cluster.</p>\n<p>2) Development of <span>new data locality optimization abstractions for recursive programs operating on tree data structures, incorporated into&nbsp;</span>a domain-specific compiler for a parallel multiresolution adaptive numerical simulation environment, which demonstrated significant performance enhancement for the computational science application MADNESS.</p>\n<p>3) Implementation of a communication-optimal distributed parallel implementation of a key integral transform code (four-index transform), which was incorporated into the NWChem software suite from Pacific Northwest National Laboratory.</p>\n<p>4) Development of efficient parallel implementations of several key sparse matrix/tensor primitives for multicore CPUs and GPUs, including SpGEMM (sparse-sparse matrix-matrix multiplication), SpMM (sparse-dense matrix-matrix multiplication), and MTTKRP (matricized tensor times Khatri Rao product).</p>\n<p>5) Development of a new analytical tile-size optimization methodology that enables comprehensive design space exploration over all tile loop permutations and tile sizes for minimizing data movement overhead in multi-level tiled execution of arbitrary dimensional tensor contractions.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/09/2021<br>\n\t\t\t\t\tModified by: Ponnuswamy&nbsp;Sadayappan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe primary goal of the project was to advance compiler/runtime techniques to enable high productivity of application developers in developing high-performance parallel applications. Towards this end, new compiler optimization methodologies were developed, as well as efficient implementations of key computational library primitives for sparse matrix/tensor computations. The main outcomes were:\n\n1) Development of an optimizing \"inspector/executor\" compiler for automatically transforming a class of irregular sequential programs (that use array-based computations via indirection arrays) to efficient distributed-memory parallel programs for execution on a cluster.\n\n2) Development of new data locality optimization abstractions for recursive programs operating on tree data structures, incorporated into a domain-specific compiler for a parallel multiresolution adaptive numerical simulation environment, which demonstrated significant performance enhancement for the computational science application MADNESS.\n\n3) Implementation of a communication-optimal distributed parallel implementation of a key integral transform code (four-index transform), which was incorporated into the NWChem software suite from Pacific Northwest National Laboratory.\n\n4) Development of efficient parallel implementations of several key sparse matrix/tensor primitives for multicore CPUs and GPUs, including SpGEMM (sparse-sparse matrix-matrix multiplication), SpMM (sparse-dense matrix-matrix multiplication), and MTTKRP (matricized tensor times Khatri Rao product).\n\n5) Development of a new analytical tile-size optimization methodology that enables comprehensive design space exploration over all tile loop permutations and tile sizes for minimizing data movement overhead in multi-level tiled execution of arbitrary dimensional tensor contractions.\n\n\t\t\t\t\tLast Modified: 06/09/2021\n\n\t\t\t\t\tSubmitted by: Ponnuswamy Sadayappan"
+ }
+}

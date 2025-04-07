@@ -1,0 +1,105 @@
+{
+ "awd_id": "1650723",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: Patient Similarity Learning with Massive Clinical Data and Its Applications in Cohort Identification",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Aidong Zhang",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2018-08-31",
+ "tot_intn_awd_amt": 299880.0,
+ "awd_amount": 299880.0,
+ "awd_min_amd_letter_date": "2016-08-18",
+ "awd_max_amd_letter_date": "2016-08-18",
+ "awd_abstract_narration": "The rapid adoption of Electronic Health Records (EHRs) across the U.S. healthcare systems coupled with the capability of linking EHRs to research biorepositories provides a unique opportunity for conducting large-scale Precision Medicine research. A critical step to make such research possible is identification of cohorts by defining inclusion and exclusion criteria that algorithmically select sets of patients based on available clinical data. For most of the existing research, the criteria for generating those patient cohorts are defined manually, which makes the entire process slow, labor intensive and not scalable. This project develops patient similarity learning algorithms to enable automatic cohort identification, which will accelerate the research of precision medicine.\r\n\r\nThe massive clinical data around patients are highly heterogeneous and sparse. Although there are some patient similarity learning algorithms, they typically work with a single type of patient data (e.g., just using diagnosis information in patient EHR) and cannot handle those challenges mentioned above effectively. This project develops advanced patient similarity learning algorithms by 1) learning composite patient similarities through a refinement process from multiple base similarity measures, with each base similarity being evaluated from a specific source of patient data or a specific form of patient representation; and 2) integrating information from multiple related auxiliary domains, such as drug, disease, and genomic information. Those information effectively regularizes the patient similarity learning process and makes it less sensitive to data sparsity.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Fei",
+   "pi_last_name": "Wang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Fei Wang",
+   "pi_email_addr": "few2001@med.cornell.edu",
+   "nsf_id": "000681015",
+   "pi_start_date": "2016-08-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Joan and Sanford I. Weill Medical College of Cornell University",
+  "inst_street_address": "575 LEXINGTON AVE FL 9",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEW YORK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6469628290",
+  "inst_zip_code": "100226145",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "NY12",
+  "org_lgl_bus_name": "WEILL MEDICAL COLLEGE OF CORNELL UNIVERSITY",
+  "org_prnt_uei_num": "QV1RJ11H58C4",
+  "org_uei_num": "YNT8TCJH8FQ8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Joan and Sanford I. Weill Medical College of Cornell University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "100654805",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "NY12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "801800",
+   "pgm_ele_name": "Smart and Connected Health"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  },
+  {
+   "pgm_ref_code": "8018",
+   "pgm_ref_txt": "Smart and Connected Health"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 299880.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-3d1f878d-7fff-3544-0979-276aa91ec66c\">\n<p dir=\"ltr\"><span>Most of the human diseases are complicated and heterogeneous, which makes the development of &ldquo;one-size-fits-all&rdquo; treatment impossible. The goal of precision medicine is to develop customized treatment for individual patients. In order to realize such customization, one key step is to identify similar patient cohorts, so that the patients within the same cohort have similar clinical characteristics. With the rapid development of health information technologies, Electronic Health Records (EHR) are becoming popular with better availability. This provides us an unprecedented opportunity and resource to derive such patient similarities. In this project we conducted systematic research on different ways of evaluating patient similarities from large scale patient EHR repositories. </span></p>\n<br />\n<p dir=\"ltr\"><span>Conventional similarity evaluation approaches are mostly based on vector representations of patients, where the patient features need to be aggregated over a certain time period. This loses the temporal information contained in patient EHRs, which is particularly important because the diseases are progressing over time. We developed novel deep learning based models based on recurrent neural network for evaluating patient similarities by effective exploration of the temporal dynamics in EHRs. With the derived similarities, we are able to identify novel progression subtypes for Parkinson&rsquo;s Disease (PD), such that the patients belonging to each subtype share the same disease progression patterns. Our solution won the PD subtyping data challenge organized by the Michael J. Fox Foundation. We further enhanced our model by integration of topic model to capture long-term semantic dependencies, and injection of target-aware attention mechanism to incorporating the clinical context. We have demonstrated the benefits of these enhancements in the context of hospital readmission prediction of patients with congestive heart failure.</span></p>\n<br />\n<p dir=\"ltr\"><span>In addition to algorithm development, we have also developed a deep learning system named Rudra, with more efficient distributed training mechanisms. The corresponding paper won best research paper runner-up in IEEE International Conference on Data Mining (ICDM). We also built a drug related knowledge base to effectively organize the external drug knowledge, which can be used to regularize the learned patient similarity measures.</span></p>\n<br />\n<p dir=\"ltr\"><span>The research in this project has produced 19 papers on top conferences and journals. The content of the research has been incorporated into the tutorials the PI presented in various conferences, as well as the course the PI has been teaching. Moreover, the project has supported the research for two female postdocs and one female research assistant.</span></p>\n<div><span><br /></span></div>\n</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/20/2018<br>\n\t\t\t\t\tModified by: Fei&nbsp;Wang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\nMost of the human diseases are complicated and heterogeneous, which makes the development of \"one-size-fits-all\" treatment impossible. The goal of precision medicine is to develop customized treatment for individual patients. In order to realize such customization, one key step is to identify similar patient cohorts, so that the patients within the same cohort have similar clinical characteristics. With the rapid development of health information technologies, Electronic Health Records (EHR) are becoming popular with better availability. This provides us an unprecedented opportunity and resource to derive such patient similarities. In this project we conducted systematic research on different ways of evaluating patient similarities from large scale patient EHR repositories. \n\n\nConventional similarity evaluation approaches are mostly based on vector representations of patients, where the patient features need to be aggregated over a certain time period. This loses the temporal information contained in patient EHRs, which is particularly important because the diseases are progressing over time. We developed novel deep learning based models based on recurrent neural network for evaluating patient similarities by effective exploration of the temporal dynamics in EHRs. With the derived similarities, we are able to identify novel progression subtypes for Parkinson?s Disease (PD), such that the patients belonging to each subtype share the same disease progression patterns. Our solution won the PD subtyping data challenge organized by the Michael J. Fox Foundation. We further enhanced our model by integration of topic model to capture long-term semantic dependencies, and injection of target-aware attention mechanism to incorporating the clinical context. We have demonstrated the benefits of these enhancements in the context of hospital readmission prediction of patients with congestive heart failure.\n\n\nIn addition to algorithm development, we have also developed a deep learning system named Rudra, with more efficient distributed training mechanisms. The corresponding paper won best research paper runner-up in IEEE International Conference on Data Mining (ICDM). We also built a drug related knowledge base to effectively organize the external drug knowledge, which can be used to regularize the learned patient similarity measures.\n\n\nThe research in this project has produced 19 papers on top conferences and journals. The content of the research has been incorporated into the tutorials the PI presented in various conferences, as well as the course the PI has been teaching. Moreover, the project has supported the research for two female postdocs and one female research assistant.\n\n\n\n\n \n\n\t\t\t\t\tLast Modified: 12/20/2018\n\n\t\t\t\t\tSubmitted by: Fei Wang"
+ }
+}

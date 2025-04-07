@@ -1,0 +1,105 @@
+{
+ "awd_id": "1719017",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CIF: Small: Info-Clustering: An Information-Theoretic Framework for Data Clustering",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922981",
+ "po_email": "pregalia@nsf.gov",
+ "po_sign_block_name": "Phillip Regalia",
+ "awd_eff_date": "2017-07-01",
+ "awd_exp_date": "2021-06-30",
+ "tot_intn_awd_amt": 439315.0,
+ "awd_amount": 439315.0,
+ "awd_min_amd_letter_date": "2017-06-22",
+ "awd_max_amd_letter_date": "2017-06-22",
+ "awd_abstract_narration": "Clustering refers to a procedure that groups similar objects together while separating dissimilar ones apart. This simple idea has a wide range of applications in different areas of scientific research. From the mathematical viewpoint, the problem of clustering is quite unique in that it attempts to discover unknown patterns of data without a clear knowledge of the ground truth. Instead of jumping to a specific algorithm or a dataset (which is a common practice in the literature), this research aims to lay a rigorous theoretical ground, upon which many meaningful and practical implementations can be developed subsequently. This research is accompanied by the investigator's continuing effort in curriculum development, involving undergraduate and graduate students in research, and broadening the participation of women and underrepresented minorities in engineering.\r\n\r\nTo achieve the aforementioned goal, the investigator plans to take an information-theoretic view of the data clustering problem by modeling each object to be clustered as a piece of information. A key advantage of this information-theoretic view is that now the similarity among multiple objects can be naturally measured by the amount of shared information. This is precisely where information theory, with the accumulation of over 70 years of active research, can be most useful. The main agendas of this research are to understand: 1) what clustering algorithms can be derived from the proposed info-clustering framework by leveraging the large body of literature on multivariate dependency modeling including graphical models and parameter families; 2) whether the proposed info-clustering framework can be leveraged to make some progress on the long-standing open problem of subset feature selection in statistics and machine learning.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Tie",
+   "pi_last_name": "Liu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Tie Liu",
+   "pi_email_addr": "tieliu@tamu.edu",
+   "nsf_id": "000502320",
+   "pi_start_date": "2017-06-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Texas A&M Engineering Experiment Station",
+  "inst_street_address": "3124 TAMU",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE STATION",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "9798626777",
+  "inst_zip_code": "778433124",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "TX10",
+  "org_lgl_bus_name": "TEXAS A&M ENGINEERING EXPERIMENT STATION",
+  "org_prnt_uei_num": "QD1MX6N5YTN4",
+  "org_uei_num": "QD1MX6N5YTN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Texas A&M Engineering Experiment Station",
+  "perf_str_addr": "Wisenbaker Engineering Building",
+  "perf_city_name": "College Station",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "778453128",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "TX10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779700",
+   "pgm_ele_name": "Comm & Information Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7935",
+   "pgm_ref_txt": "COMM & INFORMATION THEORY"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 439315.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>While traditionally information theory has been mainly used for characterizing the fundamental limits of communication and data storage systems, the main focus of this project was to develop novel information-theoretic concepts and tools for solving important machine learning problems. During the project period, significant progress has been made in developing: (i) an information-theoretic framework for data clustering, and (ii) novel information-theoretic generalization bounds for supervised learning.</p>\n<p>More specifically, our main findings are:</p>\n<p><strong>A rigorous mathematical framework for data clustering that is not only&nbsp; general enough to capture complex similarity structures, but also able to reduce to more practical algorithms under verifiable model assumptions.</strong> This was accomplished by introducing: (i) a new multivariate mutual information measure that naturally extends Shannon's mutual information from two random variables to multiple random variables; (ii) a natural formulation of the data clustering problem that leads to hierarchical and computationally feasible solutions under the entropy oracle; and (iii) a general approach for deriving data-efficient clustering algorithms from the proposed info-clustering framework via multivariate dependency modeling.</p>\n<p><strong>A unified framework for establishing information-theoretic generalization bounds based on a new conditional decoupling lemma and the concept of Fenchel conjugate. </strong>This framework not only allows us to establish a meaningful dichotomy and comparison among the existing information-theoretic bounds, but also leads to a new information-theoretic generalization bound that compares favorably over all existing ones in the literature.</p>\n<p><strong>A new approach for strengthening existing information-theoretic generalization bounds via stochastic chaining.</strong> This approach was mainly motivated by the deterministic chaining technique in probability theory and the successive refinement source coding problem in information theory. The strengthened information-theoretic generalization bounds<strong> </strong>can provide order-wise improvement over the existing ones in the literature.</p>\n<p>Our research results have been broadly disseminated through graduate level courses in machine learning and information theory, group and department seminars, and conference and journal publications. Our findings have already made some impact in machine learning. For example, the multivariate mutual information measure that we introduced have already been shown to be relevant in unsupervised feature selection and multi-modal data fusion by other researdhers. We expect the information-theoretic generalization bounds that we developed to play an important role in understanding the generalization behavior of deep learning algorithms. This project has also helped to graduate one Ph.D. student and one master student (a female) from Texas A&amp;M University.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/27/2021<br>\n\t\t\t\t\tModified by: Tie&nbsp;Liu</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nWhile traditionally information theory has been mainly used for characterizing the fundamental limits of communication and data storage systems, the main focus of this project was to develop novel information-theoretic concepts and tools for solving important machine learning problems. During the project period, significant progress has been made in developing: (i) an information-theoretic framework for data clustering, and (ii) novel information-theoretic generalization bounds for supervised learning.\n\nMore specifically, our main findings are:\n\nA rigorous mathematical framework for data clustering that is not only  general enough to capture complex similarity structures, but also able to reduce to more practical algorithms under verifiable model assumptions. This was accomplished by introducing: (i) a new multivariate mutual information measure that naturally extends Shannon's mutual information from two random variables to multiple random variables; (ii) a natural formulation of the data clustering problem that leads to hierarchical and computationally feasible solutions under the entropy oracle; and (iii) a general approach for deriving data-efficient clustering algorithms from the proposed info-clustering framework via multivariate dependency modeling.\n\nA unified framework for establishing information-theoretic generalization bounds based on a new conditional decoupling lemma and the concept of Fenchel conjugate. This framework not only allows us to establish a meaningful dichotomy and comparison among the existing information-theoretic bounds, but also leads to a new information-theoretic generalization bound that compares favorably over all existing ones in the literature.\n\nA new approach for strengthening existing information-theoretic generalization bounds via stochastic chaining. This approach was mainly motivated by the deterministic chaining technique in probability theory and the successive refinement source coding problem in information theory. The strengthened information-theoretic generalization bounds can provide order-wise improvement over the existing ones in the literature.\n\nOur research results have been broadly disseminated through graduate level courses in machine learning and information theory, group and department seminars, and conference and journal publications. Our findings have already made some impact in machine learning. For example, the multivariate mutual information measure that we introduced have already been shown to be relevant in unsupervised feature selection and multi-modal data fusion by other researdhers. We expect the information-theoretic generalization bounds that we developed to play an important role in understanding the generalization behavior of deep learning algorithms. This project has also helped to graduate one Ph.D. student and one master student (a female) from Texas A&amp;M University.\n\n\t\t\t\t\tLast Modified: 10/27/2021\n\n\t\t\t\t\tSubmitted by: Tie Liu"
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "awd_id": "1619197",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small: Design and Optimization of Scalable Concurrent Data Structures for Multi-Core Systems",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2016-08-01",
+ "awd_exp_date": "2021-07-31",
+ "tot_intn_awd_amt": 301856.0,
+ "awd_amount": 301856.0,
+ "awd_min_amd_letter_date": "2016-08-01",
+ "awd_max_amd_letter_date": "2016-08-01",
+ "awd_abstract_narration": "In the last decade, major general-purpose processor manufacturers have turned to hyper-threading and multi-core architectures to improve hardware performance since many of the traditional approaches for boosting CPU performance have hit a \"Brick Wall\".  Hyper-threading is about running two or more threads in parallel inside a single\r\nCPU. Multi-core is about running two or more actual CPUs on one chip. This multi-core revolution that is currently underway has now moved from general-purpose computing devices such as desktops, laptops and workstations to other more specialized computing devices such as smartphones, tablets, gaming devices, routers and even smartwatches. Unfortunately, most current software applications will not benefit from this enormous parallel processing power offered by a modern computing device unless they are rewritten in a way that enables a program to distribute its tasks across several cores.  The future software applications will have to be multi-threaded to achieve any performance gains.\r\n \r\nA data structure is a fundamental building block of any software program. It is used to manage access to application data and is designed to support specific operations efficiently. In a multi-threaded program, several threads may need to share data and manipulate it concurrently.  This gives rise to the problem of designing and building concurrent data structures in which several threads can access the data and manipulate the data structure at the same time, and whose performance scales well with the number of cores. Such high performance concurrent data structures are key to writing multi-threaded programs that scale well with the ever increasing number of cores.\r\n \r\nIn this project, the researcher will develop new techniques for managing contention among concurrent operations that reduce contention window, lower memory footprint, reduce cache traffic and/or decrease traversal overhead. These techniques will be used to develop concurrent version of important data structures suitable for multi-core systems that scale well with the number of cores. The proposed research has the potential of benefiting many areas in computer science and beyond including operating systems, databases, programming languages, game engines and parallel and scientific applications. The PI teaches graduate courses on operating systems and multi-core systems on a regular basis as well as research-oriented seminar courses from time to time. The PI will incorporate many of the results developed during this investigation into graduate courses.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Neeraj",
+   "pi_last_name": "Mittal",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Neeraj Mittal",
+   "pi_email_addr": "neerajm@utdallas.edu",
+   "nsf_id": "000491862",
+   "pi_start_date": "2016-08-01",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Dallas",
+  "inst_street_address": "800 WEST CAMPBELL RD.",
+  "inst_street_address_2": "SP2.25",
+  "inst_city_name": "RICHARDSON",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "9728832313",
+  "inst_zip_code": "750803021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "24",
+  "st_cong_dist_code": "TX24",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT DALLAS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "EJCVPNN1WFS5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Dallas",
+  "perf_str_addr": "800 W Campbell Rd",
+  "perf_city_name": "Richardson",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "750803021",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "24",
+  "perf_st_cong_dist": "TX24",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 301856.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Concurrent Data Structures: Data structures are fundamental building blocks of algorithms.&nbsp;They are used to store and manage data in a way that allows application-specific operations to be performed on the data efficiently.&nbsp; In a multicore system, data may be shared among multiple threads and several threads may want to access and manipulate it concurrently.&nbsp; However, contention must be managed in&nbsp; a way that each operation returns correct outcome and the data structure itself remains in a valid state. This gives rise to the problem of concurrent data structures. We have developed new approaches for manipulating several important data structures like search trees and skip lists in a concurrent manner using both blocking and non-blocking synchronization techniques.&nbsp;<br /><br />Advanced Locking Constructs: One of the most common approaches to manage contention among processes in a concurrent shared memory system is using mutual exclusion or locks. A lock enables a process to execute its critical section in isolation without any interference from other processes. Lock-based algorithms are easier to design, analyze, implement and debug. However, locking inhibits concurrency since it serializes all critical section executions. Variants of mutual exclusion that allow greater concurrency have been defined and shown to significantly improve performance. We have developed new algorithms for solving the variants of the mutual exclusion problem such as group mutual exclusion (GME) that allow greater concurrency. Our GME algorithms provide different trade offs between speed, space and fairness.<br />Recoverable Concurrent Algorithms: Most concurrent algorithms, including those for mutual exclusion, are designed assuming the system is reliable. However, failures do occur in real world.&nbsp;A common approach to handle failures is to use checkpointing and recovery using hard disk drive as a backup medium unaffected by failures. With the advent of new memory technology that supports persistent data storage, it is now possible to store program variables directly in persistent memory. Traditional checkpointing and recovery algorithms can still be used with hard disk drive being replaced with persistent memory, but recovery algorithms will be too slow.&nbsp; We have developed recoverable algorithms for solving the important mutual exclusion problem that can gracefully adapt to the number of failures that have occurred in the recent past.<br /><br /><br />Intellectual Merit:<br />We have developed new approaches and techniques for designing concurrent algorithms for multicore systems that scale well with the number of cores including advanced locking constructs, concurrent data structures and recoverable locks.&nbsp;<br /><br />&nbsp;<br />Broader Impact:<br />Developing efficient concurrent algorithms for shared memory or multicore systems has a broad impact on the society because most of the computing devices have multiple cores, and concurrent programming is essential to hardnessing their computing power and gain competitive edge. Three graduate students&nbsp; at the University of Texas at Dallas have worked on various parts of the project and as a result have acquired important skills related to designing, analyzing, implementing and/or debugging concurrent programs.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/01/2021<br>\n\t\t\t\t\tModified by: Neeraj&nbsp;Mittal</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nConcurrent Data Structures: Data structures are fundamental building blocks of algorithms. They are used to store and manage data in a way that allows application-specific operations to be performed on the data efficiently.  In a multicore system, data may be shared among multiple threads and several threads may want to access and manipulate it concurrently.  However, contention must be managed in  a way that each operation returns correct outcome and the data structure itself remains in a valid state. This gives rise to the problem of concurrent data structures. We have developed new approaches for manipulating several important data structures like search trees and skip lists in a concurrent manner using both blocking and non-blocking synchronization techniques. \n\nAdvanced Locking Constructs: One of the most common approaches to manage contention among processes in a concurrent shared memory system is using mutual exclusion or locks. A lock enables a process to execute its critical section in isolation without any interference from other processes. Lock-based algorithms are easier to design, analyze, implement and debug. However, locking inhibits concurrency since it serializes all critical section executions. Variants of mutual exclusion that allow greater concurrency have been defined and shown to significantly improve performance. We have developed new algorithms for solving the variants of the mutual exclusion problem such as group mutual exclusion (GME) that allow greater concurrency. Our GME algorithms provide different trade offs between speed, space and fairness.\nRecoverable Concurrent Algorithms: Most concurrent algorithms, including those for mutual exclusion, are designed assuming the system is reliable. However, failures do occur in real world. A common approach to handle failures is to use checkpointing and recovery using hard disk drive as a backup medium unaffected by failures. With the advent of new memory technology that supports persistent data storage, it is now possible to store program variables directly in persistent memory. Traditional checkpointing and recovery algorithms can still be used with hard disk drive being replaced with persistent memory, but recovery algorithms will be too slow.  We have developed recoverable algorithms for solving the important mutual exclusion problem that can gracefully adapt to the number of failures that have occurred in the recent past.\n\n\nIntellectual Merit:\nWe have developed new approaches and techniques for designing concurrent algorithms for multicore systems that scale well with the number of cores including advanced locking constructs, concurrent data structures and recoverable locks. \n\n \nBroader Impact:\nDeveloping efficient concurrent algorithms for shared memory or multicore systems has a broad impact on the society because most of the computing devices have multiple cores, and concurrent programming is essential to hardnessing their computing power and gain competitive edge. Three graduate students  at the University of Texas at Dallas have worked on various parts of the project and as a result have acquired important skills related to designing, analyzing, implementing and/or debugging concurrent programs.\n\n\t\t\t\t\tLast Modified: 11/01/2021\n\n\t\t\t\t\tSubmitted by: Neeraj Mittal"
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "awd_id": "1566375",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: CSR NeTS: Enabling Secure and Trusted Device I/Os on Smartphones",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2016-05-01",
+ "awd_exp_date": "2020-04-30",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 175000.0,
+ "awd_min_amd_letter_date": "2016-03-10",
+ "awd_max_amd_letter_date": "2016-03-10",
+ "awd_abstract_narration": "The recent success of smartphones is largely due to the integration of various built-in input/output (I/O) devices (e.g., touchscreens, sensors, cameras, and microphones), which not only permit easy interaction between users and smartphones, but also enable a plethora of useful applications. However, these I/O devices, if exploited by attackers, can pose severe security and privacy threats to smartphone users. The root cause of these threats is that smartphone device I/Os carry important and sensitive user information, but currently there lack systematic approaches to protect these device I/Os. This research will investigate the system design and prototype implementation towards enabling secure and trusted device I/Os on smartphones. \r\n\r\nThis project will address the following three objectives with the proposed system, named IOGuard: 1) Securing device inputs: IOGuard aims to secure smartphone device inputs such that attackers cannot infer or steal user sensitive info from device inputs. 2) Enabling trusted device inputs: IOGuard aims to provide protected applications with the guarantee that the device inputs delivered to the applications are authentic and have not been tampered with. 3) Providing trusted screen outputs: IOGuard aims to enable trusted screen outputs for protected applications to defend against UI spoofing/activity hijacking attacks. This project aims at achieving the above objectives with practical and scalable solutions, which support running both unmodified smartphone operating systems and unmodified applications with good system performance and user experience. Specifically, support of unmodified operating systems will be achieved by a small and dedicated bare-metal hypervisor built using the recently introduced ARM hardware virtualization technology. Support of unmodified applications will be achieved by a novel user-space sandbox framework. A series of novel designs will also be carried out and evaluated to enable smooth system integration and good system performance.  \r\n\r\nThis project will bring an effective, practical, and deployment-scalable solution that could benefit billions of smartphone users and many mobile services. Besides smartphones, other smart mobile devices that feature a rich set of I/O devices can also benefit from the resulted solution of this research. The understandings, insights, and experiences gained in this project will be extremely valuable to other mobile computing fields that can be benefited from virtualization technologies, such as mobile cloud systems/applications and cyber-foraging.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Yifan",
+   "pi_last_name": "Zhang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yifan Zhang",
+   "pi_email_addr": "zhangy@binghamton.edu",
+   "nsf_id": "000690531",
+   "pi_start_date": "2016-03-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "SUNY at Binghamton",
+  "inst_street_address": "4400 VESTAL PKWY E",
+  "inst_street_address_2": "",
+  "inst_city_name": "BINGHAMTON",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6077776136",
+  "inst_zip_code": "13902",
+  "inst_country_name": "United States",
+  "cong_dist_code": "19",
+  "st_cong_dist_code": "NY19",
+  "org_lgl_bus_name": "THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK",
+  "org_prnt_uei_num": "L9ZDVULCHCV3",
+  "org_uei_num": "NQMVAAQUFU53"
+ },
+ "perf_inst": {
+  "perf_inst_name": "SUNY at Binghamton",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "139026000",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "19",
+  "perf_st_cong_dist": "NY19",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 175000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Smart mobile devices have been becoming an indispensable part of people's daily lives. This project aims at developing techniques and system to protect mobile device I/O data from being leaked to malicious components, such as kernel rootkits, in the system. The approach taken by this project is to transform device I/O data to encrypted form immediately after the data enters the system and decrypt the data before data is used by the intended protected apps. The work carried out by this project can be divided into three parts, whose content, outcome and findings are summarized as follows.</p>\n<p>First, we developed techniques to achieve secure and trusted device I/O drivers. With device drivers, I/O&nbsp;<span>data are intercepted and encrypted upon arriving at the device drivers, which then encrypt the data to allow it to be transferred through different parts of the system in an encrypted form. <span>A set of techniques&nbsp;were successfully designed and implemented to enable secure and trusted I/O device drivers.&nbsp;</span></span>&nbsp;On the high level, our design works by first identifying the \"first stop\" of the I/O data. Specifically, our mechanism first identifies the memory region where the I/O data resides immediately after the data are generated. Then we utilizes the ARM hardware virtualization capability to mark those first-stop memory regions as ready-only at the hypervisor level, such that any write attempts on those memory regions will be trapped to the hypervisor, which encrypts the I/O data before placing them into the first-stop memory regions. The following data and control paths remain unchanged so that the I/O data will be transferred in the encrypted form.&nbsp; The new techniques we&nbsp;achieved are summarized as follows.&nbsp; &nbsp;(1) We designed a static driver code analysis and instrumentation tool which is able to identify and instrument \"first-stop\" memory regions for I/O data.&nbsp; &nbsp;(2) We developed a light-weight memory-focused hypervisor to deal with sensitive I/O device data. The hypervisor is able to monitor, intercept and encrypt I/O device data before placing them in the first-stop memory regions.&nbsp; &nbsp;(3) We developed techniques which allow the hypervisor to place the encrypted data into the read-only first-stop memory-regions.</p>\n<p>Second, we developed an app sandboxing framework which is able to add new functionalities to existing apps without requiring changing or reinstalling them. With this framework, the new functionality of decrypting and interpreting I/O data sent from the drivers can be added to the system without modifying the protected apps, which is important to improve scalability in practice.</p>\n<p>Third, w<span>e developed and validated two secure communication protocols which allows I/O data to be encrypted upon entering the system and decrypted before being used by the protected apps.&nbsp; &nbsp;(1) The first protocol leverage conventional symmetric cryptographic mechanisms for data encryption/decryption. The downside of this mechanism is the cryptographic key used by our solution is still vulnerable to attackers which is capable of scan and steal system memory content.&nbsp; (2) To address the previous limitation, we designed another approach for hiding I/O data. This approach works by sending indexes of data points instead of conventional encrypted form of the data. Once the receiver receives the indexes, it queries the origin (i.e., our hypervisor) by using an efficient \"sys-hyper-call\" mechanism to get the real content of the data. With this approach, an attack to steal the data can be easily detected by seeing a data point is queried twice (once is legitimately by the intended receiver, and the other is by the data stealing attacker).</span></p>\n<p>We implemented the above designs using the <span>ODRIOD XU3/XU3-Lite testbed.&nbsp;</span>The prototype system is able to deal with five different I/O devices:&nbsp;touchscreen, motion sensors, audio, GPS, and fingerprint device.&nbsp;<span>We performed comprehensive evaluation studies about our prototype system.&nbsp;</span>The evaluation results showed that our prototype system is able to protect I/O data while incurring small&nbsp;overhead.</p>\n<p><span><br /></span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/13/2020<br>\n\t\t\t\t\tModified by: Yifan&nbsp;Zhang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nSmart mobile devices have been becoming an indispensable part of people's daily lives. This project aims at developing techniques and system to protect mobile device I/O data from being leaked to malicious components, such as kernel rootkits, in the system. The approach taken by this project is to transform device I/O data to encrypted form immediately after the data enters the system and decrypt the data before data is used by the intended protected apps. The work carried out by this project can be divided into three parts, whose content, outcome and findings are summarized as follows.\n\nFirst, we developed techniques to achieve secure and trusted device I/O drivers. With device drivers, I/O data are intercepted and encrypted upon arriving at the device drivers, which then encrypt the data to allow it to be transferred through different parts of the system in an encrypted form. A set of techniques were successfully designed and implemented to enable secure and trusted I/O device drivers.  On the high level, our design works by first identifying the \"first stop\" of the I/O data. Specifically, our mechanism first identifies the memory region where the I/O data resides immediately after the data are generated. Then we utilizes the ARM hardware virtualization capability to mark those first-stop memory regions as ready-only at the hypervisor level, such that any write attempts on those memory regions will be trapped to the hypervisor, which encrypts the I/O data before placing them into the first-stop memory regions. The following data and control paths remain unchanged so that the I/O data will be transferred in the encrypted form.  The new techniques we achieved are summarized as follows.   (1) We designed a static driver code analysis and instrumentation tool which is able to identify and instrument \"first-stop\" memory regions for I/O data.   (2) We developed a light-weight memory-focused hypervisor to deal with sensitive I/O device data. The hypervisor is able to monitor, intercept and encrypt I/O device data before placing them in the first-stop memory regions.   (3) We developed techniques which allow the hypervisor to place the encrypted data into the read-only first-stop memory-regions.\n\nSecond, we developed an app sandboxing framework which is able to add new functionalities to existing apps without requiring changing or reinstalling them. With this framework, the new functionality of decrypting and interpreting I/O data sent from the drivers can be added to the system without modifying the protected apps, which is important to improve scalability in practice.\n\nThird, we developed and validated two secure communication protocols which allows I/O data to be encrypted upon entering the system and decrypted before being used by the protected apps.   (1) The first protocol leverage conventional symmetric cryptographic mechanisms for data encryption/decryption. The downside of this mechanism is the cryptographic key used by our solution is still vulnerable to attackers which is capable of scan and steal system memory content.  (2) To address the previous limitation, we designed another approach for hiding I/O data. This approach works by sending indexes of data points instead of conventional encrypted form of the data. Once the receiver receives the indexes, it queries the origin (i.e., our hypervisor) by using an efficient \"sys-hyper-call\" mechanism to get the real content of the data. With this approach, an attack to steal the data can be easily detected by seeing a data point is queried twice (once is legitimately by the intended receiver, and the other is by the data stealing attacker).\n\nWe implemented the above designs using the ODRIOD XU3/XU3-Lite testbed. The prototype system is able to deal with five different I/O devices: touchscreen, motion sensors, audio, GPS, and fingerprint device. We performed comprehensive evaluation studies about our prototype system. The evaluation results showed that our prototype system is able to protect I/O data while incurring small overhead.\n\n\n\n\n\t\t\t\t\tLast Modified: 11/13/2020\n\n\t\t\t\t\tSubmitted by: Yifan Zhang"
+ }
+}

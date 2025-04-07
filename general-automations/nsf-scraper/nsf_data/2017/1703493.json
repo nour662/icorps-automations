@@ -1,0 +1,141 @@
+{
+ "awd_id": "1703493",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "NeTS: Medium: Collaborative Research: Network Configuration Synthesis: A Path to Practical Deployment",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Darleen Fisher",
+ "awd_eff_date": "2017-07-01",
+ "awd_exp_date": "2022-06-30",
+ "tot_intn_awd_amt": 570000.0,
+ "awd_amount": 582240.0,
+ "awd_min_amd_letter_date": "2017-06-08",
+ "awd_max_amd_letter_date": "2020-06-17",
+ "awd_abstract_narration": "All sectors of society depend on properly functioning computer networks. For example, every day, millions of citizens order prescription drug refills, pay their electricity bills, book hotels, shop for groceries, and participate in thousands more activities online, through the cloud.   But none of these services will work if the networks that deliver information are down. Moreover, modern business, healthcare, the military and the government are just as dependent on reliable networks as everyday citizens.   Many network outages are caused by operators manually (and incorrectly) programming the 'configuration files' that manage the ways that network devices forward information.  While the flexibility allowed by configuration files is essential, network outages are often caused by operators using hundreds of low-level directives at each network device to create network-wide policy.  Because the global consequences of making even small configuration changes is so drastic, many organizations take several weeks to audit even small changes, limiting their ability to respond effectively to traffic fluctuations, business opportunities, security threats and hardware failures.\r\n                                                                                  \r\nA natural solution to these problems -- analogous to the trend in programming languages for software development over the last several decades as programmers have moved from machine code to Java -- is to define more robust, higher-level programming languages for implementing network policies.  However, there are technical and pragmatic hurdles to surmount before it will be possible to deploy new languages in industrial settings on a large scale.  In particular, existing network-wide policy languages are not expressive enough for many desired network policies and often require wholesale migration to new networking platforms.  Hence, the overarching goal of this project is to surmount the technical challenges that impede practical deployment of high-level network programming languages. The project is developing the core technology necessary to efficiently support and incrementally deploy high-level network policies.  The project leverages connections to two major cloud providers as a means to test the resulting languages and systems on real industrial networks, identify pragmatic barriers to adoption, and ultimately deploy the technology where possible.\r\n\r\nThe project builds on the PIs' recent work on Propane, a new network programming language that allows users to describe end-to-end paths for intra- and inter-domain routing, along with a compiler that produces configurations for the industry-standard BGP protocol.  The results of this project will extend Propane in several ways to support practical deployment:   First, users will be able to declare device roles (e.g., top-of-rack switch) and the connectivity invariants related to them to enable concise specifications. A new compiler will verify safety properties of policies in the presence of such declarations and generate parameterized templates that make compiler outputs more intelligible for operators.  Second, users will specify financial contracts that govern transit costs using a new declarative language and the compiler will optimize routes automatically by generating refined policies that meet objectives.  Third, the Butane compiler will target and exploit the benefits of heterogeneous back-end protocols and platforms.  Fourth, tools will help network operators infer new high-level configurations from existing low-level configurations and to verify that new configurations are equivalent to old ones.  Finally, Butane will support mixed mode (legacy- and high-level network operations) so engineers can migrate their networks slowly over time and test partial deployment on small fractions of their live traffic.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "David",
+   "pi_last_name": "Walker",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "David Walker",
+   "pi_email_addr": "dpw@cs.princeton.edu",
+   "nsf_id": "000167001",
+   "pi_start_date": "2017-06-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Princeton University",
+  "inst_street_address": "1 NASSAU HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "PRINCETON",
+  "inst_state_code": "NJ",
+  "inst_state_name": "New Jersey",
+  "inst_phone_num": "6092583090",
+  "inst_zip_code": "085442001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "NJ12",
+  "org_lgl_bus_name": "THE TRUSTEES OF PRINCETON UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NJ1YPQXQG7U5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Princeton University",
+  "perf_str_addr": "35 Olden Street",
+  "perf_city_name": "Princeton",
+  "perf_st_code": "NJ",
+  "perf_st_name": "New Jersey",
+  "perf_zip_code": "085442020",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "NJ12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 146109.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 234546.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 71055.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 130530.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-62941e48-7fff-bf49-babd-8f8b397e9dc9\"> <span id=\"docs-internal-guid-39bad978-7fff-3c9e-9b10-993c1a188588\"> <span id=\"docs-internal-guid-02887487-7fff-8bcc-9b46-d465bde04f8b\">\n<p dir=\"ltr\"><span>All sectors of society depend on properly functioning computer networks. For example, every day, millions of citizens order prescription drug refills, pay their electricity bills, book hotels, shop for groceries, and participate in thousands more activities online, through the cloud. But none of these services will work if the networks that deliver information are down. Many network outages are caused by operators manually (and incorrectly) programming the 'configuration files' that manage the ways that network devices forward information. Further, because the global consequences of making even small configuration changes is so drastic, many organizations take several weeks to audit even small changes, limiting their ability to respond effectively to traffic fluctuations, business opportunities, security threats and hardware failures.</span><span>&nbsp; The research funded by this grant delivered a number of new tools, algorithms, and technologies to help network operators debug existing configurations and write new ones correctly in the first place.&nbsp; This research will make future networks more reliable, leading to less downtime, and fewer disruptions to critical online services.&nbsp;&nbsp;</span></p>\n<br />\n<p dir=\"ltr\"><span>The Self-starter and Campion tools delivered by this research project help network operators manage their networks when higher-level specifications for what a network should do are not available, as is often the case.&nbsp; Self-starter generates \"templates\" that describe the role a collection of network devices have in forwarding traffic, whereas Campion helps network operators discover and localize bugs in network configurations.&nbsp; Other tools developed include Bonsai and ShapeShifter, which provide new algorithms for efficient verification of large networks.&nbsp; The code for these tools is available open source for others to use, and a number of ideas from these projects have been adopted in industrial efforts at major cloud providers.&nbsp; In particular, Campion has been successfully used to identify and localize important errors by the network operators at a major cloud provider.&nbsp; Ideas in the work on ShapeShifter have informed the development of network analysis tools at another major cloud provider.&nbsp;&nbsp;</span></p>\n<br />\n<p dir=\"ltr\"><span>In addition to funding the development of network analysis tools, this grant funded the development of a new language, called Lucid, for programming next-generation networks.&nbsp; Lucid makes it easier to write applications that \"live inside the network\" (i.e., in the so-called network </span><span>data plane</span><span>) by taking advantage of recently developed programmable switches such as the Intel Tofino.&nbsp; Since these applications \"live inside the network,\" they can respond rapidly to changes, such as failures or attacks, thereby mitigating the damage caused.&nbsp; The language also has a novel type system that can detect programming errors and help programmers correct them.</span></p>\n<br />\n<p dir=\"ltr\"><span>The grant also provided research opportunities for undergraduate students, masters students, and PhD students.&nbsp; Many of these students interned at major cloud providers and then moved on to take permanent jobs, deploying the networking and formal methods skills developed in this grant in practice.&nbsp; For example, former Princeton PhD student Ryan Beckett leads efforts to make the Microsoft Azure cloud platform more reliable.&nbsp; Former Princeton PhD student Nick Giannarakis does likewise at Amazon.&nbsp; Former UCLA student Siva Kesava has joined Microsoft Research and also works on network reliability.</span></p>\n<br />\n<p dir=\"ltr\"><span>From an educational perspective, this grant provided the opportunity to overhaul a class at Princeton during the Covid pandemic, moving it online, and developing, among other things, a complete suite of videos to teach students the underpinnings they need to know to pursue research in formal methods and programming languages.&nbsp; An auxiliary class teaching \"research methods,\" and giving undergraduates a glimpse at the research process, was also developed.&nbsp; The grant also partially funded the development of the first version of a class on Network Verification at UCLA.</span></p>\n</span> </span>\n<p dir=\"ltr\">&nbsp;</p>\n</span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/18/2022<br>\n\t\t\t\t\tModified by: David&nbsp;Walker</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n  \nAll sectors of society depend on properly functioning computer networks. For example, every day, millions of citizens order prescription drug refills, pay their electricity bills, book hotels, shop for groceries, and participate in thousands more activities online, through the cloud. But none of these services will work if the networks that deliver information are down. Many network outages are caused by operators manually (and incorrectly) programming the 'configuration files' that manage the ways that network devices forward information. Further, because the global consequences of making even small configuration changes is so drastic, many organizations take several weeks to audit even small changes, limiting their ability to respond effectively to traffic fluctuations, business opportunities, security threats and hardware failures.  The research funded by this grant delivered a number of new tools, algorithms, and technologies to help network operators debug existing configurations and write new ones correctly in the first place.  This research will make future networks more reliable, leading to less downtime, and fewer disruptions to critical online services.  \n\n\nThe Self-starter and Campion tools delivered by this research project help network operators manage their networks when higher-level specifications for what a network should do are not available, as is often the case.  Self-starter generates \"templates\" that describe the role a collection of network devices have in forwarding traffic, whereas Campion helps network operators discover and localize bugs in network configurations.  Other tools developed include Bonsai and ShapeShifter, which provide new algorithms for efficient verification of large networks.  The code for these tools is available open source for others to use, and a number of ideas from these projects have been adopted in industrial efforts at major cloud providers.  In particular, Campion has been successfully used to identify and localize important errors by the network operators at a major cloud provider.  Ideas in the work on ShapeShifter have informed the development of network analysis tools at another major cloud provider.  \n\n\nIn addition to funding the development of network analysis tools, this grant funded the development of a new language, called Lucid, for programming next-generation networks.  Lucid makes it easier to write applications that \"live inside the network\" (i.e., in the so-called network data plane) by taking advantage of recently developed programmable switches such as the Intel Tofino.  Since these applications \"live inside the network,\" they can respond rapidly to changes, such as failures or attacks, thereby mitigating the damage caused.  The language also has a novel type system that can detect programming errors and help programmers correct them.\n\n\nThe grant also provided research opportunities for undergraduate students, masters students, and PhD students.  Many of these students interned at major cloud providers and then moved on to take permanent jobs, deploying the networking and formal methods skills developed in this grant in practice.  For example, former Princeton PhD student Ryan Beckett leads efforts to make the Microsoft Azure cloud platform more reliable.  Former Princeton PhD student Nick Giannarakis does likewise at Amazon.  Former UCLA student Siva Kesava has joined Microsoft Research and also works on network reliability.\n\n\nFrom an educational perspective, this grant provided the opportunity to overhaul a class at Princeton during the Covid pandemic, moving it online, and developing, among other things, a complete suite of videos to teach students the underpinnings they need to know to pursue research in formal methods and programming languages.  An auxiliary class teaching \"research methods,\" and giving undergraduates a glimpse at the research process, was also developed.  The grant also partially funded the development of the first version of a class on Network Verification at UCLA.\n \n \n\n\n\t\t\t\t\tLast Modified: 07/18/2022\n\n\t\t\t\t\tSubmitted by: David Walker"
+ }
+}

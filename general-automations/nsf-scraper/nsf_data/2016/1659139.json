@@ -1,0 +1,109 @@
+{
+ "awd_id": "1659139",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "III: Small: Collaborative Research: Reducing Classifier Bias in Social Media Studies of Public Health",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Maria Zemankova",
+ "awd_eff_date": "2016-08-01",
+ "awd_exp_date": "2018-07-31",
+ "tot_intn_awd_amt": 139992.0,
+ "awd_amount": 139992.0,
+ "awd_min_amd_letter_date": "2016-08-24",
+ "awd_max_amd_letter_date": "2016-08-24",
+ "awd_abstract_narration": "Social media creates a new opportunity for public health research, giving greater reach at lower cost than traditional survey methods.  Online content offers several potential advantages over traditional survey data; one can in real-time measure how behaviors and attitudes change in response to rare events such as legal changes, new products, and marketing campaigns.  Machine learning techniques for classification can be used to tailor interventions that improve health outcomes while minimizing costs.  However, online content is not a random sample, potentially biasing the outcomes.  This proposal develops techniques to overcome this problem, enabling effective use of publicly available social media data for public health research.  The approaches are evaluated against a traditional survey-based approach to evaluate end-to-end effectiveness in a real-world public health scenario, determining effectiveness of smoking cessation campaigns.\r\n\r\nThe project builds on well-grounded statistical approaches to eliminate classifier bias.  Key innovations are extending this to the high-dimensional, noisy domain of textual social media data (specifically Twitter), robustness to confounding variables, and scalable methods to identify comparison groups.  Noisy data will be addressed through advancing multiple imputation techniques.  The project will develop a model-based approach to identifying comparison groups that addresses confounding variable issues.  The methods will be evaluated in the context of an actual public health study of smoking cessation, based on historical Twitter data and traditional surveys conducted before and after a CDC campaign as well as a survey of smokers on perceived risk factors of e-cigarettes.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Sherry",
+   "pi_last_name": "Emery",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sherry Emery",
+   "pi_email_addr": "emery-sherry@norc.org",
+   "nsf_id": "000689775",
+   "pi_start_date": "2016-08-24",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "National Opinion Research Center",
+  "inst_street_address": "55 E MONROE ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHICAGO",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "7732566000",
+  "inst_zip_code": "606035713",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "IL07",
+  "org_lgl_bus_name": "NATIONAL OPINION RESEARCH CENTER",
+  "org_prnt_uei_num": "MPYFY5UMSDP4",
+  "org_uei_num": "MPYFY5UMSDP4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "National Opinion Research Center (NORC)",
+  "perf_str_addr": "55 East Monroe Street",
+  "perf_city_name": "Chicago",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "606035713",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "IL07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736400",
+   "pgm_ele_name": "Info Integration & Informatics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0115",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001516DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2015,
+   "fund_oblg_amt": 139992.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>The objective of our project was to investigate a suite of bias reduction techniques to improve the validity and robustness of public health studies conducted by applying statistical classifiers to social Internet data. Our overarching goal was to develop improved classification tools for the public health community while simultaneously providing fundamental advances in machine learning and natural language processing technology.&nbsp;</span>The project has several significant results:</p>\n<p>- We defined a new type of dataset shift - confounding shift - and observed many settings in which traditional supervised learning methods can degrade rapidly under such shift.</p>\n<p>- We developed a suite of algorithms to identify and control for confounding shift, when confounds are observed or unobserved, resulting in significantly more robust and accurate classification algorithms.</p>\n<p>- We developed a number of learning from label proportions approaches, which can make it much easier to train classifiers for social media classification. In many settings, the resulting accuracy is equal to or better than traditional fully supervised classification.</p>\n<p>- We developed a method to sample queries from a classifier in order to identify samples that are both relevant to the target class and representative with respect to the larger population of documents. This methodology will make it easier for computational social scientists to identify data relevant to variables of interest, while reducing the bias introduced by sampling methodologies.</p>\n<p>- We successfully applied our methodology to estimate the effect of CDC smoking cessation campaigns using Twitter data. Using a combination of machine learning and econometrics, we estimate that the national campaign resulted in an increase of about 10% in smoking cessation attempts, based on self-reports automatically identified on Twitter. An additional qualitative analysis allows us to further investigate these cessation attempts, which would be harder and more time consuming to do with traditional survey data approaches.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/30/2018<br>\n\t\t\t\t\tModified by: Sherry&nbsp;Emery</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe objective of our project was to investigate a suite of bias reduction techniques to improve the validity and robustness of public health studies conducted by applying statistical classifiers to social Internet data. Our overarching goal was to develop improved classification tools for the public health community while simultaneously providing fundamental advances in machine learning and natural language processing technology. The project has several significant results:\n\n- We defined a new type of dataset shift - confounding shift - and observed many settings in which traditional supervised learning methods can degrade rapidly under such shift.\n\n- We developed a suite of algorithms to identify and control for confounding shift, when confounds are observed or unobserved, resulting in significantly more robust and accurate classification algorithms.\n\n- We developed a number of learning from label proportions approaches, which can make it much easier to train classifiers for social media classification. In many settings, the resulting accuracy is equal to or better than traditional fully supervised classification.\n\n- We developed a method to sample queries from a classifier in order to identify samples that are both relevant to the target class and representative with respect to the larger population of documents. This methodology will make it easier for computational social scientists to identify data relevant to variables of interest, while reducing the bias introduced by sampling methodologies.\n\n- We successfully applied our methodology to estimate the effect of CDC smoking cessation campaigns using Twitter data. Using a combination of machine learning and econometrics, we estimate that the national campaign resulted in an increase of about 10% in smoking cessation attempts, based on self-reports automatically identified on Twitter. An additional qualitative analysis allows us to further investigate these cessation attempts, which would be harder and more time consuming to do with traditional survey data approaches.\n\n\t\t\t\t\tLast Modified: 10/30/2018\n\n\t\t\t\t\tSubmitted by: Sherry Emery"
+ }
+}

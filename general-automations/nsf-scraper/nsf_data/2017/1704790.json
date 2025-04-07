@@ -1,0 +1,117 @@
+{
+ "awd_id": "1704790",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Medium: Collaborative Research: Testing in the Era of Approximation",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 450000.0,
+ "awd_amount": 450000.0,
+ "awd_min_amd_letter_date": "2017-08-31",
+ "awd_max_amd_letter_date": "2017-08-31",
+ "awd_abstract_narration": "Many computations, such as image processing, machine learning, and engineering simulations are inherently approximate -- they trade off quality of results for better performance. However, approximation also introduces new challenges when reasoning about program behaviors and finding bugs. At present, testing in this area requires more principled and effective approaches. Simultaneously, approximation itself provides an effective new basis for innovations in the well-trodden field of testing, thereby making testing more efficient and valuable. The project will develop a bi-directional integration of testing and automated approximation, new approach for developing and optimizing an increasingly important class of programs. The results will be embodied in open source tool sets and rigorously evaluated using open-source and proprietary applications. New educational and course materials will be developed for courses on compilers, program analysis and software engineering.\r\n\r\nMore concretely, the project will develop a set of techniques and tools for testing approximate programs, including a test specification language and techniques for automated migration of existing tests to the new language, techniques for dynamic approximate-program analysis, and techniques for optimal approximation discovery.  Moreover, the project will develop approximate computing techniques to improve the performance of regression testing and mutation testing.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Milos",
+   "pi_last_name": "Gligoric",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Milos Gligoric",
+   "pi_email_addr": "gligoric@utexas.edu",
+   "nsf_id": "000702992",
+   "pi_start_date": "2017-08-31",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Sarfraz",
+   "pi_last_name": "Khurshid",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sarfraz Khurshid",
+   "pi_email_addr": "khurshid@ece.utexas.edu",
+   "nsf_id": "000095313",
+   "pi_start_date": "2017-08-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "The University of Texas at Austin",
+  "perf_str_addr": "",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787121532",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "25",
+  "perf_st_cong_dist": "TX25",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  },
+  {
+   "pgm_ref_code": "7944",
+   "pgm_ref_txt": "SOFTWARE ENG & FORMAL METHODS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 450000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><br />Approximate computing has recently emerged as an area within computer<br />systems that exposes additional sources of approximation at the<br />computer system level, e.g., in programming languages, compilers,<br />runtime and operating systems, and hardware architectures, thereby<br />enabling us to re-define how we think about programs that implement<br />novel solutions to an important class of problems. However, the use of<br />approximation introduces a new dimension of complexity for reasoning<br />about program behaviors and identification of bugs. Testing of<br />approximate software had been traditionally ad-hoc, ill-understood,<br />and ineffective.<br /><br />The main goal of this project was to improve testing techniques for<br />approximate programs as well as develop approximation techniques to<br />make testing more practical. Our research developed new techniques for<br />testing approximate and randomized programs through test specification<br />languages and tools for reasoning about result accuracy, techniques<br />for dynamic and static analysis of approximate programs, and<br />techniques for optimal approximation discovery and auto-tuning. Our<br />research also investigated how approximations (both deterministic and<br />randomized) can improve the execution time of standard testing<br />practices, including regression testing, mutation testing, test<br />generation, and model counting. We have been working on rigorously<br />evaluating our techniques using case-studies on a variety of<br />open-source applications.<br /><br />The grant partially supported over 20 papers, including conference<br />papers, tool papers, new ideas papers, and workshop papers. We<br />publicly released six testing/optimization tools and datasets and<br />trained at least ten students (including seven Ph.D. students and<br />several undergraduate students). The broader impacts also include bug<br />reports and fixed bugs in various open-source projects. This research<br />is a step toward more accurate, robust, and cost-efficient testing<br />tools, which will ultimately help improve the quality and cost of<br />software used in everyday life.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/12/2021<br>\n\t\t\t\t\tModified by: Milos&nbsp;Gligoric</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\nApproximate computing has recently emerged as an area within computer\nsystems that exposes additional sources of approximation at the\ncomputer system level, e.g., in programming languages, compilers,\nruntime and operating systems, and hardware architectures, thereby\nenabling us to re-define how we think about programs that implement\nnovel solutions to an important class of problems. However, the use of\napproximation introduces a new dimension of complexity for reasoning\nabout program behaviors and identification of bugs. Testing of\napproximate software had been traditionally ad-hoc, ill-understood,\nand ineffective.\n\nThe main goal of this project was to improve testing techniques for\napproximate programs as well as develop approximation techniques to\nmake testing more practical. Our research developed new techniques for\ntesting approximate and randomized programs through test specification\nlanguages and tools for reasoning about result accuracy, techniques\nfor dynamic and static analysis of approximate programs, and\ntechniques for optimal approximation discovery and auto-tuning. Our\nresearch also investigated how approximations (both deterministic and\nrandomized) can improve the execution time of standard testing\npractices, including regression testing, mutation testing, test\ngeneration, and model counting. We have been working on rigorously\nevaluating our techniques using case-studies on a variety of\nopen-source applications.\n\nThe grant partially supported over 20 papers, including conference\npapers, tool papers, new ideas papers, and workshop papers. We\npublicly released six testing/optimization tools and datasets and\ntrained at least ten students (including seven Ph.D. students and\nseveral undergraduate students). The broader impacts also include bug\nreports and fixed bugs in various open-source projects. This research\nis a step toward more accurate, robust, and cost-efficient testing\ntools, which will ultimately help improve the quality and cost of\nsoftware used in everyday life.\n\n\t\t\t\t\tLast Modified: 12/12/2021\n\n\t\t\t\t\tSubmitted by: Milos Gligoric"
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "awd_id": "1242657",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: Tackling the Variations and Instability of Nanophotonic Interconnection Network via Architecture Techniques",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Hong Jiang",
+ "awd_eff_date": "2012-08-01",
+ "awd_exp_date": "2014-07-31",
+ "tot_intn_awd_amt": 130000.0,
+ "awd_amount": 130000.0,
+ "awd_min_amd_letter_date": "2012-07-11",
+ "awd_max_amd_letter_date": "2012-07-11",
+ "awd_abstract_narration": "In current designs of computer chips, electrical wires are used for communication between the different components of the chip. As technology scales down into the nanometer domain, the signal delay and power consumption caused by electrical wires start to dominate the overall delay and power consumption on the chip, mainly because wires do not scale as well as other logic components. A promising alternative to using electrical wires is to use optical waveguides for communication. Using nanophotonics for on-chip communication may lead to faster signal propagation, increased bandwidth density and reduced power consumption. However, many fundamental challenges face the integration of optical devices into commercial chips. This project addresses some of these challenges and its success will have a significant impact on the semiconductor industry.\r\n\r\nThe two major challenges addressed in this project are process variations and thermal sensitivity of optical devices. The former refers to the drifts in resonance wavelengths of optical devices due to fabrication errors during the manufacturing process. The latter refers to similar drifts that result during operation due to temperature fluctuations within the chip. Both drifts are inevitable with current technology and cause the optical network to lose significant bandwidth. Instead of relying on device level innovations, the proposed research takes an architectural approach to endure and tolerate drifts in wavelength resonance. Specifically, it investigates different techniques to maximize the effective bandwidth at run-time in the presence of defects and changes in operating temperatures. These techniques treat bandwidth as a resource that is allocated, on-demand, to different nodes in a way that masks the resonance shifts of optical devices. Since the aggregated available on-chip bandwidth is usually larger than the instantaneous demand for bandwidth, the effect of the imperfect hardware is mitigated by appropriately assigning wavelengths to nodes, thus offering a reliable and near perfect optical communication layer to the other components of the system.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jun",
+   "pi_last_name": "Yang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jun Yang",
+   "pi_email_addr": "juy9@pitt.edu",
+   "nsf_id": "000106419",
+   "pi_start_date": "2012-07-11",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Rami",
+   "pi_last_name": "Melhem",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Rami Melhem",
+   "pi_email_addr": "melhem@cs.pitt.edu",
+   "nsf_id": "000214915",
+   "pi_start_date": "2012-07-11",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Pittsburgh",
+  "inst_street_address": "4200 FIFTH AVENUE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4126247400",
+  "inst_zip_code": "152600001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "UNIVERSITY OF PITTSBURGH - OF THE COMMONWEALTH SYSTEM OF HIGHER EDUCATION",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "MKAGLD59JRL1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Pittsburgh",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152132303",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  },
+  {
+   "pgm_ref_code": "7941",
+   "pgm_ref_txt": "COMPUTER ARCHITECTURE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 130000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In this project, different techniques were studied to enable the application of nano-photonic technology to on-chip communication. These techniques are based on architecture solutions and are meant to complement device-level solutions for overcoming many of the obstacles facing practical implementations of nano-photonic interconnections.</p>\n<p>&nbsp;</p>\n<p>The first technique, called &ldquo;MinTrim&rdquo; deals with the wavelength drifting problem of sender&rsquo;s and receiver&rsquo;s microrings resulting from process variation (PV). This is a serious problem that reduces the available bandwidth of the optical network. MinTrim augments the network with a small number of supplementary microrings and applies an integer linear programming formulation to find a wavelength-to-microring assignment which maximizes the network&rsquo;s bandwidth, while minimizing the energy consumed to tune those microrings. Extensive analysis and evaluation of MinTrim on sample photonic networks show that more than 98% of the bandwidth that could be lost because of PV-induced wavelength drifting can be restored while saving more than 30% of the tuning energy.</p>\n<p>&nbsp;</p>\n<p>The second technique, called BandArb, complements the static wavelength-to-microring assignment by a dynamic allocation of bandwidth to wavelengths based on the communication demands. The reallocation of bandwidth is made at a time scale determined by the change in communication patterns of applications. It is also used to deal with any drift in wavelengths that result from thermal variation of the microrings during execution.</p>\n<p>&nbsp;</p>\n<p>The third technique aims at reducing the power consumed in optical communication through the efficient sharing of the optical channels. Channel sharing is efficiently achieved by implementing a lightweight distributed arbitration scheme in which each channel is assigned to an owner node which has the highest priority for using it. A node can then use a channel that it does not own if its owner node is not using it. The set of nodes that can borrow any particular channel is restricted in the architecture to simplify the distributed arbitration protocol and to minimize the probability of arbitration failure. Extensive evaluation indicates that careful selection of the network nodes that can share a channel improves energy efficiency of the interconnection system by an average of 30%.</p>\n<p>The fourth technique expands the idea of channel sharing by implementing an arbitration mechanism which takes advantage of global traffic information to maximize the utilization of the communication channels. To avoid the overhead implied by a centralized arbiter, a pipelined distributed global arbitration is implemented for optical crossbars. The proposed mechanism improves energy efficiency without downgrading performance by broadcasting minimal information of channel requests and parallelizing the arbitration process through a scalable pipelined logic implemented at every node in the system. Results show that the proposed design reduces execution time by 5% and power consumption by 20% using only 50% of channels and 75% of microrings compared to system that do not use global information.</p>\n<p>The project also performed a feasibility study for applying off-chip photonics to interconnect general purpose graphic processing units (GPGPUs) to a large capacity memory based on the new Hybrid Memory Cube (HMC) technology. Such a system requires a very large bandwidth coupled with a flexible arbitration to support the new trend of moving much of the memory controller&rsquo;s function away from the processor side and closer to the memory side. This study demonstrated that our channel sharing and arbitration techniques can efficiently support future off-chip nano-photonic interconnections.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/29/2014<br>\n\t\t\t\t\tModified by: Jun&nbsp;Yang</p>\n</div>\n<div ...",
+  "por_txt_cntn": "\nIn this project, different techniques were studied to enable the application of nano-photonic technology to on-chip communication. These techniques are based on architecture solutions and are meant to complement device-level solutions for overcoming many of the obstacles facing practical implementations of nano-photonic interconnections.\n\n \n\nThe first technique, called \"MinTrim\" deals with the wavelength drifting problem of sender\u00c6s and receiver\u00c6s microrings resulting from process variation (PV). This is a serious problem that reduces the available bandwidth of the optical network. MinTrim augments the network with a small number of supplementary microrings and applies an integer linear programming formulation to find a wavelength-to-microring assignment which maximizes the network\u00c6s bandwidth, while minimizing the energy consumed to tune those microrings. Extensive analysis and evaluation of MinTrim on sample photonic networks show that more than 98% of the bandwidth that could be lost because of PV-induced wavelength drifting can be restored while saving more than 30% of the tuning energy.\n\n \n\nThe second technique, called BandArb, complements the static wavelength-to-microring assignment by a dynamic allocation of bandwidth to wavelengths based on the communication demands. The reallocation of bandwidth is made at a time scale determined by the change in communication patterns of applications. It is also used to deal with any drift in wavelengths that result from thermal variation of the microrings during execution.\n\n \n\nThe third technique aims at reducing the power consumed in optical communication through the efficient sharing of the optical channels. Channel sharing is efficiently achieved by implementing a lightweight distributed arbitration scheme in which each channel is assigned to an owner node which has the highest priority for using it. A node can then use a channel that it does not own if its owner node is not using it. The set of nodes that can borrow any particular channel is restricted in the architecture to simplify the distributed arbitration protocol and to minimize the probability of arbitration failure. Extensive evaluation indicates that careful selection of the network nodes that can share a channel improves energy efficiency of the interconnection system by an average of 30%.\n\nThe fourth technique expands the idea of channel sharing by implementing an arbitration mechanism which takes advantage of global traffic information to maximize the utilization of the communication channels. To avoid the overhead implied by a centralized arbiter, a pipelined distributed global arbitration is implemented for optical crossbars. The proposed mechanism improves energy efficiency without downgrading performance by broadcasting minimal information of channel requests and parallelizing the arbitration process through a scalable pipelined logic implemented at every node in the system. Results show that the proposed design reduces execution time by 5% and power consumption by 20% using only 50% of channels and 75% of microrings compared to system that do not use global information.\n\nThe project also performed a feasibility study for applying off-chip photonics to interconnect general purpose graphic processing units (GPGPUs) to a large capacity memory based on the new Hybrid Memory Cube (HMC) technology. Such a system requires a very large bandwidth coupled with a flexible arbitration to support the new trend of moving much of the memory controller\u00c6s function away from the processor side and closer to the memory side. This study demonstrated that our channel sharing and arbitration techniques can efficiently support future off-chip nano-photonic interconnections.\n\n\t\t\t\t\tLast Modified: 09/29/2014\n\n\t\t\t\t\tSubmitted by: Jun Yang"
+ }
+}

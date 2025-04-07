@@ -1,0 +1,101 @@
+{
+ "awd_id": "2013736",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Flexible Statistical Modeling",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032927299",
+ "po_email": "yzeng@nsf.gov",
+ "po_sign_block_name": "Yong Zeng",
+ "awd_eff_date": "2020-07-01",
+ "awd_exp_date": "2024-06-30",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2020-06-16",
+ "awd_max_amd_letter_date": "2020-06-16",
+ "awd_abstract_narration": "This project develops new statistical methodology for solving important applied problems in medicine and science. In personalized medicine, the PI will focus on the prediction of whether particular treatments are suitable for a patient based on their demographics and clinical history, using vast troves of past patient experiences. Biologists seek to understand the folding patterns of chromosomes in cells, a key ingredient in understanding their function.  In a second project, the PI will develop novel curve-fitting methods to learn these folding patterns from indirect and noisy measurements of this three dimensional structure. Ecologists try to learn the characteristics of environments that attract certain species, as well as shared aspects of species that coinhabit environments, as a critical component in species survival, pest control and disease prevention.  In a third project, the PI will develop methods that can scale to extremely large species populations (such as bacteria and insects) based on site-specific surveys.  The project also provides research training opportunities for graduate students.\r\n \r\nThe project develops validation methods to select from a collection of models for estimating heterogenous treatment effects, despite the fact that in observational data there are no direct measurements of the treatment effect. The project develops adaptive nearest-neighbor matching techniques to construct a comparison set for each validation point.  With high-dimensional chromosomal contact maps, the PI plans to draw on his early work on principal curves to model the three-dimensional folding structure of chromosomes. This amounts to metric scaling with side information on the local structure of the three-dimensional solution. Generalized linear latent-variable models are popular for modeling species distributions (usually Poisson models for counts, and binomial models for presence/absence), but they grind\r\nto a halt when the number of species and/or locations is very large. The PI plans to adapt earlier work on matrix completion to develop alternating maximum-likelihood fitting algorithms to scale these methods to extremely large populations.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Trevor",
+   "pi_last_name": "Hastie",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Trevor J Hastie",
+   "pi_email_addr": "hastie@stanford.edu",
+   "nsf_id": "000447619",
+   "pi_start_date": "2020-06-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Stanford University",
+  "inst_street_address": "450 JANE STANFORD WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "STANFORD",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "6507232300",
+  "inst_zip_code": "943052004",
+  "inst_country_name": "United States",
+  "cong_dist_code": "16",
+  "st_cong_dist_code": "CA16",
+  "org_lgl_bus_name": "THE LELAND STANFORD JUNIOR UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HJD6G4D6TJY5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Stanford University",
+  "perf_str_addr": "390 Jane Stanford Way",
+  "perf_city_name": "Stanford",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "943054000",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": null,
+  "perf_st_cong_dist": "CA",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126900",
+   "pgm_ele_name": "STATISTICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "079Z",
+   "pgm_ref_txt": "Machine Learning Theory"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>My research is in applied statistical modeling. This includes: developing new approaches to modeling data, along with software implementations; reinterpreting and debunking existing popular techniques; teaching the important techniques in an accessible way. I made substantial progress in all these areas during the granting period 2020-24.</p>\r\n<p>I developed a number of new techniques (and software) for fitting low-rank factorizations for large data frames. Included are approaches for sparsely sampled longitudinal data, and massive and sparsely sampled count data in ecological settings. In addition, we developed factor analysis models for high-dimensional, hierarchically structured data.</p>\r\n<p>Many machine learning models use cross-validation for model selection and assessment. We developed methods for assessing the variance of cross-validation estimates, both for adaptive regression models (like lasso) and random forests. We also studied the properties of cross-validation, leading to new insights into this important procedure. We developed techniques based on cross-validation for assessing the variance of an estimate of heterogenous treatment effect in observational data.</p>\r\n<p>With my students I developed a number of software packages for fitting models to large data sets. These include elastic net and group lasso models, for a variety of response families. These packages are widely used. Our glmnet package in R has had over 6M downloads since 2013, and our new Adelie Python package for group lasso has had over 22K downloads in less than a year.</p>\r\n<p>With various coauthors, I wrote two textbooks: \"Introduction to Statistical Learning, with Applications in R\", second edition (with James, Witten and Tibshirani, Springer 2021), and \"Introduction to Statistical Learning, with Applications in Python\" (with James, Witten, Tibshirani and Taylor, Springer 2023). By agreement with the publishers, digital versions of these books are freely available from my website.</p>\r\n<p>These have also led to two courses, available online through EdX and also freely accessible: \"Statistical Learning with R\" (300K+ students since 2015) and \"Statistical Learning with Python\" (22K+ students since December 2023).</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 12/10/2024<br>\nModified by: Trevor&nbsp;J&nbsp;Hastie</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nMy research is in applied statistical modeling. This includes: developing new approaches to modeling data, along with software implementations; reinterpreting and debunking existing popular techniques; teaching the important techniques in an accessible way. I made substantial progress in all these areas during the granting period 2020-24.\r\n\n\nI developed a number of new techniques (and software) for fitting low-rank factorizations for large data frames. Included are approaches for sparsely sampled longitudinal data, and massive and sparsely sampled count data in ecological settings. In addition, we developed factor analysis models for high-dimensional, hierarchically structured data.\r\n\n\nMany machine learning models use cross-validation for model selection and assessment. We developed methods for assessing the variance of cross-validation estimates, both for adaptive regression models (like lasso) and random forests. We also studied the properties of cross-validation, leading to new insights into this important procedure. We developed techniques based on cross-validation for assessing the variance of an estimate of heterogenous treatment effect in observational data.\r\n\n\nWith my students I developed a number of software packages for fitting models to large data sets. These include elastic net and group lasso models, for a variety of response families. These packages are widely used. Our glmnet package in R has had over 6M downloads since 2013, and our new Adelie Python package for group lasso has had over 22K downloads in less than a year.\r\n\n\nWith various coauthors, I wrote two textbooks: \"Introduction to Statistical Learning, with Applications in R\", second edition (with James, Witten and Tibshirani, Springer 2021), and \"Introduction to Statistical Learning, with Applications in Python\" (with James, Witten, Tibshirani and Taylor, Springer 2023). By agreement with the publishers, digital versions of these books are freely available from my website.\r\n\n\nThese have also led to two courses, available online through EdX and also freely accessible: \"Statistical Learning with R\" (300K+ students since 2015) and \"Statistical Learning with Python\" (22K+ students since December 2023).\r\n\n\n\r\n\n\n\r\n\n\n\t\t\t\t\tLast Modified: 12/10/2024\n\n\t\t\t\t\tSubmitted by: TrevorJHastie\n"
+ }
+}

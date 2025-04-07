@@ -1,0 +1,109 @@
+{
+ "awd_id": "1952929",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CDS&E-MSS: Causal learning and inference on complex observational data",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032927299",
+ "po_email": "yzeng@nsf.gov",
+ "po_sign_block_name": "Yong Zeng",
+ "awd_eff_date": "2020-07-01",
+ "awd_exp_date": "2024-06-30",
+ "tot_intn_awd_amt": 275000.0,
+ "awd_amount": 275000.0,
+ "awd_min_amd_letter_date": "2020-06-14",
+ "awd_max_amd_letter_date": "2020-06-14",
+ "awd_abstract_narration": "Learning the causal relations among a set of variables from given data is a fundamental problem in scientific research and engineering. Directed acyclic graphs (DAGs) are a popular class of mathematical models for causal networks, in which a directed link encodes a cause-effect relation between two variables. Although experimental intervention provides a direct means to causal inference, such experiments are often not available or limited in many domains. Consequently, structure learning of causal networks from observational data is an important and active research area in statistics and data science. This project targets a few notorious difficulties in causal network learning from observational data, namely the high-dimensionality, nonlinearity and potential dependence in the data. Novel statistical methods and theory for causal structure learning and causal inference will be developed to overcome these difficulties. Software packages will be released to provide efficient implementation of the methods and algorithms. \r\n\r\n \r\nTo handle high-dimensionality, instead of estimating the structure of a full DAG, the PI will develop a set of methods for local structure learning that identifies the causal parents of target variables, followed by causal effect estimation given the estimated parent sets. Leveraging recent identifiability results for nonlinear and non-Gaussian DAGs, a sequential Monte Carlo method will be developed to sample causal orders and to estimate the joint intervention effects of a set of variables given a partial causal ordering. To accommodate data dependence among individuals, the DAG model will be generalized to network data via the Kronecker product of graphical models. An algorithm will be developed to estimate parameters and DAG structure under this new model, which iterates between a de-correlation step to remove data dependence and a DAG learning step by a standard method. Theoretical results will be established for the local structure and causal order estimation methods and to justify the de-correlation approach. The project integrates structure learning of graphical models, Monte Carlo methods, nonconvex optimization, nonparametric regression, and conditional independence test into causal discovery and inference on observational data. Moreover, many components in this project are well-motivated by recent single-cell RNA-sequencing data and the construction of causal networks for gene regulation. Application of the methods to the fast accumulating single-cell RNA-sequencing data will produce reliable and accurate inference for the causality of gene expression, which is a fundamental problem in molecular biology.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Qing",
+   "pi_last_name": "Zhou",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Qing Zhou",
+   "pi_email_addr": "zhou@stat.ucla.edu",
+   "nsf_id": "000005427",
+   "pi_start_date": "2020-06-14",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Los Angeles",
+  "inst_street_address": "10889 WILSHIRE BLVD STE 700",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOS ANGELES",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "3107940102",
+  "inst_zip_code": "900244200",
+  "inst_country_name": "United States",
+  "cong_dist_code": "36",
+  "st_cong_dist_code": "CA36",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, LOS ANGELES",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "RN64EPNH8JC6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Los Angeles",
+  "perf_str_addr": "8125 Math Sciences Building",
+  "perf_city_name": "Los Angeles",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "900951406",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "36",
+  "perf_st_cong_dist": "CA36",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "745400",
+   "pgm_ele_name": "MSPA-INTERDISCIPLINARY"
+  },
+  {
+   "pgm_ele_code": "806900",
+   "pgm_ele_name": "CDS&E-MSS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "068Z",
+   "pgm_ref_txt": "URoL-Understanding Rules of Life"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 275000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>Learning the causal structure among a potentially large set of variables is a fundamental challenge in scientific research and engineering. While randomized experiments offer a direct means to establish causality, such experiments are often impractical or unavailable in many fields. As a result, causal structure learning from observational data has become a crucial and vibrant area of research in statistics and data science. This project focused on developing novel statistical methods and theoretical frameworks for causal structure learning and inference using directed acyclic graphs (DAGs) and structural equation models. Our work addresses significant challenges in this area, including high-dimensionality, nonlinearity, and the distributed nature of data.&nbsp;</span></p>\n<p><span>To tackle the challenge of high-dimensional graphs with numerous variables, we developed a novel hybrid method called partitioned hybrid greedy search (pHGS). This method integrates three key algorithms: Partitioned PC (pPC), which accelerates skeleton learning through a divide-and-conquer strategy; p-value adjacency thresholding (PATH), which efficiently tunes parameters in a single run; and hybrid greedy initialization (HGI), which optimally uses constraint-based information to generate a high-performing initial graph for greedy search. We established the structure learning consistency of our algorithms in the large-sample limit and validated them empirically through extensive numerical comparisons. The combination of pPC and PATH offers significant computational efficiency over the traditional PC algorithm without compromising the accuracy of the estimated structures, while HGI enhances the structural accuracy of hybrid algorithms with minimal computational overhead. Our empirical results indicate that pHGS performs competitively with state-of-the-art structure learning algorithms.</span></p>\n<p><span>We also developed two methods for estimating causal graphs under nonlinear and/or non-Gaussian structural equation models (SEMs). For nonlinear SEMs with non-invertible functions, common in various data domains, we introduced a novel test for non-invertible bivariate causal models. This test was integrated into an algorithm for learning DAGs that include both linear and nonlinear causal relationships. The approach involves using an existing linear structure learning algorithm to identify a partially directed graph, followed by applying the non-invertible test to detect non-invertible relations and orient additional edges. In the other method, we proposed a sequential approach to determine the topological ordering of a linear SEM with a non-Gaussian error distribution. This method calculates simple likelihood ratio scores on regression residuals to sequentially append nodes to the current partial ordering. The computational complexity of this algorithm for a p-node problem is O(pd), where d is the maximum neighborhood size. Under mild assumptions,&nbsp;the population version of our procedure provably identifies a true ordering of the underlying DAG.&nbsp;Extensive numerical experiments demonstrated the accuracy and efficiency of these methods on various simulated and real-world datasets.</span></p>\n<p><span>In response to increasing concerns about data privacy and the corresponding shift towards distributed data collection, processing, and storage, we developed a novel federated learning method called distributed annealing on regularized likelihood score (DARLS) for learning causal graphs from data distributed across multiple clients. DARLS simulates an annealing process to explore the space of topological sorts, with the optimal graphical structure being identified through distributed optimization. This optimization involves iterative communication between local clients and a central server to estimate the graphical structure. We proved that DARLS converges to the solution obtained by an oracle with access to all data. Notably, DARLS is the first distributed method with such finite-sample oracle guarantees for causal graph learning. Through comprehensive simulation studies and real-world applications, we demonstrated that DARLS outperforms existing federated learning methods and approaches the accuracy of oracle methods on pooled data, highlighting its significant advantages in estimating causal networks from distributed data.</span></p>\n<p><span>Our research findings have been disseminated through published papers, presentations, and posters, reaching audiences in statistics, machine learning, and data science. Additionally, we have developed and publicly released several software packages implementing these methods.</span></p>\n<p><span>To enhance the broader impact of this research, the PI has incorporated the developed methods into graduate and undergraduate courses on statistical modeling and machine learning. The project has also provided valuable STEM training opportunities for a diverse student body, including women and under-represented minorities, thereby contributing to a more inclusive scientific community. Through these educational initiatives, the cutting-edge ideas developed in this project have been communicated to a broader audience.</span></p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 07/29/2024<br>\nModified by: Qing&nbsp;Zhou</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nLearning the causal structure among a potentially large set of variables is a fundamental challenge in scientific research and engineering. While randomized experiments offer a direct means to establish causality, such experiments are often impractical or unavailable in many fields. As a result, causal structure learning from observational data has become a crucial and vibrant area of research in statistics and data science. This project focused on developing novel statistical methods and theoretical frameworks for causal structure learning and inference using directed acyclic graphs (DAGs) and structural equation models. Our work addresses significant challenges in this area, including high-dimensionality, nonlinearity, and the distributed nature of data.\n\n\nTo tackle the challenge of high-dimensional graphs with numerous variables, we developed a novel hybrid method called partitioned hybrid greedy search (pHGS). This method integrates three key algorithms: Partitioned PC (pPC), which accelerates skeleton learning through a divide-and-conquer strategy; p-value adjacency thresholding (PATH), which efficiently tunes parameters in a single run; and hybrid greedy initialization (HGI), which optimally uses constraint-based information to generate a high-performing initial graph for greedy search. We established the structure learning consistency of our algorithms in the large-sample limit and validated them empirically through extensive numerical comparisons. The combination of pPC and PATH offers significant computational efficiency over the traditional PC algorithm without compromising the accuracy of the estimated structures, while HGI enhances the structural accuracy of hybrid algorithms with minimal computational overhead. Our empirical results indicate that pHGS performs competitively with state-of-the-art structure learning algorithms.\n\n\nWe also developed two methods for estimating causal graphs under nonlinear and/or non-Gaussian structural equation models (SEMs). For nonlinear SEMs with non-invertible functions, common in various data domains, we introduced a novel test for non-invertible bivariate causal models. This test was integrated into an algorithm for learning DAGs that include both linear and nonlinear causal relationships. The approach involves using an existing linear structure learning algorithm to identify a partially directed graph, followed by applying the non-invertible test to detect non-invertible relations and orient additional edges. In the other method, we proposed a sequential approach to determine the topological ordering of a linear SEM with a non-Gaussian error distribution. This method calculates simple likelihood ratio scores on regression residuals to sequentially append nodes to the current partial ordering. The computational complexity of this algorithm for a p-node problem is O(pd), where d is the maximum neighborhood size. Under mild assumptions,the population version of our procedure provably identifies a true ordering of the underlying DAG.Extensive numerical experiments demonstrated the accuracy and efficiency of these methods on various simulated and real-world datasets.\n\n\nIn response to increasing concerns about data privacy and the corresponding shift towards distributed data collection, processing, and storage, we developed a novel federated learning method called distributed annealing on regularized likelihood score (DARLS) for learning causal graphs from data distributed across multiple clients. DARLS simulates an annealing process to explore the space of topological sorts, with the optimal graphical structure being identified through distributed optimization. This optimization involves iterative communication between local clients and a central server to estimate the graphical structure. We proved that DARLS converges to the solution obtained by an oracle with access to all data. Notably, DARLS is the first distributed method with such finite-sample oracle guarantees for causal graph learning. Through comprehensive simulation studies and real-world applications, we demonstrated that DARLS outperforms existing federated learning methods and approaches the accuracy of oracle methods on pooled data, highlighting its significant advantages in estimating causal networks from distributed data.\n\n\nOur research findings have been disseminated through published papers, presentations, and posters, reaching audiences in statistics, machine learning, and data science. Additionally, we have developed and publicly released several software packages implementing these methods.\n\n\nTo enhance the broader impact of this research, the PI has incorporated the developed methods into graduate and undergraduate courses on statistical modeling and machine learning. The project has also provided valuable STEM training opportunities for a diverse student body, including women and under-represented minorities, thereby contributing to a more inclusive scientific community. Through these educational initiatives, the cutting-edge ideas developed in this project have been communicated to a broader audience.\n\n\n\t\t\t\t\tLast Modified: 07/29/2024\n\n\t\t\t\t\tSubmitted by: QingZhou\n"
+ }
+}

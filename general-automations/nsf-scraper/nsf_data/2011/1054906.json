@@ -1,0 +1,165 @@
+{
+ "awd_id": "1054906",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "CAREER: Making Threads More Deterministic by Memoizing Schedules",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2011-02-01",
+ "awd_exp_date": "2017-01-31",
+ "tot_intn_awd_amt": 641640.0,
+ "awd_amount": 350702.0,
+ "awd_min_amd_letter_date": "2011-01-21",
+ "awd_max_amd_letter_date": "2016-01-14",
+ "awd_abstract_narration": "Multithreaded programs are becoming increasingly critical driven by the\r\nrise of multicore hardware and the coming storm of cloud computing.\r\nUnfortunately, these programs remain difficult to write, test, and debug.\r\nA key reason for this difficulty is nondeterminism: different runs of a\r\nmultithreaded program may show different behaviors depending on how the\r\nthreads interleave.  Nondeterminism complicates almost every development\r\nstep of multithreaded programs.  For instance, it weakens testing because\r\nthe schedules tested may not be the ones run in the field; it complicates\r\ndebugging because reproducing a buggy schedule is hard.\r\n\r\nIn the past three decades, researchers have developed many techniques to\r\naddress nondeterminism.  Despite these efforts, it remains an open\r\nchallenge to achieve both efficiency and determinism for general\r\nmultithreaded programs on commodity multiprocessors.\r\n\r\nThis project aims to address this fundamental challenge.  Its key insight\r\nis that one can reuse a small number of schedules to process a large\r\nnumber of inputs.  Based on this insight, it takes an approach called\r\nschedule memoization that memoizes past schedules and, when possible,\r\nreuses them for future runs.  This approach amortizes the high overhead of\r\nmaking one schedule deterministic over many reuses and makes a program\r\nrepeat familiar behaviors whenever possible.  A real-world analogy to this\r\napproach is animals' natural tendencies to follow familiar routes to avoid\r\nhazards and discovery overhead of unknown routes.\r\n\r\nThe greatest impact of this project will be a novel approach and new,\r\neffective systems and technologies to improving software reliability, thus\r\nbenefiting every business, government, and individual.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Junfeng",
+   "pi_last_name": "Yang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Junfeng Yang",
+   "pi_email_addr": "junfeng@cs.columbia.edu",
+   "nsf_id": "000509381",
+   "pi_start_date": "2011-01-21",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Columbia University",
+  "inst_street_address": "615 W 131ST ST",
+  "inst_street_address_2": "MC 8741",
+  "inst_city_name": "NEW YORK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "2128546851",
+  "inst_zip_code": "100277922",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "NY13",
+  "org_lgl_bus_name": "THE TRUSTEES OF COLUMBIA UNIVERSITY IN THE CITY OF NEW YORK",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "F4N1QNPB95M4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Columbia University",
+  "perf_str_addr": "615 W 131ST ST",
+  "perf_city_name": "NEW YORK",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "100277922",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "NY13",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1045",
+   "pgm_ref_txt": "CAREER-Faculty Erly Career Dev"
+  },
+  {
+   "pgm_ref_code": "1187",
+   "pgm_ref_txt": "PECASE- eligible"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0113",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001314DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0114",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001415DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0115",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001516DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 79589.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 82380.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2013,
+   "fund_oblg_amt": 92913.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 95820.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Multithreaded programs are becoming increasingly critical driven by the&nbsp;rise of multicore hardware and the coming storm of cloud computing.&nbsp;Unfortunately, these programs remain difficult to write, test, and debug.&nbsp;A key reason for this difficulty is nondeterminism: different runs of a&nbsp;multithreaded program may show different behaviors depending on how the&nbsp;threads interleave. Nondeterminism complicates almost every development&nbsp;step of multithreaded programs. For instance, it weakens testing because&nbsp;the schedules tested may not be the ones run in the field; it complicates&nbsp;debugging because reproducing a buggy schedule is hard.<br /><br />In the past three decades, researchers have developed many techniques to&nbsp;address nondeterminism. Despite these efforts, it remains an open&nbsp;challenge to achieve both efficiency and determinism for general&nbsp;multithreaded programs on commodity multiprocessors.</p>\n<p>This project aims to address this fundamental challenge. Its key insight&nbsp;is that one can reuse a small number of schedules to process a large&nbsp;number of inputs. Based on this insight, it takes an approach called&nbsp;schedule memoization that memoizes past schedules and, when possible,&nbsp;reuses them for future runs. This approach amortizes the high overhead of&nbsp;making one schedule deterministic over many reuses and makes a program&nbsp;repeat familiar behaviors whenever possible. A real-world analogy to this&nbsp;approach is animals' natural tendencies to follow familiar routes to avoid&nbsp;hazards and discovery overhead of unknown routes.</p>\n<p>The greatest impact of this project is a novel approach and new,&nbsp;effective systems and technologies to improving software reliability, thus&nbsp;benefiting every business, government, and individual. &nbsp;This work leads to many publications at the top venues such as SOSP, OSDI, PLDI, and POPL, a Communications of ACM invited paper, several open-source software releases, more than 20 invited talks worldwide, and coverage by premier presses including The Register. &nbsp;It also inspires much follow-up work by others in the field.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/12/2017<br>\n\t\t\t\t\tModified by: Junfeng&nbsp;Yang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMultithreaded programs are becoming increasingly critical driven by the rise of multicore hardware and the coming storm of cloud computing. Unfortunately, these programs remain difficult to write, test, and debug. A key reason for this difficulty is nondeterminism: different runs of a multithreaded program may show different behaviors depending on how the threads interleave. Nondeterminism complicates almost every development step of multithreaded programs. For instance, it weakens testing because the schedules tested may not be the ones run in the field; it complicates debugging because reproducing a buggy schedule is hard.\n\nIn the past three decades, researchers have developed many techniques to address nondeterminism. Despite these efforts, it remains an open challenge to achieve both efficiency and determinism for general multithreaded programs on commodity multiprocessors.\n\nThis project aims to address this fundamental challenge. Its key insight is that one can reuse a small number of schedules to process a large number of inputs. Based on this insight, it takes an approach called schedule memoization that memoizes past schedules and, when possible, reuses them for future runs. This approach amortizes the high overhead of making one schedule deterministic over many reuses and makes a program repeat familiar behaviors whenever possible. A real-world analogy to this approach is animals' natural tendencies to follow familiar routes to avoid hazards and discovery overhead of unknown routes.\n\nThe greatest impact of this project is a novel approach and new, effective systems and technologies to improving software reliability, thus benefiting every business, government, and individual.  This work leads to many publications at the top venues such as SOSP, OSDI, PLDI, and POPL, a Communications of ACM invited paper, several open-source software releases, more than 20 invited talks worldwide, and coverage by premier presses including The Register.  It also inspires much follow-up work by others in the field.\n\n\t\t\t\t\tLast Modified: 05/12/2017\n\n\t\t\t\t\tSubmitted by: Junfeng Yang"
+ }
+}

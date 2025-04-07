@@ -1,0 +1,109 @@
+{
+ "awd_id": "1719727",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Computational Tools for Polycrystalline Materials",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2017-07-01",
+ "awd_exp_date": "2022-06-30",
+ "tot_intn_awd_amt": 201890.0,
+ "awd_amount": 201890.0,
+ "awd_min_amd_letter_date": "2017-06-07",
+ "awd_max_amd_letter_date": "2021-04-19",
+ "awd_abstract_narration": "This project will develop new algorithms for computer simulation of how the internal structure (called microstructure) of many technologically essential materials, such as most metals and ceramics, change during common manufacturing processes such as heat treatment. The microstructure of such materials is known to have implications for the physical properties, such as conductivity or yield strength, of the material. Although models describing how the microstructure evolves, for example during heat treatment, have been available, their efficient numerical simulation at scales large enough to be of practical interest to materials scientists have remained a challenge. The project will address this challenge. Understanding the evolution of microstructure holds the promise of materials with more desirable characteristics. The project will also develop machine learning and computer vision algorithms for automatically extracting microstructure information from experimental measurements (microscopy images) of such materials, so that predictions of the models to be simulated can be more readily checked against experiments. One Ph.D. student's training and thesis work will be an integral part of the research.\r\n\r\nContinuum models of interfacial motion in polycrystalline materials often take the form of a system of nonlinear partial differential equations describing the geometric flow of a network of surfaces. For certain important interfacial phenomena, such as grain boundary motion, the evolution is given by second order differential equations describing motion by mean curvature of the network. For that setting, a surprisingly simple, elegant, and efficient class of algorithms known as threshold dynamics have been developed that makes large scale simulation particularly feasible. Other phenomena, such as the motion of the free surface of a thin polycrystalline film, or that of pores in a sintered metal, are described by higher order geometric evolutions, such as motion by surface diffusion, and are more challenging to simulate. This project will develop efficient algorithms for such high order multi-phase geometric evolutions. In particular, it will explore whether threshold dynamics or a combination of it with phase field methods can be devised to simulate the motion of networks of surfaces in which some of the interfaces evolve via motion by mean curvature, and others via motion by surface diffusion, coupled along free boundaries known as junctions along which appropriate boundary conditions are satisfied. Some of these models describing the multi-phase geometric motion of networks of interfaces also arise almost verbatim in the context of computer vision and machine learning. By leveraging this mathematical connection, the project will also develop new algorithms for automatically extracting grain boundaries in microscopy images of real polycrystalline materials.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Selim",
+   "pi_last_name": "Esedoglu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Selim Esedoglu",
+   "pi_email_addr": "esedoglu@umich.edu",
+   "nsf_id": "000110503",
+   "pi_start_date": "2017-06-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Regents of the University of Michigan - Ann Arbor",
+  "inst_street_address": "1109 GEDDES AVE STE 3300",
+  "inst_street_address_2": "",
+  "inst_city_name": "ANN ARBOR",
+  "inst_state_code": "MI",
+  "inst_state_name": "Michigan",
+  "inst_phone_num": "7347636438",
+  "inst_zip_code": "481091015",
+  "inst_country_name": "United States",
+  "cong_dist_code": "06",
+  "st_cong_dist_code": "MI06",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF MICHIGAN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GNJ7BBP73WE9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Michigan Ann Arbor",
+  "perf_str_addr": "3003 S. Main St.",
+  "perf_city_name": "Ann Arbor",
+  "perf_st_code": "MI",
+  "perf_st_name": "Michigan",
+  "perf_zip_code": "481091274",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "MI06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8037",
+   "pgm_ref_txt": "Advanced Manufacturing"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 201890.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The project developed new numerical algorithms for approximating the solution of evolution equations that arise as steepest descent (gradient flow); these play an important role in many applications. The resulting multistage approach can be used to improve the accuracy of many existing numerical methods while preserving their desirable stability properties: it is formulated so that only a black-box implementation of the existing (low order accurate) numerical method is needed, which is then called multiple times per time step. The order of accuracy is improved, while an unconditionally stable method remains as such. The motivation behinid this particular approach was so that it can be applied to improve a very wide swath of existing numerical methods, in particular algorithms for motion by mean curvature. Indeed, one of the results from the project shows how to improve to second order accuracy, in two dimensions, the well known threshold dynamics algorithm for this evolution while preserving its unconditional energy stability. This evolution of cuves in the plane or surface in space arises in applications as varied as materials science (where it is used to model the evolution of microstructure in polycrysralline materials, such as most metals, during heat treatment) and computer vision (where it is used to automatically segment a given digital image into regions containing distinct objects).</p>\n<p>The project also developed a simplified algorithm (a version of threshold dynamics) for large scale simulations of microstructural evolution in polycrystalline materials in two and three dimensions. Previous versions of this algorithm precluded certain parameters (known as mobilities of grain boundaries) from being assigned what are thought to be physically relevant values, except at great computational cost. Another outcome of the project was to show how this class of algorithms for simulating the evolution of microstructure can also be used in processing images of microstructure: It was used to obtain a new algorithm for inferring parent beta grain shapes and orientations from electron backscatter diffraction images of alpha phase titanium alloys.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/06/2023<br>\n\t\t\t\t\tModified by: Selim&nbsp;Esedoglu</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe project developed new numerical algorithms for approximating the solution of evolution equations that arise as steepest descent (gradient flow); these play an important role in many applications. The resulting multistage approach can be used to improve the accuracy of many existing numerical methods while preserving their desirable stability properties: it is formulated so that only a black-box implementation of the existing (low order accurate) numerical method is needed, which is then called multiple times per time step. The order of accuracy is improved, while an unconditionally stable method remains as such. The motivation behinid this particular approach was so that it can be applied to improve a very wide swath of existing numerical methods, in particular algorithms for motion by mean curvature. Indeed, one of the results from the project shows how to improve to second order accuracy, in two dimensions, the well known threshold dynamics algorithm for this evolution while preserving its unconditional energy stability. This evolution of cuves in the plane or surface in space arises in applications as varied as materials science (where it is used to model the evolution of microstructure in polycrysralline materials, such as most metals, during heat treatment) and computer vision (where it is used to automatically segment a given digital image into regions containing distinct objects).\n\nThe project also developed a simplified algorithm (a version of threshold dynamics) for large scale simulations of microstructural evolution in polycrystalline materials in two and three dimensions. Previous versions of this algorithm precluded certain parameters (known as mobilities of grain boundaries) from being assigned what are thought to be physically relevant values, except at great computational cost. Another outcome of the project was to show how this class of algorithms for simulating the evolution of microstructure can also be used in processing images of microstructure: It was used to obtain a new algorithm for inferring parent beta grain shapes and orientations from electron backscatter diffraction images of alpha phase titanium alloys.\n\n\t\t\t\t\tLast Modified: 01/06/2023\n\n\t\t\t\t\tSubmitted by: Selim Esedoglu"
+ }
+}

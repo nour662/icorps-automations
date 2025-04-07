@@ -1,0 +1,96 @@
+{
+ "awd_id": "1122322",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Fellowship Award",
+ "awd_titl_txt": "Bayesian Methods for Predictive Models of Glioblastoma Growth and Treatment Response",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Sushil K Prasad",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2014-07-31",
+ "tot_intn_awd_amt": 240000.0,
+ "awd_amount": 240000.0,
+ "awd_min_amd_letter_date": "2011-07-30",
+ "awd_max_amd_letter_date": "2011-07-30",
+ "awd_abstract_narration": "Glioblastoma multiforme (GBM) is the most aggressive type of primary brain tumor in humans with a median survival time of about 14 months. As the expected survival time is so short, treatment plans must be made quickly and are traditionally based on population statistics instead of the individual tumor kinetics of the presenting patient. This research is directed at creating a cyberinfrastructure system such that the physician would be able to explore individual tumor kinetics for treatment planning via simulated treatment of a virtual tumor based on mathematical models and patient-specific data. If such a system could be shown reliable with quantifiable uncertainty, it could significantly transform current medical practices.\r\n\r\nGBM's tend to grow with constant rates and to expand diffusively, allowing for surprisingly accurate results from relatively simple reaction-diffusion models. This research aims to push such results further by providing quantifiable uncertainty in the model simulations. Proof of concept is to be shown using currently available sequences of serial MRI images from past patients for the calibration of model parameters and then testing the validity of the model against a final MRI image. This approach differs from earlier work in that parameters are described with probability density functions characterizing the uncertainty in their values and Bayesian methods are being employed to solve the statistical inverse problems. This theory provides an all-inclusive framework for identifying the key features of a predictive model and characterizing  uncertainty. Methods of reducing data containing high-dimensional feature sets to a form compatible with statistical inverse methods  are being investigated. Additionally, the researcher is developing  a fast, parallel and adaptive solver so that sophisticated statistical sampling techniques are feasible",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Andrea",
+   "pi_last_name": "Hawkins-Daarud",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Andrea J Hawkins-Daarud",
+   "pi_email_addr": "",
+   "nsf_id": "000585220",
+   "pi_start_date": "2011-07-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Hawkins-Daarud          Andrea         J",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "Austin",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "",
+  "inst_zip_code": "787452072",
+  "inst_country_name": "United States",
+  "cong_dist_code": "37",
+  "st_cong_dist_code": "TX37",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "Hawkins-Daarud          Andrea         J",
+  "perf_str_addr": "",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787452072",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "37",
+  "perf_st_cong_dist": "TX37",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "769600",
+   "pgm_ele_name": "CI Fellowships"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 240000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Glioblastoma multiforme (GBM) is the most aggressive type of primary brain tumor with a median survival time of 14 months. This project was built around improving patient specific medicine through the mathematical modeling of GBM. Previous work has shown that a simple mathematical model, referred to as the Proliferation-Invasion (PI) model, can be tuned to individual patients to augment the magnetic resonance images (MRI) with an intuitive understanding of the extent of the tumor and its expected growth rate.</p>\n<p><strong>Intellectual Merit </strong>This project had two major themes. The first was to improve and extend the individual parameter calibration by incorporating uncertainty and modifying the data required for the calibration process. The second theme was to investigate whether anti-angiogenic therapy, therapy meant to stop vasculature recruitment, would have individual-tumor-growth-kinetic dependent levels of effect.</p>\n<p><span style=\"text-decoration: underline;\">Theme 1</span> The calibration process currently relies on volumetric measurements of the tumor abnormalities on MRIs. It is critical to understand how the uncertainty in the measurements affects the uncertainty in the parameters. A key outcome of this project was that an algorithm was created and implemented around the current calibration paradigm to propagate the uncertainty from the measurements to the parameter values. This algorithm utilizes the Bayesian paradigm which ends with the calibrated parameters being represented with probability distributions representative of the uncertainty in their values. The algorithm is illustrated graphically in an attached figure.&nbsp;</p>\n<p>The current calibration process requires two pretreatment time points of imaging; unfortunately, many patients only have one. To increase the applicability of the model, the calibration process must be rethought. A major activity of this project was exploring if the size of the necrotic core, or the dead tissue, relative to the size of the entire abnormality on one day of imaging could be used in place of a second time point. A more complicated model involving nutrients and cell death, the Proliferation-Invasion-Hypoxia-Necrosis-Angiogenesis (PIHNA) model, was leveraged which has two parameters corresponding to the proliferation and invasion parameters in the PI model. Promising initial results were seen with a small set of patients. The PIHNA model was used to predict the size of their necrotic tissue on the first date of imaging and was remarkably close to the observed data. Predictions of a second observed time point were not always accurate, however. Further investigations are underway considering other parameters which may be critical for model individualization.</p>\n<p><span style=\"text-decoration: underline;\">Theme </span>2 As increased vasculature is a hallmark of GBM, anti-angiogenic therapy has had a lot of attention. A controversial aspect, however, is that anti-angiogenics are known to impact what can be seen on MRIs by reducing swelling and it is unknown which patients are susceptible to imaging changes unrelated to a decrease in tumor burden. A major result from this project was obtained by utilizing the PIHNA model to investigate if individual tumor growth kinetics could be used to identify these patients. By holding the modeling effects of therapy constant and varying the net invasion and proliferation rate, we saw that there were no parameters where the therapy actually slowed the tumor cell growth. However, the edema, or swelling was reduced the greatest for patients with small proliferation rates.</p>\n<p>While anti-angiogenic therapy alone has not been shown to increase overall survival, there is still a question regarding possible benefits if given in combination with other therapies. Radiation, which is more effective in regions of ample oxygen, is one of the primary therapies used against GBM...",
+  "por_txt_cntn": "\nGlioblastoma multiforme (GBM) is the most aggressive type of primary brain tumor with a median survival time of 14 months. This project was built around improving patient specific medicine through the mathematical modeling of GBM. Previous work has shown that a simple mathematical model, referred to as the Proliferation-Invasion (PI) model, can be tuned to individual patients to augment the magnetic resonance images (MRI) with an intuitive understanding of the extent of the tumor and its expected growth rate.\n\nIntellectual Merit This project had two major themes. The first was to improve and extend the individual parameter calibration by incorporating uncertainty and modifying the data required for the calibration process. The second theme was to investigate whether anti-angiogenic therapy, therapy meant to stop vasculature recruitment, would have individual-tumor-growth-kinetic dependent levels of effect.\n\nTheme 1 The calibration process currently relies on volumetric measurements of the tumor abnormalities on MRIs. It is critical to understand how the uncertainty in the measurements affects the uncertainty in the parameters. A key outcome of this project was that an algorithm was created and implemented around the current calibration paradigm to propagate the uncertainty from the measurements to the parameter values. This algorithm utilizes the Bayesian paradigm which ends with the calibrated parameters being represented with probability distributions representative of the uncertainty in their values. The algorithm is illustrated graphically in an attached figure. \n\nThe current calibration process requires two pretreatment time points of imaging; unfortunately, many patients only have one. To increase the applicability of the model, the calibration process must be rethought. A major activity of this project was exploring if the size of the necrotic core, or the dead tissue, relative to the size of the entire abnormality on one day of imaging could be used in place of a second time point. A more complicated model involving nutrients and cell death, the Proliferation-Invasion-Hypoxia-Necrosis-Angiogenesis (PIHNA) model, was leveraged which has two parameters corresponding to the proliferation and invasion parameters in the PI model. Promising initial results were seen with a small set of patients. The PIHNA model was used to predict the size of their necrotic tissue on the first date of imaging and was remarkably close to the observed data. Predictions of a second observed time point were not always accurate, however. Further investigations are underway considering other parameters which may be critical for model individualization.\n\nTheme 2 As increased vasculature is a hallmark of GBM, anti-angiogenic therapy has had a lot of attention. A controversial aspect, however, is that anti-angiogenics are known to impact what can be seen on MRIs by reducing swelling and it is unknown which patients are susceptible to imaging changes unrelated to a decrease in tumor burden. A major result from this project was obtained by utilizing the PIHNA model to investigate if individual tumor growth kinetics could be used to identify these patients. By holding the modeling effects of therapy constant and varying the net invasion and proliferation rate, we saw that there were no parameters where the therapy actually slowed the tumor cell growth. However, the edema, or swelling was reduced the greatest for patients with small proliferation rates.\n\nWhile anti-angiogenic therapy alone has not been shown to increase overall survival, there is still a question regarding possible benefits if given in combination with other therapies. Radiation, which is more effective in regions of ample oxygen, is one of the primary therapies used against GBMs. As anti-angiogenics are known to transiently normalize the vasculature, there is hope that combining anti-angiogenics with radiation will improve patient outcomes. Unfortunately, two phase III trials recently ..."
+ }
+}

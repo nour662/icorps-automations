@@ -1,0 +1,105 @@
+{
+ "awd_id": "1664315",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "CAREER: Binary and Virtualization Centric Malware Defense",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Indrajit Ray",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2018-07-31",
+ "tot_intn_awd_amt": 168859.0,
+ "awd_amount": 168859.0,
+ "awd_min_amd_letter_date": "2016-10-24",
+ "awd_max_amd_letter_date": "2016-10-24",
+ "awd_abstract_narration": "Malicious software (malware) has become a major threat to computer security and will continue to be a central theme for computer security research for decades. This project takes a binary and virtualization centric approach to effectively and efficiently defeat malware using both online and offline analysis. Offline malware analysis aims to extract knowledge about the inner-workings for a newly discovered malware instance or software exploit, for the purpose of building up proper defense against similar attacks. Online malware defense aims to build efficient security mechanisms to effectively confine malicious behavior and collect enough evidence for subsequent security investigation.\r\n \r\nFor offline malware analysis, a novel virtualization-based malware analysis platform is used, on top of which new type inference techniques are applied to malware decomposition and vulnerability diagnosis. For online malware defense, new techniques for module-level sandbox and execution replay using virtualization are cooperatively used to defeat malware.\r\n \r\nThe results from this research will be disseminated through both peer-reviewed publications and software release. Based on this research, new course materials, modular hands-on projects, and professional training tutorials will be developed, to help future computer engineers and security researchers gain in-depth knowledge about malware defense.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Heng",
+   "pi_last_name": "Yin",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Heng Yin",
+   "pi_email_addr": "heng@cs.ucr.edu",
+   "nsf_id": "000546221",
+   "pi_start_date": "2016-10-24",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Riverside",
+  "inst_street_address": "200 UNIVERSTY OFC BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "RIVERSIDE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9518275535",
+  "inst_zip_code": "925210001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "39",
+  "st_cong_dist_code": "CA39",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF CALIFORNIA AT RIVERSIDE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "MR5QC5FCAVH5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Riverside",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "925210001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "39",
+  "perf_st_cong_dist": "CA39",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1045",
+   "pgm_ref_txt": "CAREER-Faculty Erly Career Dev"
+  },
+  {
+   "pgm_ref_code": "7795",
+   "pgm_ref_txt": "TRUSTWORTHY COMPUTING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0114",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001415DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2014,
+   "fund_oblg_amt": 168859.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><!-- \t\t@page { margin: 0.79in } \t\tp { margin-bottom: 0.1in; line-height: 115% } \t\ta:link { so-language: zxx } \t -->\n<p>Malicious software (malware) has become a major threat to computer security for decades, and will continue to be a central theme for computer security research. This project aimed to develop a virtualization-based binary analysis platform as well as a set of analysis techniques to discover and understand malicious behaviors and functionalities of a given malware sample. Further more, it aimed to develop a set of defense methods to effectively confine malware attacks.</p>\n<p>We first focused on the analysis platform. We developed DECAF, a virtual machine based whole-system dynamic analysis framework built on top of QEMU. It follows proper principles, and thus can offer analysis results of better quality, with a higher correctness guarantee and higher efficiency. To improve its analysis transparency (to defeat evasive malware that detects presence of software emulation), we developed a record-and-replay technique called V2E that can record malware execution in hardware virtualization and then replay it in software emulation to facilitate fine-grained (i.e., at instruction level) instrumentation and analysis. With the advent of Android as a popular mobile platform, we further developed an extension of it, called DroidScope to support analysis of android malware.</p>\n<p>On top of this analysis platform, we developed a set of techniques to analyze numerous malware types and malware behaviors. In PointerScope, we devised a type inference algorithm to detect and analyze pointer misuses often leveraged in memory-corruption attacks. In JScapel, we proposed a new analysis technique that traces malicious JavaScript execution at both native and JavaScript levels to detect and reason about malicious JavaScript. We also designed a tap-point detection algorithm to identify interesting tap points in Adobe Reader&rsquo;s parsing component, in order to understand malicious PDFs that try to evade malware detectors by launching parser confusing attacks. In Tartarus, we defined a new algorithm to trace malware propagation that uses advanced code injection and code-reuse techniques. In TotalCFI, we developed a system-wide control flow integrity checking system to detect and analyze malware launching multi-stage control-flow hijacking attacks in numerous operating system components and services.</p>\n<p>To protect a program from being attacked by malware, we proposed a set of program hardening techniques. In vfGuard, we developed a static analysis technique that automatically generate strict policies to protect virtual function calls in C++ executables.  In BinCC, we partition an executable program into binary code continents, to further refine the control flow integrity policies. Then in PBlocker, we presented a technique to defeat stack pivoting, an essential step in code reuse attacks.</p>\n<p>Last but not least, we developed a set of techniques to address mobile malware problems. To name a few, we developed techniques to detect and classify android malware, detect and analyze code injection vulnerabilities in HTML5-based apps, automatically generate patches for component hijacking vulnerabilities, automatically generate security descriptions for mobile apps,  unpack packed android malware in a general fashion, etc.</p>\n<p>In the end, this research has resulted in top-notch publications including 6 CCS, 6 NDSS, 1 USENIX Security, 1 ISSTA, 2 RAID, 1 TSE, 1 TDSC, 3 ACSAC, 4 AsiaCCS, 1 DSN papers. The key software prototoype (e.g., DECAF, DroidScope) are open sourced on GitHub and are actively maintained, and key datasets are also publicly available for downloads.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/30/2018<br>\n\t\t\t\t\tModified by: Heng&nbsp;Yin</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\nMalicious software (malware) has become a major threat to computer security for decades, and will continue to be a central theme for computer security research. This project aimed to develop a virtualization-based binary analysis platform as well as a set of analysis techniques to discover and understand malicious behaviors and functionalities of a given malware sample. Further more, it aimed to develop a set of defense methods to effectively confine malware attacks.\n\nWe first focused on the analysis platform. We developed DECAF, a virtual machine based whole-system dynamic analysis framework built on top of QEMU. It follows proper principles, and thus can offer analysis results of better quality, with a higher correctness guarantee and higher efficiency. To improve its analysis transparency (to defeat evasive malware that detects presence of software emulation), we developed a record-and-replay technique called V2E that can record malware execution in hardware virtualization and then replay it in software emulation to facilitate fine-grained (i.e., at instruction level) instrumentation and analysis. With the advent of Android as a popular mobile platform, we further developed an extension of it, called DroidScope to support analysis of android malware.\n\nOn top of this analysis platform, we developed a set of techniques to analyze numerous malware types and malware behaviors. In PointerScope, we devised a type inference algorithm to detect and analyze pointer misuses often leveraged in memory-corruption attacks. In JScapel, we proposed a new analysis technique that traces malicious JavaScript execution at both native and JavaScript levels to detect and reason about malicious JavaScript. We also designed a tap-point detection algorithm to identify interesting tap points in Adobe Reader?s parsing component, in order to understand malicious PDFs that try to evade malware detectors by launching parser confusing attacks. In Tartarus, we defined a new algorithm to trace malware propagation that uses advanced code injection and code-reuse techniques. In TotalCFI, we developed a system-wide control flow integrity checking system to detect and analyze malware launching multi-stage control-flow hijacking attacks in numerous operating system components and services.\n\nTo protect a program from being attacked by malware, we proposed a set of program hardening techniques. In vfGuard, we developed a static analysis technique that automatically generate strict policies to protect virtual function calls in C++ executables.  In BinCC, we partition an executable program into binary code continents, to further refine the control flow integrity policies. Then in PBlocker, we presented a technique to defeat stack pivoting, an essential step in code reuse attacks.\n\nLast but not least, we developed a set of techniques to address mobile malware problems. To name a few, we developed techniques to detect and classify android malware, detect and analyze code injection vulnerabilities in HTML5-based apps, automatically generate patches for component hijacking vulnerabilities, automatically generate security descriptions for mobile apps,  unpack packed android malware in a general fashion, etc.\n\nIn the end, this research has resulted in top-notch publications including 6 CCS, 6 NDSS, 1 USENIX Security, 1 ISSTA, 2 RAID, 1 TSE, 1 TDSC, 3 ACSAC, 4 AsiaCCS, 1 DSN papers. The key software prototoype (e.g., DECAF, DroidScope) are open sourced on GitHub and are actively maintained, and key datasets are also publicly available for downloads.\n\n \n\n\t\t\t\t\tLast Modified: 10/30/2018\n\n\t\t\t\t\tSubmitted by: Heng Yin"
+ }
+}

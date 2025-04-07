@@ -1,0 +1,117 @@
+{
+ "awd_id": "1217408",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: SMALL: Automatically Detecting, Diagnosing and Resolving Abnormal Battery Drain Issues on Smartphone Systems",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 350000.0,
+ "awd_amount": 350000.0,
+ "awd_min_amd_letter_date": "2012-08-25",
+ "awd_max_amd_letter_date": "2012-08-25",
+ "awd_abstract_narration": "This project presents a software system to have the smartphone itself deal with the abnormal battery drain (ABD) issues that are caused by 'battery bugs' in smartphone applications or system software as well as by battery-related configuration errors and environmental changes. The proposed system architecture contains four subsystems, namely information collection, data analysis, diagnosis, and resolution, to self-detect, self-diagnose, and self-recover with little user intervention if possible when ABD events happen. Various technical methods, including machine learning and statistical approaches, will be investigated to achieve the design goal.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Yuanyuan",
+   "pi_last_name": "Zhou",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yuanyuan Zhou",
+   "pi_email_addr": "yyzhou@cs.ucsd.edu",
+   "nsf_id": "000246561",
+   "pi_start_date": "2012-08-25",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Lawrence",
+   "pi_last_name": "Saul",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Lawrence Saul",
+   "pi_email_addr": "saul@cs.ucsd.edu",
+   "nsf_id": "000456841",
+   "pi_start_date": "2012-08-25",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-San Diego",
+  "inst_street_address": "9500 GILMAN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "LA JOLLA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8585344896",
+  "inst_zip_code": "920930021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "UYTTZT6G9DT1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-San Diego",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920930404",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 350000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><div class=\"page\" title=\"Page 1\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><span>The past few years have witnessed an evolutionary change in the smartphone ecosystem. Smartphones have gone from closed platforms containing only pre-installed applications to open platforms hosting a variety of third- party applications. Unfortunately, this change has also led to a rapid increase in </span><span>Abnormal Battery Drain (ABD) </span><span>problems that can be caused by software defects or miscon- figuration. Such issues can drain a fully-charged battery within a couple of hours, and can potentially affect a significant number of users. </span></p>\n<p><span>This project has produced several techniques and tools to address this important challenge. &nbsp; We have released a tool on Android platform called eDoctor, a practical tool that helps regular users troubleshoot abnormal battery drain issues on smartphones. eDoctor leverages the concept of </span><span>execution phases </span><span>to capture an app&rsquo;s time-varying behavior, which can then be used to identify an abnormal app. Based on the result of a diagnosis, eDoctor suggests the most ap- propriate repair solution to users. To evaluate eDoctor&rsquo;s effectiveness, we conducted both in-lab experiments and a controlled user study with 31 participants and 17 real- world ABD issues together with 4 injected issues in 19 apps. The experimental results show that eDoctor can suc- cessfully diagnose 47 out of the 50 use cases while impos- ing no more than 1.5% of power overhead.&nbsp;</span></p>\n<p><span>&nbsp;</span>We have also investigated Disruptive App Behavior (DAB) with a study on 287 real-world DAB issues. Guided by the study, we designed and built DefDroid, a mobile OS designed to protect users from the negative impact of DAB at runtime. DefDroid monitors important app activities and tries to adjust app behaviors using fine- grained actions (e.g., enforce back-off to continuous retries, decrease aggressive timer frequency) without breaking app main func- tionality. Our experiments show that DefDroid effectively curbs 125 real-world DAB cases with small overhead and marginal impact to the usability of both the misbehaving apps and normal apps. During a small-scale user trial, DefDroid also found 6 new DAB issues. We further deployed DefDroid to 185 real users through the PhoneLab testbed for 43 days and found DAB issues from at least 57 apps.&nbsp;</p>\n<p><span><br /></span></p>\n</div>\n</div>\n</div>\n</div>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/01/2016<br>\n\t\t\t\t\tModified by: Yuanyuan&nbsp;Zhou</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\n\n\n\nThe past few years have witnessed an evolutionary change in the smartphone ecosystem. Smartphones have gone from closed platforms containing only pre-installed applications to open platforms hosting a variety of third- party applications. Unfortunately, this change has also led to a rapid increase in Abnormal Battery Drain (ABD) problems that can be caused by software defects or miscon- figuration. Such issues can drain a fully-charged battery within a couple of hours, and can potentially affect a significant number of users. \n\nThis project has produced several techniques and tools to address this important challenge.   We have released a tool on Android platform called eDoctor, a practical tool that helps regular users troubleshoot abnormal battery drain issues on smartphones. eDoctor leverages the concept of execution phases to capture an app?s time-varying behavior, which can then be used to identify an abnormal app. Based on the result of a diagnosis, eDoctor suggests the most ap- propriate repair solution to users. To evaluate eDoctor?s effectiveness, we conducted both in-lab experiments and a controlled user study with 31 participants and 17 real- world ABD issues together with 4 injected issues in 19 apps. The experimental results show that eDoctor can suc- cessfully diagnose 47 out of the 50 use cases while impos- ing no more than 1.5% of power overhead. \n\n We have also investigated Disruptive App Behavior (DAB) with a study on 287 real-world DAB issues. Guided by the study, we designed and built DefDroid, a mobile OS designed to protect users from the negative impact of DAB at runtime. DefDroid monitors important app activities and tries to adjust app behaviors using fine- grained actions (e.g., enforce back-off to continuous retries, decrease aggressive timer frequency) without breaking app main func- tionality. Our experiments show that DefDroid effectively curbs 125 real-world DAB cases with small overhead and marginal impact to the usability of both the misbehaving apps and normal apps. During a small-scale user trial, DefDroid also found 6 new DAB issues. We further deployed DefDroid to 185 real users through the PhoneLab testbed for 43 days and found DAB issues from at least 57 apps. \n\n\n\n\n\n\n\n\n \n\n\t\t\t\t\tLast Modified: 08/01/2016\n\n\t\t\t\t\tSubmitted by: Yuanyuan Zhou"
+ }
+}

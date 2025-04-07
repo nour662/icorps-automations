@@ -1,0 +1,129 @@
+{
+ "awd_id": "1160904",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "Synthesis and Analysis of Heap Data Structures",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2012-05-01",
+ "awd_exp_date": "2019-04-30",
+ "tot_intn_awd_amt": 848378.0,
+ "awd_amount": 1012139.0,
+ "awd_min_amd_letter_date": "2012-04-26",
+ "awd_max_amd_letter_date": "2018-03-15",
+ "awd_abstract_narration": "Almost all software today is developed in two stages. First, a human writes a program and subsequently various automated tools process that program to produce the actual computer code that is the software application. Over time, researchers have found ways to shift more of the burden of developing software from the programmer to the automated tools, which has gradually made software development more and more productive. One area of software development that has not changed for a couple of decades is the way in which the structure of data is programmed. The organization of data is still described in relatively low-level terms as links between individual objects in memory, which is too low-level for the tools to reason successfully about. As a result, programmers must spend significant time hand-coding and tuning their data structures, and there are significant missed opportunities for improvements to program performance, correctness, and security.\r\n\r\nWe propose to try a new approach to this problem, consisting of two parts: we will synthesize data structures from high-level relational specifications.  We will also use inference techniques to automatically analyze the program?s use of the relations. In a relational style of programming explicit pointers are eliminated, removing one of the biggest impediments to automatic reasoning. We believe recent advances in the analysis of control flow, destructive updates, and low-level indexing operations make it feasible to capture most other aspects of programs.\r\n\r\nIf successful, programs, including concurrent programs, will be written at a higher level and be more easily retargeted to new situations because the data representations are not fixed in advance, and tools will be able to do a more reliable, efficient, and scalable job of optimizing resources and verifying properties of programs. As part of the project, we will seek to demonstrate these benefits by conducting studies of our techniques applied to realistic challenge applications.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Alexander",
+   "pi_last_name": "Aiken",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Alexander Aiken",
+   "pi_email_addr": "aiken@cs.stanford.edu",
+   "nsf_id": "000281933",
+   "pi_start_date": "2012-04-26",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Stanford University",
+  "inst_street_address": "450 JANE STANFORD WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "STANFORD",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "6507232300",
+  "inst_zip_code": "943052004",
+  "inst_country_name": "United States",
+  "cong_dist_code": "16",
+  "st_cong_dist_code": "CA16",
+  "org_lgl_bus_name": "THE LELAND STANFORD JUNIOR UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HJD6G4D6TJY5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Stanford University",
+  "perf_str_addr": "Stanford University",
+  "perf_city_name": "Stanford",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "943059025",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "16",
+  "perf_st_cong_dist": "CA16",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  },
+  {
+   "pgm_ref_code": "7943",
+   "pgm_ref_txt": "PROGRAMMING LANGUAGES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0113",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001314DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0115",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001516DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 241340.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2013,
+   "fund_oblg_amt": 607038.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2015,
+   "fund_oblg_amt": 163761.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Reasoning about how computations represent data structures, for both performance and correctness, is a significant challenge for developing reliable and performant software.&nbsp; &nbsp;In this project we explored higher-level representations of data than are currently used, in particular relations.&nbsp; We especially focused on the use of relations as the representation for all data in concurrent, parallel, and/or distributed programs, and how using relations as the core representation helped in this setting.&nbsp; Significant theoretical results included a general model for partitioning data, as well as automatic algorithms for doing that partitioning and assignment of program data to different computational units.&nbsp; We used these techniques to demonstrate directly, on practical applications, how to significantly improve the performance of common graph analytics and deep learning computations.&nbsp; The idea of using relations as a universal representation has been standard in the database community for decades, but this work led to much wider consideration of it as the basis for a universal representation in programming languages.</p>\n<p>We also did significant work in verification, using the fact that relations are higher level to simplify the reasoning about programs.&nbsp; In some cases we were led into related problems that needed to be solved, such as reasoning about floating point, in order to tackle practical applications that involved relations combined with some other data type.&nbsp; &nbsp;Another related problem we addressed is automatically understanding program input formats, which is needed to automate data loading into whatever data representation one is interested in; in this domain we produced an efficient and practical algorithm for automatically inferring an input format from examples.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/08/2019<br>\n\t\t\t\t\tModified by: Alexander&nbsp;Aiken</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nReasoning about how computations represent data structures, for both performance and correctness, is a significant challenge for developing reliable and performant software.   In this project we explored higher-level representations of data than are currently used, in particular relations.  We especially focused on the use of relations as the representation for all data in concurrent, parallel, and/or distributed programs, and how using relations as the core representation helped in this setting.  Significant theoretical results included a general model for partitioning data, as well as automatic algorithms for doing that partitioning and assignment of program data to different computational units.  We used these techniques to demonstrate directly, on practical applications, how to significantly improve the performance of common graph analytics and deep learning computations.  The idea of using relations as a universal representation has been standard in the database community for decades, but this work led to much wider consideration of it as the basis for a universal representation in programming languages.\n\nWe also did significant work in verification, using the fact that relations are higher level to simplify the reasoning about programs.  In some cases we were led into related problems that needed to be solved, such as reasoning about floating point, in order to tackle practical applications that involved relations combined with some other data type.   Another related problem we addressed is automatically understanding program input formats, which is needed to automate data loading into whatever data representation one is interested in; in this domain we produced an efficient and practical algorithm for automatically inferring an input format from examples.\n\n\t\t\t\t\tLast Modified: 07/08/2019\n\n\t\t\t\t\tSubmitted by: Alexander Aiken"
+ }
+}

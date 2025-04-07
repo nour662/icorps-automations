@@ -1,0 +1,105 @@
+{
+ "awd_id": "1850348",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: III: Partition-aware Parallel Query Processing",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032927347",
+ "po_email": "sspengle@nsf.gov",
+ "po_sign_block_name": "Sylvia Spengler",
+ "awd_eff_date": "2019-06-01",
+ "awd_exp_date": "2021-12-31",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 175000.0,
+ "awd_min_amd_letter_date": "2019-05-20",
+ "awd_max_amd_letter_date": "2019-05-20",
+ "awd_abstract_narration": "Society is becoming increasingly data-driven. In order to efficiently handle the increasing amount of data, current data management systems are designed to support massive parallelism by scaling effectively to thousands of computing units. A critical component in the success of these systems is that they partition the input instance in specific layouts prior to processing. The goal of the partitioning is to improve data locality, i.e., data that is often processed together should be located in the same physical machine. Modern distributed large-scale systems adopt several types of simple partitioning schemes, but the simplicity of these schemes limits the data locality that can be achieved. This project aims to study - both theoretically and in practice - how more advanced partitioning strategies can further accelerate parallel query processing and speed up the data-to-knowledge pipeline in various applications across multiple domains. It will rethink data partitioning from the ground up, and examine it in a more holistic framework in the context of modern data processing.\r\n\r\nThis project aims to perform an end-to-end investigation of how the design of advanced data partitioning techniques can impact both exact and approximate parallel query processing. To achieve this research goal, this project focuses on three interconnected directions. The first thrust focuses on establishing formal foundations for data partitioning techniques, and study how partitioning theoretically impacts exact query processing. In particular, this thrust will investigate the theoretical tradeoffs between system parameters such as storage overhead, workload balancing, and efficiency for query execution over the partitioned instance. The second thrust will explore how approximate query processing can be benefited from smart partitioning methods as well. Finally, the third thrust will develop and implement novel partitioning strategies that aim to fill design gaps in existing techniques and address some of the drawbacks of existing partitioning techniques.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Paraschos",
+   "pi_last_name": "Koutris",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Paraschos Koutris",
+   "pi_email_addr": "paris@cs.wisc.edu",
+   "nsf_id": "000702081",
+   "pi_start_date": "2019-05-20",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Wisconsin-Madison",
+  "inst_street_address": "21 N PARK ST STE 6301",
+  "inst_street_address_2": "",
+  "inst_city_name": "MADISON",
+  "inst_state_code": "WI",
+  "inst_state_name": "Wisconsin",
+  "inst_phone_num": "6082623822",
+  "inst_zip_code": "537151218",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "WI02",
+  "org_lgl_bus_name": "UNIVERSITY OF WISCONSIN SYSTEM",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LCLSJAGTNZQ7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Wisconsin-Madison",
+  "perf_str_addr": "",
+  "perf_city_name": "Madison",
+  "perf_st_code": "WI",
+  "perf_st_name": "Wisconsin",
+  "perf_zip_code": "537061613",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "WI02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736400",
+   "pgm_ele_name": "Info Integration & Informatics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 175000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project has made theoretical and practical contributions to data partitioning techniques, a critical component to the performance of parallel query processing. In particular, the project examined data partitioning in a more general and holistic framework in the context of modern data pipelines. The project outcomes will facilitate the development of better partitioning algorithms that take advantage of the physical layout of the data in massively parallel environments. In turn, this will speed up the data-to-knowledge pipeline in various applications across multiple domains, in areas such as astronomy, biology, oceanography, and the medical sciences.&nbsp;</p>\n<p><br />Concerning formal foundations, the objective was to understand how locality-aware data partitioning schemes can help overcome some of the disadvantages of oblivious partitioning. To achieve this goal, we developed a formal framework on partitioning schemes that go beyond oblivious schemes. We theoretically demonstrated a fundamental obstacle for oblivious schemes and showed how other locality-aware partitioning techniques (e.g., co-hashing) could overcome this barrier. Finally, we developed methods to reason about different properties of co-hashing schemes (e.g., can we compute a join query without data shuffling, how much the data is replicated, etc.).</p>\n<p><br />We also studied how awareness of the parallel cluster's topology interacts with data partitioning. In particular, we showed that it is possible to design better algorithms for data processing tasks by taking advantage of both the topology and the instance-specific data partitioning.&nbsp;</p>\n<p><br />With regard to practice, we studied how we can efficiently sample from locality-aware partitioning schemes and use this sample to approximate an answer to a query. In particular, we showed how to leverage co-hash partitioning to do efficient approximate query answering. This technique can be applied to distributed systems with stragglers and failed nodes, such that we can recover query answers even under failures. We experimentally demonstrated how to obtain good approximate results even with a small sample of the data. The project is one of the first to study how the physical layout of data in a distributed system impacts approximate query processing.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/31/2022<br>\n\t\t\t\t\tModified by: Paraschos&nbsp;Koutris</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project has made theoretical and practical contributions to data partitioning techniques, a critical component to the performance of parallel query processing. In particular, the project examined data partitioning in a more general and holistic framework in the context of modern data pipelines. The project outcomes will facilitate the development of better partitioning algorithms that take advantage of the physical layout of the data in massively parallel environments. In turn, this will speed up the data-to-knowledge pipeline in various applications across multiple domains, in areas such as astronomy, biology, oceanography, and the medical sciences. \n\n\nConcerning formal foundations, the objective was to understand how locality-aware data partitioning schemes can help overcome some of the disadvantages of oblivious partitioning. To achieve this goal, we developed a formal framework on partitioning schemes that go beyond oblivious schemes. We theoretically demonstrated a fundamental obstacle for oblivious schemes and showed how other locality-aware partitioning techniques (e.g., co-hashing) could overcome this barrier. Finally, we developed methods to reason about different properties of co-hashing schemes (e.g., can we compute a join query without data shuffling, how much the data is replicated, etc.).\n\n\nWe also studied how awareness of the parallel cluster's topology interacts with data partitioning. In particular, we showed that it is possible to design better algorithms for data processing tasks by taking advantage of both the topology and the instance-specific data partitioning. \n\n\nWith regard to practice, we studied how we can efficiently sample from locality-aware partitioning schemes and use this sample to approximate an answer to a query. In particular, we showed how to leverage co-hash partitioning to do efficient approximate query answering. This technique can be applied to distributed systems with stragglers and failed nodes, such that we can recover query answers even under failures. We experimentally demonstrated how to obtain good approximate results even with a small sample of the data. The project is one of the first to study how the physical layout of data in a distributed system impacts approximate query processing.\n\n\t\t\t\t\tLast Modified: 01/31/2022\n\n\t\t\t\t\tSubmitted by: Paraschos Koutris"
+ }
+}

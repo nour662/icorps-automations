@@ -1,0 +1,105 @@
+{
+ "awd_id": "1952777",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "FRG: Collaborative Research: Randomized Algorithms for Solving Linear Systems",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2020-08-01",
+ "awd_exp_date": "2024-07-31",
+ "tot_intn_awd_amt": 375000.0,
+ "awd_amount": 375000.0,
+ "awd_min_amd_letter_date": "2020-04-24",
+ "awd_max_amd_letter_date": "2020-04-24",
+ "awd_abstract_narration": "The objective of this project is to develop faster and more energy-efficient algorithms for one of the most fundamental tasks in computational science: solving large systems of coupled linear equations. Faster algorithms will both accelerate computations that can already be performed, and enable computations that are beyond the reach of existing methods. More energy efficient algorithms will help to reduce the power consumption of data centers, and to extend the battery life of mobile devices such as cell phones and tablet computers. The fundamental innovation behind our approach is to harness mathematical properties of large collections of random numbers to build new stochastic algorithms that dramatically outperform existing deterministic ones. In a nutshell, the idea is to use randomized sampling, and randomized averaging, to reduce the effective dimensionality of the problems to be processed. In addition the project provides research training opportunities for postdoctoral fellows and graduate students.\r\n\r\nWe seek to develop computationally efficient methods for solving linear systems of equations involving large numbers of variables, both in terms of asymptotic complexity, and in terms of practical speed at realistic problem sizes. Such systems of equations arise ubiquitously in science and engineering, and solving them is often the bottleneck in terms of time that decides how large of a problem can be handled. In particular, this is what limits how large of a data set can be analyzed, or how realistic a computational simulation can be when modelling some physical phenomenon. By developing faster and more efficient algorithms, we will accelerate computations that are done today, and enable many others that are outside the reach of currently existing methods.  The project is premised on the recent development of new randomized algorithms for solving linear algebraic problems. Such methods have proven to dramatically outperform classical deterministic methods for certain tasks such as computing low rank factorizations to matrices - the crucial computational step in e.g. Principal Component Analysis, the PageRank algorithm by Larry Page and Sergey Brin, numerical coarse graining when modeling complex multiscale systems, and many more. Randomized algorithms have also been used to build faster solvers for linear systems. However, while the theoretical results obtained at this point are extremely encouraging, it remains to develop randomized linear solvers that are decisively faster in practical applications. To achieve this goal, the project will support a research group that brings together four researchers with complementary skills in numerical linear algebra, random matrix theory, computational harmonic analysis, optimization, and high performance computing.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Joel",
+   "pi_last_name": "Tropp",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Joel Tropp",
+   "pi_email_addr": "jtropp@cms.caltech.edu",
+   "nsf_id": "000625008",
+   "pi_start_date": "2020-04-24",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "California Institute of Technology",
+  "inst_street_address": "1200 E CALIFORNIA BLVD",
+  "inst_street_address_2": "",
+  "inst_city_name": "PASADENA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "6263956219",
+  "inst_zip_code": "911250001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "28",
+  "st_cong_dist_code": "CA28",
+  "org_lgl_bus_name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "U2JMKHNS5TG4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "California Institute of Technology",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "911250001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "28",
+  "perf_st_cong_dist": "CA28",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1616",
+   "pgm_ref_txt": "FOCUSED RESEARCH GROUPS IN MATH SCIENCES"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 375000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Many fundamental challenges in science can be reduced to solving systems of linear equations. Algorithms for this problem have reached the level of a technology, and we can reliably solve moderate to large numbers of linear equations on a computer. This technology supports a huge range of applications, from machine learning to engineering design.</p>\n<p>Nevertheless, we still struggle to solve huge numbers of linear equations because existing algorithms have costs that increase quickly with the number of equations. The objective of this project is to develop new algorithms for solving linear systems that can cope with this challenge.</p>\n<p>This project is based on a recent insight in computational mathematics: We can design *randomized* algorithms for solving linear algebra problems. A randomized algorithm is one that makes random choices during its execution to avoid bad outcomes. The runtime of these methods may be random, or else there may be a (negligible) failure probability. The advantage is that these new algorithms can be much faster than classic techniques, so they can scale to larger problems.</p>\n<p>In this project, we have focused a specific methodology called randomized preconditioning, developed by the PIs. The idea is to use randomized algorithms to quickly make a coarse (\"low-rank\") approximation of the linear system. The randomized methods typically produce excellent approximations with a minimum of effort. The approximation can be used in conjunction with classic iterative algorithms (\"preconditioning conjugate gradient\") to quickly produce a very accurate solution to the linear system,</p>\n<p>We developed and studied two different techniques for approximating the linear system. The first is called \"randomized Nystr&ouml;m preconditioning\", and the second is called \"randomly pivoted Cholesky\". These techniques are designed for different types of problems, and they have complementary computational profiles. Randomized Nystr&ouml;m is good for solving linear systems that arise from partial differential equations (in physics or engineering). Meanwhile, randomly pivoted Cholesky is good for solving linear systems that arise from large scale data analysis (kernel methods in scientific maching learning).</p>\n<p>Our work has resulted in mathematical theorems that provide rigorous guarantees on the performance of our algorithms for solving linear systems. We have also developed computer implementations, which we have disseminated via papers and publicly available code.</p>\n<p>We have also demonstrated the power of these algorithms on a range of stylized problems in computational science. Applications include large-scale machine learning testbeds, as well as problems in molecular dynamics, quantum chemistry, and high-energy physics.</p>\n<p>Altogether, this project has resulted in a new family of powerful methods for solving large linear systems that arise in contemporary applications. The research community has started to apply and extend these methods, and we are optimistic that they will serve to advance computational science and machine learning.</p><br>\n<p>\n Last Modified: 08/12/2024<br>\nModified by: Joel&nbsp;Tropp</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nMany fundamental challenges in science can be reduced to solving systems of linear equations. Algorithms for this problem have reached the level of a technology, and we can reliably solve moderate to large numbers of linear equations on a computer. This technology supports a huge range of applications, from machine learning to engineering design.\n\n\nNevertheless, we still struggle to solve huge numbers of linear equations because existing algorithms have costs that increase quickly with the number of equations. The objective of this project is to develop new algorithms for solving linear systems that can cope with this challenge.\n\n\nThis project is based on a recent insight in computational mathematics: We can design *randomized* algorithms for solving linear algebra problems. A randomized algorithm is one that makes random choices during its execution to avoid bad outcomes. The runtime of these methods may be random, or else there may be a (negligible) failure probability. The advantage is that these new algorithms can be much faster than classic techniques, so they can scale to larger problems.\n\n\nIn this project, we have focused a specific methodology called randomized preconditioning, developed by the PIs. The idea is to use randomized algorithms to quickly make a coarse (\"low-rank\") approximation of the linear system. The randomized methods typically produce excellent approximations with a minimum of effort. The approximation can be used in conjunction with classic iterative algorithms (\"preconditioning conjugate gradient\") to quickly produce a very accurate solution to the linear system,\n\n\nWe developed and studied two different techniques for approximating the linear system. The first is called \"randomized Nystrm preconditioning\", and the second is called \"randomly pivoted Cholesky\". These techniques are designed for different types of problems, and they have complementary computational profiles. Randomized Nystrm is good for solving linear systems that arise from partial differential equations (in physics or engineering). Meanwhile, randomly pivoted Cholesky is good for solving linear systems that arise from large scale data analysis (kernel methods in scientific maching learning).\n\n\nOur work has resulted in mathematical theorems that provide rigorous guarantees on the performance of our algorithms for solving linear systems. We have also developed computer implementations, which we have disseminated via papers and publicly available code.\n\n\nWe have also demonstrated the power of these algorithms on a range of stylized problems in computational science. Applications include large-scale machine learning testbeds, as well as problems in molecular dynamics, quantum chemistry, and high-energy physics.\n\n\nAltogether, this project has resulted in a new family of powerful methods for solving large linear systems that arise in contemporary applications. The research community has started to apply and extend these methods, and we are optimistic that they will serve to advance computational science and machine learning.\t\t\t\t\tLast Modified: 08/12/2024\n\n\t\t\t\t\tSubmitted by: JoelTropp\n"
+ }
+}

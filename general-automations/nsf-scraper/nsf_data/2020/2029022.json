@@ -1,0 +1,101 @@
+{
+ "awd_id": "2029022",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: PPoSS: Planning: Scalable Systems for Probabilistic Programming",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2021-09-30",
+ "tot_intn_awd_amt": 117157.0,
+ "awd_amount": 117157.0,
+ "awd_min_amd_letter_date": "2020-08-21",
+ "awd_max_amd_letter_date": "2020-10-14",
+ "awd_abstract_narration": "Statistical methods have had great successes for exploring data, making predictions, and solving problems in a wide range of problems. But in the world of big data, methods need to be scalable, so as to handle larger problems while modeling the real-world problems of messy and nonrepresentative data.  The project\u2019s novelties are developments in software and hardware facilitating full-stack integration of Bayesian inference to allow complex and realistic models to be fit to large datasets.  The project's impacts are in many areas of pure and applied science, including fields as diverse as epidemiology, genetics, and political science, which are challenging because they are dense in parameters rather than in data.  Examples include models for disease progression and drug development, decision making under uncertainty, and trends in public opinion.\r\n\r\nThe project is exploring probabilistic programming, including hardware, high-performance computing, programming languages and compilers, and algorithms.  The ultimate goal is to develop the tools necessary for an efficient, and scalable Bayesian workflow, building on the existing success of the open-source probabilistic programming language Stan.  The team of researchers on this project are working on explorations of algorithms (model validation for approximate inference), programming languages and compilers (automating of approximate algorithms and advanced performance profiling), systems (probabilistic programming for streaming data), high-performance computing (parallel processing and GPUs), and hardware (exploring domain-specific hardware for Bayesian computation).\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Andrew",
+   "pi_last_name": "Gelman",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Andrew Gelman",
+   "pi_email_addr": "gelman@stat.columbia.edu",
+   "nsf_id": "000233702",
+   "pi_start_date": "2020-08-21",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Columbia University",
+  "inst_street_address": "615 W 131ST ST",
+  "inst_street_address_2": "MC 8741",
+  "inst_city_name": "NEW YORK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "2128546851",
+  "inst_zip_code": "100277922",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "NY13",
+  "org_lgl_bus_name": "THE TRUSTEES OF COLUMBIA UNIVERSITY IN THE CITY OF NEW YORK",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "F4N1QNPB95M4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Columbia University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "100275927",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "NY13",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "042Y00",
+   "pgm_ele_name": "PPoSS-PP of Scalable Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 117157.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>\"Probabilistic programming\" refers to computer programs with the ability to fit models in settings of high uncertainty, so that inference can be thought of as probabilistic. &nbsp;The goal of this project was to perform research to improve the scalability of probabilistic programming--that is, the capability of these programs to fit increasingly large and complex models.</p>\n<p>The project's outcomes included:</p>\n<p>(1) The first fast, accurate, and flexible analytical modeling framework for sparse tensor accelerators. Across representative accelerator designs and workloads, Sparseloop achieves over 600x faster-modeling speed than cycle-level simulations, less than 1% error compared to a custom accelerator model with statistical data characterization, and less than 8% error compared to simulations with real data.</p>\n<p>(2) Developing conditions on a probabilistic program's execution under which delayed sampling will execute in bounded memory. The conditions are dataflow properties of the core operations of delayed sampling, and the new idea is a static analysis that abstracts over these properties to soundly ensure that any program that passes the analysis satisfies these properties, and thus executes in bounded memory under delayed sampling.</p>\n<p>(3) Independent finite approximations for Bayesian nonparametric inference, a generalbut explicit recipe to construct a simple finite-dimensional approximation that can replace infinite-dimensional completely random measures.</p>\n<p>(4) Optimizations for managing memory in the automatic differentiation library of the open-source probabilistic programming language Stan. &nbsp;Stan&rsquo;s compiler is able to automatically detect when the new pattern can be used so users receive the benefit from the new memory pattern without the need to change their code.</p>\n<p>(5) A framework for thinking about trust for probabilistic machine learning, based on a taxonomy delineating where trust in an analysis can break down: (a) in thetranslation of real-world goals to goals on a particular set of available training data, (b) in the translation of abstract goals to a concrete mathematical problem, and (c) in the development and use of algoritihms and code.</p>\n<p>Together, these represent work on a range of different theoretical and implementation goals of scalable probabilistic programming.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/28/2022<br>\n\t\t\t\t\tModified by: Andrew&nbsp;E&nbsp;Gelman</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\"Probabilistic programming\" refers to computer programs with the ability to fit models in settings of high uncertainty, so that inference can be thought of as probabilistic.  The goal of this project was to perform research to improve the scalability of probabilistic programming--that is, the capability of these programs to fit increasingly large and complex models.\n\nThe project's outcomes included:\n\n(1) The first fast, accurate, and flexible analytical modeling framework for sparse tensor accelerators. Across representative accelerator designs and workloads, Sparseloop achieves over 600x faster-modeling speed than cycle-level simulations, less than 1% error compared to a custom accelerator model with statistical data characterization, and less than 8% error compared to simulations with real data.\n\n(2) Developing conditions on a probabilistic program's execution under which delayed sampling will execute in bounded memory. The conditions are dataflow properties of the core operations of delayed sampling, and the new idea is a static analysis that abstracts over these properties to soundly ensure that any program that passes the analysis satisfies these properties, and thus executes in bounded memory under delayed sampling.\n\n(3) Independent finite approximations for Bayesian nonparametric inference, a generalbut explicit recipe to construct a simple finite-dimensional approximation that can replace infinite-dimensional completely random measures.\n\n(4) Optimizations for managing memory in the automatic differentiation library of the open-source probabilistic programming language Stan.  Stan\u2019s compiler is able to automatically detect when the new pattern can be used so users receive the benefit from the new memory pattern without the need to change their code.\n\n(5) A framework for thinking about trust for probabilistic machine learning, based on a taxonomy delineating where trust in an analysis can break down: (a) in thetranslation of real-world goals to goals on a particular set of available training data, (b) in the translation of abstract goals to a concrete mathematical problem, and (c) in the development and use of algoritihms and code.\n\nTogether, these represent work on a range of different theoretical and implementation goals of scalable probabilistic programming.\n\n\t\t\t\t\tLast Modified: 01/28/2022\n\n\t\t\t\t\tSubmitted by: Andrew E Gelman"
+ }
+}

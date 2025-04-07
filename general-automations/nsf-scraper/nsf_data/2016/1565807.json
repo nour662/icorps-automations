@@ -1,0 +1,133 @@
+{
+ "awd_id": "1565807",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: A Measure Theory Semantics of Probability Theory",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927991",
+ "po_email": "namla@nsf.gov",
+ "po_sign_block_name": "Nina Amla",
+ "awd_eff_date": "2015-08-01",
+ "awd_exp_date": "2016-09-30",
+ "tot_intn_awd_amt": 6811.0,
+ "awd_amount": 14810.0,
+ "awd_min_amd_letter_date": "2015-11-17",
+ "awd_max_amd_letter_date": "2015-11-17",
+ "awd_abstract_narration": "Bayesian probability is an important theory of robust decision making. Domains as diverse as physical science, engineering, medicine, and law have applied Bayesian inference successfully. Nevertheless, Bayesian inference is fraught with problems during practical development and deployment. The standard techniques used to construct the implementations are semantically far from the \"whiteboard presentation\" (mathematical description), are untrustworthy, and expensive to apply. This research addresses this problem by providing an axiomatic foundation with a built-in approximation system that can verify implementations.\r\n \r\nThis research develops an automatic, trustworthy compiler from the whiteboard math used in the development of a theory to an efficient inference model implementation ready for evaluation. This environment provides compilation to a measure-theoretic model of the theory and to an efficient implementation that is provably connected to the measure-theoretic model. This compilation technique delays approximation as long as possible to achieve correctness and allow varied options for approximation, including the use of a novel algorithmic sampling technique, and performs high-powered optimization to compile them to parallelized implementations.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jay",
+   "pi_last_name": "McCarthy",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jay A McCarthy",
+   "pi_email_addr": "jay.mccarthy@gmail.com",
+   "nsf_id": "000510364",
+   "pi_start_date": "2015-11-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Massachusetts Lowell",
+  "inst_street_address": "220 PAWTUCKET ST STE 400",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOWELL",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "9789344170",
+  "inst_zip_code": "018543573",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "MA03",
+  "org_lgl_bus_name": "UNIVERSITY OF MASSACHUSETTS LOWELL",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LTNVSTJ3R6D5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Massachusetts Lowell",
+  "perf_str_addr": "600 Suffolk Street",
+  "perf_city_name": "Lowell",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "018543643",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "MA03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  },
+  {
+   "pgm_ele_code": "794400",
+   "pgm_ele_name": "SOFTWARE ENG & FORMAL METHODS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  },
+  {
+   "pgm_ref_code": "8206",
+   "pgm_ref_txt": "Formal Methods and Verification"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  },
+  {
+   "pgm_ref_code": "9178",
+   "pgm_ref_txt": "UNDERGRADUATE EDUCATION"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0113",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001314DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0114",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001415DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2013,
+   "fund_oblg_amt": 6810.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2014,
+   "fund_oblg_amt": 8000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The purpose of this grant was to&nbsp;<span>develop a compositional account of Bayesian probabilistic practice to measure theory to have trustworthy computations based on Bayesian theories. The key challenge of this is to map arbitrary Bayesian theories to&nbsp;<span>measure theory models. We chose to do this based on&nbsp;<span>monadic stochastic transition kernels where&nbsp;<span>uniform measue spaces (necessary for composing arbitrary transition kernels) are transformed into&nbsp;<span>appropriate measure spaces for specific probabilistic models. We wrote multiple scientific papers about this process that were peer-reviewed and presented at research conferences.</span></span></span></span></span></p>\n<p>These scientific reports are accompanied by a publicly available implementation of the theory called DrBayes. It is available at the following URL:</p>\n<p>https://github.com/ntoronto/drbayes</p>\n<p>There are other results in the project, such a suite of benchmarks measuring the performance and expressiveness of the algorithms. Ongoing efforts in the project are applying the theory to existing problems and exploring the extent to which it is successful in representing probabilistic phenomena.</p>\n<p>Overall, the project has been successful at lowering the costs of using Bayesian probabilistic modelling and increasing the confidence that modelers should have in their analysis of these models. It would be appropriate to invest in pedagogical tools for helping practicing, industrial programmers use our results for real work.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/27/2016<br>\n\t\t\t\t\tModified by: Jay&nbsp;A&nbsp;Mccarthy</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe purpose of this grant was to develop a compositional account of Bayesian probabilistic practice to measure theory to have trustworthy computations based on Bayesian theories. The key challenge of this is to map arbitrary Bayesian theories to measure theory models. We chose to do this based on monadic stochastic transition kernels where uniform measue spaces (necessary for composing arbitrary transition kernels) are transformed into appropriate measure spaces for specific probabilistic models. We wrote multiple scientific papers about this process that were peer-reviewed and presented at research conferences.\n\nThese scientific reports are accompanied by a publicly available implementation of the theory called DrBayes. It is available at the following URL:\n\nhttps://github.com/ntoronto/drbayes\n\nThere are other results in the project, such a suite of benchmarks measuring the performance and expressiveness of the algorithms. Ongoing efforts in the project are applying the theory to existing problems and exploring the extent to which it is successful in representing probabilistic phenomena.\n\nOverall, the project has been successful at lowering the costs of using Bayesian probabilistic modelling and increasing the confidence that modelers should have in their analysis of these models. It would be appropriate to invest in pedagogical tools for helping practicing, industrial programmers use our results for real work.\n\n\t\t\t\t\tLast Modified: 10/27/2016\n\n\t\t\t\t\tSubmitted by: Jay A Mccarthy"
+ }
+}

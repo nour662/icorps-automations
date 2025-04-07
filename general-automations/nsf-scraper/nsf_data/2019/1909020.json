@@ -1,0 +1,125 @@
+{
+ "awd_id": "1909020",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CNS Core: Small: BehavIoT: Modeling and Controlling Internet of Things Behavior Using Netowork-Inferred State Machines",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Darleen Fisher",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2022-09-30",
+ "tot_intn_awd_amt": 498571.0,
+ "awd_amount": 506571.0,
+ "awd_min_amd_letter_date": "2019-09-08",
+ "awd_max_amd_letter_date": "2021-05-03",
+ "awd_abstract_narration": "An increasing number of smart interconnected objects, known as the Internet of Things (IoT), are becoming affordable, popular, and rich in functionality. While these devices enabled a wide range of societal benefits including health, safety, accessibility and sustainability, they also present important security, privacy, and management challenges due to the large set of diverse services they offer. The fundamental problem that opens the door to such behavior is that IoT systems are traditionally closed systems that provide consumers and investigators with little-to-no information about whether a device (or set of devices) is behaving in ways that might violate expectations such as privacy, security, and correctness. To address this problem, this project will investigate how to automatically determine when IoT systems compromise privacy, security and correctness, and how to mitigate such problems. The key idea is to focus on information gleaned from the network traffic that such devices generate, since network traffic is the common platform that all such IoT systems ultimately rely upon. Specifically, the project will develop technology that models the behavior of an IoT system from its network traffic, then use these models to identify unexpected behavior. To mitigate unexpected behavior, the project will identify in-network strategies such as isolating, changing, and/or blocking such traffic. By understanding and modeling device behavior and addressing unexpected behavior from IoT devices, this project has the potential to improve safety and security for users. Further, by raising awareness of new and existing threats, our proposed work can encourage device manufacturers to improve the privacy, security, and correctness of their deployments.\r\n\r\nThe goal of this project is to explore the extent to which network-inferred behavioral analysis of IoT deployments, combined with control over the network traffic they generate, can identify and mitigate misbehavior in IoT systems. Our key insight is that IoT devices are particularly amenable to state-machine analysis, as they tend to have a limited set of functionality (i.e., states such as \"camera recording\", \"microphone listening\", etc.) that is triggered by a limited set of events. To address the fact that one cannot rely on source code to build such models via static analysis, this project will instead treat IoT devices as black boxes and inferring state-machine models that describe their behavior using the one externally observable signal all IoT devices generate: net- work traffic. After building such inferred state machines (and their transition probabilities), the project will analyze their evolution over time to identify misbehaviors -- when a device transitions between states in unexpected or unwanted ways (e.g., due to compromise, data exfiltration, or misconfiguration). To provide coverage of a wide range of misbehaviors, the project will (i) detect behaviors that never before encountered by relying on unsupervised classification techniques; (ii) consider the behavior of the system as a whole by combining in our model the behavior of individual IoT devices, thus capturing the cause of any emergent global system behavior; (iii) produce a system-wide behavior model that is easy to understand and analyze in practice, such as a state machine in which states represents changes in the behavior of individual IoT devices, and transitions show temporal dependencies expressed as probabilities. Finally, the project will employ middleboxes to actually use state machine models as a way to protect a whole IoT system from both individual and global misbehavior.  An advantage to this approach is that it is naturally platform-independent by relying on the common denominator in IoT systems, i.e., Internet traffic; further, an in-network solution can be immediately deployed (e.g., in a home or enterprise gateway) for broad impact.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "David",
+   "pi_last_name": "Choffnes",
+   "pi_mid_init": "R",
+   "pi_sufx_name": "",
+   "pi_full_name": "David R Choffnes",
+   "pi_email_addr": "choffnes@ccs.neu.edu",
+   "nsf_id": "000629991",
+   "pi_start_date": "2019-09-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Northeastern University",
+  "inst_street_address": "360 HUNTINGTON AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "BOSTON",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6173735600",
+  "inst_zip_code": "021155005",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "NORTHEASTERN UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HLTMVS2JZBS6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Northeastern University",
+  "perf_str_addr": "360 Huntington Ave",
+  "perf_city_name": "Boston",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021155005",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  },
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9178",
+   "pgm_ref_txt": "UNDERGRADUATE EDUCATION"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0121",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002122DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 498571.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2021,
+   "fund_oblg_amt": 8000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-3f9682fa-7fff-d143-b3ee-e662d33a8371\"> </span></p>\n<p dir=\"ltr\"><span>Consumer Internet of Things (IoT) devices, expected to be present in 62.7% of homes by 2026, can provide owners with convenience, safety, and other functionality. However, when they behave anomalously they can also threaten the security, privacy, and safety of the environment in which they are deployed. Examples range from the Mirai botnet infecting smart devices, to the Google Home Mini constantly recording audio due to a software bug. A key challenge for mitigating the risks due to anomalous behaviors is that IoT deployments comprise a wide variety of devices and behaviors, and are typically closed systems that provide little insight into what they are doing, making it difficult to reason about what is normal or anomalous behavior.&nbsp;</span></p>\n<p dir=\"ltr\"><span>To address this challenge, we need a solution that (i) does not require the modification of existing devices, (ii) that can detect anomalous behavior from normal behavior across a wide range of devices in an IoT deployment and provide contextual information about how the behavior changed, and (iii) that is adaptive with respect to new attacks, new IoT functions, and changes in user habits.&nbsp;</span></p>\n<p dir=\"ltr\"><span>In this project, we have proposed a solution, named BehavIoT, that addresses the above issues by modeling the global behavior of an IoT system using information inferred from the IP network traffic produced by all the IoT devices on the same network. Because our approach relies only on network traffic, it is inherently platform-agnostic, requires no privileged access to the IoT devices, and is easy to deploy at routers or gateways. Our behavior model relies on the observation that most consumer devices are relatively simple, having a limited set of functions and states, and their network traffic, although mostly encrypted, typically exhibits predictable patterns that are either periodic or that correlate with the actual functions being used.&nbsp;</span></p>\n<p dir=\"ltr\"><span>More specifically, in this project we developed methods and tools to: (i) infer from network traffic the list of events generated by individual IoT devices (e.g., the activation of a function); (ii) use inferred events from individual IoT devices to automatically create the behavior model of the system by representing inferable device states and functions as a Network-Inferred State Machine (NISM); (iii) use the behavior model as a normal model of the system to detect when future IoT events are consistent with the model or when they deviate from it, i.e., when they are anomalous behaviors. Finally, we proposed several strategies to limit such anomalous behavior, including user-customizable thresholds, tools to automatically block anomalous IoT traffic, and detecting IoT misbehavior beyond network traffic, such as the presence of dark patterns in IoT interaction interfaces.</span></p>\n<p dir=\"ltr\"><span>The methods, tools, and software we developed in this project gives IoT users, from consumers to professional IoT deployment administrators, a way to discover when their IoT devices are deviating from normal behavior and for triaging such deviations. Specifically, we expect our approach to be useful for informing users when their IoT devices are misbehaving, and also for stopping such behavior. The models and analysis tools we generated can be used by other researchers, auditors, regulators, and consumer advocacy organizations to study the behavior of any IoT devices and raise awareness of any suspicious behavior of threats they may find. This, in turn, can encourage device manufacturers to improve the privacy, security, and correctness of their deployments.</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/21/2022<br>\n\t\t\t\t\tModified by: David&nbsp;R&nbsp;Choffnes</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \nConsumer Internet of Things (IoT) devices, expected to be present in 62.7% of homes by 2026, can provide owners with convenience, safety, and other functionality. However, when they behave anomalously they can also threaten the security, privacy, and safety of the environment in which they are deployed. Examples range from the Mirai botnet infecting smart devices, to the Google Home Mini constantly recording audio due to a software bug. A key challenge for mitigating the risks due to anomalous behaviors is that IoT deployments comprise a wide variety of devices and behaviors, and are typically closed systems that provide little insight into what they are doing, making it difficult to reason about what is normal or anomalous behavior. \nTo address this challenge, we need a solution that (i) does not require the modification of existing devices, (ii) that can detect anomalous behavior from normal behavior across a wide range of devices in an IoT deployment and provide contextual information about how the behavior changed, and (iii) that is adaptive with respect to new attacks, new IoT functions, and changes in user habits. \nIn this project, we have proposed a solution, named BehavIoT, that addresses the above issues by modeling the global behavior of an IoT system using information inferred from the IP network traffic produced by all the IoT devices on the same network. Because our approach relies only on network traffic, it is inherently platform-agnostic, requires no privileged access to the IoT devices, and is easy to deploy at routers or gateways. Our behavior model relies on the observation that most consumer devices are relatively simple, having a limited set of functions and states, and their network traffic, although mostly encrypted, typically exhibits predictable patterns that are either periodic or that correlate with the actual functions being used. \nMore specifically, in this project we developed methods and tools to: (i) infer from network traffic the list of events generated by individual IoT devices (e.g., the activation of a function); (ii) use inferred events from individual IoT devices to automatically create the behavior model of the system by representing inferable device states and functions as a Network-Inferred State Machine (NISM); (iii) use the behavior model as a normal model of the system to detect when future IoT events are consistent with the model or when they deviate from it, i.e., when they are anomalous behaviors. Finally, we proposed several strategies to limit such anomalous behavior, including user-customizable thresholds, tools to automatically block anomalous IoT traffic, and detecting IoT misbehavior beyond network traffic, such as the presence of dark patterns in IoT interaction interfaces.\nThe methods, tools, and software we developed in this project gives IoT users, from consumers to professional IoT deployment administrators, a way to discover when their IoT devices are deviating from normal behavior and for triaging such deviations. Specifically, we expect our approach to be useful for informing users when their IoT devices are misbehaving, and also for stopping such behavior. The models and analysis tools we generated can be used by other researchers, auditors, regulators, and consumer advocacy organizations to study the behavior of any IoT devices and raise awareness of any suspicious behavior of threats they may find. This, in turn, can encourage device manufacturers to improve the privacy, security, and correctness of their deployments.\n\n \n\n\t\t\t\t\tLast Modified: 12/21/2022\n\n\t\t\t\t\tSubmitted by: David R Choffnes"
+ }
+}

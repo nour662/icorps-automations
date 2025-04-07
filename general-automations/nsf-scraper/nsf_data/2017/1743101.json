@@ -1,0 +1,101 @@
+{
+ "awd_id": "1743101",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "ABI Innovation: EAGER: Towards an optimal experimental design framework with Omics data",
+ "cfda_num": "47.074",
+ "org_code": "08080000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Peter McCartney",
+ "awd_eff_date": "2017-09-15",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 300000.0,
+ "awd_amount": 300000.0,
+ "awd_min_amd_letter_date": "2017-09-07",
+ "awd_max_amd_letter_date": "2017-09-07",
+ "awd_abstract_narration": "The goal of this project is to create novel methods that help researchers gather and integrate existing data sets in order to better inform the design of future experiments. Ideally new experiments include some replication, fill in gaps and produce new knowledge, but this balance is hard to achieve when existing data sets are in different locations or organized in very different ways.  Thus to achieve the goal, two aims are proposed: 1) develop methods for creating cohesive biological datasets from public experiments such that they are suitable for training computational models; 2) develop methods that indicate what experimental conditions should be used to collect new datasets so that are the most likely to yield important information about the study organism's biological properties, like structure and behavior. Achieving this goal will enable an understanding of important rules of life for organisms more efficiently and economically, by focusing on the experiments that give us the most value for the funds spent.\r\n\r\nThis exploratory project will focus on data arising from genome-wide transcriptional profiling methods (e.g. microarrays, RNA-Seq), building a computational foundation for later expansion. First, optimal data processing techniques for creating integrated compendia will be assessed, in order to select the best method for building training datasets for machine learning methods. Second, data-driven computational models will be trained on the data compendia and evaluated for success in describing and microbial behavior. Third, given the normalized compendia (in the transcriptomics data space) an optimal experimental design methodology will be prototyped, to recommend the best set of experiments to perform to yield the complete set of data needed to fit and test the biological model. The experimental design methodology will be benchmarked using synthetic data, and then evaluated by exploring the effect of design- recommended combinations of antibiotics and antiseptics (10 in all) on microbial behavior. This will be compared to the outcomes of experiments designed by methods currently used. Success metrics will focus on how quickly the required information in the experimental space is gathered and what level of uncertainty in a model remains after each experiment is completed.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "BIO",
+ "org_dir_long_name": "Directorate for Biological Sciences",
+ "div_abbr": "DBI",
+ "org_div_long_name": "Division of Biological Infrastructure",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ilias",
+   "pi_last_name": "Tagkopoulos",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ilias Tagkopoulos",
+   "pi_email_addr": "iliast@cs.ucdavis.edu",
+   "nsf_id": "000531392",
+   "pi_start_date": "2017-09-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Davis",
+  "inst_street_address": "1850 RESEARCH PARK DR STE 300",
+  "inst_street_address_2": "",
+  "inst_city_name": "DAVIS",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "5307547700",
+  "inst_zip_code": "956186153",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "CA04",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, DAVIS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "TX2DAGQPENZ5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Davis",
+  "perf_str_addr": "One Shields Avenue",
+  "perf_city_name": "Davis",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "956165290",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "CA04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "116500",
+   "pgm_ele_name": "ADVANCES IN BIO INFORMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 300000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The scientific method of formulating, testing, and ultimately accepting  hypotheses has been the way we have advanced science for centuries. Through human history, data are viewed as a means to test hypotheses or  discover associations and phenomena, and less as a means to train  computational methods across the various biological dimensions.  In the era of prediction, experimental design methods, such as those  based on optimal experimental design, also known as active  learning, have the potential to accelerate scientific exploration. In that context, how to design experiments that accelerate knowledge discovery on complex  biological landscapes remains a tantalizing question. This EAGER award funded the exploratory research that resulted in a new algorithmic framework and an optimal experimental design method (coined&nbsp;OPEX) to identify informative  omics experiments using machine learning models for both experimental  space exploration and model training. The team evaluated OPEX by letting it guide experiments with <em>Escherichia coli</em> populations exposed to biocide and antibiotic combinations and then compared the results to similar experiments guided by experts in the field. OPEX-guided RNA-Seq experiments lead to more  accurate predictive models of gene expression with 44% less data.  Analysis of the proposed experiments shows that broad exploration of the  experimental space followed by fine-tuning emerges as the optimal  strategy. Additionally, analysis of the experimental data reveals 29  cases of cross-stress protection and 4 cases of cross-stress  vulnerability, and further validation revealed the central role of  chaperones, stress response proteins and transport pumps in cross-stress  exposure. This work demonstrates how active learning can be used to  guide omics data collection for training predictive models, making  evidence-driven decisions and accelerating knowledge discovery in life  sciences.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/29/2021<br>\n\t\t\t\t\tModified by: Ilias&nbsp;Tagkopoulos</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe scientific method of formulating, testing, and ultimately accepting  hypotheses has been the way we have advanced science for centuries. Through human history, data are viewed as a means to test hypotheses or  discover associations and phenomena, and less as a means to train  computational methods across the various biological dimensions.  In the era of prediction, experimental design methods, such as those  based on optimal experimental design, also known as active  learning, have the potential to accelerate scientific exploration. In that context, how to design experiments that accelerate knowledge discovery on complex  biological landscapes remains a tantalizing question. This EAGER award funded the exploratory research that resulted in a new algorithmic framework and an optimal experimental design method (coined OPEX) to identify informative  omics experiments using machine learning models for both experimental  space exploration and model training. The team evaluated OPEX by letting it guide experiments with Escherichia coli populations exposed to biocide and antibiotic combinations and then compared the results to similar experiments guided by experts in the field. OPEX-guided RNA-Seq experiments lead to more  accurate predictive models of gene expression with 44% less data.  Analysis of the proposed experiments shows that broad exploration of the  experimental space followed by fine-tuning emerges as the optimal  strategy. Additionally, analysis of the experimental data reveals 29  cases of cross-stress protection and 4 cases of cross-stress  vulnerability, and further validation revealed the central role of  chaperones, stress response proteins and transport pumps in cross-stress  exposure. This work demonstrates how active learning can be used to  guide omics data collection for training predictive models, making  evidence-driven decisions and accelerating knowledge discovery in life  sciences.\n\n\t\t\t\t\tLast Modified: 10/29/2021\n\n\t\t\t\t\tSubmitted by: Ilias Tagkopoulos"
+ }
+}

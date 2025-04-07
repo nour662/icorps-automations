@@ -1,0 +1,101 @@
+{
+ "awd_id": "1637759",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NRI: Collaborative Research: Software Framework for Research in Semi-Autonomous Teleoperation",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Juan Wachs",
+ "awd_eff_date": "2016-10-01",
+ "awd_exp_date": "2021-09-30",
+ "tot_intn_awd_amt": 550157.0,
+ "awd_amount": 550157.0,
+ "awd_min_amd_letter_date": "2016-08-18",
+ "awd_max_amd_letter_date": "2016-08-18",
+ "awd_abstract_narration": "Telemanipulation systems consist of a human interacting with a mechanical device on the master side to operate a robot at the remote side. They provide natural opportunities for research in intelligent human/robot collaboration, but existing commercial systems, used in areas such as telesurgery, are not intelligent and therefore only replicate the actions of the human operator. These systems are also proprietary, expensive, and not available for modification by researchers. The goal of this NRI project is to provide an open-source software infrastructure that is designed to work with a broad range of hardware and simulated devices to enable a larger community to pursue research and education in intelligent telemanipulation at a lower cost.\r\n\r\nThe increasing pace of robotics research can be attributed, at least in part, to the increasing availability of software infrastructure, such as Robot Operating System (ROS), and open hardware platforms. This NRI project focuses on providing a software infrastructure for research in intelligent telemanipulation, leveraging infrastructure developed for the Raven II robot and the da Vinci Research Kit (dVRK) and continuing to extend it to other systems, including simulated robots. The three main tasks are to: (1) engage the community to guide development, (2) develop and implement a common API for the diverse hardware platforms, and (3) provide a set of high-level, platform-independent software modules. The goal is to support research towards semi-autonomous telerobotic systems that can more effectively combine the knowledge, reasoning, and decision-making capabilities of a human with the sensing and manipulation capabilities of a robot.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Gregory",
+   "pi_last_name": "Fischer",
+   "pi_mid_init": "S",
+   "pi_sufx_name": "",
+   "pi_full_name": "Gregory S Fischer",
+   "pi_email_addr": "gfischer@wpi.edu",
+   "nsf_id": "000526779",
+   "pi_start_date": "2016-08-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Worcester Polytechnic Institute",
+  "inst_street_address": "100 INSTITUTE RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "WORCESTER",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "5088315000",
+  "inst_zip_code": "016092280",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "MA02",
+  "org_lgl_bus_name": "WORCESTER POLYTECHNIC INSTITUTE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HJNQME41NBU4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Worcester Polytechnic Institute",
+  "perf_str_addr": "85 Prescott Street",
+  "perf_city_name": "Worcester",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "016052610",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "MA02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "801300",
+   "pgm_ele_name": "NRI-National Robotics Initiati"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8086",
+   "pgm_ref_txt": "Natl Robotics Initiative (NRI)"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 550157.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project supported the development of a community software infrastructure for research and education in semi-autonomous teleoperation and medical robotics, building on and integrating two large community projects, the da Vinci Research Kit (dVRK) and Raven-II, which are used by about 50 research institutes worldwide. The project completed three primary tasks: 1) community engagement, 2) development of a common software interface, and 3) increasing system capabilities.</p>\n<p>For the first task, we organized full-day workshops or tutorials at five major robotics conferences (at least one per year), as well as annual Principal Investigator (PI) meetings for project feedback. We also organized a full-day User Group Meeting that offered participants, mostly students, hands-on experience with both the Raven-II and dVRK.</p>\n<p>For the second task, we created the Collaborative Robotics Toolkit (CRTK) software, which builds on top of the widely adopted Robot Operating System (ROS) software ecosystem, and upgraded the dVRK and Raven-II software to support the CRTK interface.&nbsp;&nbsp; We also provided CRTK support for several other robots, devices, and simulators, so that CRTK-compatible research software can run on any of these platforms.&nbsp; Intellectual merit includes a derivation of interface functionality by analysis of use-cases defining future state-of-the-art medical robotics, and synthesis of data abstractions and function libraries to support those use cases.</p>\n<p>For the third task, we leveraged the CRTK interface standard to provide several platform-independent software modules, including advanced visualization and control capabilities, to accelerate surgical robotics research.&nbsp; We also developed the Asynchronous Muti-Body Framework (AMBF), which is a dynamic simulation environment that is especially suited for systems such as the dVRK and Raven-II. Distinguishing features of AMBF include support for a wider variety of robot mechanical designs, including parallel mechanisms, and real-time performance for multi-user interactions.&nbsp; Intellectual merit includes advances in visualization, control, and simulation, as presented in publications associated with each of these software modules.</p>\n<p>Broader impacts included training of a diverse group of graduate and undergraduate students in engineering and collaborative research with surgeons, aimed at improving health and medical care.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/30/2022<br>\n\t\t\t\t\tModified by: Gregory&nbsp;S&nbsp;Fischer</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2022/1637759/1637759_10451801_1664577867666_Project-Outcomes-Figure--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1637759/1637759_10451801_1664577867666_Project-Outcomes-Figure--rgov-800width.jpg\" title=\"CTRK\"><img src=\"/por/images/Reports/POR/2022/1637759/1637759_10451801_1664577867666_Project-Outcomes-Figure--rgov-66x44.jpg\" alt=\"CTRK\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Collaborative Robotics Toolkit (CRTK)</div>\n<div class=\"imageCredit\">WPI/JHU/UW</div>\n<div class=\"imagePermisssions\">Royalty-free (unrestricted use)</div>\n<div class=\"imageSubmitted\">Gregory&nbsp;S&nbsp;Fischer</div>\n<div class=\"imageTitle\">CTRK</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThis project supported the development of a community software infrastructure for research and education in semi-autonomous teleoperation and medical robotics, building on and integrating two large community projects, the da Vinci Research Kit (dVRK) and Raven-II, which are used by about 50 research institutes worldwide. The project completed three primary tasks: 1) community engagement, 2) development of a common software interface, and 3) increasing system capabilities.\n\nFor the first task, we organized full-day workshops or tutorials at five major robotics conferences (at least one per year), as well as annual Principal Investigator (PI) meetings for project feedback. We also organized a full-day User Group Meeting that offered participants, mostly students, hands-on experience with both the Raven-II and dVRK.\n\nFor the second task, we created the Collaborative Robotics Toolkit (CRTK) software, which builds on top of the widely adopted Robot Operating System (ROS) software ecosystem, and upgraded the dVRK and Raven-II software to support the CRTK interface.   We also provided CRTK support for several other robots, devices, and simulators, so that CRTK-compatible research software can run on any of these platforms.  Intellectual merit includes a derivation of interface functionality by analysis of use-cases defining future state-of-the-art medical robotics, and synthesis of data abstractions and function libraries to support those use cases.\n\nFor the third task, we leveraged the CRTK interface standard to provide several platform-independent software modules, including advanced visualization and control capabilities, to accelerate surgical robotics research.  We also developed the Asynchronous Muti-Body Framework (AMBF), which is a dynamic simulation environment that is especially suited for systems such as the dVRK and Raven-II. Distinguishing features of AMBF include support for a wider variety of robot mechanical designs, including parallel mechanisms, and real-time performance for multi-user interactions.  Intellectual merit includes advances in visualization, control, and simulation, as presented in publications associated with each of these software modules.\n\nBroader impacts included training of a diverse group of graduate and undergraduate students in engineering and collaborative research with surgeons, aimed at improving health and medical care.\n\n \n\n\t\t\t\t\tLast Modified: 09/30/2022\n\n\t\t\t\t\tSubmitted by: Gregory S Fischer"
+ }
+}

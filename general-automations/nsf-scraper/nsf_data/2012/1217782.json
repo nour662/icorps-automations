@@ -1,0 +1,101 @@
+{
+ "awd_id": "1217782",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small: Rethinking the OS/Network Boundary",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 494353.0,
+ "awd_amount": 494353.0,
+ "awd_min_amd_letter_date": "2012-08-16",
+ "awd_max_amd_letter_date": "2012-08-16",
+ "awd_abstract_narration": "Operating systems and networks developed largely independently, due to\r\nthe nature of their development -- operating systems were developed by\r\ngroups within organizations/companies, while networking requiring\r\ninteroperability was developed across organizations. As a result of\r\nthis development history, the boundary between the networking\r\nsubsystem and the rest of the operating system has remained largely\r\nopaque, with little information regarding the performance or progress\r\nof transfers being communicated to applications. This research\r\naddresses this limitation by exploring a richer boundary interface\r\nthat allows programs to see the ongoing behavior of network transfers\r\nand to control their operation at a fine granularity. These interfaces\r\nwould augment, rather than replace, the existing interfaces, so the\r\nportions of programs that are satisfied with the current interfaces\r\ncould continue unmodified, and developers could change only the\r\nportions that can benefit from richer information.  This research is\r\nlargely experimental in nature, and will combine the design and\r\nimplementation of new interface abstractions along with the\r\ndevelopment of new or modified programs to take advantage of these\r\ninterfaces. In addition to the design work associated with the\r\ninterfaces, additional criteria for success include examining the\r\nperformance and delay behavior of modified applications, and the\r\neffort needed to modify such applications. The expected results from\r\nthis work include applications that can more precisely control their\r\nnetworking behavior, reducing memory and processor usage, improving\r\nenergy efficiency, and improving delay behavior. High-performance or\r\ntime-sensitive applications, such as networked video, should benefit\r\nfrom this research.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Vivek",
+   "pi_last_name": "Pai",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Vivek Pai",
+   "pi_email_addr": "vivek@cs.princeton.edu",
+   "nsf_id": "000122168",
+   "pi_start_date": "2012-08-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Princeton University",
+  "inst_street_address": "1 NASSAU HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "PRINCETON",
+  "inst_state_code": "NJ",
+  "inst_state_name": "New Jersey",
+  "inst_phone_num": "6092583090",
+  "inst_zip_code": "085442001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "NJ12",
+  "org_lgl_bus_name": "THE TRUSTEES OF PRINCETON UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NJ1YPQXQG7U5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Princeton University",
+  "perf_str_addr": "4 New South Building",
+  "perf_city_name": "Princeton",
+  "perf_st_code": "NJ",
+  "perf_st_name": "New Jersey",
+  "perf_zip_code": "085442020",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "NJ12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 494353.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This research re-examined the boundary between the networking portion of the operating system and the core portion of the operating system. Programmers have historically used an interface that allowed them to send data over the network by having the operating system make a copy of the data the programmer presented. Once the programmer presented the data, the operating system would make every effort to deliver the data, even if delivering that data took longer than originally expected. Other mechanisms were used for applications like voice calls over the Internet, but this method of semi-guaranteed delivery is commonly used today for applications like video on demand. The problem with this approach is evident in symptoms such as buffering, in which case the video being sent is being received slower than expected, so the user's video software has to wait until enough data has arrived to ensure smooth playback.</p>\n<p>By re-examining the interface that programmers use to send this kind of data, this research was able to devise new support in the operating system so that programs could detect that data was being delivered more slowly than anticipated, and make corresponding changes. So, in the case of video delivery, the program could remove any data that was still waiting, and replace it with a lower-resolution version of the same content. Lower-resolution video will not have the same quality as the original video, but will require less bandwidth, so it may be possible to play it without buffering in situations where a higher-quality video would stall multiple times. Such lower-resolution video can be used until the bandwidth increases again, at which time the original-quality video can be resumed. In this manner, users can experience dramatically-reduced buffering while only viewing lower-quality video as needed.</p>\n<p>This research enables the easy migration of existing video systems to this kind of approach, since it can be done purely on the servers sending the video, instead of having to update the software of every user viewing the video. Additionally, this research applied similar techniques to other kinds of data, allowing similar benefits for still images and even other types of transfers, such as Web pages.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/05/2016<br>\n\t\t\t\t\tModified by: Vivek&nbsp;S&nbsp;Pai</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis research re-examined the boundary between the networking portion of the operating system and the core portion of the operating system. Programmers have historically used an interface that allowed them to send data over the network by having the operating system make a copy of the data the programmer presented. Once the programmer presented the data, the operating system would make every effort to deliver the data, even if delivering that data took longer than originally expected. Other mechanisms were used for applications like voice calls over the Internet, but this method of semi-guaranteed delivery is commonly used today for applications like video on demand. The problem with this approach is evident in symptoms such as buffering, in which case the video being sent is being received slower than expected, so the user's video software has to wait until enough data has arrived to ensure smooth playback.\n\nBy re-examining the interface that programmers use to send this kind of data, this research was able to devise new support in the operating system so that programs could detect that data was being delivered more slowly than anticipated, and make corresponding changes. So, in the case of video delivery, the program could remove any data that was still waiting, and replace it with a lower-resolution version of the same content. Lower-resolution video will not have the same quality as the original video, but will require less bandwidth, so it may be possible to play it without buffering in situations where a higher-quality video would stall multiple times. Such lower-resolution video can be used until the bandwidth increases again, at which time the original-quality video can be resumed. In this manner, users can experience dramatically-reduced buffering while only viewing lower-quality video as needed.\n\nThis research enables the easy migration of existing video systems to this kind of approach, since it can be done purely on the servers sending the video, instead of having to update the software of every user viewing the video. Additionally, this research applied similar techniques to other kinds of data, allowing similar benefits for still images and even other types of transfers, such as Web pages.\n\n \n\n\t\t\t\t\tLast Modified: 09/05/2016\n\n\t\t\t\t\tSubmitted by: Vivek S Pai"
+ }
+}

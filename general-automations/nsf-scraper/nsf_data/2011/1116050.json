@@ -1,0 +1,109 @@
+{
+ "awd_id": "1116050",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TC: Small: Secrecy-Preserving Reasoning: Foundations, Algorithms, and Software",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Christopher Clifton",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2015-07-31",
+ "tot_intn_awd_amt": 450895.0,
+ "awd_amount": 450895.0,
+ "awd_min_amd_letter_date": "2011-07-23",
+ "awd_max_amd_letter_date": "2011-07-23",
+ "awd_abstract_narration": "This proposal is developing theoretical foundations as well as algorithms and software for secrecy-preserving reasoning. The key novel idea, rather different from existing work, is to exploit the indistinguishability (as far as the querying agent is concerned) between secret information, on one hand, and incomplete information, on the other hand, under the open world semantics. The Principal Investigator utilizes his ideas of for computing small secrecy envelopes so that answering \"Unknown\" to queries inside the envelope while answering queries outside the envelope truthfully, constitutes a secrecy-preserving query-answering algorithm. The Principal Investigator plans to integrate this research into education and to enhance interdisciplinary collaborations within and beyond Iowa State University. In addition, he plans to advance collaborations with industrial partners (Boeing in the high-tech area and Mayo Clinic in the health care area) as well as applications in the areas of information assurance and national security.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Giora",
+   "pi_last_name": "Slutzki",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Giora Slutzki",
+   "pi_email_addr": "slutzki@cs.iastate.edu",
+   "nsf_id": "000237793",
+   "pi_start_date": "2011-07-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Iowa State University",
+  "inst_street_address": "1350 BEARDSHEAR HALL",
+  "inst_street_address_2": "515 MORRILL ROAD",
+  "inst_city_name": "AMES",
+  "inst_state_code": "IA",
+  "inst_state_name": "Iowa",
+  "inst_phone_num": "5152945225",
+  "inst_zip_code": "500112103",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "IA04",
+  "org_lgl_bus_name": "IOWA STATE UNIVERSITY OF SCIENCE AND TECHNOLOGY",
+  "org_prnt_uei_num": "DQDBM7FGJPC5",
+  "org_uei_num": "DQDBM7FGJPC5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Iowa State University",
+  "perf_str_addr": "1350 BEARDSHEAR HALL",
+  "perf_city_name": "AMES",
+  "perf_st_code": "IA",
+  "perf_st_name": "Iowa",
+  "perf_zip_code": "500112103",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "IA04",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779500",
+   "pgm_ele_name": "TRUSTWORTHY COMPUTING"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7795",
+   "pgm_ref_txt": "TRUSTWORTHY COMPUTING"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 450895.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The explosive growth in online banking, activities in social networks, web based travel services and other internet based business applications&nbsp; contributes to unprecedented level of information sharing. The indispensable aspect in web based services is to secure the private information while sharing the information as much as possible. In literature, most of the approaches dealing with &ldquo;information protection&rdquo; are based on access control mechanisms. For semantic web applications, authors have proposed policy languages to represent obligation and delegation policies based on access control approaches.</p>\n<p>In their 2008 CACM paper \"Information Accountability\",&nbsp; Weitzner, Abelson, Berners-Lee, Feigenbaum, Hendler and Sussman have observed that excessive focus on protecting secret information may result in policies that do not meet social needs and are not conducive to useful sharing of information. In response to these concerns the PI (and his collaborators) have developed a secrecy framework that attempts to satisfy the following, competing properties: (a) it protects secret information, (b) queries are answered as informatively as possible (subject to satisfying property (a)). This approach is heavily based on Open World Assumption (OWA) in the following sense: the idea was to utilize the secret information within the reasoning process, but then answering &ldquo;Unknown&rdquo; whenever the answer is <br />truly unknown or in case the true answer could compromise confidentiality.</p>\n<p>&nbsp;</p>\n<p>The PI has introduced the notion of an \"envelope\" to hide secret information against logical inference with the idea that no member in the envelope is logically reachable from outside the envelope. Once such an envelope<br />is computed, the answers to queries can be computed from the membership information available outside the envelope. The role of OWA&nbsp; in answering the queries is the following: When answering a query with &ldquo;Unknown&rdquo;, the querying agent is not able to distinguish between the case that the answer to the query is truly unknown to the KB reasoner and the case that the answer is being protected for reasons of secrecy.<br /><br /></p>\n<p>A challenging aspect in building envelope is to compute a minimum size envelope which enables the KB to answer queries as informatively as possible without revealing the secrets that the KB is obliged to protect.&nbsp;&nbsp;&nbsp; The complexity of building the envelope and the complexity of answering queries depends heavily on (so called) description language being used to represent the domain knowledge in the knowledge base. However, computing minimum envelope even for very simple languages seems rather hard (NP-complete ). Thus we resort to computing a minimal envelope, called tight envelope, which can be computed in polynomial time.</p>\n<p>&nbsp;</p>\n<p>The methodology of constructing envelopes is also novel: we take the reasoning rules of the original language (the one used by the reasoner attached to the KB) and invert them to use in the envelope construction. To illustrate this idea consider the well-known Modus Ponens: from A and&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A &rarr; B, conclude B. To invert this rule we assume that B is secret (in the envelope) and if&nbsp; A &rarr; B is known, then A must be put into the envelope as well.&nbsp;</p>\n<p>&nbsp;</p>\n<p>In addition to defining a general framework for studying logic-based secrecy-preserving reasoning, we have applied our \"envelope methodology\" to several description languages of increasing complexity or, alternatively, increasing querying capabilities.</p>\n<p>&nbsp;</p>\n<p>A lot of work remains to be done to see how far our approach could be pushed.In particular it would be very interesting if our approach could be combined with some other approaches (perhaps cryptographic techniques) to obtain even better and more ...",
+  "por_txt_cntn": "\nThe explosive growth in online banking, activities in social networks, web based travel services and other internet based business applications  contributes to unprecedented level of information sharing. The indispensable aspect in web based services is to secure the private information while sharing the information as much as possible. In literature, most of the approaches dealing with \"information protection\" are based on access control mechanisms. For semantic web applications, authors have proposed policy languages to represent obligation and delegation policies based on access control approaches.\n\nIn their 2008 CACM paper \"Information Accountability\",  Weitzner, Abelson, Berners-Lee, Feigenbaum, Hendler and Sussman have observed that excessive focus on protecting secret information may result in policies that do not meet social needs and are not conducive to useful sharing of information. In response to these concerns the PI (and his collaborators) have developed a secrecy framework that attempts to satisfy the following, competing properties: (a) it protects secret information, (b) queries are answered as informatively as possible (subject to satisfying property (a)). This approach is heavily based on Open World Assumption (OWA) in the following sense: the idea was to utilize the secret information within the reasoning process, but then answering \"Unknown\" whenever the answer is \ntruly unknown or in case the true answer could compromise confidentiality.\n\n \n\nThe PI has introduced the notion of an \"envelope\" to hide secret information against logical inference with the idea that no member in the envelope is logically reachable from outside the envelope. Once such an envelope\nis computed, the answers to queries can be computed from the membership information available outside the envelope. The role of OWA  in answering the queries is the following: When answering a query with \"Unknown\", the querying agent is not able to distinguish between the case that the answer to the query is truly unknown to the KB reasoner and the case that the answer is being protected for reasons of secrecy.\n\n\n\nA challenging aspect in building envelope is to compute a minimum size envelope which enables the KB to answer queries as informatively as possible without revealing the secrets that the KB is obliged to protect.    The complexity of building the envelope and the complexity of answering queries depends heavily on (so called) description language being used to represent the domain knowledge in the knowledge base. However, computing minimum envelope even for very simple languages seems rather hard (NP-complete ). Thus we resort to computing a minimal envelope, called tight envelope, which can be computed in polynomial time.\n\n \n\nThe methodology of constructing envelopes is also novel: we take the reasoning rules of the original language (the one used by the reasoner attached to the KB) and invert them to use in the envelope construction. To illustrate this idea consider the well-known Modus Ponens: from A and        A &rarr; B, conclude B. To invert this rule we assume that B is secret (in the envelope) and if  A &rarr; B is known, then A must be put into the envelope as well. \n\n \n\nIn addition to defining a general framework for studying logic-based secrecy-preserving reasoning, we have applied our \"envelope methodology\" to several description languages of increasing complexity or, alternatively, increasing querying capabilities.\n\n \n\nA lot of work remains to be done to see how far our approach could be pushed.In particular it would be very interesting if our approach could be combined with some other approaches (perhaps cryptographic techniques) to obtain even better and more secure semantic web.\n\n \n\n \n\n \n\n \n\n \n\n \n\n\t\t\t\t\tLast Modified: 10/26/2015\n\n\t\t\t\t\tSubmitted by: Giora Slutzki"
+ }
+}

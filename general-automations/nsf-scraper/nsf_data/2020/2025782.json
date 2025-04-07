@@ -1,0 +1,105 @@
+{
+ "awd_id": "2025782",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NRI: INT: Customizing Semi-Autonomous Nursing Robots Using Human Expertise",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032922568",
+ "po_email": "wnilsen@nsf.gov",
+ "po_sign_block_name": "Wendy Nilsen",
+ "awd_eff_date": "2020-02-01",
+ "awd_exp_date": "2023-08-31",
+ "tot_intn_awd_amt": 701142.0,
+ "awd_amount": 701142.0,
+ "awd_min_amd_letter_date": "2020-06-30",
+ "awd_max_amd_letter_date": "2020-06-30",
+ "awd_abstract_narration": "Remote-controlled robots have the potential to allow humans to perform useful tasks without putting themselves in danger, or without travelling long distances. This project explores how humans can control nursing robots that can communicate with patients, collect vital signs, and perform routine cleaning tasks in quarantine environments. The use of these robots has the potential to protect nurses from infection during disease outbreaks, and to protect patients with weakened immune system. A significant challenge in this effort is to make the user interface to the robot easy enough for nurses to use without significant training. Because engineers are not experts in nursing, the research will let nurses customize the user interface by teaching the robot about objects, places, and tasks that are typically used in nursing. After training, artificial intelligence algorithms will then automatically estimate which actions the nurse wants to perform, and these will be presented in a simple user interface that allows the nurse to select those actions quickly. \r\n\r\nThis project will continue an interdisciplinary collaboration between Duke's School of Engineering and School of Nursing. Research will be conducted in three thrust areas: 1) smart human operator interfaces for supervised autonomy that learn mappings between multimodal sensor input streams to provide simple, interpretable task options and status feedback; 2) hierarchical task learning algorithms for helping human experts train novel composite tasks; and 3) real world evaluation of human-robot system speed, reliability, operator workload, and operator learning curve using registered nurses and nursing students performing simulated clinical tasks in training environments.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Kris",
+   "pi_last_name": "Hauser",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Kris Hauser",
+   "pi_email_addr": "kkhauser@illinois.edu",
+   "nsf_id": "000554065",
+   "pi_start_date": "2020-06-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Illinois at Urbana-Champaign",
+  "inst_street_address": "506 S WRIGHT ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "URBANA",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "2173332187",
+  "inst_zip_code": "618013620",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "IL13",
+  "org_lgl_bus_name": "UNIVERSITY OF ILLINOIS",
+  "org_prnt_uei_num": "V2PHZ2CSCH63",
+  "org_uei_num": "Y8CWNJRCNN91"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Illinois at Urbana-Champai",
+  "perf_str_addr": "1901 South First Street",
+  "perf_city_name": "Champaign",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "618207406",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "IL13",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "801300",
+   "pgm_ele_name": "NRI-National Robotics Initiati"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "063Z",
+   "pgm_ref_txt": "FW-HTF Futr Wrk Hum-Tech Frntr"
+  },
+  {
+   "pgm_ref_code": "8086",
+   "pgm_ref_txt": "Natl Robotics Initiative (NRI)"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 701141.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The purpose of this project was to investigate methods to enhance how humans remotely operate robots to perform navigation, manipulation, and communication activities in healthcare settings. Although mobile manipulator robots are relatively straightforward to construct, operating each of their large numbers of degrees of freedom and sensors is overwhelming particularly for novice operators. Moreover, the precision and dexterity of such robots is limited by the characteristics of the operator interface device, such as a mouse and keyboard, haptic device, or VR controller, and network latency which degrade the operator experience. This research explored shared control strategies, which offload some responsibility of the control onto the robot, and in particular it studied how to customize the sharing of control to meet the operator's preferences.</p>\n<p>These studies used the Tele-Robotic Intelligent Nursing System (TRINA) platform to reach a variety of interesting findings. The success of later versions of the robot contribute evidence to the hypothesis that matching the robot to a human's size, reach, strength, and sensing allows for novice users to understand the capabilities of the robot more quickly and operate it more proficiently. Moreover, experiments show that shared control of low-level motor function, such as gripper orientation control, helps operators perform fine manipulation tasks, and that AI-based methods are capable of identifying target objects in the robot's environment and are capable of predicting users' intended actions with a high degree of accuracy (90%+). This latter result is promising because an AI-based predictive menu can help overcome the \"operator overload\" that would be experienced if dozens or hundreds of semi-autonomous actions available in a normal menu system.</p>\n<p>Broader impacts include a highly successful undergraduate research program that involved over 30 undergraduate students over four years on a team that prepared the TRINA robot for the ANA Avatar XPRIZE competition. In this interational competition, a novice judge was trained in 45 minutes to use a robot in a remote environment. Our team placed fourth in the competition and was one of only four teams to complete all 10 tasks. Ultimately, the competition exposed these undergraduate students with hands-on experience in topics in robotics, AR/VR, hardware design, and control, with many students proceeding into graduate-level studies in computing or engineering discplines.</p><br>\n<p>\n Last Modified: 01/12/2024<br>\nModified by: Kris&nbsp;Hauser</p></div>\n<div class=\"porSideCol\"\n><div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2024/2025782/2025782_10572972_1705087263238_predictive_menu--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2024/2025782/2025782_10572972_1705087263238_predictive_menu--rgov-800width.jpg\" title=\"Immersive AI-based predictive menu\"><img src=\"/por/images/Reports/POR/2024/2025782/2025782_10572972_1705087263238_predictive_menu--rgov-66x44.jpg\" alt=\"Immersive AI-based predictive menu\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">While wearing VR headset, users of our system choose tasks for the robot to execute using a novel predictive menu system. The predictions depend on the observed objects in the world and are trained using machine learning from expert data.</div>\n<div class=\"imageCredit\">UIUC Intelligent Motion Lab</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Kris&nbsp;Hauser\n<div class=\"imageTitle\">Immersive AI-based predictive menu</div>\n</div>\n</li><li>\n<a href=\"/por/images/Reports/POR/2024/2025782/2025782_10572972_1705086829147_trina_three_generations_4x3--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2024/2025782/2025782_10572972_1705086829147_trina_three_generations_4x3--rgov-800width.jpg\" title=\"Three generations of TRINA platform\"><img src=\"/por/images/Reports/POR/2024/2025782/2025782_10572972_1705086829147_trina_three_generations_4x3--rgov-66x44.jpg\" alt=\"Three generations of TRINA platform\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Based on earlier work on the TRINA 1.0 platform, this project completed two upgraded versions of the robot to address mobility, dexterity, and usability issues.</div>\n<div class=\"imageCredit\">UIUC Intelligent Motion Lab</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Kris&nbsp;Hauser\n<div class=\"imageTitle\">Three generations of TRINA platform</div>\n</div>\n</li></ul>\n</div>\n</div></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe purpose of this project was to investigate methods to enhance how humans remotely operate robots to perform navigation, manipulation, and communication activities in healthcare settings. Although mobile manipulator robots are relatively straightforward to construct, operating each of their large numbers of degrees of freedom and sensors is overwhelming particularly for novice operators. Moreover, the precision and dexterity of such robots is limited by the characteristics of the operator interface device, such as a mouse and keyboard, haptic device, or VR controller, and network latency which degrade the operator experience. This research explored shared control strategies, which offload some responsibility of the control onto the robot, and in particular it studied how to customize the sharing of control to meet the operator's preferences.\n\n\nThese studies used the Tele-Robotic Intelligent Nursing System (TRINA) platform to reach a variety of interesting findings. The success of later versions of the robot contribute evidence to the hypothesis that matching the robot to a human's size, reach, strength, and sensing allows for novice users to understand the capabilities of the robot more quickly and operate it more proficiently. Moreover, experiments show that shared control of low-level motor function, such as gripper orientation control, helps operators perform fine manipulation tasks, and that AI-based methods are capable of identifying target objects in the robot's environment and are capable of predicting users' intended actions with a high degree of accuracy (90%+). This latter result is promising because an AI-based predictive menu can help overcome the \"operator overload\" that would be experienced if dozens or hundreds of semi-autonomous actions available in a normal menu system.\n\n\nBroader impacts include a highly successful undergraduate research program that involved over 30 undergraduate students over four years on a team that prepared the TRINA robot for the ANA Avatar XPRIZE competition. In this interational competition, a novice judge was trained in 45 minutes to use a robot in a remote environment. Our team placed fourth in the competition and was one of only four teams to complete all 10 tasks. Ultimately, the competition exposed these undergraduate students with hands-on experience in topics in robotics, AR/VR, hardware design, and control, with many students proceeding into graduate-level studies in computing or engineering discplines.\t\t\t\t\tLast Modified: 01/12/2024\n\n\t\t\t\t\tSubmitted by: KrisHauser\n"
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "awd_id": "1118059",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR:Small: Towards Reliable Concurrent Computing Using Hybrid Program Analysis",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anita La Salle",
+ "awd_eff_date": "2011-08-15",
+ "awd_exp_date": "2015-07-31",
+ "tot_intn_awd_amt": 354591.0,
+ "awd_amount": 354591.0,
+ "awd_min_amd_letter_date": "2011-08-08",
+ "awd_max_amd_letter_date": "2011-08-08",
+ "awd_abstract_narration": "Inexpensive multi-core processors and many-core GPUs present tremendous opportunities as well as serious challenges for software developers. Developing concurrent programs is intrinsically difficult because multi-threading introduces a whole new class of errors that do not exist in sequential programs. This problem is exacerbated when developing and debugging large-scale, data-intensive, and computation-intensive programs. Traditional testing and debugging techniques are not appropriate for multi-threaded programs which may behave differently from one run to another because threads are scheduled non-deterministically.\r\n\r\nThis project develops a toolkit to detect correctness and performance problems on shared memory systems with the following techniques. (1) Exploit the benefits of static and dynamic analyses while avoiding their shortcomings. Specifically, extend dynamic analysis by augmenting it with static analysis to systematically explore program code for error detection and prevention. (2) Investigate different optimization approaches to lower runtime overhead and improve the toolkit's scalability. (3) Design a unified framework that can predict potential errors and enforce the scheduler to avoid the errors by manipulating accessing orders.\r\n\r\nThe success of this project may enhance the dependability of parallel computing systems and help design more reliable multi-threaded programs. Research results will be integrated into the teaching of undergraduate and graduate courses such as operating systems, parallel programming, and compiler design.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Liqiang",
+   "pi_last_name": "Wang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Liqiang Wang",
+   "pi_email_addr": "lwang@cs.ucf.edu",
+   "nsf_id": "000248300",
+   "pi_start_date": "2011-08-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Wyoming",
+  "inst_street_address": "1000 E UNIVERSITY AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "LARAMIE",
+  "inst_state_code": "WY",
+  "inst_state_name": "Wyoming",
+  "inst_phone_num": "3077665320",
+  "inst_zip_code": "820712000",
+  "inst_country_name": "United States",
+  "cong_dist_code": "00",
+  "st_cong_dist_code": "WY00",
+  "org_lgl_bus_name": "UNIVERSITY OF WYOMING",
+  "org_prnt_uei_num": "FDR5YF2K32X5",
+  "org_uei_num": "FDR5YF2K32X5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Wyoming",
+  "perf_str_addr": "1000 E UNIVERSITY AVE",
+  "perf_city_name": "LARAMIE",
+  "perf_st_code": "WY",
+  "perf_st_name": "Wyoming",
+  "perf_zip_code": "820712000",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "00",
+  "perf_st_cong_dist": "WY00",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7354",
+   "pgm_ref_txt": "COMPUTER SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 354591.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><div><strong><span style=\"white-space: pre;\"> </span>1. Research</strong></div>\n<div><strong><br /></strong></div>\n<div><span style=\"white-space: pre;\"> </span>We developed several toolkits and new approaches to detect and avoid concurrency errors on shared memory systems. We have published 12 papers with the support of the grant. Our major research results are summarized in the following. (1) &nbsp;We designed the OpenMP Analysis Toolkit (OAT), which uses symbolic analysis to detect data races and deadlocks in OpenMP programs. The tool is open source and has been integrated with the Rose Compiler Infrastructure. (2) We designed another tool to detect thread safety violations in hybrid MPI/OpenMP programs. By integrating static and dynamic program analyses, we lower runtime overhead and improve analysis performance. (3) We designed a novel framework using compile-time and run-time optimizations on instrumentation and monitoring that can significantly reduce the overhead of dynamic analysis on multithreaded programs. Our framework can selectively turn off excessive monitoring on repeated code region invocations if the current program context has been determined to be redundant, which may assist existing dynamic detection tools to improve their performance. (4) We designed a tool using program analysis techniques to dynamically adjust computing resource allocations on virtual machines or containers in order to automatically tune performance of MPI programs on cloud computing platforms. (5) Based on program analysis techniques, we designed an integrated analytical and profile based cross-architecture performance modeling approach to provide inter-architecture performance prediction for Sparse MatrixVector Multiplication (SpMV) on GPUs. (6) We designed a novel concurrent coordination algorithm for distributed generalized deadlock detection. The algorithm can avoid false negatives and improve the performance when concurrently executing deadlock detection in a distributed system. (7) We designed a resilient framework for service-oriented software, which can automatically generate a fault handling strategy for each failed service to improve the efficiency of fault handling.</div>\n<p><span style=\"white-space: pre;\"> </span>We are continuing to improve our hybrid program analysis approaches to dynamically detect and avoid concurrency problems in MPI and OpenMP programs. Our ongoing research is mainly based on symbolic execution and light-weight runtime monitoring and scheduling interference.</p>\n<p><strong><span style=\"white-space: pre;\"> </span>&nbsp;2. Education</strong></p>\n<p><strong>&nbsp;</strong><span style=\"white-space: pre;\"> </span>The PI has integrated the research with&nbsp;the courses &ldquo;Introduction to High-Performance Computing (COSC 4010/5010)&rdquo;, \"Introduction to Cloud computing and Big data (COSC 4010/5010)\", and &ldquo;Operating System Design (COSC 4740)&rdquo; in the University of Wyoming. In these courses, multi-threading, parallel and distributed computing were introduced. We demonstrated subtle concurrency errors and introduced techniques on how to avoid them. Students have been trained with the skills on developing more efficient and reliable parallel programs.</p>\n<p><span style=\"white-space: pre;\"> </span>Two Ph.D. students graduated with the support of this grant. Three more Ph.D. students, two M.S. students, and one undergraduate student were also involved in the projects.</p>\n<p><strong><span style=\"white-space: pre;\"> </span>&nbsp;3. Broader Impact</strong></p>\n<p><span style=\"white-space: pre;\"> </span>Our approaches and tools enhance the dependability of parallel computing systems and help design more reliable multi-threaded programs (especially OpenMP) as well as hybrid programming models (OpenMP/MPI).</p>\n<p><span style=\"white-space: pre;\"> </span>The PI has played an important&nbsp;role in the support of parallel computing in the Univ...",
+  "por_txt_cntn": "1. Research\n\n\n We developed several toolkits and new approaches to detect and avoid concurrency errors on shared memory systems. We have published 12 papers with the support of the grant. Our major research results are summarized in the following. (1)  We designed the OpenMP Analysis Toolkit (OAT), which uses symbolic analysis to detect data races and deadlocks in OpenMP programs. The tool is open source and has been integrated with the Rose Compiler Infrastructure. (2) We designed another tool to detect thread safety violations in hybrid MPI/OpenMP programs. By integrating static and dynamic program analyses, we lower runtime overhead and improve analysis performance. (3) We designed a novel framework using compile-time and run-time optimizations on instrumentation and monitoring that can significantly reduce the overhead of dynamic analysis on multithreaded programs. Our framework can selectively turn off excessive monitoring on repeated code region invocations if the current program context has been determined to be redundant, which may assist existing dynamic detection tools to improve their performance. (4) We designed a tool using program analysis techniques to dynamically adjust computing resource allocations on virtual machines or containers in order to automatically tune performance of MPI programs on cloud computing platforms. (5) Based on program analysis techniques, we designed an integrated analytical and profile based cross-architecture performance modeling approach to provide inter-architecture performance prediction for Sparse MatrixVector Multiplication (SpMV) on GPUs. (6) We designed a novel concurrent coordination algorithm for distributed generalized deadlock detection. The algorithm can avoid false negatives and improve the performance when concurrently executing deadlock detection in a distributed system. (7) We designed a resilient framework for service-oriented software, which can automatically generate a fault handling strategy for each failed service to improve the efficiency of fault handling.\n\n We are continuing to improve our hybrid program analysis approaches to dynamically detect and avoid concurrency problems in MPI and OpenMP programs. Our ongoing research is mainly based on symbolic execution and light-weight runtime monitoring and scheduling interference.\n\n  2. Education\n\n  The PI has integrated the research with the courses \"Introduction to High-Performance Computing (COSC 4010/5010)\", \"Introduction to Cloud computing and Big data (COSC 4010/5010)\", and \"Operating System Design (COSC 4740)\" in the University of Wyoming. In these courses, multi-threading, parallel and distributed computing were introduced. We demonstrated subtle concurrency errors and introduced techniques on how to avoid them. Students have been trained with the skills on developing more efficient and reliable parallel programs.\n\n Two Ph.D. students graduated with the support of this grant. Three more Ph.D. students, two M.S. students, and one undergraduate student were also involved in the projects.\n\n  3. Broader Impact\n\n Our approaches and tools enhance the dependability of parallel computing systems and help design more reliable multi-threaded programs (especially OpenMP) as well as hybrid programming models (OpenMP/MPI).\n\n The PI has played an important role in the support of parallel computing in the University of Wyoming. The PI gave seminars and presentations on High Performance Computing at the University of Wyoming, and Front Range HPC Symposium. The PI helped faculty and graduate students on high-performance computing program developments and optimizations in different real-world scientific domains.\n\n\t\t\t\t\tLast Modified: 11/02/2015\n\n\t\t\t\t\tSubmitted by: Liqiang Wang"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1217749",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CIF: Small: Universal Signal Estimation from Noisy Measurements",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "John Cozzens",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 422732.0,
+ "awd_amount": 422732.0,
+ "awd_min_amd_letter_date": "2012-08-07",
+ "awd_max_amd_letter_date": "2012-08-07",
+ "awd_abstract_narration": "Signal processing and communication systems often use Bayesian methods, which require a statistical characterization of the input to be available.When statistics are unavailable, one can use universal algorithms that adapt to the data at hand and perform as well as any other system asymptotically.\r\nUnfortunately, the impact of universal algorithms has been limited to lossless compression.\r\nTo take universal algorithms beyond compression, this project will develop theory and algorithms for universal signal estimation, where an input signal is estimated from knowledge of its noisy measurements and the structure of the measurement system but without knowledge of the input statistics.\r\nOur formulation is broad, and the research could lead to\r\n(i) higher quality medical imaging;\r\n(ii)  improved seismic methods for predicting the likelihood of earthquakes and knowing where to perform oil and gas drilling;\r\n(iii) communicating better-compressed data over more challenging unknown channels; and (iv) allocating capital more efficiently in financial markets.\r\n\r\nWe perform universal signal estimation in (potentially nonlinear) signal processing systems from noisy measurements. The theoretical component of our this project is inspired by Kolmogorov complexity and the minimum description length principle. The algorithmic component  combines scalar quantization, universal lossless compression, and Markov chain Monte Carlo. We evaluate the estimated input over a quantized grid and optimize for the trade-off between information complexity of the estimated input and how well it explains the measurements.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Dror",
+   "pi_last_name": "Baron",
+   "pi_mid_init": "Z",
+   "pi_sufx_name": "",
+   "pi_full_name": "Dror Z Baron",
+   "pi_email_addr": "barondror@gmail.com",
+   "nsf_id": "000595150",
+   "pi_start_date": "2012-08-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "North Carolina State University",
+  "inst_street_address": "2601 WOLF VILLAGE WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "RALEIGH",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9195152444",
+  "inst_zip_code": "276950001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "NC02",
+  "org_lgl_bus_name": "NORTH CAROLINA STATE UNIVERSITY",
+  "org_prnt_uei_num": "U3NVH931QJJ3",
+  "org_uei_num": "U3NVH931QJJ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "North Carolina State University",
+  "perf_str_addr": "2097 Engr Bldg II",
+  "perf_city_name": "Raleigh",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "276957911",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "NC02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779700",
+   "pgm_ele_name": "Comm & Information Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7936",
+   "pgm_ref_txt": "SIGNAL PROCESSING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 422732.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project targeted a unified theory and algorithmic solutions for universal signal estimation from noisy measurements. Two research thrusts were targeted. In the Theory research thrust, the project aimed to study the fundamental performance limits of universal estimation. How well can we estimate? How will the mean square error obtained by our universal signal estimator relate to Bayesian error metrics? Is it possible for improved universal estimators to match the Bayesian performance? In the Algorithms research thrust, the project considered fast estimators that work well in practice in a broad range of measurement systems.</p>\n<p>Key outcomes of the project included:</p>\n<p>1) Two algorithms for universal signal estimation, and in particular for solving linear inverse problems. These are the best available universal algorithms for such problems, to the best of our knowledge.</p>\n<p>2) Performance limits of linear inverse problems, including the first replica method analysis of multiple measurement vector (MMV) problems.</p>\n<p>3) New reconstruction algorithms in both compressive imaging and compressive hyper spectral imaging. For example, the attached image shows hyper specral image slices at several wavelengths corresponding to different columns. The first row of images is the ground truth data, the second row is the output of our algorithm, and the last two rows are for existing algorithms. It can be seen that our reconstructed images contain more detail than those obtained by other algorithms.</p>\n<p>4) Lossy compression was used to reduce communication costs in large scale multi-processor approximate message passing algorithms.</p>\n<p>The project also had broader impact goals:</p>\n<p>1) The PI has been mentoring students for years, and mentored several doctoral students as part of the project. Two of these students are women.</p>\n<p>2) We focused on using online tools in integrating research into education.</p>\n<p>3) We organized our research into tutorial websites and posted software online.</p>\n<p>4) Several videos that provide tutorial research presentations were created and posted online.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/14/2016<br>\n\t\t\t\t\tModified by: Dror&nbsp;Z&nbsp;Baron</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2016/1217749/1217749_10198262_1476422687827_colorArray_4x7--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1217749/1217749_10198262_1476422687827_colorArray_4x7--rgov-800width.jpg\" title=\"Reconstruction results in compressive hyper spectral imaging.\"><img src=\"/por/images/Reports/POR/2016/1217749/1217749_10198262_1476422687827_colorArray_4x7--rgov-66x44.jpg\" alt=\"Reconstruction results in compressive hyper spectral imaging.\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">2D slices at wavelengths from 470 nm to 632 nm in Lego image cube reconstructed by AMP-3D-Wiener (new algorithm), GPSR, and TwIST. Row 1: ground truth; Row 2: the reconstruction result by AMP-3D-Wiener; Rows 3 and 4: reconstruction results by two existing algorithms.</div>\n<div class=\"imageCredit\">D. Baron</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Dror&nbsp;Z&nbsp;Baron</div>\n<div class=\"imageTitle\">Reconstruction results in compressive hyper spectral imaging.</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThis project targeted a unified theory and algorithmic solutions for universal signal estimation from noisy measurements. Two research thrusts were targeted. In the Theory research thrust, the project aimed to study the fundamental performance limits of universal estimation. How well can we estimate? How will the mean square error obtained by our universal signal estimator relate to Bayesian error metrics? Is it possible for improved universal estimators to match the Bayesian performance? In the Algorithms research thrust, the project considered fast estimators that work well in practice in a broad range of measurement systems.\n\nKey outcomes of the project included:\n\n1) Two algorithms for universal signal estimation, and in particular for solving linear inverse problems. These are the best available universal algorithms for such problems, to the best of our knowledge.\n\n2) Performance limits of linear inverse problems, including the first replica method analysis of multiple measurement vector (MMV) problems.\n\n3) New reconstruction algorithms in both compressive imaging and compressive hyper spectral imaging. For example, the attached image shows hyper specral image slices at several wavelengths corresponding to different columns. The first row of images is the ground truth data, the second row is the output of our algorithm, and the last two rows are for existing algorithms. It can be seen that our reconstructed images contain more detail than those obtained by other algorithms.\n\n4) Lossy compression was used to reduce communication costs in large scale multi-processor approximate message passing algorithms.\n\nThe project also had broader impact goals:\n\n1) The PI has been mentoring students for years, and mentored several doctoral students as part of the project. Two of these students are women.\n\n2) We focused on using online tools in integrating research into education.\n\n3) We organized our research into tutorial websites and posted software online.\n\n4) Several videos that provide tutorial research presentations were created and posted online.\n\n\t\t\t\t\tLast Modified: 10/14/2016\n\n\t\t\t\t\tSubmitted by: Dror Z Baron"
+ }
+}

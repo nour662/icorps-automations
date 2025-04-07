@@ -1,0 +1,109 @@
+{
+ "awd_id": "1949217",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: SaTC: Image Publication with Differential Privacy",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "James Joshi",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2022-05-31",
+ "tot_intn_awd_amt": 174967.0,
+ "awd_amount": 174967.0,
+ "awd_min_amd_letter_date": "2019-08-28",
+ "awd_max_amd_letter_date": "2019-08-28",
+ "awd_abstract_narration": "The publication of image data captured by ubiquitous surveillance devices, such as traffic cameras and security surveillance cameras, would greatly benefit various communities and enable many applications. However, sharing image data with untrusted parties would raise privacy concern due to potential sensitive content, like identities and activities that may be in the images.  Standard image obfuscation techniques, such as pixelation and blurring, do not provide effective privacy preservation for people or objects represented in the data.   The goal of this project is to quantitatively define the notion of privacy in image data and develop image publication solutions to achieve rigorous privacy guarantees.  By formally modeling image privacy, this project promises significant impact in enabling image data sharing with a wide range of recipients while ensuring individual privacy. \r\n\r\nThis project develops rigorous privacy notions based on differential privacy for image data, while accounting for the representation of sensitive content in images and effective image obfuscation algorithms to guarantee privacy, and incorporates widely adopted feature extraction techniques in computer vision. The investigator will evaluate the utility and efficiency of the obfuscation algorithms, including the feasibility for popular image processing applications such as crowd counting and object recognition. The project also includes educational activities for K-12 students and involvement of women and minorities.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Liyue",
+   "pi_last_name": "Fan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Liyue Fan",
+   "pi_email_addr": "liyue.fan@uncc.edu",
+   "nsf_id": "000731228",
+   "pi_start_date": "2019-08-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of North Carolina at Charlotte",
+  "inst_street_address": "9201 UNIVERSITY CITY BLVD",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHARLOTTE",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "7046871888",
+  "inst_zip_code": "282230001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "NC12",
+  "org_lgl_bus_name": "UNIVERSITY OF NORTH CAROLINA AT CHARLOTTE",
+  "org_prnt_uei_num": "NEYCH3CVBTR6",
+  "org_uei_num": "JB33DT84JNA5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of North Carolina at Charlotte",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "282230001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "NC12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 174967.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this CRII project was to develop approaches to protecting private information in image data sharing while aiming at high utility. Overall, the project successfully met the objectives. The key outcomes of this project are summarized in the following.</p>\n<p>Quantifying privacy in image data sharing: Quantifying the privacy leakage in image data sharing is a challenging task.&nbsp; The project proposed new privacy models for image data by extending the standard notion of differential privacy.&nbsp; Specifically, the project considered sensitive information in an input image at both pixel level and feature level, and developed image obfuscation methods to meet the rigorous differential privacy guarantees.&nbsp; The project also addressed the privacy challenges in high-dimensional spaces and designed a novel private sampling algorithm. &nbsp;&nbsp;The developed image obfuscation methods can be deployed locally, providing strong privacy protection and practicality.</p>\n<p>Balancing privacy and utility: Image data is shared to enable computer vision and machine learning applications.&nbsp; Those applications may have diverse utility requirements and the inference methods adopted by them may inflict new privacy risks. Moreover, it is challenging to translate differential privacy guarantees to practical privacy protection. &nbsp;The project identified the need for studying the practical privacy risks and utility requirements for image data sharing.&nbsp; &nbsp;Specifically, the project investigated computer vision-based inference attacks as well as application utility for face and eye images.&nbsp; Through a comparative evaluation, the project observed that feature-based image privacy achieves a balance between privacy and utility.&nbsp;</p>\n<p>Integrating image privacy and machine learning methods: The project explored ways of integrating the image privacy methods developed in this project with novel machine learning approaches.&nbsp; &nbsp;The project employed state-of-the-art representation learning methods for face images to understand the effects of image privacy methods on face embeddings. &nbsp;We observed that privacy methods introduce uncertainty in image embeddings, which contributes to the protection against practical attacks. &nbsp;On the other hand, the project investigated the feasibility of pre-processing image data with privacy methods for few-shot learning applications. &nbsp;We observed that image denoising networks can be deployed to improve the utility of few-shot learning and differential privacy-based methods provide strong privacy protection even after denoising.&nbsp;</p>\n<p>Broader impacts: Beyond the technical goals of the project, contributions were made to more than 10 invited talks; 2 demonstrations were developed for local Grades 6-8 students' field trip; 6 graduate students and 5 undergraduate students were trained for conducting research. Software and datasets have been disseminated for reproducing the experiment results and for use by other researchers.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/23/2022<br>\n\t\t\t\t\tModified by: Liyue&nbsp;Fan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of this CRII project was to develop approaches to protecting private information in image data sharing while aiming at high utility. Overall, the project successfully met the objectives. The key outcomes of this project are summarized in the following.\n\nQuantifying privacy in image data sharing: Quantifying the privacy leakage in image data sharing is a challenging task.  The project proposed new privacy models for image data by extending the standard notion of differential privacy.  Specifically, the project considered sensitive information in an input image at both pixel level and feature level, and developed image obfuscation methods to meet the rigorous differential privacy guarantees.  The project also addressed the privacy challenges in high-dimensional spaces and designed a novel private sampling algorithm.   The developed image obfuscation methods can be deployed locally, providing strong privacy protection and practicality.\n\nBalancing privacy and utility: Image data is shared to enable computer vision and machine learning applications.  Those applications may have diverse utility requirements and the inference methods adopted by them may inflict new privacy risks. Moreover, it is challenging to translate differential privacy guarantees to practical privacy protection.  The project identified the need for studying the practical privacy risks and utility requirements for image data sharing.   Specifically, the project investigated computer vision-based inference attacks as well as application utility for face and eye images.  Through a comparative evaluation, the project observed that feature-based image privacy achieves a balance between privacy and utility. \n\nIntegrating image privacy and machine learning methods: The project explored ways of integrating the image privacy methods developed in this project with novel machine learning approaches.   The project employed state-of-the-art representation learning methods for face images to understand the effects of image privacy methods on face embeddings.  We observed that privacy methods introduce uncertainty in image embeddings, which contributes to the protection against practical attacks.  On the other hand, the project investigated the feasibility of pre-processing image data with privacy methods for few-shot learning applications.  We observed that image denoising networks can be deployed to improve the utility of few-shot learning and differential privacy-based methods provide strong privacy protection even after denoising. \n\nBroader impacts: Beyond the technical goals of the project, contributions were made to more than 10 invited talks; 2 demonstrations were developed for local Grades 6-8 students' field trip; 6 graduate students and 5 undergraduate students were trained for conducting research. Software and datasets have been disseminated for reproducing the experiment results and for use by other researchers.\n\n\t\t\t\t\tLast Modified: 09/23/2022\n\n\t\t\t\t\tSubmitted by: Liyue Fan"
+ }
+}

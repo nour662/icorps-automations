@@ -1,0 +1,105 @@
+{
+ "awd_id": "1217857",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CIF: Small: Mathematical Aspects of Sparse Recovery-Theory and Algorithms",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "John Cozzens",
+ "awd_eff_date": "2012-10-01",
+ "awd_exp_date": "2015-03-31",
+ "tot_intn_awd_amt": 131832.0,
+ "awd_amount": 131832.0,
+ "awd_min_amd_letter_date": "2012-09-06",
+ "awd_max_amd_letter_date": "2012-09-06",
+ "awd_abstract_narration": "The motivation behind this research is to enable broader (and valid) usage of recent breakthroughs in the field of compressed sensing by improving the performance of sparse signal reconstruction algorithms. Compressed or sparse sensing is a new way to recover an analog signal (signal reconstruction) from a small number of measurements when the signal's support - points where the signal in question assumes nonzero values - is finite. Sparse signals are the counterpart to band-limited signals in conventional Nyquist sampling. What makes this approach so attractive is that the number of samples required to achieve \"perfect\" reconstruction is generally very small, and fast optimization algorithms can accomplish reconstruction. The first step in this research program will be to find ways to exploit prior knowledge about the nature of the support of the signal. The ultimate goal is to develop algorithmic approaches (theoretical/practical) to aid practitioners in formulating realistic assumptions in applications ranging from wireless communications, machine learning, DNA micro arrays, and various problems arising in image reconstruction. \r\n\r\nThe research focus is on designing polynomial reconstruction algorithms that could provably bridge the gap between sparsity to measurement density ratios (S/MDR) recoverable by the current state-of-the-art algorithms and the best possible situation where the S/MDR approaches 1. Specifically, the region where there has been a substantial lack of success for current state of the art approaches. More broadly, the objective is to obtain theoretical guarantees on the performance quality (complexity, precision etc.) of certain practically feasible optimization algorithms. Beyond the stated objectives, this work has the potential for creating powerful mathematical formalisms for solving other challenging fundamental optimization problems.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Mihailo",
+   "pi_last_name": "Stojnic",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mihailo Stojnic",
+   "pi_email_addr": "mstojnic@purdue.edu",
+   "nsf_id": "000521537",
+   "pi_start_date": "2012-09-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Purdue University",
+  "inst_street_address": "2550 NORTHWESTERN AVE # 1100",
+  "inst_street_address_2": "",
+  "inst_city_name": "WEST LAFAYETTE",
+  "inst_state_code": "IN",
+  "inst_state_name": "Indiana",
+  "inst_phone_num": "7654941055",
+  "inst_zip_code": "479061332",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "IN04",
+  "org_lgl_bus_name": "PURDUE UNIVERSITY",
+  "org_prnt_uei_num": "YRXVL4JYCEF5",
+  "org_uei_num": "YRXVL4JYCEF5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Purdue University",
+  "perf_str_addr": "315 N Grant Street",
+  "perf_city_name": "West Lafayette",
+  "perf_st_code": "IN",
+  "perf_st_name": "Indiana",
+  "perf_zip_code": "479072023",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "IN04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779700",
+   "pgm_ele_name": "Comm & Information Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7936",
+   "pgm_ref_txt": "SIGNAL PROCESSING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 131832.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>&nbsp;</p>\n<p>This proposal revisited under-determined linear systems with structured solutions (usually referred to as signals in signal processing applications). Given how successful our theoretical performance characterizations of various l1 based (in general, structure exploiting) algorithms for solving such systems were, we proposed to build on such success by aiming towards several ambitious objectives. The following three of such objectives were of particular interest: 1) precise quantification of l1 optimization performance improvement if there is a mechanism to acquire a partial knowledge of signal's support (location of nonzero elements); &nbsp;2) design of practically efficient algorithms that can recover a portion of signal's support; 3) further development of these ideas in a search for auxiliary tools that would in return be helpful in addressing the main challenges.</p>\n<p>The results we formalized so far indicate through a rigorous mathematical study that knowing the location of a part of the signal's support (either in its a clear or in its a hidden form) is beneficial to recoverability properties of a modified l1 polynomial optimization algorithm. We also studied to a degree what kind of effect a priori available knowledge of a different type of signal structure can have on the recoverability properties. Particular examples include the so-called block-sparse signals as well as signals known a priori to be positive. On top of that we extended studying to cover different l1-threshold concepts and also attacked the isometry properties of random matrices as a fundamental feature of random matrices. Given its importance in early stages of studying compressed sensing problems, one can hope that such a feature can potentially serve as a building block in eventually attacking the bridging gap problem which continues to be the main challenge as well as a building block in theoretically characterizing the column replacements algorithms performance.</p>\n<p>The impact we have achieved so far in the principal discipline is that one may start rethinking the compressed sensing paradigm through consideration of seemingly easier mathematical problems with a clear path as to how to quantify success of such a rethinking. Moreover, we discovered that many auxiliary problems can be handled through similar mechanisms which potentially in return may be utilized in attacking the main challenges.&nbsp;Some of the mathematical techniques that we developed we often intentionally framed within the context of a very popular field called compressed sensing. However, almost all of the techniques that we developed are also pure mathematical results with a plethora of applications in a variety of fields: design and performance analysis of optimization algorithms, high-dimensional geometry, probability and statistics and many others.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/29/2015<br>\n\t\t\t\t\tModified by: Mihailo&nbsp;Stojnic</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \n\nThis proposal revisited under-determined linear systems with structured solutions (usually referred to as signals in signal processing applications). Given how successful our theoretical performance characterizations of various l1 based (in general, structure exploiting) algorithms for solving such systems were, we proposed to build on such success by aiming towards several ambitious objectives. The following three of such objectives were of particular interest: 1) precise quantification of l1 optimization performance improvement if there is a mechanism to acquire a partial knowledge of signal's support (location of nonzero elements);  2) design of practically efficient algorithms that can recover a portion of signal's support; 3) further development of these ideas in a search for auxiliary tools that would in return be helpful in addressing the main challenges.\n\nThe results we formalized so far indicate through a rigorous mathematical study that knowing the location of a part of the signal's support (either in its a clear or in its a hidden form) is beneficial to recoverability properties of a modified l1 polynomial optimization algorithm. We also studied to a degree what kind of effect a priori available knowledge of a different type of signal structure can have on the recoverability properties. Particular examples include the so-called block-sparse signals as well as signals known a priori to be positive. On top of that we extended studying to cover different l1-threshold concepts and also attacked the isometry properties of random matrices as a fundamental feature of random matrices. Given its importance in early stages of studying compressed sensing problems, one can hope that such a feature can potentially serve as a building block in eventually attacking the bridging gap problem which continues to be the main challenge as well as a building block in theoretically characterizing the column replacements algorithms performance.\n\nThe impact we have achieved so far in the principal discipline is that one may start rethinking the compressed sensing paradigm through consideration of seemingly easier mathematical problems with a clear path as to how to quantify success of such a rethinking. Moreover, we discovered that many auxiliary problems can be handled through similar mechanisms which potentially in return may be utilized in attacking the main challenges. Some of the mathematical techniques that we developed we often intentionally framed within the context of a very popular field called compressed sensing. However, almost all of the techniques that we developed are also pure mathematical results with a plethora of applications in a variety of fields: design and performance analysis of optimization algorithms, high-dimensional geometry, probability and statistics and many others. \n\n \n\n\t\t\t\t\tLast Modified: 06/29/2015\n\n\t\t\t\t\tSubmitted by: Mihailo Stojnic"
+ }
+}

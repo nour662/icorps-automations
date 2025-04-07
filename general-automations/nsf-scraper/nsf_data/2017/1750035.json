@@ -1,0 +1,109 @@
+{
+ "awd_id": "1750035",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research:   From Adjoints for the Few to Adjoints for the Many: Integrating the Use of Adjoint Methods in Earth System Modeling",
+ "cfda_num": "47.078",
+ "org_code": "06090300",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Peter Milne",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 137322.0,
+ "awd_amount": 137322.0,
+ "awd_min_amd_letter_date": "2017-08-29",
+ "awd_max_amd_letter_date": "2017-08-29",
+ "awd_abstract_narration": "Adjoint models are useful mathematical tools for studies that require state estimates (e.g. forecasts or projections), and sensitivities of model output with respect to model input. Adjoint methods allow efficient and comprehensive computation of model sensitivity to very high dimensional spaces of inputs. An adjoint model can be used to efficiently quantify the effects of changes in the spatio-temporal distribution of surface winds, buoyancy fluxes, or mixing distribution in the ocean, on quantities such as carbon uptake in the Southern Ocean. Developing adjoint models for given state-of-the-art geophysical models can be as complex as developing the geophysical models themselves, which is one reason why adjoints are not frequently used.  This project will advance the tools needed to implement adjoint models.\r\n\r\nThe project will pursue three inter-related work packages to overcome these limitations:\r\n(1) bringing the open-source AD tool OpenAD to full maturity on four open-source Earth system modeling frameworks used in climate research and education\r\n(2) developing  configurations around several science applications where the sensitivity of quantities of interest (cost functions) to inputs (control variables) can be configured for realistic runtimes,\r\n(3) developing a generic Message Passing Interface (MPI)-based framework to enable the coupling between high-resolution forward and low-resolution adjoint models. \r\nThe proposed geoscience studies will be of interest to computational and climate scientists.  A broader impact of this research will be to enable adjoint methods to be more easily used across the geosciences, with potential to be transformative for data assimilation and sensitivity analysis in a wide range of geoscience and other disciplines.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "GEO",
+ "org_dir_long_name": "Directorate for Geosciences",
+ "div_abbr": "OPP",
+ "org_div_long_name": "Office of Polar Programs (OPP)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Matthew",
+   "pi_last_name": "Mazloff",
+   "pi_mid_init": "R",
+   "pi_sufx_name": "",
+   "pi_full_name": "Matthew R Mazloff",
+   "pi_email_addr": "mmazloff@ucsd.edu",
+   "nsf_id": "000539082",
+   "pi_start_date": "2017-08-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-San Diego Scripps Inst of Oceanography",
+  "inst_street_address": "8622 DISCOVERY WAY # 116",
+  "inst_street_address_2": "",
+  "inst_city_name": "LA JOLLA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8585341293",
+  "inst_zip_code": "920931500",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA SAN DIEGO",
+  "org_prnt_uei_num": "QJ8HMDK7MRM3",
+  "org_uei_num": "QJ8HMDK7MRM3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "UCSD- Scripps Inst. of Oceanography",
+  "perf_str_addr": "9500 Gilman Dr., MC 0230",
+  "perf_city_name": "La Jolla",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920930230",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "511300",
+   "pgm_ele_name": "ANT Ocean & Atmos Sciences"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5113",
+   "pgm_ref_txt": "ANTARCTIC OCEAN & ATMOSPH SCI"
+  },
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "02XX",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "0100XXXXDB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 137322.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>&nbsp; &nbsp; &nbsp;Numerical models for simulating geophysical processes, such as ocean circulation or glacier flow, solve equations of motions. These equations consist of both fundamental conservation laws as well as constitutive laws. These constitutive laws are empirical relations that capture both material properties (sea water or glacier ice) and processes not resolved by the spatial discretization. Input parameters are therefore required to perform such simulations. These inputs are all uncertain and come in the form of model initial conditions, boundary conditions (such as atmospheric forcing), and parameters used in the constitutive laws (such as mixing, viscosity, or basal properties). Counting all of the parameters together (many of which are spatially varying and thus are two- or three-dimensional fields) leads to a very high-dimensional space of uncertain parameters that is typically greater than 100,000. The model initialization problem consists of estimating optimal initial conditions (e.g. for forecasting), whereas the model calibration problem consists of inferring optimal model parameters, based on observations (akin to neural network training in the now popular language of machine learning). In both cases one seeks compute the sensitivity of an objective function (or quantity of interest) to all uncertain inputs, or, in mathematical terms, the gradient of the objective functions with respect to the high-dimensional space of input parameters (often referred to as control variables). Computing this gradient through direct (or forward) approaches, such as finite-differencing is expensive, if not computationally impractical.</p>\n<p>&nbsp; &nbsp; &nbsp;The adjoint method is a powerful approach to efficiently and comprehensively compute such sensitivities. This method enables efficient ocean data assimilation and sensitivity analysis, and thus has widespread impact. Beyond geosciences, disciplines impacted include all fields where prior models inform the research by revealing the sensitivity of these models to inputs. Examples include optimization of tidal turbine arrays, airfoil design, finance, and epidemiological modeling. Writing an adjoint model from scratch is as complex as writing its nonlinear parent model (such as an ocean circulation model or ice flow model). Automatic or algorithmic differentiation (AD) provides a powerful tool for generating the adjoint model in an automated manner, based on the nonlinear parent model. It is ubiquitous in machine learning (where the adjoint method is known as &ldquo;backpropagation&rdquo;), but so far less widespread in geoscientific modeling. Although powerful conceptually, automatic generation of reliable, efficient adjoint code via AD remains a complex process.</p>\n<p>&nbsp; &nbsp; &nbsp;The major goal of this project is to remove some of the hurdles that have prevented the wider use of adjoint methods through maturing an open-source automatic differentiation software, OpenAD. Moreover, we aimed to make the tools more user friendly, and to educate on their use via tutorial examples, presentations, workshops, and peer-reviewed publications demonstrating the utility of the methods. Project success was achieved by maturing and presenting the software (Intellectual Merit), but also via supporting the mentorship of multiple students, including REUs, and postdoctoral researchers (Broader Impact). The student and postdoc work led to conference presentations and peer-reviewed publications.</p>\n<p>&nbsp; &nbsp; &nbsp;Three specific example outcomes were (i) the generation of an adjoint model of the SImulation COde for POLythermal Ice Sheets (SICOPOLIS) to conduct sensitivity studies of the Greenland and Antarctic ice sheets; (ii) generation of the adjoint of an ocean model and an ice stream model of the MIT general circulation model (MITgcm) for simulating coupled ice stream-ice shelf-ocean interactions in West Antarctica; and (iii) improving uncertainty quantification via adjoint derivative-based methods to inform biogeochemical observing system design.</p>\n<p>&nbsp; &nbsp; &nbsp;This project has enabled a larger fraction of the community to generate and utilize adjoint models for sensitivity analyses, state estimation parameter calibration, or model initialization. Enabling a broad community of researchers to efficiently probe the sensitivity of domain-specific quantities of interest will allow impactful progress in understanding pressing problems that our society faces.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/06/2021<br>\n\t\t\t\t\tModified by: Matthew&nbsp;R&nbsp;Mazloff</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n     Numerical models for simulating geophysical processes, such as ocean circulation or glacier flow, solve equations of motions. These equations consist of both fundamental conservation laws as well as constitutive laws. These constitutive laws are empirical relations that capture both material properties (sea water or glacier ice) and processes not resolved by the spatial discretization. Input parameters are therefore required to perform such simulations. These inputs are all uncertain and come in the form of model initial conditions, boundary conditions (such as atmospheric forcing), and parameters used in the constitutive laws (such as mixing, viscosity, or basal properties). Counting all of the parameters together (many of which are spatially varying and thus are two- or three-dimensional fields) leads to a very high-dimensional space of uncertain parameters that is typically greater than 100,000. The model initialization problem consists of estimating optimal initial conditions (e.g. for forecasting), whereas the model calibration problem consists of inferring optimal model parameters, based on observations (akin to neural network training in the now popular language of machine learning). In both cases one seeks compute the sensitivity of an objective function (or quantity of interest) to all uncertain inputs, or, in mathematical terms, the gradient of the objective functions with respect to the high-dimensional space of input parameters (often referred to as control variables). Computing this gradient through direct (or forward) approaches, such as finite-differencing is expensive, if not computationally impractical.\n\n     The adjoint method is a powerful approach to efficiently and comprehensively compute such sensitivities. This method enables efficient ocean data assimilation and sensitivity analysis, and thus has widespread impact. Beyond geosciences, disciplines impacted include all fields where prior models inform the research by revealing the sensitivity of these models to inputs. Examples include optimization of tidal turbine arrays, airfoil design, finance, and epidemiological modeling. Writing an adjoint model from scratch is as complex as writing its nonlinear parent model (such as an ocean circulation model or ice flow model). Automatic or algorithmic differentiation (AD) provides a powerful tool for generating the adjoint model in an automated manner, based on the nonlinear parent model. It is ubiquitous in machine learning (where the adjoint method is known as \"backpropagation\"), but so far less widespread in geoscientific modeling. Although powerful conceptually, automatic generation of reliable, efficient adjoint code via AD remains a complex process.\n\n     The major goal of this project is to remove some of the hurdles that have prevented the wider use of adjoint methods through maturing an open-source automatic differentiation software, OpenAD. Moreover, we aimed to make the tools more user friendly, and to educate on their use via tutorial examples, presentations, workshops, and peer-reviewed publications demonstrating the utility of the methods. Project success was achieved by maturing and presenting the software (Intellectual Merit), but also via supporting the mentorship of multiple students, including REUs, and postdoctoral researchers (Broader Impact). The student and postdoc work led to conference presentations and peer-reviewed publications.\n\n     Three specific example outcomes were (i) the generation of an adjoint model of the SImulation COde for POLythermal Ice Sheets (SICOPOLIS) to conduct sensitivity studies of the Greenland and Antarctic ice sheets; (ii) generation of the adjoint of an ocean model and an ice stream model of the MIT general circulation model (MITgcm) for simulating coupled ice stream-ice shelf-ocean interactions in West Antarctica; and (iii) improving uncertainty quantification via adjoint derivative-based methods to inform biogeochemical observing system design.\n\n     This project has enabled a larger fraction of the community to generate and utilize adjoint models for sensitivity analyses, state estimation parameter calibration, or model initialization. Enabling a broad community of researchers to efficiently probe the sensitivity of domain-specific quantities of interest will allow impactful progress in understanding pressing problems that our society faces.\n\n\t\t\t\t\tLast Modified: 01/06/2021\n\n\t\t\t\t\tSubmitted by: Matthew R Mazloff"
+ }
+}

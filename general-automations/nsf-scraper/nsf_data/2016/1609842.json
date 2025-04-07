@@ -1,0 +1,121 @@
+{
+ "awd_id": "1609842",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CDS&E: Exploiting Multiple Levels of Parallelism in Quantum Chemistry Software",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tevfik Kosar",
+ "awd_eff_date": "2016-08-01",
+ "awd_exp_date": "2021-07-31",
+ "tot_intn_awd_amt": 690710.0,
+ "awd_amount": 690710.0,
+ "awd_min_amd_letter_date": "2016-03-28",
+ "awd_max_amd_letter_date": "2016-03-28",
+ "awd_abstract_narration": "Quantum chemistry methods and software give scientists a computational tool to predict and study the properties of molecular systems.  These tools are used widely, ranging from fundamental chemistry and biochemistry to pharmaceutical and materials design.  Improvements in these methods and software give scientists an even more powerful tool for discovery.  This project will develop new methods and software for quantum chemistry aimed at fully exploiting the parallel capabilities of today's computer hardware.  Parallel capabilities within individual processor cores will be specifically exploited, as well as the ability to use multiple compute nodes concurrently for a single calculation.  Success in this project will promote the progress of science, specifically for efficiently studying very large molecular systems with quantum chemistry tools, by decreasing the computer time needed for studies with the same accuracy and increasing the accuracy of studies that use the same computational time.\r\n \r\nThis project will first target the computation of electron repulsion integrals (ERIs) used in essentially all quantum chemistry software.  The calculation of ERIs using the Obara-Saika (OS) method will be reorganized to exploit the single instruction multiple data (SIMD) capabilities of modern computer processors.  The calculation of the Boys function used in the OS method will also be addressed.  An optimized, open source software library for ERI calculation will be released, which will include functionality for one-electron integrals and integral derivatives.  This project will also further develop the GTFock quantum chemistry framework to make it easier to use by adding several interfaces.  GTFock, which has efficient distributed parallel capabilities, will be extended to include symmetry-adapted perturbation theory.  GTFock will be used to study large protein-ligand systems.  In addition, this project will involve undergraduate students and will be used to motivate research in the classroom.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Edmond",
+   "pi_last_name": "Chow",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Edmond Chow",
+   "pi_email_addr": "echow@cc.gatech.edu",
+   "nsf_id": "000596585",
+   "pi_start_date": "2016-03-28",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Charles",
+   "pi_last_name": "Sherrill",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "Charles D Sherrill",
+   "pi_email_addr": "sherrill@gatech.edu",
+   "nsf_id": "000349219",
+   "pi_start_date": "2016-03-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Institute of Technology",
+  "perf_str_addr": "225 North Avenue",
+  "perf_city_name": "Atlanta",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "688100",
+   "pgm_ele_name": "Chem Thry, Mdls & Cmptnl Mthds"
+  },
+  {
+   "pgm_ele_code": "808400",
+   "pgm_ele_name": "CDS&E"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "8084",
+   "pgm_ref_txt": "CDS&E"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 690710.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Quantum chemistry allows scientists to determine the properties of a molecule or material solely through numerically solving Schrodinger's equation, rather than by synthesizing the material and measuring its properties (if even possible) in the laboratory. Quantum chemistry calculations are computationally very expensive, and the development of both efficient algorithms and efficient computer implementations is an ongoing effort in the field.<br /><br />This project has contributed to several aspects of parallel computation and algorithms for quantum chemistry. The first significant outcome centers around a fundamental quantity in quantum chemistry called the electron repulsion integral (ERI).&nbsp; These integrals are elements of a 4-dimensional tensor that is so large that computing the ERIs is the bottleneck of Hartree-Fock and other quantum chemical methods.&nbsp; Our initial attempt to improve the performance of ERI calculations found that existing, widely used ERI library codes (for Gaussian basis sets) have poor computational performance and cannot take advantage of the SIMD execution units on modern CPUs.&nbsp; We therefore developed a completely new ERI library code, called Simint, that is designed specifically for efficient SIMD execution, by batching together the calculation of ERIs of the same type.&nbsp; Code generation is used to manage the complexity of the ERI formulas and target various CPU architectures.&nbsp; Our Simint library for computing ERIs is recognized as one of the fastest ERI libraries currently available.&nbsp; The publicly available, open-source library has started to become incorporated into existing quantum chemistry packages as well as newly developed packages.<br /><br />Another significant outcome of this project is the development of efficient parallel algorithms and computer implementations for Hartree-Fock and related quantum chemistry methods centered on the Fock matrix.&nbsp; We have developed algorithms for load balancing the irregularly structured Fock matrix calculation while controlling communication cost, efficient density matrix purification as a more parallel algorithm than eigendecomposition for computing the density matrix, efficient multithreaded summation of the Fock matrix, efficient use of symmetry and sparsity in parallelized density fitting techniques, among others.&nbsp; These algorithms are implemented in our open-source GTFock software, as part of this project.&nbsp; GTFock was used to demonstrate the effectiveness of Simint in Hartree-Fock calculations with different chemical systems and different basis sets.<br /><br />A further significant outcome of this project is the development of new, scalable algorithms for large-scale quantum chemistry.&nbsp; The ERI tensor introduced above is typically so large that it cannot be stored in the aggregate memory of a large parallel computer.&nbsp; To address the computation and storage bottleneck, we exploited the hierarchical low rank structure of the ERI tensor, where certain blocks of the ERI tensor, when unfolded into a matrix, have low rank.&nbsp; Our specific contribution here is a method to construct a hierarchical matrix representation of the ERI tensor, without computing the vast majority of the individual ERI entries of the tensor in the first place, by exploiting the physics of the ERI tensor.&nbsp; The result is typically an order of magnitude reduction in storage, making it possible to store the ERI tensor in memory, and thus speed up certain calculations (e.g., forming the Coulomb matrix) involving the tensor.&nbsp; In important cases, the new methods are superior to existing techniques like density fitting and the continuous fast multipole method.<br /><br />The results of this research have been disseminated through journals in physical chemistry and in applied mathematics, as well as through peer-reviewed conference papers in high-performance computing. Invited presentations on this research have also been given at workshops, symposia, and universities.&nbsp; During the duration of this project, the principal investigators have also organized and taught summer workshops for undergraduate and graduate students in the use of computation for science and engineering, including one workshop in collaboration with minority serving institutions.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/29/2021<br>\n\t\t\t\t\tModified by: Edmond&nbsp;Chow</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nQuantum chemistry allows scientists to determine the properties of a molecule or material solely through numerically solving Schrodinger's equation, rather than by synthesizing the material and measuring its properties (if even possible) in the laboratory. Quantum chemistry calculations are computationally very expensive, and the development of both efficient algorithms and efficient computer implementations is an ongoing effort in the field.\n\nThis project has contributed to several aspects of parallel computation and algorithms for quantum chemistry. The first significant outcome centers around a fundamental quantity in quantum chemistry called the electron repulsion integral (ERI).  These integrals are elements of a 4-dimensional tensor that is so large that computing the ERIs is the bottleneck of Hartree-Fock and other quantum chemical methods.  Our initial attempt to improve the performance of ERI calculations found that existing, widely used ERI library codes (for Gaussian basis sets) have poor computational performance and cannot take advantage of the SIMD execution units on modern CPUs.  We therefore developed a completely new ERI library code, called Simint, that is designed specifically for efficient SIMD execution, by batching together the calculation of ERIs of the same type.  Code generation is used to manage the complexity of the ERI formulas and target various CPU architectures.  Our Simint library for computing ERIs is recognized as one of the fastest ERI libraries currently available.  The publicly available, open-source library has started to become incorporated into existing quantum chemistry packages as well as newly developed packages.\n\nAnother significant outcome of this project is the development of efficient parallel algorithms and computer implementations for Hartree-Fock and related quantum chemistry methods centered on the Fock matrix.  We have developed algorithms for load balancing the irregularly structured Fock matrix calculation while controlling communication cost, efficient density matrix purification as a more parallel algorithm than eigendecomposition for computing the density matrix, efficient multithreaded summation of the Fock matrix, efficient use of symmetry and sparsity in parallelized density fitting techniques, among others.  These algorithms are implemented in our open-source GTFock software, as part of this project.  GTFock was used to demonstrate the effectiveness of Simint in Hartree-Fock calculations with different chemical systems and different basis sets.\n\nA further significant outcome of this project is the development of new, scalable algorithms for large-scale quantum chemistry.  The ERI tensor introduced above is typically so large that it cannot be stored in the aggregate memory of a large parallel computer.  To address the computation and storage bottleneck, we exploited the hierarchical low rank structure of the ERI tensor, where certain blocks of the ERI tensor, when unfolded into a matrix, have low rank.  Our specific contribution here is a method to construct a hierarchical matrix representation of the ERI tensor, without computing the vast majority of the individual ERI entries of the tensor in the first place, by exploiting the physics of the ERI tensor.  The result is typically an order of magnitude reduction in storage, making it possible to store the ERI tensor in memory, and thus speed up certain calculations (e.g., forming the Coulomb matrix) involving the tensor.  In important cases, the new methods are superior to existing techniques like density fitting and the continuous fast multipole method.\n\nThe results of this research have been disseminated through journals in physical chemistry and in applied mathematics, as well as through peer-reviewed conference papers in high-performance computing. Invited presentations on this research have also been given at workshops, symposia, and universities.  During the duration of this project, the principal investigators have also organized and taught summer workshops for undergraduate and graduate students in the use of computation for science and engineering, including one workshop in collaboration with minority serving institutions.\n\n\t\t\t\t\tLast Modified: 11/29/2021\n\n\t\t\t\t\tSubmitted by: Edmond Chow"
+ }
+}

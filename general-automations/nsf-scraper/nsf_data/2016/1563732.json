@@ -1,0 +1,129 @@
+{
+ "awd_id": "1563732",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Medium: Collaborative Research: An Inspector/Executor Compilation Framework for Irregular Applications",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2022-08-31",
+ "tot_intn_awd_amt": 396771.0,
+ "awd_amount": 476097.0,
+ "awd_min_amd_letter_date": "2016-07-27",
+ "awd_max_amd_letter_date": "2020-03-17",
+ "awd_abstract_narration": "Computational science and engineering provides inexpensive exploration of physical phenomena and design spaces and helps direct experimentation and advise theory. Irregular applications such as molecular dynamics simulations, n-body simulations, finite element analysis, and big graph analytics constitute a critical and significant portion of scientific computing applications.  An irregular application is characterized by having indirect memory accesses such as A[B[i]] that cannot be determined when the application is being compiled, therefore severely limiting the applicability of the large body of work on parallelizing compiler technology. Consequently, irregular applications, which are so important in pushing forward the frontiers of science, place a very large burden on computational and domain scientists in developing high-performance implementations for the ever-changing landscape of parallel architectures. The intellectual merit of this project is to develop a compiler and runtime framework for irregular applications, particularly well suited for sparse matrix and graph computations that underlie critical problems in computational science and data science. The broader impact is to provide domain scientists a powerful tool for optimizing and porting performance-critical, irregular computations to current and future multi-core processors and many-core accelerators. The PIs will also continue  efforts in outreach and diversity to increase the participation in STEM careers, particularly among women and underrepresented minorities.\r\n\r\n\r\nThe approach in this project is to extend the well-established inspector/executor paradigm where the computational dependence structure (based on the memory access pattern) is determined at runtime, and runtime information is passed to a compile-time generated executor. Specifically, an inspector can examine the memory access patterns early in the computation at runtime, and an executor leverages this information to perform data and computation reordering and scheduling to affect memory hierarchy and parallelism optimizations. The project is developing a compiler and runtime framework with new abstractions for expressing and manipulating inspectors; these inspectors may then be integrated nearly seamlessly with each other and with existing compiler optimizations (e.g., loop tiling) to optimize executors. The project is also extending prior work that supports non-affine input code and mixes compile-time and runtime optimization. The resulting system increases the productivity of expert programmers in achieving both high performance and portability on a wide variety of irregular applications.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Michelle",
+   "pi_last_name": "Strout",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Michelle M Strout",
+   "pi_email_addr": "mstrout@cs.arizona.edu",
+   "nsf_id": "000273488",
+   "pi_start_date": "2016-07-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Arizona",
+  "inst_street_address": "845 N PARK AVE RM 538",
+  "inst_street_address_2": "",
+  "inst_city_name": "TUCSON",
+  "inst_state_code": "AZ",
+  "inst_state_name": "Arizona",
+  "inst_phone_num": "5206266000",
+  "inst_zip_code": "85721",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "AZ07",
+  "org_lgl_bus_name": "UNIVERSITY OF ARIZONA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "ED44Y3W6P7B9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Computer Science Department",
+  "perf_str_addr": "1040 E. 4th Street",
+  "perf_city_name": "Tucson",
+  "perf_st_code": "AZ",
+  "perf_st_name": "Arizona",
+  "perf_zip_code": "857210077",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "AZ07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "689200",
+   "pgm_ele_name": "CI REUSE"
+  },
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  },
+  {
+   "pgm_ref_code": "7943",
+   "pgm_ref_txt": "PROGRAMMING LANGUAGES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 396771.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 79326.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Irregular computations involving sparse matrices, tensors and graphs (referred to as sparse computations) are found in a variety of important applications such as molecular dynamics, particle simulation, and deep learning.&nbsp; A common aspect of sparse computations is that not all points representing an N-dimensional space have associated data -- as a result, the data are compressed to only describe nonzero values, and the data's organization, density, and nonzero patterns are only known when the data becomes available during program execution.&nbsp; Moreover, data must be decompressed during computation, which leads to unpredictable memory access patterns.&nbsp; These aspects of sparse computations lead to very low arithmetic intensity, where performance is dominated by moving the sparse data through the memory system.</p>\n<p><br />The CHiLL-I/E project developed compiler optimization techniques to optimize sparse computations for modern parallel platforms including CPUs and GPUs.&nbsp; Recognizing that the memory access patterns are not fully available until runtime, CHiLL-I/E employs an inspector-executor approach, where the compiler generates inspector code at compile time that collects runtime information used in the optimized executor code that performs the computation.&nbsp; This work combines the existing CHiLL autotuning compiler and the IEGenLib for generating inspector-executor code. The resulting system employs sparse polyhedral compilation technology and a configurable schedule of polyhedral transformations to compose inspector-executor code generation with other code transformations, thus increasing parallelism and improving memory access patterns for sparse computations.</p>\n<p><br />The CHiLL-I/E project focused on several critical issues associated with optimizing sparse computations using an inspector-executor approach:<br />Dependence testing for sparse computations:</p>\n<p>Automated dependence testing for sparse computations and wavefront parallelism:&nbsp; We developed techniques for testing data dependences in the presence of indirect memory accesses through index arrays, which map from sparse data layouts to associated dense locations.&nbsp; The compiler derives a set of constraints, and a SMT solver determines whether the constraints are unsatisfiable, indicated there are no data dependences. Data dependences associated with remaining satisfiable constraints are evaluated at runtime using an inspector.&nbsp; This approach has been used to optimize common sparse linear algebra computations via wavefront parallelism, including privatizing index arrays to reduce dependences.</p>\n<p><br />Optimizing inspectors: Inspectors may be generated to support multiple optimization goals, each potentially requiring a sweep over sparse data.&nbsp; We have developed a dataflow representation of inspector computations, and graph-based abstractions for fusing computations and reducing unnecessary intermediate storage.</p>\n<p><br />Generalizing sparse data layout conversion: Since the most performant sparse data format depends on architectural features, sparsity patterns and density, it is frequently necessary to transform a computation to work with different sparse data layouts. We have prototyped a general approach to layout conversion that is capable of transforming existing sparse tensor computations from the layout of their current specification to any new layout that can be expressed in a sparse polyhedral framework.</p>\n<p><br />Co-optimizing data layout and tensor computation for co-iteration: We have developed a code generator in CHiLL-I/E that employs sparse polyhedral technology and code synthesis to generate code for co-iteration across multiple sparse tensors, limited to multiplication and addition operations between tensors. Our approach composes the iteration space of the computation with an iteration space over the data layout for one of the sparse tensors. It then performs a lookup in the other sparse tensor to see if that element appears in both tensors. Our approach combines polyhedral scanning over the composed iteration space with code synthesis using an SMT solver to implement the find operation.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/30/2022<br>\n\t\t\t\t\tModified by: Michelle&nbsp;M&nbsp;Strout</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIrregular computations involving sparse matrices, tensors and graphs (referred to as sparse computations) are found in a variety of important applications such as molecular dynamics, particle simulation, and deep learning.  A common aspect of sparse computations is that not all points representing an N-dimensional space have associated data -- as a result, the data are compressed to only describe nonzero values, and the data's organization, density, and nonzero patterns are only known when the data becomes available during program execution.  Moreover, data must be decompressed during computation, which leads to unpredictable memory access patterns.  These aspects of sparse computations lead to very low arithmetic intensity, where performance is dominated by moving the sparse data through the memory system.\n\n\nThe CHiLL-I/E project developed compiler optimization techniques to optimize sparse computations for modern parallel platforms including CPUs and GPUs.  Recognizing that the memory access patterns are not fully available until runtime, CHiLL-I/E employs an inspector-executor approach, where the compiler generates inspector code at compile time that collects runtime information used in the optimized executor code that performs the computation.  This work combines the existing CHiLL autotuning compiler and the IEGenLib for generating inspector-executor code. The resulting system employs sparse polyhedral compilation technology and a configurable schedule of polyhedral transformations to compose inspector-executor code generation with other code transformations, thus increasing parallelism and improving memory access patterns for sparse computations.\n\n\nThe CHiLL-I/E project focused on several critical issues associated with optimizing sparse computations using an inspector-executor approach:\nDependence testing for sparse computations:\n\nAutomated dependence testing for sparse computations and wavefront parallelism:  We developed techniques for testing data dependences in the presence of indirect memory accesses through index arrays, which map from sparse data layouts to associated dense locations.  The compiler derives a set of constraints, and a SMT solver determines whether the constraints are unsatisfiable, indicated there are no data dependences. Data dependences associated with remaining satisfiable constraints are evaluated at runtime using an inspector.  This approach has been used to optimize common sparse linear algebra computations via wavefront parallelism, including privatizing index arrays to reduce dependences.\n\n\nOptimizing inspectors: Inspectors may be generated to support multiple optimization goals, each potentially requiring a sweep over sparse data.  We have developed a dataflow representation of inspector computations, and graph-based abstractions for fusing computations and reducing unnecessary intermediate storage.\n\n\nGeneralizing sparse data layout conversion: Since the most performant sparse data format depends on architectural features, sparsity patterns and density, it is frequently necessary to transform a computation to work with different sparse data layouts. We have prototyped a general approach to layout conversion that is capable of transforming existing sparse tensor computations from the layout of their current specification to any new layout that can be expressed in a sparse polyhedral framework.\n\n\nCo-optimizing data layout and tensor computation for co-iteration: We have developed a code generator in CHiLL-I/E that employs sparse polyhedral technology and code synthesis to generate code for co-iteration across multiple sparse tensors, limited to multiplication and addition operations between tensors. Our approach composes the iteration space of the computation with an iteration space over the data layout for one of the sparse tensors. It then performs a lookup in the other sparse tensor to see if that element appears in both tensors. Our approach combines polyhedral scanning over the composed iteration space with code synthesis using an SMT solver to implement the find operation.\n\n\t\t\t\t\tLast Modified: 11/30/2022\n\n\t\t\t\t\tSubmitted by: Michelle M Strout"
+ }
+}

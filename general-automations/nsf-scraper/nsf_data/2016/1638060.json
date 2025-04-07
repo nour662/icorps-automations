@@ -1,0 +1,105 @@
+{
+ "awd_id": "1638060",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NRI: Collaborative Research: Sketching Geometry and Physics Informed Inference for Mobile Robot Manipulation in Cluttered Scenes",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "David Miller",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 286434.0,
+ "awd_amount": 286434.0,
+ "awd_min_amd_letter_date": "2016-08-10",
+ "awd_max_amd_letter_date": "2016-08-10",
+ "awd_abstract_narration": "The goal of this project is to improve the ability of robots to manipulate and interact with objects, such as when assisting people to support their daily activities.  The key idea is that people can provide robots with important information about their environment and the objects within their environment. In particular, people can use their cognitive skills to name objects, provide an understanding of the geometrical structure of objects, and describe an object's behavior in relation to other objects. Specifically, the project will develop a natural user interface that enables people to provide such information by drawing and sketching on top of the robot's view of the world.  Physical simulation will then be used to fill in the missing gaps needed for a robot to complete autonomous manipulation tasks. Thus, the project aims to combine object sketching and physical simulation to better support mobile manipulation tasks as well as learn to perform new manipulation tasks when encountered.  The project will support a \"Put That There\" task, where a user can simply give high-level manipulation commands, with the robot filling in the details necessary to complete the task in a cluttered environment.\r\n\r\nThis project aims to improve goal-directed dexterous robotic manipulation in cluttered and unstructured environments through sketching and physical simulation. Robots operating in human environments face considerable uncertainty in perception due to physical contact and occlusions between objects. This project will address such perceptual uncertainty by combining methods for probabilistic inference with natural sketch-based interfaces to extract, label, and automatically infer the geometry, pose, and behavior of objects in complicated scenes.  From a human usability perspective, the project addresses how to best create a sketching language and interfaces for intuitive human-in-the-loop extraction of object geometries and behavior from robot sensing.  The planned exploration into sketching methods will also explore what underlying representations, raw point clouds, RGB images and video, or RGBD images will be most conducive to supporting accurate geometry extraction and grasp location identification.  Given sketched objects, the project will develop probabilistic physically plausible methods for scene estimation that will enable perception for manipulation in cluttered environments.  These methods build upon advances in physical simulation to constrain scene estimates to only plausible configurations to both improve estimation accuracy and enable computational tractability.  The project will also develop a \"Put That There\" testbed using a tablet-based web application to support exploration of these concepts as well as act as user studies to evaluate geometry extraction accuracy and the robustness of physics-based scene estimation algorithms.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Joseph",
+   "pi_last_name": "LaViola",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "Jr.",
+   "pi_full_name": "Joseph J LaViola",
+   "pi_email_addr": "jjl@cs.ucf.edu",
+   "nsf_id": "000483537",
+   "pi_start_date": "2016-08-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "The University of Central Florida Board of Trustees",
+  "inst_street_address": "4000 CENTRAL FLORIDA BLVD",
+  "inst_street_address_2": "",
+  "inst_city_name": "ORLANDO",
+  "inst_state_code": "FL",
+  "inst_state_name": "Florida",
+  "inst_phone_num": "4078230387",
+  "inst_zip_code": "328168005",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "FL10",
+  "org_lgl_bus_name": "THE UNIVERSITY OF CENTRAL FLORIDA BOARD OF TRUSTEES",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "RD7MXJV7DKT9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Central Florida",
+  "perf_str_addr": "",
+  "perf_city_name": "Orlando",
+  "perf_st_code": "FL",
+  "perf_st_name": "Florida",
+  "perf_zip_code": "328263252",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "FL10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  },
+  {
+   "pgm_ele_code": "801300",
+   "pgm_ele_name": "NRI-National Robotics Initiati"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8086",
+   "pgm_ref_txt": "Natl Robotics Initiative (NRI)"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 286434.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The focus of this project was the development of human-in-the-loop strategies to support mobile robot manipulation tasks. These human-in-the-loop strategies include the extracting of 3D geometries from point clouds and defining object behaviors which are then used as part of path planning algorithms that are the basis for robotic manipulation of objects in cluttered scenes. We focused on the development of sketch-based interfaces that let the user provide a minimal amount of input for 3D geometry extraction and defining of object behaviors.&nbsp;</p>\n<p>One of the major contributions of our work was the development of GemSketch, a sketch-based interface for extracting 3D geometries from point clouds that a robot provides using RGBD cameras.&nbsp; With GemSketch, users simply sketch the silhouettes&nbsp;of 3D objects from images and the system automatically extracts the 3D geometry from the corresponding point cloud.&nbsp;&nbsp;Leveraging the user's perceptual understanding of what an object looks like, GemSketch is capable of extracting accurate models, even in the presence of occlusion, clutter or incomplete point cloud data, while preserving the original object's details and scale.&nbsp; These extracted 3D geometries can then be sent to a robot's path planner to compute the required trajectories for mobile manipulation.&nbsp;&nbsp;</p>\n<p>A second contribution was the development of a sketch-based interface that let users define various object behaviors and their relationship to other objects.&nbsp; Using the GemSketch framework, users could define how objects should move in 3D space based on the images obtained from a robot's vision system.&nbsp; For example, users could sketch out an extruding line from a desk drawer indicating that the drawer geometry could move outward along that line or draw a line near the hinges of a door to indicate the door could be opened perpendicular to the sketched line.&nbsp; These object behavior definitions could then be sent to a robot's path planning routine to assist it in developing mobile manipulation strategies.&nbsp;</p>\n<p>A third contribution from this project was the development of new methods for sketch and gesture recognition that are fundamental to the sketch-based interfaces we want to use in the human-in-the-loop strategies for assisting a robot with its mobile manipulation tasks.&nbsp; We developed a novel sketch recognition system called Jackknife, which can perform accurate recognition using a variety of different inputs.&nbsp; Jackknife using dynamic time warping to robustly recognize different sketches and gestures with only a few examples of the gestures for training.&nbsp; In addition, we also developed Machete, a system for automatically segmenting a sketch or gesture sequence so Jackknife can accurately recognize the segmented gestures.&nbsp; These tools work hand in hand to complement a sketch-based interface that can be used to extract 3D geometries and establish object behaviors based on what the robot sees in the phyiscal environment.&nbsp;&nbsp;</p>\n<p>We believe that the sketch-based interfaces and tools we have developed in this project push the state of the art in providing human-in-the loop- methods for supporting a robot with the necessary information to perform mobile manipulations in cluttered scenes.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/16/2020<br>\n\t\t\t\t\tModified by: Joseph&nbsp;J&nbsp;Laviola</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe focus of this project was the development of human-in-the-loop strategies to support mobile robot manipulation tasks. These human-in-the-loop strategies include the extracting of 3D geometries from point clouds and defining object behaviors which are then used as part of path planning algorithms that are the basis for robotic manipulation of objects in cluttered scenes. We focused on the development of sketch-based interfaces that let the user provide a minimal amount of input for 3D geometry extraction and defining of object behaviors. \n\nOne of the major contributions of our work was the development of GemSketch, a sketch-based interface for extracting 3D geometries from point clouds that a robot provides using RGBD cameras.  With GemSketch, users simply sketch the silhouettes of 3D objects from images and the system automatically extracts the 3D geometry from the corresponding point cloud.  Leveraging the user's perceptual understanding of what an object looks like, GemSketch is capable of extracting accurate models, even in the presence of occlusion, clutter or incomplete point cloud data, while preserving the original object's details and scale.  These extracted 3D geometries can then be sent to a robot's path planner to compute the required trajectories for mobile manipulation.  \n\nA second contribution was the development of a sketch-based interface that let users define various object behaviors and their relationship to other objects.  Using the GemSketch framework, users could define how objects should move in 3D space based on the images obtained from a robot's vision system.  For example, users could sketch out an extruding line from a desk drawer indicating that the drawer geometry could move outward along that line or draw a line near the hinges of a door to indicate the door could be opened perpendicular to the sketched line.  These object behavior definitions could then be sent to a robot's path planning routine to assist it in developing mobile manipulation strategies. \n\nA third contribution from this project was the development of new methods for sketch and gesture recognition that are fundamental to the sketch-based interfaces we want to use in the human-in-the-loop strategies for assisting a robot with its mobile manipulation tasks.  We developed a novel sketch recognition system called Jackknife, which can perform accurate recognition using a variety of different inputs.  Jackknife using dynamic time warping to robustly recognize different sketches and gestures with only a few examples of the gestures for training.  In addition, we also developed Machete, a system for automatically segmenting a sketch or gesture sequence so Jackknife can accurately recognize the segmented gestures.  These tools work hand in hand to complement a sketch-based interface that can be used to extract 3D geometries and establish object behaviors based on what the robot sees in the phyiscal environment.  \n\nWe believe that the sketch-based interfaces and tools we have developed in this project push the state of the art in providing human-in-the loop- methods for supporting a robot with the necessary information to perform mobile manipulations in cluttered scenes.\n\n \n\n\t\t\t\t\tLast Modified: 12/16/2020\n\n\t\t\t\t\tSubmitted by: Joseph J Laviola"
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "awd_id": "1563812",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Medium: Booleanized Verification of Analog/Mixed Signal Systems",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927843",
+ "po_email": "sabasu@nsf.gov",
+ "po_sign_block_name": "Sankar Basu",
+ "awd_eff_date": "2016-07-15",
+ "awd_exp_date": "2021-06-30",
+ "tot_intn_awd_amt": 900000.0,
+ "awd_amount": 900000.0,
+ "awd_min_amd_letter_date": "2016-07-07",
+ "awd_max_amd_letter_date": "2016-07-07",
+ "awd_abstract_narration": "Almost all electronic equipment today, particularly portable devices such as smartphones, tablets etc., contain not only billions of tiny switches called transistors, but also a number of critical analog/mixed-signal (AMS) circuits. Designing AMS circuits is usually far more difficult than designing digital circuits; they require specially trained designers in short supply, much longer design times, and often require several design iterations. Furthermore, when embedded in a chip with digital circuits, malfunctions stemming from unforeseen digital-analog interactions are common and difficult to pinpoint. This research aims to address the problem of making AMS design and debug easier, more reliable, and faster.  Success of this research should provide a powerful boost to electronic design technology, eventually resulting in more complex and useful gadgets at lower cost. Moreover, this research will help train a number of graduate and undergraduate students, thus helping to develop the future workforce for electronic design automation industry. Outreach activities to be undertaken in this context will also help attract high-school students to STEM areas.\r\n\r\nThe key technical idea behind this project is to model AMS components accurately as digital ones; and then to use digital techniques, which are much easier to use and faster, for debugging and design. The project will pursue two broad directions within this paradigm: 1) develop better and more accurate Booleanization techniques for approximating AMS circuits and systems as digital ones; and 2) develop better techniques for determining if the Booleanized/digital models work correctly or not.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jaijeet",
+   "pi_last_name": "Roychowdhury",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jaijeet Roychowdhury",
+   "pi_email_addr": "jr@berkeley.edu",
+   "nsf_id": "000525183",
+   "pi_start_date": "2016-07-07",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Robert",
+   "pi_last_name": "Brayton",
+   "pi_mid_init": "K",
+   "pi_sufx_name": "",
+   "pi_full_name": "Robert K Brayton",
+   "pi_email_addr": "brayton@eecs.berkeley.edu",
+   "nsf_id": "000494868",
+   "pi_start_date": "2016-07-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Berkeley",
+  "inst_street_address": "1608 4TH ST STE 201",
+  "inst_street_address_2": "",
+  "inst_city_name": "BERKELEY",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "5106433891",
+  "inst_zip_code": "947101749",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "CA12",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF CALIFORNIA, THE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GS3YEVSS12N6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Berkeley",
+  "perf_str_addr": "545E Cory Hall",
+  "perf_city_name": "Berkeley",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "947201764",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "CA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  },
+  {
+   "pgm_ref_code": "7945",
+   "pgm_ref_txt": "DES AUTO FOR MICRO & NANO SYST"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 900000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project explored and advanced techniques for Booleanizing continuous-time (CT) systems. CT models are needed for representing systems that go beyond the purely digital functionality that most Boolean modelling addresses. Cyber-Physical Systems (CPS), such as autonomous aerial vehicles and self-driving cars, typically require CT models. As part of this project, we established that many CPS models involve one or more dimensions of autonomy, which translates to marginal stability. Loosely, autonomy or marginal stability imply that the system has no \"restoring force\". Booleanizing such systems involved novel theory and associated numerical methods, which we developed. We then showed that our methods were well suited to Booleanize a quad-copter accurately. We showed, moreover, that if many autonomous systems interact, the overall degree of autonomy does not necessarily increase, but can remain low (e.g., 1, the lowest possible degree if even one system is autonomous). This has implications on simplifying the representation and analysis of large numbers of interacting autonomous systems.</p>\n<p>The project involved the participation of five PhD students, 1 MS student, two undergraduates and two high school students (one a woman). Both undergraduates went on to grad school (at Berkeley and Stanford); one high school student went on to a STEM UG program at the University of Pennsylvania. The project informed the offerings of two graduate and two undergraduate classes. A number of interactions with industrial and other academic groups resulted. Several papers, dissertations and presentations also resulted from this project.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/16/2022<br>\n\t\t\t\t\tModified by: Jaijeet&nbsp;Roychowdhury</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project explored and advanced techniques for Booleanizing continuous-time (CT) systems. CT models are needed for representing systems that go beyond the purely digital functionality that most Boolean modelling addresses. Cyber-Physical Systems (CPS), such as autonomous aerial vehicles and self-driving cars, typically require CT models. As part of this project, we established that many CPS models involve one or more dimensions of autonomy, which translates to marginal stability. Loosely, autonomy or marginal stability imply that the system has no \"restoring force\". Booleanizing such systems involved novel theory and associated numerical methods, which we developed. We then showed that our methods were well suited to Booleanize a quad-copter accurately. We showed, moreover, that if many autonomous systems interact, the overall degree of autonomy does not necessarily increase, but can remain low (e.g., 1, the lowest possible degree if even one system is autonomous). This has implications on simplifying the representation and analysis of large numbers of interacting autonomous systems.\n\nThe project involved the participation of five PhD students, 1 MS student, two undergraduates and two high school students (one a woman). Both undergraduates went on to grad school (at Berkeley and Stanford); one high school student went on to a STEM UG program at the University of Pennsylvania. The project informed the offerings of two graduate and two undergraduate classes. A number of interactions with industrial and other academic groups resulted. Several papers, dissertations and presentations also resulted from this project.\n\n\t\t\t\t\tLast Modified: 05/16/2022\n\n\t\t\t\t\tSubmitted by: Jaijeet Roychowdhury"
+ }
+}

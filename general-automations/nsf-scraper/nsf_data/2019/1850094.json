@@ -1,0 +1,105 @@
+{
+ "awd_id": "1850094",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: SaTC: PrivateNet - Preserving Differential Privacy in Deep Learning under Model Attacks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032928832",
+ "po_email": "dcosley@nsf.gov",
+ "po_sign_block_name": "Dan Cosley",
+ "awd_eff_date": "2019-02-15",
+ "awd_exp_date": "2023-01-31",
+ "tot_intn_awd_amt": 174006.0,
+ "awd_amount": 174006.0,
+ "awd_min_amd_letter_date": "2019-02-06",
+ "awd_max_amd_letter_date": "2019-02-06",
+ "awd_abstract_narration": "The rapid development of machine learning in the domain of healthcare presents clear privacy issues, when deep neural networks and other models are built based on patients' personal and highly sensitive data such as clinical records or tracked health data.  Further, these models can be vulnerable to attackers trying to infer the sensitive data that was used to build the model.  This raises important research questions about how to develop machine learning models that protect private data against inference attacks while still being accurate and useful predictive models, as well as important practical considerations about how these risks to patient data may expose health care providers to legal action based on HIPAA and related regulations. To address these questions, this project will develop a framework, called PrivateNet, for privacy preservation in deep neural networks under model attacks to offer strong privacy protections for data used in deep learning.  PrivateNet will be developed on top of commonly used machine learning frameworks, providing ways for the project's findings to have impact in both industry and educational contexts.\r\n\r\nA key thrust of the project is to better understand and defend against model inference attacks, including both well-known fundamental model attacks and novel attacks developed through prism of the classical confidentiality and integrity models.  Through an extensive analysis of these attacks, the team will develop an understanding of the relative risks of key aspects of learning approaches.  In particular, vulnerable features, parameters, and correlations, which are essential to conduct model attacks, will be automatically identified and protected in a novel threat-aware privacy preserving approach based on ideas from differential privacy.  Specifically, the team will develop adaptive privacy preserving mechanisms that distribute noise across the most vulnerable aspects of the learning process to provide strong differential privacy protections in deep learning models while maintaining high model utility.  The project is expected to lay a foundation of key privacy-preserving techniques to protect users' personal and highly sensitive data in deep learning under model attacks.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Hai",
+   "pi_last_name": "Phan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Hai Phan",
+   "pi_email_addr": "phan@njit.edu",
+   "nsf_id": "000661557",
+   "pi_start_date": "2019-02-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "New Jersey Institute of Technology",
+  "inst_street_address": "323 DR MARTIN LUTHER KING JR BLVD",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEWARK",
+  "inst_state_code": "NJ",
+  "inst_state_name": "New Jersey",
+  "inst_phone_num": "9735965275",
+  "inst_zip_code": "071021824",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "NJ10",
+  "org_lgl_bus_name": "NEW JERSEY INSTITUTE OF TECHNOLOGY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "SGBMHQ7VXNH5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "New Jersey Institute of Technology",
+  "perf_str_addr": "323 Dr Martin Luther King Jr Blv",
+  "perf_city_name": "NEWARK",
+  "perf_st_code": "NJ",
+  "perf_st_name": "New Jersey",
+  "perf_zip_code": "071021982",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "NJ10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 174006.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>To fulfill the goals of the project, we summarize the outcomes in the following significant contributions with tangible impacts:</p>\n<p><strong>(1) A Series of Novel Differential Privacy-Preserving Approaches.</strong>&nbsp;We have developed DP-preserving algorithms for different machine-learning paradigms, including deep neural networks, continual learning, graph neural networks, language models, and federated learning. The critical challenge is the differences among these learning paradigms regarding data, tasks, activation functions, and information sharing among neurons. By optimizing the trade-off between privacy and model utility under these differences, our contributions lay a solid foundation for DP-preserving deep learning.</p>\n<p><strong>(2) Novel Model Integrity Attacks.</strong>&nbsp;To stress-test our proposed and existing privacy-preserving and robust learning algorithms, we developed novel model integrity attacks, including:&nbsp;<strong>(i)</strong>&nbsp;Synergetic attacks against neural network classifiers combining adversarial examples and backdoor Trojans to amplify model integrity risks; and&nbsp;<strong>(ii)</strong>&nbsp;Collaborative backdoor poisoning attacks to establish the first theoretical connection between the level of non-independent and identically distributed (non-iid) data and backdoor poisoning risks. As a result, we can significantly reduce the number of compromised clients to successfully carry out model integrity poisoning with severely high attack success rates.&nbsp;<em>The higher degree of diversity</em>&nbsp;in benign clients? local data is,&nbsp;<em>the lower the number of required compromised clients</em>&nbsp;and&nbsp;<em>the stealthier the successful poisoning</em>&nbsp;will be; and vice-versa.</p>\n<p><strong>(3) Theoretical Connection between Privacy and Trustworthiness.</strong>&nbsp;We establish a theoretical foundation among privacy, certified robustness, and certified fairness based on extensive analysis of privacy-preserving and model integrity. We further enhance the scalability of our solutions with the concept of scalable differential privacy in adversarial learning. By leveraging the correlation among embedding features, we significantly improve the model utility, robustness, and fairness under the same privacy protection. Privacy, robustness, and fairness are critical factors in gaining trust from our society, given the wide adoption of machine learning applications. Therefore, our contributions offer a solid foundation for developing innovative solutions for private and trustworthy machine learning applications.</p>\n<p><strong>(4) Prototype System Development and Deployment.</strong>&nbsp;We developed a prototype system, which has been tested on Android mobile devices for a human activity recognition task in a real-world trial. We utilize Android smartphones to collect smartphone sensor data ?in the wild? from university students as subjects for the following reasons: (1) University students should have relatively good access to smartphones and related technologies; (2) University students should be more credible and easier to be motivated than other sources (e.g., recruiting test subjects on crowd-sourcing websites); and (3) It will be easier for our team to recruit and distribute rewards to students. We launched two data collection runs at two universities for three months each. For three months, we let the participants collect data and labels by themselves (in the wild) and only intervene through reminder emails if we saw a decline in daily activities. A total of 116 participants were recorded after the two data collection runs. We compare our DP-preserving mechanisms with baseline approaches. The results show that our mechanism significantly outperforms existing baselines and approaches the noiseless model utility when the privacy budget is sufficient. Our contributions significantly impact technology transfers beyond typical publications by testing our proposed privacy-preserving solutions in field trials through our prototype system.</p>\n<p><strong>(5) Interdisciplinary Outcomes.</strong>&nbsp;Our approaches have been applied to 1) human activity recognition, 2) drug abuse detection on online social media data to battle against the epidemic of drug abuse, and 3) natural language processing application to protect sensitive information from textual datasets. This will provide rigorous privacy protections to users enrolled in these problems enabling us to have more insightful pictures about human sensing applications and drug abuse risk behaviors without compromising users' privacy. Our contributions on the key fronts will bring Differential Privacy closer to the best privacy-preserving practices in real-world applications.</p>\n<p><strong>(6) Teaching and Educational Experiences.</strong>&nbsp;The project engages women and minority students in cutting-edge research, including several undergraduate female students at NJIT. A female undergraduate student published a full paper as the first author at the ICONIP?21, a leading international forum for researchers, scientists, and industry professionals working in neuroscience, neural networks, deep learning, and related fields to share their new ideas, progress, and achievements. Based on the work, the student won the undergraduate Presidential Leadership Award. This award is the most prestigious NJIT can bestow upon a student who embodies the mission and values of NJIT through campus leadership, community service, and academics. The student was also selected as a National Center for Women in Technology Collegiate Award Finalist. The Award honors the outstanding computing accomplishments of undergraduate and graduate women, genderqueer, or non-binary students national-wide. The project results have been integrated into the IS688 Web Mining course and newly developed DS789 Trustworthy Artificial Intelligent and IS698 Emerging Topics in Deep Learning ? Artificial Intelligent through course projects.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/20/2023<br>\n\t\t\t\t\tModified by: Hai&nbsp;Phan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nTo fulfill the goals of the project, we summarize the outcomes in the following significant contributions with tangible impacts:\n\n(1) A Series of Novel Differential Privacy-Preserving Approaches. We have developed DP-preserving algorithms for different machine-learning paradigms, including deep neural networks, continual learning, graph neural networks, language models, and federated learning. The critical challenge is the differences among these learning paradigms regarding data, tasks, activation functions, and information sharing among neurons. By optimizing the trade-off between privacy and model utility under these differences, our contributions lay a solid foundation for DP-preserving deep learning.\n\n(2) Novel Model Integrity Attacks. To stress-test our proposed and existing privacy-preserving and robust learning algorithms, we developed novel model integrity attacks, including: (i) Synergetic attacks against neural network classifiers combining adversarial examples and backdoor Trojans to amplify model integrity risks; and (ii) Collaborative backdoor poisoning attacks to establish the first theoretical connection between the level of non-independent and identically distributed (non-iid) data and backdoor poisoning risks. As a result, we can significantly reduce the number of compromised clients to successfully carry out model integrity poisoning with severely high attack success rates. The higher degree of diversity in benign clients? local data is, the lower the number of required compromised clients and the stealthier the successful poisoning will be; and vice-versa.\n\n(3) Theoretical Connection between Privacy and Trustworthiness. We establish a theoretical foundation among privacy, certified robustness, and certified fairness based on extensive analysis of privacy-preserving and model integrity. We further enhance the scalability of our solutions with the concept of scalable differential privacy in adversarial learning. By leveraging the correlation among embedding features, we significantly improve the model utility, robustness, and fairness under the same privacy protection. Privacy, robustness, and fairness are critical factors in gaining trust from our society, given the wide adoption of machine learning applications. Therefore, our contributions offer a solid foundation for developing innovative solutions for private and trustworthy machine learning applications.\n\n(4) Prototype System Development and Deployment. We developed a prototype system, which has been tested on Android mobile devices for a human activity recognition task in a real-world trial. We utilize Android smartphones to collect smartphone sensor data ?in the wild? from university students as subjects for the following reasons: (1) University students should have relatively good access to smartphones and related technologies; (2) University students should be more credible and easier to be motivated than other sources (e.g., recruiting test subjects on crowd-sourcing websites); and (3) It will be easier for our team to recruit and distribute rewards to students. We launched two data collection runs at two universities for three months each. For three months, we let the participants collect data and labels by themselves (in the wild) and only intervene through reminder emails if we saw a decline in daily activities. A total of 116 participants were recorded after the two data collection runs. We compare our DP-preserving mechanisms with baseline approaches. The results show that our mechanism significantly outperforms existing baselines and approaches the noiseless model utility when the privacy budget is sufficient. Our contributions significantly impact technology transfers beyond typical publications by testing our proposed privacy-preserving solutions in field trials through our prototype system.\n\n(5) Interdisciplinary Outcomes. Our approaches have been applied to 1) human activity recognition, 2) drug abuse detection on online social media data to battle against the epidemic of drug abuse, and 3) natural language processing application to protect sensitive information from textual datasets. This will provide rigorous privacy protections to users enrolled in these problems enabling us to have more insightful pictures about human sensing applications and drug abuse risk behaviors without compromising users' privacy. Our contributions on the key fronts will bring Differential Privacy closer to the best privacy-preserving practices in real-world applications.\n\n(6) Teaching and Educational Experiences. The project engages women and minority students in cutting-edge research, including several undergraduate female students at NJIT. A female undergraduate student published a full paper as the first author at the ICONIP?21, a leading international forum for researchers, scientists, and industry professionals working in neuroscience, neural networks, deep learning, and related fields to share their new ideas, progress, and achievements. Based on the work, the student won the undergraduate Presidential Leadership Award. This award is the most prestigious NJIT can bestow upon a student who embodies the mission and values of NJIT through campus leadership, community service, and academics. The student was also selected as a National Center for Women in Technology Collegiate Award Finalist. The Award honors the outstanding computing accomplishments of undergraduate and graduate women, genderqueer, or non-binary students national-wide. The project results have been integrated into the IS688 Web Mining course and newly developed DS789 Trustworthy Artificial Intelligent and IS698 Emerging Topics in Deep Learning ? Artificial Intelligent through course projects.\n\n\t\t\t\t\tLast Modified: 06/20/2023\n\n\t\t\t\t\tSubmitted by: Hai Phan"
+ }
+}

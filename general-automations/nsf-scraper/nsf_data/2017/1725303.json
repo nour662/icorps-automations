@@ -1,0 +1,101 @@
+{
+ "awd_id": "1725303",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SPX: Collaborative Research: Mongo Graph Machine (MGM): A Flash-Based Appliance for Large Graph Analytics",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2017-10-01",
+ "awd_exp_date": "2020-09-30",
+ "tot_intn_awd_amt": 520001.0,
+ "awd_amount": 520001.0,
+ "awd_min_amd_letter_date": "2017-09-12",
+ "awd_max_amd_letter_date": "2017-09-12",
+ "awd_abstract_narration": "We live in the age of big data. In many problem domains such as data-mining, machine learning, scientific computing, and the study of social networks, the data deals with relationships between pairs of entities, and is represented by a data structure called a graph. Graphs of interest today may have hundreds of billions of entities, and trillions of relationships between these entities. Large-scale graph processing is typically done in data-centers which are huge clusters of power hungry computers. The proposed Mongo Graph Machine (MGM) project will explore a different solution known as out-of-core processing. In this system, graphs will be stored in flash memory, which is much cheaper, denser and cooler than DRAMs, and processed using a combination of specialized circuits called FPGAs in tandem with a conventional processor. A programming system will be developed to hide this complexity from the end-user. The resulting system will be small enough to fit under a desk and dramatically more energy-efficient while providing powerful graph processing capability.\r\n\r\nThe MGM project will address the problem of storing and processing extreme-scale graphs by using in-storage acceleration based on NAND flash chips with an attached FPGA. A single machine can accommodate 1 TB to 16 TBs of flash memory using current NAND technology. This configuration provides the flash storage necessary to store very large graphs and the computational power necessary to saturate the bandwidth of the flash. To address the programming problem for this architecture, the project will develop compiler technology and FPGA accelerators that will permit developers to write applications in the high-level programming model, leaving it to the system to exploit parallelism and optimize memory accesses for the access characteristics of flash storage. The software system will be based on the Galois system, which has been shown to scale to hundreds of processors on large shared-memory machines.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Professor",
+   "pi_last_name": "Arvind",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Professor Arvind",
+   "pi_email_addr": "arvind@mit.edu",
+   "nsf_id": "000386286",
+   "pi_start_date": "2017-09-12",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Massachusetts Institute of Technology",
+  "inst_street_address": "77 MASSACHUSETTS AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6172531000",
+  "inst_zip_code": "021394301",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+  "org_prnt_uei_num": "E2NYLCDML6V1",
+  "org_uei_num": "E2NYLCDML6V1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Massachusetts Institute of Technology",
+  "perf_str_addr": "32 Vassar Street",
+  "perf_city_name": "Cambridge",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021394307",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "042Y00",
+   "pgm_ele_name": "PPoSS-PP of Scalable Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 520001.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-76ae622e-7fff-ff12-0541-5872328a7bd0\"> </span></p>\n<p dir=\"ltr\"><span>Extremely large and sparse graphs with irregular structures (billions of vertices and hundreds of billions of edges) arise in many important problems, for example, analyses of social networks. Typically, systems for large-scale graph analytics provision the system with enough DRAM to store the entire graph data in memory. The performance of such systems falls catastrophically if the whole data (&gt; 1 TBs) doesn't fit in DRAM. Similar issues arise in other big data processing problems, for example, large key-value stores, processing analytical SQL queries on large data bases, and genomics sequencing and analysis. Our Mongo Graph Machine (MGM) project has explored an alternative architecture based on flash storage. We have shown that our approach is significantly cheaper and consumes less power, without significant loss of performance.</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>There are many challenges in using flash storage instead of DRAM for computation. Flash access granularity is a page (4-8 KB) as opposed to a cache line (32-128 B) for DRAM, and flash access latency is 3-4 orders of magnitude larger than DRAM. To amortize the performance penalty, our flash-based architecture uses in-storage accelerators. However, without a modification of the algorithm, large access granularity causes an extreme read amplification. Also the large access latency of flash cannot be mitigated using caches because most of these algorithms have little locality. Thus, an effective use of flash for computation invariably requires codesign of software and hardware accelerators.&nbsp;</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>We have demonstrated the effectiveness of our approach by building systems for four different applications.&nbsp;</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>1. GraFBoost - a system for graph analytics:</span></p>\n<p dir=\"ltr\"><span>We produced the GraFBoost system which can perform a variety of graph analytics on a single machine with a large amount of flash storage and a small amount of DRAM (~1GB). We compared our results with a wide range of existing graph analytic frameworks and showed that both of our implementations were typically 1) faster than the out-of-core frameworks and 2) competitive with many in-memory systems that use enterprise-class multicores and large DRAM (128GB). In addition, we were the only system able to complete all of the algorithms for each of the reference graphs due to the huge size of the dataset.&nbsp;</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>2. PinK - a high-speed LSM-tree-based key-value SSD:</span></p>\n<p dir=\"ltr\"><span>We produced PinK, a key-value SSD (KV-SSD) with bounded tail latency, based on the same flash-based infrastructure used in GraFBoost. Key-value store (KVS) based on a log-structured merge-tree (LSM-tree) is preferable to hash-based KVS because an LSM-tree supports a wider variety of operations and shows better performance, especially for writes. However, LSM-trees are difficult to implement in the resource constrained environment of an SSD and consequently, KV-SSDs typically use hashing. PinK improved the performance of LSM-trees running in a resource constrained storage drive by avoiding the use of Bloom filters and instead, used the freed-up DRAM to keep/pin the top levels of the LSM-tree. Also, accelerators were used to periodically merge internal data. Compared to a hash-based KV-SSD, PinK reduced the 99th-percentile tail latency by 73%, improved the average read latency by 42% and the throughput by 37%.</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>3. AQUOMAN - an in-storage analytic-query offloading machine:</span></p>\n<p dir=\"ltr\"><span>We produced AQUOMAN, an in-storage analytic-query offloading machine, using the hardware accelerator infrastructure of this project. AQUOMAN offloads most SQL operators, including multi-way joins, to storage. AQUOMAN executes Table Tasks, which apply a static dataflow graph of SQL operators to relational tables to produce an output table. Table Tasks use a streaming computation model, which allows AQUOMAN to process queries with a small amount of DRAM for intermediate results. AQUOMAN can be integrated in the database software stack transparently. Using the 1TB TPC-H benchmark and ignoring the inter-query page cache reuse, we have shown that MonetDB running on a 4-core, 16GB-DRAM machine with AQUOMAN-augmented SSDs performs as well as MonetDB on a 32-core, 128GB-DRAM machine with standard SSDs.</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>4. SMUFIN-F - somatic mutation detection on commodity machines using flash:</span></p>\n<p dir=\"ltr\"><span>Analysis of a patient's genomics data is the first step towards precision medicine. Such analyses are performed on expensive enterprise-class server machines because input data sets are large, and the intermediate data structures are even larger (TB-size) and require random-accesses. We developed a general method to perform a specific genomics problem, mutation detection, on a cheap commodity personal computer (PC) with flash storage and a small amount of DRAM. We constructed large histograms of k-mers efficiently on external SSDs and applied our technique to a state-of-the-art reference-free genomics algorithm, SMUFIN, to create SMUFIN-F. We have shown that on two PCs, SMUFIN-F achieves the same throughput at only 36% of the hardware cost and 45% of the energy compared to SMUFIN on an enterprise-class machine. To the best of our knowledge, SMUFIN-F is the first reference-free system that can detect somatic mutations on commodity PCs for whole human genomes. We believe our technique should apply to other k-mer or n-gram-based algorithms.</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/15/2021<br>\n\t\t\t\t\tModified by: Professor&nbsp;Arvind</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \nExtremely large and sparse graphs with irregular structures (billions of vertices and hundreds of billions of edges) arise in many important problems, for example, analyses of social networks. Typically, systems for large-scale graph analytics provision the system with enough DRAM to store the entire graph data in memory. The performance of such systems falls catastrophically if the whole data (&gt; 1 TBs) doesn't fit in DRAM. Similar issues arise in other big data processing problems, for example, large key-value stores, processing analytical SQL queries on large data bases, and genomics sequencing and analysis. Our Mongo Graph Machine (MGM) project has explored an alternative architecture based on flash storage. We have shown that our approach is significantly cheaper and consumes less power, without significant loss of performance.\n\n \nThere are many challenges in using flash storage instead of DRAM for computation. Flash access granularity is a page (4-8 KB) as opposed to a cache line (32-128 B) for DRAM, and flash access latency is 3-4 orders of magnitude larger than DRAM. To amortize the performance penalty, our flash-based architecture uses in-storage accelerators. However, without a modification of the algorithm, large access granularity causes an extreme read amplification. Also the large access latency of flash cannot be mitigated using caches because most of these algorithms have little locality. Thus, an effective use of flash for computation invariably requires codesign of software and hardware accelerators. \n\n \nWe have demonstrated the effectiveness of our approach by building systems for four different applications. \n\n \n1. GraFBoost - a system for graph analytics:\nWe produced the GraFBoost system which can perform a variety of graph analytics on a single machine with a large amount of flash storage and a small amount of DRAM (~1GB). We compared our results with a wide range of existing graph analytic frameworks and showed that both of our implementations were typically 1) faster than the out-of-core frameworks and 2) competitive with many in-memory systems that use enterprise-class multicores and large DRAM (128GB). In addition, we were the only system able to complete all of the algorithms for each of the reference graphs due to the huge size of the dataset. \n\n \n2. PinK - a high-speed LSM-tree-based key-value SSD:\nWe produced PinK, a key-value SSD (KV-SSD) with bounded tail latency, based on the same flash-based infrastructure used in GraFBoost. Key-value store (KVS) based on a log-structured merge-tree (LSM-tree) is preferable to hash-based KVS because an LSM-tree supports a wider variety of operations and shows better performance, especially for writes. However, LSM-trees are difficult to implement in the resource constrained environment of an SSD and consequently, KV-SSDs typically use hashing. PinK improved the performance of LSM-trees running in a resource constrained storage drive by avoiding the use of Bloom filters and instead, used the freed-up DRAM to keep/pin the top levels of the LSM-tree. Also, accelerators were used to periodically merge internal data. Compared to a hash-based KV-SSD, PinK reduced the 99th-percentile tail latency by 73%, improved the average read latency by 42% and the throughput by 37%.\n\n \n3. AQUOMAN - an in-storage analytic-query offloading machine:\nWe produced AQUOMAN, an in-storage analytic-query offloading machine, using the hardware accelerator infrastructure of this project. AQUOMAN offloads most SQL operators, including multi-way joins, to storage. AQUOMAN executes Table Tasks, which apply a static dataflow graph of SQL operators to relational tables to produce an output table. Table Tasks use a streaming computation model, which allows AQUOMAN to process queries with a small amount of DRAM for intermediate results. AQUOMAN can be integrated in the database software stack transparently. Using the 1TB TPC-H benchmark and ignoring the inter-query page cache reuse, we have shown that MonetDB running on a 4-core, 16GB-DRAM machine with AQUOMAN-augmented SSDs performs as well as MonetDB on a 32-core, 128GB-DRAM machine with standard SSDs.\n\n \n4. SMUFIN-F - somatic mutation detection on commodity machines using flash:\nAnalysis of a patient's genomics data is the first step towards precision medicine. Such analyses are performed on expensive enterprise-class server machines because input data sets are large, and the intermediate data structures are even larger (TB-size) and require random-accesses. We developed a general method to perform a specific genomics problem, mutation detection, on a cheap commodity personal computer (PC) with flash storage and a small amount of DRAM. We constructed large histograms of k-mers efficiently on external SSDs and applied our technique to a state-of-the-art reference-free genomics algorithm, SMUFIN, to create SMUFIN-F. We have shown that on two PCs, SMUFIN-F achieves the same throughput at only 36% of the hardware cost and 45% of the energy compared to SMUFIN on an enterprise-class machine. To the best of our knowledge, SMUFIN-F is the first reference-free system that can detect somatic mutations on commodity PCs for whole human genomes. We believe our technique should apply to other k-mer or n-gram-based algorithms.\n\n \n\n\t\t\t\t\tLast Modified: 07/15/2021\n\n\t\t\t\t\tSubmitted by: Professor Arvind"
+ }
+}

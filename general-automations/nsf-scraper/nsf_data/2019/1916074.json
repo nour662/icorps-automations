@@ -1,0 +1,96 @@
+{
+ "awd_id": "1916074",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Multivariate Histograms and Inference with Finite Sample Guarantees",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032927299",
+ "po_email": "yzeng@nsf.gov",
+ "po_sign_block_name": "Yong Zeng",
+ "awd_eff_date": "2019-07-15",
+ "awd_exp_date": "2023-06-30",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2019-07-09",
+ "awd_max_amd_letter_date": "2019-07-09",
+ "awd_abstract_narration": "Data that comprise several different measurements on each subject are common for modern big data. In order to store these big data in a database as well as for other applications, it is essential to summarize these big data in a compact form without losing important information. This is known to be a difficult problem due to a phenomenon called the `curse of dimensionality'. This research will implement a concrete plan to overcome this stumbling block for a number of important data analysis tasks. Importantly, the resulting methodology will provide relevant guarantees for the accuracy of these analysis tasks as well as fast algorithms for their implementation. The award will provide support of graduate training through research.\r\n\r\nDensity estimation based on multivariate data is known to be a difficult problem due to the `curse of dimensionality'. But in many applications the density is not the final goal of the inference, rather it is a stepping stone to access other objectives. In particular, the histogram represents a summary of the data for the main purpose of showing important features in the data, such as modes, and for estimating probabilities of subsets of the population. This proposal will address the latter problem directly in order to derive a useful multivariate histogram. The research will develop simultaneous confidence bounds with finite sample guarantees for the probability contents of certain data-dependent subsets of the sample space. It will be shown that these bounds possess certain optimality properties and that the widths of the bounds depend essentially only on the probability content of the sets and not on the dimensionality of the space, thus avoiding the curse of dimensionality. The project will develop fast algorithms to construct a histogram that satisfies these bounds and which therefore inherits these properties. The research will investigate the performance of this histogram, also in regards to detecting important features in the distribution such as modes.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Guenther",
+   "pi_last_name": "Walther",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Guenther Walther",
+   "pi_email_addr": "Walther@stat.stanford.edu",
+   "nsf_id": "000487606",
+   "pi_start_date": "2019-07-09",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Stanford University",
+  "inst_street_address": "450 JANE STANFORD WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "STANFORD",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "6507232300",
+  "inst_zip_code": "943052004",
+  "inst_country_name": "United States",
+  "cong_dist_code": "16",
+  "st_cong_dist_code": "CA16",
+  "org_lgl_bus_name": "THE LELAND STANFORD JUNIOR UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HJD6G4D6TJY5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Stanford University",
+  "perf_str_addr": "390 Serra Mall",
+  "perf_city_name": "Stanford",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "943054000",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": null,
+  "perf_st_cong_dist": "CA",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126900",
+   "pgm_ele_name": "STATISTICS"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of the project is to create synopses (data summaries) of multivariate data that have desirable properties for inference. For univariate data, such a synopsis is given by the histogram. In contrast, constructing multivariate data synopses is difficult because of the `curse of dimensionality'. The project builds such a synopsis via a k-d tree, which is a data structure that is well known in computer science. One result of the project shows that there is a clean finite sample statistical theory for such k-d trees. A second result of this project shows that this theory can be combined with a certain multiscale Bonferroni adjustment to construct simultaneous confidence bounds for the probability contents of certain multivariate rectangles that can be selected to serve as a data synopsis. That is, the methodology allows to select rectangles where the data distribution is close to uniform, and which can therefore serve as a synopsis, while still providing finite sample guarantees for their probability content. We call this synopsis `Beta tree'&nbsp; due to a connection to the beta distribution. It is shown that in an asymptotic setting, these confidence intervals provided by Beta trees are optimally short and their lengths do not depend on the dimension. Therefore Beta trees avoid the curse of dimensionality. The project produces papers that derive and describe these theoretical results, as well as software that implements Beta trees.</p><br>\n<p>\n Last Modified: 11/08/2023<br>\nModified by: Guenther&nbsp;Walther</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe goal of the project is to create synopses (data summaries) of multivariate data that have desirable properties for inference. For univariate data, such a synopsis is given by the histogram. In contrast, constructing multivariate data synopses is difficult because of the `curse of dimensionality'. The project builds such a synopsis via a k-d tree, which is a data structure that is well known in computer science. One result of the project shows that there is a clean finite sample statistical theory for such k-d trees. A second result of this project shows that this theory can be combined with a certain multiscale Bonferroni adjustment to construct simultaneous confidence bounds for the probability contents of certain multivariate rectangles that can be selected to serve as a data synopsis. That is, the methodology allows to select rectangles where the data distribution is close to uniform, and which can therefore serve as a synopsis, while still providing finite sample guarantees for their probability content. We call this synopsis `Beta tree' due to a connection to the beta distribution. It is shown that in an asymptotic setting, these confidence intervals provided by Beta trees are optimally short and their lengths do not depend on the dimension. Therefore Beta trees avoid the curse of dimensionality. The project produces papers that derive and describe these theoretical results, as well as software that implements Beta trees.\t\t\t\t\tLast Modified: 11/08/2023\n\n\t\t\t\t\tSubmitted by: GuentherWalther\n"
+ }
+}

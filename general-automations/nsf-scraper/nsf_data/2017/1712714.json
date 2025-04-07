@@ -1,0 +1,100 @@
+{
+ "awd_id": "1712714",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Theoretical and Methodological Frameworks for Causal Inference of Peer Effects",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Gabor Szekely",
+ "awd_eff_date": "2017-07-01",
+ "awd_exp_date": "2021-06-30",
+ "tot_intn_awd_amt": 238737.0,
+ "awd_amount": 238737.0,
+ "awd_min_amd_letter_date": "2017-07-05",
+ "awd_max_amd_letter_date": "2017-07-05",
+ "awd_abstract_narration": "Understanding how friends or peers interact and affect each other is often of great interest in biomedical studies and the social sciences.  However, it is not entirely clear how to quantify and develop inference for peer effects using a formal statistical framework.  This project will focus on the development of a statistical causal inference framework to address these challenges, with the goal of developing both theoretical and methodological tools for a wide class of questions involving inference of peer effects.  The methods will be applied to investigate peer effects among university students with different academic backgrounds.  The research could provide important guidance for decision and policy makers.\r\n\r\nThe classical potential outcomes framework for causal inference assumes no interference among experimental units.  In some empirical studies, interference is a nuisance that complicates analysis and should be avoided by careful experimental design.  In many applied fields, however, group or network structures exist and could cause interference among units.  Interference is no longer a nuisance in these applications, because studying the pattern of causal effects with interference is the scientific question of interest with important implications for policy or decision making.  The existing literature discusses external interventions on the units, where the networks, clusters or groups that induce interference are known a priori.  The new framework allows for the development of inferential tools for causal inference with interference from the Fisherian, Neymanian, and Bayesian perspectives. Under the Fisherian view, randomization tests will be used to detect deviations from the sharp null hypothesis without imposing further structural assumptions. Under the Neymanian view, randomization-based point and interval estimators, which serve as the basis for finding optimal treatment assignments will be developed.  Under the Bayesian view, hierarchical models will be developed to accommodate complex structures of real-life data and incorporate information from multiple groups with longitudinal outcomes. The project will also lead to the development of open-source R software. This project is supported by the Division of Mathematical Sciences and the Methodology, Measurement, and Statistics (MMS) Program in the Directorate for Social, Behavioral, and Economic Sciences.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jun",
+   "pi_last_name": "Liu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jun Liu",
+   "pi_email_addr": "jliu@stat.harvard.edu",
+   "nsf_id": "000193769",
+   "pi_start_date": "2017-07-05",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Harvard University",
+  "inst_street_address": "1033 MASSACHUSETTS AVE STE 3",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6174955501",
+  "inst_zip_code": "021385366",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "MA05",
+  "org_lgl_bus_name": "PRESIDENT AND FELLOWS OF HARVARD COLLEGE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LN53LCFJFL45"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Harvard University",
+  "perf_str_addr": "1 Oxford Street",
+  "perf_city_name": "Cambridge",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021382901",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "MA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126900",
+   "pgm_ele_name": "STATISTICS"
+  },
+  {
+   "pgm_ele_code": "133300",
+   "pgm_ele_name": "Methodology, Measuremt & Stats"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 238737.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>With the rapid advance of various data-acquisition technologies, such as those high-throughput methods in biology, chemistry, material sciences, social science, internet commerce etc, various statistical and machine learning methods have been on the spotlight in the past few years. At a deeper level, however, we want to understand why beyond just doing a black-box-based prediction. As in the old saying, ``<em>correlation is not causation</em>&rdquo;. Causal inference aims at inferring interpretable causal relationships between a response variable and one or a few targeted factors among potentially many features, thus serves as a key to help bring in interpretability to big data and machine learning algorithms.</p>\n<p>The proposed research focuses on the development of a causal inference framework for studying peer effects using potential outcomes, a general randomization-based inferential procedure for a wide class of treatment assignment mechanisms including those that may involve interference (i.e., the treatment of one unit may influence outcomes of some other units), and related high-dimensional statistical inference methods. As a concrete example, our study focuses on the assessment of the effect of roommates assignment on one&rsquo;s academic performance during his/her undergraduate studies in a college in China. Because the roommate assignment process induces an intrinsic treatment interference, the standard causal inference framework cannot be directly applied. We developed a randomization-based method and showed that it is an efficient method to provide unbiased estimates for the causal effects. We conclude with our data that peer effects are significant on some more STEM-type subjects, but insignificant on other subjects.</p>\n<p>Going beyond our test case, we also consider the general causal inference problem when facing with many covariates/features. An important first step in such problems is to find <em>relevant </em>features among all the candidates, so that the remaining features are conditionally independent of the response variable given the set of relevant features. In the second step, one may employ a more delicate causal model, such as the potential outcome framework of Rubin, to make causal estimates. We developed a set of methods for using data disturbance (e.g., data splitting, or adding noise to each feature) to guide us for variable selection. Intuitively, those features that are truly relevant should have more stable coefficient estimates those irrelevant features. We show that this intuitive idea can be made mathematically rigorous to give us a precise control on the proportion of false claims of relevance (i.e., the false discovery rate). Our developed approach is very easy to implement, trivial to parallelize, and broadly applicable to many common statistical models, such as linear models, generalized linear models, and Gaussian graphical models. Technically, we have also made some progresses in understanding high dimensional Bayesian statistical models, especially how the prior distribution in a high-dimensional setting can impact the results in an unexpected way and how to code with such a challenge, and computing efficiently a good approximation of the Bayesian evidence (i.e., the Bayes factors) in high-dimensional and complex Bayesian models.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/20/2021<br>\n\t\t\t\t\tModified by: Jun&nbsp;Liu</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nWith the rapid advance of various data-acquisition technologies, such as those high-throughput methods in biology, chemistry, material sciences, social science, internet commerce etc, various statistical and machine learning methods have been on the spotlight in the past few years. At a deeper level, however, we want to understand why beyond just doing a black-box-based prediction. As in the old saying, ``correlation is not causation\". Causal inference aims at inferring interpretable causal relationships between a response variable and one or a few targeted factors among potentially many features, thus serves as a key to help bring in interpretability to big data and machine learning algorithms.\n\nThe proposed research focuses on the development of a causal inference framework for studying peer effects using potential outcomes, a general randomization-based inferential procedure for a wide class of treatment assignment mechanisms including those that may involve interference (i.e., the treatment of one unit may influence outcomes of some other units), and related high-dimensional statistical inference methods. As a concrete example, our study focuses on the assessment of the effect of roommates assignment on one\u2019s academic performance during his/her undergraduate studies in a college in China. Because the roommate assignment process induces an intrinsic treatment interference, the standard causal inference framework cannot be directly applied. We developed a randomization-based method and showed that it is an efficient method to provide unbiased estimates for the causal effects. We conclude with our data that peer effects are significant on some more STEM-type subjects, but insignificant on other subjects.\n\nGoing beyond our test case, we also consider the general causal inference problem when facing with many covariates/features. An important first step in such problems is to find relevant features among all the candidates, so that the remaining features are conditionally independent of the response variable given the set of relevant features. In the second step, one may employ a more delicate causal model, such as the potential outcome framework of Rubin, to make causal estimates. We developed a set of methods for using data disturbance (e.g., data splitting, or adding noise to each feature) to guide us for variable selection. Intuitively, those features that are truly relevant should have more stable coefficient estimates those irrelevant features. We show that this intuitive idea can be made mathematically rigorous to give us a precise control on the proportion of false claims of relevance (i.e., the false discovery rate). Our developed approach is very easy to implement, trivial to parallelize, and broadly applicable to many common statistical models, such as linear models, generalized linear models, and Gaussian graphical models. Technically, we have also made some progresses in understanding high dimensional Bayesian statistical models, especially how the prior distribution in a high-dimensional setting can impact the results in an unexpected way and how to code with such a challenge, and computing efficiently a good approximation of the Bayesian evidence (i.e., the Bayes factors) in high-dimensional and complex Bayesian models.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 12/20/2021\n\n\t\t\t\t\tSubmitted by: Jun Liu"
+ }
+}

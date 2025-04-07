@@ -1,0 +1,109 @@
+{
+ "awd_id": "1107777",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Fellowship Award",
+ "awd_titl_txt": "EAPSI: Cerny's Conjecture regarding Shortest Reset Word of a Synchronizing Finite-State Automaton",
+ "cfda_num": "47.079",
+ "org_code": "01090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anne Emig",
+ "awd_eff_date": "2011-06-01",
+ "awd_exp_date": "2012-05-31",
+ "tot_intn_awd_amt": 5998.0,
+ "awd_amount": 5998.0,
+ "awd_min_amd_letter_date": "2011-05-16",
+ "awd_max_amd_letter_date": "2011-05-16",
+ "awd_abstract_narration": null,
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "O/D",
+ "org_dir_long_name": "Office Of The Director",
+ "div_abbr": "OISE",
+ "org_div_long_name": "Office of International Science and Engineering",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Miciah",
+   "pi_last_name": "Masters",
+   "pi_mid_init": "B",
+   "pi_sufx_name": "",
+   "pi_full_name": "Miciah B Masters",
+   "pi_email_addr": "",
+   "nsf_id": "000580593",
+   "pi_start_date": "2011-05-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Masters                 Miciah         B",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "Chocowinity",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "",
+  "inst_zip_code": "278178323",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "NC03",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "Masters                 Miciah         B",
+  "perf_str_addr": "",
+  "perf_city_name": "Chocowinity",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "278178323",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "NC03",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "731600",
+   "pgm_ele_name": "EAPSI"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5978",
+   "pgm_ref_txt": "EAST ASIA AND PACIFIC PROGRAM"
+  },
+  {
+   "pgm_ref_code": "7316",
+   "pgm_ref_txt": "EAPSI"
+  },
+  {
+   "pgm_ref_code": "9200",
+   "pgm_ref_txt": "US CHINA COOP IN BASIC SCIENCE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 5998.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>My research concerns finite-state automata from automata theory, which is a part of the discipline of computer science. &nbsp;A finite-state automaton, or FSA, is an abstract model of computation. &nbsp;An FSA comprises a finite set of possible states, an alphabet, and a transition function. &nbsp;At any instant, the FSA can be in exactly one of its states. &nbsp;Given the current state and some input (a symbol from the alphabet), the FSA moves into another state (or possibly stays the same state) as dictated by the transition function. &nbsp;Finite-state automata have been well studied and are important in computer science both from theoretical and practical points of view.</p>\n<p>Few open problems remain in automata theory; one such problem is the ?ern&yacute; conjecture concerning \"synchronizing automata.\" &nbsp;An FSA is called \"synchronizing\" if there exists some input sequence that causes the automaton to transition into some fixed state, irrespective of the state in which it was before that input sequence was given. &nbsp;Such an input sequence is commonly called a \"reset word.\" &nbsp;The ?ern&yacute; conjecture states that given a synchronizing automaton with n states, there exists some reset word for that automaton that is no longer than (n-1)^2 symbols. &nbsp;Automata that reach this bound are known, and no automaton that exceeds the bound is known, but the bound has defied general proof, despite attempts spanning decades by many researchers employing a multitude of approaches.</p>\n<p>One approach that has yielded an important partial result is a greedy algorithm due to Eppstein. &nbsp;A greedy, or locally optimizing, algorithm is one that makes short-sighted decisions: When the algorithm reaches a situation in which it has multiple choices, it always chooses the one that appears at the moment to be the best choice, heedless of the possibility that a choice that appears suboptimal now may ultimately result in a lower final cost. &nbsp;In particular, the Eppstein algorithm iteratively builds a reset word by finding the shortest sequence of symbols that goes from two (or more) states that the automaton could be in to one state, repeating until there remains only one state that the automaton could be in, and concatenating these sequences to construct a final reset word that will cause the automaton to transition from any one of its states to exactly one single, fixed state.</p>\n<p>A greedy algorithm is fast because it makes decisions quickly, and it can be easier to design and analyze than a more sophisticated algorithm, but for some problems, a greedy algorithm does not always find the optimal solution. &nbsp;Such is the case with the Eppstein algorithm, which is shown to generate suboptimal reset words for some synchronizing automata.</p>\n<p>Still, the Eppstein algorithm provides a significant result: An analysis of the algorithm shows that on a given synchronizing automaton with n states, the algorithm produces a reset word for that automaton, and that reset word will have length no greater than (n^3-n)/6. &nbsp;The algorithm serves as a constructive proof that the upper bound on the length of the shortest reset word for any synchronizing automaton is cubic in the number of possible states. &nbsp;This bound, while falling short of the bound postulated in the ?ern&yacute; conjecture, is the tightest known bound on the length of the shortest word for general synchronizing automata.</p>\n<p>I investigated approaches based on the Eppstein algorithm, as well as other approaches, to find a tighter bound on the length of the shortest reset word of a given automaton. &nbsp;This work is ongoing as part of my graduate studies. &nbsp;In addition to work specifically on the ?ern&yacute; conjecture, my grant provided my with a unique opportunity to network and to share ideas with researchers at institutions in China. &nbsp;Such sharing of knowledge is the basis of scie...",
+  "por_txt_cntn": "\nMy research concerns finite-state automata from automata theory, which is a part of the discipline of computer science.  A finite-state automaton, or FSA, is an abstract model of computation.  An FSA comprises a finite set of possible states, an alphabet, and a transition function.  At any instant, the FSA can be in exactly one of its states.  Given the current state and some input (a symbol from the alphabet), the FSA moves into another state (or possibly stays the same state) as dictated by the transition function.  Finite-state automata have been well studied and are important in computer science both from theoretical and practical points of view.\n\nFew open problems remain in automata theory; one such problem is the ?ern&yacute; conjecture concerning \"synchronizing automata.\"  An FSA is called \"synchronizing\" if there exists some input sequence that causes the automaton to transition into some fixed state, irrespective of the state in which it was before that input sequence was given.  Such an input sequence is commonly called a \"reset word.\"  The ?ern&yacute; conjecture states that given a synchronizing automaton with n states, there exists some reset word for that automaton that is no longer than (n-1)^2 symbols.  Automata that reach this bound are known, and no automaton that exceeds the bound is known, but the bound has defied general proof, despite attempts spanning decades by many researchers employing a multitude of approaches.\n\nOne approach that has yielded an important partial result is a greedy algorithm due to Eppstein.  A greedy, or locally optimizing, algorithm is one that makes short-sighted decisions: When the algorithm reaches a situation in which it has multiple choices, it always chooses the one that appears at the moment to be the best choice, heedless of the possibility that a choice that appears suboptimal now may ultimately result in a lower final cost.  In particular, the Eppstein algorithm iteratively builds a reset word by finding the shortest sequence of symbols that goes from two (or more) states that the automaton could be in to one state, repeating until there remains only one state that the automaton could be in, and concatenating these sequences to construct a final reset word that will cause the automaton to transition from any one of its states to exactly one single, fixed state.\n\nA greedy algorithm is fast because it makes decisions quickly, and it can be easier to design and analyze than a more sophisticated algorithm, but for some problems, a greedy algorithm does not always find the optimal solution.  Such is the case with the Eppstein algorithm, which is shown to generate suboptimal reset words for some synchronizing automata.\n\nStill, the Eppstein algorithm provides a significant result: An analysis of the algorithm shows that on a given synchronizing automaton with n states, the algorithm produces a reset word for that automaton, and that reset word will have length no greater than (n^3-n)/6.  The algorithm serves as a constructive proof that the upper bound on the length of the shortest reset word for any synchronizing automaton is cubic in the number of possible states.  This bound, while falling short of the bound postulated in the ?ern&yacute; conjecture, is the tightest known bound on the length of the shortest word for general synchronizing automata.\n\nI investigated approaches based on the Eppstein algorithm, as well as other approaches, to find a tighter bound on the length of the shortest reset word of a given automaton.  This work is ongoing as part of my graduate studies.  In addition to work specifically on the ?ern&yacute; conjecture, my grant provided my with a unique opportunity to network and to share ideas with researchers at institutions in China.  Such sharing of knowledge is the basis of scientific progress, and the connections that the EAPSI program facilitates foster greater cultural, political, social, and linguistic understanding between China and the United Sta..."
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1564444",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Medium: Collaborative: Distribution-Sensitive Cryptography",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927991",
+ "po_email": "namla@nsf.gov",
+ "po_sign_block_name": "Nina Amla",
+ "awd_eff_date": "2015-09-15",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 399833.0,
+ "awd_amount": 399833.0,
+ "awd_min_amd_letter_date": "2015-11-16",
+ "awd_max_amd_letter_date": "2020-08-13",
+ "awd_abstract_narration": "Contemporary encryption schemes are almost exclusively distribution-agnostic. Their security properties are independent of the statistical characteristics of plaintexts, and the output of these schemes are ciphertexts that are uniformly distributed bit strings, irrespective of use case. While conceptually simple, such encryption schemes fail to meet basic, real-world requirements and have left longstanding functional gaps in key security applications. This project investigates new formalisms and methodologies to guide scientific exploration of such security challenges and yield novel, principled solutions backed by experimental validation and robust, practical design.  \r\n\r\nThe project develops a new framework, called Distribution-Sensitive Cryptography (DSC), for cryptographic tool design that will connect and improve upon several existing primitives and produce entirely new ones. DSC can be applied to create new solutions to security challenges for which good approaches have historically been elusive, including brute-force attacks against password-based encryption, censorship of encrypted protocols, and securing human-generated authentication secrets. The investigators are actively engaged with industry partners, to glean real-world requirements and to transition the new tools into practice.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Thomas",
+   "pi_last_name": "Shrimpton",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Thomas Shrimpton",
+   "pi_email_addr": "teshrim@cise.ufl.edu",
+   "nsf_id": "000232896",
+   "pi_start_date": "2015-11-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Florida",
+  "inst_street_address": "1523 UNION RD RM 207",
+  "inst_street_address_2": "",
+  "inst_city_name": "GAINESVILLE",
+  "inst_state_code": "FL",
+  "inst_state_name": "Florida",
+  "inst_phone_num": "3523923516",
+  "inst_zip_code": "326111941",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "FL03",
+  "org_lgl_bus_name": "UNIVERSITY OF FLORIDA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NNFQH1JAPEP3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Florida",
+  "perf_str_addr": "1 UNIVERSITY OF FLORIDA",
+  "perf_city_name": "GAINESVILLE",
+  "perf_st_code": "FL",
+  "perf_st_name": "Florida",
+  "perf_zip_code": "326112002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "FL03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0115",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001516DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2015,
+   "fund_oblg_amt": 399833.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project has a range of research goals whose aims are to address situations in which traditional cryptographic protections are required (privacy, integrity, etc.), but traditional cryptographic mechanisms fall short, because they are agnostic to distributional characteristics of their inputs and outputs. &nbsp;For example, in censorship circumvention applications, the fact that encryption yields ciphertexts that are indistinguishable from uniform bitstrings can be a detriment, because it clearly signals to the censor that encryption is being used to hide the contents of network traffic. Generally speaking, this project aimed to develop new classes of distribution-sensitive cryptographic primitives, and to explore settings in which distribution-sensitivity is important.</p>\n<p>We developed and implemented systems for turning plaintext data into ciphertexts that look like natural language text, via our model-based format-transform encryption primitive.&nbsp; These support applications in which parties desire to hide their communication \"in plain site\" on large, public internet platforms, e.g., social media.&nbsp; Similarly, we developed a proof of concept system for producing ciphertexts that look like Python code-snippets, suitable for covert message passing on platforms like Github.&nbsp; These systems are somewhat limited, in terms of information-carrying capacity, by restrictions of the target platforms (e.g., a maximum-length of post), or restrictions imposed by a desire to avoid detection (e.g., posting things that are oddly structured compared to \"normal\").&nbsp;</p>\n<p>In certain settings, however, one can use side information to significantly increase the information-carrying capacity.&nbsp; W<span>e have developed a prototype system that uses streaming audio clients and servers as traffic sources, into whose traffic covert data can be embedded.&nbsp; On the sender-side, the information carrying portions of application messages are severely compressed by employing &ldquo;hints&rdquo;.&nbsp; For example, if the sender and receiver have a shared list of songs, the sender can compress the its request down to a simple pointer to a portion of a song, leaving the rest of the packet free for embedding covert data.&nbsp; (The packet size, itself, is not changed.)&nbsp; On the receiver-side, the covert data is recovered, and the original request is decompressed by using the pointer to create a &ldquo;full&rdquo; song request.&nbsp; This is then passed up to the real receiver-side application, which then behaves as it normally would.&nbsp; When the link between sender and receiver is a TLS channel, which is common, very little may be leaked to an eavesdropper.&nbsp; (Timing side-channels, say, may still leak information.)&nbsp; Using VLC and Icecast as the applications, up to 98% of the bytes transmitted over the TLS channel can be used to carry covert data.&nbsp;</span></p>\n<p><span>Under this award, we also established a mathematical framework for designing and analyzing such \"application-based covert channels\".&nbsp; Many example of such systems already exist, but the security analysis has been ad hoc.&nbsp; Our work provides a common, formal language for talking about these sorts of systems, for comparing their security features, and for surfacing precisely what are the non-cryptographic security assumptions that one must support with empirical explorations.</span></p>\n<p>Our work is of interest to existing censorship-circumvention/internet freedom platforms, as well as various industrial and government organizations.</p>\n<p>Work under this award has resulted in significant revamping of existing cryptography and security courses.&nbsp; It has supported the training of three Ph.D. students., who have interacted with local organizations to present their findings (in addition to presenting them at top-tier conferences.)</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/14/2021<br>\n\t\t\t\t\tModified by: Thomas&nbsp;Shrimpton</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project has a range of research goals whose aims are to address situations in which traditional cryptographic protections are required (privacy, integrity, etc.), but traditional cryptographic mechanisms fall short, because they are agnostic to distributional characteristics of their inputs and outputs.  For example, in censorship circumvention applications, the fact that encryption yields ciphertexts that are indistinguishable from uniform bitstrings can be a detriment, because it clearly signals to the censor that encryption is being used to hide the contents of network traffic. Generally speaking, this project aimed to develop new classes of distribution-sensitive cryptographic primitives, and to explore settings in which distribution-sensitivity is important.\n\nWe developed and implemented systems for turning plaintext data into ciphertexts that look like natural language text, via our model-based format-transform encryption primitive.  These support applications in which parties desire to hide their communication \"in plain site\" on large, public internet platforms, e.g., social media.  Similarly, we developed a proof of concept system for producing ciphertexts that look like Python code-snippets, suitable for covert message passing on platforms like Github.  These systems are somewhat limited, in terms of information-carrying capacity, by restrictions of the target platforms (e.g., a maximum-length of post), or restrictions imposed by a desire to avoid detection (e.g., posting things that are oddly structured compared to \"normal\"). \n\nIn certain settings, however, one can use side information to significantly increase the information-carrying capacity.  We have developed a prototype system that uses streaming audio clients and servers as traffic sources, into whose traffic covert data can be embedded.  On the sender-side, the information carrying portions of application messages are severely compressed by employing \"hints\".  For example, if the sender and receiver have a shared list of songs, the sender can compress the its request down to a simple pointer to a portion of a song, leaving the rest of the packet free for embedding covert data.  (The packet size, itself, is not changed.)  On the receiver-side, the covert data is recovered, and the original request is decompressed by using the pointer to create a \"full\" song request.  This is then passed up to the real receiver-side application, which then behaves as it normally would.  When the link between sender and receiver is a TLS channel, which is common, very little may be leaked to an eavesdropper.  (Timing side-channels, say, may still leak information.)  Using VLC and Icecast as the applications, up to 98% of the bytes transmitted over the TLS channel can be used to carry covert data. \n\nUnder this award, we also established a mathematical framework for designing and analyzing such \"application-based covert channels\".  Many example of such systems already exist, but the security analysis has been ad hoc.  Our work provides a common, formal language for talking about these sorts of systems, for comparing their security features, and for surfacing precisely what are the non-cryptographic security assumptions that one must support with empirical explorations.\n\nOur work is of interest to existing censorship-circumvention/internet freedom platforms, as well as various industrial and government organizations.\n\nWork under this award has resulted in significant revamping of existing cryptography and security courses.  It has supported the training of three Ph.D. students., who have interacted with local organizations to present their findings (in addition to presenting them at top-tier conferences.)\n\n \n\n \n\n\t\t\t\t\tLast Modified: 12/14/2021\n\n\t\t\t\t\tSubmitted by: Thomas Shrimpton"
+ }
+}

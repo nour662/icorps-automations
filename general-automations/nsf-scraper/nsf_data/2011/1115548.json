@@ -1,0 +1,113 @@
+{
+ "awd_id": "1115548",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NeTS:Small: Making Online Network Functions Fast and Compact",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Darleen Fisher",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 400000.0,
+ "awd_amount": 400000.0,
+ "awd_min_amd_letter_date": "2011-08-08",
+ "awd_max_amd_letter_date": "2011-08-08",
+ "awd_abstract_narration": "The line speed of modern routers is reaching beyond OC-768 (40Gb/s) to 100Gb/s or even terabits per second. In order to keep up with such high throughput, online network functions for traffic measurement, packet scheduling, access control, and quality of service will have to be implemented using on-chip SRAM. However, fitting these network functions in fast but small on-chip memory represents a major technical challenge today. Many online functions rely heavily on several fundamental building blocks called online primitives for data processing and storage. Three fundamental online primitives are of particular importance: (1) spread estimators for measuring the number of distinct elements in each flow, (2) size estimators for measuring the size of each flow, and (3) high-performance Bloom filters for membership check against large data sets. They have numerous applications in service provision, capacity planning, billing, routing-table lookup, traffic measurement, firewall design, and intrusion detection. A key technical challenge is how to make online primitives both fast and compact. Being fast, the requirement is that they should make only one memory access or update one counter in the worst case when processing each packet. Being compact, the requirement is that they should use a minimum amount of SRAM memory and be able to handle a large, unpredictable number of flows. This project strives to fulfill the above requirements with new methodologies, called virtual bit vectors and virtual counting vectors, for online data storage and retrieval. The project consists of four research components: (1) one-memory-access compact spread estimators, (2) one-counter-update compact size estimators, (3) one-memory-access fast Bloom filters, and (4) architecture-aware online primitive designs.\r\n\r\nBroader Impact: The proposed research will advance our knowledge for designing large-scale online operations in a very tight on-chip memory space. New design approaches developed by this project are expected to improve the performance of modern routers and firewalls. In addition, because the basic data structures embodied in these fundamental online primitives are widely applicable in Computer Science, improvement in their performance can potentially have broad impact in other research areas. Research outcome will be disseminated through conference and journal publications. New educational materials will be developed to incorporate online network functions and research results from this project into graduate courses.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Shigang",
+   "pi_last_name": "Chen",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Shigang Chen",
+   "pi_email_addr": "sgchen@ufl.edu",
+   "nsf_id": "000482815",
+   "pi_start_date": "2011-08-08",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Jih-Kwon",
+   "pi_last_name": "Peir",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jih-Kwon Peir",
+   "pi_email_addr": "peir@cise.ufl.edu",
+   "nsf_id": "000200421",
+   "pi_start_date": "2011-08-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Florida",
+  "inst_street_address": "1523 UNION RD RM 207",
+  "inst_street_address_2": "",
+  "inst_city_name": "GAINESVILLE",
+  "inst_state_code": "FL",
+  "inst_state_name": "Florida",
+  "inst_phone_num": "3523923516",
+  "inst_zip_code": "326111941",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "FL03",
+  "org_lgl_bus_name": "UNIVERSITY OF FLORIDA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NNFQH1JAPEP3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Florida",
+  "perf_str_addr": "1523 UNION RD RM 207",
+  "perf_city_name": "GAINESVILLE",
+  "perf_st_code": "FL",
+  "perf_st_name": "Florida",
+  "perf_zip_code": "326111941",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "FL03",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 400000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The speed of modern networks is going beyond 100Gb/s towards terabits per second. In order to keep up with such high throughput, online network functions for traffic measurement, cybersecurity, quality of service, and network performance will need to be implemented using small but high-speed cache memory on network processor chips. Many online functions rely heavily on several fundamental building blocks called online primitives for data processing and storage. Three fundamental online primitives are of particular importance: (1) size estimators for measuring the individual volumes of numerous network flows that carry data transferred over the Internet, (2) spread estimators for measuring the individual flow volumes with duplicate data removed, and (3) high-performance lookup function that makes membership check and filtering against data streaming across the networks. These primitives have numerous applications in service provision, capacity planning, billing, routing-table lookup, traffic measurement, firewall design, and intrusion detection.&nbsp;<br /><br />A key technical challenge is how to make online primitives both fast and compact. Being fast, the requirement is that they should incur very little processing overhead in order to support extremely high throughput that data are transferred over future high-speed networks. Being compact, the requirement is that they should be able to fit in the small but fast cache memory on network processor chips. This project fulfill the above requirements through a novel set of new methodologies, called virtual bit vectors and virtual counting vectors, for online data storage and retrieval. Using these virtualized data structures, the project&rsquo;s outcome includes the following online primitive designs: (1) one-memory-access compact spread estimators, (2) one-counter-update compact size estimators, (3) one-memory-access fast Bloom filters, and (4) architecture-aware online primitives. They achieve unprecedented high performance for online processing of Internet traffic, often lowering the processing overhead by multiple folds and the storage overhead by multiple orders of magnitude.&nbsp;<br /><br />The research advances our knowledge for designing large-scale online operations in a very tight on-chip memory space. New design approaches developed by this project are expected to improve the performance of modern routers and firewalls. In addition, because the basic data structures embodied in these fundamental online primitives are widely applicable in Computer Science and other disciplines, improvement in their performance has broad impact in other research areas such as Internet of things and even transportation systems. Research outcome from this project has been disseminated through conference and journal publications. New educational materials have been developed to incorporate online network functions and research results from this project into graduate courses.&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/04/2015<br>\n\t\t\t\t\tModified by: Shigang&nbsp;Chen</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe speed of modern networks is going beyond 100Gb/s towards terabits per second. In order to keep up with such high throughput, online network functions for traffic measurement, cybersecurity, quality of service, and network performance will need to be implemented using small but high-speed cache memory on network processor chips. Many online functions rely heavily on several fundamental building blocks called online primitives for data processing and storage. Three fundamental online primitives are of particular importance: (1) size estimators for measuring the individual volumes of numerous network flows that carry data transferred over the Internet, (2) spread estimators for measuring the individual flow volumes with duplicate data removed, and (3) high-performance lookup function that makes membership check and filtering against data streaming across the networks. These primitives have numerous applications in service provision, capacity planning, billing, routing-table lookup, traffic measurement, firewall design, and intrusion detection. \n\nA key technical challenge is how to make online primitives both fast and compact. Being fast, the requirement is that they should incur very little processing overhead in order to support extremely high throughput that data are transferred over future high-speed networks. Being compact, the requirement is that they should be able to fit in the small but fast cache memory on network processor chips. This project fulfill the above requirements through a novel set of new methodologies, called virtual bit vectors and virtual counting vectors, for online data storage and retrieval. Using these virtualized data structures, the project\u00c6s outcome includes the following online primitive designs: (1) one-memory-access compact spread estimators, (2) one-counter-update compact size estimators, (3) one-memory-access fast Bloom filters, and (4) architecture-aware online primitives. They achieve unprecedented high performance for online processing of Internet traffic, often lowering the processing overhead by multiple folds and the storage overhead by multiple orders of magnitude. \n\nThe research advances our knowledge for designing large-scale online operations in a very tight on-chip memory space. New design approaches developed by this project are expected to improve the performance of modern routers and firewalls. In addition, because the basic data structures embodied in these fundamental online primitives are widely applicable in Computer Science and other disciplines, improvement in their performance has broad impact in other research areas such as Internet of things and even transportation systems. Research outcome from this project has been disseminated through conference and journal publications. New educational materials have been developed to incorporate online network functions and research results from this project into graduate courses. \n\n\t\t\t\t\tLast Modified: 11/04/2015\n\n\t\t\t\t\tSubmitted by: Shigang Chen"
+ }
+}

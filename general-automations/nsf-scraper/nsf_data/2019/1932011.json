@@ -1,0 +1,105 @@
+{
+ "awd_id": "1932011",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CPS: Small: Distributed Learning for Control of Cyber-Physical Systems",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927347",
+ "po_email": "sspengle@nsf.gov",
+ "po_sign_block_name": "Sylvia Spengler",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 407522.0,
+ "awd_amount": 407522.0,
+ "awd_min_amd_letter_date": "2019-09-12",
+ "awd_max_amd_letter_date": "2019-09-12",
+ "awd_abstract_narration": "In state-of-the-art Cyber-Physical-Systems (CPS) supervised learning or unsupervised learning are typically used to analyze data. Nevertheless, in many such systems rules cannot be determined in advance and these data mining techniques are not directly applicable due to the dynamic nature of the data, their large volume that prohibits labelling in practice, and the fact that these data are added to the system piece by piece and not altogether in advance. On the other hand, control of CPS is usually done in a model-based manner, where a desired control policy is computed from a high-fidelity system model that has been derived at design-time, and potentially may be updated at runtime. However, this approach is not suitable for highly dynamical CPS, that potentially represent systems of systems whose spatial and temporal configurations may rapidly change. In fact, with such high number of configuration levels, it is almost impossible to derive suitable control policies using standard model-driven techniques. Consequently, it is critical to facilitate design of data-based controllers, with strong performance guarantees, in a way that allows for natural runtime control adaptation. Reinforcement Learning (RL) provides such a framework. In RL agents interact with the environment in a feedback loop to learn an optimal policy by taking appropriate sequences of actions in order to optimize longterm payoff. As such, RL can be much more efficient compared to supervised and unsupervised learning, in analyzing streaming data and especially in controlling a system. The goal of this project is to develop a distributed off-policy RL framework for the control of CPS. Distributed RL methods avoid the fragility, communication overhead, and privacy concerns of collecting all information at a central processing unit. Moreover, off-policy learning methods significantly improve sampling efficiency and ensure safer operation. The distributed RL framework developed under this project will have a profound impact on the control of CPS, in areas as diverse as transportation, manufacturing, health-care, smart city, urban planning, etc., that rely on multiple sensors for data collection and control. This project also involves an educational agenda focusing on K-12, undergraduate, and graduate level education. The outreach component of this project focuses on improving the pre-college students' awareness of the potential and attractiveness of a research and engineering career.\r\n\r\nThe technical aims of this project are divided into four thrusts. The first thrust develops distributed off-policy RL methods using linear function approximation of the action-value function. Distributed RL algorithms using linear function approximation have been proposed for policy evaluation only. This thrust develops new RL algorithms that can also improve the policy until an optimal policy is found, which is necessary for control. Since defining appropriate feature vectors for RL problems is generally difficult and since linear mappings might not able to capture possibly nonlinear interactions between these features, the second thrust develops distributed off-policy RL methods using nonlinear function approximation, specifically, Neural Networks. The third thrust develops distributed off-policy Actor-Critic methods. When the action space is large or continuous, Actor-Critic methods are much more effective since they parameterize the target policy function using either linear or nonlinear function approximation and learn the optimal parameter so that the resulting policy maps to the optimal action for every state. Finally, the fourth thrust develops distributed RL methods for asynchronous, heterogeneous, and non-stationary data that are common in modern CPS, where sensors do not observe identically distributed data nor do they sample data at the same time. Moreover, the distributions from which data are sampled can change with time. This project focuses on the development of algorithms and supporting theoretical results. The developed algorithms are evaluated in simulation on resource allocation problems in CPS, specifically, on the control of distributed shared vehicle dispatch systems.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Michael",
+   "pi_last_name": "Zavlanos",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Michael M Zavlanos",
+   "pi_email_addr": "michael.zavlanos@duke.edu",
+   "nsf_id": "000560164",
+   "pi_start_date": "2019-09-12",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Duke University",
+  "inst_street_address": "2200 W MAIN ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "DURHAM",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9196843030",
+  "inst_zip_code": "277054640",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "NC04",
+  "org_lgl_bus_name": "DUKE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "TP7EK8DZV6N5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Duke University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "277054010",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "NC04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "791800",
+   "pgm_ele_name": "CPS-Cyber-Physical Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7918",
+   "pgm_ref_txt": "CYBER-PHYSICAL SYSTEMS (CPS)"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 407522.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this project is to develop a new Reinforcement Learning (RL) framework for the control of CPS. Some of the major outcomes of this project include:</p>\n<p>1) A new cooperative multi-agent reinforcement learning framework for agents that can only partially observe the states, actions, and rewards of their peers.</p>\n<p>2) A new one-point zeroth-order oracle for black-box learning and control that addresses a major limitation of existing two-point zeroth-order oracles that require the evaluation of two polices at the same time instant to compute the policy gradient (which is only possible in a simulation environment).</p>\n<p>3) A new zeroth-order framework for risk-averse games in high-stakes applications, where decisions that minimize the expected cost functions are not necessarily desirable. An example is portfolio management, where a selection of assets with the highest expected return is not necessarily desirable since it may have high volatility that can lead to catastrophic losses.</p>\n<p>4) A new transfer reinforcement learning framework that relies on past observational data to accelerate learning in CPS while mitigating bias due to the presence of unobserved contextual information.</p>\n<p>5) A new systematic framework to construct the reward and transition functions for CPS tasks that are specified by linear temporal logic formulas, so that RL algorithms can be used to maximize the probability of success.</p>\n<p>6) A new human-in-the-loop robot planning framework that uses non-contextual bandit feedback to determine collision-free and dynamically feasible robot paths that also maximize human satisfaction.</p>\n<p>Ultimately, this research has developed a new family of algorithms and tools that significantly advance the state-of-the-art in design of Reinforcement Learning (RL) methods for the control of CPS. The development of these methods has required the synthesis of new theoretical results drawing from optimization, control, and machine learning.</p><br>\n<p>\n Last Modified: 11/15/2023<br>\nModified by: Michael&nbsp;M&nbsp;Zavlanos</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe goal of this project is to develop a new Reinforcement Learning (RL) framework for the control of CPS. Some of the major outcomes of this project include:\n\n\n1) A new cooperative multi-agent reinforcement learning framework for agents that can only partially observe the states, actions, and rewards of their peers.\n\n\n2) A new one-point zeroth-order oracle for black-box learning and control that addresses a major limitation of existing two-point zeroth-order oracles that require the evaluation of two polices at the same time instant to compute the policy gradient (which is only possible in a simulation environment).\n\n\n3) A new zeroth-order framework for risk-averse games in high-stakes applications, where decisions that minimize the expected cost functions are not necessarily desirable. An example is portfolio management, where a selection of assets with the highest expected return is not necessarily desirable since it may have high volatility that can lead to catastrophic losses.\n\n\n4) A new transfer reinforcement learning framework that relies on past observational data to accelerate learning in CPS while mitigating bias due to the presence of unobserved contextual information.\n\n\n5) A new systematic framework to construct the reward and transition functions for CPS tasks that are specified by linear temporal logic formulas, so that RL algorithms can be used to maximize the probability of success.\n\n\n6) A new human-in-the-loop robot planning framework that uses non-contextual bandit feedback to determine collision-free and dynamically feasible robot paths that also maximize human satisfaction.\n\n\nUltimately, this research has developed a new family of algorithms and tools that significantly advance the state-of-the-art in design of Reinforcement Learning (RL) methods for the control of CPS. The development of these methods has required the synthesis of new theoretical results drawing from optimization, control, and machine learning.\t\t\t\t\tLast Modified: 11/15/2023\n\n\t\t\t\t\tSubmitted by: MichaelMZavlanos\n"
+ }
+}

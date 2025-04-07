@@ -1,0 +1,121 @@
+{
+ "awd_id": "1664923",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: RI: Planning and learning with macro-actions in cooperative multiagent systems",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032928074",
+ "po_email": "jdonlon@nsf.gov",
+ "po_sign_block_name": "James Donlon",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2018-01-31",
+ "tot_intn_awd_amt": 116005.0,
+ "awd_amount": 124005.0,
+ "awd_min_amd_letter_date": "2016-10-19",
+ "awd_max_amd_letter_date": "2017-03-20",
+ "awd_abstract_narration": "The proposal aims at studying the problem of decentralized planning. The general technical area is decentralized partially observable Markov decision process (Dec-POMDP). The PI proposes a theory on macro-actions by using finite-state controllers of Dec-POMDPs. Macro-actions enable the planner to perform multiple planning steps in a single computation cycle whereas a planner using regular actions can only perform one action in each computation cycles. As a result, macro-actions have the potential to solve planning problems much more efficiently enabling (1) distributed planning tasks across multiple agents, (2) planning in environments where agents have only limited knowledge about the state of the world, and (3) planning in uncertain environments where actions might have multiple outcomes.\r\n\r\nThere are many potential areas of application of this research including distributed agents monitoring a network for security breaches, distributed military planning, and coordinating multiple robots involved in disaster recovery tasks.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Christopher",
+   "pi_last_name": "Amato",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Christopher Amato",
+   "pi_email_addr": "c.amato@northeastern.edu",
+   "nsf_id": "000677651",
+   "pi_start_date": "2016-10-19",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Northeastern University",
+  "inst_street_address": "360 HUNTINGTON AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "BOSTON",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6173735600",
+  "inst_zip_code": "021155005",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "NORTHEASTERN UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HLTMVS2JZBS6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Northeastern University",
+  "perf_str_addr": "",
+  "perf_city_name": "Boston",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021155005",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0115",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001516DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2015,
+   "fund_oblg_amt": 116005.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 8000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>As agents are built for more complex environments, engineering high-quality solutions by hand becomes very difficult and methods that do not consider uncertainty will perform poorly. This is especially true when there are multiple agents interacting (e.g., routers, sensors, people, robots), which is often the case in today's connected world. Due to communication cost, latency or noise, having decentralized decision-makers that can operate independently for long periods of time is critical. The decentralized partially observable Markov decision process (Dec-POMDP) is a very general model for representing and solving these cooperative decision-making problems under uncertainty and partial observability, but current solution methods have significant limitations: 1) limited scalability in the problem horizon (the number of action steps needed to solve a problem), 2) the assumption that the problem is fully discrete, with no continuous values, and 3) the assumption of fully known and perfect domain, dynamics and observation (e.g., perception and communication) model. Overcoming these obstacles is crucial for converting Dec-POMDPs into a framework that is useful for real-world systems.</p>\n<p><br />Significant progress has been made on all three objectives. In particular, we have developed controller-based methods for solving infinite horizon problems (that continue for an infinite or unknown number of steps) and applied the methods to a robotic logistics domain. These methods allowed a team of robots to coordinate with limited sensing and communication. We also developed offline and online learning methods for generating solutions with unknown or uncertain model information. The offline methods generate agent controllers from trajectory data (just the actions and observations of the agents), showing that even a small amount of noisy trajectories can be sufficient to outperform even expert-coded solutions. The online methods learn a model and solutions while acting in the problem, improving the model as needed to generate high-quality solutions. We also developed the first methods for solving Dec-POMDPs with continuous observations (e.g., continuous sensor readings and communication signals), which are ubiquitous in real-world domains.&nbsp;</p>\n<p><br />Overall, our research is developing new theory and algorithms for optimizing the coordination between agents, even in situations with no (or limited) communication, outcome uncertainty and noisy sensing. These principled and robust approaches are important in domains ranging from coordination of teams of robots (e.g., UAVs or factory robots) as well as coordination in autonomous vehicles and other AI assistants.&nbsp;</p>\n<p><br />This research has published in several research papers and has been included as part of a book co-authored by the PI (titled A Concise Introduction to Decentralized POMDPs). The papers are freely available on the PI's website. The work was presented at conferences and in other talks by the PI and students. It has also been included in a graduate seminar taught by the PI (with multiple students choosing to test and extend the work as class projects).&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/09/2018<br>\n\t\t\t\t\tModified by: Christopher&nbsp;Amato</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2018/1664923/1664923_10349431_1518206813945_DecPOMDPfigure--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2018/1664923/1664923_10349431_1518206813945_DecPOMDPfigure--rgov-800width.jpg\" title=\"Dec-POMDP\"><img src=\"/por/images/Reports/POR/2018/1664923/1664923_10349431_1518206813945_DecPOMDPfigure--rgov-66x44.jpg\" alt=\"Dec-POMDP\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">The Dec-POMDP models multiple agents that take actions in the world, cause changes in the world and only observe a (possibly) noisy and incomplete observation rather than the true state of the world. It is a cooperative team problem, so a single reward (or cost) is given to all agents.</div>\n<div class=\"imageCredit\">Chris Amato</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Christopher&nbsp;Amato</div>\n<div class=\"imageTitle\">Dec-POMDP</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nAs agents are built for more complex environments, engineering high-quality solutions by hand becomes very difficult and methods that do not consider uncertainty will perform poorly. This is especially true when there are multiple agents interacting (e.g., routers, sensors, people, robots), which is often the case in today's connected world. Due to communication cost, latency or noise, having decentralized decision-makers that can operate independently for long periods of time is critical. The decentralized partially observable Markov decision process (Dec-POMDP) is a very general model for representing and solving these cooperative decision-making problems under uncertainty and partial observability, but current solution methods have significant limitations: 1) limited scalability in the problem horizon (the number of action steps needed to solve a problem), 2) the assumption that the problem is fully discrete, with no continuous values, and 3) the assumption of fully known and perfect domain, dynamics and observation (e.g., perception and communication) model. Overcoming these obstacles is crucial for converting Dec-POMDPs into a framework that is useful for real-world systems.\n\n\nSignificant progress has been made on all three objectives. In particular, we have developed controller-based methods for solving infinite horizon problems (that continue for an infinite or unknown number of steps) and applied the methods to a robotic logistics domain. These methods allowed a team of robots to coordinate with limited sensing and communication. We also developed offline and online learning methods for generating solutions with unknown or uncertain model information. The offline methods generate agent controllers from trajectory data (just the actions and observations of the agents), showing that even a small amount of noisy trajectories can be sufficient to outperform even expert-coded solutions. The online methods learn a model and solutions while acting in the problem, improving the model as needed to generate high-quality solutions. We also developed the first methods for solving Dec-POMDPs with continuous observations (e.g., continuous sensor readings and communication signals), which are ubiquitous in real-world domains. \n\n\nOverall, our research is developing new theory and algorithms for optimizing the coordination between agents, even in situations with no (or limited) communication, outcome uncertainty and noisy sensing. These principled and robust approaches are important in domains ranging from coordination of teams of robots (e.g., UAVs or factory robots) as well as coordination in autonomous vehicles and other AI assistants. \n\n\nThis research has published in several research papers and has been included as part of a book co-authored by the PI (titled A Concise Introduction to Decentralized POMDPs). The papers are freely available on the PI's website. The work was presented at conferences and in other talks by the PI and students. It has also been included in a graduate seminar taught by the PI (with multiple students choosing to test and extend the work as class projects). \n\n\t\t\t\t\tLast Modified: 02/09/2018\n\n\t\t\t\t\tSubmitted by: Christopher Amato"
+ }
+}

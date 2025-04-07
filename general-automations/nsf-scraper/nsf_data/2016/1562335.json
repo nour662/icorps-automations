@@ -1,0 +1,109 @@
+{
+ "awd_id": "1562335",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Compressive Robotic Sensing Systems: Gaining Efficiency through Sparsity in Dynamic Sensing Environments",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": "7032925365",
+ "po_email": "jberg@nsf.gov",
+ "po_sign_block_name": "Jordan Berg",
+ "awd_eff_date": "2016-04-01",
+ "awd_exp_date": "2019-03-31",
+ "tot_intn_awd_amt": 375000.0,
+ "awd_amount": 375000.0,
+ "awd_min_amd_letter_date": "2016-04-13",
+ "awd_max_amd_letter_date": "2016-04-13",
+ "awd_abstract_narration": "This project investigates autonomous control and coordination of a group of robots that are tasked to explore, map, or monitor the environment they are in.  The project aims to enhance the capabilities of such a group of robots by integrating Compressive Sensing for data compression. Compressive sensing enables robots to quickly extract information from their environment, efficiently communicate that information to each other over a wireless network, and intelligently direct their motion to obtain relevant sensing data in the future.  Significant theoretical and technical challenges must be addressed in this project to realize the potential of a compressive robotic sensing system.  The project will demonstrate results in two specific applications, (i) driving a group of aerial robots to monitor their environment, (ii) driving robotic micro-probes to measure processes inside a living cell.  The project also seeks to disseminate its findings through educational and outreach activities.  Results will be incorporated into undergraduate and graduate level courses in control theory at both Boston University and Stanford University.  The researchers will also work with high school students and undergraduates through research mentorship programs and through lab demonstrations for visitors.\r\n\r\nThe fundamental goal of the project is to create rigorously analyzed algorithms that take advantage of sparse signal descriptions to create efficient motion plans for a team of sensing robots that monitor the environment.  The driving hypothesis is that sparsity can greatly extend the performance of robotic sensing systems by saving battery power, computation, storage, and communication bandwidth---all critically limited resources for robotic platforms.  The research team will take a Bayesian approach to Compressive Sensing, which allows for sensing quality to be quantified with information theoretic metrics such as entropy.  A receding horizon control approach will be developed for driving robotic sensors to collect the most valuable sensor data, in order to reconstruct a sparse representation of their environment using Compressive Sensing.  Such control strategies will be adapted to both static and dynamic environments, and both centralized and distributed solutions will be sought. The concepts developed in this project will be applied to two specific sensing domains: (i) networks of quadrotor sensing robots sensing environmental data and (ii) confocal fluorescence microscopy for three-dimensional imaging of dynamics in bio-molecular systems. These two application domains have radically different length and time scales, dynamical properties, and information content. A successful application of the ideas developed in this project to both these domains will prove the generality of the Compressive Robotic Sensing System concept.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Mac",
+   "pi_last_name": "Schwager",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mac Schwager",
+   "pi_email_addr": "schwager@stanford.edu",
+   "nsf_id": "000609509",
+   "pi_start_date": "2016-04-13",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Stanford University",
+  "inst_street_address": "450 JANE STANFORD WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "STANFORD",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "6507232300",
+  "inst_zip_code": "943052004",
+  "inst_country_name": "United States",
+  "cong_dist_code": "16",
+  "st_cong_dist_code": "CA16",
+  "org_lgl_bus_name": "THE LELAND STANFORD JUNIOR UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HJD6G4D6TJY5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Stanford University",
+  "perf_str_addr": "496 Lomita Mall",
+  "perf_city_name": "Stanford",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "943054031",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": null,
+  "perf_st_cong_dist": "CA",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "756900",
+   "pgm_ele_name": "Dynamics, Control and System D"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "031E",
+   "pgm_ref_txt": "MECHATRONICS"
+  },
+  {
+   "pgm_ref_code": "032E",
+   "pgm_ref_txt": "SENSORS AND ACTUATORS"
+  },
+  {
+   "pgm_ref_code": "8024",
+   "pgm_ref_txt": "Complex Systems"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 375000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The key theme of this project was to allow robots to operate more efficiently with their limited computational resources.&nbsp; The goal was to enforce and exploit sparsity in the way that robots collect, store, and transmit information about their environment.&nbsp; A robot may collect highly detailed images and ranging measurements about its environment, but in order to synthesize a useful map from these data sources, they must be reduced to only the features that are most essential to represent the environment.&nbsp; This principle also applies to multiple robots interacting over a communication network.&nbsp; Robots working together to synthesize representations of their environment can do so more efficiently if they send only the most essential features of the data.&nbsp; This focus on sparsely representing, storing, and transmitting information is particularly important for robots, which are often required to perform their work autonomously with limited on board computing and storage.&nbsp; The work in this project, for example, will help fleets of autonomous cars work together to more accurately map the streets through which they drive.&nbsp; It will enable domestic robots to build accurate maps of the insides of houses, office buildings, and hospitals to more reliably perform their tasks within those environments.&nbsp; It will allow drones to quickly build maps of neighborhoods, allowing them to deliver packages more precisely and more safely than would otherwise be possible.</p>\n<p><br />Specifically, in this project we proposed a new way for a robot to represent a map of its environment.&nbsp; We call this representation a wireframe map, and we developed efficient computational algorithms for robots to build and maintain such maps to represent the environments in which they operate.&nbsp; We also developed algorithms for groups of robots to work together to build large-scale wireframe maps while exploring an environment.&nbsp; We show that wireframe maps built with our algorithms can represent an environment with 1% error, while competing map representations represent the same environment with 23% error using the same computational resources.&nbsp; That is, our algorithm leads to a more efficient usage of the limited resources of the robot to build accurate maps of its environment.&nbsp; The project has also pursued other research threads under the theme of resource efficient storage, computation, and communication in robots.&nbsp; We developed an algorithm for a group of underwater robots to determine one another's locations by using only simple acoustic pings.&nbsp; This is particularly important in underwater robotics because typical wifi signals cannot travel underwater, severely limiting the way robots can communicate with one another underwater.&nbsp; We also developed an algorithm for one robot to infer the intention of another robot only by observing its motion (that is, without using any other means of communication).&nbsp; Again, this is important for robots with severe constraints on their communication network, or no communication network.&nbsp; We hope that the work pursued in this project will lead to safer, more effective, and more efficient autonomous cars, domestic robots, autonomous aerial vehicles, and autonomous underwater vehicles.&nbsp;&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/01/2019<br>\n\t\t\t\t\tModified by: Mac&nbsp;Schwager</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe key theme of this project was to allow robots to operate more efficiently with their limited computational resources.  The goal was to enforce and exploit sparsity in the way that robots collect, store, and transmit information about their environment.  A robot may collect highly detailed images and ranging measurements about its environment, but in order to synthesize a useful map from these data sources, they must be reduced to only the features that are most essential to represent the environment.  This principle also applies to multiple robots interacting over a communication network.  Robots working together to synthesize representations of their environment can do so more efficiently if they send only the most essential features of the data.  This focus on sparsely representing, storing, and transmitting information is particularly important for robots, which are often required to perform their work autonomously with limited on board computing and storage.  The work in this project, for example, will help fleets of autonomous cars work together to more accurately map the streets through which they drive.  It will enable domestic robots to build accurate maps of the insides of houses, office buildings, and hospitals to more reliably perform their tasks within those environments.  It will allow drones to quickly build maps of neighborhoods, allowing them to deliver packages more precisely and more safely than would otherwise be possible.\n\n\nSpecifically, in this project we proposed a new way for a robot to represent a map of its environment.  We call this representation a wireframe map, and we developed efficient computational algorithms for robots to build and maintain such maps to represent the environments in which they operate.  We also developed algorithms for groups of robots to work together to build large-scale wireframe maps while exploring an environment.  We show that wireframe maps built with our algorithms can represent an environment with 1% error, while competing map representations represent the same environment with 23% error using the same computational resources.  That is, our algorithm leads to a more efficient usage of the limited resources of the robot to build accurate maps of its environment.  The project has also pursued other research threads under the theme of resource efficient storage, computation, and communication in robots.  We developed an algorithm for a group of underwater robots to determine one another's locations by using only simple acoustic pings.  This is particularly important in underwater robotics because typical wifi signals cannot travel underwater, severely limiting the way robots can communicate with one another underwater.  We also developed an algorithm for one robot to infer the intention of another robot only by observing its motion (that is, without using any other means of communication).  Again, this is important for robots with severe constraints on their communication network, or no communication network.  We hope that the work pursued in this project will lead to safer, more effective, and more efficient autonomous cars, domestic robots, autonomous aerial vehicles, and autonomous underwater vehicles.  \n\n\t\t\t\t\tLast Modified: 08/01/2019\n\n\t\t\t\t\tSubmitted by: Mac Schwager"
+ }
+}

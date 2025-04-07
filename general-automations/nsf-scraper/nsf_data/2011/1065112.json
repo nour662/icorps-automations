@@ -1,0 +1,129 @@
+{
+ "awd_id": "1065112",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TC: Medium: Exploiting Multicore and Hardware Acceleration to Perform Efficient Behavior-Based Attack Detection and Repair",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927991",
+ "po_email": "namla@nsf.gov",
+ "po_sign_block_name": "Nina Amla",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 1140230.0,
+ "awd_amount": 1140230.0,
+ "awd_min_amd_letter_date": "2011-08-20",
+ "awd_max_amd_letter_date": "2011-08-20",
+ "awd_abstract_narration": "This research investigates techniques to efficiently detect the first exploit against an unknown vulnerability on a user system, and then safely heal the system against further attacks.  The research uses dynamic analysis -- the ability to monitor code as it executes -- because it can be used to check safety and security properties of actual executions and make sure that each step of the execution is safe.  However, existing dynamic analysis techniques are far too slow for end users, and currently do not help user systems self-heal.  This research investigates techniques to overcome these limitations by developing efficient dynamic analysis techniques, as well as techniques for diagnosing the root cause of an exploited vulnerability, repairing any damage done, and defending the system against further attacks.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "David",
+   "pi_last_name": "Brumley",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "David Brumley",
+   "pi_email_addr": "dbrumley@cmu.edu",
+   "nsf_id": "000528461",
+   "pi_start_date": "2011-08-20",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Todd",
+   "pi_last_name": "Mowry",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Todd Mowry",
+   "pi_email_addr": "tcm@cs.cmu.edu",
+   "nsf_id": "000216388",
+   "pi_start_date": "2011-08-20",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Onur",
+   "pi_last_name": "Mutlu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Onur Mutlu",
+   "pi_email_addr": "onur@cmu.edu",
+   "nsf_id": "000512629",
+   "pi_start_date": "2011-08-20",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Carnegie-Mellon University",
+  "inst_street_address": "5000 FORBES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4122688746",
+  "inst_zip_code": "152133815",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "CARNEGIE MELLON UNIVERSITY",
+  "org_prnt_uei_num": "U3NKNFLNQ613",
+  "org_uei_num": "U3NKNFLNQ613"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Carnegie-Mellon University",
+  "perf_str_addr": "5000 FORBES AVE",
+  "perf_city_name": "PITTSBURGH",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152133815",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779500",
+   "pgm_ele_name": "TRUSTWORTHY COMPUTING"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7795",
+   "pgm_ref_txt": "TRUSTWORTHY COMPUTING"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 1140230.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Two fundamental steps in improving software security are <em>recognizing</em> problems (i.e. vulnerabilities or attacks) and <em>fixing</em> those problems.&nbsp; A powerful technique for recognizing problems is to analyze the behavior of software <em>while it executes</em> (also known as &ldquo;dynamic analysis&rdquo;).&nbsp; Unfortunately, while previous work had recognized the potential for dynamic analysis to recognize security problems, these earlier approaches to dynamic analysis usually slowed down the monitored software by orders of magnitude (making it impractical for most users).&nbsp; In this project, we have demonstrated how to reduce the overhead of dynamic analysis to the point where it is practical (without sacrificing its functionality) by leveraging the additional processing cores available in modern CPUs along with additional hardware acceleration techniques (e.g., hardware-assisted logging).&nbsp; In addition, we have also developed new techniques for repairing vulnerabilities (with the goal of enabling systems to heal themselves).</p>\n<p>Our first major outcome was the development of our new &ldquo;Guardrail&rdquo; framework.&nbsp; Guardrail enables sophisticated dynamic analysis of device driver software in order to detect and mitigate challenging correctness bugs and vulnerabilities such as those due to data races (i.e. when two concurrent software threads are not properly synchronized) and uninitialized memory accesses.&nbsp; We created two new analysis tools within Guardrail: DRCheck (which detects potential vulnerabilities due to data races within a driver) and DMemcheck (which detects potential vulnerabilities due to incorrect memory management in a device driver).&nbsp; The types of vulnerabilities that DRCheck and DMemcheck can detect were not detectable by the previous state-of-the-art in identifying device driver bugs (through fault isolation).&nbsp; Our evaluation of Guardrail shows that it can find serious data races, memory faults, and DMA faults in native Linux drivers that required fixes, including previously unknown bugs (e.g., a bug in the popular qla2xxx SCSI driver that had been undetected for years). Also, with hardware logging support, Guardrail can be used for online protection of persistent device state from driver bugs with at most 10% overhead on the end-to-end performance of most standard I/O workloads.&nbsp; In other words, Guardrail enables new classes of dynamic analysis tools that are both more powerful than previous techniques and practical to use.</p>\n<p>Our second major outcome focused on the theme of how hardware vulnerabilities may translate into software vulnerabilities. For example, it is well known that a single decryption error in RSA (e.g., due to a flipped bit) is likely to divulge a private key. Our research looked at how we might induce hardware errors in modern memory systems to trigger such software vulnerabilities, as well has how to fix these vulnerabilities.&nbsp; For example, based on our insight that as DRAM process technology scales down to smaller dimensions, it becomes more difficult to prevent DRAM cells from electrically interacting with each other, we developed and demonstrated a new attack (that we call &ldquo;RowHammer&rdquo;) whereby reading a single DRAM memory address in a tight loop can cause the corruption of data in nearby addresses.&nbsp; We demonstrate this phenomenon on Intel and AMD systems using a malicious program that generates many DRAM accesses.&nbsp; We induce errors in most DRAM modules (110 out of 129) from three major DRAM manufacturers. From this we conclude that many deployed systems are likely to be at risk. &nbsp;After examining various potential ways of addressing the problem, we proposed a low-overhead solution to prevent this vulnerability.&nbsp; Inspired by this RowHammer phenomenon, we also investigated several potential security and data access vulnerabilities in NAND flash memory. In particular, we analyzed two effects in modern flash chips: read disturbance errors and retention related errors, as well as mitigation and data recovery techniques.</p>\n<p>Finally, our third major outcome was the initial design of a new code analysis framework that supports ambitious self-healing software transformations.&nbsp; The goal of this framework is to be of being able to automatically restructure software (on-the-fly) so that it no longer contains the vulnerabilities and still preserves the programmer's intent (but not necessarily the full sequential behavior of the original software). Because this third area turned out to be far more involved than we initially anticipated, we have not fully completed this line of research.&nbsp; However, we intend to continue pursuing this line of work, and we believe that it will serve as the basis for compelling follow-on research.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/07/2016<br>\n\t\t\t\t\tModified by: Todd&nbsp;Mowry</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nTwo fundamental steps in improving software security are recognizing problems (i.e. vulnerabilities or attacks) and fixing those problems.  A powerful technique for recognizing problems is to analyze the behavior of software while it executes (also known as \"dynamic analysis\").  Unfortunately, while previous work had recognized the potential for dynamic analysis to recognize security problems, these earlier approaches to dynamic analysis usually slowed down the monitored software by orders of magnitude (making it impractical for most users).  In this project, we have demonstrated how to reduce the overhead of dynamic analysis to the point where it is practical (without sacrificing its functionality) by leveraging the additional processing cores available in modern CPUs along with additional hardware acceleration techniques (e.g., hardware-assisted logging).  In addition, we have also developed new techniques for repairing vulnerabilities (with the goal of enabling systems to heal themselves).\n\nOur first major outcome was the development of our new \"Guardrail\" framework.  Guardrail enables sophisticated dynamic analysis of device driver software in order to detect and mitigate challenging correctness bugs and vulnerabilities such as those due to data races (i.e. when two concurrent software threads are not properly synchronized) and uninitialized memory accesses.  We created two new analysis tools within Guardrail: DRCheck (which detects potential vulnerabilities due to data races within a driver) and DMemcheck (which detects potential vulnerabilities due to incorrect memory management in a device driver).  The types of vulnerabilities that DRCheck and DMemcheck can detect were not detectable by the previous state-of-the-art in identifying device driver bugs (through fault isolation).  Our evaluation of Guardrail shows that it can find serious data races, memory faults, and DMA faults in native Linux drivers that required fixes, including previously unknown bugs (e.g., a bug in the popular qla2xxx SCSI driver that had been undetected for years). Also, with hardware logging support, Guardrail can be used for online protection of persistent device state from driver bugs with at most 10% overhead on the end-to-end performance of most standard I/O workloads.  In other words, Guardrail enables new classes of dynamic analysis tools that are both more powerful than previous techniques and practical to use.\n\nOur second major outcome focused on the theme of how hardware vulnerabilities may translate into software vulnerabilities. For example, it is well known that a single decryption error in RSA (e.g., due to a flipped bit) is likely to divulge a private key. Our research looked at how we might induce hardware errors in modern memory systems to trigger such software vulnerabilities, as well has how to fix these vulnerabilities.  For example, based on our insight that as DRAM process technology scales down to smaller dimensions, it becomes more difficult to prevent DRAM cells from electrically interacting with each other, we developed and demonstrated a new attack (that we call \"RowHammer\") whereby reading a single DRAM memory address in a tight loop can cause the corruption of data in nearby addresses.  We demonstrate this phenomenon on Intel and AMD systems using a malicious program that generates many DRAM accesses.  We induce errors in most DRAM modules (110 out of 129) from three major DRAM manufacturers. From this we conclude that many deployed systems are likely to be at risk.  After examining various potential ways of addressing the problem, we proposed a low-overhead solution to prevent this vulnerability.  Inspired by this RowHammer phenomenon, we also investigated several potential security and data access vulnerabilities in NAND flash memory. In particular, we analyzed two effects in modern flash chips: read disturbance errors and retention related errors, as well as mitigation and data recovery techniques.\n\nFinally, our third major outcome was the initial design of a new code analysis framework that supports ambitious self-healing software transformations.  The goal of this framework is to be of being able to automatically restructure software (on-the-fly) so that it no longer contains the vulnerabilities and still preserves the programmer's intent (but not necessarily the full sequential behavior of the original software). Because this third area turned out to be far more involved than we initially anticipated, we have not fully completed this line of research.  However, we intend to continue pursuing this line of work, and we believe that it will serve as the basis for compelling follow-on research.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 12/07/2016\n\n\t\t\t\t\tSubmitted by: Todd Mowry"
+ }
+}

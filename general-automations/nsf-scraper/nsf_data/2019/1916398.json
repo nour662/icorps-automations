@@ -1,0 +1,105 @@
+{
+ "awd_id": "1916398",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: CORE: Medium: Collaborative: Taming Memory Corruption with Security Monitors",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032922594",
+ "po_email": "kkaravan@nsf.gov",
+ "po_sign_block_name": "Karen Karavanic",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 399533.0,
+ "awd_amount": 399533.0,
+ "awd_min_amd_letter_date": "2019-07-02",
+ "awd_max_amd_letter_date": "2019-07-02",
+ "awd_abstract_narration": "Modern computing systems are under constant attack by organized crime syndicates, nation-state adversaries, and regular cyber-criminals alike. Among the most damaging attacks are those that exploit so-called memory corruption vulnerabilities which often confer the attacker with access to sensitive information or allow the attacker to execute arbitrary code on the victim's machine. To counter the threat posed by memory corruption vulnerabilities, this project will research and develop new defensive capabilities realized through the joint design of hardware and software. Hardware and software co-design holds the promise to enable the introduction of rigorous, principled, and efficient protection against low-level exploitation.\r\n\r\nTo defend computing systems against memory corruption attacks, this project will augment a RISC-V processor with an array of security policy engines (ASPEn). ASPEn will feature both specialized and programmable policy engines. Specialized engines will be optimized for performance, power, and area, and enforce static security policies that are known at design time. To accommodate for the constantly-changing nature of the security landscape, programmable engines will be programmed to enforce more flexible security policies. The project is structured into two thrusts; Thrust-1 will design the ASPEn Security Monitor System for the RISC-V processor and Thrust-2 will focus on software design and the various policy types.\r\n\r\nThis project will result in a generic security-focused hardware/software co-design approach that can be leveraged to secure other processors than the RISC-V core used for this project. This broader impact will further be supported by the open-source release of the resulting hardware designs, as well as the new and modified software stack consisting of tool chains, libraries, and policy types. Furthermore, the project will include a variety of training and outreach activities through tutorials, workshops, and curricular development. The project will also continue existing successful efforts of involving undergraduate, high-school, and underrepresented minority and women students throughout its duration.\r\n\r\nThe project's resources and results will be made available publicly. The main project page can be found at https://seclab.bu.edu/projects/aspen.html, and source code releases will be made available via the project's code repository at https://github.com/BUseclab/ASPEn.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "William",
+   "pi_last_name": "Robertson",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "William Robertson",
+   "pi_email_addr": "wkr@ccs.neu.edu",
+   "nsf_id": "000613608",
+   "pi_start_date": "2019-07-02",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Northeastern University",
+  "inst_street_address": "360 HUNTINGTON AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "BOSTON",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6173735600",
+  "inst_zip_code": "021155005",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "NORTHEASTERN UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HLTMVS2JZBS6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Northeastern University",
+  "perf_str_addr": "360 Huntington Ave",
+  "perf_city_name": "Boston",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021155005",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 399533.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>Memory corruption is a type of software vulnerability that by recent estimates accounts for roughly 70% of all reported vulnerabilities.&nbsp; The goal of this project was to investigate the use of hardware-software co-design to harden software against memory corruption exploitation.&nbsp; That is, the project adopts the viewpoint that while preventing the introduction of vulnerabilities in software is known to be theoretically difficult, preventing attacks using those vulnerabilities via novel hardware security primitives and small, ideally transparent, software changes is much more feasible.</span></p>\n<p><span>&nbsp;</span></p>\n<p><span>To realize this goal, we investigated the use of emerging hardware security primitives like Intel Memory Protection Keys (MPK) as a mechanism to prevent specific important classes of vulnerabilities from being exploited.&nbsp; One outcome of this effort was mpkalloc, a hardened memory allocator that uses MPKs to prevent adversaries from tampering with sensitive meta-data during program execution. MPK is used to tag all meta-data pages found within the tcmalloc memory allocator (a production allocator used by Google in Chromium among other software) with a special domain belonging to the allocator. This new hardware feature allows us to prevent any access or modification to protected meta-data outside of tcmalloc.</span></p>\n<p><span>&nbsp;</span></p>\n<p><span>We have shown that the overhead introduced by hardening the tcmalloc allocator using MPK is limited to 0.08% when evaluated on the SPEC 2006 benchmarks. We have shown that mpkalloc can prevent real exploits on vulnerable programs by showing a CPU with MPKs detects domain violations and kills a process before an exploit can succeed. In this scenario, we showed that when an adversary corrupts pages belonging to heap meta-data, the CPU detects a modification made by the program, instead of the memory allocator, and terminates the process in response. To determine whether our defense can protect heap meta-data in the widely used Chrome binary, we instrumented Chrome so that we could record every occurrence of pointers to heap meta-data on the stack during normal program execution. Pointers to heap meta-data occurring on the stack are interesting for an attacker because many types of bugs in the Chrome code base could allow them to alter heap meta-data and achieve an arbitrary write anywhere primitive in the Chrome process which could lead to privilege escalation, information disclosure, or remote code execution. Our investigation has shown that pointers to heap meta-data are widespread throughout the Chrome process, and frequently occur in components that deal with attacker controlled data, such as the CSS renderer (Blink) and the Javascript Interpreter (V8).&nbsp;</span></p>\n<p><span>&nbsp;</span></p>\n<p><span>A second major outcome of this project was Threadlock, a system that leverages Intel MPK to provide native principal isolation at OS thread granularity. &nbsp;ThreadLock protects sensitive data using flexible policies that are specified by a programmer or system administrator post-deployment.&nbsp; The primary objective with ThreadLock was to demonstrate that MPK can be used for thread-level isolation for real programs. &nbsp;In particular, we show that ThreadLock is expressive enough to define effective intra-process security policies for a variety of server programs and that those policies may be enforced without requiring invasive changes to a program's source or binary.&nbsp; In particular, we evaluated against Apache, Redis, and MySQL, and show that ThreadLock with realistic security policies incurs a worst-case performance overhead of 1.06% while providing high-assurance prevention of real-world exploits.</span></p>\n<p><span>&nbsp;</span></p>\n<p><span>The final outcome of this project was Tesseract, a language extension to C++ that allows developers to specify intra-process memory partitioning policies that are supported by a diverse set of enforcement backends.&nbsp; The primary objective of the Tesseract project was to explore language-level mechanisms for specifying, reasoning about, and enforcing security policies over code that propagate through the compilation process to binary artifacts. &nbsp;We hypothesized that doing so will ease adoption of emerging hardware security primitives, and will furthermore ease post-deployment security reasoning over binary artifacts.&nbsp; Our evaluation of Tesseract shows that expressive real-world separation policies can be compactly specified directly in C++ while avoiding subtle bugs possible in prior approaches. &nbsp;We further show that these separation policies can be implemented efficiently by the LLVM compilation toolchain with minimal cognitive burden on programmers.</span></p>\n<div><span><br /></span></div>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 02/20/2024<br>\nModified by: William&nbsp;Robertson</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nMemory corruption is a type of software vulnerability that by recent estimates accounts for roughly 70% of all reported vulnerabilities. The goal of this project was to investigate the use of hardware-software co-design to harden software against memory corruption exploitation. That is, the project adopts the viewpoint that while preventing the introduction of vulnerabilities in software is known to be theoretically difficult, preventing attacks using those vulnerabilities via novel hardware security primitives and small, ideally transparent, software changes is much more feasible.\n\n\n\n\n\nTo realize this goal, we investigated the use of emerging hardware security primitives like Intel Memory Protection Keys (MPK) as a mechanism to prevent specific important classes of vulnerabilities from being exploited. One outcome of this effort was mpkalloc, a hardened memory allocator that uses MPKs to prevent adversaries from tampering with sensitive meta-data during program execution. MPK is used to tag all meta-data pages found within the tcmalloc memory allocator (a production allocator used by Google in Chromium among other software) with a special domain belonging to the allocator. This new hardware feature allows us to prevent any access or modification to protected meta-data outside of tcmalloc.\n\n\n\n\n\nWe have shown that the overhead introduced by hardening the tcmalloc allocator using MPK is limited to 0.08% when evaluated on the SPEC 2006 benchmarks. We have shown that mpkalloc can prevent real exploits on vulnerable programs by showing a CPU with MPKs detects domain violations and kills a process before an exploit can succeed. In this scenario, we showed that when an adversary corrupts pages belonging to heap meta-data, the CPU detects a modification made by the program, instead of the memory allocator, and terminates the process in response. To determine whether our defense can protect heap meta-data in the widely used Chrome binary, we instrumented Chrome so that we could record every occurrence of pointers to heap meta-data on the stack during normal program execution. Pointers to heap meta-data occurring on the stack are interesting for an attacker because many types of bugs in the Chrome code base could allow them to alter heap meta-data and achieve an arbitrary write anywhere primitive in the Chrome process which could lead to privilege escalation, information disclosure, or remote code execution. Our investigation has shown that pointers to heap meta-data are widespread throughout the Chrome process, and frequently occur in components that deal with attacker controlled data, such as the CSS renderer (Blink) and the Javascript Interpreter (V8).\n\n\n\n\n\nA second major outcome of this project was Threadlock, a system that leverages Intel MPK to provide native principal isolation at OS thread granularity. ThreadLock protects sensitive data using flexible policies that are specified by a programmer or system administrator post-deployment. The primary objective with ThreadLock was to demonstrate that MPK can be used for thread-level isolation for real programs. In particular, we show that ThreadLock is expressive enough to define effective intra-process security policies for a variety of server programs and that those policies may be enforced without requiring invasive changes to a program's source or binary. In particular, we evaluated against Apache, Redis, and MySQL, and show that ThreadLock with realistic security policies incurs a worst-case performance overhead of 1.06% while providing high-assurance prevention of real-world exploits.\n\n\n\n\n\nThe final outcome of this project was Tesseract, a language extension to C++ that allows developers to specify intra-process memory partitioning policies that are supported by a diverse set of enforcement backends. The primary objective of the Tesseract project was to explore language-level mechanisms for specifying, reasoning about, and enforcing security policies over code that propagate through the compilation process to binary artifacts. We hypothesized that doing so will ease adoption of emerging hardware security primitives, and will furthermore ease post-deployment security reasoning over binary artifacts. Our evaluation of Tesseract shows that expressive real-world separation policies can be compactly specified directly in C++ while avoiding subtle bugs possible in prior approaches. We further show that these separation policies can be implemented efficiently by the LLVM compilation toolchain with minimal cognitive burden on programmers.\n\n\n\n\n\t\t\t\t\tLast Modified: 02/20/2024\n\n\t\t\t\t\tSubmitted by: WilliamRobertson\n"
+ }
+}

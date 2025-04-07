@@ -1,0 +1,101 @@
+{
+ "awd_id": "2015636",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "Leveraging Structural Information in Regression Tree Ensembles",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Gabor Szekely",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 25854.0,
+ "awd_amount": 25854.0,
+ "awd_min_amd_letter_date": "2020-01-30",
+ "awd_max_amd_letter_date": "2020-01-30",
+ "awd_abstract_narration": "A common task in statistics is prediction; for example, a practitioner may be interested in predicting the presence of a disease given genetic information about an individual. Due to recent advances in data collection, frequently one has access to datasets which contain a massive number of predictors, but with correspondingly few subjects. This setting is generally referred to as the \"big P, small n\" scenario. Drawing meaningful conclusions under such circumstances is generally impossible unless the underlying data satisfy certain structural assumptions. The simplest such structural assumption is that only a small number of the predictors are relevant; in this setting, finding the useful predictors corresponds to finding a so-called \"needle in a haystack.\" The goal of this project is to construct procedures which adapt to this, and other, structural assumptions. The project will focus on methods based on decision trees, which are flowchart-like structures in which predictions are based on whether the predictors satisfy various rules. Usually an ensemble of decision trees are constructed, with the predictions for each individual tree averaged. While decision tree ensembles are frequently used with high dimensional data, it is unclear to what extent they adapt to the structural properties of the data. This project will show that, in practice, off-the-shelf decision tree ensembling methods do not adapt to common structural assumptions, and will develop new methods which do. In addition to developing methods with strong theoretical support, this project will support the development of an R package to give practitioners easy access to our methodology.\r\n\r\n    \r\nThe PI will develop Bayesian methods for incorporating structural information into tree-based ensemble methods, and establish theoretically the benefit of making use of this additional information. This forms a nonparametric counterpart to the parametric approaches used in linear models, such as the lasso, graphical lasso, or group lasso; Bayesian approaches in the parametric setting include the use of variable selection priors, such as spike-and-slab priors and global-local shrinkage priors. Structural information will be incorporated by modifying the commonly used priors on decision tree ensembles so that the prior is concentrated on models which satisfy the desired structure. The PI will first investigate the theoretical properties of a sparsity inducing prior which is designed to eliminate unnecessary predictors. Sparsity here is obtained by applying a sparsity inducing Dirichlet prior to the a priori probability that a given branch is associated to a given predictor. This prior will be extended to allow for grouped variable selection in a similar manner to the group lassoby considering the class of Dirichlet tree priors, and further to accommodate graphical structures in the predictors through sparsity inducing logistic normal priors. Additionally, the PI will develop computationally efficient Markov chain Monte Carlo algorithms to fit the resulting models. Compared to existing methods, these structural priors will be shown to lead to substantial gains in predictive accuracy, and to more accurate scientific discovery.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Antonio",
+   "pi_last_name": "Linero",
+   "pi_mid_init": "R",
+   "pi_sufx_name": "",
+   "pi_full_name": "Antonio R Linero",
+   "pi_email_addr": "antonio.linero@austin.utexas.edu",
+   "nsf_id": "000733598",
+   "pi_start_date": "2020-01-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Austin",
+  "perf_str_addr": "",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787121823",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "25",
+  "perf_st_cong_dist": "TX25",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126900",
+   "pgm_ele_name": "STATISTICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8083",
+   "pgm_ref_txt": "Big Data Science &Engineering"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 25854.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project had the aim of designing machine learning tools based on decision trees which are capable of detecting and adapting to structural information (such as whether genes lie in the same genetic pathway, or whether a large number of predictor variables are irrelevant).</p>\n<p>This project largely succeeded in addressing all of the goals of the proposal. We successfully provided a mathematically sound theoretical basis for the techniques we developed, and carried out the program of incorporating both grouping information and graphical structure (such as the network structure of a gene regulatory network) into decision tree procedures. Additionally, the grant provided funding for a number of projects beyond the original scope of the grant, including problems in sequential process monitoring, spatial statistics, and causal inference. As of the writing of this report, one project outlined in the grant proposal is yet to be complete (incorporating the insights of Bayesian procedures into decision tree boosting algorithms), but will ideally be completed by the end of 2020.</p>\n<p>This grant provided support for 13 publications in statistics journals (8 of which have been accepted), 2 publications in refereed machine learning conferences, and provided PhD dissertation projects for 5 students (2 completed, 3 in progress), of which two are female and one is black. Additionally, projects completed under this grant composed dissertation chapters for two students (both female) who were not advised by the PI.</p>\n<p>The methodology developed in the proposal has wide-ranging applications, and we applied the methods to problems in analysis of large-scale medical expenditure datasets, clinical trials, quality control, gene expression data, and large-scale online ratings data. We anticipate the methodology developed will be applied in the future to an ever-expanding set of problems; currently, we are working on projects involving Financial Technology (Fintech) data as well as large publicly collected observational datasets, with the aim of combining our procedures with tools from causal inference. For example, in the Fintech applications, we aim to estimate the effects of various loan policies on the profits of a company.</p>\n<p>The methodology developed in this grant has produced accompanying publicly available software, and has also been incorporated into software packages developed by others.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/08/2020<br>\n\t\t\t\t\tModified by: Antonio&nbsp;R&nbsp;Linero</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project had the aim of designing machine learning tools based on decision trees which are capable of detecting and adapting to structural information (such as whether genes lie in the same genetic pathway, or whether a large number of predictor variables are irrelevant).\n\nThis project largely succeeded in addressing all of the goals of the proposal. We successfully provided a mathematically sound theoretical basis for the techniques we developed, and carried out the program of incorporating both grouping information and graphical structure (such as the network structure of a gene regulatory network) into decision tree procedures. Additionally, the grant provided funding for a number of projects beyond the original scope of the grant, including problems in sequential process monitoring, spatial statistics, and causal inference. As of the writing of this report, one project outlined in the grant proposal is yet to be complete (incorporating the insights of Bayesian procedures into decision tree boosting algorithms), but will ideally be completed by the end of 2020.\n\nThis grant provided support for 13 publications in statistics journals (8 of which have been accepted), 2 publications in refereed machine learning conferences, and provided PhD dissertation projects for 5 students (2 completed, 3 in progress), of which two are female and one is black. Additionally, projects completed under this grant composed dissertation chapters for two students (both female) who were not advised by the PI.\n\nThe methodology developed in the proposal has wide-ranging applications, and we applied the methods to problems in analysis of large-scale medical expenditure datasets, clinical trials, quality control, gene expression data, and large-scale online ratings data. We anticipate the methodology developed will be applied in the future to an ever-expanding set of problems; currently, we are working on projects involving Financial Technology (Fintech) data as well as large publicly collected observational datasets, with the aim of combining our procedures with tools from causal inference. For example, in the Fintech applications, we aim to estimate the effects of various loan policies on the profits of a company.\n\nThe methodology developed in this grant has produced accompanying publicly available software, and has also been incorporated into software packages developed by others.\n\n \n\n\t\t\t\t\tLast Modified: 09/08/2020\n\n\t\t\t\t\tSubmitted by: Antonio R Linero"
+ }
+}

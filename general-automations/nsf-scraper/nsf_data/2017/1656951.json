@@ -1,0 +1,109 @@
+{
+ "awd_id": "1656951",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: CIF: Universal Analysis of Optimization Algorithms",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922981",
+ "po_email": "pregalia@nsf.gov",
+ "po_sign_block_name": "Phillip Regalia",
+ "awd_eff_date": "2017-02-15",
+ "awd_exp_date": "2020-01-31",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 175000.0,
+ "awd_min_amd_letter_date": "2017-02-10",
+ "awd_max_amd_letter_date": "2017-02-10",
+ "awd_abstract_narration": "Iterative optimization algorithms lie at the heart of modern data-intensive applications such as machine learning, computer vision, and data science. The choice of algorithm, or even the choice of tuning parameters for a particular algorithm, has a dramatic effect on performance and viability. Even simple variants of well-known algorithms can be troublesome to analyze and must be considered on a case-by-case basis with the help of either deep insights by experts or extensive numerical simulations. Then, theoretical analyses of algorithms may fail to provide accurate or faithful performance guarantees because they do not account for sensitivity to parameter choice, robustness to noise either inherent to the algorithm or built in to how the iterations are computed, or other sources of uncertainty.\r\n\r\nThe starting point for this research is to view iterative algorithms as dynamical systems with feedback. In gradient-based descent methods, for example, gradients are evaluated at each step and used to compute subsequent iterates. This research leverages tools from robust control (specifically, integral quadratic constraints and semidefinite programming) to develop a versatile, scalable, and modular framework capable of analyzing a variety of algorithms under different assumptions in an efficient and systematic manner. Of particular interest will be large-scale algorithms such as stochastic gradient descent and its variants, as well as distributed or asynchronous implementations.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Laurent",
+   "pi_last_name": "Lessard",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Laurent Lessard",
+   "pi_email_addr": "l.lessard@northeastern.edu",
+   "nsf_id": "000718272",
+   "pi_start_date": "2017-02-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Wisconsin-Madison",
+  "inst_street_address": "21 N PARK ST STE 6301",
+  "inst_street_address_2": "",
+  "inst_city_name": "MADISON",
+  "inst_state_code": "WI",
+  "inst_state_name": "Wisconsin",
+  "inst_phone_num": "6082623822",
+  "inst_zip_code": "537151218",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "WI02",
+  "org_lgl_bus_name": "UNIVERSITY OF WISCONSIN SYSTEM",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LCLSJAGTNZQ7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Wisconsin-Madison",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "WI",
+  "perf_st_name": "Wisconsin",
+  "perf_zip_code": "537061691",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "WI02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7797",
+   "pgm_ref_txt": "COMM & INFORMATION FOUNDATIONS"
+  },
+  {
+   "pgm_ref_code": "7936",
+   "pgm_ref_txt": "SIGNAL PROCESSING"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 175000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Iterative optimization methods lie at the heart of most data-driven computational tasks, such as training machine learning models to perform classification, or solving large-scale logistics problems. The performance of such optimization methods is often quantified empirically or in an ad hoc fashion by using extensive numerical simulation. The aim of this project was to develop efficient methodology to enable the automated analysis of algorithms, thereby predicting how well they would perform on applications of practical interest without the need for time-consuming simulations.</p>\n<p>This project develops an efficient and systematic approach inspired by dynamical systems and control theory to analyze algorithms and provide robust performance guarantees. Roughly, the user identifies a class of problems of interest and an algorithm they would like to use, and the approach developed in this project quantifies the worst-case behavior of the algorithm over any problem in the class of interest, thereby ensuring that it will always perform in a predictably safe way when used in practice.</p>\n<p>We demonstrate that this approach for understanding algorithm performance extends to many popular classes of algorithms, such as algorithms for unconstrained optimization, distributed optimization, and settings containing stochastic disturbances. In each case, the algorithms can be modeled and analyzed in a similar way. This effort paves the way for developing a new science of algorithm design. Rather than algorithms being tested and tuned in an ad hoc fashion, algorithms could be engineered in the same way that cars, airplanes, and other products are engineered: through principled design rather than trial-and-error.</p>\n<p>Finally, this work bridges several traditionally separate disciplines of research, which is sure to spur future innovation. This project introduces tools from control theory to a new application of algorithm analysis, which is largely studied by optimizers, statisticians, and machine learning specialists.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 04/27/2020<br>\n\t\t\t\t\tModified by: Laurent&nbsp;Lessard</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIterative optimization methods lie at the heart of most data-driven computational tasks, such as training machine learning models to perform classification, or solving large-scale logistics problems. The performance of such optimization methods is often quantified empirically or in an ad hoc fashion by using extensive numerical simulation. The aim of this project was to develop efficient methodology to enable the automated analysis of algorithms, thereby predicting how well they would perform on applications of practical interest without the need for time-consuming simulations.\n\nThis project develops an efficient and systematic approach inspired by dynamical systems and control theory to analyze algorithms and provide robust performance guarantees. Roughly, the user identifies a class of problems of interest and an algorithm they would like to use, and the approach developed in this project quantifies the worst-case behavior of the algorithm over any problem in the class of interest, thereby ensuring that it will always perform in a predictably safe way when used in practice.\n\nWe demonstrate that this approach for understanding algorithm performance extends to many popular classes of algorithms, such as algorithms for unconstrained optimization, distributed optimization, and settings containing stochastic disturbances. In each case, the algorithms can be modeled and analyzed in a similar way. This effort paves the way for developing a new science of algorithm design. Rather than algorithms being tested and tuned in an ad hoc fashion, algorithms could be engineered in the same way that cars, airplanes, and other products are engineered: through principled design rather than trial-and-error.\n\nFinally, this work bridges several traditionally separate disciplines of research, which is sure to spur future innovation. This project introduces tools from control theory to a new application of algorithm analysis, which is largely studied by optimizers, statisticians, and machine learning specialists.\n\n\t\t\t\t\tLast Modified: 04/27/2020\n\n\t\t\t\t\tSubmitted by: Laurent Lessard"
+ }
+}

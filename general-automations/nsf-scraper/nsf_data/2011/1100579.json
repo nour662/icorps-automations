@@ -1,0 +1,113 @@
+{
+ "awd_id": "1100579",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: A Complementarity-Free Contact Model for Robotics Applications",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Massimo Ruzzene",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2014-08-31",
+ "tot_intn_awd_amt": 86600.0,
+ "awd_amount": 86600.0,
+ "awd_min_amd_letter_date": "2011-09-01",
+ "awd_max_amd_letter_date": "2011-09-01",
+ "awd_abstract_narration": "The main goal in this collaborative research project is to advance the state of the art in realistic robot simulation by developing reasonably accurate contact models for rigid body dynamics that are both robustly and efficiently solvable.  Since the times of Newton and Leibniz, the modeling of rigid body dynamics has been a tremendous success story.  However, when rigid bodies come into contact and when that contact includes Coulomb friction, standard force-acceleration models sometimes fail.  In such cases, a smooth solution is theoretically not even possible.  A set of contact models that address this problem has been developed, derived from the well-established Signorini-Fichera (S-F) complementarity conditions.  However, there is some evidence that these conditions are not accurate for impacting (rather than smoothly contacting) rigid bodies.  This project will investigate situations in which the complementarity conditions are called into question, and will develop a new approach to address three critical shortcomings, present in varying degrees in state of the art contact models: (i.) their exponential worst-case solution times; (ii.) their inability to find solutions even though one exists; (iii.) their numerical brittleness. This project will investigate and evaluate new contact models that, by virtue of eliminating complementarity conditions, may not suffer from these shortcomings; in tandem, the project will use elastodynamic finite element analysis and physical experimentation in order to evaluate model accuracy for impacting rigid bodies.\r\n\r\nThis project will impact a broad range of technologies, including aerospace, manufacturing, and civil engineering. In the near term, the project will enable the simulation of complex robot environments that help roboticists fine-tune both mechanical design and control algorithms.  The computational models developed will be made public via the open-source Moby dynamics library. Additionally, participation in STEM is broadened through mentoring of students.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Dylan",
+   "pi_last_name": "Shell",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Dylan A Shell",
+   "pi_email_addr": "dshell@cs.tamu.edu",
+   "nsf_id": "000542643",
+   "pi_start_date": "2011-09-01",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Texas A&M Engineering Experiment Station",
+  "inst_street_address": "3124 TAMU",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE STATION",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "9798626777",
+  "inst_zip_code": "778433124",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "TX10",
+  "org_lgl_bus_name": "TEXAS A&M ENGINEERING EXPERIMENT STATION",
+  "org_prnt_uei_num": "QD1MX6N5YTN4",
+  "org_uei_num": "QD1MX6N5YTN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Texas A&M Engineering Experiment Station",
+  "perf_str_addr": "3124 TAMU",
+  "perf_city_name": "COLLEGE STATION",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "778433124",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "TX10",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "747800",
+   "pgm_ele_name": "DYNAMICAL SYSTEMS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "034E",
+   "pgm_ref_txt": "Dynamical systems"
+  },
+  {
+   "pgm_ref_code": "036E",
+   "pgm_ref_txt": "CIVIL INFRASTRUCTURE"
+  },
+  {
+   "pgm_ref_code": "1057",
+   "pgm_ref_txt": "CIS BASE RESEARCH"
+  },
+  {
+   "pgm_ref_code": "CVIS",
+   "pgm_ref_txt": "CIVIL INFRASTRUCTURE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 86600.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In order to better build and program the robots of the future we need smarter software today. We need robust and efficient simulation software, but simulation of physical systems that interact with their world -- for example, robots that can pick up dirty dishes to place in the dishwasher --&nbsp; is difficult to do well. One of the crucial questions is how to treat things that touch one another. Imagine a box resting on a flat plane Computing just the right forces to keep the box in exactly the right spot can be tricky if other forces are being applied and, for example, the box is sliding to a stop. In practice a real box might \"kiss\" the ground making contact across a whole surface, but efficient simulation uses&nbsp; some small number of points to apply the compensatory forces to. The real box has a frictional effect related to that whole face -- it is a \"bulk\" effect coming from molecular interactions at the region of contact -- so the simulation has to have a law which is concise and can be applied at the few representative points. Picking that law is, somewhat, a matter of taste. Some laws seem more obviously physical, others might clearly be coarse approximations but have the advantage of computational expediency, or reliability -- always being relied upon to give an answer. And that' assuming you know which points you're going to apply the forces to, and precisely along which direction the forces ought to be applied. Those, of course, have to be chosen somehow too.</p>\n<p>From this myriad of complex choices, each with complicated implications and consequences, the practitioner must choose something that will yield the right sort of robot behavior. So as (simulated) Rosey tries to pick up the dustpan, her manipulator fingers don't just pass through the handle. This research project looked at problems like realistic simulation of robot grasping, but also more basic ones too. For example, we looked at how toys like spinning tops and swings might best be simulated. One such model is the tippe top (see figure \"Tippe Top Model\") a somewhat surprising toy that inverts itself as it spins. One finding from the research is that choosing how to apply forces to a point (or region where a circle kisses a plane) can have important implications for how energy is dissipated, and ultimately whether the top ever comes to rest.</p>\n<p>But back to Rosey and the dirty dishes! How will Rosey ever know how to operate a dish washer, or open a fridge, or window? If she's seen these things in both open and shut states, perhaps she'll be able to determine a model for herself of the articulated object.&nbsp; One of the outcomes of our project was an algorithm for matching these \"open\" and \"shut\" versions, as they might appear to a robot, with one another so that one can conclude that they function in some way. (The diagram titled \"Matching Meshes\" shows this.) Once that is known, it is a matter of planning movement&nbsp; to change the object from one state to another. But that's a story for another time.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/13/2015<br>\n\t\t\t\t\tModified by: Dylan&nbsp;A&nbsp;Shell</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2015/1100579/1100579_10129945_1421199128453_matching_models--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2015/1100579/1100579_10129945_1421199128453_matching_models--rgov-800width.jpg\" title=\"Matching Meshes\"><img src=\"/por/images/Reports/POR/2015/110...",
+  "por_txt_cntn": "\nIn order to better build and program the robots of the future we need smarter software today. We need robust and efficient simulation software, but simulation of physical systems that interact with their world -- for example, robots that can pick up dirty dishes to place in the dishwasher --  is difficult to do well. One of the crucial questions is how to treat things that touch one another. Imagine a box resting on a flat plane Computing just the right forces to keep the box in exactly the right spot can be tricky if other forces are being applied and, for example, the box is sliding to a stop. In practice a real box might \"kiss\" the ground making contact across a whole surface, but efficient simulation uses  some small number of points to apply the compensatory forces to. The real box has a frictional effect related to that whole face -- it is a \"bulk\" effect coming from molecular interactions at the region of contact -- so the simulation has to have a law which is concise and can be applied at the few representative points. Picking that law is, somewhat, a matter of taste. Some laws seem more obviously physical, others might clearly be coarse approximations but have the advantage of computational expediency, or reliability -- always being relied upon to give an answer. And that' assuming you know which points you're going to apply the forces to, and precisely along which direction the forces ought to be applied. Those, of course, have to be chosen somehow too.\n\nFrom this myriad of complex choices, each with complicated implications and consequences, the practitioner must choose something that will yield the right sort of robot behavior. So as (simulated) Rosey tries to pick up the dustpan, her manipulator fingers don't just pass through the handle. This research project looked at problems like realistic simulation of robot grasping, but also more basic ones too. For example, we looked at how toys like spinning tops and swings might best be simulated. One such model is the tippe top (see figure \"Tippe Top Model\") a somewhat surprising toy that inverts itself as it spins. One finding from the research is that choosing how to apply forces to a point (or region where a circle kisses a plane) can have important implications for how energy is dissipated, and ultimately whether the top ever comes to rest.\n\nBut back to Rosey and the dirty dishes! How will Rosey ever know how to operate a dish washer, or open a fridge, or window? If she's seen these things in both open and shut states, perhaps she'll be able to determine a model for herself of the articulated object.  One of the outcomes of our project was an algorithm for matching these \"open\" and \"shut\" versions, as they might appear to a robot, with one another so that one can conclude that they function in some way. (The diagram titled \"Matching Meshes\" shows this.) Once that is known, it is a matter of planning movement  to change the object from one state to another. But that's a story for another time.\n\n\t\t\t\t\tLast Modified: 01/13/2015\n\n\t\t\t\t\tSubmitted by: Dylan A Shell"
+ }
+}

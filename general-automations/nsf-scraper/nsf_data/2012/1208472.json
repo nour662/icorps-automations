@@ -1,0 +1,101 @@
+{
+ "awd_id": "1208472",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Arbor: Comparative Analysis Workflows for the Tree of Life",
+ "cfda_num": "47.074",
+ "org_code": "08010206",
+ "po_phone": "7032928227",
+ "po_email": "smalcomb@nsf.gov",
+ "po_sign_block_name": "Simon Malcomber",
+ "awd_eff_date": "2012-05-01",
+ "awd_exp_date": "2016-04-30",
+ "tot_intn_awd_amt": 600000.0,
+ "awd_amount": 600000.0,
+ "awd_min_amd_letter_date": "2012-05-07",
+ "awd_max_amd_letter_date": "2012-05-07",
+ "awd_abstract_narration": "Our understanding of the tree of life, a tree that summarizes the evolutionary relationships of living organisms, has grown rapidly in recent years. However, interpreting and analyzing large evolutionary trees has proven difficult. This project will create visual workflow software, \"Arbor\", to help scientists and the general public understand the growing tree of life. Arbor will be easy to use:  anyone will be able to carry out analyses by creating a specific workflow of their methods. Users will be able to easily obtain data over the internet and share their Arbor workflows with others, promoting collaborative efforts. Finally, Arbor will be easily expandable and able to grow as new methods are invented.\r\n\r\nArbor will enable \"tree-thinking\" to permeate scientific research, while also providing extensive educational outreach to classrooms and museums. Students and the general public benefit tremendously from a better understanding of the relationships among all species. Likewise, the visual workflows and user interfaces we develop will be freely available to the programming community, stimulating additional software development. Finally, enabling the scientific community to analyze the dynamic tree of life will enable new research across a tremendous range of fields, including medicine, public health, agriculture, ecology, and genetics.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "BIO",
+ "org_dir_long_name": "Directorate for Biological Sciences",
+ "div_abbr": "DEB",
+ "org_div_long_name": "Division Of Environmental Biology",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jorge",
+   "pi_last_name": "Soberon",
+   "pi_mid_init": "L",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jorge L Soberon",
+   "pi_email_addr": "jsoberon@ku.edu",
+   "nsf_id": "000410046",
+   "pi_start_date": "2012-05-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Kansas Center for Research Inc",
+  "inst_street_address": "2385 IRVING HILL RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "LAWRENCE",
+  "inst_state_code": "KS",
+  "inst_state_name": "Kansas",
+  "inst_phone_num": "7858643441",
+  "inst_zip_code": "660457563",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "KS01",
+  "org_lgl_bus_name": "UNIVERSITY OF KANSAS CENTER FOR RESEARCH INC",
+  "org_prnt_uei_num": "SSUJB3GSH8A5",
+  "org_uei_num": "SSUJB3GSH8A5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Kansas Center for Research Inc",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "KS",
+  "perf_st_name": "Kansas",
+  "perf_zip_code": "660457568",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "KS01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "768900",
+   "pgm_ele_name": "ASSEMBLING THE TREE OF LIFE"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 600000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Major goals of this collaborative project were to advance the theoretical development of the single and multispecies distributions models, implement new algorithms and computational tools for macroecology and make them available in an open web-services architecture, and advance in the next generation of species distribution models (including the dynamics of dispersal).</p>\n<p>&nbsp;</p>\n<p>Results by the University of Kansas</p>\n<p><strong>PAM software and process-oriented distribution models</strong><em>. </em></p>\n<p>The results of the distribution models of a set of species can be stacked together to generate a prediction of a community of species. Such &ldquo;stacks&rdquo; can be represented in Geographic Information Systems, or as matrices, called presence-absence matrices (PAMs). We solved significant computational challenges presented when populating large (tens of millions of cells or more) PAMs with species inputs, randomizing PAMs, and generating PAM statistics. We created a plugin for the open source GIS called QGIS. This tool supports exploration of complex mathematical and biological relationships in the PAM with Range Diversity Plots, geographic visualization, and tabular formats in QGIS. We also integrated phylogenetic trees into the QGIS workspace for dynamic recalculation and visualization of linked displays of user-selected branches from trees, tree-related statistics, PAM statistics, and geographic distribution maps.</p>\n<p>Finally,<strong> </strong>we implemented a process-oriented distribution algorithm that calculates what cells in a geographic grid will be occupied or not when species both disperse and are affected by climate change. This is essentially a reaction-diffusion process forced by climate-change on realistic, world-size spatial grids. The forcing climatic factor is an assembly of 120,000 world grids from General Circulation Models provided by the Hadley Center in the UK, at 2.5 X 3 degrees of resolution, for annual precipitation and yearly average temperature, refined by us to 1 degree. An R package version is being developed. Ten scientific articles were published or are in the process, with more coming, a PhD student and a programmer were supported, and the plugin for QGIS was liberated. The above results can be applied to the description, conservation and management of biodiversity at large scales.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/29/2016<br>\n\t\t\t\t\tModified by: Jorge&nbsp;Soberon</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMajor goals of this collaborative project were to advance the theoretical development of the single and multispecies distributions models, implement new algorithms and computational tools for macroecology and make them available in an open web-services architecture, and advance in the next generation of species distribution models (including the dynamics of dispersal).\n\n \n\nResults by the University of Kansas\n\nPAM software and process-oriented distribution models. \n\nThe results of the distribution models of a set of species can be stacked together to generate a prediction of a community of species. Such \"stacks\" can be represented in Geographic Information Systems, or as matrices, called presence-absence matrices (PAMs). We solved significant computational challenges presented when populating large (tens of millions of cells or more) PAMs with species inputs, randomizing PAMs, and generating PAM statistics. We created a plugin for the open source GIS called QGIS. This tool supports exploration of complex mathematical and biological relationships in the PAM with Range Diversity Plots, geographic visualization, and tabular formats in QGIS. We also integrated phylogenetic trees into the QGIS workspace for dynamic recalculation and visualization of linked displays of user-selected branches from trees, tree-related statistics, PAM statistics, and geographic distribution maps.\n\nFinally, we implemented a process-oriented distribution algorithm that calculates what cells in a geographic grid will be occupied or not when species both disperse and are affected by climate change. This is essentially a reaction-diffusion process forced by climate-change on realistic, world-size spatial grids. The forcing climatic factor is an assembly of 120,000 world grids from General Circulation Models provided by the Hadley Center in the UK, at 2.5 X 3 degrees of resolution, for annual precipitation and yearly average temperature, refined by us to 1 degree. An R package version is being developed. Ten scientific articles were published or are in the process, with more coming, a PhD student and a programmer were supported, and the plugin for QGIS was liberated. The above results can be applied to the description, conservation and management of biodiversity at large scales.\n\n \n\n\t\t\t\t\tLast Modified: 06/29/2016\n\n\t\t\t\t\tSubmitted by: Jorge Soberon"
+ }
+}

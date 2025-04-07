@@ -1,0 +1,113 @@
+{
+ "awd_id": "1711922",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Signaling Design and Algorithms for Grant-Free Multiple Access",
+ "cfda_num": "47.041",
+ "org_code": "07010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Lawrence Goldberg",
+ "awd_eff_date": "2017-07-01",
+ "awd_exp_date": "2020-06-30",
+ "tot_intn_awd_amt": 330000.0,
+ "awd_amount": 330000.0,
+ "awd_min_amd_letter_date": "2017-06-19",
+ "awd_max_amd_letter_date": "2019-11-13",
+ "awd_abstract_narration": "Many applications running on smart devices generate or request sporadic data packets. Future wireless communication systems are required to accommodate such devices and also provide connectivity for emerging networks such as the Internet of Things. For such sporadic data, orthogonal resource allocation or request-approval based multiple access schemes are inefficient. There is need for designing a new type of grant-free multiple access mechanism that allow a large number of devices to share the communication medium for the delivery of infrequent and small-sized packet data. Desirable features include the ability to accommodate a large number of users, high bandwidth efficiency, high reliability, low latency, and high energy efficiency. It is also desirable that the transmissions can be asynchronous, be robust to multipath propagation and Doppler frequency shift, and require low processing complexity at the receivers.\r\n\r\nWith this need in mind, the objective of the project is to design novel signaling schemes for such uplink multiple access transmissions and efficient and reliable detection algorithms. The project will design non-orthogonal multiple access schemes including linear precoding based multiple access and coded multiple access that eliminate the need of signaling and scheduling overhead. Low-complexity detection algorithms will be developed that incorporate features of the wireless communications including channel fading and error control coding. The performance of the designed schemes and receiver algorithms will be evaluated using theoretical analysis and simulations. The resulted novel multiple access schemes and detection algorithms can improve the efficiency and throughput of future wireless networks and will be useful for applications such as Internet of Thing and metropolitan area networks.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "ECCS",
+ "org_div_long_name": "Division of Electrical, Communications and Cyber Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Former Principal Investigator",
+   "pi_first_name": "Zhengdao",
+   "pi_last_name": "Wang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Zhengdao Wang",
+   "pi_email_addr": "zwang52@gmu.edu",
+   "nsf_id": "000243199",
+   "pi_start_date": "2017-06-19",
+   "pi_end_date": "2019-11-13"
+  },
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ashfaq",
+   "pi_last_name": "Khokhar",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ashfaq Khokhar",
+   "pi_email_addr": "ashfaq@iastate.edu",
+   "nsf_id": "000737800",
+   "pi_start_date": "2019-11-13",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Iowa State University",
+  "inst_street_address": "1350 BEARDSHEAR HALL",
+  "inst_street_address_2": "515 MORRILL ROAD",
+  "inst_city_name": "AMES",
+  "inst_state_code": "IA",
+  "inst_state_name": "Iowa",
+  "inst_phone_num": "5152945225",
+  "inst_zip_code": "500112103",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "IA04",
+  "org_lgl_bus_name": "IOWA STATE UNIVERSITY OF SCIENCE AND TECHNOLOGY",
+  "org_prnt_uei_num": "DQDBM7FGJPC5",
+  "org_uei_num": "DQDBM7FGJPC5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Iowa State University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "IA",
+  "perf_st_name": "Iowa",
+  "perf_zip_code": "500112207",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": null,
+  "perf_st_cong_dist": "IA",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "756400",
+   "pgm_ele_name": "CCSS-Comms Circuits & Sens Sys"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "153E",
+   "pgm_ref_txt": "Wireless comm & sig processing"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 330000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>wirelessThe project investigated the transmitter and receiver design for future wireless communications where multiple connections need to be made without significant coordination. There are many applications that could benefit from such communication scenarios, such as the Internet of Things. In such communication systems, the message packet sizes are usually small, preventing powerful error-control codes to be used, because those codes require the length of the information packets to be long. Also, existing handshaking or resource reservation processes are costly due to additional overhead in energy and bandwidth required, and introduce unwanted delays. The project has investigated various coded transmission and detection algorithms in different channel conditions, including frequency-flat and frequency-selective channels. Error correction codes that are customized for short block lengths are constructed that blend the most prominent features from existing code designs including low-density parity-check codes and polar codes. The designed codes were shown to achieve much better performance compared to existing designs, when the packet length is small. Machine learning was also employed to improve the system performance. Specifically, methods of using reinforcement learning were investigated, and novel learning algorithms were designed that can be shown to improve performance compared to those methods based on existing learning algorithms. These algorithms can potentially be useful to other applications beyond wireless communication systems.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/28/2020<br>\n\t\t\t\t\tModified by: Ashfaq&nbsp;Khokhar</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nwirelessThe project investigated the transmitter and receiver design for future wireless communications where multiple connections need to be made without significant coordination. There are many applications that could benefit from such communication scenarios, such as the Internet of Things. In such communication systems, the message packet sizes are usually small, preventing powerful error-control codes to be used, because those codes require the length of the information packets to be long. Also, existing handshaking or resource reservation processes are costly due to additional overhead in energy and bandwidth required, and introduce unwanted delays. The project has investigated various coded transmission and detection algorithms in different channel conditions, including frequency-flat and frequency-selective channels. Error correction codes that are customized for short block lengths are constructed that blend the most prominent features from existing code designs including low-density parity-check codes and polar codes. The designed codes were shown to achieve much better performance compared to existing designs, when the packet length is small. Machine learning was also employed to improve the system performance. Specifically, methods of using reinforcement learning were investigated, and novel learning algorithms were designed that can be shown to improve performance compared to those methods based on existing learning algorithms. These algorithms can potentially be useful to other applications beyond wireless communication systems.\n\n\t\t\t\t\tLast Modified: 07/28/2020\n\n\t\t\t\t\tSubmitted by: Ashfaq Khokhar"
+ }
+}

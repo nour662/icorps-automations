@@ -1,0 +1,109 @@
+{
+ "awd_id": "1065079",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHB: Medium: Collaborative Research: Novel Computational Techniques for Cardiovascular Risk Stratification",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032922568",
+ "po_email": "wnilsen@nsf.gov",
+ "po_sign_block_name": "Wendy Nilsen",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 637585.0,
+ "awd_amount": 637585.0,
+ "awd_min_amd_letter_date": "2011-08-26",
+ "awd_max_amd_letter_date": "2011-08-26",
+ "awd_abstract_narration": "The project assesses patient cardiovascular risk and matches patients to the treatments most likely to be effective. The project addresses this problem through sophisticated computational methods that identify new markers of disease, improve the ability to measure both new and existing markers, and construct personalized models that can provide highly accurate assessments of individual risk. The core focus of the research addresses the poor performance of existing tools for cardiovascular decision support through advanced methods at the intersection of machine learning, data mining, signal processing, and applied algorithms; with the research guided by knowledge of cardiac pathophysiology. \r\n\r\nThis project impacts patient care for a disease that causes roughly one death every 38 seconds in the United States and imposes a burden of over half a trillion dollars in the U. S. each year. More generally, many of the ideas explored here (e.g., personalization of risk models) extends to a wide variety of other disorders in a straightforward manner and leads to wide improvements in outcomes while controlling costs. The research also strengthens interdisciplinary research in EECs and medicine throughout the computer science research community.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "John",
+   "pi_last_name": "Guttag",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "John Guttag",
+   "pi_email_addr": "guttag@mit.edu",
+   "nsf_id": "000184601",
+   "pi_start_date": "2011-08-26",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Massachusetts Institute of Technology",
+  "inst_street_address": "77 MASSACHUSETTS AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6172531000",
+  "inst_zip_code": "021394301",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+  "org_prnt_uei_num": "E2NYLCDML6V1",
+  "org_uei_num": "E2NYLCDML6V1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Massachusetts Institute of Technology",
+  "perf_str_addr": "77 MASSACHUSETTS AVE",
+  "perf_city_name": "CAMBRIDGE",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021394301",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "164000",
+   "pgm_ele_name": "Information Technology Researc"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1640",
+   "pgm_ref_txt": "INFORMATION TECHNOLOGY RESEARC"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  },
+  {
+   "pgm_ref_code": "8018",
+   "pgm_ref_txt": "Smart and Connected Health"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 637585.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this work was to develop new methods for deriving medically useful information from data that is routinely collected as part of clinical practice. The major focus of the project was on developing tools that could be used to provide information that could be used to improve the care of cardiac patients.&nbsp; Later in the project, however, we extended the scope to include healthcare associated infections (HAIs)</p>\n<p>&nbsp;</p>\n<p>From a technical perspective, the major outcome was the development of a set of machine learning techniques specifically designed for building predictive models. Reasoning about clinical data is challenging in part because 1) it is always incomplete and often incorrect and 2) despite all the hype about &ldquo;big data&rdquo; there is almost never enough obviously relevant data about the effect of a specific intervention on a specific kind of patient.</p>\n<p>&nbsp;</p>\n<p>We developed improved techniques for using machine learning to build predictive models for low prevalence events. Adequately characterizing patient outcomes in the presence of infrequent endpoints requires data from a large number of patients to acquire sufficient positive examples for training. We successfully explored multiple approaches to addressing this problem.&nbsp; One branch of research was based on 1.5-class learning.&nbsp; The other branch was based on transfer learning. We demonstrated the efficacy of these techniques in the domains of acute coronary syndromes, healthcare associated infections, chronic kidney disease, and cardiac surgery.</p>\n<p>&nbsp;</p>\n<p>We also developed new methods for extracting useful information from clinical signals.&nbsp; In particular, we developed methods for analyzing the frequency content of ECG, and other physiological signals, using time scales based on physiology (e.g., heart rate) rather than time (e.g., seconds). We then demonstrated (on retrospective data from 1000&rsquo;s of patients) that using features in beat-frequency to build predictive models improves accuracy relative to time-frequency.</p>\n<p>&nbsp;</p>\n<p>From a clinical perspective, our largest impact has been in the area of HAIs. We demonstrated that our methods can be used to derive highly accurate predictions of the probability of an inpatient contracting a Clostridium difficile infection (CDI) during a hospital stay. The model has been integrated into the health record system at a large hospital in the US, and was used to produce daily risk estimates for each inpatient. We are now working with a different large hospital on a clinical trial designed to show how these predictions can be used to guide care and reduce infection rates. This is of considerable importance, since approximately 1% of inpatients at U.S. hospitals will acquire this dangerous and hard-to-treat infection.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/01/2016<br>\n\t\t\t\t\tModified by: John&nbsp;Guttag</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of this work was to develop new methods for deriving medically useful information from data that is routinely collected as part of clinical practice. The major focus of the project was on developing tools that could be used to provide information that could be used to improve the care of cardiac patients.  Later in the project, however, we extended the scope to include healthcare associated infections (HAIs)\n\n \n\nFrom a technical perspective, the major outcome was the development of a set of machine learning techniques specifically designed for building predictive models. Reasoning about clinical data is challenging in part because 1) it is always incomplete and often incorrect and 2) despite all the hype about \"big data\" there is almost never enough obviously relevant data about the effect of a specific intervention on a specific kind of patient.\n\n \n\nWe developed improved techniques for using machine learning to build predictive models for low prevalence events. Adequately characterizing patient outcomes in the presence of infrequent endpoints requires data from a large number of patients to acquire sufficient positive examples for training. We successfully explored multiple approaches to addressing this problem.  One branch of research was based on 1.5-class learning.  The other branch was based on transfer learning. We demonstrated the efficacy of these techniques in the domains of acute coronary syndromes, healthcare associated infections, chronic kidney disease, and cardiac surgery.\n\n \n\nWe also developed new methods for extracting useful information from clinical signals.  In particular, we developed methods for analyzing the frequency content of ECG, and other physiological signals, using time scales based on physiology (e.g., heart rate) rather than time (e.g., seconds). We then demonstrated (on retrospective data from 1000\u00c6s of patients) that using features in beat-frequency to build predictive models improves accuracy relative to time-frequency.\n\n \n\nFrom a clinical perspective, our largest impact has been in the area of HAIs. We demonstrated that our methods can be used to derive highly accurate predictions of the probability of an inpatient contracting a Clostridium difficile infection (CDI) during a hospital stay. The model has been integrated into the health record system at a large hospital in the US, and was used to produce daily risk estimates for each inpatient. We are now working with a different large hospital on a clinical trial designed to show how these predictions can be used to guide care and reduce infection rates. This is of considerable importance, since approximately 1% of inpatients at U.S. hospitals will acquire this dangerous and hard-to-treat infection.\n\n\t\t\t\t\tLast Modified: 06/01/2016\n\n\t\t\t\t\tSubmitted by: John Guttag"
+ }
+}

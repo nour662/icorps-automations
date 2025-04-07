@@ -1,0 +1,117 @@
+{
+ "awd_id": "2031901",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: CPR-COVID-19 Prevention Robot in Dense Areas",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032920000",
+ "po_email": "eplaku@nsf.gov",
+ "po_sign_block_name": "Erion Plaku",
+ "awd_eff_date": "2020-06-15",
+ "awd_exp_date": "2021-05-31",
+ "tot_intn_awd_amt": 120000.0,
+ "awd_amount": 120000.0,
+ "awd_min_amd_letter_date": "2020-06-10",
+ "awd_max_amd_letter_date": "2020-06-10",
+ "awd_abstract_narration": "Motivated by the COVID-19 pandemic, this project will develop a robot to understand whether pedestrians in public places or offices are maintaining social distancing guidelines. The project will develop new methods that leverage machine learning, computer vision, and robot motion planning to ascertain the positions of pedestrians as they move in a confined area. Real-time understanding of pedestrian movements can assist social distancing efforts, minimizing the spread of COVID-19, and can more broadly enhance human-robot interactions.\r\n\r\nThe underlying challenges include development of new navigation algorithms that can compute collision-free paths for a robot in medium and high-density crowds. Navigation among pedestrians will be formulated as a Partially-Observable Markov Decision Process and solved using deep reinforcement learning, particularly focusing on Proximal Policy Optimization. The pedestrian-tracking approach will be based on a novel concept of Frontal Reciprocal Velocity Obstacles, which uses an elliptical approximation of each pedestrian motion and estimates the underlying dynamics by considering intermediate goals and collision avoidance. The planned approach will also be able to handle occlusions among pedestrians by moving the robot in an intelligent way to improve the information that it receives from its sensors. The project will use commodity sensors, including cameras and 2D LIDARs, to understand pedestrian movements and check for social distance constraints. Finally, this project will investigate techniques to influence pedestrian behavior using robots.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Dinesh",
+   "pi_last_name": "Manocha",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Dinesh Manocha",
+   "pi_email_addr": "dm@cs.umd.edu",
+   "nsf_id": "000291378",
+   "pi_start_date": "2020-06-10",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Aniket",
+   "pi_last_name": "Bera",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Aniket Bera",
+   "pi_email_addr": "bera89@purdue.edu",
+   "nsf_id": "000812661",
+   "pi_start_date": "2020-06-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Maryland, College Park",
+  "inst_street_address": "3112 LEE BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE PARK",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "3014056269",
+  "inst_zip_code": "207425100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "MD04",
+  "org_lgl_bus_name": "UNIVERSITY OF MARYLAND, COLLEGE PARK",
+  "org_prnt_uei_num": "NPU8ULVAAS23",
+  "org_uei_num": "NPU8ULVAAS23"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Maryland College Park",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "207425141",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "MD04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 120000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Our main contributions in this work are:</p>\n<p>1. A mobile robot system that detects breaches in social distancing norms, autonomously navigates towards groups of non-compliant people and encourages them to maintain at least 6 feet of distance. We demonstrate that our mobile robot monitoring system is effective in terms of detecting social distancing breaches in static indoor scenes and can enforce social distancing in all of the detected breaches. Furthermore, our method does not require humans to wear any tracking or wearable devices.</p>\n<p>&nbsp;</p>\n<p>2. We also integrated a CCTV setup in indoor scenes (if available) with the COVID-robot to further increase the area being monitored and improve the accuracy of tracking and pursuing dynamic non-compliant pedestrians. This hybrid combination of statically mounted cameras and a mobile robot can further improve the number of breaches detected and enforcements by up to 100%.</p>\n<p>&nbsp;</p>\n<p>3. We presented a novel real-time method to estimate distances between people in images captured using an RGB-D camera on the robot and CCTV camera using a homography transformation. The distance estimate has an average error of 0.3 feet in indoor environments.</p>\n<p>&nbsp;</p>\n<p>4. We also presented a novel algorithm for classifying noncompliant people into different groups and selecting a goal that makes the robot move to the vicinity of the largest group and enforce social distancing norms.</p>\n<p>&nbsp;</p>\n<p>5. We integrated a thermal camera with the robot and wirelessly transmit the thermal images to appropriate security/healthcare personnel. The robot does not record temperatures or perform any form of person recognition to protect people?s privacy.</p>\n<p>&nbsp;</p>\n<p>We have evaluated our method quantitatively in terms of the accuracy of localizing a pedestrian, the number of social distancing breaches detected in static and mobile pedestrians, and our CCTV-robot hybrid system. We also measure the time duration for which the robot can track a dynamic pedestrian. Qualitatively, we highlight the trajectories of the robot pursuing dynamic pedestrians when using only its RGB-D sensor as compared to when both the CCTV and RGB-D cameras are used.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/04/2021<br>\n\t\t\t\t\tModified by: Aniket&nbsp;Bera</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841577968_Fig1--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841577968_Fig1--rgov-800width.jpg\" title=\"CPR Robot\"><img src=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841577968_Fig1--rgov-66x44.jpg\" alt=\"CPR Robot\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Our robot detecting non-compliance to social distancing norms, classifying non-compliant pedestrians into groups and autonomously navigating to the group with currently the most people in it (a group with 3 people in this scenario).</div>\n<div class=\"imageCredit\">UMD</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Aniket&nbsp;Bera</div>\n<div class=\"imageTitle\">CPR Robot</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841619240_Fig2--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841619240_Fig2--rgov-800width.jpg\" title=\"CPR Robot 2\"><img src=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841619240_Fig2--rgov-66x44.jpg\" alt=\"CPR Robot 2\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">The criteria used to detect whether two pedestrians violate the social distance constraint.</div>\n<div class=\"imageCredit\">UMD</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Aniket&nbsp;Bera</div>\n<div class=\"imageTitle\">CPR Robot 2</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841662793_Fig3--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841662793_Fig3--rgov-800width.jpg\" title=\"CPR Robot 3\"><img src=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841662793_Fig3--rgov-66x44.jpg\" alt=\"CPR Robot 3\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Overall architecture of COVID-Robot and social distance monitoring</div>\n<div class=\"imageCredit\">UMD</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Aniket&nbsp;Bera</div>\n<div class=\"imageTitle\">CPR Robot 3</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841715157_Fig5--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841715157_Fig5--rgov-800width.jpg\" title=\"CPR Robot 4\"><img src=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841715157_Fig5--rgov-66x44.jpg\" alt=\"CPR Robot 4\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Homography rectangle</div>\n<div class=\"imageCredit\">UMD</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Aniket&nbsp;Bera</div>\n<div class=\"imageTitle\">CPR Robot 4</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841759225_Fig6--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841759225_Fig6--rgov-800width.jpg\" title=\"CPR Robot 5\"><img src=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841759225_Fig6--rgov-66x44.jpg\" alt=\"CPR Robot 5\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Thermal images generated by the thermal camera</div>\n<div class=\"imageCredit\">UMD</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Aniket&nbsp;Bera</div>\n<div class=\"imageTitle\">CPR Robot 5</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841798558_Fig7--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841798558_Fig7--rgov-800width.jpg\" title=\"CPR Robot 6\"><img src=\"/por/images/Reports/POR/2021/2031901/2031901_10676375_1622841798558_Fig7--rgov-66x44.jpg\" alt=\"CPR Robot 6\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Trajectories</div>\n<div class=\"imageCredit\">UMD</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Aniket&nbsp;Bera</div>\n<div class=\"imageTitle\">CPR Robot 6</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nOur main contributions in this work are:\n\n1. A mobile robot system that detects breaches in social distancing norms, autonomously navigates towards groups of non-compliant people and encourages them to maintain at least 6 feet of distance. We demonstrate that our mobile robot monitoring system is effective in terms of detecting social distancing breaches in static indoor scenes and can enforce social distancing in all of the detected breaches. Furthermore, our method does not require humans to wear any tracking or wearable devices.\n\n \n\n2. We also integrated a CCTV setup in indoor scenes (if available) with the COVID-robot to further increase the area being monitored and improve the accuracy of tracking and pursuing dynamic non-compliant pedestrians. This hybrid combination of statically mounted cameras and a mobile robot can further improve the number of breaches detected and enforcements by up to 100%.\n\n \n\n3. We presented a novel real-time method to estimate distances between people in images captured using an RGB-D camera on the robot and CCTV camera using a homography transformation. The distance estimate has an average error of 0.3 feet in indoor environments.\n\n \n\n4. We also presented a novel algorithm for classifying noncompliant people into different groups and selecting a goal that makes the robot move to the vicinity of the largest group and enforce social distancing norms.\n\n \n\n5. We integrated a thermal camera with the robot and wirelessly transmit the thermal images to appropriate security/healthcare personnel. The robot does not record temperatures or perform any form of person recognition to protect people?s privacy.\n\n \n\nWe have evaluated our method quantitatively in terms of the accuracy of localizing a pedestrian, the number of social distancing breaches detected in static and mobile pedestrians, and our CCTV-robot hybrid system. We also measure the time duration for which the robot can track a dynamic pedestrian. Qualitatively, we highlight the trajectories of the robot pursuing dynamic pedestrians when using only its RGB-D sensor as compared to when both the CCTV and RGB-D cameras are used.\n\n \n\n\t\t\t\t\tLast Modified: 06/04/2021\n\n\t\t\t\t\tSubmitted by: Aniket Bera"
+ }
+}

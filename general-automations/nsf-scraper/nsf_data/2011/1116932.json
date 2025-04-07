@@ -1,0 +1,121 @@
+{
+ "awd_id": "1116932",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TC: Small: Collaborative Research: Exploiting Network Dynamics for Secret Key Generation",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Jeremy Epstein",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 300084.0,
+ "awd_amount": 300084.0,
+ "awd_min_amd_letter_date": "2011-08-06",
+ "awd_max_amd_letter_date": "2011-08-06",
+ "awd_abstract_narration": "Key management in wireless networks is a very challenging problem because of the unreliable transmission medium, the lack of network infrastructure, and stringent energy and complexity limitations at terminals. Recently, there has been increased interest in exploiting physical layer dynamics to generate keys. However, existing schemes exploit only the channel dynamics in the point-to-point channel or basic small wireless systems, but not other rich dynamics inherent to multiuser wireless networks. Furthermore, current studies focus mainly on the pairwise key agreement problem, and did not address issues arising from user interactions in networks.  This project develops practical key generation schemes for large scale networks, which 1) fully exploit rich opportunities inherent to network dynamics, and 2) properly address issues arising from interaction among multiple users in networks. Topics including unicast and/or multicast key generation, oblivious relay-assisted key generation, and secret sharing among multiple users are investigated. The goal of this project is to design transmission protocols and algorithms that have engineering impact and practical feasibility. Furthermore, these protocols and algorithms are implemented and tested on a testbed. This project also has strong education components. In addition to providing thesis topics for graduate students, this project provides hands-on lab opportunities for undergraduate education on communication security.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Yingbin",
+   "pi_last_name": "Liang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yingbin Liang",
+   "pi_email_addr": "liang.889@osu.edu",
+   "nsf_id": "000502099",
+   "pi_start_date": "2011-08-06",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Wenliang",
+   "pi_last_name": "Du",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Wenliang Du",
+   "pi_email_addr": "wedu@syr.edu",
+   "nsf_id": "000483547",
+   "pi_start_date": "2011-08-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Syracuse University",
+  "inst_street_address": "900 S CROUSE AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SYRACUSE",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "3154432807",
+  "inst_zip_code": "13244",
+  "inst_country_name": "United States",
+  "cong_dist_code": "22",
+  "st_cong_dist_code": "NY22",
+  "org_lgl_bus_name": "SYRACUSE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "C4BXLBC11LC6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Syracuse University",
+  "perf_str_addr": "900 S CROUSE AVE",
+  "perf_city_name": "SYRACUSE",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "13244",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "22",
+  "perf_st_cong_dist": "NY22",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779500",
+   "pgm_ele_name": "TRUSTWORTHY COMPUTING"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7795",
+   "pgm_ref_txt": "TRUSTWORTHY COMPUTING"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 300084.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Intellectual Merit:</p>\n<p>Securing wireless communications is critical due to increasingly high demand in voice and particularly data services that people receive on their smartphones, intelligent pads, and various other devices. Such security requirement is typically guaranteed by applying secret keys to data so that malicious eavesdropping cannot obtain any information without knowing the keys. However, secrete keys do not come for free, but are typically generated and shared between remote nodes by some common popular security approaches such as pre-deployment of a secret certificate into mobile devices, based on which devices can establish keys, and establishment of keys via a trusted third party. However, many wireless communication scenarios do not have centralized infrastructure, and implementation of such approaches are not feasible. Thus, this project focuses on exploiting physical layer dynamics to generate keys. The physical layer dynamics stem from the fact that wireless transmission between nodes is over a dynamic environment, in which movement of communicating nodes and scatters in the air will cause random changes in signal paths. Thus, such random and dynamic channels between legitimate nodes can serve as a common randomness source for generating symmetric secret keys. The design of secret key generation schemes via physical layer approaches complements and strengthens the current security systems designed by computer scientists, and provides alternative security approach for network scenarios, in which cryptographic key-based security schemes are hard to implement.</p>\n<p>This project has comprehensively exploited physical layer channel dynamics for secret key generation, and designed key generation schemes with guaranteed security. In particular, this project successfully accomplished the following research tasks: designing secret (multi-)key generation schemes that strengthen secure communication protection via physical layer schemes; securing more flexible communication architectures which have less infrastructure such as device-to-device communications; exploring the presence of relay nodes in wireless networks to assist key generation, applying physical layer security approach to providing more general and flexible design for secret sharing over nodes in wireless networks, characterizing the fundamental limit on the performance of key generation and explore optimality of proposed schemes.</p>\n<p>In particular, the study of hierarchical multi-key generation source model concludes the key capacity region characterization for a fundamental problem that has been opened for about ten years. The novel key generation design based on a random binning-joint decoding scheme was further applied to complete solution to multi-key generation problems in cellular source models. Such series of studies on multi-key generation has opened a new direction in the research community. Furthermore, the idea of relay-assisted key generation provides an interesting application of the technique of using relay nodes in wireless networks, and our results demonstrate that such a technique significantly improves the key generation rate. This project also applied information theoretic security techniques to solving two classical security problems: key generation and secret sharing, where information theoretic security offers unique advantages beyond conventional solutions for wireless networks.</p>\n<p>Broader Impact:</p>\n<p>The secret key generation schemes designed in this project will greatly facilitate practical implementations of physical layer based security solution for next generation commercial wireless networks. The findings of this project have inspired interdisciplinary interests over the research communities of communication, networks, signal processing, and computer science. This project has partially supported three students including one female student Ruchen...",
+  "por_txt_cntn": "\nIntellectual Merit:\n\nSecuring wireless communications is critical due to increasingly high demand in voice and particularly data services that people receive on their smartphones, intelligent pads, and various other devices. Such security requirement is typically guaranteed by applying secret keys to data so that malicious eavesdropping cannot obtain any information without knowing the keys. However, secrete keys do not come for free, but are typically generated and shared between remote nodes by some common popular security approaches such as pre-deployment of a secret certificate into mobile devices, based on which devices can establish keys, and establishment of keys via a trusted third party. However, many wireless communication scenarios do not have centralized infrastructure, and implementation of such approaches are not feasible. Thus, this project focuses on exploiting physical layer dynamics to generate keys. The physical layer dynamics stem from the fact that wireless transmission between nodes is over a dynamic environment, in which movement of communicating nodes and scatters in the air will cause random changes in signal paths. Thus, such random and dynamic channels between legitimate nodes can serve as a common randomness source for generating symmetric secret keys. The design of secret key generation schemes via physical layer approaches complements and strengthens the current security systems designed by computer scientists, and provides alternative security approach for network scenarios, in which cryptographic key-based security schemes are hard to implement.\n\nThis project has comprehensively exploited physical layer channel dynamics for secret key generation, and designed key generation schemes with guaranteed security. In particular, this project successfully accomplished the following research tasks: designing secret (multi-)key generation schemes that strengthen secure communication protection via physical layer schemes; securing more flexible communication architectures which have less infrastructure such as device-to-device communications; exploring the presence of relay nodes in wireless networks to assist key generation, applying physical layer security approach to providing more general and flexible design for secret sharing over nodes in wireless networks, characterizing the fundamental limit on the performance of key generation and explore optimality of proposed schemes.\n\nIn particular, the study of hierarchical multi-key generation source model concludes the key capacity region characterization for a fundamental problem that has been opened for about ten years. The novel key generation design based on a random binning-joint decoding scheme was further applied to complete solution to multi-key generation problems in cellular source models. Such series of studies on multi-key generation has opened a new direction in the research community. Furthermore, the idea of relay-assisted key generation provides an interesting application of the technique of using relay nodes in wireless networks, and our results demonstrate that such a technique significantly improves the key generation rate. This project also applied information theoretic security techniques to solving two classical security problems: key generation and secret sharing, where information theoretic security offers unique advantages beyond conventional solutions for wireless networks.\n\nBroader Impact:\n\nThe secret key generation schemes designed in this project will greatly facilitate practical implementations of physical layer based security solution for next generation commercial wireless networks. The findings of this project have inspired interdisciplinary interests over the research communities of communication, networks, signal processing, and computer science. This project has partially supported three students including one female student Ruchen Duan. This project has provided the students with a great opportunity to gain knowledge in ..."
+ }
+}

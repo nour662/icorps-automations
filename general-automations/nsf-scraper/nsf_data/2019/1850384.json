@@ -1,0 +1,105 @@
+{
+ "awd_id": "1850384",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: NeTS: The Battle for Bandwidth: Heterogeneous Congestion Control on Today's Internet",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032922935",
+ "po_email": "dmedhi@nsf.gov",
+ "po_sign_block_name": "Deepankar Medhi",
+ "awd_eff_date": "2019-06-01",
+ "awd_exp_date": "2021-11-30",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 175000.0,
+ "awd_min_amd_letter_date": "2019-03-01",
+ "awd_max_amd_letter_date": "2019-03-01",
+ "awd_abstract_narration": "Internet congestion is more and more frequently a challenge in home networks, Internet service providers, enterprises, and cloud datacenters. Where congestion occurs, it introduces packet loss, increases network latency, and slows down throughput for individual connections - all of which contribute to poor performance for applications running over the Internet. A close look at congestion can reveal that there are winners and losers on the Internet: when bandwidth becomes a scarce resource, some senders crowd others out, dominating link capacity and harming the performance of other connections. Analyzing these winners and losers becomes challenging because every Internet service is free to independently determine its sending rate, speeding up to consume more bandwidth or slowing down to share the link, according to the parameters of its congestion control algorithm. Examples of common congestion control (CC) algorithms include NewReno, Cubic, Akamai's FastTCP, and Google's BBR.\r\n\r\nThis proposal aims to understand the state of fair bandwidth allocation given the heterogenous congestion control algorithms in use today. Our project goal is twofold: (1) to measure what CC algorithms are in use 'in the wild' today; and (2) to evaluate each algorithm in controlled experiments in contention with other algorithms. To achieve (1), we will design and implement new techniques to identify and characterize the CC in use for arbitrary Internet services (even when we cannot control the service ourselves). To achieve (2), we propose new frameworks to conduct scientific evaluation of fairness and, where possible, combine our fairness measurements with mathematical models describing our results.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Justine",
+   "pi_last_name": "Sherry",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Justine Sherry",
+   "pi_email_addr": "justines@andrew.cmu.edu",
+   "nsf_id": "000728919",
+   "pi_start_date": "2019-03-01",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Carnegie-Mellon University",
+  "inst_street_address": "5000 FORBES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4122688746",
+  "inst_zip_code": "152133815",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "CARNEGIE MELLON UNIVERSITY",
+  "org_prnt_uei_num": "U3NKNFLNQ613",
+  "org_uei_num": "U3NKNFLNQ613"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Carnegie-Mellon University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152133890",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7363",
+   "pgm_ref_txt": "RES IN NETWORKING TECH & SYS"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 175000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-798bbf29-7fff-c39e-565e-05aae01d7487\">\n<p dir=\"ltr\"><span>When many Internet users share the same connection, the network can become overloaded or &ldquo;congested.&rdquo; When the network is congested, web sites can feel slow and laggy, videos may come through blurry, and downloads may take a long time. However, not everyone experiences slowdowns in the same way: sometimes one user will experience a slow download while another user&rsquo;s network experience doesn&rsquo;t seem slowed down at all. Unequal experiences occur when the network&rsquo;s bandwidth is not shared evenly (or &ldquo;fairly&rdquo;)&nbsp; between different users.</span></p>\n<br />\n<p dir=\"ltr\"><span>Whether or not bandwidth is shared evenly between different senders is determined by computer programs called congestion control algorithms. In the past, most Internet services used the same congestion control algorithm (an algorithm called Reno) and researchers have shown that Reno usually shares bandwidth between different users somewhat fairly. However, in recent years companies have started developing new, sometimes proprietary, congestion control algorithms, and hence we do not know whether or not users are receiving their &ldquo;fair&rdquo; share of the network when they use the Internet.</span></p>\n<br />\n<p dir=\"ltr\"><span>In this initiative, we studied new congestion control algorithms and what happens when Internet connections using different algorithms share the same congested link. The broader impacts of these questions have important implications for the American economy. If some Internet services use algorithms that are more aggressive than others, their services may &ldquo;starve out&rdquo; their competitors by using up more network bandwidth than they should. This negative outcome would undermine the premise of the Internet as an &ldquo;open playing field&rdquo; for any new startup or company. Our work pushes toward a future where Internet services share network resources and any new service has a fair chance at success in the marketplace.</span></p>\n<br />\n<p dir=\"ltr\"><span>Our findings included some of the following outcomes:</span></p>\n<br /><ol>\n<li dir=\"ltr\">\n<p dir=\"ltr\"><span>We studied Google&rsquo;s newest congestion control algorithm, BBR, which is used by YouTube. We found that BBR was unfair when it competed with services using &ldquo;legacy&rdquo; congestion control algorithms such as Reno. In one experiment, we observed one BBR session using 40% of network bandwidth, while 16 other &ldquo;legacy&rdquo; sessions each received less than 4% of network bandwidth each. In conversation with Google engineers, we learned that Google was not aware of this unfairness. Following our findings, they developed a new congestion control algorithm called &ldquo;BBRv2&rdquo; that included new techniques to be more fair to other services. We published this work and presented it to an international audience of researchers at the Internet Measurement Conference in 2019.</span></p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\"><span>We considered how to decide whether or not a new congestion control algorithm is safe to deploy on the Internet. Ideally, all congestion control algorithms would be perfectly fair to each other all of the time. But unfortunately, making this happen in practice has proven to be very difficult, if not impossible. We proposed a new way of thinking about deploying congestion control algorithms based on an idea of &ldquo;harm&rdquo;: we want new algorithms to be deployed on the Internet only if they cause no more harm (or slowdown) to other connections than those connections already experience, given existing congestion control algorithms on the Internet. This work was presented at the Workshop on Hot Topics in Networking in 2019 and was awarded the Internet Research Task Force Applied Networking Research Prize (ANRP) for 2019.</span></p>\n</li>\n<li dir=\"ltr\">\n<p dir=\"ltr\"><span>We explored what happens when thousands of congestion control algorithms compete, like they do at large links between networks in the core of the Internet. We found that some of the models used to understand congestion in homes and enterprises (where there are only tens of connections) don&rsquo;t work very well when thousands of connections compete for bandwidth. Our results were presented to an international audience at the Internet Measurement Conference in 2021.</span></p>\n</li>\n</ol><br /></span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 04/28/2022<br>\n\t\t\t\t\tModified by: Justine&nbsp;Sherry</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\nWhen many Internet users share the same connection, the network can become overloaded or \"congested.\" When the network is congested, web sites can feel slow and laggy, videos may come through blurry, and downloads may take a long time. However, not everyone experiences slowdowns in the same way: sometimes one user will experience a slow download while another user\u2019s network experience doesn\u2019t seem slowed down at all. Unequal experiences occur when the network\u2019s bandwidth is not shared evenly (or \"fairly\")  between different users.\n\n\nWhether or not bandwidth is shared evenly between different senders is determined by computer programs called congestion control algorithms. In the past, most Internet services used the same congestion control algorithm (an algorithm called Reno) and researchers have shown that Reno usually shares bandwidth between different users somewhat fairly. However, in recent years companies have started developing new, sometimes proprietary, congestion control algorithms, and hence we do not know whether or not users are receiving their \"fair\" share of the network when they use the Internet.\n\n\nIn this initiative, we studied new congestion control algorithms and what happens when Internet connections using different algorithms share the same congested link. The broader impacts of these questions have important implications for the American economy. If some Internet services use algorithms that are more aggressive than others, their services may \"starve out\" their competitors by using up more network bandwidth than they should. This negative outcome would undermine the premise of the Internet as an \"open playing field\" for any new startup or company. Our work pushes toward a future where Internet services share network resources and any new service has a fair chance at success in the marketplace.\n\n\nOur findings included some of the following outcomes:\n\n\n\nWe studied Google\u2019s newest congestion control algorithm, BBR, which is used by YouTube. We found that BBR was unfair when it competed with services using \"legacy\" congestion control algorithms such as Reno. In one experiment, we observed one BBR session using 40% of network bandwidth, while 16 other \"legacy\" sessions each received less than 4% of network bandwidth each. In conversation with Google engineers, we learned that Google was not aware of this unfairness. Following our findings, they developed a new congestion control algorithm called \"BBRv2\" that included new techniques to be more fair to other services. We published this work and presented it to an international audience of researchers at the Internet Measurement Conference in 2019.\n\n\nWe considered how to decide whether or not a new congestion control algorithm is safe to deploy on the Internet. Ideally, all congestion control algorithms would be perfectly fair to each other all of the time. But unfortunately, making this happen in practice has proven to be very difficult, if not impossible. We proposed a new way of thinking about deploying congestion control algorithms based on an idea of \"harm\": we want new algorithms to be deployed on the Internet only if they cause no more harm (or slowdown) to other connections than those connections already experience, given existing congestion control algorithms on the Internet. This work was presented at the Workshop on Hot Topics in Networking in 2019 and was awarded the Internet Research Task Force Applied Networking Research Prize (ANRP) for 2019.\n\n\nWe explored what happens when thousands of congestion control algorithms compete, like they do at large links between networks in the core of the Internet. We found that some of the models used to understand congestion in homes and enterprises (where there are only tens of connections) don\u2019t work very well when thousands of connections compete for bandwidth. Our results were presented to an international audience at the Internet Measurement Conference in 2021.\n\n\n\n\n \n\n\t\t\t\t\tLast Modified: 04/28/2022\n\n\t\t\t\t\tSubmitted by: Justine Sherry"
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "awd_id": "1742899",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER:   Characterizing and Accelerating Real-Time IoT Applications using FPGAs",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Erik Brunvand",
+ "awd_eff_date": "2017-08-15",
+ "awd_exp_date": "2019-07-31",
+ "tot_intn_awd_amt": 174881.0,
+ "awd_amount": 174881.0,
+ "awd_min_amd_letter_date": "2017-08-10",
+ "awd_max_amd_letter_date": "2017-08-10",
+ "awd_abstract_narration": "Rapid advances in technology scaling have driven the development of inexpensive sensing platforms with limited compute capabilities. Deployed at the network edge, these platforms enable the instrumentation of the physical world. Using offline analytical pipelines on cloud resources, municipalities have leveraged this data to manage and even improve environmental conditions promoting public health, safety, and quality of life.  However, for emergency scenarios, such as large-scale building fires where network access is limited, relying on off-site cloud resources for real-time analysis of sensor data is impractical.  This project investigates how hardware acceleration can be efficiently integrated into computing platforms at the network edge, enabling the use of real-time analytical pipelines at the edge to create smart, intelligent systems without requiring access to cloud resources.\r\n\r\nThis project addresses the problem of efficiently integrating acceleration within edge devices by characterizing and analyzing the power and performance of real-time workloads with a focus on high-impact applications used by first responders.  Based on this characterization, we are building analytical performance and power models for these emergent workloads.  These models provide insight on prospective hardware acceleration techniques and identify the limits of acceleration given the power constraints for our specific real-time use cases.  Using these models we are integrating Field-Programmable Gate Arrays (FPGAs) into prototype edge devices, developing novel FPGA images for key analytical pipelines within our first responder workloads, and evaluating the power and performance impact within real systems.  This work provides unique insight into the composition of future edge devices to enable real-time analytics.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Matthew",
+   "pi_last_name": "Tolentino",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Matthew Tolentino",
+   "pi_email_addr": "metolent@uw.edu",
+   "nsf_id": "000736928",
+   "pi_start_date": "2017-08-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Washington",
+  "inst_street_address": "4333 BROOKLYN AVE NE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SEATTLE",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "2065434043",
+  "inst_zip_code": "981951016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "WA07",
+  "org_lgl_bus_name": "UNIVERSITY OF WASHINGTON",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HD1WMN6945W6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Washington Tacoma",
+  "perf_str_addr": "1900 Commerce Street, Box 358426",
+  "perf_city_name": "Tacoma",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "984023100",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "WA06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 174881.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project investigated the composition and use of network-connected, battery powered IoT devices for deploying real-time analytics to edge of the network.&nbsp;&nbsp;Our work focused on two primary use case challenges - the integration of traditionally resource-intensive, voice interactive pipelines onto inexpensive edge devices and the development of new dynamically deployable, wearable devices for tracking first responder locations within complex structures during fire events.&nbsp;&nbsp;</p>\n<p>&nbsp;</p>\n<p>For the first challenge, we developed and evaluated new voice interaction pipeline techniques that enabled the use of voice-driven interfaces directly on devices without the need for cloud-based infrastructure. Our experiments revealed the performance impact of our software-only approach was consistent with normal speech patterns without needing to add specialized hardware as we had hypothesized.&nbsp;&nbsp;We further demonstrated that by integrating an adaptive approach that focused on the specific uses of the voice interaction, the system design did not require the inclusion of potentially expensive devices for computational acceleration. &nbsp;</p>\n<p>&nbsp;</p>\n<p>For our second challenge, we developed new localization techniques that leveraged commodity hardware components to build and evaluate a novel new system that enables the dynamic deployment of devices to track first responder personnel during emergency events, such as building fires. Although we did evaluate the inclusion of several acceleration technologies, including FPGAs, into our battery-powered device designs we discovered these were unnecessary to meet the computational requirements of our new, custom localization pipeline.&nbsp;&nbsp;Instead, our system evaluation results showed that with mindful scheduling and system-level pipelining of ranging transactions, we could overlap computation with network-level messaging sufficiently to obviate the need for additional acceleration. &nbsp;</p>\n<p>&nbsp;</p>\n<p>This project involved three undergraduate student research assistants and one graduate-level student research assistant over the duration of the funded work.&nbsp;&nbsp;The three undergraduate students completed their work as part of their Engineering Senior Design Capstones, which were also presented in several venues within the local community.&nbsp;&nbsp;The graduate student completed his Master&rsquo;s degree upon finishing his capstone project.&nbsp;&nbsp;Several papers were published as a result of this work and a patent was filed in August 2019 (US PTO 62/889,976, &ldquo;System for dynamically deployed indoor positioning system and method for self-localization).&nbsp;&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/24/2020<br>\n\t\t\t\t\tModified by: Matthew&nbsp;Tolentino</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project investigated the composition and use of network-connected, battery powered IoT devices for deploying real-time analytics to edge of the network.  Our work focused on two primary use case challenges - the integration of traditionally resource-intensive, voice interactive pipelines onto inexpensive edge devices and the development of new dynamically deployable, wearable devices for tracking first responder locations within complex structures during fire events.  \n\n \n\nFor the first challenge, we developed and evaluated new voice interaction pipeline techniques that enabled the use of voice-driven interfaces directly on devices without the need for cloud-based infrastructure. Our experiments revealed the performance impact of our software-only approach was consistent with normal speech patterns without needing to add specialized hardware as we had hypothesized.  We further demonstrated that by integrating an adaptive approach that focused on the specific uses of the voice interaction, the system design did not require the inclusion of potentially expensive devices for computational acceleration.  \n\n \n\nFor our second challenge, we developed new localization techniques that leveraged commodity hardware components to build and evaluate a novel new system that enables the dynamic deployment of devices to track first responder personnel during emergency events, such as building fires. Although we did evaluate the inclusion of several acceleration technologies, including FPGAs, into our battery-powered device designs we discovered these were unnecessary to meet the computational requirements of our new, custom localization pipeline.  Instead, our system evaluation results showed that with mindful scheduling and system-level pipelining of ranging transactions, we could overlap computation with network-level messaging sufficiently to obviate the need for additional acceleration.  \n\n \n\nThis project involved three undergraduate student research assistants and one graduate-level student research assistant over the duration of the funded work.  The three undergraduate students completed their work as part of their Engineering Senior Design Capstones, which were also presented in several venues within the local community.  The graduate student completed his Master\u2019s degree upon finishing his capstone project.  Several papers were published as a result of this work and a patent was filed in August 2019 (US PTO 62/889,976, \"System for dynamically deployed indoor positioning system and method for self-localization).  \n\n \n\n\t\t\t\t\tLast Modified: 11/24/2020\n\n\t\t\t\t\tSubmitted by: Matthew Tolentino"
+ }
+}

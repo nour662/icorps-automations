@@ -1,0 +1,105 @@
+{
+ "awd_id": "1118096",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TC: Small: New Directions in Encryption",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032928950",
+ "po_email": "rwachter@nsf.gov",
+ "po_sign_block_name": "Ralph Wachter",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2015-07-31",
+ "tot_intn_awd_amt": 495431.0,
+ "awd_amount": 495431.0,
+ "awd_min_amd_letter_date": "2011-07-23",
+ "awd_max_amd_letter_date": "2011-07-23",
+ "awd_abstract_narration": "New application scenarios (most notably arising from cloud computing) have given rise to a host of new security concerns. Unsurprisingly, classical notions of encryption leave much to be desired for dealing with these new application scenarios and concerns. Motivated by these concerns, we develop novel encryption systems that provide vastly greater functionality than classical notions of encryption. In particular, we focus on two broad research directions: Functional encryption and Efficient Secure Encodings of Computation. In functional encryption, instead of encrypting a message to an individual user, one can encrypt a general function f. If a receiving user possesses certain credentials X, then it obtains a secret key SK-X corresponding to those credentials. When this user obtains a ciphertext that is an encryption of f, by applying the decryption algorithm it obtains f(X), and no more.  Efficient Secure Encodings of Computation is a totally new notion that has fundamental applications to novel expressive encryption schemes including functional encryption with public keys (recently introduced by the PI under the terminology ?Worry-Free Encryption?), and most notably controlled Homomorphic Encryption -- where expressive homomorphisms are possible on ciphertexts, but the initial encryptor can control what homomorphisms are allowed.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Amit",
+   "pi_last_name": "Sahai",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Amit Sahai",
+   "pi_email_addr": "sahai@cs.ucla.edu",
+   "nsf_id": "000466921",
+   "pi_start_date": "2011-07-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Los Angeles",
+  "inst_street_address": "10889 WILSHIRE BLVD STE 700",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOS ANGELES",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "3107940102",
+  "inst_zip_code": "900244200",
+  "inst_country_name": "United States",
+  "cong_dist_code": "36",
+  "st_cong_dist_code": "CA36",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, LOS ANGELES",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "RN64EPNH8JC6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Los Angeles",
+  "perf_str_addr": "10889 WILSHIRE BLVD STE 700",
+  "perf_city_name": "LOS ANGELES",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "900244200",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "36",
+  "perf_st_cong_dist": "CA36",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779500",
+   "pgm_ele_name": "TRUSTWORTHY COMPUTING"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7795",
+   "pgm_ref_txt": "TRUSTWORTHY COMPUTING"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 495431.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"p1\"><span class=\"s1\"><strong>Intellectual Merit. </strong>This project, entitled <strong>New Directions in Encryption</strong>, has resulted in fundamental advances in the theory of encryption. Most notably, our work resulted in the first candidate mathematical technique for hiding secrets in software. This work was first published in 2013 at FOCS, where it was also selected for invitation to a special journal issue dedicated to top papers from FOCS 2013. Our work has been hailed as a \"watershed moment for cryptography\" by <em>Quanta</em>, the magazine of the Simons Foundation, and our work was selected as a CACM highlight. Our work has led to hundreds of follow-up research papers, and has established a new field within cryptography. While our work only explores a feasibility result &mdash; it is extremely inefficient, but still asymptotically polynomial-time &mdash; it represents a fundamental new direction of exploration in cryptography.</span></p>\n<p class=\"p2\"><span class=\"s1\">&nbsp;</span></p>\n<p class=\"p1\"><span class=\"s1\">In particular, our 2013 work, and a follow-up paper that appeared at STOC 2014, where it was also selected for invitation to a special journal issue dedicated to top papers from STOC 2014, has led to the popularization of the technical notion known as iO. Informally speaking, the cryptographic object iO can be seen as a &ldquo;pseudo-canonicalizer&rdquo;: Applying iO to a piece of software outputs a new piece of software that acts as a pseudo-canonical form for the software: any equivalent software, if run through the iO transformation, would result in software that is computationally indistinguishable. Before our work, this technical notion was something of a curiosity &mdash; it was not clear what it was good for. After our 2014 work, it has become clear that iO is an extremely powerful cryptographic notion, and indeed much of classical cryptography can be built directly starting from iO and one-way functions.&nbsp;</span></p>\n<p class=\"p2\"><span class=\"s1\">&nbsp;</span></p>\n<p class=\"p1\"><span class=\"s1\"><strong>Broader Impacts. </strong>The technical innovations resulting from this project, including those described above, have been disseminated broadly within the cryptographic research community. Beyond the technical innovations described above, this project has aided in the training of several PhD students and postdoctoral students. This includes three female PhD students.</span></p>\n<p class=\"p2\"><span class=\"s1\">&nbsp;</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/06/2016<br>\n\t\t\t\t\tModified by: Amit&nbsp;Sahai</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "Intellectual Merit. This project, entitled New Directions in Encryption, has resulted in fundamental advances in the theory of encryption. Most notably, our work resulted in the first candidate mathematical technique for hiding secrets in software. This work was first published in 2013 at FOCS, where it was also selected for invitation to a special journal issue dedicated to top papers from FOCS 2013. Our work has been hailed as a \"watershed moment for cryptography\" by Quanta, the magazine of the Simons Foundation, and our work was selected as a CACM highlight. Our work has led to hundreds of follow-up research papers, and has established a new field within cryptography. While our work only explores a feasibility result &mdash; it is extremely inefficient, but still asymptotically polynomial-time &mdash; it represents a fundamental new direction of exploration in cryptography.\n \nIn particular, our 2013 work, and a follow-up paper that appeared at STOC 2014, where it was also selected for invitation to a special journal issue dedicated to top papers from STOC 2014, has led to the popularization of the technical notion known as iO. Informally speaking, the cryptographic object iO can be seen as a \"pseudo-canonicalizer\": Applying iO to a piece of software outputs a new piece of software that acts as a pseudo-canonical form for the software: any equivalent software, if run through the iO transformation, would result in software that is computationally indistinguishable. Before our work, this technical notion was something of a curiosity &mdash; it was not clear what it was good for. After our 2014 work, it has become clear that iO is an extremely powerful cryptographic notion, and indeed much of classical cryptography can be built directly starting from iO and one-way functions. \n \nBroader Impacts. The technical innovations resulting from this project, including those described above, have been disseminated broadly within the cryptographic research community. Beyond the technical innovations described above, this project has aided in the training of several PhD students and postdoctoral students. This includes three female PhD students.\n \n\n \n\n\t\t\t\t\tLast Modified: 03/06/2016\n\n\t\t\t\t\tSubmitted by: Amit Sahai"
+ }
+}

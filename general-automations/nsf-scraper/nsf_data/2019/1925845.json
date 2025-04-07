@@ -1,0 +1,101 @@
+{
+ "awd_id": "1925845",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Hidden Components in Modern Applications",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Gabor Szekely",
+ "awd_eff_date": "2018-07-01",
+ "awd_exp_date": "2020-06-30",
+ "tot_intn_awd_amt": 141781.0,
+ "awd_amount": 141781.0,
+ "awd_min_amd_letter_date": "2019-04-17",
+ "awd_max_amd_letter_date": "2019-04-17",
+ "awd_abstract_narration": "In the era of Big Data, researchers often encounter datasets that are large in size and complex in structure where the information of interest is usually contained in \"components\" hidden in the enormous amount of noise.  Examples include communities in large social networks, topics in text documents, and confounding factors in genome-wide association studies (GWAS).  Extracting these hidden components is an interesting but challenging problem. This project will address these challenges and include applications to many scientific areas including social networks, text mining, genomics, and genetics. The project will include (a) collection of large social networks data, (b) development of new models, methods, and theory for extracting hidden components in network analysis, text mining, and genome-wide association studies, and (c) a study of knowledge discovery using academic research data such as co-authorship and citation relationships. The research will have an impact in linguistics, social sciences, cancer research, and knowledge discovery.  \r\n\r\nThis project aims to develop statistical models, methods, and theory for inferring and utilizing hidden components in complex data, especially matrix data.  The goals of the project include: (1) Development of simple and fast methods for network mixed membership estimation and topic model estimation. These methods, based on nontrivial modifications of Principal Component Analysis (PCA), are easy to implement and can handle very large data. (2) New methods and theory for detecting and estimating rare and weak effects in GWAS.   Problems related to optimal ranking of genes in the presence of complex correlation structures and detection of weak spikes in large covariance matrices will be considered. (3) A study of social network structures of scientific researchers.  The PI and her collaborators will collect meta-information from published articles in representative statistics journals to understand social network structures and other features of the statistics community. (4) Development of new random matrix theory (RMT) for statistical analysis.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Zheng",
+   "pi_last_name": "Ke",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Zheng Ke",
+   "pi_email_addr": "zke@fas.harvard.edu",
+   "nsf_id": "000706016",
+   "pi_start_date": "2019-04-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Harvard University",
+  "inst_street_address": "1033 MASSACHUSETTS AVE STE 3",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6174955501",
+  "inst_zip_code": "021385366",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "MA05",
+  "org_lgl_bus_name": "PRESIDENT AND FELLOWS OF HARVARD COLLEGE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LN53LCFJFL45"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Harvard University",
+  "perf_str_addr": "1033 Massachusetts Avenue",
+  "perf_city_name": "Cambridge",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021385369",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "MA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126900",
+   "pgm_ele_name": "STATISTICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8083",
+   "pgm_ref_txt": "Big Data Science &Engineering"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 141781.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>A common strategy for analyzing complex Big Data is to extract a small number of \"hidden components\": A large social network may be driven by a few communities, a large text corpus may be generated from a few topics, and many genetic and genomic data may contain latent cofounding factors.&nbsp;&nbsp;This project has produced a collection of statistical models, methods, and theory for estimating these \"hidden components\" in various applications.</span></p>\n<p><span>Estimation of latent communities in social networks is of great interest. The mixed membership network models allow a node to belong to multiple communtities via fractional weights. Mixed membership estimation is challenging, because real networks have severe degree heterogeneity. Existing studies only focused on the setting without degree heterogeneity. The PI developed a new algorithm for accurate membership estimation under severe degree heterogeneity. The algorithm uses novel ideas to normalize empirical eigenvectors and to explore the simplex geometry associated with eigenvectors. The algorithm is shown to have a satisfactory rate of convergence. The PI also studied the statistical limits and derived the minimum required signal strengths for mixed membership estimation.&nbsp;</span></p>\n<p>Global testing is another problem of interest in social network analysis. It aims to test whether the network has only 1 community versus multiple communities. The PI proposed a new test that accommodates both degree heterogeneity and mixed memberships, has a tractable null distribution, and attains the optimal phase transition. This test was applied to ego-coauthorship-networks to measure the coauthorshp diversity of individual authors.</p>\n<p><span>Statistical text mining has received much recent attention. The celebrated <em>topic model</em> imposes a low-rank nonnegative factorization on the word-document-count matrix, where the left factors (a.k.a., topic vectors) are the quantity of interest. Existing methods for topic estimation use either Bayesian approaches or optimization approaches. There was little investigation on spectral methods. The PI proposed a new spectral method for topic estimation. The novelty lies on (i) discovery of an explicit connection between singular vectors and topic vectors, (ii) a pre-SVD normalization that suppresses the frequency heterogeneity of words and leads to a faster rate of convergence, and (iii) a post-SVD normalization that generates a simplex geometry on singular vectors. It is the first spectral method for topic estimation and enjoys a faster rate of convergence compared with several existing methods. The PI also studied the lower bound for topic estimation and showed that the new algorithm is rate optimal. The theoretical analysis motivated new random matrix theory for multinomial count matrices, especially the entry-wise large-deviation bounds for eigenvectors.&nbsp;</span></p>\n<p><span>Joint modeling of text documents and other data sources is of great interest. In an application of finance, the PI proposed a joint model for Wall Street news articles and stock returns. The model on news articles is a topic model with 2 topics, \"positive tone\" and \"negative tone\", and the topic weight vector of a news article is linked to its \"sentiment\". The \"sentiment\" is also used to model stock returns. Based on this model, the PI proposed a method for sentiment scoring of news articles and prediction of stock returns. The empirical studies demonstrated the grate advantage of this method over existing sentiment analysis methods (including those provided by commercial vendors).&nbsp;</span></p>\n<p><span>In genetics and bioinformatics, the signals are often rare (or sparse) and weak. It is challenging to detect and estimate these rare and weak signals. The PI studied a high-dimensional clustering setting, where only a small fraction of features are useful for clustering and the signals in each individual feature is extremely weak. The PI introduced several new clustering methods that explore feature sparsity, compared their rates of convergence, and derived the phase transitions for clustering and related problems. The PI also studied the spiked covariance model which has a small number of spiked eigenvalues corresponding to unobservable latent factors. The spiked eigenvalues are weak, hence, hard to detect and estimate. The PI developed new methods for global testing and estimation of the number of spikes under this setting.&nbsp;</span></p>\n<p><span>This project has also produced a new data set. This data set was collected and cleaned by the PI and collaborators, with enormous efforts. It consists of the bibtex and citation information of 83K papers published in 36 statistics journals from 1975 to 2015. The data set provides valuable material for social science and bibliometrics, especially the study of trends, patterns, network topology, and research interest evolution of the academic statistical society. The data set is also useful for assessing the real performance of methods for network data analysis and text mining.&nbsp; &nbsp;</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/27/2021<br>\n\t\t\t\t\tModified by: Zheng&nbsp;Ke</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nA common strategy for analyzing complex Big Data is to extract a small number of \"hidden components\": A large social network may be driven by a few communities, a large text corpus may be generated from a few topics, and many genetic and genomic data may contain latent cofounding factors.  This project has produced a collection of statistical models, methods, and theory for estimating these \"hidden components\" in various applications.\n\nEstimation of latent communities in social networks is of great interest. The mixed membership network models allow a node to belong to multiple communtities via fractional weights. Mixed membership estimation is challenging, because real networks have severe degree heterogeneity. Existing studies only focused on the setting without degree heterogeneity. The PI developed a new algorithm for accurate membership estimation under severe degree heterogeneity. The algorithm uses novel ideas to normalize empirical eigenvectors and to explore the simplex geometry associated with eigenvectors. The algorithm is shown to have a satisfactory rate of convergence. The PI also studied the statistical limits and derived the minimum required signal strengths for mixed membership estimation. \n\nGlobal testing is another problem of interest in social network analysis. It aims to test whether the network has only 1 community versus multiple communities. The PI proposed a new test that accommodates both degree heterogeneity and mixed memberships, has a tractable null distribution, and attains the optimal phase transition. This test was applied to ego-coauthorship-networks to measure the coauthorshp diversity of individual authors.\n\nStatistical text mining has received much recent attention. The celebrated topic model imposes a low-rank nonnegative factorization on the word-document-count matrix, where the left factors (a.k.a., topic vectors) are the quantity of interest. Existing methods for topic estimation use either Bayesian approaches or optimization approaches. There was little investigation on spectral methods. The PI proposed a new spectral method for topic estimation. The novelty lies on (i) discovery of an explicit connection between singular vectors and topic vectors, (ii) a pre-SVD normalization that suppresses the frequency heterogeneity of words and leads to a faster rate of convergence, and (iii) a post-SVD normalization that generates a simplex geometry on singular vectors. It is the first spectral method for topic estimation and enjoys a faster rate of convergence compared with several existing methods. The PI also studied the lower bound for topic estimation and showed that the new algorithm is rate optimal. The theoretical analysis motivated new random matrix theory for multinomial count matrices, especially the entry-wise large-deviation bounds for eigenvectors. \n\nJoint modeling of text documents and other data sources is of great interest. In an application of finance, the PI proposed a joint model for Wall Street news articles and stock returns. The model on news articles is a topic model with 2 topics, \"positive tone\" and \"negative tone\", and the topic weight vector of a news article is linked to its \"sentiment\". The \"sentiment\" is also used to model stock returns. Based on this model, the PI proposed a method for sentiment scoring of news articles and prediction of stock returns. The empirical studies demonstrated the grate advantage of this method over existing sentiment analysis methods (including those provided by commercial vendors). \n\nIn genetics and bioinformatics, the signals are often rare (or sparse) and weak. It is challenging to detect and estimate these rare and weak signals. The PI studied a high-dimensional clustering setting, where only a small fraction of features are useful for clustering and the signals in each individual feature is extremely weak. The PI introduced several new clustering methods that explore feature sparsity, compared their rates of convergence, and derived the phase transitions for clustering and related problems. The PI also studied the spiked covariance model which has a small number of spiked eigenvalues corresponding to unobservable latent factors. The spiked eigenvalues are weak, hence, hard to detect and estimate. The PI developed new methods for global testing and estimation of the number of spikes under this setting. \n\nThis project has also produced a new data set. This data set was collected and cleaned by the PI and collaborators, with enormous efforts. It consists of the bibtex and citation information of 83K papers published in 36 statistics journals from 1975 to 2015. The data set provides valuable material for social science and bibliometrics, especially the study of trends, patterns, network topology, and research interest evolution of the academic statistical society. The data set is also useful for assessing the real performance of methods for network data analysis and text mining.   \n\n \n\n\t\t\t\t\tLast Modified: 08/27/2021\n\n\t\t\t\t\tSubmitted by: Zheng Ke"
+ }
+}

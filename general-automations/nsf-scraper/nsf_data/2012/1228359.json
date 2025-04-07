@@ -1,0 +1,117 @@
+{
+ "awd_id": "1228359",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "A Model Reduction Approach to Stochastic PDEs: Forward Uncertainty Propagation and Stochastic Homogenization",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Leland Jameson",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 448994.0,
+ "awd_amount": 448994.0,
+ "awd_min_amd_letter_date": "2012-08-29",
+ "awd_max_amd_letter_date": "2012-08-29",
+ "awd_abstract_narration": "This project seeks to develop a new theory, algorithms, and computational tools to enable a linearly scalable characterization and solution of partial differential equations (PDEs) with high-dimensional random inputs. In realistic situations where the dynamics of a system is intrinsically variable or understanding of the underlying physical laws is incomplete, there is a need to represent and quantify the impact of such uncertainties on quantities of interest. A fundamental difficulty arises when the number of independent sources of uncertainty is large. In these situations, standard approaches to the solution of PDEs with uncertain inputs encounter an exponential growth of computational complexity, i.e., the so-called curse-of-dimensionality. The proposed effort tackles this issue through a new approach to stochastic model reduction based on low-rank separated representation of multi-variate solutions. Both reduced-order characterization, via numerical homogenization, and forward propagation of uncertainties will be considered. While this approach is applicable to a wide variety of stochastic PDE-based models, this project is primarily focused on the solution of nonlinear, advection-reaction-diffusion equations with high-dimensional stochastic velocity and diffusion fields. \r\n\r\nOne of the major problems of interest in science and engineering is the prediction of multi-scale and multi-physics systems with high-dimensional uncertainties. Examples are common in combustion, energy storage systems, fusion energy, among others. The new numerical techniques of this award, based upon recent ideas from nonlinear, multi-linear, and sparse approximation of functions with many variables, will significantly advance the state-of-the-art in computer simulation of such problems. To further broaden the impact of this project, the PIs will develop graduate level service courses to introduce the new uncertainty quantification methods to researchers working on complex systems.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Alireza",
+   "pi_last_name": "Doostan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Alireza Doostan",
+   "pi_email_addr": "doostan@colorado.edu",
+   "nsf_id": "000558703",
+   "pi_start_date": "2012-08-29",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Gregory",
+   "pi_last_name": "Beylkin",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Gregory Beylkin",
+   "pi_email_addr": "gregory.beylkin@colorado.edu",
+   "nsf_id": "000123460",
+   "pi_start_date": "2012-08-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Colorado at Boulder",
+  "inst_street_address": "3100 MARINE ST",
+  "inst_street_address_2": "STE 481 572 UCB",
+  "inst_city_name": "Boulder",
+  "inst_state_code": "CO",
+  "inst_state_name": "Colorado",
+  "inst_phone_num": "3034926221",
+  "inst_zip_code": "803090001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "CO02",
+  "org_lgl_bus_name": "THE REGENTS OF THE UNIVERSITY OF COLORADO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "SPVKK1RC2MZ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Colorado at Boulder",
+  "perf_str_addr": "572 UCB",
+  "perf_city_name": "Boulder",
+  "perf_st_code": "CO",
+  "perf_st_name": "Colorado",
+  "perf_zip_code": "803090572",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "CO02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806900",
+   "pgm_ele_name": "CDS&E-MSS"
+  },
+  {
+   "pgm_ele_code": "808400",
+   "pgm_ele_name": "CDS&E"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 448994.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Modeling, design, and optimization of complex engineering systems of multi-scale and multi-physics nature deals with approximations of the target phenomena and many uncertainties due to lack of knowledge and inherent variability. Realistic analysis and design of such systems requires not only an accurate resolution of the underlying physics but also an account of uncertainties and their influences on quantities of interest (QoI&rsquo;s). The formal assessment of the prediction capability of a simulation model is known as validation and verification (V&amp;V). Within V&amp;V, uncertainty quantification (UQ) addresses several issues: &nbsp;assimilation of parameters of mathematical models (or often models themselves) based on limited observations; efficient propagation of model uncertainties to estimate uncertainties in QoI&rsquo;s; comparison of model predictions with often limited experimental data.</p>\n<p>An accurate representation of uncertainty in many multi-scale and multi-physics problems, such as those involving transport in heterogeneous media or turbulent flows, requires inclusion of many independent uncertain parameters. One of the grand challenges in UQ and V&amp;V of such systems is the so-called curse-of-dimensionality, where the computational cost of standard techniques grows too fast (i.e., exponentially) with respect to the number of parameters. This project has developed new algorithms and computational tools to enable a linearly scalable propagation of uncertainty by exploiting a particular structure in the map between model parameters and the QoI. Specifically, solutions to a large class of problems can be well approximated in terms of a sum of products of (unknown) univariate functions of those inputs, known as separated representation. The work-horse algorithm to obtain such representations consists in a sequence of optimization problems with cost that grows linearly in the number of such inputs. However, there are situations where these optimization problems may lead to inaccurate solutions and poor convergence as a consequence of a so-called ill-conditioning. Also, another problem with standard constructions of separated representations is that they may require a large number of model evaluations making simulations too expensive.</p>\n<p>Addressing the ill-conditioning issue, we have designed a new optimization procedure based on the so-called random projections. We verified, both theoretically and empirically, that it eliminates completely or reduces considerably the ill-conditioning, and, consequently, improves the convergence of the approximation. At the same time, it preserves the linear scalability of the original scheme.</p>\n<p>To ensure that an accurate separated representation is constructed from a relatively small number of model evaluations, we have developed optimal sampling techniques that randomly select values of input uncertainties at which the model is evaluated. The sampling is done in a manner that ensures a multi-variate polynomial approximation of the QoI minimizes ill-conditioning as compared to alternative random sampling strategies, thus leading to a considerable reduction of the number of model evaluations.</p>\n<p>&nbsp;</p>\n<p>In many engineering applications the global extrema of a QoI are used for reliability purposes. An important question is then &ldquo;how such extrema can be identified with a reasonable computational cost?&rdquo; One of the main research directions of this project was focused on answering this question when the relation between input parameters and the quantity of interest is approximated by a separated representation. In particular, we have proposed, analyzed, and numerically verified a new, quadratically convergent algorithm for finding global extrema of a multivariate function in a separated form. In contrast to standard algorithms, the new algorithm runs with a computational cost that grows linearly in the dimension of the underlying function and can identify global extrema in the presence of many local ones. Given its ability in rapidly identifying global extrema of functions, this algorithm is expected to facilitated the design optimization of a wide range of complex systems.</p>\n<p>&nbsp;</p>\n<p>A major problem of interest in science and engineering is the prediction of behavior of multi-scale and multi-physics systems with high-dimensional uncertainties. Examples of such systems are common in combustion, energy storage systems, fusion energy, among others. The new numerical techniques developed in this project significantly advance the state-of-the-art in computer simulation, prediction, and optimization for such problems.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/29/2016<br>\n\t\t\t\t\tModified by: Alireza&nbsp;Doostan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nModeling, design, and optimization of complex engineering systems of multi-scale and multi-physics nature deals with approximations of the target phenomena and many uncertainties due to lack of knowledge and inherent variability. Realistic analysis and design of such systems requires not only an accurate resolution of the underlying physics but also an account of uncertainties and their influences on quantities of interest (QoI?s). The formal assessment of the prediction capability of a simulation model is known as validation and verification (V&amp;V). Within V&amp;V, uncertainty quantification (UQ) addresses several issues:  assimilation of parameters of mathematical models (or often models themselves) based on limited observations; efficient propagation of model uncertainties to estimate uncertainties in QoI?s; comparison of model predictions with often limited experimental data.\n\nAn accurate representation of uncertainty in many multi-scale and multi-physics problems, such as those involving transport in heterogeneous media or turbulent flows, requires inclusion of many independent uncertain parameters. One of the grand challenges in UQ and V&amp;V of such systems is the so-called curse-of-dimensionality, where the computational cost of standard techniques grows too fast (i.e., exponentially) with respect to the number of parameters. This project has developed new algorithms and computational tools to enable a linearly scalable propagation of uncertainty by exploiting a particular structure in the map between model parameters and the QoI. Specifically, solutions to a large class of problems can be well approximated in terms of a sum of products of (unknown) univariate functions of those inputs, known as separated representation. The work-horse algorithm to obtain such representations consists in a sequence of optimization problems with cost that grows linearly in the number of such inputs. However, there are situations where these optimization problems may lead to inaccurate solutions and poor convergence as a consequence of a so-called ill-conditioning. Also, another problem with standard constructions of separated representations is that they may require a large number of model evaluations making simulations too expensive.\n\nAddressing the ill-conditioning issue, we have designed a new optimization procedure based on the so-called random projections. We verified, both theoretically and empirically, that it eliminates completely or reduces considerably the ill-conditioning, and, consequently, improves the convergence of the approximation. At the same time, it preserves the linear scalability of the original scheme.\n\nTo ensure that an accurate separated representation is constructed from a relatively small number of model evaluations, we have developed optimal sampling techniques that randomly select values of input uncertainties at which the model is evaluated. The sampling is done in a manner that ensures a multi-variate polynomial approximation of the QoI minimizes ill-conditioning as compared to alternative random sampling strategies, thus leading to a considerable reduction of the number of model evaluations.\n\n \n\nIn many engineering applications the global extrema of a QoI are used for reliability purposes. An important question is then \"how such extrema can be identified with a reasonable computational cost?\" One of the main research directions of this project was focused on answering this question when the relation between input parameters and the quantity of interest is approximated by a separated representation. In particular, we have proposed, analyzed, and numerically verified a new, quadratically convergent algorithm for finding global extrema of a multivariate function in a separated form. In contrast to standard algorithms, the new algorithm runs with a computational cost that grows linearly in the dimension of the underlying function and can identify global extrema in the presence of many local ones. Given its ability in rapidly identifying global extrema of functions, this algorithm is expected to facilitated the design optimization of a wide range of complex systems.\n\n \n\nA major problem of interest in science and engineering is the prediction of behavior of multi-scale and multi-physics systems with high-dimensional uncertainties. Examples of such systems are common in combustion, energy storage systems, fusion energy, among others. The new numerical techniques developed in this project significantly advance the state-of-the-art in computer simulation, prediction, and optimization for such problems. \n\n \n\n\t\t\t\t\tLast Modified: 11/29/2016\n\n\t\t\t\t\tSubmitted by: Alireza Doostan"
+ }
+}

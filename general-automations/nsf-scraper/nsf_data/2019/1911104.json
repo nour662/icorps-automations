@@ -1,0 +1,113 @@
+{
+ "awd_id": "1911104",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CNS Core: Small: Designing Efficient Cloud Datacenter Network Fabrics",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Darleen Fisher",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2023-08-31",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 500000.0,
+ "awd_min_amd_letter_date": "2019-08-05",
+ "awd_max_amd_letter_date": "2019-08-05",
+ "awd_abstract_narration": "Cloud datacenter networks are tasked with providing connectivity between an ever-increasing number of end hosts whose link rates improve by orders of magnitude every few years.  What network operators would ideally like is a single, full-bandwidth switch that could connect every endpoint at full rate.  Such an idealized network would enable them to place jobs and data where it is convenient, without worrying about bandwidth bottlenecks, hotspots, and other network-induced limitations.  Unfortunately, preserving this ``big-switch'' illusion of a single network with full bandwidth is increasingly cost prohibitive and likely soon infeasible.\r\n\r\nThis project will explore an alternative method of constructing datacenter network fabrics based upon a provably optimal topological construct, an expander graph.  If successful, the project will result in network fabrics that are more flexible, capable, and scalable than existing state-of-the-art approaches.  This project will develop a family of cloud datacenter network topologies based on expander graphs that eliminate the capacity bottlenecks inherent in hierarchical Clos-based topologies while minimizing the bandwidth tax incurred due to indirect routing.  A single, large expander-graph network topology can be constructed out of multiple, disjoint expander graphs; this project will show how judicious tenant placement can then provide both isolation and dynamic capacity while minimizing the bandwidth tax.  Moreover, by employing reconfigurable network components (i.e., circuit switches), it is even possible to evolve the set of constituent expander graphs over various time scales, allowing cloud datacenter operators to better suit the needs of their current tenants. Indeed, if the timescales are sufficiently small (e.g., 100s of milliseconds) tenants may then choose to buffer traffic until a particularly favorable (set of) path(s) is available, further decreasing the overall bandwidth inefficiency or \"tax\". If the network topology evolves at a rapid rate, it is possible to choose, on a per-packet basis, whether to either (1) immediately send a packet over whatever static expander is currently instantiated, incurring a modest tax on this small fraction of traffic, or (2) buffer the packet and wait until a direct link is established to the ultimate destination, eliminating the bandwidth tax on the vast majority of bytes.\r\n\r\nThis project will engage graduate and undergraduate students through structured courses, intense mentorship, and hands-on research activities through participation in the NSF-funded UC San Diego Early Research Scholars Program (ERSP).\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Alex",
+   "pi_last_name": "Snoeren",
+   "pi_mid_init": "C",
+   "pi_sufx_name": "",
+   "pi_full_name": "Alex C Snoeren",
+   "pi_email_addr": "snoeren@cs.ucsd.edu",
+   "nsf_id": "000482412",
+   "pi_start_date": "2019-08-05",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "George",
+   "pi_last_name": "Porter",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "George Porter",
+   "pi_email_addr": "gmporter@cs.ucsd.edu",
+   "nsf_id": "000553493",
+   "pi_start_date": "2019-08-05",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-San Diego",
+  "inst_street_address": "9500 GILMAN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "LA JOLLA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8585344896",
+  "inst_zip_code": "920930021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "UYTTZT6G9DT1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-San Diego",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920930404",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 500000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>Cloud datacenter networks are tasked with providing connectivity between an ever-increasing number of end hosts whose link rates improve by orders of magnitude every few years. &nbsp;</span>Unfortunately the speed of individual datacenter switches and routers has not kept pace with the increases in bandwidth at the end points, meaning that it isn't possible to directly upgrade the network as in the past.&nbsp; This project sought to explore alternative network design paradigms that can improve the performance of future datacenter network fabrics.&nbsp; Concretely, we considered the potential of&nbsp;topologies based on expander graphs that eliminate the capacity bottlenecks inherent in today's hierarchical Clos-based topologies.</p>\n<p>Our efforts resulted in multiple major publications each containing significant research results.&nbsp; Two of the major outcomes are described in two papers, one that appeared at CoNEXT 2022 and another at SIGCOMM 2022.</p>\n<p>In our CoNEXT 2022 paper we observe that modern datacenter operators are deploying&nbsp; parallel fabric designs in the core of the network that deliver &#119873;-times the bandwidth by simply forwarding traffic over any of &#119873; parallel network fabrics. In our work, we considered extending this parallel network idea all the way to the end host, and leveraging the fact that there are now multiple networks to deploy <em>heterogeneous</em> parallel network fabrics that can deliver even higher bandwidth, lower latency, and improved resiliency than traditional designs constructed from the same constituent components.</p>\n<p>Our initial studies found that direct application of existing path selection and forwarding techniques resulted in poor performance. Instead, we showed that appropriate path selection and forwarding protocols can not only improve the performance of existing, homogeneous parallel fabrics, but fully realize the potential of heterogenous fabrics.</p>\n<p>Our SIGCOMM 2022 builds on the theme, but considers the challenges of an alternate approach where, rather than deploying multiple, heterogenous networks in parallel, an operator constructs a single network that is&nbsp;reconfigurable--i.e., the set of connects can vary over time.&nbsp; Prior research has shown that providing multiple time-varying paths can improve network capacity and lower physical latency. However, our work shows that existing TCP variants are ill-suited to utilize available capacity because their congestion control cannot react quickly enough to drastic variations in bandwidth and latency. We developed Time-division TCP (TDTCP), a new TCP variant designed for reconfigurable data center networks. TDTCP recognizes that communication in these fabrics happens over a set of paths, each having its own physical characteristics and cross traffic. TDTCP multiplexes each connection across multiple independent congestion states--one for each distinct path--while managing connection-wide tasks in a shared fashion.&nbsp; It leverages network support to receive timely notification of path changes and promptly matches its local view to the current path. We implementedTDTCP in the Linux kernel. Results on an emulated network show that TDTCP improves throughput over both traditional TCP variants, such as DCTCP and CUBIC, and multipath TCP by 24-41% without requiring significant in-network buffering to hide path variations.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/11/2023<br>\n\t\t\t\t\tModified by: Alex&nbsp;C&nbsp;Snoeren</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nCloud datacenter networks are tasked with providing connectivity between an ever-increasing number of end hosts whose link rates improve by orders of magnitude every few years.  Unfortunately the speed of individual datacenter switches and routers has not kept pace with the increases in bandwidth at the end points, meaning that it isn't possible to directly upgrade the network as in the past.  This project sought to explore alternative network design paradigms that can improve the performance of future datacenter network fabrics.  Concretely, we considered the potential of topologies based on expander graphs that eliminate the capacity bottlenecks inherent in today's hierarchical Clos-based topologies.\n\nOur efforts resulted in multiple major publications each containing significant research results.  Two of the major outcomes are described in two papers, one that appeared at CoNEXT 2022 and another at SIGCOMM 2022.\n\nIn our CoNEXT 2022 paper we observe that modern datacenter operators are deploying  parallel fabric designs in the core of the network that deliver &#119873;-times the bandwidth by simply forwarding traffic over any of &#119873; parallel network fabrics. In our work, we considered extending this parallel network idea all the way to the end host, and leveraging the fact that there are now multiple networks to deploy heterogeneous parallel network fabrics that can deliver even higher bandwidth, lower latency, and improved resiliency than traditional designs constructed from the same constituent components.\n\nOur initial studies found that direct application of existing path selection and forwarding techniques resulted in poor performance. Instead, we showed that appropriate path selection and forwarding protocols can not only improve the performance of existing, homogeneous parallel fabrics, but fully realize the potential of heterogenous fabrics.\n\nOur SIGCOMM 2022 builds on the theme, but considers the challenges of an alternate approach where, rather than deploying multiple, heterogenous networks in parallel, an operator constructs a single network that is reconfigurable--i.e., the set of connects can vary over time.  Prior research has shown that providing multiple time-varying paths can improve network capacity and lower physical latency. However, our work shows that existing TCP variants are ill-suited to utilize available capacity because their congestion control cannot react quickly enough to drastic variations in bandwidth and latency. We developed Time-division TCP (TDTCP), a new TCP variant designed for reconfigurable data center networks. TDTCP recognizes that communication in these fabrics happens over a set of paths, each having its own physical characteristics and cross traffic. TDTCP multiplexes each connection across multiple independent congestion states--one for each distinct path--while managing connection-wide tasks in a shared fashion.  It leverages network support to receive timely notification of path changes and promptly matches its local view to the current path. We implementedTDTCP in the Linux kernel. Results on an emulated network show that TDTCP improves throughput over both traditional TCP variants, such as DCTCP and CUBIC, and multipath TCP by 24-41% without requiring significant in-network buffering to hide path variations.\n\n\t\t\t\t\tLast Modified: 10/11/2023\n\n\t\t\t\t\tSubmitted by: Alex C Snoeren"
+ }
+}

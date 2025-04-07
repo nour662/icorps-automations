@@ -1,0 +1,129 @@
+{
+ "awd_id": "1657530",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: SaTC: Repairing Code from Inferred Specifications of Information Flow Security",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2017-03-01",
+ "awd_exp_date": "2019-02-28",
+ "tot_intn_awd_amt": 174974.0,
+ "awd_amount": 182974.0,
+ "awd_min_amd_letter_date": "2017-02-22",
+ "awd_max_amd_letter_date": "2017-10-20",
+ "awd_abstract_narration": "As more software computes using sensitive user data, it increasingly important to ensure that data flows only where it is permitted. Protecting sensitive data often involves reasoning about how sensitive values and policies are interacting with functionality across the program. The need to reason across the code base makes it difficult not only for programmers to implement computations using sensitive data, but also to make existing code adhere to new policies. This project investigates an approach for (1) inferring information flow policies from potentially buggy code and (2) performing program repair to ensure programs adhere to the specified policies. Not only does this approach help identify potential misuses of sensitive information, but it also helps prevent leaks in code from well-intentioned programmers, and provides a mechanism for modifying arbitrary code to satisfy a given policy.\r\n\r\nEnabling this approach is a policy-agnostic semantic model, developed to disentangle information flow concerns from other functionality. Using policy-agnostic programming, the programmer may implement information flow policies by specifying them alongside sensitive data values, rather than implementing them as conditional access checks across the program. Prior work on Lifty supports policy-agnostic programming using type-driven repair, based on program synthesis for liquid types, which are value-dependent refinement types. Previously, programs could only benefit from policy-agnostic programming if the policies are known, but this is not always the case with existing code. We propose an approach for inferring liquid types from potentially buggy code. The inferred types now make it possible to perform sound repair. Representing the inferred policies as liquid types also facilitates modification of the policies. The proposal describes both a strategy for inferring a set of possible policies, and a solution for choosing which policies to use for repair.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jean",
+   "pi_last_name": "Yang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jean Yang",
+   "pi_email_addr": "jyang2@cs.cmu.edu",
+   "nsf_id": "000704214",
+   "pi_start_date": "2017-02-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Carnegie-Mellon University",
+  "inst_street_address": "5000 FORBES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4122688746",
+  "inst_zip_code": "152133815",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "CARNEGIE MELLON UNIVERSITY",
+  "org_prnt_uei_num": "U3NKNFLNQ613",
+  "org_uei_num": "U3NKNFLNQ613"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Carnegie-Mellon University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152133890",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  },
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  },
+  {
+   "pgm_ref_code": "9178",
+   "pgm_ref_txt": "UNDERGRADUATE EDUCATION"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 174974.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 8000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this project was to make progress towards characterizing the information flow security properties of legacy systems. The problem setup is this: given a piece of software that has already been written, we want to be able to automatically infer the information flow security policies it may be enforcing on sensitive values in the program. There are two reasons to do this. First, software is often the only documentation of desired data usage policies, so characterizing the implemented policies is helpful for uniformity of policy enforcement across a system. Second, inferring policies&nbsp;</p>\n<p>In pursuing this project, we focused on developing approaches for verifying programs for information flow security properties using liquid types, a kind of refinement type that supports decidable type-checking and type inference. Refinement types are types that depend on program terms: a simple type is something like \"integer,\" while a refinement type can mean something like \"an integer such that Alice is allowed to see it.\" In prior work, we showed that we can use liquid types to encode high-level information flow security properties. For this project, we became interested in liquid types because of the decidable type inference property: being able to decidably infer types representing information flow security policies means that we can extract meaningful high-level security properties from existing code.</p>\n<p>Towards supporting the inference of information security properties for realistic programs, we focused on two dimensions of reality: 1) imperative programs and 2) database-backed programs. For the first direction, we developed an information flow type system for a simple imperative language and demonstrated the practicality by implementing it on top of Flow, Facebook's type-checker for JavaScript. For the second direction, we developed an approach for automated, decidable verification of information flow properties across the application and database. We implemented this approach in Haskell, on top of Liquid Haskell and the Yesod web framework. We are preparing a paper on the first direction and finishing up work on the second direction.</p>\n<p>While there are many more questions to answer, this work lays the foundation for automatically inferring high-level information flow security properties from existing software programs using refinement types. We've shown that it's possible to infer information flow security policies from more realistic programs than purely functional, strongly statically typed programs. The next step would be to develop heuristics for automatically identifying sensitive values and identifying potentially buggy policy implementations. Once we have all this, we will be closer to automated solutions for ensuring that software properly protects sensitive data.</p>\n<p>This project involved the training of one PhD student and three undergraduate students. Two of the undergraduate students came from underrepresented groups.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/12/2019<br>\n\t\t\t\t\tModified by: Jean&nbsp;Yang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of this project was to make progress towards characterizing the information flow security properties of legacy systems. The problem setup is this: given a piece of software that has already been written, we want to be able to automatically infer the information flow security policies it may be enforcing on sensitive values in the program. There are two reasons to do this. First, software is often the only documentation of desired data usage policies, so characterizing the implemented policies is helpful for uniformity of policy enforcement across a system. Second, inferring policies \n\nIn pursuing this project, we focused on developing approaches for verifying programs for information flow security properties using liquid types, a kind of refinement type that supports decidable type-checking and type inference. Refinement types are types that depend on program terms: a simple type is something like \"integer,\" while a refinement type can mean something like \"an integer such that Alice is allowed to see it.\" In prior work, we showed that we can use liquid types to encode high-level information flow security properties. For this project, we became interested in liquid types because of the decidable type inference property: being able to decidably infer types representing information flow security policies means that we can extract meaningful high-level security properties from existing code.\n\nTowards supporting the inference of information security properties for realistic programs, we focused on two dimensions of reality: 1) imperative programs and 2) database-backed programs. For the first direction, we developed an information flow type system for a simple imperative language and demonstrated the practicality by implementing it on top of Flow, Facebook's type-checker for JavaScript. For the second direction, we developed an approach for automated, decidable verification of information flow properties across the application and database. We implemented this approach in Haskell, on top of Liquid Haskell and the Yesod web framework. We are preparing a paper on the first direction and finishing up work on the second direction.\n\nWhile there are many more questions to answer, this work lays the foundation for automatically inferring high-level information flow security properties from existing software programs using refinement types. We've shown that it's possible to infer information flow security policies from more realistic programs than purely functional, strongly statically typed programs. The next step would be to develop heuristics for automatically identifying sensitive values and identifying potentially buggy policy implementations. Once we have all this, we will be closer to automated solutions for ensuring that software properly protects sensitive data.\n\nThis project involved the training of one PhD student and three undergraduate students. Two of the undergraduate students came from underrepresented groups.\n\n\t\t\t\t\tLast Modified: 05/12/2019\n\n\t\t\t\t\tSubmitted by: Jean Yang"
+ }
+}

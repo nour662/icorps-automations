@@ -1,0 +1,105 @@
+{
+ "awd_id": "1909467",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CHS: Small: A wave optics foundation for predictive materials in computer graphics",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Ephraim Glinert",
+ "awd_eff_date": "2019-07-15",
+ "awd_exp_date": "2023-06-30",
+ "tot_intn_awd_amt": 499763.0,
+ "awd_amount": 499763.0,
+ "awd_min_amd_letter_date": "2019-08-14",
+ "awd_max_amd_letter_date": "2019-08-14",
+ "awd_abstract_narration": "Simulating how light reflects from surfaces is crucial to rendering realistic computer-generated images. Rendering is increasingly being used in applications, from product design to advertising to mass customization, that require representations of specific materials that are accurate enough to use for design and purchasing decisions, but current research on increasing accuracy and detail in reflection models is running up against fundamental limits of the ray optics approach that is traditionally used in computer graphics.  This research aims to build a new foundation for materials in computer graphics based on the more accurate physics of wave optics, creating a new set of reflectance modeling tools that can be used to make existing models more accurate and to develop new models where they are needed. Renderings that can truly predict the appearance of new materials from their physical structure will have broad impact by enabling new and deeper integration of computer graphics into design, engineering, and manufacturing.\r\n\r\nNew applications of computer graphics increasingly require models that can accurately predict light scattering based on information about the small-scale structure and optical properties of a material. In a great many cases these predictive models cannot be obtained using the traditional ray (geometric) optics approach, because materials have geometric structure at scales that overlap with the wavelengths of visible light. On the other hand, the traditional models developed for animation, visual effects, and games can effectively describe, though not predict, the appearance of many materials. These models need not be abandoned to achieve predictive appearance modeling, but principled ways to get from material descriptions to model parameters are needed.  This work will put appearance models for graphics on a solid foundation of wave optics simulations that will clearly establish which materials can be accurately modeled using traditional models directly, which require adjustments to the parameters of those models, and which require new or generalized models to be able to render them adequately. Methods for finding model parameters to match given structures will be developed, as well as new models for phenomena that can't be described by existing ones.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Steve",
+   "pi_last_name": "Marschner",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Steve Marschner",
+   "pi_email_addr": "srm@cs.cornell.edu",
+   "nsf_id": "000302708",
+   "pi_start_date": "2019-08-14",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Cornell University",
+  "inst_street_address": "341 PINE TREE RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "ITHACA",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6072555014",
+  "inst_zip_code": "148502820",
+  "inst_country_name": "United States",
+  "cong_dist_code": "19",
+  "st_cong_dist_code": "NY19",
+  "org_lgl_bus_name": "CORNELL UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "G56PUALJ3KT5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Cornell University",
+  "perf_str_addr": "107 Hoy Road",
+  "perf_city_name": "Ithaca",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "148537501",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "19",
+  "perf_st_cong_dist": "NY19",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736700",
+   "pgm_ele_name": "HCC-Human-Centered Computing"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7367",
+   "pgm_ref_txt": "Cyber-Human Systems"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 499763.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Computer graphics usually models the appearance of materials by analyzing how light reflects from them in terms of rays.&nbsp; This project set out to explore the implications of switching to the more accurate, but more difficult to simulate, wave model of light, for the appearance of materials in computer graphics.&nbsp; The general process was to build the most accurate simulation possible and use it to identify phenomena that are missing or inaccurately represented by existing methods.</p>\n<p>The project was pursued mainly in two parts, one focused on fibers and one on surfaces.&nbsp; A new simulator was built that computes the light scattered by a smooth fiber (a perfect extrusion, where the cross-section does not vary along the length) by solving Maxwell's equations in the frequency domain using the Boundary Element Method.&nbsp; The problem is tractable because it can be formulated in two dimensions by making use of the fiber's translational symmetry.&nbsp; This simulator predicted iridescent colors for small fibers (as seen in spider webs).&nbsp; It broadly confirmed the validity of geometric models for some aspects of scattering from larger fibers like hair, but showed that diffraction is an important mode of scattering in fibers. This diffraction manifests as a bright forward scattering peak that is missing from ray models, causing those models to seriously underestimate the total scattered energy.&nbsp; The relevance of diffraction also impacts the design of path tracing methods used to simulate light scattering in hair assemblies.&nbsp; doi:10.1145/3414685.3417841</p>\n<p>The assumption of smooth fibers omits the important effects of surface roughness, which requires a fully 3D simulation.&nbsp; Fibers with surface roughness exhibit glinty color noise, not predicted by ray models. Applying the same simulation method in 3D is intractable, so an approximate simulator was developed that accounts only for surface reflection but predicts the full distribution of reflected light.&nbsp; This simulator predicted these color glints, and the project showed this phenomenon is amenable to statistical modeling using noise functions structured according to the theory of optical speckle.&nbsp; doi:10.1145/3592446</p>\n<p>The second part of the project addressed the problem of reflection from rough surfaces.&nbsp; A new reference simulator was built, again using the Boundary Element Method, optimized for regular-grid height fields and implemented to run on multiple large GPUs.&nbsp; It was able to compute exact solutions to the scattering problem for pixel-sized areas of rough surfaces, providing a reference against which approximate methods could be compared.&nbsp; For shallow slopes and random surface structure, previous approximate models were found to match reference simulations, but for high roughness surfaces with organized structure, those models are inadequate and omit major features of the exact solution.&nbsp; doi:10.1145/3592414</p><br>\n<p>\n Last Modified: 12/18/2023<br>\nModified by: Steve&nbsp;Marschner</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nComputer graphics usually models the appearance of materials by analyzing how light reflects from them in terms of rays. This project set out to explore the implications of switching to the more accurate, but more difficult to simulate, wave model of light, for the appearance of materials in computer graphics. The general process was to build the most accurate simulation possible and use it to identify phenomena that are missing or inaccurately represented by existing methods.\n\n\nThe project was pursued mainly in two parts, one focused on fibers and one on surfaces. A new simulator was built that computes the light scattered by a smooth fiber (a perfect extrusion, where the cross-section does not vary along the length) by solving Maxwell's equations in the frequency domain using the Boundary Element Method. The problem is tractable because it can be formulated in two dimensions by making use of the fiber's translational symmetry. This simulator predicted iridescent colors for small fibers (as seen in spider webs). It broadly confirmed the validity of geometric models for some aspects of scattering from larger fibers like hair, but showed that diffraction is an important mode of scattering in fibers. This diffraction manifests as a bright forward scattering peak that is missing from ray models, causing those models to seriously underestimate the total scattered energy. The relevance of diffraction also impacts the design of path tracing methods used to simulate light scattering in hair assemblies. doi:10.1145/3414685.3417841\n\n\nThe assumption of smooth fibers omits the important effects of surface roughness, which requires a fully 3D simulation. Fibers with surface roughness exhibit glinty color noise, not predicted by ray models. Applying the same simulation method in 3D is intractable, so an approximate simulator was developed that accounts only for surface reflection but predicts the full distribution of reflected light. This simulator predicted these color glints, and the project showed this phenomenon is amenable to statistical modeling using noise functions structured according to the theory of optical speckle. doi:10.1145/3592446\n\n\nThe second part of the project addressed the problem of reflection from rough surfaces. A new reference simulator was built, again using the Boundary Element Method, optimized for regular-grid height fields and implemented to run on multiple large GPUs. It was able to compute exact solutions to the scattering problem for pixel-sized areas of rough surfaces, providing a reference against which approximate methods could be compared. For shallow slopes and random surface structure, previous approximate models were found to match reference simulations, but for high roughness surfaces with organized structure, those models are inadequate and omit major features of the exact solution. doi:10.1145/3592414\t\t\t\t\tLast Modified: 12/18/2023\n\n\t\t\t\t\tSubmitted by: SteveMarschner\n"
+ }
+}

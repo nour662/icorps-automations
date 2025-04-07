@@ -1,0 +1,101 @@
+{
+ "awd_id": "1638072",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NRI: Collaborative Research: Learning Adaptive Representations for Robust Mobile Robot Navigation from Multi-Modal Interactions",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032920000",
+ "po_email": "eplaku@nsf.gov",
+ "po_sign_block_name": "Erion Plaku",
+ "awd_eff_date": "2016-10-01",
+ "awd_exp_date": "2021-09-30",
+ "tot_intn_awd_amt": 332728.0,
+ "awd_amount": 332728.0,
+ "awd_min_amd_letter_date": "2016-08-10",
+ "awd_max_amd_letter_date": "2016-08-10",
+ "awd_abstract_narration": "Most existing autonomous systems reason over flat, task-dependent models of the world that do not scale to large, complex environments. This lack of scalability and generalizability is a significant barrier to the widespread adoption of robots for common tasks. This research will advance the state-of-the-art in robot perception, natural language understanding, and learning to develop new models and algorithms that significantly improve the scalability and efficiency of mapping and motion planning in large, complex environments. These contributions will impact the next generation of autonomous systems that interact with humans in many domains, including manufacturing, healthcare, and exploration.  Outcomes will include the release of open source software and data, workshops, K-12 STEM outreach efforts, and undergraduate and graduate education in the unique, multidisciplinary fields of perception, natural language understanding, and motion planning.\r\n\r\nAs robots perform a wider variety of tasks within increasingly complex environments, their ability to learn and reason over expressive models of their environment becomes critical. The goal of this research is to develop models and algorithms for learning adaptive, hierarchical environment representations that afford efficient planning for mobility tasks. These representations will take the form of probabilistic models that capture the rich spatial-semantic properties of the robot's environment and are factorable to enable scalable inference. This research will develop algorithms that learn and adapt these representations by fusing knowledge conveyed through human-provided natural language utterances with information extracted from the robot's multimodal sensor streams. This research will develop algorithms that then reason over the complexity of these models in the context of the inferred task, thereby identifying simplifications that enable more efficient robot motion planning. \r\n",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Matthew",
+   "pi_last_name": "Walter",
+   "pi_mid_init": "R",
+   "pi_sufx_name": "",
+   "pi_full_name": "Matthew R Walter",
+   "pi_email_addr": "mwalter@ttic.edu",
+   "nsf_id": "000689337",
+   "pi_start_date": "2016-08-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Toyota Technological Institute at Chicago",
+  "inst_street_address": "6045 S KENWOOD AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHICAGO",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "7738340409",
+  "inst_zip_code": "606372803",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "IL01",
+  "org_lgl_bus_name": "TOYOTA TECHNOLOGICAL INSTITUTE AT CHICAGO",
+  "org_prnt_uei_num": "ERBJF4DMW6G4",
+  "org_uei_num": "ERBJF4DMW6G4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Toyota Technological Institute at Chicago",
+  "perf_str_addr": "6045 S. Kenwood Avenue",
+  "perf_city_name": "Chicago",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "606372902",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "IL01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "801300",
+   "pgm_ele_name": "NRI-National Robotics Initiati"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8086",
+   "pgm_ref_txt": "Natl Robotics Initiative (NRI)"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 332728.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The ability for robots to perform complex tasks is inherently linked to the richness of their model of the environment. Advances in sensor technology, computer vision, and natural language understanding have provided a wealth of data that can be infused into these models. However, these innovations lead to new challenges of how to assimilate, manage, and utilize this abundance of knowledge. A key challenge for robotics is how to organize this information and present it to an intelligence architecture in a manner that enables robots to efficiently plan many different behaviors in diverse environments of varying scale and complexity. Indeed, as robots perform a wider variety of tasks in increasingly complex environments, the fidelity and complexity of the representation becomes critical. &nbsp;Choosing the correct representation is important because those that are overly rich may be too complex to evaluate, while those that are overly simplified may not be expressive enough to carry out the task. The result of this research effort has been the development of adaptive hierarchical environment representations together with algorithms for learning the fidelity and complexity of these representations appropriate to the given task from natural language and other modalities.</p>\n<p>Under this award, the PIs and their students investigated the coupling between scalable, spatial-semantic representations of the world and language-guided navigation and manipulation in environments that require different degrees of complexity and resolution. We developed flexible, probabilistic, spatial-semantic environment models together with novel multi-view methods for learning representations that are \"as simple as possible, but no simpler\" according to the task. The researchers designed planning and inference methods that adapt these learned representations in the context of the particular task, recognizing and exploiting conditional independence relationships to improve scalability. A common theme throughout this effort is the use of sensor information from multiple modalities (primarily language and vision) to refine models for representation and planning in a coupled fashion. The models and algorithms developed under this effort help to advance the ability of robots to efficiently carry out navigation and manipulation tasks conveyed via natural language in a priori unknown environments.</p>\n<p>This award has supported numerous efforts by the PIs and students to facilitate K&ndash;12, undergraduate, and graduate education in computer science, with a particular emphasis on participation by students from historically underrepresented groups. This effort has been fundamental to the theses of two PhD students and one MS student. It also introduced undergraduates from diverse backgrounds to PhD-level research and supported a number of public-facing outreach efforts at Chicago public schools and science museums.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/04/2022<br>\n\t\t\t\t\tModified by: Matthew&nbsp;R&nbsp;Walter</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe ability for robots to perform complex tasks is inherently linked to the richness of their model of the environment. Advances in sensor technology, computer vision, and natural language understanding have provided a wealth of data that can be infused into these models. However, these innovations lead to new challenges of how to assimilate, manage, and utilize this abundance of knowledge. A key challenge for robotics is how to organize this information and present it to an intelligence architecture in a manner that enables robots to efficiently plan many different behaviors in diverse environments of varying scale and complexity. Indeed, as robots perform a wider variety of tasks in increasingly complex environments, the fidelity and complexity of the representation becomes critical.  Choosing the correct representation is important because those that are overly rich may be too complex to evaluate, while those that are overly simplified may not be expressive enough to carry out the task. The result of this research effort has been the development of adaptive hierarchical environment representations together with algorithms for learning the fidelity and complexity of these representations appropriate to the given task from natural language and other modalities.\n\nUnder this award, the PIs and their students investigated the coupling between scalable, spatial-semantic representations of the world and language-guided navigation and manipulation in environments that require different degrees of complexity and resolution. We developed flexible, probabilistic, spatial-semantic environment models together with novel multi-view methods for learning representations that are \"as simple as possible, but no simpler\" according to the task. The researchers designed planning and inference methods that adapt these learned representations in the context of the particular task, recognizing and exploiting conditional independence relationships to improve scalability. A common theme throughout this effort is the use of sensor information from multiple modalities (primarily language and vision) to refine models for representation and planning in a coupled fashion. The models and algorithms developed under this effort help to advance the ability of robots to efficiently carry out navigation and manipulation tasks conveyed via natural language in a priori unknown environments.\n\nThis award has supported numerous efforts by the PIs and students to facilitate K&ndash;12, undergraduate, and graduate education in computer science, with a particular emphasis on participation by students from historically underrepresented groups. This effort has been fundamental to the theses of two PhD students and one MS student. It also introduced undergraduates from diverse backgrounds to PhD-level research and supported a number of public-facing outreach efforts at Chicago public schools and science museums.\n\n\t\t\t\t\tLast Modified: 08/04/2022\n\n\t\t\t\t\tSubmitted by: Matthew R Walter"
+ }
+}

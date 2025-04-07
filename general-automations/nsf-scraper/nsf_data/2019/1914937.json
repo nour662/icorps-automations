@@ -1,0 +1,101 @@
+{
+ "awd_id": "1914937",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "New Methods in High-Dimensional Causal Inference",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032927299",
+ "po_email": "yzeng@nsf.gov",
+ "po_sign_block_name": "Yong Zeng",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2022-08-31",
+ "tot_intn_awd_amt": 149779.0,
+ "awd_amount": 149779.0,
+ "awd_min_amd_letter_date": "2019-08-15",
+ "awd_max_amd_letter_date": "2019-08-15",
+ "awd_abstract_narration": "With the popularity of deep learning algorithms in the scientific literature as well as by their use and development by companies such as Google, Microsoft and Facebook, their deployment in a variety of tasks is rapidly accelerating.   Because of this, better mathematical understanding of deep learning, and more broadly, machine learning algorithms in decision making processes are needed.  A key innovation that is needed is how to marry machine learning algorithms into causal modelling procedures, which will help algorithms to develop \"reasoning capabilities\" (e.g., understand why an algorithm is making the decision/prediction that it makes).   \r\n \r\nThe problem that will be addressed in this project is how to model confounders so as to develop causal effect estimators that have desirable sampling properties.  In addition, it is important to have well-justified procedures that computationally scale with the number of observations.  In this project, the PI and team will focus their research in two areas.  The first will be to understand the implications of deep learning algorithms and their performance on foundational assumptions for the popular potential outcomes model.  In recent work, the PI discovered a fundamental tension between Gaussian process classification algorithms, covariate overlap and regularity of causal effect estimators.  The goal of the first aim of the research will be to see if a similar phenomenon holds for deep learning algorithms.   In addition, the interpolation properties of Gaussian process and deep learning-based classification algorithms will be explored.   The second part of the project will deal with developing scalable algorithms for causal effect estimation.   New computationally scalable algorithms for causal effect estimation will be developed as part of this research.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Debashis",
+   "pi_last_name": "Ghosh",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Debashis Ghosh",
+   "pi_email_addr": "debashis.ghosh@cuanschutz.edu",
+   "nsf_id": "000483275",
+   "pi_start_date": "2019-08-15",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Colorado at Denver",
+  "inst_street_address": "13001 E 17TH PL STE F428",
+  "inst_street_address_2": "",
+  "inst_city_name": "AURORA",
+  "inst_state_code": "CO",
+  "inst_state_name": "Colorado",
+  "inst_phone_num": "3037240090",
+  "inst_zip_code": "800452571",
+  "inst_country_name": "United States",
+  "cong_dist_code": "06",
+  "st_cong_dist_code": "CO06",
+  "org_lgl_bus_name": "THE REGENTS OF THE UNIV. OF COLORADO",
+  "org_prnt_uei_num": "MW8JHK6ZYEX8",
+  "org_uei_num": "MW8JHK6ZYEX8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Colorado Denver",
+  "perf_str_addr": "13001 E. 17th Place, B119",
+  "perf_city_name": "Aurora",
+  "perf_st_code": "CO",
+  "perf_st_name": "Colorado",
+  "perf_zip_code": "800452601",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "CO06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126900",
+   "pgm_ele_name": "STATISTICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "079Z",
+   "pgm_ref_txt": "Machine Learning Theory"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 149779.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In this proposal, we considered the use of causal inference methods in the situation when the dimension of the confounder variables is high.&nbsp;&nbsp;&nbsp;Causal inference methods are routinely used throughout the social sciences, medicine, business and policy evaluation fields in order to better understand the effects of certain interventions and policies.&nbsp;&nbsp;&nbsp;&nbsp;However, the model and variable selection procedures in this field are different from most standard statistical problems.&nbsp;&nbsp;In this grant, we explored how the dimensionality of confounders affected the use of causal inference methods.&nbsp;&nbsp;One of our major findings was characterizing the interplay between confounder dimensionality and violation of the treatment positivity condition.&nbsp;&nbsp;As a result it is necessary to either define data-adaptive causal estimands or increase reliance on the outcome model is causal inference problems.&nbsp;&nbsp;&nbsp;We proposed a data-adaptive causal effect estimator based on the use of the margin, which is a well-studied quantity from the machine learning literature.</p>\n<p>&nbsp;</p>\n<p>We also explored the use of machine learning algorithms for developing better covariate balancing procedures.&nbsp;&nbsp;We developed a unified framework and algorithm using Bregman divergences that unified several existing covariate balancing procedures.&nbsp;&nbsp;&nbsp;We applied this methodology to a problem of fusing data from randomized clinical trials to observational studies.&nbsp;&nbsp;While randomized clinical trials are considered the gold standard for evidence due to their high internal validity, we sought to increase their external validity by transporting findings to observational data.&nbsp;&nbsp;&nbsp;This led to several publications with attendant available code for performing transportability analyses with these data.&nbsp;&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/30/2023<br>\n\t\t\t\t\tModified by: Debashis&nbsp;Ghosh</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIn this proposal, we considered the use of causal inference methods in the situation when the dimension of the confounder variables is high.   Causal inference methods are routinely used throughout the social sciences, medicine, business and policy evaluation fields in order to better understand the effects of certain interventions and policies.    However, the model and variable selection procedures in this field are different from most standard statistical problems.  In this grant, we explored how the dimensionality of confounders affected the use of causal inference methods.  One of our major findings was characterizing the interplay between confounder dimensionality and violation of the treatment positivity condition.  As a result it is necessary to either define data-adaptive causal estimands or increase reliance on the outcome model is causal inference problems.   We proposed a data-adaptive causal effect estimator based on the use of the margin, which is a well-studied quantity from the machine learning literature.\n\n \n\nWe also explored the use of machine learning algorithms for developing better covariate balancing procedures.  We developed a unified framework and algorithm using Bregman divergences that unified several existing covariate balancing procedures.   We applied this methodology to a problem of fusing data from randomized clinical trials to observational studies.  While randomized clinical trials are considered the gold standard for evidence due to their high internal validity, we sought to increase their external validity by transporting findings to observational data.   This led to several publications with attendant available code for performing transportability analyses with these data.  \n\n \n\n\t\t\t\t\tLast Modified: 01/30/2023\n\n\t\t\t\t\tSubmitted by: Debashis Ghosh"
+ }
+}

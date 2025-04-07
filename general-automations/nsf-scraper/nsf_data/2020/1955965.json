@@ -1,0 +1,102 @@
+{
+ "awd_id": "1955965",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: CORE: Small: Collaborative: Understanding and Detecting Memory Bugs in Rust",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2020-07-01",
+ "awd_exp_date": "2025-05-31",
+ "tot_intn_awd_amt": 298404.0,
+ "awd_amount": 298404.0,
+ "awd_min_amd_letter_date": "2020-06-30",
+ "awd_max_amd_letter_date": "2024-04-21",
+ "awd_abstract_narration": "Rust is a young programming language designed for systems software development. Its main design goal is to achieve runtime performance as good as its competitor language, C, while offering better memory and thread safety using a linear type system and strict compile-time checking. Rust has become increasingly popular among developers of safety-critical software, such as operating systems, browsers, and block-chain systems. However, both practitioners and researchers know little about the status of memory bugs in real-world Rust programs. For example, do Rust compile-time checks eliminate all memory bugs? If not, do memory bugs in Rust exhibit certain detectable patterns? This project seeks answers to these questions by devising techniques to identify and eliminate the memory bugs? In particular, it aims to achieve a better understanding of common mistakes made by Rust programmers and build novel techniques to catch memory bugs missed by Rust compile-time checks. The outcome will influence how Rust evolves, guide how developers program Rust safely, and improve the safety of the Rust ecosystem.     \r\n\r\nRust safety mechanisms are sound, but sometimes they are too strict and prevent flexible control over low-level resources. To mitigate this problem, Rust allows developers to bypass its compiler checks using unsafe code. A function can be declared as unsafe. A piece of code inside a safe function can be unsafe, known as interior unsafe, where the unsafe code is encapsulated internally and treated as safe externally. Unfortunately, unsafe code and interior unsafe code can lead to memory bugs since they bypass Rust safety checks. This project aims to better understand Rust memory bugs and build novel static/dynamic tools to combat Rust memory bugs. This project contains three components: (1) a comprehensive taxonomy of Rust memory bugs, (2) novel static techniques to identify memory bugs in interior unsafe functions, and (3) novel fuzzing techniques enhanced by the safe/unsafe information in Rust.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Linhai",
+   "pi_last_name": "Song",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Linhai Song",
+   "pi_email_addr": "lus401@ist.psu.edu",
+   "nsf_id": "000755117",
+   "pi_start_date": "2020-06-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Pennsylvania State Univ University Park",
+  "inst_street_address": "201 OLD MAIN",
+  "inst_street_address_2": "",
+  "inst_city_name": "UNIVERSITY PARK",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "8148651372",
+  "inst_zip_code": "168021503",
+  "inst_country_name": "United States",
+  "cong_dist_code": "15",
+  "st_cong_dist_code": "PA15",
+  "org_lgl_bus_name": "THE PENNSYLVANIA STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NPM2J7MSCF61"
+ },
+ "perf_inst": {
+  "perf_inst_name": "The Pennsylvania State University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "168021503",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "15",
+  "perf_st_cong_dist": "PA15",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 298404.0
+  }
+ ],
+ "por": null
+}

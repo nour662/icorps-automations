@@ -1,0 +1,109 @@
+{
+ "awd_id": "1702824",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: CORE: Medium: Collaborative: Energy-Harvested Security for the Internet of Things",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032920000",
+ "po_email": "doliveir@nsf.gov",
+ "po_sign_block_name": "Daniela Oliveira",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2022-08-31",
+ "tot_intn_awd_amt": 349997.0,
+ "awd_amount": 349997.0,
+ "awd_min_amd_letter_date": "2017-06-08",
+ "awd_max_amd_letter_date": "2017-06-08",
+ "awd_abstract_narration": "The Internet of Things integrates the virtual world of computers into real-world applications, leading to better efficiency, economy and an improved quality of life. This requires a huge amount of tiny computers, and this project addresses the challenge of powering those computers in a sustainable manner. Tiny computers can run off harvested energy sources such as solar, vibration and/or temperature gradient. The project objective is to show how such energy-constrained devices can support secure and full Internet connectivity. This can be achieved by reworking the computations leading up to a secure Internet connection and spreading them out over time. The proposed solution aims to use every harvested Joule of energy towards useful computations.\r\n\r\nThe project builds on insights from three domains, including cryptographic engineering, energy-harvesting technologies, and formal verification. The harvester-friendly version of a cryptographic algorithm is created by partitioning it in pre-computed steps that generate coupons. Coupons are created when there is a surplus energy, and they can be used to speed up online computations at a later phase. The project optimizes cryptography from the standard Internet stack and integrates it with energy-harvester technology. Verification techniques ensure the functional equivalence of pre-computed versions of Internet protocols to their mainstream counterparts. The project contributes to the research agenda in crucial areas such as lightweight cryptography, formal methods, and realization of energy-harvesting systems. The project will disseminate publications, open-source hardware, and software, and it will establish a programming competition to raise the awareness of energy-constraints in the Internet of Things.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Chao",
+   "pi_last_name": "Wang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Chao Wang",
+   "pi_email_addr": "wang626@usc.edu",
+   "nsf_id": "000596776",
+   "pi_start_date": "2017-06-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Southern California",
+  "inst_street_address": "3720 S FLOWER ST FL 3",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOS ANGELES",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "2137407762",
+  "inst_zip_code": "90033",
+  "inst_country_name": "United States",
+  "cong_dist_code": "34",
+  "st_cong_dist_code": "CA34",
+  "org_lgl_bus_name": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "G88KLJR3KYT5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Southern California",
+  "perf_str_addr": "3720 S. Flower St.",
+  "perf_city_name": "los angeles",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "900890001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "37",
+  "perf_st_cong_dist": "CA37",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 349997.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Background:</p>\n<p>Ensuring the security of small computing systems in the Internet of Things (IoT) powered by renewable energy sources is a practically important and yet intellectual challenging task. It requires the merging of two separate concepts. On the one hand, it requires concepts from intermittent computing and the execution of long-running algorithms on transiently powered computing platforms. However, traditional intermittent computing has not considered the implication of secure and tamper-sensitive algorithms. On the other hand, there is a rich and extensive collection of security protocols to provide information assurance and operational assurance properties of computing platforms. However, these secure protocols have been designed primarily for continuously powered computers.</p>\n<p><br />Problem Statement:</p>\n<p>Our research aims to bridge the aforementioned gap by transforming existing secure protocols and cryptographic algorithms such that they can run in small steps. Every step can generate one or more coupons, which represent partially computed or pre-computed results. When power disappears, the coupons are preserved in non-volatile memory. When power returns, the coupons are copied from non-volatile memory and the operation continues.&nbsp;To ensure the security of such systems, we develop new technologies, method, and software tools in three sub areas: (1) cryptographic engineering, (2) energy harvesting, and (3) formal verification. While research in the first two sub areas are led by the Virginia Tech team, research in the third sub area of this collaborative project is led by the University of Southern California (USC) team.</p>\n<p>In the remainder of this report, we focus on the outcome of the USC team.&nbsp;&nbsp;</p>\n<p>Intellectual Merits:</p>\n<p>At the center of our intellectual contribution is a set of new methods and tools for efficiently verifying the security of energy-aware cryptographic software code. They are based on advanced program analysis and verification techniques that we develop. The main advantage of our methods and tools is that they can either detect vulnerabilities (such as information leaks through side channels) in critical software, or prove that such vulnerabilities do not exist.</p>\n<p>We also develop a set of new methods and tools for mitigating security vulnerabilities or optimizing the software code to improve performance, e.g., rewriting the software code to lower the energy consumption of the hardware that executes the software code. This is accomplished by leveraging a technique called program synthesis, which in this particular application can be viewed as a form of super-optimizing compiler.&nbsp;</p>\n<p>In both of the above cases, our emphasis is on automation in the sense that verification and optimization of security-critical IoT software are performed by rigorous algorithms and tools automatically, as opposed to by developers manually. This is advantageous because manual verification and optimization are often tedious, labor intensive, and error prone even for experts.</p>\n<p>Broader Impact:</p>\n<p>Our research and publications have raised the awareness of both energy-constraints and security risks of energy-harvesting devices in the Internet of Things. Furthermore, techniques and tools developed in this project allow experts from different domains to work together to improve systems. The project allows us to support the education of graduate students at the University of Southern California (USC), who have received training on the design and engineering of embedded systems as well as techniques for verifying and optimizing software in such systems.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/08/2023<br>\n\t\t\t\t\tModified by: Chao&nbsp;Wang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nBackground:\n\nEnsuring the security of small computing systems in the Internet of Things (IoT) powered by renewable energy sources is a practically important and yet intellectual challenging task. It requires the merging of two separate concepts. On the one hand, it requires concepts from intermittent computing and the execution of long-running algorithms on transiently powered computing platforms. However, traditional intermittent computing has not considered the implication of secure and tamper-sensitive algorithms. On the other hand, there is a rich and extensive collection of security protocols to provide information assurance and operational assurance properties of computing platforms. However, these secure protocols have been designed primarily for continuously powered computers.\n\n\nProblem Statement:\n\nOur research aims to bridge the aforementioned gap by transforming existing secure protocols and cryptographic algorithms such that they can run in small steps. Every step can generate one or more coupons, which represent partially computed or pre-computed results. When power disappears, the coupons are preserved in non-volatile memory. When power returns, the coupons are copied from non-volatile memory and the operation continues. To ensure the security of such systems, we develop new technologies, method, and software tools in three sub areas: (1) cryptographic engineering, (2) energy harvesting, and (3) formal verification. While research in the first two sub areas are led by the Virginia Tech team, research in the third sub area of this collaborative project is led by the University of Southern California (USC) team.\n\nIn the remainder of this report, we focus on the outcome of the USC team.  \n\nIntellectual Merits:\n\nAt the center of our intellectual contribution is a set of new methods and tools for efficiently verifying the security of energy-aware cryptographic software code. They are based on advanced program analysis and verification techniques that we develop. The main advantage of our methods and tools is that they can either detect vulnerabilities (such as information leaks through side channels) in critical software, or prove that such vulnerabilities do not exist.\n\nWe also develop a set of new methods and tools for mitigating security vulnerabilities or optimizing the software code to improve performance, e.g., rewriting the software code to lower the energy consumption of the hardware that executes the software code. This is accomplished by leveraging a technique called program synthesis, which in this particular application can be viewed as a form of super-optimizing compiler. \n\nIn both of the above cases, our emphasis is on automation in the sense that verification and optimization of security-critical IoT software are performed by rigorous algorithms and tools automatically, as opposed to by developers manually. This is advantageous because manual verification and optimization are often tedious, labor intensive, and error prone even for experts.\n\nBroader Impact:\n\nOur research and publications have raised the awareness of both energy-constraints and security risks of energy-harvesting devices in the Internet of Things. Furthermore, techniques and tools developed in this project allow experts from different domains to work together to improve systems. The project allows us to support the education of graduate students at the University of Southern California (USC), who have received training on the design and engineering of embedded systems as well as techniques for verifying and optimizing software in such systems.\n\n \n\n \n\n \n\n\t\t\t\t\tLast Modified: 02/08/2023\n\n\t\t\t\t\tSubmitted by: Chao Wang"
+ }
+}

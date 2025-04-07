@@ -1,0 +1,121 @@
+{
+ "awd_id": "1068419",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Adaptive Multimodel Simulation for Engineering Innovation",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Christiaan Paredis",
+ "awd_eff_date": "2011-08-15",
+ "awd_exp_date": "2015-07-31",
+ "tot_intn_awd_amt": 325000.0,
+ "awd_amount": 325000.0,
+ "awd_min_amd_letter_date": "2011-08-02",
+ "awd_max_amd_letter_date": "2011-08-02",
+ "awd_abstract_narration": "The objective of this research grant is to develop and demonstrate a multimodel simulation infrastructure to support robust multiscale simulations in a manner in which design decisions across multiple scales can be effectively executed.  Advances in physical and biological sciences have made it possible to understand spatial and temporal phenomena on the atomic, molecular, microscopic, and macroscopic scales. To take advantage of these advances, engineering design processes must rely on simulations that employ coupled models acting over multiple physical scales. Interoperable components will be developed that support a full range of adaptive model selection, scale linking and discretization control techniques. The methods to be developed will dramatically increase the reliability of multiscale simulations and design processes through adaptive model and discretization control. New parallel processing methods that employ multilevel dynamic load balancing will be developed to support the computations needed for automated adaptive multiscale simulation. \r\n\r\nIf successful, this research will produce computational technologies central to enabling multiscale modeling and simulation to be applied to applications ranging from basic nano- and bio-technology investigations, to the engineering of new products and medical treatments. Emphasis will be placed on how these technologies can advance the ability to perform robust multiscale design in areas as diverse of nano-electronics and the use of manufactured tissue replacements in the human arterial system. Collaborations with DOE laboratories, other universities and industry will support the demonstration of the multiscale simulation technologies developed on selected design applications that can be transitioned to practice. Based on past and present efforts, we fully expect that methods developed will be integrated into future computer-aided engineering software systems used by industry.  Further, the research will be widely disseminated through conference presentations and journal articles.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Mark",
+   "pi_last_name": "Shephard",
+   "pi_mid_init": "S",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mark S Shephard",
+   "pi_email_addr": "shephard@rpi.edu",
+   "nsf_id": "000157587",
+   "pi_start_date": "2011-08-02",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Rensselaer Polytechnic Institute",
+  "inst_street_address": "110 8TH ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "TROY",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "5182766000",
+  "inst_zip_code": "121803590",
+  "inst_country_name": "United States",
+  "cong_dist_code": "20",
+  "st_cong_dist_code": "NY20",
+  "org_lgl_bus_name": "RENSSELAER POLYTECHNIC INSTITUTE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "U5WBFKEBLMX3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Rensselaer Polytechnic Institute",
+  "perf_str_addr": "110 8TH ST",
+  "perf_city_name": "TROY",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "121803590",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "20",
+  "perf_st_cong_dist": "NY20",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "146400",
+   "pgm_ele_name": "ESD-Eng & Systems Design"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "067E",
+   "pgm_ref_txt": "DESIGN TOOLS"
+  },
+  {
+   "pgm_ref_code": "068E",
+   "pgm_ref_txt": "DESIGN THEORY"
+  },
+  {
+   "pgm_ref_code": "073E",
+   "pgm_ref_txt": "OPTIMIZATION & DECISION MAKING"
+  },
+  {
+   "pgm_ref_code": "084E",
+   "pgm_ref_txt": "NANOMANUFACTURING"
+  },
+  {
+   "pgm_ref_code": "9148",
+   "pgm_ref_txt": "TOOLS & TECHNOL FOR MANUFACTURING DESIGN"
+  },
+  {
+   "pgm_ref_code": "MANU",
+   "pgm_ref_txt": "MANUFACTURING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 325000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this project was to develop and demonstrate a set of tools for the execution of multi-scale simulation with good scalability on massively parallel computers. The project efforts included:</p>\n<ul>\n<li>Implementation of a two-scale soft tissue simulation, using fiber-only representative volume elements (RVEs) to control the engineering scale behavior. All process assignments and multi-scale communication are performed by the AMSI libraries.</li>\n<li>Development of a set of libraries for management of the parallel execution space with respect to process assignment locality, parallel communication, scale-task execution, and scale-sensitive load balancing. The Adaptive Multimodel Simualtion Infrastructure (AMSI) was developed using the multiscale fibrous soft tissue simulation as the primary test bed.</li>\n<li>Execution of the two-scale soft tissue simulation on the AMOS Blue Gene/Q supercomputer. Utilizing up to 16384 process.</li>\n<li>Development of scale-sensitive migration and load balancing support and algorithms to improve scaling within both the general framework of AMSI and the soft tissue model.</li>\n</ul>\n<p>The Adaptive Multimodel Simulation Infrastructure (AMSI) has been developed to provide a set of support libraries and functionalities for the development, implementation, and execution of multimodel simulations. Key areas of functionality for AMSI include managing the parallel execution space of multimodel simulations, scale-linking communications, and dynamic scale-sensitive load-balancing operations.</p>\n<p>The fibrous soft tissue simulation (biotissue) has been implemented using the AMSI multi-scale libraries to assign processes to simulation scales, coordinate communication of multi-scale coupling terms, and dynamically manage the execution of the simulation. Dynamic execution management of the biotissue simulation includes the introduction/removal of new tertiary scales at run-time, migration of individual tertiary scales, and load balancing operations constructed on top of the migration capabilities. AMSI has been designed to be of utility general to multi-scale simulations, though at present it has not been used to support a fully-developed simulation aside from the biotissue problem.</p>\n<p>The biotissue simulation is functional and being used on domains generated from scans of soft tissue structures as well as CAD designed structures such as tensile test &lsquo;dogbones&rsquo; and indentation test samples. Verification of the implementation against various experimental results is currently underway, as well as analysis of the numerical stability and error accumulation of the multi-scale problem, with a specific focus on convergence criteria error accumulation both from solution of linear systems resulting from elemental system assembly as well as the convergence criteria of the Newton-Raphson iterations at micro- and macro-scales.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/18/2015<br>\n\t\t\t\t\tModified by: Mark&nbsp;S&nbsp;Shephard</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of this project was to develop and demonstrate a set of tools for the execution of multi-scale simulation with good scalability on massively parallel computers. The project efforts included:\n\nImplementation of a two-scale soft tissue simulation, using fiber-only representative volume elements (RVEs) to control the engineering scale behavior. All process assignments and multi-scale communication are performed by the AMSI libraries.\nDevelopment of a set of libraries for management of the parallel execution space with respect to process assignment locality, parallel communication, scale-task execution, and scale-sensitive load balancing. The Adaptive Multimodel Simualtion Infrastructure (AMSI) was developed using the multiscale fibrous soft tissue simulation as the primary test bed.\nExecution of the two-scale soft tissue simulation on the AMOS Blue Gene/Q supercomputer. Utilizing up to 16384 process.\nDevelopment of scale-sensitive migration and load balancing support and algorithms to improve scaling within both the general framework of AMSI and the soft tissue model.\n\n\nThe Adaptive Multimodel Simulation Infrastructure (AMSI) has been developed to provide a set of support libraries and functionalities for the development, implementation, and execution of multimodel simulations. Key areas of functionality for AMSI include managing the parallel execution space of multimodel simulations, scale-linking communications, and dynamic scale-sensitive load-balancing operations.\n\nThe fibrous soft tissue simulation (biotissue) has been implemented using the AMSI multi-scale libraries to assign processes to simulation scales, coordinate communication of multi-scale coupling terms, and dynamically manage the execution of the simulation. Dynamic execution management of the biotissue simulation includes the introduction/removal of new tertiary scales at run-time, migration of individual tertiary scales, and load balancing operations constructed on top of the migration capabilities. AMSI has been designed to be of utility general to multi-scale simulations, though at present it has not been used to support a fully-developed simulation aside from the biotissue problem.\n\nThe biotissue simulation is functional and being used on domains generated from scans of soft tissue structures as well as CAD designed structures such as tensile test \u00e6dogbones\u00c6 and indentation test samples. Verification of the implementation against various experimental results is currently underway, as well as analysis of the numerical stability and error accumulation of the multi-scale problem, with a specific focus on convergence criteria error accumulation both from solution of linear systems resulting from elemental system assembly as well as the convergence criteria of the Newton-Raphson iterations at micro- and macro-scales.\n\n\t\t\t\t\tLast Modified: 11/18/2015\n\n\t\t\t\t\tSubmitted by: Mark S Shephard"
+ }
+}

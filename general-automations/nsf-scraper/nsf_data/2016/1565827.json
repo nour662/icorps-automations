@@ -1,0 +1,109 @@
+{
+ "awd_id": "1565827",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII:  SHF:  Analysis and Automation of Global Systematic Changes",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2016-03-15",
+ "awd_exp_date": "2018-02-28",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 175000.0,
+ "awd_min_amd_letter_date": "2016-03-18",
+ "awd_max_amd_letter_date": "2016-03-18",
+ "awd_abstract_narration": "Software version history captures how software evolves, records application-specific domain knowledge, and tracks success as well as failure in the software maintenance. By learning from software evolution history, researchers can leverage the knowledge to help improve programmer productivity and software quality. However, the ?big data? aspect of software version history presents challenges. It requires sophisticated program analysis and automated tools to identify project-specific knowledge and to suggest coding accordingly to developers. Existing solutions are only capable of identifying and automating simple code changes. The objective of this research is to advance the state-of-the-art programming knowledge discovery and suggestion through innovations in automatic inference and application of program transformations.\r\n\r\nThis project will characterize recurring global edits in software, and investigate tools to fully automate the crucial process to generalize, locate, and apply complicated program transformations based on code change examples. The unifying theme of this research is the judicious application of inter-procedural program analysis and constraint solving techniques. Inter-procedural analysis will identify relationship between applied changes by developers to cluster relevant changes. Constraint solving techniques will reason about the rationale behind the applied changes to infer the manifested general program transformation patterns. The PI will incorporate the results from this research into both undergraduate and graduate software engineering courses with the aim of maintaining the competitive vitality of the national technology workforce.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Na",
+   "pi_last_name": "Meng",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Na Meng",
+   "pi_email_addr": "nm8247@cs.vt.edu",
+   "nsf_id": "000702964",
+   "pi_start_date": "2016-03-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Virginia Polytechnic Institute and State University",
+  "inst_street_address": "300 TURNER ST NW",
+  "inst_street_address_2": "STE 4200",
+  "inst_city_name": "BLACKSBURG",
+  "inst_state_code": "VA",
+  "inst_state_name": "Virginia",
+  "inst_phone_num": "5402315281",
+  "inst_zip_code": "240603359",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "VA09",
+  "org_lgl_bus_name": "VIRGINIA POLYTECHNIC INSTITUTE & STATE UNIVERSITY",
+  "org_prnt_uei_num": "X6KEFGLHSJX7",
+  "org_uei_num": "QDE5UHE5XD16"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Virginia Tech",
+  "perf_str_addr": "2202 Kraft Drive",
+  "perf_city_name": "Blacksburg",
+  "perf_st_code": "VA",
+  "perf_st_name": "Virginia",
+  "perf_zip_code": "240606356",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "09",
+  "perf_st_cong_dist": "VA09",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7798",
+   "pgm_ref_txt": "SOFTWARE & HARDWARE FOUNDATION"
+  },
+  {
+   "pgm_ref_code": "7944",
+   "pgm_ref_txt": "SOFTWARE ENG & FORMAL METHODS"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 175000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Software version history captures how software evolves, records application-specific domain knowledge, and tracks success as well as failure in the software maintenance. By learning from software evolution history, researchers can improve programmer productivity and software quality. However, the &ldquo;big data&rdquo; aspect of software version history presents challenges. It requires sophisticated program analysis and automated tools to identify project-specific knowledge and to suggest coding accordingly to developers. Existing work focuses on characterizing code changes involving single program entities (e.g., a field or a method). This project addresses a key challenge for automatic suggestion of multi-entity source code changes. We aim at efficiently analyzing the co-change relationship between multiple changed entities, characterizing the relationship, and suggesting entities that should be changed together. Our goal is to prevent developers from committing errors of omission when they change source code. To that end, we implemented a tool that integrates ChangeDistiller, Partial Program Analysis, and WALA program analysis framework to efficiently extract related changed entities from software version history. We conducted an empirical study to explore why certain changes are applied together and how they are connected syntactically and semantically. We also designed and implemented an approach that embeds the observations we made to suggest code changes probably missed by developers. Compared with existing work, our research is unique because it conducts inter-procedure analysis in a fast manner, analyzes complex code changes based on the reference-referenee relationship, and suggests code changes based on project-specific context (e.g., suggesting potential methods that should access a newly added field).</p>\n<p><strong>Intellectual Merits:</strong> This fundamental research addresses several thrusts of automatic program comprehension and code change suggestion. It focuses on automatic characterization of code changes. Our tool will help produce a new platform to automatically classify code changes and summarize developers&rsquo; change intents. Our characterization study will also enable a set of automatic tools to suggest complementary changes to the code changes made by developers. Finally, our automatic change suggestion approach demonstrates a way to suggest multi-entity changes, which complement existing work of automatic program repair.</p>\n<p><strong>Broader Impacts:</strong> This CRII proposal embeds two distinct but integrated thrusts towards automatic program comprehension and code manipulation. This work provides data to enable further analysis on software version history, reports interesting findings to shed light on program comprehension tools, and builds prototype tools to recommend code changes. This work helps contribute to the foundation of automatic software maintenance.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/05/2018<br>\n\t\t\t\t\tModified by: Na&nbsp;Meng</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nSoftware version history captures how software evolves, records application-specific domain knowledge, and tracks success as well as failure in the software maintenance. By learning from software evolution history, researchers can improve programmer productivity and software quality. However, the \"big data\" aspect of software version history presents challenges. It requires sophisticated program analysis and automated tools to identify project-specific knowledge and to suggest coding accordingly to developers. Existing work focuses on characterizing code changes involving single program entities (e.g., a field or a method). This project addresses a key challenge for automatic suggestion of multi-entity source code changes. We aim at efficiently analyzing the co-change relationship between multiple changed entities, characterizing the relationship, and suggesting entities that should be changed together. Our goal is to prevent developers from committing errors of omission when they change source code. To that end, we implemented a tool that integrates ChangeDistiller, Partial Program Analysis, and WALA program analysis framework to efficiently extract related changed entities from software version history. We conducted an empirical study to explore why certain changes are applied together and how they are connected syntactically and semantically. We also designed and implemented an approach that embeds the observations we made to suggest code changes probably missed by developers. Compared with existing work, our research is unique because it conducts inter-procedure analysis in a fast manner, analyzes complex code changes based on the reference-referenee relationship, and suggests code changes based on project-specific context (e.g., suggesting potential methods that should access a newly added field).\n\nIntellectual Merits: This fundamental research addresses several thrusts of automatic program comprehension and code change suggestion. It focuses on automatic characterization of code changes. Our tool will help produce a new platform to automatically classify code changes and summarize developers? change intents. Our characterization study will also enable a set of automatic tools to suggest complementary changes to the code changes made by developers. Finally, our automatic change suggestion approach demonstrates a way to suggest multi-entity changes, which complement existing work of automatic program repair.\n\nBroader Impacts: This CRII proposal embeds two distinct but integrated thrusts towards automatic program comprehension and code manipulation. This work provides data to enable further analysis on software version history, reports interesting findings to shed light on program comprehension tools, and builds prototype tools to recommend code changes. This work helps contribute to the foundation of automatic software maintenance.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 03/05/2018\n\n\t\t\t\t\tSubmitted by: Na Meng"
+ }
+}

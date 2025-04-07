@@ -1,0 +1,117 @@
+{
+ "awd_id": "1663887",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: SI2-SSI: EVOLVE: Enhancing the Open MPI Software for Next Generation Architectures and Applications",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Seung-Jong Park",
+ "awd_eff_date": "2017-06-01",
+ "awd_exp_date": "2022-05-31",
+ "tot_intn_awd_amt": 308785.0,
+ "awd_amount": 308785.0,
+ "awd_min_amd_letter_date": "2017-05-26",
+ "awd_max_amd_letter_date": "2017-05-26",
+ "awd_abstract_narration": "For nearly two decades, the Message Passing Interface (MPI) has been an essential part of the High-Performance Computing ecosystem and consequently a key enabler for important scientific breakthroughs. It is a fundamental building block for most large-scale simulations from physics, chemistry, biology, material sciences as engineering.  Open MPI is an open source implementation of the MPI specification, widely used and adopted by the research community as well as industry. The Open MPI library is jointly developed and maintained by a consortium of academic institutions, national labs and industrial partners. It is installed on virtually all large-scale computer systems in the US as well as in the rest of the world. The goal of this project is to enhance and modernize the Open MPI library in the context of the ongoing evolution of modern computer systems, and to ensure its future operability on all upcoming architectures. We aim at implementing fundamental software techniques that can be used in many-core systems to execute MPI-based parallel applications more efficiently, and to tolerate process and memory failures at all scales, from current systems, up to the extreme scales expected before the end of the decade.\r\n\r\nOpen MPI is an open source implementation of the Message Passing Interface (MPI) specification. The MPI API is currently being extended to consider the needs of application developers in terms of efficiency, productivity and resilience. The project will also support academic involvement in the design, development and evaluation of the Open MPI software, and ensure academic presence in the MPI Forum. The goal of this proposal is to enhance the Open MPI software library, focusing on two aspects: (1) Extend Open MPI to support new features of the MPI specification. Open MPI will continue to support all new features of current and upcoming MPI specifications. The two most significant areas within the context of this proposal are (a) extensions to better support hybrid programming models and (b) support for fault tolerance in MPI applications. To improve support for hybrid programming models, the MPI Forum is currently considering introducing the notion of MPI Endpoints, which could be used by different threads of an MPI rank to instantiate multiple separate communication contexts. The goal within this project is to develop an implementation of endpoints to support effective hybrid programming model, and to extend the concept to other aspects of parallel applications such as File I/O operations. One of the project partners (UTK) leads the current proposal in the MPI Forum to expose failures and ensure the continuation of the execution of MPI applications. In the context of this SSI proposal, the goal is to harden, improve, and expand the support of the existing ULFM implementation in Open MPI and thus enable end-users to design application-specific resilience approaches for future platforms. (2) Enhance the Open MPI core to support new architectures and improve scalability. While Open MPI has demonstrated very good scalability in the past, there is significant work to be done to ensure similarly good performance on future architectures. Specifically, we propose a groundbreaking rework of the startup environment that will improve process launch scalability, increase support for asynchronous progress of operations, enable support for accelerators, and reduce sensitivity to system noise. The project would also enhance the support for File I/O operations as part of the Open MPI package by expanding our work on highly scalable collective I/O operations through delegation and exploring the utilization of burst buffers as temporary storage.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Edgar",
+   "pi_last_name": "Gabriel",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Edgar Gabriel",
+   "pi_email_addr": "gabriel@cs.uh.edu",
+   "nsf_id": "000316336",
+   "pi_start_date": "2017-05-26",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Houston",
+  "inst_street_address": "4300 MARTIN LUTHER KING BLVD",
+  "inst_street_address_2": "",
+  "inst_city_name": "HOUSTON",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "7137435773",
+  "inst_zip_code": "772043067",
+  "inst_country_name": "United States",
+  "cong_dist_code": "18",
+  "st_cong_dist_code": "TX18",
+  "org_lgl_bus_name": "UNIVERSITY OF HOUSTON SYSTEM",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "QKWEF8XLMTT3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Houston",
+  "perf_str_addr": "4800 Calhoun Blvd",
+  "perf_city_name": "Houston",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "772042015",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "18",
+  "perf_st_cong_dist": "TX18",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "800400",
+   "pgm_ele_name": "Software Institutes"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "7942",
+   "pgm_ref_txt": "HIGH-PERFORMANCE COMPUTING"
+  },
+  {
+   "pgm_ref_code": "8004",
+   "pgm_ref_txt": "Software Institutes"
+  },
+  {
+   "pgm_ref_code": "8009",
+   "pgm_ref_txt": "Scientifc Software Integration"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 308785.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Open MPI is an open-source implementation of the Message Passing Interface (MPI) specification, the most widely used parallel programming paradigm in High Performance Computing. The library is jointly developed and maintained by a consortium of academic, research, and industrial partners. The Open MPI architecture simplifies developing and maintaining code that benefits the entire community while at the same time allows to exploit novel features of different vendors. &nbsp;The goal of the EVOLVE project is to enhance and modernize the Open MPI library to adapt to new processor architectures and network interconnects, as well as incorporate features introduced by the most recent version of the MPI specification.</p>\n<p>The specific contribution of the University of Houston to this project was in the area of parallel I/O. Parallel I/O refers to file I/O operations executed by multiple processes, often accessing different parts of a single, shared file. The main challenges of parallel I/O lie in creating consistent output files and maximizing the performance of parallel file I/O operations. &nbsp;MPI introduced support for parallel file I/O operations starting from version two of the specification. As of today, MPI I/O is one of the most popular interfaces for reading input data and writing results to disk by large scale parallel applications.</p>\n<p>OMPIO is a parallel I/O library developed by the University of Houston as part of the Open MPI project. OMPIO separates the MPI I/O functionality into independent frameworks and provides multiple components optimizing various use-case scenarios for each framework. In addition, each framework contains sophisticated selection logic to decide which component to use in a particular scenario.</p>\n<p>The main achievements of the EVOLVE project with respect to parallel I/O include: developing&nbsp; and evaluating multi-threaded versions of individual I/O operations, a necessary prerequisite for supporting parallel applications utilizing both, MPI and threads, simultaneously; developing the concept and a prototype implementation of using data compression with MPI I/O; introduce the ability to read and write directly to/from a GPU device buffer using MPI I/O; add support for the external32 data representation in OMPIO; and add support for the atomicity feature of MPI I/O in OMPIO.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/12/2022<br>\n\t\t\t\t\tModified by: Edgar&nbsp;Gabriel</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOpen MPI is an open-source implementation of the Message Passing Interface (MPI) specification, the most widely used parallel programming paradigm in High Performance Computing. The library is jointly developed and maintained by a consortium of academic, research, and industrial partners. The Open MPI architecture simplifies developing and maintaining code that benefits the entire community while at the same time allows to exploit novel features of different vendors.  The goal of the EVOLVE project is to enhance and modernize the Open MPI library to adapt to new processor architectures and network interconnects, as well as incorporate features introduced by the most recent version of the MPI specification.\n\nThe specific contribution of the University of Houston to this project was in the area of parallel I/O. Parallel I/O refers to file I/O operations executed by multiple processes, often accessing different parts of a single, shared file. The main challenges of parallel I/O lie in creating consistent output files and maximizing the performance of parallel file I/O operations.  MPI introduced support for parallel file I/O operations starting from version two of the specification. As of today, MPI I/O is one of the most popular interfaces for reading input data and writing results to disk by large scale parallel applications.\n\nOMPIO is a parallel I/O library developed by the University of Houston as part of the Open MPI project. OMPIO separates the MPI I/O functionality into independent frameworks and provides multiple components optimizing various use-case scenarios for each framework. In addition, each framework contains sophisticated selection logic to decide which component to use in a particular scenario.\n\nThe main achievements of the EVOLVE project with respect to parallel I/O include: developing  and evaluating multi-threaded versions of individual I/O operations, a necessary prerequisite for supporting parallel applications utilizing both, MPI and threads, simultaneously; developing the concept and a prototype implementation of using data compression with MPI I/O; introduce the ability to read and write directly to/from a GPU device buffer using MPI I/O; add support for the external32 data representation in OMPIO; and add support for the atomicity feature of MPI I/O in OMPIO.\n\n\t\t\t\t\tLast Modified: 01/12/2022\n\n\t\t\t\t\tSubmitted by: Edgar Gabriel"
+ }
+}

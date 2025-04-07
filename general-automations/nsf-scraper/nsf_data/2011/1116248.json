@@ -1,0 +1,117 @@
+{
+ "awd_id": "1116248",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: CGRAs - Control and Architecture for Next-Generation FPGAs",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tao Li",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 450000.0,
+ "awd_amount": 450000.0,
+ "awd_min_amd_letter_date": "2011-07-07",
+ "awd_max_amd_letter_date": "2011-07-07",
+ "awd_abstract_narration": "This research effort is developing new electronic devices and mapping software to improve the speed, power-efficiency, and cost of digital electronics.  They start with the concept of the Field-Programmable Gate Array (FPGA), logic chips that can be programmed and reprogrammed to implement complex digital circuits.  FPGAs are an important driver for the semiconductor industry, reaching almost $3B in annual worldwide sales.  Current FPGAs are essentially seas of 1-bit compute units, each configured to do one function over and over.  To support more complex operations modern devices have a sprinkling of more complex units, including multipliers and memories, which have a more multi-bit flavor.  All the components of these devices are interconnected via a static, single-bit routing network, and are primarily programmed in hardware description languages such as Verilog or VHDL. An FPGA single-bit programmability provides a great deal of flexibility for creating arbitrary logic, but has significant inefficiencies as well.\r\nWord-based architectures, that compute and route multi-bit values simultaneously, can be much more efficient than standard FPGAs.  Word-based alternatives to FPGAs exist, such as CGRAs and MPPAs, but limitations in their control systems significantly reduce their quality and usefulness for many applications.\r\nOne of the major thrusts of this work is to merge together the customizable logic of FPGAs with the time-multiplexing ability of MPPAs and CGRAs, as well as the complex control flow supported by modern multi-core CPUs.  Unlike a standard FPGA, that statically configures all of its resources to do a single task, this system allows each compute element in the device to run a small program.  This provides a significantly greater compute density in these devices.  However, to boost this even further, they are exploring mechanisms to make use of branching and conditional operation.  Specifically, where a microprocessor might take a branch based upon a loop condition or as part of an if-then-else construct, their hardware system can either change the instructions loaded during that cycle, or branch to a different portion of the overall operation.  However, unlike MPPAs and CGRAs, their system can perform data-dependent instruction selection within a large, automatically mapped computation region operating in lock-step.  Alternatively, for control-heavy portions of a computation they can embed complete, simple VLIW processors into the fabric of their system.\r\nTo support these efforts, they are developing new compilation strategies to convert computations into efficient implementations on these architectures.  They are also looking at the hardware resources required to support these operations.  This includes methods for stalling portions of the array when their communication demands temporarily cannot be met, as well as mechanisms to synchronize the program counters of regions of the array operating in lock-step.\r\nWhen combined, they estimate these systems will provide an order of magnitude improvement in area-power product, and at least a factor of 2 performance improvement, over FPGAs.  The resulting hardware and software systems should be able to significantly reduce the power consumption, lower the cost, and increase the speed of a large swath of electronic systems.  Also, their improved programming models will make these systems easier to develop and maintain.\r\nThis effort also includes a focus on improving the diversity of the engineering workforce at both the graduate and undergraduate level, with mentoring and research opportunities at each level.  All of these activities are done within an overall effort towards outreach to underrepresented groups.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Scott",
+   "pi_last_name": "Hauck",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Scott A Hauck",
+   "pi_email_addr": "hauck@uw.edu",
+   "nsf_id": "000189513",
+   "pi_start_date": "2011-07-07",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Carl",
+   "pi_last_name": "Ebeling",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Carl Ebeling",
+   "pi_email_addr": "ebeling@cs.washington.edu",
+   "nsf_id": "000305191",
+   "pi_start_date": "2011-07-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Washington",
+  "inst_street_address": "4333 BROOKLYN AVE NE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SEATTLE",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "2065434043",
+  "inst_zip_code": "981951016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "WA07",
+  "org_lgl_bus_name": "UNIVERSITY OF WASHINGTON",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HD1WMN6945W6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Washington",
+  "perf_str_addr": "4333 BROOKLYN AVE NE",
+  "perf_city_name": "SEATTLE",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "981951016",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "WA07",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7941",
+   "pgm_ref_txt": "COMPUTER ARCHITECTURE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 450000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The research under this grant focuses on the development of computer architectures and associated software development tools designed to leverage the continuing trend in increased transistor density that traditional processor architectures struggle to address.&nbsp; Coarse-grain reconfigurable arrays (CGRAs) provide an avenue to extract higher performance at lower power consumption than existing architectures for a variety of applications.&nbsp; This work explores a new style of execution for CGRA architectures by developing both the hardware feature support as well as a tool suite to map applications to the enhanced architectures.</p>\n<p>Existing CGRAs are largely limited to a single modulo scheduled computation, generally the most critical section of an algorithm (the kernel).&nbsp; While this can be quite useful, practical applications often include additional less commonly executed code blocks and may be assembled from a collection of smaller communicating kernels.&nbsp; In order to broaden the scope of applications that can be efficiently mapped to CGRAs, we explore techniques to allow the device to execute multiple independent kernels simultaneously.&nbsp; We further develop scheduling techniques and associated tools to support a richer execution style than a single modulo schedule within a single kernel.&nbsp; Our new scheduling technique creates modulo scheduled behavior enabling the kernel to transition between different modes of operation while allowing each mode to be optimized for throughput.&nbsp; Such an approach on a traditional CGRA that only supports a single modulo schedule would consume operation issue slots for both modes leading to a wasteful implementation or a drastic reduction in the configuration memory available to each mode.</p>\n<p>Numerous papers covering both the hardware enhancements and a prototype tool chain utilizing the new execution style advance the state of the art in the field of reconfigurable computing.&nbsp; As conventional processor performance has stalled and FPGA designs starts continue to rise against ASICs, our work enhances both reconfigurable architectures themselves and the tools used to target them.&nbsp; Developing viable architectural components and tools to support next generation FPGA architectures helps drive improving the capabilities of applications that leverage FPGA technology beyond the trends established by manufacturing improvements.&nbsp; The steady pace of silicon density increases outstrip corresponding performance increases in traditional processor architectures leaving a widening gap between the capacity to build devices and the ability to use them effectively and efficiently.&nbsp; This project demonstrates the potential for improved performance, programmability and efficiency over existing offerings.&nbsp; The ability to tune a hardware implementation towards a particular application or even a particular deployment of an application through reconfigurability in commodity devices fundamentally changes the relationship between hardware and software.&nbsp; FPGA design is still far removed from writing software for general purpose processors, but this work contributes towards blurring the line between hardware and software in terms of understanding the architectural features and tools to mitigate the low level detail necessary to extract efficient performance from future FPGA architectures.&nbsp; The combination of both architectural features as well as the tools to leverage them provides a viable trajectory for commercial adoption.</p>\n<p>Many disciplines increasingly leverage computing technology.&nbsp; This project helps enhance areas such as genomics, protein folding, and physics and financial simulations.&nbsp; Applications for existing FPGAs are often developed not by experts within the discipline, but by FPGA experts, who often have to either expend a great deal of time to gain domain understan...",
+  "por_txt_cntn": "\nThe research under this grant focuses on the development of computer architectures and associated software development tools designed to leverage the continuing trend in increased transistor density that traditional processor architectures struggle to address.  Coarse-grain reconfigurable arrays (CGRAs) provide an avenue to extract higher performance at lower power consumption than existing architectures for a variety of applications.  This work explores a new style of execution for CGRA architectures by developing both the hardware feature support as well as a tool suite to map applications to the enhanced architectures.\n\nExisting CGRAs are largely limited to a single modulo scheduled computation, generally the most critical section of an algorithm (the kernel).  While this can be quite useful, practical applications often include additional less commonly executed code blocks and may be assembled from a collection of smaller communicating kernels.  In order to broaden the scope of applications that can be efficiently mapped to CGRAs, we explore techniques to allow the device to execute multiple independent kernels simultaneously.  We further develop scheduling techniques and associated tools to support a richer execution style than a single modulo schedule within a single kernel.  Our new scheduling technique creates modulo scheduled behavior enabling the kernel to transition between different modes of operation while allowing each mode to be optimized for throughput.  Such an approach on a traditional CGRA that only supports a single modulo schedule would consume operation issue slots for both modes leading to a wasteful implementation or a drastic reduction in the configuration memory available to each mode.\n\nNumerous papers covering both the hardware enhancements and a prototype tool chain utilizing the new execution style advance the state of the art in the field of reconfigurable computing.  As conventional processor performance has stalled and FPGA designs starts continue to rise against ASICs, our work enhances both reconfigurable architectures themselves and the tools used to target them.  Developing viable architectural components and tools to support next generation FPGA architectures helps drive improving the capabilities of applications that leverage FPGA technology beyond the trends established by manufacturing improvements.  The steady pace of silicon density increases outstrip corresponding performance increases in traditional processor architectures leaving a widening gap between the capacity to build devices and the ability to use them effectively and efficiently.  This project demonstrates the potential for improved performance, programmability and efficiency over existing offerings.  The ability to tune a hardware implementation towards a particular application or even a particular deployment of an application through reconfigurability in commodity devices fundamentally changes the relationship between hardware and software.  FPGA design is still far removed from writing software for general purpose processors, but this work contributes towards blurring the line between hardware and software in terms of understanding the architectural features and tools to mitigate the low level detail necessary to extract efficient performance from future FPGA architectures.  The combination of both architectural features as well as the tools to leverage them provides a viable trajectory for commercial adoption.\n\nMany disciplines increasingly leverage computing technology.  This project helps enhance areas such as genomics, protein folding, and physics and financial simulations.  Applications for existing FPGAs are often developed not by experts within the discipline, but by FPGA experts, who often have to either expend a great deal of time to gain domain understanding or fail to fully take advantage of the background knowledge of these other research areas.  As part of this project, we have partnered with domain experts ..."
+ }
+}

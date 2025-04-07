@@ -1,0 +1,105 @@
+{
+ "awd_id": "2001082",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: CORE: Small: Collaborative: Exploring the Boundaries of Large-Scale Secure Computation",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032922981",
+ "po_email": "pregalia@nsf.gov",
+ "po_sign_block_name": "Phillip Regalia",
+ "awd_eff_date": "2020-07-01",
+ "awd_exp_date": "2024-06-30",
+ "tot_intn_awd_amt": 199917.0,
+ "awd_amount": 199917.0,
+ "awd_min_amd_letter_date": "2020-03-26",
+ "awd_max_amd_letter_date": "2020-03-26",
+ "awd_abstract_narration": "As the capability and connectivity of communication networks scale up, existing secure distributed protocols need to resort to a frugal use of their communication resources to ensure their scalability. Secure multi-party computation (MPC), which allows a set of mutually distrustful parties to perform arbitrary computations on their joint inputs in a secure way, even in the presence of malicious participants and attackers, epitomizes such kind of secure distributed computation, and despite great improvements in all communication metrics over the last decade, existing solutions do not scale well in settings where a large number of participants are involved. One of the reasons is that in standard MPC protocols every party needs to directly communicate will all other parties, yielding protocols with high communication costs. Recently, some attempts to address this issue were made to carry out MPC with lower communication costs. The project's impacts are to put forth a systematic study of this type of MPC protocols, which we call \"Communication-Frugal MPC\" (CF-MPC), and to advance its theoretical foundations to meet the state of the art comparable to standard MPC. In an era where computation on large data has become a dominant application, such exploration is of central importance in both theory and practice.\r\n\r\nThe project's novelties include: (1) Development of a rigorous and composable cryptographic model for capturing CF-MPC; (2) feasibility study of CF-MPC with optimal resiliency (i.e., the maximal number of potentially malicious participants that can be tolerated) across all standard communication and adversary models (synchronous vs asynchronous, and static vs adaptive); and (3) improved constructions on additional communication metrics such as message, bit, and round complexity. The project will train graduate and undergraduate students.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Juan",
+   "pi_last_name": "Garay",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Juan A Garay",
+   "pi_email_addr": "garay@tamu.edu",
+   "nsf_id": "000763798",
+   "pi_start_date": "2020-03-26",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Texas A&M Engineering Experiment Station",
+  "inst_street_address": "3124 TAMU",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE STATION",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "9798626777",
+  "inst_zip_code": "778433124",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "TX10",
+  "org_lgl_bus_name": "TEXAS A&M ENGINEERING EXPERIMENT STATION",
+  "org_prnt_uei_num": "QD1MX6N5YTN4",
+  "org_uei_num": "QD1MX6N5YTN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Texas A&M University",
+  "perf_str_addr": "710 Ross St.",
+  "perf_city_name": "College Station",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "778433112",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "TX10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 199917.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Secure multi-party computation (MPC) allows a set of mutually distrustful parties to compute any function on their joint inputs in a secure way, even in the presence of malicious attackers. Despite great improvements in all communication metrics over the last decade, existing solutions do not scale well in settings where a large number of participants are involved. One of the reasons is that in standard MPC protocols every party needs to directly communicate will all other parties, yielding protocols with (at least) linear communication locality. More recently, sporadic attempts to address this issue were made to establish MPC with better (sublinear in the number of parties) communication costs.</p>\n<p>The goal of this proposal was to put forth a systematic study of this type of secure computation, which we call <em>Communication-Frugal MPC </em>(CF-MPC for short) and advance its theoretical foundations to meet the state of the art in standard MPC. Specifically, we proposed research in the following directions: (G1) Study of feasibility of CF-MPC in the synchronous&nbsp; communication&nbsp; model&nbsp; against&nbsp; worst-case&nbsp; adversaries; (G2) study of feasibility of CF-MPC in the more realistic asynchronous model with eventual message delivery; (G3) improve on additional communication metrics such as message, bit, and round complexity; and (G4) develop a rigorous (and composability-supporting) cryptographic model for capturing and stating the above CF-MPC results.</p>\n<ul>\n<li>G1: We started off by studying the problem of reliable/secure all-to-all communication over low-degree networks, which is essential for CF-MPC, in the presence of <em>adaptive</em> adversaries, who are able to corrupt participants on the fly. Two basic assumptions in the literature on adaptively secure protocols are that parties can (1) <em>multisend</em> messages to several receivers simultaneously; and (2) <em>securely erase</em> the message and the identities of the receivers, before the adversary gets a chance to corrupt the sender (even if a receiver is corrupted). We were able to characterize the feasibility landscape for all-to-all reliable message transmission (RMT) under these two assumptions, and use this characterization to obtain (asymptotically) tight feasibility results for synchronous CF-MPC. Specifically, (a) we proved a strong impossibility result for a broad class of RMT protocols, termed here <em>store-and-forward</em> protocols, which includes all known communication protocols for CF-MPC from standard cryptographic assumptions; (b) next, under the assumption of only a public-key infrastructure (PKI), we showed that assuming secure erasures, we can obtain an RMT protocol between all pairs of parties with polylogarithmic locality (even without assuming multisend) for the honest majority setting. We complemented this result by showing a negative result for the setting of dishonest majority; and (c) finally, and somewhat surprisingly, under stronger assumptions (i.e., trapdoor permutations with a reverse domain sampler and malicious, compact, circuit-private FHE), we constructed a polylogarithmic-locality all-to-one RMT protocol, which is adaptively secure and tolerates any constant fraction of corruptions, without assuming either secure erasures or multisend.</li>\n</ul>\n<ul>\n<li>G2 &amp; G3: We realized that an important building block for asynchronous MPC (even non-CF) -- namely, a <strong>multi-valued</strong> <em>Oblivious Common Coin</em> (OCC) -- <strong>did not</strong> exist, despite having been assumed in the literature. We designed such a building block, thus achieving asynchronous and concurrent <em>Byzantine agreement</em> in expected-constant rounds, which in turn gives round-efficient (asynchronous) MPC. Further, we proved the security of the construction in the simulation-based paradigm (see next).</li>\n</ul>\n<ul>\n<li>G2 &amp; G4: In general, asynchronous MPC protocols demonstrate high-level similarities in their design philosophy and abstract structure to synchronous MPC. As such, a coveted, albeit elusive, <em>desideratum</em> is to devise automatic translators (e.g., protocol compilers) of feasibility and efficiency results from one model to the other. In our work, we presented yet another barrier that demonstrates the challenges associated with this goal. Specifically, when formulating security in the simulation paradigm, we studied the case of (parallel) composition of protocols in the asynchronous setting, and proved the impossibility of two standard composition operations known to be achievable in the synchronous setting -- <em>functionally black-box</em> (FBB) composition (i.e., assuming only oracle access to the composed functions) and <em>protocol black-box</em> (PBB) composition (i.e., assuming just access to the composed protocols' next-message functions). However, not everything is lost, as we also provided a condition on the composed CF-MPC protocols which enables a form of parallel composition, and devised a weaker (yet useful) form of asynchronous composition that can in fact be realized.</li>\n</ul>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 07/07/2024<br>\nModified by: Juan&nbsp;A&nbsp;Garay</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nSecure multi-party computation (MPC) allows a set of mutually distrustful parties to compute any function on their joint inputs in a secure way, even in the presence of malicious attackers. Despite great improvements in all communication metrics over the last decade, existing solutions do not scale well in settings where a large number of participants are involved. One of the reasons is that in standard MPC protocols every party needs to directly communicate will all other parties, yielding protocols with (at least) linear communication locality. More recently, sporadic attempts to address this issue were made to establish MPC with better (sublinear in the number of parties) communication costs.\n\n\nThe goal of this proposal was to put forth a systematic study of this type of secure computation, which we call Communication-Frugal MPC (CF-MPC for short) and advance its theoretical foundations to meet the state of the art in standard MPC. Specifically, we proposed research in the following directions: (G1) Study of feasibility of CF-MPC in the synchronous communication model against worst-case adversaries; (G2) study of feasibility of CF-MPC in the more realistic asynchronous model with eventual message delivery; (G3) improve on additional communication metrics such as message, bit, and round complexity; and (G4) develop a rigorous (and composability-supporting) cryptographic model for capturing and stating the above CF-MPC results.\n\nG1: We started off by studying the problem of reliable/secure all-to-all communication over low-degree networks, which is essential for CF-MPC, in the presence of adaptive adversaries, who are able to corrupt participants on the fly. Two basic assumptions in the literature on adaptively secure protocols are that parties can (1) multisend messages to several receivers simultaneously; and (2) securely erase the message and the identities of the receivers, before the adversary gets a chance to corrupt the sender (even if a receiver is corrupted). We were able to characterize the feasibility landscape for all-to-all reliable message transmission (RMT) under these two assumptions, and use this characterization to obtain (asymptotically) tight feasibility results for synchronous CF-MPC. Specifically, (a) we proved a strong impossibility result for a broad class of RMT protocols, termed here store-and-forward protocols, which includes all known communication protocols for CF-MPC from standard cryptographic assumptions; (b) next, under the assumption of only a public-key infrastructure (PKI), we showed that assuming secure erasures, we can obtain an RMT protocol between all pairs of parties with polylogarithmic locality (even without assuming multisend) for the honest majority setting. We complemented this result by showing a negative result for the setting of dishonest majority; and (c) finally, and somewhat surprisingly, under stronger assumptions (i.e., trapdoor permutations with a reverse domain sampler and malicious, compact, circuit-private FHE), we constructed a polylogarithmic-locality all-to-one RMT protocol, which is adaptively secure and tolerates any constant fraction of corruptions, without assuming either secure erasures or multisend.\n\n\nG2 & G3: We realized that an important building block for asynchronous MPC (even non-CF) -- namely, a multi-valued Oblivious Common Coin (OCC) -- did not exist, despite having been assumed in the literature. We designed such a building block, thus achieving asynchronous and concurrent Byzantine agreement in expected-constant rounds, which in turn gives round-efficient (asynchronous) MPC. Further, we proved the security of the construction in the simulation-based paradigm (see next).\n\n\nG2 & G4: In general, asynchronous MPC protocols demonstrate high-level similarities in their design philosophy and abstract structure to synchronous MPC. As such, a coveted, albeit elusive, desideratum is to devise automatic translators (e.g., protocol compilers) of feasibility and efficiency results from one model to the other. In our work, we presented yet another barrier that demonstrates the challenges associated with this goal. Specifically, when formulating security in the simulation paradigm, we studied the case of (parallel) composition of protocols in the asynchronous setting, and proved the impossibility of two standard composition operations known to be achievable in the synchronous setting -- functionally black-box (FBB) composition (i.e., assuming only oracle access to the composed functions) and protocol black-box (PBB) composition (i.e., assuming just access to the composed protocols' next-message functions). However, not everything is lost, as we also provided a condition on the composed CF-MPC protocols which enables a form of parallel composition, and devised a weaker (yet useful) form of asynchronous composition that can in fact be realized.\n\n\n\n\t\t\t\t\tLast Modified: 07/07/2024\n\n\t\t\t\t\tSubmitted by: JuanAGaray\n"
+ }
+}

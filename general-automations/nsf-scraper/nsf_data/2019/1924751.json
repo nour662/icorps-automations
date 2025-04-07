@@ -1,0 +1,96 @@
+{
+ "awd_id": "1924751",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "ATD: Collaborative Research: Automatic, Adaptive Detection and Description of Change in Time-Lapse Imagery",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032924885",
+ "po_email": "tbartosz@nsf.gov",
+ "po_sign_block_name": "Tomek Bartoszynski",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2023-08-31",
+ "tot_intn_awd_amt": 94344.0,
+ "awd_amount": 94344.0,
+ "awd_min_amd_letter_date": "2019-07-09",
+ "awd_max_amd_letter_date": "2019-07-09",
+ "awd_abstract_narration": "This project will provide algorithms for automatic, adaptive detection and description of changes in time-lapse imagery - a series of images obtained from the same scene over a long time frame. We wish to identify when there are \"significant\" changes in the scene, and provide a text description of those changes in natural English, where a human analyst provides feedback to determine what kinds of changes are important (e.g., a building being built, deforestation) or unimportant (e.g., seasonal changes). We will in particular focus on satellite or aerial imagery, for which data sets commonly used to train image recognition systems are inadequate. This fundamental research has the potential to transform many application domains, including surveillance, autonomous robotics, monitoring of civil infrastructure, high-throughput microscopy, and climate science, in all of which change is a common and significant occurrence. Our work on novel formulations of change description will also impact on core areas of computer vision and natural language processing, where many similar problems arise. The project will involve graduate students training and postdoctoral associate mentoring.\r\n\r\nDetecting change is one of the fundamental abilities for an agent perceiving and interacting with the world. Describing changes in natural language is key to making human interaction with such an agent efficient, accurate and transparent. Our work will advance both the theoretical understanding of these goals and the practical methods for implementing them. Specifically, we will address the above challenges for developing novel mathematical frameworks for localizing gradual changes and describing those changes in natural language; we will develop theoretical and practical means to analyze and overcome corruption in observed imagery; and we will develop novel theory and methods for leveraging human feedback. This work will yield fundamental advances in the fields of change point detection and localization, image reconstruction using deep neural networks and limited training data, and multi-armed bandit methodology for adapting to human feedback.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Gregory",
+   "pi_last_name": "Shakhnarovich",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Gregory Shakhnarovich",
+   "pi_email_addr": "greg@ttic.edu",
+   "nsf_id": "000554614",
+   "pi_start_date": "2019-07-09",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Toyota Technological Institute at Chicago",
+  "inst_street_address": "6045 S KENWOOD AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHICAGO",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "7738340409",
+  "inst_zip_code": "606372803",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "IL01",
+  "org_lgl_bus_name": "TOYOTA TECHNOLOGICAL INSTITUTE AT CHICAGO",
+  "org_prnt_uei_num": "ERBJF4DMW6G4",
+  "org_uei_num": "ERBJF4DMW6G4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Toyota Technological Institute at Chicago",
+  "perf_str_addr": "6045 S. Kenwood Ave",
+  "perf_city_name": "Chicago",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "606372803",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "IL01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": null,
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "6877",
+   "pgm_ref_txt": "ALGORITHMS IN THREAT DETECTION"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920RB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 94344.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In this project we focused on dealing with change in \"visual streams\" -- sequences of images with significant time gaps between frames. An example of such stream is a set of images of the same location taken by a satellite over long period of time, with images separated by days or even years. Another example is a set of images of a street corner, or a landmark in a city, taken at different times and possibly with different cameras.</p>\n<p>Our first focus was on detecting meaningful change in the scene, that is, change that is interesting (say, a collapsed building, moved vehicle, or significant deforestation) as opposed to \"nuisance\" change such as different lighting or seasonal variations. The second focus was on automatically producing description of the change in natural language (English) suitable for a human observer.&nbsp;</p>\n<p>The main thrust of our work on this project yielded a framework for detecting change with a novel score mechanism, based on a graph cut formulation, and a conditional language generative model for producing the descriptions. Our approach allows training the change detector/captioner with much less data compared to previously known methods, with better performance.</p>\n<p>Another effort under the project led to development of an automatic camera calibration method from a set of time-separated images. Our calibration mechanism is self-supervised (purely from the images with no need for additional devices of procedures as in traditional calibration methods) and is adaptive to change in the underlying scene -- a novel capability.</p>\n<p>&nbsp;</p>\n<p>Throughout the project we have trained a number of PhD students, presented our work at multiple workshops and conferences, and incorporated elements of the research developed in our work on the project into courses (machine learning and computer vision).</p><br>\n<p>\n Last Modified: 08/19/2024<br>\nModified by: Gregory&nbsp;Shakhnarovich</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nIn this project we focused on dealing with change in \"visual streams\" -- sequences of images with significant time gaps between frames. An example of such stream is a set of images of the same location taken by a satellite over long period of time, with images separated by days or even years. Another example is a set of images of a street corner, or a landmark in a city, taken at different times and possibly with different cameras.\n\n\nOur first focus was on detecting meaningful change in the scene, that is, change that is interesting (say, a collapsed building, moved vehicle, or significant deforestation) as opposed to \"nuisance\" change such as different lighting or seasonal variations. The second focus was on automatically producing description of the change in natural language (English) suitable for a human observer.\n\n\nThe main thrust of our work on this project yielded a framework for detecting change with a novel score mechanism, based on a graph cut formulation, and a conditional language generative model for producing the descriptions. Our approach allows training the change detector/captioner with much less data compared to previously known methods, with better performance.\n\n\nAnother effort under the project led to development of an automatic camera calibration method from a set of time-separated images. Our calibration mechanism is self-supervised (purely from the images with no need for additional devices of procedures as in traditional calibration methods) and is adaptive to change in the underlying scene -- a novel capability.\n\n\n\n\n\nThroughout the project we have trained a number of PhD students, presented our work at multiple workshops and conferences, and incorporated elements of the research developed in our work on the project into courses (machine learning and computer vision).\t\t\t\t\tLast Modified: 08/19/2024\n\n\t\t\t\t\tSubmitted by: GregoryShakhnarovich\n"
+ }
+}

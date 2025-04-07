@@ -1,0 +1,101 @@
+{
+ "awd_id": "1906361",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Novel Resolution Analysis of Reconstruction Algorithms in Tomography",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Pedro Embid",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2024-08-31",
+ "tot_intn_awd_amt": 170897.0,
+ "awd_amount": 170897.0,
+ "awd_min_amd_letter_date": "2019-07-22",
+ "awd_max_amd_letter_date": "2019-07-22",
+ "awd_abstract_narration": "A number of practically important imaging problems involve inversion of an integral transform, that is, recovery of a function from its integrals over a family of surfaces. Examples of surfaces are planes, spheres, ellipses, etc. Applications include X-ray computer tomography (CT), ultrasound imaging, thermo-acoustic and photo-acoustic tomography, Compton camera imaging, and many others. Frequently, reconstruction is achieved by applying a linear inversion formula. It is of fundamental importance to know how the resolution of the reconstruction depends on data sampling. Despite the significance of this problem, not much is known about the resolution of tomographic reconstruction from discrete data. For general transforms, results are scarce and mostly semi-qualitative. The objective of this project is to develop and rigorously justify a novel approach to resolution analysis of a general class of transforms. The approach is based on the analysis of how accurately the singularities of the function are reconstructed. The project will provide a flexible theoretical framework for computing the resolution of a wide range of algorithms that reconstruct from discrete data. It will lead to a deeper insight into how tomographic algorithms reconstruct singularities of an object, analysis of artifacts, detectability of small objects, and open the opportunity for virtually unlimited further exploration. The project provides opportunities and support for the training of graduate students.\r\n\r\nMore specifically, the project encompasses the following general aims: (i) analysis of resolution in the setting of the Generalized Radon Transform (GRT); (ii) applications of the theory to address practical needs of imaging; and (iii) numerical verification of the obtained formulas. The reconstruction problem is formulated in terms of the GRT, which integrates over a fairly general family of surfaces. The investigator plans to obtain explicitly the edge response of the reconstruction as the data sampling rate increases. This setting is general and covers a wide range of integral transforms. The idea of the approach is to combine the tools of microlocal analysis and computational mathematics. This approach  will be applied to several more narrowly defined problems, including analysis of resolution of common reconstruction algorithms. The results obtained will be tested on numerical experiments. This will typically involve implementing a reconstruction algorithm and comparing actual and predicted resolutions.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Alexander",
+   "pi_last_name": "Katsevich",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Alexander Katsevich",
+   "pi_email_addr": "Alexander.Katsevich@ucf.edu",
+   "nsf_id": "000406881",
+   "pi_start_date": "2019-07-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "The University of Central Florida Board of Trustees",
+  "inst_street_address": "4000 CENTRAL FLORIDA BLVD",
+  "inst_street_address_2": "",
+  "inst_city_name": "ORLANDO",
+  "inst_state_code": "FL",
+  "inst_state_name": "Florida",
+  "inst_phone_num": "4078230387",
+  "inst_zip_code": "328168005",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "FL10",
+  "org_lgl_bus_name": "THE UNIVERSITY OF CENTRAL FLORIDA BOARD OF TRUSTEES",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "RD7MXJV7DKT9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Central Florida",
+  "perf_str_addr": "4000 CNTRL FLORIDA BLVD",
+  "perf_city_name": "ORLANDO",
+  "perf_st_code": "FL",
+  "perf_st_name": "Florida",
+  "perf_zip_code": "328168005",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "FL10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126600",
+   "pgm_ele_name": "APPLIED MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8037",
+   "pgm_ref_txt": "Advanced Manufacturing"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 170897.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>An important practical goal in computed tomography (CT) applications is to understand the relation between the rate of sampling at which the discrete tomographic data is collected and the level of noise in the data and the quality of the reconstructed image. For example, often one needs to understand at what resolution the singularities (non-smoothness) of the original object appear in the reconstructed images. The question of resolution of singularities is extremely important in many applications, such as medical imaging, nondestructive evaluation, metrology, luggage and cargo scanning for threat detection.</p>\n<p>During the project, the PI developed a powerful and flexible novel theory, called local reconstruction analysis (LRA), to characterize the quality of images reconstructed from discrete, noisy tomographic data. The work proceeded in four main directions.</p>\n<p>The first direction is analysis of resolution with which the singularities (i.e., jump discontinuities) of an object, represented by some function f, are reconstructed in a deterministic setting, i.e., in the absence of noise. In this direction the singularities of &nbsp;f &nbsp;lie on a smooth curve, denoted S. We derive an explicit, easily computable function called the discrete transition behavior (or DTB for short) that accurately describes the reconstructed function in a neighborhood of S. Both the size of the neighborhood around S, where the approximation is accurate, and the data sampling rate go to zero simultaneously. The obtained DTB function is a complete description of the reconstruction from discrete data in a neighborhood of a singularity. To put it simply, DTB is an accurate estimate of the reconstruction itself, which is the most one can ever obtain in a resolution analysis. Conventional measures of resolution such as Full Width at Half Maximum (FWHM), line pairs per unit length, etc., are a single number each. Once the full DTB function is computed, getting any desired resolution measurement from it (i.e., converting the DTB function into a single number) is easy. The developed theory applies to a general class of generalized Radon transforms, which operate in a Euclidean space of any dimension n&gt;1 and integrate over submanifolds of any dimension between 2 and n-1.</p>\n<p>The second direction is analysis of resolution with which jump discontinuities of &nbsp;f&nbsp; are reconstructed when&nbsp; f&nbsp; has jumps across rough boundaries. The setting is the classical Radon transform in the plane. In many applications, discontinuities of &nbsp;f &nbsp;occur across rough surfaces. Examples include soil and rock imaging, where the surfaces of cracks and pores, and the boundaries between different regions are highly irregular and frequently simulated by fractals. Another example is cancer detection in medical imaging. Cancerous lesions have rougher boundaries than benign ones. Fractal models have also been applied to images of tumors in medical literature, e.g., to perfusion images. Perfusion is a way a lesion grows blood vessels. Like in the first direction, we obtain a simple, easily computable DTB function that accurately approximates the reconstructed image.</p>\n<p>The third direction is analysis of aliasing (ripple artifacts) at points away from the boundary (e.g., an edge) S. In this direction, we consider the generalized Radon transform in the plane. Let f be a piecewise smooth function which has a jump across a smooth curve S. We obtain a formula, which accurately describes view aliasing artifacts away from S when f is reconstructed from the data discretized in the view direction.</p>\n<p>In the preceding three directions, the data are noise-free. In the fourth direction, the PI, along with Prof. Anuj Abhishek and Dr. James Webber, analyzed noise in the reconstructed images. A stochastic setting is assumed, i.e., the data are discrete and noisy. The obtained results provide an explicit and accurate local approximation to the error in the reconstructed image due to random noise. The initial work was performed for the classical Radon transform in the plane. Later the PI extended the results to a general class of Radon transforms, which operate in a Euclidean space of any dimension n&gt;1 and integrate over submanifolds of any dimension between 2 and n-1.</p>\n<p>Taking all the obtained results together, LRA provides a complete and accurate local description of the reconstruction error from discrete data in the presence of noise. This contrasts with global descriptions, which estimate the reconstruction error in some global norms. The main novelty and advantage of LRA is that it describes the reconstruction error at the scale of the data step-size, which is important in many CT applications (e.g., precise imaging of tumor boundaries in medical CT). No additional processing, such as smoothing at scales greater than the data step-size that may be necessary to establish convergence results, is applied. Thus, LRA allows statistical inference at native resolution (e.g., study detectability of small features) in a neighborhood of any point in the reconstructed image (including near S) while accounting for both data-discretization and non-identically distributed random noise.</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 09/16/2024<br>\nModified by: Alexander&nbsp;Katsevich</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nAn important practical goal in computed tomography (CT) applications is to understand the relation between the rate of sampling at which the discrete tomographic data is collected and the level of noise in the data and the quality of the reconstructed image. For example, often one needs to understand at what resolution the singularities (non-smoothness) of the original object appear in the reconstructed images. The question of resolution of singularities is extremely important in many applications, such as medical imaging, nondestructive evaluation, metrology, luggage and cargo scanning for threat detection.\n\n\nDuring the project, the PI developed a powerful and flexible novel theory, called local reconstruction analysis (LRA), to characterize the quality of images reconstructed from discrete, noisy tomographic data. The work proceeded in four main directions.\n\n\nThe first direction is analysis of resolution with which the singularities (i.e., jump discontinuities) of an object, represented by some function f, are reconstructed in a deterministic setting, i.e., in the absence of noise. In this direction the singularities of f lie on a smooth curve, denoted S. We derive an explicit, easily computable function called the discrete transition behavior (or DTB for short) that accurately describes the reconstructed function in a neighborhood of S. Both the size of the neighborhood around S, where the approximation is accurate, and the data sampling rate go to zero simultaneously. The obtained DTB function is a complete description of the reconstruction from discrete data in a neighborhood of a singularity. To put it simply, DTB is an accurate estimate of the reconstruction itself, which is the most one can ever obtain in a resolution analysis. Conventional measures of resolution such as Full Width at Half Maximum (FWHM), line pairs per unit length, etc., are a single number each. Once the full DTB function is computed, getting any desired resolution measurement from it (i.e., converting the DTB function into a single number) is easy. The developed theory applies to a general class of generalized Radon transforms, which operate in a Euclidean space of any dimension n1 and integrate over submanifolds of any dimension between 2 and n-1.\n\n\nThe second direction is analysis of resolution with which jump discontinuities of f are reconstructed when f has jumps across rough boundaries. The setting is the classical Radon transform in the plane. In many applications, discontinuities of f occur across rough surfaces. Examples include soil and rock imaging, where the surfaces of cracks and pores, and the boundaries between different regions are highly irregular and frequently simulated by fractals. Another example is cancer detection in medical imaging. Cancerous lesions have rougher boundaries than benign ones. Fractal models have also been applied to images of tumors in medical literature, e.g., to perfusion images. Perfusion is a way a lesion grows blood vessels. Like in the first direction, we obtain a simple, easily computable DTB function that accurately approximates the reconstructed image.\n\n\nThe third direction is analysis of aliasing (ripple artifacts) at points away from the boundary (e.g., an edge) S. In this direction, we consider the generalized Radon transform in the plane. Let f be a piecewise smooth function which has a jump across a smooth curve S. We obtain a formula, which accurately describes view aliasing artifacts away from S when f is reconstructed from the data discretized in the view direction.\n\n\nIn the preceding three directions, the data are noise-free. In the fourth direction, the PI, along with Prof. Anuj Abhishek and Dr. James Webber, analyzed noise in the reconstructed images. A stochastic setting is assumed, i.e., the data are discrete and noisy. The obtained results provide an explicit and accurate local approximation to the error in the reconstructed image due to random noise. The initial work was performed for the classical Radon transform in the plane. Later the PI extended the results to a general class of Radon transforms, which operate in a Euclidean space of any dimension n1 and integrate over submanifolds of any dimension between 2 and n-1.\n\n\nTaking all the obtained results together, LRA provides a complete and accurate local description of the reconstruction error from discrete data in the presence of noise. This contrasts with global descriptions, which estimate the reconstruction error in some global norms. The main novelty and advantage of LRA is that it describes the reconstruction error at the scale of the data step-size, which is important in many CT applications (e.g., precise imaging of tumor boundaries in medical CT). No additional processing, such as smoothing at scales greater than the data step-size that may be necessary to establish convergence results, is applied. Thus, LRA allows statistical inference at native resolution (e.g., study detectability of small features) in a neighborhood of any point in the reconstructed image (including near S) while accounting for both data-discretization and non-identically distributed random noise.\n\n\n\t\t\t\t\tLast Modified: 09/16/2024\n\n\t\t\t\t\tSubmitted by: AlexanderKatsevich\n"
+ }
+}

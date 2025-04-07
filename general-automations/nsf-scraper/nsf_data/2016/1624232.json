@@ -1,0 +1,109 @@
+{
+ "awd_id": "1624232",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Polygonal and Polyhedral Elements as a New Computational Paradigm to Study Soft Materials",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": "7032922211",
+ "po_email": "sqidwai@nsf.gov",
+ "po_sign_block_name": "Siddiq Qidwai",
+ "awd_eff_date": "2015-05-01",
+ "awd_exp_date": "2018-08-31",
+ "tot_intn_awd_amt": 389180.0,
+ "awd_amount": 389180.0,
+ "awd_min_amd_letter_date": "2016-01-20",
+ "awd_max_amd_letter_date": "2016-02-10",
+ "awd_abstract_narration": "Modern advances in materials science have revealed that soft organic solids --- such as electro- and magneto-active elastomers, gels, and shape-memory polymers --- hold tremendous potential to enable new high-end technologies, especially as the next generation of sensors and actuators featured by their low cost together with their biocompatibility, processability into arbitrary shapes, and unique capability to undergo large reversible deformations. The realization of this potential has prompted an upsurge in the computational microscopic and mesoscopic studies of soft materials with the objectives of quantitatively understanding their behavior from the bottom up and ultimately guiding their optimization and actual use in technological applications. Almost all of these studies have made use of standard finite elements, which have repeatedly proved unable to simulate processes involving realistically large deformations. The graduate students involved in the project will benefit from the collaborative computational/theoretical character of the research. Concepts developed from this interdisciplinary research will be adapted into the curriculum and will positively impact engineering education.\r\n\r\nThe main objective of this project is to put forward a new computational technology with the capability to study soft solids undergoing realistically large deformations. A second objective is to deploy this technology to study the nonlinear elastic response of soft solids with complex particulate microstructures (e.g. elastomers reinforced with anisotropic filler particles), ubiquitous in many soft active material systems. From a conceptual point of view, this will be accomplished by making use of mimetic inspired methods (which preserve the underlying properties of physical and mathematical models, thereby improving the predictive capability of computer simulations) to put forward a new discretization approach for arbitrarily shaped elements under finite deformations in the context of finite element and virtual element methods. This work involves collaboration with the University of Milan and Los Alamos National Laboratory.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Glaucio",
+   "pi_last_name": "Paulino",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Glaucio Paulino",
+   "pi_email_addr": "gp1863@princeton.edu",
+   "nsf_id": "000149408",
+   "pi_start_date": "2016-01-20",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Tech Research Corporation",
+  "perf_str_addr": "790 Atlantic Drive",
+  "perf_city_name": "Atlanta",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320355",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "163000",
+   "pgm_ele_name": "Mechanics of Materials and Str"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "022E",
+   "pgm_ref_txt": "SOLID MECHANICS"
+  },
+  {
+   "pgm_ref_code": "024E",
+   "pgm_ref_txt": "MATERIALS DESIGN"
+  },
+  {
+   "pgm_ref_code": "027E",
+   "pgm_ref_txt": "NANOMECHANICS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0114",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001415DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2014,
+   "fund_oblg_amt": 389180.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Due to its unique and intriguing properties, polygonal and polyhedral discretization is an emerging field in computational mechanics. This project advances finite element and virtual element formulations for computational mechanics problems on general polygonal and polyhedral discretizations.</p>\n<p>The construction of finite element approximations on polygonal and polyhedral meshes relies on generalized barycentric coordinates, which are non-polynomial (e.g. rational) functions. Thus, the existing numerical integration schemes, typically designed to integrate polynomial functions, will lead to persistent consistency errors that do not vanish with mesh refinement. To overcome the limitation, we contributed a general gradient correction scheme, which restores the polynomial consistency by adding a minimal perturbation to the gradient of the displacement field, and applied it to formulate both lower- and higher-order polygonal finite elements for finite elasticity problems. With the gradient correction scheme, the optimal convergence is recovered in finite elasticity problems.</p>\n<p>The virtual element method (VEM) was recently proposed as an attractive framework to handle unstructured polygonal/polyhedral discretizations and beyond (e.g., arbitrary non-convex shapes). The VEM is inspired by the mimetic methods, which mimics fundamental properties of mathematical and physical systems (e.g., exact mathematical identities of tensor calculus). Unlike the finite element method (FEM), there are no explicit shape functions in the VEM, which is a unique feature that leads to flexible definitions of the local VEM spaces. We have contributed novel VEM formulations for several classes of computational mechanics problems. First, to study soft materials, we presented a general VEM framework for finite elasticity. The framework features a nonlinear stabilization scheme, which evolves with deformation; and a local mathematical displacement space, which can effectively handle any element shape, including concave elements or ones with non-planar faces. We verify the convergence and accuracy of the proposed virtual elements by means of examples using unique element shapes inspired by Escher (the Dutch artist famous for his so-called impossible constructions). Second, to fully realize the potential of VEM in mesh adaptation (i.e., refinement, coarsening and local re-meshing), we created a gradient recovery scheme and a posteriori error estimator for VEM of arbitrary order for linear elasticity problems. The a-posteriori error estimator is simple to implement yet has been shown to be effective through theoretical and numerical analyses. Finally, from a design viewpoint, we devised an efficient topology optimization framework on general polyhedral discretizations by synergistically incorporating the VEM and its mathematical/numerical features in the underlining formulation. As a result, the tailored VEM space naturally leads to a continuous material density field interpolated from nodal design variables. This approach yields a mixed virtual element with an enhanced density field.</p>\n<p>D. Heng Chi, who was supported by this project during his PhD, won the 28<sup>th </sup>Robert J. MELOSH Medal in computational Mechanics in 2017. Moreover, he was part of the team that won the SIEMENS hackathon at Georgia Tech. The team combined machine learning and topology optimization to make computational design and digital manufacturing more efficient and effective.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/20/2021<br>\n\t\t\t\t\tModified by: Glaucio&nbsp;Paulino</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2021/1624232/1624232_10320466_1626836143852_Polygonal--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/1624232/1624232_10320466_1626836143852_Polygonal--rgov-800width.jpg\" title=\"Polyhedral mesh\"><img src=\"/por/images/Reports/POR/2021/1624232/1624232_10320466_1626836143852_Polygonal--rgov-66x44.jpg\" alt=\"Polyhedral mesh\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Complex polyhedral mesh used for virtual element method (VEM) computations.</div>\n<div class=\"imageCredit\">Glaucio H. Paulino nd Heng Chi</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Glaucio&nbsp;Paulino</div>\n<div class=\"imageTitle\">Polyhedral mesh</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nDue to its unique and intriguing properties, polygonal and polyhedral discretization is an emerging field in computational mechanics. This project advances finite element and virtual element formulations for computational mechanics problems on general polygonal and polyhedral discretizations.\n\nThe construction of finite element approximations on polygonal and polyhedral meshes relies on generalized barycentric coordinates, which are non-polynomial (e.g. rational) functions. Thus, the existing numerical integration schemes, typically designed to integrate polynomial functions, will lead to persistent consistency errors that do not vanish with mesh refinement. To overcome the limitation, we contributed a general gradient correction scheme, which restores the polynomial consistency by adding a minimal perturbation to the gradient of the displacement field, and applied it to formulate both lower- and higher-order polygonal finite elements for finite elasticity problems. With the gradient correction scheme, the optimal convergence is recovered in finite elasticity problems.\n\nThe virtual element method (VEM) was recently proposed as an attractive framework to handle unstructured polygonal/polyhedral discretizations and beyond (e.g., arbitrary non-convex shapes). The VEM is inspired by the mimetic methods, which mimics fundamental properties of mathematical and physical systems (e.g., exact mathematical identities of tensor calculus). Unlike the finite element method (FEM), there are no explicit shape functions in the VEM, which is a unique feature that leads to flexible definitions of the local VEM spaces. We have contributed novel VEM formulations for several classes of computational mechanics problems. First, to study soft materials, we presented a general VEM framework for finite elasticity. The framework features a nonlinear stabilization scheme, which evolves with deformation; and a local mathematical displacement space, which can effectively handle any element shape, including concave elements or ones with non-planar faces. We verify the convergence and accuracy of the proposed virtual elements by means of examples using unique element shapes inspired by Escher (the Dutch artist famous for his so-called impossible constructions). Second, to fully realize the potential of VEM in mesh adaptation (i.e., refinement, coarsening and local re-meshing), we created a gradient recovery scheme and a posteriori error estimator for VEM of arbitrary order for linear elasticity problems. The a-posteriori error estimator is simple to implement yet has been shown to be effective through theoretical and numerical analyses. Finally, from a design viewpoint, we devised an efficient topology optimization framework on general polyhedral discretizations by synergistically incorporating the VEM and its mathematical/numerical features in the underlining formulation. As a result, the tailored VEM space naturally leads to a continuous material density field interpolated from nodal design variables. This approach yields a mixed virtual element with an enhanced density field.\n\nD. Heng Chi, who was supported by this project during his PhD, won the 28th Robert J. MELOSH Medal in computational Mechanics in 2017. Moreover, he was part of the team that won the SIEMENS hackathon at Georgia Tech. The team combined machine learning and topology optimization to make computational design and digital manufacturing more efficient and effective.\n\n \n\n\t\t\t\t\tLast Modified: 07/20/2021\n\n\t\t\t\t\tSubmitted by: Glaucio Paulino"
+ }
+}

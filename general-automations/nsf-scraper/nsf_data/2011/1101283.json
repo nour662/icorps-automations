@@ -1,0 +1,113 @@
+{
+ "awd_id": "1101283",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "ICES: Small: Collaborative Research:  Algorithms and Mechanisms for Pricing, Influencing Dynamics, and Economic Optimization",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tracy Kimbrel",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 185320.0,
+ "awd_amount": 185320.0,
+ "awd_min_amd_letter_date": "2011-04-18",
+ "awd_max_amd_letter_date": "2015-11-09",
+ "awd_abstract_narration": "The intersection of Computer Science and Economics has become increasingly important to the development of both fields.  Today's software often must handle multiple individuals with their own interests in mind, bringing incentive issues to the forefront in algorithm design.  Economic problems, especially in electronic commerce, increasingly involve large numbers of goods and buyers as well as unknown and complex market conditions, making algorithms and machine learning of key importance.  This project aims to address fundamental questions at the heart of the intersection of these two fields.  These include problems of modeling and influencing behavior in systems with large numbers of agents and components, problems of optimization under complex and changing preferences and constraints in electronic commerce, and problems of efficiently computing and estimating basic economic quantities.\r\n\r\nThis project specifically has three main thrusts. The first is development of algorithms and analysis techniques for positively influencing dynamics in systems with large numbers of interacting agents.  For example, if behavior is currently at a poor-quality equilibrium, when can additional information or a few targeted incentives be used to \"nudge\" behavior towards a good equilibrium?  This applies not only to self-interested agents but also to components in a distributed system acting on local information (such as sensors in a sensor network).  The second thrust is development of algorithms for efficiently computing or estimating important economic quantities. This includes approximately computing Nash equilibria in large interactions, and learning submodular functions and other common valuation classes from observations of behavior or experimentation. The third thrust is developing mathematical frameworks for understanding and solving problems of pricing and resource allocation in settings with unknown and changing market conditions.  These frameworks are crucial for next-generation markets for resources such as computing power and network bandwidth.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Lance",
+   "pi_last_name": "Fortnow",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Lance J Fortnow",
+   "pi_email_addr": "fortnow@cc.gatech.edu",
+   "nsf_id": "000178249",
+   "pi_start_date": "2014-08-21",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Former Principal Investigator",
+   "pi_first_name": "Maria-Florina",
+   "pi_last_name": "Balcan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Maria-Florina Balcan",
+   "pi_email_addr": "ninamf@cs.cmu.edu",
+   "nsf_id": "000537870",
+   "pi_start_date": "2011-04-18",
+   "pi_end_date": "2014-08-21"
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Institute of Technology",
+  "perf_str_addr": "225 NORTH AVE NW",
+  "perf_city_name": "ATLANTA",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "805200",
+   "pgm_ele_name": "Inter Com Sci Econ Soc S (ICE)"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 185320.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project addressed fundamental questions at the intersection of Computer Science, Machine Learning, and Economics.</p>\n<p><br />A first direction involved learning or estimating important economic concepts from past data (including valuation or utility functions of customers and influence functions quantifying the influence of various subsets of agents in networked systems). For learning valuation functions of customers in multi-dimensional settings, we considered learning based on several types of interactions with the agents, including value queries (where the agents would precisely or approximately specify their values for various subsets of items) and revealed preferences where we only observe data describing the behavior of the agents (i.e., the bundles the agents bought when faced with certain prices and budget constraints). &nbsp;For learning the influence function in networked systems, we considered learning based on full information diffusion traces about how the information spreads in the network, not only based on the expected number of followers. We provided efficient algorithms with strong sample complexity guarantees for these cases.Additionally, we explored new methods for performing distributed economic optimization through experimentation with good communication complexity.</p>\n<p><br />We also considered problems related to estimating important equilibrium concepts and analyzing and influencing dynamics in multi-agent interactions. Players in multi-agent systems are typically dynamic, with behavior that depends on their knowledge and understanding of the game and their beliefs about other players in the system. In this work, we developed and analyzed models that capture the ability of players to accept and use information about the nature of the game they are in (either from other players or from a helpful authority) and analyzed the benefit of such information from a social welfare point of view.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/10/2016<br>\n\t\t\t\t\tModified by: Lance&nbsp;Fortnow</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project addressed fundamental questions at the intersection of Computer Science, Machine Learning, and Economics.\n\n\nA first direction involved learning or estimating important economic concepts from past data (including valuation or utility functions of customers and influence functions quantifying the influence of various subsets of agents in networked systems). For learning valuation functions of customers in multi-dimensional settings, we considered learning based on several types of interactions with the agents, including value queries (where the agents would precisely or approximately specify their values for various subsets of items) and revealed preferences where we only observe data describing the behavior of the agents (i.e., the bundles the agents bought when faced with certain prices and budget constraints).  For learning the influence function in networked systems, we considered learning based on full information diffusion traces about how the information spreads in the network, not only based on the expected number of followers. We provided efficient algorithms with strong sample complexity guarantees for these cases.Additionally, we explored new methods for performing distributed economic optimization through experimentation with good communication complexity.\n\n\nWe also considered problems related to estimating important equilibrium concepts and analyzing and influencing dynamics in multi-agent interactions. Players in multi-agent systems are typically dynamic, with behavior that depends on their knowledge and understanding of the game and their beliefs about other players in the system. In this work, we developed and analyzed models that capture the ability of players to accept and use information about the nature of the game they are in (either from other players or from a helpful authority) and analyzed the benefit of such information from a social welfare point of view.\n\n \n\n\t\t\t\t\tLast Modified: 10/10/2016\n\n\t\t\t\t\tSubmitted by: Lance Fortnow"
+ }
+}

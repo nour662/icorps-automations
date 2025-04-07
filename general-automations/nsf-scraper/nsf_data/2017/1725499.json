@@ -1,0 +1,101 @@
+{
+ "awd_id": "1725499",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SPX: Collaborative Research: Cross-layer Application-Aware Resilience at Extreme Scale (CAARES)",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2017-08-15",
+ "awd_exp_date": "2021-07-31",
+ "tot_intn_awd_amt": 266674.0,
+ "awd_amount": 266674.0,
+ "awd_min_amd_letter_date": "2017-08-09",
+ "awd_max_amd_letter_date": "2017-08-09",
+ "awd_abstract_narration": "The increasing demands of science and engineering applications push the limits of current large-scale systems, and is expected to achieve exascale (10^18 FLOPS) performance early in the next decade. One of the lesser studied challenge at extreme scales is the reliability of the computing system itself, primarily due to the very large number of cores and components utilized and to the sharp decrease of the Mean Time Between Failures on such systems (in the order of tens of minutes). This project departs from the traditional single component fault management model, and explores how multiple software libraries (and application components) used in the context of a single parallel application can interact to provide the holistic fault management support necessary for parallel applications targeting capability computing. This exploration will not be limited to software developed using a single parallel programming paradigm, but will be extended to encompass the more challenging case where multiple programming paradigms can be combined to achieve a common goal, to simulate a set of large scale scientific applications in use today.\u00a0\r\n\t\r\nThe goal of this project is to depart from the current siloed resilience mechanisms, and propose cross-layer composition solutions that can fundamentally address these resilience challenges at extreme scales.\u00a0This exploration will not be limited to software developed using a single parallel programming paradigm, but will be extended to encompass the more challenging case where multiple programming paradigms can be combined to achieve a common goal, to simulate a set of large scale scientific applications in use today. More specifically, this proposal will address the following research challenges: (1) development of a theoretical foundation for a deeper understanding of the challenges and opportunities arising from combining different resilience models and methodologies; (2) design of a flexible programming abstraction to allow different resilience models and mechanisms to be combined to cooperate and address resilience in a more holistic manner; and (3) development of basic, programming paradigm independent, constructs necessary to implement cross-layer and domain-specific approaches to support resilience and to understand related performance / quality trade-offs. The proposed approach will be validated by exposing these generic abstractions in two different programming paradigms (MPI and OpenSHMEM), by creating and developing specialized concepts for each of these paradigms. This will enable the assessment of the validity of the concepts and the corresponding overheads imposed by the different software layers, using few software frameworks and applications.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Barbara",
+   "pi_last_name": "Chapman",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Barbara M Chapman",
+   "pi_email_addr": "barbara.chapman@stonybrook.edu",
+   "nsf_id": "000306370",
+   "pi_start_date": "2017-08-09",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "SUNY at Stony Brook",
+  "inst_street_address": "W5510 FRANKS MELVILLE MEMORIAL LIBRARY",
+  "inst_street_address_2": "",
+  "inst_city_name": "STONY BROOK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6316329949",
+  "inst_zip_code": "117940001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "NY01",
+  "org_lgl_bus_name": "THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK",
+  "org_prnt_uei_num": "M746VC6XMNH9",
+  "org_uei_num": "M746VC6XMNH9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "SUNY at Stony Brook",
+  "perf_str_addr": "WEST 5510 FRK MEL LIB",
+  "perf_city_name": "Stony Brook",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "117940001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "NY01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "042Y00",
+   "pgm_ele_name": "PPoSS-PP of Scalable Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 266674.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>High performance computing (HPC) applications solve large-scale computational problems in science and engineering. They enable weather prediction, facilitate climate modeling, develop drug therapies for treating COVID-19 patients, and much more.&nbsp; These application codes are often long-running; they may execute for days, weeks or even months to generate the desired results.&nbsp; The parallel programming models that are used to create them enable the application developer to specify that regions of the code may execute in parallel on the nodes of large HPC platforms. As a result of the expression of parallelism in the application code, new kinds of programming errors are possible such as, for example, when two code regions need to be executed in a certain order, but this ordering is not imposed by the program. The errors that are possible will partly depend on the features provided by the parallel programming models used.&nbsp; Thus, specialized tools are needed that can help find bugs arising as the result of incorrect use of the constructs of a given parallel programming model.</p>\n<p>Moreover, HPC systems may fail due to problems in hardware, software, or a combination of the two. The larger the system, the more frequently failures are to be expected. Hence system failures may potentially interfere with the ability of an HPC application to produce the desired results. To ensure that HPC applications run to completion, resilient applications that are free of programming errors and have the ability to recover from system failure, are needed.&nbsp;</p>\n<p>This project has developed tools and techniques to facilitate the construction of resilient applications that are based upon OpenSHMEM, a popular vendor-independent parallel programming model for creating HPC applications.</p>\n<p>It has created a tool to analyze an OpenSHMEM-based application code and identify any occurrences of a set of bugs that may occur as a result of the incorrect use of certain OpenSHMEM features.&nbsp; In order to accomplish this, the project built these features on top of the popular open source LLVM infrastructure.</p>\n<p>It has also developed techniques to support the use of checkpoint-restart (C/R) in OpenSHMEM programs.&nbsp; Application-level C/R involves periodically saving all or part of the data of an application program during execution so that if the program terminates for any reason, the program can be restarted from the last saved checkpoint position instead of starting again from the beginning. However, using C/R efficiently and effectively can be challenging, as it requires a user to determine what data needs to be saved and where to insert checkpoints into the code. For OpenSHMEM, it is important to insert checkpoints in places where the data Is consistent, which requires some tricky reasoning. To support application developers who wish to make their application codes resilient, the project has also developed CAFTan, a tool that helps create resilient OpenSHMEM application code by providing information to answer these questions and to enable C/R to be incorporated in their application code. The CAFTan code is also open source.</p>\n<p>Very little prior work had been performed to explore the bugs that may arise as a result of OpenSHMEM&rsquo;s reliance on single-sided communications, or the points in a code at which C/R may be safely invoked.&nbsp; The project identified a set of common bugs, determined how to identify safe points for CR, and shared its findings on these with the OpenSHMEM community. It has therefore contributed to the ability of OpenSHMEM to support the deployment of large-scale HPC applications to advance our knowledge of some critical problems in science.</p>\n<p>The project also enabled information on OpenSHMEM and its usage to be incorporated in a relevant graduate course. The participating students attended several important events in HPC, including Supercomputing.&nbsp; Moreover, the project enabled participation in two events that aim to increase diversity in the field of Computer Science, the Tapia Celebration of Diversity Conference, and the New York Celebration of Women in Computing.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/15/2021<br>\n\t\t\t\t\tModified by: Barbara&nbsp;Chapman</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nHigh performance computing (HPC) applications solve large-scale computational problems in science and engineering. They enable weather prediction, facilitate climate modeling, develop drug therapies for treating COVID-19 patients, and much more.  These application codes are often long-running; they may execute for days, weeks or even months to generate the desired results.  The parallel programming models that are used to create them enable the application developer to specify that regions of the code may execute in parallel on the nodes of large HPC platforms. As a result of the expression of parallelism in the application code, new kinds of programming errors are possible such as, for example, when two code regions need to be executed in a certain order, but this ordering is not imposed by the program. The errors that are possible will partly depend on the features provided by the parallel programming models used.  Thus, specialized tools are needed that can help find bugs arising as the result of incorrect use of the constructs of a given parallel programming model.\n\nMoreover, HPC systems may fail due to problems in hardware, software, or a combination of the two. The larger the system, the more frequently failures are to be expected. Hence system failures may potentially interfere with the ability of an HPC application to produce the desired results. To ensure that HPC applications run to completion, resilient applications that are free of programming errors and have the ability to recover from system failure, are needed. \n\nThis project has developed tools and techniques to facilitate the construction of resilient applications that are based upon OpenSHMEM, a popular vendor-independent parallel programming model for creating HPC applications.\n\nIt has created a tool to analyze an OpenSHMEM-based application code and identify any occurrences of a set of bugs that may occur as a result of the incorrect use of certain OpenSHMEM features.  In order to accomplish this, the project built these features on top of the popular open source LLVM infrastructure.\n\nIt has also developed techniques to support the use of checkpoint-restart (C/R) in OpenSHMEM programs.  Application-level C/R involves periodically saving all or part of the data of an application program during execution so that if the program terminates for any reason, the program can be restarted from the last saved checkpoint position instead of starting again from the beginning. However, using C/R efficiently and effectively can be challenging, as it requires a user to determine what data needs to be saved and where to insert checkpoints into the code. For OpenSHMEM, it is important to insert checkpoints in places where the data Is consistent, which requires some tricky reasoning. To support application developers who wish to make their application codes resilient, the project has also developed CAFTan, a tool that helps create resilient OpenSHMEM application code by providing information to answer these questions and to enable C/R to be incorporated in their application code. The CAFTan code is also open source.\n\nVery little prior work had been performed to explore the bugs that may arise as a result of OpenSHMEM\u2019s reliance on single-sided communications, or the points in a code at which C/R may be safely invoked.  The project identified a set of common bugs, determined how to identify safe points for CR, and shared its findings on these with the OpenSHMEM community. It has therefore contributed to the ability of OpenSHMEM to support the deployment of large-scale HPC applications to advance our knowledge of some critical problems in science.\n\nThe project also enabled information on OpenSHMEM and its usage to be incorporated in a relevant graduate course. The participating students attended several important events in HPC, including Supercomputing.  Moreover, the project enabled participation in two events that aim to increase diversity in the field of Computer Science, the Tapia Celebration of Diversity Conference, and the New York Celebration of Women in Computing.\n\n \n\n\t\t\t\t\tLast Modified: 08/15/2021\n\n\t\t\t\t\tSubmitted by: Barbara Chapman"
+ }
+}

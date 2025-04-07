@@ -1,0 +1,101 @@
+{
+ "awd_id": "1929568",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Randomized Algorithms for Matrix Computations",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Leland Jameson",
+ "awd_eff_date": "2018-09-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 120749.0,
+ "awd_amount": 120749.0,
+ "awd_min_amd_letter_date": "2019-03-28",
+ "awd_max_amd_letter_date": "2019-03-28",
+ "awd_abstract_narration": "This project will develop mathematical techniques for accelerating computational tasks such as simulating electromagnetic scattering,  medical imaging, extracting useful information from large datasets, machine learning, and many others. In all these computations, the step that tends to be the most time-consuming, and which therefore limits how large problems can be solved, concerns the manipulation of large square or rectangular arrays of numbers, called \"matrices\". Many of the matrices that arise in practical applications have redundancies, and can be compressed to enable them to be stored using less space. Using the compressed format, computations involving the matrix can also be greatly accelerated. The problems that will be addressed are deterministic in nature, but the algorithms that will be developed are probabilistic. It turns out that by exploiting certain mathematical properties of large ensembles of independent random numbers, one can build algorithms for compressing matrices that are much faster than traditional deterministic techniques. The new randomized algorithms can in theory fail, but the likelihood of failure can be shown to  be lower than 1 time out of 10,000,000,000 runs in typical applications. Randomized algorithms of this type have recently attracted much interest due to the fact that they perform  particularly well on emerging computing platforms such as mobile computing (where conserving energy is the key priority), computing using graphical processor units (where the vast numbers of computational cores create challenges), and distributed memory parallel computers. The methods also perform very well when applied  to massively large datasets that must be stored on hard drives, or on large server farms. The project will train one doctoral student, and will lead to the release of a publicly available software package that implements the methods that will be developed. \r\n\r\nFrom a technical point of view, the objective of the project is to develop efficient algorithms for factorizing matrices and for solving large linear systems of algebraic equations. The algorithms will be based on randomized sampling, and will exploit remarkable mathematical properties of random matrices and random orthogonal projections. Such randomized algorithms require less communication  than traditional methods, which makes them particularly attractive for modern applications involving multicore processors, distributed computing, out-of-core computing, etc. Specifically, the project will address the following problems: (1) Computing full matrix factorizations (e.g. the so called \"column pivoted QR factorization\") which are core building blocks in scientific computing. Preliminary numerical experiments demonstrate speed-ups of close to an order of magnitude compared to state-of-the-art software packages. (2) Solving linear systems involving many unknowns and many equations. We expect to achieve substantial practical acceleration, and are cautiously optimistic about the possibility to develop solvers with substantially better asymptotic complexity than the cubic complexity achieved by standard techniques. (3) Developing randomized methods for accelerating computational simulations of phenomena such as electro-statics, composite materials, biochemical processes, slow fluid flows, Gaussian processes in 2 and 3 dimensions, etc. Technically, this will be achieved by developing randomized methods for compressing so called \"data-sparse\" or \"rank-structured\" matrices.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Per-Gunnar",
+   "pi_last_name": "Martinsson",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Per-Gunnar J Martinsson",
+   "pi_email_addr": "pgm@ices.utexas.edu",
+   "nsf_id": "000257904",
+   "pi_start_date": "2019-03-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Austin",
+  "perf_str_addr": "3925 W Braker Lane",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787595316",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "37",
+  "perf_st_cong_dist": "TX37",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 120749.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The project objectives were to develop faster and more energy-efficient algorithms for fundamental tasks in computational science. To be precise, the project addressed the problem of how to efficiently extract information from a rectangular array of real numbers called a \"matrix\". Such arrays of numbers are used to organize, e.g., statistical data, measurements from sensors, or financial data. They also form essential modeling tools in physics and chemistry, in machine learning, in medical imaging, and many other applications of essential importance to society.<br /><br />The reason we sought to develop better algorithms for analyzing matrices was in part to accelerate computations that can already be performed, and in part to enable computations that are beyond the reach of existing methods. Faster and more energy efficient algorithms will help to reduce the power consumption of data centers, to make desktop computers faster, and to extend the battery life of mobile devices such as cell phones and tablet computers.<br /><br />The fundamental innovation behind our approach was to harness mathematical properties of large collections of random numbers to<br />build new stochastic algorithms that dramatically outperform existing deterministic ones. We used randomized sampling, and randomized averaging, to reduce the effective dimensionality of intermediate problems. This enabled us to make data sets fit in fast memory that is close to the computer processor.<br /><br />In addition to the development of new algorithms, we developed new analytic tools that help researchers understand how these methods perform, and how they compare to classical deterministic techniques. Such analytic&nbsp; tools provide an essential help in the development of the next generation of algorithms.<br /><br />Five doctoral students were involved in the supported research. These students have been trained on how to develop and analyze algorithms, how to write efficient software that performs well on modern hardware, and how to communicate their work to a broader audience. In their training, high priority has been placed on developing an understanding for how mathematics, computer science, and knowledge from domain science (say electrical engineering, or medical imaging) all interact in the development of new computational techniques.<br /><br />The project has resulted in several traditional research articles, but also in a wealth of educational resources such as tutorial articles, videotaped lectures, and tutorial software. The purpose is to maximize the impact of the new methods by making them accessible to potential users from a broad range of backgrounds.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/01/2021<br>\n\t\t\t\t\tModified by: Per-Gunnar&nbsp;J&nbsp;Martinsson</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2021/1929568/1929568_10451571_1612217229279_randomsketch--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/1929568/1929568_10451571_1612217229279_randomsketch--rgov-800width.jpg\" title=\"Random sketch of a matrix\"><img src=\"/por/images/Reports/POR/2021/1929568/1929568_10451571_1612217229279_randomsketch--rgov-66x44.jpg\" alt=\"Random sketch of a matrix\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Given an array of data A to be analyzed, we extract a small \"sketch\" Y by evaluating the action of A on a sparse array of random numbers Omega. Important information about the original data can be extracted from the information in the compact sketch in a provably reliable way.</div>\n<div class=\"imageCredit\">Per-Gunnar Martinsson</div>\n<div class=\"imagePermisssions\">Creative Commons</div>\n<div class=\"imageSubmitted\">Per-Gunnar&nbsp;J&nbsp;Martinsson</div>\n<div class=\"imageTitle\">Random sketch of a matrix</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThe project objectives were to develop faster and more energy-efficient algorithms for fundamental tasks in computational science. To be precise, the project addressed the problem of how to efficiently extract information from a rectangular array of real numbers called a \"matrix\". Such arrays of numbers are used to organize, e.g., statistical data, measurements from sensors, or financial data. They also form essential modeling tools in physics and chemistry, in machine learning, in medical imaging, and many other applications of essential importance to society.\n\nThe reason we sought to develop better algorithms for analyzing matrices was in part to accelerate computations that can already be performed, and in part to enable computations that are beyond the reach of existing methods. Faster and more energy efficient algorithms will help to reduce the power consumption of data centers, to make desktop computers faster, and to extend the battery life of mobile devices such as cell phones and tablet computers.\n\nThe fundamental innovation behind our approach was to harness mathematical properties of large collections of random numbers to\nbuild new stochastic algorithms that dramatically outperform existing deterministic ones. We used randomized sampling, and randomized averaging, to reduce the effective dimensionality of intermediate problems. This enabled us to make data sets fit in fast memory that is close to the computer processor.\n\nIn addition to the development of new algorithms, we developed new analytic tools that help researchers understand how these methods perform, and how they compare to classical deterministic techniques. Such analytic  tools provide an essential help in the development of the next generation of algorithms.\n\nFive doctoral students were involved in the supported research. These students have been trained on how to develop and analyze algorithms, how to write efficient software that performs well on modern hardware, and how to communicate their work to a broader audience. In their training, high priority has been placed on developing an understanding for how mathematics, computer science, and knowledge from domain science (say electrical engineering, or medical imaging) all interact in the development of new computational techniques.\n\nThe project has resulted in several traditional research articles, but also in a wealth of educational resources such as tutorial articles, videotaped lectures, and tutorial software. The purpose is to maximize the impact of the new methods by making them accessible to potential users from a broad range of backgrounds.\n\n\t\t\t\t\tLast Modified: 02/01/2021\n\n\t\t\t\t\tSubmitted by: Per-Gunnar J Martinsson"
+ }
+}

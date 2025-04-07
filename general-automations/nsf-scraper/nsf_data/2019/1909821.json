@@ -1,0 +1,105 @@
+{
+ "awd_id": "1909821",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RI: Small: Lightly Supervised Deep Learning for Multi-Frame Visual Motion Analysis",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032924768",
+ "po_email": "jyang@nsf.gov",
+ "po_sign_block_name": "Jie Yang",
+ "awd_eff_date": "2019-08-01",
+ "awd_exp_date": "2022-07-31",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 500000.0,
+ "awd_min_amd_letter_date": "2019-07-17",
+ "awd_max_amd_letter_date": "2019-07-17",
+ "awd_abstract_narration": "This project addresses the fundamental video analysis problem of determining the motion of every image point at every point in time in a video sequence. While apparently effortless for people, this problem is still a challenge for computers, especially when objects move fast, in large numbers, or in complex ways. The field of computer vision has made tremendous strides on this problem in the last few decades, but there is still ample room for improvement. This project draws on recent developments in machine learning to improve the accuracy and reliability of the estimates of point motion in video. In addition to graduate students, the project will involve undergraduates under the auspices of the Bass Connections program at Duke University. This program reaches out to students in their first college years.\r\n\r\nThe thrusts of the project include the development of suitable representations of motion, the design and training of deep learning architectures, and performance evaluation. The representational challenge is paramount: While the motion of a point between two frames is a simple vector connecting the start and end point of the motion, it becomes a trajectory when multiple frames are involved. Trajectories of nearby points are often similar when they belong to the same object, but they are different when they are on different objects, and this thrust will develop the mathematics for the piecewise continuous fields of trajectories that arise as a result. Deep learning architectures and corresponding learning algorithms, at the center of the second thrust, will be re-thought to take best advantage of relations between motions at different points and times. Finally, performance evaluation will provide a nuanced understanding of the trade-offs, strengths, and weaknesses of the algorithms being developed, and will help determine what methods and parameter settings work best for what type of video.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Carlo",
+   "pi_last_name": "Tomasi",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Carlo Tomasi",
+   "pi_email_addr": "tomasi@cs.duke.edu",
+   "nsf_id": "000107168",
+   "pi_start_date": "2019-07-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Duke University",
+  "inst_street_address": "2200 W MAIN ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "DURHAM",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9196843030",
+  "inst_zip_code": "277054640",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "NC04",
+  "org_lgl_bus_name": "DUKE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "TP7EK8DZV6N5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Duke University",
+  "perf_str_addr": "LSRC Building",
+  "perf_city_name": "Durham",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "277080129",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "NC04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 500000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project studied methods for the estimation of image motion. Given two or more consecutive image frames from a video sequence, a complete description of the motion between frames specifies where every point in one frame moves to in each of the other frames. Estimating image motion is crucial to a variety of applications in computer vision including autonomous navigation, robot perception and self-localization, industrial automation, medical diagnostics, biology, sports medicine, surveillance, security, traffic management, and more.<br />Recent research on deep machine learning has made enormous strides in the estimation of image motion. However, the quality of estimates degrades significantly in regions of the image where different motions coexist. Examples of these regions are the curves that separate the image of an object in the foreground from its background. In these regions, even the best current estimators perform poorly. These regions are arguably among the most important parts of the image when it comes to tasks such as motion segmentation, video editing, video compression, and semantic segmentation. It is therefore a problem for many downstream tasks that these large errors occur exactly where accurate estimates of image motion are needed most.<br />In addition, machine learning methods depend critically on the availability of large amounts of video data for training, in which every pixel in every frame is annotated with the correct motion. The effort needed to specify this information is daunting, and it is therefore important to develop methods that can work even when less training data is available.<br />This project addressed the two challenges above by (i) improving the performance of image motion estimators in parts of the image characterized by multiple motions; (ii) studying the information that more than two video frames can provide for motion estimation; and (iii) developing methods for training image motion estimators with little or no annotated data. The project has resulted in several publications in major venues in computer vision, and the estimators presented in each publication achieved state-of-the-art performance at the time of publication.&nbsp;<br />The project has also led to techniques that turned out to be useful in domains different from video analysis. This was demonstrated through a collaboration with biologists at Duke University and the University of California at Davis focused on the study of insect herbivory in plant specimens. Results from this collaboration were published in the journal on Applications of Plant Sciences.<br />Four PhD students and three Master students have worked on this project as part of the research experience necessary for their graduation.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/30/2022<br>\n\t\t\t\t\tModified by: Carlo&nbsp;Tomasi</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project studied methods for the estimation of image motion. Given two or more consecutive image frames from a video sequence, a complete description of the motion between frames specifies where every point in one frame moves to in each of the other frames. Estimating image motion is crucial to a variety of applications in computer vision including autonomous navigation, robot perception and self-localization, industrial automation, medical diagnostics, biology, sports medicine, surveillance, security, traffic management, and more.\nRecent research on deep machine learning has made enormous strides in the estimation of image motion. However, the quality of estimates degrades significantly in regions of the image where different motions coexist. Examples of these regions are the curves that separate the image of an object in the foreground from its background. In these regions, even the best current estimators perform poorly. These regions are arguably among the most important parts of the image when it comes to tasks such as motion segmentation, video editing, video compression, and semantic segmentation. It is therefore a problem for many downstream tasks that these large errors occur exactly where accurate estimates of image motion are needed most.\nIn addition, machine learning methods depend critically on the availability of large amounts of video data for training, in which every pixel in every frame is annotated with the correct motion. The effort needed to specify this information is daunting, and it is therefore important to develop methods that can work even when less training data is available.\nThis project addressed the two challenges above by (i) improving the performance of image motion estimators in parts of the image characterized by multiple motions; (ii) studying the information that more than two video frames can provide for motion estimation; and (iii) developing methods for training image motion estimators with little or no annotated data. The project has resulted in several publications in major venues in computer vision, and the estimators presented in each publication achieved state-of-the-art performance at the time of publication. \nThe project has also led to techniques that turned out to be useful in domains different from video analysis. This was demonstrated through a collaboration with biologists at Duke University and the University of California at Davis focused on the study of insect herbivory in plant specimens. Results from this collaboration were published in the journal on Applications of Plant Sciences.\nFour PhD students and three Master students have worked on this project as part of the research experience necessary for their graduation.\n\n\t\t\t\t\tLast Modified: 10/30/2022\n\n\t\t\t\t\tSubmitted by: Carlo Tomasi"
+ }
+}

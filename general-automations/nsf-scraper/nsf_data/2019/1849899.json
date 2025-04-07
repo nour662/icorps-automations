@@ -1,0 +1,113 @@
+{
+ "awd_id": "1849899",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: AF: Pseudorandomness: New Frontiers and Techniques",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tracy Kimbrel",
+ "awd_eff_date": "2019-03-01",
+ "awd_exp_date": "2021-02-28",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 175000.0,
+ "awd_min_amd_letter_date": "2019-01-30",
+ "awd_max_amd_letter_date": "2019-01-30",
+ "awd_abstract_narration": "The role of randomness in computation is extremely important with crucial applications to various branches of computer science including design of fast algorithms for practical problems, distributed computing, cryptography, and security. Scientists and economists use randomness extensively in simulations of physical and biological systems and other complex environments. However, a major problem in practice is that physical sources of randomness are defective and only produce correlated bits that contain some entropy.  This leads to the following  fundamental question: To what extent is the use of randomness inherent in applications? Can we reduce the amount or quality of randomness required to perform these tasks? Most applications of randomness in cryptography are inherent. Indeed, we require the secret keys for various cryptographic applications, such as credit card transactions, to be uniformly random.  On the other hand, it is not known if the use of randomness is fundamental in designing efficient algorithms.  This project intends to study these fundamental questions, and in particular, provide theoretical guarantees on the quality of randomness used in cryptography and security, and reduce the amount of randomness used in design of efficient algorithms. \r\n\r\nThe area of Pseudorandomness provides a unified approach to the above problems and a major goal in this area is to efficiently construct deterministic objects that are random-like. The idea is to replace a random object used in an application, with an explicit construction of a random-like object, thus removing the need for random bits.  Important notions in this area are randomness extractors and pseudorandom generators. A randomness extractor is an algorithm that produces purely random bits from defective sources of randomness. Such extractors can be used in purifying defective sources before carrying out important cryptographic protocols. A pseudorandom generator is a deterministic algorithm that takes a short uniformly random string and stretches it into a much longer string that still \"looks random\" to the appropriate application (e.g., algorithms that use limited memory). This project intends to study several concrete directions to extend the state-of-art on efficient constructions of randomness extractors and pseudorandom generators that will lead to resolving important open problems in computational complexity theory and derandomization.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Eshan",
+   "pi_last_name": "Chattopadhyay",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Eshan Chattopadhyay",
+   "pi_email_addr": "ec583@cornell.edu",
+   "nsf_id": "000784016",
+   "pi_start_date": "2019-01-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Cornell University",
+  "inst_street_address": "341 PINE TREE RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "ITHACA",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6072555014",
+  "inst_zip_code": "148502820",
+  "inst_country_name": "United States",
+  "cong_dist_code": "19",
+  "st_cong_dist_code": "NY19",
+  "org_lgl_bus_name": "CORNELL UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "G56PUALJ3KT5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Cornell University",
+  "perf_str_addr": "107 Hoy Road",
+  "perf_city_name": "Ithaca",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "148537501",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "19",
+  "perf_st_cong_dist": "NY19",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7796",
+   "pgm_ref_txt": "ALGORITHMIC FOUNDATIONS"
+  },
+  {
+   "pgm_ref_code": "7927",
+   "pgm_ref_txt": "COMPLEXITY & CRYPTOGRAPHY"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 175000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"p1\">The essential goals of the project were to investigate the requirement of randomness in efficient computation, and further develop techniques for producing high-quality random bits for applications in cryptography. We summarize the progress we made on these directions:</p>\n<p class=\"p1\">(1) Derandomizing efficient randomized computation: A major goal in theoretical computer science is to prove that efficient computation does not require random bits. Towards this goal, we made progress on reducing randomness requirements for algorithms that have limited memory. In particular, our construction is optimal in certain important parameter regimes. This result was published in the Computational Complexity Conference in 2020.</p>\n<p class=\"p1\">In another research investigation in this theme,&nbsp; we made interesting progress on the problem of constructing pseudorandom generators&nbsp; (that provide a black-box way of reducing randomness) for classes of Boolean circuits that have remained elusive for decades. This result was published in the Symposium on Theory of Computing, 2020 (STOC 2020).</p>\n<p class=\"p1\">(2) Producing high-quality randomness and applications: A randomness extractor is an algorithm that purifies correlated randomness to produce independent, unbiased bits (i.e. high-quality randomness). A rich line of work investigates constructing such extractors in various settings, with motivations coming from a variety of applications in cryptography, distributed computing, complexity theory, etc. In this project, we make a number of advances in constructing extractors and finding applications in cryptography. In a paper published in STOC 2020, we study a new model of correlated sources that we call ?adversarial sources?, motivated by various settings in cryptography and show how to produce random bits from such sources. In a result published in the Symposium on Foundations of Computer Science 2020, we construct extractors that work even when an adversary learns non-trivial leakage of the randomness used by the extractor. Such extractors have natural applications in computational complexity theory and cryptography. Our other results include new randomness extractors that have applications in the theory of error-correcting codes. These results have been published in the International Cryptorgaphy Conference 2020 and Theory of Cryptography Conference 2020.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/26/2021<br>\n\t\t\t\t\tModified by: Eshan&nbsp;Chattopadhyay</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "The essential goals of the project were to investigate the requirement of randomness in efficient computation, and further develop techniques for producing high-quality random bits for applications in cryptography. We summarize the progress we made on these directions:\n(1) Derandomizing efficient randomized computation: A major goal in theoretical computer science is to prove that efficient computation does not require random bits. Towards this goal, we made progress on reducing randomness requirements for algorithms that have limited memory. In particular, our construction is optimal in certain important parameter regimes. This result was published in the Computational Complexity Conference in 2020.\nIn another research investigation in this theme,  we made interesting progress on the problem of constructing pseudorandom generators  (that provide a black-box way of reducing randomness) for classes of Boolean circuits that have remained elusive for decades. This result was published in the Symposium on Theory of Computing, 2020 (STOC 2020).\n(2) Producing high-quality randomness and applications: A randomness extractor is an algorithm that purifies correlated randomness to produce independent, unbiased bits (i.e. high-quality randomness). A rich line of work investigates constructing such extractors in various settings, with motivations coming from a variety of applications in cryptography, distributed computing, complexity theory, etc. In this project, we make a number of advances in constructing extractors and finding applications in cryptography. In a paper published in STOC 2020, we study a new model of correlated sources that we call ?adversarial sources?, motivated by various settings in cryptography and show how to produce random bits from such sources. In a result published in the Symposium on Foundations of Computer Science 2020, we construct extractors that work even when an adversary learns non-trivial leakage of the randomness used by the extractor. Such extractors have natural applications in computational complexity theory and cryptography. Our other results include new randomness extractors that have applications in the theory of error-correcting codes. These results have been published in the International Cryptorgaphy Conference 2020 and Theory of Cryptography Conference 2020.\n\n\t\t\t\t\tLast Modified: 06/26/2021\n\n\t\t\t\t\tSubmitted by: Eshan Chattopadhyay"
+ }
+}

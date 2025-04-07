@@ -1,0 +1,117 @@
+{
+ "awd_id": "1563710",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "CIF: NeTS: Medium: Collaborative Research: Unifying Data Synchronization",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922981",
+ "po_email": "pregalia@nsf.gov",
+ "po_sign_block_name": "Phillip Regalia",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2022-06-30",
+ "tot_intn_awd_amt": 400000.0,
+ "awd_amount": 400000.0,
+ "awd_min_amd_letter_date": "2016-02-18",
+ "awd_max_amd_letter_date": "2018-06-19",
+ "awd_abstract_narration": "This project addresses the technical means of maintaining and sharing the huge amounts of diverse data that are being generated from the computing devices that increasingly envelop everyday lives, specifically by improving synchronization technology.  The goal is to synthesize various approaches that have been developed, often in an ad hoc manner and in various fields, into a general, holistic solution that includes benefits from new analyses and solutions.  The approach is fundamental in nature, and its effectiveness shows promise for impact on a diverse set of technologies, including mobile and cloud computing, digital currency, security, and biological sequencing.  Part of the work involves outreach to younger students, such as initial efforts at setting up a novel computing-based summer program for high school students.\r\n\r\nThe project focuses on four research thrusts.  The first involves an analysis, comparison, and improvement (where possible) of core point-to-point synchronization primitives from the existing literature.  The second thrust generalizes these primitives to higher-dimensional data, such as files, images, video, databases, and graphs.  The third research thrust involves developing approaches for synchronizing data from many synchronizing parties communicating through a variety of channels.  Finally, the project aims to implement a general data synchronization engine based on the research results, together with an evaluation of various applications.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Michael",
+   "pi_last_name": "Mitzenmacher",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Michael Mitzenmacher",
+   "pi_email_addr": "michaelm@eecs.harvard.edu",
+   "nsf_id": "000439480",
+   "pi_start_date": "2016-02-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Harvard University",
+  "inst_street_address": "1033 MASSACHUSETTS AVE STE 3",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6174955501",
+  "inst_zip_code": "021385366",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "MA05",
+  "org_lgl_bus_name": "PRESIDENT AND FELLOWS OF HARVARD COLLEGE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LN53LCFJFL45"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Harvard SEAS",
+  "perf_str_addr": "33 Oxford Street",
+  "perf_city_name": "Cambridge",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021382933",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "MA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779700",
+   "pgm_ele_name": "Comm & Information Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  },
+  {
+   "pgm_ref_code": "7935",
+   "pgm_ref_txt": "COMM & INFORMATION THEORY"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 183487.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 216513.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The project focused on the development of new algorithms and data structures for synchronizing data among multiple parties.&nbsp; Early work focused on expanding reconciliation methods for more efficient performance;&nbsp; for example, we developed enhanced methods for reconciling collections of sets of objects, which can be applied to reconciling graphs, where a set corresponds to the edges adjacent to a vertex.&nbsp; We also developed methods for reconciling \"noisy sets\" of data points, where data points may correspond to locations in a metric space, and close enough points should be considered the same for reconciliation.&nbsp; For example, data points may represesnt events recorded by different sensors in a sensor network, and one might expect there might be small deviations in the recorded location for different sensors.&nbsp;&nbsp;</p>\n<p>Later work pushed forward to consider newly arising problems in systems and machine learning.&nbsp; For example, working with a team, we developed probabilistic methods for improving the INT (In-band Network Telemetry) framework, leading to a collection of techniques we call PINT (Probabilistic In-Band Network Telemetry).&nbsp; PINT provides greater efficiencies for network telemetry.&nbsp; In particular, these methods allow network monitoring tasks, such as monitoring the path taken by network flows, with much lower per-packet overhead than previous schemes, by taking advantage of hashing and coding methods common in reconciliation-based approaches.&nbsp;</p>\n<p>Another group of projects developed improved data structures for point and range filters, where a filter represents a set of objects and answers queries of the form \"Is this an element of the set?\" or \"Is there an element of the set in this range?\"&nbsp; Such filters are bulding blocks for many reconciliation methods.&nbsp; Our improvements utilized machine learning techiques, using sampled data and learned models to yield data structures tuned the underlying data sets.&nbsp; The performance of such data structures have the potential to surpass standard algorithms (for example, those based on a \"worst-case\" analysis) by tuning themselves to particular data sets.&nbsp;&nbsp;</p>\n<p>Finally, recent work has focused on compression schemes for distributed and federated learning systems.&nbsp; In such systems, a centralized server updates a machine learning model, such as a neural network, based on results from a large collection of agents.&nbsp; Updates sent to the centralized server may correspond to vectors of real numbers with millions of dimensions, which are then averaged together to update the model.&nbsp; We have considered a formal version of the problem, called Distributed Mean Estimation, and developed lossy compression schemes that give excellent approximations to the average vector, using one bit per dimension or less.&nbsp; These schemes may lead to more efficient, effective, and scalable federated learning system.&nbsp;&nbsp;</p>\n<p>The project funding was also used to help train two graduate students, and to communicate the results to the broader scientific community through workshops, survey articles, and articles for general audiences.&nbsp; The work produced from this grant has been incorporated into teaching units for graduate level classes, which led to projects published as research papers by both undergraduate and graduate students.&nbsp; Collaborators and I are working with industry partners to incorporate the algorithms, data structures, and methods developed during this project into their systems.&nbsp;&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/28/2022<br>\n\t\t\t\t\tModified by: Michael&nbsp;Mitzenmacher</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe project focused on the development of new algorithms and data structures for synchronizing data among multiple parties.  Early work focused on expanding reconciliation methods for more efficient performance;  for example, we developed enhanced methods for reconciling collections of sets of objects, which can be applied to reconciling graphs, where a set corresponds to the edges adjacent to a vertex.  We also developed methods for reconciling \"noisy sets\" of data points, where data points may correspond to locations in a metric space, and close enough points should be considered the same for reconciliation.  For example, data points may represesnt events recorded by different sensors in a sensor network, and one might expect there might be small deviations in the recorded location for different sensors.  \n\nLater work pushed forward to consider newly arising problems in systems and machine learning.  For example, working with a team, we developed probabilistic methods for improving the INT (In-band Network Telemetry) framework, leading to a collection of techniques we call PINT (Probabilistic In-Band Network Telemetry).  PINT provides greater efficiencies for network telemetry.  In particular, these methods allow network monitoring tasks, such as monitoring the path taken by network flows, with much lower per-packet overhead than previous schemes, by taking advantage of hashing and coding methods common in reconciliation-based approaches. \n\nAnother group of projects developed improved data structures for point and range filters, where a filter represents a set of objects and answers queries of the form \"Is this an element of the set?\" or \"Is there an element of the set in this range?\"  Such filters are bulding blocks for many reconciliation methods.  Our improvements utilized machine learning techiques, using sampled data and learned models to yield data structures tuned the underlying data sets.  The performance of such data structures have the potential to surpass standard algorithms (for example, those based on a \"worst-case\" analysis) by tuning themselves to particular data sets.  \n\nFinally, recent work has focused on compression schemes for distributed and federated learning systems.  In such systems, a centralized server updates a machine learning model, such as a neural network, based on results from a large collection of agents.  Updates sent to the centralized server may correspond to vectors of real numbers with millions of dimensions, which are then averaged together to update the model.  We have considered a formal version of the problem, called Distributed Mean Estimation, and developed lossy compression schemes that give excellent approximations to the average vector, using one bit per dimension or less.  These schemes may lead to more efficient, effective, and scalable federated learning system.  \n\nThe project funding was also used to help train two graduate students, and to communicate the results to the broader scientific community through workshops, survey articles, and articles for general audiences.  The work produced from this grant has been incorporated into teaching units for graduate level classes, which led to projects published as research papers by both undergraduate and graduate students.  Collaborators and I are working with industry partners to incorporate the algorithms, data structures, and methods developed during this project into their systems.  \n\n\t\t\t\t\tLast Modified: 11/28/2022\n\n\t\t\t\t\tSubmitted by: Michael Mitzenmacher"
+ }
+}

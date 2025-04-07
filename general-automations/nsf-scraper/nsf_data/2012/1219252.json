@@ -1,0 +1,105 @@
+{
+ "awd_id": "1219252",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RI: Small: A Hierarchical Approach to Unsupervised Feature Discovery",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032925149",
+ "po_email": "kwhang@nsf.gov",
+ "po_sign_block_name": "Kenneth Whang",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 400000.0,
+ "awd_amount": 400000.0,
+ "awd_min_amd_letter_date": "2012-09-13",
+ "awd_max_amd_letter_date": "2012-09-13",
+ "awd_abstract_narration": "Contrary to some depictions in popular media, humans are still far better than any computer program at understanding the visual world around them. If we understood how the visual system does this, perhaps better artificial vision systems could be built. The goal of this project is to understand how the brain represents the visual world and why. Following a mantra famously credited to Richard Feynman -- What I cannot create, I do not understand -- this project's approach is to create a computer system that learns from natural input (images, videos), assuming that the visual system operates with the goal of efficiently representing the world. These representations will then be compared to measurements of visual neurons. The long term goal is to understand the functional roles of the early visual processing layers in the human visual pathway.\r\n\r\nThe model is based on the efficient coding hypothesis, in which the early visual pathway serves to capture the statistical structure of its visual inputs by efficiently coding visual information in its outputs. Most computational models following this hypothesis have focused on modeling only one or two visual layers. In this project, Cottrell's group proposes a hierarchical information processing model, which concurs with the efficient coding hypothesis, yet provides the most complete description so far of the early visual processing layers. In this model, the visual inputs are first compressed to reduce noise using Sparse Principal Components Analysis (SPCA), then the data dimensions are expanded to capture the statistical structure of the visual inputs using overcomplete Sparse Coding. A nonlinear activation function then formats the outputs of this layer for the next layer up, and the whole process is repeated. Preliminary work shows that the resulting hierarchical model can learn visual features exhibiting the receptive field properties of neurons in the early visual pathway, including retinal ganglion cells, LGN, V1 simple and complex cells, and V2 cells.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Garrison",
+   "pi_last_name": "Cottrell",
+   "pi_mid_init": "W",
+   "pi_sufx_name": "",
+   "pi_full_name": "Garrison W Cottrell",
+   "pi_email_addr": "gary@cs.ucsd.edu",
+   "nsf_id": "000314090",
+   "pi_start_date": "2012-09-13",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-San Diego",
+  "inst_street_address": "9500 GILMAN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "LA JOLLA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8585344896",
+  "inst_zip_code": "920930021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "UYTTZT6G9DT1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-San Diego",
+  "perf_str_addr": "9500 Gilman Dr.",
+  "perf_city_name": "La Jolla",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920930404",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "732700",
+   "pgm_ele_name": "CRCNS-Computation Neuroscience"
+  },
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 400000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>It is well-known that children learn to talk. What is less appreciated is that they also learn to see. Babies see with about 20-200 visual acuity; that is, they are legally blind. Over the course of development, their visual acuity improves and their ability to discriminate visual inputs, for example, the faces of their parents and others, objects, scenes, and eventually, words. This work investigated hypotheses concerning how the visual system develops through self-organization, how we learn to discriminate facial expressions, how we learn to discriminate faces from one another, how we learn to read, and how we learn to discriminate objects and scenes.&nbsp;</p>\n<p>To accomplish this, we developed neural network models that learn to perform the same tasks people do. These models are brain-like in that they use components that are like brain cells in that they are highly connected to one another, and spread excitation and inhibition through connections in a manner inspired by brain cells, or neurons. We developed algorithms for learning in these systems that can explain both retinal representations as well as auditory representations. We expanded these algorithms to not just explain how our retinal representations may have developed, but also how early visual processing in the cortex could have developed merely by being exposed to the visual world.&nbsp;</p>\n<p>We further created neural network models that could learn to read the 850 words of basic English, that could distinguish the six basic emotional expressions (happy, sad, afraid, surprised, angry and disgusted), that could distinguish visual scenes from one another, and that could recognize objects in 1000 different categories. We showed how experience and innate abilities could combine to explain individual differences in people's abilities to discriminate faces and other visual objects that are highly similar to one another, such as birds, dogs, and cars. We are not alone in these endeavors - many researchers funded by NSF, are focused upon trying to solve these visual tasks so that we can develop self-driving cars, understand how our kids learn to see, and how to develop robots that see the world much as we do.&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/16/2017<br>\n\t\t\t\t\tModified by: Garrison&nbsp;W&nbsp;Cottrell</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIt is well-known that children learn to talk. What is less appreciated is that they also learn to see. Babies see with about 20-200 visual acuity; that is, they are legally blind. Over the course of development, their visual acuity improves and their ability to discriminate visual inputs, for example, the faces of their parents and others, objects, scenes, and eventually, words. This work investigated hypotheses concerning how the visual system develops through self-organization, how we learn to discriminate facial expressions, how we learn to discriminate faces from one another, how we learn to read, and how we learn to discriminate objects and scenes. \n\nTo accomplish this, we developed neural network models that learn to perform the same tasks people do. These models are brain-like in that they use components that are like brain cells in that they are highly connected to one another, and spread excitation and inhibition through connections in a manner inspired by brain cells, or neurons. We developed algorithms for learning in these systems that can explain both retinal representations as well as auditory representations. We expanded these algorithms to not just explain how our retinal representations may have developed, but also how early visual processing in the cortex could have developed merely by being exposed to the visual world. \n\nWe further created neural network models that could learn to read the 850 words of basic English, that could distinguish the six basic emotional expressions (happy, sad, afraid, surprised, angry and disgusted), that could distinguish visual scenes from one another, and that could recognize objects in 1000 different categories. We showed how experience and innate abilities could combine to explain individual differences in people's abilities to discriminate faces and other visual objects that are highly similar to one another, such as birds, dogs, and cars. We are not alone in these endeavors - many researchers funded by NSF, are focused upon trying to solve these visual tasks so that we can develop self-driving cars, understand how our kids learn to see, and how to develop robots that see the world much as we do. \n\n\t\t\t\t\tLast Modified: 01/16/2017\n\n\t\t\t\t\tSubmitted by: Garrison W Cottrell"
+ }
+}

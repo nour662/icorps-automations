@@ -1,0 +1,109 @@
+{
+ "awd_id": "1131386",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Models and Algorithms for Risk Adjusted Optimization with Robust Utilities",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "george hazelrigg",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 200000.0,
+ "awd_amount": 200000.0,
+ "awd_min_amd_letter_date": "2011-07-15",
+ "awd_max_amd_letter_date": "2011-07-15",
+ "awd_abstract_narration": "The research objective of this award is to study concepts of relaxed univariate and multivariate stochastic dominance motivated from the specification of utility functions. A major challenge in risk-adjusted decision making is the assessment of a decision maker's risk/utility function associated with uncertain outcomes. The stochastic dominance concept enables the defining of preferences of one random entity (variable, vector, matrix, process, etc.) over another and therefore can be used to compare the different risks between decision alternatives. The concept of stochastic dominance is related to utility theory, which works with a class of utility functions where limited prior knowledge on a decision maker's utility function is assumed, which unfortunately results in very conservative models. Developing models, and the corresponding algorithms, that can systematically circumvent the challenges of traditional utility theory, especially when the decision is based on conflicting objectives and multiple random outcomes, is thus critically needed.\r\n\r\nIf successful, the results of this research will lead to the development of a new class of risk-adjusted decision models that incorporate risk in a more realistic way than currently existing techniques.  Computationally efficient algorithms will be developed to solve these models.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Sanjay",
+   "pi_last_name": "Mehrotra",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sanjay Mehrotra",
+   "pi_email_addr": "mehrotra@northwestern.edu",
+   "nsf_id": "000303258",
+   "pi_start_date": "2011-07-15",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Northwestern University",
+  "inst_street_address": "633 CLARK ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "EVANSTON",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "3125037955",
+  "inst_zip_code": "602080001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "IL09",
+  "org_lgl_bus_name": "NORTHWESTERN UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "EXZVPWZBLUE8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Northwestern University",
+  "perf_str_addr": "2145 Sheridan Road",
+  "perf_city_name": "Evanston",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "602083119",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": null,
+  "perf_st_cong_dist": "IL",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "551400",
+   "pgm_ele_name": "OPERATIONS RESEARCH"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "072E",
+   "pgm_ref_txt": "NETWORKS & QUEUING SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "073E",
+   "pgm_ref_txt": "OPTIMIZATION & DECISION MAKING"
+  },
+  {
+   "pgm_ref_code": "077E",
+   "pgm_ref_txt": "SIMULATION MODELS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 200000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The grant resulted in the development of two very important new concepts. The first concept is applicable to comparing random vectors and random vector functions. Comparing two random vectors is challenging, and typically it is difficult to know when one random vector is better than the other since the classical stochastic dominance based requirements are often too strict to provide any useful information. In the first line of research we developed several metrics that allow us to make this comparison with less strict stochastic requirements. A paper on this topic published in European Journal of Operations Research. In the second line of research we developed concepts of robust decision making by specifying uncertainty sets for a decision maker's utlity function. It is difficult to precisely elicit a decision maker's utility using known approaches due to cognitive difficulties. Hence, the ability to make science driven decisions when the utility function is ambiguous is of great importance. The problem was studied for a risk averse and a general decision maker. A paper based on this work has already published in IIE-Transactions and a second paper for the case of general utilities is under review.</p>\n<p>We now describe the above outcomes in some details.</p>\n<p><strong>Relaxation of Random Vector and Random Vector Functions Comparison</strong></p>\n<p>A standard approach, known as multivariate linear stochastic dominance, is to use the entire positive orthant as a potential candidate for the choice of a weight vector to scalarize a random vector for stochastic vector comparison. In our new concepts we use a stochastically weighted scalarization by introducing a probability measure indicating the relative importance of each vector of weights. This is a fundamental departure and achieves a very meaningful way to compare random vectors over the much stringent requirement in previous use. Three new concepts were introduced based on this idea. In the first concept we require that the scalarization step hold not for all weight vectors, but just on the average for the distribution of random weight vector. In the second concept we require that the dominance condition hold for only a given fraction of possible values taken by the random&nbsp; vector, instead of all. The third concept can be interpreted as providing tolerance in meeting the stochastic dominance requirements.</p>\n<p>The proposed concepts provide new&nbsp;approaches to&nbsp;model multivariate uncertainty. These concepts provide a systematic approach to reconcile diverse stakeholder opinions elicited by a decision maker by allowing&nbsp; the use of a distribution-basd scalarization in optimization problems with multiple risk constraints. This situation arises, for example, when the weights are collected from a large survey on a public issue.&nbsp; Two of the concepts lead to&nbsp;formulations involving linear inequalities, when second order dominance is used to compare the scalarized vector. In comparison, previously known approaches for similar situation require solving an optimization problem&nbsp;that minimize a concave objective function, which is difficult to solve.&nbsp;</p>\n<p><strong>Robust Decision Making using a Risk Averse Utility Set</strong></p>\n<p>We proposed a general modeling framework allowing one to specify a decision maker's ambiguous utility set with the help of equalities and inequalities. We showed that this problem can be formulated as a linea program when the functions bounding the utility are piecewise linear, and those bounding the marginal utility are stepwise. A result showed that the continuous case can also be solved by considering a sequence of discretized models with increasing granularity. A portfolio investment decion problem is used to illustrate different properties and usefulness of the proposed decision modeling framework.</p>\n<p><strong>Robust Decision Making using a Gene...",
+  "por_txt_cntn": "\nThe grant resulted in the development of two very important new concepts. The first concept is applicable to comparing random vectors and random vector functions. Comparing two random vectors is challenging, and typically it is difficult to know when one random vector is better than the other since the classical stochastic dominance based requirements are often too strict to provide any useful information. In the first line of research we developed several metrics that allow us to make this comparison with less strict stochastic requirements. A paper on this topic published in European Journal of Operations Research. In the second line of research we developed concepts of robust decision making by specifying uncertainty sets for a decision maker's utlity function. It is difficult to precisely elicit a decision maker's utility using known approaches due to cognitive difficulties. Hence, the ability to make science driven decisions when the utility function is ambiguous is of great importance. The problem was studied for a risk averse and a general decision maker. A paper based on this work has already published in IIE-Transactions and a second paper for the case of general utilities is under review.\n\nWe now describe the above outcomes in some details.\n\nRelaxation of Random Vector and Random Vector Functions Comparison\n\nA standard approach, known as multivariate linear stochastic dominance, is to use the entire positive orthant as a potential candidate for the choice of a weight vector to scalarize a random vector for stochastic vector comparison. In our new concepts we use a stochastically weighted scalarization by introducing a probability measure indicating the relative importance of each vector of weights. This is a fundamental departure and achieves a very meaningful way to compare random vectors over the much stringent requirement in previous use. Three new concepts were introduced based on this idea. In the first concept we require that the scalarization step hold not for all weight vectors, but just on the average for the distribution of random weight vector. In the second concept we require that the dominance condition hold for only a given fraction of possible values taken by the random  vector, instead of all. The third concept can be interpreted as providing tolerance in meeting the stochastic dominance requirements.\n\nThe proposed concepts provide new approaches to model multivariate uncertainty. These concepts provide a systematic approach to reconcile diverse stakeholder opinions elicited by a decision maker by allowing  the use of a distribution-basd scalarization in optimization problems with multiple risk constraints. This situation arises, for example, when the weights are collected from a large survey on a public issue.  Two of the concepts lead to formulations involving linear inequalities, when second order dominance is used to compare the scalarized vector. In comparison, previously known approaches for similar situation require solving an optimization problem that minimize a concave objective function, which is difficult to solve. \n\nRobust Decision Making using a Risk Averse Utility Set\n\nWe proposed a general modeling framework allowing one to specify a decision maker's ambiguous utility set with the help of equalities and inequalities. We showed that this problem can be formulated as a linea program when the functions bounding the utility are piecewise linear, and those bounding the marginal utility are stepwise. A result showed that the continuous case can also be solved by considering a sequence of discretized models with increasing granularity. A portfolio investment decion problem is used to illustrate different properties and usefulness of the proposed decision modeling framework.\n\nRobust Decision Making using a General Utility Set\n\nWe also considered the case of a general (non risk averse) decision maker. We showed that in the proposed robust utility framework the cost of ambiguity is an increasing..."
+ }
+}

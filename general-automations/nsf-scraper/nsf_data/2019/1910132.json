@@ -1,0 +1,117 @@
+{
+ "awd_id": "1910132",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "RI: NSF-BSF: Small: Reconstructing Shape, Lighting and Reflectance Properties of Indoor Scenes from Video",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032924768",
+ "po_email": "jyang@nsf.gov",
+ "po_sign_block_name": "Jie Yang",
+ "awd_eff_date": "2019-08-15",
+ "awd_exp_date": "2023-07-31",
+ "tot_intn_awd_amt": 493297.0,
+ "awd_amount": 493297.0,
+ "awd_min_amd_letter_date": "2019-08-05",
+ "awd_max_amd_letter_date": "2020-08-03",
+ "awd_abstract_narration": "The goal of this project is to allow someone to use a video of an indoor scene, such as a room in a house, to reconstruct the scene.  The reconstruction will contain all scene properties needed to enable images of the scene to be rendered from new viewpoints, with new lighting.  To do this it is necessary to recover the depth and shape of every point in the scene.  It is also necessary to describe how each point in the scene reflects light, and to recover the lighting in the scene.  This technology will enable a wide range of applications in virtual and augmented reality.  For example, it will assist in generating images that show what a room would look like if the furniture were changed, or to allow augmented reality teleconferencing, in which physically separated speakers appear to chat in the same room.  The project will educate several graduate students.  The investigators will also develop related undergraduate research projects, and projects for an AI summer camp for high school students.\r\n\r\nOne reason such inverse rendering is challenging is the lack of labeled real data. The investigators will address this deficit by using multi-view input for training and solving jointly for all components of the scene. This will allow them to use a self-supervised multi-view photometric reconstruction loss, enforcing consistency across views. They will combine this real data with a large new dataset of highly realistic synthetic data.   They will also develop a unified architecture that recovers pose between views and combines geometric and photometric information. This will allow the system to predict appearance changes across viewpoints and to determine whether measured appearance is consistent with recovered lighting and reflectance properties.  They will also develop novel representations of lighting in scenes, and of the way that objects reflect this light that are compact and effective.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "David",
+   "pi_last_name": "Jacobs",
+   "pi_mid_init": "W",
+   "pi_sufx_name": "",
+   "pi_full_name": "David W Jacobs",
+   "pi_email_addr": "djacobs@cs.umd.edu",
+   "nsf_id": "000315613",
+   "pi_start_date": "2019-08-05",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Maryland, College Park",
+  "inst_street_address": "3112 LEE BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE PARK",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "3014056269",
+  "inst_zip_code": "207425100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "MD04",
+  "org_lgl_bus_name": "UNIVERSITY OF MARYLAND, COLLEGE PARK",
+  "org_prnt_uei_num": "NPU8ULVAAS23",
+  "org_uei_num": "NPU8ULVAAS23"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Maryland College Park",
+  "perf_str_addr": "AV Williams Building,",
+  "perf_city_name": "College Park, MD",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "207425103",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "MD04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 176825.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 316472.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project has focused on developing methods for recovering the 3D structure and reflectance properties of objects.&nbsp; In particular, it has developed methods that work using images that are easily captured without a professional setup.&nbsp; Some of this work uses <em>photometric stereo</em>, in which a camera in a fixed position takes several images of an object under different lighting conditions.&nbsp; With one of our algorithms, the lighting may be changed by simply pointing a flashlight at the object from different directions.&nbsp; This differs from many prior approaches in part because the lighting direction doesn't have to be carefully controlled using special equipment.&nbsp; Using these images, we recover the 3D shape of the object and its material properties (eg. the color of the material and the degree of its shininess).&nbsp;</p>\n<p>One motivation for developing these light-weight approaches is to make it possible for the public to construct 3D models of objects easily at home.&nbsp; This would allow one to post 3D shapes that can be realistically viewed under changing viewpoints or lighting conditions, more fully capturing their appearance.&nbsp; This can also ease the process of constructing interesting new objects for use in virtual or augmented reality.</p>\n<p>Several graduate and undergraduate students have participated in this project as a major part of their training in research.&nbsp; Some of these students, while supported by NSF, have also been instructors in the AI4All summer camp, in which high school students who are primarily from groups underrepresented in computing are introduced to computer vision.</p><br>\n<p>\n Last Modified: 12/31/2023<br>\nModified by: David&nbsp;W&nbsp;Jacobs</p></div>\n<div class=\"porSideCol\"\n><div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2023/1910132/1910132_10630320_1703974588411_Screen_Shot_2023_12_30_at_5.10.06_PM--rgov-214x142.png\" original=\"/por/images/Reports/POR/2023/1910132/1910132_10630320_1703974588411_Screen_Shot_2023_12_30_at_5.10.06_PM--rgov-800width.png\" title=\"Image Capture\"><img src=\"/por/images/Reports/POR/2023/1910132/1910132_10630320_1703974588411_Screen_Shot_2023_12_30_at_5.10.06_PM--rgov-66x44.png\" alt=\"Image Capture\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Our method of reconstruction uses images easily taken at home, without professional equipment.  One just rests a camera (possibly a phone) in a fixed position and illuminates the object with a flashlight, from a few different directions.</div>\n<div class=\"imageCredit\">Shape and Material Capture at Home, CVPR 2021</div>\n<div class=\"imagePermisssions\">Copyright owner is an institution with an existing agreement allowing use by NSF</div>\n<div class=\"imageSubmitted\">David&nbsp;W&nbsp;Jacobs\n<div class=\"imageTitle\">Image Capture</div>\n</div>\n</li></ul>\n</div>\n</div></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThis project has focused on developing methods for recovering the 3D structure and reflectance properties of objects. In particular, it has developed methods that work using images that are easily captured without a professional setup. Some of this work uses photometric stereo, in which a camera in a fixed position takes several images of an object under different lighting conditions. With one of our algorithms, the lighting may be changed by simply pointing a flashlight at the object from different directions. This differs from many prior approaches in part because the lighting direction doesn't have to be carefully controlled using special equipment. Using these images, we recover the 3D shape of the object and its material properties (eg. the color of the material and the degree of its shininess).\n\n\nOne motivation for developing these light-weight approaches is to make it possible for the public to construct 3D models of objects easily at home. This would allow one to post 3D shapes that can be realistically viewed under changing viewpoints or lighting conditions, more fully capturing their appearance. This can also ease the process of constructing interesting new objects for use in virtual or augmented reality.\n\n\nSeveral graduate and undergraduate students have participated in this project as a major part of their training in research. Some of these students, while supported by NSF, have also been instructors in the AI4All summer camp, in which high school students who are primarily from groups underrepresented in computing are introduced to computer vision.\t\t\t\t\tLast Modified: 12/31/2023\n\n\t\t\t\t\tSubmitted by: DavidWJacobs\n"
+ }
+}

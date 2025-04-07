@@ -1,0 +1,101 @@
+{
+ "awd_id": "1609484",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Locality in Network Optimization",
+ "cfda_num": "47.041",
+ "org_code": "07010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Lawrence Goldberg",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 450000.0,
+ "awd_amount": 450000.0,
+ "awd_min_amd_letter_date": "2016-07-29",
+ "awd_max_amd_letter_date": "2016-07-29",
+ "awd_abstract_narration": "Many recent problems in control, communication, computation, and machine learning can be posed in the framework of network optimization. Despite the great number of algorithms that have been proposed to address modern large-scale problems there remains a crucial challenge of building computationally efficient, accurate, scalable, distributed procedures. A key issue is that of understanding locality. Locality is a structural property of optimization instances that captures the property that information need not propagate across the entire network but only across local portions of it. As a consequence decisions made at a node can be made based only on local information thus reducing both communication requirements and computational complexity.  This research involves identifying when locality occurs, designing algorithms that take advantage of locality, and applying these algorithms to variety of applications. The project also provides an opportunity for training graduate students and postdoctoral researchers in the disciplines of optimization, networking, and control.\r\n\r\nTypically sensitivity results concern the objective function evaluated at the optimal solution not the optimal solution itself.  Herein sensitivity is characterized by the change in the optimal solution at a given node given a change in a network parameter at another node.   Locality holds when the sensitivity decays with the distance between the two nodes.  The main objectives of this research project are: (1) Theoretical Analysis: developing a general theory to characterize the local sensitivity of optimal solutions in a variety of network optimization problems and developing analytic tools to quantify the rate at which sensitivity decays with distance; (2) Algorithm Development: developing computationally efficient local message-passing algorithms to solve a variety of network optimization problems; and (3) Applications: applying these algorithms to problems in network optimization, distributed computation, and cooperative control.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "ECCS",
+ "org_div_long_name": "Division of Electrical, Communications and Cyber Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Sekhar",
+   "pi_last_name": "Tatikonda",
+   "pi_mid_init": "C",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sekhar C Tatikonda",
+   "pi_email_addr": "sekhar.tatikonda@yale.edu",
+   "nsf_id": "000359845",
+   "pi_start_date": "2016-07-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Yale University",
+  "inst_street_address": "150 MUNSON ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEW HAVEN",
+  "inst_state_code": "CT",
+  "inst_state_name": "Connecticut",
+  "inst_phone_num": "2037854689",
+  "inst_zip_code": "065113572",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "CT03",
+  "org_lgl_bus_name": "YALE UNIV",
+  "org_prnt_uei_num": "FL6GV84CKN57",
+  "org_uei_num": "FL6GV84CKN57"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Yale University",
+  "perf_str_addr": "17 Hillhouse Ave",
+  "perf_city_name": "New Haven",
+  "perf_st_code": "CT",
+  "perf_st_name": "Connecticut",
+  "perf_zip_code": "065118965",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "CT03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "760700",
+   "pgm_ele_name": "EPCN-Energy-Power-Ctrl-Netwrks"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "092E",
+   "pgm_ref_txt": "Control systems & applications"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 450000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><br />The major goal of this project is to identify and exploit locality in network optimization problems.&nbsp; By this we mean determining what information a node needs to know about the whole network in order to make an optimal decision. Locality is a structural property of optimization instances that captures the property that information need not propagate across the entire network but only across local portions of it. For instance, in the context of networked multi-agent systems, locality encodes the fact that decisions made at each node depends significantly only on decisions taken in some neighborhood of the node. Locality is an algorithm-independent property that has implications for the design of distributed algorithms.<br /><br />The PI shows how locality can be exploited to develop distributed optimization algorithms that can substantially reduce the computational complexity of standard procedures. For example, in the context of the&nbsp; minimum-cost network flow problem &mdash; a standard network optimization problem &mdash; the results show that a change in the source/sink at a node has exponentially diminishing influence on the flows on edges that are far away.&nbsp; Typically sensitivity results concern the objective function evaluated at the optimal point, not the optimal point itself. Due to this exponentially decreasing spatial dependence the problem can be treated locally yielding substantial computational savings.&nbsp;&nbsp; As another example, we introduce a notion of bias-variance tradeoff in network&nbsp; optimization problems by introducing a general notion of correlation decay.&nbsp; For warm-starts, the bias of a local perturbation corresponds to the suboptimality of only working with local information.&nbsp; The variance corresponds to the suboptimality of a particular algorithm employed to solve the localized problem. We show that in many problems the localization bias can be exploited to lower the overall computational cost to achieve a given level of accuracy.<br /><br />This research has been disseminated via archival journal publications and conference presentations.&nbsp; Graduate students, undergraduate students, and postdoctoral fellows received&nbsp; exposure to both real-world network optimization problems and cutting edge theory.<br /><br /><br /></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/26/2021<br>\n\t\t\t\t\tModified by: Sekhar&nbsp;C&nbsp;Tatikonda</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\nThe major goal of this project is to identify and exploit locality in network optimization problems.  By this we mean determining what information a node needs to know about the whole network in order to make an optimal decision. Locality is a structural property of optimization instances that captures the property that information need not propagate across the entire network but only across local portions of it. For instance, in the context of networked multi-agent systems, locality encodes the fact that decisions made at each node depends significantly only on decisions taken in some neighborhood of the node. Locality is an algorithm-independent property that has implications for the design of distributed algorithms.\n\nThe PI shows how locality can be exploited to develop distributed optimization algorithms that can substantially reduce the computational complexity of standard procedures. For example, in the context of the  minimum-cost network flow problem &mdash; a standard network optimization problem &mdash; the results show that a change in the source/sink at a node has exponentially diminishing influence on the flows on edges that are far away.  Typically sensitivity results concern the objective function evaluated at the optimal point, not the optimal point itself. Due to this exponentially decreasing spatial dependence the problem can be treated locally yielding substantial computational savings.   As another example, we introduce a notion of bias-variance tradeoff in network  optimization problems by introducing a general notion of correlation decay.  For warm-starts, the bias of a local perturbation corresponds to the suboptimality of only working with local information.  The variance corresponds to the suboptimality of a particular algorithm employed to solve the localized problem. We show that in many problems the localization bias can be exploited to lower the overall computational cost to achieve a given level of accuracy.\n\nThis research has been disseminated via archival journal publications and conference presentations.  Graduate students, undergraduate students, and postdoctoral fellows received  exposure to both real-world network optimization problems and cutting edge theory.\n\n\n\n\n\t\t\t\t\tLast Modified: 01/26/2021\n\n\t\t\t\t\tSubmitted by: Sekhar C Tatikonda"
+ }
+}

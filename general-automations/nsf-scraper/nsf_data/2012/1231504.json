@@ -1,0 +1,101 @@
+{
+ "awd_id": "1231504",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Wideband cognitive sensing from a few bits",
+ "cfda_num": "47.041",
+ "org_code": "07010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "chengshan xiao",
+ "awd_eff_date": "2012-10-01",
+ "awd_exp_date": "2016-09-30",
+ "tot_intn_awd_amt": 360000.0,
+ "awd_amount": 360000.0,
+ "awd_min_amd_letter_date": "2012-07-10",
+ "awd_max_amd_letter_date": "2012-07-10",
+ "awd_abstract_narration": "Objective: \r\nSpectrum sensing is the most important element of cognitive radio, as it forms the ba-\r\nsis for adaptive spectrum sharing. Wideband spectrum sensing without frequency sweeping or\r\nNyquist-rate sampling is a challenging problem, especially for network sensing from low-end sen-\r\nsors with limited communication capabilities. Assume that each sensor can only down-convert,\r\nfilter, and send out a binary signal when it measures energy above threshold at its filter?s output.\r\nIs it possible to form a satisfactory estimate of the ambient power spectrum using just a few such\r\nbits? This is the question at the core of this project, and exciting preliminary results suggest that\r\nthe answer is on the affirmative. A well-rounded research program has been designed to build\r\nupon these preliminary findings. The research will evolve along four thrusts: i) core system design\r\nand performance analysis; ii) distributed implementation; iii) relevant extensions, such as adaptive\r\nsensing; and iv) software radio experiments.\r\n\r\nIntellectual merit: \r\nPower spectrum estimation from few wideband energy detection bits has never\r\nbeen considered - yet is a fundamental extension of spectral analysis. Exciting new applications\r\nof convex optimization theory and methods will be found in the area of network-based spectrum\r\nestimation.\r\n\r\nBroader impacts: \r\nWideband spectrum sensing using cheap sensors and few bits is a transformative\r\nidea that has the potential to permeate the benefits of cognitive radio down to commodity hardware\r\n- something currently far from reality. The topic is highly conducive for involving students and\r\ntraining the next generation of wireless engineers.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "ECCS",
+ "org_div_long_name": "Division of Electrical, Communications and Cyber Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Nikolaos",
+   "pi_last_name": "Sidiropoulos",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "Nikolaos D Sidiropoulos",
+   "pi_email_addr": "nikos@virginia.edu",
+   "nsf_id": "000228544",
+   "pi_start_date": "2012-07-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Minnesota-Twin Cities",
+  "inst_street_address": "2221 UNIVERSITY AVE SE STE 100",
+  "inst_street_address_2": "",
+  "inst_city_name": "MINNEAPOLIS",
+  "inst_state_code": "MN",
+  "inst_state_name": "Minnesota",
+  "inst_phone_num": "6126245599",
+  "inst_zip_code": "554143074",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "MN05",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF MINNESOTA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "KABJZBBJ4B54"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Minnesota-Twin Cities",
+  "perf_str_addr": "200 Union St SE",
+  "perf_city_name": "Minneapolis",
+  "perf_st_code": "MN",
+  "perf_st_name": "Minnesota",
+  "perf_zip_code": "554552070",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "MN05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "756400",
+   "pgm_ele_name": "CCSS-Comms Circuits & Sens Sys"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "153E",
+   "pgm_ref_txt": "Wireless comm & sig processing"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 360000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The focus of this project has been on accurately estimating the ambient power spectrum over a wide band of frequencies using only few coarsely quantized power measurements. This type of spectrum estimation from power inequalities is a fresh take on a classic problem. It has important applications in next-generation wireless communication technologies that exploit space-time-frequency transmission opportunities for dynamic spectrum access.</p>\n<p><strong>Intellectual merit:</strong> Work under this grant has produced effective non-parametric and parametric techniques for power spectrum estimation from power inequalities. Moving-average (MA), auto-regressive (AR) and auto-regressive moving-average (ARMA) models have been considered and effective model fitting algorithms have been developed. It has been demonstrated that accurate estimation of the power distribution is possible with as few as 100 inequalities (bits). The technical contributions of this project include showing that non-convex quadratically constrained quadratic programming (QCQP) problems with Toeplitz quadratic matrices possess hidden convexity; and that the same holds for maximum likelihood estimation of finite autocorrelation sequences from quantized power measurements. Inspired by these contributions, several additional discoveries have been made. For example, a general feasible point pursuit (FPP) methodology has been conceived that is applicable to a very broad range of non-convex QCQP problems, which are of paramount importance across science and engineering, and fast approximation schemes have been developed to address important special cases that appear in wireless multicasting. Additional applications considered include state estimation from quadratic (power) measurements.</p>\n<p><strong>Broader impacts:</strong> &nbsp;The results pave the way for using networks of mobile devices for spectrum sensing, and they are also relevant in other areas, such as radio astronomy using a network of radio-telescopes. A patent was submitted on downlink channel tracking and transmit beamforming using very-low-rate feedback. The methods developed with partial support from this grant have already found interesting applications in very different areas, such as power systems engineering. One Ph.D. student has graduated and another is close to graduating supported primarily from this grant and a University of Minnesota Doctoral Dissertation Fellowship in their final year. Two more junior graduate students have been involved in the research, which also involved a researcher from the National Renewable Energy Laboratory. The project provided numerous educational and research training opportunities for undergraduate students, including a senior honors thesis and a senior design group project on spectrum sensing. &nbsp;&nbsp;&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/25/2016<br>\n\t\t\t\t\tModified by: Nikolaos&nbsp;D&nbsp;Sidiropoulos</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2016/1231504/1231504_10188943_1480124988656_FS--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1231504/1231504_10188943_1480124988656_FS--rgov-800width.jpg\" title=\"Frugal sensing\"><img src=\"/por/images/Reports/POR/2016/1231504/1231504_10188943_1480124988656_FS--rgov-66x44.jpg\" alt=\"Frugal sensing\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">`Frugal' spectrum estimation from a few power inequalities (bits) is a fresh take on a classic problem with numerous applications in next generation wireless communications, radio astronomy, and other areas.</div>\n<div class=\"imageCredit\">Omar Mehanna and Nikos Sidiropoulos</div>\n<div class=\"imagePermisssions\">Creative Commons</div>\n<div class=\"imageSubmitted\">Nikolaos&nbsp;D&nbsp;Sidiropoulos</div>\n<div class=\"imageTitle\">Frugal sensing</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThe focus of this project has been on accurately estimating the ambient power spectrum over a wide band of frequencies using only few coarsely quantized power measurements. This type of spectrum estimation from power inequalities is a fresh take on a classic problem. It has important applications in next-generation wireless communication technologies that exploit space-time-frequency transmission opportunities for dynamic spectrum access.\n\nIntellectual merit: Work under this grant has produced effective non-parametric and parametric techniques for power spectrum estimation from power inequalities. Moving-average (MA), auto-regressive (AR) and auto-regressive moving-average (ARMA) models have been considered and effective model fitting algorithms have been developed. It has been demonstrated that accurate estimation of the power distribution is possible with as few as 100 inequalities (bits). The technical contributions of this project include showing that non-convex quadratically constrained quadratic programming (QCQP) problems with Toeplitz quadratic matrices possess hidden convexity; and that the same holds for maximum likelihood estimation of finite autocorrelation sequences from quantized power measurements. Inspired by these contributions, several additional discoveries have been made. For example, a general feasible point pursuit (FPP) methodology has been conceived that is applicable to a very broad range of non-convex QCQP problems, which are of paramount importance across science and engineering, and fast approximation schemes have been developed to address important special cases that appear in wireless multicasting. Additional applications considered include state estimation from quadratic (power) measurements.\n\nBroader impacts:  The results pave the way for using networks of mobile devices for spectrum sensing, and they are also relevant in other areas, such as radio astronomy using a network of radio-telescopes. A patent was submitted on downlink channel tracking and transmit beamforming using very-low-rate feedback. The methods developed with partial support from this grant have already found interesting applications in very different areas, such as power systems engineering. One Ph.D. student has graduated and another is close to graduating supported primarily from this grant and a University of Minnesota Doctoral Dissertation Fellowship in their final year. Two more junior graduate students have been involved in the research, which also involved a researcher from the National Renewable Energy Laboratory. The project provided numerous educational and research training opportunities for undergraduate students, including a senior honors thesis and a senior design group project on spectrum sensing.    \n\n \n\n \n\n\t\t\t\t\tLast Modified: 11/25/2016\n\n\t\t\t\t\tSubmitted by: Nikolaos D Sidiropoulos"
+ }
+}

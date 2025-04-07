@@ -1,0 +1,113 @@
+{
+ "awd_id": "1563544",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "CSR: Medium: A Smart Runtime System for Parallel Programming",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2016-06-01",
+ "awd_exp_date": "2020-05-31",
+ "tot_intn_awd_amt": 509755.0,
+ "awd_amount": 509755.0,
+ "awd_min_amd_letter_date": "2016-04-01",
+ "awd_max_amd_letter_date": "2018-04-26",
+ "awd_abstract_narration": "Since the clock speed of computers is not increasing, the only way to speed up processing is by exploiting multiple cores.  Programming these multicore processors is a challenging task due to bugs resulting from concurrency and synchronization.  This project is developing new synchronization mechanisms that address three aspects of concurrent systems --- programmability, scalability and fault-tolerance. Programmability refers to the ease of developing concurrent applications. Scalability refers to the performance of the program when the number of threads in the system increase. Fault-tolerance refers to the ability of the system to cope with failure of a thread holding a lock.\r\n\r\nCurrently, the most prevalent synchronization mechanism is based on monitors with condition variables.  Monitors or lock based systems are hard to use for multi object operations, usually have poor scalability and low tolerance for faults. Lock-free mechanisms may have good scalability and fault-tolerance, but are notoriously hard to write and debug. Software Transactional Memory systems hold most promise for programmability. However, it is difficult to get efficient conditional synchronization in current transactional memory systems. This project is developing new synchronization techniques that address global conditional synchronization aspects of monitor or transactional memory systems. In particular, it is developing scalable mechanisms to detect global or multi object conditions and automatically notify threads  waiting on these conditions.  The only way to simulate this mechanism in current systems is by using a global lock or busy wait which results in a large number of context switches and slower performance. The mechanisms developed in this project will result in more concise and faster programs.\r\n\r\nFor scalability and fault-tolerance, the project is developing methods that enable asynchronous and parallel execution of certain object methods. Asynchronous execution is carried out by keeping a monitor thread that can execute methods on behalf of threads that make the monitor call. This technique improves cache locality and concurrency. For objects with high-contention, the project is studying methods that enable parallel execution of read operations by keeping read-only copies of objects. However, maintaining copies of every monitor object or creating an additional thread for asynchronous execution is inefficient. The project is developing efficient techniques to determine which objects to replicate at runtime.\r\n\r\nThe project will result in improving programmer productivity and reducing concurrency errors in development of multicore programs. It will also lead to better understanding of how global conditions in a multithreaded program can be evaluated efficiently. As a result, the concurrent programming systems will become more reliable and faster. In addition, the graduate students supported by the project will be trained in fundamentals of multicore computing.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Vijay",
+   "pi_last_name": "Garg",
+   "pi_mid_init": "K",
+   "pi_sufx_name": "",
+   "pi_full_name": "Vijay K Garg",
+   "pi_email_addr": "garg@ece.utexas.edu",
+   "nsf_id": "000453995",
+   "pi_start_date": "2016-04-01",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Austin",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787121532",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "25",
+  "perf_st_cong_dist": "TX25",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 366416.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 143339.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>1. Tracking causality (or happened-before relation) between events is useful for many applications such as debugging and recovery from failures.&nbsp; We give an algorithm in this paper that uses a hybrid of thread and object components. Our algorithm is guaranteed to return the minimum number of components necessary for vector clocks. We first consider the case when the interaction between objects and threads is statically known. This interaction is modeled by a thread-object bipartite graph. Our algorithm is based on finding the maximum bipartite matching of such a graph and then applying K&ouml;nig-Egerv&aacute;ry Theorem to compute the minimum vertex cover to determine the optimal number of components necessary for the vector clock. We also propose two mechanisms to compute such an vector clock when computation is revealed in an online fashion.&nbsp; These mechanisms are more effective when the underlying bipartite graph is not dense.&nbsp;(ICDCS'19).</p>\n<p>2. We have built a system on top of Java for synchronization. Our system provides automatic notification for global conditions. Assuming that the global condition is a Boolean expression of local predicates, our method allows efficient monitoring of the conditions without any need for global locks. Furthermore, our system solves the compositionality problem of monitor systems without requiring global locks. We have implemented our constructs on top of Java and have evaluated their overhead. Our results show that on most of the multiobject problems, not only our code is simpler but also faster than Java&rsquo;s reentrant-lock as well as the Deuce transactional memory system. (IPDPS'2017)</p>\n<p>3. &nbsp;Enumerating consistent global states of a computation is a fundamental problem in parallel computing with applications to debugging, testing and runtime verification of parallel programs. Breadth-first search (BFS) enumeration is especially useful for these applications as it finds an erroneous consistent global state with the least number of events possible. The total number of executed events in a global state is called its rank. BFS also allows enumeration of all global states of a given rank or within a range of ranks. Cooper and Marzullo were the first to give an algorithm for BFS enumeration of consistent global states. Their algorithm, finds a global state of a given rank by enumerating states of all the lower ranks. Hence, in the worst case it requires space that is exponential in the size of the computation. We give the first algorithm that enumerates consistent global states of a given rank without enumerating states of lower rank. This enables BFS based enumeration of consistent global states with polynomial space in the size of the input computation. In our experimental evaluation of seven benchmarks, traditional BFS fails in many cases by exhausting the 2 GB heap space allowed to the JVM.&nbsp; In contrast, our implementation uses less than 60 MB additional memory and is also faster in many cases (RV'17, <strong>Best Paper Award</strong>).</p>\n<p>4. Enumerating all consistent states of a parallel computation that satisfy a given predicate is an important problem in debugging and verification of parallel programs. We give a fast algorithm to enumerate all consistent states of a parallel computation that satisfy a stable predicate. In addition, we define a new category of global predicates called count predicates and give an algorithm to enumerate all consistent states (of the computation) that satisfy it. All existing predicate detection algorithms, such as BFS, DFS and Lex algorithms, do not exploit the knowledge about the nature of the predicates, and thus may visit all global states of the computation in the worst case. In comparison, our algorithms only visit the states that satisfy the given predicate, and thus take time and space that is a polynomial function of the number of states of interest. In doing so, they provide a significant reduction &mdash; exponential in many cases &mdash; in time complexities in comparison to existing algorithms. This work appeared in 21st International Conference on Principles of Distributed Systems, OPODIS 2017.</p>\n<p>5. We have studied the reachability problem in the locking poset (loset) model. We show that the problem is NP-complete.&nbsp; We have introduced a subset of reachable global states called lock-free feasible global states such that we can check whether a global state is lock-free feasible in polynomial time. Moreover, we show that lock-free feasible global states can act as &ldquo;reset&rdquo; points for reachability and be used to drastically reduce the time for determining the reachability of other global states. We also introduce strongly feasible global states that contain all reachable global states and show that the strong feasibility of a global state can be checked in polynomial time. We show that strong feasibility provides an effective approximation of reachability for many practical applications. (OPODIS'2016)</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/06/2020<br>\n\t\t\t\t\tModified by: Vijay&nbsp;K&nbsp;Garg</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n1. Tracking causality (or happened-before relation) between events is useful for many applications such as debugging and recovery from failures.  We give an algorithm in this paper that uses a hybrid of thread and object components. Our algorithm is guaranteed to return the minimum number of components necessary for vector clocks. We first consider the case when the interaction between objects and threads is statically known. This interaction is modeled by a thread-object bipartite graph. Our algorithm is based on finding the maximum bipartite matching of such a graph and then applying K&ouml;nig-Egerv&aacute;ry Theorem to compute the minimum vertex cover to determine the optimal number of components necessary for the vector clock. We also propose two mechanisms to compute such an vector clock when computation is revealed in an online fashion.  These mechanisms are more effective when the underlying bipartite graph is not dense. (ICDCS'19).\n\n2. We have built a system on top of Java for synchronization. Our system provides automatic notification for global conditions. Assuming that the global condition is a Boolean expression of local predicates, our method allows efficient monitoring of the conditions without any need for global locks. Furthermore, our system solves the compositionality problem of monitor systems without requiring global locks. We have implemented our constructs on top of Java and have evaluated their overhead. Our results show that on most of the multiobject problems, not only our code is simpler but also faster than Java\u2019s reentrant-lock as well as the Deuce transactional memory system. (IPDPS'2017)\n\n3.  Enumerating consistent global states of a computation is a fundamental problem in parallel computing with applications to debugging, testing and runtime verification of parallel programs. Breadth-first search (BFS) enumeration is especially useful for these applications as it finds an erroneous consistent global state with the least number of events possible. The total number of executed events in a global state is called its rank. BFS also allows enumeration of all global states of a given rank or within a range of ranks. Cooper and Marzullo were the first to give an algorithm for BFS enumeration of consistent global states. Their algorithm, finds a global state of a given rank by enumerating states of all the lower ranks. Hence, in the worst case it requires space that is exponential in the size of the computation. We give the first algorithm that enumerates consistent global states of a given rank without enumerating states of lower rank. This enables BFS based enumeration of consistent global states with polynomial space in the size of the input computation. In our experimental evaluation of seven benchmarks, traditional BFS fails in many cases by exhausting the 2 GB heap space allowed to the JVM.  In contrast, our implementation uses less than 60 MB additional memory and is also faster in many cases (RV'17, Best Paper Award).\n\n4. Enumerating all consistent states of a parallel computation that satisfy a given predicate is an important problem in debugging and verification of parallel programs. We give a fast algorithm to enumerate all consistent states of a parallel computation that satisfy a stable predicate. In addition, we define a new category of global predicates called count predicates and give an algorithm to enumerate all consistent states (of the computation) that satisfy it. All existing predicate detection algorithms, such as BFS, DFS and Lex algorithms, do not exploit the knowledge about the nature of the predicates, and thus may visit all global states of the computation in the worst case. In comparison, our algorithms only visit the states that satisfy the given predicate, and thus take time and space that is a polynomial function of the number of states of interest. In doing so, they provide a significant reduction &mdash; exponential in many cases &mdash; in time complexities in comparison to existing algorithms. This work appeared in 21st International Conference on Principles of Distributed Systems, OPODIS 2017.\n\n5. We have studied the reachability problem in the locking poset (loset) model. We show that the problem is NP-complete.  We have introduced a subset of reachable global states called lock-free feasible global states such that we can check whether a global state is lock-free feasible in polynomial time. Moreover, we show that lock-free feasible global states can act as \"reset\" points for reachability and be used to drastically reduce the time for determining the reachability of other global states. We also introduce strongly feasible global states that contain all reachable global states and show that the strong feasibility of a global state can be checked in polynomial time. We show that strong feasibility provides an effective approximation of reachability for many practical applications. (OPODIS'2016)\n\n\t\t\t\t\tLast Modified: 10/06/2020\n\n\t\t\t\t\tSubmitted by: Vijay K Garg"
+ }
+}

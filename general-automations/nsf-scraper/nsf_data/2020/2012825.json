@@ -1,0 +1,98 @@
+{
+ "awd_id": "2012825",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Fast Algorithms for Nonlinear Optimal Control of Geodesic Flows of Diffeomorphisms",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922175",
+ "po_email": "lzikatan@nsf.gov",
+ "po_sign_block_name": "Ludmil T. Zikatanov",
+ "awd_eff_date": "2020-07-01",
+ "awd_exp_date": "2025-06-30",
+ "tot_intn_awd_amt": 299930.0,
+ "awd_amount": 299930.0,
+ "awd_min_amd_letter_date": "2020-06-05",
+ "awd_max_amd_letter_date": "2020-06-05",
+ "awd_abstract_narration": "Optimal control problems play a critical role in numerous computational sciences applications, including those in medicine, geosciences, manufacturing, national security, or economics. Optimal control problems are a systematic tool to infer knowledge from data, enabling scientific discovery and decision making. They are typically formulated as data-fitting problems with dynamical systems (the simulation problem) as constraints. This simulation problem describes the possible behavior of a natural or engineered system under investigation for given values of input variables (for example, brain tumor and tumor growth rates). In practice, the values are typically not known and cannot be measured directly. One needs to infer them from observational data (for example, a series of patient images) by optimizing a performance goal. This process constitutes the control problem; the unknown variables are the controls of the simulation problem. Solving optimal control problems poses significant mathematical challenges. The project will consider control problems that can have up to billions of unknowns. For decision making, one needs to equip the solutions of the control problem with confidence intervals. This is achieved using a statistical framework, which adds massive computational costs. Moreover, distinct control variable realizations can yield simulation outputs that match the observational data equally well, leading to what is known as ill-posed problems. To alleviate this ambiguity, prior knowledge about plausible solutions can be introduced based on regularization models. However, choosing adequate regularization models remains a significant challenge. This project aims to provide fast, scalable, and robust software tailored to modern computing architectures to address the massive computational costs. The project will focus on learning appropriate regularization models from data. The area of application is statistical shape analysis for classifying objects, and, in particular, the classification of patients (diseased versus healthy) based on the anatomical shape variability of organs. Upon completion, the research will produce a generic mathematical and algorithmic framework for transport-related optimal control problems and more generally inverse problems, along with software infrastructure that applies to a range of problems in (biomedical) imaging sciences, atmospheric sciences, computer vision, remote sensing, data science, and deep learning. The project will provide training for two graduate students and summer research projects for undergraduates.\r\n\r\nThe research will develop effective, scalable computational methods for nonlinear optimal control of geodesic flows of diffeomorphisms. The novelty is the design of hardware-accelerated computational kernels and efficient numerical schemes that exploit problem structure and rigorously follow mathematical principles for studying shape variability. This is achieved through the design of a Bayesian framework for statistical shape analysis. The quantification of shape variability of distinct realizations of an object under investigation is done through the lens of geodesic flows of diffeomorphisms that map one object to another. In particular, one quantifies the proximity between two shapes by the length of the geodesic path that connects them. From a statistical point of view, one can study shape variability in a database by identifying an average geometry (the \"statistical template\") of a particular object under investigation, and then studies how individual datasets deviate from this average. The project will focus on adaptive, hierarchical numerical schemes, enabling high-accuracy computations if desired, and low-accuracy approximations when possible. The solvers will feature fast computational kernels, maximizing single-node, and single-GPU throughput while maintaining scalability on (heterogeneous) high-performance computing platforms. Work packages include preconditioning, fast hierarchical computational kernels for evaluating forward and adjoint operators, mixed-precision implementations on heterogeneous architectures, and computational methods that exploit problem structure to speed up the solution and allow for high acceptance rates when sampling from high-dimensional probability distributions. In particular, the project will provide methodology for (i) the solution of nonlinear initial value control problems, (ii) uncertainty quantification, (iii) statistical template estimation from large imaging databases, and (iv) learning regularization operators from data.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Andreas",
+   "pi_last_name": "Mang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Andreas Mang",
+   "pi_email_addr": "andreas@math.uh.edu",
+   "nsf_id": "000757385",
+   "pi_start_date": "2020-06-05",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Houston",
+  "inst_street_address": "4300 MARTIN LUTHER KING BLVD",
+  "inst_street_address_2": "",
+  "inst_city_name": "HOUSTON",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "7137435773",
+  "inst_zip_code": "772043067",
+  "inst_country_name": "United States",
+  "cong_dist_code": "18",
+  "st_cong_dist_code": "TX18",
+  "org_lgl_bus_name": "UNIVERSITY OF HOUSTON SYSTEM",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "QKWEF8XLMTT3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Houston",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "772042015",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "18",
+  "perf_st_cong_dist": "TX18",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 299930.0
+  }
+ ],
+ "por": null
+}

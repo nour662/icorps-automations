@@ -1,0 +1,149 @@
+{
+ "awd_id": "2007362",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Sparsity-Aware Hardware Accelerators for Natural Language Processing with Transformers",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927498",
+ "po_email": "achtchel@nsf.gov",
+ "po_sign_block_name": "Almadena Chtchelkanova",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 499999.0,
+ "awd_amount": 499999.0,
+ "awd_min_amd_letter_date": "2020-08-06",
+ "awd_max_amd_letter_date": "2020-08-06",
+ "awd_abstract_narration": "Natural Language Processing (NLP) enables people to interact with machines in the same manner as with each other. More importantly, it provides machines with the ability to access the information and knowledge that are readily available in books, articles, and various unstructured documents. Because the quality and usability of NLP-powered services depends primarily on the quantity of text the system is able to process, the computational demands of advanced NLP applications far exceed the capabilities of general-purpose computers and continue to grow. This project aims to greatly improve the performance of NLP applications based on transformers, a class of neural networks used in most state-of-the-art NLP technology. This project will significantly improve performance and efficiency for NLP applications, enabling their widespread deployment in emerging datacenters and thus enhancing the quality of human interactions with machines and each other.\r\n\r\nThis project advances the state of the art of accelerators (hardware and compilers) for natural language processing, focusing primarily on sparsity-aware inference in large multi-layered self-attention based models, which have so far received limited attention from the architecture community. The project also advances NLP knowledge of sparse attention functions, studies design techniques that allow for repurposing pre-trained models to run faster, and improves the effectiveness in applications which diverge from its training setting. The investigation focuses on the key observation that the massive growth in computational complexity can be mitigated by dynamically identifying inherent sparsity and ineffectual computation in models, refitting the model to induce sparsity with the goal of either approximating or entirely avoiding parts of the computation that have limited impact on the model results. This investigation will demonstrate the performance improvement obtained by these techniques, leveraging sparsity and dynamic predictions within a novel sparsity-aware hardware acceleration framework, implemented on a field-programmable gate array (FPGA).\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Peter",
+   "pi_last_name": "Milder",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Peter Milder",
+   "pi_email_addr": "peter.milder@stonybrook.edu",
+   "nsf_id": "000629904",
+   "pi_start_date": "2020-08-06",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Michael",
+   "pi_last_name": "Ferdman",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Michael Ferdman",
+   "pi_email_addr": "mferdman@cs.stonybrook.edu",
+   "nsf_id": "000634656",
+   "pi_start_date": "2020-08-06",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Niranjan",
+   "pi_last_name": "Balasubramanian",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Niranjan Balasubramanian",
+   "pi_email_addr": "niranjan@cs.stonybrook.edu",
+   "nsf_id": "000678413",
+   "pi_start_date": "2020-08-06",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Hansen",
+   "pi_last_name": "Schwartz",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Hansen Schwartz",
+   "pi_email_addr": "has@cs.stonybrook.edu",
+   "nsf_id": "000693205",
+   "pi_start_date": "2020-08-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "SUNY at Stony Brook",
+  "inst_street_address": "W5510 FRANKS MELVILLE MEMORIAL LIBRARY",
+  "inst_street_address_2": "",
+  "inst_city_name": "STONY BROOK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6316329949",
+  "inst_zip_code": "117940001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "NY01",
+  "org_lgl_bus_name": "THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK",
+  "org_prnt_uei_num": "M746VC6XMNH9",
+  "org_uei_num": "M746VC6XMNH9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "SUNY at Stony Brook",
+  "perf_str_addr": "",
+  "perf_city_name": "Stony Brook",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "117942350",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "NY01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "287800",
+   "pgm_ele_name": "Special Projects - CCF"
+  },
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "075Z",
+   "pgm_ref_txt": "Artificial Intelligence (AI)"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7942",
+   "pgm_ref_txt": "HIGH-PERFORMANCE COMPUTING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 499999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-4a3dd959-7fff-317b-ec5c-ca4aa94667df\"> </span></p>\r\n<p dir=\"ltr\"><span>This project focused on improving the efficiency of transformer-based models in natural language processing (NLP) by developing hardware accelerator techniques that take advantage of sparsity. Transformers are essential for many NLP tasks but are known for their computational demands. By leveraging sparsity---situations where certain computations result in zero or redundant values---we aimed to reduce the computational burden and energy use, making advanced NLP models faster and more efficient.</span></p>\r\n<p dir=\"ltr\"><strong>Key Outcomes and Achievements:</strong></p>\r\n<ol>\r\n<li dir=\"ltr\">\r\n<p dir=\"ltr\"><strong>Development of a Programmable FPGA Accelerator</strong><span><br /></span><span>We designed a flexible hardware accelerator framework using Field-Programmable Gate Arrays (FPGAs) capable of efficiently executing modern transformer models. The accelerator separates the control flow of model execution from the compute-intensive data pipeline, simplifying the organization of performance-critical components. This design enables rapid experimentation with various accelerator configurations, making it both powerful and adaptable. This framework has enabled experimentation with LLMs and research into the programmability of accelerators.</span></p>\r\n</li>\r\n<li dir=\"ltr\">\r\n<p dir=\"ltr\"><strong>Insights into Structured Sparsity in Large Language Models (LLMs)</strong><span><br /></span><span>We identified important patterns of sparsity in large language models such as Llama and OPT, showing that larger models tend to exhibit increased sparsity. By identifying and exploiting these patterns to eliminate computation which would result in zero values, we were able to design an accelerator organization that improves computational efficiency while having minimal impact on model accuracy.</span></p>\r\n</li>\r\n<li dir=\"ltr\">\r\n<p dir=\"ltr\"><strong>Development of a Level-Agnostic Batching Technique</strong><span><br /></span><span>We introduced a novel execution batching strategy that maximizes hardware utilization across different NLP tasks. This method reduced runtime by 50% in real-world applications on off-the-shelf GPUs. The technique has been implemented in an open-source Python package, ensuring accessibility and broad adoption within the research community.</span></p>\r\n</li>\r\n</ol>\r\n<p><strong>Broader Impacts:</strong></p>\r\n<p>&nbsp;</p>\r\n<ol>\r\n<li><strong>Advancing Education and Training<br /></strong>The project provided hands-on training for five PhD students in state-of-the-art hardware design and NLP techniques. One of the PhD students in the project was able to secure a full-time university lecturer position.&nbsp; Two undergraduate students also completed honors projects, and one has since transitioned into a PhD program. These results underscore the project's role in inspiring and developing the next generation of researchers.<br /><br /></li>\r\n<li><strong>Enhancing Undergraduate Curriculum<br /></strong>Findings from this project have been incorporated into undergraduate NLP courses.&nbsp; Students are now exposed to advanced concepts in transformer organization and are able to get a deeper understanding of model internals and behavior, particularly with respect to attention and sparsity.<br /><br /></li>\r\n<li><strong>Contributing to a More Sustainable Future</strong><br />By enhancing the efficiency of transformer-based NLP systems, this project lowers the computational costs of deploying large-scale LLMs in datacenters. Such improvements expand access to cutting-edge AI technologies while supporting sustainability through reduced energy consumption and hardware requirements.</li>\r\n</ol>\r\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 01/28/2025<br>\nModified by: Peter&nbsp;Milder</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\n \r\n\n\nThis project focused on improving the efficiency of transformer-based models in natural language processing (NLP) by developing hardware accelerator techniques that take advantage of sparsity. Transformers are essential for many NLP tasks but are known for their computational demands. By leveraging sparsity---situations where certain computations result in zero or redundant values---we aimed to reduce the computational burden and energy use, making advanced NLP models faster and more efficient.\r\n\n\nKey Outcomes and Achievements:\r\n\r\n\r\n\n\nDevelopment of a Programmable FPGA Accelerator\nWe designed a flexible hardware accelerator framework using Field-Programmable Gate Arrays (FPGAs) capable of efficiently executing modern transformer models. The accelerator separates the control flow of model execution from the compute-intensive data pipeline, simplifying the organization of performance-critical components. This design enables rapid experimentation with various accelerator configurations, making it both powerful and adaptable. This framework has enabled experimentation with LLMs and research into the programmability of accelerators.\r\n\r\n\r\n\n\nInsights into Structured Sparsity in Large Language Models (LLMs)\nWe identified important patterns of sparsity in large language models such as Llama and OPT, showing that larger models tend to exhibit increased sparsity. By identifying and exploiting these patterns to eliminate computation which would result in zero values, we were able to design an accelerator organization that improves computational efficiency while having minimal impact on model accuracy.\r\n\r\n\r\n\n\nDevelopment of a Level-Agnostic Batching Technique\nWe introduced a novel execution batching strategy that maximizes hardware utilization across different NLP tasks. This method reduced runtime by 50% in real-world applications on off-the-shelf GPUs. The technique has been implemented in an open-source Python package, ensuring accessibility and broad adoption within the research community.\r\n\r\n\r\n\n\nBroader Impacts:\r\n\n\n\r\n\r\nAdvancing Education and Training\nThe project provided hands-on training for five PhD students in state-of-the-art hardware design and NLP techniques. One of the PhD students in the project was able to secure a full-time university lecturer position. Two undergraduate students also completed honors projects, and one has since transitioned into a PhD program. These results underscore the project's role in inspiring and developing the next generation of researchers.\n\n\r\nEnhancing Undergraduate Curriculum\nFindings from this project have been incorporated into undergraduate NLP courses. Students are now exposed to advanced concepts in transformer organization and are able to get a deeper understanding of model internals and behavior, particularly with respect to attention and sparsity.\n\n\r\nContributing to a More Sustainable Future\nBy enhancing the efficiency of transformer-based NLP systems, this project lowers the computational costs of deploying large-scale LLMs in datacenters. Such improvements expand access to cutting-edge AI technologies while supporting sustainability through reduced energy consumption and hardware requirements.\r\n\r\n\n\n\t\t\t\t\tLast Modified: 01/28/2025\n\n\t\t\t\t\tSubmitted by: PeterMilder\n"
+ }
+}

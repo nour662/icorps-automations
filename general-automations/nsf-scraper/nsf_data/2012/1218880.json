@@ -1,0 +1,101 @@
+{
+ "awd_id": "1218880",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RI: Small: Active Learning with Rich Query Types on Networks and Trees",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Rebecca Hwa",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 449917.0,
+ "awd_amount": 449917.0,
+ "awd_min_amd_letter_date": "2012-07-31",
+ "awd_max_amd_letter_date": "2012-07-31",
+ "awd_abstract_narration": "Supervised machine learning is a critical component of software systems in a wide variety of applications.  Although models induced via supervised learning algorithms often provide state-of-the-art accuracy, they are not applied as widely as they could be because they require labeled training instances, which are often expensive to acquire.  One promising approach to addressing this limitation is to employ active learning algorithms.  These methods are able to make queries in which they choose which instances are labeled and added to the training set.  The goal of this project is to develop a new class of algorithms for active learning that broadens the applicability of this approach to more complex, realistic settings.  Specifically, we will develop methods that (i) address complex learning tasks such as biological network reconstruction and event extraction from natural language, (ii) assemble batches of queries when it is cost effective to do so, (iii) are able to employ a variety of query types, and (iv) reason about the costs incurred for various queries.\r\n\r\nMachine learning represents an important methodology for inferring models that can make useful predictions in scientific, educational, health-care, business and consumer applications.  The methods to be developed in this project will provide substantial benefits to machine-learning applications in such problem domains by reducing the cost required to obtain enough data to learn accurate models. Moreover, because this project is connected to specific collaborations with biologists, it is likely to have a direct impact on the ability of scientists to design, conduct and interpret experiments investigating networks of complex relationships such as host-virus interactions.  The project will also play a role in training undergraduate and graduate students in interdisciplinary research, and in recruiting undergraduate students from under-represented minority groups into scientific careers.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Mark",
+   "pi_last_name": "Craven",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mark Craven",
+   "pi_email_addr": "craven@biostat.wisc.edu",
+   "nsf_id": "000434287",
+   "pi_start_date": "2012-07-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Wisconsin-Madison",
+  "inst_street_address": "21 N PARK ST STE 6301",
+  "inst_street_address_2": "",
+  "inst_city_name": "MADISON",
+  "inst_state_code": "WI",
+  "inst_state_name": "Wisconsin",
+  "inst_phone_num": "6082623822",
+  "inst_zip_code": "537151218",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "WI02",
+  "org_lgl_bus_name": "UNIVERSITY OF WISCONSIN SYSTEM",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LCLSJAGTNZQ7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Wisconsin-Madison",
+  "perf_str_addr": "21 North Park Street",
+  "perf_city_name": "Madison",
+  "perf_st_code": "WI",
+  "perf_st_name": "Wisconsin",
+  "perf_zip_code": "537151218",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "WI02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 449917.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><br />Supervised machine learning is a critical component of software systems in a wide variety of applications. Given a data set consisting of input/output pairs (i.e. labeled training instances), a supervised learning algorithms infers a model that can predict outputs for previously unseen inputs.&nbsp; &nbsp;Although models induced via supervised learning algorithms often provide state-of-the-art predictive accuracy, they are not applied as widely as they could be because they require labeled training instances, which are often expensive to acquire. One promising approach to addressing this limitation is to employ active learning algorithms. These methods are able to make queries in which they choose which instances are labeled and added to the training set.&nbsp;</p>\n<p>This project focused on broadening the applicability of active learning to more complex, realistic settings, with a particular emphasis on two application domains.&nbsp; The first application domain is that of inferring network models that characterize specific biological responses of interest such as host-virus interactions, cellular stress responses, and the regulatory network of a protein implicated in breast cancer. The second application domain is the calibration of simulation models. Specifically, we focused on a population-based simulation of breast cancer and how active learning can be used to efficiently calibrate this model.</p>\n<p><br />A key challenge that arises in genome-wide biological studies is how to interpret the experimental data resulting from perturbations (e.g. knockouts of particular genes) while taking into account what is known about relevant molecular pathways. We developed a computational approach that addresses this challenge by leveraging knowledge from publicly available databases and the scientific literature in order to predict the subnetworks involved in biological processes of interest. Given experimental data sets, and a &ldquo;background&rdquo; network consisting of known molecular interactions, this approach uses optimization methods to infer subnetworks that provide parsimonious and plausible explanations for the available experimental data. We applied this approach to collaborative studies in three different biological contexts: (i) inferring host-virus interactions, (ii) characterizing the signaling pathways involved in a stress response, and (iii) uncovering the pathways that are regulated by a transcription factor associated with breast cancer.</p>\n<p><br />We also made progress on developing and evaluating active-learning methods for two different types of scenarios that one might encounter when addressing this type of network reconstruction task. The first scenario focuses on the situation in which a biologist is trying to select the single gene perturbations that will be most informative to conduct when the goal is to characterize the network involved in a response of interest. The second scenario we addressed is one in which nearly all single-gene perturbations have already been done to characterize a response of interest, and now the challenge is to select two-gene perturbutaions (or even higher arity combinations) which provide additional information about how the relevant genes are organized in the network of interest.</p>\n<p><br />Another area in which we advanced the state of the art is in using an active-learning approach to expedite the process of calibrating a simulation model of breast cancer epidemiology. This simulation model has been used to address a variety of breast cancer screening policy questions. Most cancer simulation models include unobservable parameters that determine the disease onset and tumor growth. These parameters play an important role in matching key outcomes such as cancer incidence and mortality. The values for these parameters are typically estimated via lengthy calibration procedure, which involves evaluating large number of combinations of parameter values via simulation. Our active-learning approach determines the parameter combinations that are more likely to produce desired outputs, thereby substantially reducing the number of simulation runs performed during calibration.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/15/2019<br>\n\t\t\t\t\tModified by: Mark&nbsp;Craven</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\nSupervised machine learning is a critical component of software systems in a wide variety of applications. Given a data set consisting of input/output pairs (i.e. labeled training instances), a supervised learning algorithms infers a model that can predict outputs for previously unseen inputs.   Although models induced via supervised learning algorithms often provide state-of-the-art predictive accuracy, they are not applied as widely as they could be because they require labeled training instances, which are often expensive to acquire. One promising approach to addressing this limitation is to employ active learning algorithms. These methods are able to make queries in which they choose which instances are labeled and added to the training set. \n\nThis project focused on broadening the applicability of active learning to more complex, realistic settings, with a particular emphasis on two application domains.  The first application domain is that of inferring network models that characterize specific biological responses of interest such as host-virus interactions, cellular stress responses, and the regulatory network of a protein implicated in breast cancer. The second application domain is the calibration of simulation models. Specifically, we focused on a population-based simulation of breast cancer and how active learning can be used to efficiently calibrate this model.\n\n\nA key challenge that arises in genome-wide biological studies is how to interpret the experimental data resulting from perturbations (e.g. knockouts of particular genes) while taking into account what is known about relevant molecular pathways. We developed a computational approach that addresses this challenge by leveraging knowledge from publicly available databases and the scientific literature in order to predict the subnetworks involved in biological processes of interest. Given experimental data sets, and a \"background\" network consisting of known molecular interactions, this approach uses optimization methods to infer subnetworks that provide parsimonious and plausible explanations for the available experimental data. We applied this approach to collaborative studies in three different biological contexts: (i) inferring host-virus interactions, (ii) characterizing the signaling pathways involved in a stress response, and (iii) uncovering the pathways that are regulated by a transcription factor associated with breast cancer.\n\n\nWe also made progress on developing and evaluating active-learning methods for two different types of scenarios that one might encounter when addressing this type of network reconstruction task. The first scenario focuses on the situation in which a biologist is trying to select the single gene perturbations that will be most informative to conduct when the goal is to characterize the network involved in a response of interest. The second scenario we addressed is one in which nearly all single-gene perturbations have already been done to characterize a response of interest, and now the challenge is to select two-gene perturbutaions (or even higher arity combinations) which provide additional information about how the relevant genes are organized in the network of interest.\n\n\nAnother area in which we advanced the state of the art is in using an active-learning approach to expedite the process of calibrating a simulation model of breast cancer epidemiology. This simulation model has been used to address a variety of breast cancer screening policy questions. Most cancer simulation models include unobservable parameters that determine the disease onset and tumor growth. These parameters play an important role in matching key outcomes such as cancer incidence and mortality. The values for these parameters are typically estimated via lengthy calibration procedure, which involves evaluating large number of combinations of parameter values via simulation. Our active-learning approach determines the parameter combinations that are more likely to produce desired outputs, thereby substantially reducing the number of simulation runs performed during calibration.\n\n\t\t\t\t\tLast Modified: 11/15/2019\n\n\t\t\t\t\tSubmitted by: Mark Craven"
+ }
+}

@@ -1,0 +1,113 @@
+{
+ "awd_id": "1717064",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR:Small: Enabling Sensor-Rich Vehicular Applications with Edge Computing",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2017-10-01",
+ "awd_exp_date": "2022-09-30",
+ "tot_intn_awd_amt": 499387.0,
+ "awd_amount": 499387.0,
+ "awd_min_amd_letter_date": "2017-08-16",
+ "awd_max_amd_letter_date": "2020-09-21",
+ "awd_abstract_narration": "This project is developing methodologies and systems that support sensor-rich vehicular applications by offloading computation to edge compute resources located at roadside and embedded within cellular networks.  The modern vehicle has cameras, microphones, location and positioning sensors that all supplement detailed monitoring of vehicle motion and operation.  These sensors can supply data for advanced applications, such as personal driving assistants, automated road hazard detection, and augmented display of driving data (e.g., highlighting turn-by-turn directions or available parking on the vehicle windshield).  However, sensor-rich applications also require substantial computing power that is unavailable in the vehicle.   These applications cannot leverage cloud resources because the latency of communicating with remote data centers is too high and the bandwidth available over wide-area networks is too limited.   Instead, this project is supporting sensor-rich applications by offloading their computation to nearby servers located at the network edge. This work has the potential to enable applications with great societal benefit. Sensor-rich vehicular applications promise to improve driving efficiency; for example, by reducing congestion and idling time by guiding drivers directly to available parking spots.  These applications can also substantially improve road safety; for example, by providing automated, crowd-sourced road hazard detection.  The project is prototyping these applications and developing the infrastructure required for their deployment.  The research results, traces of vehicular applications and environments, and open-source software artifacts developed by this project are available at: http://pervasive.eecs.umich.edu/vehicular-edge.html.\r\n\r\nSince vehicles will remain near edge resources for only limited periods of time, the project is creating methods for fast handover of state and computation from one edge resource to another. Vehicle mobility introduces considerable variability in network and service performance, so the project is investigating how the principled use of redundancy can improve average and worst-case response time.  Finally, to support applications with extremely tight time bounds, the project is using speculative execution to hypothesize multiple possible futures that depend on vehicle speed and direction, calculate results based on those futures, and then select the appropriate response based upon actual vehicle motion during the time when calculations were made.\r\n\r\n",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Brian",
+   "pi_last_name": "Noble",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "Brian D Noble",
+   "pi_email_addr": "bnoble@umich.edu",
+   "nsf_id": "000323811",
+   "pi_start_date": "2020-09-21",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Former Principal Investigator",
+   "pi_first_name": "Jason",
+   "pi_last_name": "Flinn",
+   "pi_mid_init": "N",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jason N Flinn",
+   "pi_email_addr": "jflinn@umich.edu",
+   "nsf_id": "000096770",
+   "pi_start_date": "2017-08-16",
+   "pi_end_date": "2020-09-21"
+  }
+ ],
+ "inst": {
+  "inst_name": "Regents of the University of Michigan - Ann Arbor",
+  "inst_street_address": "1109 GEDDES AVE STE 3300",
+  "inst_street_address_2": "",
+  "inst_city_name": "ANN ARBOR",
+  "inst_state_code": "MI",
+  "inst_state_name": "Michigan",
+  "inst_phone_num": "7347636438",
+  "inst_zip_code": "481091015",
+  "inst_country_name": "United States",
+  "cong_dist_code": "06",
+  "st_cong_dist_code": "MI06",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF MICHIGAN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GNJ7BBP73WE9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Michigan Ann Arbor",
+  "perf_str_addr": "2260 Hayward",
+  "perf_city_name": "Ann Arbor",
+  "perf_st_code": "MI",
+  "perf_st_name": "Michigan",
+  "perf_zip_code": "481091274",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "MI06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 499387.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Connected applications play a critical role in society, and increasingly they are implemented as large, complex distributed systems. Unfortunately, many of these applications are <em>oblivious</em> to turbulent network connectivity. This results in poor performance and an unsatisfactory experience for those who depend on these applications. If instead applications were <em>conscious</em> of underlying network turbulence, they would provide better performance and a more satisfying experience.</p>\n<p>Dealing with network turbulence is a significant concern. It takes the form of bandwidth drop-outs, high tail latency, sporadic packet loss, and even disconnection. Applications attempt to deal with these phenomena via <em>adaptation</em>, but only at individual endpoints. There is no mechanism for the application to express adaptive behavior in the network itself, where it could be more beneficial.</p>\n<p>The sponsored work has performed several measurement studies on real-world networks to characterize this turbulence. Wide-area wireless networks suffer from significant tail latency, a problem amplified by the fact that most distributed applications require many network interactions for a single &ldquo;user event.&rdquo; Worse, these problems are not easy to predict; they behave with significant randomness. One common attempt to solve this is to deploy more resources at the network&rsquo;s edge. Paradoxically, it is more expensive to communicate with a nearby edge point that is not the closest one, because the network route typically reaches back to the fixed infrastructure. Unfortunately, wide-area wireless networks are not the only source of turbulence. Even within the data center, networks are variable and unpredictable, with significant performance and usability consequences.</p>\n<p>To address these issues, the sponsored work demonstrates three different approaches. In the first, end nodes employ <em>strategic redundancy</em> in periods of unexpected variability. This trades a small amount of additional power to duplicate network transmissions, in exchange for significant gains in performance. In the second, edge computations are structured in a way that allows them to move from one edge location to another quickly. This reduces or eliminates the impact of poor placement decisions. In the third, modern application frameworks&mdash;using containers&mdash;are leveraged to provide a simple programming system that allows applications to express adaptive logic in the network, closer to the point at which it is needed.</p>\n<p>The project has supported the training of a Ph.D. student in distributed systems, allowing that student to complete the doctoral degree. The project has also informed modifications to Michigan&rsquo;s senior undergraduate course in distributed systems.</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 05/14/2024<br>\nModified by: Brian&nbsp;D&nbsp;Noble</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nConnected applications play a critical role in society, and increasingly they are implemented as large, complex distributed systems. Unfortunately, many of these applications are oblivious to turbulent network connectivity. This results in poor performance and an unsatisfactory experience for those who depend on these applications. If instead applications were conscious of underlying network turbulence, they would provide better performance and a more satisfying experience.\n\n\nDealing with network turbulence is a significant concern. It takes the form of bandwidth drop-outs, high tail latency, sporadic packet loss, and even disconnection. Applications attempt to deal with these phenomena via adaptation, but only at individual endpoints. There is no mechanism for the application to express adaptive behavior in the network itself, where it could be more beneficial.\n\n\nThe sponsored work has performed several measurement studies on real-world networks to characterize this turbulence. Wide-area wireless networks suffer from significant tail latency, a problem amplified by the fact that most distributed applications require many network interactions for a single user event. Worse, these problems are not easy to predict; they behave with significant randomness. One common attempt to solve this is to deploy more resources at the networks edge. Paradoxically, it is more expensive to communicate with a nearby edge point that is not the closest one, because the network route typically reaches back to the fixed infrastructure. Unfortunately, wide-area wireless networks are not the only source of turbulence. Even within the data center, networks are variable and unpredictable, with significant performance and usability consequences.\n\n\nTo address these issues, the sponsored work demonstrates three different approaches. In the first, end nodes employ strategic redundancy in periods of unexpected variability. This trades a small amount of additional power to duplicate network transmissions, in exchange for significant gains in performance. In the second, edge computations are structured in a way that allows them to move from one edge location to another quickly. This reduces or eliminates the impact of poor placement decisions. In the third, modern application frameworksusing containersare leveraged to provide a simple programming system that allows applications to express adaptive logic in the network, closer to the point at which it is needed.\n\n\nThe project has supported the training of a Ph.D. student in distributed systems, allowing that student to complete the doctoral degree. The project has also informed modifications to Michigans senior undergraduate course in distributed systems.\n\n\n\t\t\t\t\tLast Modified: 05/14/2024\n\n\t\t\t\t\tSubmitted by: BrianDNoble\n"
+ }
+}

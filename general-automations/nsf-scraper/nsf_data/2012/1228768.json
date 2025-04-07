@@ -1,0 +1,105 @@
+{
+ "awd_id": "1228768",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Medium: Collaborative: Breaking the Satisfiability Modulo Theories (SMT) Bottleneck in Symbolic Security Analysis",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927991",
+ "po_email": "namla@nsf.gov",
+ "po_sign_block_name": "Nina Amla",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 399816.0,
+ "awd_amount": 399816.0,
+ "awd_min_amd_letter_date": "2012-08-14",
+ "awd_max_amd_letter_date": "2012-08-14",
+ "awd_abstract_narration": "The security of our software is critical for consumer confidence, the protection of privacy and valuable intellectual property, and of course national security. Because of our society's increased reliance on software, security breaches can lead to serious personal or corporate losses, and endanger the privacy, liberties, and even the lives of individuals. As threats to software security have become more sophisticated, so too have the techniques and analyses developed to improve it. Symbolic execution has emerged as a fundamental tool for security applications. Its main idea is to run a program using symbolic instead of concrete values: a set of symbols are assigned to the program inputs, and the outputs are expressed as a set of \"verification conditions\", logical formulas over the input symbols.  A number of successful security analyses use symbolic execution and similar methods to recast security questions about programs as constraint satisfaction problems in some formal logic. Automatic reasoners for that logic can then be used to solve those problems.  In the last few years, solvers based on Satisfiability Modulo Theories (SMT) techniques have become a natural choice in such approaches to security because of their superior performance and automation compared to more traditional theorem provers and their greater generality with respect to ad-hoc tools or propositional satisfiability solvers.\r\n\r\nThis collaborative project brings together experts in security and in SMT to pursue two complementary research goals: (i) harness the full power of SMT solvers to improve current security tools based on symbolic analysis; and (ii) design and develop new techniques to address the needs of anticipated future security applications. Specific activities addressing these goals include: collecting challenge benchmark problems from existing security analyses and developing targeted SMT optimizations for these benchmarks; developing appropriate security abstractions in the SMT language used to express security verification conditions; developing logical theories and algorithms for reasoning about character strings in such verification conditions; exposing a general framework for extending the verification condition language; and developing techniques for computing symbolic solution sets for SMT constraints. These activities are expected to (i) significantly increase the flexibility, performance, and reasoning capabilities of SMT solvers in support of security applications; (ii) improve the performance and scalability of current security analyses by leveraging the reasoning power of SMT solvers; and (iii) provide a foundation for new, more powerful, and more expressive security analyses. Overall, this project will help create more scalable and expressive security applications which could have a considerable impact on society as they enable the production of software much more resistant to security attacks.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Clark",
+   "pi_last_name": "Barrett",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Clark Barrett",
+   "pi_email_addr": "barrett@cs.stanford.edu",
+   "nsf_id": "000423674",
+   "pi_start_date": "2012-08-14",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "New York University",
+  "inst_street_address": "70 WASHINGTON SQ S",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEW YORK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "2129982121",
+  "inst_zip_code": "100121019",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "NY10",
+  "org_lgl_bus_name": "NEW YORK UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NX9PXMKW5KW8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "New York University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "100121019",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "NY10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 399816.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The security of our software is critical for consumer confidence, protection of privacy, protection of valuable intellectual property, and even national security. &nbsp;As threats to software security have become more sophisticated, so too have the techniques developed to ensure security. &nbsp;One technique that has become a fundamental tool in software security is symbolic execution. &nbsp;In this technique, a program is executed symbolically, with the result that it is possible to analyze many different program executions at the same time by using a solver for symbolic constraints.</p>\n<p>Solvers based on Satisfiability Modulo Theories (SMT) methods are a natural choice in such approaches to security (examples include automatic exploit generation, malware analysis, and input filtering) because of: (i) their superior performance and automation compared to more traditional solvers; and (ii) their greater generality with respect to ad-hoc tools and propositional solvers.In this project, we developed three new theory solvers useful in security analyses.</p>\n<p>The first is a new theory solver for bitvectors. &nbsp;This theory is at the heart of most program analyses as the theory of bitvectors is used to represent all machine arithmetic operations. &nbsp;Our new theory combines two approaches (called lazy and eager) to get the maximum performance. &nbsp;The implementation in CVC4 has ranked near the top in the annual SMT competitions for the last few years and is being used in security applications in industry (at Google for example).</p>\n<p>The second is a new theory of character strings. &nbsp;String manipulation is at the heart of several high-profile security attacks, including SQL injection and cross-site scripting attacks. &nbsp;Our new solver for strings can be used to automatically reason about code that might be vulnerable to such attacks. &nbsp;Over the course of the project, the string solver has become increasingly sophisticated. &nbsp;By the end of the project, we could solve all benchmarks in a large suite obtained from a security tool.</p>\n<p>Finally, we developed a theory solver for finite sets with cardinality. &nbsp;Sets are a key mathematical building block in many abstractions and reasoning systems. &nbsp;By providing a native theory solver for sets that can be combined with other theories (including bitvectors and strings), it is possible to model a wide variety of operations and abstractions.</p>\n<p>All of these solvers were implemented in the open source SMT solver CVC4 which is available online at http://cvc4.cs.nyu.edu. &nbsp;CVC4 is being used in a large number of academic and industrial projects and applications, including security applications, and the new capabilities developed in this project will directly benefit those efforts.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/15/2017<br>\n\t\t\t\t\tModified by: Clark&nbsp;Barrett</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe security of our software is critical for consumer confidence, protection of privacy, protection of valuable intellectual property, and even national security.  As threats to software security have become more sophisticated, so too have the techniques developed to ensure security.  One technique that has become a fundamental tool in software security is symbolic execution.  In this technique, a program is executed symbolically, with the result that it is possible to analyze many different program executions at the same time by using a solver for symbolic constraints.\n\nSolvers based on Satisfiability Modulo Theories (SMT) methods are a natural choice in such approaches to security (examples include automatic exploit generation, malware analysis, and input filtering) because of: (i) their superior performance and automation compared to more traditional solvers; and (ii) their greater generality with respect to ad-hoc tools and propositional solvers.In this project, we developed three new theory solvers useful in security analyses.\n\nThe first is a new theory solver for bitvectors.  This theory is at the heart of most program analyses as the theory of bitvectors is used to represent all machine arithmetic operations.  Our new theory combines two approaches (called lazy and eager) to get the maximum performance.  The implementation in CVC4 has ranked near the top in the annual SMT competitions for the last few years and is being used in security applications in industry (at Google for example).\n\nThe second is a new theory of character strings.  String manipulation is at the heart of several high-profile security attacks, including SQL injection and cross-site scripting attacks.  Our new solver for strings can be used to automatically reason about code that might be vulnerable to such attacks.  Over the course of the project, the string solver has become increasingly sophisticated.  By the end of the project, we could solve all benchmarks in a large suite obtained from a security tool.\n\nFinally, we developed a theory solver for finite sets with cardinality.  Sets are a key mathematical building block in many abstractions and reasoning systems.  By providing a native theory solver for sets that can be combined with other theories (including bitvectors and strings), it is possible to model a wide variety of operations and abstractions.\n\nAll of these solvers were implemented in the open source SMT solver CVC4 which is available online at http://cvc4.cs.nyu.edu.  CVC4 is being used in a large number of academic and industrial projects and applications, including security applications, and the new capabilities developed in this project will directly benefit those efforts.\n\n\t\t\t\t\tLast Modified: 01/15/2017\n\n\t\t\t\t\tSubmitted by: Clark Barrett"
+ }
+}

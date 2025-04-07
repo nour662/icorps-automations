@@ -1,0 +1,120 @@
+{
+ "awd_id": "1661490",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "ABI Innovation: Improved modeling of marker-trait associations in polypoid and diploid organisms using genotyping-by-sequencing with genotype uncertainty",
+ "cfda_num": "47.074",
+ "org_code": "08080000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Peter McCartney",
+ "awd_eff_date": "2017-07-01",
+ "awd_exp_date": "2022-06-30",
+ "tot_intn_awd_amt": 669458.0,
+ "awd_amount": 669458.0,
+ "awd_min_amd_letter_date": "2017-06-28",
+ "awd_max_amd_letter_date": "2017-06-28",
+ "awd_abstract_narration": "Many economically important crop plants have more than two copies of each chromosome -  they have more than 2 alleles of each gene in their genome and the genotypes for their important traits should reflect the level of polyploidy. Genotypes are used to predict the phenotype in breeding programs, for traits like flowering time, seed weight or oil yield. Marker genotypes for such traits are currently determined in targeted sequencing experiments, termed genotype-by-sequencing (GBS). GBS has drastically reduced the cost of detecting genetic variants and determining the genotypes of individuals, thus making high-throughput genotyping more accessible within the fields of agriculture and ecology.  However, marker genotypes determined using GBS are frequently incorrect because, due to random chance, some alleles do not get sequenced in some individuals.  Polyploidy further complicates the issue of genotype ambiguity because genotypes can no longer simply be classified as homozygous or heterozygous, but instead are defined by the number of copies of each allele that they possess.  This project aims to develop methodology and software for quantifying uncertainty in DNA marker genotypes determined by genotyping-by-sequencing (GBS), particularly in polyploid species, and for incorporating that uncertainty into analyses that relate genotype to phenotype. Given that many economically-important crops are polyploid, genotyping improvements that result from this project will be especially beneficial for securing the world's supply of food, fuel, and fiber through marker-assisted plant breeding.  This project will result in increased sensitivity for identifying marker alleles that are associated with phenotypic differences, as well as improved prediction of phenotypes from GBS data.  More broadly, it will promote a paradigm shift in the field, treating genotypes as probability distributions rather than values that are known with certainty.  Additionally, YouTube videos teaching linear algebra as well as computer programming in Python and R will be created during the course of this project, making these concepts more accessible for students in the biological sciences.\r\n\r\nThe objectives of this project are to (1) create an algorithm that estimates genotype probabilities in diploids and polyploids as accurately as possible from GBS data and (2) create genome-wide association study (GWAS) and genomic selection (GS) methodologies that fully utilize genotype probabilities.  An iterative algorithm will be developed that will generate a probability distribution of each individual being each possible genotype at a given locus.  The algorithm will use read depth at each of two or more alleles and will model multiple biological and technical parameters, including allele frequencies, population structure, inbreeding, linkage disequilibrium, inheritance mode, differential amplification, and sample contamination.  The algorithm will be implemented in a publicly-available R package that will integrate with existing GBS bioinformatics pipelines and will output multiple formats suitable for downstream analysis.  New GWAS and GS methods will be developed that model both additive and dominance effects while utilizing genotype probability distributions, and will build upon existing software for GWAS and GS.  Diploid and tetraploid populations of the bioenergy grass Miscanthus will be used for validating and improving the new methodologies.  GBS and phenotyping have already been performed or are underway on these populations.  Software produced as a result of this project will be hosted at https://github.com/lvclark/polyRAD and https://github.com/lvclark/GAPITdom .",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "BIO",
+ "org_dir_long_name": "Directorate for Biological Sciences",
+ "div_abbr": "DBI",
+ "org_div_long_name": "Division of Biological Infrastructure",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Lindsay",
+   "pi_last_name": "Clark",
+   "pi_mid_init": "V",
+   "pi_sufx_name": "",
+   "pi_full_name": "Lindsay V Clark",
+   "pi_email_addr": "lvclark@illinois.edu",
+   "nsf_id": "000730529",
+   "pi_start_date": "2017-06-28",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Erik",
+   "pi_last_name": "Sacks",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Erik J Sacks",
+   "pi_email_addr": "esacks@illinois.edu",
+   "nsf_id": "000613311",
+   "pi_start_date": "2017-06-28",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Alexander",
+   "pi_last_name": "Lipka",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Alexander Lipka",
+   "pi_email_addr": "alipka@illinois.edu",
+   "nsf_id": "000695527",
+   "pi_start_date": "2017-06-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Illinois at Urbana-Champaign",
+  "inst_street_address": "506 S WRIGHT ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "URBANA",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "2173332187",
+  "inst_zip_code": "618013620",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "IL13",
+  "org_lgl_bus_name": "UNIVERSITY OF ILLINOIS",
+  "org_prnt_uei_num": "V2PHZ2CSCH63",
+  "org_uei_num": "Y8CWNJRCNN91"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Illinois at Urbana-Champaign",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "618207406",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "IL13",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "116500",
+   "pgm_ele_name": "ADVANCES IN BIO INFORMATICS"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 669458.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The software polyRAD, which helps plant breeders and other biologists use DNA sequence data more effectively, was developed and tested under this project.&nbsp; An organism&rsquo;s genotype is information about what alleles it has at a particular location in its genome, for example AA, AG, or GG in a diploid at a site where the allele can be A or G.&nbsp; In polyploid organisms, genotypes are more complex, for example with AAAA, AAAG, AAGG, AGGG, or GGGG being possible in a tetraploid.&nbsp; When genotypes are ascertained by sequencing, each site is not sequenced once, but instead a random sample is sequenced across many cells.&nbsp; For example, one might get five sequencing reads of A and seven sequencing reads of G, leaving some uncertainty as to whether the genotype is AAGG or AGGG (or, less likely but still possible, AAAG).&nbsp; polyRAD uses information about the population that the individual came from, as well as technical parameters relating to the sequencing process, to estimate a probability for each possible genotype.&nbsp; The most probable genotype (for example, AAGG) can be output, but to better reflect uncertainty in the genotype it is also possible to express it as a continuous value (for example, saying there are 1.9 copies of A).&nbsp; Using simulated and real data, we compared polyRAD to other software for determining genotypes from DNA sequence data in polyploid organisms, both in terms of genotype accuracy, and in terms of power to detect associations between markers and phenotypes and to predict phenotypic values from genotypes.&nbsp; We found that polyRAD outperformed other software, and that continuous genotypes outperformed discrete genotypes, especially at low depth, i.e. few sequencing reads.</p>\n<p>A new approach for filtering genetic markers from DNA sequencing datasets was also developed under this project.&nbsp; Ideally, all markers will follow Mendelian inheritance, and the number of sequencing reads from each allele will be roughly proportional to number of copies of that allele.&nbsp; However, duplicated sequences in the genome can cause a single marker to include sequence from multiple sites in the genome, and technical issues can cause some alleles not to be sequenced at all.&nbsp; We developed a statistic called <em>H<sub>ind</sub></em>/<em>H<sub>E</sub></em> that is estimated from the number of sequence reads of each allele across many individuals.&nbsp; If a marker comes from multiple sites in the genome, its<em> H<sub>ind</sub></em>/<em>H<sub>E</sub></em> will be higher than expected, and if alleles are missing, the <em>H<sub>ind</sub></em>/<em>H<sub>E</sub></em> will be lower than expected.&nbsp; By removing markers that do not behave as expected, researchers can focus their computational time and statistical power on high-quality markers.&nbsp; The ability to identify markers that come from duplicated regions is especially important in organisms with ancient polyploidy, which have many duplicated regions.</p>\n<p>This project will help secure the world&rsquo;s supply of food, fiber, and fuel by increasing the efficiency of genomics-enabled breeding.&nbsp; Given that the current rate of yield gain for many crops is insufficient to meet expected future demand, advances such as those in this project are crucial for preventing worldwide food shortages this century.&nbsp; Not only are many specialty crops such as strawberries, blueberries, potatoes, and coffee polyploid, but more importantly, many staple crops for the Global South such as yams, sweet potatoes, and bananas.&nbsp; Over the course of this project we have collaborated directly with breeders across the world to help meet their analysis needs.&nbsp; Because the advantage of polyRAD over other software is greatest at low read depth, it is particularly useful for breeding programs with small DNA sequencing budgets.&nbsp; polyRAD is also being used by researchers who are using genetics to address questions in ecology, evolution, and conservation.</p>\n<p>We also developed two video tutorial series, released on YouTube, aimed at graduate students and other young researchers.&nbsp; These tutorials help biologists to learn the fundamentals of computer programming and linear algebra so that they can apply those concepts to their research.&nbsp; We hired an outside consulting firm to help us revise and evaluate the videos, which were ultimately found to achieve their teaching goals.</p>\n<p>Two female graduate students were mentored in the course of this project, one from Kenya and one African-American.&nbsp; The latter has received her M.S. degree in Bioinformatics and is now working at a national laboratory.&nbsp; The former has received a prestigious fellowship and internship and is near completion of her Ph.D. in Crop Science, with plans to pursue a career addressing global food security by applying bioinformatics to plant breeding.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/01/2022<br>\n\t\t\t\t\tModified by: Alexander&nbsp;Lipka</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe software polyRAD, which helps plant breeders and other biologists use DNA sequence data more effectively, was developed and tested under this project.  An organism\u2019s genotype is information about what alleles it has at a particular location in its genome, for example AA, AG, or GG in a diploid at a site where the allele can be A or G.  In polyploid organisms, genotypes are more complex, for example with AAAA, AAAG, AAGG, AGGG, or GGGG being possible in a tetraploid.  When genotypes are ascertained by sequencing, each site is not sequenced once, but instead a random sample is sequenced across many cells.  For example, one might get five sequencing reads of A and seven sequencing reads of G, leaving some uncertainty as to whether the genotype is AAGG or AGGG (or, less likely but still possible, AAAG).  polyRAD uses information about the population that the individual came from, as well as technical parameters relating to the sequencing process, to estimate a probability for each possible genotype.  The most probable genotype (for example, AAGG) can be output, but to better reflect uncertainty in the genotype it is also possible to express it as a continuous value (for example, saying there are 1.9 copies of A).  Using simulated and real data, we compared polyRAD to other software for determining genotypes from DNA sequence data in polyploid organisms, both in terms of genotype accuracy, and in terms of power to detect associations between markers and phenotypes and to predict phenotypic values from genotypes.  We found that polyRAD outperformed other software, and that continuous genotypes outperformed discrete genotypes, especially at low depth, i.e. few sequencing reads.\n\nA new approach for filtering genetic markers from DNA sequencing datasets was also developed under this project.  Ideally, all markers will follow Mendelian inheritance, and the number of sequencing reads from each allele will be roughly proportional to number of copies of that allele.  However, duplicated sequences in the genome can cause a single marker to include sequence from multiple sites in the genome, and technical issues can cause some alleles not to be sequenced at all.  We developed a statistic called Hind/HE that is estimated from the number of sequence reads of each allele across many individuals.  If a marker comes from multiple sites in the genome, its Hind/HE will be higher than expected, and if alleles are missing, the Hind/HE will be lower than expected.  By removing markers that do not behave as expected, researchers can focus their computational time and statistical power on high-quality markers.  The ability to identify markers that come from duplicated regions is especially important in organisms with ancient polyploidy, which have many duplicated regions.\n\nThis project will help secure the world\u2019s supply of food, fiber, and fuel by increasing the efficiency of genomics-enabled breeding.  Given that the current rate of yield gain for many crops is insufficient to meet expected future demand, advances such as those in this project are crucial for preventing worldwide food shortages this century.  Not only are many specialty crops such as strawberries, blueberries, potatoes, and coffee polyploid, but more importantly, many staple crops for the Global South such as yams, sweet potatoes, and bananas.  Over the course of this project we have collaborated directly with breeders across the world to help meet their analysis needs.  Because the advantage of polyRAD over other software is greatest at low read depth, it is particularly useful for breeding programs with small DNA sequencing budgets.  polyRAD is also being used by researchers who are using genetics to address questions in ecology, evolution, and conservation.\n\nWe also developed two video tutorial series, released on YouTube, aimed at graduate students and other young researchers.  These tutorials help biologists to learn the fundamentals of computer programming and linear algebra so that they can apply those concepts to their research.  We hired an outside consulting firm to help us revise and evaluate the videos, which were ultimately found to achieve their teaching goals.\n\nTwo female graduate students were mentored in the course of this project, one from Kenya and one African-American.  The latter has received her M.S. degree in Bioinformatics and is now working at a national laboratory.  The former has received a prestigious fellowship and internship and is near completion of her Ph.D. in Crop Science, with plans to pursue a career addressing global food security by applying bioinformatics to plant breeding.\n\n \n\n\t\t\t\t\tLast Modified: 11/01/2022\n\n\t\t\t\t\tSubmitted by: Alexander Lipka"
+ }
+}

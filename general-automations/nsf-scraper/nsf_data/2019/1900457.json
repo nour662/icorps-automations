@@ -1,0 +1,130 @@
+{
+ "awd_id": "1900457",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "CNS Core: Medium: Collaborative Research: Cross Layer File Systems",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Erik Brunvand",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2022-05-31",
+ "tot_intn_awd_amt": 747829.0,
+ "awd_amount": 553806.0,
+ "awd_min_amd_letter_date": "2019-07-19",
+ "awd_max_amd_letter_date": "2021-08-16",
+ "awd_abstract_narration": "Computer hardware designers are developing new technologies for permanent storage of user data, such as non-volatile memories (NVM) and solid-state disks (SSD). Relative to the storage technologies commonly used just a decade ago, these offer unprecedented performance, but at a cost that is also much higher per megabyte of storage. This work uses software to bridge that gap: to build file storage systems that can seamlessly span multiple types of storage technology, from NVM to SSD to traditional disk storage, to reliably store user data at low cost and high performance.\r\n\r\nA key innovation is to change the interface between applications and the operating system to streamline file system updates.  Applications ask the kernel for permission to log changes to the file system in per-application NVM. These changes can be applied with performance close to the hardware limits of NVM, often under a microsecond per update. In the background, the kernel copies these changes back to its own data region, providing the illusion that all applications are working on the same storage system. The kernel then copies the data to SSD and disk to make room for additional updates to NVM.\r\n\r\nIndustry is rushing to deploy these new technologies because of the advantages they bring, but new software techniques are needed to bring those advantages to real users.  As desktops and cloud computing systems are the default platform for all types of computing used by billions of people worldwide, there is the potential for widespread benefit.  In addition, computer science instruction must adapt to address the challenges and solutions to these new technologies, to enable students to thrive in this new environment.  Proposed lecture and project materials will prepare students for this multi-layer storage and file system future.\r\n\r\nThe primary type of data to be produced will be software artifacts and measurements of these software artifacts.  During the project, software source code and data measurements will be stored using an industry-standard version control system and backed up on multiple servers in different areas of the University of Texas Austin computer science department building.  After publication, copies of the source code and data measurements will be moved, along with copies of all published papers, to a permanent repository at https://www.cs.utexas.edu/~simon/strata/ which will remain in place for at least ten years after completion of the project.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Simon",
+   "pi_last_name": "Peter",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Simon Peter",
+   "pi_email_addr": "simpeter@cs.washington.edu",
+   "nsf_id": "000724078",
+   "pi_start_date": "2019-07-19",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Emmett",
+   "pi_last_name": "Witchel",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Emmett Witchel",
+   "pi_email_addr": "witchel@cs.utexas.edu",
+   "nsf_id": "000164959",
+   "pi_start_date": "2019-07-19",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Austin",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787595316",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "37",
+  "perf_st_cong_dist": "TX37",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0121",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002122DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0122",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002223DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 364586.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2021,
+   "fund_oblg_amt": 136855.0
+  }
+ ],
+ "por": null
+}

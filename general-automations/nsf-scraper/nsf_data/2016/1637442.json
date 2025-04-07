@@ -1,0 +1,96 @@
+{
+ "awd_id": "1637442",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AitF: Collaborative Research: Theory and Implementation of Dynamic Data Structures for the GPU",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "A. Funda Ergun",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 438876.0,
+ "awd_amount": 438876.0,
+ "awd_min_amd_letter_date": "2016-08-15",
+ "awd_max_amd_letter_date": "2016-08-15",
+ "awd_abstract_narration": "Computers organize data in \"data structures,\" which are designed to allow certain operations on data such as looking up all items that match a particular set of criteria, or adding new items to an existing data set.  Computer scientists strive to build data structures that can perform these operations quickly and efficiently.  One way to make data structure operations faster is to use not just one but many processors, operating in parallel, to perform a given operation.  However, many of today's parallel data structures support only a limited set of operations and, notably, do not allow operations that modify these data structures instead of rebuilding an entire structure from scratch when only part of the data is updated.  In this project the PIs bring together expertise in data structures and parallel computing to design, build, and evaluate dynamic data structures that allow update operations.  This work targets the high-performance, highly-parallel graphics processing unit (GPU) and will significantly broaden the class of applications that the GPU can address.  The PIs will release their results as freely-available open-source software and will work with industrial partner NVIDIA to incorporate the research and educational outcomes of this project into NVIDIA's broad educational efforts.\r\n\r\nIn this project the PIs propose to build dynamic, high-performance data structures for manycore (GPU) computing.  Today's GPU data structures are rarely constructed on the GPU but instead are built on the CPU and copied to the GPU, and today's GPU data structures cannot be updated dynamically on the GPU but instead must be rebuilt from scratch.  This project targets dynamic dictionary data structures with point and range queries, lists, and approximate membership and range query structures.  The PIs will implement these data structures as high-performance, flexible, open-source software and use these data structures to develop a theoretical model, targeted at the GPU, for use by theorists and practitioners in manycore computing.  The project will also focus on numerous cross-cutting issues in data structure design, implementation, modeling, and evaluation that have the potential for significant practical impact on manycore computing.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "John",
+   "pi_last_name": "Owens",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "John D Owens",
+   "pi_email_addr": "jowens@ece.ucdavis.edu",
+   "nsf_id": "000377403",
+   "pi_start_date": "2016-08-15",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Davis",
+  "inst_street_address": "1850 RESEARCH PARK DR STE 300",
+  "inst_street_address_2": "",
+  "inst_city_name": "DAVIS",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "5307547700",
+  "inst_zip_code": "956186153",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "CA04",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, DAVIS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "TX2DAGQPENZ5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Davis",
+  "perf_str_addr": "One Shields Avenue",
+  "perf_city_name": "Davis",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "956165270",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "CA04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "723900",
+   "pgm_ele_name": "Algorithms in the Field"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 438876.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this project was to develop data structures for highly parallel architectures, principally the \"graphics processing unit\" (GPU), an emerging commodity highly parallel processor that is increasingly common in our mainstream computing infrastructure.<br /><br />The task of a data structure is to organize data in such a way that access to data in that dataset is fast. Prior to our work, GPUs were limited to building a data structure from a dataset in bulk or making fast queries into the data structure. What they could not do, generally, was update a data structure with new data without rebuilding the entire data structure. Our work has designed, implemented, and characterized six data structures that allow dynamic updates and deliver high performance for query, update, and build operations.<br /><br />The intellectual merit of this work is primarily in the design of these data structures, both in terms of the underlying algorithms as well as in the novel implementation techniques that we developed. Each of the data structures that we implemented was already well-known and in widespread practical use on traditional CPUs. The challenge was to bring those data structures to the massively parallel GPU. While CPU-based data structures may have dozens of independent computing threads manipulating the data structure at any time, the GPU instead may have tens or hundreds of thousands of threads active. Addressing this enormous growth in concurrency is the heart of our work.<br /><br />We implemented the following GPU dynamic data structures: log-structured merge tree, quotient filter, B-tree, linked list, hash table, and graph, and additionally built and characterized a family of GPU static hash tables. Each of these data structures presented its own unique set of implementation challenges. In general our solutions achieve near-comparable performance to existing static data structures while additionally offering the ability to dynamically add data to or delete data from the data structure (generally simultaneously with queries). The different data structures support different combinations of capabilities (e.g., some support querying all data in a range, some do not) and tradeoffs (e.g., some prioritize update rate over query rate, some the opposite).<br /><br />Building this variety of data structures additionally allowed us to characterize cross-cutting issues and challenges that GPU data-structure designers must address. These include design questions (what is the scale of updates for which incremental vs. bulk techniques are appropriate?; are operations coarse [threads cooperate] or fine [threads are independent]?; what do programmers expect in terms of APIs?), implementation questions (the importance of addressing contention, challenges with memory allocation, the need to rebuild for performance), and semantics (what do programmers expect when queries and updates are evaluated in parallel?). We also note the development of our \"warp-cooperative work sharing strategy\", used in several of our data structures and the subject of Saman Ashkiani's Ph.D. dissertation, that allowed us to elegantly leverage fine-grained GPU parallelism even while running workloads with significant branch and memory divergence.<br /><br />Programmers today build on a mountain of software infrastructure designed by generations of previous programmers. The GPU is a much newer processor than the CPU and consequently, the toolbox of GPU data structures is much smaller than what programmers have on the CPU. The broad impact of our work is that we have significantly broadened this toolbox. One of the particular challenges about building novel data structures is the chicken-and-egg problem: GPU applications do not use complex data structures, so no one builds these complex data structures because there are no applications that use them, so no one builds applications that might use them. We hope that building these data structures, and making them available as high-quality open-source software, will break this cycle and allow future GPU programmers to use the richer toolbox enabled by our work.<br /><br />We appreciate the support of the National Science Foundation and our outstanding NSF program manager Tracy Kimbrel in funding us to do this important work and advance the state of the art in our field.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/12/2021<br>\n\t\t\t\t\tModified by: John&nbsp;D&nbsp;Owens</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of this project was to develop data structures for highly parallel architectures, principally the \"graphics processing unit\" (GPU), an emerging commodity highly parallel processor that is increasingly common in our mainstream computing infrastructure.\n\nThe task of a data structure is to organize data in such a way that access to data in that dataset is fast. Prior to our work, GPUs were limited to building a data structure from a dataset in bulk or making fast queries into the data structure. What they could not do, generally, was update a data structure with new data without rebuilding the entire data structure. Our work has designed, implemented, and characterized six data structures that allow dynamic updates and deliver high performance for query, update, and build operations.\n\nThe intellectual merit of this work is primarily in the design of these data structures, both in terms of the underlying algorithms as well as in the novel implementation techniques that we developed. Each of the data structures that we implemented was already well-known and in widespread practical use on traditional CPUs. The challenge was to bring those data structures to the massively parallel GPU. While CPU-based data structures may have dozens of independent computing threads manipulating the data structure at any time, the GPU instead may have tens or hundreds of thousands of threads active. Addressing this enormous growth in concurrency is the heart of our work.\n\nWe implemented the following GPU dynamic data structures: log-structured merge tree, quotient filter, B-tree, linked list, hash table, and graph, and additionally built and characterized a family of GPU static hash tables. Each of these data structures presented its own unique set of implementation challenges. In general our solutions achieve near-comparable performance to existing static data structures while additionally offering the ability to dynamically add data to or delete data from the data structure (generally simultaneously with queries). The different data structures support different combinations of capabilities (e.g., some support querying all data in a range, some do not) and tradeoffs (e.g., some prioritize update rate over query rate, some the opposite).\n\nBuilding this variety of data structures additionally allowed us to characterize cross-cutting issues and challenges that GPU data-structure designers must address. These include design questions (what is the scale of updates for which incremental vs. bulk techniques are appropriate?; are operations coarse [threads cooperate] or fine [threads are independent]?; what do programmers expect in terms of APIs?), implementation questions (the importance of addressing contention, challenges with memory allocation, the need to rebuild for performance), and semantics (what do programmers expect when queries and updates are evaluated in parallel?). We also note the development of our \"warp-cooperative work sharing strategy\", used in several of our data structures and the subject of Saman Ashkiani's Ph.D. dissertation, that allowed us to elegantly leverage fine-grained GPU parallelism even while running workloads with significant branch and memory divergence.\n\nProgrammers today build on a mountain of software infrastructure designed by generations of previous programmers. The GPU is a much newer processor than the CPU and consequently, the toolbox of GPU data structures is much smaller than what programmers have on the CPU. The broad impact of our work is that we have significantly broadened this toolbox. One of the particular challenges about building novel data structures is the chicken-and-egg problem: GPU applications do not use complex data structures, so no one builds these complex data structures because there are no applications that use them, so no one builds applications that might use them. We hope that building these data structures, and making them available as high-quality open-source software, will break this cycle and allow future GPU programmers to use the richer toolbox enabled by our work.\n\nWe appreciate the support of the National Science Foundation and our outstanding NSF program manager Tracy Kimbrel in funding us to do this important work and advance the state of the art in our field.\n\n\t\t\t\t\tLast Modified: 09/12/2021\n\n\t\t\t\t\tSubmitted by: John D Owens"
+ }
+}

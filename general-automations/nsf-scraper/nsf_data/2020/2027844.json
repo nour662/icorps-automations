@@ -1,0 +1,114 @@
+{
+ "awd_id": "2027844",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "ECCS/CCSS: Neural Network Nonlinear Iterative LDPC Decoders with Guaranteed Error Performance and Fast Convergence",
+ "cfda_num": "47.041",
+ "org_code": "07010000",
+ "po_phone": "7032924568",
+ "po_email": "hdai@nsf.gov",
+ "po_sign_block_name": "Huaiyu Dai",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2025-09-30",
+ "tot_intn_awd_amt": 320000.0,
+ "awd_amount": 328000.0,
+ "awd_min_amd_letter_date": "2020-08-18",
+ "awd_max_amd_letter_date": "2024-06-07",
+ "awd_abstract_narration": "Low-density parity-check (LDPC) codes are an integral part of modern communications and data storage systems. In many applications, achieving desired data reliability with strict throughput, latency, area, energy or power constraints is challenging, and thus there is an unmet need for fundamental breakthroughs in decoding algorithms. To meet this need, the research team will develop novel sophisticated decoding algorithms for LDPC codes. The new decoders will have a direct application in flash memories and optical communications which have the most stringent requirements on error performance, and in massive machine-type communications requiring very low-latencies. The proposed research will create a path to a new generation of chips with greatly reduced energy requirements and lower environmental footprint. The participating students will receive advanced training in engineering and mathematics. Their educational experiences will be enriched by close collaboration between the PI and his national and international collaborators from academia and industry.\r\n\r\nThe conventional LDPC decoding algorithms operate on a graphical model of a code by propagating messages along edges of the graph. In such an iterative message-passing decoder, the memory needed to store messages is proportional to the product of the message width and the number of nodes in the graph, which is of the order of thousands for codes of practical interest. Therefore lowering message width reduces the complexity greatly, but causes a degradation of decoding performance known as error floor, and slows down decoding convergence. The proposed research addresses the hardware complexity, error floor and convergence problems in a unified way by the following novel approaches: (1) Nonlinear message update functions \u00e2\u20ac\u201c Error floor is directly linked to the presence of certain subgraph structures, called trapping sets, in the Tanner graph that induce decoder failures. Our message update rules will be nonlinear and judiciously chosen to eliminate the effect of trapping sets, and will thus lower the error floor. (2) Guaranteed error correction capability \u00e2\u20ac\u201c Moreover, the precise knowledge of what trapping sets are not correctable by a decoder solves the fundamental issue associated with LDPC codes - the lack of data reliability guarantees. This opens a plethora of design possibilities, but since the number of potentially good message update rules is large, a systematic method is needed to search for the optimal ones, and for this we will rely on neural networks. (3) Neural network decoders \u00e2\u20ac\u201c The main idea follows from the observation that a graph unwrapped in time (iterations) essentially forms a neural network which can be trained to produce an optimal update rule. The resulting update rule also requires much smaller number of iterations for a successful decoding. (4) Built-in learning \u00e2\u20ac\u201c The decoders will be equipped with instruments of learning. In this way, the gradient descent algorithm is not used offline during training but during decoding. The loss function based on the concept of energy function from statistical mechanics, and captures the distance of the decoder output from a codeword through the number of unsatisfied parity checks.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "ECCS",
+ "org_div_long_name": "Division of Electrical, Communications and Cyber Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Bane",
+   "pi_last_name": "Vasic",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Bane Vasic",
+   "pi_email_addr": "vasic@ece.arizona.edu",
+   "nsf_id": "000178000",
+   "pi_start_date": "2020-08-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Arizona",
+  "inst_street_address": "845 N PARK AVE RM 538",
+  "inst_street_address_2": "",
+  "inst_city_name": "TUCSON",
+  "inst_state_code": "AZ",
+  "inst_state_name": "Arizona",
+  "inst_phone_num": "5206266000",
+  "inst_zip_code": "85721",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "AZ07",
+  "org_lgl_bus_name": "UNIVERSITY OF ARIZONA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "ED44Y3W6P7B9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Arizona",
+  "perf_str_addr": "888 N Euclid Avenue",
+  "perf_city_name": "Tucson",
+  "perf_st_code": "AZ",
+  "perf_st_name": "Arizona",
+  "perf_zip_code": "857194824",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "AZ07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "756400",
+   "pgm_ele_name": "CCSS-Comms Circuits & Sens Sys"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "153E",
+   "pgm_ref_txt": "Wireless comm & sig processing"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "",
+   "app_name": "",
+   "app_symb_id": "",
+   "fund_code": "01002425DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 320000.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2024,
+   "fund_oblg_amt": 8000.0
+  }
+ ],
+ "por": null
+}

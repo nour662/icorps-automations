@@ -1,0 +1,101 @@
+{
+ "awd_id": "1719818",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Bernstein-Bezier Techniques for High Order Time-Domain Discontinuous Galerkin Methods",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2017-08-01",
+ "awd_exp_date": "2022-07-31",
+ "tot_intn_awd_amt": 200000.0,
+ "awd_amount": 200000.0,
+ "awd_min_amd_letter_date": "2017-07-24",
+ "awd_max_amd_letter_date": "2017-07-24",
+ "awd_abstract_narration": "Simulations of wave propagation are the backbone of numerous applications in a diverse set of areas, such as medical imaging, predictive seismology, and engineering design.  Many applications require repeated high resolution simulations of waves in domains with complex boundaries or features.  For example, brain imaging methods require dealing with wave propagation through changing media within the human body, such as transitions between different types of tissue or transitions from tissue to bone.  The target application areas require numerical simulations which are reliable, accurate, and efficient.  However, incorporating accurate approximations of complex media and geometries typically sacrifices one or more of these properties, resulting in simulations which are accurate but slow, fast but inaccurate, or unstable outside of specific settings.  The proposed project aims to develop reliable, provably stable methods for wave propagation in complex media and geometries which retain accuracy and efficiency.  \r\n\r\nThe project will study numerical wave propagation using high order discontinuous Galerkin (DG) methods, and consists of two main tasks.  The first task will leverage high performance architectures such as Graphics Processing Units (GPUs), as well as the recently developed weight-adjusted and Bernstein-Bezier DG methods.  Weight-adjusted DG methods achieve provable stability and high order accuracy in the presence of variable media, but have a high computational complexity with respect to the order of approximation.  Bernstein-Bezier DG methods achieve an optimal computational complexity with respect to the order, but require low-resolution models of media and geometry in order to do so.  The first task will combine these two approaches to construct methods for wave propagation in varying media which are stable, high order accurate, and have low computational complexity.  The second task will be to improve the reliability of modeling complex boundaries using curvilinear unstructured meshes.  Typical methods for producing curvilinear meshes can result in elements unsuitable for numerical simulation. The second task will seek robust methods for constructing high order approximations of geometry by leveraging Bernstein-Bezier representations of polynomials, which are closely related to shape properties of the underlying function.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jesse",
+   "pi_last_name": "Chan",
+   "pi_mid_init": "L",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jesse L Chan",
+   "pi_email_addr": "Jesse.Chan@rice.edu",
+   "nsf_id": "000733370",
+   "pi_start_date": "2017-07-24",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "William Marsh Rice University",
+  "inst_street_address": "6100 MAIN ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "Houston",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "7133484820",
+  "inst_zip_code": "770051827",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "TX09",
+  "org_lgl_bus_name": "WILLIAM MARSH RICE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "K51LECU1G8N3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "William Marsh Rice University",
+  "perf_str_addr": "6100 Main Street",
+  "perf_city_name": "Houston",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "770051827",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "09",
+  "perf_st_cong_dist": "TX09",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 200000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project investigated new algorithms for the numerical simulations of waves. These simulations serve as computational models of wave motion in many different types of materials (such as water or in the earth's subsurface) as well as wave physics in different types of media (e.g., acoustic media, elastic media, or coupled acoustic-elastic media). Efficient and accurate simulations are important not only for the study of wave phenomena, but also for imaging techniques in a variety of fields (e.g., seismic imaging in geophysics or ultrasound in medicine). <br /><br />It is widely agreed that numerical methods for wave propagation benefit significantly from high order accuracy. However, the practical adoption and implementation of high order methods still lags behind their theoretical development. This is due to several factors, including the complexity of their implementation and increased computational cost at very high orders. The focus of this project is to target both of these barriers to adoption while retaining the main theoretical properties of high order accurate numerical methods. <br /><br />This project introduced several new innovations in computational simulations of waves based on a technique invented by the PI. This technique introduces a highly accurate approximation within a computational algorithm (swapping out a weighted mass matrix by an approximate \"weight-adjusted\" mass matrix) which significantly simplifies a key step (the inversion of a dense matrix) while retaining accuracy and reliability. This change had several broader consequences. Because this step was made much simpler, we were able to create highly optimized specialized implementations on modern parallel computing architectures such as many-core CPUs and Graphics Processing Units (GPUs). This more efficient implementation also enabled the construction of numerical methods based on alternative mathematical representations of the equations which govern wave physics, which extended the range of physical settings in which one could reliably, accurately, and efficiently simulate wave propagation. <br /><br />This new technique also allowed the PI to dramatically accelerate the speed of such solvers by exploiting structure in the numerical method under an alternative Bernstein-Bezier representation of the numerical solution. By changing the representation of the solution, expensive operations in the simulation of waves in heterogeneous media became several times cheaper at very high orders of approximation. By combining this new accelerated operation with previous work by the PI, we have produced highly efficient and accurate numerical solvers for time-dependent simulations of waves which are mathematically equivalent to existing solvers but have significantly reduced cost at high orders of approximation. <br /><br />Finally, this award has supported two PhD students, and has also provided the PI with opportunities for outreach both at Rice University and within the greater Houston area. The PI provided mentoring to several undergraduates through research projects, and was a guest lecturer for Houston-area K-12 teachers. The project also resulted in several discoveries not directly related to wave phenomena. For example, the PI was able to develop a new class of simulation methods for high speed fluid flows which significantly improve the reliability of simulations based on high order approximations and unstructured meshes. These are promising technologies which have not yet been adopted by industry in part due to issues of reliability. <br /><br /><br /></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/13/2022<br>\n\t\t\t\t\tModified by: Jesse&nbsp;L&nbsp;Chan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project investigated new algorithms for the numerical simulations of waves. These simulations serve as computational models of wave motion in many different types of materials (such as water or in the earth's subsurface) as well as wave physics in different types of media (e.g., acoustic media, elastic media, or coupled acoustic-elastic media). Efficient and accurate simulations are important not only for the study of wave phenomena, but also for imaging techniques in a variety of fields (e.g., seismic imaging in geophysics or ultrasound in medicine). \n\nIt is widely agreed that numerical methods for wave propagation benefit significantly from high order accuracy. However, the practical adoption and implementation of high order methods still lags behind their theoretical development. This is due to several factors, including the complexity of their implementation and increased computational cost at very high orders. The focus of this project is to target both of these barriers to adoption while retaining the main theoretical properties of high order accurate numerical methods. \n\nThis project introduced several new innovations in computational simulations of waves based on a technique invented by the PI. This technique introduces a highly accurate approximation within a computational algorithm (swapping out a weighted mass matrix by an approximate \"weight-adjusted\" mass matrix) which significantly simplifies a key step (the inversion of a dense matrix) while retaining accuracy and reliability. This change had several broader consequences. Because this step was made much simpler, we were able to create highly optimized specialized implementations on modern parallel computing architectures such as many-core CPUs and Graphics Processing Units (GPUs). This more efficient implementation also enabled the construction of numerical methods based on alternative mathematical representations of the equations which govern wave physics, which extended the range of physical settings in which one could reliably, accurately, and efficiently simulate wave propagation. \n\nThis new technique also allowed the PI to dramatically accelerate the speed of such solvers by exploiting structure in the numerical method under an alternative Bernstein-Bezier representation of the numerical solution. By changing the representation of the solution, expensive operations in the simulation of waves in heterogeneous media became several times cheaper at very high orders of approximation. By combining this new accelerated operation with previous work by the PI, we have produced highly efficient and accurate numerical solvers for time-dependent simulations of waves which are mathematically equivalent to existing solvers but have significantly reduced cost at high orders of approximation. \n\nFinally, this award has supported two PhD students, and has also provided the PI with opportunities for outreach both at Rice University and within the greater Houston area. The PI provided mentoring to several undergraduates through research projects, and was a guest lecturer for Houston-area K-12 teachers. The project also resulted in several discoveries not directly related to wave phenomena. For example, the PI was able to develop a new class of simulation methods for high speed fluid flows which significantly improve the reliability of simulations based on high order approximations and unstructured meshes. These are promising technologies which have not yet been adopted by industry in part due to issues of reliability. \n\n\n\n\n\t\t\t\t\tLast Modified: 12/13/2022\n\n\t\t\t\t\tSubmitted by: Jesse L Chan"
+ }
+}

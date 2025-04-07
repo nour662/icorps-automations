@@ -1,0 +1,121 @@
+{
+ "awd_id": "2024253",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SPX: Collaborative Research: Pinpointing and Resolving Scalability Culprits Hidden in Different Components of the Whole System Stack",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Damian Dechev",
+ "awd_eff_date": "2019-11-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 414501.0,
+ "awd_amount": 430501.0,
+ "awd_min_amd_letter_date": "2020-03-16",
+ "awd_max_amd_letter_date": "2021-05-19",
+ "awd_abstract_narration": "Modern computers leverage multi-core or many-core processors to accelerate parallel applications. Unfortunately, the speedup of these applications is typically far from ideal, due to some hidden scalability issues. Previous research mainly focuses on application code to identify scalability bottlenecks, neglecting the fact that the application code interacts with numerous external components, including memory allocator, third-party runtime libraries, and the operating system. Understanding and fixing scalability problems should hence go beyond application code and consider the whole software stack. The project's novelties are to pinpoint scalability culprits hidden in different components of the whole stack and automatically fix the scalability bottlenecks. The project's impacts are significantly improved performance for applications running on multi-core processors and thus accelerated scientific discoveries and energy saving.\r\n\r\nThis project aims to systematically pinpoint and resolve latent software contention in all components of the whole software stack from user space. The proposed approaches are urgent due to the pervasive use of multi-core and many-core hardware. Also, according to Amdahl's law, a small degree of latent contention in any of the components may substantially limit the speedup potential on these modern hardware. The research plans to design low-overhead profilers to obtain runtime information for system calls, memory allocator behaviors, and all interacting events between components, as well as analyzers to automatically pinpoint the root causes of scalability bottlenecks. Through a runtime optimizer, the research aims to fix the identified scalability issues without intervention from the programmer. The project has potential to dramatically reduce manual effort for software optimization and improve performance for parallel applications on modern hardware.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Tongping",
+   "pi_last_name": "Liu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Tongping Liu",
+   "pi_email_addr": "tongping@umass.edu",
+   "nsf_id": "000677409",
+   "pi_start_date": "2020-03-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Massachusetts Amherst",
+  "inst_street_address": "101 COMMONWEALTH AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "AMHERST",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "4135450698",
+  "inst_zip_code": "010039252",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "MA02",
+  "org_lgl_bus_name": "UNIVERSITY OF MASSACHUSETTS",
+  "org_prnt_uei_num": "VGJHK59NMPK9",
+  "org_uei_num": "VGJHK59NMPK9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Massachusetts Amherst",
+  "perf_str_addr": "100 Venture Way",
+  "perf_city_name": "Hadley",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "010359450",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "MA02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "042Y00",
+   "pgm_ele_name": "PPoSS-PP of Scalable Systems"
+  },
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0121",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002122DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 414501.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2021,
+   "fund_oblg_amt": 16000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This Project Outcomes Report for the General Public is displayed verbatim as submitted by the Principal Investigator (PI) for this award. Any opinions, findings, and conclusions or recommendations expressed in this Report are those of the PI and do not necessarily reflect the views of the National Science Foundation; NSF has not approved or endorsed its content.<br /><br />Modern computers leverage explicit parallelism to speed up various applications. However, the speedup of these applications is typically far from ideal due to hidden performance and scalability issues. Existing state-of-the-art research mainly focuses on the applications themselves but neglects the interactions with external components, such as third-party libraries or the underlying hardware. Understanding and fixing scalability problems should, therefore, go beyond application code and consider the entire software stack.<br /><br />This project developed techniques that automatically identify the scalability issues of applications by monitoring the interactions between different software components or the interactions between applications and the underlying hardware (e.g., cache). It includes a collection of tools, such as NumaPerf, CachePerf, MemPerf, and Scaler, as well as practices (e.g., NUMAlloc), to automatically locate and mitigate scalability bottlenecks in parallel applications.<br /><br />As part of this work, we developed cross-flow profiling, a profiling technique that monitors and analyzes the interactions between different components (referred to as cross-flow) in the system, where the component can be either the application itself or any library. This technique helps identify potential performance problems caused by libraries and inefficient algorithm design in applications (e.g., data structures). In addition to this, we also created a profiler called Scaler, which efficiently monitors API invocations. Scaler does not require any changes or recompilation of applications and libraries and can be extended to identify performance bottlenecks within machine learning applications.<br /><br />Another significant achievement of this project is the development of the first unified profiling tool, CachePerf, which can correctly identify different types of cache misses. This is achieved through a hybrid sampling scheme: it utilizes PMU-based coarse-grained sampling to select a very small number of susceptible instructions (those with frequent cache misses) and then employs breakpoint-based fine-grained sampling to collect the memory access pattern of these instructions.<br /><br />The intellectual merit and scientific contributions of this work include the development of tools that facilitate the construction of more scalable software. It also advances the state of the art in profiling, program analysis, and optimization techniques for parallel systems and machine learning systems. This work has supported numerous undergraduate and graduate research students who have received valuable training in conducting scientific research, including multiple female Ph.D. students.</p><br>\n<p>\n Last Modified: 12/06/2023<br>\nModified by: Tongping&nbsp;Liu</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThis Project Outcomes Report for the General Public is displayed verbatim as submitted by the Principal Investigator (PI) for this award. Any opinions, findings, and conclusions or recommendations expressed in this Report are those of the PI and do not necessarily reflect the views of the National Science Foundation; NSF has not approved or endorsed its content.\n\nModern computers leverage explicit parallelism to speed up various applications. However, the speedup of these applications is typically far from ideal due to hidden performance and scalability issues. Existing state-of-the-art research mainly focuses on the applications themselves but neglects the interactions with external components, such as third-party libraries or the underlying hardware. Understanding and fixing scalability problems should, therefore, go beyond application code and consider the entire software stack.\n\nThis project developed techniques that automatically identify the scalability issues of applications by monitoring the interactions between different software components or the interactions between applications and the underlying hardware (e.g., cache). It includes a collection of tools, such as NumaPerf, CachePerf, MemPerf, and Scaler, as well as practices (e.g., NUMAlloc), to automatically locate and mitigate scalability bottlenecks in parallel applications.\n\nAs part of this work, we developed cross-flow profiling, a profiling technique that monitors and analyzes the interactions between different components (referred to as cross-flow) in the system, where the component can be either the application itself or any library. This technique helps identify potential performance problems caused by libraries and inefficient algorithm design in applications (e.g., data structures). In addition to this, we also created a profiler called Scaler, which efficiently monitors API invocations. Scaler does not require any changes or recompilation of applications and libraries and can be extended to identify performance bottlenecks within machine learning applications.\n\nAnother significant achievement of this project is the development of the first unified profiling tool, CachePerf, which can correctly identify different types of cache misses. This is achieved through a hybrid sampling scheme: it utilizes PMU-based coarse-grained sampling to select a very small number of susceptible instructions (those with frequent cache misses) and then employs breakpoint-based fine-grained sampling to collect the memory access pattern of these instructions.\n\nThe intellectual merit and scientific contributions of this work include the development of tools that facilitate the construction of more scalable software. It also advances the state of the art in profiling, program analysis, and optimization techniques for parallel systems and machine learning systems. This work has supported numerous undergraduate and graduate research students who have received valuable training in conducting scientific research, including multiple female Ph.D. students.\t\t\t\t\tLast Modified: 12/06/2023\n\n\t\t\t\t\tSubmitted by: TongpingLiu\n"
+ }
+}

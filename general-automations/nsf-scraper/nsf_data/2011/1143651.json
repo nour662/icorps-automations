@@ -1,0 +1,105 @@
+{
+ "awd_id": "1143651",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "PC3: Collaborative Research: Wireless Sensor Networks for Protecting Wildlife and Humans",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Harriet Taylor",
+ "awd_eff_date": "2011-10-01",
+ "awd_exp_date": "2014-09-30",
+ "tot_intn_awd_amt": 121791.0,
+ "awd_amount": 121791.0,
+ "awd_min_amd_letter_date": "2011-08-20",
+ "awd_max_amd_letter_date": "2011-08-20",
+ "awd_abstract_narration": "This award provides funding for a collaborative project between Ohio State University, Cornell University, The Indian Institute of Science - Bangalore, the Wildlife Institute of India, and the Indian Institute of Information Technology - Allahabad. The dramatic dwindling of forests and concomitant escalation in human-wildlife conflicts are resulting in broad environmental impact, including large economic and social costs, increasing human deaths in areas used by large mammals, and animal population decline. This project enables a baseline operational wireless sensor network system for protection of animals, humans, and the forest. \r\n\r\nThe forest setting involves complex scenes demanding the discrimination of several targets of interest in a highly cluttered setting as well as discrimination of their intent and behaviors. Activity patterns evolve in a naturally adversarial environment. The system architecture being developed integrates in a transformative way a suitably rich set of sensing modalities with intent inferencing, learning, optimization, and deployment techniques, to monitor a diverse set of targets. Mature system components are to be deployed in Panna, a tiger reserve in central India, in close cooperation with domain experts and forestry management. The project is a collaboration between researchers in the US and India who are substantially involved in complementary aspects of wildlife related research. A subsequent protection-centric effort in the US is envisioned that builds upon the lessons learned by this effort.  \r\n\r\nSuccessful realization of system components and a baseline system would lead to an assessment of the potential benefits of using wireless sensor networks for protection related to forests and potential transition into production use. Over time, this will help establish credible early-warning systems, and monitoring protocols for animal use of human areas and human use of forest areas that can support recovery efforts. This project is part of the Pervasive Communications and Computing Collaboration (PC3) initiative.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Carla",
+   "pi_last_name": "Gomes",
+   "pi_mid_init": "P",
+   "pi_sufx_name": "",
+   "pi_full_name": "Carla P Gomes",
+   "pi_email_addr": "gomes@cs.cornell.edu",
+   "nsf_id": "000178542",
+   "pi_start_date": "2011-08-20",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Cornell University",
+  "inst_street_address": "341 PINE TREE RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "ITHACA",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6072555014",
+  "inst_zip_code": "148502820",
+  "inst_country_name": "United States",
+  "cong_dist_code": "19",
+  "st_cong_dist_code": "NY19",
+  "org_lgl_bus_name": "CORNELL UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "G56PUALJ3KT5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Cornell University",
+  "perf_str_addr": "4130 Upson Hall",
+  "perf_city_name": "Ithaca",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "148533801",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "19",
+  "perf_st_cong_dist": "NY19",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "164000",
+   "pgm_ele_name": "Information Technology Researc"
+  },
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7359",
+   "pgm_ref_txt": "COMPUTING RES INFRASTRUCTURE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 121791.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The Cornell University team worked closely with the Ohio State University team on the primary task to develop methods to count the number of moving targets in an area using the BumbleBee pulsed Doppler radar sensor. The end goal was to detect, identify, and count wildlife and humans in a forest setting, in order to assess wildlife populations and potential risks of conflict with humans. To study detection methods, we focused on the analogous, but more easily controlled, task of counting students in classroom environments. &nbsp;Each team explored a different type of approach. At Cornell, we developed methods to estimate the number of people present in a room using a Bayesian framework, Gaussian Process (GP) Regression. It infers the target value based on the similarity between a particular observed time series, and training examples collected previously. In principle, pairs of signals from the same number of targets are expected to be more similar to each other than signals from different numbers of targets, when similarity is represented in an appropriate way.</p>\n<p>In particular, we compared three kernels, or feature space representations, with which to compare different radar signals. The first considered a representation based on frequency band statistics<span class=\"buttonBgBorder\"> </span>of the signal&rsquo;s real-valued power spectrum (from the discrete Fourier transform, or DFT). The second representation extended this to incorporate the complex-valued (phase) information from the input signals. Finally, our main contribution was the third representation, called cStrings, which mapped each input to a symbolic string summarizing the complex-valued signal. This allowed for the application of text mining techniques. Specifically, our similarity metric used the occurrence frequencies, weighed using the term frequency-inverse document frequency, or tfidf, statistic widely used in text mining, of n-grams, or subsequences, of symbols in the cStrings representation. &nbsp;We found that this method significantly outperformed both DFT-based methods that we tested.</p>\n<p>A kernel representation like cStrings, used in combination with an inference method like GP regression can help enable wildlife detection sensor networks with lower energy requirements than equivalent computer vision-based systems. Because it implicitly functions by identifying combinations of characteristic patterns, in this case individual movements, adaptations of this method have the potential for broader applicability. For example, similar techniques could be applicable to the identification of gestures or individuals&rsquo; characteristic movements, activity recognition, or analysis of other complex-valued signals beyond radar.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/19/2014<br>\n\t\t\t\t\tModified by: Carla&nbsp;Gomes</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe Cornell University team worked closely with the Ohio State University team on the primary task to develop methods to count the number of moving targets in an area using the BumbleBee pulsed Doppler radar sensor. The end goal was to detect, identify, and count wildlife and humans in a forest setting, in order to assess wildlife populations and potential risks of conflict with humans. To study detection methods, we focused on the analogous, but more easily controlled, task of counting students in classroom environments.  Each team explored a different type of approach. At Cornell, we developed methods to estimate the number of people present in a room using a Bayesian framework, Gaussian Process (GP) Regression. It infers the target value based on the similarity between a particular observed time series, and training examples collected previously. In principle, pairs of signals from the same number of targets are expected to be more similar to each other than signals from different numbers of targets, when similarity is represented in an appropriate way.\n\nIn particular, we compared three kernels, or feature space representations, with which to compare different radar signals. The first considered a representation based on frequency band statistics of the signal\u00c6s real-valued power spectrum (from the discrete Fourier transform, or DFT). The second representation extended this to incorporate the complex-valued (phase) information from the input signals. Finally, our main contribution was the third representation, called cStrings, which mapped each input to a symbolic string summarizing the complex-valued signal. This allowed for the application of text mining techniques. Specifically, our similarity metric used the occurrence frequencies, weighed using the term frequency-inverse document frequency, or tfidf, statistic widely used in text mining, of n-grams, or subsequences, of symbols in the cStrings representation.  We found that this method significantly outperformed both DFT-based methods that we tested.\n\nA kernel representation like cStrings, used in combination with an inference method like GP regression can help enable wildlife detection sensor networks with lower energy requirements than equivalent computer vision-based systems. Because it implicitly functions by identifying combinations of characteristic patterns, in this case individual movements, adaptations of this method have the potential for broader applicability. For example, similar techniques could be applicable to the identification of gestures or individuals\u00c6 characteristic movements, activity recognition, or analysis of other complex-valued signals beyond radar.\n\n\t\t\t\t\tLast Modified: 12/19/2014\n\n\t\t\t\t\tSubmitted by: Carla Gomes"
+ }
+}

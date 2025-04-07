@@ -1,0 +1,105 @@
+{
+ "awd_id": "1621685",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SBIR Phase I:  Proactive Network Configuration Analysis",
+ "cfda_num": "47.084",
+ "org_code": "15030000",
+ "po_phone": "7032928772",
+ "po_email": "patherto@nsf.gov",
+ "po_sign_block_name": "Peter Atherton",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2017-06-30",
+ "tot_intn_awd_amt": 225000.0,
+ "awd_amount": 225000.0,
+ "awd_min_amd_letter_date": "2016-06-22",
+ "awd_max_amd_letter_date": "2016-06-22",
+ "awd_abstract_narration": "The broader impact/commercial potential of this Small Business Innovation Research (SBIR) Phase I project stems from technology that automatically analyzes network configurations for errors. Computer networks are so tightly woven into the fabric of modern business and society that the delivery of almost all products and services relies on them. Yet networks are notoriously difficult to manage correctly today, and configuration errors that compromise availability, security, and performance are common. Today operators are left to simply wait for bad things to happen and then diagnose and repair the errors as quickly as possible to mitigate the damage. The technology developed in this project will enable organizations to identify network security and availability errors before they are introduced into the running network, thereby saving significant time and money, preventing unauthorized access to customer information, and minimizing down time.  The project will also lead to a better understanding of the most prevalent kinds of network configuration errors and how to design networks to prevent them.\r\n\r\nThis Small Business Innovation Research (SBIR) Phase I project will perform the research and development necessary to demonstrate the technical feasibility of a proactive approach to detecting network configuration errors, as instantiated in a software tool. The key innovation underlying the approach is the ability to comprehensively and precisely model and validate the behavior of a network solely by analyzing the network's configuration files. The proposed work has three primary technical goals.  First, configuration languages are extremely diverse and complex, so the tool currently only supports features that have been used by the networks to which it has been applied. A key challenge is to augment the logical model underlying the tool to support other features that are used by real-world networks.  Second, the tool is currently computationally expensive for large networks. Scalability will be improved by leveraging the structure inherent in network configurations and topologies to perform configuration analysis modularly.  Third, to be usable by network operators, the tool must integrate with existing source-control repositories and must provide an expressive interface enabling operators to explore the analysis results.  In summary, these research directions will turn the software tool from a research prototype into an expressive, scalable, and usable tool for analyzing real networks.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "TIP",
+ "org_dir_long_name": "Directorate for Technology, Innovation, and Partnerships",
+ "div_abbr": "TI",
+ "org_div_long_name": "Translational Impacts",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ari",
+   "pi_last_name": "Fogel",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ari Fogel",
+   "pi_email_addr": "ari@intentionet.com",
+   "nsf_id": "000712721",
+   "pi_start_date": "2016-06-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Intentionet, Inc.",
+  "inst_street_address": "16625 REDMOND WAY STE M241",
+  "inst_street_address_2": "",
+  "inst_city_name": "REDMOND",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "2065796567",
+  "inst_zip_code": "980524444",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "WA01",
+  "org_lgl_bus_name": "INTENTIONET, INC.",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LKGMHZANGH59"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Intentionet, Inc.",
+  "perf_str_addr": "16625 Redmond Way Ste M241",
+  "perf_city_name": "Redmond",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "980524444",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "WA01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "537100",
+   "pgm_ele_name": "SBIR Phase I"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5371",
+   "pgm_ref_txt": "SMALL BUSINESS PHASE I"
+  },
+  {
+   "pgm_ref_code": "8032",
+   "pgm_ref_txt": "Software Services and Applications"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 225000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Computer networks are so tightly woven into the fabric of modern business and society that the delivery of almost all products and services relies on them. &nbsp;When they fail or their security is breached, organizations lose revenue, employee productivity suffers, and customers are frustrated. Yet network errors that compromise availability, security, and performance are a regular occurrence today. &nbsp;Many studies over the last two decades have consistently shown that the dominant root causes of such issues are errors in <em>network configuration</em>, which is done today through hundreds of low-level directives that determine the behavior of individual network devices.</p>\n<p>&nbsp;In this project we extended the capabilities of the Batfish tool for automatic network configuration analysis, with the overall goal of demonstrating its technical feasibility in a commercial setting. &nbsp;Batfish takes as input the unmodified configuration files for each network router, which are expressed in various vendor-specific languages (e.g., Cisco's IOS, Juniper's JunOS). &nbsp;Batfish then answers queries about network configuration and behavior. &nbsp;Given a query, Batfish either guarantees that the desired network property holds or provides concrete example packets and/or relevant configuration directives that illustrate the violation.</p>\n<p>Because Batfish analyzes a network's configuration files offline, without requiring access to the network itself, it enables a <em>proactive</em> approach to network validation. &nbsp;Network engineers can validate proposed configuration changes in advance, before they are installed in the running network. &nbsp;Further, Batfish enables a host of other capabilities that are absent today. For example, network engineers can propose \"what-if\" questions about network behavior under various failure and other scenarios. &nbsp;As another example, they can go \"back in time\" to understand why something worked yesterday but is broken today.</p>\n<p>In this project we enhanced Batfish in three major directions. &nbsp;First, a distinguishing feature of Batfish is its ability to comprehensively analyze a network based only on its configuration. &nbsp;However, configuration languages are extremely diverse and complex, with hundreds of commands, each of which can be parameterized in various ways. Further, these languages are vendor-specific and can also be specific to particular models of routers from a given vendor. &nbsp;Before the grant period began, Batfish included support for the most common configuration commands of the most common routing protocols (BGP and OSPF) for both Cisco's IOS and Juniper's JunOS configuration languages. &nbsp;&nbsp;</p>\n<p>A key technical thrust has therefore been to augment Batfish to support other control-plane features that are used by real-world networks. &nbsp;We have undergone this process of updating Batfish iteratively, to the point where it can precisely analyze the network configurations of our pilot customers. &nbsp;We have extended our support for IOS and JunOS significantly, added support for reasoning about the network's management plane via protocols such as AAA (authentication, authorization, accounting) and NTP (network time protocol), and have added support for more devices, such as firewalls.</p>\n<p>Second, we developed new techniques to improve the efficiency and scalability of Batfish's analysis. &nbsp;The original research prototype of the Batfish tool employed a form of logic programming to model a network's configuration. &nbsp;This program was then simply executed to produce a representation of the network's data plane, which describes the forwarding behavior of each router. &nbsp;While this approach is conceptually simple and elegant, it turned out to be a significant scalability bottleneck even for relatively small networks.</p>\n<p>To address this problem, in this project we completely reimplemented Batfish's analysis engine in Java. &nbsp; This implementation style gives us finer-grained control over the analysis, allowing us to optimize it significantly. &nbsp;The new code is also much easier to maintain and evolve as we incorporate new configuration features. &nbsp; Batfish's computation is now multiple orders of magnitude more time- and space-efficient than the original version.</p>\n<p>Third, we developed new interfaces to the Batfish tool to improve its usability. At the start of the grant period, Batfish had only a very simple command-line interface, which enabled performing a handful of built-in analyses. &nbsp;We have enhanced Batfish's usability in several ways, based on feedback from our pilot customers. &nbsp;We have exposed and documented a data model for Batfish's representation of the network configuration and data plane. &nbsp;The data model employs the widely used JSON format, with which many network engineers are already familiar. &nbsp;Engineers can manually or programmatically (in their favorite programming language) navigate through the data model to check various properties of the network. &nbsp;In this way, engineers are no longer restricted to checking the small number of built-in queries that Batfish provides. &nbsp;We also created Python bindings to Batfish. &nbsp;The Python API allows complete access to Batfish functionality. &nbsp;Further, it can be used either in an interactive Python session or in batch mode as part of a larger Python-based application.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/18/2017<br>\n\t\t\t\t\tModified by: Ari&nbsp;Fogel</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nComputer networks are so tightly woven into the fabric of modern business and society that the delivery of almost all products and services relies on them.  When they fail or their security is breached, organizations lose revenue, employee productivity suffers, and customers are frustrated. Yet network errors that compromise availability, security, and performance are a regular occurrence today.  Many studies over the last two decades have consistently shown that the dominant root causes of such issues are errors in network configuration, which is done today through hundreds of low-level directives that determine the behavior of individual network devices.\n\n In this project we extended the capabilities of the Batfish tool for automatic network configuration analysis, with the overall goal of demonstrating its technical feasibility in a commercial setting.  Batfish takes as input the unmodified configuration files for each network router, which are expressed in various vendor-specific languages (e.g., Cisco's IOS, Juniper's JunOS).  Batfish then answers queries about network configuration and behavior.  Given a query, Batfish either guarantees that the desired network property holds or provides concrete example packets and/or relevant configuration directives that illustrate the violation.\n\nBecause Batfish analyzes a network's configuration files offline, without requiring access to the network itself, it enables a proactive approach to network validation.  Network engineers can validate proposed configuration changes in advance, before they are installed in the running network.  Further, Batfish enables a host of other capabilities that are absent today. For example, network engineers can propose \"what-if\" questions about network behavior under various failure and other scenarios.  As another example, they can go \"back in time\" to understand why something worked yesterday but is broken today.\n\nIn this project we enhanced Batfish in three major directions.  First, a distinguishing feature of Batfish is its ability to comprehensively analyze a network based only on its configuration.  However, configuration languages are extremely diverse and complex, with hundreds of commands, each of which can be parameterized in various ways. Further, these languages are vendor-specific and can also be specific to particular models of routers from a given vendor.  Before the grant period began, Batfish included support for the most common configuration commands of the most common routing protocols (BGP and OSPF) for both Cisco's IOS and Juniper's JunOS configuration languages.   \n\nA key technical thrust has therefore been to augment Batfish to support other control-plane features that are used by real-world networks.  We have undergone this process of updating Batfish iteratively, to the point where it can precisely analyze the network configurations of our pilot customers.  We have extended our support for IOS and JunOS significantly, added support for reasoning about the network's management plane via protocols such as AAA (authentication, authorization, accounting) and NTP (network time protocol), and have added support for more devices, such as firewalls.\n\nSecond, we developed new techniques to improve the efficiency and scalability of Batfish's analysis.  The original research prototype of the Batfish tool employed a form of logic programming to model a network's configuration.  This program was then simply executed to produce a representation of the network's data plane, which describes the forwarding behavior of each router.  While this approach is conceptually simple and elegant, it turned out to be a significant scalability bottleneck even for relatively small networks.\n\nTo address this problem, in this project we completely reimplemented Batfish's analysis engine in Java.   This implementation style gives us finer-grained control over the analysis, allowing us to optimize it significantly.  The new code is also much easier to maintain and evolve as we incorporate new configuration features.   Batfish's computation is now multiple orders of magnitude more time- and space-efficient than the original version.\n\nThird, we developed new interfaces to the Batfish tool to improve its usability. At the start of the grant period, Batfish had only a very simple command-line interface, which enabled performing a handful of built-in analyses.  We have enhanced Batfish's usability in several ways, based on feedback from our pilot customers.  We have exposed and documented a data model for Batfish's representation of the network configuration and data plane.  The data model employs the widely used JSON format, with which many network engineers are already familiar.  Engineers can manually or programmatically (in their favorite programming language) navigate through the data model to check various properties of the network.  In this way, engineers are no longer restricted to checking the small number of built-in queries that Batfish provides.  We also created Python bindings to Batfish.  The Python API allows complete access to Batfish functionality.  Further, it can be used either in an interactive Python session or in batch mode as part of a larger Python-based application.\n\n \n\n\t\t\t\t\tLast Modified: 07/18/2017\n\n\t\t\t\t\tSubmitted by: Ari Fogel"
+ }
+}

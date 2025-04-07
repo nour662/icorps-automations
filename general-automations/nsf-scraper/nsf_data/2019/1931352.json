@@ -1,0 +1,125 @@
+{
+ "awd_id": "1931352",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Elements: PASSPP: Provenance-Aware Scalable Seismic Data Processing with Portability",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Rob Beverly",
+ "awd_eff_date": "2019-11-01",
+ "awd_exp_date": "2022-10-31",
+ "tot_intn_awd_amt": 232770.0,
+ "awd_amount": 232770.0,
+ "awd_min_amd_letter_date": "2019-09-06",
+ "awd_max_amd_letter_date": "2019-09-06",
+ "awd_abstract_narration": "Most of what we know about the Earth's deep interior comes from the analysis of ground motion data recording seismic waves produced by large earthquakes from instruments around the entire planet.  Seismologists have developed a long list of methods to process modern seismic data to ?image? the Earth?s interior.  Much of our understanding of Earth's interior has been limited by the resolution of the tools available to construct these \"images\".  At present, the massive increase in data volume has pushed the data processing infrastructure of seismology to the breaking point.  The inability to handle data of this scale has imposed significant barrier to scientific discoveries, especially for the smaller research groups with limited resources.  Aiming to help improve this situation, this project introduces a new data management and processing system that is portable and scalable to run on any platforms from a personal computer to a large-scale supercomputer.  By leveraging and integrating sophisticated tools from cloud computing and high-performance computing (HPC) communities, the system can fill in the widening gap between the massive data made available by data centers and the inadequacy of data management and processing capability provided with current tools.  Seamless discovery, access, transfer, and processing of data and metadata outside of data centers will become possible for the community.  This project will also serve as the foundation to enable novel research utilizing massive data to change the way we study the structure, composition, and evolution of the Earth.\r\n \r\nThis project aims to develop a seismic data management and processing system that is composed of a scalable parallel processing framework based on dataflow computation model, a NoSQL database system centered on document store, and a container-based virtualization environment.  The scalable processing component will be based on the iterative map-reduce model using Apache Spark to handle scheduling and flow of data through systems of different scales.  The provenance-aware data management will be enabled by managing all data created during processing with MongoDB, including process generated metadata, processed waveform data, processing parameters, and the log outputs.  All these core components as well as a script to configure and deploy the framework on different systems will be containerized with Singularity to provide portability.  All these components serve the two primary goals of the project: produce a system that will allow common seismology algorithms to run effectively on modern HPC platforms; and provide the means for seismologists with average experience in programming to implement their own algorithms to extend the system.  The system will serve as the infrastructure to make data intensive research such as deep learning possible for smaller research groups that usually don't have the necessary manpower to manage and process massive data in a sustainable fashion.  By enabling the ability to process massive data collected by increasing number of instruments, it will facilitate the transition of the field into data-intensive paradigm of science discovery.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Yinzhi",
+   "pi_last_name": "Wang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yinzhi Wang",
+   "pi_email_addr": "iwang@tacc.utexas.edu",
+   "nsf_id": "000782499",
+   "pi_start_date": "2019-09-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Austin",
+  "perf_str_addr": "10100 Burnet Road",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787584445",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "37",
+  "perf_st_cong_dist": "TX37",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "157400",
+   "pgm_ele_name": "Geophysics"
+  },
+  {
+   "pgm_ele_code": "800400",
+   "pgm_ele_name": "Software Institutes"
+  },
+  {
+   "pgm_ele_code": "807400",
+   "pgm_ele_name": "EarthCube"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "075Z",
+   "pgm_ref_txt": "Artificial Intelligence (AI)"
+  },
+  {
+   "pgm_ref_code": "077Z",
+   "pgm_ref_txt": "CSSI-1: Cyberinfr for Sustained Scientif"
+  },
+  {
+   "pgm_ref_code": "4444",
+   "pgm_ref_txt": "INTERDISCIPLINARY PROPOSALS"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 232770.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The ability to process and analyze large volumes of seismic data is crucial for seismologists to better understand the interior of the Earth. In this project, we developed MsPASS (Massive Parallel Analysis System for Seismologists), an open-source framework for seismic data processing and management. This framework includes a scalable parallel processing framework, a NoSQL database system, and a container-based virtualization environment, providing a new way to process large volumes of seismic data and facilitating the migration of data processing workflows from a single desktop system to distributed environments such as HPC or Cloud.</p>\n<p>The following deliverables were produced by the project:</p>\n<p>1. Docker Containers: We made the software available on Docker Hub ((<a href=\"https://hub.docker.com/r/mspass/mspass\">https://hub.docker.com/r/mspass/mspass</a>) and GitHub Container Registry (<a href=\"https://github.com/mspass-team/mspass/pkgs/container/mspass\">https://github.com/mspass-team/mspass/pkgs/container/mspass</a>), making it easy for users to run the software on any platform with a container runtime.</p>\n<p>2. Documentation: We provided comprehensive documentation on the MsPASS website (<a href=\"http://www.mspass.org/\">http://www.mspass.org</a>), including instructions on how to use the software and detailed information on the design of each individual component.</p>\n<p>3. Peer-Reviewed Publication: The project team published a paper in Seismological Research Letters (Yinzhi Wang, Gary L. Pavlis, Weiming Yang, Jinxin Ma; MsPASS: A Data Management and Processing Framework for Seismology. Seismological Research Letters 2021; 93 (1): 426?434.). This publication describes the design and implementation of MsPASS and highlights its potential applications in seismology research.</p>\n<p>4. Training Sessions: We conducted training sessions at the 2021 GAGE/SAGE Workshop and the 2022 GAGE/SAGE Workshop, providing hands-on experience and guidance to users interested in adopting MsPASS for their research.</p>\n<p>5. Poster Presentations: We presented posters on MsPASS at the 2020 AGU Fall Meeting and the 2022 GAGE/SAGE Workshop, showcasing the software's capabilities and potential impact in the field of seismology.</p>\n<p>The development of MsPASS provides a new and efficient way for seismologists to process and manage large volumes of seismic data. MsPASS's container-based environment makes it easy for users to deploy and scale data processing workflows on distributed environments, which can significantly reduce processing time and costs.</p>\n<p>The broader impacts of the project are significant as well. By providing an open-source framework for seismic data processing and management, MsPASS can facilitate reproducible science and make it easier for researchers with limited resources to conduct cutting-edge research. The project team's efforts to disseminate MsPASS through training sessions and poster presentations have increased awareness of the software and its potential impact in the field of seismology.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/01/2023<br>\n\t\t\t\t\tModified by: Yinzhi&nbsp;Wang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe ability to process and analyze large volumes of seismic data is crucial for seismologists to better understand the interior of the Earth. In this project, we developed MsPASS (Massive Parallel Analysis System for Seismologists), an open-source framework for seismic data processing and management. This framework includes a scalable parallel processing framework, a NoSQL database system, and a container-based virtualization environment, providing a new way to process large volumes of seismic data and facilitating the migration of data processing workflows from a single desktop system to distributed environments such as HPC or Cloud.\n\nThe following deliverables were produced by the project:\n\n1. Docker Containers: We made the software available on Docker Hub ((https://hub.docker.com/r/mspass/mspass) and GitHub Container Registry (https://github.com/mspass-team/mspass/pkgs/container/mspass), making it easy for users to run the software on any platform with a container runtime.\n\n2. Documentation: We provided comprehensive documentation on the MsPASS website (http://www.mspass.org), including instructions on how to use the software and detailed information on the design of each individual component.\n\n3. Peer-Reviewed Publication: The project team published a paper in Seismological Research Letters (Yinzhi Wang, Gary L. Pavlis, Weiming Yang, Jinxin Ma; MsPASS: A Data Management and Processing Framework for Seismology. Seismological Research Letters 2021; 93 (1): 426?434.). This publication describes the design and implementation of MsPASS and highlights its potential applications in seismology research.\n\n4. Training Sessions: We conducted training sessions at the 2021 GAGE/SAGE Workshop and the 2022 GAGE/SAGE Workshop, providing hands-on experience and guidance to users interested in adopting MsPASS for their research.\n\n5. Poster Presentations: We presented posters on MsPASS at the 2020 AGU Fall Meeting and the 2022 GAGE/SAGE Workshop, showcasing the software's capabilities and potential impact in the field of seismology.\n\nThe development of MsPASS provides a new and efficient way for seismologists to process and manage large volumes of seismic data. MsPASS's container-based environment makes it easy for users to deploy and scale data processing workflows on distributed environments, which can significantly reduce processing time and costs.\n\nThe broader impacts of the project are significant as well. By providing an open-source framework for seismic data processing and management, MsPASS can facilitate reproducible science and make it easier for researchers with limited resources to conduct cutting-edge research. The project team's efforts to disseminate MsPASS through training sessions and poster presentations have increased awareness of the software and its potential impact in the field of seismology.\n\n\t\t\t\t\tLast Modified: 03/01/2023\n\n\t\t\t\t\tSubmitted by: Yinzhi Wang"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "2003082",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: MLWiNS: ANN for Interference Limited Wireless Networks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032922981",
+ "po_email": "pregalia@nsf.gov",
+ "po_sign_block_name": "Phillip Regalia",
+ "awd_eff_date": "2020-06-01",
+ "awd_exp_date": "2024-05-31",
+ "tot_intn_awd_amt": 185504.0,
+ "awd_amount": 185504.0,
+ "awd_min_amd_letter_date": "2020-05-27",
+ "awd_max_amd_letter_date": "2020-05-27",
+ "awd_abstract_narration": "Demand for wireless data services will continue to rise rapidly in the foreseeable future.  The goal of this project is to develop new advanced solutions for wireless access networks with the objectives of increasing network throughput and maximizing overall network utilities.  Long-serving model-based solutions are facing severe limitations due to delays in tracking the ever-changing radio and network environment as well as measurement inaccuracies.  The main novelty of this project is to bring new tools based on artificial neural networks (ANN) to meet those challenges.  In particular, this project will investigate when, how, and why ANN-based learning techniques can be applied to a wide range of wireless networking problems with realistic constraints.  This project will pursue transformative solutions that aim to benefit academia and industry alike.  \r\n \r\nSpecifically, this project will marry supervised and unsupervised learning techniques with time-tested models of physical resources, channels, traffic, and network utilities.  An important task is to exploit commonalities of ANN-based solutions for a number of subproblems to develop a set of principled, holistic solutions for the overall wireless networking problem, seeking solutions that are scalable, computationally efficient, and highly adaptive.  Pertinent learnability and complexity theories backing the solutions will also be developed, in order to offer generalizable design principles. The ANN-based solutions developed are expected to be a major building block of next generation wireless access networks with associated economic benefits.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Xiao",
+   "pi_last_name": "Fu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Xiao Fu",
+   "pi_email_addr": "xiao.fu@oregonstate.edu",
+   "nsf_id": "000709147",
+   "pi_start_date": "2020-05-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Oregon State University",
+  "inst_street_address": "1500 SW JEFFERSON AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CORVALLIS",
+  "inst_state_code": "OR",
+  "inst_state_name": "Oregon",
+  "inst_phone_num": "5417374933",
+  "inst_zip_code": "973318655",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "OR04",
+  "org_lgl_bus_name": "OREGON STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "MZ4DYXE1SL98"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Oregon State University",
+  "perf_str_addr": "",
+  "perf_city_name": "Corvallis",
+  "perf_st_code": "OR",
+  "perf_st_name": "Oregon",
+  "perf_zip_code": "973312140",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "OR04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "021Z",
+   "pgm_ref_txt": "Industry Partnerships"
+  },
+  {
+   "pgm_ref_code": "8585",
+   "pgm_ref_txt": "NSF/Intel Partnership Projects"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 185504.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The rapid progress of artificial intelligence has revolutionized many aspects of society. Leveraging these advancements, this project developed a suite of computational and analytical paradigms to address fundamental problems in wireless communications. We explored how the AI revolution could benefit wireless communications, focusing on three key areas: optimization, radio frequency (RF) environment sensing, and theoretical analysis.</p>\n<p>First, for optimization, we used graph neural networks (GNNs) and imitation learning to solve combinatorial problems in transmit signal design, specifically joint beamforming and antenna selection. Our results demonstrated that a well-designed GNN could efficiently solve these NP-hard problems at scale. Additionally, we developed a continual learning paradigm to tackle power allocation issues in transceiver design within dynamic environments, reducing the need for retraining neural networks when the RF environment changes. We also designed a transformer-based method for user selection (admission control). Second, in the realm of sensing, we designed artificial neural network (ANN)-inspired approaches for crucial sensing techniques, including multi-domain (space and frequency) radio map estimation and downlink massive MIMO channel estimation. Specifically, we proposed using offline learned neural networks to represent heavily shadowed radio maps, thus compensating for the limitations of traditional handcrafted prior-based approaches. Third, on the theoretical front, we provided theoretical guarantees for the ANN-based solutions. For the GNN-based combinatorial problem solver, we used online learning theory and complexity characterizations for GNNs to show that our method significantly reduces the exponential complexity of branch-and-bound methods to nearly linear complexity while maintaining optimality with high probability. For ANN-aided radio map estimation, we derived recoverability and sample complexity analyses, crucial for understanding the trade-off between ANN complexity and estimation performance. We extended this recoverability analysis to quantized measurements for massive MIMO estimation. These analyses help ensure that the integration of ANNs into wireless systems is principled.</p>\n<p>&nbsp;</p>\n<p>The developed computational and analytical tools have applications that extend far beyond wireless communications, holding the potential to enhance a variety of fields. In computer vision, the ANN-based modeling approach can enhance quantized and compressed image and video recovery. The techniques developed for radio map estimation can be readily transferred to enhance remote sensing and hyperspectral imaging, as the two problems admit similar structures. Many combinatorial problems in applied mathematics can also benefit from the developed tools. This project significantly contributed to education and workforce development by supporting two graduate students---one completed a Master's degree and is working towards his Ph.D., and the other passed his Ph.D. qualifier exam. These students were trained in cutting-edge AI techniques, such as generative models and transformers, preparing them to drive future innovations across various industries.</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 06/21/2024<br>\nModified by: Xiao&nbsp;Fu</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe rapid progress of artificial intelligence has revolutionized many aspects of society. Leveraging these advancements, this project developed a suite of computational and analytical paradigms to address fundamental problems in wireless communications. We explored how the AI revolution could benefit wireless communications, focusing on three key areas: optimization, radio frequency (RF) environment sensing, and theoretical analysis.\n\n\nFirst, for optimization, we used graph neural networks (GNNs) and imitation learning to solve combinatorial problems in transmit signal design, specifically joint beamforming and antenna selection. Our results demonstrated that a well-designed GNN could efficiently solve these NP-hard problems at scale. Additionally, we developed a continual learning paradigm to tackle power allocation issues in transceiver design within dynamic environments, reducing the need for retraining neural networks when the RF environment changes. We also designed a transformer-based method for user selection (admission control). Second, in the realm of sensing, we designed artificial neural network (ANN)-inspired approaches for crucial sensing techniques, including multi-domain (space and frequency) radio map estimation and downlink massive MIMO channel estimation. Specifically, we proposed using offline learned neural networks to represent heavily shadowed radio maps, thus compensating for the limitations of traditional handcrafted prior-based approaches. Third, on the theoretical front, we provided theoretical guarantees for the ANN-based solutions. For the GNN-based combinatorial problem solver, we used online learning theory and complexity characterizations for GNNs to show that our method significantly reduces the exponential complexity of branch-and-bound methods to nearly linear complexity while maintaining optimality with high probability. For ANN-aided radio map estimation, we derived recoverability and sample complexity analyses, crucial for understanding the trade-off between ANN complexity and estimation performance. We extended this recoverability analysis to quantized measurements for massive MIMO estimation. These analyses help ensure that the integration of ANNs into wireless systems is principled.\n\n\n\n\n\nThe developed computational and analytical tools have applications that extend far beyond wireless communications, holding the potential to enhance a variety of fields. In computer vision, the ANN-based modeling approach can enhance quantized and compressed image and video recovery. The techniques developed for radio map estimation can be readily transferred to enhance remote sensing and hyperspectral imaging, as the two problems admit similar structures. Many combinatorial problems in applied mathematics can also benefit from the developed tools. This project significantly contributed to education and workforce development by supporting two graduate students---one completed a Master's degree and is working towards his Ph.D., and the other passed his Ph.D. qualifier exam. These students were trained in cutting-edge AI techniques, such as generative models and transformers, preparing them to drive future innovations across various industries.\n\n\n\t\t\t\t\tLast Modified: 06/21/2024\n\n\t\t\t\t\tSubmitted by: XiaoFu\n"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1240682",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Analytics-driven Efficient Indexing and Query Processing of Extreme Scale AMR Data",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927498",
+ "po_email": "achtchel@nsf.gov",
+ "po_sign_block_name": "Almadena Chtchelkanova",
+ "awd_eff_date": "2012-05-01",
+ "awd_exp_date": "2015-12-31",
+ "tot_intn_awd_amt": 149999.0,
+ "awd_amount": 149999.0,
+ "awd_min_amd_letter_date": "2012-05-04",
+ "awd_max_amd_letter_date": "2014-11-25",
+ "awd_abstract_narration": "High-fidelity scientific simulations of natural phenomena, such as massive star explosion, hurricane movement, or fusion energy production increasingly become not only compute-intensive but also data-intensive.  \"Big\" data produced by large-scale simulations calls for sustainable data management solutions that increase energy efficiency, enable predictive data analytics, and reduce time-to-discovery. In response to this critical need, Adaptive Mesh Refinement (AMR) has emerged as a promising technology to achieve considerable savings in memory, computation, and storage resources, while maintaining or even increasing simulation accuracy. With AMR, scientists can adaptively balance between high-resolution look into \"the unusual\" areas and low-precision glance at \"the usual\" areas of the simulated phenomena.\r\n\r\nThe strength of AMR selective fine-grain refinement of salient areas of the simulationis also becoming its weakness. The non-uniform structure of its underlying mesh leads to inefficient post-simulation access to the \"Big\" data along the path from data analytics to scientific discovery. The data generation process of space-time simulation proceeds from one time step to the next and requires the context of only two time steps, while storing data for only one time step on the disk. In contrast, visual data analytics often requires the full context of the available data, not just a single time step. In fact, simulations that are driven by local space-time relationships are largely performed with the purpose of discovering or explaining non-local and large-scale space-time relationships through interactive \"what-if\" data exploration. Thus, the fundamental differences in data context and heterogeneity of access patterns call for analytics-driven scientific data management solutions.\r\n\r\nTo close this gap, this project aims to significantly advance database management for \"Big\" AMR data by making data analytics and data reduction the first class citizens of the database design and query processing. To support analytics-driven efficient query processing, it offers a transformative shift from the traditional indexing of data to the proposed indexing of information about data compression and hierarchical data layout in storage. The former incurs substantial storage overhead, while the latter is anticipated to be storage-friendly with significantly faster data retrieval in response to user queries.  \r\n\r\nTo realize this ambitious goal, innovations are proposed in three broad areas of data-intensive computer science: semantic modeling, scientific database management, and high performance storage.  Specifically, the scientific database management is going to be cognizant of rich data access-and-query semantics specific to AMR data, capable of in situ data compression and indexing during data generation by the simulation, and optimized for heterogeneous access patterns through novel data layout methodologies. \r\n\r\nThis research is being conducted in a close partnership with the three national labs' research teams with pioneering technologies in high performance storage, AMR, and high-fidelity climate change simulations.  The approaches and formalisms developed in this research are expected to be applicable to a broad range of scientific and engineering problems that utilize simulation models for predictive understanding of physical processes through \"Big\" data analytics.  The techniques developed under this project are expected to accelerate the crucial process of data-driven exploration and knowledge discovery in the scientific workflow. This project also plans significant efforts in \"Big\" data education, diversity, community engagement, and the dissemination of results through academic publications and open-source software.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Nagiza",
+   "pi_last_name": "Samatova",
+   "pi_mid_init": "F",
+   "pi_sufx_name": "",
+   "pi_full_name": "Nagiza F Samatova",
+   "pi_email_addr": "samatova@csc.ncsu.edu",
+   "nsf_id": "000080377",
+   "pi_start_date": "2012-05-04",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "North Carolina State University",
+  "inst_street_address": "2601 WOLF VILLAGE WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "RALEIGH",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9195152444",
+  "inst_zip_code": "276950001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "NC02",
+  "org_lgl_bus_name": "NORTH CAROLINA STATE UNIVERSITY",
+  "org_prnt_uei_num": "U3NVH931QJJ3",
+  "org_uei_num": "U3NVH931QJJ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "North Carolina State University",
+  "perf_str_addr": "890 Oval Drive",
+  "perf_city_name": "Raleigh",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "276958206",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "NC02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  },
+  {
+   "pgm_ref_code": "7942",
+   "pgm_ref_txt": "HIGH-PERFORMANCE COMPUTING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 149999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Our vision was to improve the end-to-end performance of query-driven analytics on datasets generated&nbsp;from AMR simulations. We have identified some of the key issues pertaining to data management, storage layout,&nbsp;in situ analysis, and heterogeneous access patterns with AMR datasets that can result in inefficient performance during analysis.&nbsp;Our approach addressed the above bottlenecks and accelerated analytical operations by enabling data reorganization&nbsp;and transformation across various levels of the I/O stack. We focused on applying these data transformations <em>in situ</em> with minimal impact&nbsp;on simulation run-time performance. We won <strong>two best papers awards</strong> (HPC&rsquo;13 and HPC&rsquo;16), published <strong>15 peer-reviewed papers</strong>, and released <strong>five software packages</strong> as open source.</p>\n<p>We achieved the following goals:</p>\n<ol>\n<li><strong>Compression and Indexing:&nbsp;</strong>Created a fast encoding for AMR datasets that results in high compression, while enabling efficient query-processing that requires minimal decoding effort. With a light-weight index that is up to&nbsp;<strong>6x smaller</strong>, we demonstrated an&nbsp;<strong>order of magnitude acceleration&nbsp;</strong>during query-processing when compared with existing indexing techniques.</li>\n<li><strong>Parallel In situ Aggregated Indexing:&nbsp;</strong>Created parallel, scalable aggregated indexing technique for efficient operations&nbsp;involving global-context analysis. The compressed, indexed encoding scheme results in&nbsp;<strong>reduction of storage footprint&nbsp;by up to 45%&nbsp;</strong>and accelerates query performance by more than&nbsp;<strong>10x</strong>. Coupled with an intelligent aggregation strategy,&nbsp;an end-to-end&nbsp;<strong>throughput improvement of up to 5x&nbsp;</strong>is seen when compared to writing the raw data as-is with standard&nbsp;I/O routines.&nbsp;</li>\n<li><strong>Run-time Multi-level Storage Layout Optimization:&nbsp;</strong>Created a run-time, multi-level storage layout optimization&nbsp;framework that improves the data locality on storage and speeds up queries with heterogeneous access patterns. As&nbsp;post-simulation processing becomes increasingly expensive, application of this technique in situ has resulted in&nbsp;<strong>56%&nbsp;savings in processing time&nbsp;</strong>for simulations, while&nbsp;<strong>accelerating query performance by a factor of 1.2 to three orders&nbsp;of magnitude</strong>.&nbsp;</li>\n<li><strong>High-performance Method for Deinterleaving Scientific Data: </strong>Created a fast data deinterleaving technique to transform interleaved data into a contiguous grouping that directly improves compression and indexing performance and&nbsp;enables better data locality for analytics. This technique&nbsp;<strong>improves throughput&nbsp;</strong>over existing methods&nbsp;by up to&nbsp;<strong>26.2x</strong>.</li>\n<li><strong>Parallel In Situ Detection of Connected Components:&nbsp;</strong>Created the first connected component detection methodology&nbsp;for structured AMR data that is applicable in a distributed, in situ context. Results show up to a&nbsp;<strong>6.8x&nbsp;</strong>speedup of our&nbsp;algorithm over the existing algorithm. We also show scalability results for our method up to<strong>4,096&nbsp;</strong>cores using a&nbsp;parallel Chombo-based benchmark.&nbsp;</li>\n<li><strong>Utilizing Memory Hierarchy to Improve Performance for SSDs: </strong>Created a memory hierarchy- and&nbsp;resource-aware read algorithm, capable of utilizing specially-arranged data on a parallel file system to reduce read contention over solid state disks. Results show that this method achieves up to 50% read performance improvement.</li>\n<li><strong>The Hyperdyadic Index and Generalized Parallel Indexing for Scientific Data:&nbsp;</strong>Created a unified framework for&...",
+  "por_txt_cntn": "\nOur vision was to improve the end-to-end performance of query-driven analytics on datasets generated from AMR simulations. We have identified some of the key issues pertaining to data management, storage layout, in situ analysis, and heterogeneous access patterns with AMR datasets that can result in inefficient performance during analysis. Our approach addressed the above bottlenecks and accelerated analytical operations by enabling data reorganization and transformation across various levels of the I/O stack. We focused on applying these data transformations in situ with minimal impact on simulation run-time performance. We won two best papers awards (HPC\u00c613 and HPC\u00c616), published 15 peer-reviewed papers, and released five software packages as open source.\n\nWe achieved the following goals:\n\nCompression and Indexing: Created a fast encoding for AMR datasets that results in high compression, while enabling efficient query-processing that requires minimal decoding effort. With a light-weight index that is up to 6x smaller, we demonstrated an order of magnitude acceleration during query-processing when compared with existing indexing techniques.\nParallel In situ Aggregated Indexing: Created parallel, scalable aggregated indexing technique for efficient operations involving global-context analysis. The compressed, indexed encoding scheme results in reduction of storage footprint by up to 45% and accelerates query performance by more than 10x. Coupled with an intelligent aggregation strategy, an end-to-end throughput improvement of up to 5x is seen when compared to writing the raw data as-is with standard I/O routines. \nRun-time Multi-level Storage Layout Optimization: Created a run-time, multi-level storage layout optimization framework that improves the data locality on storage and speeds up queries with heterogeneous access patterns. As post-simulation processing becomes increasingly expensive, application of this technique in situ has resulted in 56% savings in processing time for simulations, while accelerating query performance by a factor of 1.2 to three orders of magnitude. \nHigh-performance Method for Deinterleaving Scientific Data: Created a fast data deinterleaving technique to transform interleaved data into a contiguous grouping that directly improves compression and indexing performance and enables better data locality for analytics. This technique improves throughput over existing methods by up to 26.2x.\nParallel In Situ Detection of Connected Components: Created the first connected component detection methodology for structured AMR data that is applicable in a distributed, in situ context. Results show up to a 6.8x speedup of our algorithm over the existing algorithm. We also show scalability results for our method up to4,096 cores using a parallel Chombo-based benchmark. \nUtilizing Memory Hierarchy to Improve Performance for SSDs: Created a memory hierarchy- and resource-aware read algorithm, capable of utilizing specially-arranged data on a parallel file system to reduce read contention over solid state disks. Results show that this method achieves up to 50% read performance improvement.\nThe Hyperdyadic Index and Generalized Parallel Indexing for Scientific Data: Created a unified framework for indexing and querying scientific data, PIQUE, based on a formal mathematical model. We also present a new type of index, the hyperdyadic tree index, which exhibits promising performance characteristics. Our results indicate that PIQUE is effective in delivering a wide range of indexing technologies previously developed in the literature (as well as our new hyperdyadic tree index approach). We also find that the hyperdyadic tree index achieves substantially improved index compression vs. state-of-the-art compressed bitmaps, without sacrificing (and sometimes even improving) query performance. \nPattern-driven Dynamic Data Layout Optimization: Developed a framework for automatically recognizing data usage patterns, for replic..."
+ }
+}

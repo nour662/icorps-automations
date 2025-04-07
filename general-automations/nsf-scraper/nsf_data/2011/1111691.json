@@ -1,0 +1,105 @@
+{
+ "awd_id": "1111691",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Large: Collaborative Research: Kali:  A System for Sequential Programming of Multicore Processors",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anita La Salle",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2015-07-31",
+ "tot_intn_awd_amt": 259000.0,
+ "awd_amount": 259000.0,
+ "awd_min_amd_letter_date": "2011-08-06",
+ "awd_max_amd_letter_date": "2011-08-06",
+ "awd_abstract_narration": "Most computers today are 'multicore' parallel computers that are capable of executing several independent threads of computation simultaneously. Unfortunately, most existing programs are not parallel and cannot take advantage of this hardware capability. Furthermore, writing parallel programs using current notations like OpenMP is more difficult than writing sequential programs and, as a result, increases development costs and the likelihood of program defects.\r\n\r\nThe Kali project is building a software system that will permit most application programmers to write sequential programs and still obtain good performance on multicore processors. Parallelism will be hidden within object-oriented class libraries written by expert parallel programmers and it will be managed by a sophisticated runtime system that uses a range of parallel execution strategies customized to the needs of the application. Applications programmers can take advantage of the benefits of sequential programming such as familiarity, readability, maintainability, and debuggability. They will also be able to tune program performance and power without having to drop down to a lower abstraction level. In addition, the Kali project is studying the use of innovative hardware to facilitate the development of efficient programs. Finally, the project is producing a suite of application benchmarks that will be useful for performance evaluation of similar systems.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ahmed",
+   "pi_last_name": "Sameh",
+   "pi_mid_init": "H",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ahmed H Sameh",
+   "pi_email_addr": "sameh@cs.purdue.edu",
+   "nsf_id": "000298222",
+   "pi_start_date": "2011-08-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Purdue University",
+  "inst_street_address": "2550 NORTHWESTERN AVE # 1100",
+  "inst_street_address_2": "",
+  "inst_city_name": "WEST LAFAYETTE",
+  "inst_state_code": "IN",
+  "inst_state_name": "Indiana",
+  "inst_phone_num": "7654941055",
+  "inst_zip_code": "479061332",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "IN04",
+  "org_lgl_bus_name": "PURDUE UNIVERSITY",
+  "org_prnt_uei_num": "YRXVL4JYCEF5",
+  "org_uei_num": "YRXVL4JYCEF5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Purdue University",
+  "perf_str_addr": "2550 NORTHWESTERN AVE # 1100",
+  "perf_city_name": "WEST LAFAYETTE",
+  "perf_st_code": "IN",
+  "perf_st_name": "Indiana",
+  "perf_zip_code": "479061332",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "IN04",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7354",
+   "pgm_ref_txt": "COMPUTER SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "7925",
+   "pgm_ref_txt": "LARGE PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 259000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project resulted in the development of a family of parallel hybrid algorithms for solving large sparse linear systems A x = f that are both robust and achieve a high degree of scalability on a variety of parallel computing platforms. The main kernels (developed in this project) that form such hybrid parallel solvers consist of: (i) reordering schemes of the sparse coefficient matrix that aim simultaneously at reducing the bandwidth and bringing the heaviest elements of the matrix as close as possible to the diagonal, (ii) extracting a preconditioner M that consists of overlapped block diagonal submatrices where ? (the reordered A) = (M + E) in which the norm of E is only a small fraction of the norm of A, and the rank of E is often much less than the order of A, (iii) a scalable hybrid parallel solver for systems involving such preconditioners, and (iv) using a suitable Krylov subspace method as an outer iteration for solving A x = f, with M as the preconditioner. &nbsp;Extensive numerical experiments have demonstrated that our reordering schemes and the chosen structure for the preconditioners result in a family of solvers (we call PSPIKE) that are: (a) as robust as sparse direct linear systems solvers such as (Basel&rsquo;s) Pardiso, (LBNL) SuperLU, (CERFACS) MUMPS, and (IBM) WSMP, and (b) much more scalable on a variety of parallel architectures than preconditioned Krylov subspace methods in which the preconditioner is either approximate LU-factorization, approximate sparse inverses, or algebraic multigrid. Our PSPIKE family of solvers can be used in many science and engineering applications such as computational fluid dynamics, structural mechanics, computational electromagnetics, and computational nanoelectronics, for example.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/28/2016<br>\n\t\t\t\t\tModified by: Ahmed&nbsp;H&nbsp;Sameh</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2016/1111691/1111691_10117990_1456675451524_Slide1--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1111691/1111691_10117990_1456675451524_Slide1--rgov-800width.jpg\" title=\"Fig_1\"><img src=\"/por/images/Reports/POR/2016/1111691/1111691_10117990_1456675451524_Slide1--rgov-66x44.jpg\" alt=\"Fig_1\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Weighted spectral reordering</div>\n<div class=\"imageCredit\">conference presentation</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Ahmed&nbsp;H&nbsp;Sameh</div>\n<div class=\"imageTitle\">Fig_1</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2016/1111691/1111691_10117990_1456676504866_Slide2--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1111691/1111691_10117990_1456676504866_Slide2--rgov-800width.jpg\" title=\"Fig_2\"><img src=\"/por/images/Reports/POR/2016/1111691/1111691_10117990_1456676504866_Slide2--rgov-66x44.jpg\" alt=\"Fig_2\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Preconditioner</div>\n<div class=\"imageCredit\">presentation in a conference</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Ahmed&nbsp;H&nbsp;Sameh</div>\n<div class=\"imageTitle\">Fig_2</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2016/1111691/1111691_10117990_1456677301609_Slide1--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1111691/1111691_10117990_1456677301609_Slide1--rgov-800width.jpg\" title=\"Fig_3\"><img src=\"/por/images/Repo...",
+  "por_txt_cntn": "\nThis project resulted in the development of a family of parallel hybrid algorithms for solving large sparse linear systems A x = f that are both robust and achieve a high degree of scalability on a variety of parallel computing platforms. The main kernels (developed in this project) that form such hybrid parallel solvers consist of: (i) reordering schemes of the sparse coefficient matrix that aim simultaneously at reducing the bandwidth and bringing the heaviest elements of the matrix as close as possible to the diagonal, (ii) extracting a preconditioner M that consists of overlapped block diagonal submatrices where ? (the reordered A) = (M + E) in which the norm of E is only a small fraction of the norm of A, and the rank of E is often much less than the order of A, (iii) a scalable hybrid parallel solver for systems involving such preconditioners, and (iv) using a suitable Krylov subspace method as an outer iteration for solving A x = f, with M as the preconditioner.  Extensive numerical experiments have demonstrated that our reordering schemes and the chosen structure for the preconditioners result in a family of solvers (we call PSPIKE) that are: (a) as robust as sparse direct linear systems solvers such as (Basel\u00c6s) Pardiso, (LBNL) SuperLU, (CERFACS) MUMPS, and (IBM) WSMP, and (b) much more scalable on a variety of parallel architectures than preconditioned Krylov subspace methods in which the preconditioner is either approximate LU-factorization, approximate sparse inverses, or algebraic multigrid. Our PSPIKE family of solvers can be used in many science and engineering applications such as computational fluid dynamics, structural mechanics, computational electromagnetics, and computational nanoelectronics, for example.\n\n \n\n\t\t\t\t\tLast Modified: 02/28/2016\n\n\t\t\t\t\tSubmitted by: Ahmed H Sameh"
+ }
+}

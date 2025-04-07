@@ -1,0 +1,109 @@
+{
+ "awd_id": "1637576",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AitF: Collaborative Research: Modeling movement on transportation networks using uncertain data",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032928074",
+ "po_email": "jdonlon@nsf.gov",
+ "po_sign_block_name": "James Donlon",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 317681.0,
+ "awd_amount": 317681.0,
+ "awd_min_amd_letter_date": "2016-09-06",
+ "awd_max_amd_letter_date": "2016-09-06",
+ "awd_abstract_narration": "In the current data-centered era, there are many highly diverse data sources that provide information about movement on transportation networks. Examples include GPS trajectories, social media data, and traffic flow measurements. Much of this movement data is challenging to utilize due to the inherent uncertainty caused by infrequent sampling and sparse coverage. The goal of this project is to develop a unified framework that uses as many available data sources as possible to extract meaningful traffic and movement information automatically from the data. Probabilistic network movement models will be developed that capture movement probabilities and traffic volume on a network over time. The results will impact a range of applications that rely on capturing population movements, such as urban planning, geomarketing, traffic management, and emergency management. Educational activities will be integrated throughout the project. Students will be closely involved in research and practical implementations, and will be trained in spatio-temporal data management, algorithms development, and (trajectory) data analysis. The combination of such skills is increasingly important in spatial data science. Topics involved in this project will enrich the course material and curriculum development at both institutions. \r\n\r\nThe objective of this project is to create a unified framework for aggregating and analyzing diverse and uncertain movement data on road networks, with the aim to provide tools for querying and predicting traffic volume and movement. Probabilistic movement models on the network will be developed that can handle heterogeneous data sources, including GPS trajectories, geo-tagged social media data, bike-share data, public transport data, and traffic volume data. The diversity and spatio-temporal uncertainty of this data will be addressed with a Bayesian traffic pattern learning approach that first trains the movement models with the more certain data, which in turn will be used to fill gaps in the more uncertain data. The project will advance the state-of-the-art in theoretical communities (computational geometry, data mining) as well as in applied communities (spatial databases, location science). The results of the research will available on the project website (movementanalytics.org), and will be disseminated in prestigious venues through presentations and demonstrations at conferences, and through publications in journals.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Carola",
+   "pi_last_name": "Wenk",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Carola Wenk",
+   "pi_email_addr": "cwenk@tulane.edu",
+   "nsf_id": "000495001",
+   "pi_start_date": "2016-09-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Tulane University",
+  "inst_street_address": "6823 SAINT CHARLES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEW ORLEANS",
+  "inst_state_code": "LA",
+  "inst_state_name": "Louisiana",
+  "inst_phone_num": "5048654000",
+  "inst_zip_code": "701185665",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "LA01",
+  "org_lgl_bus_name": "THE ADMINISTRATORS OF TULANE EDUCATIONAL FUND",
+  "org_prnt_uei_num": "XNY5ULPU8EN6",
+  "org_uei_num": "XNY5ULPU8EN6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Tulane University",
+  "perf_str_addr": "6823 ST CHARLES AVENUE",
+  "perf_city_name": "New Orleans",
+  "perf_st_code": "LA",
+  "perf_st_name": "Louisiana",
+  "perf_zip_code": "701185698",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "LA01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "723900",
+   "pgm_ele_name": "Algorithms in the Field"
+  },
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 317681.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The aims of this collaborative project were to create methodology for aggregating and analyzing diverse and uncertain movement data on transportation networks, and to utilize the methodology in research challenges related to applications such as site planning, sparse map construction, and traffic management. &nbsp;&nbsp;</p>\n<p>Movement data is usually captured in the form of trajectories that have spatial uncertainties and varying temporal sampling rates. This project provided novel algorithms for aggregating such movement data and for finding similarities in the data. Given the sparsity and lack of sufficiently large datasets, the project also provided methodologies for interpolating movement and for generating realistic urban movement data.</p>\n<p>One set of outcomes of this project are algorithms for aggregating trajectories by efficiently clustering sub-trajectories and constructing movement networks (graphs) from them, as well as comparing the trajectories and the aggregations. This includes work on simplifying trajectories and graphs, a data structure for finding nearest neighbors among trajectories, and methodology for comparing two graphs. Another line of research resulted in outcomes for interpolating sparse data and even generating entire movement data sets. Such generated data can be used to augment or replace real movement data as input for algorithms. This project has resulted in publicly available implementations as well as many peer-reviewed publications in top venues including IEEE MDM, SSTD, ACM SIGSPATIAL GIS, Spatial Gems, ESA, Int. J. Computational Geometry &amp; Applications, Journal of Spatial Information Science. Two papers received best paper awards.</p>\n<p>This project provided research training for multiple graduate and undergraduate students, learning skills in algorithm design, implementation, and applications. Students worked in a team environment and built lasting research collaborations with local as well as international collaborators from various countries including Germany, Israel, the Netherlands, and Spain.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 04/17/2022<br>\n\t\t\t\t\tModified by: Carola&nbsp;Wenk</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe aims of this collaborative project were to create methodology for aggregating and analyzing diverse and uncertain movement data on transportation networks, and to utilize the methodology in research challenges related to applications such as site planning, sparse map construction, and traffic management.   \n\nMovement data is usually captured in the form of trajectories that have spatial uncertainties and varying temporal sampling rates. This project provided novel algorithms for aggregating such movement data and for finding similarities in the data. Given the sparsity and lack of sufficiently large datasets, the project also provided methodologies for interpolating movement and for generating realistic urban movement data.\n\nOne set of outcomes of this project are algorithms for aggregating trajectories by efficiently clustering sub-trajectories and constructing movement networks (graphs) from them, as well as comparing the trajectories and the aggregations. This includes work on simplifying trajectories and graphs, a data structure for finding nearest neighbors among trajectories, and methodology for comparing two graphs. Another line of research resulted in outcomes for interpolating sparse data and even generating entire movement data sets. Such generated data can be used to augment or replace real movement data as input for algorithms. This project has resulted in publicly available implementations as well as many peer-reviewed publications in top venues including IEEE MDM, SSTD, ACM SIGSPATIAL GIS, Spatial Gems, ESA, Int. J. Computational Geometry &amp; Applications, Journal of Spatial Information Science. Two papers received best paper awards.\n\nThis project provided research training for multiple graduate and undergraduate students, learning skills in algorithm design, implementation, and applications. Students worked in a team environment and built lasting research collaborations with local as well as international collaborators from various countries including Germany, Israel, the Netherlands, and Spain.\n\n \n\n\t\t\t\t\tLast Modified: 04/17/2022\n\n\t\t\t\t\tSubmitted by: Carola Wenk"
+ }
+}

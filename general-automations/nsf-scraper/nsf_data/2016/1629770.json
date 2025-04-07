@@ -1,0 +1,101 @@
+{
+ "awd_id": "1629770",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "II-EN: Enhancing Secure Virtual Architecture for Advanced Operating System Research",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2016-08-01",
+ "awd_exp_date": "2021-07-31",
+ "tot_intn_awd_amt": 493174.0,
+ "awd_amount": 493174.0,
+ "awd_min_amd_letter_date": "2016-07-26",
+ "awd_max_amd_letter_date": "2016-07-26",
+ "awd_abstract_narration": "Commodity operating system kernels employ designs that are efficient but insecure.  As a result, modern computing systems are insecure at their core.  Fortunately, the Secure Virtual Architecture (SVA) infrastructure has allowed researchers to develop strong defenses for existing operating systems on existing hardware.  This work seeks to improve SVA so that researchers can use it to develop defenses against increasingly sophisticated security attacks and build tools that evaluate the efficacy of those defenses.\r\n\r\nSVA is a compiler-based system that, to date, has been used to thwart memory safety errors and to protect applications running on a compromised operating system kernel.  This research will make three primary enhancements to SVA to enable it to perform advanced security research.  First will be to enhance SVA?s static analysis features to handle flexible and changing code generation and optimization techniques in existing compilers and to handle difficult-to-analyze source code constructs commonly used in operating system kernel code.  Second, this work will enhance SVA?s ability to analyze operating system behavior at run-time via arbitrary metadata attached to memory objects.  Finally, the plan is to enhance SVA to analyze machine code; this feature will enable SVA to be used in research on the efficacy of defenses against attacks.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "John",
+   "pi_last_name": "Criswell",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "John Criswell",
+   "pi_email_addr": "criswell@cs.rochester.edu",
+   "nsf_id": "000677886",
+   "pi_start_date": "2016-07-26",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Rochester",
+  "inst_street_address": "910 GENESEE ST",
+  "inst_street_address_2": "STE 200",
+  "inst_city_name": "ROCHESTER",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "5852754031",
+  "inst_zip_code": "146113847",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "NY25",
+  "org_lgl_bus_name": "UNIVERSITY OF ROCHESTER",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "F27KDXZMF9Y8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Rochester",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "146270140",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "25",
+  "perf_st_cong_dist": "NY25",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735900",
+   "pgm_ele_name": "CCRI-CISE Cmnty Rsrch Infrstrc"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7359",
+   "pgm_ref_txt": "COMPUTING RES INFRASTRUCTURE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 493174.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Our modern world increasingly relies upon technology, making daily activities and important business transactions vulnerable to cybersecurity attacks.&nbsp; Sadly, even the system software (e.g., operating systems and hypervisors) upon which all other software technology is built is vulnerable to attack.&nbsp; Fortunately, research has developed techniques which allow programmers to use tools to make other programs more secure.&nbsp; Unfortunately, before our work, our field lacked the infrastructure to make these tools work reliably on system software because system software has features that application software lacks.</p>\n<p>&nbsp;</p>\n<p>This project enhanced the Secure Virtual Architecture (SVA) to support hypervisors; hypervisors make cloud computing possible.&nbsp; SVA enforces security policies on systems software and can protect such software from attack.&nbsp; We enhanced SVA with the features needed to support hypervisor software and ported the Xen hypervisor, used by industry, to work on SVA.&nbsp; We also built a sample security policy that is the first to harden the Xen hypervisor against sophisticated control-flow hijacking attacks.&nbsp; Industry can use this security policy to protect cloud computing systems, and researchers can use it as an example when building their own security policies with SVA.</p>\n<p>&nbsp;</p>\n<p>Additionally, we have applied the ideas from SVA on real-time embedded operating systems which are used in smart devices that are proliferating everywhere in modern life.&nbsp; We call this system Kage.&nbsp; We have demonstrated that the same ideas, implemented in different ways, can improve the security of smart devices.</p>\n<p>&nbsp;</p>\n<p>We have or will be publicly releasing all of the source code for SVA and Kage; anyone will be able to use the software for free.&nbsp; This will enable researchers to develop new defenses for new threats that arise in the future.&nbsp; It will enable teachers to teach students about security using actual code that students can use and modify.&nbsp; It will also enable companies in industry to use our techniques to make their systems and products more secure, providing a future in which cloud computing and IoT systems are more secure than they are today.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/03/2022<br>\n\t\t\t\t\tModified by: John&nbsp;Criswell</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOur modern world increasingly relies upon technology, making daily activities and important business transactions vulnerable to cybersecurity attacks.  Sadly, even the system software (e.g., operating systems and hypervisors) upon which all other software technology is built is vulnerable to attack.  Fortunately, research has developed techniques which allow programmers to use tools to make other programs more secure.  Unfortunately, before our work, our field lacked the infrastructure to make these tools work reliably on system software because system software has features that application software lacks.\n\n \n\nThis project enhanced the Secure Virtual Architecture (SVA) to support hypervisors; hypervisors make cloud computing possible.  SVA enforces security policies on systems software and can protect such software from attack.  We enhanced SVA with the features needed to support hypervisor software and ported the Xen hypervisor, used by industry, to work on SVA.  We also built a sample security policy that is the first to harden the Xen hypervisor against sophisticated control-flow hijacking attacks.  Industry can use this security policy to protect cloud computing systems, and researchers can use it as an example when building their own security policies with SVA.\n\n \n\nAdditionally, we have applied the ideas from SVA on real-time embedded operating systems which are used in smart devices that are proliferating everywhere in modern life.  We call this system Kage.  We have demonstrated that the same ideas, implemented in different ways, can improve the security of smart devices.\n\n \n\nWe have or will be publicly releasing all of the source code for SVA and Kage; anyone will be able to use the software for free.  This will enable researchers to develop new defenses for new threats that arise in the future.  It will enable teachers to teach students about security using actual code that students can use and modify.  It will also enable companies in industry to use our techniques to make their systems and products more secure, providing a future in which cloud computing and IoT systems are more secure than they are today.\n\n \n\n\t\t\t\t\tLast Modified: 03/03/2022\n\n\t\t\t\t\tSubmitted by: John Criswell"
+ }
+}

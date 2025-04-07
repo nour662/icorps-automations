@@ -1,0 +1,109 @@
+{
+ "awd_id": "1566137",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: AF: Breaking Barriers for Geometric Data",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Joseph Maurice Rojas",
+ "awd_eff_date": "2016-05-01",
+ "awd_exp_date": "2019-10-31",
+ "tot_intn_awd_amt": 161277.0,
+ "awd_amount": 161277.0,
+ "awd_min_amd_letter_date": "2016-04-12",
+ "awd_max_amd_letter_date": "2016-04-12",
+ "awd_abstract_narration": "It is surprising how often geometric abstractions help us deal with understanding large systems:  molecules become balls and sticks, complex fluid or combustion simulations are shown as contours or isosurfaces, and movies become points in a high dimensional space to allow recommendations based on which other points are near one's favorite movies.  Computational Geometry, which develops efficient computer algorithms for problems stated in geometric terms, can thus play a central role in data analytics.  Traditionally, the focus in Computational Geometry was on exact algorithms with guaranteed performance on all possible inputs, including worst-case inputs. \r\n\r\nThis project recognizes that many practical data analysis tasks do not generate worst-case instances, and seeks to identify structural aspects of given problems that allow existing or new algorithms with better guarantees than the worst-case bounds for realistic cases, often using approximation, probabilistic analysis, parameterized complexity, or output sensitivity.\r\n\r\nUnderstanding the huge volume of data from a combustion simulation run on a super computer gives a 3d example: Contour trees, a data structure used to summarize interactions between density or temperature isosurfaces in a simulation, take more than linear time to compute in the worst case, but by parameterizing on tree shape one can show that trees that are balanced can be computed in linear time.  Machine learning and clustering problems, like recommendation systems, give higher-dimensional examples in which one desires to extract a smaller and lower dimensional representation of the input, while preserving some feature of interest.  A geometric form of this problem is known as extracting a coreset; in the worst case the coreset size can be exponential in the dimension.  On real inputs however, there is often hidden low dimensional structure; rather than designing an algorithm whose running time depends on the worst case coreset size, the running time should adapt to the size required by the given instance.\r\n\r\nAdvancing non-worst-case analysis techniques helps bridge the gap between theory and practice, as there is often a disconnect between running times predicted by worst-case analysis and those seen on real data sets. The investigator will incorporate non-worst-case analysis techniques into his course curricula, as such techniques are essential yet severely lacking in standard algorithms courses. This project will also be used to support student research at the graduate as well as undergraduate levels on this topic.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Benjamin",
+   "pi_last_name": "Raichel",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Benjamin Raichel",
+   "pi_email_addr": "Benjamin.Raichel@utdallas.edu",
+   "nsf_id": "000704745",
+   "pi_start_date": "2016-04-12",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Dallas",
+  "inst_street_address": "800 WEST CAMPBELL RD.",
+  "inst_street_address_2": "SP2.25",
+  "inst_city_name": "RICHARDSON",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "9728832313",
+  "inst_zip_code": "750803021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "24",
+  "st_cong_dist_code": "TX24",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT DALLAS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "EJCVPNN1WFS5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Dallas",
+  "perf_str_addr": "",
+  "perf_city_name": "Richardson",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "750803021",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "24",
+  "perf_st_cong_dist": "TX24",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7796",
+   "pgm_ref_txt": "ALGORITHMIC FOUNDATIONS"
+  },
+  {
+   "pgm_ref_code": "7929",
+   "pgm_ref_txt": "COMPUTATIONAL GEOMETRY"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 161277.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project investigated and pushed the boundaries for several core geometric problems. As data sets are routinely and naturally described geometrically as point sets, the applications of these problems range from low dimensional data sets arising from the physical world to high dimensional data sets that arise in application areas such as machine learning.<br /><br />Many of the problems considered were seemingly stuck at a high complexity bound, as previously the focus had been on exact algorithms whose quality was judged based on worst-case inputs. Instead by taking into account a broader picture of the complexity landscape, we were able to push beyond worst-case analysis bounds, using tools such fixed parameter tractable analysis, input sensitivity, and probabilistic analysis. Specific topics studied included Voronoi diagrams, metric embeddings, coresets, and more. <br /><br />Given a set of input point sites, a Voronoi diagram partitions space into regions, where each region is the set of all points with the same nearest site. Here we gave bounds on the expected structural complexity of such diagrams when the existence, position, or weight of each given site is in some way randomized. In particular, we demonstrated that while the worst case complexity of such structures may be high, their expected complexity can be far lower.<br /><br />Metric embeddings seek to take point sets described in some complex or high dimensional space and map them into simpler or lower dimensional spaces, where they are easier to work with. The aim is to do so while preserving the distances between points as best as possible, often using a measure called distortion. In this project, we gave fixed parameter tractable algorithms for minimum distortion embeddings into trees, by parameterizing on the distortion, doubling dimension, and spread. <br /><br />Coresets are small subsets of the input points which approximately preserve some geometric property of the full set. For certain problems worst case point sets may require large coresets. Thus for this project we considered coresets whose size is measured relative to the optimum coreset size for a given point set. Several variants were considered and the results were applied to both machine learning and database problems, resulting in publications in top conferences in each area.<br /><br />This project resulted in a number of publications in top ranked venues. Two graduate students were supported by this project, and the research they carried out for the project contributed to the advancement of their research careers. One of the students recently obtained his PhD and is currently a postdoctoral researcher and the other is on track to graduate next year.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/27/2020<br>\n\t\t\t\t\tModified by: Benjamin&nbsp;Raichel</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project investigated and pushed the boundaries for several core geometric problems. As data sets are routinely and naturally described geometrically as point sets, the applications of these problems range from low dimensional data sets arising from the physical world to high dimensional data sets that arise in application areas such as machine learning.\n\nMany of the problems considered were seemingly stuck at a high complexity bound, as previously the focus had been on exact algorithms whose quality was judged based on worst-case inputs. Instead by taking into account a broader picture of the complexity landscape, we were able to push beyond worst-case analysis bounds, using tools such fixed parameter tractable analysis, input sensitivity, and probabilistic analysis. Specific topics studied included Voronoi diagrams, metric embeddings, coresets, and more. \n\nGiven a set of input point sites, a Voronoi diagram partitions space into regions, where each region is the set of all points with the same nearest site. Here we gave bounds on the expected structural complexity of such diagrams when the existence, position, or weight of each given site is in some way randomized. In particular, we demonstrated that while the worst case complexity of such structures may be high, their expected complexity can be far lower.\n\nMetric embeddings seek to take point sets described in some complex or high dimensional space and map them into simpler or lower dimensional spaces, where they are easier to work with. The aim is to do so while preserving the distances between points as best as possible, often using a measure called distortion. In this project, we gave fixed parameter tractable algorithms for minimum distortion embeddings into trees, by parameterizing on the distortion, doubling dimension, and spread. \n\nCoresets are small subsets of the input points which approximately preserve some geometric property of the full set. For certain problems worst case point sets may require large coresets. Thus for this project we considered coresets whose size is measured relative to the optimum coreset size for a given point set. Several variants were considered and the results were applied to both machine learning and database problems, resulting in publications in top conferences in each area.\n\nThis project resulted in a number of publications in top ranked venues. Two graduate students were supported by this project, and the research they carried out for the project contributed to the advancement of their research careers. One of the students recently obtained his PhD and is currently a postdoctoral researcher and the other is on track to graduate next year.\n\n\t\t\t\t\tLast Modified: 02/27/2020\n\n\t\t\t\t\tSubmitted by: Benjamin Raichel"
+ }
+}

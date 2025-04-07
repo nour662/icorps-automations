@@ -1,0 +1,105 @@
+{
+ "awd_id": "1135365",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "International: An Analysis of Speaker Diarization Systems Errors",
+ "cfda_num": "47.079",
+ "org_code": "01090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Bonnie Thompson",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2012-07-31",
+ "tot_intn_awd_amt": 15000.0,
+ "awd_amount": 15000.0,
+ "awd_min_amd_letter_date": "2011-07-16",
+ "awd_max_amd_letter_date": "2011-07-16",
+ "awd_abstract_narration": "This project will support the three-month visit of a US PhD student to the Idiap Research Institute in Switzerland, a leading international laboratory that has developed a state-of-the-art diarization system.  Speaker diarization is the task of determining ?who spoke when? without a priori knowledge of the number of speakers or speaker identities. The focus of the current effort is to perform error analysis in audio-only speaker diarization for the meeting domain. There are two main areas of interest. The first is to build a framework to analyze speaker diarization performance on specific types of segments (e.g., speaker changes, interruption, overlapped speech, short utterances, long utterances, etc.). By analyzing where speaker diarization systems perform poorly, speaker diarization researchers can focus on improving performance during those problematic types of segments. The second area is to compare speaker diarization performance across systems.\r\n \r\nThe project has substantial broader impacts.  Speaker diarization is a useful step in meeting analysis. Considering the time people spend in meetings, improved speaker diarization could be useful for a broad portion of the population. While the goal is to characterize current speaker diarization errors, the knowledge gained from this work will be useful for improving future speaker diarization systems. In particular, by comparing where errors occur across multiple systems, the speaker diarization community can gain insight into the strengths and weaknesses of the various systems which could lead to a more novel way of combining systems to improve speaker diarization performance.  In addition, the project will support the development of an international network of collaborators for a US graduate student.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "O/D",
+ "org_dir_long_name": "Office Of The Director",
+ "div_abbr": "OISE",
+ "org_div_long_name": "Office of International Science and Engineering",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Nelson",
+   "pi_last_name": "Morgan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Nelson Morgan",
+   "pi_email_addr": "morgan@icsi.berkeley.edu",
+   "nsf_id": "000185837",
+   "pi_start_date": "2011-07-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "International Computer Science Institute",
+  "inst_street_address": "2150 SHATTUCK AVE",
+  "inst_street_address_2": "SUITE 250",
+  "inst_city_name": "BERKELEY",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "5106662900",
+  "inst_zip_code": "947041345",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "CA12",
+  "org_lgl_bus_name": "INTERNATIONAL COMPUTER SCIENCE INSTITUTE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GSRMP1QCXU74"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Swiss Federal Institute of Technology at Lausanne",
+  "perf_str_addr": "Centre du Parc, Rue Marconi 19,",
+  "perf_city_name": "Case Postale 592, Martigny",
+  "perf_st_code": "",
+  "perf_st_name": "RI REQUIRED",
+  "perf_zip_code": "CH - 1920",
+  "perf_ctry_code": "SZ",
+  "perf_cong_dist": null,
+  "perf_st_cong_dist": "",
+  "perf_ctry_name": "Switzerland",
+  "perf_ctry_flag": "0"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "773100",
+   "pgm_ele_name": "Other Global Learning & Trng"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5950",
+   "pgm_ref_txt": "SWITZERLAND"
+  },
+  {
+   "pgm_ref_code": "5979",
+   "pgm_ref_txt": "Europe and Eurasia"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 15000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Speaker diarization is the task of automatically partitioning an input audio signal into speaker homogeneous regions without prior knowledge of the number of speakers or speaker identities. In other words, the goal of speaker diarization is to answer the question &ldquo;who spoke when?&rdquo; Speaker diarization has many applications, including speaker adaption for automatic speech recognition and indexing the audio by speaker, which is beneficial for tasks such as multimedia retrieval and summarization.</p>\n<p>Though many approaches have been introduced to solve the speaker diarization problem, there has been little analysis of speaker diarization performance other than reporting the diarization error rate. In this work, performed by Berkeley PhD candidate Mary Knox, error analysis was performed in audio-only speaker diarization for the meeting domain using five state-of-the-art speaker diarization systems. There were two main areas of interest. The first was to identify troublesome types of segments, namely, short segments and segments surrounding speaker change points. The results showed that as the segment length increases, the diarization results improve. Also, for all five systems, over 40% of the errors occurred within 0.5 seconds of a speaker change point. The second goal was to investigate how often systems make errors at the same time. The majority of these shared errors occur during overlapping speech, or when multiple people are speaking at the same time.</p>\n<p>The technical results of this work are important for the speaker diarization community since they clearly identify where state-of-the-art speaker diarization systems struggle. These results were published and presented at Interspeech 2012 in Portland, Oregon. The work was performed at Idiap, a Swiss research institute with advanced research in speaker diarization (among other areas). The tools used to perform the analysis are available online at <a href=\"http://www.icsi.berkeley.edu/_knoxm/dia\">www.icsi.berkeley.edu/<strong>_</strong>knoxm/dia</a>.&nbsp;</p>\n<p>Finally, an important goal of this work was to broaden the experience of the graduate student working on this project. This was accomplished in two ways: first she became acquainted with work at another institution that was particularly strong in this scientific area, and particularly one in another country. And secondly, she significantly increased her familiarity with a number of diarization systems that have been developed around the world. Achieving these educational goals were also important for the success of the project.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/17/2012<br>\n\t\t\t\t\tModified by: Nelson&nbsp;Morgan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nSpeaker diarization is the task of automatically partitioning an input audio signal into speaker homogeneous regions without prior knowledge of the number of speakers or speaker identities. In other words, the goal of speaker diarization is to answer the question \"who spoke when?\" Speaker diarization has many applications, including speaker adaption for automatic speech recognition and indexing the audio by speaker, which is beneficial for tasks such as multimedia retrieval and summarization.\n\nThough many approaches have been introduced to solve the speaker diarization problem, there has been little analysis of speaker diarization performance other than reporting the diarization error rate. In this work, performed by Berkeley PhD candidate Mary Knox, error analysis was performed in audio-only speaker diarization for the meeting domain using five state-of-the-art speaker diarization systems. There were two main areas of interest. The first was to identify troublesome types of segments, namely, short segments and segments surrounding speaker change points. The results showed that as the segment length increases, the diarization results improve. Also, for all five systems, over 40% of the errors occurred within 0.5 seconds of a speaker change point. The second goal was to investigate how often systems make errors at the same time. The majority of these shared errors occur during overlapping speech, or when multiple people are speaking at the same time.\n\nThe technical results of this work are important for the speaker diarization community since they clearly identify where state-of-the-art speaker diarization systems struggle. These results were published and presented at Interspeech 2012 in Portland, Oregon. The work was performed at Idiap, a Swiss research institute with advanced research in speaker diarization (among other areas). The tools used to perform the analysis are available online at www.icsi.berkeley.edu/_knoxm/dia. \n\nFinally, an important goal of this work was to broaden the experience of the graduate student working on this project. This was accomplished in two ways: first she became acquainted with work at another institution that was particularly strong in this scientific area, and particularly one in another country. And secondly, she significantly increased her familiarity with a number of diarization systems that have been developed around the world. Achieving these educational goals were also important for the success of the project.\n\n \n\n\t\t\t\t\tLast Modified: 10/17/2012\n\n\t\t\t\t\tSubmitted by: Nelson Morgan"
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "awd_id": "1119830",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RIG:   Improving data quality and discovery tools in high-throughput microscopy",
+ "cfda_num": "47.074",
+ "org_code": "08080000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anne Maglia",
+ "awd_eff_date": "2011-12-15",
+ "awd_exp_date": "2014-06-30",
+ "tot_intn_awd_amt": 195574.0,
+ "awd_amount": 195574.0,
+ "awd_min_amd_letter_date": "2011-12-06",
+ "awd_max_amd_letter_date": "2014-07-24",
+ "awd_abstract_narration": "The use of automated microscopy is increasing rapidly in academic biological research (as well as pharmaceutical and biotechnology industries). Image analysis software can extract information-rich cellular image data from microscopy images and eliminate tedious visual inspection. However, a significant challenge has been the lack of metrics and user-friendly software tools to explore the data and identify low-quality images that limit an experiment's value. This project will create tools to address these challenges and test them in the context of two biological experiments. This project will develop and characterize metrics of image quality and the final software will be distributed via the CellProfiler project as a validated, versatile, open-source toolbox of algorithms and metrics readily usable by biologists. \r\n\r\nThe research will improve data quality in a wide variety of biological experiments addressing important questions in basic science. Furthermore, the education and outreach efforts will increase the number of scientists trained in image analysis at the interface of biology and computer science, will increase the number of students interested in science, and will broaden the participation of people from under-represented minority groups in science, especially at the highest levels of achievement.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "BIO",
+ "org_dir_long_name": "Directorate for Biological Sciences",
+ "div_abbr": "DBI",
+ "org_div_long_name": "Division of Biological Infrastructure",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Mark-Anthony",
+   "pi_last_name": "Bray",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mark-Anthony Bray",
+   "pi_email_addr": "braymp@gmail.com",
+   "nsf_id": "000584316",
+   "pi_start_date": "2011-12-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Broad Institute, Inc.",
+  "inst_street_address": "415 MAIN ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6177147000",
+  "inst_zip_code": "021421027",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "THE BROAD INSTITUTE, INC",
+  "org_prnt_uei_num": "H5G9NWEFHXN4",
+  "org_uei_num": "H5G9NWEFHXN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Broad Institute, Inc.",
+  "perf_str_addr": "415 MAIN ST",
+  "perf_city_name": "CAMBRIDGE",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021421027",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "116500",
+   "pgm_ele_name": "ADVANCES IN BIO INFORMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1165",
+   "pgm_ref_txt": "ADVANCES IN BIO INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "1228",
+   "pgm_ref_txt": "MINORITY INVOLVEMENT -- BIO"
+  },
+  {
+   "pgm_ref_code": "7692",
+   "pgm_ref_txt": "RIG/CAA"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 195574.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>High-content imaging (HCI), the use of automated microscopy to collect measurements from cellular images on a large scale, is a fairly recent innovation in biological research. This approach has proven to be invaluable in uncovering the processes that maintain both normal and pathological biological function. Hundreds of observable features (i.e., the cellular phenotype) can be collected quickly in an automated and robust fashion, permitting quantification of cellular changes arising from chemical or genetic treatments.</p>\n<p>However, the statistical robustness of this approach is only as good as the quality of the image data used as input. This concern affects HCI in general, but it is especially significant in two areas: (1) in <em>signature-based experiments</em>, where fluorescent probes are used to quantify a broad spectrum of subtle morphological responses in each sample; and (2) in <em>time-lapse imaging</em>, where dynamic cellular behavior is observed over time. In both instances, low-quality data can irretrievably corrupt the downstream analysis: even minor artifacts can overwhelm the fine details needed to detect differences in the former case, and degrade the ability to track a cell accurately in the latter. This Research Initiation Grant (RIG) focused on the need to develop specialized metrics to detect problematic images, and provide them to researchers in the form of readily-accessible, easy-to-use software.</p>\n<p>During the duration of the RIG, a suite of metrics were implemented and evaluated for the purpose of HCI quality assessment. The measures were tailored towards the most common image aberrations, out-of-focus images and saturated debris, and ranged from evaluating image intensity statistics, to measuring pixel-to-pixel correlations, among others. The assessment was performed on a test set of synthetic HCI images (to better control and examine the impact of cell count) and actual HCI image data. A metric summarizing the image power spectrum scored the highest for out-of-focus detection, combining robust performance across cell counts with low variance, whereas the percentage of pixels at the maximal intensity value performed well for saturation artifacts. These metrics were incorporated into a signature extraction experiment, with a resultant improvement in the downstream data analysis. These measures are now included as part of the CellProfiler biological image analysis and CellProfiler Analyst data exploration packages; both are freely-available, open-source programs widely used in the biological community, enabling broad dissemination of the findings of this RIG aim. The results were also published in the <em>Journal of Biomolecular Screening</em>, which is widely read by the HCI community. Moreover, these findings also constitute important sections of a chapter contributed to the <em>Assay Guidance Manual</em>, a public resource published by the NIH, as well as an upcoming chapter in <em>Methods of Molecular Biology</em>, which publishes step-by-step protocols for wider use.</p>\n<p>For the time-lapse research aim, a new set of metrics was developed for identifying problems in cell tracking. By treating the tracked cell trajectory as a network graph, heuristics from graph theory could be employed to detect tracking aberrations. An entirely new software tool, CellProfiler Tracer, was developed and implemented to provide these metrics to biologists, and is included as part of CellProfiler Analyst for broader dissemination and use. The Tracer package presents the user with a set of interactive plots familiar to those working in the time-lapse domain, and allows for selection of individual points, viewing the associated cells in their temporal context, color-coding the display based on cellular measurements, and removal of points based on quality criteria. The tool was debuted at MICCAI 2014, a prominent conference for those in the medical c...",
+  "por_txt_cntn": "\nHigh-content imaging (HCI), the use of automated microscopy to collect measurements from cellular images on a large scale, is a fairly recent innovation in biological research. This approach has proven to be invaluable in uncovering the processes that maintain both normal and pathological biological function. Hundreds of observable features (i.e., the cellular phenotype) can be collected quickly in an automated and robust fashion, permitting quantification of cellular changes arising from chemical or genetic treatments.\n\nHowever, the statistical robustness of this approach is only as good as the quality of the image data used as input. This concern affects HCI in general, but it is especially significant in two areas: (1) in signature-based experiments, where fluorescent probes are used to quantify a broad spectrum of subtle morphological responses in each sample; and (2) in time-lapse imaging, where dynamic cellular behavior is observed over time. In both instances, low-quality data can irretrievably corrupt the downstream analysis: even minor artifacts can overwhelm the fine details needed to detect differences in the former case, and degrade the ability to track a cell accurately in the latter. This Research Initiation Grant (RIG) focused on the need to develop specialized metrics to detect problematic images, and provide them to researchers in the form of readily-accessible, easy-to-use software.\n\nDuring the duration of the RIG, a suite of metrics were implemented and evaluated for the purpose of HCI quality assessment. The measures were tailored towards the most common image aberrations, out-of-focus images and saturated debris, and ranged from evaluating image intensity statistics, to measuring pixel-to-pixel correlations, among others. The assessment was performed on a test set of synthetic HCI images (to better control and examine the impact of cell count) and actual HCI image data. A metric summarizing the image power spectrum scored the highest for out-of-focus detection, combining robust performance across cell counts with low variance, whereas the percentage of pixels at the maximal intensity value performed well for saturation artifacts. These metrics were incorporated into a signature extraction experiment, with a resultant improvement in the downstream data analysis. These measures are now included as part of the CellProfiler biological image analysis and CellProfiler Analyst data exploration packages; both are freely-available, open-source programs widely used in the biological community, enabling broad dissemination of the findings of this RIG aim. The results were also published in the Journal of Biomolecular Screening, which is widely read by the HCI community. Moreover, these findings also constitute important sections of a chapter contributed to the Assay Guidance Manual, a public resource published by the NIH, as well as an upcoming chapter in Methods of Molecular Biology, which publishes step-by-step protocols for wider use.\n\nFor the time-lapse research aim, a new set of metrics was developed for identifying problems in cell tracking. By treating the tracked cell trajectory as a network graph, heuristics from graph theory could be employed to detect tracking aberrations. An entirely new software tool, CellProfiler Tracer, was developed and implemented to provide these metrics to biologists, and is included as part of CellProfiler Analyst for broader dissemination and use. The Tracer package presents the user with a set of interactive plots familiar to those working in the time-lapse domain, and allows for selection of individual points, viewing the associated cells in their temporal context, color-coding the display based on cellular measurements, and removal of points based on quality criteria. The tool was debuted at MICCAI 2014, a prominent conference for those in the medical computing domain, and will be soon be submitted for open-access publication to the journal Bioinformatics.\n\nAs part of the RIG..."
+ }
+}

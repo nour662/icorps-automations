@@ -1,0 +1,117 @@
+{
+ "awd_id": "1107967",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Fellowship Award",
+ "awd_titl_txt": "EAPSI:Accelerating an Algorithm for Particle Tracking in the Human Lungs using Many-core Processors",
+ "cfda_num": "47.079",
+ "org_code": "01090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anne Emig",
+ "awd_eff_date": "2011-06-01",
+ "awd_exp_date": "2012-05-31",
+ "tot_intn_awd_amt": 5700.0,
+ "awd_amount": 5700.0,
+ "awd_min_amd_letter_date": "2011-05-13",
+ "awd_max_amd_letter_date": "2011-05-13",
+ "awd_abstract_narration": null,
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "O/D",
+ "org_dir_long_name": "Office Of The Director",
+ "div_abbr": "OISE",
+ "org_div_long_name": "Office of International Science and Engineering",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Nathan",
+   "pi_last_name": "Ellingwood",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "Nathan D Ellingwood",
+   "pi_email_addr": "",
+   "nsf_id": "000579133",
+   "pi_start_date": "2011-05-13",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Ellingwood              Nathan         D",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "Iowa City",
+  "inst_state_code": "IA",
+  "inst_state_name": "Iowa",
+  "inst_phone_num": "",
+  "inst_zip_code": "522462112",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "IA01",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "Ellingwood              Nathan         D",
+  "perf_str_addr": "",
+  "perf_city_name": "Iowa City",
+  "perf_st_code": "IA",
+  "perf_st_name": "Iowa",
+  "perf_zip_code": "522462112",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "IA01",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "731600",
+   "pgm_ele_name": "EAPSI"
+  },
+  {
+   "pgm_ele_code": "915000",
+   "pgm_ele_name": "EPSCoR Co-Funding"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5924",
+   "pgm_ref_txt": "TAIWAN"
+  },
+  {
+   "pgm_ref_code": "5978",
+   "pgm_ref_txt": "EAST ASIA AND PACIFIC PROGRAM"
+  },
+  {
+   "pgm_ref_code": "7316",
+   "pgm_ref_txt": "EAPSI"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 5700.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span style=\"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;\" lang=\"EN-HK\">My research primarily involves developing and accelerating particle tracking&nbsp; lgorithms for aerosols in a computed tomography (CT) based subject specific human airway tree. As mentioned in my EAPSI application, particle tracking studies are<span style=\"color: black;\">&nbsp; mportant to aid in development of</span> effective drug treatment methods, characterizing hazards of exposure to particulate matter, and assessing dosimetry for medicinal&nbsp; treatments. Due to asymmetry of the human airway tree and heterogeneity of ventilation, it is essential to understand the non-uniformity of particle distribution in the various regions of the lungs. The ability to predict and determine site-specific and lobar deposition efficiency in the airway tree can aid in the development of more efficient and cost effective pharmaceutical aerosols, as well as administration techniques. The particle tracking code developed by our research group successfully predicts lobar deposition of aerosol particles in 7 generations (branchings) of the airway tree, but requires several hours to complete a simulation. However, the algorithm falls into the Single Instruction on Multiple Data (SIMD) parallelization philosophy, making it a well suited candidate for Graphic Processing Unit (GPU)&nbsp; omputation.</span><span style=\"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; mso-ansi-language: EN-US;\">The use of GPU for computation has greatly increased in popularity over the last few years. These devices (also known as video cards), previously designed to&nbsp; ccelerate rendering computations for visual display in computers and video game&nbsp; onsoles, are well suited to performing large scale computations using the SIMD&nbsp; arallelization philosophy.</span></p>\n<p class=\"Standard\" style=\"text-align: justify;\"><span style=\"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;\" lang=\"EN-HK\">I went to Taiwan to study at the National Center for High-performance Computing (NCHC) with Dr. Matthew Smith and fellow researchers with expertise in GPU and&nbsp; omputational fluid dynamics. My primary research objective while in Taiwan was to employ GPU, together with SIMD friendly algorithms, to accelerate the computations of aerosol flows through lung airways. We also introduced a new concept through the replacement of discrete aerosol particles with a continuous aerosol density function, which is solved using a Finite Volume Method and accelerated using GPU. </span></p>\n<p class=\"Standard\" style=\"text-align: justify;\"><span style=\"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;\" lang=\"EN-HK\">My time in Taiwan was extremely productive and successful. With the new continuous aerosol density code accelerated on GPU, I achieved a speedup of 68 times when compared to the computation on a single thread on a single CPU. </span><span style=\"font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; mso-ansi-language: EN-US;\">One significant consequence of this was the ability to integrate these codes with augmented reality. This allows for interactive visualization of the results, allowing a user to view the results in real time from any vantage point, as the equation is solved in real time and viewed through the use of a webcam and specific &lsquo;marker&rsquo; patterns recognized by the augmented reality software and displayed on the computer monitor. This resulted in a simple demonstration code that has been popular in outreach events our research group at Iowa has participated in. In addition to studying GPU programming, numerical methods suitable for GPU, and data visualization software used for augmented reality, I also learned how to assemble computer workstations suitable for GPU computing research and multiple GPU programming methods. </span></p>\n<p class=\"Standard\" style=\"text-align: justify;\"><span sty...",
+  "por_txt_cntn": "\nMy research primarily involves developing and accelerating particle tracking  lgorithms for aerosols in a computed tomography (CT) based subject specific human airway tree. As mentioned in my EAPSI application, particle tracking studies are  mportant to aid in development of effective drug treatment methods, characterizing hazards of exposure to particulate matter, and assessing dosimetry for medicinal  treatments. Due to asymmetry of the human airway tree and heterogeneity of ventilation, it is essential to understand the non-uniformity of particle distribution in the various regions of the lungs. The ability to predict and determine site-specific and lobar deposition efficiency in the airway tree can aid in the development of more efficient and cost effective pharmaceutical aerosols, as well as administration techniques. The particle tracking code developed by our research group successfully predicts lobar deposition of aerosol particles in 7 generations (branchings) of the airway tree, but requires several hours to complete a simulation. However, the algorithm falls into the Single Instruction on Multiple Data (SIMD) parallelization philosophy, making it a well suited candidate for Graphic Processing Unit (GPU)  omputation.The use of GPU for computation has greatly increased in popularity over the last few years. These devices (also known as video cards), previously designed to  ccelerate rendering computations for visual display in computers and video game  onsoles, are well suited to performing large scale computations using the SIMD  arallelization philosophy.\nI went to Taiwan to study at the National Center for High-performance Computing (NCHC) with Dr. Matthew Smith and fellow researchers with expertise in GPU and  omputational fluid dynamics. My primary research objective while in Taiwan was to employ GPU, together with SIMD friendly algorithms, to accelerate the computations of aerosol flows through lung airways. We also introduced a new concept through the replacement of discrete aerosol particles with a continuous aerosol density function, which is solved using a Finite Volume Method and accelerated using GPU. \nMy time in Taiwan was extremely productive and successful. With the new continuous aerosol density code accelerated on GPU, I achieved a speedup of 68 times when compared to the computation on a single thread on a single CPU. One significant consequence of this was the ability to integrate these codes with augmented reality. This allows for interactive visualization of the results, allowing a user to view the results in real time from any vantage point, as the equation is solved in real time and viewed through the use of a webcam and specific \u00e6marker\u00c6 patterns recognized by the augmented reality software and displayed on the computer monitor. This resulted in a simple demonstration code that has been popular in outreach events our research group at Iowa has participated in. In addition to studying GPU programming, numerical methods suitable for GPU, and data visualization software used for augmented reality, I also learned how to assemble computer workstations suitable for GPU computing research and multiple GPU programming methods. \nSince returning to Iowa, I successfully redesigned my original particle tracking code for GPU acceleration using the knowledge I gained while in Taiwan. For a case of 26,000 aerosol particles, I have demonstrated significant speedup from nearly 5 hours on a single CPU to 21 minutes on a single Nvidia GTX 560Ti GPU and continue to work on optimizing the performance. I have also participated in several outreach opportunities since returning from Taiwan. Our research group has hosted several visiting groups where I have contributed presentations of the research I completed while in Taiwan. The sample AR code provides one of the most intriguing demonstration products for visitors. Our engineering advisory board, new faculty candidates, and students in a graduate CFD course have bee..."
+ }
+}

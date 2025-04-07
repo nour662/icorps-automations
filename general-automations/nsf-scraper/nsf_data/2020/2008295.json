@@ -1,0 +1,117 @@
+{
+ "awd_id": "2008295",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "III: Small: Bringing database query optimization to data intensive applications",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032927347",
+ "po_email": "sspengle@nsf.gov",
+ "po_sign_block_name": "Sylvia Spengler",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 500000.0,
+ "awd_min_amd_letter_date": "2020-08-19",
+ "awd_max_amd_letter_date": "2020-10-19",
+ "awd_abstract_narration": "Modern database management systems (DBMSs) employ sophisticated query optimization techniques that enable the generation of efficient execution plans for queries over very large data sets. A variety of other applications also process large data sets, but cannot leverage database-style query optimization for their code. In this project, an open-source programming language compiler will be enhanced with database-style query optimization capabilities. Data-intensive parts of ordinary programs will be executed in chunks using different execution plans. Based on feedback from earlier chunks, alternative plans might be used for later chunks. The compiler could be used for a variety of data-intensive applications, allowing all of them to benefit from this class of performance optimizations.\r\n\r\nExisting query optimization techniques for in-memory processing are limited in several ways: (a) they are not extensively used outside relational database management systems; (b) they are limited to a handful of relational operators, and do not cover access patterns or dynamically-defined functions found in other data-analysis scenarios; (c) they treat the underlying compiler as a black-box, with unpredictable performance depending on which compiler is used with which compiler settings; (d) they often bake-in design choices that may be appropriate for usage within a particular DBMS, but not for more general cases. This project directly addresses these challenges by optimizing data-analysis style queries expressed as tight loops in a conventional imperative programming language. This project will extend an open-source compiler (GraalVM/Truffle) with both known and novel optimization techniques that will automatically be applied whenever the compiler identifies that a loop is time-consuming. Integration into the compiler allows many applications to efficiently process large data sets. The system will support dynamic queries involving user-defined functions and arbitrary access patterns. Database-style and compiler optimizations will co-exist in one system, eliminating some of the mismatches that happen when the compiler is used as a black-box by a DBMS. The system will tune a variety of run-time execution parameters automatically, with minimal guidance from the programmer. The extended compiler will be validated by developing an interactive data exploration application that will allow users to dynamically specify and analyze a variety of large in-memory datasets.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Kenneth",
+   "pi_last_name": "Ross",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Kenneth A Ross",
+   "pi_email_addr": "kar@cs.columbia.edu",
+   "nsf_id": "000446976",
+   "pi_start_date": "2020-08-19",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Eugene",
+   "pi_last_name": "Wu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Eugene Wu",
+   "pi_email_addr": "ew2493@columbia.edu",
+   "nsf_id": "000690634",
+   "pi_start_date": "2020-08-19",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Columbia University",
+  "inst_street_address": "615 W 131ST ST",
+  "inst_street_address_2": "MC 8741",
+  "inst_city_name": "NEW YORK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "2128546851",
+  "inst_zip_code": "100277922",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "NY13",
+  "org_lgl_bus_name": "THE TRUSTEES OF COLUMBIA UNIVERSITY IN THE CITY OF NEW YORK",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "F4N1QNPB95M4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Columbia University",
+  "perf_str_addr": "2960 Broadway",
+  "perf_city_name": "New York",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "100276902",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "NY13",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736400",
+   "pgm_ele_name": "Info Integration & Informatics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 500000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-63ffdb5f-7fff-d2d6-af2d-bbcf380c0f22\"> </span></p>\r\n<p dir=\"ltr\">Matrix multiplication is the cornerstone of modern machine learning, and high performance libraries such as BLAS have been designed for machine learning use cases. &nbsp; Surprisingly, many types of database queries that form the basis of data analytics also resemble matrix multiplication, yet they do not benefit from similar types of performance optimizations. &nbsp; This causes many database use cases to perform much slower than necessary. &nbsp;In addition, many machine learning applications first rely on pre-processing to cleaning, analyze, and extract features from data before applying machine learning operations. &nbsp; While the database can perform the pre-processing steps, data is typically exported to a custom library for the machine learning steps. &nbsp;This incurs expensive data export costs. &nbsp; In all of these cases, there is potential to speed up the end-to-end process and reduce inefficiencies. &nbsp;</p>\r\n<p dir=\"ltr\">&nbsp;</p>\r\n<p dir=\"ltr\">The key challenge is that matrix multiply in machine learning follows rigid patterns, while database queries present more variations that are not applicable to existing matrix multiplication libraries. &nbsp; The goal of this project is to enable the database management system to benefit from matrix multiply optimizations for database queries. &nbsp; To this end, the major outcomes of this project included:</p>\r\n<p dir=\"ltr\">&nbsp;</p>\r\n<p dir=\"ltr\">* &nbsp;Techniques to efficiently compile queries that are matrix multiply-like into very fast custom kernels and execute them -- all within the database management system. &nbsp;</p>\r\n<p dir=\"ltr\">* As a result of the compilation techniques, a broad class of use cases, including machine learning applications that mix matrix multiply and database operations, can be executed efficiently within the database management system. &nbsp;</p>\r\n<p dir=\"ltr\">* Tools and systems that train important machine learning models like gradient boosted decision trees within any fast database management system faster and at larger scale than existing machine learning libraries.</p>\r\n<p dir=\"ltr\">* Opportunities for graduate and undergraduate students to participate in research projects.</p>\r\n<p dir=\"ltr\"><span>The publications, methodologies, tools, and techniques we have developed for this project are all publicly available at our project website:</span></p>\r\n<p>https://cudbg.github.io/NSFQueryOpt4Apps/</p>\r\n<p dir=\"ltr\">&nbsp;</p>\r\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 12/15/2024<br>\nModified by: Kenneth&nbsp;A&nbsp;Ross</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\n \r\n\n\nMatrix multiplication is the cornerstone of modern machine learning, and high performance libraries such as BLAS have been designed for machine learning use cases.  Surprisingly, many types of database queries that form the basis of data analytics also resemble matrix multiplication, yet they do not benefit from similar types of performance optimizations.  This causes many database use cases to perform much slower than necessary. In addition, many machine learning applications first rely on pre-processing to cleaning, analyze, and extract features from data before applying machine learning operations.  While the database can perform the pre-processing steps, data is typically exported to a custom library for the machine learning steps. This incurs expensive data export costs.  In all of these cases, there is potential to speed up the end-to-end process and reduce inefficiencies. \r\n\n\n\r\n\n\nThe key challenge is that matrix multiply in machine learning follows rigid patterns, while database queries present more variations that are not applicable to existing matrix multiplication libraries.  The goal of this project is to enable the database management system to benefit from matrix multiply optimizations for database queries.  To this end, the major outcomes of this project included:\r\n\n\n\r\n\n\n* Techniques to efficiently compile queries that are matrix multiply-like into very fast custom kernels and execute them -- all within the database management system. \r\n\n\n* As a result of the compilation techniques, a broad class of use cases, including machine learning applications that mix matrix multiply and database operations, can be executed efficiently within the database management system. \r\n\n\n* Tools and systems that train important machine learning models like gradient boosted decision trees within any fast database management system faster and at larger scale than existing machine learning libraries.\r\n\n\n* Opportunities for graduate and undergraduate students to participate in research projects.\r\n\n\nThe publications, methodologies, tools, and techniques we have developed for this project are all publicly available at our project website:\r\n\n\nhttps://cudbg.github.io/NSFQueryOpt4Apps/\r\n\n\n\r\n\n\n\t\t\t\t\tLast Modified: 12/15/2024\n\n\t\t\t\t\tSubmitted by: KennethARoss\n"
+ }
+}

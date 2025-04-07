@@ -1,0 +1,117 @@
+{
+ "awd_id": "1717532",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Enabling and Analyzing Accuracy-aware Reliable GPU Computing",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Yuanyuan Yang",
+ "awd_eff_date": "2017-08-01",
+ "awd_exp_date": "2021-07-31",
+ "tot_intn_awd_amt": 449999.0,
+ "awd_amount": 449999.0,
+ "awd_min_amd_letter_date": "2017-07-07",
+ "awd_max_amd_letter_date": "2017-07-07",
+ "awd_abstract_narration": "Graphics Processing Units (GPUs) are becoming the default choice for general-purpose hardware acceleration because of their ability to enable orders of magnitude faster and energy-efficient execution for large-scale high-performance computing applications. Since the majority of such applications executing on large-scale HPC systems are long-running, it is very important that they cope with a variety of hardware- and software-based faults. Many prior works have shown that real HPC systems are vulnerable to soft errors. An absence of essential protection and checkpointing mechanisms can lead to lower scientific productivity, operational efficiency, and even monetary loss. However, these protection mechanisms (e.g., error correction codes) are themselves not free -- they incur very high performance, energy, and area costs.\u00a0\r\n\r\nThis project takes a holistic approach to explore the avenues to reduce these protection overheads by taking advantage of the fact that all errors do not lead to an unacceptable loss in the accuracy of application output. Prior results show that GPGPU applications are amenable to such accuracy-aware optimizations. In order to enable these optimizations, this project will address three major research questions: a) What hardware/software support and tools are necessary to determine which instructions are not vulnerable to soft errors, b) Based on this analysis, which hardware component(s) need not be protected and for how long, while not sacrificing application quality beyond the user's quality requirements, and c) What optimizations in terms of resource management and scheduling are necessary to make low-overhead but reliable computation more effective and efficient. These questions will be explored via a variety of GPGPU applications emerging from the areas of high-performance computing (HPC), big-data analytics, machine learning, and graphics. If successful, this project will generate several novel research insights that will play an important role in enabling low-cost reliable GPU computing. The results of this project will be integrated into the existing and new undergraduate and graduate courses on computer architecture and reliability, which will facilitate in training students, including women and students from diverse backgrounds and minority groups.\u00a0",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Adwait",
+   "pi_last_name": "Jog",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Adwait Jog",
+   "pi_email_addr": "ajog@virginia.edu",
+   "nsf_id": "000702344",
+   "pi_start_date": "2017-07-07",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Evgenia",
+   "pi_last_name": "Smirni",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Evgenia Smirni",
+   "pi_email_addr": "esmirni@cs.wm.edu",
+   "nsf_id": "000346140",
+   "pi_start_date": "2017-07-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "College of William and Mary",
+  "inst_street_address": "1314 S MOUNT VERNON AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "WILLIAMSBURG",
+  "inst_state_code": "VA",
+  "inst_state_name": "Virginia",
+  "inst_phone_num": "7572213965",
+  "inst_zip_code": "23185",
+  "inst_country_name": "United States",
+  "cong_dist_code": "08",
+  "st_cong_dist_code": "VA08",
+  "org_lgl_bus_name": "COLLEGE OF WILLIAM AND MARY",
+  "org_prnt_uei_num": "EVWJPCY6AD97",
+  "org_uei_num": "EVWJPCY6AD97"
+ },
+ "perf_inst": {
+  "perf_inst_name": "College of William and Mary",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "VA",
+  "perf_st_name": "Virginia",
+  "perf_zip_code": "231878795",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "VA01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7941",
+   "pgm_ref_txt": "COMPUTER ARCHITECTURE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 449999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>&nbsp;</p>\n<div>Intellectual Merit</div>\n<div><span>&nbsp;</span></div>\n<div>Graphics Processing Units (GPUs) have become an important part of almost all computing systems. Especially in the data centers, GPUs execute large-scale long-running jobs. Therefore, it is important that GPUs cope with a variety of hardware- and software-based faults. To address this challenging problem, this project took a holistic approach of characterizing, estimating, and improving the reliability of GPUs. Our initial work focused on characterizing accuracy-aware resilience of GPGPU applications, which appeared at CCGrid 2020. In our SIGMETRICS 2021, TC 2021, and MICRO 2018 papers, we developed fast and accurate techniques to estimate resilience and hence made the reliability analysis of GPGPU applications more practical. Based on these insights and learnings, we also developed low-cost software and hardware mechanisms to improve the reliability of GPUs. The software mechanisms appeared at ICSE 2021 and the hardware mechanisms appeared at DSN 2021. Interestingly, we also found that some of the insights (e.g., data replication management for improving reliability) also improve GPU security (another dimension of GPU robustness). These GPU security works appeared at HPCA 2020 and HPCA 2018.</div>\n<div>&nbsp;</div>\n<div>Broader Impacts</div>\n<div><span>&nbsp;</span></div>\n<div>Our work developed several novel techniques, which we believe can be useful for developing reliable and robust systems. Almost all of our work is published in top-tier architecture, systems, and reliability venues. This project involved several Ph.D. students (including three women), out of which two students graduated and joined industry. On the topics related to this grant, PI Jog and Smirni gave talks at several places (e.g., UC Merced, Monash U.). In terms of outreach, Jog co-chaired the GPGPU workshop twice. co-PI Smirni served as program co-chair for DSN 2017, ICPE 2017, HPDC 2019, SRDS 2019, and as Cloud Computing and Data Center chair for ICDCS 2021. Smirni gave two keynote talks, at ICPE 2019 and QEST 2020.</div><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/01/2021<br>\n\t\t\t\t\tModified by: Adwait&nbsp;Jog</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \nIntellectual Merit\n \nGraphics Processing Units (GPUs) have become an important part of almost all computing systems. Especially in the data centers, GPUs execute large-scale long-running jobs. Therefore, it is important that GPUs cope with a variety of hardware- and software-based faults. To address this challenging problem, this project took a holistic approach of characterizing, estimating, and improving the reliability of GPUs. Our initial work focused on characterizing accuracy-aware resilience of GPGPU applications, which appeared at CCGrid 2020. In our SIGMETRICS 2021, TC 2021, and MICRO 2018 papers, we developed fast and accurate techniques to estimate resilience and hence made the reliability analysis of GPGPU applications more practical. Based on these insights and learnings, we also developed low-cost software and hardware mechanisms to improve the reliability of GPUs. The software mechanisms appeared at ICSE 2021 and the hardware mechanisms appeared at DSN 2021. Interestingly, we also found that some of the insights (e.g., data replication management for improving reliability) also improve GPU security (another dimension of GPU robustness). These GPU security works appeared at HPCA 2020 and HPCA 2018.\n \nBroader Impacts\n \nOur work developed several novel techniques, which we believe can be useful for developing reliable and robust systems. Almost all of our work is published in top-tier architecture, systems, and reliability venues. This project involved several Ph.D. students (including three women), out of which two students graduated and joined industry. On the topics related to this grant, PI Jog and Smirni gave talks at several places (e.g., UC Merced, Monash U.). In terms of outreach, Jog co-chaired the GPGPU workshop twice. co-PI Smirni served as program co-chair for DSN 2017, ICPE 2017, HPDC 2019, SRDS 2019, and as Cloud Computing and Data Center chair for ICDCS 2021. Smirni gave two keynote talks, at ICPE 2019 and QEST 2020.\n\n\t\t\t\t\tLast Modified: 10/01/2021\n\n\t\t\t\t\tSubmitted by: Adwait Jog"
+ }
+}

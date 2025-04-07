@@ -1,0 +1,109 @@
+{
+ "awd_id": "1662233",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Stability and Optimality Properties of Sequential Action Control for Nonlinear and Hybrid Systems",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Harry Dankowicz",
+ "awd_eff_date": "2017-08-01",
+ "awd_exp_date": "2021-07-31",
+ "tot_intn_awd_amt": 375000.0,
+ "awd_amount": 375000.0,
+ "awd_min_amd_letter_date": "2017-06-12",
+ "awd_max_amd_letter_date": "2017-06-12",
+ "awd_abstract_narration": "This project will greatly extend a powerful new method for control of robots and vehicles, called sequential action control (SAC). One widely used approach to controlling complicated systems is to solve a real-time numerical optimization problem for the magnitude of the next few control pulses, where the all the pulses have a constant width. However even with powerful processors it can be difficult to compute these values fast enough. SAC addresses this challenge by instead computing the optimal width and relative start time of the next control pulse. For many problems of interest, this change in control strategy greatly simplifies computation, to the point that infeasible control problems become tractable. SAC allows analytical solutions to some problems, and speeds computations by up to eight orders of magnitude for others. SAC is naturally compatible with common features of modern control design, including hybrid systems that switch discretely between a collection of continuous dynamic behaviors; quantized systems where inputs, states, and outputs may take only a finite set of constant values; and systems with nonlinear dynamics. SAC can be shown to recover the globally optimal control signal in a number of analytically solvable cases. In other representative test cases, the computed SAC input provides performance that is numerically indistinguishable from the optimum. Optimal or near-optimal input signals are of no value if small disturbances cause the system to rapidly diverge from the desired behavior. Therefore practical controllers must also ensure that small disturbances to the controlled system cause only small deviations in the system response -- a property known as stability. This project seeks to rigorously derive SAC performance guarantees for a broad class of systems, as well as to show conditions under which SAC ensures stability. The Darwin humanoid robot will be used as a high-dimensional, nonlinear, hybrid testbed for this research. Control of the Darwin robot may be implemented in the open-source Robot Operating System (ROS), allowing a robust and verifiable SAC distribution for dissemination. The results of this project will enable greatly improved and verifiable control over systems such as rehabilitation robots, assistive devices, rotor vehicles, and driverless cars, using widely available and low-cost computing platforms such as mobile phones. Benefits to society from this project include enhanced safety and performance of these automated infrastructure systems. The project also includes classroom innovation, international collaboration, outreach activities through the Museum of Science and Industry in Chicago, and dissemination of open-source software.\r\n\r\nThe twofold purpose of this project is to develop sequential action control (SAC) into an actionable, near-universal method for synthesizing embedded real-time control as well as to provide foundational results on optimality, stability, and geometry. The method is computationally efficient and scales to high dimensional problems. Moreover, SAC extends naturally to Lie groups, common in applications such as robotics and automation. The project will address three fundamental questions. First, it will identify conditions under which SAC can be applied directly or iteratively to achieve optimal control. Second, it will derive conditions for stability. Third, it will adapt SAC to systems evolving on Lie groups, to achieve global performance for multibody mechanical systems. The broader impacts for this work include outreach, technology transfer to rehabilitation, the development of online courses in dynamics and analysis, and international collaboration. The PI is currently working with the Museum of Science and Industry, and as part of the project the PI, and graduate and undergraduates involved in the PI's laboratory, will participate in a National Robotics Week exhibit in the main rotunda of the museum with an estimated viewership of over ten thousand on-site visitors.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Todd",
+   "pi_last_name": "Murphey",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "Todd D Murphey",
+   "pi_email_addr": "t-murphey@northwestern.edu",
+   "nsf_id": "000485210",
+   "pi_start_date": "2017-06-12",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Northwestern University",
+  "inst_street_address": "633 CLARK ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "EVANSTON",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "3125037955",
+  "inst_zip_code": "602080001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "IL09",
+  "org_lgl_bus_name": "NORTHWESTERN UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "EXZVPWZBLUE8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Northwestern University",
+  "perf_str_addr": "2145 Sheridan Road",
+  "perf_city_name": "Evanston",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "602080837",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": null,
+  "perf_st_cong_dist": "IL",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "756900",
+   "pgm_ele_name": "Dynamics, Control and System D"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "030E",
+   "pgm_ref_txt": "CONTROL SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "034E",
+   "pgm_ref_txt": "Dynamical systems"
+  },
+  {
+   "pgm_ref_code": "8024",
+   "pgm_ref_txt": "Complex Systems"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 375000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p id=\"docs-internal-guid-4eb19305-7fff-cc10-f25a-41cedf96ef2b\" style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\"><span style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">This project developed optimization-based algorithms for making decisions.&nbsp; The goal of the project was to analyze decision-making in autonomous systems, such as robots, by focusing on a small number of decisions that play the most important role in success, rather than trying to optimize over all possible decisions at all possible times.&nbsp; The resulting method, called sequential action control, identifies times at which a new decision could be particularly valuable and optimizes only over those decisions.&nbsp; In most applications this leads to the same results as many of the other optimization-based techniques used during the last several decades, but the developed method can be easily executed in real-time as autonomy interacts with its environment.&nbsp; The method was applied to a variety of simulated and experimental systems, including underwater vehicles and human-machine systems used for rehabilitation.&nbsp; The work was additionally extended to optimization techniques for localization and mapping, an important area in robotics generally and driverless cars specifically.&nbsp; This project achieved of the fastest and most reliable outcomes on a variety of benchmark problems to date.&nbsp; Applications include localization and mapping for driverless cars and human pose tracking using a single camera. &nbsp; This research will enable robots to be more effective both in terms of how they perceive their environments and in terms of how they make decisions as the environment changes.&nbsp;&nbsp;</span></p>\n<p>&nbsp;</p>\n<p style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\"><span style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">This project developed open-source software that is freely available online.&nbsp; These software packages include methods for localization and mapping for robotic systems, autonomous regulation of physical human-machine systems, and fast methods for enabling robotic systems to respond to environmental changes.&nbsp; All of this software is compatible with the Robot Operating System (ROS), one of the standard software settings for deploying robotic systems.&nbsp; Moreover, project research personnel participated in outreach to Chicago-area students in multiple venues, including creating robotic displays at the Museum of Science and Industry during National Robotics Week prior to the COVID-19 pandemic.&nbsp; During the pandemic, personnel created virtual outreach for middle school students, engaging thousands of students. </span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/30/2021<br>\n\t\t\t\t\tModified by: Todd&nbsp;D&nbsp;Murphey</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "This project developed optimization-based algorithms for making decisions.  The goal of the project was to analyze decision-making in autonomous systems, such as robots, by focusing on a small number of decisions that play the most important role in success, rather than trying to optimize over all possible decisions at all possible times.  The resulting method, called sequential action control, identifies times at which a new decision could be particularly valuable and optimizes only over those decisions.  In most applications this leads to the same results as many of the other optimization-based techniques used during the last several decades, but the developed method can be easily executed in real-time as autonomy interacts with its environment.  The method was applied to a variety of simulated and experimental systems, including underwater vehicles and human-machine systems used for rehabilitation.  The work was additionally extended to optimization techniques for localization and mapping, an important area in robotics generally and driverless cars specifically.  This project achieved of the fastest and most reliable outcomes on a variety of benchmark problems to date.  Applications include localization and mapping for driverless cars and human pose tracking using a single camera.   This research will enable robots to be more effective both in terms of how they perceive their environments and in terms of how they make decisions as the environment changes.  \n\n \nThis project developed open-source software that is freely available online.  These software packages include methods for localization and mapping for robotic systems, autonomous regulation of physical human-machine systems, and fast methods for enabling robotic systems to respond to environmental changes.  All of this software is compatible with the Robot Operating System (ROS), one of the standard software settings for deploying robotic systems.  Moreover, project research personnel participated in outreach to Chicago-area students in multiple venues, including creating robotic displays at the Museum of Science and Industry during National Robotics Week prior to the COVID-19 pandemic.  During the pandemic, personnel created virtual outreach for middle school students, engaging thousands of students. \n\n\t\t\t\t\tLast Modified: 09/30/2021\n\n\t\t\t\t\tSubmitted by: Todd D Murphey"
+ }
+}

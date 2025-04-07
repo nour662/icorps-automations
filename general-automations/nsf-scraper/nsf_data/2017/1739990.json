@@ -1,0 +1,101 @@
+{
+ "awd_id": "1739990",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CPS: Small: A Convex Framework for Control of Interconnected Systems over Delayed Networks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032922981",
+ "po_email": "pregalia@nsf.gov",
+ "po_sign_block_name": "Phillip Regalia",
+ "awd_eff_date": "2017-09-15",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 304707.0,
+ "awd_amount": 304707.0,
+ "awd_min_amd_letter_date": "2017-09-11",
+ "awd_max_amd_letter_date": "2017-09-11",
+ "awd_abstract_narration": "Recent years have seen an explosion in the use of cellular and wifi networks to deploy fleets of semi-autonomous physical systems, including unmanned aerial vehicles (UAVs), self-driving vehicles, and weather stations to perform tasks such as package delivery, crop harvesting, and weather prediction. The use of cellular and wifi networks has dramatically decreased the cost, energy, and maintenance associated with these forms of embedded technology, but has also added new challenges in the form of delay, packet drops, and loss of signal. Because of these new challenges, and because of our limited understanding of how unreliable communication affects performance, the current protocols for regulating physical systems over wireless networks are slow, inefficient, and potentially unstable. In this project we develop a new computational framework for designing provably fast, efficient and safe protocols for the control of fleets of semi-autonomous physical systems. \r\n\r\nThe systems considered in this project are dynamic, defined by coupled ordinary differential equations, and connected by feedback to a controller, with a feedback interconnection which has multiple static delays, multiple time-varying delays, or is sampled at discrete times. For these systems, we would like to design optimal and robust feedback controllers assuming a limited number of sensor measurements are available. Specifically, we seek to design a class of algorithms which are computationally efficient, which scale to large numbers of subsystems, and which, given models of the dynamics, communication links, and uncertainty, will return a controller which is provably stable, robust to model uncertainty, and provably optimal in the relevant metric of performance. To accomplish this task, we leverage a new duality result which allows the problem of controller synthesis for infinite-dimensional systems to be convexified. This result allows the problem of optimal and robust dynamic output-feedback controller synthesis to be reformulated as feasibility of a set of convex linear operator inequalities. We then use semidefinite programming to parametrize the set of feasible operators and thereby test feasibility of the inequalities with little to no conservatism. In a similar manner, estimator design and optimal controller synthesis are recast as semidefinite programming problems and used to solve the problems of sampled-data and systems with input delay. The algorithms will be scalable to at least 20 states and the controllers will be field-tested on a fleet of wheeled robotic vehicles.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Matthew",
+   "pi_last_name": "Peet",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Matthew Peet",
+   "pi_email_addr": "mpeet@asu.edu",
+   "nsf_id": "000511753",
+   "pi_start_date": "2017-09-11",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Arizona State University",
+  "inst_street_address": "660 S MILL AVENUE STE 204",
+  "inst_street_address_2": "",
+  "inst_city_name": "TEMPE",
+  "inst_state_code": "AZ",
+  "inst_state_name": "Arizona",
+  "inst_phone_num": "4809655479",
+  "inst_zip_code": "852813670",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "AZ04",
+  "org_lgl_bus_name": "ARIZONA STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NTLHJXM55KZ6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Arizona State University",
+  "perf_str_addr": "",
+  "perf_city_name": "Tempe",
+  "perf_st_code": "AZ",
+  "perf_st_name": "Arizona",
+  "perf_zip_code": "852876106",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "AZ04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "791800",
+   "pgm_ele_name": "CPS-Cyber-Physical Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 304707.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Recent years have seen an explosion in the use of cellular and wifi networks to deploy fleets of semi-autonomous physical systems, including drones, EV charging stations, smart homes, and decentralized power grids. The use of cellular and wifi networks has dramatically decreased the cost, energy, and maintenance associated with these forms of embedded technology, but has also added new challenges in the form of delay, packet drops, and loss of signal. The classical approach to modelling communication in such systems uses a representation of the information flowing through the channel. However, such an approach couples the flow in the channel and the motion of the physical system in a way which varies with the structure of the communication network. As a result, current methods for analysis and control of communication networks are largely ad-hoc and limited to single form of communication channel (e.g. input delay, packet loss, transmission delay, etc.).</p>\n<p>The goal of this project has been the development of a new mathematical and computational framework for modelling and coordinating large, heterogeneous interconnected cyber-physical systems. Specifically, in the new framework, information channels represent CHANGE in the motion of the physical system -- an approach which makes it possible to decouple the flow in the channel and the motion of the physical system in a way which is valid for all types of communication channel. This new approach has made possible the main outcomes of this project, which are: 1) The Partial Integral Equation (PIE) framework for modelling any form of heterogeneous communication channels between autonomous systems, 2) The Partial Integral (PI) algebra, which is a computational framework for representation, manipulation and optimization of such models, and 3) The PIETOOLS software package for modelling, analysis, control and simulation of large-scale networks.</p>\n<p>By allowing for the efficient representation of heterogeneous communication channels, and by extending optimization algorithms to the PI algebra, the PIETOOLS software has allowed for orders of magnitude increase in the ability to analyze and control heterogeneous large-scale networks. Specifically, it is now possible to control networks with hundreds of physical systems and dozens of communication channels -- implying that the outcomes of this project will result in a safer and more reliable future for cyber-physical systems.</p>\n<p>Finally, it has been shown that the new PIE framework can also be used to represent other forms of physical flows such as aerodynamics, heat transfer, and structural vibration. As a result, in the future it will be possible to analyze, control and simulate more advanced network models including, e.g. drone aerodynamics or convective effects in home heating.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/31/2021<br>\n\t\t\t\t\tModified by: Matthew&nbsp;Peet</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nRecent years have seen an explosion in the use of cellular and wifi networks to deploy fleets of semi-autonomous physical systems, including drones, EV charging stations, smart homes, and decentralized power grids. The use of cellular and wifi networks has dramatically decreased the cost, energy, and maintenance associated with these forms of embedded technology, but has also added new challenges in the form of delay, packet drops, and loss of signal. The classical approach to modelling communication in such systems uses a representation of the information flowing through the channel. However, such an approach couples the flow in the channel and the motion of the physical system in a way which varies with the structure of the communication network. As a result, current methods for analysis and control of communication networks are largely ad-hoc and limited to single form of communication channel (e.g. input delay, packet loss, transmission delay, etc.).\n\nThe goal of this project has been the development of a new mathematical and computational framework for modelling and coordinating large, heterogeneous interconnected cyber-physical systems. Specifically, in the new framework, information channels represent CHANGE in the motion of the physical system -- an approach which makes it possible to decouple the flow in the channel and the motion of the physical system in a way which is valid for all types of communication channel. This new approach has made possible the main outcomes of this project, which are: 1) The Partial Integral Equation (PIE) framework for modelling any form of heterogeneous communication channels between autonomous systems, 2) The Partial Integral (PI) algebra, which is a computational framework for representation, manipulation and optimization of such models, and 3) The PIETOOLS software package for modelling, analysis, control and simulation of large-scale networks.\n\nBy allowing for the efficient representation of heterogeneous communication channels, and by extending optimization algorithms to the PI algebra, the PIETOOLS software has allowed for orders of magnitude increase in the ability to analyze and control heterogeneous large-scale networks. Specifically, it is now possible to control networks with hundreds of physical systems and dozens of communication channels -- implying that the outcomes of this project will result in a safer and more reliable future for cyber-physical systems.\n\nFinally, it has been shown that the new PIE framework can also be used to represent other forms of physical flows such as aerodynamics, heat transfer, and structural vibration. As a result, in the future it will be possible to analyze, control and simulate more advanced network models including, e.g. drone aerodynamics or convective effects in home heating.\n\n \n\n \n\n \n\n\t\t\t\t\tLast Modified: 12/31/2021\n\n\t\t\t\t\tSubmitted by: Matthew Peet"
+ }
+}

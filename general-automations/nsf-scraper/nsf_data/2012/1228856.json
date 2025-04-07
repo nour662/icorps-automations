@@ -1,0 +1,105 @@
+{
+ "awd_id": "1228856",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Medium: Collaborative Research: Transformative New Approaches to Efficient Secure Computation",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Susanne Wetzel",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 600000.0,
+ "awd_amount": 600000.0,
+ "awd_min_amd_letter_date": "2012-09-06",
+ "awd_max_amd_letter_date": "2012-09-06",
+ "awd_abstract_narration": "Secure Computation is a powerful concept from cryptography that enables collaboration in the absence of trust. Despite its great potential for solving practical problems in collaborative situations, it has not yet been widely adopted in practice.  Indeed, until recently there were few practical implementations of secure computation protocols, and even recent implementations were forced to restrict themselves to weak forms of security for the sake of efficiency. This is because the dominant paradigm for achieving strong security, since the invention of the first such protocols, has relied on zero-knowledge proofs, and yields protocols that are too inefficient even for simple computations.\r\n\r\nWe are developing radically different new architectures for efficient secure computation protocols that bypass the need for such zero-knowledge proofs. Our architectures are based on a novel principled approach to developing new secure computation protocols, with consequences to the theory and practice of modern cryptography.  Our research will identify new (partial) security properties inherent in simple protocols, and study how such properties can add up to strong security guarantees through carefully developed methods for composing protocols.\r\n\r\nSecure multiparty computation is an idea whose time has come, as evidenced by the several projects around the world engaged in translating the theoretical results to practical implementations, and the number of research projects outside cryptography that seek to exploit it. Widespread availability and deployment of secure computation protocols has the potential to be a disruptive technology, enabling new avenues of cooperation in areas with sensitive information. Apart from the technological impact, we strive to bring the advances in cryptography to a broader computer science audience, by integrating our research into graduate and undergraduate education, and outreach efforts.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Manoj",
+   "pi_last_name": "Prabhakaran",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Manoj Prabhakaran",
+   "pi_email_addr": "mmp@uiuc.edu",
+   "nsf_id": "000189049",
+   "pi_start_date": "2012-09-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Illinois at Urbana-Champaign",
+  "inst_street_address": "506 S WRIGHT ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "URBANA",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "2173332187",
+  "inst_zip_code": "618013620",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "IL13",
+  "org_lgl_bus_name": "UNIVERSITY OF ILLINOIS",
+  "org_prnt_uei_num": "V2PHZ2CSCH63",
+  "org_uei_num": "Y8CWNJRCNN91"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Illinois at Urbana-Champaign",
+  "perf_str_addr": "201 N. Goodwin Ave",
+  "perf_city_name": "Urbana",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "618012302",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "IL13",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 600000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Secure Multi-Party Computation (abbreviated as simply MPC) is an advanced concept in modern cryptography which allows mutually distrusting parties to collaborate with each other, without revealing their private information to one another. This seemingly impossible problem cannot be solved using traditional cryptographic tools that are used for secure communication (encryption, digital signatures etc.). Nevertheless, in a series of breakthrough results in the 80's, theoretical cryptographers established that MPC is indeed mathematically feasible. More recently, researchers have started implementing many of these theoretical solutions in practice.</p>\n<p><br />The focus of this project was on developing radically new architectures for MPC protocols, with an eye towards obtaining improved efficiency. &nbsp;Complementing this, we also studied theoretical limits of MPC protocols. The project led to several new results, published in leading venues in the field:</p>\n<ul>\n<li>a surprising new architecture for MPC protocols (published at STOC 2014),</li>\n<li>a general framework of \"protocol transformations\" that can be used to build a protocol from other protocols, so as to combine their advantages (CRYPTO 2016),</li>\n<li>lower-bounds on communication and randomness needed by MPC protocols (CRYPTO 2014),</li>\n<li>a full characterization of which computations are the \"cryptographically most complex\" ones as far as MPC is concerned (EUROCRYPT 2014, 2016),</li>\n<li>and a formal understanding of how cryptographic tools for secure communication are by themselves inadequate for non-trivial MPC (TCC 2014, ITCS 2014).</li>\n</ul>\n<p>&nbsp;</p>\n<p>In addition, we explored several new lines of research that were not anticipated when the project was proposed. In particular, we developed a new framework for security definitions, called \"Cryptographic Agents\", that can model objects used for secure computation and communication (EUROCRYPT 2015, TCC 2016-B). Also, we studied fairness in secure computation (CRYPTO 2013), secure computation using secure hardware (ICALP 2013, ICALP 2014, TCC 2014), non-malleable codes (CRYPTO 2015, TCC 2015, TCC 2016-A), searchable encryption (IEEE S&amp;P 2014), and \"controlled functional encryption\" (ACM CCS 2014).</p>\n<p><br />This project made several contributions to the field of secure multi-party computation and related areas, well beyond what we originally anticipated at the onset of the project. We expect these results to have a lasting impact in the next generation of practical implementations of MPC protocols, and also on various foundational questions in the theory of the field.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/01/2017<br>\n\t\t\t\t\tModified by: Manoj&nbsp;Prabhakaran</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nSecure Multi-Party Computation (abbreviated as simply MPC) is an advanced concept in modern cryptography which allows mutually distrusting parties to collaborate with each other, without revealing their private information to one another. This seemingly impossible problem cannot be solved using traditional cryptographic tools that are used for secure communication (encryption, digital signatures etc.). Nevertheless, in a series of breakthrough results in the 80's, theoretical cryptographers established that MPC is indeed mathematically feasible. More recently, researchers have started implementing many of these theoretical solutions in practice.\n\n\nThe focus of this project was on developing radically new architectures for MPC protocols, with an eye towards obtaining improved efficiency.  Complementing this, we also studied theoretical limits of MPC protocols. The project led to several new results, published in leading venues in the field:\n\na surprising new architecture for MPC protocols (published at STOC 2014),\na general framework of \"protocol transformations\" that can be used to build a protocol from other protocols, so as to combine their advantages (CRYPTO 2016),\nlower-bounds on communication and randomness needed by MPC protocols (CRYPTO 2014),\na full characterization of which computations are the \"cryptographically most complex\" ones as far as MPC is concerned (EUROCRYPT 2014, 2016),\nand a formal understanding of how cryptographic tools for secure communication are by themselves inadequate for non-trivial MPC (TCC 2014, ITCS 2014).\n\n\n \n\nIn addition, we explored several new lines of research that were not anticipated when the project was proposed. In particular, we developed a new framework for security definitions, called \"Cryptographic Agents\", that can model objects used for secure computation and communication (EUROCRYPT 2015, TCC 2016-B). Also, we studied fairness in secure computation (CRYPTO 2013), secure computation using secure hardware (ICALP 2013, ICALP 2014, TCC 2014), non-malleable codes (CRYPTO 2015, TCC 2015, TCC 2016-A), searchable encryption (IEEE S&amp;P 2014), and \"controlled functional encryption\" (ACM CCS 2014).\n\n\nThis project made several contributions to the field of secure multi-party computation and related areas, well beyond what we originally anticipated at the onset of the project. We expect these results to have a lasting impact in the next generation of practical implementations of MPC protocols, and also on various foundational questions in the theory of the field.\n\n\t\t\t\t\tLast Modified: 06/01/2017\n\n\t\t\t\t\tSubmitted by: Manoj Prabhakaran"
+ }
+}

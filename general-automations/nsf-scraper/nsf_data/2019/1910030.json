@@ -1,0 +1,121 @@
+{
+ "awd_id": "1910030",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AF: Small: Shared-Memory Parallel Algorithms: Theory and Practice",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922182",
+ "po_email": "pbrass@nsf.gov",
+ "po_sign_block_name": "Peter Brass",
+ "awd_eff_date": "2019-07-01",
+ "awd_exp_date": "2022-06-30",
+ "tot_intn_awd_amt": 400000.0,
+ "awd_amount": 408000.0,
+ "awd_min_amd_letter_date": "2019-06-27",
+ "awd_max_amd_letter_date": "2021-05-13",
+ "awd_abstract_narration": "With the advent in recent years of multicore processors ranging from fifty dollar hobby kits to multi-million dollar supercomputers, shared-memory parallel algorithms have increasingly significant practical and theoretical relevance.  This project is developing new algorithmic approaches and results relevant to today's shared-memory parallel machines. The impact of this project will be felt in applications being able to make better use of the computational power of modern multi-core architectures. The project seeks to develop library implementations of many of these algorithms which will be made available to the public.  On the educational side, the project will result in coursework that will help undergraduate students learn about parallel algorithms and their implementation.\r\n\r\nThe project focuses on three areas.  The first is research on developing results in a model, the binary forking model, that is more relevant to today's machines than some previous models.  In particular the model matches the software platforms that are available on most parallel machines, and supports an asynchronous form of parallelism that are most relevant to the machines they run on.  The second area is to better understand the parallelism already available in many sequential algorithms.  The goal is to derive algorithms that are simpler and more efficient.  The third area is to develop algorithms that allow the user to efficiently make batches of updates to underlying data structures.  This is referred to as batch parallel dynamic algorithms, and follows significant prior work on sequential single update dynamic updates.  In the binary forking model each task can only fork into two child tasks, but can do so recursively and asynchronously.  At present no tight performance bounds for the binary forking model are known even for some basic problems such as sorting and graph connectivity, which this project seeks to remedy.  For the thrust on understanding parallelism in sequential algorithms, the project will study the dependencies among sub-computations in iterative sequential algorithms.  In the thrust on parallel batched algorithms the project is looking at applying the ideas to graph connectivity and related problems.  The goal is to achieve algorithms that are work-efficient relative to the best (or near best) sequential algorithms---and in particular for graph connectivity to achieve O(log^2 n) amortized work per update, while allowing batches of updates.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Guy",
+   "pi_last_name": "Blelloch",
+   "pi_mid_init": "E",
+   "pi_sufx_name": "",
+   "pi_full_name": "Guy E Blelloch",
+   "pi_email_addr": "guyb@cs.cmu.edu",
+   "nsf_id": "000196851",
+   "pi_start_date": "2019-06-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Carnegie-Mellon University",
+  "inst_street_address": "5000 FORBES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4122688746",
+  "inst_zip_code": "152133815",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "CARNEGIE MELLON UNIVERSITY",
+  "org_prnt_uei_num": "U3NKNFLNQ613",
+  "org_uei_num": "U3NKNFLNQ613"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Carnegie-Mellon University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152133815",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7934",
+   "pgm_ref_txt": "PARAL/DISTRIBUTED ALGORITHMS"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0121",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002122DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 400000.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2021,
+   "fund_oblg_amt": 8000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Motivated by the advent and dominance of multicore machines, the goals of the project revolved around developing theoretically and practically efficient shared-memory parallel algorithms.&nbsp; Within this context, the project had three major themes: (1) understand the power of the binary-forking model compared to the traditional Parallel Random Access Machine (PRAM) model, (2) studying inherent parallelism in certain sequential algorithms and taking advantage of this in developing efficient parallel algorithms, and (3) to develop parallel dynamic algorithms that allow batches of updates or queries on a data structure to be implemented efficiently in parallel.&nbsp; The project had many notable results within these themes, and resulted in over 20 papers and a handful of code libraries that are now available on github.<br /><br />In the context of binary-forking, we developed the first optimal-span work-efficient algorithms for several problems, including sorting, list-ranking, tree-contraction, generating random-permutations, maintaining balanced search trees, and others. In addition to theoretical results, many of these algorithms have been implemented and are now part of the parlaylib library, as well as the parallel augmented maps (PAM) library, both available on github.<br /><br />In the context of studying the inherent parallelism in algorithms, we developed a framework for understanding the data dependences in algorithms and taking advantage of limited dependences to develop efficient parallel algorithms which mimic their sequential counterparts.&nbsp; This includes incremental algorithms for sorting, convex hulls, Delaunay triangulation, nearest neighbors, distance oracles, and strongly connected components.&nbsp; We also showed an interesting connection between optimality in sequential dynamic trees (Sleator and Tarjan's famous problem), and parallel algorithms for efficiently sorting near-sorted sequences.&nbsp; We have implemented several of these algorithms and they are also part of the parlaylib.<br /><br />In the context of developing batch dynamic algorithms, we have several results.&nbsp;&nbsp; We developed the first low-span work-efficient solutions for batch updates and queries on dynamic trees, supporting both subtree and path queries.&nbsp;&nbsp; Our original solution was randomized, but we later showed how to develop a deterministic version while maintaining the same bounds.&nbsp;&nbsp;&nbsp; We developed an approach for batch incremental minimum-spanning-trees, and applied it to several other problems.&nbsp;&nbsp; This work also developed the idea of a compressed path tree, which has since been used in other papers.&nbsp;&nbsp;&nbsp; Finally we used many of these tools in developing the first polylog-span work-efficient algorithm for minimum cuts.&nbsp;&nbsp; It matches the current best known O(m log^2 n) work bound for the weighted minimum cut problem.&nbsp;&nbsp;&nbsp; The work makes use of both dynamic trees and compressed path trees.&nbsp;&nbsp; It also develops a new approach that allows a sequence of queries and updates on a dynamic tree to be processed in parallel, tying in with the previous topic.&nbsp;&nbsp;&nbsp; In addition to a handful of papers on the theory behind these algorithms we published an experimental paper analyzing the efficiency of the approaches in practice.<br /><br />The intellectual merit of the work is in the models, techniques and specific algorithms we develop.&nbsp;&nbsp; The broader impact includes impact on work by others which leverage or techniques and algorithms, and more practically on a set of implementations that are publicly available on github.&nbsp;&nbsp;&nbsp; This includes a library of over 70 parallel algorithms available as part of parlaylib (https://github.com/cmuparlay/parlaylib), and a benchmark suite for comparing algorithms on a variety of applications (https://github.com/cmuparlay/pbbsbench).&nbsp;&nbsp; The work involved several students, and resulted in two PhD theses.</p><br>\n<p>\n Last Modified: 09/03/2024<br>\nModified by: Guy&nbsp;E&nbsp;Blelloch</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nMotivated by the advent and dominance of multicore machines, the goals of the project revolved around developing theoretically and practically efficient shared-memory parallel algorithms. Within this context, the project had three major themes: (1) understand the power of the binary-forking model compared to the traditional Parallel Random Access Machine (PRAM) model, (2) studying inherent parallelism in certain sequential algorithms and taking advantage of this in developing efficient parallel algorithms, and (3) to develop parallel dynamic algorithms that allow batches of updates or queries on a data structure to be implemented efficiently in parallel. The project had many notable results within these themes, and resulted in over 20 papers and a handful of code libraries that are now available on github.\n\nIn the context of binary-forking, we developed the first optimal-span work-efficient algorithms for several problems, including sorting, list-ranking, tree-contraction, generating random-permutations, maintaining balanced search trees, and others. In addition to theoretical results, many of these algorithms have been implemented and are now part of the parlaylib library, as well as the parallel augmented maps (PAM) library, both available on github.\n\nIn the context of studying the inherent parallelism in algorithms, we developed a framework for understanding the data dependences in algorithms and taking advantage of limited dependences to develop efficient parallel algorithms which mimic their sequential counterparts. This includes incremental algorithms for sorting, convex hulls, Delaunay triangulation, nearest neighbors, distance oracles, and strongly connected components. We also showed an interesting connection between optimality in sequential dynamic trees (Sleator and Tarjan's famous problem), and parallel algorithms for efficiently sorting near-sorted sequences. We have implemented several of these algorithms and they are also part of the parlaylib.\n\nIn the context of developing batch dynamic algorithms, we have several results. We developed the first low-span work-efficient solutions for batch updates and queries on dynamic trees, supporting both subtree and path queries. Our original solution was randomized, but we later showed how to develop a deterministic version while maintaining the same bounds. We developed an approach for batch incremental minimum-spanning-trees, and applied it to several other problems. This work also developed the idea of a compressed path tree, which has since been used in other papers. Finally we used many of these tools in developing the first polylog-span work-efficient algorithm for minimum cuts. It matches the current best known O(m log^2 n) work bound for the weighted minimum cut problem. The work makes use of both dynamic trees and compressed path trees. It also develops a new approach that allows a sequence of queries and updates on a dynamic tree to be processed in parallel, tying in with the previous topic. In addition to a handful of papers on the theory behind these algorithms we published an experimental paper analyzing the efficiency of the approaches in practice.\n\nThe intellectual merit of the work is in the models, techniques and specific algorithms we develop. The broader impact includes impact on work by others which leverage or techniques and algorithms, and more practically on a set of implementations that are publicly available on github. This includes a library of over 70 parallel algorithms available as part of parlaylib (https://github.com/cmuparlay/parlaylib), and a benchmark suite for comparing algorithms on a variety of applications (https://github.com/cmuparlay/pbbsbench). The work involved several students, and resulted in two PhD theses.\t\t\t\t\tLast Modified: 09/03/2024\n\n\t\t\t\t\tSubmitted by: GuyEBlelloch\n"
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "awd_id": "1722408",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SBIR Phase I:  Container Grids for Software Defined Security",
+ "cfda_num": "47.084",
+ "org_code": "15030000",
+ "po_phone": "7032928772",
+ "po_email": "patherto@nsf.gov",
+ "po_sign_block_name": "Peter Atherton",
+ "awd_eff_date": "2017-07-01",
+ "awd_exp_date": "2018-08-31",
+ "tot_intn_awd_amt": 224999.0,
+ "awd_amount": 224999.0,
+ "awd_min_amd_letter_date": "2017-06-28",
+ "awd_max_amd_letter_date": "2018-06-01",
+ "awd_abstract_narration": "The broader impact/commercial potential of this Small Business Innovation Research (SBIR) Phase I project appears in three areas.  First, there is an $8B dollar market for legacy hardware network security products today that is in transition to Software Defined Security. Adoption of this general SDSec platform has the potential to accelerate that market transition and improve enterprise security.  Second, this project's success as an open platform could dramatically shorten the time between research insight and at-scale production deployments; security software built to a lower bar of scale/resiliency is faster and easier to build. The end result will be an increased rate of innovation, and new markets for niche, fit-for-purpose security functions that today are not profitable for vendors to build.  Last, this platform could harmonize enterprise security investments and practices for on premise workloads with security investments for public cloud workloads, solving a key dilemma faced by leading IT organizations. This will make those organizations more competitive on the world stage.\r\n \r\nThis Small Business Innovation Research (SBIR) Phase I project addresses the two hardest technical challenges in building an enterprise-grade network security function, scale and resiliency, in a general way that can be applied to both new products and legacy codebases with no code change. Addressing scale/resiliency problems in a general way across many network security functions is novel, and this particular approach of massively parallel, lightweight packet processing functions to achieve this is new to this domain.  Why now? The massively parallel design proposed here is far too expensive and impractical with traditional hardware-based network functions. Even traditional hypervisor-based virtual machines carry too much hardware overhead to make this design cost competitive. By using vSwitches and network security functions packaged as Linux containers, the hardware overhead cost per instance drops dramatically, and this class of approach for scale/resiliency may be proven practical.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "TIP",
+ "org_dir_long_name": "Directorate for Technology, Innovation, and Partnerships",
+ "div_abbr": "TI",
+ "org_div_long_name": "Translational Impacts",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Former Principal Investigator",
+   "pi_first_name": "Richard",
+   "pi_last_name": "Forster",
+   "pi_mid_init": "K",
+   "pi_sufx_name": "",
+   "pi_full_name": "Richard K Forster",
+   "pi_email_addr": "kyle@forster.com",
+   "nsf_id": "000724154",
+   "pi_start_date": "2017-06-28",
+   "pi_end_date": "2017-08-22"
+  },
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "David",
+   "pi_last_name": "Lenrow",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "David Lenrow",
+   "pi_email_addr": "cn3drl@gmail.com",
+   "nsf_id": "000755011",
+   "pi_start_date": "2017-08-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "CN3 Systems, Inc",
+  "inst_street_address": "3007 Jackson St",
+  "inst_street_address_2": "",
+  "inst_city_name": "San Francisco",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "4159902670",
+  "inst_zip_code": "941151022",
+  "inst_country_name": "United States",
+  "cong_dist_code": "11",
+  "st_cong_dist_code": "CA11",
+  "org_lgl_bus_name": null,
+  "org_prnt_uei_num": null,
+  "org_uei_num": "F9U4ME6UE3H7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "CN3 Systems, Inc",
+  "perf_str_addr": "3007 Jackson Street",
+  "perf_city_name": "San Francisco",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "941151022",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "11",
+  "perf_st_cong_dist": "CA11",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "537100",
+   "pgm_ele_name": "SBIR Phase I"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5371",
+   "pgm_ref_txt": "SMALL BUSINESS PHASE I"
+  },
+  {
+   "pgm_ref_code": "8032",
+   "pgm_ref_txt": "Software Services and Applications"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 224999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Our Phase I research involved building a framework to push&nbsp; traffic through multiple containerized virtual network functions, building orchestration tools to automate the operation of large numbers of such containers, and building an automated test framework to allow us to experiment with different combinations of network functions from small configurations to very large configurations, initially on a simulated network running under a single physical server host, and then finally on a clous platform using high speed compute and networking devices. Our innovation consists of taking functions that were designed to run on a monolithic scale-up system and distributing identical, immutable copies of such functions across a large number of physical servers in a scale-out system configuration. Our phase I research plan was to allow us to quantify the behavior of our system design. In order to achieve commercial and economic success we needed be sure that the additional inter-system communications, software forwarding logic, and container packaging/execution overheads did not diminish the benefits of adding system capacity by deploying additional processing nodes. We had to insure that the various overheads inherent in our design only amounted to a small percentage of total resources, and grew linearly from small to large scale. :</p>\n<ol>\n<li>We plan to deploy multiple containers per node and need to observe behavior for a range of containers per node.&nbsp;</li>\n<li>We plan to deploy multiple instances of every virtual function, one per node and need to observe behavior across variable number of nodes</li>\n<li>We plan to use a variety of virtual functions and need to observe behaviors across different combinations and permutations of composed service chains.&nbsp;</li>\n</ol>\n<p>Overall, we successfully and emperically proved that our system design scales linearly across a wide range of node counts, containers per node, and varying service chain composition. The total overhead, as compared to a single system running a virtual function on bare metal, was observed to be less than 5% for all test scenarios&nbsp; and does not suffer non-linear growth for our target system size range. Our design leads to dramatic improvements in system elasticity, capacity, efficiency and resiliencey compared to monolithic implementations and we feel strongly that these benefits more than offset a 5% reduction in per-node capacity.&nbsp;</p>\n<p>Selected charts from our experimental results are included to summarize major themes.</p>\n<p>These experimental results suggest that it is possible to use our design to achieve the system benefits we predicted. During the course of our phase I commercial assessment, we determined that deploying containerized VNFs in a different, more distributed topology, would ease insertion into existing networks and as a result are pursuing this approach, which is closely related, and reuses much of the technology developed during our NSF SBIR Phase I project.&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/15/2018<br>\n\t\t\t\t\tModified by: David&nbsp;Lenrow</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2018/1722408/1722408_10496861_1537044802500_100x25flows--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2018/1722408/1722408_10496861_1537044802500_100x25flows--rgov-800width.jpg\" title=\"100 x .25Gbs streams\"><img src=\"/por/images/Reports/POR/2018/1722408/1722408_10496861_1537044802500_100x25flows--rgov-66x44.jpg\" alt=\"100 x .25Gbs streams\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">This graph shows the per-stream throughput for a large number of flows each configured at .25Gbs. Note that as the total bandwidth approaches the maximum physical link bandwidth there is negligible degrade in the per-stream throughput for all streams</div>\n<div class=\"imageCredit\">David Lenrow</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">David&nbsp;Lenrow</div>\n<div class=\"imageTitle\">100 x .25Gbs streams</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2018/1722408/1722408_10496861_1537044548919_1to3stackedx100--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2018/1722408/1722408_10496861_1537044548919_1to3stackedx100--rgov-800width.jpg\" title=\"Varying chain depth\"><img src=\"/por/images/Reports/POR/2018/1722408/1722408_10496861_1537044548919_1to3stackedx100--rgov-66x44.jpg\" alt=\"Varying chain depth\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">100 Instances of 1, 2, and 3 VNF chains</div>\n<div class=\"imageCredit\">David Lenrow</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">David&nbsp;Lenrow</div>\n<div class=\"imageTitle\">Varying chain depth</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nOur Phase I research involved building a framework to push  traffic through multiple containerized virtual network functions, building orchestration tools to automate the operation of large numbers of such containers, and building an automated test framework to allow us to experiment with different combinations of network functions from small configurations to very large configurations, initially on a simulated network running under a single physical server host, and then finally on a clous platform using high speed compute and networking devices. Our innovation consists of taking functions that were designed to run on a monolithic scale-up system and distributing identical, immutable copies of such functions across a large number of physical servers in a scale-out system configuration. Our phase I research plan was to allow us to quantify the behavior of our system design. In order to achieve commercial and economic success we needed be sure that the additional inter-system communications, software forwarding logic, and container packaging/execution overheads did not diminish the benefits of adding system capacity by deploying additional processing nodes. We had to insure that the various overheads inherent in our design only amounted to a small percentage of total resources, and grew linearly from small to large scale. :\n\nWe plan to deploy multiple containers per node and need to observe behavior for a range of containers per node. \nWe plan to deploy multiple instances of every virtual function, one per node and need to observe behavior across variable number of nodes\nWe plan to use a variety of virtual functions and need to observe behaviors across different combinations and permutations of composed service chains. \n\n\nOverall, we successfully and emperically proved that our system design scales linearly across a wide range of node counts, containers per node, and varying service chain composition. The total overhead, as compared to a single system running a virtual function on bare metal, was observed to be less than 5% for all test scenarios  and does not suffer non-linear growth for our target system size range. Our design leads to dramatic improvements in system elasticity, capacity, efficiency and resiliencey compared to monolithic implementations and we feel strongly that these benefits more than offset a 5% reduction in per-node capacity. \n\nSelected charts from our experimental results are included to summarize major themes.\n\nThese experimental results suggest that it is possible to use our design to achieve the system benefits we predicted. During the course of our phase I commercial assessment, we determined that deploying containerized VNFs in a different, more distributed topology, would ease insertion into existing networks and as a result are pursuing this approach, which is closely related, and reuses much of the technology developed during our NSF SBIR Phase I project. \n\n\t\t\t\t\tLast Modified: 09/15/2018\n\n\t\t\t\t\tSubmitted by: David Lenrow"
+ }
+}

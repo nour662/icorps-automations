@@ -1,0 +1,96 @@
+{
+ "awd_id": "1913210",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Short Vectors in Lattices",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Christopher Stark",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2022-08-31",
+ "tot_intn_awd_amt": 205090.0,
+ "awd_amount": 205090.0,
+ "awd_min_amd_letter_date": "2019-07-22",
+ "awd_max_amd_letter_date": "2019-07-22",
+ "awd_abstract_narration": "The main focus of this project is to rebuild the literature on lattice   algorithms on a foundation of modern computer architecture. This means   going beyond counting textbook operations, and instead investigating the   time required on a parallel machine with realistic limits on  communication, so as to obtain the ultimate implementation efficiency on  current and future chips. \r\n \r\nMajor project activities include the following: 1. Fast constant-time   implementations of fundamental arithmetic operations such as integer   multiplication, Euclid's algorithm, and modular inversion. 2. A scalable   parallelized implementation of the LLL lattice-basis-reduction algorithm   for large-rank lattices. 3. Improvements to algorithms for finding   shorter vectors in lattices, including sieving, enumeration, and  multiplicative techniques from algebraic number theory.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Nadia",
+   "pi_last_name": "Heninger",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Nadia Heninger",
+   "pi_email_addr": "nadiah@cs.ucsd.edu",
+   "nsf_id": "000577199",
+   "pi_start_date": "2019-07-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-San Diego",
+  "inst_street_address": "9500 GILMAN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "LA JOLLA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8585344896",
+  "inst_zip_code": "920930021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "UYTTZT6G9DT1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-San Diego",
+  "perf_str_addr": "University of California-San Diego",
+  "perf_city_name": "La Jolla",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920930404",
+  "perf_ctry_code": "CA",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "Canada",
+  "perf_ctry_flag": "0"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 205090.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-35514069-7fff-73e8-3534-55fc5dc270fd\">\n<p dir=\"ltr\"><span>We have developed an improved lattice reduction algorithm, which we call \"flatter\".&nbsp; This algorithm combines a recursive variant of the LLL algorithm with a novel iterative strategy for managing precision. We have a fully working and usable implementation of the algorithm which we have made available online.&nbsp; Our algorithm efficiently achieves reduced lattice bases of analogous quality to the LLL algorithm and is able to efficiently reduce lattice bases of dimension over 1000 and entries of millions of bits.&nbsp; It scales asymptotically faster than the fplll algorithm, which is the current state of the art for nearly all practical applications of lattice reduction.&nbsp; Our open source implementation of our algorithm is already being used by other researchers for a variety of applications in cryptography and computational number theory.</span></p>\n<p dir=\"ltr\"><span>We also have a theoretical analysis of our algorithm to justify the asymptotic runtime.&nbsp; While our analysis relies on heuristic assumptions, our heuristic assumptions are significantly weaker than prior work in the area and justified with experiments.</span></p>\n<p dir=\"ltr\"><span>We have used our algorithm to analyze lattice-based constructions for fully homomorphic encryption and numerous other families of lattices of cryptographic importance and have developed some preliminary techniques for analyzing the multiplicative structure of ideal lattices.</span></p>\n</span></p><br>\n<p>\n Last Modified: 02/10/2024<br>\nModified by: Nadia&nbsp;Heninger</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\n\n\n\nWe have developed an improved lattice reduction algorithm, which we call \"flatter\". This algorithm combines a recursive variant of the LLL algorithm with a novel iterative strategy for managing precision. We have a fully working and usable implementation of the algorithm which we have made available online. Our algorithm efficiently achieves reduced lattice bases of analogous quality to the LLL algorithm and is able to efficiently reduce lattice bases of dimension over 1000 and entries of millions of bits. It scales asymptotically faster than the fplll algorithm, which is the current state of the art for nearly all practical applications of lattice reduction. Our open source implementation of our algorithm is already being used by other researchers for a variety of applications in cryptography and computational number theory.\n\n\nWe also have a theoretical analysis of our algorithm to justify the asymptotic runtime. While our analysis relies on heuristic assumptions, our heuristic assumptions are significantly weaker than prior work in the area and justified with experiments.\n\n\nWe have used our algorithm to analyze lattice-based constructions for fully homomorphic encryption and numerous other families of lattices of cryptographic importance and have developed some preliminary techniques for analyzing the multiplicative structure of ideal lattices.\n\t\t\t\t\tLast Modified: 02/10/2024\n\n\t\t\t\t\tSubmitted by: NadiaHeninger\n"
+ }
+}

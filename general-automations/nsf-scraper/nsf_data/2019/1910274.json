@@ -1,0 +1,105 @@
+{
+ "awd_id": "1910274",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CHS: Small: Efficient Simulation of Thin Materials With Discrete Tension Field Theory",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Ephraim Glinert",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2022-08-31",
+ "tot_intn_awd_amt": 494077.0,
+ "awd_amount": 494077.0,
+ "awd_min_amd_letter_date": "2019-08-31",
+ "awd_max_amd_letter_date": "2019-08-31",
+ "awd_abstract_narration": "Thin shell simulations are a foundational tool in scientific computing. They are used to analyze the behavior of biological structures such as vesicles and cell membranes, to simulate deformation of fabrics and composites, to predict scarring and wrinkling of skin in surgery training and visualization tools, and to analyze buckling and crumpling of structural elements in buildings and vehicles. This research will establish new algorithms for simulating the physical behavior of thin curved materials such as fabric, paper, or sheet metal, with unprecedented efficiency, whereas such simulations currently are notoriously difficult and computationally expensive because thin objects like a sheet of paper or cloth bend far more readily than they stretch and will prefer to buckle and crumple in geometrically complex ways rather than compress.  Moreover, this complexity is unpredictable and chaotic; the exact pattern of wrinkles can vary wildly even for identical objects under identical loads. Finally, predicting how a thin object behaves under frictional contact with itself and the environment is especially challenging; due to the thin geometry, expensive collision detection and response algorithms must be used to ensure that thin parts do not tunnel through each other, no matter how quickly or forcefully they are pushed together.\r\n\r\nTo make thin material simulations more practical for use in engineering, design, and robotics applications, where performance is critical, this project will develop a more efficient, simplified model for how to simulate deformation of thin materials.  The key insight, borrowed from the tension field approach in continuum mechanics, is that the behavior of thin objects is dominated by lines of tension through the material, while fine-scale wrinkles induced by compression and bending are extraordinarily expensive to resolve yet contribute little to the object's coarse-scale shape or mechanical behavior.  By exploiting this insight and focusing computational effort on tracking and simulating the lines of tension, the performance of thin shell simulations can be substantially improved without sacrificing accuracy.  Put another way, in regions of pure tension the elastic membrane energy is convex and standard shell finite element methods perform well.  Whereas in regions of pure compression, or mixed tension and compression, buckling occurs since there is a scale separation between the resistance of thin materials to compression and to bending, and the post-buckled state of the shell contains many highly nonlinear, complex wrinkles and creases, yet the coarse shape of the shell can nevertheless be approximated by ignoring the wrinkles and treating the shell as a collection of 1D curves aligned to the tensile stress directions on the shell.  The detailed work plan will comprise work on tension-dominated surfaces, mixed-stress surfaces, and contact and friction.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Paul",
+   "pi_last_name": "Vouga",
+   "pi_mid_init": "E",
+   "pi_sufx_name": "",
+   "pi_full_name": "Paul E Vouga",
+   "pi_email_addr": "evouga@cs.utexas.edu",
+   "nsf_id": "000685754",
+   "pi_start_date": "2019-08-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Austin",
+  "perf_str_addr": "3925 W Braker Lane, Ste 3.340",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787595316",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "37",
+  "perf_st_cong_dist": "TX37",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736700",
+   "pgm_ele_name": "HCC-Human-Centered Computing"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7367",
+   "pgm_ref_txt": "Cyber-Human Systems"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 494077.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Thin elastic shells like paper, mylar, and sheet metal are ubiquitous yet their physics is difficult to simulate, because when compressed they form patterns of high-frequency, low-amplitude wrinkles. These wrinkles are important because they affect the strength of the shell (via corrugation), its properties under contact and friction, and its appearance. But because the wrinkles are so fine, traditional methods for simulating them require approximating the surface as millions of tiny triangles: doing so if very slow, and simulating just a few seconds of motion using classical techniques can take hours or days of compute time.<br /><br />The key idea explored in this funded research was to use tension field theory---an established theory from physics that ignores the wrinkles completely and only focuses on predicting the overall shape of a shell---as a \"blank canvas\" on which to solve for the missing wrinkles using a representation of the wrinkles in terms of frequency and amplitude rather than raw position. The two most significant results of the research prove that this idea is sound and significantly advance the state of the art in physical simulation and elasticity of thin shells.<br /><br />First, we showed that the proposed combination of tension field theory and spectral wrinkle representation significantly reduces the computational cost of simulation shell statics: the shape that thin shells take when under a fixed load. Using 10x--100x fewer variables than required using traditional methods, we successfully predicted the wrinkle patterns in shells under mixed compression and tension, and validated our results against experimental and theoretical benchmarks in the physics literature. We further tested our method on large-scale problems such as predicting the drape and wrinkling of dresses, and achieved higher-quality wrinkle predictions using only a tenth of the number of triangles requires traditionally (see figures).<br /><br />Second, we studied the behavior of wrinkles moving over time. The dynamics setting introduces new challenges: when wrinkled thin materials move (such as on the palm of your hand or on an article of clothing as you move your body), \"Y\"-like singularities appear in the wrinkle pattern and shift over time as wrinkles merge and split. We developed the first theoretical solution for how to evolve high-frequency wrinkle patterns with singularities over time, and demonstrated for the first time that complex wrinkle dynamics can be efficiently simulated using a representation that mixes a coarse, smooth surface with a spectral representation of fine wrinkles.<br /><br />This funded research resulted in six peer-reviewed publications so far, with source code and data available to the public implementing our key results. Funding supported participation by the PI in outreach activities teaching the core ideas of physical simulation and elasticity to high school students, including women and other underrepresented groups in computing via the Academy for Women and Academy for All programs. Funding also supported running three research projects as part of the Summer Geometry Institute, which brings teams of 2--4 undergraduate students from underepresented groups with limited existing research experience together with a senior researcher to work on a research project. Students worked on projects related to the physics of thin shells and techniques for simulating them, including on how to dynamically change the mesh of a simulation to minimize errors in the calculation of the shell's bending energy, and how to predict the growth and wrinkling of flowers and leaves using a combination of a thin shell and reaction-diffusion simulations.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/12/2023<br>\n\t\t\t\t\tModified by: Paul&nbsp;E&nbsp;Vouga</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689133574579_tfwoverview--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689133574579_tfwoverview--rgov-800width.jpg\" title=\"Overview of Wrinkle Field Approach\"><img src=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689133574579_tfwoverview--rgov-66x44.jpg\" alt=\"Overview of Wrinkle Field Approach\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Overview of the main research result: wrinkle-free, coarse approximations to a thin shell (left) serve as a blank canvas on which wrinkles can be simulated using amplitude and frequency fields (middle). These fields allow for simulation of highly-detailed, complex wrinkles.</div>\n<div class=\"imageCredit\">Zhen Chen, Melina Skouras, Danny Kaufman, Etienne Vouga</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Paul&nbsp;E&nbsp;Vouga</div>\n<div class=\"imageTitle\">Overview of Wrinkle Field Approach</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689132762313_natural_wrinkles--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689132762313_natural_wrinkles--rgov-800width.jpg\" title=\"Wrinkle Patterns in Nature\"><img src=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689132762313_natural_wrinkles--rgov-66x44.jpg\" alt=\"Wrinkle Patterns in Nature\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Examples of high-frequency wrinkles in nature, including characteristic Y-shaped singularities (circle). This project was the first to simulate the motion of these wrinkles and singularities efficiently using a coarse mesh.</div>\n<div class=\"imageCredit\">Pavel Svoboda, Heather Logue, Zhen Chen</div>\n<div class=\"imagePermisssions\">Creative Commons</div>\n<div class=\"imageSubmitted\">Paul&nbsp;E&nbsp;Vouga</div>\n<div class=\"imageTitle\">Wrinkle Patterns in Nature</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689133839825_fabricresults--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689133839825_fabricresults--rgov-800width.jpg\" title=\"Fabric Results\"><img src=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689133839825_fabricresults--rgov-66x44.jpg\" alt=\"Fabric Results\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Results of our research on representing and simulating wrinkles in fabric. Our method is able to produce higher-quality fine wrinkling more than an order of magnitude more efficiently than earlier methods based on finite element analysis.</div>\n<div class=\"imageCredit\">Hsiao-Yu Chen, Zhen Chen, Melina Skouras, Danny Kaufman, Etienne Vouga</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Paul&nbsp;E&nbsp;Vouga</div>\n<div class=\"imageTitle\">Fabric Results</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689133971849_mylarresults--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689133971849_mylarresults--rgov-800width.jpg\" title=\"Mylar Results\"><img src=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689133971849_mylarresults--rgov-66x44.jpg\" alt=\"Mylar Results\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Results of our research applied to simulating wrinkles on mylar. Our method is able to capture these wrinkles (including the sharp creases seen on inflated mylar balloons) on meshes that are over an order of magnitude more efficient than those needed by previous approaches.</div>\n<div class=\"imageCredit\">Hsiao-Yu Chen, Zhen Chen, Melina Skouras, Danny Kaufman, Etienne Vouga</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Paul&nbsp;E&nbsp;Vouga</div>\n<div class=\"imageTitle\">Mylar Results</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689135032558_CWFoverview--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689135032558_CWFoverview--rgov-800width.jpg\" title=\"Wrinkle Field Dynamics Algorithm\"><img src=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689135032558_CWFoverview--rgov-66x44.jpg\" alt=\"Wrinkle Field Dynamics Algorithm\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">When wrinkles evolve over time, their singularities slide over the surface in a complex dance. Our algorithm captures these dynamics and can simulate the merging and splitting of wrinkles required smoothly transition between two wrinkle states (left and right columns).</div>\n<div class=\"imageCredit\">Zhen Chen, Melina Skouras, Danny Kaufman, Etienne Vouga</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Paul&nbsp;E&nbsp;Vouga</div>\n<div class=\"imageTitle\">Wrinkle Field Dynamics Algorithm</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689135194044_dynamicsexample--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689135194044_dynamicsexample--rgov-800width.jpg\" title=\"Example of Wrinkle Field Dynamics\"><img src=\"/por/images/Reports/POR/2023/1910274/1910274_10639462_1689135194044_dynamicsexample--rgov-66x44.jpg\" alt=\"Example of Wrinkle Field Dynamics\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">This figure shows the evolution of a wrinkle pattern as the frequency increases over time. Our method captures the smooth sliding of singularities over the surface (top row) and wrinkle merging and splitting (middle row) characteristic of these dynamics.</div>\n<div class=\"imageCredit\">Zhen Chen, Melina Skouras, Danny Kaufman, Etienne Vouga</div>\n<div class=\"imageSubmitted\">Paul&nbsp;E&nbsp;Vouga</div>\n<div class=\"imageTitle\">Example of Wrinkle Field Dynamics</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThin elastic shells like paper, mylar, and sheet metal are ubiquitous yet their physics is difficult to simulate, because when compressed they form patterns of high-frequency, low-amplitude wrinkles. These wrinkles are important because they affect the strength of the shell (via corrugation), its properties under contact and friction, and its appearance. But because the wrinkles are so fine, traditional methods for simulating them require approximating the surface as millions of tiny triangles: doing so if very slow, and simulating just a few seconds of motion using classical techniques can take hours or days of compute time.\n\nThe key idea explored in this funded research was to use tension field theory---an established theory from physics that ignores the wrinkles completely and only focuses on predicting the overall shape of a shell---as a \"blank canvas\" on which to solve for the missing wrinkles using a representation of the wrinkles in terms of frequency and amplitude rather than raw position. The two most significant results of the research prove that this idea is sound and significantly advance the state of the art in physical simulation and elasticity of thin shells.\n\nFirst, we showed that the proposed combination of tension field theory and spectral wrinkle representation significantly reduces the computational cost of simulation shell statics: the shape that thin shells take when under a fixed load. Using 10x--100x fewer variables than required using traditional methods, we successfully predicted the wrinkle patterns in shells under mixed compression and tension, and validated our results against experimental and theoretical benchmarks in the physics literature. We further tested our method on large-scale problems such as predicting the drape and wrinkling of dresses, and achieved higher-quality wrinkle predictions using only a tenth of the number of triangles requires traditionally (see figures).\n\nSecond, we studied the behavior of wrinkles moving over time. The dynamics setting introduces new challenges: when wrinkled thin materials move (such as on the palm of your hand or on an article of clothing as you move your body), \"Y\"-like singularities appear in the wrinkle pattern and shift over time as wrinkles merge and split. We developed the first theoretical solution for how to evolve high-frequency wrinkle patterns with singularities over time, and demonstrated for the first time that complex wrinkle dynamics can be efficiently simulated using a representation that mixes a coarse, smooth surface with a spectral representation of fine wrinkles.\n\nThis funded research resulted in six peer-reviewed publications so far, with source code and data available to the public implementing our key results. Funding supported participation by the PI in outreach activities teaching the core ideas of physical simulation and elasticity to high school students, including women and other underrepresented groups in computing via the Academy for Women and Academy for All programs. Funding also supported running three research projects as part of the Summer Geometry Institute, which brings teams of 2--4 undergraduate students from underepresented groups with limited existing research experience together with a senior researcher to work on a research project. Students worked on projects related to the physics of thin shells and techniques for simulating them, including on how to dynamically change the mesh of a simulation to minimize errors in the calculation of the shell's bending energy, and how to predict the growth and wrinkling of flowers and leaves using a combination of a thin shell and reaction-diffusion simulations.\n\n\t\t\t\t\tLast Modified: 07/12/2023\n\n\t\t\t\t\tSubmitted by: Paul E Vouga"
+ }
+}

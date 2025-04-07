@@ -1,0 +1,105 @@
+{
+ "awd_id": "1116546",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AF: Small: A Framework For Algorithmic Design of Self-Stabilizing Network Protocols",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Rahul Shah",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2015-12-31",
+ "tot_intn_awd_amt": 254015.0,
+ "awd_amount": 254015.0,
+ "awd_min_amd_letter_date": "2011-06-22",
+ "awd_max_amd_letter_date": "2011-06-22",
+ "awd_abstract_narration": "This research focuses on facilitating the design of Self-Stabilizing (SS) network protocols, where a SS protocol eventually recovers from any troubled configuration to a legitimate configuration (i.e., convergence) and stays in legitimate configurations as long as there are no perturbations (i.e., closure). This is an important problem as today's complex distributed systems (e.g., the Internet) frequently reach illegitimate configurations due to the occurrence of the transient faults that perturb the protocols without causing permanent damage (e.g., bit flips in memory, bad initialization). Most existing methods are based on the manual creation of an initial design and after-the-fact verification of the manual design. This research presents a paradigm shift based on a philosophy of 'synthesize in small scale and generalize'. Specifically, the investigators study (i) the automatic generation of small instances of SS protocol, and (ii) the generalization of the synthesized instances to larger protocols.\r\n\r\nInstead of designing and verifying problem-specific SS protocols, this research provides a reusable repository of synthesis methods for the addition of convergence to nonstabilizing protocols. Moreover, this research presents three techniques for the generalization of the small instances of the synthesized protocols, namely synthesized convergence stairs, cutoff theorems and structural induction. For evaluation, the investigators study the automated design of convergence for real world protocols and classic distributed computing problems (e.g., mutual exclusion and leader election) under different topologies and distinct fairness assumptions. The investigators also identify complexity criteria and compile them in a public benchmark.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ali",
+   "pi_last_name": "Ebnenasir",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ali Ebnenasir",
+   "pi_email_addr": "aebnenas@mtu.edu",
+   "nsf_id": "000331517",
+   "pi_start_date": "2011-06-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Michigan Technological University",
+  "inst_street_address": "1400 TOWNSEND DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "HOUGHTON",
+  "inst_state_code": "MI",
+  "inst_state_name": "Michigan",
+  "inst_phone_num": "9064871885",
+  "inst_zip_code": "499311200",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "MI01",
+  "org_lgl_bus_name": "MICHIGAN TECHNOLOGICAL UNIVERSITY",
+  "org_prnt_uei_num": "GKMSN3DA6P91",
+  "org_uei_num": "GKMSN3DA6P91"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Michigan Technological University",
+  "perf_str_addr": "1400 TOWNSEND DR",
+  "perf_city_name": "HOUGHTON",
+  "perf_st_code": "MI",
+  "perf_st_name": "Michigan",
+  "perf_zip_code": "499311200",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "MI01",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7934",
+   "pgm_ref_txt": "PARAL/DISTRIBUTED ALGORITHMS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 254015.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p style=\"text-align: center;\"><strong>AF:Small: A Framework For Algorithmic Design of Self-Stabilizing Network Protocols</strong></p>\n<p>Self-Stabilization is an important property as today's distributed systems are subject to different types of transient faults (e.g., soft errors, bad initialization, loss of coordination). Transient faults cause state perturbations without creating permanent damages. All executions of a Self-Stabilizing (SS) protocol <em>converge</em> (i.e., recover) to a set of legitimate states from any network configuration/state reached due to the occurrence of transient faults. This notion of convergence is also known as <em>strong convergence</em>. A weaker version of convergence, called <em>weak convergence</em>, is defined where from any state there exists at least one execution that reaches some legitimate state. As an example application of self-stabilization, consider the creation and maintenance of a spanning tree in a network, which is central to many applications (e.g., broadcast, network reset). A spanning tree is a tree that includes every node of the network. Temporary node/link failures may result in an illegitimate configuration (e.g., partitioned network) that may include non-tree components (e.g., rings of nodes). An SS protocol maintains a spanning tree and ensures convergence to a spanning tree from any illegitimate state. The goal of this project is to advance our understanding of the challenges of designing self-stabilizing protocol.</p>\n<p><strong>Major Findings</strong></p>\n<p>The major findings of this project are summarized as follows:</p>\n<p>We have shown that the following results hold in finite-state parameterized ring networks, where symmetric families of processes communicate through an underlying communication network with a ring topology. Two processes are <em>symmetric</em> if the code of one can be obtained from another by a simple variable renaming. Such parameterized systems often have an unbounded (but finite) number of processes.</p>\n<ul>\n<li>The number of enabled processes remains the same in every (global) state of a global livelock in unidirectional rings, where a <em>livelock</em> is a non-terminating execution.</li>\n<li>There is no continuously enabled process in a global livelock in unidirectional rings. Thus, the assumption of weak fairness does not simplify the design of livelock-free unidirectional rings.</li>\n<li>A unidirectional ring has a livelock <em>if and only if</em> it has a contiguous livelock, where enabled processes are arranged consecutively.</li>\n<li>Livelock detection on a parameterized unidirectional ring of symmetric, deterministic, finite-state, self-disabling processes is undecidable.</li>\n<li>Detection of a livelock where exactly one process is enabled at all times on a parameterized unidirectional ring of symmetric, deterministic, finite-state, self-disabling processes is undecidable.</li>\n<li>Verifying strong or weak stabilization on a unidirectional ring of symmetric, deterministic, finite-state, self-disabling processes is undecidable.</li>\n</ul>\n<p>The following findings relate to finite-state systems with a fixed number of processes:</p>\n<ul>\n<li>Adding convergence to systems under no  fairness (respectively, weak fairness) is NP-complete (in the size of  the state space). This result implies that adding nonmasking fault  tolerance under no fairness (respectively, weak  fairness) is also NP-complete, where a <em>nonmasking</em> system  guarantees recovery to legitimate states from a subset of its state  space and not necessarily from every state. A weakly fair scheduler  guarantees to infinitely often execute any action that is continuously  enabled for execution.</li>\n<li>While it is known that adding convergence  under strong fairness can be done in polynomial time, we illustrate a surprising result that adding  nonmasking fault tolerance remains NP-complete even under str...",
+  "por_txt_cntn": "AF:Small: A Framework For Algorithmic Design of Self-Stabilizing Network Protocols\n\nSelf-Stabilization is an important property as today's distributed systems are subject to different types of transient faults (e.g., soft errors, bad initialization, loss of coordination). Transient faults cause state perturbations without creating permanent damages. All executions of a Self-Stabilizing (SS) protocol converge (i.e., recover) to a set of legitimate states from any network configuration/state reached due to the occurrence of transient faults. This notion of convergence is also known as strong convergence. A weaker version of convergence, called weak convergence, is defined where from any state there exists at least one execution that reaches some legitimate state. As an example application of self-stabilization, consider the creation and maintenance of a spanning tree in a network, which is central to many applications (e.g., broadcast, network reset). A spanning tree is a tree that includes every node of the network. Temporary node/link failures may result in an illegitimate configuration (e.g., partitioned network) that may include non-tree components (e.g., rings of nodes). An SS protocol maintains a spanning tree and ensures convergence to a spanning tree from any illegitimate state. The goal of this project is to advance our understanding of the challenges of designing self-stabilizing protocol.\n\nMajor Findings\n\nThe major findings of this project are summarized as follows:\n\nWe have shown that the following results hold in finite-state parameterized ring networks, where symmetric families of processes communicate through an underlying communication network with a ring topology. Two processes are symmetric if the code of one can be obtained from another by a simple variable renaming. Such parameterized systems often have an unbounded (but finite) number of processes.\n\nThe number of enabled processes remains the same in every (global) state of a global livelock in unidirectional rings, where a livelock is a non-terminating execution.\nThere is no continuously enabled process in a global livelock in unidirectional rings. Thus, the assumption of weak fairness does not simplify the design of livelock-free unidirectional rings.\nA unidirectional ring has a livelock if and only if it has a contiguous livelock, where enabled processes are arranged consecutively.\nLivelock detection on a parameterized unidirectional ring of symmetric, deterministic, finite-state, self-disabling processes is undecidable.\nDetection of a livelock where exactly one process is enabled at all times on a parameterized unidirectional ring of symmetric, deterministic, finite-state, self-disabling processes is undecidable.\nVerifying strong or weak stabilization on a unidirectional ring of symmetric, deterministic, finite-state, self-disabling processes is undecidable.\n\n\nThe following findings relate to finite-state systems with a fixed number of processes:\n\nAdding convergence to systems under no  fairness (respectively, weak fairness) is NP-complete (in the size of  the state space). This result implies that adding nonmasking fault  tolerance under no fairness (respectively, weak  fairness) is also NP-complete, where a nonmasking system  guarantees recovery to legitimate states from a subset of its state  space and not necessarily from every state. A weakly fair scheduler  guarantees to infinitely often execute any action that is continuously  enabled for execution.\nWhile it is known that adding convergence  under strong fairness can be done in polynomial time, we illustrate a surprising result that adding  nonmasking fault tolerance remains NP-complete even under strong fairness,  where a strongly fair scheduler guarantees to infinitely often execute  any action that is infinitely often enabled for execution.\n\n\nProject Outcomes\n\nThe outcomes of this project include the training of PhD students, involvement of undergraduate students in research, software tool deve..."
+ }
+}

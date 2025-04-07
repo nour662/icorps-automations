@@ -1,0 +1,108 @@
+{
+ "awd_id": "1705092",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Medium: Optimal Control of Approximate Computing Systems",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2017-10-01",
+ "awd_exp_date": "2021-09-30",
+ "tot_intn_awd_amt": 599175.0,
+ "awd_amount": 599175.0,
+ "awd_min_amd_letter_date": "2017-08-22",
+ "awd_max_amd_letter_date": "2017-08-22",
+ "awd_abstract_narration": "Computing is increasingly constrained by energy both at the low end in portable devices like cell phones and at the high end in large-scale data centers. Therefore, reducing the energy expended in computation is one of the most important problems facing Computer Science today. By taking computational shortcuts such as not executing certain portions of the program or executing them with lower accuracy, it is possible in many applications, for instance video processing, to reduce energy requirements without substantially affecting the quality of the output. The goal of the Capri project is to build a system that can optimize the energy consumption of a program in these ways while guaranteeing that the output quality stays within some bound specified by the programmer.\r\n\r\nThere are two major problems that must be solved: (i) building models to characterize the output quality and energy behavior of a program, and (ii) using these models to solve a constrained optimization problem to determine how approximation can be used. Capri will use state-of-the-art machine learning techniques to build program models for output quality and energy behavior, and will employ modern non-linear optimization algorithms to solve the constrained optimization problem. The project will produce scalable open-loop and closed-loop control systems for optimizing applications for energy efficiency. The project includes presenting tutorials on information-efficient computing at conferences like Principles and Practice of Parallel Programming (PPoPP) and High-Performance Computer Architecture (HPCA), and incorporate this material into classes and make it publicly available. All data and outputs produced by the Capri project will be made available at this website: http://iss.ices.utexas.edu/.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Keshav",
+   "pi_last_name": "Pingali",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Keshav Pingali",
+   "pi_email_addr": "pingali@cs.utexas.edu",
+   "nsf_id": "000101776",
+   "pi_start_date": "2017-08-22",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Donald",
+   "pi_last_name": "Fussell",
+   "pi_mid_init": "S",
+   "pi_sufx_name": "",
+   "pi_full_name": "Donald S Fussell",
+   "pi_email_addr": "fussell@cs.utexas.edu",
+   "nsf_id": "000374919",
+   "pi_start_date": "2017-08-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Austin",
+  "perf_str_addr": "201 E. 24th St., Stop C0200",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787121229",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "25",
+  "perf_st_cong_dist": "TX25",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 599175.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Reducing the power and energy requirements of computer applications   is  an important problem. Solving this problem requires innovations in   all areas of computing from hardware to systems software and application   programs. At the application level, approximate computing  is a   promising approach for reducing power and energy requirements: in areas   like machine learning and vision, we can often save power and energy by   computing answers with reduced accuracy since this does not affect the   outcome of the computation. However, approximate computing will be  used  only if end-users have  guarantees on the quality of the output if   approximation is used.</p>\n<p>This project studied the use of approximate  computing to optimize  the implementation of algorithms for Simultaneous Localization  and  Mapping (SLAM), which is the problem of constructing a map  of a mobile  agent's environment while localizing the agent within the  map. Many  SLAM algorithms perform reconstruction and localization at  pixel  granularity. These algorithms require a lot of computational  power,  which has hindered their use on low-power resource-constrained  devices.</p>\n<p>Approximate computing can be used to speed up SLAM   implementations as long as the approximations do not prevent the agent   from navigating correctly through the environment. This project invented  SLAMBooster,  an application-aware, online control system for dense  SLAM that  adaptively controls approximation during the motion of the  agent.  SLAMBooster is based on a control technique called   proportional-integral-derivative (PID) controller but experiments   showed this application-agnostic controller led to an unacceptable   reduction in localization accuracy. To address this problem, SLAMBooster   also exploits domain knowledge for controlling approximation by   performing smooth surface detection and pose correction. Experiments  show that on the  average, SLAMBooster reduces the computation time by  72% and energy  consumption by 35% on an embedded platform, while  maintaining the  accuracy of localization within reasonable bounds.  These improvements  make it feasible to deploy SLAM on a wider range of  devices.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/12/2022<br>\n\t\t\t\t\tModified by: Keshav&nbsp;Pingali</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nReducing the power and energy requirements of computer applications   is  an important problem. Solving this problem requires innovations in   all areas of computing from hardware to systems software and application   programs. At the application level, approximate computing  is a   promising approach for reducing power and energy requirements: in areas   like machine learning and vision, we can often save power and energy by   computing answers with reduced accuracy since this does not affect the   outcome of the computation. However, approximate computing will be  used  only if end-users have  guarantees on the quality of the output if   approximation is used.\n\nThis project studied the use of approximate  computing to optimize  the implementation of algorithms for Simultaneous Localization  and  Mapping (SLAM), which is the problem of constructing a map  of a mobile  agent's environment while localizing the agent within the  map. Many  SLAM algorithms perform reconstruction and localization at  pixel  granularity. These algorithms require a lot of computational  power,  which has hindered their use on low-power resource-constrained  devices.\n\nApproximate computing can be used to speed up SLAM   implementations as long as the approximations do not prevent the agent   from navigating correctly through the environment. This project invented  SLAMBooster,  an application-aware, online control system for dense  SLAM that  adaptively controls approximation during the motion of the  agent.  SLAMBooster is based on a control technique called   proportional-integral-derivative (PID) controller but experiments   showed this application-agnostic controller led to an unacceptable   reduction in localization accuracy. To address this problem, SLAMBooster   also exploits domain knowledge for controlling approximation by   performing smooth surface detection and pose correction. Experiments  show that on the  average, SLAMBooster reduces the computation time by  72% and energy  consumption by 35% on an embedded platform, while  maintaining the  accuracy of localization within reasonable bounds.  These improvements  make it feasible to deploy SLAM on a wider range of  devices.\n\n\t\t\t\t\tLast Modified: 01/12/2022\n\n\t\t\t\t\tSubmitted by: Keshav Pingali"
+ }
+}

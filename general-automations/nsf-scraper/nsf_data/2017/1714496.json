@@ -1,0 +1,129 @@
+{
+ "awd_id": "1714496",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: STARSS: Small: Design of Low-Power True Random Number Generator based on Adaptive Post-Processing",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Sandip Kundu",
+ "awd_eff_date": "2017-10-01",
+ "awd_exp_date": "2020-09-30",
+ "tot_intn_awd_amt": 246667.0,
+ "awd_amount": 246667.0,
+ "awd_min_amd_letter_date": "2017-07-26",
+ "awd_max_amd_letter_date": "2017-07-26",
+ "awd_abstract_narration": "Nearly all security protocols rely on random numbers. A hardware True Random Number Generator (TRNG) is a circuit implemented within an Integrated Circuit (IC).  If a TRNG is not truly random, an adversary may be able to break into the security of a protocol. Hence true randomness is an important property. TRNG circuits are often large and power hungry. There is a need for low-power TRNG in battery operated devices or in energy constrained environments. This proposal addresses that need. \r\n \r\nThe proposed research explores an alternative to traditional TRNG designs. Instead of taking on considerable design complexity and energy dissipation by directly turning circuits to generate high quality random numbers, it starts with a sufficiently good physical circuit random number generator, and then combines it with a robust low-power statistical post-processing unit to address both bias, and correlation between TRNG outputs. This results in a design where the first component is only required to provide some randomness, while the second component refines this randomness through decorrelation and bias removal to extract provably perfectly random sequence of bits akin to identical and independent fair coin flips. This design will be implemented in a silicon prototype. The proposed research is interdisciplinary involving applied probability, network security, and VLSI design.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Visvesh",
+   "pi_last_name": "Sathe",
+   "pi_mid_init": "S",
+   "pi_sufx_name": "",
+   "pi_full_name": "Visvesh S Sathe",
+   "pi_email_addr": "sathe@gatech.edu",
+   "nsf_id": "000677327",
+   "pi_start_date": "2017-07-26",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Baosen",
+   "pi_last_name": "Zhang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Baosen Zhang",
+   "pi_email_addr": "zhangbao@u.washington.edu",
+   "nsf_id": "000694676",
+   "pi_start_date": "2017-07-26",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Washington",
+  "inst_street_address": "4333 BROOKLYN AVE NE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SEATTLE",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "2065434043",
+  "inst_zip_code": "981951016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "WA07",
+  "org_lgl_bus_name": "UNIVERSITY OF WASHINGTON",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HD1WMN6945W6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Washington",
+  "perf_str_addr": "4333 Brooklyn Ave NE",
+  "perf_city_name": "Seattle",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "981950001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "WA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "021Z",
+   "pgm_ref_txt": "Industry Partnerships"
+  },
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "8225",
+   "pgm_ref_txt": "SaTC Special Projects"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 246667.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The past decade has witnessed an explosion in the amount of data consumed, generated and</p>\n<p>communicated across the internet. Aided by the cloud computing model, and the proliferation of Internet of Things (IoT) devices. Data exchange between a large number of resource-constrained, often physically</p>\n<p>accessible networked devices raises important security concerns, which are well addressed through</p>\n<p>hardware solutions to secure communication. True Random Number Generators (TRNGs) are</p>\n<p>critical hardware primitives that play a central role in cryptographic applications including securing key generation in internet communication protocols. This research effort focused on answering the question of how system, architectural and circuit observations can lead to a balanced design of high-quality, scalable and energy efficient TRNGs. This research further explored adaptive techniques to further allow</p>\n<p>&nbsp;</p>\n<p>Intellectual merit:</p>\n<p>&nbsp;</p>\n<p>The research conducted by PIs Sathe and Zhang explored fundamental limitations to generating true random numbers using existing circuit-design-only techniques to realize a more balanced architecture based on integrated post-processing. This approach involves low-effort, low-complexity, sufficient-quality design of circuits that harness the inherent noise found in semiconductor devices, and relies on observations grounded in systems theory and basic statistical post-processing to extract near ideal entropy (randomness) from the system to produce random bits. The approach was implemented and successfully validated in silicon and resulted in the most energy efficient random number generator that meets the latest randomness standards outlined by the National Institute of Standards and Technology (NIST). A particularly important result of such an approach is one that, for the first time, does not degrade the quality of randomness by any significant quantity under adverse conditions. Beyond producing best-in-class hardware, this approach represents a different direction and approach to TRNG design that is applicable across all hardware TRNG design implementations. This research was the first to methodically include the impact of correlation between bits to address randomness, and to adaptive sense bias and correlation between bits (sources of degraded randomness) to correct the system and maintain randomness quality and throughput.</p>\n<p>&nbsp;</p>\n<p>Broader impact:</p>\n<p>&nbsp;</p>\n<p>The research findings on TRNG design, along with results and findings from the TRNG test-chip hardware platform were disseminated through leading conferences and journal publications in the field. These findings were also incorporated into the &ldquo;Advanced VLSI Design&rdquo; class at the University of Washington as a case study of how conceptualization and innovation across the spectrum from circuits to systems can&nbsp; be leveraged to build superior designs that cannot be achieved by best-in-class efforts in any one area alone. We have also been able to use specific components of the research in undergraduate education, notably in the area of cryptography. The findings from the conducted research extends well beyond not only implemention of TRNGs in future test-chips by other research but also other hardware platforms such as FGAs. This TRNG research is already finding application in PI Sathe&rsquo;s research into side-channel resistant cryptographic hardware for extremely resource constrained brain computer interfaces and it is anticipated that the research will be useful in other applications, both energy-constrained and high-performance where secure, efficient communication is a priority.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/10/2021<br>\n\t\t\t\t\tModified by: Visvesh&nbsp;Sathe</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe past decade has witnessed an explosion in the amount of data consumed, generated and\n\ncommunicated across the internet. Aided by the cloud computing model, and the proliferation of Internet of Things (IoT) devices. Data exchange between a large number of resource-constrained, often physically\n\naccessible networked devices raises important security concerns, which are well addressed through\n\nhardware solutions to secure communication. True Random Number Generators (TRNGs) are\n\ncritical hardware primitives that play a central role in cryptographic applications including securing key generation in internet communication protocols. This research effort focused on answering the question of how system, architectural and circuit observations can lead to a balanced design of high-quality, scalable and energy efficient TRNGs. This research further explored adaptive techniques to further allow\n\n \n\nIntellectual merit:\n\n \n\nThe research conducted by PIs Sathe and Zhang explored fundamental limitations to generating true random numbers using existing circuit-design-only techniques to realize a more balanced architecture based on integrated post-processing. This approach involves low-effort, low-complexity, sufficient-quality design of circuits that harness the inherent noise found in semiconductor devices, and relies on observations grounded in systems theory and basic statistical post-processing to extract near ideal entropy (randomness) from the system to produce random bits. The approach was implemented and successfully validated in silicon and resulted in the most energy efficient random number generator that meets the latest randomness standards outlined by the National Institute of Standards and Technology (NIST). A particularly important result of such an approach is one that, for the first time, does not degrade the quality of randomness by any significant quantity under adverse conditions. Beyond producing best-in-class hardware, this approach represents a different direction and approach to TRNG design that is applicable across all hardware TRNG design implementations. This research was the first to methodically include the impact of correlation between bits to address randomness, and to adaptive sense bias and correlation between bits (sources of degraded randomness) to correct the system and maintain randomness quality and throughput.\n\n \n\nBroader impact:\n\n \n\nThe research findings on TRNG design, along with results and findings from the TRNG test-chip hardware platform were disseminated through leading conferences and journal publications in the field. These findings were also incorporated into the \"Advanced VLSI Design\" class at the University of Washington as a case study of how conceptualization and innovation across the spectrum from circuits to systems can  be leveraged to build superior designs that cannot be achieved by best-in-class efforts in any one area alone. We have also been able to use specific components of the research in undergraduate education, notably in the area of cryptography. The findings from the conducted research extends well beyond not only implemention of TRNGs in future test-chips by other research but also other hardware platforms such as FGAs. This TRNG research is already finding application in PI Sathe\u2019s research into side-channel resistant cryptographic hardware for extremely resource constrained brain computer interfaces and it is anticipated that the research will be useful in other applications, both energy-constrained and high-performance where secure, efficient communication is a priority.\n\n\t\t\t\t\tLast Modified: 02/10/2021\n\n\t\t\t\t\tSubmitted by: Visvesh Sathe"
+ }
+}

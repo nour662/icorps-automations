@@ -1,0 +1,109 @@
+{
+ "awd_id": "1108152",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Fellowship Award",
+ "awd_titl_txt": "EAPSI: Adapting Document-Specific Models for Optical Character Recognition",
+ "cfda_num": "47.079",
+ "org_code": "01090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anne Emig",
+ "awd_eff_date": "2011-06-01",
+ "awd_exp_date": "2012-05-31",
+ "tot_intn_awd_amt": 5700.0,
+ "awd_amount": 5700.0,
+ "awd_min_amd_letter_date": "2011-05-18",
+ "awd_max_amd_letter_date": "2011-05-18",
+ "awd_abstract_narration": null,
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "O/D",
+ "org_dir_long_name": "Office Of The Director",
+ "div_abbr": "OISE",
+ "org_div_long_name": "Office of International Science and Engineering",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Andrew",
+   "pi_last_name": "Kae",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Andrew Kae",
+   "pi_email_addr": "",
+   "nsf_id": "000579566",
+   "pi_start_date": "2011-05-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Kae                     Andrew",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "Amherst",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "",
+  "inst_zip_code": "010022722",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "MA02",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "Kae                     Andrew",
+  "perf_str_addr": "",
+  "perf_city_name": "Amherst",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "010022722",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "MA02",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "731600",
+   "pgm_ele_name": "EAPSI"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5921",
+   "pgm_ref_txt": "JAPAN"
+  },
+  {
+   "pgm_ref_code": "5978",
+   "pgm_ref_txt": "EAST ASIA AND PACIFIC PROGRAM"
+  },
+  {
+   "pgm_ref_code": "7316",
+   "pgm_ref_txt": "EAPSI"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 5700.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Much of our collective knowledge is still stored in books and other printed media.  As more of this printed media becomes digitized and available online, it is increasingly important to recognize the text in these images accurately in order to allow better search and organization.  My work focuses on the problem of accurately recognizing machine printed text in a scanned image of a book or newspaper, generally referred to as Optical Character Recognition or OCR.<br /><br />OCR remains a difficult problem for noisy documents or documents not scanned at high resolution.  Many current approaches rely on stored font models that are vulnerable to cases in which the document is noisy or is written in a font dissimilar to the stored fonts in the system.  These problems are apparent in the historical newspaper dataset I am currently analyzing.  In previous work, I addressed these problems by learning character models directly from the document itself, rather than use pre-stored font models.  In particular, we first used an external OCR system to obtain an initial translation of the document, and then identified which words in the translation we believe to be correctly recognized with high confidence.  In this way, we learn document-specific character models that are adapted to the noise level/font in the document.  However, a limitation of this approach is that we may not have models for all character classes.  For my Summer project, I aimed to overcome this limitation by adapting existing, pre-stored font models to account for cases where the document-specific character model is unavailable, thus accounting for all character classes. <br /><br />In my approach, I first use a pre-stored font model to account for the missing character classes.  I then adapted these new models to the noise in the target document using a probabilistic model.  I found that using simple degradations such as Gaussian blurring are not enough to sufficiently adapt these external font models.  This motivates the need to do a more general document-specific adaptation, for which I used a probabilistic model.  This model can find a reasonable approximation of the global noise level in a document but cannot capture the finer details of characters.  For example, I can get a reasonable model of characters such as &ldquo;b&rdquo; but not of characters like an \"s\". Overall using these adapted character models results in a small improvement over using the non-adapted characters but more work needs to be done to obtain better document-specific degradations.<br /><br />Based on my findings, I am confident that a model which can better capture document-specific degradations can help improve OCR accuracy for noisy documents.  My work in document-specific modeling can be a low-cost, automatic way to improve OCR accuracy on this kind of data.  By improving recognition accuracy, we can better search and organize this data, allowing further study by others.  Thus, this work should also be of interest to researchers in Information Retrieval.  In addition, my approach is not specific to machine printed text and without major modification, it can also be applied toward handwriting recognition. <br /><br />One potential benefit of this work is the ability to build OCR systems for languages in which no OCR systems currently exist.  Building a conventional OCR system is an expensive, time-consuming effort that companies would make only for popular languages with many potential users.  But for many less-popular languages, there is no incentive to create an OCR system since there are few users and the cost is prohibitively expensive.  Our approach is not speci?c to English and is general enough to recognize text in other languages.  We do require an initial translation but this can be done if the initial OCR system is trained in a &ldquo;nearby&rdquo; language or by having someone manually translate a handful of documents....",
+  "por_txt_cntn": "\nMuch of our collective knowledge is still stored in books and other printed media.  As more of this printed media becomes digitized and available online, it is increasingly important to recognize the text in these images accurately in order to allow better search and organization.  My work focuses on the problem of accurately recognizing machine printed text in a scanned image of a book or newspaper, generally referred to as Optical Character Recognition or OCR.\n\nOCR remains a difficult problem for noisy documents or documents not scanned at high resolution.  Many current approaches rely on stored font models that are vulnerable to cases in which the document is noisy or is written in a font dissimilar to the stored fonts in the system.  These problems are apparent in the historical newspaper dataset I am currently analyzing.  In previous work, I addressed these problems by learning character models directly from the document itself, rather than use pre-stored font models.  In particular, we first used an external OCR system to obtain an initial translation of the document, and then identified which words in the translation we believe to be correctly recognized with high confidence.  In this way, we learn document-specific character models that are adapted to the noise level/font in the document.  However, a limitation of this approach is that we may not have models for all character classes.  For my Summer project, I aimed to overcome this limitation by adapting existing, pre-stored font models to account for cases where the document-specific character model is unavailable, thus accounting for all character classes. \n\nIn my approach, I first use a pre-stored font model to account for the missing character classes.  I then adapted these new models to the noise in the target document using a probabilistic model.  I found that using simple degradations such as Gaussian blurring are not enough to sufficiently adapt these external font models.  This motivates the need to do a more general document-specific adaptation, for which I used a probabilistic model.  This model can find a reasonable approximation of the global noise level in a document but cannot capture the finer details of characters.  For example, I can get a reasonable model of characters such as \"b\" but not of characters like an \"s\". Overall using these adapted character models results in a small improvement over using the non-adapted characters but more work needs to be done to obtain better document-specific degradations.\n\nBased on my findings, I am confident that a model which can better capture document-specific degradations can help improve OCR accuracy for noisy documents.  My work in document-specific modeling can be a low-cost, automatic way to improve OCR accuracy on this kind of data.  By improving recognition accuracy, we can better search and organize this data, allowing further study by others.  Thus, this work should also be of interest to researchers in Information Retrieval.  In addition, my approach is not specific to machine printed text and without major modification, it can also be applied toward handwriting recognition. \n\nOne potential benefit of this work is the ability to build OCR systems for languages in which no OCR systems currently exist.  Building a conventional OCR system is an expensive, time-consuming effort that companies would make only for popular languages with many potential users.  But for many less-popular languages, there is no incentive to create an OCR system since there are few users and the cost is prohibitively expensive.  Our approach is not speci?c to English and is general enough to recognize text in other languages.  We do require an initial translation but this can be done if the initial OCR system is trained in a \"nearby\" language or by having someone manually translate a handful of documents.  Our approach bene?ts with more annotated documents, but having a few at the beginning may be enough to obtain a satisfactory..."
+ }
+}

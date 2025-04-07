@@ -1,0 +1,113 @@
+{
+ "awd_id": "1148668",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: On the Optimal Rewards Problem",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032927215",
+ "po_email": "tleen@nsf.gov",
+ "po_sign_block_name": "Todd Leen",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2014-07-31",
+ "tot_intn_awd_amt": 200000.0,
+ "awd_amount": 200000.0,
+ "awd_min_amd_letter_date": "2011-08-26",
+ "awd_max_amd_letter_date": "2011-08-29",
+ "awd_abstract_narration": "The specification of goals in the form of utility or reward functions is a cornerstone of most approaches to developing autonomous artificial agents, and to understanding and shaping the behavior of natural biological agents - in fields ranging from control, AI, economics, psychology, and ethology. But in practice there are actually two notions of goals: the (human or evolutionary) designer's goals and the (artificial or natural) agent's goals. Should these be the same? The conventional (implicit) answer is \"yes\", but new work by the PIs shows that the answer may be \"no\" for computationally bounded agents. We define a new problem in agent design, the optimal rewards problem, whose solution is a reward function to assign to the agent so that in attempting to maximize its reward the agent best achieves the designer's goals.  This project explores optimal rewards, through computational experimentation and analysis, on two broad fronts. We will develop new principles and algorithms for bounded planning agents, demonstrating increased performance over using conventional rewards, even when taking into account the cost of finding the optimal rewards. We will make significant advances in two areas of behavioral economics and ethology: the understanding of subjective utility in humans, and the understanding of foraging behavior in animals, by using optimal reward theory to rigorously derive subjective reward functions that take into account the computational limits of the natural agents. The results of this work, disseminated through published theory and software, should lead to foundational changes in the way we understand and design incentive structures for humans, animals, and artificial agents, and thus to significant practical benefits for any methods in engineering, education, economics, and health that depend on finding good incentives for desired behavioral outcomes.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Satinder",
+   "pi_last_name": "Baveja",
+   "pi_mid_init": "S",
+   "pi_sufx_name": "",
+   "pi_full_name": "Satinder S Baveja",
+   "pi_email_addr": "baveja@umich.edu",
+   "nsf_id": "000100173",
+   "pi_start_date": "2011-08-26",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Richard",
+   "pi_last_name": "Lewis",
+   "pi_mid_init": "L",
+   "pi_sufx_name": "",
+   "pi_full_name": "Richard L Lewis",
+   "pi_email_addr": "rickl@umich.edu",
+   "nsf_id": "000484065",
+   "pi_start_date": "2011-08-26",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Regents of the University of Michigan - Ann Arbor",
+  "inst_street_address": "1109 GEDDES AVE STE 3300",
+  "inst_street_address_2": "",
+  "inst_city_name": "ANN ARBOR",
+  "inst_state_code": "MI",
+  "inst_state_name": "Michigan",
+  "inst_phone_num": "7347636438",
+  "inst_zip_code": "481091015",
+  "inst_country_name": "United States",
+  "cong_dist_code": "06",
+  "st_cong_dist_code": "MI06",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF MICHIGAN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GNJ7BBP73WE9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Michigan Ann Arbor",
+  "perf_str_addr": "2260 hayward",
+  "perf_city_name": "Ann arbor",
+  "perf_st_code": "MI",
+  "perf_st_name": "Michigan",
+  "perf_zip_code": "481092121",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "MI06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "805200",
+   "pgm_ele_name": "Inter Com Sci Econ Soc S (ICE)"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 200000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"p1\">For artificial agents to have autonomy their behavior must exhibit the sort of flexibility and adaptiveness exhibited by humans and other animals. One way to achieve this is for the human builders of such artificial agents to endow them with high-level goals as opposed to low-level detailed behaviors, provided these agents implement algorithms that can translate their high-level goals automatically into low-level behaviors that are adaptive to the specific circumstances of the agent. The field of Reinforcement Learning or RL offers a formal mathematical framework in which the high-level goals are represented as reward functions and provides a set of algorithms for translating reward functions into behavior when an RL-agent is placed in some environment. The research focus of this project was on the question: What reward functions should be given to an RL-agent? A starting point for the answer lies in an earlier optimization framework developed by the PIs in which the optimal reward function is one which when given to an RL-agent yields behavior that is optimal with respect to the human-designer&rsquo;s preferences over the agent&rsquo;s behavior.&nbsp;</p>\n<p class=\"p1\">In this project, the PIs extended the optimal rewards framework in two essential ways. The first extension considered cases in which the RL-agent is to solve a sequence of tasks as expressed via a sequence of human-designer&rsquo;s reward functions. A major contribution was to show that a useful reward-mapping function that maps the human-designer&rsquo;s reward function to the agent&rsquo;s reward function can be learned from experience. The reward-mapping function is useful in that it is of benefit to the human-designer to use it to automatically set the RL-agent&rsquo;s reward function. The second extension considered multiagent settings in which two RL-agents have to cooperate and compete with each other. A major contribution was to show that automatically learned reward functions lead the two agent&rsquo;s to specialize or differentiate their skills (via learning different reward functions) when that is useful in their environment and to learn similar skills (via learning the same reward functions) when that is better in their environment.&nbsp;</p>\n<p class=\"p1\">In summary, research supported by this project significantly expanded our understanding of how reward functions should be designed for autonomous artificial agents.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/02/2015<br>\n\t\t\t\t\tModified by: Satinder&nbsp;S&nbsp;Baveja</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "For artificial agents to have autonomy their behavior must exhibit the sort of flexibility and adaptiveness exhibited by humans and other animals. One way to achieve this is for the human builders of such artificial agents to endow them with high-level goals as opposed to low-level detailed behaviors, provided these agents implement algorithms that can translate their high-level goals automatically into low-level behaviors that are adaptive to the specific circumstances of the agent. The field of Reinforcement Learning or RL offers a formal mathematical framework in which the high-level goals are represented as reward functions and provides a set of algorithms for translating reward functions into behavior when an RL-agent is placed in some environment. The research focus of this project was on the question: What reward functions should be given to an RL-agent? A starting point for the answer lies in an earlier optimization framework developed by the PIs in which the optimal reward function is one which when given to an RL-agent yields behavior that is optimal with respect to the human-designer\u00c6s preferences over the agent\u00c6s behavior. \nIn this project, the PIs extended the optimal rewards framework in two essential ways. The first extension considered cases in which the RL-agent is to solve a sequence of tasks as expressed via a sequence of human-designer\u00c6s reward functions. A major contribution was to show that a useful reward-mapping function that maps the human-designer\u00c6s reward function to the agent\u00c6s reward function can be learned from experience. The reward-mapping function is useful in that it is of benefit to the human-designer to use it to automatically set the RL-agent\u00c6s reward function. The second extension considered multiagent settings in which two RL-agents have to cooperate and compete with each other. A major contribution was to show that automatically learned reward functions lead the two agent\u00c6s to specialize or differentiate their skills (via learning different reward functions) when that is useful in their environment and to learn similar skills (via learning the same reward functions) when that is better in their environment. \nIn summary, research supported by this project significantly expanded our understanding of how reward functions should be designed for autonomous artificial agents. \n\n \n\n\t\t\t\t\tLast Modified: 01/02/2015\n\n\t\t\t\t\tSubmitted by: Satinder S Baveja"
+ }
+}

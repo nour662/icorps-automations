@@ -1,0 +1,101 @@
+{
+ "awd_id": "1717199",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NeTS: Small: Cognitive Management and Control of Agile Dynamic Optical Networks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Ann Von Lehmen",
+ "awd_eff_date": "2017-08-01",
+ "awd_exp_date": "2021-07-31",
+ "tot_intn_awd_amt": 498975.0,
+ "awd_amount": 498975.0,
+ "awd_min_amd_letter_date": "2017-07-31",
+ "awd_max_amd_letter_date": "2017-07-31",
+ "awd_abstract_narration": "Part 1.\r\nThe optical network of the future will have orders of magnitude increase in data rates, due at least partially to the increase in big-data transactions. These create the need for fast scheduling of network resources and agile network adaptation to most efficiently move the data across the network.  This project proposes to investigate a cognitive network management and control system, which 'senses' current network conditions and uses this information to satisfy overall performance goals. This project will be the first comprehensive research on cognitive optical network management and control. The goal is for agile automated adaptation to replace current slow, manually-driven management and control practices. The fruits of this research will have implications for next generation wireless networks and power grid systems and for fast detection of extreme events that can significantly disrupt networks. \r\n\r\nPart 2.\r\nCurrent optical networks are operated with predominantly static connections, with lightpaths changed quasi-statically and often remaining unchanged for months. Present methods of setting up a wavelength path result in slow changes to the network (~20 min setup times), as each of the network elements along the path is gradually tuned to avoid instabilities and transient impairments arising from rapidly introducing another optical channel into the network. Large flow and other traffic dynamics will require bandwidth adaptations of the order of ~100mS-1S.  In today's optical networks, the link quality of all adjacent wavelengths is monitored as the lightpath is turned on in several steps. The number of network parameters and their short coherence time in dynamic future networks render acquiring the complete state information of the network impractical. The idea of this project is to sense and control a small subset of the parameters with the 'largest' information content and use their relationship to tune the network. Cognitive techniques that need to be incorporated in such a strategy include sampling of network and link parameters, applying data analytics to learn behavior and cognitive techniques to operate networks, and inferring network state and optimizing performance without placing an undue network control and management communications burden on the network. This research will consider both dynamic per-session scheduling, rerouting/load-balancing and topology reconfiguration to optimize network performance.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Vincent",
+   "pi_last_name": "Chan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Vincent Chan",
+   "pi_email_addr": "chan@mit.edu",
+   "nsf_id": "000099838",
+   "pi_start_date": "2017-07-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Massachusetts Institute of Technology",
+  "inst_street_address": "77 MASSACHUSETTS AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6172531000",
+  "inst_zip_code": "021394301",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+  "org_prnt_uei_num": "E2NYLCDML6V1",
+  "org_uei_num": "E2NYLCDML6V1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Massachusetts Institute of Technology",
+  "perf_str_addr": "77 Massachusetts Ave",
+  "perf_city_name": "Cambridge",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021394307",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 498975.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>ML/AI algorithms takes 1000-2000 samples to learn and converge to a good policy. These convergence times while useful for quasi-static network management are not fast enough for dynamic network adaptations in cases requiring reconfigurations of 1 second time scales. To that end we constructed a sequential decision algorithm using Bayesian techniques (stopping trials) to trigger reconfigurations with 6-8 samples. It is the provably optimum algorithm. Moreover, this alogrithm is self stabilizing in that if the reconfiguration is in error due to noise or bad information, it will self correct in the some time frame.&nbsp;</span></p>\n<p><span>The program ran over the firt 6 months of 2021. Specifically, we investigated the design of an efficient reroutingalgorithm to maintain users&rsquo; quality of service when the incrementaltraffic cannot be accommodated on the primary path.The algorithm includes the fast reconfiguration of wavelengthsin the existing lit and spatially routed fibers, and the time to perform the new fiber setup is also mentioned. Reroutingis necessary to maintain users&rsquo; quality of service when thequeueing delay on the primary path (determined by shortestpath routing) exceeds the requirement. Our algorithm triggers reconfiguration when a queueing delay threshold is crossed on the primary path. The triggering by a threshold on thequeueing delay is used due to its simplicity, and it is directly measurable by the exact traffic transaction sizes and the queuesize, which reflect both the current network traffic environment and the network configurations. A dynamic rerouting algorithm implemented with a shortest-path algorithm is proposed to findthe secondary paths for rerouting. We make the conjecture thatit is desirable that the alternate paths for rerouting have small numbers of hops and are disjoint with other busy paths whenthe hops on the path are independent. In addition, the conjecture suggests that a good candidate network topology should have high edge-connectivity. Wavelength reservation for rerouted traffic does not maximize wavelength utilization. We make the conjecture that traffic with different sizes should be broken upinto multi-classes with dedicated partitioned resources and the queueing delay should be normalized by the transmission timefor rerouting triggering to realize better network utilization.Index Terms&mdash;Optical network, cognitive network, network management and control, routing. I<br /></span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/11/2022<br>\n\t\t\t\t\tModified by: Vincent&nbsp;Chan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nML/AI algorithms takes 1000-2000 samples to learn and converge to a good policy. These convergence times while useful for quasi-static network management are not fast enough for dynamic network adaptations in cases requiring reconfigurations of 1 second time scales. To that end we constructed a sequential decision algorithm using Bayesian techniques (stopping trials) to trigger reconfigurations with 6-8 samples. It is the provably optimum algorithm. Moreover, this alogrithm is self stabilizing in that if the reconfiguration is in error due to noise or bad information, it will self correct in the some time frame. \n\nThe program ran over the firt 6 months of 2021. Specifically, we investigated the design of an efficient reroutingalgorithm to maintain users\u2019 quality of service when the incrementaltraffic cannot be accommodated on the primary path.The algorithm includes the fast reconfiguration of wavelengthsin the existing lit and spatially routed fibers, and the time to perform the new fiber setup is also mentioned. Reroutingis necessary to maintain users\u2019 quality of service when thequeueing delay on the primary path (determined by shortestpath routing) exceeds the requirement. Our algorithm triggers reconfiguration when a queueing delay threshold is crossed on the primary path. The triggering by a threshold on thequeueing delay is used due to its simplicity, and it is directly measurable by the exact traffic transaction sizes and the queuesize, which reflect both the current network traffic environment and the network configurations. A dynamic rerouting algorithm implemented with a shortest-path algorithm is proposed to findthe secondary paths for rerouting. We make the conjecture thatit is desirable that the alternate paths for rerouting have small numbers of hops and are disjoint with other busy paths whenthe hops on the path are independent. In addition, the conjecture suggests that a good candidate network topology should have high edge-connectivity. Wavelength reservation for rerouted traffic does not maximize wavelength utilization. We make the conjecture that traffic with different sizes should be broken upinto multi-classes with dedicated partitioned resources and the queueing delay should be normalized by the transmission timefor rerouting triggering to realize better network utilization.Index Terms&mdash;Optical network, cognitive network, network management and control, routing. I\n\n\n\t\t\t\t\tLast Modified: 08/11/2022\n\n\t\t\t\t\tSubmitted by: Vincent Chan"
+ }
+}

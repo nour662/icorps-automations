@@ -1,0 +1,105 @@
+{
+ "awd_id": "1249316",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: Preliminary Study of Hashing Algorithms for Large-Scale Learning",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032927347",
+ "po_email": "sspengle@nsf.gov",
+ "po_sign_block_name": "Sylvia Spengler",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2014-08-31",
+ "tot_intn_awd_amt": 100000.0,
+ "awd_amount": 100000.0,
+ "awd_min_amd_letter_date": "2012-08-18",
+ "awd_max_amd_letter_date": "2012-08-18",
+ "awd_abstract_narration": "Many emerging applications of data mining call for techniques that can deal with data instances with millions, if not billions of dimensions. Hence, there is a need for effective approaches to dealing with extremely high dimensional data sets. \r\n\r\nThis project focuses on a class of novel theoretically well-founded hashing algorithms that allow high dimensional data to be encoded in a form that can be efficiently processed by standard machine learning algorithms. Specifically, it explores: One-permutation hashing, to dramatically reduce the computational and energy cost of hashing; Sparsity-preserving hashing, to take advantage of  data sparsity for efficient data storage and improved generalization; Application of the new hashing techniques with standard algorithms for learning  \"linear\"  separators in high dimensional spaces. The  success of this EAGER project could lay the foundations of a longer-term research agenda by the PI and other investigators focused on developing effective methods for building predictive models from extremely high dimensional data using \"standard\" machine learning algorithms. \r\n\r\nBroader Impacts: Effective approaches to building predictive models from  extremely high dimensional data can impact many areas of science that rely on machine learning as the primary methodology for knowledge acquisition from data. The PI's education and outreach efforts aim to  broaden the participation of women and underrepresented groups. The publications, software, and datasets resulting from the project will be freely disseminated to the larger scientific community.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ping",
+   "pi_last_name": "Li",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ping Li",
+   "pi_email_addr": "pingli@stat.rutgers.edu",
+   "nsf_id": "000083097",
+   "pi_start_date": "2012-08-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Cornell University",
+  "inst_street_address": "341 PINE TREE RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "ITHACA",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6072555014",
+  "inst_zip_code": "148502820",
+  "inst_country_name": "United States",
+  "cong_dist_code": "19",
+  "st_cong_dist_code": "NY19",
+  "org_lgl_bus_name": "CORNELL UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "G56PUALJ3KT5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Cornell University",
+  "perf_str_addr": "4130 Upson Hall",
+  "perf_city_name": "Ithaca",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "148537501",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "19",
+  "perf_st_cong_dist": "NY19",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736400",
+   "pgm_ele_name": "Info Integration & Informatics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 100000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project has focused on developing novel, practical, and mathematically rigorous hashing algorithms&nbsp; for processing&nbsp; massive and extremely high-dimensional data, which are common in morden applications, for example, search engines. The core of the project is the development of \"one permutation hashing\", which is a safe replacement of \"minwise hashing\", the standard data processing algorithm used in search.</p>\n<p>Minwise hashing has been a popular tool for efficiently computing data similarities using small storage space. It is also a standard indexing tool to organize data in a way that allows searching for nearest neighbors in sublinear time (i.e., faster than linear scans).The drawback of minwise hsahing is that it needs to permute the data many (hundreds or thousands of) times. This preprocessing cost typically dominates many subsequent operations such as search and learning. Even though the preprocessing can be trivially paralelized, it is not an engergy-efficient solution.</p>\n<p>One permutation hashing solves the problem by doing only ONE permutation on the data and exploiting statistical properities which were not studied in the past. This dramatically reduces the processing cost by a factor of hundreds or thousands, depending on applications. One permutation can be used for both learning (e.g., building SVMs or logistic regression models) and sublinear time near neighbor search (i.e., indexing). However, in order to use it for indexing sparse data, we must address a crucial issue, that is, the existence of \"empty bins\".</p>\n<p>Basically, one permutation hashing works by breaking the space (after permutation) into bins and keeping the smallest nonzero entry in each bin. When the data are sparse, empty bins are not avoidable, in fact they can&nbsp; dominate when the data are extremely sparse. Our solution to this&nbsp; problem is \"denisified one permutation hashing\", by borrowing the neigbhoring non-empty bins. We have shown that this approach is mathematically rigorous and we have successfully used the method for indexing &amp; sublinear time near neighbor search.</p>\n<p>In summary, this project is a successful in that we have developed \"one permutation hashing\" and \"denisified one permutation\" which are simple, practical, mathemetically rigorous, and&nbsp; can safely replace the standard data processing methods used in industry.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/27/2014<br>\n\t\t\t\t\tModified by: Ping&nbsp;Li</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project has focused on developing novel, practical, and mathematically rigorous hashing algorithms  for processing  massive and extremely high-dimensional data, which are common in morden applications, for example, search engines. The core of the project is the development of \"one permutation hashing\", which is a safe replacement of \"minwise hashing\", the standard data processing algorithm used in search.\n\nMinwise hashing has been a popular tool for efficiently computing data similarities using small storage space. It is also a standard indexing tool to organize data in a way that allows searching for nearest neighbors in sublinear time (i.e., faster than linear scans).The drawback of minwise hsahing is that it needs to permute the data many (hundreds or thousands of) times. This preprocessing cost typically dominates many subsequent operations such as search and learning. Even though the preprocessing can be trivially paralelized, it is not an engergy-efficient solution.\n\nOne permutation hashing solves the problem by doing only ONE permutation on the data and exploiting statistical properities which were not studied in the past. This dramatically reduces the processing cost by a factor of hundreds or thousands, depending on applications. One permutation can be used for both learning (e.g., building SVMs or logistic regression models) and sublinear time near neighbor search (i.e., indexing). However, in order to use it for indexing sparse data, we must address a crucial issue, that is, the existence of \"empty bins\".\n\nBasically, one permutation hashing works by breaking the space (after permutation) into bins and keeping the smallest nonzero entry in each bin. When the data are sparse, empty bins are not avoidable, in fact they can  dominate when the data are extremely sparse. Our solution to this  problem is \"denisified one permutation hashing\", by borrowing the neigbhoring non-empty bins. We have shown that this approach is mathematically rigorous and we have successfully used the method for indexing &amp; sublinear time near neighbor search.\n\nIn summary, this project is a successful in that we have developed \"one permutation hashing\" and \"denisified one permutation\" which are simple, practical, mathemetically rigorous, and  can safely replace the standard data processing methods used in industry.\n\n\t\t\t\t\tLast Modified: 11/27/2014\n\n\t\t\t\t\tSubmitted by: Ping Li"
+ }
+}

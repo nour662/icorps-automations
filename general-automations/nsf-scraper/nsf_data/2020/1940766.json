@@ -1,0 +1,105 @@
+{
+ "awd_id": "1940766",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Stochastic Covering Under Noisy Outcomes",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": "7032922443",
+ "po_email": "gaklutke@nsf.gov",
+ "po_sign_block_name": "Georgia-Ann Klutke",
+ "awd_eff_date": "2020-01-01",
+ "awd_exp_date": "2023-12-31",
+ "tot_intn_awd_amt": 370875.0,
+ "awd_amount": 370875.0,
+ "awd_min_amd_letter_date": "2019-12-30",
+ "awd_max_amd_letter_date": "2019-12-30",
+ "awd_abstract_narration": "This project will study efficient methods for classifying a system based on outcomes revealed through a series of tests. A common task in medical decision-making is to perform a sequence of diagnostic tests in order to determine an underlying condition as quickly as possible.  Tests will reveal partial information about the underlying condition, but may also be subject to error.  The goal is to optimize the sequence of tests to minimize cost and time to classification.  Similar problems arise in fault detection of complex systems and in threat detection.  Noisy or missing data is a major issue in these applications, which often renders traditional models inapplicable.  These examples can be modeled as sequential decision trees, and this project will develop methods to study optimal sequential decision trees with noisy outcomes. The specific questions studied in this project are of interest to multiple research communities including operations research, industrial engineering, computer science and machine learning. The educational component of this project involves training graduate and undergraduate students for a career in research, enhancing the curriculum of graduate courses, and outreach programs to high school students designed to broaden participation in STEM.\r\n \r\nThis project will study models and algorithms for stochastic covering problems in the presence of noisy outcomes. Classical models for these problems assume that random outcomes are observed without any noise. This project will consider new models that incorporate noise in the following ways. In the stochastic noise model, the outcomes of certain tests are uncertain with known probability distributions. The stochastic noise can be either non-persistent or persistent, depending on whether observing the same outcome repeatedly results in independent samples. In the adversarial noise model, each noisy outcome instantiates to a value that results in the worst-case objective. A central paradigm in this project is the optimal decision tree, where one needs to identify an unknown random hypothesis using an adaptive sequence of tests. Apart from the noisy optimal decision tree problem, this project will also study noisy versions of stochastic submodular-cover and sequential testing problems. The project will design algorithms with mathematically rigorous performance guarantees. It will also test the empirical performance of the resulting algorithms on synthetic as well as publicly available datasets.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Viswanath",
+   "pi_last_name": "Nagarajan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Viswanath Nagarajan",
+   "pi_email_addr": "viswa@umich.edu",
+   "nsf_id": "000688435",
+   "pi_start_date": "2019-12-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Regents of the University of Michigan - Ann Arbor",
+  "inst_street_address": "1109 GEDDES AVE STE 3300",
+  "inst_street_address_2": "",
+  "inst_city_name": "ANN ARBOR",
+  "inst_state_code": "MI",
+  "inst_state_name": "Michigan",
+  "inst_phone_num": "7347636438",
+  "inst_zip_code": "481091015",
+  "inst_country_name": "United States",
+  "cong_dist_code": "06",
+  "st_cong_dist_code": "MI06",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF MICHIGAN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GNJ7BBP73WE9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Michigan Ann Arbor",
+  "perf_str_addr": "3003 South State St. Room 1062",
+  "perf_city_name": "Ann Arbor",
+  "perf_st_code": "MI",
+  "perf_st_name": "Michigan",
+  "perf_zip_code": "481091274",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "MI06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "006Y00",
+   "pgm_ele_name": "OE Operations Engineering"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "073E",
+   "pgm_ref_txt": "OPTIMIZATION & DECISION MAKING"
+  },
+  {
+   "pgm_ref_code": "5514",
+   "pgm_ref_txt": "OPERATIONS RESEARCH"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 370875.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this project was on designing algorithms for stochastic covering problems arising in fault-diagnosis and machine learning. Solutions to such problems may require exponential space even to store. So, our focus was on obtaining succinct solutions that can be implemented efficiently. We proved theoretical performance bounds for all our algorithms, and in many cases also evaluated their empirical performance against other benchmarks. In addition to standard stochastic models, we also considered models with imperfect random outcomes.</p>\n<p>One major direction was on the optimal decision tree problem, which involves identifying an unknown hypothesis by performing a sequence of tests. We obtained approximation algorithms for a noisy version of this problem, even in the more general setting of covering a submodular function. Furthermore, we obtained approximately optimal solutions for a class of such stochastic covering problems that only use a small number of sequential rounds. We also obtained improved approximation algorithms for sequential testing problems such as score classification and evaluating the intersection of halfspaces. &nbsp;</p>\n<p>Another direction was on stochastic models arising in machine learning. Here, we considered the dueling bandit problem, where feedback is in the form of noisy pairwise comparisons between competing choices. Our focus was on algorithms that use only a small (logarithmic) number of sequential rounds. We obtained the first low-regret online algorithm in this setting, nearly matching the best algorithms in the fully sequential setting.</p>\n<p>This project partially supported three Ph.D. students, one Masters student and three undergraduate students.</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 02/06/2024<br>\nModified by: Viswanath&nbsp;Nagarajan</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe goal of this project was on designing algorithms for stochastic covering problems arising in fault-diagnosis and machine learning. Solutions to such problems may require exponential space even to store. So, our focus was on obtaining succinct solutions that can be implemented efficiently. We proved theoretical performance bounds for all our algorithms, and in many cases also evaluated their empirical performance against other benchmarks. In addition to standard stochastic models, we also considered models with imperfect random outcomes.\n\n\nOne major direction was on the optimal decision tree problem, which involves identifying an unknown hypothesis by performing a sequence of tests. We obtained approximation algorithms for a noisy version of this problem, even in the more general setting of covering a submodular function. Furthermore, we obtained approximately optimal solutions for a class of such stochastic covering problems that only use a small number of sequential rounds. We also obtained improved approximation algorithms for sequential testing problems such as score classification and evaluating the intersection of halfspaces. \n\n\nAnother direction was on stochastic models arising in machine learning. Here, we considered the dueling bandit problem, where feedback is in the form of noisy pairwise comparisons between competing choices. Our focus was on algorithms that use only a small (logarithmic) number of sequential rounds. We obtained the first low-regret online algorithm in this setting, nearly matching the best algorithms in the fully sequential setting.\n\n\nThis project partially supported three Ph.D. students, one Masters student and three undergraduate students.\n\n\n\t\t\t\t\tLast Modified: 02/06/2024\n\n\t\t\t\t\tSubmitted by: ViswanathNagarajan\n"
+ }
+}

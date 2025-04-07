@@ -1,0 +1,105 @@
+{
+ "awd_id": "1617424",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Small: Collaborative: Improving Android Security with Dynamic Slicing",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2016-06-03",
+ "awd_max_amd_letter_date": "2016-06-03",
+ "awd_abstract_narration": "Mobile devices have been very successful and continue to expand their user base.  However, the very features that have made these devices successful, e.g., rich sensor inputs (GPS, camera, microphone) and continuous Internet connectivity, have also made the devices a favorite target for attackers.  Attacks can have many negative consequences, from stealing users' secrets to spying on the users or installing viruses that render devices inoperable.  This project will develop dynamic slicing techniques so that developers and researchers will be able to gain effective insights into device and app behavior, including malicious apps; this will make it easier to construct secure apps and to find/eliminate malicious behavior, which in turn will benefit mobile device users. Undergraduate and graduate students will be introduced to new approaches to smartphone security, which will make students better equipped for tackling emerging software research and development challenges.\r\n\r\nDynamic slicing (analyzing an execution to identify relevant code and data dependences) is a particularly effective technique for addressing a wide range of security problems. This project will develop a dynamic slicer for Android and then use the slicer, as well as its integration with other existing tools, for three main security applications.  First, improving dynamic taint analysis via efficient, effective, integrated control/data slicing. Second, finding relevant parts in the input to identity which sensor stream and part thereof are responsible for security-relevant behavior, e.g., attack, crash, botnet operation, or use of anti-detection techniques. Third,  Undo Computing, in particular combining slicing with record-and-replay to support undo computing on Android.  These lines of work are expected to lead to advances in: security, e.g., precise and effective dynamic taint tracking, finding leaks due to control dependences, understanding botnet behavior, principled discovery of anti-detection techniques, separating benign from malicious state changes; and program analysis, e.g., slicing programs that are event-oriented or rely heavily on inter-process communication; computing input/data/code interdependences in the presence of high-throughput event streams.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Rajiv",
+   "pi_last_name": "Gupta",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Rajiv Gupta",
+   "pi_email_addr": "gupta@cs.ucr.edu",
+   "nsf_id": "000077772",
+   "pi_start_date": "2016-06-03",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Riverside",
+  "inst_street_address": "200 UNIVERSTY OFC BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "RIVERSIDE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9518275535",
+  "inst_zip_code": "925210001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "39",
+  "st_cong_dist_code": "CA39",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF CALIFORNIA AT RIVERSIDE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "MR5QC5FCAVH5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Riverside",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "925210001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "39",
+  "perf_st_cong_dist": "CA39",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><br />The Android framework is widely used as millions of mobile Android devices are being used by people. Due to the complex interactions between a mobile App and the Android Framework, debugging unexpected behavior of an App is a challenging task. Dynamic Slicing is a powerful technique for accurately capturing the runtime behavior of an executing program, including its interactions with other entities. It allows the programmer to isolate the cause of unexpected behavior and hence understand and remove the error. Although dynamic slicing is very powerful, it is also very expensive causing slowdowns in running applications. Since mobile App behavior can be altered by delays introduced by operations required by dynamic slicing, bring the power of dynamic slicing to Android has been a challenge. In this project, through a novel combination of static and dynamic techniques, we have developed a dynamic slicing for Android that does not interfere with the runtime behavior of an App. Thus, it accurately captures the Apps behavior which can then be used to understand program behavior. The tool was released via github so it is available for use and extension by other researchers.<br /><br />The utility of the Android dynamic slicing tool has been demonstrated by showing its effectiveness in finding parts of the input that trigger faulty behavior, regression testing, and locating faults and vulnerabilities. New applications of dynamic slicing explored include finding discrepancies in mobile App and its website counterpart as these discrepancies give rise to exploitable vulnerabilities, detecting missing progress indicators in Apps, and transitioning mobile Apps to adopt Android's new permission model. Finally, the lessons learned from dealing with concurrency related issues in Android have also been applied in other contexts including testing of parallel programs running on clusters and GPUs. <br /><br />A PhD student who carried out his dissertation work on this project has graduated. The student is currently employed at an institution that is engaged in research in the field of healthcare delivery. The training received under this project has enabled the student to contribute to the development of an App that runs a smartwatch and enables early detection of COVID-19.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/30/2020<br>\n\t\t\t\t\tModified by: Rajiv&nbsp;Gupta</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\nThe Android framework is widely used as millions of mobile Android devices are being used by people. Due to the complex interactions between a mobile App and the Android Framework, debugging unexpected behavior of an App is a challenging task. Dynamic Slicing is a powerful technique for accurately capturing the runtime behavior of an executing program, including its interactions with other entities. It allows the programmer to isolate the cause of unexpected behavior and hence understand and remove the error. Although dynamic slicing is very powerful, it is also very expensive causing slowdowns in running applications. Since mobile App behavior can be altered by delays introduced by operations required by dynamic slicing, bring the power of dynamic slicing to Android has been a challenge. In this project, through a novel combination of static and dynamic techniques, we have developed a dynamic slicing for Android that does not interfere with the runtime behavior of an App. Thus, it accurately captures the Apps behavior which can then be used to understand program behavior. The tool was released via github so it is available for use and extension by other researchers.\n\nThe utility of the Android dynamic slicing tool has been demonstrated by showing its effectiveness in finding parts of the input that trigger faulty behavior, regression testing, and locating faults and vulnerabilities. New applications of dynamic slicing explored include finding discrepancies in mobile App and its website counterpart as these discrepancies give rise to exploitable vulnerabilities, detecting missing progress indicators in Apps, and transitioning mobile Apps to adopt Android's new permission model. Finally, the lessons learned from dealing with concurrency related issues in Android have also been applied in other contexts including testing of parallel programs running on clusters and GPUs. \n\nA PhD student who carried out his dissertation work on this project has graduated. The student is currently employed at an institution that is engaged in research in the field of healthcare delivery. The training received under this project has enabled the student to contribute to the development of an App that runs a smartwatch and enables early detection of COVID-19.\n\n\t\t\t\t\tLast Modified: 08/30/2020\n\n\t\t\t\t\tSubmitted by: Rajiv Gupta"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1745125",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CAREER: Exact Algorithms for Learning Latent Structure",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Rebecca Hwa",
+ "awd_eff_date": "2017-01-01",
+ "awd_exp_date": "2020-06-30",
+ "tot_intn_awd_amt": 350764.0,
+ "awd_amount": 350764.0,
+ "awd_min_amd_letter_date": "2017-07-28",
+ "awd_max_amd_letter_date": "2017-07-28",
+ "awd_abstract_narration": "One of the fundamental tasks in science is to infer the causal relationships between variables from data, and to discover hidden phenomena that may affect their outcome. We can attempt to automate this scientific process by searching over probabilistic models of how the observed data might be influenced by unobserved (latent) factors or variables. Machine learning of such models provides insight into the underlying domain and a means of predicting the latent factors. However, it is challenging to search over the exponentially many models, and existing algorithms are unable to scale to large amounts of data.\r\n\r\nThe goal of this CAREER award will provide novel algorithms to circumvent this computational intractability. Based on a classical idea in statistics called the method-of-moments, the new algorithms will be applied in bioinformatics to discover regulatory modules from disease expression profiles, and in health care to predict a patient's clinical state using data from their electronic medical record. A key component of the project is to involve high school students from disadvantaged backgrounds in the research to inspire them to pursue STEM careers.\r\n\r\nThe project advances machine learning by introducing several new techniques for unsupervised and semi-supervised learning of Bayesian networks. The project overcomes the computational challenges associated with maximum-likelihood estimation by developing new method-of-moment based algorithms for learning latent variable models, focusing on settings where inference itself may be intractable. This includes Bayesian networks of discrete variables where a top layer consists of latent factors and a bottom layer consists of the observed data, a form of discrete factor analysis. The proposed algorithms run in polynomial time and are guaranteed to learn a close approximation to the true model.\r\n\r\nThe techniques developed as part of this project have the potential to be transformative in the social and natural sciences by enabling the efficient and accurate discovery of latent variables from discrete data. Furthermore, in collaboration with emergency department clinicians, the new algorithms will be applied to learn models relating diseases to symptoms from noisy and incomplete data that is routinely collected as part of electronic medical records. This will advance the field of machine learning in health care by providing algorithms that generalize between institutions without the need for a large amount of labeled training data.\r\n\r\nThe insights about exploratory data analysis developed as part of this project will be integrated into innovative curriculum in data science, both as part of an undergraduate class and new Master's classes. The project will bring students from nearby high schools to NYU throughout the academic year and during the summer to learn about machine learning through participation in the proposed research, having them use the unsupervised learning algorithms to discover new medical insights. The PI will also develop and deliver tutorials on machine learning to clinicians and the health care industry.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "David",
+   "pi_last_name": "Sontag",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "David Sontag",
+   "pi_email_addr": "dsontag@mit.edu",
+   "nsf_id": "000590093",
+   "pi_start_date": "2017-07-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Massachusetts Institute of Technology",
+  "inst_street_address": "77 MASSACHUSETTS AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6172531000",
+  "inst_zip_code": "021394301",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+  "org_prnt_uei_num": "E2NYLCDML6V1",
+  "org_uei_num": "E2NYLCDML6V1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Massachusetts Institute of Technology",
+  "perf_str_addr": "77 Massachusetts Avenue",
+  "perf_city_name": "",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021394307",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1045",
+   "pgm_ref_txt": "CAREER-Faculty Erly Career Dev"
+  },
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0114",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001415DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2014,
+   "fund_oblg_amt": 350764.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Our project sought to develop tractable algorithms for unsupervised learning. Consider, as an example, the analysis of a dataset of responses to a questionnaire collected from thousands of parents about their toddler's development. Questions might ask about language, eating habits, sleep patterns, and activity. The responses to questions are correlated with a number of \"latent\" factors or variables such as the number of words that a child has learned, developmental disorders, the home environment, and so on. These factors are called \"latent\" because they are not explicitly asked about in the survey, and in many cases may not be known definitively by the parents. Our research sought to develop methods to automatically discover these latent factors from data, and then to infer their values for each respondent.&nbsp;</p>\n<p>There are two statistical techniques widely used to tackle this learning problem. Method-of-moment algorithms usually come with provable guarantees, but prior to our work were only available for restricted families of latent variable models, and often lacked robustness to mistakes in model specification or in cases with small amounts of training data. Likelihood-based learning algorithms, on the other hand, had increased robustness to both, but were based on difficult optimization problems that frequently result in getting stuck in poor local optima.</p>\n<p>We developed method-of-moments algorithms with provable recovery guarantees for a broader class of models including topic models, discrete factor analysis, and overcomplete independent components analysis. We gave realistic structural assumptions that led to efficient learning algorithms even when latent variables had complex structure, and showed how to use the approach within a constrained optimization over valid probability distributions to improve its robustness to model misspecification.&nbsp; This project also discovered that overparameterization of the latent space (i.e., including more latent variables than are thought to exist) can substantially improve the ability of gradient-ascent likelihood-based learning to succeed at learning for discrete factor analysis, sparse coding, and neural unsupervised probabilistic context-free grammars. We showed that our new family of overparameterized learning algorithms could often perfectly learn model parameters using gradient-ascent, without getting stuck in a local optima.&nbsp;</p>\n<p>This project also advanced the state-of-the-art in the application of unsupervised and semi-supervised learning to health care, bioinformatics, and natural language processing. We developed new variational learning algorithms for deep temporal latent variable models applied to text and to longitudinal patient records. We developed a latent factor model to impute drug-induced gene expression profiles, improving the accuracy of drug repurposing. We showed how to learn disease-symptom diagnostic models directly from electronic medical records of the emergency department. We showed how to do unsupervised learning of disease progression models from censored data, discovering new disease subtypes. We showed how to learn diagnostic models from untargeted metabolomics, and we showed how to discover hidden variation in how doctors treat chronic disease.</p>\n<p>The project also helped seed a number of new areas of research that led to further advances beyond those originally anticipated. We initiated work on causal inference from observational data, which ultimately led to one of the first deep learning algorithms for causal inference and a connection between causal inference and transfer learning that yielded the first generalization bound for causal inference. We began the study of structural properties of latent variable models that enable linear programming relaxations of probabilistic inference to provide provably correct results. We also began research into fairness in machine learning and learning to defer to human experts.</p>\n<p>This project provided research opportunities for 8 Ph.D. students, 6 Masters students, 3 postdoctoral researchers, 4 undergraduates, and 2 high-school students. The PI developed a new course, Inference and Representation, at NYU which emphasizes the importance of unsupervised learning for data science, and a new course, Machine Learning for Healthcare, at MIT, which he later developed into a MOOC (massive open online course) for edX. The PI also co-organized the first NeurIPS workshop on machine learning in healthcare, and spoke extensively to non-technical audiences, including in the health and pharmaceutical industries, about the potential for machine learning to impact healthcare.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/27/2020<br>\n\t\t\t\t\tModified by: David&nbsp;Sontag</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2020/1745125/1745125_10311900_1601259960528_achored_discrete_factor_analysis--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1745125/1745125_10311900_1601259960528_achored_discrete_factor_analysis--rgov-800width.jpg\" title=\"Anchored discrete factor analysis\"><img src=\"/por/images/Reports/POR/2020/1745125/1745125_10311900_1601259960528_achored_discrete_factor_analysis--rgov-66x44.jpg\" alt=\"Anchored discrete factor analysis\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Method-of-moments algorithm proposed in Halpern, Horng, Sontag, arXiv:1511.03299, 2015.</div>\n<div class=\"imageCredit\">Yoni Halpern</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">David&nbsp;Sontag</div>\n<div class=\"imageTitle\">Anchored discrete factor analysis</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1745125/1745125_10311900_1601260174723_achored_discrete_factor_analysis2--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1745125/1745125_10311900_1601260174723_achored_discrete_factor_analysis2--rgov-800width.jpg\" title=\"Subgraph of learned latent variable model\"><img src=\"/por/images/Reports/POR/2020/1745125/1745125_10311900_1601260174723_achored_discrete_factor_analysis2--rgov-66x44.jpg\" alt=\"Subgraph of learned latent variable model\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Subgraph of the latent variable model learned using the method-of-moments algorithm proposed in Halpern, Horng, Sontag, arXiv:1511.03299, 2015.</div>\n<div class=\"imageCredit\">Yoni Halpern</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">David&nbsp;Sontag</div>\n<div class=\"imageTitle\">Subgraph of learned latent variable model</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1745125/1745125_10311900_1601260330910_overparam--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1745125/1745125_10311900_1601260330910_overparam--rgov-800width.jpg\" title=\"Recovery rates for likelihood-based learning with overparameterized latent space\"><img src=\"/por/images/Reports/POR/2020/1745125/1745125_10311900_1601260330910_overparam--rgov-66x44.jpg\" alt=\"Recovery rates for likelihood-based learning with overparameterized latent space\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Main figure from Buhai et al., ICML '20 showing that one can substantially improve the ability of gradient-ascent based learning algorithms to recover the ground truth latent variable model if one uses an overparameterized latent space. Here each column is a different model, all with 8 latent vars.</div>\n<div class=\"imageCredit\">Rares Buhai</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">David&nbsp;Sontag</div>\n<div class=\"imageTitle\">Recovery rates for likelihood-based learning with overparameterized latent space</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nOur project sought to develop tractable algorithms for unsupervised learning. Consider, as an example, the analysis of a dataset of responses to a questionnaire collected from thousands of parents about their toddler's development. Questions might ask about language, eating habits, sleep patterns, and activity. The responses to questions are correlated with a number of \"latent\" factors or variables such as the number of words that a child has learned, developmental disorders, the home environment, and so on. These factors are called \"latent\" because they are not explicitly asked about in the survey, and in many cases may not be known definitively by the parents. Our research sought to develop methods to automatically discover these latent factors from data, and then to infer their values for each respondent. \n\nThere are two statistical techniques widely used to tackle this learning problem. Method-of-moment algorithms usually come with provable guarantees, but prior to our work were only available for restricted families of latent variable models, and often lacked robustness to mistakes in model specification or in cases with small amounts of training data. Likelihood-based learning algorithms, on the other hand, had increased robustness to both, but were based on difficult optimization problems that frequently result in getting stuck in poor local optima.\n\nWe developed method-of-moments algorithms with provable recovery guarantees for a broader class of models including topic models, discrete factor analysis, and overcomplete independent components analysis. We gave realistic structural assumptions that led to efficient learning algorithms even when latent variables had complex structure, and showed how to use the approach within a constrained optimization over valid probability distributions to improve its robustness to model misspecification.  This project also discovered that overparameterization of the latent space (i.e., including more latent variables than are thought to exist) can substantially improve the ability of gradient-ascent likelihood-based learning to succeed at learning for discrete factor analysis, sparse coding, and neural unsupervised probabilistic context-free grammars. We showed that our new family of overparameterized learning algorithms could often perfectly learn model parameters using gradient-ascent, without getting stuck in a local optima. \n\nThis project also advanced the state-of-the-art in the application of unsupervised and semi-supervised learning to health care, bioinformatics, and natural language processing. We developed new variational learning algorithms for deep temporal latent variable models applied to text and to longitudinal patient records. We developed a latent factor model to impute drug-induced gene expression profiles, improving the accuracy of drug repurposing. We showed how to learn disease-symptom diagnostic models directly from electronic medical records of the emergency department. We showed how to do unsupervised learning of disease progression models from censored data, discovering new disease subtypes. We showed how to learn diagnostic models from untargeted metabolomics, and we showed how to discover hidden variation in how doctors treat chronic disease.\n\nThe project also helped seed a number of new areas of research that led to further advances beyond those originally anticipated. We initiated work on causal inference from observational data, which ultimately led to one of the first deep learning algorithms for causal inference and a connection between causal inference and transfer learning that yielded the first generalization bound for causal inference. We began the study of structural properties of latent variable models that enable linear programming relaxations of probabilistic inference to provide provably correct results. We also began research into fairness in machine learning and learning to defer to human experts.\n\nThis project provided research opportunities for 8 Ph.D. students, 6 Masters students, 3 postdoctoral researchers, 4 undergraduates, and 2 high-school students. The PI developed a new course, Inference and Representation, at NYU which emphasizes the importance of unsupervised learning for data science, and a new course, Machine Learning for Healthcare, at MIT, which he later developed into a MOOC (massive open online course) for edX. The PI also co-organized the first NeurIPS workshop on machine learning in healthcare, and spoke extensively to non-technical audiences, including in the health and pharmaceutical industries, about the potential for machine learning to impact healthcare.\n\n\t\t\t\t\tLast Modified: 09/27/2020\n\n\t\t\t\t\tSubmitted by: David Sontag"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "awd_id": "1634753",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "I-Corps: RoadsInDB: Customer Discovery in the Logistics, Delivery, Ride Sharing, Location-based Services and Analytics Verticals",
+ "cfda_num": "47.084",
+ "org_code": "15030000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Steven Konsek",
+ "awd_eff_date": "2016-03-15",
+ "awd_exp_date": "2017-08-31",
+ "tot_intn_awd_amt": 50000.0,
+ "awd_amount": 50000.0,
+ "awd_min_amd_letter_date": "2016-03-09",
+ "awd_max_amd_letter_date": "2016-03-09",
+ "awd_abstract_narration": "This project addresses logistics issues related to managing the deployment of large fleets of vehicles ranging from: Cab sharing services like Uber, Lyft, and Ola; food delivery services like Hub Grub; and retail delivery services like Google Shopping and Amazon, involving managing and optimizing the operation of hundreds and thousands of vehicles. \r\n\r\nDelivery networks were once dominated by a few large players and many small players. However, new models are evolving. For example, with 14k taxis on the streets of New York City (NYC), Uber is now is the single largest taxi service in NYC. Such companies must perform near real-time and rely on historical analytics on vehicles on road networks to keep their operations running efficiently. In particular, companies constantly compute network distances on road networks as they perform real time matchmaking between supply and demand. The technology involved in this project enables computing hundreds of thousands of network distances on road network at a very high throughput rate. \r\n\r\nThis project's technology is different from Google Maps, Here Maps, and other online map services in the sense that they provide APIs to compute the shortest path between a source and destination vertex. This project's technology only focuses on computing network distances at a very high throughput inside a database, which makes this technology essential for companies that perform extensive analytical queries on road networks. This approach will be attractive to food delivery companies, package delivery companies (UPS, FedEx, USPS), taxi/limousine services, and ride sharing services (Uber, Lyft, Ola Cabs). Companies that provide map services such as Google, Microsoft, or ESRI may also find this technology attractive since using it they can improve their local search service by providing network distances instead of resorting to \"as the crow flies\" distances which is currently the case.  The team's current business model would be to customize the system for each customer, requiring the purchase of licenses on a per-machine or per-site basis. This team's  plan is to concentrate on several verticals (i.e., niche markets with specific, compelling needs) and understand their requirements. The team will develop applications to cater to each of the verticals.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "TIP",
+ "org_dir_long_name": "Directorate for Technology, Innovation, and Partnerships",
+ "div_abbr": "TI",
+ "org_div_long_name": "Translational Impacts",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Hanan",
+   "pi_last_name": "Samet",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Hanan Samet",
+   "pi_email_addr": "hjs@umd.edu",
+   "nsf_id": "000445634",
+   "pi_start_date": "2016-03-09",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Maryland, College Park",
+  "inst_street_address": "3112 LEE BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE PARK",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "3014056269",
+  "inst_zip_code": "207425100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "MD04",
+  "org_lgl_bus_name": "UNIVERSITY OF MARYLAND, COLLEGE PARK",
+  "org_prnt_uei_num": "NPU8ULVAAS23",
+  "org_uei_num": "NPU8ULVAAS23"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Maryland College Park",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "207425141",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "MD04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "802300",
+   "pgm_ele_name": "I-Corps"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 50000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Our focus is investigating the potential commercialization of our patented research on road networks and computing distances whenneeding millions of them for business analytics involving logistics.Our technology enables computing network distances and trip times on aroad network at a high throughput without any need for additionalsoftware or hardware.&nbsp; It can be used in performing quickvisualizations on a map of the distances without having to performtime-consuming shortest path computations which are usually the prerequisite for distance computation.</p>\n<p><br />Note that we use the \"actual\"distance rather than \"as the crow flies\" which is used bymost commercial packages.&nbsp; For example, the following blog points out definitively that the Google Maps API usescrow-flying distance instead of true road network distance in itsdistance ordering.https://roadsindb.com/2016/06/09/google-maps-network-distance-search/</p>\n<p>This is surprising as when asked to provide travel directions, Googledoes use the true road network distance but this is easy for them since they have already computed the shortest path.&nbsp; Remember that our rmethods are designed to bypass computing shortest paths when seeking the distance and are designed for thecases that require millions of them.</p>\n<p>Our method works with any database product (PostgreSQL, MySQL,Oracle, SQL Server, Vertica) as well as with newer big data platforms such as Spark or Hadoop without any modifications to them.The computations can be performed at 20X higher throughput than stateof the art methods, which makes a real difference if queries need toperform millions of computations. Complex queries can be expressedusing simple SQL which obviates the need for any programming.</p>\n<p>Our current implementation of the technology takes a road network ofthe USA and compresses it into a single database table. We get at hroughput of about 60k network distance computations per second ona single machine running PostgreSQL or up to 500k networ kdistances per second on a small 4 machine cluster running ApacheSpark. The table's size for the entire USA map is about 400 GB while a small area like the San Francisco Bay area requires a 5 GBtable.</p>\n<p>To help general audiences see the utility of our methods, Wemaintain a blog http://roadsindb.com/ containing a few use casesthat we conjured up.&nbsp; We also have a representation for the SanFrancisco Bay Area for download and several query examples.&nbsp; Goingto https://roadsindb.com/2016/04/27/real-estate-use-case/shows a real estate example query.&nbsp; Going to https://roadsindb.com/2016/05/13/use-case-in-local-advertisement/ shows a mobile device advertising application example query.</p>\n<p>We anticipate that government customers, logistics, package delivery,transportation analysis, large scale GPS trajectory analysis, location analysis, real estate etc. may be interested in computing alarge number of distance computations on road networks and we areeager to understand these use cases.</p>\n<p>Some example applications of our technology include:</p>\n<p>1.&nbsp; Distance computation for taxi routing.</p>\n<p>2.&nbsp; Fast computation of origin-destination matrices using approximated distances.</p>\n<p>3.&nbsp; In-Path Queries which involves finding points from one set that lie on the shortest paths (allowing for short detours) between pointsfrom another set.&nbsp; This involves two sets:A set of landmarks (e.g., fast food restaurants), and set of mobileusers denoted by starting (sources) and ending (destinations) locations.The assumptions are (1) that the number of landmarks is much smaller thanthe number of mobile users where the identities of the mobile usersare not known a priori and they arrive at a high rate, and (2) that thelandmarks are known a priori although new landmarks can be addedand/or deleted from time to time.There are two in-path queries:(1) Given a mobile user and a path with a source and destination,&nbsp; what landmarks lie on the shortest path&nbsp;between source and destination? (2) Given a landmark, which mobile users will pass through it on some shortest path between their corresponding sources and destinations.</p>\n<p>As part of our participation in the I-Corps&nbsp; 6 week session we produced a 1 minute technical video athttps://drive.google.com/file/d/0B_QkOBowXC_EN19rRlQteEEyYkU/view?usp=drive_weband a more general 2 minute video athttps://drive.google.com/file/d/0B_QkOBowXC_ET3lGRzVod2V1V1E/view?usp=drive_web</p>\n<p>Our work also elicited interest from Amazon on account of our use of theAmazon Cloud to speed up our computation of the distance oracle.This prompted them to engage the SAGE communication company to create a press release about our work which resulted in an interview of the three principals in this project by Alex Woodie who wrote two overview articles about our work one of which was published in HPC Wire athttps://www.hpcwire.com/2017/05/01/shortest-distance-calculation-no-sweat-road-oracle/and a longer article which was published in Datanami athttps://www.datanami.com/2017/05/01/shortest-distance-calculation-no-sweat-road-oracle/<br /><br /></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/31/2017<br>\n\t\t\t\t\tModified by: Hanan&nbsp;Samet</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOur focus is investigating the potential commercialization of our patented research on road networks and computing distances whenneeding millions of them for business analytics involving logistics.Our technology enables computing network distances and trip times on aroad network at a high throughput without any need for additionalsoftware or hardware.  It can be used in performing quickvisualizations on a map of the distances without having to performtime-consuming shortest path computations which are usually the prerequisite for distance computation.\n\n\nNote that we use the \"actual\"distance rather than \"as the crow flies\" which is used bymost commercial packages.  For example, the following blog points out definitively that the Google Maps API usescrow-flying distance instead of true road network distance in itsdistance ordering.https://roadsindb.com/2016/06/09/google-maps-network-distance-search/\n\nThis is surprising as when asked to provide travel directions, Googledoes use the true road network distance but this is easy for them since they have already computed the shortest path.  Remember that our rmethods are designed to bypass computing shortest paths when seeking the distance and are designed for thecases that require millions of them.\n\nOur method works with any database product (PostgreSQL, MySQL,Oracle, SQL Server, Vertica) as well as with newer big data platforms such as Spark or Hadoop without any modifications to them.The computations can be performed at 20X higher throughput than stateof the art methods, which makes a real difference if queries need toperform millions of computations. Complex queries can be expressedusing simple SQL which obviates the need for any programming.\n\nOur current implementation of the technology takes a road network ofthe USA and compresses it into a single database table. We get at hroughput of about 60k network distance computations per second ona single machine running PostgreSQL or up to 500k networ kdistances per second on a small 4 machine cluster running ApacheSpark. The table's size for the entire USA map is about 400 GB while a small area like the San Francisco Bay area requires a 5 GBtable.\n\nTo help general audiences see the utility of our methods, Wemaintain a blog http://roadsindb.com/ containing a few use casesthat we conjured up.  We also have a representation for the SanFrancisco Bay Area for download and several query examples.  Goingto https://roadsindb.com/2016/04/27/real-estate-use-case/shows a real estate example query.  Going to https://roadsindb.com/2016/05/13/use-case-in-local-advertisement/ shows a mobile device advertising application example query.\n\nWe anticipate that government customers, logistics, package delivery,transportation analysis, large scale GPS trajectory analysis, location analysis, real estate etc. may be interested in computing alarge number of distance computations on road networks and we areeager to understand these use cases.\n\nSome example applications of our technology include:\n\n1.  Distance computation for taxi routing.\n\n2.  Fast computation of origin-destination matrices using approximated distances.\n\n3.  In-Path Queries which involves finding points from one set that lie on the shortest paths (allowing for short detours) between pointsfrom another set.  This involves two sets:A set of landmarks (e.g., fast food restaurants), and set of mobileusers denoted by starting (sources) and ending (destinations) locations.The assumptions are (1) that the number of landmarks is much smaller thanthe number of mobile users where the identities of the mobile usersare not known a priori and they arrive at a high rate, and (2) that thelandmarks are known a priori although new landmarks can be addedand/or deleted from time to time.There are two in-path queries:(1) Given a mobile user and a path with a source and destination,  what landmarks lie on the shortest path between source and destination? (2) Given a landmark, which mobile users will pass through it on some shortest path between their corresponding sources and destinations.\n\nAs part of our participation in the I-Corps  6 week session we produced a 1 minute technical video athttps://drive.google.com/file/d/0B_QkOBowXC_EN19rRlQteEEyYkU/view?usp=drive_weband a more general 2 minute video athttps://drive.google.com/file/d/0B_QkOBowXC_ET3lGRzVod2V1V1E/view?usp=drive_web\n\nOur work also elicited interest from Amazon on account of our use of theAmazon Cloud to speed up our computation of the distance oracle.This prompted them to engage the SAGE communication company to create a press release about our work which resulted in an interview of the three principals in this project by Alex Woodie who wrote two overview articles about our work one of which was published in HPC Wire athttps://www.hpcwire.com/2017/05/01/shortest-distance-calculation-no-sweat-road-oracle/and a longer article which was published in Datanami athttps://www.datanami.com/2017/05/01/shortest-distance-calculation-no-sweat-road-oracle/\n\n\n\n\t\t\t\t\tLast Modified: 12/31/2017\n\n\t\t\t\t\tSubmitted by: Hanan Samet"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "awd_id": "1143605",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Coordinated Performance Optimization within a Power Budget for Chip Multiprocessors",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Hong Jiang",
+ "awd_eff_date": "2011-06-01",
+ "awd_exp_date": "2014-07-31",
+ "tot_intn_awd_amt": 255353.0,
+ "awd_amount": 255353.0,
+ "awd_min_amd_letter_date": "2011-07-19",
+ "awd_max_amd_letter_date": "2011-07-19",
+ "awd_abstract_narration": "Since power consumption has become a major constraint for the further throughput improvement of chip multiprocessors (CMPs), a key challenge is to optimize the performance of a CMP within a power budget limited by the CMP's cooling, packaging, and power supply capacities. This project aims to develop a coordinated power control framework for CMPs. The proposed framework has the following novel features. 1) It can dynamically and explicitly shift power among the CPU cores and other components in a CMP based on measured workload characteristics for optimized CMP performance within a power budget. 2) It adopts an online model estimator to dynamically measure the performance contributed by each component and then partitions the chip-level power budget among the components. 3) It can achieve fair or differentiated cache sharing under the impacts of dynamic cache resizing used in CMP power control. 4) It also coordinates components within a core for core-level power control and coordinates CMPs with main memory and disks for optimized system performance. 5) Our framework is based on a control-theoretic foundation for systematically and rigorously developing power control strategies. While basic control theory has already shown great promise in microprocessor power management, an important feature of our framework is that it relies on advanced optimal control theory to coordinate multiple control and optimization loops in different layers of a CMP in a holistic way for optimized performance and guaranteed stability. \r\n\r\nIn addition to integrating research with education and outreach programs, the outcome of this research is expected to provide effective mechanism and a rich set of tools fer performance and power optimization in CMPs.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Xiaorui",
+   "pi_last_name": "Wang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Xiaorui Wang",
+   "pi_email_addr": "xwang@ece.osu.edu",
+   "nsf_id": "000344273",
+   "pi_start_date": "2011-07-19",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Ohio State University",
+  "inst_street_address": "1960 KENNY RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLUMBUS",
+  "inst_state_code": "OH",
+  "inst_state_name": "Ohio",
+  "inst_phone_num": "6146888735",
+  "inst_zip_code": "432101016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "OH03",
+  "org_lgl_bus_name": "OHIO STATE UNIVERSITY, THE",
+  "org_prnt_uei_num": "MN4MDDMN8529",
+  "org_uei_num": "DLWBSLWAJWR1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Ohio State University",
+  "perf_str_addr": "",
+  "perf_city_name": "Columbus",
+  "perf_st_code": "OH",
+  "perf_st_name": "Ohio",
+  "perf_zip_code": "432101016",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "OH03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "794100",
+   "pgm_ele_name": "COMPUTER ARCHITECTURE"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0110",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001011DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2010,
+   "fund_oblg_amt": 255353.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>As power consumption has become a major constraint for the further throughput improvement of chip multiprocessors (CMPs), a key challenge is to optimize the performance of a CMP within a power budget limited by the CMP's cooling, packaging, and power supply capacities. <br /><br />On the technical side, the main outcome of this project is the design and development of a coordinated power control framework for CMPs. Specifically, the framework includes the following major components. First, we have designed a chip-level power control algorithm that is systematically designed based on optimal control theory. Our algorithm can precisely control the power of a CMP chip to the desired set point while maintaining the temperature of each core below a specified threshold. This work has been published in the 36th International Symposium on Computer Architecture (ISCA 09) and IEEE Transactions on Parallel and Distributed Systems (TPDS). Second, we have designed a scalable power control solution for many-core microprocessors that is specifically designed to handle realistic workloads, i.e., a mixed group of single-threaded and multi-threaded applications. This work has been published in ISCA 2011. Third, we designed a novel power control solution that can precisely limit the peak power consumption of a server below a desired budget, by adapting the power states of both the processor and memory in a coordinated manner, based on their power demands, to achieve optimized system performance. This work has been published in the 25th International Conference on Supercomputing (ICS 2011). Fourth, we have designed DPPC, a chip-level power partitioning and capping strategy that can dynamically and explicitly partition the chip-level power budget among different CPU cores and the shared last-level cache in a CMP based on the workload characteristics measured online. This work has been published in the 29th International Conference on Computer Design (ICCD 2011) and the IEEE Transactions on Computers (TC). Fifth, we have proposed a novel cache management strategy that can limit the peak power consumption of L2 caches and provide fairness guarantees, such that the cache access latencies of the application threads co-scheduled on the CMP are impacted more uniformly. This work was published in the 39th International Conference on Parallel Processing (ICPP 2010) and IEEE TC. Finally, we have designed PGCapping, an integrated CMP power capping solution that coordinates power gating with DVFS to fully utilize the power headroom reserved through power gating with per-core overclocking. This work was published in the 21st International Conference on Parallel Architectures and Compilation Techniques (PACT 2012).As part of our framework, we have also investigated the circuit breaker (CB) for system performance optimization (published in ICAC 2011), and designed GreenGPU, a holistic energy management framework for GPU-CPU heterogeneous architectures (published in ICPP 2012).<br /><br />A key difference between our framework and the related work is that all our power control and management solutions feature a rigorous system design methodology based on recent advances in feedback control theory for analytical assurance of control accuracy and system stability. While basic control theory has already shown great promise in microprocessor power management, our framework has demonstrated that advanced optimal control theory can be adopted to coordinate multiple control and optimization loops in different layers of a CMP in a holistic way for optimized performance.<br /><br />The broader impacts of this project are as follows. First, our power control framework has significantly improved the CMP performance while ensuring its power consumption stays safely below the desired threshold. For example, our work published in ISCA 2011 shows that our solution has achieved 17% better CMP performance than the st...",
+  "por_txt_cntn": "\nAs power consumption has become a major constraint for the further throughput improvement of chip multiprocessors (CMPs), a key challenge is to optimize the performance of a CMP within a power budget limited by the CMP's cooling, packaging, and power supply capacities. \n\nOn the technical side, the main outcome of this project is the design and development of a coordinated power control framework for CMPs. Specifically, the framework includes the following major components. First, we have designed a chip-level power control algorithm that is systematically designed based on optimal control theory. Our algorithm can precisely control the power of a CMP chip to the desired set point while maintaining the temperature of each core below a specified threshold. This work has been published in the 36th International Symposium on Computer Architecture (ISCA 09) and IEEE Transactions on Parallel and Distributed Systems (TPDS). Second, we have designed a scalable power control solution for many-core microprocessors that is specifically designed to handle realistic workloads, i.e., a mixed group of single-threaded and multi-threaded applications. This work has been published in ISCA 2011. Third, we designed a novel power control solution that can precisely limit the peak power consumption of a server below a desired budget, by adapting the power states of both the processor and memory in a coordinated manner, based on their power demands, to achieve optimized system performance. This work has been published in the 25th International Conference on Supercomputing (ICS 2011). Fourth, we have designed DPPC, a chip-level power partitioning and capping strategy that can dynamically and explicitly partition the chip-level power budget among different CPU cores and the shared last-level cache in a CMP based on the workload characteristics measured online. This work has been published in the 29th International Conference on Computer Design (ICCD 2011) and the IEEE Transactions on Computers (TC). Fifth, we have proposed a novel cache management strategy that can limit the peak power consumption of L2 caches and provide fairness guarantees, such that the cache access latencies of the application threads co-scheduled on the CMP are impacted more uniformly. This work was published in the 39th International Conference on Parallel Processing (ICPP 2010) and IEEE TC. Finally, we have designed PGCapping, an integrated CMP power capping solution that coordinates power gating with DVFS to fully utilize the power headroom reserved through power gating with per-core overclocking. This work was published in the 21st International Conference on Parallel Architectures and Compilation Techniques (PACT 2012).As part of our framework, we have also investigated the circuit breaker (CB) for system performance optimization (published in ICAC 2011), and designed GreenGPU, a holistic energy management framework for GPU-CPU heterogeneous architectures (published in ICPP 2012).\n\nA key difference between our framework and the related work is that all our power control and management solutions feature a rigorous system design methodology based on recent advances in feedback control theory for analytical assurance of control accuracy and system stability. While basic control theory has already shown great promise in microprocessor power management, our framework has demonstrated that advanced optimal control theory can be adopted to coordinate multiple control and optimization loops in different layers of a CMP in a holistic way for optimized performance.\n\nThe broader impacts of this project are as follows. First, our power control framework has significantly improved the CMP performance while ensuring its power consumption stays safely below the desired threshold. For example, our work published in ISCA 2011 shows that our solution has achieved 17% better CMP performance than the state-of-the-art solutions. Likewise, the extensive evaluation results in our PACT 2012 paper ..."
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "awd_id": "1246042",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CC-NIE Network Infrastructure: Using Software-Defined Networking to Facilitate Data Transfer",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": "7032924220",
+ "po_email": "kthompso@nsf.gov",
+ "po_sign_block_name": "Kevin Thompson",
+ "awd_eff_date": "2013-01-01",
+ "awd_exp_date": "2014-12-31",
+ "tot_intn_awd_amt": 496563.0,
+ "awd_amount": 496563.0,
+ "awd_min_amd_letter_date": "2012-09-10",
+ "awd_max_amd_letter_date": "2012-09-10",
+ "awd_abstract_narration": "Duke University is enhancing the capabilities of its data network to better support data-intensive research.  By deploying a mix of next-generation software-defined networking (SDN) hardware along with enhanced high-speed conventional networking links, Duke creates on-demand high speed paths either through Duke's own network (connecting resources in different parts of campus) or directly from campus laboratories to external networks.  In both cases these dynamically managed links can bypass layers of network management which, while sensible for routine traffic, add latency and limit speed for trusted high volume science flows.\r\n\r\nAs Duke's core network is already fast and agile, the emphasis in this work is on improving network capability over the last few meters through local building switches and directly to the instrument or computer sourcing or sinking the data.  Faster networking to the devices coupled with intelligent (SDN-mediated) routing at the building level of specific scientific data flows via \"short-cut\" paths through the core is expected to result in higher overall performance.\r\n\r\nThe work is expected to demonstrate that judicious deployment of intelligent edge devices can provide data-intensive science researchers with all the advantages of a dedicated science network without expensive re-engineering of an already capable core network.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Tracy",
+   "pi_last_name": "Futhey",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Tracy Futhey",
+   "pi_email_addr": "futhey@duke.edu",
+   "nsf_id": "000620066",
+   "pi_start_date": "2012-09-10",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "John",
+   "pi_last_name": "Board",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "Jr.",
+   "pi_full_name": "John A Board",
+   "pi_email_addr": "jab@ee.duke.edu",
+   "nsf_id": "000246783",
+   "pi_start_date": "2012-09-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Duke University",
+  "inst_street_address": "2200 W MAIN ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "DURHAM",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9196843030",
+  "inst_zip_code": "277054640",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "NC04",
+  "org_lgl_bus_name": "DUKE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "TP7EK8DZV6N5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Duke University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "277054010",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "NC04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "164000",
+   "pgm_ele_name": "Information Technology Researc"
+  },
+  {
+   "pgm_ele_code": "808000",
+   "pgm_ele_name": "Campus Cyberinfrastructure"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1640",
+   "pgm_ref_txt": "INFORMATION TECHNOLOGY RESEARC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 496563.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>With support from the National Science Foundation, Duke University has been able to dramatically improve the capability of data networks available to our scientists engaged in data-intensive research. &nbsp;Software-defined networking (SDN) is a relatively new approach to managing data traffic which has great flexibility compared with the conventional data networks already in use on our campus (and almost everywhere else). &nbsp;</p>\n<p>Duke's conventional network, out of necessity, needs to be very aggressive about inspecting network traffic inbound and outbound from Duke for various forms of bad behavior; sadly there are enormous quantities of hostile traffic on the modern internet. &nbsp;These inspection points are a necessary part of business for our routine network traffic, but for high volume science data flows, they act as a bottleneck significantly limiting our ability to move data around to where it is needed.</p>\n<p>Some institutions have built a completely parallel \"Science Network\" to cope with this challenge, but Duke hoped to avoid the complexity and cost of managing two distinct networks.&nbsp; We sought to use SDN techniques to modify our network out at the edges near where the scientists (and their data) live, and then intelligently reuse pieces of our existing conventional network to link up the edges.</p>\n<p>As the standards governing SDN are still under development, and the hardware from numerous vendors supporting SDN is brand new, much of the effort in this project was devoted to testing equipment from several different vendors to see which products were in fact capable of meeting our use cases. &nbsp;This testing activity took over a year to complete, and the testing identified numerous bugs in vendors' products, many of which the vendors were able to correct. &nbsp;In the end, we were able to purchase SDN equipment from three different vendors that does indeed meet our target use cases, and install them in about 20 of the most data-intensive locations on campus. &nbsp;It was important to us to purchase equipment from multiple vendors to help keep pressure on this developing industry to remain standards-compliant and to interoperate easily and cleanly with equipment from other vendors.</p>\n<p>To make this new fast infrastructure easily accessible to Duke's researchers, we also developed a web-based service that allows suitably authorized scientists to request a link in the high-speed environment on demand, with no involvement of network or computing support personnel. &nbsp;The process of allocating these links (from say, a specific lab in the physics building to a server in the biology department) is completely automated and essentially instantaneous.</p>\n<p>Also as part of this effort, Duke has deployed a network measurement tool known as perfSONAR to monitor the state and performance of our new high speed links (and many of our conventional links as well). &nbsp;Thanks to perfSONAR, we can continually verify that the high speed links (which are nominally rated at a maximum of 10 billion bits per second - 10Gb/s) do in fact move data at about 9Gb/s. &nbsp;This instrumentation allows us to continuously check for problems, and has already proved useful in quickly identifying and rectifying various problems that inevitably occur in a complex networked environment.</p>\n<p>This project has demonstrated that it is possible to create a flexible, high-speed networking environment that meets the data sharing needs of a variety of researchers without building a completely separate science network.&nbsp; Scenarios requiring movement of data within and beyond Duke's campus are supported by SDN and its careful integration with our conventional (but still quite capable) data network. As new science use cases are identified, we believe the flexibility of our SDN endpoints will permit these new uses to be rapidly accommodated by our research computing envi...",
+  "por_txt_cntn": "\nWith support from the National Science Foundation, Duke University has been able to dramatically improve the capability of data networks available to our scientists engaged in data-intensive research.  Software-defined networking (SDN) is a relatively new approach to managing data traffic which has great flexibility compared with the conventional data networks already in use on our campus (and almost everywhere else).  \n\nDuke's conventional network, out of necessity, needs to be very aggressive about inspecting network traffic inbound and outbound from Duke for various forms of bad behavior; sadly there are enormous quantities of hostile traffic on the modern internet.  These inspection points are a necessary part of business for our routine network traffic, but for high volume science data flows, they act as a bottleneck significantly limiting our ability to move data around to where it is needed.\n\nSome institutions have built a completely parallel \"Science Network\" to cope with this challenge, but Duke hoped to avoid the complexity and cost of managing two distinct networks.  We sought to use SDN techniques to modify our network out at the edges near where the scientists (and their data) live, and then intelligently reuse pieces of our existing conventional network to link up the edges.\n\nAs the standards governing SDN are still under development, and the hardware from numerous vendors supporting SDN is brand new, much of the effort in this project was devoted to testing equipment from several different vendors to see which products were in fact capable of meeting our use cases.  This testing activity took over a year to complete, and the testing identified numerous bugs in vendors' products, many of which the vendors were able to correct.  In the end, we were able to purchase SDN equipment from three different vendors that does indeed meet our target use cases, and install them in about 20 of the most data-intensive locations on campus.  It was important to us to purchase equipment from multiple vendors to help keep pressure on this developing industry to remain standards-compliant and to interoperate easily and cleanly with equipment from other vendors.\n\nTo make this new fast infrastructure easily accessible to Duke's researchers, we also developed a web-based service that allows suitably authorized scientists to request a link in the high-speed environment on demand, with no involvement of network or computing support personnel.  The process of allocating these links (from say, a specific lab in the physics building to a server in the biology department) is completely automated and essentially instantaneous.\n\nAlso as part of this effort, Duke has deployed a network measurement tool known as perfSONAR to monitor the state and performance of our new high speed links (and many of our conventional links as well).  Thanks to perfSONAR, we can continually verify that the high speed links (which are nominally rated at a maximum of 10 billion bits per second - 10Gb/s) do in fact move data at about 9Gb/s.  This instrumentation allows us to continuously check for problems, and has already proved useful in quickly identifying and rectifying various problems that inevitably occur in a complex networked environment.\n\nThis project has demonstrated that it is possible to create a flexible, high-speed networking environment that meets the data sharing needs of a variety of researchers without building a completely separate science network.  Scenarios requiring movement of data within and beyond Duke's campus are supported by SDN and its careful integration with our conventional (but still quite capable) data network. As new science use cases are identified, we believe the flexibility of our SDN endpoints will permit these new uses to be rapidly accommodated by our research computing environment.  The automation tools developed to ease deployment of our high-speed links foretells our next goal, where entire scientific computing environmen..."
+ }
+}

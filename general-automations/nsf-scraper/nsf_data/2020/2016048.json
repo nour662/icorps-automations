@@ -1,0 +1,125 @@
+{
+ "awd_id": "2016048",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RUI: CDS&E: Fast Treecode Methods for Particle-Particle Multipolar Electrostatic Interactions in Molecular Simulations",
+ "cfda_num": "47.049",
+ "org_code": "03090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Michel Dupuis",
+ "awd_eff_date": "2019-10-24",
+ "awd_exp_date": "2022-07-31",
+ "tot_intn_awd_amt": 78118.0,
+ "awd_amount": 78118.0,
+ "awd_min_amd_letter_date": "2020-06-01",
+ "awd_max_amd_letter_date": "2020-06-01",
+ "awd_abstract_narration": "Henry Boateng from Bates College is supported by an award from the Chemical Theory, Models and Computational Methods program in the Division of Chemistry to develop algorithms for speeding up atomic and molecular simulations. The award is also supported by the Division of Mathematical Sciences and the NSF Established Program to Stimulate Competitive Research (EPSCoR).  Scientists simulate physical systems and validate their models by comparing the simulation results to experimental results. Once the models have been validated, they are then used to make predictions for regimes inaccessible by experiments or to focus the direction of experiments. These models can range from the subatomic scale of atoms and molecules to global scale, for example weather prediction.   The focus of this proposal is at the atomic and molecular scale.  A typical use for molecular simulation is in the determination of the structure of proteins. The ideal for practitioners of molecular simulation will be to simulate systems at experimental spatial scale, about a trillion trillion atoms, and at experimental times, for seconds.  The most powerful computers today (upwards of 100000 processors) only allow for simulations on the order of a billion atoms and one-ten thousandth of a second. The overarching goal of this work is to develop methods that help shrink and ultimately eliminate this bottleneck.\r\n\r\nAccurate molecular simulations of biochemical systems require accurate computations of the electrostatic interactions. The predominant approach of modeling an atom as a sphere and thus the electron density as a point charge fails to capture the anisotropy inherent in electrostatic interaction. Multipolar electrostatics provides a much more refined description of the electronic environment and hence the promise of more accurate simulations of biochemical systems. In multipolar electrostatic interactions the charge densities of chemical species are described by higher order multipoles instead of only fixed-point charges. The fixed-point charge is the zero order or monopole term of a multipolar electrostatic model. The accuracy attained by the model increases with increasing multipole order with a related increase in computational cost. The prohibitive cost of multipolar interactions has been a barrier to the model being widely adopted. Interactions with multipoles up to second order are typically an order of magnitude more expensive than corresponding fixed-point charges. Boateng and coworkers develop three related but different parallel treecode methods to accelerate multipolar electrostatics for molecular simulations. The methods are based on similar methods developed and studied by  Professor Boateng for fixed point charge models. The methods split particle-particle interactions into near and far field interactions. The near-field interactions are evaluated exactly and the far-field interactions are approximated using a Cartesian Taylor expansion. The algorithms are developed for both free space and periodic boundary conditions to ensure they are useful for a broad range of molecular simulation applications. The advantages of the treecode, aside from the speedup it offers, includes good parallel scalability, low memory requirement, suitability for complex geometries and relative ease of implementation. The methods developed will be tested on several practical examples in chemistry, biochemistry and biophysics.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "CHE",
+ "org_div_long_name": "Division Of Chemistry",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Henry",
+   "pi_last_name": "Boateng",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Henry A Boateng",
+   "pi_email_addr": "boateng@sfsu.edu",
+   "nsf_id": "000711933",
+   "pi_start_date": "2020-06-01",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "San Francisco State University",
+  "inst_street_address": "1600 HOLLOWAY AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SAN FRANCISCO",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "4153387090",
+  "inst_zip_code": "941321740",
+  "inst_country_name": "United States",
+  "cong_dist_code": "11",
+  "st_cong_dist_code": "CA11",
+  "org_lgl_bus_name": "SAN FRANCISCO STATE UNIVERSITY",
+  "org_prnt_uei_num": "JW7YN4NDAHC1",
+  "org_uei_num": "F4SLJ5WF59F6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "San Francisco State University",
+  "perf_str_addr": "1600 Holloway Ave ADM 471",
+  "perf_city_name": "San Francisco",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "941321722",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "11",
+  "perf_st_cong_dist": "CA11",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "688100",
+   "pgm_ele_name": "Chem Thry, Mdls & Cmptnl Mthds"
+  },
+  {
+   "pgm_ele_code": "806900",
+   "pgm_ele_name": "CDS&E-MSS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "8084",
+   "pgm_ref_txt": "CDS&E"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  },
+  {
+   "pgm_ref_code": "9216",
+   "pgm_ref_txt": "ADVANCED SOFTWARE TECH & ALGOR"
+  },
+  {
+   "pgm_ref_code": "9229",
+   "pgm_ref_txt": "RES IN UNDERGRAD INST-RESEARCH"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 78118.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Computational scientists simulate physical systems and validate their models by comparing the simulation results to experimental results. Once the models have been validated, they are then used to make predictions for regimes inaccessible by experiments or to focus the direction of experiments. These models range from subatomic (quantum) to global (weather predictions) scale.</p>\n<p>The award funded work on developing algorithms for speeding up atomic or molecular simulations. We will like to be able to simulate systems at experimental spatial scale (about a trillion trillion atoms) and at experimental time scales (seconds). Currently, the most powerful computers allow for simulations on the order of a billion atoms and one ten-thousandth of a second. The algorithms developed under the NSF award helped to shrink the bottleneck.</p>\n<p>One project developed a treecode algorithm called a Periodic Coulomb Tree method (PCT). PCT provides an alternative approach to compute forces in systems with charges. Typically, force computation is the most time consuming part of molecular simulations. PCT was shown to scale better than the standard method, particle mesh Ewald (PME),&nbsp; on high performance computing system with up to 1024, while providing similar accuracy. Perhaps, the most significant long term impact of PCT will be the fact that it demonstrates an effective, accurate and viable alternative to particle mesh Ewald in&nbsp; approximating charge-charge interactions in systems with periodic boundary conditions.This work was published in the Journal of Chemical Theory and Computations. As part of the broader impact of the project, the software for PCT is publicly available freely.</p>\n<p>&nbsp;</p>\n<p>Another project funded by the award studied the properties of the treecode method based on the smoothness of the approximation of the interacting potential in a molecular system. The project showed that the overall (global) smoothness of the approximation has an effect on the accuracy of the approximation. A smoother approximation, leads to higher accuracy and allows the simulation to be performed with larger time steps. This means the simulation can access larger times and get closer to the experimental time scales. A paper about this work has been accepted and will be published in Communications in Computational Physics. Accompanying software has been made publicly available on GitHub to help the broader scientific community implement the results. Another paper is under review with another journal.</p>\n<p>&nbsp;</p>\n<p>The award also funded work on the development of an approximation method with higher smoothness property. This was work done in collaboration with a graduate student. The results for this work will be applied to develop more accurate treecode methods. The code for this work has also been publicly released and the work has been submitted to a journal for review.</p>\n<p>Aside from the work summarized above, the award has funded research work for two other graduate students and four undergraduate students from underrepresented groups in the sciences. Two of the undergrads have gone on to careers at Atlassian and Capgemini.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/18/2022<br>\n\t\t\t\t\tModified by: Henry&nbsp;A&nbsp;Boateng</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nComputational scientists simulate physical systems and validate their models by comparing the simulation results to experimental results. Once the models have been validated, they are then used to make predictions for regimes inaccessible by experiments or to focus the direction of experiments. These models range from subatomic (quantum) to global (weather predictions) scale.\n\nThe award funded work on developing algorithms for speeding up atomic or molecular simulations. We will like to be able to simulate systems at experimental spatial scale (about a trillion trillion atoms) and at experimental time scales (seconds). Currently, the most powerful computers allow for simulations on the order of a billion atoms and one ten-thousandth of a second. The algorithms developed under the NSF award helped to shrink the bottleneck.\n\nOne project developed a treecode algorithm called a Periodic Coulomb Tree method (PCT). PCT provides an alternative approach to compute forces in systems with charges. Typically, force computation is the most time consuming part of molecular simulations. PCT was shown to scale better than the standard method, particle mesh Ewald (PME),  on high performance computing system with up to 1024, while providing similar accuracy. Perhaps, the most significant long term impact of PCT will be the fact that it demonstrates an effective, accurate and viable alternative to particle mesh Ewald in  approximating charge-charge interactions in systems with periodic boundary conditions.This work was published in the Journal of Chemical Theory and Computations. As part of the broader impact of the project, the software for PCT is publicly available freely.\n\n \n\nAnother project funded by the award studied the properties of the treecode method based on the smoothness of the approximation of the interacting potential in a molecular system. The project showed that the overall (global) smoothness of the approximation has an effect on the accuracy of the approximation. A smoother approximation, leads to higher accuracy and allows the simulation to be performed with larger time steps. This means the simulation can access larger times and get closer to the experimental time scales. A paper about this work has been accepted and will be published in Communications in Computational Physics. Accompanying software has been made publicly available on GitHub to help the broader scientific community implement the results. Another paper is under review with another journal.\n\n \n\nThe award also funded work on the development of an approximation method with higher smoothness property. This was work done in collaboration with a graduate student. The results for this work will be applied to develop more accurate treecode methods. The code for this work has also been publicly released and the work has been submitted to a journal for review.\n\nAside from the work summarized above, the award has funded research work for two other graduate students and four undergraduate students from underrepresented groups in the sciences. Two of the undergrads have gone on to careers at Atlassian and Capgemini.\n\n\t\t\t\t\tLast Modified: 10/18/2022\n\n\t\t\t\t\tSubmitted by: Henry A Boateng"
+ }
+}

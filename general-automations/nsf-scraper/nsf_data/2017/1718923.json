@@ -1,0 +1,109 @@
+{
+ "awd_id": "1718923",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC:  CORE:  Small:  Collaborative:  Guarding the Integrity of Mobile Graphical User Interfaces",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032928832",
+ "po_email": "dcosley@nsf.gov",
+ "po_sign_block_name": "Dan Cosley",
+ "awd_eff_date": "2017-08-01",
+ "awd_exp_date": "2021-07-31",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2017-07-24",
+ "awd_max_amd_letter_date": "2017-07-24",
+ "awd_abstract_narration": "Today's mobile applications and services display information to the user via a Graphical User Interface (GUI). Unfortunately, an attacker may tamper with that display, maliciously hiding, altering, or entirely fabricating display contents.  User apps or the cloud services providing the information may be entirely unaware of the tampering.  Mobile operating systems, such as Android and iOS, cannot guarantee the integrity and correctness of the app GUI content.  This project is developing techniques to guarantee the integrity and correctness of security-sensitive GUI regions, to ensure that what a user sees in those regions is exactly what the app (or cloud service) intends to display. \r\n\r\nThe researchers are developing the concept of a protected GUI region called a \"viewport,\" which a cloud backend may statically associate with an app. The intent is to ensure that only the GUI of the application is able to display into the specified portion of the screen. The researchers are developing a viewport security enforcement monitor, using hardware features of the ARM processor, and developing programming and operating system support for viewports.  The project exploits a synergy of hardware features, including virtualization, ARM TrustZone, and modern display controller with support for overlaid layers. Finally, the research team is evaluating the security assurance provided, performance overhead, and ease of use by application developers.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ardalan",
+   "pi_last_name": "Amiri Sani",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ardalan Amiri Sani",
+   "pi_email_addr": "ardalan@uci.edu",
+   "nsf_id": "000702468",
+   "pi_start_date": "2017-07-24",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Irvine",
+  "inst_street_address": "160 ALDRICH HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "IRVINE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9498247295",
+  "inst_zip_code": "926970001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "47",
+  "st_cong_dist_code": "CA47",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA IRVINE",
+  "org_prnt_uei_num": "MJC5FCYQTPE6",
+  "org_uei_num": "MJC5FCYQTPE6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Irvine",
+  "perf_str_addr": "3062 Bren Hall",
+  "perf_city_name": "Irvine",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "926970001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "47",
+  "perf_st_cong_dist": "CA47",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-3e4de873-7fff-3f7a-9218-4c78281ef654\"> </span></p>\n<p dir=\"ltr\"><span>This project investigated one novel, unified principle: using a combination of a trusted local monitor and a trusted cloud service to safeguard security-sensitive software components on untrusted client devices. Specifically, it applied this principle to two security-sensitive components in today&rsquo;s mobile/edge devices: i) the graphics stack that displays Graphical User Interface (GUI) to the user at runtime; and ii) the analytics stack that processes stream data. These two components are high-value targets (to attackers). They suffer from vulnerabilities of the same nature -- the inability of today&rsquo;s software stack in guaranteeing their integrity, allowing for important attacks on the application or its services.&nbsp;</span></p>\n<p>In practice, one mainly relies on the operating system to maintain the integrity of these components, i.e. the graphics stack or the data analytics. However, this is not adequate for two important reasons. (i) these components are large, complex, and hence compromised easily and often. (ii) For certain types of integrity attacks, existing components simply do not have a way of defeating them since these attacks use legitimate features, e.g. rendering normal GUI elements, or invoking certified, but unplanned operators on the stream data.&nbsp;</p>\n<p>The main goal of the project was to enforce these software integrity guarantees using a small trusted monitor without relying on the operating system. That is, even if the operating system is compromised, the monitor will still enforce the guarantee. The project also explored using the application&rsquo;s cloud service for this purpose. This is a trusted service owning the application running on the mobile device.</p>\n<p>This was a collaborative award. The UCI team built several systems related to the graphics stack. First, they developed the security monitor needed to implement GUI integrity solutions for mobile devices and used it in the context of two specific mobile applications, for which GUI integrity is critical: Augmented Reality (AR)/Virtual Reality (VR) and electronic legal contracts.</p>\n<p>The GUI integrity for AR/VR applications are critical, as the user relies on the GUI for navigating and interacting with the physical/virtual worlds. If compromised, the attacker can mount various serious attacks on the user. The team built a system, called Visor, which uses a trusted hypervisor to monitor the content of GUI in AR/VR applications and detect malicious content.</p>\n<p>The GUI integrity for contracts signed through an electronic legal contract/signature system is also critical. If not guaranteed, a malicious party can fool the user to sign contracts different from what they think they are signing. The team built a system, called Tabellion, which uses a trusted hypervisor as well as a trusted runtime in the ARM TrustZone secure world to provide strong integrity guarantees (among others) for electronic legal contracts.</p>\n<p>Finally, the team has been working on a novel security hardware and an operating system to manage it. This system design allows a security-critical application to securely use I/O devices (including the GUI).This system can allow the application to take exclusive control of the GUI and interact with the user without the danger of the GUI being hijacked or covered with overlays.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/03/2021<br>\n\t\t\t\t\tModified by: Ardalan&nbsp;Amiri Sani</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \nThis project investigated one novel, unified principle: using a combination of a trusted local monitor and a trusted cloud service to safeguard security-sensitive software components on untrusted client devices. Specifically, it applied this principle to two security-sensitive components in today\u2019s mobile/edge devices: i) the graphics stack that displays Graphical User Interface (GUI) to the user at runtime; and ii) the analytics stack that processes stream data. These two components are high-value targets (to attackers). They suffer from vulnerabilities of the same nature -- the inability of today\u2019s software stack in guaranteeing their integrity, allowing for important attacks on the application or its services. \n\nIn practice, one mainly relies on the operating system to maintain the integrity of these components, i.e. the graphics stack or the data analytics. However, this is not adequate for two important reasons. (i) these components are large, complex, and hence compromised easily and often. (ii) For certain types of integrity attacks, existing components simply do not have a way of defeating them since these attacks use legitimate features, e.g. rendering normal GUI elements, or invoking certified, but unplanned operators on the stream data. \n\nThe main goal of the project was to enforce these software integrity guarantees using a small trusted monitor without relying on the operating system. That is, even if the operating system is compromised, the monitor will still enforce the guarantee. The project also explored using the application\u2019s cloud service for this purpose. This is a trusted service owning the application running on the mobile device.\n\nThis was a collaborative award. The UCI team built several systems related to the graphics stack. First, they developed the security monitor needed to implement GUI integrity solutions for mobile devices and used it in the context of two specific mobile applications, for which GUI integrity is critical: Augmented Reality (AR)/Virtual Reality (VR) and electronic legal contracts.\n\nThe GUI integrity for AR/VR applications are critical, as the user relies on the GUI for navigating and interacting with the physical/virtual worlds. If compromised, the attacker can mount various serious attacks on the user. The team built a system, called Visor, which uses a trusted hypervisor to monitor the content of GUI in AR/VR applications and detect malicious content.\n\nThe GUI integrity for contracts signed through an electronic legal contract/signature system is also critical. If not guaranteed, a malicious party can fool the user to sign contracts different from what they think they are signing. The team built a system, called Tabellion, which uses a trusted hypervisor as well as a trusted runtime in the ARM TrustZone secure world to provide strong integrity guarantees (among others) for electronic legal contracts.\n\nFinally, the team has been working on a novel security hardware and an operating system to manage it. This system design allows a security-critical application to securely use I/O devices (including the GUI).This system can allow the application to take exclusive control of the GUI and interact with the user without the danger of the GUI being hijacked or covered with overlays.\n\n\t\t\t\t\tLast Modified: 12/03/2021\n\n\t\t\t\t\tSubmitted by: Ardalan Amiri Sani"
+ }
+}

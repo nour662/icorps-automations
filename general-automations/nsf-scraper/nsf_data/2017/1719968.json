@@ -1,0 +1,101 @@
+{
+ "awd_id": "1719968",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Polynomial Homotopy Continuation: Under the Hood",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Leland Jameson",
+ "awd_eff_date": "2017-06-15",
+ "awd_exp_date": "2021-05-31",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2017-06-07",
+ "awd_max_amd_letter_date": "2017-06-07",
+ "awd_abstract_narration": "Systems of polynomial equations are ubiquitous in mathematical models in science and engineering. The field of algebraic geometry, which studies solutions to such systems, has the potential to improve techniques for practical numerical investigations of these systems.  This research project aims to apply algebraic geometry to advance numerical algorithms for solving systems of polynomial equations. The research includes developing new homotopy continuation methods that exploit the action of the monodromy group, random walk homotopies, and hybrid algorithms for solving sparse systems. The new theoretical framework and algorithms will be implemented in open-source software. \r\n\r\nHomotopy continuation algorithms are a backbone of modern nonlinear algebra, the art of solving systems of equations that are not necessarily linear. The main strength of these algorithms is in approximate computation, which often is much faster than classical exact techniques and allows tackling problems in high-dimensional spaces. Homotopy continuation methods solve a problem A in three steps: (1) look for a problem B in the same family of problems as A, but with a simpler structure; (2) construct solutions to that simpler problem B; (3) connect A and B with a homotopy, that is, a continuous deformation, and track how solutions of B morph into solutions of A. This project aims to develop a novel framework for basic homotopy continuation routines. One major point is that randomizing numerical algorithms to a greater extent makes them even faster and more robust without a costly increase in computational precision. Another point is that, looking to minimize computational costs, we should invent new hybrid methods intertwining exact and approximate techniques originating in different areas of mathematics. The symbiosis of symbolic, combinatorial, and numerical ideas is the key to the new methods for solving sparse systems. Tools from tropical geometry and numerical algebraic geometry will deliver a generalization of polyhedral homotopy algorithms and lead to a faster polynomial system solver that benefits from a tighter solution count.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Anton",
+   "pi_last_name": "Leykin",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Anton Leykin",
+   "pi_email_addr": "leykin@math.gatech.edu",
+   "nsf_id": "000382730",
+   "pi_start_date": "2017-06-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Institute of Technology",
+  "perf_str_addr": "225 North Avenue",
+  "perf_city_name": "Atlanta",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span><span>This research project advanced numerical algorithms for solving systems of polynomial equations, the problem that is front and center in the burgeoning area of <em>nonlinear algebra</em> (a.k.a. applied algebraic geometry). We developed new homotopy continuation methods that exploit underlying structure of a given problem, in many cases <em>without</em>&nbsp;neither explicit modeling/recovery of nor implicit learning techniques applied to this structure.&nbsp;</span></span></p>\n<p>One particularly fruitful direction turned out to be using <em>monodromy</em> for solving polynomial systems. Our randomized algorithm based on monodromy became one of the preferred blackbox solvers among the researchers who encounter nonlinear algebra in their problems.</p>\n<p>Another popular direction that stemmed from this project in the last couple of years is application of the homotopy continuation techniques in computer vision. Efficiently addressing tasks coming up in multiview geometry is the main strength of approaches that we developed. Our initial direct domain of application was 3D reconstruction; however, we envision that our methodology would propagate to many other tasks.</p>\n<p>Four students benefited from participating in this project: three of them already defended their PhD theses and secured a continuation of their academic career. Tim Duff received a prestigious NSF postdoctoral fellowship.</p>\n<p>All results have been disseminated via publications and presentations in various domestic and international conferences.&nbsp;One highlight is Tim Duff's (best student paper) presentation at ICCV 2019 to an audience of several thousand participants.</p>\n<p>We implemented the algorithms developed in this project; the implementations are&nbsp;open-source. Several of our algorithms acquired popularity and have multiple implementations by researchers outside of this project. Finding solutions to polynomial systems is a very common problem --- we have no doubt that the impact of this project is broad.&nbsp;&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/23/2021<br>\n\t\t\t\t\tModified by: Anton&nbsp;Leykin</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2021/1719968/1719968_10491641_1629729776767_sp-f18-w1_image--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/1719968/1719968_10491641_1629729776767_sp-f18-w1_image--rgov-800width.jpg\" title=\"Solving polynomial systems via monodromy\"><img src=\"/por/images/Reports/POR/2021/1719968/1719968_10491641_1629729776767_sp-f18-w1_image--rgov-66x44.jpg\" alt=\"Solving polynomial systems via monodromy\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Solving polynomial systems via monodromy</div>\n<div class=\"imageCredit\">Cvetelina Hill and Anton Leykin</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Anton&nbsp;Leykin</div>\n<div class=\"imageTitle\">Solving polynomial systems via monodromy</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThis research project advanced numerical algorithms for solving systems of polynomial equations, the problem that is front and center in the burgeoning area of nonlinear algebra (a.k.a. applied algebraic geometry). We developed new homotopy continuation methods that exploit underlying structure of a given problem, in many cases without neither explicit modeling/recovery of nor implicit learning techniques applied to this structure. \n\nOne particularly fruitful direction turned out to be using monodromy for solving polynomial systems. Our randomized algorithm based on monodromy became one of the preferred blackbox solvers among the researchers who encounter nonlinear algebra in their problems.\n\nAnother popular direction that stemmed from this project in the last couple of years is application of the homotopy continuation techniques in computer vision. Efficiently addressing tasks coming up in multiview geometry is the main strength of approaches that we developed. Our initial direct domain of application was 3D reconstruction; however, we envision that our methodology would propagate to many other tasks.\n\nFour students benefited from participating in this project: three of them already defended their PhD theses and secured a continuation of their academic career. Tim Duff received a prestigious NSF postdoctoral fellowship.\n\nAll results have been disseminated via publications and presentations in various domestic and international conferences. One highlight is Tim Duff's (best student paper) presentation at ICCV 2019 to an audience of several thousand participants.\n\nWe implemented the algorithms developed in this project; the implementations are open-source. Several of our algorithms acquired popularity and have multiple implementations by researchers outside of this project. Finding solutions to polynomial systems is a very common problem --- we have no doubt that the impact of this project is broad.  \n\n\t\t\t\t\tLast Modified: 08/23/2021\n\n\t\t\t\t\tSubmitted by: Anton Leykin"
+ }
+}

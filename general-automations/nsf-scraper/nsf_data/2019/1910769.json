@@ -1,0 +1,105 @@
+{
+ "awd_id": "1910769",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Inferring Specifications for Blackbox Code",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922585",
+ "po_email": "pprabhak@nsf.gov",
+ "po_sign_block_name": "Pavithra Prabhakar",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 500000.0,
+ "awd_min_amd_letter_date": "2019-06-10",
+ "awd_max_amd_letter_date": "2019-06-10",
+ "awd_abstract_narration": "Writing error-free computer software is notoriously difficult. Yet, software errors (bugs) can have catastrophic consequences, ranging from loss of user data and security vulnerabilities to loss of property and even loss of life. Thus, designing tools that help software developers identify and fix bugs is of critical importance. The goal of this project is to contribute to the development of these kinds of tools. In particular, a key challenge faced by all such tools is the need for specifications that describe the properties of software libraries shared among many applications. Often, without these specifications, the library code cannot be analyzed, substantially diminishing the usefulness of bug-finding tools. This project's novelty lies in the development of algorithms that use machine learning to automatically infer these kinds of specifications. The project outcomes will substantially improve the usefulness of bug-finding tools, thereby reducing the number of bugs in software.\r\n\r\nAs a part of this project, the researchers design novel and general algorithms for inferring specifications for blackbox code (i.e., code that can be executed but not instrumented or analyzed). Focusing on the blackbox setting ensures that the algorithms will work in a broad range of settings, ranging from native code to code only available over a network connection. These algorithms infer specifications by executing the code on carefully chosen inputs, observing the corresponding output, and then generalizing the observed behaviors to specifications. Furthermore, to improve performance, these algorithms use reinforcement-learning to automatically learn domain-specific search strategies, eliminating the need for end users to manually design heuristic search strategies for their problem domain.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Osbert",
+   "pi_last_name": "Bastani",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Osbert Bastani",
+   "pi_email_addr": "obastani@seas.upenn.edu",
+   "nsf_id": "000762472",
+   "pi_start_date": "2019-06-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Pennsylvania",
+  "inst_street_address": "3451 WALNUT ST STE 440A",
+  "inst_street_address_2": "",
+  "inst_city_name": "PHILADELPHIA",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "2158987293",
+  "inst_zip_code": "191046205",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "PA03",
+  "org_lgl_bus_name": "TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA, THE",
+  "org_prnt_uei_num": "GM1XX56LEP58",
+  "org_uei_num": "GM1XX56LEP58"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Pennsylvania",
+  "perf_str_addr": "3451 Walnut St",
+  "perf_city_name": "Philadelphia",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "191046205",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "PA03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "8206",
+   "pgm_ref_txt": "Formal Methods and Verification"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 500000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-e3ed83d0-7fff-be50-e499-7f8fcb31e275\">\n<p dir=\"ltr\"><span>As software is increasingly used in safety critical settings, such as robotics and healthcare, a key challenge is ensuring that these systems do not suffer from catastrophic failures. The goal of program verification is to formally prove that a piece of software has desired safety properties. While there has been great progress in program verification, a major barrier is the lack of specifications formalizing properties of underlying components used by the software. Specifications are logical encodings of properties that a piece of code or data should satisfy. Formal methods tools rely on specifications to formally reason about the code or data. The key challenge is that traditionally, specifications must be provided manually. However, writing specifications can be time consuming due to the large number of specifications that are typically provided. Furthermore, the process can be very error prone, without any mechanism to detect incorrect specifications, which can in turn cause the formal methods tool to output incorrect results.</span></p>\n<br />\n<p dir=\"ltr\"><span>The goal of this project is to develop novel algorithms for inferring specifications, as well as to develop applications that can leverage these specifications. Our proposed approach focuses on the blackbox setting, where only executable access to the underlying code is available. This assumption ensures that the algorithms we develop are general purpose. We are working on designing algorithms that search over the space of possible specifications in a systematic way, using input-output examples to prune the search space. We are particularly interested in specifications for machine learning components, which have started to become an integral part of many safety-critical systems, yet pose significant challenges to formal methods tools due to the lack of specifications. In this context, we are interested in inferring specifications that rigorously characterize the behaviors of machine learning models, which can then be used by formal methods tools to verify software that rely on these models.</span></p>\n<br />\n<p dir=\"ltr\"><span>During the course of this work, we have developed techniques for inferring specifications for deep neural networks in the form of PAC prediction sets. PAC prediction sets are a way to quantify uncertainty for an arbitrary machine learning model by modifying it to output sets of labels instead of individual labels. We can provide the statistical guarantee that this set of labels contains the ground truth label with high probability. This guarantee can be formalized as a specification, which can then be used by formal methods tools to reason about properties of the overall system. We have developed a number of fundamental tools for constructing PAC prediction sets, as well as techniques for ensuring their formal guarantees continue to hold in the face of distribution shift, a critical challenge for machine learning systems.</span></p>\n</span></p><br>\n<p>\n Last Modified: 01/30/2024<br>\nModified by: Osbert&nbsp;Bastani</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\n\n\n\nAs software is increasingly used in safety critical settings, such as robotics and healthcare, a key challenge is ensuring that these systems do not suffer from catastrophic failures. The goal of program verification is to formally prove that a piece of software has desired safety properties. While there has been great progress in program verification, a major barrier is the lack of specifications formalizing properties of underlying components used by the software. Specifications are logical encodings of properties that a piece of code or data should satisfy. Formal methods tools rely on specifications to formally reason about the code or data. The key challenge is that traditionally, specifications must be provided manually. However, writing specifications can be time consuming due to the large number of specifications that are typically provided. Furthermore, the process can be very error prone, without any mechanism to detect incorrect specifications, which can in turn cause the formal methods tool to output incorrect results.\n\n\n\n\nThe goal of this project is to develop novel algorithms for inferring specifications, as well as to develop applications that can leverage these specifications. Our proposed approach focuses on the blackbox setting, where only executable access to the underlying code is available. This assumption ensures that the algorithms we develop are general purpose. We are working on designing algorithms that search over the space of possible specifications in a systematic way, using input-output examples to prune the search space. We are particularly interested in specifications for machine learning components, which have started to become an integral part of many safety-critical systems, yet pose significant challenges to formal methods tools due to the lack of specifications. In this context, we are interested in inferring specifications that rigorously characterize the behaviors of machine learning models, which can then be used by formal methods tools to verify software that rely on these models.\n\n\n\n\nDuring the course of this work, we have developed techniques for inferring specifications for deep neural networks in the form of PAC prediction sets. PAC prediction sets are a way to quantify uncertainty for an arbitrary machine learning model by modifying it to output sets of labels instead of individual labels. We can provide the statistical guarantee that this set of labels contains the ground truth label with high probability. This guarantee can be formalized as a specification, which can then be used by formal methods tools to reason about properties of the overall system. We have developed a number of fundamental tools for constructing PAC prediction sets, as well as techniques for ensuring their formal guarantees continue to hold in the face of distribution shift, a critical challenge for machine learning systems.\n\t\t\t\t\tLast Modified: 01/30/2024\n\n\t\t\t\t\tSubmitted by: OsbertBastani\n"
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "awd_id": "1907838",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Toward True Heterogeneous Computing: Concurrent Data Structure Design and Optimization",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927498",
+ "po_email": "achtchel@nsf.gov",
+ "po_sign_block_name": "Almadena Chtchelkanova",
+ "awd_eff_date": "2019-07-15",
+ "awd_exp_date": "2024-06-30",
+ "tot_intn_awd_amt": 492778.0,
+ "awd_amount": 591167.0,
+ "awd_min_amd_letter_date": "2019-07-09",
+ "awd_max_amd_letter_date": "2019-08-15",
+ "awd_abstract_narration": "The introduction of Graphics Processing Units (GPU) for handling intensive computing tasks in modern-day computers has changed the landscape for parallel computing. At the core of this phenomenon are massively-multithreaded, data-parallel computer architectures with impressive acceleration ratings, offering low-cost supercomputing together with attractive power budgets. While the GPU can handle computation-intensive tasks providing high through, the computer's brains, the Central Processing Unit (CPU), is good at handling latency-oriented tasks. The CPU and GPU communicate with each other through shared data structures that need to be efficiently designed in order to avoid mismatch in the use of the CPU and GPU when handling heterogeneous applications that tax the CPU and GPU at different levels. This project seeks to ensure such efficiencies always exist regardless of workload, through the design and implementation of highly-scalable Concurrent Data Structures (CDSs). The developed CDSs are practically tested by developing library and real-world true heterogeneous workloads. The results, findings, and outcomes of the project are contributed to open-source community and disseminated through scholarly publications, online materials, and websites to the community.\r\n\r\nThe recent support of fine-grained data sharing and thread communication on GPU-powered computing platforms allows applications to benefit from easy, cheap, diverse CPU and GPU collaboration models through data structures in shared virtual memory. In newly enabled CPU-GPU collaboration models, latency-oriented CPU threads and throughput-oriented GPU threads synchronize and communicate with one another through shared data structures. Therefore, the efficiency of these data structures is crucial for the success of true heterogeneous computing. Designing a CDS that scales well across different concurrency levels is known to be a very challenging task. The increased concurrency on heterogeneous platforms makes it even more challenging with respect to performance and correctness. While a significant amount of research has been done in the context of traditional CPUs, there is very little known in the context of heterogeneous platforms. The full potential of a highly-scalable CDS design can be achieved when co-designed with hardware; current hardware is the first generation designs that have not benefited from a good understanding of inter-processor fine-grained data sharing and thread communication. While the primary objective of the project is designing efficient CDSs whose performance scales well across a spectrum of concurrency demands on heterogeneous platforms, the other important target is to improve and optimize hardware support crucial for efficient fine-grained data sharing thread communication, such as inter-processor cache coherence, GPU thread scheduling, and SIMD aware optimizations. To that end, this research takes software-hardware co-design approach using six specific research aims (reducing loads, developing contention management schemes, optimizing CPU-GPU cache coherence protocol, SIMD aware optimization, architecture aware operation mapping, library and real-world application development) to address three fundamental challenges (sequential bottlenecks, memory contention, and architectural heterogeneity).\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Byunghyun",
+   "pi_last_name": "Jang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "Dr.",
+   "pi_full_name": "Byunghyun Jang",
+   "pi_email_addr": "bjang@cs.olemiss.edu",
+   "nsf_id": "000629748",
+   "pi_start_date": "2019-07-09",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Mississippi",
+  "inst_street_address": "113 FALKNER",
+  "inst_street_address_2": "",
+  "inst_city_name": "UNIVERSITY",
+  "inst_state_code": "MS",
+  "inst_state_name": "Mississippi",
+  "inst_phone_num": "6629157482",
+  "inst_zip_code": "386779704",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "MS01",
+  "org_lgl_bus_name": "THE UNIVERSITY OF MISSISSIPPI",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "G1THVER8BNL4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Mississippi",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "MS",
+  "perf_st_name": "Mississippi",
+  "perf_zip_code": "386771848",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "MS01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "689200",
+   "pgm_ele_name": "CI REUSE"
+  },
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7942",
+   "pgm_ref_txt": "HIGH-PERFORMANCE COMPUTING"
+  },
+  {
+   "pgm_ref_code": "8004",
+   "pgm_ref_txt": "Software Institutes"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 591167.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-ebc22c3e-7fff-10ae-17bc-1729d073eccb\"><br /> </span></p>\n<p dir=\"ltr\"><span>This project aimed to innovate in concurrent data structure design for GPU applications, focusing on heterogeneous computing environments. The primary goal was to create scalable data structures optimized for GPU-based applications, with a special emphasis on enhancing performance and efficiency in complex computational settings. The project set out to address three primary challenges: sequential bottlenecks, memory contention, and architectural heterogeneity, through six research-driven objectives. Key activities included: 1) Data Structure Design: The research team focused on developing GPU-optimized concurrent queues and structures that manage concurrency in unconventional workloads. While testing, the team discovered a limitation in existing structures related to thread fairness, an important finding that was not an initial project goal but significantly enhances the field's understanding of GPU data structures. 2) Community Outreach: A \"HEROES Summer Research Experience Program\" was organized to involve high school students in foundational computer science, C/C++, and CUDA programming. The program introduced them to concurrent data structures and provided an opportunity to explore and apply theoretical knowledge in hands-on research projects.</span></p>\n<p dir=\"ltr\"><span>The project resulted in several major achievements: 1) Concurrent Data Structures: Core project goals were met through the design of a concurrent queue for GPUs and a fairer, optimized concurrent queue for CPUs. The team&rsquo;s discovery of fairness issues in traditional concurrent queues led to additional research, yielding structures with improved thread servicing. This discovery highlights a gap in existing data structures and sets a new standard for fairness in concurrent computing. 2) Research Contributions: Findings were disseminated through conference papers. These publications contribute to the academic community&rsquo;s growing body of knowledge on concurrent data structures in heterogeneous computing. 3) Human Resource Development: The project involved substantial hands-on training, recruiting both graduate and undergraduate students. Participants received training in high-performance computing, with graduate students leading concurrent data structure design and undergraduate students contributing through CUDA optimization. The summer research program also provided high school students with foundational experience in computational research, enhancing their understanding and interest in computer science.</span></p>\n<p dir=\"ltr\"><span>The impacts of the project are three-fold. 1) Disciplinary Advances in Heterogeneous Computing: The project&rsquo;s contributions are anticipated to enhance GPU computing, with concurrent data structures playing a pivotal role in heterogeneous applications. Addressing fairness in data structures may influence future development in this area, impacting concurrent computing design across varied processor architectures. 2) Educational and Infrastructure Development: The project facilitated the purchase of several GPU machines, providing critical infrastructure for ongoing research and teaching at the University of Mississippi. These resources support both current research in high-performance computing and teaching efforts, making advanced computational tools accessible to more students and faculty. 3) Broader Impact on STEM Engagement: The HEROES program has received positive feedback, inspiring high school students to consider computer science careers. By providing hands-on research experiences and fostering a passion for computing, this program supports the project&rsquo;s broader impact goal of increasing interest in STEM fields among younger generations.</span></p>\n<p dir=\"ltr\"><span>The project provided training and development opportunities across participant levels: 1) Graduate Students: master/doctoral students were recruited and trained in concurrent data structure design and testing for GPUs and CPUs. This hands-on experience has prepared them for advanced roles in computing and contributed to significant project outcomes. 2) Undergraduate Students: a dozen of undergraduates gained experience in CUDA programming, working on porting and optimizing code for GPU applications, a valuable skill in modern high-performance computing. 3) High School Participants: The HEROES high school research experience program introduced twelve high school students to computational research. They were tasked with designing, implementing, and testing concurrent queue structures, gaining practical knowledge in concurrency and hands-on research experience.</span></p>\n<p dir=\"ltr\"><span>Project outcomes were shared through scholarly publications and an open-source repository. Notable conference papers from the project are hosted in the NSF Public Access Repository, offering insights on concurrent data structure design advancements. The open-source repository includes data structures and applications developed, allowing broader access and use by the academic and research communities.</span></p>\n<p dir=\"ltr\"><span>The project has successfully advanced concurrent data structure design for heterogeneous computing environments, especially for GPU applications. By addressing bottlenecks, concurrency issues, and thread fairness, the project has contributed scalable, fair, and efficient data structures suited to the demands of modern computing. Future research directions may include refining fairness protocols and extending applications of these structures in AI and machine learning. Expanding initiatives like the HEROES program will further engage young students in high-performance computing, helping cultivate the next generation of experts in computing.</span></p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 10/29/2024<br>\nModified by: Byunghyun&nbsp;Jang</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\n\n \n\n\nThis project aimed to innovate in concurrent data structure design for GPU applications, focusing on heterogeneous computing environments. The primary goal was to create scalable data structures optimized for GPU-based applications, with a special emphasis on enhancing performance and efficiency in complex computational settings. The project set out to address three primary challenges: sequential bottlenecks, memory contention, and architectural heterogeneity, through six research-driven objectives. Key activities included: 1) Data Structure Design: The research team focused on developing GPU-optimized concurrent queues and structures that manage concurrency in unconventional workloads. While testing, the team discovered a limitation in existing structures related to thread fairness, an important finding that was not an initial project goal but significantly enhances the field's understanding of GPU data structures. 2) Community Outreach: A \"HEROES Summer Research Experience Program\" was organized to involve high school students in foundational computer science, C/C++, and CUDA programming. The program introduced them to concurrent data structures and provided an opportunity to explore and apply theoretical knowledge in hands-on research projects.\n\n\nThe project resulted in several major achievements: 1) Concurrent Data Structures: Core project goals were met through the design of a concurrent queue for GPUs and a fairer, optimized concurrent queue for CPUs. The teams discovery of fairness issues in traditional concurrent queues led to additional research, yielding structures with improved thread servicing. This discovery highlights a gap in existing data structures and sets a new standard for fairness in concurrent computing. 2) Research Contributions: Findings were disseminated through conference papers. These publications contribute to the academic communitys growing body of knowledge on concurrent data structures in heterogeneous computing. 3) Human Resource Development: The project involved substantial hands-on training, recruiting both graduate and undergraduate students. Participants received training in high-performance computing, with graduate students leading concurrent data structure design and undergraduate students contributing through CUDA optimization. The summer research program also provided high school students with foundational experience in computational research, enhancing their understanding and interest in computer science.\n\n\nThe impacts of the project are three-fold. 1) Disciplinary Advances in Heterogeneous Computing: The projects contributions are anticipated to enhance GPU computing, with concurrent data structures playing a pivotal role in heterogeneous applications. Addressing fairness in data structures may influence future development in this area, impacting concurrent computing design across varied processor architectures. 2) Educational and Infrastructure Development: The project facilitated the purchase of several GPU machines, providing critical infrastructure for ongoing research and teaching at the University of Mississippi. These resources support both current research in high-performance computing and teaching efforts, making advanced computational tools accessible to more students and faculty. 3) Broader Impact on STEM Engagement: The HEROES program has received positive feedback, inspiring high school students to consider computer science careers. By providing hands-on research experiences and fostering a passion for computing, this program supports the projects broader impact goal of increasing interest in STEM fields among younger generations.\n\n\nThe project provided training and development opportunities across participant levels: 1) Graduate Students: master/doctoral students were recruited and trained in concurrent data structure design and testing for GPUs and CPUs. This hands-on experience has prepared them for advanced roles in computing and contributed to significant project outcomes. 2) Undergraduate Students: a dozen of undergraduates gained experience in CUDA programming, working on porting and optimizing code for GPU applications, a valuable skill in modern high-performance computing. 3) High School Participants: The HEROES high school research experience program introduced twelve high school students to computational research. They were tasked with designing, implementing, and testing concurrent queue structures, gaining practical knowledge in concurrency and hands-on research experience.\n\n\nProject outcomes were shared through scholarly publications and an open-source repository. Notable conference papers from the project are hosted in the NSF Public Access Repository, offering insights on concurrent data structure design advancements. The open-source repository includes data structures and applications developed, allowing broader access and use by the academic and research communities.\n\n\nThe project has successfully advanced concurrent data structure design for heterogeneous computing environments, especially for GPU applications. By addressing bottlenecks, concurrency issues, and thread fairness, the project has contributed scalable, fair, and efficient data structures suited to the demands of modern computing. Future research directions may include refining fairness protocols and extending applications of these structures in AI and machine learning. Expanding initiatives like the HEROES program will further engage young students in high-performance computing, helping cultivate the next generation of experts in computing.\n\n\n\t\t\t\t\tLast Modified: 10/29/2024\n\n\t\t\t\t\tSubmitted by: ByunghyunJang\n"
+ }
+}

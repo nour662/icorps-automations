@@ -1,0 +1,105 @@
+{
+ "awd_id": "1621065",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SBIR Phase I:  Computational Tools for Analyzing the Dynamics of Biological Processes",
+ "cfda_num": "47.084",
+ "org_code": "15030000",
+ "po_phone": "7032922160",
+ "po_email": "rshuman@nsf.gov",
+ "po_sign_block_name": "Ruth Shuman",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2017-03-31",
+ "tot_intn_awd_amt": 224901.0,
+ "awd_amount": 224901.0,
+ "awd_min_amd_letter_date": "2016-06-20",
+ "awd_max_amd_letter_date": "2016-06-20",
+ "awd_abstract_narration": "The broader impact/commercial potential of this Small Business Innovation Research (SBIR) project will be the development of software tools for the analysis of the dynamics of biological networks involved in cell-level processes.  These tools will be used to increase the understanding of how living organisms respond to environmental changes and stresses.  For example, the tools to be built will help to show how crop plants respond to drought stress at the level of the cellular networks that control plant growth and development.  These tools also will provide information that allows commercially important biological processes, such as fermentation used in industries from food and beverage to biosynthesis of fine chemicals to pharmaceuticals, to be more accurately controlled, making them more reliable, more efficient, and more predictable.  In addition, these tools will help researchers analyze potential side effects of proposed drug treatments at an early stage. The power of these computational tools may multiply the value of costly experiments and trials by speeding up development, reducing costs, and bringing the benefits of advanced biological research to society. \r\n\r\nThis SBIR Phase I project proposes to develop a biological data analysis pipeline that takes times series datasets as inputs, preprocesses these to deal with noise and missing data, runs a suite of analytic tools, and integrates, interprets and visualizes the results.  The objectives of this project are to build test tools to help users select features of interest in data they provide; implement additional node and edge finding algorithms to complement those already in the pipeline; develop algorithms for combining information from replicate experiments and measurements to improve the statistical power of the methods; develop modules that permit users to incorporate a wide variety of prior biological information to reduce the size of the computational space to be explored; test the full pipeline on known data to ensure accuracy and stability of results and identify computational bottlenecks; select, implement, and test visualization tools to enable users to examine probable network topologies; and apply all of the above to non-periodic systems such as fermentation data to determine modifications that may be required for this type of data.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "TIP",
+ "org_dir_long_name": "Directorate for Technology, Innovation, and Partnerships",
+ "div_abbr": "TI",
+ "org_div_long_name": "Translational Impacts",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Anastasia",
+   "pi_last_name": "Deckard",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Anastasia Deckard",
+   "pi_email_addr": "anastasia.deckard@mimeticsbiosci.com",
+   "nsf_id": "000698452",
+   "pi_start_date": "2016-06-20",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Mimetics, LLC",
+  "inst_street_address": "513 LAKESHORE LANE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHAPEL HILL",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9197173983",
+  "inst_zip_code": "275141731",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "NC04",
+  "org_lgl_bus_name": "MIMETICS, LLC",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "ZLB3ZG728TL3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Mimetics, LLC",
+  "perf_str_addr": "3710 UNIVERSITY DRIVE SUITE 260",
+  "perf_city_name": "Durham",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "277076204",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "NC04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "537100",
+   "pgm_ele_name": "SBIR Phase I"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5371",
+   "pgm_ref_txt": "SMALL BUSINESS PHASE I"
+  },
+  {
+   "pgm_ref_code": "8038",
+   "pgm_ref_txt": "Biotechnology"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 224901.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Computational biology methods hold great promise in understanding biological processes, but classical approaches that leverage static data cannot adequately capture or analyze the behavior of dynamic processes. By using time series data and methods for analyzing data that is dynamic, Mimetics is helping AgBio and Lifesciences communities gain a deeper understanding of biological processes and systems.</p>\n<p>Time series data shows how the expression level of genes change through time. Our methods use this time series data to reveal the regulatory connections between genes, which form a transcriptional network. These transcriptional networks can give significant insight into the key players and interactions in biological processes such as cell growth, response to environmental stress, and response to treatment.</p>\n<p>Mimetics developed a suite of tools for analyzing the dynamics of transcriptional networks. &nbsp;The first step is to identify the genes whose expression represent &ldquo;core&rdquo; actors within a biological process. Mimetics identifies these genes by applying computational methods to time series expression data, and using information from current literature and the design of the experiment. These genes are the nodes in a network. The next step is to find regulatory relationships between the genes in the network by applying computational methods to the time series data. These regulatory relationships are the directed edges in a network. The identified nodes and edges are combined to form a network topology and a mathematical model is applied. The final step is to identify model parameters that allow networks to produce dynamics matching true biological data. We accomplish this through parameter optimization which minimizes the difference between the model&rsquo;s dynamics and real data.&nbsp;An example network topology is shown in Figure 1.&nbsp;</p>\n<p>Mimetics collaborated with researchers at Duke University and built mathematical approaches that formed the basis for our network methods. This research was recently published in Genome Biology (McGoff, et al. Local Edge Machine: inference of dynamic models of gene regulation. Genome Biol. 2016;17(1):214.).</p>\n<p>Phase I included the enhancement of our existing technology as well as development of additional applications for AgBio. We have streamlined the data analysis pipeline for network analysis and have prototype software enabling users to input their data, find genes of interest, and identify regulatory relationships. We have designed visualization tools for initial data exploration that can compare different genes, experiments, and examining results from our methods. One example of our visualizations is the Heatmap shown in Figure 2. A Heatmap assists researchers in studying levels of gene expression, through time, using color matrices.</p>\n<p>Mimetics has engaged local and national AgBio experts to help in furthering its research. These connections have led to opportunities for applying and adapting the technology. Currently, AgBio has large amounts of resources focused on studying underlying gene expression in growth and development as well as in responses to environmental stimulants and stresses. All these processes are dynamic, time sensitive, and are part of high dimensional systems with thousands of genes changing expression over large and small time periods. Many of these responses also need to be understood in relation to other dynamic processes like circadian rhythms or cell cycles.</p>\n<p>This Phase I SBIR has enabled Mimetics to identify and implement several expansions and improvements to its technology.&nbsp; This work will directly benefit AgBio research. Moving forward, Mimetics aims to scale these tools for larger commercial applications as well as develop web-based interfaces.</p>\n<p>Mimetic&rsquo;s research, and the tools it is developing, have tremendous value to the AgBio industry. In its current form, the Mimetics&rsquo; technology allows researchers to:</p>\n<ul>\n<li>Determine how molecular networks control critical biological processes.</li>\n<li>Look at sequences and time frames in which the genes controlling specific processes are activated/repressed.</li>\n<li>Identify the most promising molecular targets to modulate or change in a desired direction. </li>\n</ul>\n<p>Because of these tools, Mimetics has fashioned a much-needed critical enhancement for the AgBio industry. By implementing the Mimetics platform technology, AgBio will be able to identify:</p>\n<ul>\n<li>Plants with new traits providing higher yields per acre. </li>\n<li>New plant traits leading to decreased costs associated with planting, growing, and harvesting. </li>\n<li>Fertilizers, fungicides, herbicides and insecticides with increased effectiveness while adhering to environmentally acceptable modes of action. </li>\n</ul>\n<p>New techniques for growing plants also effecting and establishing increased yields, decreased costs, reduced water needs, and both the reduction of fertilizer and agro-chemicals.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 04/13/2017<br>\n\t\t\t\t\tModified by: Anastasia&nbsp;Deckard</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2017/1621065/1621065_10434063_1492116951263_network_parts--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2017/1621065/1621065_10434063_1492116951263_network_parts--rgov-800width.jpg\" title=\"Inferred Network Topology\"><img src=\"/por/images/Reports/POR/2017/1621065/1621065_10434063_1492116951263_network_parts--rgov-66x44.jpg\" alt=\"Inferred Network Topology\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Visualization of edges chosen by the edge inference algorithm that form several small networks.                              (Results are unpublished and the node names have been anonymized.)</div>\n<div class=\"imageCredit\">Anastasia Deckard</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Anastasia&nbsp;Deckard</div>\n<div class=\"imageTitle\">Inferred Network Topology</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2017/1621065/1621065_10434063_1492117128708_circadian_liver_heatmap--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2017/1621065/1621065_10434063_1492117128708_circadian_liver_heatmap--rgov-800width.jpg\" title=\"Heatmap of Gene Expression\"><img src=\"/por/images/Reports/POR/2017/1621065/1621065_10434063_1492117128708_circadian_liver_heatmap--rgov-66x44.jpg\" alt=\"Heatmap of Gene Expression\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">A heatmap showing patterns of expression in large numbers of genes. (Gene expression data from Zhang et al. A circadian gene expression atlas in mammals: Implications for biology and medicine. PNAS. 2014;111(45):16219-16224).</div>\n<div class=\"imageCredit\">Anastasia Deckard</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Anastasia&nbsp;Deckard</div>\n<div class=\"imageTitle\">Heatmap of Gene Expression</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nComputational biology methods hold great promise in understanding biological processes, but classical approaches that leverage static data cannot adequately capture or analyze the behavior of dynamic processes. By using time series data and methods for analyzing data that is dynamic, Mimetics is helping AgBio and Lifesciences communities gain a deeper understanding of biological processes and systems.\n\nTime series data shows how the expression level of genes change through time. Our methods use this time series data to reveal the regulatory connections between genes, which form a transcriptional network. These transcriptional networks can give significant insight into the key players and interactions in biological processes such as cell growth, response to environmental stress, and response to treatment.\n\nMimetics developed a suite of tools for analyzing the dynamics of transcriptional networks.  The first step is to identify the genes whose expression represent \"core\" actors within a biological process. Mimetics identifies these genes by applying computational methods to time series expression data, and using information from current literature and the design of the experiment. These genes are the nodes in a network. The next step is to find regulatory relationships between the genes in the network by applying computational methods to the time series data. These regulatory relationships are the directed edges in a network. The identified nodes and edges are combined to form a network topology and a mathematical model is applied. The final step is to identify model parameters that allow networks to produce dynamics matching true biological data. We accomplish this through parameter optimization which minimizes the difference between the model?s dynamics and real data. An example network topology is shown in Figure 1. \n\nMimetics collaborated with researchers at Duke University and built mathematical approaches that formed the basis for our network methods. This research was recently published in Genome Biology (McGoff, et al. Local Edge Machine: inference of dynamic models of gene regulation. Genome Biol. 2016;17(1):214.).\n\nPhase I included the enhancement of our existing technology as well as development of additional applications for AgBio. We have streamlined the data analysis pipeline for network analysis and have prototype software enabling users to input their data, find genes of interest, and identify regulatory relationships. We have designed visualization tools for initial data exploration that can compare different genes, experiments, and examining results from our methods. One example of our visualizations is the Heatmap shown in Figure 2. A Heatmap assists researchers in studying levels of gene expression, through time, using color matrices.\n\nMimetics has engaged local and national AgBio experts to help in furthering its research. These connections have led to opportunities for applying and adapting the technology. Currently, AgBio has large amounts of resources focused on studying underlying gene expression in growth and development as well as in responses to environmental stimulants and stresses. All these processes are dynamic, time sensitive, and are part of high dimensional systems with thousands of genes changing expression over large and small time periods. Many of these responses also need to be understood in relation to other dynamic processes like circadian rhythms or cell cycles.\n\nThis Phase I SBIR has enabled Mimetics to identify and implement several expansions and improvements to its technology.  This work will directly benefit AgBio research. Moving forward, Mimetics aims to scale these tools for larger commercial applications as well as develop web-based interfaces.\n\nMimetic?s research, and the tools it is developing, have tremendous value to the AgBio industry. In its current form, the Mimetics? technology allows researchers to:\n\nDetermine how molecular networks control critical biological processes.\nLook at sequences and time frames in which the genes controlling specific processes are activated/repressed.\nIdentify the most promising molecular targets to modulate or change in a desired direction. \n\n\nBecause of these tools, Mimetics has fashioned a much-needed critical enhancement for the AgBio industry. By implementing the Mimetics platform technology, AgBio will be able to identify:\n\nPlants with new traits providing higher yields per acre. \nNew plant traits leading to decreased costs associated with planting, growing, and harvesting. \nFertilizers, fungicides, herbicides and insecticides with increased effectiveness while adhering to environmentally acceptable modes of action. \n\n\nNew techniques for growing plants also effecting and establishing increased yields, decreased costs, reduced water needs, and both the reduction of fertilizer and agro-chemicals. \n\n \n\n\t\t\t\t\tLast Modified: 04/13/2017\n\n\t\t\t\t\tSubmitted by: Anastasia Deckard"
+ }
+}

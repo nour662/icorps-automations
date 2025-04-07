@@ -1,0 +1,105 @@
+{
+ "awd_id": "1720405",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research:  Efficient High-Order Algorithms for Nonequilibrium Microflows Over the Entire Range of Knudsen Number",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Leland Jameson",
+ "awd_eff_date": "2017-07-01",
+ "awd_exp_date": "2021-06-30",
+ "tot_intn_awd_amt": 162500.0,
+ "awd_amount": 162500.0,
+ "awd_min_amd_letter_date": "2017-06-20",
+ "awd_max_amd_letter_date": "2017-06-20",
+ "awd_abstract_narration": "Nonequilibrium microflows are ubiquitous in sensors, microfluidics, and microelectromechanical systems and have important applications in bio-medical and environmental sciences, aerodynamic, chemical, and energy industries, and space science. For example, vacuum pumps manipulate rarefied gases at very low density and pressure, where approaches based on continuum theory, which is the engineering model for gaseous flows at standard temperature and pressure, is no longer valid.  The extent of nonequilibrium of a gaseous flow is qualitatively measured by the Knudsen number -- the ratio of mean free path to a macroscopic length.  Nonequilibrium flows may be modeled by the Boltzmann equation for the single-particle velocity distribution function in phase space. Standard methods for numerical solution may not be accurate enough, and their computational cost may be prohibitively expensive due to the high-dimensionality of phase space, especially for time-dependent problems. This project aims to create effective and efficient simulation tools for nonequilibrium microflows. Graduate students are involved in the research.\r\n\r\nFor low-speed microflows, reduced kinetic models, such as the linearized Bhatnagar-Gross-Krook-Welander (BGKW) equation, coupled with the diffuse reflection boundary condition, are reliable and capable of producing very accurate results for microflows in the whole range of the Knudsen number.  The equation can be transformed into a system of linear integral equations for macroscopic variables including the density of the gas, the flow velocity, and the temperature, which leads to great dimension reduction, consequently drastic enhancement of computational efficiency.  The overarching goal of this research project is to develop efficient high-order algorithms to solve a system of integral equations pertaining to nonequilibrium gaseous flows in various geometries over the entire range of Knudsen number, for applications to microflows.  The work consists of the following technical ingredients to overcome the challenges encountered in simulation of microflows: (1) An accurate and efficient algorithm to evaluate the Abramowitz function on the complex plane, as required for time-dependent problems; (2) Theoretical analysis, especially on the nullspace, of the integral equations; (3) Efficient and high-order algorithms for the integral equations on smooth and nonsmooth convex domains in two dimensions.  The results of the project are anticipated to provide enabling technologies for a broad range of engineering applications involving multiscale multi-physics microflows.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Shidong",
+   "pi_last_name": "Jiang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Shidong Jiang",
+   "pi_email_addr": "shidong.jiang@njit.edu",
+   "nsf_id": "000166438",
+   "pi_start_date": "2017-06-20",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "New Jersey Institute of Technology",
+  "inst_street_address": "323 DR MARTIN LUTHER KING JR BLVD",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEWARK",
+  "inst_state_code": "NJ",
+  "inst_state_name": "New Jersey",
+  "inst_phone_num": "9735965275",
+  "inst_zip_code": "071021824",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "NJ10",
+  "org_lgl_bus_name": "NEW JERSEY INSTITUTE OF TECHNOLOGY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "SGBMHQ7VXNH5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "New Jersey Institute of Technology",
+  "perf_str_addr": "323 Martin Luther King Jr. Blvd",
+  "perf_city_name": "Newark",
+  "perf_st_code": "NJ",
+  "perf_st_name": "New Jersey",
+  "perf_zip_code": "071021982",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "NJ10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8037",
+   "pgm_ref_txt": "Advanced Manufacturing"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 162500.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The PI and his collaborators have developed an accurate and efficient algorithm to evaluate the Abramowitz functions in the right half of the complex plane. The Abramowitz functions are special functions that appear ubiquitously in the kinetic theory with many important applications to nonequilibrium flows and microflows. The accurate and efficient evaluation of such functions is a fundamental task to many scientific computing problems associated with them. The algorithm will have long-lasting impacts to the field.</p>\n<p>The PI and his collaborator have also constructed an accurate, efficient, stable and robust numerical scheme for solving Fredholm second-kind integral equations on nonsmooth domain with singular or nearly singular right-hand sides. Prior to the work,&nbsp;almost all existing methods only work well for smooth right-hand sides and may also involve a fair amount of operator-specific analysis and precomputed quantities. In contrast, the new scheme works for singular or nearly singular right-hand-sides of arbitrary integrable singularity. The scheme is universal, computes all intermediary quantities needed on-the-fly, and only involves a bare minimum of analysis. The scheme can treat extremely strong singularity and produces solutions to full machine precision. The scheme has been applied to solve the&nbsp;linearized Bhatnagar-GrossKrook-Welander (BGKW) kinetic equation for the steady Couette flow to provide some benchmark data. The new scheme is more than 1000 times faster than the previous best numerical scheme and achieves almost full double precision for a much wider range of Knudsen numbers.&nbsp;</p>\n<p>During the funding period, the PI has advised two graduate students - Ruqi Pei and Kosuke Sugita at New Jersey Institute of Technology. Both Ruqi and Kosuke have received extensive training in applied mathematics, scientific computing, and programming. Ruqi Pei obtained her PhD degree from New Jersey Institute of Technology in May, 2022.</p>\n<p>Finally, the PI has published nine high quality research papers on international refereed journals during the funding period. He has also given many talks and seminars at many research universities, institutes, and international conferences and workshops to disseminate the research results.&nbsp;The code for the evaluation of Abramowitz functions has been made freely available to the public at Github. The code for solving the BGKW equation for the steady Couette flow is also freely available.&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/23/2022<br>\n\t\t\t\t\tModified by: Shidong&nbsp;Jiang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe PI and his collaborators have developed an accurate and efficient algorithm to evaluate the Abramowitz functions in the right half of the complex plane. The Abramowitz functions are special functions that appear ubiquitously in the kinetic theory with many important applications to nonequilibrium flows and microflows. The accurate and efficient evaluation of such functions is a fundamental task to many scientific computing problems associated with them. The algorithm will have long-lasting impacts to the field.\n\nThe PI and his collaborator have also constructed an accurate, efficient, stable and robust numerical scheme for solving Fredholm second-kind integral equations on nonsmooth domain with singular or nearly singular right-hand sides. Prior to the work, almost all existing methods only work well for smooth right-hand sides and may also involve a fair amount of operator-specific analysis and precomputed quantities. In contrast, the new scheme works for singular or nearly singular right-hand-sides of arbitrary integrable singularity. The scheme is universal, computes all intermediary quantities needed on-the-fly, and only involves a bare minimum of analysis. The scheme can treat extremely strong singularity and produces solutions to full machine precision. The scheme has been applied to solve the linearized Bhatnagar-GrossKrook-Welander (BGKW) kinetic equation for the steady Couette flow to provide some benchmark data. The new scheme is more than 1000 times faster than the previous best numerical scheme and achieves almost full double precision for a much wider range of Knudsen numbers. \n\nDuring the funding period, the PI has advised two graduate students - Ruqi Pei and Kosuke Sugita at New Jersey Institute of Technology. Both Ruqi and Kosuke have received extensive training in applied mathematics, scientific computing, and programming. Ruqi Pei obtained her PhD degree from New Jersey Institute of Technology in May, 2022.\n\nFinally, the PI has published nine high quality research papers on international refereed journals during the funding period. He has also given many talks and seminars at many research universities, institutes, and international conferences and workshops to disseminate the research results. The code for the evaluation of Abramowitz functions has been made freely available to the public at Github. The code for solving the BGKW equation for the steady Couette flow is also freely available. \n\n\t\t\t\t\tLast Modified: 06/23/2022\n\n\t\t\t\t\tSubmitted by: Shidong Jiang"
+ }
+}

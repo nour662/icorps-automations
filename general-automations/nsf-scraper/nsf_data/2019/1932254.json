@@ -1,0 +1,101 @@
+{
+ "awd_id": "1932254",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CPS: Medium: Collaborative Research: Data-Driven Modeling and Preview-Based Control for Cyber-Physical System Safety",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032928950",
+ "po_email": "rwachter@nsf.gov",
+ "po_sign_block_name": "Ralph Wachter",
+ "awd_eff_date": "2020-01-01",
+ "awd_exp_date": "2023-08-31",
+ "tot_intn_awd_amt": 290000.0,
+ "awd_amount": 290000.0,
+ "awd_min_amd_letter_date": "2019-09-11",
+ "awd_max_amd_letter_date": "2019-09-11",
+ "awd_abstract_narration": "This project will develop the theory and algorithmic tools for the design of provably-safe controllers that can leverage preview information from different sources. Many autonomous or semi-autonomous cyber-physical systems (CPS) are equipped with mechanisms that provide a window of projecting into the future. These mechanisms can be forward looking sensors like cameras (and corresponding perception algorithms), map information, forecast information, or more complicated predictive models of external agents learned from data. Through these mechanisms, at run-time, the systems have a preview of what lies ahead. Leveraging this information to improve performance of CPS while keeping strong guarantees on their safety, therefore, holds great promise for multiple technologies of national interest. We will use driver-assist systems in connected vehicles as the main application. Education and outreach activities will involve undergraduate and graduate students along with stakeholders from local automotive companies.\r\n\r\nTo develop the theory for learning- and prediction-enabled safety for CPS we will: (i) develop a modeling formalism, namely preview automata, for systems with preview information and correct-by-construction control algorithms that consider structured inaccuracies in the predictions for resilience; (ii) investigate how cooperation can assist in enriching the preview information; (iii) learn, via finite-sample data analysis, trustworthy dynamical models of the behaviors of non-cooperative agents with provable uncertainty bounds; and (iv) design methods for selecting compatible models from the learned dynamical models and for deriving safe controllers in the presence of cooperative and non-cooperative agents. Our innovations will enable safety-critical CPS to take full advantage of emerging technologies on sensing, perception, communication, and learning.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Samet",
+   "pi_last_name": "Oymak",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Samet Oymak",
+   "pi_email_addr": "oymak@umich.edu",
+   "nsf_id": "000779066",
+   "pi_start_date": "2019-09-11",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Riverside",
+  "inst_street_address": "200 UNIVERSTY OFC BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "RIVERSIDE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9518275535",
+  "inst_zip_code": "925210001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "39",
+  "st_cong_dist_code": "CA39",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF CALIFORNIA AT RIVERSIDE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "MR5QC5FCAVH5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California, Riverside",
+  "perf_str_addr": "900 University Avenue",
+  "perf_city_name": "Riverside",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "925210001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "39",
+  "perf_st_cong_dist": "CA39",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "791800",
+   "pgm_ele_name": "CPS-Cyber-Physical Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 290000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Complex cyber-physical systems (CPS) arise in&nbsp;many human-facing applications including Internet-of-Things, transportation, and electric power systems.&nbsp;Many autonomous or semi-autonomous CPS are equipped with mechanisms that provide a window of projecting into the future. These mechanisms can be forward looking sensors like cameras (and corresponding perception algorithms), map information, forecast information, or more complicated predictive models of external agents learned from data. Through these mechanisms, at run-time, the systems have a preview of what lies ahead. Leveraging this information to improve the performance of CPS while keeping strong guarantees on their safety, therefore, holds great promise for multiple technologies of national interest.&nbsp;The primary objective of this project was to develop&nbsp;methods to obtain reliable preview information and effectively leverage this information for safer and data-driven CPS.</p>\n<div><span><br /></span></div>\n<div><span>The outcomes of this project led to scientific advances at the crossroads of CPS,&nbsp;</span><span>control, and statistical learning and also contributed to the development of human resources at the undergraduate and graduate&nbsp;level. On the scientific front, the specific goal of the project was learning predictive models of external agents from their trajectories and using these models as preview&nbsp;information for safe control. For instance, a self-driving car may wish to infer the behavior of other drivers to estimate its own safe set. To this aim, the project has led to the development of theoretical guarantees and algorithms for (1) the identification of linear and nonlinear systems from finite data with probabilistic guarantees, (2) adaptive control and regret&nbsp;</span><span>guarantees</span><span>&nbsp;for Markov jump linear systems, and (3) new meta-learning algorithms that can rapidly identify the dynamics of new agents by leveraging priors acquired from diverse training/simulation environments. This research has contributed to building foundational bridges between control theory and statistical learning and led to data-driven control/filtering/identification strategies with&nbsp;provable performance guarantees. The research has also contributed toward a mathematical understanding of the transformer architecture, which is an autoregressive sequence model that underlies&nbsp;large language models such as ChatGPT, and developed methods for the&nbsp;</span><span>principled&nbsp;</span><span>use of transformers for data-efficient control and filtering tasks.&nbsp;</span><span>The outcomes of the project has led to more than 20 publications in top-tier machine learning and control venues which also facilitated its cross-cutting dissemination across both control and ML communities.</span></div>\n<div><span><br /></span></div>\n<div>Finally, the project has contributed to the training of several undergraduate and graduate students at the&nbsp;<span>University of California, Riverside and the&nbsp;</span>University of Michigan, Ann Arbor. These students have gained research and engineering expertise on&nbsp;<span>CPS,&nbsp;</span><span>control, and statistical learning.</span><span>&nbsp;For&nbsp;</span><span>several undergraduate students,&nbsp;</span><span>the project has facilitated their&nbsp;</span><span>first&nbsp;</span><span>research&nbsp;</span><span>experience and first academic&nbsp;papers. Some&nbsp;of these students will be pursuing a STEM PhD degree, specifically in electrical engineering and computer science</span><span>. The project has also supported a graduate student full time who has successfully graduated and is currently pursuing postdoctoral research.</span></div>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 03/01/2024<br>\nModified by: Samet&nbsp;Oymak</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nComplex cyber-physical systems (CPS) arise inmany human-facing applications including Internet-of-Things, transportation, and electric power systems.Many autonomous or semi-autonomous CPS are equipped with mechanisms that provide a window of projecting into the future. These mechanisms can be forward looking sensors like cameras (and corresponding perception algorithms), map information, forecast information, or more complicated predictive models of external agents learned from data. Through these mechanisms, at run-time, the systems have a preview of what lies ahead. Leveraging this information to improve the performance of CPS while keeping strong guarantees on their safety, therefore, holds great promise for multiple technologies of national interest.The primary objective of this project was to developmethods to obtain reliable preview information and effectively leverage this information for safer and data-driven CPS.\n\n\nThe outcomes of this project led to scientific advances at the crossroads of CPS,control, and statistical learning and also contributed to the development of human resources at the undergraduate and graduatelevel. On the scientific front, the specific goal of the project was learning predictive models of external agents from their trajectories and using these models as previewinformation for safe control. For instance, a self-driving car may wish to infer the behavior of other drivers to estimate its own safe set. To this aim, the project has led to the development of theoretical guarantees and algorithms for (1) the identification of linear and nonlinear systems from finite data with probabilistic guarantees, (2) adaptive control and regretguaranteesfor Markov jump linear systems, and (3) new meta-learning algorithms that can rapidly identify the dynamics of new agents by leveraging priors acquired from diverse training/simulation environments. This research has contributed to building foundational bridges between control theory and statistical learning and led to data-driven control/filtering/identification strategies withprovable performance guarantees. The research has also contributed toward a mathematical understanding of the transformer architecture, which is an autoregressive sequence model that underlieslarge language models such as ChatGPT, and developed methods for theprincipleduse of transformers for data-efficient control and filtering tasks.The outcomes of the project has led to more than 20 publications in top-tier machine learning and control venues which also facilitated its cross-cutting dissemination across both control and ML communities.\n\n\nFinally, the project has contributed to the training of several undergraduate and graduate students at theUniversity of California, Riverside and theUniversity of Michigan, Ann Arbor. These students have gained research and engineering expertise onCPS,control, and statistical learning.Forseveral undergraduate students,the project has facilitated theirfirstresearchexperience and first academicpapers. Someof these students will be pursuing a STEM PhD degree, specifically in electrical engineering and computer science. The project has also supported a graduate student full time who has successfully graduated and is currently pursuing postdoctoral research.\n\n\n\t\t\t\t\tLast Modified: 03/01/2024\n\n\t\t\t\t\tSubmitted by: SametOymak\n"
+ }
+}

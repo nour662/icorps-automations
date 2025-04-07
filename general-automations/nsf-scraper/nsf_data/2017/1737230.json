@@ -1,0 +1,101 @@
+{
+ "awd_id": "1737230",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "BSF: 2016257:  Building Models for Reading Comprehension in Specialized Domains from Scratch",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "A. Funda Ergun",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2020-08-31",
+ "tot_intn_awd_amt": 35039.0,
+ "awd_amount": 35039.0,
+ "awd_min_amd_letter_date": "2017-08-31",
+ "awd_max_amd_letter_date": "2017-08-31",
+ "awd_abstract_narration": "Machine learning algorithms are increasingly allowing people to search, structure, and access the textual information created daily in every possible domain. In areas with abundant annotated data, where supervised learning algorithms can be applied, algorithms for text understanding have had success in structuring text and providing natural language interfaces. When building a system in a new domain for which there is little to no data, however, data collection and annotation data can be prohibitively expensive.  This project explores a protocol for developing text understanding systems that read text and provide a natural language interface in a particular domain (such as biology or history) -- this can allow specialized communities to have digital access to data that is otherwise locked in text.  The project also trains students as part of an international collaboration -- this award supports travel of the US-based researchers to collaborate in a project funded by the US-Israel Binational Science Foundation.   \r\n\r\nThe project encompasses both data collection and model training, and considers the interaction between the two. To replace expert annotations it uses crowdsourcing workers in an iterative procedure that starts training a structured predictor from almost no data. It creates an interactive framework in which users ask questions and verify candidate answers that are later used to retrain the system. It aims to jointly train over multiple domains, and use domain adaptation methods to transfer knowledge from one domain to another. \r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Vivek",
+   "pi_last_name": "Srikumar",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Vivek Srikumar",
+   "pi_email_addr": "svivek@cs.utah.edu",
+   "nsf_id": "000676145",
+   "pi_start_date": "2017-08-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Utah",
+  "inst_street_address": "201 PRESIDENTS CIR",
+  "inst_street_address_2": "",
+  "inst_city_name": "SALT LAKE CITY",
+  "inst_state_code": "UT",
+  "inst_state_name": "Utah",
+  "inst_phone_num": "8015816903",
+  "inst_zip_code": "841129049",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "UT01",
+  "org_lgl_bus_name": "UNIVERSITY OF UTAH",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LL8GLEVH6MG3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Utah",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "UT",
+  "perf_st_name": "Utah",
+  "perf_zip_code": "841128930",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "UT01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "287800",
+   "pgm_ele_name": "Special Projects - CCF"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "014Z",
+   "pgm_ref_txt": "NSF and US-Israel Binational Science Fou"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 35039.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Machine learning algorithms are increasingly becoming a fundamental tool that allows people to search, structure, and access the unprecedented amounts of textual information created every day in every possible domain. While models for text understanding have had success in structuring text and providing natural language interfaces, this has been largely limited to areas in which annotated data is abundant, where supervised learning algorithms can be applied. However, when building a system in a new domain, for which there is little to no data, annotating data is prohibitively expensive, and data collection is the primary barrier for progress.<br /><br />In this work, we studied questions underlying the problem of developing text understanding systems that read text and provide a natural language interface in a new domain. We approached this problem with a two pronged strategy:</p>\n<ol>\n<li>We asked whether it is possible for a system that is learning language to also learn to express its confusion to a teacher (i.e., a user), and thereby seek supervision for concepts that would help it improve the most.</li>\n<li>We asked whether we build a model for a linguistic task using small amounts of data with pre-trained neural networks by introducing structural assumptions into the process of predictions.</li>\n</ol>\n<p>Both these lines of work were conducted in a collaboration between the University of Utah and Tel Aviv University.</p>\n<p><br /><strong>1. Learning to actively learn</strong><br />&nbsp;&nbsp; <br />Typically, machine learning systems are trained via the protocol of supervised learning, where a collection of data is provided to a learning program and there is no further interaction between the data-creators (i.e. annotators) and the learner. Instead, suppose we have an interactive system where a learner can ask an annotator to provide labels for specific example it chooses. Then it can use the answers to further improve its underlying models.<br /><br />The key question for such active learning is: How should the system pick the examples for annotation? Traditional active learning mechanisms in the literature have relied on heuristics that discover the learner's uncertainty. However, recent work has shown that the idea of learning to actively learn has promise. That is, in addition to learning the linguistic task at hand, the system also learns which concepts it is most uncertain about.<br /><br />In this work, we asked whether this protocol of learning to actively learn can be successfully be used to learn complex linguistic concepts that involve the semantic analysis of text. Careful experimentation revealed a surprising finding: While learning to actively learn may work with simpler tasks such as document classification, for the more complex question of learning parsers for semantic representations, it does no better than randomly picking examples for annotation.<br /><br />We thoroughly analyzed the factors that led to this poor performance, and found that the key issue is the underlying stochasticity in how models are learned. Our experiments and analysis suggest that for the important task of building models for semantic representation, the protocol of learning to actively learn is not a viable one.<br /><br />This work was recognized with a honorable mention at the 2019 Conference on Natural Language Learning.<br /><br /><strong>2. Structural assumptions for discourse parsing</strong><br /><br />The ability to learn a complex linguistic skill is influenced not only by how much data (i.e. signal) is available, but also by how much prior knowledge we provide the learning system. Broadly speaking, at one end of the spectrum, we have systems that have no prior knowledge about the outputs, and has to learn the entire linguistic skill from scratch. At the other end of the spectrum, we can introduce strong structural prior knowledge that governs what kinds of outputs are valid, and how its various components interact with each other; these models may need to learn less from data because the prior knowledge provides strong guidance.<br /><br />However, the former class of models are typically much faster because they do not have to explore the question of whether structural constraints hold or not. The latter class of models are slower.<br /><br />In this work, we studied this dichotomy in the context of a specific linguistic task, namely discourse parsing. The discourse structure of a document is a formal hierarchical description of how its elements contribute to the discourse of the document. The goal of discourse parsing is to automatically infer the discourse structure of a given document. This problem is largely dominated by unconstrained models of the first kind described above (so called greedy systems). The more expressive second kind of models (called global systems) are less explored because they can be computationally prohibitive.<br /><br />The key finding of our research is that we showed a specific global system that does not impose the heavy computational cost because of a carefully designed efficient inference procedure. In essence, by disentangling unnecessary structral interactions between the elements of the discourse, our global system can achieve the state-of-the-art performance on a benchmark discourse dataset.<br /><br /><br /></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/26/2021<br>\n\t\t\t\t\tModified by: Vivek&nbsp;Srikumar</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMachine learning algorithms are increasingly becoming a fundamental tool that allows people to search, structure, and access the unprecedented amounts of textual information created every day in every possible domain. While models for text understanding have had success in structuring text and providing natural language interfaces, this has been largely limited to areas in which annotated data is abundant, where supervised learning algorithms can be applied. However, when building a system in a new domain, for which there is little to no data, annotating data is prohibitively expensive, and data collection is the primary barrier for progress.\n\nIn this work, we studied questions underlying the problem of developing text understanding systems that read text and provide a natural language interface in a new domain. We approached this problem with a two pronged strategy:\n\nWe asked whether it is possible for a system that is learning language to also learn to express its confusion to a teacher (i.e., a user), and thereby seek supervision for concepts that would help it improve the most.\nWe asked whether we build a model for a linguistic task using small amounts of data with pre-trained neural networks by introducing structural assumptions into the process of predictions.\n\n\nBoth these lines of work were conducted in a collaboration between the University of Utah and Tel Aviv University.\n\n\n1. Learning to actively learn\n   \nTypically, machine learning systems are trained via the protocol of supervised learning, where a collection of data is provided to a learning program and there is no further interaction between the data-creators (i.e. annotators) and the learner. Instead, suppose we have an interactive system where a learner can ask an annotator to provide labels for specific example it chooses. Then it can use the answers to further improve its underlying models.\n\nThe key question for such active learning is: How should the system pick the examples for annotation? Traditional active learning mechanisms in the literature have relied on heuristics that discover the learner's uncertainty. However, recent work has shown that the idea of learning to actively learn has promise. That is, in addition to learning the linguistic task at hand, the system also learns which concepts it is most uncertain about.\n\nIn this work, we asked whether this protocol of learning to actively learn can be successfully be used to learn complex linguistic concepts that involve the semantic analysis of text. Careful experimentation revealed a surprising finding: While learning to actively learn may work with simpler tasks such as document classification, for the more complex question of learning parsers for semantic representations, it does no better than randomly picking examples for annotation.\n\nWe thoroughly analyzed the factors that led to this poor performance, and found that the key issue is the underlying stochasticity in how models are learned. Our experiments and analysis suggest that for the important task of building models for semantic representation, the protocol of learning to actively learn is not a viable one.\n\nThis work was recognized with a honorable mention at the 2019 Conference on Natural Language Learning.\n\n2. Structural assumptions for discourse parsing\n\nThe ability to learn a complex linguistic skill is influenced not only by how much data (i.e. signal) is available, but also by how much prior knowledge we provide the learning system. Broadly speaking, at one end of the spectrum, we have systems that have no prior knowledge about the outputs, and has to learn the entire linguistic skill from scratch. At the other end of the spectrum, we can introduce strong structural prior knowledge that governs what kinds of outputs are valid, and how its various components interact with each other; these models may need to learn less from data because the prior knowledge provides strong guidance.\n\nHowever, the former class of models are typically much faster because they do not have to explore the question of whether structural constraints hold or not. The latter class of models are slower.\n\nIn this work, we studied this dichotomy in the context of a specific linguistic task, namely discourse parsing. The discourse structure of a document is a formal hierarchical description of how its elements contribute to the discourse of the document. The goal of discourse parsing is to automatically infer the discourse structure of a given document. This problem is largely dominated by unconstrained models of the first kind described above (so called greedy systems). The more expressive second kind of models (called global systems) are less explored because they can be computationally prohibitive.\n\nThe key finding of our research is that we showed a specific global system that does not impose the heavy computational cost because of a carefully designed efficient inference procedure. In essence, by disentangling unnecessary structral interactions between the elements of the discourse, our global system can achieve the state-of-the-art performance on a benchmark discourse dataset.\n\n\n\n\n\t\t\t\t\tLast Modified: 01/26/2021\n\n\t\t\t\t\tSubmitted by: Vivek Srikumar"
+ }
+}

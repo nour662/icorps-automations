@@ -1,0 +1,109 @@
+{
+ "awd_id": "1633271",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "BIGDATA: Collaborative Research: F: Association Analysis of Big Graphs: Models, Algorithms and Applications",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032927347",
+ "po_email": "sspengle@nsf.gov",
+ "po_sign_block_name": "Sylvia Spengler",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2022-08-31",
+ "tot_intn_awd_amt": 257430.0,
+ "awd_amount": 257430.0,
+ "awd_min_amd_letter_date": "2016-08-26",
+ "awd_max_amd_letter_date": "2021-06-02",
+ "awd_abstract_narration": "Association analysis is a fundamental problem in Big Data analytics. Emerging applications require computationally efficient association models and scalable association mining techniques to find regularities of graph data.  Conventional association analysis for transactional data is hard or infeasible to be adapted to effectively support the next generation of graph data analytics, especially under limited computing resources.  In this project, the PIs develop models, algorithms and tools to support association analysis over large-scale graph data under resource constraints.  The project formulates new variants of the conventional association model that are enhanced by advanced capability of graph queries. Both exact and approximate querying and mining paradigms are explored to support effective association analysis over multi-source, large-scale, and fast-changing graph data. The PIs instantiate the generic framework to two practical association analysis scenarios, notably, a) multi-graph association analysis, and b) association detection over graph streams. The project develops a package of distributed and stream association mining techniques supported by the proposed generic model and algorithms.\r\n\r\nThe enhanced model and algorithms enable scalable association analysis in a wide range of massive data applications. The principles learned from this project can be applied to big data analytics and system design in general. The study of new association analysis framework has immediate applications in emerging areas, including data quality, affinity marketing, and network security. Application collaborators of the project include Pacific Northwest National Laboratory, LogicMonitor, and Facebook. Broader impacts of the project also include research training and education of students including women and minorities, and design of new curricula and education tools that target both CS and non-CS students.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Tingjian",
+   "pi_last_name": "Ge",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Tingjian Ge",
+   "pi_email_addr": "ge@cs.uml.edu",
+   "nsf_id": "000534537",
+   "pi_start_date": "2016-08-26",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Massachusetts Lowell",
+  "inst_street_address": "220 PAWTUCKET ST STE 400",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOWELL",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "9789344170",
+  "inst_zip_code": "018543573",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "MA03",
+  "org_lgl_bus_name": "UNIVERSITY OF MASSACHUSETTS LOWELL",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LTNVSTJ3R6D5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Massachusetts Lowell",
+  "perf_str_addr": "600 Suffolk Street",
+  "perf_city_name": "Lowell",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "018543643",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "MA03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  },
+  {
+   "pgm_ele_code": "808300",
+   "pgm_ele_name": "Big Data Science &Engineering"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "8083",
+   "pgm_ref_txt": "Big Data Science &Engineering"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 257430.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In this project, we have performed interesting research on a number of significant and challenging problems around association analysis for large networks. First, we studied the problem of selective data acquisition. When the network is large and highly dynamic (as in graph streams), it is hard for a system to keep up and acquire all the graph changes, in the form of edge insertions and deletions, while performing dynamic association analysis and queries. In our VLDB 2017 paper, we use a reinforcement learning model to characterize the evolvement of system states in a sequence, and learn the data acquisition policy that optimizes a long-term goal including association analysis and queries.</p>\n<p>Second, in many dynamic networks of urban systems today, in applications such as traffic networks, as well as communication and social networks, it is important to infer unobserved values with a powerful model that can capture the association of attribute values both across graph topology and over time. In our CIKM 2018 paper, we propose a novel probabilistic graphical model with layers of latent variables to capture system states that evolve over time and that capture the correlations across both graph topology and time. Such association analysis -- especially when compared with deep learning models -- has the advantages of flexible probabilistic inference and easy interpretation.</p>\n<p>Third, we studied the problem of efficiently discover heavily and densely associated entities in large dynamic networks with applications include communication hotspots, spam network filtering, and traffic control. Graph data association is closely related to the notions of density and community in the literature. In our ICDE 2019 paper, we propose a framework called Expectation-Maximization with Utility functions (EMU), a novel stochastic approach that nontrivially extends the conventional EM approach. EMU has the flexibility of optimizing any user-defined utility functions.</p>\n<p>Fourth, we worked on the problem of learning the association between a set of graph stream events that happen at the same time and a target event that occurs in the future. In our VLDB 2020 paper, we devise an approach that performs representation learning over a dynamic knowledge graph. In addition, we theoretically bound the complexity of sampling using the Rademacher complexity.</p>\n<p>Fifth, the application of association analysis in dynamic graphs often has to do with monitoring and predicting some critical events, such as in security monitoring. We studied the learning of association between a critical event and the event/state pattern prior to it. In our SIGMOD 2021 paper, we extend conventional knowledge-graph representation learning with auxiliary nodes and an attention mechanism, and express the association as a probabilistic state machine pattern for efficient monitoring and predicting the critical events.</p>\n<p>Finally, we tackled the problem of combining the power of association rules (i.e., symbolic systems) with that of neural networks (i.e., connectionist networks) in dynamic graphs. It was observed in the past that connectionist networks and symbolic rules should co-exist in a system and overcome the deficiencies of each other. In our SIGKDD 2022 paper, we show that it is feasible to simultaneously and efficiently perform representation learning (for connectionist networks) and rule learning spontaneously out of the same online training process.</p>\n<p>The ideas and results from this project have wide applications in several application domains where association analysis on dynamic networks is required, including social networks, traffic networks, biological networks, and communication networks. The research results from this project are incorporated in several courses the PI is teaching at the University of Massachusetts, Lowell. Graduate and undergraduate students have received valuable training in this project, including several Ph.D. students whose theses are based on the contents from this project. Finally, we have outreach activities with researchers and students from other disciplines.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/02/2022<br>\n\t\t\t\t\tModified by: Tingjian&nbsp;Ge</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIn this project, we have performed interesting research on a number of significant and challenging problems around association analysis for large networks. First, we studied the problem of selective data acquisition. When the network is large and highly dynamic (as in graph streams), it is hard for a system to keep up and acquire all the graph changes, in the form of edge insertions and deletions, while performing dynamic association analysis and queries. In our VLDB 2017 paper, we use a reinforcement learning model to characterize the evolvement of system states in a sequence, and learn the data acquisition policy that optimizes a long-term goal including association analysis and queries.\n\nSecond, in many dynamic networks of urban systems today, in applications such as traffic networks, as well as communication and social networks, it is important to infer unobserved values with a powerful model that can capture the association of attribute values both across graph topology and over time. In our CIKM 2018 paper, we propose a novel probabilistic graphical model with layers of latent variables to capture system states that evolve over time and that capture the correlations across both graph topology and time. Such association analysis -- especially when compared with deep learning models -- has the advantages of flexible probabilistic inference and easy interpretation.\n\nThird, we studied the problem of efficiently discover heavily and densely associated entities in large dynamic networks with applications include communication hotspots, spam network filtering, and traffic control. Graph data association is closely related to the notions of density and community in the literature. In our ICDE 2019 paper, we propose a framework called Expectation-Maximization with Utility functions (EMU), a novel stochastic approach that nontrivially extends the conventional EM approach. EMU has the flexibility of optimizing any user-defined utility functions.\n\nFourth, we worked on the problem of learning the association between a set of graph stream events that happen at the same time and a target event that occurs in the future. In our VLDB 2020 paper, we devise an approach that performs representation learning over a dynamic knowledge graph. In addition, we theoretically bound the complexity of sampling using the Rademacher complexity.\n\nFifth, the application of association analysis in dynamic graphs often has to do with monitoring and predicting some critical events, such as in security monitoring. We studied the learning of association between a critical event and the event/state pattern prior to it. In our SIGMOD 2021 paper, we extend conventional knowledge-graph representation learning with auxiliary nodes and an attention mechanism, and express the association as a probabilistic state machine pattern for efficient monitoring and predicting the critical events.\n\nFinally, we tackled the problem of combining the power of association rules (i.e., symbolic systems) with that of neural networks (i.e., connectionist networks) in dynamic graphs. It was observed in the past that connectionist networks and symbolic rules should co-exist in a system and overcome the deficiencies of each other. In our SIGKDD 2022 paper, we show that it is feasible to simultaneously and efficiently perform representation learning (for connectionist networks) and rule learning spontaneously out of the same online training process.\n\nThe ideas and results from this project have wide applications in several application domains where association analysis on dynamic networks is required, including social networks, traffic networks, biological networks, and communication networks. The research results from this project are incorporated in several courses the PI is teaching at the University of Massachusetts, Lowell. Graduate and undergraduate students have received valuable training in this project, including several Ph.D. students whose theses are based on the contents from this project. Finally, we have outreach activities with researchers and students from other disciplines.\n\n\t\t\t\t\tLast Modified: 12/02/2022\n\n\t\t\t\t\tSubmitted by: Tingjian Ge"
+ }
+}

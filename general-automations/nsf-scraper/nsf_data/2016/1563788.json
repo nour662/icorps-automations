@@ -1,0 +1,121 @@
+{
+ "awd_id": "1563788",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "NeTS: Medium: Collaborative Research: Language and Hardware Primitives for Programming the Data Plane in High Speed Networks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Darleen Fisher",
+ "awd_eff_date": "2016-06-01",
+ "awd_exp_date": "2019-05-31",
+ "tot_intn_awd_amt": 201667.0,
+ "awd_amount": 201667.0,
+ "awd_min_amd_letter_date": "2016-05-31",
+ "awd_max_amd_letter_date": "2017-08-31",
+ "awd_abstract_narration": "The evolution of network routers and switches has been driven primarily by performance. Recently, thanks in part to the emergence of large datacenter networks, the need for better control over network operations, and the desire for new features, programmability of routers has become as important as performance. In response, researchers and practitioners have developed reconfigurable switching chips with a RISC-inspired pipeline architecture, which provide some programmability through hardware primitives that can be configured into a processing pipeline with software directives. Reconfigurable switches are gaining traction as they perform the same as fixed-function chipsets but with lower area overhead. \r\n\r\nThis project seeks to extend the state-of-the-art by developing higher-level programming abstractions and traffic management algorithms for reconfigurable switches. This project will investigate: \r\n1) a C-like language and an abstract machine representing modern switches, \r\n2) a compiler to convert the transactional specification to the pipelined abstract machine, and a \r\n3) Push-In, First-Out (PIFO) primitive for programmable packet scheduling. \r\n\r\nThis project will make programming high-speed switches easier and more expressive, which will be useful in datacenters, enterprises, and service provider networks. Research findings will be incorporated into the undergraduate and graduate curricula, offering students an opportunity to implement network protocols in C, a familiar language, but run them at hardware speeds. The course material will be made widely available through MIT OpenCourseWare and on the MITx MOOC.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Alvin",
+   "pi_last_name": "Cheung",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Alvin Cheung",
+   "pi_email_addr": "akcheung@cs.berkeley.edu",
+   "nsf_id": "000684029",
+   "pi_start_date": "2016-05-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Washington",
+  "inst_street_address": "4333 BROOKLYN AVE NE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SEATTLE",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "2065434043",
+  "inst_zip_code": "981951016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "WA07",
+  "org_lgl_bus_name": "UNIVERSITY OF WASHINGTON",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HD1WMN6945W6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Washington",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "981952350",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "WA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  },
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7363",
+   "pgm_ref_txt": "RES IN NETWORKING TECH & SYS"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 126178.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 75489.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project aims to develop new ways to program network switches.&nbsp;Network switches are important elements that form the backbone of our modern communication infrastructure nowadays. Programming such switches has been difficult in the past due to the variety of platforms provided by hardware vendors. Over the course of this project, we have developed a new way called packet transactions to organize code to be executed on network switches. To validate our proposal, we have implemented a compiler called Domino that translates code written using packet transactions into actual executable instructions that can be run on programmable network switches. Along the way, we have also developed new algorithms that can speed up the translation of packet transactions and other similar types of code. We have validated our results by implementing real-world programs as packet transactions, and compiling them to be executed using commercially available programmable switches.&nbsp;Furthermore, we have disseminated our results by publishing in academic conferences, proposing our packet transactions idea to networking standards committees, and also incorporating them into undergraduate and graduate courses offered at the University of Washington. This project has supported three graduate students at the University of Washington during its course, and has also inspired different undergraduate research projects along the way.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/11/2019<br>\n\t\t\t\t\tModified by: Alvin&nbsp;Cheung</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project aims to develop new ways to program network switches. Network switches are important elements that form the backbone of our modern communication infrastructure nowadays. Programming such switches has been difficult in the past due to the variety of platforms provided by hardware vendors. Over the course of this project, we have developed a new way called packet transactions to organize code to be executed on network switches. To validate our proposal, we have implemented a compiler called Domino that translates code written using packet transactions into actual executable instructions that can be run on programmable network switches. Along the way, we have also developed new algorithms that can speed up the translation of packet transactions and other similar types of code. We have validated our results by implementing real-world programs as packet transactions, and compiling them to be executed using commercially available programmable switches. Furthermore, we have disseminated our results by publishing in academic conferences, proposing our packet transactions idea to networking standards committees, and also incorporating them into undergraduate and graduate courses offered at the University of Washington. This project has supported three graduate students at the University of Washington during its course, and has also inspired different undergraduate research projects along the way.\n\n\t\t\t\t\tLast Modified: 07/11/2019\n\n\t\t\t\t\tSubmitted by: Alvin Cheung"
+ }
+}

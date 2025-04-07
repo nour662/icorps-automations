@@ -1,0 +1,105 @@
+{
+ "awd_id": "1618689",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CIF: Small: Index Coding and Matrix Factorizations",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922981",
+ "po_email": "pregalia@nsf.gov",
+ "po_sign_block_name": "Phillip Regalia",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2019-06-30",
+ "tot_intn_awd_amt": 449094.0,
+ "awd_amount": 449094.0,
+ "awd_min_amd_letter_date": "2016-06-27",
+ "awd_max_amd_letter_date": "2016-06-27",
+ "awd_abstract_narration": "Many communication systems, content delivery systems, and machine learning algorithms rely on algorithms that use matrix factorizations with some structure constraints. A specific type of matrix factorization of significant theoretical and practical interest is called \"Index Coding\". The research in this project is centered around studying the foundations of index coding and the development of algorithms for structured matrix factorizations. Beyond the development of theoretical foundations, this research is expected to lead to better algorithms for caching in wireless networks and for designing distributed storage codes. The project also includes plans for curriculum development, student training, and tutorial presentations.\r\n\r\nThe specific focus of this research program consists of three thrusts: 1) Developing novel algorithms and bounds for index coding, 2) Understanding the connections of index coding with distributed storage codes other factorization problems and 3) Using index coding to obtain bounds and achievable schemes for information flow problems. Preliminary work indicates that this is possible for multiple unicasts and more possibly more generally. Connections with semidefinite programming relaxations and graph theory are also considered in this project.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Georgios-Alex",
+   "pi_last_name": "Dimakis",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Georgios-Alex Dimakis",
+   "pi_email_addr": "dimakis@austin.utexas.edu",
+   "nsf_id": "000515168",
+   "pi_start_date": "2016-06-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Austin",
+  "perf_str_addr": "101 East 27th St., Suite 5.300",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787121532",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "25",
+  "perf_st_cong_dist": "TX25",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779700",
+   "pgm_ele_name": "Comm & Information Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7935",
+   "pgm_ref_txt": "COMM & INFORMATION THEORY"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 449094.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>&nbsp;</p>\n<p><br />Datasets needed for training current machine learning models are becoming increasingly larger and distributed storage and training are needed for efficiency and robustness. This project studied the uses of coding theoretic methods to distributed information processing and storage. Also we studied how the problem of index coding is deeply connected to distributed storage and graph theory questions.&nbsp;<br /><br />One important problem is designing codes to help distributed machine learning training in the presence of stragglers: These correspond to a few machines that participate in distributed training but can be significantly slower compared to most other workers. We showed (by measuring training on cloud infrastructure) that a few machines can be significantly slower compared to all others hence creating a bottleneck for training time. This project also tackled this challenge by introducing a novel technique called gradient coding to mitigate straggler delays. Gradient coding techniques introduce redundancy&nbsp; in storage but also gradient computation, during stochastic gradient descent, or batch gradient descent. This redundancy allows distributed training to continue even if a few machines fail to complete their assigned computations.&nbsp;<br />We also introduced an approximate variant of the gradient coding problem. In this variant, the requirement for exact computation of the full gradient is traded by an approximate one, where the deviation of the generated vector from the true gradient is guaranteed to have a small error norm. This problem creates a new set of achievable solutions on the tradeoff between robustness to stragglers and computational efficiency.&nbsp;<br />This project developed novel coding theoretic techniques that can be used for fast distributed training of machine learning models. Further, our techniques can be useful for&nbsp; federated learning and distributed model selection.&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/13/2020<br>\n\t\t\t\t\tModified by: Georgios-Alex&nbsp;Dimakis</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \n\n\nDatasets needed for training current machine learning models are becoming increasingly larger and distributed storage and training are needed for efficiency and robustness. This project studied the uses of coding theoretic methods to distributed information processing and storage. Also we studied how the problem of index coding is deeply connected to distributed storage and graph theory questions. \n\nOne important problem is designing codes to help distributed machine learning training in the presence of stragglers: These correspond to a few machines that participate in distributed training but can be significantly slower compared to most other workers. We showed (by measuring training on cloud infrastructure) that a few machines can be significantly slower compared to all others hence creating a bottleneck for training time. This project also tackled this challenge by introducing a novel technique called gradient coding to mitigate straggler delays. Gradient coding techniques introduce redundancy  in storage but also gradient computation, during stochastic gradient descent, or batch gradient descent. This redundancy allows distributed training to continue even if a few machines fail to complete their assigned computations. \nWe also introduced an approximate variant of the gradient coding problem. In this variant, the requirement for exact computation of the full gradient is traded by an approximate one, where the deviation of the generated vector from the true gradient is guaranteed to have a small error norm. This problem creates a new set of achievable solutions on the tradeoff between robustness to stragglers and computational efficiency. \nThis project developed novel coding theoretic techniques that can be used for fast distributed training of machine learning models. Further, our techniques can be useful for  federated learning and distributed model selection. \n\n\t\t\t\t\tLast Modified: 06/13/2020\n\n\t\t\t\t\tSubmitted by: Georgios-Alex Dimakis"
+ }
+}

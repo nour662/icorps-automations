@@ -1,0 +1,105 @@
+{
+ "awd_id": "1948017",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: RI: Characterizing Algorithm-Relative Difficulty of Agent Benchmarks",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032924702",
+ "po_email": "cye@nsf.gov",
+ "po_sign_block_name": "Cang Ye",
+ "awd_eff_date": "2020-04-01",
+ "awd_exp_date": "2024-03-31",
+ "tot_intn_awd_amt": 174951.0,
+ "awd_amount": 174951.0,
+ "awd_min_amd_letter_date": "2020-03-17",
+ "awd_max_amd_letter_date": "2020-03-17",
+ "awd_abstract_narration": "There are a wide variety of artificial intelligence (AI) algorithms designed to make decisions for a number of different real-world problems. One important task of AI research is to determine how well these algorithms solve various problems. Researchers often use smaller problems such as games to study algorithmic decision-making. For example, the game Go can be used to test strategic decision-making, or arcade games to test tactical decision-making. How hard these test problems are may vary for different algorithms, and can depend on factors such as how much computation time is available. The purpose of this project is to systematically understand the difficulty that AI challenge problems pose to standard decision-making algorithms, as well as how robust such conclusions are to variations in problem design, problem size, computational resources, and algorithm configuration.\r\n\r\nThis project will use three methods to develop metrics for algorithm-relative benchmark difficulty, studying standard decision-making algorithms for both real-time statistical planning and reinforcement learning. First, systematic generation of scaling curves on each benchmark problem showing how performance scales with computational resources given to an agent, as well as with problem size, size of the action space, and other configurable parameters. Second, identification of problems that reliably differentiate algorithm performance, i.e., those on which some algorithms perform very well but others very poorly, illuminating their relative strengths. Third, applying recent algorithms that scale up analytical solution methods to larger problems, possibly approaching those used as more recent AI benchmarks, in order to compare scaling curves with optimal performance, when optima are possible to compute. Doing so has the potential to improve our understanding of broadly used AI and machine-learning algorithms, particularly how certain problem features impact the performance of these algorithms. Such information can potentially be used to design better and more robust algorithms that perform well across a variety of problem settings.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Mark",
+   "pi_last_name": "Nelson",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mark J Nelson",
+   "pi_email_addr": "mnelson@american.edu",
+   "nsf_id": "000807629",
+   "pi_start_date": "2020-03-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "American University",
+  "inst_street_address": "4400 MASSACHUSETTS AVE NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "WASHINGTON",
+  "inst_state_code": "DC",
+  "inst_state_name": "District of Columbia",
+  "inst_phone_num": "2028853440",
+  "inst_zip_code": "200168003",
+  "inst_country_name": "United States",
+  "cong_dist_code": "00",
+  "st_cong_dist_code": "DC00",
+  "org_lgl_bus_name": "AMERICAN UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "H4VNDUN2VWU5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "American University",
+  "perf_str_addr": "4400 Massachusetts Ave, NW",
+  "perf_city_name": "Washington",
+  "perf_st_code": "DC",
+  "perf_st_name": "District of Columbia",
+  "perf_zip_code": "200168002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "00",
+  "perf_st_cong_dist": "DC00",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 174951.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project's core concern has been to investigate scaling of AI decision-making algorithms, with a focus on how their decision-making performance scales with computational resources in particular.<br /><br />One of the main algorithms studied in the project was Monte Carlo Tree Search (MCTS). This is a statistical sampling version of tree search whose first high-profile success was in playing the board game Go. It has since been applied to a number of other problems, from compiler optimization selection to robot decision-making. It is not always as successful in these other domains, however. This project implemented and released a new open-source library, MCTSLib, supporting MCTS and popular variants, to investigate those issues. Through experiments using MCTSLib, we identified two main reasons for poor scaling in some domains. One reason is that many real-world domains have much longer action horizons, which MCTS struggles to do well at, especially without a good intermediate state evaluation function. The other reason is that many domains have pairs of actions that \"undo\" each other, such as moving right twice then left once. This might put you in the same end place as moving right once, but MCTS will often be bogged down in evaluating an combinatorial explosion of such action interleavings. We developed an algorithm that mitigates the latter problem in approximately half of domains we tested.<br /><br />In addition to MCTS, we investigated whether recent advances in large language models (LLMs) can help improve scaling of decision-making, for example by being able to take candidate solutions and more rapidly improve them to better solutions. An initial algorithm in this direction, which we call language model crossover (LMX), was developed and published in collaboration with a team of other researchers in industry and academia.<br /><br />As this project was awarded through the CISE Research Initiation Initiative (CRII), in addition to the core scientific work of the project, it also had a goal of jumpstarting a new faculty member's research group. To that end, it supported two MS students who have graduated and are now applying skills developed during this project in their industry jobs. One is at Google working on machine learning compiler infrastructure, and one is CTO of a health-tech startup.</p><br>\n<p>\n Last Modified: 07/30/2024<br>\nModified by: Mark&nbsp;J&nbsp;Nelson</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThis project's core concern has been to investigate scaling of AI decision-making algorithms, with a focus on how their decision-making performance scales with computational resources in particular.\n\nOne of the main algorithms studied in the project was Monte Carlo Tree Search (MCTS). This is a statistical sampling version of tree search whose first high-profile success was in playing the board game Go. It has since been applied to a number of other problems, from compiler optimization selection to robot decision-making. It is not always as successful in these other domains, however. This project implemented and released a new open-source library, MCTSLib, supporting MCTS and popular variants, to investigate those issues. Through experiments using MCTSLib, we identified two main reasons for poor scaling in some domains. One reason is that many real-world domains have much longer action horizons, which MCTS struggles to do well at, especially without a good intermediate state evaluation function. The other reason is that many domains have pairs of actions that \"undo\" each other, such as moving right twice then left once. This might put you in the same end place as moving right once, but MCTS will often be bogged down in evaluating an combinatorial explosion of such action interleavings. We developed an algorithm that mitigates the latter problem in approximately half of domains we tested.\n\nIn addition to MCTS, we investigated whether recent advances in large language models (LLMs) can help improve scaling of decision-making, for example by being able to take candidate solutions and more rapidly improve them to better solutions. An initial algorithm in this direction, which we call language model crossover (LMX), was developed and published in collaboration with a team of other researchers in industry and academia.\n\nAs this project was awarded through the CISE Research Initiation Initiative (CRII), in addition to the core scientific work of the project, it also had a goal of jumpstarting a new faculty member's research group. To that end, it supported two MS students who have graduated and are now applying skills developed during this project in their industry jobs. One is at Google working on machine learning compiler infrastructure, and one is CTO of a health-tech startup.\t\t\t\t\tLast Modified: 07/30/2024\n\n\t\t\t\t\tSubmitted by: MarkJNelson\n"
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "awd_id": "1717640",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: CORE: Small: Foundations of Applied Cryptography",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927991",
+ "po_email": "namla@nsf.gov",
+ "po_sign_block_name": "Nina Amla",
+ "awd_eff_date": "2017-10-01",
+ "awd_exp_date": "2021-09-30",
+ "tot_intn_awd_amt": 326521.0,
+ "awd_amount": 326521.0,
+ "awd_min_amd_letter_date": "2017-08-22",
+ "awd_max_amd_letter_date": "2017-08-22",
+ "awd_abstract_narration": "Currently, on an almost weekly basis there are reports on security breaches which expose private information such as passwords or credit card numbers to cyber criminals. In order to address this problem, this project develops theoretical foundations and cryptographic approaches, and analyzes these new mechanisms. This project focuses on three areas of great practical interest: (1) the recovery of a cryptographic key by an adversary; (2) delegatable format-preserving encryption which, for example, allows the in-place encryption of credit-card numbers while limiting the damage in case of a compromise, and (3) user authentication on the Internet. The broader impact of this work is in that the team will develop a software library PlayCrypt with the goal to make cryptography more accessible to a larger population.\r\n \r\nKey-recovery attacks discussed in the literature lack precise models and rigorous estimates of success probability. To address this shortcoming, this project defines metrics for key-recovery security in order to enable rigorous claims about attacks and to be able to prove hedging theorems that complement moderately good security bounds under strong metrics with better bounds under these newly-developed key-recovery metrics. This is of great interest and value as key-recovery attacks are considered much more damaging in practice than violations of semantic security. Furthermore, this project defines security metrics for delegatable format-preserving encryption (FPE). FPE is widely used for in-place encryption of credit-card numbers, and delegation allows the damage from physical compromise of terminals to remain local. The project is also geared to inform current standardization efforts. As a third direction, this project considers client-to-server authentication over the Internet. Today's paradigm of passing the password to the server over a server-authenticated TLS (Transport Layer Security) channel exhibits many vulnerabilities. This project formalizes the notion of piggy-backed authentication which allows the client to convince the server of its identity without handing it its password yet designing this mechanism in such a fashion that allows its implementation within the current TLS-based web-security architecture in order to maximize the impact of this work in practice.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Mihir",
+   "pi_last_name": "Bellare",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mihir Bellare",
+   "pi_email_addr": "mihir@cs.ucsd.edu",
+   "nsf_id": "000097594",
+   "pi_start_date": "2017-08-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-San Diego",
+  "inst_street_address": "9500 GILMAN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "LA JOLLA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8585344896",
+  "inst_zip_code": "920930021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "UYTTZT6G9DT1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-San Diego",
+  "perf_str_addr": "Dept. of Computer Science & Eng",
+  "perf_city_name": "La Jolla",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920930404",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 326521.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"p1\">If you have an iPhone, you are likely to be using iMessage. The iMessage app aims to keep your messages private, so that not only outsiders, but even Apple, can&rsquo;t see them. To do this, it uses cryptography. But, does the cryptography actually work? Researchers look at the cryptography to figure this out. Our work on this NSF award looked in this way at a piece of cryptography that is at the core of iMessage. It is called signcryption. We found that Apple&rsquo;s signcryption scheme is quite unusual and intriguing; it involves encryption of a message under a key that is derived from the message itself. We ask whether or not this scheme is secure. The answer impacts many people, as iMessage is used billions of times a day. In our work, we study this through mathematical modeling and proofs. We give different formal definitions of the desirable security attributes, and then a mathematical proof that the iMessage signcryption scheme meets them. Following this work, we were approached by an Apple security team who said they were glad to see our work and wanted to discuss it further, indicative that the work had some impact.</p>\n<p class=\"p2\">&nbsp;The future may see the development of quantum computers. If so, we need new cryptography too, because quantum computers can break existing cryptography. The government is looking to develop and standardize new cryptography that is secure against quantum computers. The process is called the NIST PQC (Post-Quantum Cryptography) standardization effort. They are considering a number of candidate algorithms, trying to determine whether or not they are secure. As part of this NSF award, we studied these algorithms. We found attacks on a few. Our attacks allow us, from the ciphertext and public (encryption) key, to recover the message. These attacks are very fast, taking no more time than taken by the (secret-key equipped, prescribed) decryption algorithm to recover the same key. The source of the error was in the way hash functions were being used. We accordingly developed theory to provide guidance on how to securely use hash functions and avoid such errors going forward.&nbsp;</p>\n<p class=\"p2\">&nbsp;Every year, journalists are imprisoned or killed while working to uncover the happenings in certain regimes. We believe there is a piece of cryptography that can help them. It is called secret sharing. A journalist could share their findings with a group of friends, and, if the journalist is incapacitated, the friends can get together to recover the content. Secret sharing is an old idea but it has remained theoretical. Our work as part of this NSF award develops a practical form of secret sharing that we call adept secret sharing. It augments classical secret sharing to add a set of attributes important for real-world usage. Adept secret sharing could be the basis for a secret-sharing app that a journalist could run on their phone. &nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/06/2021<br>\n\t\t\t\t\tModified by: Mihir&nbsp;Bellare</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "If you have an iPhone, you are likely to be using iMessage. The iMessage app aims to keep your messages private, so that not only outsiders, but even Apple, can\u2019t see them. To do this, it uses cryptography. But, does the cryptography actually work? Researchers look at the cryptography to figure this out. Our work on this NSF award looked in this way at a piece of cryptography that is at the core of iMessage. It is called signcryption. We found that Apple\u2019s signcryption scheme is quite unusual and intriguing; it involves encryption of a message under a key that is derived from the message itself. We ask whether or not this scheme is secure. The answer impacts many people, as iMessage is used billions of times a day. In our work, we study this through mathematical modeling and proofs. We give different formal definitions of the desirable security attributes, and then a mathematical proof that the iMessage signcryption scheme meets them. Following this work, we were approached by an Apple security team who said they were glad to see our work and wanted to discuss it further, indicative that the work had some impact.\n The future may see the development of quantum computers. If so, we need new cryptography too, because quantum computers can break existing cryptography. The government is looking to develop and standardize new cryptography that is secure against quantum computers. The process is called the NIST PQC (Post-Quantum Cryptography) standardization effort. They are considering a number of candidate algorithms, trying to determine whether or not they are secure. As part of this NSF award, we studied these algorithms. We found attacks on a few. Our attacks allow us, from the ciphertext and public (encryption) key, to recover the message. These attacks are very fast, taking no more time than taken by the (secret-key equipped, prescribed) decryption algorithm to recover the same key. The source of the error was in the way hash functions were being used. We accordingly developed theory to provide guidance on how to securely use hash functions and avoid such errors going forward. \n Every year, journalists are imprisoned or killed while working to uncover the happenings in certain regimes. We believe there is a piece of cryptography that can help them. It is called secret sharing. A journalist could share their findings with a group of friends, and, if the journalist is incapacitated, the friends can get together to recover the content. Secret sharing is an old idea but it has remained theoretical. Our work as part of this NSF award develops a practical form of secret sharing that we call adept secret sharing. It augments classical secret sharing to add a set of attributes important for real-world usage. Adept secret sharing could be the basis for a secret-sharing app that a journalist could run on their phone.  \n\n \n\n\t\t\t\t\tLast Modified: 10/06/2021\n\n\t\t\t\t\tSubmitted by: Mihir Bellare"
+ }
+}

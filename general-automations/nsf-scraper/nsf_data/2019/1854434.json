@@ -1,0 +1,109 @@
+{
+ "awd_id": "1854434",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Computational and Mathematical Studies of Complexity Reduction Methods for Deep Neural Networks and Applications",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032927299",
+ "po_email": "yzeng@nsf.gov",
+ "po_sign_block_name": "Yong Zeng",
+ "awd_eff_date": "2019-07-15",
+ "awd_exp_date": "2023-06-30",
+ "tot_intn_awd_amt": 299997.0,
+ "awd_amount": 299997.0,
+ "awd_min_amd_letter_date": "2019-07-09",
+ "awd_max_amd_letter_date": "2019-07-09",
+ "awd_abstract_narration": "Deep neural networks (DNN) have become the state-of-the-art computing technology driving the recent advances in artificial intelligence, surpassing human performance on image and speech recognition tasks, and in playing complex games such as Go. However, deep networks typically consume billions of flops in computation and gigabytes of storage for model and data, rendering their deployment a challenge on mobile and energy limited platforms such as cellular phones and battery powered cars. The project aims to develop theory and algorithms for complexity reduction methods so as to maintain DNN's performance on low computational budget, achieving speed up and saving memory space.  The project also studies light weight deep networks through automated architecture search and selection to reduce complexity at a higher design level. A broad range of applications include mobile computer vision, disease diagnosis and detection,  face verification, as well as monitor and rescue missions by the drone. The project will actively involve graduate students and enrich their career development through both education and research activities. \r\n\r\nThe approaches to be studied include (1) training of deep networks with low-precision weights and activation functions (so called quantization), (2) hand-crafted and automated lightweight deep networks, their training via variable splitting and their quantization. The training of quantized networks concerns with minimizing high dimensional discontinuous non-convex objectives under discrete constraints, for which novel coarse gradients and an accelerated technique (so called blending) will be analyzed to guide the descent and reach convergence. A differentiable treatment of discrete constraints, and of non-smooth and combinatorial structures will be fully developed. The methodologies and resulting algorithms from the project will contribute to information technology, optimization of civil infrastructure, smart and efficient mobile computing.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jack",
+   "pi_last_name": "Xin",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jack Xin",
+   "pi_email_addr": "jxin@math.uci.edu",
+   "nsf_id": "000181369",
+   "pi_start_date": "2019-07-09",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Irvine",
+  "inst_street_address": "160 ALDRICH HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "IRVINE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9498247295",
+  "inst_zip_code": "926970001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "47",
+  "st_cong_dist_code": "CA47",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA IRVINE",
+  "org_prnt_uei_num": "MJC5FCYQTPE6",
+  "org_uei_num": "MJC5FCYQTPE6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Irvine",
+  "perf_str_addr": "Rowland Hall Room 540E",
+  "perf_city_name": "Irvine",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "926973875",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "47",
+  "perf_st_cong_dist": "CA47",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806900",
+   "pgm_ele_name": "CDS&E-MSS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "075Z",
+   "pgm_ref_txt": "Artificial Intelligence (AI)"
+  },
+  {
+   "pgm_ref_code": "079Z",
+   "pgm_ref_txt": "Machine Learning Theory"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 299997.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><br />The project developed algorithms and their mathematical theory for reducing complexity&nbsp;and accelerating deployment of deep neural networks. The networks range from simple two-layer&nbsp;models for rigorous analysis to deep convolutional and transformer architectures on benchmark datasets&nbsp;&nbsp;in computer vision. The key ideas are centered around finding differentiable functions to approximate&nbsp;discontinuous objectives in assisting efficient structure search in high dimensions and knowledge transfer from&nbsp;heavy weight (teacher) networks to light weight (student) networks via intermediate interacting agents (tutors).&nbsp;The student networks perform at the level of teacher networks at much lower cost (energy consumption) and faster speeds,&nbsp;benefiting applications under constrained computing resources.&nbsp; &nbsp;</p>\n<p>&nbsp;</p>\n<p>The project discovered the recurrence of optimum phenomenon in training networks with low precision weights and&nbsp;gave the first mathematical proof in a two-layer model. The project developed a novel two network cooperative search&nbsp;algorithm so that higher level neural architecture and lower level neural weights are well-balanced during the search and&nbsp;with guaranteed convergence and competitive performance on benchmark datasets. The project also established for the first time the convergence&nbsp;of training networks with piecewise constant activation functions using smooth&nbsp;proxy functions (a.k.a straight through estimators in deep learning) for the classification task.&nbsp;</p>\n<p>&nbsp; &nbsp;&nbsp;<br />The computational tools studied in the project advanced our capability in&nbsp;&nbsp;solving high dimensional discontinuous optimization problems, thereby contributing to a broad range of applications such as mobile artificial intelligence and health monitoring, internet of things, autonamous driving, drone based rescue, and data-driven efficient approximations of complex physical and biological models.&nbsp;The project provides systematic and hands-on training of graduate students towards advanced degrees in computational mathematics and STEM careers. Seven graduate students received Ph.D degrees in the duration of the project, many with distinctions from conference paper awards to school honors.&nbsp;The computational and mathematical methodologies developed in the project benefit the well-being and quality of life of the country's general public in the digital age.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/22/2023<br>\n\t\t\t\t\tModified by: Jack&nbsp;Xin</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2023/1854434/1854434_10618888_1692731474916_SpringerBestPaperAward_page-0001--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1854434/1854434_10618888_1692731474916_SpringerBestPaperAward_page-0001--rgov-800width.jpg\" title=\"Kevin_Bui_Best_Springer_Paper_Award\"><img src=\"/por/images/Reports/POR/2023/1854434/1854434_10618888_1692731474916_SpringerBestPaperAward_page-0001--rgov-66x44.jpg\" alt=\"Kevin_Bui_Best_Springer_Paper_Award\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Dr. Keving Bui et al received Springer Verlag Best Paper Award in International Symposium on Visual Computing, Oct. 2020.</div>\n<div class=\"imageCredit\">ISVC</div>\n<div class=\"imageSubmitted\">Jack&nbsp;Xin</div>\n<div class=\"imageTitle\">Kevin_Bui_Best_Springer_Paper_Award</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2023/1854434/1854434_10618888_1692741552435_ZLi_etal_LOD2021_best_paper_award--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1854434/1854434_10618888_1692741552435_ZLi_etal_LOD2021_best_paper_award--rgov-800width.jpg\" title=\"Zhijian_Li_Best_Springer_Paper_Award\"><img src=\"/por/images/Reports/POR/2023/1854434/1854434_10618888_1692741552435_ZLi_etal_LOD2021_best_paper_award--rgov-66x44.jpg\" alt=\"Zhijian_Li_Best_Springer_Paper_Award\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Dr. Zhijian Li et al awarded best paper prize at LOD 2021.</div>\n<div class=\"imageCredit\">LOD2021</div>\n<div class=\"imagePermisssions\">Royalty-free (unrestricted use)</div>\n<div class=\"imageSubmitted\">Jack&nbsp;Xin</div>\n<div class=\"imageTitle\">Zhijian_Li_Best_Springer_Paper_Award</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\n\nThe project developed algorithms and their mathematical theory for reducing complexity and accelerating deployment of deep neural networks. The networks range from simple two-layer models for rigorous analysis to deep convolutional and transformer architectures on benchmark datasets  in computer vision. The key ideas are centered around finding differentiable functions to approximate discontinuous objectives in assisting efficient structure search in high dimensions and knowledge transfer from heavy weight (teacher) networks to light weight (student) networks via intermediate interacting agents (tutors). The student networks perform at the level of teacher networks at much lower cost (energy consumption) and faster speeds, benefiting applications under constrained computing resources.   \n\n \n\nThe project discovered the recurrence of optimum phenomenon in training networks with low precision weights and gave the first mathematical proof in a two-layer model. The project developed a novel two network cooperative search algorithm so that higher level neural architecture and lower level neural weights are well-balanced during the search and with guaranteed convergence and competitive performance on benchmark datasets. The project also established for the first time the convergence of training networks with piecewise constant activation functions using smooth proxy functions (a.k.a straight through estimators in deep learning) for the classification task. \n\n    \nThe computational tools studied in the project advanced our capability in  solving high dimensional discontinuous optimization problems, thereby contributing to a broad range of applications such as mobile artificial intelligence and health monitoring, internet of things, autonamous driving, drone based rescue, and data-driven efficient approximations of complex physical and biological models. The project provides systematic and hands-on training of graduate students towards advanced degrees in computational mathematics and STEM careers. Seven graduate students received Ph.D degrees in the duration of the project, many with distinctions from conference paper awards to school honors. The computational and mathematical methodologies developed in the project benefit the well-being and quality of life of the country's general public in the digital age.\n\n\t\t\t\t\tLast Modified: 08/22/2023\n\n\t\t\t\t\tSubmitted by: Jack Xin"
+ }
+}

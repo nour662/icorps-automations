@@ -1,0 +1,96 @@
+{
+ "awd_id": "1736359",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Miniature Low-Cost Vibration Tags and Computing Infrastructure for Identifying Marine Animal Sounds",
+ "cfda_num": "47.050",
+ "org_code": "06040100",
+ "po_phone": "7032927577",
+ "po_email": "kbinkley@nsf.gov",
+ "po_sign_block_name": "Kandace Binkley",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2022-08-31",
+ "tot_intn_awd_amt": 332139.0,
+ "awd_amount": 332139.0,
+ "awd_min_amd_letter_date": "2017-08-31",
+ "awd_max_amd_letter_date": "2017-08-31",
+ "awd_abstract_narration": "With the advent of large-scale marine passive acoustic studies it has become clear that the sources of the majority of biological sounds is not known. Knowledge of sound sources is important because sound can provide a robust measurement of biological activity, such as the distribution of spawning fishes, many of which like the cods and groupers are commercially important. It is very difficult to identify acoustic cues produced by fishes because many of them only make sounds during specific behaviors such as territoriality, aggression, courtship, and spawning and at night. Video technology has limitations in that it requires light and being in the right place at the right time. Innovative tags based on miniature accelerometers will be developed to capture sounds from marine animals. Newly recorded sounds will be deposited in the open, online infrastructure of the Macaulay Library of Natural Sounds, and the submission process will be streamlined to encourage similar use of this free repository. By creating computing infrastructure that enables sharing, this project will build a system that enables a self-sustaining community-driven solution to the science problem. These miniature tags will enable broader research into the motion of small structures and additional animals at minimal cost. This project will support the career of three young scientists and a postdoctoral research scientist. \r\n\r\nThis project will develop and test a suite of inexpensive miniature accelerometer recorders that can be implanted or attached externally to fish, and develop an online system capable of storing data from thousands of these sensors. The three tag designs will address trade-offs between data storage, power, and tag size. The data storage tag will use a microSD card to store raw data. The acoustic transmission tag will transmit raw accelerometer data on an ultrasonic frequency that is received and decoded by a passive acoustic recorder. The micro-tag will be the smallest, lowest power tag, that will have triggered recordings to save likely signals. The data storage and micro-tags will have a mechanism for external attachment and releasing the tag, which will float to the surface for recovery. The project will produce inexpensive acceleration tags and computing infrastructure to advance knowledge of underwater sound sources.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "GEO",
+ "org_dir_long_name": "Directorate for Geosciences",
+ "div_abbr": "OCE",
+ "org_div_long_name": "Division Of Ocean Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "David",
+   "pi_last_name": "Mann",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "David A Mann",
+   "pi_email_addr": "dmann@loggerheadinstruments.com",
+   "nsf_id": "000598445",
+   "pi_start_date": "2017-08-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Loggerhead Instruments",
+  "inst_street_address": "1975 3RD AVE S STE C",
+  "inst_street_address_2": "",
+  "inst_city_name": "ST PETERSBURG",
+  "inst_state_code": "FL",
+  "inst_state_name": "Florida",
+  "inst_phone_num": "9412662908",
+  "inst_zip_code": "337121306",
+  "inst_country_name": "United States",
+  "cong_dist_code": "14",
+  "st_cong_dist_code": "FL14",
+  "org_lgl_bus_name": "LOGGERHEAD INSTRUMENTS INC",
+  "org_prnt_uei_num": "PH1WPJJLLPC5",
+  "org_uei_num": "LQVVB9T3N9L6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Loggerhead Instruments",
+  "perf_str_addr": "6576 Palmer Park Circle",
+  "perf_city_name": "Sarasota",
+  "perf_st_code": "FL",
+  "perf_st_name": "Florida",
+  "perf_zip_code": "342382777",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "17",
+  "perf_st_cong_dist": "FL17",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "168000",
+   "pgm_ele_name": "OCEAN TECH & INTERDISC COORDIN"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 332139.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project developed and performed benchtop testing of the animal tags developed for this project. The tags were tested in the field by our collaborators at the Woods Hole Oceanographic Institution. The primary products of this award are open-source designs for low-power high-speed accelerometer tags. Two types of tags were produced: Datalogging tags that would allow analysis of the signals recorded by accelerometers attached to animals. Pinger tags that would allow tagging of animals without needing to recover the tag to determine which species made which sound</p>\n<p>The initial idea in our proposal was to transmit the accelerometer signal as a coded acoustic signal. However, we realized that by using a broad-band datalogger to record the animal sound AND the pinger acoustic signal, we could simply encode the detection of a signal of interest, rather than transmit the raw accelerometer signal.</p>\n<p>Prior to this project, there were no readily available designs for acoustic pinger tags, despite acoustic pingers being commonly used in fisheries research.</p>\n<p>The power consumption of an always-on accelerometer with the data being analyzed by a microcontroller limits the size of the tag. Our lowest power pinger tag consumes very little power while running, but still, a tag that will run for 3 months is quite large (27 mm long x 16.5 mm diameter, 15 g) limiting the number of species that could be tagged. The bulk of the tag is battery. It is very desirable to make the tag as small as possible so that as many species as possible can be tagged. Strategies for accomplishing this in the future might include duty-cycling the tag and running at times when the animal is expected to be making sounds.</p>\n<p>The tag designs are open source and are available on the Loggerhead Instruments GitHub page.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/01/2023<br>\n\t\t\t\t\tModified by: David&nbsp;A&nbsp;Mann</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project developed and performed benchtop testing of the animal tags developed for this project. The tags were tested in the field by our collaborators at the Woods Hole Oceanographic Institution. The primary products of this award are open-source designs for low-power high-speed accelerometer tags. Two types of tags were produced: Datalogging tags that would allow analysis of the signals recorded by accelerometers attached to animals. Pinger tags that would allow tagging of animals without needing to recover the tag to determine which species made which sound\n\nThe initial idea in our proposal was to transmit the accelerometer signal as a coded acoustic signal. However, we realized that by using a broad-band datalogger to record the animal sound AND the pinger acoustic signal, we could simply encode the detection of a signal of interest, rather than transmit the raw accelerometer signal.\n\nPrior to this project, there were no readily available designs for acoustic pinger tags, despite acoustic pingers being commonly used in fisheries research.\n\nThe power consumption of an always-on accelerometer with the data being analyzed by a microcontroller limits the size of the tag. Our lowest power pinger tag consumes very little power while running, but still, a tag that will run for 3 months is quite large (27 mm long x 16.5 mm diameter, 15 g) limiting the number of species that could be tagged. The bulk of the tag is battery. It is very desirable to make the tag as small as possible so that as many species as possible can be tagged. Strategies for accomplishing this in the future might include duty-cycling the tag and running at times when the animal is expected to be making sounds.\n\nThe tag designs are open source and are available on the Loggerhead Instruments GitHub page.\n\n \n\n\t\t\t\t\tLast Modified: 01/01/2023\n\n\t\t\t\t\tSubmitted by: David A Mann"
+ }
+}

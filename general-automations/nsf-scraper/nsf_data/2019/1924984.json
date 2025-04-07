@@ -1,0 +1,113 @@
+{
+ "awd_id": "1924984",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NRI: FND: Robust Grasping by Integrating Machine Learning with Physical Models",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Juan Wachs",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2023-08-31",
+ "tot_intn_awd_amt": 749998.0,
+ "awd_amount": 749998.0,
+ "awd_min_amd_letter_date": "2019-08-30",
+ "awd_max_amd_letter_date": "2019-08-30",
+ "awd_abstract_narration": "This project aims to make robot grasping reliable, so that robots can pick up a wide variety of objects with minimal risk of dropping them. Except for carefully-controlled settings like factories, even the best current robotic manipulation systems drop over 5% of the objects they attempt to grasp and lift. Reliable grasping would open a vast range of practical applications in many areas of society. For example, household assistance for the elderly and disabled requires the ability to grasp and move objects, but robots that drop many objects would not be useful for many users. In addition to personal assistance functions, commercial applications that require reliable grasping range from warehouses and flexible manufacturing to food service and cleaning. \r\n\r\nContact sensing is essential for reliable robotic grasping in unstructured environments, but existing methods for using sensor signals have not been effective. The two prior approaches to creating reliable grasping using contact sensing were physics-based grasp analysis and black-box machine learning algorithms, and neither has proved sufficient in terms of accuracy and reliability. It is not clear whether the limitations were due to deficiencies in the physical models, learning algorithms, or sensors. This project will provide the first characterization of contact sensors in carefully-controlled grasping experiments, with independent sensors providing a gold standard for comparison. The project will use the data from those experiments to investigate merging the physical modeling and machine learning approaches. By providing an improved understanding of their properties in predicting grasp stability it will allow the joining of both approaches in a way that maintains the best properties of each: interpretability and generalizability from physical modeling and flexibility and accuracy from machine learning. By pushing prediction accuracy and reliability to its peak, the project will also characterize the limits on sensor performance and define, for the first time, the needed sensor information in terms of task requirements. The results will serve as the basis for grasping and manipulation systems for unstructured environments and spell out the tradeoffs among sensor hardware, model-based signal interpretation and control, and data-driven signal interpretation and control. The successful integration of model-based and data-driven approaches may serve as an exemplar for many other fields where models are useful but incomplete.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Robert",
+   "pi_last_name": "Howe",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "Robert D Howe",
+   "pi_email_addr": "howe@seas.harvard.edu",
+   "nsf_id": "000319370",
+   "pi_start_date": "2019-08-30",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Lucas",
+   "pi_last_name": "Janson",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Lucas Janson",
+   "pi_email_addr": "ljanson@fas.harvard.edu",
+   "nsf_id": "000765975",
+   "pi_start_date": "2019-08-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Harvard University",
+  "inst_street_address": "1033 MASSACHUSETTS AVE STE 3",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6174955501",
+  "inst_zip_code": "021385366",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "MA05",
+  "org_lgl_bus_name": "PRESIDENT AND FELLOWS OF HARVARD COLLEGE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LN53LCFJFL45"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Harvard University",
+  "perf_str_addr": "1033 Mass Ave",
+  "perf_city_name": "Cambridge",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021385369",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "MA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "801300",
+   "pgm_ele_name": "NRI-National Robotics Initiati"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8086",
+   "pgm_ref_txt": "Natl Robotics Initiative (NRI)"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 749998.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Reliable grasping is essential for many real-world applications of robotics. For example, a household robot that regularly dropped objects would be unacceptable. Grasp stability models can help robots to safely manipulate objects without dropping them. This project developed methods for using sensors in the robot hand to assess whether the fingertips will slip during a planned task. The system starts with anticipated task forces, for example simple gravity loading as an object is lifted, or increasing vertical forces as coffee is poured into a grasped mug, or interaction forces at the distal end of a grasped tool such as a knife or wrench. If slips are predicted, the task can be re-planned or the object can be re-grasped to avoid dropping the object.</p>\n<p>&nbsp;</p>\n<p>A central challenge in this approach is to accurately predict how the task forces will be distributed among the fingertips. Physical grasp models, using basic mechanical principles (e.g. force equilibrium) &nbsp;were developed decades ago, but have rarely been experimentally implemented, and they have limited accuracy due to imprecise in-hand sensing, variable frictional behavior, etc.&nbsp;This project demonstrated that physical models can be augmented with machine learning models, so the combined system achieves good accuracy in predicting fingertip forces. Combining these force predictions with a model of the friction at the fingertip-object contact then enables prediction of whether slips will occur. This project defined new methods for combining physical and machine learning models, which can be applied in a wide variety of domains where physical models are available but have limited accuracy.</p>\n<p>&nbsp;</p>\n<p>As part of this effort, the project developed new frictional models, which showed that the probability of slip includes a random component. This can be used to set conservative limits in task planning to guarantee stability. New tactile sensors were also developed, which have performance only slightly worse than current sensors but are orders of magnitude less expensive and far more robust. These technologies were combined to develop algorithms for sensing unplanned collisions during robot manipulation tasks, and estimate the contact forces and locations. This will allow robots to detect errors and recover from them, increasing reliability of robot manipulation, which is a key capability for widespread deployment of robots beyond the lab.</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 04/11/2024<br>\nModified by: Robert&nbsp;D&nbsp;Howe</p></div>\n<div class=\"porSideCol\"\n><div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2024/1924984/1924984_10639398_1712842468061_Screen_Shot_2024_04_11_at_9.31.19_AM--rgov-214x142.png\" original=\"/por/images/Reports/POR/2024/1924984/1924984_10639398_1712842468061_Screen_Shot_2024_04_11_at_9.31.19_AM--rgov-800width.png\" title=\"Robotic grasp stability enhancement\"><img src=\"/por/images/Reports/POR/2024/1924984/1924984_10639398_1712842468061_Screen_Shot_2024_04_11_at_9.31.19_AM--rgov-66x44.png\" alt=\"Robotic grasp stability enhancement\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Hybrid models that combine physical models (for example, force balance) and machine learning models to provide reliable prediction of whether an object will slip out of the robot hand.</div>\n<div class=\"imageCredit\">Harvard University</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Robert&nbsp;D&nbsp;Howe\n<div class=\"imageTitle\">Robotic grasp stability enhancement</div>\n</div>\n</li></ul>\n</div>\n</div></div>\n</div>\n",
+  "por_txt_cntn": "\n\nReliable grasping is essential for many real-world applications of robotics. For example, a household robot that regularly dropped objects would be unacceptable. Grasp stability models can help robots to safely manipulate objects without dropping them. This project developed methods for using sensors in the robot hand to assess whether the fingertips will slip during a planned task. The system starts with anticipated task forces, for example simple gravity loading as an object is lifted, or increasing vertical forces as coffee is poured into a grasped mug, or interaction forces at the distal end of a grasped tool such as a knife or wrench. If slips are predicted, the task can be re-planned or the object can be re-grasped to avoid dropping the object.\n\n\n\n\n\nA central challenge in this approach is to accurately predict how the task forces will be distributed among the fingertips. Physical grasp models, using basic mechanical principles (e.g. force equilibrium) were developed decades ago, but have rarely been experimentally implemented, and they have limited accuracy due to imprecise in-hand sensing, variable frictional behavior, etc.This project demonstrated that physical models can be augmented with machine learning models, so the combined system achieves good accuracy in predicting fingertip forces. Combining these force predictions with a model of the friction at the fingertip-object contact then enables prediction of whether slips will occur. This project defined new methods for combining physical and machine learning models, which can be applied in a wide variety of domains where physical models are available but have limited accuracy.\n\n\n\n\n\nAs part of this effort, the project developed new frictional models, which showed that the probability of slip includes a random component. This can be used to set conservative limits in task planning to guarantee stability. New tactile sensors were also developed, which have performance only slightly worse than current sensors but are orders of magnitude less expensive and far more robust. These technologies were combined to develop algorithms for sensing unplanned collisions during robot manipulation tasks, and estimate the contact forces and locations. This will allow robots to detect errors and recover from them, increasing reliability of robot manipulation, which is a key capability for widespread deployment of robots beyond the lab.\n\n\n\t\t\t\t\tLast Modified: 04/11/2024\n\n\t\t\t\t\tSubmitted by: RobertDHowe\n"
+ }
+}

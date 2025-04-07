@@ -1,0 +1,105 @@
+{
+ "awd_id": "1618631",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Small: A Moving Target Approach to Enhancing Machine Learning-Based Malware Defense",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Wei-Shinn Ku",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 349906.0,
+ "awd_amount": 349906.0,
+ "awd_min_amd_letter_date": "2016-08-29",
+ "awd_max_amd_letter_date": "2016-08-29",
+ "awd_abstract_narration": "The ever-growing malware threats call for effective, yet efficient, mitigation techniques. Machine learning offers a promising solution to malware defense due to the scalability and automation that it brings. Machine learning techniques are however not a panacea for advanced malware attacks where cyber criminals can carefully craft malware features to evade detection. The root cause of such attacks can be attributed to the passive nature of existing machine learning-based malware defense systems. \r\n\r\nOur project aims to enhance these systems with a novel moving target strategy. Our method differs from traditional methods that use feature selection schemes to search for a static subset of features for malware detection or classification. In contrast, our approach dynamically changes the features used to train a classification model for predicting future malware attacks. To prevent adversarial correlation analysis, our method uses a random walk technique to ensure that features used across different predictive models have low mutual information. We further study the effectiveness of the moving target approach in enhancing machine learning-based malware defense under various evasion strategies by malware attackers. If successful, this research will introduce a promising new strategy for mitigating the ever-growing malware threats.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Guanhua",
+   "pi_last_name": "Yan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Guanhua Yan",
+   "pi_email_addr": "ghyan@binghamton.edu",
+   "nsf_id": "000679195",
+   "pi_start_date": "2016-08-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "SUNY at Binghamton",
+  "inst_street_address": "4400 VESTAL PKWY E",
+  "inst_street_address_2": "",
+  "inst_city_name": "BINGHAMTON",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6077776136",
+  "inst_zip_code": "13902",
+  "inst_country_name": "United States",
+  "cong_dist_code": "19",
+  "st_cong_dist_code": "NY19",
+  "org_lgl_bus_name": "THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK",
+  "org_prnt_uei_num": "L9ZDVULCHCV3",
+  "org_uei_num": "NQMVAAQUFU53"
+ },
+ "perf_inst": {
+  "perf_inst_name": "SUNY at Binghamton",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "139026000",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "19",
+  "perf_st_cong_dist": "NY19",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 349906.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Due to the vast number of malware variants compromising various computer systems in the cyberspace, machine learning has been widely applied to automate malware detection and family identification. The focus of this project was to investigate the robustness of machine learning-based malware classification systems against practical evasion attacks. It also studied whether a moving target defense strategy could make it harder for successful evasion attacks.<br /><br />Intellectual contributions from this project include: 1) Practical attacks based on genetic algorithms that can deceive three types of Windows PE (Portable Executable) malware classifiers into targeted misclassification with high successful rates when it is assumed that the attacker has the malware's source code; 2) Practical attacks guided by XAI (Explainable Artificial Intelligence) that can evade four types of Android malware classifiers with high successful rates without assuming that the attacker has the malware's source code; 3) Deep graph convolutional neural networks that embed structural information inherent in CFGs (Control Flow Graphs) can classify CFG-represented malware programs with performance comparable to those of the state-of-the-art methods applied on handcrafted malware features; 4) Cloud-based malware analysis services can be enhanced with privacy-preserving techniques to prevent information leakage from malware samples submitted by community users; and 5) Observation consistency is crucial to the effectiveness of deception-based defense mechanisms against APT (Advanced Persistent Threat) attacks.<br /><br />Broader impacts from this project include: 1) Its research activities trained three Ph.D. students (one female), four master students (one female), and two undergraduate students (one female); 2) It developed an open malware analysis platform that has been used by students for their course projects who take CS458/558 (Introduction to Computer Security) and CS 427/527X (Mobile Systems Security) at Binghamton University; 3) Existing computer security courses were refined based on new knowledge gained from the project; 4) The work results have been disseminated in six scientific publications in the area of computer security and privacy.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/01/2022<br>\n\t\t\t\t\tModified by: Guanhua&nbsp;Yan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nDue to the vast number of malware variants compromising various computer systems in the cyberspace, machine learning has been widely applied to automate malware detection and family identification. The focus of this project was to investigate the robustness of machine learning-based malware classification systems against practical evasion attacks. It also studied whether a moving target defense strategy could make it harder for successful evasion attacks.\n\nIntellectual contributions from this project include: 1) Practical attacks based on genetic algorithms that can deceive three types of Windows PE (Portable Executable) malware classifiers into targeted misclassification with high successful rates when it is assumed that the attacker has the malware's source code; 2) Practical attacks guided by XAI (Explainable Artificial Intelligence) that can evade four types of Android malware classifiers with high successful rates without assuming that the attacker has the malware's source code; 3) Deep graph convolutional neural networks that embed structural information inherent in CFGs (Control Flow Graphs) can classify CFG-represented malware programs with performance comparable to those of the state-of-the-art methods applied on handcrafted malware features; 4) Cloud-based malware analysis services can be enhanced with privacy-preserving techniques to prevent information leakage from malware samples submitted by community users; and 5) Observation consistency is crucial to the effectiveness of deception-based defense mechanisms against APT (Advanced Persistent Threat) attacks.\n\nBroader impacts from this project include: 1) Its research activities trained three Ph.D. students (one female), four master students (one female), and two undergraduate students (one female); 2) It developed an open malware analysis platform that has been used by students for their course projects who take CS458/558 (Introduction to Computer Security) and CS 427/527X (Mobile Systems Security) at Binghamton University; 3) Existing computer security courses were refined based on new knowledge gained from the project; 4) The work results have been disseminated in six scientific publications in the area of computer security and privacy.\n\n\t\t\t\t\tLast Modified: 01/01/2022\n\n\t\t\t\t\tSubmitted by: Guanhua Yan"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1620288",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Adaptive Discontinuous Galerkin Methods and Applications",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2022-08-31",
+ "tot_intn_awd_amt": 196453.0,
+ "awd_amount": 196453.0,
+ "awd_min_amd_letter_date": "2016-09-05",
+ "awd_max_amd_letter_date": "2021-07-12",
+ "awd_abstract_narration": "Scientific computing and especially computational mathematics are recognized as crucial to the advancement of science. By replacing expensive and sometimes even impossible laboratory experiments (e.g., supernova explosions), numerical simulations have grown steadily in importance as effective alternatives to these. Therefore, the development of state of the art algorithms and codes, with the concomitant increase in confidence in their predictions, is important to progress in all these fields. The research program in this project aims at the development, analysis, and computer implementation of numerical methods designed to approximate the solutions of some partial differential equations that govern key phenomena in the fields of applied mathematics, biomedicine, engineering, and physics. In particular, this research program will be applied to generate efficient numerical algorithms for the effective simulation of the functioning of the heart by focusing on its electro-mechanical nature and the resulting fluid flow patterns. Another application of importance to society will be to apply the newly developed algorithms to the simulation of the Earth's climate by studying the influence of various chemicals including greenhouse gases, as well as pollutants such as aerosols, dust and black carbon. The knowledge gained will be communicated to other researchers through seminars and conferences. New courses will be developed and students will participate in all phases of the project. The latter aspect is crucial in developing the new generation of researchers.\r\n\r\nThe numerical methodologies described in this proposal namely the finite element method and in particular the discontinuous Galerkin method have been studied for several decades now. Yet there is ample need for growth in both the analytical and application arenas. Research on traditional as well as recently introduced a posteriori error estimates will be conducted extending these estimates to classes of equations that had stayed beyond the reach of such methods. These will lead to improved and flexible adaptive methods that will be applied to solving problems of practical importance. An additional application of adaptive methods will be to answer questions of analytical nature concerning the existence, uniqueness, and stability properties of solitary wave solutions of nonlinear dispersive equations. The crucial problem of solving the resulting systems of linear and nonlinear equations will form an integral component of the proposed research with multilevel domain decomposition and multigrid methods forming the backbone of the thrust in this context. Implementation on massively parallel computers will be pursued actively given that most of the problems studied involve three spatial dimensions as well as time.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ohannes",
+   "pi_last_name": "Karakashian",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ohannes Karakashian",
+   "pi_email_addr": "okarakas@utk.edu",
+   "nsf_id": "000103151",
+   "pi_start_date": "2016-09-05",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Tennessee Knoxville",
+  "inst_street_address": "201 ANDY HOLT TOWER",
+  "inst_street_address_2": "",
+  "inst_city_name": "KNOXVILLE",
+  "inst_state_code": "TN",
+  "inst_state_name": "Tennessee",
+  "inst_phone_num": "8659743466",
+  "inst_zip_code": "379960001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "TN02",
+  "org_lgl_bus_name": "UNIVERSITY OF TENNESSEE",
+  "org_prnt_uei_num": "LXG4F9K8YZK5",
+  "org_uei_num": "FN2YCS2YAUW3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Tennessee, Knoxville",
+  "perf_str_addr": "",
+  "perf_city_name": "Knoxville",
+  "perf_st_code": "TN",
+  "perf_st_name": "Tennessee",
+  "perf_zip_code": "379960001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "TN02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1303",
+   "pgm_ref_txt": "CLIMATE MODELING & PREDICTION"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 196453.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The life of award NSF-DMS 1620288 spans the period 2016-2022 including no-cost extensions due to COVID.</p>\n<p>This award supported research in areas of computational mathematics involving the development of a priori and posteriori error estimates for some partial differential equations (pde's) of practical interest. Computational tools such as adaptive computer codes designed to validate the theoretical results as well as to conduct investigations into the behaviour of the pde's under study.</p>\n<p>I will now give some description of some of the specific issues and activities undertaken.</p>\n<p>1) The development of two-level additive Schwarz methods for second and fourth order elliptic pde's. These methods provide efficient solution techniques for the solution of large linear systems resulting from the discretization of elliptic pde's in two or three space dimensions. Two papers appeared in scientific journals. (O. Karakashian, C. Collins 2017 and 2018).</p>\n<p>2) The development, analysis and implementation of numerical schemes for systems of nonlinear dispersive equations. Such systems arise in various physical contexts involving atmospheric as well as ocean currents. The numerical methods that were developed preserve the conservation laws of the pde's themselves and are suitable for long-time computations. The analysis includes both a priori and a posteriori estimates. (Bona, Chen, Karakashian, Wise 2018 and Karakashian, Wise 2022).</p>\n<p>3) Analytical investigation of traveling wave solutions of systems of nonlinear dispersive equations. These systems are characterized by 6 parameters and the stabiltiy or instabilty of solutions depend on particular choices made for their values. We devised simplifying assumptions on the number of parameters needed to ascertain the outcome of stability or instability.(J. Bona, H. Chen, O. Karakashian 2017).</p>\n<p>4) Numerical investigations of a new Hamiltonian model for unidirectional water waves. This model was recently developed by J. Bona etal. and has a longer-time validity of as a model for water waves than existing ones. It is more complicated than previously available models and the development of numerical schemes for it has been challenging but was accomplished. Their analysis and especially the development of rigorous error estimates&nbsp; will be even more difficult but will consitute groundbreaking work, if and when accomplished. (J. Bona, H.Chen, Y. Hong, O. Karakashian 2019).</p>\n<p>This award supported research activities concerning&nbsp; the development and analysis of numerical schemes for a variety of pde's arising in applications.&nbsp; Some advanced the state of the art in what concerns the efficient solution of large and sparse linear systems, others were used to investigate the behaviour of solutions of some equations modeling water and other wave phenomena. Six publications in leading journals have resulted. Additional four manuscripts are in various stages of completion and will be submitted for publication. We anticipate two will be completed within a year. The support of this award will be naturally acknowledged.</p>\n<p>Finally, this award has supported the preparation and Ph.D. thesis work of Michael Wise who graduated in Spring 2020. He is currently staff scientist at the Oak Ridge National Laboratory.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/11/2023<br>\n\t\t\t\t\tModified by: Ohannes&nbsp;Karakashian</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe life of award NSF-DMS 1620288 spans the period 2016-2022 including no-cost extensions due to COVID.\n\nThis award supported research in areas of computational mathematics involving the development of a priori and posteriori error estimates for some partial differential equations (pde's) of practical interest. Computational tools such as adaptive computer codes designed to validate the theoretical results as well as to conduct investigations into the behaviour of the pde's under study.\n\nI will now give some description of some of the specific issues and activities undertaken.\n\n1) The development of two-level additive Schwarz methods for second and fourth order elliptic pde's. These methods provide efficient solution techniques for the solution of large linear systems resulting from the discretization of elliptic pde's in two or three space dimensions. Two papers appeared in scientific journals. (O. Karakashian, C. Collins 2017 and 2018).\n\n2) The development, analysis and implementation of numerical schemes for systems of nonlinear dispersive equations. Such systems arise in various physical contexts involving atmospheric as well as ocean currents. The numerical methods that were developed preserve the conservation laws of the pde's themselves and are suitable for long-time computations. The analysis includes both a priori and a posteriori estimates. (Bona, Chen, Karakashian, Wise 2018 and Karakashian, Wise 2022).\n\n3) Analytical investigation of traveling wave solutions of systems of nonlinear dispersive equations. These systems are characterized by 6 parameters and the stabiltiy or instabilty of solutions depend on particular choices made for their values. We devised simplifying assumptions on the number of parameters needed to ascertain the outcome of stability or instability.(J. Bona, H. Chen, O. Karakashian 2017).\n\n4) Numerical investigations of a new Hamiltonian model for unidirectional water waves. This model was recently developed by J. Bona etal. and has a longer-time validity of as a model for water waves than existing ones. It is more complicated than previously available models and the development of numerical schemes for it has been challenging but was accomplished. Their analysis and especially the development of rigorous error estimates  will be even more difficult but will consitute groundbreaking work, if and when accomplished. (J. Bona, H.Chen, Y. Hong, O. Karakashian 2019).\n\nThis award supported research activities concerning  the development and analysis of numerical schemes for a variety of pde's arising in applications.  Some advanced the state of the art in what concerns the efficient solution of large and sparse linear systems, others were used to investigate the behaviour of solutions of some equations modeling water and other wave phenomena. Six publications in leading journals have resulted. Additional four manuscripts are in various stages of completion and will be submitted for publication. We anticipate two will be completed within a year. The support of this award will be naturally acknowledged.\n\nFinally, this award has supported the preparation and Ph.D. thesis work of Michael Wise who graduated in Spring 2020. He is currently staff scientist at the Oak Ridge National Laboratory.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 07/11/2023\n\n\t\t\t\t\tSubmitted by: Ohannes Karakashian"
+ }
+}

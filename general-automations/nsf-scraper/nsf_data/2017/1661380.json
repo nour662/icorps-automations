@@ -1,0 +1,96 @@
+{
+ "awd_id": "1661380",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: ABI Innovation: A Graph Based Approach for the Genome Wide Prediction of Conditionally Essential Genes",
+ "cfda_num": "47.074",
+ "org_code": "08080000",
+ "po_phone": "7032927163",
+ "po_email": "rsbeaman@nsf.gov",
+ "po_sign_block_name": "Reed Beaman",
+ "awd_eff_date": "2017-09-15",
+ "awd_exp_date": "2022-08-31",
+ "tot_intn_awd_amt": 639600.0,
+ "awd_amount": 639600.0,
+ "awd_min_amd_letter_date": "2017-07-20",
+ "awd_max_amd_letter_date": "2017-07-20",
+ "awd_abstract_narration": "How does one identify, and characterize at the genome scale, the set of genes that is essential for an organism to grow and thrive under particular conditions? Predicting such sets of genes is a fundamental goal in bioinformatics; this project aims to create methods and tools for making accurate lists of such functional genes. The approach combines phenotype prediction with knowledge about the functional biological networks in cells to infer new knowledge. The network analysis methods developed here can be easily transferred and applied to a large variety of datasets to answer a wide range of questions from inferring gene-phenotype associations to detecting communities on social networks, extensions highly relevant to the network science community. Moreover, the project's state-of-the-art analysis of temporal gene expression data using state-space models and dimensionality reduction techniques is universally applicable to any groups of genes - e.g. tissue specific vs universally expressed genes. In addition to advancing functional genomics knowledge in the study organism, yeast, the tools will have an impact on research in fields like personal genomics research, by providing a large-scale system-level identification and molecular characterization of phenotypes. Finally, this project provides new and innovative tools for education in bioinformatics. \r\n\r\nIn more technical terms, this project's major goal is to develop new mathematical models and methods that, given a set of genes or an entire genome, can infer their phenotypes and suggest whether or not these genes are necessary for the organism survival. Specifically, information will be integrated on two levels: phenotypic and molecular. At the phenotypic level the structure of biological networks will be used to assign phenotypic attributes to genes and identify sets of genes that share similar essential phenotypes. At the molecular level, the resulted phenotype predictions will be refined by identifying groups of essential genes governed by similar activity patterns. The integration of the information on these two levels will result in a comprehensive gene-phenotype characterization and a refined group of conditionally essential genes. The resulting predictions will be validated experimentally in two yeast systems. All the tools and datasets associated with this project will be made freely available through genopheno.gersteinlab.org.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "BIO",
+ "org_dir_long_name": "Directorate for Biological Sciences",
+ "div_abbr": "DBI",
+ "org_div_long_name": "Division of Biological Infrastructure",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Haiyuan",
+   "pi_last_name": "Yu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Haiyuan Yu",
+   "pi_email_addr": "haiyuan.yu@cornell.edu",
+   "nsf_id": "000624636",
+   "pi_start_date": "2017-07-20",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Cornell University",
+  "inst_street_address": "341 PINE TREE RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "ITHACA",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6072555014",
+  "inst_zip_code": "148502820",
+  "inst_country_name": "United States",
+  "cong_dist_code": "19",
+  "st_cong_dist_code": "NY19",
+  "org_lgl_bus_name": "CORNELL UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "G56PUALJ3KT5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Cornell University",
+  "perf_str_addr": "334 Weill Hall",
+  "perf_city_name": "Ithaca",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "148536007",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "19",
+  "perf_st_cong_dist": "NY19",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "116500",
+   "pgm_ele_name": "ADVANCES IN BIO INFORMATICS"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 639600.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This award has led to several key publications on prioritizing gene importance, understanding the impact of mutations, and analyzing gene networks. It also led to the development of practical machine-learning methods. <br /><br />(1) We developed a general theoretical framework that uses extended Pearls do-calculus to incorporate cyclic causal interactions and multilevel causation. To analyze causal information dynamics in our framework, we also developed information-theoretic notions necessary to introduce a causal generalization of the Partial Information Decomposition framework. Our causal framework helps to clarify conceptual issues in the context of complex trait analysis and assign variation in an observed trait to genetic, epigenetic, and environmental factors, including mutations. This work has been published in Biology &amp; Philosophy (2020).<br /><br />(2) We developed a machine learning model to predict the biological effects of genetic variants using deep 3D convolutional neural networks. This work has been published in PLoS Computational biology (2020). <br /><br />(3) In addition to predicting the impact of genetic variants in the human genome, we developed a pipeline that integrates dimensionality reduction and Latent Dirichlet Allocation (LDA) with single-cell RNA-seq data to predict potential interactions between microbes and human genes in patients. This work has been published in Genome biology (2020). <br /><br />(4) We presented a machine learning framework to learn the latent signatures of small molecules and their deleterious effects. We demonstrated that our model is informative in relating the molecule signatures to distinct anatomical categories. This work has been published in Nature communications (2020). <br /><br />(5) Finally, at the network level, we compared the \"patterns of mutation\" in biological and technological networks, and based on network propagation methods, we developed computational models that can predict genes associated with a disease. Integrating network information increases the statistical power of our models and thus can identify many previously overlooked causal genes. These works have been published in Cell systems (2020) and Genome biology (2021).</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/11/2023<br>\n\t\t\t\t\tModified by: Haiyuan&nbsp;Yu</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis award has led to several key publications on prioritizing gene importance, understanding the impact of mutations, and analyzing gene networks. It also led to the development of practical machine-learning methods. \n\n(1) We developed a general theoretical framework that uses extended Pearls do-calculus to incorporate cyclic causal interactions and multilevel causation. To analyze causal information dynamics in our framework, we also developed information-theoretic notions necessary to introduce a causal generalization of the Partial Information Decomposition framework. Our causal framework helps to clarify conceptual issues in the context of complex trait analysis and assign variation in an observed trait to genetic, epigenetic, and environmental factors, including mutations. This work has been published in Biology &amp; Philosophy (2020).\n\n(2) We developed a machine learning model to predict the biological effects of genetic variants using deep 3D convolutional neural networks. This work has been published in PLoS Computational biology (2020). \n\n(3) In addition to predicting the impact of genetic variants in the human genome, we developed a pipeline that integrates dimensionality reduction and Latent Dirichlet Allocation (LDA) with single-cell RNA-seq data to predict potential interactions between microbes and human genes in patients. This work has been published in Genome biology (2020). \n\n(4) We presented a machine learning framework to learn the latent signatures of small molecules and their deleterious effects. We demonstrated that our model is informative in relating the molecule signatures to distinct anatomical categories. This work has been published in Nature communications (2020). \n\n(5) Finally, at the network level, we compared the \"patterns of mutation\" in biological and technological networks, and based on network propagation methods, we developed computational models that can predict genes associated with a disease. Integrating network information increases the statistical power of our models and thus can identify many previously overlooked causal genes. These works have been published in Cell systems (2020) and Genome biology (2021).\n\n\t\t\t\t\tLast Modified: 08/11/2023\n\n\t\t\t\t\tSubmitted by: Haiyuan Yu"
+ }
+}

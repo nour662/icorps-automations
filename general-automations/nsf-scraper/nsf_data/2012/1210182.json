@@ -1,0 +1,109 @@
+{
+ "awd_id": "1210182",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Fellowship Award",
+ "awd_titl_txt": "NSF East Asia and Pacific Summer Institute for FY 2012 in Singapore",
+ "cfda_num": "47.079",
+ "org_code": "01090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anne Emig",
+ "awd_eff_date": "2012-06-01",
+ "awd_exp_date": "2013-05-31",
+ "tot_intn_awd_amt": 5836.0,
+ "awd_amount": 5836.0,
+ "awd_min_amd_letter_date": "2012-05-18",
+ "awd_max_amd_letter_date": "2012-05-18",
+ "awd_abstract_narration": "This action funds Joseph David Tarango of University of California, Riverside to conduct a research project, entitled \"Hybrid-Reconfigurable Processor (HR-P): An Efficient and Accelerated Embedded Architecture for Mobile Computing\" during the summer of 2012 at National University of Singapore in Singapore.  The host scientist is Dr. Tulika Mitra of NUS.\r\n\r\nThe Intellectual Merit of the research project is to explore integrating a reconfigurable fabric into a mobile processor to decrease computation time and energy requirements for computationally intensive applications.  The mobile processor is the Hybrid-Reconfigurable Processor (HR-P).  Further development promises a novel mobile computer architecture and compilation tool-chain for solving current and future computing related problems, contributing to computer science and bringing industrial transformation.\r\n\r\n\r\nThe Broader Impacts of an EAPSI fellowship include providing the Fellow a first-hand research experience outside the U.S.; an introduction to the science, science policy, and scientific infrastructure of the respective location; and an orientation to the society, culture and language. These activities meet the NSF goal to educate for international collaborations early in the career of its scientists, engineers, and educators, thus ensuring a globally aware U.S. scientific workforce.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "O/D",
+ "org_dir_long_name": "Office Of The Director",
+ "div_abbr": "OISE",
+ "org_div_long_name": "Office of International Science and Engineering",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Joseph",
+   "pi_last_name": "Tarango",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "Joseph D Tarango",
+   "pi_email_addr": "",
+   "nsf_id": "000607424",
+   "pi_start_date": "2012-05-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Tarango                 Joseph         D",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "Yucaipa",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "",
+  "inst_zip_code": "923991525",
+  "inst_country_name": "United States",
+  "cong_dist_code": "23",
+  "st_cong_dist_code": "CA23",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California, Riverside",
+  "perf_str_addr": null,
+  "perf_city_name": "Riverside",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "925210001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "39",
+  "perf_st_cong_dist": "CA39",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "731600",
+   "pgm_ele_name": "EAPSI"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5927",
+   "pgm_ref_txt": "EAST ASIA, OTHER"
+  },
+  {
+   "pgm_ref_code": "5978",
+   "pgm_ref_txt": "EAST ASIA AND PACIFIC PROGRAM"
+  },
+  {
+   "pgm_ref_code": "7316",
+   "pgm_ref_txt": "EAPSI"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 5836.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p style=\"text-align: center;\"><strong>Pushing Thresholds in Processor Technology</strong></p>\n<p>Over the years, the evolution in computers has greatly depended on the improvement in processor architectures to accelerate software code. However, as the growth of single-processor performance plateaus, a new generation of parallelism is necessary to meet the current and future standards of computing. The plateau has left processor architecture at a defining moment; computer architects must now analyze techniques to make parallel <em>architectures easily programmable</em> by mainstream methods.</p>\n<p>A significant step into the easily programmable direction is Application-specific integrated circuits (ASIC) intellectual-property (IP) core integration into processors. The push for the ASIC core has increased significantly with widespread use of devices such as smart phones (Figure 1). The driving factors for the integration are acceleration and energy efficiency. The maturity of these techniques has led to Application-Specific Instruction-set Processors (ASIPs), where the general-purpose processor can be extended to specific applications using the ASIC IP cores automatically.</p>\n<p>Tailoring the processor, in this manner, involves taking application programs and identifying computationally intensive hotspots. After identifying computationally intensive hotspots, these regions are developed into ASICs combined with the processor. The combination of the general-purpose processor and ASIC extensions offers an acceleration and energy efficiency; however, after fabrication the ASIP cannot be changed. The inability for the ASIP to change is an issue because as applications get updates the benefits are reduced. In looking into the future, a new emerging field of reconfigurable computing is good compromise between hardware acceleration, flexibility, and energy efficiency.</p>\n<p>Conversely, reconfigurable computing is the most difficult to program and usually takes significant development time. In addressing programmability, we developed a lightweight reconfigurable unit architecture and infrastructure. The reconfigurable unit is a powerful architecture, where we can accelerate the application in a single or multiple time steps. The significance of our reconfigurable unit is we can replicate ASICs using the code generated from current processor compilers reducing ASIC development time to nothing. Combining our reconfigurable unit and the general-purpose processor, we introduce a novel architecture. We developed a state-of-the-art compiler tool-chain to ease the migration of legacy code to our design. The compiler support is significant because it will allow current applications to be seamlessly used on our architecture. With our processor, we address flexibility, programmability, energy efficiency, and area aware design comparable ASICs execution times.</p>\n<p>The research for developing our processor was made possible by the NSF EAPSI program, National University of Singapore, and University of California &ndash; Riverside .The guidance and cooperation faculty Dr. Philip Brisk and Dr. Tulka Mitra has lead to preliminary development of our processor by Liang Chen and Joseph Tarango. The union of our two groups allowed each to focus on our respective expertise area and contribute a novel research design neither could do independently. We expect to take the foundations set by our processor and further improve our design to further push the boundaries of processor development. With the acceleration from our design, we expect industry to extend current processors to better performance on supercomputers and make supercomputing feasible on smart phones.&nbsp;</p>\n<p>The participation of the NSF EAPSI program has given our group of scientists the opportunity to achieve our research goals and laid the foundation to explore future research ideas. The experience has been invaluable to th...",
+  "por_txt_cntn": "Pushing Thresholds in Processor Technology\n\nOver the years, the evolution in computers has greatly depended on the improvement in processor architectures to accelerate software code. However, as the growth of single-processor performance plateaus, a new generation of parallelism is necessary to meet the current and future standards of computing. The plateau has left processor architecture at a defining moment; computer architects must now analyze techniques to make parallel architectures easily programmable by mainstream methods.\n\nA significant step into the easily programmable direction is Application-specific integrated circuits (ASIC) intellectual-property (IP) core integration into processors. The push for the ASIC core has increased significantly with widespread use of devices such as smart phones (Figure 1). The driving factors for the integration are acceleration and energy efficiency. The maturity of these techniques has led to Application-Specific Instruction-set Processors (ASIPs), where the general-purpose processor can be extended to specific applications using the ASIC IP cores automatically.\n\nTailoring the processor, in this manner, involves taking application programs and identifying computationally intensive hotspots. After identifying computationally intensive hotspots, these regions are developed into ASICs combined with the processor. The combination of the general-purpose processor and ASIC extensions offers an acceleration and energy efficiency; however, after fabrication the ASIP cannot be changed. The inability for the ASIP to change is an issue because as applications get updates the benefits are reduced. In looking into the future, a new emerging field of reconfigurable computing is good compromise between hardware acceleration, flexibility, and energy efficiency.\n\nConversely, reconfigurable computing is the most difficult to program and usually takes significant development time. In addressing programmability, we developed a lightweight reconfigurable unit architecture and infrastructure. The reconfigurable unit is a powerful architecture, where we can accelerate the application in a single or multiple time steps. The significance of our reconfigurable unit is we can replicate ASICs using the code generated from current processor compilers reducing ASIC development time to nothing. Combining our reconfigurable unit and the general-purpose processor, we introduce a novel architecture. We developed a state-of-the-art compiler tool-chain to ease the migration of legacy code to our design. The compiler support is significant because it will allow current applications to be seamlessly used on our architecture. With our processor, we address flexibility, programmability, energy efficiency, and area aware design comparable ASICs execution times.\n\nThe research for developing our processor was made possible by the NSF EAPSI program, National University of Singapore, and University of California &ndash; Riverside .The guidance and cooperation faculty Dr. Philip Brisk and Dr. Tulka Mitra has lead to preliminary development of our processor by Liang Chen and Joseph Tarango. The union of our two groups allowed each to focus on our respective expertise area and contribute a novel research design neither could do independently. We expect to take the foundations set by our processor and further improve our design to further push the boundaries of processor development. With the acceleration from our design, we expect industry to extend current processors to better performance on supercomputers and make supercomputing feasible on smart phones. \n\nThe participation of the NSF EAPSI program has given our group of scientists the opportunity to achieve our research goals and laid the foundation to explore future research ideas. The experience has been invaluable to the development of my cultural, personal, and professional skills. Being able to interact with collaborators, in person, has given me a deeper incite to underst..."
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "awd_id": "1054075",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CAREER: Compiler-Inserted Runtime Adaptation for Multicore Processors",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2011-07-15",
+ "awd_exp_date": "2017-06-30",
+ "tot_intn_awd_amt": 450000.0,
+ "awd_amount": 450000.0,
+ "awd_min_amd_letter_date": "2011-07-07",
+ "awd_max_amd_letter_date": "2011-07-07",
+ "awd_abstract_narration": "Increases in the number of cores in multicore processors have lead to\r\nincreases in the architectural and environmental diversity present in\r\ncomputer systems: the number, complexity, and mix of available cores\r\nvary greatly and the resources allocated to an application differ from\r\nrun-to-run and within runs.\r\n\r\nDiversity has a significant impact on application performance;\r\napplications must adapt to differences in their architecture and\r\nenvironment to achieve good performance.  However, developing adaptive\r\napplications greatly increases the difficulty of writing efficient\r\nparallel programs while increasing the level of skill required to\r\nwrite a parallel application, and may therefore limit programmers'\r\nability to write parallel applications and take full advantage of\r\nmulticore processors.\r\n\r\nThis project develops and disseminates new compilation techniques and\r\nruntime adaptation strategies in which a compiler analyzes the\r\nconcurrency and locality features of an application, selects a runtime\r\nadaptation strategy based on these features, and adds adaptation to\r\nthe application.  Key contributions address the challenges of\r\ndiscovering and representing concurrency and locality and selecting\r\nadaptation strategies based upon application characteristics.\r\n\r\nThese new compilation techniques and adaptation strategies will free\r\nprogrammers from the need to concern themselves with architectural and\r\nenvironmental diversity when writing parallel applications.  This\r\nfreedom will then enable a wide variety of applications to benefit\r\nfrom multicore processors, thus ensuring that multicore processor\r\nsystems will be able to live up to users' increased performance\r\nexpectations.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "David",
+   "pi_last_name": "Penry",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "David A Penry",
+   "pi_email_addr": "dpenry@ee.byu.edu",
+   "nsf_id": "000069557",
+   "pi_start_date": "2011-07-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Brigham Young University",
+  "inst_street_address": "A-153 ASB",
+  "inst_street_address_2": "",
+  "inst_city_name": "PROVO",
+  "inst_state_code": "UT",
+  "inst_state_name": "Utah",
+  "inst_phone_num": "8014223360",
+  "inst_zip_code": "846021128",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "UT03",
+  "org_lgl_bus_name": "BRIGHAM YOUNG UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "JWSYC7RUMJD1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Brigham Young University",
+  "perf_str_addr": "A-153 ASB",
+  "perf_city_name": "PROVO",
+  "perf_st_code": "UT",
+  "perf_st_name": "Utah",
+  "perf_zip_code": "846021128",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "UT03",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "164000",
+   "pgm_ele_name": "Information Technology Researc"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1045",
+   "pgm_ref_txt": "CAREER-Faculty Erly Career Dev"
+  },
+  {
+   "pgm_ref_code": "1187",
+   "pgm_ref_txt": "PECASE- eligible"
+  },
+  {
+   "pgm_ref_code": "1640",
+   "pgm_ref_txt": "INFORMATION TECHNOLOGY RESEARC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 450000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>The goal of this project was to increase the productivity of programmers designing software which can use multiple processing elements and accelerators. &nbsp;It is difficult for such programmers to deal with the great diversity of processing elements and accelerators, and the complex systems composed of them. &nbsp;In many situations, programmers cannot predict what the system will look like; in fact, the system itself may change its characterstics while the program is running.</span></p>\n<p>Our approach was to develop compilation techniques which partition a program into tasks which can be scheduled at runtime to run on the processing elements and accelerators that are actually available as the program executes. &nbsp;A very important enabler of these techniques is having a powerful representation of concurrency (what portions of a program may execute at the same time) and locality (how data is used by portions of a program).</p>\n<p>The goal was very ambitious, and we were only able to achieve it in part. &nbsp;We were able to develop a very useful representation of concurrency and locality which exposes them to the compiler and the runtime system. &nbsp;We demonstrated the use of this representation to improve the scheduling of data transfers between processors and accelerators (GPUs). &nbsp;We developed a tool to visualize program structure using this representation.</p>\n<p>This project has supported the studies of 2 PhD students and 2 MS students. &nbsp;7 undergraduates have worked on it. &nbsp;All of the students gained valuable experience in computer systems, compilers, and programming. &nbsp;Furthermore, the graduate students gained experience in project planning and supervision as they mentored the undergraduates.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/29/2017<br>\n\t\t\t\t\tModified by: David&nbsp;A&nbsp;Penry</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of this project was to increase the productivity of programmers designing software which can use multiple processing elements and accelerators.  It is difficult for such programmers to deal with the great diversity of processing elements and accelerators, and the complex systems composed of them.  In many situations, programmers cannot predict what the system will look like; in fact, the system itself may change its characterstics while the program is running.\n\nOur approach was to develop compilation techniques which partition a program into tasks which can be scheduled at runtime to run on the processing elements and accelerators that are actually available as the program executes.  A very important enabler of these techniques is having a powerful representation of concurrency (what portions of a program may execute at the same time) and locality (how data is used by portions of a program).\n\nThe goal was very ambitious, and we were only able to achieve it in part.  We were able to develop a very useful representation of concurrency and locality which exposes them to the compiler and the runtime system.  We demonstrated the use of this representation to improve the scheduling of data transfers between processors and accelerators (GPUs).  We developed a tool to visualize program structure using this representation.\n\nThis project has supported the studies of 2 PhD students and 2 MS students.  7 undergraduates have worked on it.  All of the students gained valuable experience in computer systems, compilers, and programming.  Furthermore, the graduate students gained experience in project planning and supervision as they mentored the undergraduates.\n\n \n\n\t\t\t\t\tLast Modified: 09/29/2017\n\n\t\t\t\t\tSubmitted by: David A Penry"
+ }
+}

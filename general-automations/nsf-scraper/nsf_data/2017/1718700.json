@@ -1,0 +1,109 @@
+{
+ "awd_id": "1718700",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AF: Small: Algorithms for New Memory Models",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "A. Funda Ergun",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 347980.0,
+ "awd_amount": 347980.0,
+ "awd_min_amd_letter_date": "2017-08-31",
+ "awd_max_amd_letter_date": "2017-08-31",
+ "awd_abstract_narration": "Accessing memory and storage has a substantial impact on the performance of computer programs, particularly when operating on large data sets. As such, memory-efficient algorithms (or algorithms designed to optimize for memory accesses) have received significant attention both in theory and practice. With new developments in memory technology and usage, however, the classic models less accurately capture true system performance characteristics. The goal of this project is to develop a theory for new memory models that more closely capture important performance features arising from recent shifts in memory technology and usage. The project advances the state of the art in several directions, including new performance models, new memory-efficient algorithms in these models, new techniques for understanding the performance of algorithms, and new lower bounds to explain the limits of algorithm performance. The algorithms studied are themselves fundamental building blocks in larger systems, and importing any new efficient solutions into existing programming platforms could directly improve the performance of diverse software systems. As part of the project the PI will develop educational materials, and any reference implementations developed as part of the project will be made available to the public.\r\n\r\nThis project studies algorithms in two classes of new memory models, namely the cache-adaptive model and the asymmetric-memory models.  The cache-adaptive model is a way of modeling the fluctuations in effective memory size that occur when multiple processes compete for space in a shared cache. Efficient cache-adaptive algorithms should have more robust and predictable performance on parallel systems. This project considers the following areas relating to cache-adaptive algorithms: (1) new cache-adaptive algorithms, (2) new cache-adaptive data structures, (3) more general performance theorems, and (4) how sensitive the algorithms and their analyses are to worst-case adversaries. An asymmetric-memory model is a model where writes are significantly more expensive than reads; asymmetric models are relevant, e.g., to phase-change memories and other emerging memory technologies. This project studies (1) new algorithms for asymmetric memory models, including implicit representations of solution outputs that allow for a sublinear number of writes, and (2) lower bounds for algorithms in these models.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jeremy",
+   "pi_last_name": "Fineman",
+   "pi_mid_init": "T",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jeremy T Fineman",
+   "pi_email_addr": "jfineman@cs.georgetown.edu",
+   "nsf_id": "000610554",
+   "pi_start_date": "2017-08-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgetown University",
+  "inst_street_address": "MAIN CAMPUS",
+  "inst_street_address_2": "",
+  "inst_city_name": "WASHINGTON",
+  "inst_state_code": "DC",
+  "inst_state_name": "District of Columbia",
+  "inst_phone_num": "2026250100",
+  "inst_zip_code": "20057",
+  "inst_country_name": "United States",
+  "cong_dist_code": "00",
+  "st_cong_dist_code": "DC00",
+  "org_lgl_bus_name": "GEORGETOWN UNIVERSITY",
+  "org_prnt_uei_num": "TF2CMKY1HMX9",
+  "org_uei_num": "TF2CMKY1HMX9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgetown University",
+  "perf_str_addr": "37th and O Sts NW",
+  "perf_city_name": "Washington",
+  "perf_st_code": "DC",
+  "perf_st_name": "District of Columbia",
+  "perf_zip_code": "200571789",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "00",
+  "perf_st_cong_dist": "DC00",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7926",
+   "pgm_ref_txt": "ALGORITHMS"
+  },
+  {
+   "pgm_ref_code": "7934",
+   "pgm_ref_txt": "PARAL/DISTRIBUTED ALGORITHMS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 347980.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this project is to develop a theory for and to understand what algorithmic techniques yield more robust memory-efficient algorithms. The main outcomes of the project are:</p>\n<p>1) New memory-efficient algorithms for problems directed graph problems. One feature of computer memory and disk is that accessing consecutive memory locations is cheaper than jumping to an arbitrary or random location in memory. Algorithms that generally access nearby locations are said to exhibit spatial locality. Designing algorithms with good spatial locality for graph problems, especially sparse directed graphs, is notoriously difficult. This project includes new memory-efficient algorithms for problems on directed graphs including reachability (graph search), topological sort, and strongly-connected components. These algorithms achieve good spatial locality over nodes, and as such they are provably efficient even for sparse graphs.</p>\n<p>2) New models and algorithms for asymmetric memories. The hardware technology for computer memory is undergoing some transformations in recent years, most notably with the progress on so-called nonvolatile memories. Many of these memory technologies have very low latency and energy costs when performing reads, but the costs of performing a write (update) to memory are higher. The read and write costs are thus asymmetric. Classic algorithms and models for analysis do not draw any distinction between reads and writes, and therefore many existing algorithms are not necessarily optimal for asymmetric memories. This project includes new provably efficient algorithms for asymmetric memories, including some algorithms for problems on graphs.</p>\n<p>3) New parallel algorithms for directed graph problems. Many classic algorithms for directed graphs are inherently sequential as they traverse long paths of nodes in order. While some parallel algorithms were known, most only achieve parallelism by increasing the total amount of work performed, thus producing algorithms that have poor baseline efficiency. This project includes advances on parallel algorithms for directed graphs, including new algorithms for reachability and approximate shortest paths. These new algorithms have good parallelism, and moreover they have total work similar to the best sequential algorithms for these problems.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/28/2021<br>\n\t\t\t\t\tModified by: Jeremy&nbsp;T&nbsp;Fineman</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of this project is to develop a theory for and to understand what algorithmic techniques yield more robust memory-efficient algorithms. The main outcomes of the project are:\n\n1) New memory-efficient algorithms for problems directed graph problems. One feature of computer memory and disk is that accessing consecutive memory locations is cheaper than jumping to an arbitrary or random location in memory. Algorithms that generally access nearby locations are said to exhibit spatial locality. Designing algorithms with good spatial locality for graph problems, especially sparse directed graphs, is notoriously difficult. This project includes new memory-efficient algorithms for problems on directed graphs including reachability (graph search), topological sort, and strongly-connected components. These algorithms achieve good spatial locality over nodes, and as such they are provably efficient even for sparse graphs.\n\n2) New models and algorithms for asymmetric memories. The hardware technology for computer memory is undergoing some transformations in recent years, most notably with the progress on so-called nonvolatile memories. Many of these memory technologies have very low latency and energy costs when performing reads, but the costs of performing a write (update) to memory are higher. The read and write costs are thus asymmetric. Classic algorithms and models for analysis do not draw any distinction between reads and writes, and therefore many existing algorithms are not necessarily optimal for asymmetric memories. This project includes new provably efficient algorithms for asymmetric memories, including some algorithms for problems on graphs.\n\n3) New parallel algorithms for directed graph problems. Many classic algorithms for directed graphs are inherently sequential as they traverse long paths of nodes in order. While some parallel algorithms were known, most only achieve parallelism by increasing the total amount of work performed, thus producing algorithms that have poor baseline efficiency. This project includes advances on parallel algorithms for directed graphs, including new algorithms for reachability and approximate shortest paths. These new algorithms have good parallelism, and moreover they have total work similar to the best sequential algorithms for these problems.\n\n\t\t\t\t\tLast Modified: 12/28/2021\n\n\t\t\t\t\tSubmitted by: Jeremy T Fineman"
+ }
+}

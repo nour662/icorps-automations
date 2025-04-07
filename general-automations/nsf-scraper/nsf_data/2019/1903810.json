@@ -1,0 +1,109 @@
+{
+ "awd_id": "1903810",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Improving Design for Additive Manufacturing through Physically-integrated Design Concepts Generated from Computationally Efficient Graph Coloring Techniques",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": "7032927933",
+ "po_email": "kjabloko@nsf.gov",
+ "po_sign_block_name": "Kathryn Jablokow",
+ "awd_eff_date": "2018-09-15",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 135866.0,
+ "awd_amount": 135866.0,
+ "awd_min_amd_letter_date": "2019-02-22",
+ "awd_max_amd_letter_date": "2019-02-22",
+ "awd_abstract_narration": "Additive manufacturing or 3D printing has been hailed as the third industrial revolution because of the unique way it changes how products are conceived, designed, manufactured and distributed to end users. This research project addresses key scientific and engineering barriers that currently prevent the production of additively manufactured products at an industrially-relevant scale. In particular, the project focuses on how to better design products that will be produced via additive manufacturing by considering manufacturing constraints and challenges associated with assembling parts into final products. The study will result in fast algorithms for generating and selecting design concepts that have the minimum number of parts required to cover all functional requirements and that meet constraints imposed by the additive manufacturing process. This will facilitate high-volume, mass production of 3D printed products, thereby furthering the practicality and economic impact of additive manufacturing. The project spans several disciplines through a joint effort between the University at Buffalo (UB) and Rochester Institute of Technology (RIT). The project will enhance the curriculum related to design for additive manufacturing at the two participating universities by introducing results from this research into existing courses. Outreach activities will promote the recruitment of women and minorities to advanced manufacturing through workshops aimed at K-12 students organized in partnership with the Tech-Savvy program at UB. The research community will be engaged through a road-mapping workshop on computationally efficient methods in decision-based design. \r\n\r\nThe objective of this research is to define a prescribed theoretical framework and practical methods for classifying and generating physically integrated design concepts that can be realized effectively through additive manufacturing. The framework is based on the independence of functional requirements principle and modeling of physical integration problems as graph coloring problems. The research will result in new, computationally efficient (polynomial-time) graph-coloring algorithms based on discharging techniques in combination with Combinatorial Nullstellensatz. The new algorithms and design framework will be demonstrated and evaluated on representative design problems with the resulting designs being realized through additive manufacturing. Manufacturing productivity measures such as surface roughness, buildup time and cost, will be considered.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Sogol",
+   "pi_last_name": "Jahanbekam",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sogol Jahanbekam",
+   "pi_email_addr": "sogol.jahanbekam@sjsu.edu",
+   "nsf_id": "000730099",
+   "pi_start_date": "2019-02-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "San Jose State University Foundation",
+  "inst_street_address": "210 N 4TH ST FL 4",
+  "inst_street_address_2": "",
+  "inst_city_name": "SAN JOSE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "4089241400",
+  "inst_zip_code": "951125569",
+  "inst_country_name": "United States",
+  "cong_dist_code": "18",
+  "st_cong_dist_code": "CA18",
+  "org_lgl_bus_name": "SAN JOSE STATE UNIVERSITY RESEARCH FOUNDATION",
+  "org_prnt_uei_num": "LJBXV5VF2BT9",
+  "org_uei_num": "LJBXV5VF2BT9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "San Jose State University Foundation",
+  "perf_str_addr": "210 North Fourth Street",
+  "perf_city_name": "San Jose",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "951125569",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "18",
+  "perf_st_cong_dist": "CA18",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "146400",
+   "pgm_ele_name": "ESD-Eng & Systems Design"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "067E",
+   "pgm_ref_txt": "DESIGN TOOLS"
+  },
+  {
+   "pgm_ref_code": "068E",
+   "pgm_ref_txt": "DESIGN THEORY"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 135866.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In this Project we first developed a mathematical framework to model several problems in additive manufacturing. We showed that when a list of functional requirements of a product and connections between them is given, then we can model the problem in such a way that designing the product with certain number of parts is equivalent to partitioning the vertex set of the graph in such a way that the cost is as low as possible. We also studied the problem, when the aim is to minimize the total number of parts. The mathematics version of the problem will be finding the chromatic number of a graph, which is a well-know problem in graph theory. We suggested some algorithms to be applied to get the answer and also worked on currently-known algorithms for 3 colorability and tried to improve the complexity of the algorithm, which was successful for a large class of graphs.</p>\n<p>&nbsp;</p>\n<p>&nbsp;And during the final year of the project we focused on design flexibility. Our aim was to propose a design, say for a smart device, that is flexible and adoptive based on the customer&rsquo;s preferences. In this work we also developed a graph coloring algorithm that determines the minimum number of physical parts needed to meet future functionalities. In this problem, we first find the core graph and study the proper coloring on the core graph, and then extend that coloring to a proper coloring of all other graphs, in such a way that the smallest number of colors are used. &nbsp;</p>\n<p>&nbsp;</p>\n<p>The graph coloring approach we proposed in this work is novel and can be used as a new technique to make efficient design.&nbsp;</p>\n<p>&nbsp;</p>\n<p>As all solutions to the problems we studied in the project are related to proper coloring of graphs&nbsp; (note that proper coloring of graphs is an NP-hard problem), in a separate work we studied the proper coloring of the graphs using a different approach. Our aim was to randomly assign coloring to the vertices of a graph and then check how many switched are needed to construct a proper coloring of the graph, given it exists. It is a novel approach in early stages and requires more research. But still could be a method to find a proper coloring of a graph with a given number of colors.</p>\n<p>&nbsp;</p>\n<p>&nbsp;&nbsp;This project supported 7 graduate students, one from Rochester Institute of Technology and 6 students from San Jose State University. These students, under the supervision of the PI, worked on a variety of problems.&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/25/2021<br>\n\t\t\t\t\tModified by: Sogol&nbsp;Jahanbekam</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIn this Project we first developed a mathematical framework to model several problems in additive manufacturing. We showed that when a list of functional requirements of a product and connections between them is given, then we can model the problem in such a way that designing the product with certain number of parts is equivalent to partitioning the vertex set of the graph in such a way that the cost is as low as possible. We also studied the problem, when the aim is to minimize the total number of parts. The mathematics version of the problem will be finding the chromatic number of a graph, which is a well-know problem in graph theory. We suggested some algorithms to be applied to get the answer and also worked on currently-known algorithms for 3 colorability and tried to improve the complexity of the algorithm, which was successful for a large class of graphs.\n\n \n\n And during the final year of the project we focused on design flexibility. Our aim was to propose a design, say for a smart device, that is flexible and adoptive based on the customer\u2019s preferences. In this work we also developed a graph coloring algorithm that determines the minimum number of physical parts needed to meet future functionalities. In this problem, we first find the core graph and study the proper coloring on the core graph, and then extend that coloring to a proper coloring of all other graphs, in such a way that the smallest number of colors are used.  \n\n \n\nThe graph coloring approach we proposed in this work is novel and can be used as a new technique to make efficient design. \n\n \n\nAs all solutions to the problems we studied in the project are related to proper coloring of graphs  (note that proper coloring of graphs is an NP-hard problem), in a separate work we studied the proper coloring of the graphs using a different approach. Our aim was to randomly assign coloring to the vertices of a graph and then check how many switched are needed to construct a proper coloring of the graph, given it exists. It is a novel approach in early stages and requires more research. But still could be a method to find a proper coloring of a graph with a given number of colors.\n\n \n\n  This project supported 7 graduate students, one from Rochester Institute of Technology and 6 students from San Jose State University. These students, under the supervision of the PI, worked on a variety of problems. \n\n \n\n \n\n\t\t\t\t\tLast Modified: 09/25/2021\n\n\t\t\t\t\tSubmitted by: Sogol Jahanbekam"
+ }
+}

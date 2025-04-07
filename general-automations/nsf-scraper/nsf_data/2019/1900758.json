@@ -1,0 +1,113 @@
+{
+ "awd_id": "1900758",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "CNS Core: Medium: Collaborative Research: Persistent memory objects for consistent sharing in Non-Volatile Main Memories",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Jason Hallstrom",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 509679.0,
+ "awd_amount": 509679.0,
+ "awd_min_amd_letter_date": "2019-07-19",
+ "awd_max_amd_letter_date": "2021-09-17",
+ "awd_abstract_narration": "The continual performance growth of data center servers is critical to the nation's economic competitiveness and as a catalyst for progress in scientific endeavors. Two important data center components are the main memory, which has fast access but can only store data temporarily, and storage, which keeps data permanently but suffers from slow access. Recent technology advances have brought in a new non-volatile memory, now commercially available, that can both host permanent data and be accessed quickly. However, to reach its potential, utilizing these new memory technologies requires rethinking of how data should be persistently and efficiently stored.\r\n \r\nThis proposal describes a new abstraction for storing persistent data in non-volatile memory: hyperfiles, which are long lived, provide fast access, and can be quickly attached to and detached from a process address space. Hyperfiles provide naming and permission characteristics similar to (but faster than) files, and speed closer to memory. They are accessed directly through loads/stores to avoid system call overhead. This project also investigates new sharing semantics for hyperfiles, allowing non-cooperating processes to share them simultaneously and safely, while keeping the crash recovery property. Architecture support to accelerate hyperfile sharing will also be designed and evaluated.\r\n \r\nThis project will enable fast access to persistent data by reducing overheads inherent in file access, and will enable more concurrent use of data through strong sharing semantics. Big-data workloads becoming common across all industries will either perform better or require fewer resources. The software and prototyping artifacts produced will enable other researchers to further enhance the design, and to adapt workloads to take advantage of the hyperfile abstraction. The education and outreach components of this plan will train the next generation of programmers on use of persistent memory, and will encourage underrepresented students to join the next generation of programmers.\r\n \r\nThe project will maintain data, code, results, publications, and simulator artifacts for the duration of the project plus five years afterward. Each artifact will be released as it reaches sufficient maturity. They will be posted at: https://sites.google.com/view/hyperfile.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Michael",
+   "pi_last_name": "Swift",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Michael M Swift",
+   "pi_email_addr": "swift@cs.wisc.edu",
+   "nsf_id": "000103907",
+   "pi_start_date": "2019-07-19",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Wisconsin-Madison",
+  "inst_street_address": "21 N PARK ST STE 6301",
+  "inst_street_address_2": "",
+  "inst_city_name": "MADISON",
+  "inst_state_code": "WI",
+  "inst_state_name": "Wisconsin",
+  "inst_phone_num": "6082623822",
+  "inst_zip_code": "537151218",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "WI02",
+  "org_lgl_bus_name": "UNIVERSITY OF WISCONSIN SYSTEM",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LCLSJAGTNZQ7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Wisconsin-Madison",
+  "perf_str_addr": "Dept. of Computer Sciences, 1210",
+  "perf_city_name": "Madison",
+  "perf_st_code": "WI",
+  "perf_st_name": "Wisconsin",
+  "perf_zip_code": "537061613",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "WI02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0121",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002122DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 331799.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2021,
+   "fund_oblg_amt": 177880.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-817a53f7-7fff-70e3-48ec-737c8fe17530\"> </span></p>\n<p dir=\"ltr\"><span>A new class of memory and storage technology was recently introduced, non-volatile memory (NVM). This new technology shares properties of both memory, as it is directly accessible from running programs, and storage as it can durable save data across system failures. This work investigated new operating-system and hardware mechanisms to fully utilize this new technology through changes to hardware to improve performance, changes to file system design to improve performance and avoid unnecessary overheads that current systems induce, and changes to how operating systems manage memory to make it easier to adapt to new technologies and demands. This work was disseminated through research publications and presentations to researchers and engineers in academia and industry.</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>The expected operating systems and architecture advances from this activity include: (1) developing a new hardware design titled ASAP that removes much of the overhead programs bear waiting for data to reach non-volatile memory by allowing them to keep executing instead of waiting; (2) developing a new hardware/software co-design approach to allow program to directly read and write data on NVM solid-state drives without having to call through the operating system while still supporting shared access to data, which greatly improves performance, (3) a new file system design that allows applications to control how and where data is written, which again avoids the need to call into the operating system for every data read or write to greatly improve performance, and (4) a new approach to designing memory management in operating systems by re-using existing file system methods to allow new memory managers to be developed separately from the kernel and dynamically used only when needed, without complex modifications to existing operating system code. Taken as a whole, the combined outputs of this project demonstrate several approaches, leveraging both hardware and software innovations, to reduce the operating system and hardware overhead of using NVM and the programming cost of managing memory.</span></p>\n<div><span><br /></span></div>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 12/05/2023<br>\nModified by: Michael&nbsp;M&nbsp;Swift</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\n \n\n\nA new class of memory and storage technology was recently introduced, non-volatile memory (NVM). This new technology shares properties of both memory, as it is directly accessible from running programs, and storage as it can durable save data across system failures. This work investigated new operating-system and hardware mechanisms to fully utilize this new technology through changes to hardware to improve performance, changes to file system design to improve performance and avoid unnecessary overheads that current systems induce, and changes to how operating systems manage memory to make it easier to adapt to new technologies and demands. This work was disseminated through research publications and presentations to researchers and engineers in academia and industry.\n\n\n\n\n\nThe expected operating systems and architecture advances from this activity include: (1) developing a new hardware design titled ASAP that removes much of the overhead programs bear waiting for data to reach non-volatile memory by allowing them to keep executing instead of waiting; (2) developing a new hardware/software co-design approach to allow program to directly read and write data on NVM solid-state drives without having to call through the operating system while still supporting shared access to data, which greatly improves performance, (3) a new file system design that allows applications to control how and where data is written, which again avoids the need to call into the operating system for every data read or write to greatly improve performance, and (4) a new approach to designing memory management in operating systems by re-using existing file system methods to allow new memory managers to be developed separately from the kernel and dynamically used only when needed, without complex modifications to existing operating system code. Taken as a whole, the combined outputs of this project demonstrate several approaches, leveraging both hardware and software innovations, to reduce the operating system and hardware overhead of using NVM and the programming cost of managing memory.\n\n\n\n\n\n\n\n\t\t\t\t\tLast Modified: 12/05/2023\n\n\t\t\t\t\tSubmitted by: MichaelMSwift\n"
+ }
+}

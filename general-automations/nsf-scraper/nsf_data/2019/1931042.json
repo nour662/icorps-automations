@@ -1,0 +1,105 @@
+{
+ "awd_id": "1931042",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: CORE: Small: Collaborative: Learning Dynamic and Robust Defenses Against Co-Adaptive Spammers",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032928832",
+ "po_email": "dcosley@nsf.gov",
+ "po_sign_block_name": "Dan Cosley",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2019-09-12",
+ "awd_max_amd_letter_date": "2019-09-12",
+ "awd_abstract_narration": "Online reputation systems are ubiquitous for customers to evaluate businesses, products, people, and organizations based on reviews from the crowd. For example, Yelp and TripAdvisor rank restaurants and hotels based on user reviews, and RateMDs allows patients to review doctors and hospitals. These systems can however be leveraged by spammers to mislead and manipulate the inexperienced customers with fake but well-disguised reviews (spams). To comprehensively protect customers and honest businesses, advanced spam detection techniques have been deployed. Nonetheless, intelligent spammers can still probe and then evolve to bypass the deployed detectors. This project investigates dynamic and robust countermeasures to defeat the evolving spammers. This research will allow regulatory agencies to enforce a more fair, transparent, and trustworthy online environment, encourage business owners to offer higher quality products and services rather than fake opinions, and ultimately, allow consumers to increasingly rely on the reputation systems confidently to save money, time and even lives.\r\n\r\nThe project will investigate the design of adaptive spam detection technologies and systems against intelligent spammers that learn to bypass static detectors. The investigation will follow two principles: (1) the goals and workings of the detectors and spammers can be sensed through their behaviors; (2) both parties should act dynamically to optimally defeat their opponents who co-adapt with the other's behaviors. Based on these principles, the researchers aim to: (i) investigate the footprint of dynamic spamming and formalize the gained insights into evasion models against static detectors; (ii) model the interactions between the evolving spammer and dynamic detections through deep reinforcement learning and Markov games; and (iii) introduce multiple cooperative spammers to inform more complex spammer-detector co-adaptations through multi-agent and hierarchical reinforcement learning. The research aims will be complemented by metrics and evaluations that capture realistic spammer and detector goals and constraints. The project will result in datasets, algorithms, and testbed system for the research community, and gamified educational software and materials to increase awareness of fake contents among a broader population.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Sihong",
+   "pi_last_name": "Xie",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sihong Xie",
+   "pi_email_addr": "six316@lehigh.edu",
+   "nsf_id": "000728918",
+   "pi_start_date": "2019-09-12",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Lehigh University",
+  "inst_street_address": "526 BRODHEAD AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "BETHLEHEM",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "6107583021",
+  "inst_zip_code": "180153008",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "PA07",
+  "org_lgl_bus_name": "LEHIGH UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "E13MDBKHLDB5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Lehigh University",
+  "perf_str_addr": "113 Research Drive",
+  "perf_city_name": "Bethlehem",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "180154731",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "PA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>Review websites and social media collect and aggregate opinions from billions of users. As the converged opinions reflect the wisdom of the crowd, many consumers rely on such platforms to find high quality products and services. Unfortunately, these sources are exploited by &ldquo;spammers&rdquo; to mislead consumers with fake but well-disguised opinionated contents (<em>Figure 1</em>). Existing methods have tried to address the detection of spams, but are less effective when the spammers can proactively learn about the detection mechanisms and dynamically reverse-engineer more stealthy spamming attacks to evade the current detection mechanisms. We address the challenge of understanding the scope and capability of such dynamic spamming and then design more advanced approaches that can adaptively sense and then detect the spammers.</span></p>\n<p><span>This project has demonstrated the feasibility and usefulness of sensing and adapting to the dynamic and proactive spammers&rsquo; strategy. The project first explored and revealed the weaknesses of static spam detectors in the face of dynamic spammers. It showed that certain detection mechanisms are invariant to the evolving spamming strategies, while some are more sensitive and can become less effective. The project studied the spammers&rsquo; capability of learning about a detector&rsquo;s inner mechanism through interacting with the detector (<em>Figure 2</em>). The findings of the study demonstrated the existence of active threats in which spammers actively seek to understand and exploit the detection mechanisms. The project then formulated a mathematical model to describe the co-evolution of spammers and detectors and to find a detection mechanism so that the spammers will have no motivation to change their attacking strategy, leading to a stable system.</span></p>\n<p><span>The project has broader impacts. Given the widely-spread misinformation about vaccination and presidential election, the detection of such misinformation is critical to help the well-beings of the nation. With the help of recent automatic text and image generation techniques, such as ChatGPT and DeepFake, the cost of generating misinformation is much reduced, while the cost of detecting misinformation has dramatically going up. The devised methods will be useful against such automatic and adaptive generation of fake contents. . The PIs have trained a total of five PhD students, including two females, through the project. Among them, three have already graduated. Several papers with undergraduates as leading authors are published.</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/02/2023<br>\n\t\t\t\t\tModified by: Sihong&nbsp;Xie</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2023/1931042/1931042_10641756_1685721876057_figure_2--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1931042/1931042_10641756_1685721876057_figure_2--rgov-800width.jpg\" title=\"Figure 2\"><img src=\"/por/images/Reports/POR/2023/1931042/1931042_10641756_1685721876057_figure_2--rgov-66x44.jpg\" alt=\"Figure 2\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Figure 2: spammers and detector interact and sense each other\ufffds strategy in a reputation system.</div>\n<div class=\"imageCredit\">By Sihong Xie</div>\n<div class=\"imagePermisssions\">Creative Commons</div>\n<div class=\"imageSubmitted\">Sihong&nbsp;Xie</div>\n<div class=\"imageTitle\">Figure 2</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2023/1931042/1931042_10641756_1685721836497_figure_1--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1931042/1931042_10641756_1685721836497_figure_1--rgov-800width.jpg\" title=\"Figure 1\"><img src=\"/por/images/Reports/POR/2023/1931042/1931042_10641756_1685721836497_figure_1--rgov-66x44.jpg\" alt=\"Figure 1\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Figure 1: spammers can publish spams to mislead online social media users. They also publish non-spams to camouflage their spams to escape the detection.</div>\n<div class=\"imageCredit\">By Sihong Xie</div>\n<div class=\"imagePermisssions\">Creative Commons</div>\n<div class=\"imageSubmitted\">Sihong&nbsp;Xie</div>\n<div class=\"imageTitle\">Figure 1</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nReview websites and social media collect and aggregate opinions from billions of users. As the converged opinions reflect the wisdom of the crowd, many consumers rely on such platforms to find high quality products and services. Unfortunately, these sources are exploited by \"spammers\" to mislead consumers with fake but well-disguised opinionated contents (Figure 1). Existing methods have tried to address the detection of spams, but are less effective when the spammers can proactively learn about the detection mechanisms and dynamically reverse-engineer more stealthy spamming attacks to evade the current detection mechanisms. We address the challenge of understanding the scope and capability of such dynamic spamming and then design more advanced approaches that can adaptively sense and then detect the spammers.\n\nThis project has demonstrated the feasibility and usefulness of sensing and adapting to the dynamic and proactive spammers\u2019 strategy. The project first explored and revealed the weaknesses of static spam detectors in the face of dynamic spammers. It showed that certain detection mechanisms are invariant to the evolving spamming strategies, while some are more sensitive and can become less effective. The project studied the spammers\u2019 capability of learning about a detector\u2019s inner mechanism through interacting with the detector (Figure 2). The findings of the study demonstrated the existence of active threats in which spammers actively seek to understand and exploit the detection mechanisms. The project then formulated a mathematical model to describe the co-evolution of spammers and detectors and to find a detection mechanism so that the spammers will have no motivation to change their attacking strategy, leading to a stable system.\n\nThe project has broader impacts. Given the widely-spread misinformation about vaccination and presidential election, the detection of such misinformation is critical to help the well-beings of the nation. With the help of recent automatic text and image generation techniques, such as ChatGPT and DeepFake, the cost of generating misinformation is much reduced, while the cost of detecting misinformation has dramatically going up. The devised methods will be useful against such automatic and adaptive generation of fake contents. . The PIs have trained a total of five PhD students, including two females, through the project. Among them, three have already graduated. Several papers with undergraduates as leading authors are published.\n\n \n\n\t\t\t\t\tLast Modified: 06/02/2023\n\n\t\t\t\t\tSubmitted by: Sihong Xie"
+ }
+}

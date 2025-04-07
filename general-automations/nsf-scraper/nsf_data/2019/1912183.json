@@ -1,0 +1,101 @@
+{
+ "awd_id": "1912183",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Implicit Multi-Scale Plasma Simulations Using Low Cost Matrix-Free Methods for Partial Differential Equations",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2019-08-01",
+ "awd_exp_date": "2023-07-31",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2019-07-30",
+ "awd_max_amd_letter_date": "2019-07-30",
+ "awd_abstract_narration": "The Carrington event of 1859 was a massive solar flair that hit the earth and left large amounts of charged particles trapped in the earth's magnetic field.  These charged particles created large currents that coupled to the telegraph wires via an inductive coupling, as what happens in transformers.   The currents that were pushed through the telegraph wires were so large they caused the telegraph machines to explode.  If this were to happen today, unless we know to turn off and disconnect the power grid, such an event would destroy modern power infrastructure. Yet solar flairs happen all the time, we can't simply turn off the power grid every time one happens.   From the time of detection, it takes 3 days for a solar flair to travel the distance to the earth.  Predicting if a solar flair will hit the earth is currently done with low resolution models, which are not particular good at predicting these events.  Increasing the accuracy to include more physics in the calculation leads to bigger calculations that simply can't be done in three days, even on modern super computers with state of the art methods.  This project centers on creating a new class of methods that could make these calculations possible.      \r\n\r\nOne way to begin to address the issues of simulating problems with a significant number of time scales is to use implicit solvers.   These typically lead to large systems of implicitly coupled equations.  The main bottleneck in scalable solvers for such systems is in the communication and large number of interactions that are needed to solve these systems.  In this project we are pursuing a new paradigm that solves coupled systems of non-linear PDEs, it is important to note that the pieces of the operators are typically linear.  We have developed a strategy of expanding these pieces of the operators as global convolutions that give unconditional stability when combined with explicit time stepping methods, but can be cheaply evaluated with three term recurrence relations and avoids iteration.  This approach has led to unconditionally stable solvers for problems such as degenerate advection diffusion or the Hamilton Jacobi equations.  Here we are working to extend these methods to systems of PDEs.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Andrew",
+   "pi_last_name": "Christlieb",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Andrew Christlieb",
+   "pi_email_addr": "christli@msu.edu",
+   "nsf_id": "000322671",
+   "pi_start_date": "2019-07-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Michigan State University",
+  "inst_street_address": "426 AUDITORIUM RD RM 2",
+  "inst_street_address_2": "",
+  "inst_city_name": "EAST LANSING",
+  "inst_state_code": "MI",
+  "inst_state_name": "Michigan",
+  "inst_phone_num": "5173555040",
+  "inst_zip_code": "488242600",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MI07",
+  "org_lgl_bus_name": "MICHIGAN STATE UNIVERSITY",
+  "org_prnt_uei_num": "VJKZC4D1JN36",
+  "org_uei_num": "R28EKN92ZTZ9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Michigan State University",
+  "perf_str_addr": "",
+  "perf_city_name": "East Lansing",
+  "perf_st_code": "MI",
+  "perf_st_name": "Michigan",
+  "perf_zip_code": "488242600",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MI07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Critical multi scale problems arise in the study of fusion energy.&nbsp;&nbsp;This has to do with the fact that particles within the system can have very fast dynamics that then cause evolution to the whole system that happens on a much slower time scale.&nbsp;&nbsp;Complicating this further is that there are cascade of scales from fine to coarse that cover 14 orders of magnitude in time and eight orders of magnitude in space. Developing models that describe these systems within a computer is really the only way to study the complex dynamics of these systems. The creation of such models relies on advanced numerical tools coming out of applied mathematics.&nbsp;&nbsp;This work seeks to create a new set of tools that have a series of key advantages for these multi scale problems.&nbsp;&nbsp;while the focus of the project was initially to look at fluid and plasma models, an important detour was taken to really consider the problem of boundary conditions, as all critical plasmas we use to do work here on earth are bounded, and understanding the interactions with the boundary conditions is essential.&nbsp;&nbsp;The majority of the time on this project was in training graduate students and postdocs who developed a new class of boundary condition methods for this novel technique that was being developed to handle multi scale problems.&nbsp;&nbsp;Future directions for this research involve extending this new class of approximations two critical fluid problems related to the study of fusion plasmas.&nbsp;&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 04/03/2024<br>\nModified by: Andrew&nbsp;Christlieb</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nCritical multi scale problems arise in the study of fusion energy.This has to do with the fact that particles within the system can have very fast dynamics that then cause evolution to the whole system that happens on a much slower time scale.Complicating this further is that there are cascade of scales from fine to coarse that cover 14 orders of magnitude in time and eight orders of magnitude in space. Developing models that describe these systems within a computer is really the only way to study the complex dynamics of these systems. The creation of such models relies on advanced numerical tools coming out of applied mathematics.This work seeks to create a new set of tools that have a series of key advantages for these multi scale problems.while the focus of the project was initially to look at fluid and plasma models, an important detour was taken to really consider the problem of boundary conditions, as all critical plasmas we use to do work here on earth are bounded, and understanding the interactions with the boundary conditions is essential.The majority of the time on this project was in training graduate students and postdocs who developed a new class of boundary condition methods for this novel technique that was being developed to handle multi scale problems.Future directions for this research involve extending this new class of approximations two critical fluid problems related to the study of fusion plasmas.\n\n\n\t\t\t\t\tLast Modified: 04/03/2024\n\n\t\t\t\t\tSubmitted by: AndrewChristlieb\n"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1145640",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CGV: EAGER: Simulation-Based Manipulation Capture for Dexterous Character Animation",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Lawrence Rosenblum",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2013-07-31",
+ "tot_intn_awd_amt": 81000.0,
+ "awd_amount": 81000.0,
+ "awd_min_amd_letter_date": "2011-08-06",
+ "awd_max_amd_letter_date": "2011-08-06",
+ "awd_abstract_narration": "Through our hands, we communicate, care for ourselves and others, and use tools to affect our world. However, our understanding of how we control our hands to accomplish such feats is still in its infancy.  Dexterous manipulation is especially challenging to study, as even \"simple\" manipulation tasks are complex in their details.  The task of lifting a wrench into the hand, for example, can be decomposed into five separate actions, each of which may require a specialized control strategy.  It is important to study human examples of such activities; through understanding human expertise we can reach practical outcomes such as physically intelligent animated characters for training and remote communication, robots capable of unprecedented dexterity, and prosthetic designs that far exceed the current state of the art in their elegance and functionality.\r\n\r\nThe key hurdle in making a significant advance in these areas is the difficulty of capturing human manipulation in a form that facilitates analysis and study.  The rapid sequence of contact events, the hand's large number of degrees of freedom, and close contact between the hand and object all contribute to creating an impossible capture task using traditional methods.  The investigators are developing an alternative: simulation motion capture, where a user interacts with and guides a running simulation. Through this innovative approach, details such as contact timing, contact area, and contact forces are made available for the first time for general manipulation tasks.  Key innovations include a fast simulation system for a deformable human hand (or full body) and novel techniques to control such a high degree of freedom simulation with intent and precision.  In parallel, the investigators create a database of manipulation tasks, study new languages for action segmentation and control law development, develop robust autonomous controllers for grasping and manipulation, and study novel classifiers for recognition of affordances.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Nancy",
+   "pi_last_name": "Pollard",
+   "pi_mid_init": "S",
+   "pi_sufx_name": "",
+   "pi_full_name": "Nancy S Pollard",
+   "pi_email_addr": "nsp@cs.cmu.edu",
+   "nsf_id": "000271462",
+   "pi_start_date": "2011-08-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Carnegie-Mellon University",
+  "inst_street_address": "5000 FORBES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4122688746",
+  "inst_zip_code": "152133815",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "CARNEGIE MELLON UNIVERSITY",
+  "org_prnt_uei_num": "U3NKNFLNQ613",
+  "org_uei_num": "U3NKNFLNQ613"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Carnegie-Mellon University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152133890",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "745300",
+   "pgm_ele_name": "GRAPHICS & VISUALIZATION"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7453",
+   "pgm_ref_txt": "GRAPHICS & VISUALIZATION"
+  },
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 81000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this project was to investigate new strategies for capturing the motion of the human hand during grasping and manipulation.&nbsp;&nbsp;&nbsp; Motions involving interactions with objects and the environment using our hands are traditionally very difficult to capture due to the complexity of the human hand, the complexity of the motions that may be involved, and the fact that parts of the hand and points of interaction are often obscured from view and otherwise difficult to measure.&nbsp; Yet, capturing and understanding grasping and manipulation is extremely important for creating animated characters that can interact with objects in a convincing manner as needed for applications such as training and educational virtual environments.</p>\n<p>Our solution to this problem was to develop a fast simulation system for capturing physics based motions and interactions in real-time.&nbsp;&nbsp; Some advantages of capturing motions in simulation are the ability to go back and restart from any point in order to improve results, and the availability of detailed information about contact points and contact forces throughout task execution.</p>\n<p>Three primary project outcomes will be highlighted.&nbsp;&nbsp; First, we have developed a protytpe system for capturing hand motions that is supported by a novel real-time simulation system.&nbsp; Snapshots from our system can be seen in Figure 1.</p>\n<p>Second, we have created a novel interface for driving the simulation (or a real robot) from a touch screen device such as the iPad (Figure 2).&nbsp; We find that a touchscreen interface can be a surprisingly successful capture device.&nbsp;&nbsp; Tracking the fingertips is a powerful mechanism for controlling tabletop manipulations, overhead grasps, and other interactions where the active fingers are nearly planar.</p>\n<p>Third, we have found that understanding the physics of object behavior is critical for being able to accurately predict the success of actions such as grasping.&nbsp;&nbsp; This finding is important for any application where real-world actions are considered and planned in advance.</p>\n<p>The ability to capture grasping and manipulation motions in a fast, inexpensive, and reliable manner has implications beyond character animation.&nbsp; For example, our findings can be useful in control and design of dexterous robots, and for improving our understanding of human dexterity.&nbsp; Our results have already been applied to controlling robots with dexterous hands (Figure 2) and to the development of successful planners for robotic grasping (Figure 3).</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/06/2013<br>\n\t\t\t\t\tModified by: Nancy&nbsp;S&nbsp;Pollard</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2013/1145640/1145640_10118217_1378499363855_handSim--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2013/1145640/1145640_10118217_1378499363855_handSim--rgov-800width.jpg\" title=\"Real-time Hand Simulation System\"><img src=\"/por/images/Reports/POR/2013/1145640/1145640_10118217_1378499363855_handSim--rgov-66x44.jpg\" alt=\"Real-time Hand Simulation System\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Our hand simulation system is supported by a fast, novel deformable object simulator.</div>\n<div class=\"imageCredit\">Junggon Kim and Nancy Pollard</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Nancy&nbsp;S&nbsp;Pollard</div>\n<div ...",
+  "por_txt_cntn": "\nThe goal of this project was to investigate new strategies for capturing the motion of the human hand during grasping and manipulation.    Motions involving interactions with objects and the environment using our hands are traditionally very difficult to capture due to the complexity of the human hand, the complexity of the motions that may be involved, and the fact that parts of the hand and points of interaction are often obscured from view and otherwise difficult to measure.  Yet, capturing and understanding grasping and manipulation is extremely important for creating animated characters that can interact with objects in a convincing manner as needed for applications such as training and educational virtual environments.\n\nOur solution to this problem was to develop a fast simulation system for capturing physics based motions and interactions in real-time.   Some advantages of capturing motions in simulation are the ability to go back and restart from any point in order to improve results, and the availability of detailed information about contact points and contact forces throughout task execution.\n\nThree primary project outcomes will be highlighted.   First, we have developed a protytpe system for capturing hand motions that is supported by a novel real-time simulation system.  Snapshots from our system can be seen in Figure 1.\n\nSecond, we have created a novel interface for driving the simulation (or a real robot) from a touch screen device such as the iPad (Figure 2).  We find that a touchscreen interface can be a surprisingly successful capture device.   Tracking the fingertips is a powerful mechanism for controlling tabletop manipulations, overhead grasps, and other interactions where the active fingers are nearly planar.\n\nThird, we have found that understanding the physics of object behavior is critical for being able to accurately predict the success of actions such as grasping.   This finding is important for any application where real-world actions are considered and planned in advance.\n\nThe ability to capture grasping and manipulation motions in a fast, inexpensive, and reliable manner has implications beyond character animation.  For example, our findings can be useful in control and design of dexterous robots, and for improving our understanding of human dexterity.  Our results have already been applied to controlling robots with dexterous hands (Figure 2) and to the development of successful planners for robotic grasping (Figure 3).\n\n\t\t\t\t\tLast Modified: 09/06/2013\n\n\t\t\t\t\tSubmitted by: Nancy S Pollard"
+ }
+}

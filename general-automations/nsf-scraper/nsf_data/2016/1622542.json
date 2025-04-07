@@ -1,0 +1,105 @@
+{
+ "awd_id": "1622542",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SCH: INT: Collaborative Research: Assistive Integrative Support Tool for Retinopathy of Prematurity",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032927347",
+ "po_email": "sspengle@nsf.gov",
+ "po_sign_block_name": "Sylvia Spengler",
+ "awd_eff_date": "2016-10-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 688207.0,
+ "awd_amount": 688207.0,
+ "awd_min_amd_letter_date": "2016-07-27",
+ "awd_max_amd_letter_date": "2016-07-27",
+ "awd_abstract_narration": "Retinopathy of prematurity (ROP) is a leading cause of childhood visual loss worldwide, and the social burdens of infancy-acquired blindness are enormous. Early diagnosis is critically important for successful treatment, and can prevent most cases of blindness. However, lack of access to expert medical diagnosis and care, especially in rural areas, remains a growing healthcare challenge. In addition, clinical expertise in ROP is lacking, and medical professionals are struggling to meet the increasing need for ROP care. As point-of-care technologies for diagnosis and intervention are rapidly expanding, the potential ability to assess ROP severity from any location with an internet connection and a camera, even without immediate ophthalmologic consultation available, could significantly improve delivery of ROP care by identifying infants who are in most urgent need for referral and treatment. This would dramatically reduce the incidence of blindness without a proportionate increase in the need for human resources, which take many years to develop.\r\n\r\nThis project develops a prototype assistive integrative support tool for ROP, featuring a modular design comprising: (a) image analysis, (b) information fusion of clinical, imaging, and diagnostic data, and (c) generative probabilistic and regression models with associated computationally efficient machine learning algorithms. The outcomes of the project include disease severity metrics and diagnostic estimates obtained through clinical evidence classifiers trained jointly over expert-generated labels. These labels consist of discrete diagnostic labels, as well as comparison outcomes of relative severity between pairs of images. Random process models for vessel tortuosity and diameter distributions over the retina, as well as patch-based vessel-free image analysis through the use of convolutional neural networks on the entire image, enhance and augment feature extraction. Moreover, incorporating severity comparison outcomes through novel hard and soft constraint methods force inferred severity to agree with ordinal information provided by experts and address inherent uncertainty in expert ground-truth labels. The above severity inference methods are evaluated and fine-tuned over a broad array of generative models, both through retrospective analysis, including cross-validation, longitudinal tests, and tests across multiple sites, as well as through prospective analysis, evaluating its real-world clinical impact.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jayashree",
+   "pi_last_name": "Kalpathy-Cramer",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jayashree Kalpathy-Cramer",
+   "pi_email_addr": "kalpathy@nmr.mgh.harvard.edu",
+   "nsf_id": "000561874",
+   "pi_start_date": "2016-07-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Massachusetts General Hospital",
+  "inst_street_address": "55 FRUIT ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "BOSTON",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "8572821670",
+  "inst_zip_code": "021142621",
+  "inst_country_name": "United States",
+  "cong_dist_code": "08",
+  "st_cong_dist_code": "MA08",
+  "org_lgl_bus_name": "THE GENERAL HOSPITAL CORPORATION",
+  "org_prnt_uei_num": "PGUMBTK4AM35",
+  "org_uei_num": "FLJ7DQKLL226"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Massachusetts General Hospital",
+  "perf_str_addr": "",
+  "perf_city_name": "Boston",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021140001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "08",
+  "perf_st_cong_dist": "MA08",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "801800",
+   "pgm_ele_name": "Smart and Connected Health"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8018",
+   "pgm_ref_txt": "Smart and Connected Health"
+  },
+  {
+   "pgm_ref_code": "8062",
+   "pgm_ref_txt": "SCH Type II: INT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 688207.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Over the past 5 years, we have explored the use of deep neural networks for retinal vessel segmentation and direct classification of retinal images into three categories (plus, preplus, normal) using absolute labels (with the consensus label of five experts as target). We created a probabilistic model (based on linear logistic classifier parametrization) for learning from both absolute and comparison labels, transition of this model to use neural networks in the next iteration, active learning algorithms, tracing, segmentation &amp; feature extraction, as well as continuous-valued disease severity assessment in concordance with classification and comparison labels. We conducted analysis of automatically learned features (as opposed to extraction of features from manually segmented vessels) using occlusion and t-SNE embedding. We then tracked the disease over time in patient cohorts using a simple severity score. We ultimately developed a fully-automated disease severity assessment system for ROP diagnosis using convolutional neural networks (&ldquo;deep learning&rdquo;). This was developed and validated using the entire data set of images, for which we have developed rigorous reference standards using previously-published methods (Ryan et al, 2014). We have developed a convolutional neural network for detecting image quality which had AUC 0.960 for classifying &ldquo;acceptable quality&rdquo; images vs &ldquo;not acceptable&rdquo; images. For real-world use, it is important to balance imageability (percent of images acceptable for analysis) with diagnostic performance (sensitivity and specificity). We have explored methods of automated view detection, montaging images for analysis of larger fields of view, impact of the individual photographer, and impact of image field of view on quality and diagnosis. We utilized deep learning methods to examine clinically-relevant factors involving disease progression (e.g. how to identify infants at risk for progression, how to quantify these changes, how to identify improvement post-treatment for severe ROP, whether there is quantitative evidence that infants treated with different methods improve at different rates). We developed and validated a quantitative ROP vascular severity scale (1-9) to examine clinically-relevant factors involving disease progression (e.g. how to identify infants at risk for progression, how to quantify these changes, how to identify improvement post-treatment for severe ROP, whether there is quantitative evidence that infants treated with different methods improve at different rates) and disease regression after treatment (e.g. how to recognize improvement, how to identify deviation from expected improvement after treatment).</p>\n<p>On the technical front, we developed methods for learning to rank from pairwise comparison. Utilizing Siamese neural network, we demonstrated the ability to learn ranking of disease severity from a small number of images. We also developed methods for semi-supervised learning that allowed us to reduce the annotation burden required for deep learning.</p>\n<p>We completed FDA pre-submission paperwork for approval as an assistive medical device and recently have been granted designation as a Breakthrough Device for our proposed intended use by trained health care providers in infants who are currently undergoing screening examination for ROP. Real-world adoption of these systems is limited because there has never been prospective validation of an artificial intelligence system for ROP and because of challenges in automatically identifying images of adequate diagnostic quality. We have continued to prospectively recruit subjects and obtain images during routine ROP exams and these are entered into the system to produce a quantitative ROP vascular severity score (1-9). These scores are then compared with a reference standard diagnosis (based on clinical exam diagnosis and remote image diagnosis from multiple ROP experts). We are currently comparing the prospectively gathered images with international image data sets and demonstrating high sensitivity not just for the detection of plus disease, but for any baby with treatment-requiring disease in a real-world ROP screening population with the aim of eventually being able to detect predictive features of severe ROP in infants.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/24/2021<br>\n\t\t\t\t\tModified by: Jayashree&nbsp;Kalpathy-Cramer</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOver the past 5 years, we have explored the use of deep neural networks for retinal vessel segmentation and direct classification of retinal images into three categories (plus, preplus, normal) using absolute labels (with the consensus label of five experts as target). We created a probabilistic model (based on linear logistic classifier parametrization) for learning from both absolute and comparison labels, transition of this model to use neural networks in the next iteration, active learning algorithms, tracing, segmentation &amp; feature extraction, as well as continuous-valued disease severity assessment in concordance with classification and comparison labels. We conducted analysis of automatically learned features (as opposed to extraction of features from manually segmented vessels) using occlusion and t-SNE embedding. We then tracked the disease over time in patient cohorts using a simple severity score. We ultimately developed a fully-automated disease severity assessment system for ROP diagnosis using convolutional neural networks (\"deep learning\"). This was developed and validated using the entire data set of images, for which we have developed rigorous reference standards using previously-published methods (Ryan et al, 2014). We have developed a convolutional neural network for detecting image quality which had AUC 0.960 for classifying \"acceptable quality\" images vs \"not acceptable\" images. For real-world use, it is important to balance imageability (percent of images acceptable for analysis) with diagnostic performance (sensitivity and specificity). We have explored methods of automated view detection, montaging images for analysis of larger fields of view, impact of the individual photographer, and impact of image field of view on quality and diagnosis. We utilized deep learning methods to examine clinically-relevant factors involving disease progression (e.g. how to identify infants at risk for progression, how to quantify these changes, how to identify improvement post-treatment for severe ROP, whether there is quantitative evidence that infants treated with different methods improve at different rates). We developed and validated a quantitative ROP vascular severity scale (1-9) to examine clinically-relevant factors involving disease progression (e.g. how to identify infants at risk for progression, how to quantify these changes, how to identify improvement post-treatment for severe ROP, whether there is quantitative evidence that infants treated with different methods improve at different rates) and disease regression after treatment (e.g. how to recognize improvement, how to identify deviation from expected improvement after treatment).\n\nOn the technical front, we developed methods for learning to rank from pairwise comparison. Utilizing Siamese neural network, we demonstrated the ability to learn ranking of disease severity from a small number of images. We also developed methods for semi-supervised learning that allowed us to reduce the annotation burden required for deep learning.\n\nWe completed FDA pre-submission paperwork for approval as an assistive medical device and recently have been granted designation as a Breakthrough Device for our proposed intended use by trained health care providers in infants who are currently undergoing screening examination for ROP. Real-world adoption of these systems is limited because there has never been prospective validation of an artificial intelligence system for ROP and because of challenges in automatically identifying images of adequate diagnostic quality. We have continued to prospectively recruit subjects and obtain images during routine ROP exams and these are entered into the system to produce a quantitative ROP vascular severity score (1-9). These scores are then compared with a reference standard diagnosis (based on clinical exam diagnosis and remote image diagnosis from multiple ROP experts). We are currently comparing the prospectively gathered images with international image data sets and demonstrating high sensitivity not just for the detection of plus disease, but for any baby with treatment-requiring disease in a real-world ROP screening population with the aim of eventually being able to detect predictive features of severe ROP in infants.\n\n \n\n\t\t\t\t\tLast Modified: 12/24/2021\n\n\t\t\t\t\tSubmitted by: Jayashree Kalpathy-Cramer"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1618159",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "III: Small: Matching and Ranking via Proximity Graphs: Applications to Question Answering and Beyond",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032927347",
+ "po_email": "sspengle@nsf.gov",
+ "po_sign_block_name": "Sylvia Spengler",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2019-08-31",
+ "tot_intn_awd_amt": 498491.0,
+ "awd_amount": 498491.0,
+ "awd_min_amd_letter_date": "2016-09-06",
+ "awd_max_amd_letter_date": "2016-09-06",
+ "awd_abstract_narration": "This project will explore novel alternatives to a classic term-based full-text search, which is one of the most widely used computer algorithms. The current full-text search approaches heavily rely on memorizing which words and phrases appear in which text documents. The proposed research, in contrast, will examine methods that deviate from this well-studied path by using more generic similarity search methods. In doing so, the proposed research will pursue the following two objectives: (1) mitigating limitations of the existing approaches such as the mismatch between words that appear in queries and documents; and (2) developing approaches that permit an efficient separation of labor between data scientists and designers of retrieval algorithms. The latter would allow data scientists to focus on development of effective similarity models without worrying too much about low-level performance issues, while designers of retrieval algorithms and software engineers will be able to focus on development of more efficient and/or scalable approaches having fewer concerns about quality of results.\r\n\r\nThe proposed research will investigate at least two scenarios where a term-based full-text search is replaced with a more generic high-accuracy k-nearest (k-NN) neighbor search. In the first scenario, it will develop a similarity function that goes beyond pure lexical matching and takes into account distributional similarity, similarity learned from a parallel (monolingual) corpus, and so on. In this scenario, the similarity function will be used as a black-box function coupled with a generic similarity search engine, implemented as a part of the Non-Metric Space Library (NMSLIB). Several search algorithms will be explored. One of the search approaches will rely on building a proximity graph (also known as a neighborhood graph), where nodes are objects and similar nodes are connected by edges. In the second scenario, the proposed research will build a pseudo inverted file over super terms. Super terms are (dense or sparse) vectorial representations of words appearing within a sliding window of small size. The super terms form a pseudo-vocabulary that can be indexed using a proximity graph (or any other efficient k-NN search method). At query time, the super terms will be extracted from the query and matched against the pseudo-vocabulary to obtain k nearest super terms (as well as documents where they occur). This approach will incorporate term proximity and term similarity (the latter will make the approach less affected by the vocabulary mismatch). Because preliminary experiments demonstrated that proximity graphs are not sufficiently accurate and efficient for the task in hand, the proposed research will also attempt to develop better variants of the proximity graphs methods. Should such an improvement fail, alternative search methods will also be explored. Experimental insights, algorithmic improvements, and new challenging datasets (resulting from the proposed work) will advance the state of the art in k-NN search, which is another widely used method. This, in turn, will benefit a variety of other NLP tasks such as classification, dictionary-based entity detection, and first story detection, which all heavily relying on the k-NN search. Additional project information will be made available at the project website: http://www.lti.cs.cmu.edu/PGraph",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Eric",
+   "pi_last_name": "Nyberg",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Eric Nyberg",
+   "pi_email_addr": "ehn@cs.cmu.edu",
+   "nsf_id": "000095073",
+   "pi_start_date": "2016-09-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Carnegie-Mellon University",
+  "inst_street_address": "5000 FORBES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4122688746",
+  "inst_zip_code": "152133815",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "CARNEGIE MELLON UNIVERSITY",
+  "org_prnt_uei_num": "U3NKNFLNQ613",
+  "org_uei_num": "U3NKNFLNQ613"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Carnegie Mellon University",
+  "perf_str_addr": "5000 Forbes Ave",
+  "perf_city_name": "Pittsburgh",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152133815",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736400",
+   "pgm_ele_name": "Info Integration & Informatics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 498491.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-cac8ccca-7fff-dfc4-27fe-fa26fb08190c\">\n<p dir=\"ltr\"><span>The goal of the project is to develop next-generation retrieval methods and tools for question-answering and information retrieval, which apply k-NN search to hybrid document representations. These devices can replace or complement existing full-text retrieval techniques based on inverted files. We implement a proof-of-concept system that demonstrates the feasibility of this approach, which is based on the classic IBM Model-1 translation approach. We observe that the loss of accuracy due to the approximate nature of k-NN search is potentially a limiting factor in applying such techniques. Furthermore, we experimented with several neural representations, but have not yet obtained conclusive evidence with respect to their effectiveness. Despite demonstrating practicality of k-NN search in a text retrieval domain, we note that it is not yet clear if k-NN search can find many substantially different results compared to a classic term-based retrieval pipeline (with re-ranking).&nbsp;</span></p>\n<br />\n<p dir=\"ltr\"><span>A broader impact of our work consists in helping develop and evaluate efficient methods for k-NN search, which can work for a variety of hard dissimilarities and distances including the Euclidean distance, the inner product, and even substantially non-symmetric dissimilarities such as Renyi- or KL-divergence.&nbsp;</span></p>\n<br /><span>The grant helped maintain and develop two open-source libraries: NMSLIB (</span><a href=\"https://github.com/nmslib/nmslib\"><span>https://github.com/nmslib/nmslib</span></a><span>) and knn4qa (</span><a href=\"https://github.com/oaqa/knn4qa\"><span>https://github.com/oaqa/knn4qa</span></a><span>). NMSLIB is an efficient and generic k-NN search library. knn4qa is a flexible and modular retrieval toolkit capable of searching for mixed dense-sparse representations with the help of NMSLIB.</span></span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/16/2020<br>\n\t\t\t\t\tModified by: Eric&nbsp;Nyberg</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\nThe goal of the project is to develop next-generation retrieval methods and tools for question-answering and information retrieval, which apply k-NN search to hybrid document representations. These devices can replace or complement existing full-text retrieval techniques based on inverted files. We implement a proof-of-concept system that demonstrates the feasibility of this approach, which is based on the classic IBM Model-1 translation approach. We observe that the loss of accuracy due to the approximate nature of k-NN search is potentially a limiting factor in applying such techniques. Furthermore, we experimented with several neural representations, but have not yet obtained conclusive evidence with respect to their effectiveness. Despite demonstrating practicality of k-NN search in a text retrieval domain, we note that it is not yet clear if k-NN search can find many substantially different results compared to a classic term-based retrieval pipeline (with re-ranking). \n\n\nA broader impact of our work consists in helping develop and evaluate efficient methods for k-NN search, which can work for a variety of hard dissimilarities and distances including the Euclidean distance, the inner product, and even substantially non-symmetric dissimilarities such as Renyi- or KL-divergence. \n\nThe grant helped maintain and develop two open-source libraries: NMSLIB (https://github.com/nmslib/nmslib) and knn4qa (https://github.com/oaqa/knn4qa). NMSLIB is an efficient and generic k-NN search library. knn4qa is a flexible and modular retrieval toolkit capable of searching for mixed dense-sparse representations with the help of NMSLIB.\n\n \n\n\t\t\t\t\tLast Modified: 06/16/2020\n\n\t\t\t\t\tSubmitted by: Eric Nyberg"
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "awd_id": "1566403",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: CSR: Efficient and Available Replication in Large-scale Datacenters",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2016-04-01",
+ "awd_exp_date": "2018-12-31",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 175000.0,
+ "awd_min_amd_letter_date": "2016-01-08",
+ "awd_max_amd_letter_date": "2016-01-08",
+ "awd_abstract_narration": "Replication is widely used in the IT industry to protect users' data against various kinds of errors, such as power loss, disk corruption, and network partition. It is generally the case that we need to pay a higher cost for stronger replication protocols that can tolerate more kinds of errors. This presents a challenging trade-off to developers who will sometimes choose to use weaker forms of replication, willing to take the risk of occasional data loss in exchange for low cost. This project presents how to reduce the cost of Paxos, a popular strong replication protocol in today's data centers, while preserving its other properties.\r\n\r\nWhile this topic has already drawn a continuous effort in academia, existing approaches usually give up certain useful properties of Paxos, such as availability, presenting a different but equally hard question to the developers. This work presents ThriftyPaxos, a replication protocol that can achieve the same properties as Paxos with lower cost. To reduce cost, ThriftyPaxos incorporates the idea of on-demand instantiation, which activates the minimal number of replicas when there are no failures, and activates backup replicas when the active ones fail. To solve the key limitation of on-demand instantiation, that the system is unavailable when the backup is rebuilding its state, ThriftyPaxos incorporates the idea of delayed recovery, which allows the system to proceed while recovering a backup replica in the background. Such design is motivated by the observation that when acceptors and learners, the two key components of Paxos, are decoupled, it is possible to design separate mechanisms to delay their recovery without blocking the system.\r\n\r\nA cheaper Paxos protocol will be appealing to both existing Paxos users and to those who are still using weaker protocols, because they will not have  the same type of difficult choice between data consistency and cost. To realize such impact, the PI will apply ThriftyPaxos to popular open-source software, as well as publishing the source code of ThriftyPaxos.  This project has impact to education as well.  The code will be converted for use in a course project so that graduate and undergraduate students can build a similar system with reasonable effort in a course project.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Yang",
+   "pi_last_name": "Wang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yang Wang",
+   "pi_email_addr": "wang.7564@osu.edu",
+   "nsf_id": "000689394",
+   "pi_start_date": "2016-01-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Ohio State University",
+  "inst_street_address": "1960 KENNY RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLUMBUS",
+  "inst_state_code": "OH",
+  "inst_state_name": "Ohio",
+  "inst_phone_num": "6146888735",
+  "inst_zip_code": "432101016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "OH03",
+  "org_lgl_bus_name": "OHIO STATE UNIVERSITY, THE",
+  "org_prnt_uei_num": "MN4MDDMN8529",
+  "org_uei_num": "DLWBSLWAJWR1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Ohio State University",
+  "perf_str_addr": "2015 Neil Avenue",
+  "perf_city_name": "Columbus",
+  "perf_st_code": "OH",
+  "perf_st_name": "Ohio",
+  "perf_zip_code": "432101277",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "OH03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 175000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p id=\"docs-internal-guid-385607da-7fff-02a8-43c9-3738f4bec5c1\" style=\"line-height: 1.2; margin-top: 4.5pt; margin-bottom: 4.5pt; margin-right: 4.5pt;\" dir=\"ltr\"><span style=\"font-size: 12pt; font-family: Arial; color: #000000; background-color: #ffffff; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">Computers can fail for various reasons such as power outage, bit flip, and hurricane. To protect data and keep the system available despite such failures, today&rsquo;s major data services replicate data across different machines and even across different data centers. Replication protocols play a critical role in such infrastructures as they largely determine the cost and the correctness guarantees of the whole system: simple protocols like Primary Backup have a low cost (f+1 replicas to tolerate f failures) but can only tolerate crash failures; more sophisticated protocols like Paxos and BFT can tolerate more kinds of failures, such as timing errors and data corruption, but they usually have a higher cost. Such trade-off between cost and correctness properties creates a painful choice for administrators.</span></p>\n<p style=\"line-height: 1.2; margin-top: 4.5pt; margin-bottom: 4.5pt; margin-right: 4.5pt;\" dir=\"ltr\"><span style=\"font-size: 12pt; font-family: Arial; color: #000000; background-color: #ffffff; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">To alleviate such trade-off, this project tries to enhance existing protocols to either improve their correctness properties or reduce their cost: 1) we have shown that for a variety of Paxos and BFT protocols, we can reduce their required number of replicas without hurting their correctness or availability properties; 2) we have shown that for Primary Backup protocols, we can enhance them to tolerate a subset of timing errors with operating system support---typically we need expensive protocols like Paxos to tolerate timing errors; 3) we have developed tools to analyze the bottleneck in the implementation of existing replication protocols. With its help, we were able to improve the throughput of popular replication protocols by up to 4.8x. More importantly, through these works, we have identified a number of principles to guide the design and implementation of replication protocols.</span></p>\n<p style=\"line-height: 1.2; margin-top: 4.5pt; margin-bottom: 4.5pt; margin-right: 4.5pt;\" dir=\"ltr\"><span style=\"font-size: 12pt; font-family: Arial; color: #000000; background-color: #ffffff; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">We have disseminated the results through publications in major system conferences (OSDI, USENIX ATC) and have published all source code on github. This project has helped the PI to develop materials for &ldquo;Advanced Operating Systems&rdquo;, one of the foundational courses for CS graduate students. This project has contributed to the professional development of four Ph.D., one master, two undergraduate, and two K-12 students.</span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/18/2019<br>\n\t\t\t\t\tModified by: Yang&nbsp;Wang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "Computers can fail for various reasons such as power outage, bit flip, and hurricane. To protect data and keep the system available despite such failures, today?s major data services replicate data across different machines and even across different data centers. Replication protocols play a critical role in such infrastructures as they largely determine the cost and the correctness guarantees of the whole system: simple protocols like Primary Backup have a low cost (f+1 replicas to tolerate f failures) but can only tolerate crash failures; more sophisticated protocols like Paxos and BFT can tolerate more kinds of failures, such as timing errors and data corruption, but they usually have a higher cost. Such trade-off between cost and correctness properties creates a painful choice for administrators.\nTo alleviate such trade-off, this project tries to enhance existing protocols to either improve their correctness properties or reduce their cost: 1) we have shown that for a variety of Paxos and BFT protocols, we can reduce their required number of replicas without hurting their correctness or availability properties; 2) we have shown that for Primary Backup protocols, we can enhance them to tolerate a subset of timing errors with operating system support---typically we need expensive protocols like Paxos to tolerate timing errors; 3) we have developed tools to analyze the bottleneck in the implementation of existing replication protocols. With its help, we were able to improve the throughput of popular replication protocols by up to 4.8x. More importantly, through these works, we have identified a number of principles to guide the design and implementation of replication protocols.\nWe have disseminated the results through publications in major system conferences (OSDI, USENIX ATC) and have published all source code on github. This project has helped the PI to develop materials for \"Advanced Operating Systems\", one of the foundational courses for CS graduate students. This project has contributed to the professional development of four Ph.D., one master, two undergraduate, and two K-12 students.\n\n\t\t\t\t\tLast Modified: 03/18/2019\n\n\t\t\t\t\tSubmitted by: Yang Wang"
+ }
+}

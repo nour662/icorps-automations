@@ -1,0 +1,129 @@
+{
+ "awd_id": "1717392",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: STARSS: Small: iPROBE - An Internal Shielding Approach for Protecting against Frontside and Backside Probing Attacks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Jeremy Epstein",
+ "awd_eff_date": "2017-08-15",
+ "awd_exp_date": "2022-07-31",
+ "tot_intn_awd_amt": 293333.0,
+ "awd_amount": 293333.0,
+ "awd_min_amd_letter_date": "2017-07-18",
+ "awd_max_amd_letter_date": "2017-07-18",
+ "awd_abstract_narration": "With the proliferation of electronics into every day life, integrated circuits (ICs) process and store more sensitive information than ever before. The extraction of on-chip assets, such as keys, firmware, personal and information, threatens state-of-the-art military technologies, commercial industries, and society alike through counterfeiting, theft, fraud, development of exploits, and much more. Although protection against software and non-invasive methods of extraction has been widely investigated, physical probing has received little attention. In particular, Focused Ion Beam (FIB) is a powerful tool that allows attackers to not only to access and probe assets, but to destroy and/or bypass existing countermeasures. Since FIB capabilities are almost limitless, the best approaches should make probing as costly, time consuming, and frustrating as possible. However, a significant barrier in doing so lies in the fact that the time, effort, and cost to design a FIB-resistant chip must remain reasonable, especially to designers who are not security experts. \r\n\r\nThis project investigates iPROBE, the first ever computer-aided design (CAD) approach aimed at hindering frontside and backside probing attacks on integrated circuits. As a CAD solution, iPROBE relieves the designer's burden by automatically balancing the security and overhead of various countermeasures. Compared to ad hoc countermeasures such as top level meshes, it also allows protection to be concentrated on only the most sensitive portions of a design, thereby lowering cost. iPROBE takes design assets as input, and uses information-theoretic and test-inspired metrics to identify all nets requiring protection. During physical design, nets are ranked in terms of their sensitivity and vulnerability to probing. Internal shields are constructed using existing functional nets as well as additional test nets to surround the highest ranked nets. Cutting through the functional nets ideally renders the chip useless or destroys the sensitive data. Similarly, cutting through test nets can be detected and used to trigger self-destruction. t-private circuits and other countermeasures are integrated with the internal shield to further increase attack complexity. For evaluation, benchmark circuits are implemented with conventional flows and with iPROBE. Area, power, and timing between the two are compared to estimate the iPROBE's impact on performance. Security is evaluated using a custom-built IC probing evaluation tool previously developed by the PIs (with upgrades for backside attack evaluation) and using FIBs in the PIs' lab to execute real attacks on iPROBE-designed chips that are fabricated through MOSIS.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Domenic",
+   "pi_last_name": "Forte",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Domenic Forte",
+   "pi_email_addr": "dforte@ece.ufl.edu",
+   "nsf_id": "000663973",
+   "pi_start_date": "2017-07-18",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Mark",
+   "pi_last_name": "Tehranipoor",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mark Tehranipoor",
+   "pi_email_addr": "tehranipoor@ece.ufl.edu",
+   "nsf_id": "000069461",
+   "pi_start_date": "2017-07-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Florida",
+  "inst_street_address": "1523 UNION RD RM 207",
+  "inst_street_address_2": "",
+  "inst_city_name": "GAINESVILLE",
+  "inst_state_code": "FL",
+  "inst_state_name": "Florida",
+  "inst_phone_num": "3523923516",
+  "inst_zip_code": "326111941",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "FL03",
+  "org_lgl_bus_name": "UNIVERSITY OF FLORIDA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NNFQH1JAPEP3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Florida",
+  "perf_str_addr": "1 University of Florida",
+  "perf_city_name": "Gainesville",
+  "perf_st_code": "FL",
+  "perf_st_name": "Florida",
+  "perf_zip_code": "326112002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "FL03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "021Z",
+   "pgm_ref_txt": "Industry Partnerships"
+  },
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "8225",
+   "pgm_ref_txt": "SaTC Special Projects"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 293333.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>With the proliferation of electronics into everyday life, integrated circuit (IC) chips process and store more sensitive information than ever before. The extraction of on-chip assets, such as keys, firmware, and personal information, threatens state-of-the-art military technologies, commercial industries, and society alike through counterfeiting, theft, fraud, development of exploits, and much more. Although protection against software and non-invasive methods of extraction has been widely investigated, physical probing has received little to no attention. In particular, focused ion beam (FIB) is a powerful chip editing tool that allows attackers to not only to access and probe assets, but to destroy and/or bypass existing countermeasures. Since FIB capabilities are almost limitless, the best approaches should make probing as costly, time consuming, and frustrating as possible. However, a significant barrier in doing so lies in the fact that the time, manual effort, and cost to design a FIB-resistant chip must remain reasonable, especially to designers who are not security experts.</p>\n<p>In this project, we have systematically dealt with the above challenges and developed the first ever computer-aided design (CAD) suite, called iPROBE. As a CAD solution, iPROBE relieves a chip designer's burden by assessing a chip layout's susceptibility to FIB-based probing, identifying wires carrying sensitive data, and automatically refashioning the layout to reduce susceptibility. Major outcomes of this project included: <strong>(1)</strong> <strong>Automated Anti-Probing Physical Design Flow: </strong>iPROBE automatically creates an internal \"shield\" out of existing wires in the chip design and reroutes them to surround sensitive \"target\" wires in its layout. In addition, shield monitoring circuits are created in the design/layout so that FIB editing of the shield can be detected. iPROBE was demonstrated to be capable of handling multiple arrangements of shields including single layer and two-layer (same direction and crisscrossed). Compared to ad hoc countermeasures such as top-level shields, iPROBE's internal shields are concentrated on only the most sensitive portions of a design, thereby resulting in significantly lower cost/overhead (from 300% to less than 10%). iPROBE was also developed and tested using the commercial CAD tools from both industry leaders, Synopsys and Cadence; <strong>(2)</strong> <strong>Methodologies and Metrics for Assessing Susceptibility to Probing Attacks. </strong>Given a layout and set of targets as input, iPROBE can quantify vulnerabilities of the chip layout to various types of probing attacks, pinpoint and display the areas in most need of protection, and inform shield insertion decisions (layers used, arrangement of shield, etc.) to provide optimal probing protection. The latter was initially considered under ideal conditions and later refined to handle practical conditions (i.e., under routing and/or area constraints); <strong>(3) Validation of iPROBE by Fabrication and Experimentation with a Test Chip. </strong>A test chip was designed and fabricated to validate iPROBE's protection and associated FIB models. It included two advanced encryption standard (AES) cryptographic modules (one with protection from iPROBE and one without). Using an in-house FIB, 6 common targets in the AES modules were identified and milled. Using the dimensions of the milled holes, a FIB aspect ratio of 2.3 (i.e., the FIB's precision) was calculated. An overlay of the layout of each chip layer on images of the chip along with the FIB aspect ratio showed that the AES containing iPROBE was less exposed to probing than the standard AES.</p>\n<p>The impacts from this project are protection of critical information being stored, processed, and transmitted in digital form on secure chips, microprocessors, microcontrollers, and smart cards. Further, since iPROBE is compatible with commercial tools, it is ready to be transitioned to CAD tool vendors and chip designers. First and foremost, this project shall benefit the military, defense industry, and government through protection of identification cards (access control, passports, etc.), intellectual property (IP), and obfuscation. The tamper-responsive design from intelligent place-and-route can render ICs irreparable, zeroize key material and enable controlled physical unclonable functions (PUFs). Benefits to financial, energy, communication, and other commercial industries include protection for ATMs, credit cards, subscriber identity module (SIM) cards, cards used for public transit, healthcare, and digital rights management (DRM). As an example, credit card fraud alone results in billions of dollars lost per year. Finally, benefits to the consumer include protection of personal information and sensitive data stored on chips in smart phones, vehicles, IoT devices, and wearables.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/31/2022<br>\n\t\t\t\t\tModified by: Domenic&nbsp;Forte</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2022/1717392/1717392_10503869_1661974735875_Outcome1--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1717392/1717392_10503869_1661974735875_Outcome1--rgov-800width.jpg\" title=\"Outcome 1 Overview\"><img src=\"/por/images/Reports/POR/2022/1717392/1717392_10503869_1661974735875_Outcome1--rgov-66x44.jpg\" alt=\"Outcome 1 Overview\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Top: iPROBE Phyiscal Design Flow;Bottom: Output of iPROBE assuming difference shield arrangements</div>\n<div class=\"imageCredit\">Domenic Forte</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Domenic&nbsp;Forte</div>\n<div class=\"imageTitle\">Outcome 1 Overview</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2022/1717392/1717392_10503869_1661974959252_Outcome2--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1717392/1717392_10503869_1661974959252_Outcome2--rgov-800width.jpg\" title=\"Outcome 2 Overview\"><img src=\"/por/images/Reports/POR/2022/1717392/1717392_10503869_1661974959252_Outcome2--rgov-66x44.jpg\" alt=\"Outcome 2 Overview\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Top: iPROBE Layout Assement FlowBottom-left: Input and Output for Original DesignBottom-middle-left: Wire Color LegendBottom-middle-right: Input and Output for iPROBE Protected DesignBottom-right: Plots Comparing Probing Exposure of Orginal and iPROBE Design</div>\n<div class=\"imageCredit\">Domenic Forte</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Domenic&nbsp;Forte</div>\n<div class=\"imageTitle\">Outcome 2 Overview</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2022/1717392/1717392_10503869_1661975105051_Outcome3--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1717392/1717392_10503869_1661975105051_Outcome3--rgov-800width.jpg\" title=\"Outcome 3 Overview\"><img src=\"/por/images/Reports/POR/2022/1717392/1717392_10503869_1661975105051_Outcome3--rgov-66x44.jpg\" alt=\"Outcome 3 Overview\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Test Chip Results:Top-left: Optical Image of Test Chip;Top-right: SEM Image of Test Chip;Bottom-left: Milling Edits on Original and iPROBE Protected Designs;Bottom-middle: Dimensions of Edits;Botttom-right: Comparison of Original and iPROBE Designs</div>\n<div class=\"imageCredit\">Domenic Forte</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Domenic&nbsp;Forte</div>\n<div class=\"imageTitle\">Outcome 3 Overview</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nWith the proliferation of electronics into everyday life, integrated circuit (IC) chips process and store more sensitive information than ever before. The extraction of on-chip assets, such as keys, firmware, and personal information, threatens state-of-the-art military technologies, commercial industries, and society alike through counterfeiting, theft, fraud, development of exploits, and much more. Although protection against software and non-invasive methods of extraction has been widely investigated, physical probing has received little to no attention. In particular, focused ion beam (FIB) is a powerful chip editing tool that allows attackers to not only to access and probe assets, but to destroy and/or bypass existing countermeasures. Since FIB capabilities are almost limitless, the best approaches should make probing as costly, time consuming, and frustrating as possible. However, a significant barrier in doing so lies in the fact that the time, manual effort, and cost to design a FIB-resistant chip must remain reasonable, especially to designers who are not security experts.\n\nIn this project, we have systematically dealt with the above challenges and developed the first ever computer-aided design (CAD) suite, called iPROBE. As a CAD solution, iPROBE relieves a chip designer's burden by assessing a chip layout's susceptibility to FIB-based probing, identifying wires carrying sensitive data, and automatically refashioning the layout to reduce susceptibility. Major outcomes of this project included: (1) Automated Anti-Probing Physical Design Flow: iPROBE automatically creates an internal \"shield\" out of existing wires in the chip design and reroutes them to surround sensitive \"target\" wires in its layout. In addition, shield monitoring circuits are created in the design/layout so that FIB editing of the shield can be detected. iPROBE was demonstrated to be capable of handling multiple arrangements of shields including single layer and two-layer (same direction and crisscrossed). Compared to ad hoc countermeasures such as top-level shields, iPROBE's internal shields are concentrated on only the most sensitive portions of a design, thereby resulting in significantly lower cost/overhead (from 300% to less than 10%). iPROBE was also developed and tested using the commercial CAD tools from both industry leaders, Synopsys and Cadence; (2) Methodologies and Metrics for Assessing Susceptibility to Probing Attacks. Given a layout and set of targets as input, iPROBE can quantify vulnerabilities of the chip layout to various types of probing attacks, pinpoint and display the areas in most need of protection, and inform shield insertion decisions (layers used, arrangement of shield, etc.) to provide optimal probing protection. The latter was initially considered under ideal conditions and later refined to handle practical conditions (i.e., under routing and/or area constraints); (3) Validation of iPROBE by Fabrication and Experimentation with a Test Chip. A test chip was designed and fabricated to validate iPROBE's protection and associated FIB models. It included two advanced encryption standard (AES) cryptographic modules (one with protection from iPROBE and one without). Using an in-house FIB, 6 common targets in the AES modules were identified and milled. Using the dimensions of the milled holes, a FIB aspect ratio of 2.3 (i.e., the FIB's precision) was calculated. An overlay of the layout of each chip layer on images of the chip along with the FIB aspect ratio showed that the AES containing iPROBE was less exposed to probing than the standard AES.\n\nThe impacts from this project are protection of critical information being stored, processed, and transmitted in digital form on secure chips, microprocessors, microcontrollers, and smart cards. Further, since iPROBE is compatible with commercial tools, it is ready to be transitioned to CAD tool vendors and chip designers. First and foremost, this project shall benefit the military, defense industry, and government through protection of identification cards (access control, passports, etc.), intellectual property (IP), and obfuscation. The tamper-responsive design from intelligent place-and-route can render ICs irreparable, zeroize key material and enable controlled physical unclonable functions (PUFs). Benefits to financial, energy, communication, and other commercial industries include protection for ATMs, credit cards, subscriber identity module (SIM) cards, cards used for public transit, healthcare, and digital rights management (DRM). As an example, credit card fraud alone results in billions of dollars lost per year. Finally, benefits to the consumer include protection of personal information and sensitive data stored on chips in smart phones, vehicles, IoT devices, and wearables. \n\n \n\n\t\t\t\t\tLast Modified: 08/31/2022\n\n\t\t\t\t\tSubmitted by: Domenic Forte"
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "awd_id": "1904394",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Real-Time Iteration Governor for Constrained Nonlinear Model Predictive Control",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": "7032922576",
+ "po_email": "mcanova@nsf.gov",
+ "po_sign_block_name": "Marcello Canova",
+ "awd_eff_date": "2019-07-01",
+ "awd_exp_date": "2024-06-30",
+ "tot_intn_awd_amt": 292634.0,
+ "awd_amount": 292634.0,
+ "awd_min_amd_letter_date": "2019-04-25",
+ "awd_max_amd_letter_date": "2019-04-25",
+ "awd_abstract_narration": "Model predictive control is considered as a desirable candidate for high performance control of industrial processes and for safe and efficient operation of autonomous systems. Despite its remarkable success in the chemical process control industry, the successful transition of model predictive control into time-and-safety-critical applications is limited by the computational challenges faced in its real-time implementation. This research project lays the theoretical foundations for a new real-time implementation strategy that will significantly reduce the runtime of model predictive control, increase its overall reliability, and extend its applicability to the automotive and aerospace domains.\r\n \r\nTraditional model predictive control is implemented by fully solving an optimal control problem at every time step. This research project focuses on an alternative scheme where the solution to the optimal control problem is tracked with a bounded error over multiple time steps. By treating the numerical solver as a dynamic system that evolves in parallel to the controlled plant, the project will identify sufficient conditions for asymptotic stability and constraint satisfaction using Input-to-State Stability arguments. Recursive stability and constraint satisfaction will then be ensured by introducing the Real-Time Iteration Governor, which is an add-on supervision layer that suitably manipulates the reference of the model predictive controller so that the solution to the optimal control problem can be tracked with an acceptably small error. These theoretical contributions will be supplemented by dedicated numerical algorithms and analog circuits that take full advantage of running at a faster timescale with respect to the rate of change of the optimal control problem. The proposed framework will also address nonconvex constraints by using the Real-Time Iteration Governor to progressively steer the numerical solver away from undesirable local minima. Finally, to demonstrate the effectiveness of the Real-Time Iteration Governor and its supporting theory, the proposed framework will be applied to practical engineering challenges, which include the autonomous navigation of small spacecraft in close proximity to asteroids, the development of efficient control algorithms for self-driving cars, and the implementation of constrained coordination strategies for unmanned aerial vehicles.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ilya",
+   "pi_last_name": "Kolmanovsky",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ilya Kolmanovsky",
+   "pi_email_addr": "ilya@umich.edu",
+   "nsf_id": "000318464",
+   "pi_start_date": "2019-04-25",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Regents of the University of Michigan - Ann Arbor",
+  "inst_street_address": "1109 GEDDES AVE STE 3300",
+  "inst_street_address_2": "",
+  "inst_city_name": "ANN ARBOR",
+  "inst_state_code": "MI",
+  "inst_state_name": "Michigan",
+  "inst_phone_num": "7347636438",
+  "inst_zip_code": "481091015",
+  "inst_country_name": "United States",
+  "cong_dist_code": "06",
+  "st_cong_dist_code": "MI06",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF MICHIGAN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GNJ7BBP73WE9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Regents of the University of Michigan",
+  "perf_str_addr": "3003 S. State St.",
+  "perf_city_name": "Ann Arbor",
+  "perf_st_code": "MI",
+  "perf_st_name": "Michigan",
+  "perf_zip_code": "481091274",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "MI06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "756900",
+   "pgm_ele_name": "Dynamics, Control and System D"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "030E",
+   "pgm_ref_txt": "CONTROL SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "034E",
+   "pgm_ref_txt": "Dynamical systems"
+  },
+  {
+   "pgm_ref_code": "8024",
+   "pgm_ref_txt": "Complex Systems"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 292634.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Model Predictive Control (MPC) utilizes real-time solution of a constrained optimal control problem to determine control actions. MPC is broadly utilized in industrial applications and is an enabling technology for autonomous vehicles in different domains.&nbsp;</p>\n<p>This project advanced theory and methods for addressing one of the bottlenecks in MPC implementation which involves the computation of the solution to the underlying dynamic optimization problem through iterative optimization.&nbsp; This computation needs to be performed in real-time and is challenging for systems with fast dynamics and limited computational resources. &nbsp;&nbsp;</p>\n<p>The research in this project has led to novel methods, approaches and theoretical guarantees which facilitate the deployment of MPC solutions in combination with the auxiliary supervisory schemes.</p>\n<p>In particular:</p>\n<p>This project advanced the perspective that an MPC optimizer with warm-start and finite number of iterations per time step can be viewed as a dynamic system / dynamic control law, thereby highlighting novel opportunities for closer integration between optimization theory and nonlinear control methods/tools in MPC setting.</p>\n<p>Constructive procedures to estimate the required number of iterations and the region of attraction in the combined plant-optimizer space in the special (but frequently used in practice) case of Linear Quadratic MPC (LQ-MPC) have been developed. The resulting estimates have led to guidelines for how to ensure closed-loop stability by reformulating MPC problem (cost shaping) when only a finite number of iterations of MPC optimizer can be performed due to computational limitations.</p>\n<p>The project advanced the understanding of the opportunities for and rigorous approaches to designing and augmenting add-on governor schemes to improve reliability of MPC implementations. Such governors are able to slightly alter reference commands to MPC-based controllers in order to assure desirable properties. &nbsp;For instance, the feasibility governor can ensure the feasibility of the underlying optimal control problem with terminal constraints without having to increase the prediction horizon (and hence at a lower computational cost). The feasibility governor enlarges the region of attraction of MPC by manipulating the reference so that the underlying problem remains recursively feasible. The main advantage of this scheme is that its computational cost is negligible with respect to other solutions (such as increasing the prediction horizon) and its modular nature allows it to be implemented using off-the-shelf MPC toolboxes. Another scheme, the stability governor, which has been developed is able to enlarge the region of attraction and ensure closed-loop stability for short horizon MPC without imposing terminal constraints at all; such a scheme is advantageous in applications where terminal constraints are undesirable.</p>\n<p>The project advanced approaches to the design of computational governor/real-time iteration governor schemes which modify reference command to bound the suboptimality of the warm-start in such a way that MPC solver is able to generate reliable solutions of the underlying optimization problems with a very few iterations.&nbsp; Specific methods for computational governor design and the corresponding theoretical guarantees have been established for LQ-MPC and an interior point MPC solver.&nbsp; When an optimization algorithm which only guarantees solution feasibility at convergence (such as the Alternating Direction Method of Multipliers as opposed to an interior point solver) is used, we showed that a computational governor scheme can be designed to both adjust the reference command and tighten the constraints to mitigate the infeasibility of inexact solutions and ensure safety with respect to the original constraints.</p>\n<p>The project advanced the understanding of the connections between computational governors and feasibility governors and pathways to extend the constrained regions of attraction and maintaining feasibility by augmenting supervisory schemes to the short horizon MPC solutions.&nbsp; For the standard MPC the region of attraction is the constraint admissible backward reachable set over the given horizon corresponding to the given reference. With the computational governor, the region of attraction can be enlarged and becomes a union of backward reachable sets corresponding to different values of the reference. This enables the use of short horizon MPC while achieving a large, constrained domain of attraction similar to the long horizon MPC but at a lower computational cost compared to the long horizon MPC.&nbsp;&nbsp;</p>\n<p>The project has also provided several advances to the reference governor theory and design procedures to broaden the applicability of such schemes to enforce safety constraints in several specific classes of systems. Additionally, we demonstrated the potential for exploiting reference governor schemes (command governors and time shift governors) to augment conventional flight controllers in several spacecraft control applications. &nbsp;Specific solutions have been developed for constrained low thrust orbital transfers and for constrained spacecraft rendezvous maneuvering on Halo orbits in cislunar space.</p>\n<p>The results were disseminated through conference and journal articles, as well as presentations.&nbsp; The project has provided training opportunities for several PhD and Masters&rsquo; students as well as opportunities for collaboration between researchers at the University of Michigan and CU Boulder.&nbsp;&nbsp;</p><br>\n<p>\n Last Modified: 08/18/2024<br>\nModified by: Ilya&nbsp;Kolmanovsky</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nModel Predictive Control (MPC) utilizes real-time solution of a constrained optimal control problem to determine control actions. MPC is broadly utilized in industrial applications and is an enabling technology for autonomous vehicles in different domains.\n\n\nThis project advanced theory and methods for addressing one of the bottlenecks in MPC implementation which involves the computation of the solution to the underlying dynamic optimization problem through iterative optimization. This computation needs to be performed in real-time and is challenging for systems with fast dynamics and limited computational resources. \n\n\nThe research in this project has led to novel methods, approaches and theoretical guarantees which facilitate the deployment of MPC solutions in combination with the auxiliary supervisory schemes.\n\n\nIn particular:\n\n\nThis project advanced the perspective that an MPC optimizer with warm-start and finite number of iterations per time step can be viewed as a dynamic system / dynamic control law, thereby highlighting novel opportunities for closer integration between optimization theory and nonlinear control methods/tools in MPC setting.\n\n\nConstructive procedures to estimate the required number of iterations and the region of attraction in the combined plant-optimizer space in the special (but frequently used in practice) case of Linear Quadratic MPC (LQ-MPC) have been developed. The resulting estimates have led to guidelines for how to ensure closed-loop stability by reformulating MPC problem (cost shaping) when only a finite number of iterations of MPC optimizer can be performed due to computational limitations.\n\n\nThe project advanced the understanding of the opportunities for and rigorous approaches to designing and augmenting add-on governor schemes to improve reliability of MPC implementations. Such governors are able to slightly alter reference commands to MPC-based controllers in order to assure desirable properties. For instance, the feasibility governor can ensure the feasibility of the underlying optimal control problem with terminal constraints without having to increase the prediction horizon (and hence at a lower computational cost). The feasibility governor enlarges the region of attraction of MPC by manipulating the reference so that the underlying problem remains recursively feasible. The main advantage of this scheme is that its computational cost is negligible with respect to other solutions (such as increasing the prediction horizon) and its modular nature allows it to be implemented using off-the-shelf MPC toolboxes. Another scheme, the stability governor, which has been developed is able to enlarge the region of attraction and ensure closed-loop stability for short horizon MPC without imposing terminal constraints at all; such a scheme is advantageous in applications where terminal constraints are undesirable.\n\n\nThe project advanced approaches to the design of computational governor/real-time iteration governor schemes which modify reference command to bound the suboptimality of the warm-start in such a way that MPC solver is able to generate reliable solutions of the underlying optimization problems with a very few iterations. Specific methods for computational governor design and the corresponding theoretical guarantees have been established for LQ-MPC and an interior point MPC solver. When an optimization algorithm which only guarantees solution feasibility at convergence (such as the Alternating Direction Method of Multipliers as opposed to an interior point solver) is used, we showed that a computational governor scheme can be designed to both adjust the reference command and tighten the constraints to mitigate the infeasibility of inexact solutions and ensure safety with respect to the original constraints.\n\n\nThe project advanced the understanding of the connections between computational governors and feasibility governors and pathways to extend the constrained regions of attraction and maintaining feasibility by augmenting supervisory schemes to the short horizon MPC solutions. For the standard MPC the region of attraction is the constraint admissible backward reachable set over the given horizon corresponding to the given reference. With the computational governor, the region of attraction can be enlarged and becomes a union of backward reachable sets corresponding to different values of the reference. This enables the use of short horizon MPC while achieving a large, constrained domain of attraction similar to the long horizon MPC but at a lower computational cost compared to the long horizon MPC.\n\n\nThe project has also provided several advances to the reference governor theory and design procedures to broaden the applicability of such schemes to enforce safety constraints in several specific classes of systems. Additionally, we demonstrated the potential for exploiting reference governor schemes (command governors and time shift governors) to augment conventional flight controllers in several spacecraft control applications. Specific solutions have been developed for constrained low thrust orbital transfers and for constrained spacecraft rendezvous maneuvering on Halo orbits in cislunar space.\n\n\nThe results were disseminated through conference and journal articles, as well as presentations. The project has provided training opportunities for several PhD and Masters students as well as opportunities for collaboration between researchers at the University of Michigan and CU Boulder.\t\t\t\t\tLast Modified: 08/18/2024\n\n\t\t\t\t\tSubmitted by: IlyaKolmanovsky\n"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1566443",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: CSR: An Asynchronous Design to Reduce the Long Tail Latency of n-Tier Applications in the Cloud",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2016-04-01",
+ "awd_exp_date": "2019-12-31",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 175000.0,
+ "awd_min_amd_letter_date": "2016-01-15",
+ "awd_max_amd_letter_date": "2016-01-15",
+ "awd_abstract_narration": "Low latency is essential for web facing e-commerce applications. For example, Amazon reported that every 100ms increase in the page load time correlates to a decrease in sales by 1%. However, practitioners have consistently experienced the long tail latency problem, or wide response time variations, of web applications in the cloud as the utilization of the system reaches moderate levels (e.g., 50%). A practical consequence is that enterprise cloud data centers have been reported to purposefully keep utilization levels low (e.g., 18%) to avoid the penalties caused by the long tail latency problem, wasting considerable computing resources and power. Solving the latency long tail problem will have a great impact on achieving higher cost efficiency of cloud computing resources, leading to lower cost of cloud users and higher return of cloud providers, among other benefits of more sustainable large-scale computing infrastructures. \r\n\r\nThe main goal of this project is to investigate and resolve a key factor that causes the long tail latency problem of n-tier web applications: the Cross-Tier Queue Propagation. The Cross-Tier Queue Propagation is an effect caused by strong inter-dependencies in the request processing chain of an n-tier web application with synchronous inter-tier communication (RPC-style call/response). With such Cross-Tier Queue Propagation, a small queuing delay in a downstream server (e.g., a database) can be propagated and amplified to upstream tiers (e.g., a web server), leading to wide response time variations.\r\n\r\nThis research proposes an asynchronous design of inter-tier communication that addresses the long tail latency problem caused by the Cross-Tier Queue Propagation of an n-tier system. The rationale of asynchronous communication is to decouple complex inter-tier dependencies enforced by traditional RPC-style synchronous communication. Servers involved in asynchronous communication adopt an event-driven design in which the processing threads in one component server are \"independent\" from those in other component servers in the request processing chain. The new design is expected to break the Cross-Tier Queue Propagation in the request processing chain and prevent the amplification of small queuing delay into the long tail latency problem. To validate the hypothesis, this research will design a representative asynchronous 3-tier system consisting of component servers that support asynchronous communication, implement asynchronous benchmark applications that are compatible with the developed asynchronous servers, and run large-scale cloud experiments and validate the effectiveness of the asynchronous design to break the Cross-Tier Queue Propagation.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Qingyang",
+   "pi_last_name": "Wang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Qingyang Wang",
+   "pi_email_addr": "qwang26@lsu.edu",
+   "nsf_id": "000686244",
+   "pi_start_date": "2016-01-15",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Louisiana State University",
+  "inst_street_address": "202 HIMES HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "BATON ROUGE",
+  "inst_state_code": "LA",
+  "inst_state_name": "Louisiana",
+  "inst_phone_num": "2255782760",
+  "inst_zip_code": "708030001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "06",
+  "st_cong_dist_code": "LA06",
+  "org_lgl_bus_name": "LOUISIANA STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "ECQEYCHRNKJ4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Louisiana State University and A&M College",
+  "perf_str_addr": "",
+  "perf_city_name": "Baton Rouge",
+  "perf_st_code": "LA",
+  "perf_st_name": "Louisiana",
+  "perf_zip_code": "708030100",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "LA06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 175000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><strong>Intellectual Merit</strong><span>: The PI started the research on performance instability, particularly on the long-tail latency problem in large distributed web applications in 2016, supported by two industry contracts (from Fujitsu labs) as well as this NSF grant, with 12 publications from 2016 to 2019. Significant results achieved in this project supported by this grant (CNS-1566443, from 2016 to 2019) include the findings of several root causes for the creation of millibottlenecks such as CPU, memory, and IO, and soft resources. Millibottlenecks could cause the long-tail latency problem due to complex resource dependencies between components servers enforced by RPC-style synchronous inter-tier communication, which initiates cross-tier-queue propagation and amplification in an n-tier web system. To resolve/mitigate the cross-tier-queue propagation and amplification initiated by millibottlenecks, the PI developed an asynchronous 3-tier web application benchmark RUBBoS to evaluate the disruption of queueing propagation to avoid very long response time (VLRT) requests in classic 3-tier applications. Given the unique features of short life-span and high performance impact of millibottlenecks, the PI also exploited millibottlenecks to design a persistent and stealthy performance attack on real-world web applications, the results of which lead to two publications in two major security conferences (CCS?17, SecureComm'17, and ICDCS?19), respectively.</span></p>\n<p><strong>Broader Impact</strong><span>: This project built a solid foundation on which cloud data centers can achieve higher utilization without the risk of the long tail latency problem. Higher utilization, as a result, will achieve lower power consumption and a higher return on investment in the cloud, among other benefits of more efficient large-scale computing infrastructures. The research platform and artifacts developed during this project have been adopted in three of the PI?s graduate- and under-graduate-level classroom teaching at LSU to close the gap between advanced research and basic education and attract both undergraduate and graduate students into academic research. During the execution of this project, the PI also worked in cooperation with the industry partner Fujitsu Labs (Japan) to further validate the performance phenomena and the proposed solutions in real systems, expediting technology transfer and making real industry impacts.&nbsp;</span></p>\n<p><strong>Products</strong><span>: Twelve papers from this project have been published from 2016 to 2019. The release of open-source asynchronous servers is publicly available on GitHub (</span><a class=\"_e75a791d-denali-editor-page-rtfLink\" href=\"https://github.com/sgzhang/AsynMessaging\" target=\"_blank\"><span>https://github.com/sgzhang/AsynMessaging</span></a><span>,&nbsp;</span><a class=\"_e75a791d-denali-editor-page-rtfLink\" href=\"https://github.com/sgzhang/AsyncFanout\" target=\"_blank\"><span>https://github.com/sgzhang/AsyncFanout</span></a><span>)</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/13/2020<br>\n\t\t\t\t\tModified by: Qingyang&nbsp;Wang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIntellectual Merit: The PI started the research on performance instability, particularly on the long-tail latency problem in large distributed web applications in 2016, supported by two industry contracts (from Fujitsu labs) as well as this NSF grant, with 12 publications from 2016 to 2019. Significant results achieved in this project supported by this grant (CNS-1566443, from 2016 to 2019) include the findings of several root causes for the creation of millibottlenecks such as CPU, memory, and IO, and soft resources. Millibottlenecks could cause the long-tail latency problem due to complex resource dependencies between components servers enforced by RPC-style synchronous inter-tier communication, which initiates cross-tier-queue propagation and amplification in an n-tier web system. To resolve/mitigate the cross-tier-queue propagation and amplification initiated by millibottlenecks, the PI developed an asynchronous 3-tier web application benchmark RUBBoS to evaluate the disruption of queueing propagation to avoid very long response time (VLRT) requests in classic 3-tier applications. Given the unique features of short life-span and high performance impact of millibottlenecks, the PI also exploited millibottlenecks to design a persistent and stealthy performance attack on real-world web applications, the results of which lead to two publications in two major security conferences (CCS?17, SecureComm'17, and ICDCS?19), respectively.\n\nBroader Impact: This project built a solid foundation on which cloud data centers can achieve higher utilization without the risk of the long tail latency problem. Higher utilization, as a result, will achieve lower power consumption and a higher return on investment in the cloud, among other benefits of more efficient large-scale computing infrastructures. The research platform and artifacts developed during this project have been adopted in three of the PI?s graduate- and under-graduate-level classroom teaching at LSU to close the gap between advanced research and basic education and attract both undergraduate and graduate students into academic research. During the execution of this project, the PI also worked in cooperation with the industry partner Fujitsu Labs (Japan) to further validate the performance phenomena and the proposed solutions in real systems, expediting technology transfer and making real industry impacts. \n\nProducts: Twelve papers from this project have been published from 2016 to 2019. The release of open-source asynchronous servers is publicly available on GitHub (https://github.com/sgzhang/AsynMessaging, https://github.com/sgzhang/AsyncFanout)\n\n \n\n\t\t\t\t\tLast Modified: 02/13/2020\n\n\t\t\t\t\tSubmitted by: Qingyang Wang"
+ }
+}

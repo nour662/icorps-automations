@@ -1,0 +1,105 @@
+{
+ "awd_id": "1934597",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: CORE: Small: Black-Box Flaw Discovery in Web Authentication and Authorization Mechanisms",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032922594",
+ "po_email": "kkaravan@nsf.gov",
+ "po_sign_block_name": "Karen Karavanic",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 500000.0,
+ "awd_min_amd_letter_date": "2019-09-05",
+ "awd_max_amd_letter_date": "2019-09-05",
+ "awd_abstract_narration": "Technical advancements in modern smartphones and the widespread availability of Internet on-the-go have resulted in the world wide web becoming an inextricable part of everyday lives, pervading professional, social and personal activities.  At the core of all this lies the ability to identify (i.e., authenticate) users and devices and allowing (i.e., authorizing) them to access accounts and sensitive resources. Flaws in existing authentication and authorization mechanisms allow cybercriminals as well as nation-state adversaries to gain illegal access, which can critically affect citizens, corporations, and government organizations alike. This project aims to better secure the world wide web through the analysis of prevalent and emerging authentication systems. The subsequent design of robust mechanisms that prevent illicit access from malicious entities will secure popular and critical web applications against current and unforeseen threats. The underlying research necessitates the development of novel techniques for analyzing web applications, and the proactive demonstration of novel attacks for guiding a data-driven design of more effective authentication mechanisms. The main research problems that the project seeks to study will form the basis for the training of both undergraduate and graduate students. The investigator is committed to working with minorities and underrepresented groups.\r\n\r\nThe complexity of modern web applications and the intricacies of security mechanisms often result in flaws that expose users to significant security and privacy threats. This is exacerbated by the continuous evolution of the web ecosystem and new authentication and authorization mechanisms being deployed without prior analysis by the security community. This project aims to explore existing and emerging authentication and authorization systems and practices in the modern web ecosystem, and develop modular application-agnostic and protocol-independent techniques and frameworks that advance current capabilities for auditing modern web applications along these dimensions. This includes the development of multiple components that employ differential testing techniques, each designed to explore a different dimension of authentication and authorization by leveraging a unique attack vector, thus, enabling the automated black-box detection of flaws at an Internet-wide scale. These techniques and systems provide a holistic evaluation and treatment of the current web authentication landscape, enable the forecasting and prevention of future threats, and can facilitate research across multiple disciplines.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jason",
+   "pi_last_name": "Polakis",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jason Polakis",
+   "pi_email_addr": "polakis@uic.edu",
+   "nsf_id": "000731734",
+   "pi_start_date": "2019-09-05",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Illinois at Chicago",
+  "inst_street_address": "809 S MARSHFIELD AVE M/C 551",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHICAGO",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "3129962862",
+  "inst_zip_code": "606124305",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "IL07",
+  "org_lgl_bus_name": "UNIVERSITY OF ILLINOIS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "W8XEAJDKMXH3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Illinois at Chicago",
+  "perf_str_addr": "809 S. Marshfield Avenue",
+  "perf_city_name": "Chicago",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "606077053",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "IL07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 500000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"p1\">The goal of this project was to explore multiple aspects of authentication and authorization mechanisms within the web ecosystem, and uncover flaws in modern web applications at an unprecedented scale. As such, a major focus of this work was to design novel testing techniques and develop fully automated black-box testing frameworks that can audit web applications without prior knowledge of their structure or content, or any input from the developers. In more detail, we presented a system that employed differential analysis techniques for detecting the exposure of authentication cookies under different scenarios, and included modules for automatically inferring the leakage of private data due to access control misconfigurations and cookie exposure. We also studied Single Sign-On, a prevalent authentication mechanism in the modern web, and developed a fully automated framework for detecting authorization and authentication flaws in the session and account management backends of web services, which often arise from the interplay of Single Sign-On and traditional credential-based authentication. Subsequently, we investigated emerging authentication mechanisms and the pitfalls of incorporating browser fingerprints in risk-based authentication mechanisms by demonstrating how attackers can automatically extract and replicate websites&rsquo; browser fingerprinting process, which then can allow them to completely bypass two-factor authentication by mimicking their victims&rsquo; devices during the authentication process. Finally, we explored how emerging web technologies can lead to private information leakage. To that end, we showed how the autofill functionality in Chromium-based browsers can be misused for exfiltrating user data from the profiles stored in their browser. We also explored how service workers are isolated, and demonstrated novel techniques that leverage authorization flaws to infer sensitive user data.</p>\n<p class=\"p1\">Intellectual merit: This research agenda tackled significant and challenging problems in the domain of web application analysis. First, creating app-agnostic fully automated black-box auditing frameworks required designing and developing novel inference and differential analysis techniques, thus advancing the current state-of-the-art in web application analysis. The applicability of our techniques is not limited to security practitioners but can be employed by a wide range of researchers on projects that interact with or analyze web applications. As part of our research, we also developed a robust, fault-tolerant browser automation system designed to handle interaction with page elements and other dynamic features. By making our tools available to other researchers, we will enable and facilitate a plethora of research and projects from a multitude of different domains. Furthermore, by experimentally assessing emerging Internet technologies and designing new attack vectors, we have laid the groundwork for developing more robust countermeasures. Overall, our research produced novel systems and techniques that will impact research and practice along multiple critical dimensions of the web ecosystem, and has achieved transformative results in how authentication and authorization is conducted on the modern web.</p>\n<p class=\"p1\">Broader impact: Our research agenda uncovered significant security and privacy issues in the modern web ecosystem that stem from authentication and authorization flaws. Ultimately, this resulted in tangible positive effects for multiple stakeholders and improved the security and privacy guarantees of the web ecosystem at scale.&nbsp;By identifying and disclosing flaws in web applications we enabled web developers to enhance the security of their systems, which also directly limiting the harm experienced by end users.&nbsp; Moreover, by exploring the feasibility of novel attacks against emerging technologies, vendors and the security community benefited from our findings on the inherent limitations and potential pitfalls in deploying such systems. Furthermore, our work directly benefitted other researchers by demonstrating new techniques for automated testing of web authentication and access control mechanisms, as well as producing useful tools and techniques that are suitable for a wide range of research projects.</p><br>\n<p>\n Last Modified: 01/15/2024<br>\nModified by: Jason&nbsp;Polakis</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe goal of this project was to explore multiple aspects of authentication and authorization mechanisms within the web ecosystem, and uncover flaws in modern web applications at an unprecedented scale. As such, a major focus of this work was to design novel testing techniques and develop fully automated black-box testing frameworks that can audit web applications without prior knowledge of their structure or content, or any input from the developers. In more detail, we presented a system that employed differential analysis techniques for detecting the exposure of authentication cookies under different scenarios, and included modules for automatically inferring the leakage of private data due to access control misconfigurations and cookie exposure. We also studied Single Sign-On, a prevalent authentication mechanism in the modern web, and developed a fully automated framework for detecting authorization and authentication flaws in the session and account management backends of web services, which often arise from the interplay of Single Sign-On and traditional credential-based authentication. Subsequently, we investigated emerging authentication mechanisms and the pitfalls of incorporating browser fingerprints in risk-based authentication mechanisms by demonstrating how attackers can automatically extract and replicate websites browser fingerprinting process, which then can allow them to completely bypass two-factor authentication by mimicking their victims devices during the authentication process. Finally, we explored how emerging web technologies can lead to private information leakage. To that end, we showed how the autofill functionality in Chromium-based browsers can be misused for exfiltrating user data from the profiles stored in their browser. We also explored how service workers are isolated, and demonstrated novel techniques that leverage authorization flaws to infer sensitive user data.\n\n\nIntellectual merit: This research agenda tackled significant and challenging problems in the domain of web application analysis. First, creating app-agnostic fully automated black-box auditing frameworks required designing and developing novel inference and differential analysis techniques, thus advancing the current state-of-the-art in web application analysis. The applicability of our techniques is not limited to security practitioners but can be employed by a wide range of researchers on projects that interact with or analyze web applications. As part of our research, we also developed a robust, fault-tolerant browser automation system designed to handle interaction with page elements and other dynamic features. By making our tools available to other researchers, we will enable and facilitate a plethora of research and projects from a multitude of different domains. Furthermore, by experimentally assessing emerging Internet technologies and designing new attack vectors, we have laid the groundwork for developing more robust countermeasures. Overall, our research produced novel systems and techniques that will impact research and practice along multiple critical dimensions of the web ecosystem, and has achieved transformative results in how authentication and authorization is conducted on the modern web.\n\n\nBroader impact: Our research agenda uncovered significant security and privacy issues in the modern web ecosystem that stem from authentication and authorization flaws. Ultimately, this resulted in tangible positive effects for multiple stakeholders and improved the security and privacy guarantees of the web ecosystem at scale.By identifying and disclosing flaws in web applications we enabled web developers to enhance the security of their systems, which also directly limiting the harm experienced by end users. Moreover, by exploring the feasibility of novel attacks against emerging technologies, vendors and the security community benefited from our findings on the inherent limitations and potential pitfalls in deploying such systems. Furthermore, our work directly benefitted other researchers by demonstrating new techniques for automated testing of web authentication and access control mechanisms, as well as producing useful tools and techniques that are suitable for a wide range of research projects.\t\t\t\t\tLast Modified: 01/15/2024\n\n\t\t\t\t\tSubmitted by: JasonPolakis\n"
+ }
+}

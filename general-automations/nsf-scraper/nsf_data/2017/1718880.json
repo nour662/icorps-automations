@@ -1,0 +1,109 @@
+{
+ "awd_id": "1718880",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small: The Deterministic Memory Approach for Predictable and High Performance Cyber Physical Systems",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Erik Brunvand",
+ "awd_eff_date": "2017-07-15",
+ "awd_exp_date": "2021-06-30",
+ "tot_intn_awd_amt": 300000.0,
+ "awd_amount": 300000.0,
+ "awd_min_amd_letter_date": "2017-07-11",
+ "awd_max_amd_letter_date": "2017-07-11",
+ "awd_abstract_narration": "High-performance embedded multicore platforms are becoming increasingly important for cyber-physical systems (CPS) - especially in automotive and aviation domains - to reduce cost, size, weight, and energy consumption through consolidation. However, poor time predictability of multicore platforms is a major hurdle for safety-critical CPS. This project will address the time predictability problem by proposing a new memory abstraction, called Deterministic Memory, that enables effective cross-layer collaborations between software and hardware. Leveraging abstraction and architecture extensions, resource management techniques and analysis methodologies will be developed to realize predictable and efficient real-time computing in multicore systems.\r\n\r\nThe project will demonstrate how the proposed Deterministic Memory abstraction enables innovations in software and hardware designs. The project will develop new timing analysis methodologies that will incorporate the new memory concepts, which have the potential to significantly reduce the gap between theory and practice in multicore real-time systems. The project will advance safety-critical CPS domains, such as automotive and aviation, by improving predictability and determinism of the systems without over-provisioning of resources.\r\n\r\nThe research is expected to enable efficient consolidation of multiple tasks with different criticality, and thereby to cut the cost and reduce the size, weight, and power requirements of the system. Moreover, the research has the potential to help reduce certification cost of aviation industry by providing stronger isolation with hardware support. Considering the market size of automotive industry and the high certification cost in aviation industry, the expected improvements promised by the research represent potentially billions of dollars in savings.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Heechul",
+   "pi_last_name": "Yun",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Heechul Yun",
+   "pi_email_addr": "heechul.yun@ku.edu",
+   "nsf_id": "000662879",
+   "pi_start_date": "2017-07-11",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Kansas Center for Research Inc",
+  "inst_street_address": "2385 IRVING HILL RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "LAWRENCE",
+  "inst_state_code": "KS",
+  "inst_state_name": "Kansas",
+  "inst_phone_num": "7858643441",
+  "inst_zip_code": "660457563",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "KS01",
+  "org_lgl_bus_name": "UNIVERSITY OF KANSAS CENTER FOR RESEARCH INC",
+  "org_prnt_uei_num": "SSUJB3GSH8A5",
+  "org_uei_num": "SSUJB3GSH8A5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Kansas Center for Research Inc",
+  "perf_str_addr": "2385 Irving Hill Rd",
+  "perf_city_name": "Lawrence",
+  "perf_st_code": "KS",
+  "perf_st_name": "Kansas",
+  "perf_zip_code": "660457568",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "KS01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  },
+  {
+   "pgm_ele_code": "915000",
+   "pgm_ele_name": "EPSCoR Co-Funding"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 300000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-070ec41c-7fff-d87c-f989-72edcb05397b\"> </span></p>\n<p dir=\"ltr\"><span>Today's cars and airplanes are already highly computerized as much of their capabilities are controlled by various computer chips. And the trend is only accelerating as the level of autonomy of these systems continues to increase. Already semi-autonomous vehicles such as Tesla's electric vehicles are equipped with a power multicore computer system to process vast amounts of vision and other sensor data in real-time. A multicore computing system achieves high computing performance by having multiple processing cores that can execute multiple tasks in parallel. However, one major downside of such a multicore platform is that when multiple tasks run simultaneously, their execution time can vary significantly depending on which tasks are running together, which makes it difficult to guarantee timely execution of time sensitive, and often safety-critical, operations.</span>&nbsp;</p>\n<p dir=\"ltr\"><span>This project was aimed at developing software/hardware collaborative cross-layer infrastructure for enabling predictable real-time computing on high-performance multicore computing platforms. The project was motivated by the observation that the main cause of the execution time variability in multicore is the lack of proper memory abstraction that can guarantee predictable memory performance while also enabling efficient sharing of hardware resources, which is necessary for an economically viable multicore chip. As such, the specific focus of the project was centered at&nbsp; the development of a new memory abstraction that facilitates cross-layer resource management at low hardware and software cost. The project also investigated the approach'</span>s applications in improving system security.&nbsp;</p>\n<p>The main intellectual contributions of the project were as follows. First, the project demonstrated, through the development of the deterministic memory abstraction, that low-cost extension to the existing virtual memory infrastructure can provide predictable and efficient management of shared hardware resources in multicore. The project also developed a range of new memory-centric hardware and OS level resource management frameworks and analysis techniques to improve predictability in multicore. Lastly, the project developed a range of micro-architectural attacks and defenses that cover not only timing predictability but also information security issues of multicore.&nbsp;</p>\n<p>In terms of broader impacts, the PI presented research findings of this project at numerous conferences, workshops, and institutions. One of the publications received an Outstanding Paper Award from a top conference. The results of this project formed the basis of the dissertations of two PhD students and one MS student. All artifacts developed in the project were released in public github repositories as open-source, one of which was featured at NVIDIA's developer blog and received &gt;100 \"stars\" in github.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/07/2021<br>\n\t\t\t\t\tModified by: Heechul&nbsp;Yun</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \nToday's cars and airplanes are already highly computerized as much of their capabilities are controlled by various computer chips. And the trend is only accelerating as the level of autonomy of these systems continues to increase. Already semi-autonomous vehicles such as Tesla's electric vehicles are equipped with a power multicore computer system to process vast amounts of vision and other sensor data in real-time. A multicore computing system achieves high computing performance by having multiple processing cores that can execute multiple tasks in parallel. However, one major downside of such a multicore platform is that when multiple tasks run simultaneously, their execution time can vary significantly depending on which tasks are running together, which makes it difficult to guarantee timely execution of time sensitive, and often safety-critical, operations. \nThis project was aimed at developing software/hardware collaborative cross-layer infrastructure for enabling predictable real-time computing on high-performance multicore computing platforms. The project was motivated by the observation that the main cause of the execution time variability in multicore is the lack of proper memory abstraction that can guarantee predictable memory performance while also enabling efficient sharing of hardware resources, which is necessary for an economically viable multicore chip. As such, the specific focus of the project was centered at  the development of a new memory abstraction that facilitates cross-layer resource management at low hardware and software cost. The project also investigated the approach's applications in improving system security. \n\nThe main intellectual contributions of the project were as follows. First, the project demonstrated, through the development of the deterministic memory abstraction, that low-cost extension to the existing virtual memory infrastructure can provide predictable and efficient management of shared hardware resources in multicore. The project also developed a range of new memory-centric hardware and OS level resource management frameworks and analysis techniques to improve predictability in multicore. Lastly, the project developed a range of micro-architectural attacks and defenses that cover not only timing predictability but also information security issues of multicore. \n\nIn terms of broader impacts, the PI presented research findings of this project at numerous conferences, workshops, and institutions. One of the publications received an Outstanding Paper Award from a top conference. The results of this project formed the basis of the dissertations of two PhD students and one MS student. All artifacts developed in the project were released in public github repositories as open-source, one of which was featured at NVIDIA's developer blog and received &gt;100 \"stars\" in github.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 07/07/2021\n\n\t\t\t\t\tSubmitted by: Heechul Yun"
+ }
+}

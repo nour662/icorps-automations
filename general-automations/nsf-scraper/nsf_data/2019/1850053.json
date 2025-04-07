@@ -1,0 +1,102 @@
+{
+ "awd_id": "1850053",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: NeTS: Rethinking Flow Control for Cloud Data Center Networks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Darleen Fisher",
+ "awd_eff_date": "2019-05-01",
+ "awd_exp_date": "2021-11-30",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 175000.0,
+ "awd_min_amd_letter_date": "2019-05-01",
+ "awd_max_amd_letter_date": "2019-05-01",
+ "awd_abstract_narration": "Data loss is a significant problem in today's data center networks.  Popular websites like Google, Amazon, and Facebook are built on top of data center applications that generate responses to incoming requests from end-users on the Internet.  In these applications, the work required to generate a response is distributed across a large number of servers (computers).  Unfortunately, these communication patterns lead to frequent events of data loss in the network.  Because data loss in the network must be recovered through retransmissions, it can dramatically increase communication latency (the time delay required for information to travel across a network).  This can ultimately translate into a loss of revenue for these companies.  Similarly, data loss is also a limiting factor on the adoption of new technologies like Remote Direct Memory Access (RDMA).  RDMA is important because it can reduce latency and increase throughput, and this can improve the performance of data center applications.  However, despite its benefits, RDMA is not seeing widespread adoption because RDMA Network Interface Cards (NICs) fail to perform well when there is data loss in the network.\r\n\r\nThe goal of our proposed research is twofold: 1) to reduce application latency, and 2) to enable important new technologies like RDMA.  This project will accomplish its goals through the design of a new flow control protocol, namely a protocol that prevents the network from dropping data.  The plan is to create a problem-free lossless network that does not drop data due to congestion and is also guaranteed to provide better or equal performance to an equivalent network that does drop data. Specifically, this project seeks to develop: new protocols for rapidly detecting and then communicating per-flow congestion information between switches and Network Interface Cards (NICs); novel algorithms for approximating per-flow queuing on currently available programmable networking hardware; and new techniques for building lossless overlay networks to support legacy devices.  The software from this project will be made broadly available for public reuse, and the researcher plans to integrate the proposed research into courses at the University of Illinois at Chicago.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Brent",
+   "pi_last_name": "Stephens",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Brent Stephens",
+   "pi_email_addr": "brent@cs.utah.edu",
+   "nsf_id": "000781448",
+   "pi_start_date": "2019-05-01",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Illinois at Chicago",
+  "inst_street_address": "809 S MARSHFIELD AVE M/C 551",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHICAGO",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "3129962862",
+  "inst_zip_code": "606124305",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "IL07",
+  "org_lgl_bus_name": "UNIVERSITY OF ILLINOIS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "W8XEAJDKMXH3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Illinois at Chicago",
+  "perf_str_addr": "851 S. Morgan St.",
+  "perf_city_name": "Chicago",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "606077042",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "IL07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7363",
+   "pgm_ref_txt": "RES IN NETWORKING TECH & SYS"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 60167.0
+  }
+ ],
+ "por": null
+}

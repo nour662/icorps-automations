@@ -1,0 +1,105 @@
+{
+ "awd_id": "1855565",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: CSR: Towards Pinpointing the Root Causes of Failures in Flash-based Storage Systems",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2018-08-11",
+ "awd_exp_date": "2020-04-30",
+ "tot_intn_awd_amt": 59494.0,
+ "awd_amount": 59494.0,
+ "awd_min_amd_letter_date": "2018-10-23",
+ "awd_max_amd_letter_date": "2018-10-23",
+ "awd_abstract_narration": "Storage systems that hold financial transactions, scientific computation results, a family's photos, and more, are undergoing dramatic changes. Triggered by the advances in flash memory technology, almost every layer of storage systems is being optimized aggressively to make full use of flash. This trend increases the complexity of the systems and increases the chance of obscure failures. Failures in flash-based storage systems are challenging to diagnose even for data center professionals, and can lead to severe downtime or even data loss. Moreover, the difficulty of failure diagnosis will increase in the foreseeable future with the rapid growth of flash and other non-volatile memory technologies. Thus, a framework for diagnosing the whole system and pinpointing the root causes of failures is urgently needed.\r\n\r\nThe goal of this research project is to enable precise, end-to-end diagnosis of failures in flash-based storage systems. One key observation is that more and more kernel components are being optimized aggressively for flash, so a diagnosis framework is needed that minimizes the dependence on the kernel. On the other hand, although many components are changing, some fundamental abstractions such as files and logical blocks, and interfaces such as system calls and command sets, are relatively stable. A diagnosis framework can focus on the invariants to analyze the behavior of the rapidly evolving systems. Based on these observations, this research project investigates a novel failure diagnosis framework that separates failure domains based on the interfaces and automatically correlates the fundamental operations across layers. More specifically, the framework consists of two synergistic components: (1) an on-drive device agent to record and reproduce the host-device interactions without any dependence on the host, and (2) an end-to-end analyzer to provide in-depth diagnosis support along the whole data path from the application to the device.\r\n\r\nThis research project will advance the dependability of storage systems for various important data in modern society. The improvements to data storage will in turn benefit the society from many other aspects, including examples such as reducing maintenance costs and human efforts and avoiding financial loss due to service downtime or data corruption. This research project will also contribute to the curriculum of operating systems and other related courses, and will engage undergraduate and graduate students in systems research. In addition, the project will be integrated into the Alliance for Minority Participation  Program and the Young Women in Computing Program to engage students from traditionally underrepresented groups,  serving our national, regional, and local interest in increasing diversity in computing research.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Mai",
+   "pi_last_name": "Zheng",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mai Zheng",
+   "pi_email_addr": "mai@iastate.edu",
+   "nsf_id": "000702453",
+   "pi_start_date": "2018-10-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Iowa State University",
+  "inst_street_address": "1350 BEARDSHEAR HALL",
+  "inst_street_address_2": "515 MORRILL ROAD",
+  "inst_city_name": "AMES",
+  "inst_state_code": "IA",
+  "inst_state_name": "Iowa",
+  "inst_phone_num": "5152945225",
+  "inst_zip_code": "500112103",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "IA04",
+  "org_lgl_bus_name": "IOWA STATE UNIVERSITY OF SCIENCE AND TECHNOLOGY",
+  "org_prnt_uei_num": "DQDBM7FGJPC5",
+  "org_uei_num": "DQDBM7FGJPC5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Iowa State University",
+  "perf_str_addr": "372 Durham",
+  "perf_city_name": "Ames",
+  "perf_st_code": "IA",
+  "perf_st_name": "Iowa",
+  "perf_zip_code": "500110002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "IA04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 59494.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><!--StartFragment-->\n<p>Storage systems that hold financial transactions, scientific computation results, family photos, and more, are undergoing dramatic changes. Triggered by the advances in flash memory technology, almost every layer of storage systems is being optimized aggressively to make full use of flash. This trend increases the complexity of the systems and increases the chance of obscure failures. Failures in flash-based storage systems are challenging to diagnose even for data center professionals, and can lead to severe downtime or even data loss. Moreover, the difficulty of failure diagnosis will increase in the foreseeable future with the rapid growth of flash and other non-volatile memory technologies. Thus, a framework for diagnosing the whole system and pinpointing the root causes of failures is urgently needed.</p>\n<p>The PI and his research teams have designed and implemented multiple innovative techniques to address the challenges imposed by storage system failures through this project. Specifically, they have developed a command-level record and replay engine for understanding the behavior of storage devices and triggering high-level failure symptoms, as well as a function-level event logging engine for analyzing the behavior of storage software. These techniques have been applied to identify the defects in real world systems that could lead to failures and result in service downtime or data loss. The practical systems analyzed by the PI and his team in this project include Linux-based and SSD-based storage systems. Examples of failure symptoms exposed in the project include un-mountable devices, file corruptions, misplacement of files, hang, crash, and so on. The root causes of failures identified in the project include defects spanning multiple layers of the storage stack such as the block layer, the recovery procedure, and so on. Moreover, based on the defects identified by the framework, the PI and his team have developed a transactional library called rfsck to help improve the robustness of Linux file system checkers. The rfsck library has been open sourced on GitLab. &nbsp;The research result has been published on peer-reviewed venues.</p>\n<p>In addition, the research covered in this project have been incorporated into multiple courses and educational initiatives at two universities. Examples of relevant courses include \"CS479/579 Special Topics: Reliable Storage Systems\" at New Mexico State University (NMSU) and \"CprE563X Advanced Data Storage Systems\" at Iowa State University (ISU). Examples of relevant educational initiatives include the BIGDatA REU program at NMSU and the Iowa STEM Festivals. Through these incorporated activities, the PI has mentored a diverse set of students, including those from traditionally under-represented groups (e.g., female students, African-American students, and Hispanic-American students).</p>\n<!--EndFragment-->\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/10/2020<br>\n\t\t\t\t\tModified by: Mai&nbsp;Zheng</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2020/1855565/1855565_10406545_1589153220313_XRay-Overview--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1855565/1855565_10406545_1589153220313_XRay-Overview--rgov-800width.jpg\" title=\"A Cross Layer Diagnosis Framework\"><img src=\"/por/images/Reports/POR/2020/1855565/1855565_10406545_1589153220313_XRay-Overview--rgov-66x44.jpg\" alt=\"A Cross Layer Diagnosis Framework\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">A Cross Layer Approach for Failure Diagnosis: the target software stack is hosted in a virtual machine; DevAgent, HostAgent, andX-Explorer are the three main components; the basic mode visualizes a correlation tree for inspection; the advancedmode highlights critical nodes based on rules.</div>\n<div class=\"imageCredit\">Mai Zheng</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Mai&nbsp;Zheng</div>\n<div class=\"imageTitle\">A Cross Layer Diagnosis Framework</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1855565/1855565_10406545_1589153457341_CrossLayerEventTree--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1855565/1855565_10406545_1589153457341_CrossLayerEventTree--rgov-800width.jpg\" title=\"Correlation Tree\"><img src=\"/por/images/Reports/POR/2020/1855565/1855565_10406545_1589153457341_CrossLayerEventTree--rgov-66x44.jpg\" alt=\"Correlation Tree\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Example of  A Correlation Tree: the tree includes one system call (green), 704 kernel functions (white nodes), and 3device commands (blue); the critical path (red) is selected by a simple rule: all ancestors of the command nodes.</div>\n<div class=\"imageCredit\">Mai Zheng</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Mai&nbsp;Zheng</div>\n<div class=\"imageTitle\">Correlation Tree</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1855565/1855565_10406545_1589153662849_RFSCK-Workflow--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1855565/1855565_10406545_1589153662849_RFSCK-Workflow--rgov-800width.jpg\" title=\"RFSCK Workflow\"><img src=\"/por/images/Reports/POR/2020/1855565/1855565_10406545_1589153662849_RFSCK-Workflow--rgov-66x44.jpg\" alt=\"RFSCK Workflow\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">This figure shows the 10 steps of testing a file system checker using the command record and replay engine.</div>\n<div class=\"imageCredit\">Mai Zheng</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Mai&nbsp;Zheng</div>\n<div class=\"imageTitle\">RFSCK Workflow</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2020/1855565/1855565_10406545_1589153731246_rfsck-lib--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2020/1855565/1855565_10406545_1589153731246_rfsck-lib--rgov-800width.jpg\" title=\"RFSCK Log\"><img src=\"/por/images/Reports/POR/2020/1855565/1855565_10406545_1589153731246_rfsck-lib--rgov-66x44.jpg\" alt=\"RFSCK Log\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">This figure shows the format of the rfsck log.</div>\n<div class=\"imageCredit\">Mai Zheng</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Mai&nbsp;Zheng</div>\n<div class=\"imageTitle\">RFSCK Log</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\n\nStorage systems that hold financial transactions, scientific computation results, family photos, and more, are undergoing dramatic changes. Triggered by the advances in flash memory technology, almost every layer of storage systems is being optimized aggressively to make full use of flash. This trend increases the complexity of the systems and increases the chance of obscure failures. Failures in flash-based storage systems are challenging to diagnose even for data center professionals, and can lead to severe downtime or even data loss. Moreover, the difficulty of failure diagnosis will increase in the foreseeable future with the rapid growth of flash and other non-volatile memory technologies. Thus, a framework for diagnosing the whole system and pinpointing the root causes of failures is urgently needed.\n\nThe PI and his research teams have designed and implemented multiple innovative techniques to address the challenges imposed by storage system failures through this project. Specifically, they have developed a command-level record and replay engine for understanding the behavior of storage devices and triggering high-level failure symptoms, as well as a function-level event logging engine for analyzing the behavior of storage software. These techniques have been applied to identify the defects in real world systems that could lead to failures and result in service downtime or data loss. The practical systems analyzed by the PI and his team in this project include Linux-based and SSD-based storage systems. Examples of failure symptoms exposed in the project include un-mountable devices, file corruptions, misplacement of files, hang, crash, and so on. The root causes of failures identified in the project include defects spanning multiple layers of the storage stack such as the block layer, the recovery procedure, and so on. Moreover, based on the defects identified by the framework, the PI and his team have developed a transactional library called rfsck to help improve the robustness of Linux file system checkers. The rfsck library has been open sourced on GitLab.  The research result has been published on peer-reviewed venues.\n\nIn addition, the research covered in this project have been incorporated into multiple courses and educational initiatives at two universities. Examples of relevant courses include \"CS479/579 Special Topics: Reliable Storage Systems\" at New Mexico State University (NMSU) and \"CprE563X Advanced Data Storage Systems\" at Iowa State University (ISU). Examples of relevant educational initiatives include the BIGDatA REU program at NMSU and the Iowa STEM Festivals. Through these incorporated activities, the PI has mentored a diverse set of students, including those from traditionally under-represented groups (e.g., female students, African-American students, and Hispanic-American students).\n\n\n \n\n\t\t\t\t\tLast Modified: 05/10/2020\n\n\t\t\t\t\tSubmitted by: Mai Zheng"
+ }
+}

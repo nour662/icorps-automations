@@ -1,0 +1,113 @@
+{
+ "awd_id": "1919122",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SPX: Collaborative Research: Parallel Algorithm by Blocks - A Data-centric Compiler/runtime System for Productive Programming of Scalable Parallel Systems",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 419334.0,
+ "awd_amount": 419334.0,
+ "awd_min_amd_letter_date": "2019-07-29",
+ "awd_max_amd_letter_date": "2019-07-29",
+ "awd_abstract_narration": "Achieving both high productivity and high performance on scalable parallel and heterogeneous computer systems is a challenging goal for application developers. Parallel programming with Message Passing Interface (MPI) is currently the most widely used and effective means of developing scalable parallel applications; however the productivity of application developers is lower than with programming models that offer a global shared view of data structures. In comparison, achieving high performance and scalability with global-address-space programming models is challenging. This project focuses on the development of a data-centric compiler/runtime framework, \"Parallel Algorithms by Blocks\" (PAbB), aimed at offering users the combined positive attributes of multiple parallel programming models without the disadvantages. The main novelty of this project is that it uses a combination of user insights, new compiler optimizations, and advanced runtime support to achieve both productivity and performance for an important class of computations that operate on matrices, tensors, and graphs. The main broader impact of the work is that it can significantly lower the barrier to entry for scientists from various domains who wish to develop new high-performance applications on large scale parallel systems, but presently find it too difficult with currently available parallel programming models. \r\n\r\nThis project brings together a team of investigators, with expertise across the software stack, to develop compiler tools and runtime systems for PAbB and demonstrate its use across a number of applications from computational science and data science. The PAbB model is intended to work in concert with MPI; that is, PAbB programs can execute in any standard MPI environment, interoperating with other native MPI code. The key idea behind the proposed approach is to offer the user a global-address view of the targeted data structures, requiring only (optionally in some cases) that they specify how data should be partitioned, but have the compiler/runtime handle the tedious aspects of the global-to-local re-indexing and inter-node data movement. In addition to the productivity benefit, a second significant benefit is in enabling system support for dynamic load balancing. The approach is being designed and demonstrated in the context of applications operating on dense and sparse matrices and tensors, and graphs.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Anantharaman",
+   "pi_last_name": "Kalyanaraman",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Anantharaman Kalyanaraman",
+   "pi_email_addr": "ananth@eecs.wsu.edu",
+   "nsf_id": "000289075",
+   "pi_start_date": "2019-07-29",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Sriram",
+   "pi_last_name": "Krishnamoorthy",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sriram Krishnamoorthy",
+   "pi_email_addr": "sriram@pnnl.gov",
+   "nsf_id": "000516352",
+   "pi_start_date": "2019-07-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Washington State University",
+  "inst_street_address": "240 FRENCH ADMINISTRATION BLDG",
+  "inst_street_address_2": "",
+  "inst_city_name": "PULLMAN",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "5093359661",
+  "inst_zip_code": "991640001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "WA05",
+  "org_lgl_bus_name": "WASHINGTON STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "XRJSGX384TD6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Washington State University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "991642752",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "WA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "042Y00",
+   "pgm_ele_name": "PPoSS-PP of Scalable Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 419334.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><strong>&nbsp;</strong></p>\r\n<p><strong>Intellectual Merit: </strong></p>\r\n<p>The primary goals of the high-level &ldquo;Parallel Algorithms by Blocks&rdquo; (PAbB) model are to enable higher productivity of application developers and achieve portability across multiple environments without loss of performance relative to manually customized parallel programs. Algorithmic optimizations and development were focused on index-based data structures, including sparse/dense matrices/tensors and graphs. In particular, the project contributed to technologies under two categories: a) faster, efficient parallel methods and software implementations for graph applications; and b) scalable methods and software tools to support genomic data analysis.</p>\r\n<p>Under the graph applications category, one of the major advancements was for the classical problem of influence maximization on large-scale networks (or graphs). Given a large network, the central question here is to identify a fixed number of top influential nodes which when activated can generate maximum spread of that information (or influence) over the network. This is a particularly difficult problem to parallelize; but computations without optimizations could take hours to days on large networks. The project developed multiple different parallel algorithms and algorithmic frameworks for various versions of this problem and developed distributed memory methods and software for these methods. These methods were able to scale on thousands of cores of a supercomputer and bring orders of magnitude reductions in time to solution and memory use, without on compromising on quality. &nbsp;The project also led to several architectural innovations to accelerate complex graph operations and machine learning inference tasks and training tasks on emerging platforms. The main innovation here is to co-design hardware and software together so that they optimize on combined time and energy objectives.</p>\r\n<p>Under the computational biology category, the project led to scalable tools for two major problems. One problem is the task of mapping (or comparing) long read sequences against a reference set of genomic sequences (referred to as contigs). This is a routinely used operation in bioinformatics but is challenged by the sizes of the read sets as well as the input dependency of the mapping tasks which could vary widely depending on the complexity of the genome. The project contributed to a new type of mapping method called JEM-mapper, which uses an idea of sketches, which are short compact representations of the input sequences that need to be mapped, prior to the sequence comparisons. JEM-mapper was able to demonstrate significant accuracy and performance speedup over state-of-the-art mappers. It is also an easily parallelizable method and the project has developed a distributed memory tool that can scale to large-scale inputs. The other major contribution of the project was for the problem of genome scaffolding. In public databases such as the NCBI GenBank, there is a vast collection of already assembled sequences (contigs) and newly generated long read sequences. But there is no easy to way to combine the two sets of sequences. Combining them could help in generating more complete versions of these otherwise fragmented genome assemblies. The project led to the development of a new tool called Maptcha which is a parallel genome scaffolding method for complex genomes. This is a new type of tool in bioinformatics that can improve the quality of the existing genome assemblies with the use of newly sequenced long reads.</p>\r\n<p><strong>Broader impacts:</strong></p>\r\n<p>The project led to training of multiple graduate and undergraduate students. At the graduate level, the project trained 3 PhD students and 1 MS student. The project also trained one undergraduate student in research. All students involved in the project contributed to peer-reviewed publications on their respective projects as leading authors. The project also helped generate new curricular materials for courses in parallel computing and computational genomics. The project led to dissemination of research results at various parallel processing and bioinformatics conference venues. All tools developed as part of the project are available as open source and open access.</p>\r\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 02/02/2025<br>\nModified by: Anantharaman&nbsp;Kalyanaraman</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\n\r\n\n\nIntellectual Merit: \r\n\n\nThe primary goals of the high-level Parallel Algorithms by Blocks (PAbB) model are to enable higher productivity of application developers and achieve portability across multiple environments without loss of performance relative to manually customized parallel programs. Algorithmic optimizations and development were focused on index-based data structures, including sparse/dense matrices/tensors and graphs. In particular, the project contributed to technologies under two categories: a) faster, efficient parallel methods and software implementations for graph applications; and b) scalable methods and software tools to support genomic data analysis.\r\n\n\nUnder the graph applications category, one of the major advancements was for the classical problem of influence maximization on large-scale networks (or graphs). Given a large network, the central question here is to identify a fixed number of top influential nodes which when activated can generate maximum spread of that information (or influence) over the network. This is a particularly difficult problem to parallelize; but computations without optimizations could take hours to days on large networks. The project developed multiple different parallel algorithms and algorithmic frameworks for various versions of this problem and developed distributed memory methods and software for these methods. These methods were able to scale on thousands of cores of a supercomputer and bring orders of magnitude reductions in time to solution and memory use, without on compromising on quality. The project also led to several architectural innovations to accelerate complex graph operations and machine learning inference tasks and training tasks on emerging platforms. The main innovation here is to co-design hardware and software together so that they optimize on combined time and energy objectives.\r\n\n\nUnder the computational biology category, the project led to scalable tools for two major problems. One problem is the task of mapping (or comparing) long read sequences against a reference set of genomic sequences (referred to as contigs). This is a routinely used operation in bioinformatics but is challenged by the sizes of the read sets as well as the input dependency of the mapping tasks which could vary widely depending on the complexity of the genome. The project contributed to a new type of mapping method called JEM-mapper, which uses an idea of sketches, which are short compact representations of the input sequences that need to be mapped, prior to the sequence comparisons. JEM-mapper was able to demonstrate significant accuracy and performance speedup over state-of-the-art mappers. It is also an easily parallelizable method and the project has developed a distributed memory tool that can scale to large-scale inputs. The other major contribution of the project was for the problem of genome scaffolding. In public databases such as the NCBI GenBank, there is a vast collection of already assembled sequences (contigs) and newly generated long read sequences. But there is no easy to way to combine the two sets of sequences. Combining them could help in generating more complete versions of these otherwise fragmented genome assemblies. The project led to the development of a new tool called Maptcha which is a parallel genome scaffolding method for complex genomes. This is a new type of tool in bioinformatics that can improve the quality of the existing genome assemblies with the use of newly sequenced long reads.\r\n\n\nBroader impacts:\r\n\n\nThe project led to training of multiple graduate and undergraduate students. At the graduate level, the project trained 3 PhD students and 1 MS student. The project also trained one undergraduate student in research. All students involved in the project contributed to peer-reviewed publications on their respective projects as leading authors. The project also helped generate new curricular materials for courses in parallel computing and computational genomics. The project led to dissemination of research results at various parallel processing and bioinformatics conference venues. All tools developed as part of the project are available as open source and open access.\r\n\n\n\t\t\t\t\tLast Modified: 02/02/2025\n\n\t\t\t\t\tSubmitted by: AnantharamanKalyanaraman\n"
+ }
+}

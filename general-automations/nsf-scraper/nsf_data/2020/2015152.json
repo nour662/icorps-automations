@@ -1,0 +1,105 @@
+{
+ "awd_id": "2015152",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SBIR Phase I:  A Passive Alternative to LiDAR for Automotive 3D Ranging",
+ "cfda_num": "47.084",
+ "org_code": "15030000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Muralidharan Nair",
+ "awd_eff_date": "2020-05-15",
+ "awd_exp_date": "2021-06-30",
+ "tot_intn_awd_amt": 224850.0,
+ "awd_amount": 224850.0,
+ "awd_min_amd_letter_date": "2020-05-21",
+ "awd_max_amd_letter_date": "2020-05-21",
+ "awd_abstract_narration": "The broader impact/commercial potential of this Small Business Innovation Research (SBIR) Phase I project will advance the development of detection systems for autonomous vehicles. The proposed technology takes advantage of trends in price, performance, and quality of imagers and processors driven by the proliferation of these devices in smartphones. The technologyalso provides key capabilities such as integrated color information, detection over extended depths, scene segmentation and tracking, and better performance in inclement weather or under poor visibility. This leads to improvements in three-dimensional (3D) vision and object modeling that will have significant commercial impact in accelerating the development and deployment of autonomous and semi-autonomous vehicle navigation and assistance. This will lead to higher commuting efficiency, reduced traffic fatalities, reduced traffic congestion, and reduced pollution.\r\n\r\nThis Small Business Innovation Research (SBIR) Phase I project will establish the technical capabilities and advantages of passive sensing image-based multi-camera EPI Epipolar-Plane Imaging (EPI) analysis for autonomous vehicle (AV) ranging. The research objective is to advance the development of EPI analysis and compare it to Light Detection and Ranging (LiDAR) systems.  The research will extend an existing EPI-based module to incorporate new hardware and software to achieve these results, including accuracy and precision comparable to LiDAR at distances of 200 m and beyond, feature discernment superior to LiDAR, higher levels of semantics in presented range information, and operation in inclement weather and discrete obscuration.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "TIP",
+ "org_dir_long_name": "Directorate for Technology, Innovation, and Partnerships",
+ "div_abbr": "TI",
+ "org_div_long_name": "Translational Impacts",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Henry",
+   "pi_last_name": "Baker",
+   "pi_mid_init": "H",
+   "pi_sufx_name": "",
+   "pi_full_name": "Henry H Baker",
+   "pi_email_addr": "harlyn@epiimaging.com",
+   "nsf_id": "000711295",
+   "pi_start_date": "2020-05-21",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "EPIImaging, LLC",
+  "inst_street_address": "414 PACO DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOS ALTOS",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "6509491052",
+  "inst_zip_code": "940243827",
+  "inst_country_name": "United States",
+  "cong_dist_code": "16",
+  "st_cong_dist_code": "CA16",
+  "org_lgl_bus_name": "EPIIMAGING LLC",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "FMCEN5SWM8L3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "EPIImaging, LLC",
+  "perf_str_addr": "414 Paco Drive",
+  "perf_city_name": "Los Altos",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "940243827",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "16",
+  "perf_st_cong_dist": "CA16",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "537100",
+   "pgm_ele_name": "SBIR Phase I"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "6840",
+   "pgm_ref_txt": "ROBOTICS"
+  },
+  {
+   "pgm_ref_code": "8034",
+   "pgm_ref_txt": "Hardware Components"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 224850.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><strong>Project Outcomes Report</strong></p>\n<p><strong>A Passive Alternate to LiDAR for Automotive 3D Ranging &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;NSF SBIR Phase I 2015152</strong></p>\n<p>&nbsp;EPIImaging&rsquo;s passive range solution involves coordinated operation of an array of imagers structured to exploit certain constraints that facilitate accuracy, precision, and efficiency in 3D depth analysis. Our technology -- Epipolar-Plane Image Analysis (EPI) -- is a branch of Light-Field imaging. At the beginning of this award, we had a working EPI camera system that embodied these constraints in a self-contained acquisition and computation module, the EPIModule (<em>Fig.1</em>).&nbsp; This supported our developments and evaluations, and permitted us to explore market requirements.&nbsp; Our Phase I award aimed at understanding and refining the metric capabilities of the EPIModule through live and simulation studies in the context of autonomous vehicles.&nbsp; In this we have been evaluating processing results against ground truth in qualifying/quantifying estimates as delivered by both on-module and off-module solutions.&nbsp; In addition to collecting and synthesizing a variety of test data (typical results shown in <em>Fig.2</em> and <em>Fig.3)</em>, we focused on developing evaluation techniques, reviewing and refining our mathematical analysis, and further improving our precision and accuracy.</p>\n<p><strong>Technical challenges</strong></p>\n<p>EPI has feature discernment superior to LiDAR in that it represents textural variations and scene depth discontinuities to subpixel resolution (see <em>Fig.2</em>). However, unlike LiDAR, EPI distance ranging precision varies with range &ndash; generally superior to LiDAR when near and inferior at a distance.&nbsp; We had observed some range inconsistencies in our analysis and identified two principal sources of inconsistencies and revised our processing for these. The first correction addressed a faulty implementation with respect to the real-world positioning of the camera frame of reference, and the second addressed a commonly-held, but unsupported, assumption about the modeling of lens distortion. With these and other corrections in place, we evaluated our processing against computer-graphic models and actual ground truth measurements to estimate relative performance.</p>\n<p>We have shown our processing to be consistent with ground truth measurements, made using a precision ranging instrument, over a ground-plane region of about 60 feet with a mean error of less than an inch and standard deviation of less than an inch (<em>Fig.4</em>). Our estimates permitted grouping of regions by planarity with similar deviations from ground truth.&nbsp; The EPIModule has an 80mm baseline, and direct use of our technology as replacement or complement to active systems such as LiDAR over an extended range will be possible by increasing lateral pixel count, the viewing baseline, or both.&nbsp; We are now pursuing extended baselines by integrating imagery across multiple modules for total baselines roughly the width of a vehicle (~1.5m). With this baseline, the precision of passive ranging becomes comparable to that of active systems, opening the way for exploiting the more structured value of our representation where we proceed from pixel observation to surface representation without image matching or outlier rejection/filtering (<em>Fig.3</em>). For near-field work, our EPIModule is currently comparable to active ranging and is presenting actionable elevation estimates in precision modeling of, for example, road surfaces.</p>\n<p>An important realization coming from this work is that inaccuracies and imprecisions in range modeling can be overlooked when viewing results through smoothing and aggregation operations &ndash; as other light-field analyses do &ndash; and that detailed review, as we have done here, enables distinguishing errors that would otherwise appear to be generally consistent.</p>\n<p><strong>Commercial and Broader Impact</strong></p>\n<p>The commercial goal of this project has been to demonstrate the value in and path to a cost-effective passive ranging solution delivering high quality information for autonomous vehicle operation. Progress in LiDAR&rsquo;s intrinsic performance has remained a challenge, with continuing concerns about size, cost, reliability, scalability, and interference-free deployment. Additionally, we have found a number of autonomous markets where LiDAR and other active sensors are not an option, and where sensors have not reached a commodity status.&nbsp; EPI analysis exploits the economies of scale of commodity sensors, and configuring sets of inexpensive high-quality sensors will enable delivery of high performance passive sensing into these markets.&nbsp; Our processor chip&rsquo;s price has decreased by about 80% over the period, positioning us well as an economic alternative to active ranging, particularly since we provide additional capability such as color, coverage from near-field to the edge of visibility, scene segmentation and tracking, low-light ability (including IR and thermal cameras), and better performance in bad weather and poor visibility.&nbsp; Our two-stage commercialization plan allows us to follow the time-honored strategy of establishing a lead in a niche market and use that as a base to expand into high volume automotive markets.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/29/2021<br>\n\t\t\t\t\tModified by: Henry&nbsp;H&nbsp;Baker</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2021/2015152/2015152_10672249_1632895514189_EPIImaging-2015152-Figures--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2021/2015152/2015152_10672249_1632895514189_EPIImaging-2015152-Figures--rgov-800width.jpg\" title=\"Figures for EPIImaging NSF SBIR Phase I 2015152\"><img src=\"/por/images/Reports/POR/2021/2015152/2015152_10672249_1632895514189_EPIImaging-2015152-Figures--rgov-66x44.jpg\" alt=\"Figures for EPIImaging NSF SBIR Phase I 2015152\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Four figures to accompany Project Outcomes Report</div>\n<div class=\"imageCredit\">Harlyn Baker, EPIImaging LLC</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Henry&nbsp;H&nbsp;Baker</div>\n<div class=\"imageTitle\">Figures for EPIImaging NSF SBIR Phase I 2015152</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nProject Outcomes Report\n\nA Passive Alternate to LiDAR for Automotive 3D Ranging                                           NSF SBIR Phase I 2015152\n\n EPIImaging\u2019s passive range solution involves coordinated operation of an array of imagers structured to exploit certain constraints that facilitate accuracy, precision, and efficiency in 3D depth analysis. Our technology -- Epipolar-Plane Image Analysis (EPI) -- is a branch of Light-Field imaging. At the beginning of this award, we had a working EPI camera system that embodied these constraints in a self-contained acquisition and computation module, the EPIModule (Fig.1).  This supported our developments and evaluations, and permitted us to explore market requirements.  Our Phase I award aimed at understanding and refining the metric capabilities of the EPIModule through live and simulation studies in the context of autonomous vehicles.  In this we have been evaluating processing results against ground truth in qualifying/quantifying estimates as delivered by both on-module and off-module solutions.  In addition to collecting and synthesizing a variety of test data (typical results shown in Fig.2 and Fig.3), we focused on developing evaluation techniques, reviewing and refining our mathematical analysis, and further improving our precision and accuracy.\n\nTechnical challenges\n\nEPI has feature discernment superior to LiDAR in that it represents textural variations and scene depth discontinuities to subpixel resolution (see Fig.2). However, unlike LiDAR, EPI distance ranging precision varies with range &ndash; generally superior to LiDAR when near and inferior at a distance.  We had observed some range inconsistencies in our analysis and identified two principal sources of inconsistencies and revised our processing for these. The first correction addressed a faulty implementation with respect to the real-world positioning of the camera frame of reference, and the second addressed a commonly-held, but unsupported, assumption about the modeling of lens distortion. With these and other corrections in place, we evaluated our processing against computer-graphic models and actual ground truth measurements to estimate relative performance.\n\nWe have shown our processing to be consistent with ground truth measurements, made using a precision ranging instrument, over a ground-plane region of about 60 feet with a mean error of less than an inch and standard deviation of less than an inch (Fig.4). Our estimates permitted grouping of regions by planarity with similar deviations from ground truth.  The EPIModule has an 80mm baseline, and direct use of our technology as replacement or complement to active systems such as LiDAR over an extended range will be possible by increasing lateral pixel count, the viewing baseline, or both.  We are now pursuing extended baselines by integrating imagery across multiple modules for total baselines roughly the width of a vehicle (~1.5m). With this baseline, the precision of passive ranging becomes comparable to that of active systems, opening the way for exploiting the more structured value of our representation where we proceed from pixel observation to surface representation without image matching or outlier rejection/filtering (Fig.3). For near-field work, our EPIModule is currently comparable to active ranging and is presenting actionable elevation estimates in precision modeling of, for example, road surfaces.\n\nAn important realization coming from this work is that inaccuracies and imprecisions in range modeling can be overlooked when viewing results through smoothing and aggregation operations &ndash; as other light-field analyses do &ndash; and that detailed review, as we have done here, enables distinguishing errors that would otherwise appear to be generally consistent.\n\nCommercial and Broader Impact\n\nThe commercial goal of this project has been to demonstrate the value in and path to a cost-effective passive ranging solution delivering high quality information for autonomous vehicle operation. Progress in LiDAR\u2019s intrinsic performance has remained a challenge, with continuing concerns about size, cost, reliability, scalability, and interference-free deployment. Additionally, we have found a number of autonomous markets where LiDAR and other active sensors are not an option, and where sensors have not reached a commodity status.  EPI analysis exploits the economies of scale of commodity sensors, and configuring sets of inexpensive high-quality sensors will enable delivery of high performance passive sensing into these markets.  Our processor chip\u2019s price has decreased by about 80% over the period, positioning us well as an economic alternative to active ranging, particularly since we provide additional capability such as color, coverage from near-field to the edge of visibility, scene segmentation and tracking, low-light ability (including IR and thermal cameras), and better performance in bad weather and poor visibility.  Our two-stage commercialization plan allows us to follow the time-honored strategy of establishing a lead in a niche market and use that as a base to expand into high volume automotive markets.\n\n\t\t\t\t\tLast Modified: 09/29/2021\n\n\t\t\t\t\tSubmitted by: Henry H Baker"
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "awd_id": "2007581",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CNS Core: Small: Towards MIMO Power Line Communication for Scalability, Coverage and High Data Rate",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925139",
+ "po_email": "haliu@nsf.gov",
+ "po_sign_block_name": "Hang Liu",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 499999.0,
+ "awd_amount": 499999.0,
+ "awd_min_amd_letter_date": "2020-08-18",
+ "awd_max_amd_letter_date": "2020-10-15",
+ "awd_abstract_narration": "This project exploits ubiquitous powerlines to enable high data rate communication by allowing multiple devices to send / receive data simultaneously; currently, only one device can send / receive data at a given time. This technology is attractive in that it leverages existing power line plant and can work with existing wireless access points to improve reliability, coverage and data rate. It has deep implications for existing internet technologies. It can be used as a backbone network for existing wireless access points to share coordination information, control and data to significantly improve wireless network reliability and data rate. The research outcome from this project is useful not only to the networking community, but also to powerline researchers, Internet service providers and Internet device manufacturers. The proposed work can also enable Internet service in remote rural areas where there is no cellular and cable internet service. If successful, it will be the first project to demonstrate a scalable powerline communication technology that allows multiple devices to send and receive data simultaneously.\r\n\r\nThe goal of this project is to demonstrate multi-user multi-input multi-output (MU-MIMO) techniques on powerlines. Preliminary observations of the spatial independence of channels suggests that MU-MIMO is feasible. The project will build a new wideband coupler that will interface a software-defined radio with the powerline.  It will characterize the powerline channel and study its impact on spatial independence. It will study the transients and noise observed on the powerline from high-power appliances, and their impact on the proposed techniques. It will also test the scalability of the architecture as the number of users increases. The project will perform experiments in a variety of environments such as homes, offices, schools and warehouses. This project has the potential to enable Internet service in remote rural areas where there is no cellular and cable internet service. The project plans to develop new pedagogical methods to enhance the participation of underrepresented groups at the undergraduate level, and a middle-school summer curriculum that introduces wireless technology to those groups.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Kannan",
+   "pi_last_name": "Srinivasan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Kannan Srinivasan",
+   "pi_email_addr": "athreya.14@osu.edu",
+   "nsf_id": "000594363",
+   "pi_start_date": "2020-08-18",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Ohio State University",
+  "inst_street_address": "1960 KENNY RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLUMBUS",
+  "inst_state_code": "OH",
+  "inst_state_name": "Ohio",
+  "inst_phone_num": "6146888735",
+  "inst_zip_code": "432101016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "OH03",
+  "org_lgl_bus_name": "OHIO STATE UNIVERSITY, THE",
+  "org_prnt_uei_num": "MN4MDDMN8529",
+  "org_uei_num": "DLWBSLWAJWR1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Ohio State University",
+  "perf_str_addr": "1960 Kenny Road",
+  "perf_city_name": "Columbus",
+  "perf_st_code": "OH",
+  "perf_st_name": "Ohio",
+  "perf_zip_code": "432101016",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "OH03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 499999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This award allowed us to explore various aspects of power lines and wireless communication technologies. Our first finding was that the power line can be used to provide data communication throughput that scales with the number of users connected to the power line. Although power lines have been used for communication before, we showed that the power line can be used to enable multi-user multi-input multi-output (MI-MIMO) technology similar to its wireless cournterpart. This observation comes as a surprise becuase the community largely thought that a powerline would not spatial diversity, which is what is needed to enable MU-MIMO. We published this work at the IEEE International Conference on Pervasive Computing and Communications Workshops in 2023, where it won the Best Work-in-Progress (WiP) Paper - First Runner. OSU has also patented this work.&nbsp;</p>\r\n<p>Following the work on MU-MIMO, we observed that the channel measurement phase of this technology is usually unenecrypted. This led us to devise an attack that epxloits this phase to attack existing Wi-Fi devices. Our attack is sophisticated that it goes unnoticed as neither the access point nor the victims notice a degradation in their ongoing communication. This work was published in a top security venue. We also observed that cellular networks have these issues as well and are currently exploring their vulnerabilities.</p>\r\n<p>Following up on our work with power lines, we also studied how communication from a mobile device can leak into power lines. This is more recent work that will likely be published in 2025 in a secuirty venue. This poses serious security risks to any mobile device that is charged in a public setting.</p>\r\n<p>This award has been used to train multiple PhD students throughout. A PhD student has joined Wichita State University as an Assistant Professor. Another student has joined Facebook.&nbsp;</p>\r\n<p>This results from this project have influence the PI's coursework as well. The PI has used the security vulnerabilities to motivate the need for a broader vigilence when using the Internet and wireless devices. The PI has developed a series of packet sniffer lab assignments to further embolded the understanding of Internet technologies.</p><br>\n<p>\n Last Modified: 02/14/2025<br>\nModified by: Kannan&nbsp;Srinivasan</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThis award allowed us to explore various aspects of power lines and wireless communication technologies. Our first finding was that the power line can be used to provide data communication throughput that scales with the number of users connected to the power line. Although power lines have been used for communication before, we showed that the power line can be used to enable multi-user multi-input multi-output (MI-MIMO) technology similar to its wireless cournterpart. This observation comes as a surprise becuase the community largely thought that a powerline would not spatial diversity, which is what is needed to enable MU-MIMO. We published this work at the IEEE International Conference on Pervasive Computing and Communications Workshops in 2023, where it won the Best Work-in-Progress (WiP) Paper - First Runner. OSU has also patented this work.\r\n\n\nFollowing the work on MU-MIMO, we observed that the channel measurement phase of this technology is usually unenecrypted. This led us to devise an attack that epxloits this phase to attack existing Wi-Fi devices. Our attack is sophisticated that it goes unnoticed as neither the access point nor the victims notice a degradation in their ongoing communication. This work was published in a top security venue. We also observed that cellular networks have these issues as well and are currently exploring their vulnerabilities.\r\n\n\nFollowing up on our work with power lines, we also studied how communication from a mobile device can leak into power lines. This is more recent work that will likely be published in 2025 in a secuirty venue. This poses serious security risks to any mobile device that is charged in a public setting.\r\n\n\nThis award has been used to train multiple PhD students throughout. A PhD student has joined Wichita State University as an Assistant Professor. Another student has joined Facebook.\r\n\n\nThis results from this project have influence the PI's coursework as well. The PI has used the security vulnerabilities to motivate the need for a broader vigilence when using the Internet and wireless devices. The PI has developed a series of packet sniffer lab assignments to further embolded the understanding of Internet technologies.\t\t\t\t\tLast Modified: 02/14/2025\n\n\t\t\t\t\tSubmitted by: KannanSrinivasan\n"
+ }
+}

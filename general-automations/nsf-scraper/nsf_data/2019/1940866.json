@@ -1,0 +1,117 @@
+{
+ "awd_id": "1940866",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: Data-Driven Control of Power Systems using Structured Reinforcement Learning",
+ "cfda_num": "47.041",
+ "org_code": "07010000",
+ "po_phone": "7032925394",
+ "po_email": "rnash@nsf.gov",
+ "po_sign_block_name": "Richard Nash",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2023-08-31",
+ "tot_intn_awd_amt": 220000.0,
+ "awd_amount": 220000.0,
+ "awd_min_amd_letter_date": "2019-08-15",
+ "awd_max_amd_letter_date": "2022-03-31",
+ "awd_abstract_narration": "Over the foreseeable future, the North American power grid is envisioned to evolve as the most complex Internet-of-Things, generating massive volumes of data from thousands of digital sensors. In this modern grid, conventional generation as well as distributed energy resources (DERs) in the form of renewables, energy storage, smart loads, and power electronic converters are foreseen to serve as active endpoints that react and respond proactively to commands driven by these data. To realize this vision, grid operators today must start planning for an infrastructure that not only seeks to install more sensors and actuators, but also bridges the gap between the two, and enables them to transition from data to control. The challenge, however, lies in dodging the curse of dimensionality in both data volume and controller size. Even the simplest control designs today demand cubic numerical complexity, making it almost impossible to learn them in real-time. The objective of this EAGER project is to take a step forward towards addressing this challenge. The goal is to develop machine learning algorithms that translate large volumes of power system data to real-time control actions without running into unacceptably long convergence times. Structured learning algorithms that can scan, recognize, and extract the most useful attributes of large datasets, and at the same time also identify the most vulnerable parts of the grid that need to controlled using that data will be developed to achieve this goal, reducing computation and control time by significant orders of magnitude. \r\n\r\nOn the technical front, the project will study two key questions. First, given Synchrophasor data streaming from hundreds of Phasor Measurement Units, are all spectral components of these data essential for taking a given wide-area control action Or does there exist a low-rank structure of the data that may be enough for the control goal? Second, does every actuator in the grid need to be triggered after a disturbance, or does there exist a certain neighborhood around the source of the disturbance, controlling which may be enough to stabilize the grid with a reasonably good performance? Furthermore, can the outline of this neighborhood be estimated from combinations of online Synchrophasor data and offline archived data from the energy management system? We will integrate ideas from structured compressive sensing, model reduction theory, and adaptive dynamic programming to answer these questions from core machine learning and control-theoretic points of view. Our study will address two critical control applications of Synchrophasors, namely (1) hierarchical frequency control using both conventional generators and DERs, and (2) power oscillation damping of major tie-line flows in the presence of large-scale wind and solar penetrations. The study will promote many new directions of theoretical and experimental research in the application of machine learning for tomorrow?'s power system operations. Workshops and conference tutorials will be organized to train graduate students and power system professionals in Synchrophasor data analytics.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "ECCS",
+ "org_div_long_name": "Division of Electrical, Communications and Cyber Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Iqbal",
+   "pi_last_name": "Husain",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Iqbal Husain",
+   "pi_email_addr": "ihusain2@ncsu.edu",
+   "nsf_id": "000377048",
+   "pi_start_date": "2020-06-09",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Former Principal Investigator",
+   "pi_first_name": "Aranya",
+   "pi_last_name": "Chakrabortty",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Aranya Chakrabortty",
+   "pi_email_addr": "achakra2@ncsu.edu",
+   "nsf_id": "000545007",
+   "pi_start_date": "2019-08-15",
+   "pi_end_date": "2020-06-09"
+  }
+ ],
+ "inst": {
+  "inst_name": "North Carolina State University",
+  "inst_street_address": "2601 WOLF VILLAGE WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "RALEIGH",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9195152444",
+  "inst_zip_code": "276950001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "NC02",
+  "org_lgl_bus_name": "NORTH CAROLINA STATE UNIVERSITY",
+  "org_prnt_uei_num": "U3NVH931QJJ3",
+  "org_uei_num": "U3NVH931QJJ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "North Carolina State University",
+  "perf_str_addr": "",
+  "perf_city_name": "Raleigh",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "276958202",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "NC02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "760700",
+   "pgm_ele_name": "EPCN-Energy-Power-Ctrl-Netwrks"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "155E",
+   "pgm_ref_txt": "Electric power networks"
+  },
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 220000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>Over the foreseeable future, the North American power grid is envisioned to evolve as the most complex Internet-of-Things, generating massive volumes of data from thousands of digital sensors. In this modern grid, conventional generation as well as distributed energy resources (DERs) in the form of renewables, energy storage, smart loads, and power electronic converters are foreseen to serve as active endpoints that react and respond proactively to commands driven by these data. To realize this vision, grid operators today must start planning for an infrastructure that not only seeks to install more sensors and actuators, but also bridges the gap between the two, and enables them to transition from data to control. The challenge, however, lies in dodging the curse of dimensionality in both data volume and controller size. Even the simplest control designs today demand cubic numerical complexity, making it almost impossible to learn them in real-time. The objective of this EAGER project is to take a step forward towards addressing this challenge. The project has developed machine learning algorithms that translate large volumes of power system data to real-time control actions without running into unacceptably long convergence times. Structured learning algorithms that can scan, recognize, and extract the most useful attributes of large datasets, and at the same time also identify the most vulnerable parts of the grid that need to controlled using that data were developed to achieve this goal, reducing computation and control time by significant orders of magnitude.&nbsp;</span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/10/2023<br>\n\t\t\t\t\tModified by: Iqbal&nbsp;Husain</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOver the foreseeable future, the North American power grid is envisioned to evolve as the most complex Internet-of-Things, generating massive volumes of data from thousands of digital sensors. In this modern grid, conventional generation as well as distributed energy resources (DERs) in the form of renewables, energy storage, smart loads, and power electronic converters are foreseen to serve as active endpoints that react and respond proactively to commands driven by these data. To realize this vision, grid operators today must start planning for an infrastructure that not only seeks to install more sensors and actuators, but also bridges the gap between the two, and enables them to transition from data to control. The challenge, however, lies in dodging the curse of dimensionality in both data volume and controller size. Even the simplest control designs today demand cubic numerical complexity, making it almost impossible to learn them in real-time. The objective of this EAGER project is to take a step forward towards addressing this challenge. The project has developed machine learning algorithms that translate large volumes of power system data to real-time control actions without running into unacceptably long convergence times. Structured learning algorithms that can scan, recognize, and extract the most useful attributes of large datasets, and at the same time also identify the most vulnerable parts of the grid that need to controlled using that data were developed to achieve this goal, reducing computation and control time by significant orders of magnitude. \n\n\t\t\t\t\tLast Modified: 09/10/2023\n\n\t\t\t\t\tSubmitted by: Iqbal Husain"
+ }
+}

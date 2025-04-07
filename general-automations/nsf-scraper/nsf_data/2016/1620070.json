@@ -1,0 +1,101 @@
+{
+ "awd_id": "1620070",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research:  Algorithms for Large-scale Stochastic and Nonlinear Optimization",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Leland Jameson",
+ "awd_eff_date": "2016-08-01",
+ "awd_exp_date": "2020-07-31",
+ "tot_intn_awd_amt": 136371.0,
+ "awd_amount": 136371.0,
+ "awd_min_amd_letter_date": "2016-06-17",
+ "awd_max_amd_letter_date": "2016-06-17",
+ "awd_abstract_narration": "The promise of artificial intelligence has been a topic of both public and private interest for decades. Starting in the 1990s the field has been benefited from the rapidly evolving and expanding field of machine learning. The intelligent systems that have been borne out of machine learning, such as search engines, recommendation platforms, and speech and image recognition software, have become an indispensable part of modern society.  Rooted in statistics and relying heavily on the efficiency of numerical algorithms, machine learning techniques capitalize on increasingly powerful computing platforms and the availability of very large datasets.  One of the pillars of machine learning is mathematical optimization, which, in this context, involves the computation of parameters for a system designed to make decisions based on yet unseen data. The goal of this project is to develop new optimization algorithms that will enable the continuing rise of the field of machine learning.\r\n  \r\nThe research consists of two projects, which are thematically related and address the solution of optimization problems that are nonlinear, high dimensional, stochastic, involve very large data sets and in some cases are non-convex. Two families of algorithms will be developed to garner the benefits of both stochastic gradient methods and batch methods, while avoiding their shortcomings. One of these algorithms uses a gradient aggregation approach that re-uses gradient values computed at previous iterations. The challenge is to design an algorithm that is efficient in minimizing testing error, not just training error. The second approach employs adaptive sampling techniques to reduce the noise in stochastic gradient approximations as the optimization progresses. An important aspect of this research is the design of an efficient strategy for incorporating second-order information that captures curvature of the optimized loss function, even in the case when Hessian estimates are based on inaccurate gradients. In all cases, the goal is research is to design and implement algorithms in software, and test them on realistic machine learning applications.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Richard",
+   "pi_last_name": "Byrd",
+   "pi_mid_init": "H",
+   "pi_sufx_name": "",
+   "pi_full_name": "Richard H Byrd",
+   "pi_email_addr": "richard@cs.colorado.edu",
+   "nsf_id": "000369868",
+   "pi_start_date": "2016-06-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Colorado at Boulder",
+  "inst_street_address": "3100 MARINE ST",
+  "inst_street_address_2": "STE 481 572 UCB",
+  "inst_city_name": "Boulder",
+  "inst_state_code": "CO",
+  "inst_state_name": "Colorado",
+  "inst_phone_num": "3034926221",
+  "inst_zip_code": "803090001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "CO02",
+  "org_lgl_bus_name": "THE REGENTS OF THE UNIVERSITY OF COLORADO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "SPVKK1RC2MZ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Colorado at Boulder",
+  "perf_str_addr": "3100 Marine Street, Room 481",
+  "perf_city_name": "Boulder",
+  "perf_st_code": "CO",
+  "perf_st_name": "Colorado",
+  "perf_zip_code": "803031058",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "CO02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 136371.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The purpose of this grant is to study optimization algorithms where it is not possible to obtain a precise value for the objective function or its derivative. In some cases the inaccuracy in objective function is due to statistical error, such as in statistical machine learning. In other cases there is no statistical structure, but the objective function and gradient error are bounded; this is often the case if the error is due to numerical error. In this project we have studied both of these cases, and have developed some new algorithms and we have been able to quantify the effect of the error on the approximate optimal solution obtained.<br /><br />For optimization subject to statistical error, it is possible reduce the size of the error by increasing sample size, but this costs computation time.&nbsp; In previous work we have proposed a rule, the \"norm test\", for choosing sample size, which promotes linear convergence. However, this rule tends to require too large a sample size. In the is project we have devised a new rule, the \"inner product test\" which tends to use smaller sample sizes. In experiments, this new rule requires less computational time. In addition we have extended this approach from unconstrained optimization to bound constrained optimization, and developed analogs to both the norm test and inner product test in the bound constrained case.<br /><br />In the context of noisy optimization with bounded noise we do not assume that the noise can be made arbitrarily small. With that assumption we cannot expect an arbitrarily accurate solution, but rather we can in many cases show that there is a critical neighborhood of the solution that the algorithm will eventually reach. We first did this for a finite difference steepest descent method. This method chooses the differencing interval dynamically. The distance to optimality is proportional to the square root of the objective function error.&nbsp; This approach also works well in conjunction with L-BFGS using a line search. <br /><br />We further investigated use of BFGS and L-BFGS in the presence of bounded noise. It turns out that the noise causes instabilities in the BFGS update, but these can be made stable by lengthening the step used in the update.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/09/2022<br>\n\t\t\t\t\tModified by: Richard&nbsp;H&nbsp;Byrd</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe purpose of this grant is to study optimization algorithms where it is not possible to obtain a precise value for the objective function or its derivative. In some cases the inaccuracy in objective function is due to statistical error, such as in statistical machine learning. In other cases there is no statistical structure, but the objective function and gradient error are bounded; this is often the case if the error is due to numerical error. In this project we have studied both of these cases, and have developed some new algorithms and we have been able to quantify the effect of the error on the approximate optimal solution obtained.\n\nFor optimization subject to statistical error, it is possible reduce the size of the error by increasing sample size, but this costs computation time.  In previous work we have proposed a rule, the \"norm test\", for choosing sample size, which promotes linear convergence. However, this rule tends to require too large a sample size. In the is project we have devised a new rule, the \"inner product test\" which tends to use smaller sample sizes. In experiments, this new rule requires less computational time. In addition we have extended this approach from unconstrained optimization to bound constrained optimization, and developed analogs to both the norm test and inner product test in the bound constrained case.\n\nIn the context of noisy optimization with bounded noise we do not assume that the noise can be made arbitrarily small. With that assumption we cannot expect an arbitrarily accurate solution, but rather we can in many cases show that there is a critical neighborhood of the solution that the algorithm will eventually reach. We first did this for a finite difference steepest descent method. This method chooses the differencing interval dynamically. The distance to optimality is proportional to the square root of the objective function error.  This approach also works well in conjunction with L-BFGS using a line search. \n\nWe further investigated use of BFGS and L-BFGS in the presence of bounded noise. It turns out that the noise causes instabilities in the BFGS update, but these can be made stable by lengthening the step used in the update.\n\n\t\t\t\t\tLast Modified: 01/09/2022\n\n\t\t\t\t\tSubmitted by: Richard H Byrd"
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "awd_id": "2030521",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "CAREER: Machine Learning Assisted Crowdsourcing for Phishing Defense",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032928832",
+ "po_email": "dcosley@nsf.gov",
+ "po_sign_block_name": "Dan Cosley",
+ "awd_eff_date": "2019-11-01",
+ "awd_exp_date": "2024-05-31",
+ "tot_intn_awd_amt": 420353.0,
+ "awd_amount": 420353.0,
+ "awd_min_amd_letter_date": "2020-05-15",
+ "awd_max_amd_letter_date": "2022-06-14",
+ "awd_abstract_narration": "This project aims to address the growing threat of phishing attacks, messages that try to trick people into revealing sensitive information, by combining human and machine intelligence. Existing detection methods based on machine learning and blacklists are both brittle to new attacks and somewhat lenient, in order to avoid blocking legitimate messages; as a result, widely used email systems are vulnerable to carefully crafted phishing emails. To address this, the project team will develop systems that automatically block obvious scams while forwarding less certain cases to groups of crowd workers trained to detect phishing mails. To support these workers' decision-making, the team will develop novel explanations of the system's decision making that will highlight the aspects of both the message and its algorithm that triggered the need for human judgment. The system will also aggregate these crowd decisions to generate real-time phishing alerts that can be shared to both individual users and to email systems. The project will lead to advances in interpretable machine learning, an important topic given the increasing role that artificial intelligence and machine learning systems play in society, and also increase our ability to characterize the evolution of phishing attacks and the vulnerability of internet platforms and users to those attacks over time. The project team will also use the work as an important component of new courses on usable security and outreach programs to high school teachers and students to both educate them about and increase their participation in cybersecurity research.\r\n\r\nThe work is organized around three main objectives: empirical characterization of phishing risks, developing accurate and interpretable machine learning models for phishing detection, and developing reliable crowdsourcing systems for phishing alerts. The team will assess phishing risks through developing analytics tools on the effective adoption and configuration of anti-spoofing protocols in email systems, using adversarial machine learning methods to conduct black box testing on existing phishing detectors, and creating reactive honeypots that entice and respond to phishing attacks in order to collect data on not just the initial phishing emails but on attackers' behaviors throughout the course of a successful phishing attack. The data collected on phishing emails will be used to develop the machine learning models, using Convolutional Neural Network and Long Short-Term Memory based deep learning techniques to generate both suspicious features and confidence estimates of individual decisions. The suspicious features will be used to generate interpretable security cues such as text annotations or icons by first creating simpler and more interpretable machine learning models such as decision trees that mimic the local detection boundary near the target emails in the feature space. Rules in the decision tree will be mapped back to interface elements and email content to provide the warnings, and these will be compared to generic email security warnings in a series of user studies that also model people's ability to detect phishing using a variety of cues, features, and media. Those individual models, along with the confidence estimates from the phishing detection model, will then be used to drive a crowdsourcing-based system where the models of individual users' quality will be aggregated to make reliable judgments around emails the models judge as too suspicious to pass but not suspicious enough to automatically filter.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Gang",
+   "pi_last_name": "Wang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Gang Wang",
+   "pi_email_addr": "gangw@illinois.edu",
+   "nsf_id": "000730936",
+   "pi_start_date": "2020-05-15",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Illinois at Urbana-Champaign",
+  "inst_street_address": "506 S WRIGHT ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "URBANA",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "2173332187",
+  "inst_zip_code": "618013620",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "IL13",
+  "org_lgl_bus_name": "UNIVERSITY OF ILLINOIS",
+  "org_prnt_uei_num": "V2PHZ2CSCH63",
+  "org_uei_num": "Y8CWNJRCNN91"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Illinois at Urbana-Champaign",
+  "perf_str_addr": "1901 South First Street",
+  "perf_city_name": "Chmpaign",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "618207406",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "IL13",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "1045",
+   "pgm_ref_txt": "CAREER-Faculty Erly Career Dev"
+  },
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0121",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002122DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0122",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002223DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 222534.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2021,
+   "fund_oblg_amt": 99958.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2022,
+   "fund_oblg_amt": 97861.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project was focused on addressing the increasingly concerning phishing threat by combining machine learning and human intelligence. First, it developed new techniques to diagnose vulnerabilities in existing phishing detectors and investigated novel methods to measure phishing attacks. Second, the project introduced new explainable machine learning techniques to enable human-machine collaborations for phishing detection. Third, the project integrated crowdsourcing techniques for producing reliable phishing intelligence.</p>\n<p>Intelligential Merit: A key outcome of the project was detecting and revealing previous unknown vulnerabilities in existing email services (especially their anti-spoofing protocols), anti-phishing engines (i.e., VirusTotal), browser vendors (with respect to their phishing warning and domain name impersonation detection schemes), machine learning-based visual phishing detectors, and other related security tools (e.g., their accessibility to screen reader users). In addition, through empirical measurements and user studies, the project provided insights into emerging phishing tactics introduced by deepfake techniques and countermeasures such as crowdsourced or in-house moderation. These studies showed concrete evidence that deepfake-enabled phishing can be highly effective on users. Finally, the project produced a range of methods and tools to enhance phishing defenses. For example, the project has improved the usability of phishing warnings for vulnerable user populations (e.g., users with visual impairments) and provided new solutions to verify the authenticity of received messages (e.g., VeriSMS). The project has in part supported the publication of 36 research papers at top security venues (e.g., USENIX Security (10 papers), IEEE SP (4 papers), CCS (3 papers), and NDSS (1 paper)), web/networking venues (e.g., IMC (4 papers), WWW (2 papers)), and human-computer interaction venues (e.g., ACM CHI (2 papers)).&nbsp;&nbsp;</p>\n<p>Broader Impacts: By enhancing phishing defense, the project made key contributions to building a trustworthy cyberspace and <span class=\"fc6omth regular_f1jfh96c f18ev72d\">strengthening</span> national security. By disclosing the identified phishing vulnerabilities to related service providers (including Gmail, Chrome, Safari, Firefox, Zoho, Apple/iCloud, VirusTotal), and working on technology transfer with industrial partners (e.g., OSF Healthcare, Microsoft, Anti-Phishing Working Group), the project has improved the overall security of the cyberspace for users and organizations. In addition, the project has helped to train the next generation of cybersecurity practitioners and researchers. It has in part supported a large group of students to&nbsp;work on related research, especially underrepresented students. This included at least 9 Ph.D. students (4 Ph.D. students have defended their thesis; 3 joined industry and 1 joined academia), 6 MS students, and 6 undergraduate students. Among them, 7 are female students, 2 of them are black students, and 1 is from the LGBTQ community. Materials related to this project were integrated into two security courses at UIUC (CS 463 and CS 562). The project also supported the PI and students to organize and participate in various outreach activities to broadern participation in computing (including providing research internships via the CS STARS and Research Experiences for Undergraduates (REU) programs, developing and disseminating educational materials for K-12 students via Futurum Careers and Women in Computer Science, and engaging student mentoring via Hack Illinois).&nbsp;</p><br>\n<p>\n Last Modified: 08/05/2024<br>\nModified by: Gang&nbsp;Wang</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThis project was focused on addressing the increasingly concerning phishing threat by combining machine learning and human intelligence. First, it developed new techniques to diagnose vulnerabilities in existing phishing detectors and investigated novel methods to measure phishing attacks. Second, the project introduced new explainable machine learning techniques to enable human-machine collaborations for phishing detection. Third, the project integrated crowdsourcing techniques for producing reliable phishing intelligence.\n\n\nIntelligential Merit: A key outcome of the project was detecting and revealing previous unknown vulnerabilities in existing email services (especially their anti-spoofing protocols), anti-phishing engines (i.e., VirusTotal), browser vendors (with respect to their phishing warning and domain name impersonation detection schemes), machine learning-based visual phishing detectors, and other related security tools (e.g., their accessibility to screen reader users). In addition, through empirical measurements and user studies, the project provided insights into emerging phishing tactics introduced by deepfake techniques and countermeasures such as crowdsourced or in-house moderation. These studies showed concrete evidence that deepfake-enabled phishing can be highly effective on users. Finally, the project produced a range of methods and tools to enhance phishing defenses. For example, the project has improved the usability of phishing warnings for vulnerable user populations (e.g., users with visual impairments) and provided new solutions to verify the authenticity of received messages (e.g., VeriSMS). The project has in part supported the publication of 36 research papers at top security venues (e.g., USENIX Security (10 papers), IEEE SP (4 papers), CCS (3 papers), and NDSS (1 paper)), web/networking venues (e.g., IMC (4 papers), WWW (2 papers)), and human-computer interaction venues (e.g., ACM CHI (2 papers)).\n\n\nBroader Impacts: By enhancing phishing defense, the project made key contributions to building a trustworthy cyberspace and strengthening national security. By disclosing the identified phishing vulnerabilities to related service providers (including Gmail, Chrome, Safari, Firefox, Zoho, Apple/iCloud, VirusTotal), and working on technology transfer with industrial partners (e.g., OSF Healthcare, Microsoft, Anti-Phishing Working Group), the project has improved the overall security of the cyberspace for users and organizations. In addition, the project has helped to train the next generation of cybersecurity practitioners and researchers. It has in part supported a large group of students towork on related research, especially underrepresented students. This included at least 9 Ph.D. students (4 Ph.D. students have defended their thesis; 3 joined industry and 1 joined academia), 6 MS students, and 6 undergraduate students. Among them, 7 are female students, 2 of them are black students, and 1 is from the LGBTQ community. Materials related to this project were integrated into two security courses at UIUC (CS 463 and CS 562). The project also supported the PI and students to organize and participate in various outreach activities to broadern participation in computing (including providing research internships via the CS STARS and Research Experiences for Undergraduates (REU) programs, developing and disseminating educational materials for K-12 students via Futurum Careers and Women in Computer Science, and engaging student mentoring via Hack Illinois).\t\t\t\t\tLast Modified: 08/05/2024\n\n\t\t\t\t\tSubmitted by: GangWang\n"
+ }
+}

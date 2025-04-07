@@ -1,0 +1,101 @@
+{
+ "awd_id": "1853525",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Efficient Methods for Identifiability of Dynamic Models",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032927523",
+ "po_email": "zfeng@nsf.gov",
+ "po_sign_block_name": "Zhilan Feng",
+ "awd_eff_date": "2019-07-01",
+ "awd_exp_date": "2022-06-30",
+ "tot_intn_awd_amt": 62345.0,
+ "awd_amount": 62345.0,
+ "awd_min_amd_letter_date": "2019-06-27",
+ "awd_max_amd_letter_date": "2019-06-27",
+ "awd_abstract_narration": "The goal of the project is to analyze and improve the calibration of dynamic models developed by researchers in biology and other sciences to model real-world processes. Mathematical models are used broadly across biology to understand mechanisms, make predictions, and guide intervention strategies. To do so, the model parameters often must be calibrated using data; the estimated parameters can have significant implications for reliability of insights generated from the model and data. This raises the important question of whether the calibration process is well posed, i.e. is it possible to uniquely estimate model parameters from a given type or set of data? Identifiability analysis is the study of these issues, and this project will improve and expand the currently available set of algebraic identifiability methods to set them on a firmer theoretical basis and address new types of models used broadly in many biological settings. Beyond academia, the algorithms to be developed will allow researchers to successfully link models and experiments to generate model-based insights that improve real-world treatment strategies. Training will be provided to two Ph.D. students working on research for this project. The training component will also include interdisciplinary course development as well as a conference with tutorial lectures and problem sessions to educate industrial and academic participants in the theory, algorithms, and software developed in this project.  This project is supported jointly by the Division of Mathematical Sciences Mathematical Biology and Division of Computing and Communication Foundations Algorithmic Foundations programs.\r\n\r\nMore specifically, the investigators will develop, analyze, and implement symbolic and symbolic-numeric algorithms that perform identifiability analysis of dynamic models (including ordinary differential (ODE), delay, and difference equation models) that appear in biology and other sciences. Using these algorithms, they will also carry out identifiability analysis for a range of models drawn from cellular signaling and physiology applications. The proposed algorithms will be based on differential-difference algebra, which connects to identifiability in the common case of rational ODEs/delay/difference equations by applying differential-difference elimination algorithms to the model equations. Such symbolic methods for ODE models have proven to be productive in the area of parameter identifiability. The proposed methods would allow a large class of models to be analyzed for structural identifiability, allowing one to assess which parameters can be estimated and tailor experiment design to answer the questions of interest for treatment strategies and mechanistic insights. For the first time, rigorously justified and analyzed efficient algorithms will be available for identifiability problems in delay and difference equation models. Certified and more efficient algorithms will appear for global identifiability problems in ODE models. To carry out the proposed research, new advances in the algebraic theory of differential/difference equations will be made.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Nicolette",
+   "pi_last_name": "Meshkat",
+   "pi_mid_init": "C",
+   "pi_sufx_name": "",
+   "pi_full_name": "Nicolette C Meshkat",
+   "pi_email_addr": "nmeshkat@scu.edu",
+   "nsf_id": "000575284",
+   "pi_start_date": "2019-06-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Santa Clara University",
+  "inst_street_address": "500 EL CAMINO REAL",
+  "inst_street_address_2": "",
+  "inst_city_name": "SANTA CLARA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "4085544764",
+  "inst_zip_code": "950504776",
+  "inst_country_name": "United States",
+  "cong_dist_code": "17",
+  "st_cong_dist_code": "CA17",
+  "org_lgl_bus_name": "PRESIDENT AND BOARD OF TRUSTEES OF SANTA CLARA COLLEGE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "YE8LRJWSY3K9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "President and Board of Trustees of Santa Clara College",
+  "perf_str_addr": "500 El Camino Real",
+  "perf_city_name": "Santa Clara",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "950530250",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": null,
+  "perf_st_cong_dist": "CA",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7933",
+   "pgm_ref_txt": "NUM, SYMBOL, & ALGEBRA COMPUT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 62345.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Our project was concerned with the problem of structural identifiability in dynamic models, which is the question of whether or not it is possible to uniquely recover the values of parameters given perfect data.&nbsp; If all of the parameters of a model can be determined, we say the model is identifiable.&nbsp; However, many models used in mathematical biology are unidentifiable, which means that some of the parameters can take on an infinite number of values yet yield the same data.&nbsp; This means it is impossible to obtain a unique estimate for those parameter values, and thus knowing this information ahead of time can help with experimental design.&nbsp;</p>\n<p>We have studied structural identifiability for an important class of models called linear compartmental models, used in pharmacokinetics, cell biology, physiology, toxicology, and ecology.&nbsp; Since these models are linear, we were able to use graph theory as a tool to describe and analyze these models.&nbsp; In [Gross et al 2019], we gave new criteria for finding the input-output equations of a linear compartmental model and explored which operations on a model, such as adding or subtracting leaks, preserve the identifiability of a model.&nbsp; In [Gross et al 2021], we explored the set of parameter values where identifiability of a model no longer holds, i.e. the singular locus.&nbsp; In [Bortner and Meshkat 2022], we found conditions for when certain combinations of parameters corresponding to paths or cycles in the graph are identifiable, an important step for reparameterization.&nbsp; In [Bortner et al, submitted], we have found necessary and sufficient conditions for a certain class of models whose graphs correspond to trees to be identifiable. We have also considered nonlinear models in [Bates et al 2019] and found an efficient method to find identifiable combinations of parameters using numerical algebraic geometry.&nbsp;</p>\n<p>Our research will help aid in experimental design, as knowing a certain model is structurally identifiable means it is theoretically possible to determine all the parameter values numerically.&nbsp; A modeler should choose an identifiable model over an unidentifiable one whenever possible.&nbsp; Our research will also help determine what to do with an unidentifiable model when it is impossible to adjust the experiment, using identifiable combinations of parameters to reparametrize, and thus fix, the model.&nbsp; Many of the methods used are broadly applicable to other classes of models, thus potential future research could involve analysis of a larger class of models.&nbsp; We have also prioritized outreach and have taught many of our recent results at an MSRI Summer Graduate School in July 2022 entitled \"Algebraic Theory of Differential and Difference Equations, Model Theory, and their Applications\".&nbsp; We hope this will spark more interest in this important modeling question.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/10/2022<br>\n\t\t\t\t\tModified by: Nicolette&nbsp;C&nbsp;Meshkat</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOur project was concerned with the problem of structural identifiability in dynamic models, which is the question of whether or not it is possible to uniquely recover the values of parameters given perfect data.  If all of the parameters of a model can be determined, we say the model is identifiable.  However, many models used in mathematical biology are unidentifiable, which means that some of the parameters can take on an infinite number of values yet yield the same data.  This means it is impossible to obtain a unique estimate for those parameter values, and thus knowing this information ahead of time can help with experimental design. \n\nWe have studied structural identifiability for an important class of models called linear compartmental models, used in pharmacokinetics, cell biology, physiology, toxicology, and ecology.  Since these models are linear, we were able to use graph theory as a tool to describe and analyze these models.  In [Gross et al 2019], we gave new criteria for finding the input-output equations of a linear compartmental model and explored which operations on a model, such as adding or subtracting leaks, preserve the identifiability of a model.  In [Gross et al 2021], we explored the set of parameter values where identifiability of a model no longer holds, i.e. the singular locus.  In [Bortner and Meshkat 2022], we found conditions for when certain combinations of parameters corresponding to paths or cycles in the graph are identifiable, an important step for reparameterization.  In [Bortner et al, submitted], we have found necessary and sufficient conditions for a certain class of models whose graphs correspond to trees to be identifiable. We have also considered nonlinear models in [Bates et al 2019] and found an efficient method to find identifiable combinations of parameters using numerical algebraic geometry. \n\nOur research will help aid in experimental design, as knowing a certain model is structurally identifiable means it is theoretically possible to determine all the parameter values numerically.  A modeler should choose an identifiable model over an unidentifiable one whenever possible.  Our research will also help determine what to do with an unidentifiable model when it is impossible to adjust the experiment, using identifiable combinations of parameters to reparametrize, and thus fix, the model.  Many of the methods used are broadly applicable to other classes of models, thus potential future research could involve analysis of a larger class of models.  We have also prioritized outreach and have taught many of our recent results at an MSRI Summer Graduate School in July 2022 entitled \"Algebraic Theory of Differential and Difference Equations, Model Theory, and their Applications\".  We hope this will spark more interest in this important modeling question. \n\n \n\n\t\t\t\t\tLast Modified: 08/10/2022\n\n\t\t\t\t\tSubmitted by: Nicolette C Meshkat"
+ }
+}

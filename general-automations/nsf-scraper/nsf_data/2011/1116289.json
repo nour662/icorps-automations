@@ -1,0 +1,105 @@
+{
+ "awd_id": "1116289",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Synthesizing Human-Readable Documentation",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 470955.0,
+ "awd_amount": 470955.0,
+ "awd_min_amd_letter_date": "2011-07-19",
+ "awd_max_amd_letter_date": "2011-07-19",
+ "awd_abstract_narration": "Developing and maintaining software is a key challenge in computer science,\r\nwith failures costing up to one half of one percent of the US GDP each\r\nyear. Most code is retained and evolved, rather than created from scratch,\r\nand professional software developers spend over three-fourths of their time\r\ntrying to understand existing code. Understandability and documentation\r\nhave become key components of software quality, yet they remain poorly\r\nunderstood by both researchers and practitioners. In a future where the\r\nsoftware engineering focus shifts from implementation to design and\r\ncomposition concerns, program understandability will become even more\r\nimportant. This research develops tools and techniques for mechanically\r\ngenerating documentation to help make programs easier to understand.\r\n\r\nThe research follows the insight that modern analysis techniques can form\r\nrich descriptive models of programs that are both precise and succinct.\r\nHuman-readable documentation can then be synthesized from such models.\r\nThe approach applies to large programs across multiple application domains.\r\nThe research focuses on documenting how code should be used correctly, a\r\ncritical aspect in an era of components-of-the-shelf development, as well\r\nas documenting how code has changed and evolved over time, a key\r\npart of software maintenance. The research leverages program analysis\r\ntechniques, machine learning, and textual synthesis, with results\r\ndisseminated through academic publication; the education, training and\r\nmentoring of students; as well as freely-available, open-source tools.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Westley",
+   "pi_last_name": "Weimer",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Westley Weimer",
+   "pi_email_addr": "weimerw@umich.edu",
+   "nsf_id": "000205470",
+   "pi_start_date": "2011-07-19",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Virginia Main Campus",
+  "inst_street_address": "1001 EMMET ST N",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHARLOTTESVILLE",
+  "inst_state_code": "VA",
+  "inst_state_name": "Virginia",
+  "inst_phone_num": "4349244270",
+  "inst_zip_code": "229034833",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "VA05",
+  "org_lgl_bus_name": "RECTOR & VISITORS OF THE UNIVERSITY OF VIRGINIA",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "JJG6HU8PA4S5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Virginia Main Campus",
+  "perf_str_addr": "1001 EMMET ST N",
+  "perf_city_name": "CHARLOTTESVILLE",
+  "perf_st_code": "VA",
+  "perf_st_name": "Virginia",
+  "perf_zip_code": "229034833",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "VA05",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7944",
+   "pgm_ref_txt": "SOFTWARE ENG & FORMAL METHODS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 470955.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project studied the how humans interact with the source code to computer programs. While the popular perception of programmers involve<em>s </em>writing new code, in practice programmers spend the majority of their time <em>reading</em> and understanding existing code. In addition, while the popular perception of computer programs is very mathematical, in practice they contain significant amounts of natural language in the form of <em>comments</em> or <em>documentation</em>. This project focused on understanding human judgments of code readability, as well as on improving readability, such as through the automatic creation of new documentation.</p>\n<p>With respect to code readability, this project consturcted, refined and made use of <em>formal models</em> to relate code features to human judgments. That is, in the same way that we can determine that one book is written at a fourth-grade level and another at a tenth-grade level, we can also determine the relative readability of sections of code. These formal models can be used in various ways: for example, defect density correlates with low readability, while more-readable tests can be favored during maintenance.</p>\n<p>Since readability is so crucial, this project also focused on improving the readability of software artifacts by automatically <em>constructing </em>human-readable documentation. We found that programmers often document both <em>what</em> code does (e.g., \"I added safety checks to this array\") and <em>why</em> certain decisions were made (e.g., \"Management has placed a focus on security, and these array checks prevent certain vulnerabilities\"). While synthesizin<em>g why</em> information remains future work, research associated with this award has successfully synthesized <em>what</em> information in multiple contexts. We can synthesize the conditions under which programs will behave unexpectedly or have errors (i.e., synthesize documentation related to exceptions), we can synthesize how best to use certain pieces of code (i.e., synthesize API usage examples), and we can even synthesize descriptions of what has changed in a program over time (i.e., synthesize version control commit messages).</p>\n<p>In the final year of this project we also investigated a novel use of<em> medical imaging</em> to understand what goes on in human brains as they read code. In a data-driven, exploratory study using functional magnetic resonance imaging we found patterns of neural activation vary between comprehending code and comprehending prose in natural language. Using formal modeling, we can distinguish between programming language and natural language tasks with 79% balanced accuracy. In the popular press, this sort of decoding result is known as a \"mind reading\" experiment: merely by examining patterns of brain activity we can correctly determine whether a participant was looking at code or prose four times out of five.</p>\n<p>In general, the research supported by this award was well-received by the academic community. For example, among the many resulting peer-reviewed publications produced, one received a Distinguished Paper Award from the Association for Computing Machinery.</p>\n<p>This work also supported the <em>mentoring </em>and education of a number of undergraduate and graduate students (leading to bachelor's, master's and Ph.D. degrees). Students supported by this award went on to both research labs (e.g., Apogee Research) and industrial practice (e.g., Google, Microsoft).</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/14/2016<br>\n\t\t\t\t\tModified by: Westley&nbsp;Weimer</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project studied the how humans interact with the source code to computer programs. While the popular perception of programmers involves writing new code, in practice programmers spend the majority of their time reading and understanding existing code. In addition, while the popular perception of computer programs is very mathematical, in practice they contain significant amounts of natural language in the form of comments or documentation. This project focused on understanding human judgments of code readability, as well as on improving readability, such as through the automatic creation of new documentation.\n\nWith respect to code readability, this project consturcted, refined and made use of formal models to relate code features to human judgments. That is, in the same way that we can determine that one book is written at a fourth-grade level and another at a tenth-grade level, we can also determine the relative readability of sections of code. These formal models can be used in various ways: for example, defect density correlates with low readability, while more-readable tests can be favored during maintenance.\n\nSince readability is so crucial, this project also focused on improving the readability of software artifacts by automatically constructing human-readable documentation. We found that programmers often document both what code does (e.g., \"I added safety checks to this array\") and why certain decisions were made (e.g., \"Management has placed a focus on security, and these array checks prevent certain vulnerabilities\"). While synthesizing why information remains future work, research associated with this award has successfully synthesized what information in multiple contexts. We can synthesize the conditions under which programs will behave unexpectedly or have errors (i.e., synthesize documentation related to exceptions), we can synthesize how best to use certain pieces of code (i.e., synthesize API usage examples), and we can even synthesize descriptions of what has changed in a program over time (i.e., synthesize version control commit messages).\n\nIn the final year of this project we also investigated a novel use of medical imaging to understand what goes on in human brains as they read code. In a data-driven, exploratory study using functional magnetic resonance imaging we found patterns of neural activation vary between comprehending code and comprehending prose in natural language. Using formal modeling, we can distinguish between programming language and natural language tasks with 79% balanced accuracy. In the popular press, this sort of decoding result is known as a \"mind reading\" experiment: merely by examining patterns of brain activity we can correctly determine whether a participant was looking at code or prose four times out of five.\n\nIn general, the research supported by this award was well-received by the academic community. For example, among the many resulting peer-reviewed publications produced, one received a Distinguished Paper Award from the Association for Computing Machinery.\n\nThis work also supported the mentoring and education of a number of undergraduate and graduate students (leading to bachelor's, master's and Ph.D. degrees). Students supported by this award went on to both research labs (e.g., Apogee Research) and industrial practice (e.g., Google, Microsoft).\n\n\t\t\t\t\tLast Modified: 11/14/2016\n\n\t\t\t\t\tSubmitted by: Westley Weimer"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1650204",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: Lexicalized Reasoning",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032928074",
+ "po_email": "jdonlon@nsf.gov",
+ "po_sign_block_name": "James Donlon",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2017-08-31",
+ "tot_intn_awd_amt": 69474.0,
+ "awd_amount": 69474.0,
+ "awd_min_amd_letter_date": "2016-08-30",
+ "awd_max_amd_letter_date": "2016-08-30",
+ "awd_abstract_narration": "Many problems in artificial intelligence form natural pairs of a recognition and generation problem.  For example, parsing natural language sentences, and generating new natural language sentence are natural inverses.  Similarly, recognizing the plans being executed by others and building our own plans seem intimately intertwined. Unfortunately research on methods to solve these problems has often required specialized representations and algorithms.  As a result, unified models of intelligence remain elusive and the results from one problem area do not translate to another.  This project is part of a research program based on the idea that unified models of intelligence require unifying representations and algorithms across research problems.  In particular, in the last ten years, Steedman's Combinatory Categorial Grammars (CCGs), which had already been shown to be successful in both natural language parsing and generation, have been shown to be effective for both directing probabilistic plan recognition and planning.  This gives us good evidence for seeing CCGs as a unifying representation.  However, this success immediately raises the question where do such grammars come from, and can they be learned?  The main goal of this project is to begin to answer this question.\r\n\r\nNatural language researchers have proposed a number of methods for learning CCGs for natural languages. However, none of these methods have been applied to the learning of grammars for plans.  Therefore, this project is the first exploration of these algorithms for learning grammars to direct plan recognition and planning.  Specifically, the focus of this work will be to modify a recently published algorithm for learning natural language CCGs to learn plan grammars.  We will use input datasets generated from the publicly available International Planning Competition domains and attempt to learn grammars to both recognize future instance of plans and to direct the construction of future plan instances.  We will evaluate the effectiveness of the learned plan CCGs using traditional metrics from language grammar learning.  In addition, since these CCGs are intended specifically to direct planning and plan recognition, we will measure the effectiveness of the resulting CCG at these problems using the traditional metrics from these research areas.  For planning this includes runtime and length of plan, and for plan recognition accuracy, runtime, and mean time to recognition.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Christopher",
+   "pi_last_name": "Geib",
+   "pi_mid_init": "w",
+   "pi_sufx_name": "",
+   "pi_full_name": "Christopher w Geib",
+   "pi_email_addr": "cwg33@drexel.edu",
+   "nsf_id": "000663211",
+   "pi_start_date": "2016-08-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Drexel University",
+  "inst_street_address": "3141 CHESTNUT ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "PHILADELPHIA",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "2158956342",
+  "inst_zip_code": "191042875",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "PA03",
+  "org_lgl_bus_name": "DREXEL UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "XF3XM9642N96"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Drexel University",
+  "perf_str_addr": "3401 Market St",
+  "perf_city_name": "Philadelphia",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "191021119",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "PA03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 69474.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Two core problems within Artificial Intelligence(AI) are that of planning (given an initial state of the world and a set of possible actions, construct a sequence of actions that when executed in the initial state will result in a particular goal state) and plan recognition (given a sequence of observed action being executed by an agent, recognizing their goals and plans). &nbsp;Humans are very good at both of these tasks and they are among the hallmarks of what we intuitively think of as intelligence. &nbsp;In previous work, the PI provided algorithms that use knowledge, hand coded into a single Combinatory Categorial Grammars (CCGs), to solve both of these problems. &nbsp;This demonstrated that it is possible to use domain knowledge formulated in a single representation to efficiently perform both of these tasks.</p>\n<p><br />The focus of this project was to demonstrate that the previously hand built CCGs for reasoning about actions could be algorithmically learned. &nbsp;CCGs were originally developed for use in both producing and understanding natural human languages, and there is a significant prior research on learning CCGs for natural language processing. &nbsp;That said, there are significant differences between the two domains, for example there are no obvious analogues to the concepts of nouns, verbs, adjectives, and the like in reasoning about actions. &nbsp;Therefore, this project explored adapting language grammar learning algorithms, to learn grammars to represent actions and plans.</p>\n<p><br />The project was successful and produced an algorithm for learning plan grammars with high precision and recall even in the face of significant noise in the form of missing observations. &nbsp;The project demonstrated learning grammars for 5 standard problem domains taken from the International planning competition across for six increasing noise levels. &nbsp;Grammars in the low noise situation were very accurate and as expected the accuracy of the grammars decreased as the number of missing observations in the training set increased. These results were published in:</p>\n<p>Geib, C., Kantharaju, P., Learning Combinatory Categorial Grammars for Plan Recognition, In&nbsp;<em>Proceeding of the thirty Second AAAI Conference on Artificial Intelligence,</em> AAAI-18, New Orleans, LA, AAAI Press, 2018.</p>\n<p>and more details on this work can be found there. &nbsp;This project is the first such work to address the learning of plan CCGs for plan recognition and planning.&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/14/2018<br>\n\t\t\t\t\tModified by: Christopher&nbsp;W&nbsp;Geib</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nTwo core problems within Artificial Intelligence(AI) are that of planning (given an initial state of the world and a set of possible actions, construct a sequence of actions that when executed in the initial state will result in a particular goal state) and plan recognition (given a sequence of observed action being executed by an agent, recognizing their goals and plans).  Humans are very good at both of these tasks and they are among the hallmarks of what we intuitively think of as intelligence.  In previous work, the PI provided algorithms that use knowledge, hand coded into a single Combinatory Categorial Grammars (CCGs), to solve both of these problems.  This demonstrated that it is possible to use domain knowledge formulated in a single representation to efficiently perform both of these tasks.\n\n\nThe focus of this project was to demonstrate that the previously hand built CCGs for reasoning about actions could be algorithmically learned.  CCGs were originally developed for use in both producing and understanding natural human languages, and there is a significant prior research on learning CCGs for natural language processing.  That said, there are significant differences between the two domains, for example there are no obvious analogues to the concepts of nouns, verbs, adjectives, and the like in reasoning about actions.  Therefore, this project explored adapting language grammar learning algorithms, to learn grammars to represent actions and plans.\n\n\nThe project was successful and produced an algorithm for learning plan grammars with high precision and recall even in the face of significant noise in the form of missing observations.  The project demonstrated learning grammars for 5 standard problem domains taken from the International planning competition across for six increasing noise levels.  Grammars in the low noise situation were very accurate and as expected the accuracy of the grammars decreased as the number of missing observations in the training set increased. These results were published in:\n\nGeib, C., Kantharaju, P., Learning Combinatory Categorial Grammars for Plan Recognition, In Proceeding of the thirty Second AAAI Conference on Artificial Intelligence, AAAI-18, New Orleans, LA, AAAI Press, 2018.\n\nand more details on this work can be found there.  This project is the first such work to address the learning of plan CCGs for plan recognition and planning. \n\n\t\t\t\t\tLast Modified: 02/14/2018\n\n\t\t\t\t\tSubmitted by: Christopher W Geib"
+ }
+}

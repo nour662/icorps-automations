@@ -1,0 +1,109 @@
+{
+ "awd_id": "1740525",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AF: Small: Graphs and structures for distance estimation",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tracy Kimbrel",
+ "awd_eff_date": "2017-01-20",
+ "awd_exp_date": "2019-08-31",
+ "tot_intn_awd_amt": 219028.0,
+ "awd_amount": 219028.0,
+ "awd_min_amd_letter_date": "2017-05-30",
+ "awd_max_amd_letter_date": "2017-05-30",
+ "awd_abstract_narration": "Distance computation and estimation in networks is one of the most basic and fundamental tasks in network analysis. However, storing the distance between every pair of nodes of a graph is infeasible, especially for today's \"big data.\" Small sketches of a graph have been developed so that a good estimate of any pairwise distance can be retrieved from the sketch. This project aims to advance the state-of-the art of such sketches. The main objects of study are spanners, distance oracles and their fault-tolerant variants. A spanner is a sparse subgraph that does not stretch any distance of the original graph by much.\u00a0 A distance oracle is a data structure that has small space usage and is capable of answering (approximate) distance queries efficiently. Both spanners and distance oracles compress the distance information. The main difference between them is that one can still run graph algorithms on a spanner, but not on a distance oracle, whereas one can obtain any distance from a distance oracle instantly, but in a spanner one would have to actually compute it.\r\n\r\nIn practice, networks are dynamic in nature. To address this, graph sketches would have to tolerate faults, i.e. edge and vertex deletions. There are fault-tolerant versions of spanners and distance oracles-- these structures estimate distances for any given (typically fixed size) subset of failed edges or nodes. This project will provide algorithms for constructing new low-space spanners and oracles with improved guarantees and will strive to develop new techniques for fault-tolerance and distance estimation in general. Spanners and distance oracles have many applications, e.g. in parallel and distributed algorithms for distance computation, network routing, and simulating synchronized protocols in unsynchronized networks. A better understanding of network routing along short paths could guide the design of next-generation Internet protocols. The research is also closely tied to the field of metric embedding, and thus extends beyond the strict boundaries of computer science. Material from this research will be integrated into core undergraduate and graduate courses, and will lead to the development of new courses on the topic. The lecture notes and project materials will be available on the course website for the general public.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Virginia",
+   "pi_last_name": "Williams",
+   "pi_mid_init": "V",
+   "pi_sufx_name": "",
+   "pi_full_name": "Virginia V Williams",
+   "pi_email_addr": "virgito@gmail.com",
+   "nsf_id": "000640555",
+   "pi_start_date": "2017-05-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Massachusetts Institute of Technology",
+  "inst_street_address": "77 MASSACHUSETTS AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CAMBRIDGE",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6172531000",
+  "inst_zip_code": "021394301",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+  "org_prnt_uei_num": "E2NYLCDML6V1",
+  "org_uei_num": "E2NYLCDML6V1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Massachusetts Institute of Technology",
+  "perf_str_addr": "77 Massachusetts Avenue",
+  "perf_city_name": "Cambridge",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "021394307",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7926",
+   "pgm_ref_txt": "ALGORITHMS"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0115",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001516DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2015,
+   "fund_oblg_amt": 219028.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><strong>Networks (also called graphs) are ubiquitous in computing, representing entities from maps to protein interactions to social relationships. </strong><strong>Distance computation and estimation in networks is one of the most basic and fundamental tasks in network analysis. However,</strong><strong> in today&rsquo;s world of big data, running distance computation algorithms on huge dense graphs, and even storing </strong><strong>the distance</strong><strong> </strong><strong>b</strong><strong>etween every pair of nodes of the graph is completely infeasible.</strong><strong> To tackle this, researchers have developed means to produce</strong><strong> a</strong><strong> small</strong><strong> sketch</strong><strong> of a</strong><strong>ny</strong><strong> graph </strong><strong>so that a good estimate</strong><strong> </strong><strong>of</strong><strong> any pairwise distance can be retrieved from the sketch.</strong><strong> These sketches are usually very sparse subgraphs on which algorithms can run much faster than on the original dense graph.</strong><strong> </strong><strong></strong></p>\n<p><strong>The main goal of this project was</strong><strong> to advance the state-of-the-art of such sketches. The main types of sketches </strong><strong>of consideration we</strong><strong>re graph spanners </strong><strong>and distance preservers which both explicitly store a small part of the original network. Spanners guarantee that the distance (and shortest path) information is correct for every pair of nodes in the original network, up to a small amount of error. Distance preservers, on the other hand, preserve the distances exactly (with no error), but only for a small number of pairs of nodes. </strong></p>\n<p><strong>For distance preservers, the main result of this project is that for every n node undirected unweighted network G and for any arbitrary set of p pairs of nodes of G, one can efficiently find O((np)^{2/3}+np^{1/3}) edges so that the subgraph composed of these edges contains for every one of the p pairs, a shortest path of G, thus exactly preserving the distances for the p pairs. For p at least Omega(n), this matches a lower bound of Coppersmith and Elkin who showed that there exist n node weighted graphs and p pairs of vertices so that one needs at least Omega(n+(np)^{2/3}) edges to capture the distances for the pairs; this lower bound is also believed to hold for unweighted graphs. The only number of pairs for which there is still a gap between this lower bound and the known upper bounds is when p is between Omega(n^{1/2}) and O(n). If one is interested in preserving only the reachability information and not the distances for p pairs of vertices in a directed graph, and if the sources of the pairs come from a common small set of s nodes, then one can use a much smaller number of O(n+sqrt{nps}) edges.</strong></p>\n<p><strong>For distance compression when additive error is allowed, the most pressing question for decades has been, are there constants C and eps&gt;0, so that for every n and every n node graph G, one can preserve all pairwise distances of G with at most an additive error C and using at most O(n^{4/3-eps}) edges? It had been known that additive error 6 can be achieved with O~(n^{4/3}) edges but once one wanted to use fewer edges, the error seemed to blow up. Arguably the strongest outcome of this project is a strong limitation result: there exists a family of graphs G_n on n nodes so that any compression of G_n using O(n^{4/3-eps}) bits for eps&gt;0 must incur non-constant additive error Omega(n^delta) for delta&gt;0 for the distance of at least one pair of vertices. This limitation in fact gives a tradeoff between the desired sparsity and the amount of error that needs to be incurred. For instance, if one wants to compress the distance information of an n node graph down to O~(n) bits, then at least error Omega(n^{1/22}) would be incurred, no matter how the compression is achieved. The project also yielded upper bounds, showing that one can always achieve additive error at most O~(n^{3/7}) with O~(n) edges.</strong></p>\n<p><strong>The project also considered fast algorithms for computing distance compression in several settings, including (1) the fault-tolerant setting in which any small set of up to f edges can fail simultaneously and the distance compression should still work in the remaining graph, and (2) the dynamic setting in which edges can be inserted and deleted, and in which the distance compression needs to be quickly updated after each change.</strong></p>\n<p><strong>The grant supported a Ph.D. student who is now a postdoctoral scholar at the Georgia Institute of Technology.</strong></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/26/2020<br>\n\t\t\t\t\tModified by: Virginia&nbsp;V&nbsp;Williams</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nNetworks (also called graphs) are ubiquitous in computing, representing entities from maps to protein interactions to social relationships. Distance computation and estimation in networks is one of the most basic and fundamental tasks in network analysis. However, in today\u2019s world of big data, running distance computation algorithms on huge dense graphs, and even storing the distance between every pair of nodes of the graph is completely infeasible. To tackle this, researchers have developed means to produce a small sketch of any graph so that a good estimate of any pairwise distance can be retrieved from the sketch. These sketches are usually very sparse subgraphs on which algorithms can run much faster than on the original dense graph. \n\nThe main goal of this project was to advance the state-of-the-art of such sketches. The main types of sketches of consideration were graph spanners and distance preservers which both explicitly store a small part of the original network. Spanners guarantee that the distance (and shortest path) information is correct for every pair of nodes in the original network, up to a small amount of error. Distance preservers, on the other hand, preserve the distances exactly (with no error), but only for a small number of pairs of nodes. \n\nFor distance preservers, the main result of this project is that for every n node undirected unweighted network G and for any arbitrary set of p pairs of nodes of G, one can efficiently find O((np)^{2/3}+np^{1/3}) edges so that the subgraph composed of these edges contains for every one of the p pairs, a shortest path of G, thus exactly preserving the distances for the p pairs. For p at least Omega(n), this matches a lower bound of Coppersmith and Elkin who showed that there exist n node weighted graphs and p pairs of vertices so that one needs at least Omega(n+(np)^{2/3}) edges to capture the distances for the pairs; this lower bound is also believed to hold for unweighted graphs. The only number of pairs for which there is still a gap between this lower bound and the known upper bounds is when p is between Omega(n^{1/2}) and O(n). If one is interested in preserving only the reachability information and not the distances for p pairs of vertices in a directed graph, and if the sources of the pairs come from a common small set of s nodes, then one can use a much smaller number of O(n+sqrt{nps}) edges.\n\nFor distance compression when additive error is allowed, the most pressing question for decades has been, are there constants C and eps&gt;0, so that for every n and every n node graph G, one can preserve all pairwise distances of G with at most an additive error C and using at most O(n^{4/3-eps}) edges? It had been known that additive error 6 can be achieved with O~(n^{4/3}) edges but once one wanted to use fewer edges, the error seemed to blow up. Arguably the strongest outcome of this project is a strong limitation result: there exists a family of graphs G_n on n nodes so that any compression of G_n using O(n^{4/3-eps}) bits for eps&gt;0 must incur non-constant additive error Omega(n^delta) for delta&gt;0 for the distance of at least one pair of vertices. This limitation in fact gives a tradeoff between the desired sparsity and the amount of error that needs to be incurred. For instance, if one wants to compress the distance information of an n node graph down to O~(n) bits, then at least error Omega(n^{1/22}) would be incurred, no matter how the compression is achieved. The project also yielded upper bounds, showing that one can always achieve additive error at most O~(n^{3/7}) with O~(n) edges.\n\nThe project also considered fast algorithms for computing distance compression in several settings, including (1) the fault-tolerant setting in which any small set of up to f edges can fail simultaneously and the distance compression should still work in the remaining graph, and (2) the dynamic setting in which edges can be inserted and deleted, and in which the distance compression needs to be quickly updated after each change.\n\nThe grant supported a Ph.D. student who is now a postdoctoral scholar at the Georgia Institute of Technology.\n\n\t\t\t\t\tLast Modified: 02/26/2020\n\n\t\t\t\t\tSubmitted by: Virginia V Williams"
+ }
+}

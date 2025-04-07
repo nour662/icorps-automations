@@ -1,0 +1,96 @@
+{
+ "awd_id": "1107067",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "High-dimensional Discrete Inference",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Gabor Szekely",
+ "awd_eff_date": "2011-07-01",
+ "awd_exp_date": "2014-06-30",
+ "tot_intn_awd_amt": 64495.0,
+ "awd_amount": 64495.0,
+ "awd_min_amd_letter_date": "2011-06-22",
+ "awd_max_amd_letter_date": "2011-06-22",
+ "awd_abstract_narration": "Recent advances in the last decade have brought attention to the analysis of high-dimensional data and, in particular, to estimation on high-dimensional spaces. Such spaces are often structured by either exhibiting constraints on specific space components or by the incorporation of prior information identifying co-dependence patterns between components in order to help carrying out the inference. Given the recent predominance of discrete inference problems in many influential fields, the investigator takes on the critically important task of discrete estimation in high-dimensional settings and aims at laying foundational principles upon which estimation and characterization of high-dimensional discrete spaces can be efficiently performed and where structural properties of the space are adequately taken into account. More specifically, the PI explores estimators formally derived from statistical decision theory and based on loss functions that more naturally capture the features of the discrete space and are thus arguably better representatives of the ensemble. If the discrete space is constrained, obtaining an efficient procedure for estimation is of prime concern given the large size of the space; to this end, the PI also proposes to develop a general framework that can be explored to design efficient procedures for inference, assess the computational complexity of the proposed estimation, and further derive approximation schemes when needed. In addition, the investigator applies the proposed foundations to highlight important features of the discrete space such as regions of high concentration of probability mass, and studies a method to jointly elucidate features and identify good subspace representatives.\r\n\r\nMany problems from fields like genetics, social sciences, molecular biology, and environmental studies can be casted as statistical inference problems on a large number of unknowns. Even though modern, high-throughput technology has enabled the collection of large datasets, these problems remain hard since the number of parameters describing the data generating process grows with the number of observations. In this setting, it is helpful to associate structure to the model in order to guide the inference. The investigator studies novel, principled estimators that address two issues under this high-dimensional regimen: effectively capture structural relationships among variables in the model, and efficiently derive solutions through computationally feasible routines. The PI intends to implement and publish the resulting methods as open-source software that benefits both academia and industry, and further fosters the development of algorithms and practical implementations. Through this research project the PI also intends to promote the integration of research and education by developing new courses and raise awareness for statistical analysis of high-dimensional data and inference on discrete spaces with state-of-the-art methods. Finally, the PI expects to encourage collaborations between statisticians and researchers from other fields and promote statistical methods in interdisciplinary areas.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Luis",
+   "pi_last_name": "Carvalho",
+   "pi_mid_init": "E",
+   "pi_sufx_name": "",
+   "pi_full_name": "Luis E Carvalho",
+   "pi_email_addr": "lecarval@math.bu.edu",
+   "nsf_id": "000562321",
+   "pi_start_date": "2011-06-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Trustees of Boston University",
+  "inst_street_address": "1 SILBER WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "BOSTON",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "6173534365",
+  "inst_zip_code": "022151703",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MA07",
+  "org_lgl_bus_name": "TRUSTEES OF BOSTON UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "THL6A6JLE1S7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Trustees of Boston University",
+  "perf_str_addr": "1 SILBER WAY",
+  "perf_city_name": "BOSTON",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "022151703",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MA07",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126900",
+   "pgm_ele_name": "STATISTICS"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 64495.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This research aimed at developing statistical estimators for problems that have discrete parameters, that is, when each of the unknowns can take only on a finite number of values. Even though the number of options is discrete, this research focused on challenging problems where the number of parameters is very large and where the parameters can show complex relationships, that is, problems defined on high-dimensional and structured parameter spaces. The main contribution of this project was the derivation of \"centroid\" estimators that have good theoretical properties -- for instance, estimators that are good representatives of the space of possible solutions -- and that can be obtained in a computationally efficient way.</p>\n<p><br />While the proposed estimators can be applied to many different problems, in this work we concentrated on three relevant specific contributions: (i) land cover classification, an application to environmental studies and remote sensing where we seek to identify types of land cover -- say, deciduous forests, or croplands, or water -- in satellite images to help assess global changes; (ii) community detection in social networks, an application to social sciences where we try to group \"actors\" according to their interaction patterns with other individuals such that within-group interactions are dense and between-group interactions are sparse; and (iii) genome-wide association studies (GWAS), an application to genetics, where the goal is to identify which genetic markers are associated to a particular human disease, a version of a problem in Statistics known as \"variable selection\" but here being severly ill-posed with many more variables than observations. In all three problems we found evidence that the proposed centroid estimators and inferential methods give better results when compared to state-of-the-art methods.</p>\n<p><br />As broader impacts, this project has yielded three published papers, four papers in review, and three more in preparation, with a number of presentations and posters in conferences. One PhD student graduated, two PhD students to graduate within a year; the PI served as mentor for two MSc graduate students, three undergraduate students, and one high school student. Moreover, all the methods developed in this research have been implemented in statistical software packages that have been released to the public under open source licenses.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/12/2014<br>\n\t\t\t\t\tModified by: Luis&nbsp;Carvalho</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis research aimed at developing statistical estimators for problems that have discrete parameters, that is, when each of the unknowns can take only on a finite number of values. Even though the number of options is discrete, this research focused on challenging problems where the number of parameters is very large and where the parameters can show complex relationships, that is, problems defined on high-dimensional and structured parameter spaces. The main contribution of this project was the derivation of \"centroid\" estimators that have good theoretical properties -- for instance, estimators that are good representatives of the space of possible solutions -- and that can be obtained in a computationally efficient way.\n\n\nWhile the proposed estimators can be applied to many different problems, in this work we concentrated on three relevant specific contributions: (i) land cover classification, an application to environmental studies and remote sensing where we seek to identify types of land cover -- say, deciduous forests, or croplands, or water -- in satellite images to help assess global changes; (ii) community detection in social networks, an application to social sciences where we try to group \"actors\" according to their interaction patterns with other individuals such that within-group interactions are dense and between-group interactions are sparse; and (iii) genome-wide association studies (GWAS), an application to genetics, where the goal is to identify which genetic markers are associated to a particular human disease, a version of a problem in Statistics known as \"variable selection\" but here being severly ill-posed with many more variables than observations. In all three problems we found evidence that the proposed centroid estimators and inferential methods give better results when compared to state-of-the-art methods.\n\n\nAs broader impacts, this project has yielded three published papers, four papers in review, and three more in preparation, with a number of presentations and posters in conferences. One PhD student graduated, two PhD students to graduate within a year; the PI served as mentor for two MSc graduate students, three undergraduate students, and one high school student. Moreover, all the methods developed in this research have been implemented in statistical software packages that have been released to the public under open source licenses.\n\n\t\t\t\t\tLast Modified: 12/12/2014\n\n\t\t\t\t\tSubmitted by: Luis Carvalho"
+ }
+}

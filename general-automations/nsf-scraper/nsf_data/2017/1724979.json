@@ -1,0 +1,101 @@
+{
+ "awd_id": "1724979",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Structured Dictionary Models and Learning for High Resolution Images",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Leland Jameson",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2018-07-31",
+ "tot_intn_awd_amt": 105494.0,
+ "awd_amount": 105494.0,
+ "awd_min_amd_letter_date": "2017-01-26",
+ "awd_max_amd_letter_date": "2017-01-26",
+ "awd_abstract_narration": "We will develop novel techniques for the multi-resolution analysis of high-resolution images, to obtain novel efficient and information representations. These representations will take into account natural invariances in images, and will lead to novel dictionary learning constructions and algorithms for images and in signal processing in general. These representations will then be used to analyze, search, and recognize similar objects or features in collections of (scans of) paintings, in particular a large collection by the baroque artist Jan Brueghel. The distances between images and portions thereof, the features learned by the extensions of dictionary learning we will construct, and the associated statistical similarities, together with labels provided by experts to be used to train classifiers and algorithms that learn similarities among items to match those provided by expert, will enable us to enrich the current set of capabilities in building these large networks of paintings, to search through them more easily and with more general search patterns, and to visualize them according to different metrics by using dimensionality reduction techniques.\r\n\r\nThe automatic learning of templates and patterns, and their statistical relationships, in images and signals in general is crucial in a wide variety of applications, such as automating object recognition, and in defining visually meaningful similarities between images, needed to enable searches in large image databases. We will both develop novel techniques for automatically learning good templates for images, that incorporate natural invariances such as translations and scalings, and novel ways of exploiting these templates for analyzing large collections images, measuring the similarities  between then, and finding and characterizing recurrent patterns in them. These novel techniques will be applied to the data on the Jan Brueghel Research site, that allows scholars to investigate and conceptualize a very different notion of old master pictures. Instead of creating absolute categories of genuine and not-genuine, the team will be drawing a map of interconnections between the thousands of paintings produced in the workshops of early modern Antwerp. These pictures were made over several generations, in the shops of masters ranging from world-famous (Pieter Brueghel, Rubens) to utterly obscure. The website will chart how ideas were generated, exchanged, reused and retooled by different artists, mapping networks of creation and production well beyond those traceable through archival documents.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Mauro",
+   "pi_last_name": "Maggioni",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mauro Maggioni",
+   "pi_email_addr": "mauro.maggioni@jhu.edu",
+   "nsf_id": "000398937",
+   "pi_start_date": "2017-01-26",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Johns Hopkins University",
+  "inst_street_address": "3400 N CHARLES ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "BALTIMORE",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "4439971898",
+  "inst_zip_code": "212182608",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MD07",
+  "org_lgl_bus_name": "THE JOHNS HOPKINS UNIVERSITY",
+  "org_prnt_uei_num": "GS4PNKTRNKL3",
+  "org_uei_num": "FTMTDMBR29C7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Johns Hopkins University",
+  "perf_str_addr": "3400 N. Charles Street",
+  "perf_city_name": "Baltimore",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "212182687",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MD07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0113",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001314DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2013,
+   "fund_oblg_amt": 105494.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>Large data sets are ubiquitous, and include many different data types (ranking from 2-d and 3-d images, to text documents, to 3-d sensor measurements of shapes, to observations and measurements of physical systems, etc...). Many such data sets are very high dimensional, and seeking parsimonious yet expressive representations is a key challenge. In this project we developed novel techniques for learning ``dictionaries&rsquo;&rsquo; for data: given a collection of data points (e.g. images, or portions thereof) we created algorithms that output a set of templates (``dictionary&rsquo;&rsquo;) such that each data point may be represented by a combination of a small number of such templates. This learning algorithm also outputs a way of computing, for each data point, which dictionary elements should be used in its representation, and how. Not only is the algorithm computationally efficient, but it is guaranteed, under suitable conditions on hidden low-dimensional structures underlying the data, to perform well, in terms of size of the dictionary produced, accuracy in approximating the data (past and future, of course for data from the same source), as soon as the data used to train the algorithm is sufficiently large (we quantify carefully how large). We believe these requirements and guarantees are essentially best possible in this context.</span></p>\n<p><span>&nbsp;</span></p>\n<p><span>We also considered the problem of learning maps between different data sets, in order to discover relationships between them, and to re-use information acquired or learned on one data set for another data set (transfer learning). We developed both fast algorithms for computing robust matchings between high-dimensional data, and new techniques for efficiently encoding such maps. We have explored the use of these maps for mapping shapes, point clouds, and learning relationships between different data sources.</span></p>\n<p><span>&nbsp;</span></p>\n<p><span>Finally, we developed techniques for performing object recognition on collections of images, namely drawings and paintings, using neural network algorithms trained on a large corpus of photographic images of natural objects, by adapting and transferring the neural network trained on photos to the &ldquo;context&rdquo; of drawings. If the neural network was thought of as an artificial vision system, the transfer process we implemented may be thought of as replacing the lowest levels of such system, tuning it towards the type of features (e.g. edges) prominent in drawings vs. the ones learned on photographs. This enabled us to obtain good performance in object recognition tasks on a set of images that would have been too small to be able to train a neural network.</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/21/2018<br>\n\t\t\t\t\tModified by: Mauro&nbsp;Maggioni</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nLarge data sets are ubiquitous, and include many different data types (ranking from 2-d and 3-d images, to text documents, to 3-d sensor measurements of shapes, to observations and measurements of physical systems, etc...). Many such data sets are very high dimensional, and seeking parsimonious yet expressive representations is a key challenge. In this project we developed novel techniques for learning ``dictionaries?? for data: given a collection of data points (e.g. images, or portions thereof) we created algorithms that output a set of templates (``dictionary??) such that each data point may be represented by a combination of a small number of such templates. This learning algorithm also outputs a way of computing, for each data point, which dictionary elements should be used in its representation, and how. Not only is the algorithm computationally efficient, but it is guaranteed, under suitable conditions on hidden low-dimensional structures underlying the data, to perform well, in terms of size of the dictionary produced, accuracy in approximating the data (past and future, of course for data from the same source), as soon as the data used to train the algorithm is sufficiently large (we quantify carefully how large). We believe these requirements and guarantees are essentially best possible in this context.\n\n \n\nWe also considered the problem of learning maps between different data sets, in order to discover relationships between them, and to re-use information acquired or learned on one data set for another data set (transfer learning). We developed both fast algorithms for computing robust matchings between high-dimensional data, and new techniques for efficiently encoding such maps. We have explored the use of these maps for mapping shapes, point clouds, and learning relationships between different data sources.\n\n \n\nFinally, we developed techniques for performing object recognition on collections of images, namely drawings and paintings, using neural network algorithms trained on a large corpus of photographic images of natural objects, by adapting and transferring the neural network trained on photos to the \"context\" of drawings. If the neural network was thought of as an artificial vision system, the transfer process we implemented may be thought of as replacing the lowest levels of such system, tuning it towards the type of features (e.g. edges) prominent in drawings vs. the ones learned on photographs. This enabled us to obtain good performance in object recognition tasks on a set of images that would have been too small to be able to train a neural network.\n\n \n\n\t\t\t\t\tLast Modified: 12/21/2018\n\n\t\t\t\t\tSubmitted by: Mauro Maggioni"
+ }
+}

@@ -1,0 +1,113 @@
+{
+ "awd_id": "1100532",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: A Complementarity-Free Contact Model for Robotics Applications",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Massimo Ruzzene",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 121000.0,
+ "awd_amount": 121000.0,
+ "awd_min_amd_letter_date": "2011-09-01",
+ "awd_max_amd_letter_date": "2011-09-01",
+ "awd_abstract_narration": "The main goal in this collaborative research project is to advance the state of the art in realistic robot simulation by developing reasonably accurate contact models for rigid body dynamics that are both robustly and efficiently solvable.  Since the times of Newton and Leibniz, the modeling of rigid body dynamics has been a tremendous success story.  However, when rigid bodies come into contact and when that contact includes Coulomb friction, standard force-acceleration models sometimes fail.  In such cases, a smooth solution is theoretically not even possible.  A set of contact models that address this problem has been developed, derived from the well-established Signorini-Fichera (S-F) complementarity conditions.  However, there is some evidence that these conditions are not accurate for impacting (rather than smoothly contacting) rigid bodies.  This project will investigate situations in which the complementarity conditions are called into question, and will develop a new approach to address three critical shortcomings, present in varying degrees in state of the art contact models: (i.) their exponential worst-case solution times; (ii.) their inability to find solutions even though one exists; (iii.) their numerical brittleness. This project will investigate and evaluate new contact models that, by virtue of eliminating complementarity conditions, may not suffer from these shortcomings; in tandem, the project will use elastodynamic finite element analysis and physical experimentation in order to evaluate model accuracy for impacting rigid bodies.\r\n\r\nThis project will impact a broad range of technologies, including aerospace, manufacturing, and civil engineering. In the near term, the project will enable the simulation of complex robot environments that help roboticists fine-tune both mechanical design and control algorithms.  The computational models developed will be made public via the open-source Moby dynamics library. Additionally, participation in STEM is broadened through mentoring of students.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Evan",
+   "pi_last_name": "Drumwright",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Evan M Drumwright",
+   "pi_email_addr": "drum@gwu.edu",
+   "nsf_id": "000987654",
+   "pi_start_date": "2011-09-01",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "George Washington University",
+  "inst_street_address": "1918 F ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "WASHINGTON",
+  "inst_state_code": "DC",
+  "inst_state_name": "District of Columbia",
+  "inst_phone_num": "2029940728",
+  "inst_zip_code": "200520042",
+  "inst_country_name": "United States",
+  "cong_dist_code": "00",
+  "st_cong_dist_code": "DC00",
+  "org_lgl_bus_name": "GEORGE WASHINGTON UNIVERSITY (THE)",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "ECR5E2LU5BL6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "George Washington University",
+  "perf_str_addr": "1918 F ST NW",
+  "perf_city_name": "WASHINGTON",
+  "perf_st_code": "DC",
+  "perf_st_name": "District of Columbia",
+  "perf_zip_code": "200520042",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "00",
+  "perf_st_cong_dist": "DC00",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "747800",
+   "pgm_ele_name": "DYNAMICAL SYSTEMS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "034E",
+   "pgm_ref_txt": "Dynamical systems"
+  },
+  {
+   "pgm_ref_code": "036E",
+   "pgm_ref_txt": "CIVIL INFRASTRUCTURE"
+  },
+  {
+   "pgm_ref_code": "1057",
+   "pgm_ref_txt": "CIS BASE RESEARCH"
+  },
+  {
+   "pgm_ref_code": "CVIS",
+   "pgm_ref_txt": "CIVIL INFRASTRUCTURE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 121000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project has investigated contact models for multi-rigid bodies without enforcing complementarity, constraints originally imposed for \"mathematical convenience\". &nbsp;Such contact models, which can be derived from an observation that rigid impacts do not obey complementarity, can also be applied to&nbsp;non-impacting contacts between rigid bodies. This application conveys a&nbsp;significant advantage for asymptotic computational complexity over previous complementarity-based models. Our project has found that complementarity-free contact models convey other computational advantages as well: running&nbsp;times are decreased and nonlinear programming solve robustness is increased, both by several orders of&nbsp;magnitude, on synthetically generated problems. The dearth of natural&nbsp;(not synthetically generated) benchmark problems in multi-rigid body dynamics&nbsp;with contact for comparing predictions between models has also spurred focus in the computational contact mechanics community on finding such problems.&nbsp;</p>\n<p><br />The project has also led to the following ancillary intellectual discoveries:</p>\n<ul>\n<li>An upper bound on the number of points of contact necessary to fully model rigid contacts between rigid bodies to O(m), where m is the number of generalized coordinates of the bodies in contact: considering additional points of contact does not&nbsp;increase modeling accuracy. We created a new algorithm to exploit this fact,&nbsp;thereby decreasing the asymptotic time complexity necessary to model contact from O(n<sup>3</sup>) to O(nm<sup>2</sup>), where n is the number of points of contact.</li>\n<li>A solution for the problem of inverting the rigid contact model, which had previously been claimed to be unsolvable. By inverting the rigid contact model, we have solved the \"inverse dynamics\" problem for robots in contact with rigid bodies and subject to Coulomb friction. We have also shown how we can use a complementarity-free contact model to avoid \"chattering\" in the inverse dynamics solution that would occur due to contact indeterminacy.</li>\n</ul>\n<p>Our results have been disseminated through the open source multi-body dynamics simulator Moby as well as through the commercial multi-body dynamics simulator MuJoCo. This project has also trained two Ph. D. students in the multiple disciplines&nbsp;involved in developing software and algorithms for multi-body simulation with contact.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/25/2016<br>\n\t\t\t\t\tModified by: Evan&nbsp;M&nbsp;Drumwright</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project has investigated contact models for multi-rigid bodies without enforcing complementarity, constraints originally imposed for \"mathematical convenience\".  Such contact models, which can be derived from an observation that rigid impacts do not obey complementarity, can also be applied to non-impacting contacts between rigid bodies. This application conveys a significant advantage for asymptotic computational complexity over previous complementarity-based models. Our project has found that complementarity-free contact models convey other computational advantages as well: running times are decreased and nonlinear programming solve robustness is increased, both by several orders of magnitude, on synthetically generated problems. The dearth of natural (not synthetically generated) benchmark problems in multi-rigid body dynamics with contact for comparing predictions between models has also spurred focus in the computational contact mechanics community on finding such problems. \n\n\nThe project has also led to the following ancillary intellectual discoveries:\n\nAn upper bound on the number of points of contact necessary to fully model rigid contacts between rigid bodies to O(m), where m is the number of generalized coordinates of the bodies in contact: considering additional points of contact does not increase modeling accuracy. We created a new algorithm to exploit this fact, thereby decreasing the asymptotic time complexity necessary to model contact from O(n3) to O(nm2), where n is the number of points of contact.\nA solution for the problem of inverting the rigid contact model, which had previously been claimed to be unsolvable. By inverting the rigid contact model, we have solved the \"inverse dynamics\" problem for robots in contact with rigid bodies and subject to Coulomb friction. We have also shown how we can use a complementarity-free contact model to avoid \"chattering\" in the inverse dynamics solution that would occur due to contact indeterminacy.\n\n\nOur results have been disseminated through the open source multi-body dynamics simulator Moby as well as through the commercial multi-body dynamics simulator MuJoCo. This project has also trained two Ph. D. students in the multiple disciplines involved in developing software and algorithms for multi-body simulation with contact.\n\n \n\n\t\t\t\t\tLast Modified: 03/25/2016\n\n\t\t\t\t\tSubmitted by: Evan M Drumwright"
+ }
+}

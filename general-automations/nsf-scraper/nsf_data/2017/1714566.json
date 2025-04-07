@@ -1,0 +1,105 @@
+{
+ "awd_id": "1714566",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RI: Small: ConnotationNet: Modeling Non-Literal Meaning in Context",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tatiana Korelsky",
+ "awd_eff_date": "2017-09-15",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 499838.0,
+ "awd_amount": 499838.0,
+ "awd_min_amd_letter_date": "2017-07-27",
+ "awd_max_amd_letter_date": "2017-07-27",
+ "awd_abstract_narration": "The major goal of this research is to develop a new computational framework to recover and reason about a wide range of connotative meanings in language, i.e., why something is written and how it will affect the readers. This contrasts with the vast majority of previous research on semantic processing, where the primary focus has been on understanding the denotational meaning of language, i.e., what is written in text. This research will create new computational solutions to a wide range of tasks that require understanding non-literal meaning in text, including societally important challenges such as automatic detection and revision of biases in modern literature and media that can work against minorities and underrepresented groups.\r\n\r\nThis research will develop Connotation Frames as a new representation formalism to organize a variety of connotative implications associated with a particular choice of a predicate. This representation will substantially extend the existing resources of frame semantics, which has focused primarily on denotational meanings, by introducing new typed relations to encode various aspects of connotative meanings. Capitalizing on recent advances in distributional representation of words and phrases, this research will develop algorithms that can infer connotation frames from a large-scale natural language corpus, which reflects how connotative meanings arise from how people use language in context. The learned representations will be organized as ConnotationNet, an evolving broad-coverage connotation lexicon for words, frames, and phrases. Knowledge encoded in this lexicon will then be used for document-level text understanding, where partially present information in text will be combined with the rich connotative knowledge stored in ConnotationNet to infer the complete the document-level connotation of given text. In parallel, this research will seek new language generation models that can learn to revise or compose text with the desired connotative effects with specific focus on unwanted biases in modern literature and media against underrepresented groups.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Yejin",
+   "pi_last_name": "Choi",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yejin Choi",
+   "pi_email_addr": "yejin@cs.washington.edu",
+   "nsf_id": "000584106",
+   "pi_start_date": "2017-07-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Washington",
+  "inst_street_address": "4333 BROOKLYN AVE NE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SEATTLE",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "2065434043",
+  "inst_zip_code": "981951016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "WA07",
+  "org_lgl_bus_name": "UNIVERSITY OF WASHINGTON",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HD1WMN6945W6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Washington",
+  "perf_str_addr": "4330 Brooklyn Ave NE",
+  "perf_city_name": "Seattle",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "981952500",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "WA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 499838.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this project was to develop a new computational framework to recover and reason about a wide range of connotative meanings in language, i.e., why something is written and how it will affect the readers. Overall, we met the objectives of this project successfully on all fronts, often the results significantly exceeding the expected scope and the performance level of the proposal. In what follows, we summarize the key achievements of this project from seven different angles:</p>\n<p><strong>1. Pragmatic      frames to study connotative social biases in text</strong></p>\n<p>Language has the power to reinforce stereotypes and project social biases onto others. At the core of the challenge is that it is rarely what is stated explicitly, but rather the implied meanings, that frame people&rsquo;s judgments about others. For example, given a statement that &ldquo;we shouldn&rsquo;t lower our standards to hire more women,&rdquo; most listeners will infer the implicature intended by the speaker &mdash; that &ldquo;women (candidates) are less qualified.&rdquo; Most semantic formalisms, to date, do not capture such pragmatic or connotative implications in which people express social biases and power differentials in language.</p>\n<p>This project developed a new conceptual formalism that aims to model the pragmatic frames (called Social Bias Frames) in which people project social biases and stereotypes onto others, along with a new large-scale annotated corpus. In addition, this project developed several new algorithms to help detect and reduce unjust biases and toxicity in both human-authored and machine-generated text.</p>\n<p><strong>2. Pragmatic      frames to study connotative intents behind multimodal misinformation</strong></p>\n<p>Multimodal disinformation, from `deepfakes' to simple edits that deceive, is an important societal problem. Yet at the same time, the vast majority of media edits are harmless -- such as a filtered vacation photo. The difference between this example, and harmful edits that spread disinformation, is one of connotative intent. Recognizing and describing this intent is a major challenge for today's AI systems.</p>\n<p>This project developed a new pragmatic framework to represent and model such implied meanings in edited multimodal media as well as a new large-scale annotated corpus to support computational models of edited media analysis. In parallel, this project resulted in new models and insights on computational detection of machine generated text.</p>\n<p><strong>3. Pragmatic      frames to study connotative meanings based on social commonsense knowledge      and reasoning</strong></p>\n<p>A great deal of connotative meanings arise from our commonsense understanding about people's likely intents, their reactions, and mental states. To encapsulate such connotative meanings more systematically, this project developed ATOMIC, an atlas of everyday social commonsense reasoning, organized through 877k textual descriptions of inferential knowledge. Compared to existing resources that center around taxonomic knowledge, ATOMIC focuses on inferential knowledge organized as typed if-then relations with variables (e.g., \"if X pays Y a compliment, then Y will likely return the compliment\"). In addition, this project resulted in several new computational models of commonsense knowledge and reasoning, including dynamic neuro-symbolic integration of commonsense knowledge for multi-hop commonsense reasoning.</p>\n<p><strong>4. Pragmatic      frames to study social norms and ethics</strong></p>\n<p>Yet a great deal of connotative meanings in text arise from our broad understanding about social norms and ethics. In particular, Social norms -- the unspoken commonsense rules about acceptable social behavior -- are crucial in understanding the underlying causes and intents of people's actions in narratives. For example, underlying an action such as \"wanting to call cops on my neighbors\" are social norms that inform our conduct, such as \"It is expected that you report crimes.\"</p>\n<p>To encapsulate such connotative meanings more systematically, this project developed Social Chemistry, a new conceptual formalism to study people's everyday social norms and moral judgments over a rich spectrum of real life situations described in natural language. This project resulted in additional related studies focusing on computational models of social norms and ethics, including connotative reasoning about the morals of commonsense stories.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/30/2021<br>\n\t\t\t\t\tModified by: Yejin&nbsp;Choi</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of this project was to develop a new computational framework to recover and reason about a wide range of connotative meanings in language, i.e., why something is written and how it will affect the readers. Overall, we met the objectives of this project successfully on all fronts, often the results significantly exceeding the expected scope and the performance level of the proposal. In what follows, we summarize the key achievements of this project from seven different angles:\n\n1. Pragmatic      frames to study connotative social biases in text\n\nLanguage has the power to reinforce stereotypes and project social biases onto others. At the core of the challenge is that it is rarely what is stated explicitly, but rather the implied meanings, that frame people\u2019s judgments about others. For example, given a statement that \"we shouldn\u2019t lower our standards to hire more women,\" most listeners will infer the implicature intended by the speaker &mdash; that \"women (candidates) are less qualified.\" Most semantic formalisms, to date, do not capture such pragmatic or connotative implications in which people express social biases and power differentials in language.\n\nThis project developed a new conceptual formalism that aims to model the pragmatic frames (called Social Bias Frames) in which people project social biases and stereotypes onto others, along with a new large-scale annotated corpus. In addition, this project developed several new algorithms to help detect and reduce unjust biases and toxicity in both human-authored and machine-generated text.\n\n2. Pragmatic      frames to study connotative intents behind multimodal misinformation\n\nMultimodal disinformation, from `deepfakes' to simple edits that deceive, is an important societal problem. Yet at the same time, the vast majority of media edits are harmless -- such as a filtered vacation photo. The difference between this example, and harmful edits that spread disinformation, is one of connotative intent. Recognizing and describing this intent is a major challenge for today's AI systems.\n\nThis project developed a new pragmatic framework to represent and model such implied meanings in edited multimodal media as well as a new large-scale annotated corpus to support computational models of edited media analysis. In parallel, this project resulted in new models and insights on computational detection of machine generated text.\n\n3. Pragmatic      frames to study connotative meanings based on social commonsense knowledge      and reasoning\n\nA great deal of connotative meanings arise from our commonsense understanding about people's likely intents, their reactions, and mental states. To encapsulate such connotative meanings more systematically, this project developed ATOMIC, an atlas of everyday social commonsense reasoning, organized through 877k textual descriptions of inferential knowledge. Compared to existing resources that center around taxonomic knowledge, ATOMIC focuses on inferential knowledge organized as typed if-then relations with variables (e.g., \"if X pays Y a compliment, then Y will likely return the compliment\"). In addition, this project resulted in several new computational models of commonsense knowledge and reasoning, including dynamic neuro-symbolic integration of commonsense knowledge for multi-hop commonsense reasoning.\n\n4. Pragmatic      frames to study social norms and ethics\n\nYet a great deal of connotative meanings in text arise from our broad understanding about social norms and ethics. In particular, Social norms -- the unspoken commonsense rules about acceptable social behavior -- are crucial in understanding the underlying causes and intents of people's actions in narratives. For example, underlying an action such as \"wanting to call cops on my neighbors\" are social norms that inform our conduct, such as \"It is expected that you report crimes.\"\n\nTo encapsulate such connotative meanings more systematically, this project developed Social Chemistry, a new conceptual formalism to study people's everyday social norms and moral judgments over a rich spectrum of real life situations described in natural language. This project resulted in additional related studies focusing on computational models of social norms and ethics, including connotative reasoning about the morals of commonsense stories. \n\n \n\n\t\t\t\t\tLast Modified: 12/30/2021\n\n\t\t\t\t\tSubmitted by: Yejin Choi"
+ }
+}

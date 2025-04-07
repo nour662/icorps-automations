@@ -1,0 +1,105 @@
+{
+ "awd_id": "1115234",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TC: Small: Robust Anonymization on Social Networks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Nan Zhang",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2016-07-31",
+ "tot_intn_awd_amt": 495935.0,
+ "awd_amount": 495935.0,
+ "awd_min_amd_letter_date": "2011-07-23",
+ "awd_max_amd_letter_date": "2011-07-23",
+ "awd_abstract_narration": "Massive graphs arise in many social media applications, such as social networks, E-commerce recommendation systems, e-mail communication patterns, and other collaborative applications. Such data is often sensitive from a privacy point of view. Recently there are many privacy preserving schemes being proposed to protect the release of network data.  The question is how effective these schemes are on preventing the re-identification of nodes, i.e., preserving the identity anonymization of the network nodes.\r\n\r\nThis project will raise the issue of the inadequacy of the current network anonymization schemes for massive and sparse graphs. It is important to understand the theoretical properties which make them susceptible to re-identification attacks. By a systematic study of the re-identification risks of the existing approaches, and development of new principles for anonymization of network data, we will deepen our understanding of the problems and be better able to protect the data privacy. By designing a new type of attack algorithms and raising the issue on the privacy exposure of the current network anonymization schemes, the work can lead to fundamentally different thinking on how to perform privacy preserving data publishing on network data. It provides new insights on how to devise anonymization schemes to protect the privacy of social network data.\r\n\r\nOne of the biggest obstacles on sharing information is the privacy concern. This project has the potential to make fundamental, disruptive advances in protecting the privacy of network data. It provides new insights on the inadequacy of the current anonymization schemes. Many researchers need access to sensitive data, e.g., social network data, e-mail and communication patterns, etc. By advancing the knowledge on privacy preserving data publishing, the barrier of sharing data will come down to facilitate scientific research activities.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Philip",
+   "pi_last_name": "Yu",
+   "pi_mid_init": "S",
+   "pi_sufx_name": "",
+   "pi_full_name": "Philip S Yu",
+   "pi_email_addr": "psyu@uic.edu",
+   "nsf_id": "000079589",
+   "pi_start_date": "2011-07-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Illinois at Chicago",
+  "inst_street_address": "809 S MARSHFIELD AVE M/C 551",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHICAGO",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "3129962862",
+  "inst_zip_code": "606124305",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "IL07",
+  "org_lgl_bus_name": "UNIVERSITY OF ILLINOIS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "W8XEAJDKMXH3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Illinois at Chicago",
+  "perf_str_addr": "809 S MARSHFIELD AVE M/C 551",
+  "perf_city_name": "CHICAGO",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "606124305",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "IL07",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779500",
+   "pgm_ele_name": "TRUSTWORTHY COMPUTING"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7795",
+   "pgm_ref_txt": "TRUSTWORTHY COMPUTING"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 495935.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Many applications such as social networks, email communication patterns, and other collaborative applications are built on top of graph/network structures. <em>These network data offer tremendous opportunities on mining useful information for advanced services, such as </em>recommendation,<em> personalized medicine, location based service, etc.&nbsp; However, there is also a threat to privacy because data in raw form often contain sensitive information about individuals. Privacy-preserving data publishing (PPDP) studies how to transform raw data into a version that is immunized against privacy attacks, but that still supports effective data analysis.</em> Although a straightforward solution is to remove identifying information from the nodes and perturb the graph structure, so that re-identification becomes more difficult, it is generally insufficient.</p>\n<p><em>&nbsp;</em></p>\n<p><em>Group based anonymization is the most widely studied approach for privacy-preserving data publishing. The work of this proposal is the first to identify its exposures on network anonymizatioin.&nbsp; </em>As typical graphs encountered in real applications are sparse, this work shows that sparse graphs have certain theoretical properties, which make them susceptible to re-identification attacks, and provides effective solutions to address these potential attacks. Various cases of network anonymization attacks have been identified and addressed including sequential releases of dynamic networks, friendship type attacks based on number of mutual friends between two persons, or the degrees (i.e., number of friends) of two vertices (persons) connected by a friendship link. Furthermore, in the era of big data, there are many data sources that can be integrated to help de-anonymized the data. For example, the potential exposure to alignment of multiple anonymized social network data is studied.<em> ? -differential privacy is an alternative approach designed for an interactive querying model. A novel data publishing approach is proposed for the non-interactive setting based on ? -differential privacy.</em></p>\n<p><em>&nbsp;</em></p>\n<p><em>The work creates an awareness of the weakness of the current privacy preserving data publishing schemes on network data and proposes approaches to alleviate these issues. This will facilitate the sharing of data to advance data-driven research.</em></p>\n<p>&nbsp;</p>\n<p>The PI is the recipient of ACM SIGKDD 2016 Innovation Award for his influential research and scientific contributions on <em>mining, fusion and <strong>anonymization</strong> of big data</em>, and the IEEE Computer Society&rsquo;s 2013 Technical Achievement Award for &ldquo;<em>pioneering and fundamentally innovative contributions to the scalable indexing, querying, searching, mining and <strong>anonymization</strong> of big data</em>&rdquo;.<em>&nbsp;</em></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/06/2016<br>\n\t\t\t\t\tModified by: Philip&nbsp;S&nbsp;Yu</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMany applications such as social networks, email communication patterns, and other collaborative applications are built on top of graph/network structures. These network data offer tremendous opportunities on mining useful information for advanced services, such as recommendation, personalized medicine, location based service, etc.  However, there is also a threat to privacy because data in raw form often contain sensitive information about individuals. Privacy-preserving data publishing (PPDP) studies how to transform raw data into a version that is immunized against privacy attacks, but that still supports effective data analysis. Although a straightforward solution is to remove identifying information from the nodes and perturb the graph structure, so that re-identification becomes more difficult, it is generally insufficient.\n\n \n\nGroup based anonymization is the most widely studied approach for privacy-preserving data publishing. The work of this proposal is the first to identify its exposures on network anonymizatioin.  As typical graphs encountered in real applications are sparse, this work shows that sparse graphs have certain theoretical properties, which make them susceptible to re-identification attacks, and provides effective solutions to address these potential attacks. Various cases of network anonymization attacks have been identified and addressed including sequential releases of dynamic networks, friendship type attacks based on number of mutual friends between two persons, or the degrees (i.e., number of friends) of two vertices (persons) connected by a friendship link. Furthermore, in the era of big data, there are many data sources that can be integrated to help de-anonymized the data. For example, the potential exposure to alignment of multiple anonymized social network data is studied. ? -differential privacy is an alternative approach designed for an interactive querying model. A novel data publishing approach is proposed for the non-interactive setting based on ? -differential privacy.\n\n \n\nThe work creates an awareness of the weakness of the current privacy preserving data publishing schemes on network data and proposes approaches to alleviate these issues. This will facilitate the sharing of data to advance data-driven research.\n\n \n\nThe PI is the recipient of ACM SIGKDD 2016 Innovation Award for his influential research and scientific contributions on mining, fusion and anonymization of big data, and the IEEE Computer Society?s 2013 Technical Achievement Award for \"pioneering and fundamentally innovative contributions to the scalable indexing, querying, searching, mining and anonymization of big data\". \n\n \n\n\t\t\t\t\tLast Modified: 08/06/2016\n\n\t\t\t\t\tSubmitted by: Philip S Yu"
+ }
+}

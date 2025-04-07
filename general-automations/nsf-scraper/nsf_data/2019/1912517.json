@@ -1,0 +1,113 @@
+{
+ "awd_id": "1912517",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "FoMR: IPC Improvement through Hardware Memorization",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927498",
+ "po_email": "achtchel@nsf.gov",
+ "po_sign_block_name": "Almadena Chtchelkanova",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 199998.0,
+ "awd_amount": 199998.0,
+ "awd_min_amd_letter_date": "2019-08-21",
+ "awd_max_amd_letter_date": "2019-08-21",
+ "awd_abstract_narration": "Although chip manufacturers continue to increase the number of transistors that can fit into a single computer chip, making use of these additional transistors to improve performance of new computers is increasingly more challenging. In the past several years, the pace of performance improvements of each generation of computer processors have come down, with the traditional techniques for improving performance reaching diminishing returns. This work develops Speculative Memoization, a new technique with potential to more effectively use additional transistors for improving processor performance. Speculative Memoization can enable significant increases in the performance of future computers, increasing user productivity and providing more immersive user experiences.\r\n\r\nTraditional ways of improving processor performance targeted increasing the sizes of on-chip buffers, such as caches, re-order buffers, and branch predictors. Increasing the buffer sizes offers some performance improvement, but does not reduce the total work done by the processor. Instead, Speculative Memoization offers a radical alternative, identifying repeating work that the processor has already done and avoiding redundant execution, therefore, improving performance by reducing the total amount of work done by the processors. This work explores the limits of performing memoization in hardware, proposes designs for the hardware memoization mechanisms, and works to mitigate the compiler and system software effects on such memorization.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Michael",
+   "pi_last_name": "Ferdman",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Michael Ferdman",
+   "pi_email_addr": "mferdman@cs.stonybrook.edu",
+   "nsf_id": "000634656",
+   "pi_start_date": "2019-08-21",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "SUNY at Stony Brook",
+  "inst_street_address": "W5510 FRANKS MELVILLE MEMORIAL LIBRARY",
+  "inst_street_address_2": "",
+  "inst_city_name": "STONY BROOK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "6316329949",
+  "inst_zip_code": "117940001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "NY01",
+  "org_lgl_bus_name": "THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK",
+  "org_prnt_uei_num": "M746VC6XMNH9",
+  "org_uei_num": "M746VC6XMNH9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "SUNY at Stony Brook",
+  "perf_str_addr": "WEST 5510 FRK MEL LIB",
+  "perf_city_name": "Stony Brook",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "117940001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "NY01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "021Z",
+   "pgm_ref_txt": "Industry Partnerships"
+  },
+  {
+   "pgm_ref_code": "7798",
+   "pgm_ref_txt": "SOFTWARE & HARDWARE FOUNDATION"
+  },
+  {
+   "pgm_ref_code": "7941",
+   "pgm_ref_txt": "COMPUTER ARCHITECTURE"
+  },
+  {
+   "pgm_ref_code": "8585",
+   "pgm_ref_txt": "NSF/Intel Partnership Projects"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 199998.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-54adff82-7fff-bc94-f78a-eca067d9dff0\"> </span></p>\r\n<p dir=\"ltr\"><span>This project explored an innovative approach to enhance the performance of server CPUs by leveraging a technique called hardware memoization. Memoization is a method of storing and reusing the results of previously executed computations to avoid redundant future computations. This concept is particularly relevant for servers, which often handle numerous similar requests, leading to repetitive execution patterns.</span></p>\r\n<p dir=\"ltr\"><span>To conduct this study, we developed a custom, realistic platform that closely emulates real-world server environments. We built a full system on a field-programmable gate array (FPGA), incorporating high-speed networking capabilities and tracing infrastructure. By faithfully emulating full-system server operations, including running Linux and off-the-shelf server software, our platform allowed us to collect detailed instruction-level traces without disrupting the natural behavior of the applications. This high-fidelity setup provided insights into how servers execute instructions while processing real-world workloads.</span></p>\r\n<p dir=\"ltr\"><span>Using this platform, we collected and analyzed extensive instruction traces from a diverse set of server applications. Our analysis revealed a surprising degree of repetition in the execution patterns of these applications. We found that a significant portion of the instructions executed by servers &ndash; 93% on average &ndash; are candidates for optimization through memoization techniques, as they repeat with the same inputs generating the same outputs.&nbsp; This high level of repetition indicates substantial opportunity for improving server performance.</span></p>\r\n<p dir=\"ltr\"><span>To leverage these findings, we also pursued developing methods to implement memoization in hardware, integrating it seamlessly with existing CPU architectures. We explored how to extend modern processor designs to support this optimization technique without introducing additional latency or significantly altering critical components.</span></p>\r\n<p dir=\"ltr\"><span>The broader impacts of this work extend beyond technical advancements in processor design. Servers form the backbone of modern digital infrastructure, powering everything from cloud computing and e-commerce to scientific research and social media platforms. However, they also consume vast amounts of energy, contributing significantly to global energy usage and environmental impact. By reducing redundant computations through hardware memoization, our approach has the potential to make servers more energy-efficient, thereby lowering operational costs for data centers and reducing their carbon footprint.</span></p>\r\n<p dir=\"ltr\"><span>Moreover, this work contributes to the broader goal of advancing computing efficiency in an increasingly digital society. As demand for cloud-based services continues to grow, optimizing server performance becomes critical not only for meeting user expectations, but also for ensuring sustainable growth in technology infrastructure. The methods developed in this project can influence future CPU designs, enabling more efficient processing across a wide range of server applications.</span></p>\r\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 12/13/2024<br>\nModified by: Michael&nbsp;Ferdman</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\n \r\n\n\nThis project explored an innovative approach to enhance the performance of server CPUs by leveraging a technique called hardware memoization. Memoization is a method of storing and reusing the results of previously executed computations to avoid redundant future computations. This concept is particularly relevant for servers, which often handle numerous similar requests, leading to repetitive execution patterns.\r\n\n\nTo conduct this study, we developed a custom, realistic platform that closely emulates real-world server environments. We built a full system on a field-programmable gate array (FPGA), incorporating high-speed networking capabilities and tracing infrastructure. By faithfully emulating full-system server operations, including running Linux and off-the-shelf server software, our platform allowed us to collect detailed instruction-level traces without disrupting the natural behavior of the applications. This high-fidelity setup provided insights into how servers execute instructions while processing real-world workloads.\r\n\n\nUsing this platform, we collected and analyzed extensive instruction traces from a diverse set of server applications. Our analysis revealed a surprising degree of repetition in the execution patterns of these applications. We found that a significant portion of the instructions executed by servers  93% on average  are candidates for optimization through memoization techniques, as they repeat with the same inputs generating the same outputs. This high level of repetition indicates substantial opportunity for improving server performance.\r\n\n\nTo leverage these findings, we also pursued developing methods to implement memoization in hardware, integrating it seamlessly with existing CPU architectures. We explored how to extend modern processor designs to support this optimization technique without introducing additional latency or significantly altering critical components.\r\n\n\nThe broader impacts of this work extend beyond technical advancements in processor design. Servers form the backbone of modern digital infrastructure, powering everything from cloud computing and e-commerce to scientific research and social media platforms. However, they also consume vast amounts of energy, contributing significantly to global energy usage and environmental impact. By reducing redundant computations through hardware memoization, our approach has the potential to make servers more energy-efficient, thereby lowering operational costs for data centers and reducing their carbon footprint.\r\n\n\nMoreover, this work contributes to the broader goal of advancing computing efficiency in an increasingly digital society. As demand for cloud-based services continues to grow, optimizing server performance becomes critical not only for meeting user expectations, but also for ensuring sustainable growth in technology infrastructure. The methods developed in this project can influence future CPU designs, enabling more efficient processing across a wide range of server applications.\r\n\n\n\t\t\t\t\tLast Modified: 12/13/2024\n\n\t\t\t\t\tSubmitted by: MichaelFerdman\n"
+ }
+}

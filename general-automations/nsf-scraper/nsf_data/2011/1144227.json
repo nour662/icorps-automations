@@ -1,0 +1,96 @@
+{
+ "awd_id": "1144227",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: Automated High Speed Object Category Modeling and Model Based Recognition, Segmentation, Clustering, and Classification",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032924768",
+ "po_email": "jyang@nsf.gov",
+ "po_sign_block_name": "Jie Yang",
+ "awd_eff_date": "2011-08-15",
+ "awd_exp_date": "2013-07-31",
+ "tot_intn_awd_amt": 266276.0,
+ "awd_amount": 266276.0,
+ "awd_min_amd_letter_date": "2011-07-20",
+ "awd_max_amd_letter_date": "2011-07-20",
+ "awd_abstract_narration": "This project explores new directions to solving the following problem. Given an image, determine whether and where specific objects, or objects from a specific category, appear in the image. Visual category is defined as earlier, namely, as a collection of objects which share characteristic features that are visually similar, and occur in similar configurations. The visual nature of objects sought is communicated through (training) data containing them, and estimated using machine learning. The approach consists of two main parts. First, it learns whether a given set of previously unseen images (including videos), say supplied by a user, contains any dominant themes, namely, subimages, that occur frequently and look similar. Second, given a set of categories automatically inferred during training and a new test image, the approach recognizes all occurrences in the image of the learned categories. It delineates each such object in the image, and labels it with its category name. Both learning and subsequent recognition do not require human supervision. The approach learns and recognizes categories as image hierarchies. The impact of the project includes accurate high-speed extraction of image regions, image representation by connected segmentation tree, robust image matching, unsupervised extraction of hierarchical category models, efficient recognition of a large number of categories, unsupervised estimation of perceptually salient, relevance weights of subcategory detections to category recognition, and generalization of the proposed approach to extraction of texture elements. More broadly, the proposed approach is useful for applications in search engines, surveillance, video analytics, monitoring and data mining.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Narendra",
+   "pi_last_name": "Ahuja",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Narendra Ahuja",
+   "pi_email_addr": "ahuja@vision.ai.uiuc.edu",
+   "nsf_id": "000232718",
+   "pi_start_date": "2011-07-20",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Illinois at Urbana-Champaign",
+  "inst_street_address": "506 S WRIGHT ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "URBANA",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "2173332187",
+  "inst_zip_code": "618013620",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "IL13",
+  "org_lgl_bus_name": "UNIVERSITY OF ILLINOIS",
+  "org_prnt_uei_num": "V2PHZ2CSCH63",
+  "org_uei_num": "Y8CWNJRCNN91"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Illinois at Urbana-Champaign",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "618207473",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "IL13",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": null,
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112RB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 266276.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><strong>1. Work Done</strong></p>\n<p>This extended grant has built upon the work completed through the last report, of 2011-12. We have continued the work on the three previously reported major parts and completed one major new part. These parts are as follows. (1) We have exploited the accuracy and the detailed low level analyses in the segmentation algorithm proposed in our earlier work [3] for the optical flow estimation problem, and have obtained promising results. (2) We have developed a novel way of enhancing the perceived sharpness of natural images by systematically learning human preferences. (3) We have started to develop a novel way of compressive sampling and reconstruction of images that exploits homogeneity and spatial correlation of pixels within image regions. (4) We have begun to use our low level segmentation algorithm for obtaining a super-resolution images from a given low resolution image..<strong>&nbsp;</strong></p>\n<p><strong>Segmentation Based Optical Flow Estimation: </strong>&nbsp;We have proposed a method for regularizing the optical flow field in order to reduce the excessive blur around motion boundaries seen in most existing flow algorithms. We generate hypotheses for accurate motion boundaries by fusing together information from a preliminary, smoothing-error-prone flow field (e.g. obtained from a traditional optical flow algorithm), and the relatively accurate low level image segmentation algorithm developed by our group. We can bootstrap the performance of any given, traditional flow estimation algorithm, and thus expect to consistently improve or, at worst, preserve the performance of the given algorithm. By working with several traditional optical flow algorithms and data, we have demonstrated that our approach indeed meets this expectation.</p>\n<p><strong>Learning Human Preferences for Sharpening Images: </strong>We have proposed&nbsp;a method for maximizing the perceived sharpness of an image. Image sharpness is defined in terms of the one-dimensional contrast across region boundaries. The region boundaries are ramps referred to above, and are automatically extracted at all natural scales present. The unknown spatial (size, geometry) scales and photometric (contrast) at which the regions happen to occur in a given image are themselves identified automatically. The ramps are modified by adding over- and under-shoots to them at the two ends, whose amounts must be determined. Human judgments of perceived sharpness are collected and used to learn a function that models the dependence of the over- and under-shoot amounts. Specifically, the best sharpening parameter values at an image location are estimated as a function of certain local image properties. We use the Gaussian mixture model (GMM) as the model, and estimate joint probability density of the preferred sharpening parameters and local image properties. The GMM parameters are adaptively estimated by parametric regression from GMM. Experimental results demonstrate the&nbsp;superior performance of our approach over the traditional, unsharp masking method.</p>\n<p><strong>Non Local Compressive Sampling (CS) and Reconstruction of Images:</strong>&nbsp;Despite the remarkable progress in the theory of CS, the required CS rate for image (for acquiring an image using CS) is still very high. In our preliminary work, a non-local compressive sampling (NLCS) recovery method is proposed to further reduce the sampling rate by exploiting the non-local patch correlation and local piecewise smoothness of regions in natural images. In addition, we are targeting linear complexity as a function of the matrix size without compromising accuracy.</p>\n<p>&nbsp;</p>\n<p><strong>From a Low-Resolution Image to a Super-Resolution Image:&nbsp;</strong>In [5] we propose a new image domain prior term for regularizing the super-resolution objective function. This term encourages preserving the local ramp stru...",
+  "por_txt_cntn": "\n1. Work Done\n\nThis extended grant has built upon the work completed through the last report, of 2011-12. We have continued the work on the three previously reported major parts and completed one major new part. These parts are as follows. (1) We have exploited the accuracy and the detailed low level analyses in the segmentation algorithm proposed in our earlier work [3] for the optical flow estimation problem, and have obtained promising results. (2) We have developed a novel way of enhancing the perceived sharpness of natural images by systematically learning human preferences. (3) We have started to develop a novel way of compressive sampling and reconstruction of images that exploits homogeneity and spatial correlation of pixels within image regions. (4) We have begun to use our low level segmentation algorithm for obtaining a super-resolution images from a given low resolution image.. \n\nSegmentation Based Optical Flow Estimation:  We have proposed a method for regularizing the optical flow field in order to reduce the excessive blur around motion boundaries seen in most existing flow algorithms. We generate hypotheses for accurate motion boundaries by fusing together information from a preliminary, smoothing-error-prone flow field (e.g. obtained from a traditional optical flow algorithm), and the relatively accurate low level image segmentation algorithm developed by our group. We can bootstrap the performance of any given, traditional flow estimation algorithm, and thus expect to consistently improve or, at worst, preserve the performance of the given algorithm. By working with several traditional optical flow algorithms and data, we have demonstrated that our approach indeed meets this expectation.\n\nLearning Human Preferences for Sharpening Images: We have proposed a method for maximizing the perceived sharpness of an image. Image sharpness is defined in terms of the one-dimensional contrast across region boundaries. The region boundaries are ramps referred to above, and are automatically extracted at all natural scales present. The unknown spatial (size, geometry) scales and photometric (contrast) at which the regions happen to occur in a given image are themselves identified automatically. The ramps are modified by adding over- and under-shoots to them at the two ends, whose amounts must be determined. Human judgments of perceived sharpness are collected and used to learn a function that models the dependence of the over- and under-shoot amounts. Specifically, the best sharpening parameter values at an image location are estimated as a function of certain local image properties. We use the Gaussian mixture model (GMM) as the model, and estimate joint probability density of the preferred sharpening parameters and local image properties. The GMM parameters are adaptively estimated by parametric regression from GMM. Experimental results demonstrate the superior performance of our approach over the traditional, unsharp masking method.\n\nNon Local Compressive Sampling (CS) and Reconstruction of Images: Despite the remarkable progress in the theory of CS, the required CS rate for image (for acquiring an image using CS) is still very high. In our preliminary work, a non-local compressive sampling (NLCS) recovery method is proposed to further reduce the sampling rate by exploiting the non-local patch correlation and local piecewise smoothness of regions in natural images. In addition, we are targeting linear complexity as a function of the matrix size without compromising accuracy.\n\n \n\nFrom a Low-Resolution Image to a Super-Resolution Image: In [5] we propose a new image domain prior term for regularizing the super-resolution objective function. This term encourages preserving the local ramp structure around edges, in the superresolution reconstruction algorithm.  We then perform a domain transformation of the pixels belonging to the steepest ramps at the edge pixels, in order to adaptively \u00e6compress\u00c6 the ramps. The resulting ..."
+ }
+}

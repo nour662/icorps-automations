@@ -1,0 +1,113 @@
+{
+ "awd_id": "1116208",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CIF: Small: Fast Stagewise Learning of Sparse Hierarchical Data Representations",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "John Cozzens",
+ "awd_eff_date": "2011-07-01",
+ "awd_exp_date": "2015-06-30",
+ "tot_intn_awd_amt": 372000.0,
+ "awd_amount": 372000.0,
+ "awd_min_amd_letter_date": "2011-06-30",
+ "awd_max_amd_letter_date": "2011-06-30",
+ "awd_abstract_narration": "Increasingly, real-world data has many dimensions or features but rather than filling out all dimensions equally, the data distributed on or near a surface of much lower intrinsic dimension. Examples include fMRI data and natural image and video data sets.  This research will push the boundary of what is currently possible in the analysis of such large data sets by incorporating hierarchical structure into what is known as a \"sparse dictionary representation\" of the data.  The results will include both basic intellectual contributions to machine learning methods and computational advancements that will aid the investigation of complex real world data. \r\n\t\r\nA fundamental problem in learning the structure of complex data is how to effectively extract a set of features that reflects the underlying structure of the data. In many applications, including face recognition and object recognition, sparse dictionary representations have proved effective for this purpose. However, since solving large-scale sparse representation problems is very expensive, the method is generally limited to problems of moderate scale. This research reformulates the method into an incremental, multi-stage, hierarchical dictionary learning process. This approach incrementally extracts information from the data and uses this to refine the data representation in an organized hierarchical fashion. This enables the building of large-scale dictionaries in a computationally efficient way. The method hence extends the power of sparse dictionary representation methods to a wider variety of real world applications. It also has the flexibility to incorporate an existing state-of-the-art sparse coding algorithm as the basic solver and hence can extend the functionality of existing sparse coding algorithms to multi-stage, hierarchical dictionary learning.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Peter",
+   "pi_last_name": "Ramadge",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Peter J Ramadge",
+   "pi_email_addr": "ramadge@princeton.edu",
+   "nsf_id": "000199906",
+   "pi_start_date": "2011-06-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Princeton University",
+  "inst_street_address": "1 NASSAU HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "PRINCETON",
+  "inst_state_code": "NJ",
+  "inst_state_name": "New Jersey",
+  "inst_phone_num": "6092583090",
+  "inst_zip_code": "085442001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "NJ12",
+  "org_lgl_bus_name": "THE TRUSTEES OF PRINCETON UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NJ1YPQXQG7U5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Princeton University",
+  "perf_str_addr": "1 NASSAU HALL",
+  "perf_city_name": "PRINCETON",
+  "perf_st_code": "NJ",
+  "perf_st_name": "New Jersey",
+  "perf_zip_code": "085442001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "NJ12",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779700",
+   "pgm_ele_name": "Comm & Information Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7936",
+   "pgm_ref_txt": "SIGNAL PROCESSING"
+  },
+  {
+   "pgm_ref_code": "9218",
+   "pgm_ref_txt": "BASIC RESEARCH & HUMAN RESORCS"
+  },
+  {
+   "pgm_ref_code": "HPCC",
+   "pgm_ref_txt": "HIGH PERFORMANCE COMPUTING & COMM"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 372000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><div class=\"page\" title=\"Page 1\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><span style=\"font-size: 10.000000pt; font-family: 'URWPalladioL';\">The sparse representation of data with respect to a dictionary of features has recently contributed to successful new methods in machine learning, pattern analysis and signal/image processing. At the heart of many sparse representation methods is a least squares problem </span><span style=\"font-size: 10.000000pt; font-family: 'URWPalladioL';\">called the lasso problem. It is common to encounter lasso problems with </span><span style=\"font-size: 10.000000pt; font-family: 'URWPalladioL';\">a large dictionary, data with large data dimension, and in dictionary learning, a large number of dictionary iterations. These factors can make solving the lasso problem a bottleneck in the overall computation.We have investigated structured apprpaoches to this challenge including</span><span style=\"font-size: 10.000000pt; font-family: 'URWPalladioL';\"> an approach known as (dictionary) screening. S</span><span style=\"font-size: 10.000000pt; font-family: 'CMBX10';\">&nbsp;</span><span style=\"font-size: 10.000000pt; font-family: 'URWPalladioL';\">&nbsp;</span><span style=\"font-size: 10.000000pt; font-family: 'CMMI10';\">&nbsp;</span><span style=\"font-size: 10.000000pt; font-family: 'URWPalladioL';\">creening quickly identifies a subset of features that is guaranteed to have zero weight in a sparse solution</span><span style=\"font-size: 10.000000pt; font-family: 'CMBX10';\">&nbsp;</span><span style=\"font-size: 10.000000pt; font-family: 'CMR10';\">&nbsp;</span><span style=\"font-size: 10.000000pt; font-family: 'URWPalladioL';\">. These features can be removed (or &ldquo;rejected&rdquo;) from the dictionary to form a smaller, more readily solved lasso problem. One then obtains a solution of the original problem. Screening has two potential benefits. First, it can be run in an on-line mode with very few features loaded into memory at a given time. By this means, screening can significantly reduce the size of the dictionary that needs to be loaded into memory in order to solve the lasso problem. Second, by quickly reducing the number of features we can often solve problems faster. </span></p>\n<div class=\"page\" title=\"Page 17\">\n<div class=\"section\"><span style=\"font-size: 10.000000pt; font-family: 'URWPalladioL';\">Our reseaerch strongly suggests that more complex screening tests are worthwhile. We have developed new tests that give significant performance improvement beyond existing tests in both rejection</span><span style=\"font-size: 10.000000pt; font-family: 'CMMI10';\">&nbsp;</span><span style=\"font-size: 10.000000pt; font-family: 'URWPalladioL';\">. But </span><span style=\"font-size: 10.000000pt; font-family: 'CMMI10';\">&nbsp;</span><span style=\"font-size: 7.000000pt; font-family: 'CMR7'; vertical-align: -1.000000pt;\">&nbsp;</span><span style=\"font-size: 10.000000pt; font-family: 'URWPalladioL';\">a significant performance gap remains. To this end, we have developed a new sequential screening method called data adaptive sequential screening that offers at least an order of magnitude improvement.</span></div>\n<div class=\"section\"><span style=\"font-size: 10.000000pt; font-family: 'URWPalladioL';\">In addtion to the above scientific contributions, this grant supported the education of several doctoral students who have since joined the US workforce.<br /></span></div>\n<div class=\"section\"></div>\n</div>\n<p><span style=\"font-size: 10.000000pt; font-family: 'URWPalladioL';\"><br /></span></p>\n<div class=\"page\" title=\"Page 1\">\n<div class=\"layoutArea\"></div>\n</div>\n<p><span style=\"font-size: 10.000000pt; font-family: 'URWPalladioL';\"> </span></p>\n</div>\n</div>\n</div><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/11/2016<br>\n\t\t\t\t\tModified by: Peter&nbsp;J&nbsp;Ramadge</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\n\n\nThe sparse representation of data with respect to a dictionary of features has recently contributed to successful new methods in machine learning, pattern analysis and signal/image processing. At the heart of many sparse representation methods is a least squares problem called the lasso problem. It is common to encounter lasso problems with a large dictionary, data with large data dimension, and in dictionary learning, a large number of dictionary iterations. These factors can make solving the lasso problem a bottleneck in the overall computation.We have investigated structured apprpaoches to this challenge including an approach known as (dictionary) screening. S   creening quickly identifies a subset of features that is guaranteed to have zero weight in a sparse solution  . These features can be removed (or \"rejected\") from the dictionary to form a smaller, more readily solved lasso problem. One then obtains a solution of the original problem. Screening has two potential benefits. First, it can be run in an on-line mode with very few features loaded into memory at a given time. By this means, screening can significantly reduce the size of the dictionary that needs to be loaded into memory in order to solve the lasso problem. Second, by quickly reducing the number of features we can often solve problems faster. \n\nOur reseaerch strongly suggests that more complex screening tests are worthwhile. We have developed new tests that give significant performance improvement beyond existing tests in both rejection . But   a significant performance gap remains. To this end, we have developed a new sequential screening method called data adaptive sequential screening that offers at least an order of magnitude improvement.\nIn addtion to the above scientific contributions, this grant supported the education of several doctoral students who have since joined the US workforce.\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\t\t\t\t\tLast Modified: 05/11/2016\n\n\t\t\t\t\tSubmitted by: Peter J Ramadge"
+ }
+}

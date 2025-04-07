@@ -1,0 +1,105 @@
+{
+ "awd_id": "1947546",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: AF: Pseudorandomness in Computer Science",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922182",
+ "po_email": "pbrass@nsf.gov",
+ "po_sign_block_name": "Peter Brass",
+ "awd_eff_date": "2020-01-15",
+ "awd_exp_date": "2023-12-31",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 175000.0,
+ "awd_min_amd_letter_date": "2020-01-09",
+ "awd_max_amd_letter_date": "2020-01-09",
+ "awd_abstract_narration": "Randomness is a powerful tool with frequent utility in various branches of computer science such as algorithm design, cryptography, computational complexity, and distributed computing. Some of the fastest, simplest and most elegant algorithms for several fundamental problems, such as primality testing, polynomial factorization, polynomial identity testing, and graph connectivity rely heavily on randomness. This was a motivation for the formation and cultivation of the field of probabilistic computation, which emerged in 1970's as a subfield of complexity theory. After decades of research, there is an abundance of problems with efficient randomized algorithms, for which no efficient deterministic algorithms are known. A fundamental goal in theory of pseudorandomness in complexity theory is to understand the extent to which randomness is necessary for efficient computation. It is conjectured that every polynomial time randomized algorithm has a polynomial time deterministic counterpart, and every log-space randomized algorithm has a log-space deterministic counterpart. Even though the area of pseudorandomness has witnessed several breakthroughs over the recent years, these fundamental conjectures seem far out of reach, and several intermediate open problems remain to be resolved. \r\n\r\nIn order to reduce or remove the use of randomness, one often faces the problem of constructing explicit or weakly explicit mathematical objects that share useful properties with purely random objects. For example, in order to derandomize all log-space randomized algorithms with only a constant factor loss in space complexity, it is sufficient to efficiently construct pseudorandom distributions (called pseudorandom generators) that use a short random string to generate a much longer ``pseudorandom'' string that looks random to log-space algorithms. Other examples of useful pseudorandom objects are hitting set generators, samplers, error correcting codes, expander graphs, and randomness extractors. Finding explicit constructions of these objects, have immediate applications that go beyond derandomization of algorithms. The goal of this project is to design efficient such pseudorandom objects that help answer fundamental questions about the role of randomness in efficient computation.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Pooya",
+   "pi_last_name": "Hatami",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Pooya Hatami",
+   "pi_email_addr": "pooyahat@gmail.com",
+   "nsf_id": "000805775",
+   "pi_start_date": "2020-01-09",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Ohio State University",
+  "inst_street_address": "1960 KENNY RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLUMBUS",
+  "inst_state_code": "OH",
+  "inst_state_name": "Ohio",
+  "inst_phone_num": "6146888735",
+  "inst_zip_code": "432101016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "OH03",
+  "org_lgl_bus_name": "OHIO STATE UNIVERSITY, THE",
+  "org_prnt_uei_num": "MN4MDDMN8529",
+  "org_uei_num": "DLWBSLWAJWR1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Ohio State University",
+  "perf_str_addr": "Office of Sponsored Programs",
+  "perf_city_name": "Columbus",
+  "perf_st_code": "OH",
+  "perf_st_name": "Ohio",
+  "perf_zip_code": "432101016",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "OH03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7927",
+   "pgm_ref_txt": "COMPLEXITY & CRYPTOGRAPHY"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 175000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The main goal of this project was to design pseudorandom objects, such as unconditional pseudorandom generators (PRGs), for restricted models of computation, including various circuit models.</p>\n<p>&nbsp;</p>\n<p>We made several contributions in this direction, exploring its connections to lower bounds in complexity theory. In a joint work published in STOC 2023, we advanced the understanding of bounded depth circuits with linear threshold gates by proving state-of-the-art lower bounds for this class of circuits. These bounds applied to functions that are very \"easy to compute,\" i.e., read-once AC0 circuits of only one depth higher. Our joint work published in FOCS 2021 constructed small error PRGs for restricted circuits from widely-studied non-uniform circuit classes, including threshold circuits (TC0) and NC1. Motivated by constructing PRGs for low-degree polynomials over the field F2, in a joint work (which appeared in STOC 2020), we developed a new technique for proving new correlation bounds with F2-polynomials. In a joint work (which appeared in CCC 2020), we gave the first explicit PRG with seed length O(log n) for near-optimal error for depth-2 AC0 circuits with parity gates.</p>\n<p>Finally, in a joint monograph with William Hoza, published by Foundations and Trends in Theoretical Computer Science, we review known major paradigms for designing PRGs in depth. We explain how to use these paradigms to construct unconditional PRGs for various models of computation, such as Branching Programs, low-degree polynomials, and AC0 circuits.</p><br>\n<p>\n Last Modified: 04/23/2024<br>\nModified by: Pooya&nbsp;Hatami</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe main goal of this project was to design pseudorandom objects, such as unconditional pseudorandom generators (PRGs), for restricted models of computation, including various circuit models.\n\n\n\n\n\nWe made several contributions in this direction, exploring its connections to lower bounds in complexity theory. In a joint work published in STOC 2023, we advanced the understanding of bounded depth circuits with linear threshold gates by proving state-of-the-art lower bounds for this class of circuits. These bounds applied to functions that are very \"easy to compute,\" i.e., read-once AC0 circuits of only one depth higher. Our joint work published in FOCS 2021 constructed small error PRGs for restricted circuits from widely-studied non-uniform circuit classes, including threshold circuits (TC0) and NC1. Motivated by constructing PRGs for low-degree polynomials over the field F2, in a joint work (which appeared in STOC 2020), we developed a new technique for proving new correlation bounds with F2-polynomials. In a joint work (which appeared in CCC 2020), we gave the first explicit PRG with seed length O(log n) for near-optimal error for depth-2 AC0 circuits with parity gates.\n\n\nFinally, in a joint monograph with William Hoza, published by Foundations and Trends in Theoretical Computer Science, we review known major paradigms for designing PRGs in depth. We explain how to use these paradigms to construct unconditional PRGs for various models of computation, such as Branching Programs, low-degree polynomials, and AC0 circuits.\t\t\t\t\tLast Modified: 04/23/2024\n\n\t\t\t\t\tSubmitted by: PooyaHatami\n"
+ }
+}

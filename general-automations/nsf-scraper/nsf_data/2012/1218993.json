@@ -1,0 +1,105 @@
+{
+ "awd_id": "1218993",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: CSR: Small: Collaborative Research: Automated Model Synthesis of Library and System Functions for Program-Environment Co-Analysis",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2013-08-31",
+ "tot_intn_awd_amt": 44845.0,
+ "awd_amount": 44845.0,
+ "awd_min_amd_letter_date": "2012-08-25",
+ "awd_max_amd_letter_date": "2012-08-25",
+ "awd_abstract_narration": "Program analysis provides solid foundations for a broad range of applications, such as detecting security vulnerabilities, localizing program faults, proving program correctness, and optimizing performance. A pervasive and critical challenge in program analysis is to handle library functions and system calls, which provide an essential execution environment for a program and would be ideal to be co-analyzed with the program itself. Despite its importance, achieving program-environment co-analysis in practice is challenging. First, the difficulty to acquire the source code of some environmental functions precludes source code based analysis. Moreover, even if source code is available, the code base is often prohibitively large and complex, making analysis difficult. Existing solutions are to provide program analysis with either manually-constructed models, which do not scale, or imprecise models, which are overly conservative.\r\n\r\nIn this project, the goal is to apply program synthesis technique to construct models for environmental functions from their binary implementation and a set of initial inputs. The models are essentially programs that provide the same functionality of the functions being modeled, yet substantially simplified. Such programs can be included as part of the application, enabling program-environment co-analysis. The proposed technique will lead to an automated solution that will offload the onus of manually crafting models from program analysis developers' shoulders. Moreover, it will demonstrate the feasibility of precise program-environment co-analysis through applications.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Xiangyu",
+   "pi_last_name": "Zhang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Xiangyu Zhang",
+   "pi_email_addr": "xyzhang@cs.purdue.edu",
+   "nsf_id": "000494973",
+   "pi_start_date": "2012-08-25",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Purdue University",
+  "inst_street_address": "2550 NORTHWESTERN AVE # 1100",
+  "inst_street_address_2": "",
+  "inst_city_name": "WEST LAFAYETTE",
+  "inst_state_code": "IN",
+  "inst_state_name": "Indiana",
+  "inst_phone_num": "7654941055",
+  "inst_zip_code": "479061332",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "IN04",
+  "org_lgl_bus_name": "PURDUE UNIVERSITY",
+  "org_prnt_uei_num": "YRXVL4JYCEF5",
+  "org_uei_num": "YRXVL4JYCEF5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Purdue University",
+  "perf_str_addr": "305 N. Unversity Street",
+  "perf_city_name": "West Lafayette",
+  "perf_st_code": "IN",
+  "perf_st_name": "Indiana",
+  "perf_zip_code": "479062107",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "IN04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7944",
+   "pgm_ref_txt": "SOFTWARE ENG & FORMAL METHODS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 44845.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Program analysis provides solid foundation for a broad range of applications, such as detecting security vulnerabilities, localizing program faults, proving program correctness, and optimizing performance. A pervasive and critical challenge in program analysis is to handle library functions and system calls, which provide essential execution environment for a program and would be ideal to be co-analyzed with the program itself.<br /><br /><br /><br />In this project, the PIs and their research groups applied program synthesis techniques to construct models for environmental functions, including library functions and system call functions. After one year of development, the PIs have built a prototype that can automatically synthesize models for a number of most important system and library calls, such as file and socket reads and writes. The prototype assumes the availability of a set of inputs and the corresponding outputs for the subject functions, but not the source code of the functions. With the synthesized models, the PIs further demonstrated the benefits of program-environment co-analysis in two application domains, including test generation and fault tolerance. While the prototype shows the potential of the technique, it also discloses a set of challenges that need to be tackled in the continuation of the project in order to model more complex environmental functions.&nbsp; <br /><br /></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/23/2013<br>\n\t\t\t\t\tModified by: Xiangyu&nbsp;Zhang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nProgram analysis provides solid foundation for a broad range of applications, such as detecting security vulnerabilities, localizing program faults, proving program correctness, and optimizing performance. A pervasive and critical challenge in program analysis is to handle library functions and system calls, which provide essential execution environment for a program and would be ideal to be co-analyzed with the program itself.\n\n\n\nIn this project, the PIs and their research groups applied program synthesis techniques to construct models for environmental functions, including library functions and system call functions. After one year of development, the PIs have built a prototype that can automatically synthesize models for a number of most important system and library calls, such as file and socket reads and writes. The prototype assumes the availability of a set of inputs and the corresponding outputs for the subject functions, but not the source code of the functions. With the synthesized models, the PIs further demonstrated the benefits of program-environment co-analysis in two application domains, including test generation and fault tolerance. While the prototype shows the potential of the technique, it also discloses a set of challenges that need to be tackled in the continuation of the project in order to model more complex environmental functions.  \n\n\n\n\t\t\t\t\tLast Modified: 11/23/2013\n\n\t\t\t\t\tSubmitted by: Xiangyu Zhang"
+ }
+}

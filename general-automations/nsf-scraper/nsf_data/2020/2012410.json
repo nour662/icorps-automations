@@ -1,0 +1,101 @@
+{
+ "awd_id": "2012410",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Novel Decomposition Techniques Enabling Scalable Computational Frameworks for Large-Scale Nonlinear Optimization Problems",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2020-09-01",
+ "awd_exp_date": "2023-08-31",
+ "tot_intn_awd_amt": 180000.0,
+ "awd_amount": 180000.0,
+ "awd_min_amd_letter_date": "2020-07-22",
+ "awd_max_amd_letter_date": "2020-07-22",
+ "awd_abstract_narration": "This research project aims to develop improved numerical optimization algorithms. The research considers situations in which decisions must be made in the absence of perfect information, either due to the lack of reliable data or due to unforeseen events. Most state-of-the-art methods tackle optimization in this setting by considering many potential scenarios, which can result in formulations that are too large to be solved directly. The methodology in this project is fundamentally different and aims to create new decomposition frameworks for large-scale nonlinear continuous optimization. The algorithms under development will be tested on realistic questions in electrical power systems. For example, the decomposition algorithm will be able to break down the optimization of a large-scale power grid into computations for the high-voltage transmission grid and computations related to the many distribution networks that are attached to the transmission grid. This project provides research training opportunities for a graduate student.\r\n\r\nThe project aims to create novel decomposition frameworks that lead to new practical numerical algorithms able to tackle significantly larger instances of certain structured problems in nonlinear nonconvex optimization than currently possible. This will result in computational tools for the solution of stochastic optimization problems when sample average approximation gives rise to very large deterministic instances and will significantly expand the array of tractable stochastic two-stage and bi-level optimization problems. The key innovation is a smoothing technique that overcomes the predicament that optimal subsystem solutions need not be differentiable functions of the overarching system variables. In all aspects of the research, theory will be developed that characterizes the properties of problem reformulations and the convergence guarantees for new algorithms. One expected outcome of this project is high-quality open-source software for public use, capable of exploiting parallel computing resources.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Andreas",
+   "pi_last_name": "Waechter",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Andreas Waechter",
+   "pi_email_addr": "waechter@iems.northwestern.edu",
+   "nsf_id": "000609240",
+   "pi_start_date": "2020-07-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Northwestern University",
+  "inst_street_address": "633 CLARK ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "EVANSTON",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "3125037955",
+  "inst_zip_code": "602080001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "IL09",
+  "org_lgl_bus_name": "NORTHWESTERN UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "EXZVPWZBLUE8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Northwestern University",
+  "perf_str_addr": "2145 Sheridan Rd",
+  "perf_city_name": "Evanston",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "602080834",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "09",
+  "perf_st_cong_dist": "IL09",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 180000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-66e9bbd0-7fff-f054-f38a-7e7cae73f876\"> </span></p>\n<p dir=\"ltr\"><span>This project concerned the development of several practical numerical optimization algorithms for problems that arise in different scientific, engineering, and economic disciplines.</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>The main focus of this project was the development and software implementation of a decomposition algorithm for two-stage optimization problems as they arise frequently in important practical situations in which decisions have to be made in stages. As a specific example where this work has the potential to benefit society, consider the optimization of electrical power networks as it is done every day by power providers: Here, we need to</span></p>\n<p dir=\"ltr\"><span>decide on the amount of power that generators should produce to satisfy the demand in an electrical power grid. One day ahead of time, an independent system operator decides how much power each generator should produce so that the overall production costs are minimized (first-stage problem), based on a demand forecast which provides only an estimate of the</span></p>\n<p dir=\"ltr\"><span>actual demand. The next day, when the actual demand becomes known, the power production has to be adjusted to match the actual demand, potentially with other prices. The goal is to make the first-stage decision so that the overall expected (average) production cost is minimized.&nbsp; While this is a well-studied setting, current decomposition approaches can only work with linear but inexact approximations of the physical equations that describe the power flow.&nbsp;</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>The new framework developed under this proposal permits the use of the true nonlinear nonconvex formulation, which more accurately describes the physics and thereby avoids infeasible or sub-optimal solutions encountered with current approaches.&nbsp; This work introduced a new smoothing technique in the theory of optimization algorithms that can also be extended to other settings (such as bi-level problems that model economic market settings).&nbsp; A new algorithm was developed and realized in a sophisticated C++ software implementation, which is the foundation of a future open-source package.&nbsp; By making the outcome of this project available in that way, it can easily be used by practitioners in many disciplines.&nbsp; For example, real-sized power networks are too large to be solved in an undecomposed manner, particular when data uncertainty is also considered. The new framework was used in this project to decompose a large network into smaller networks that are small enough to be solved (in parallel) with existing solvers.</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>In addition, this project resulted in two more optimization methods with unique characteristics.&nbsp; One method targets the optimization of processes that are simulated with time-consuming computations.&nbsp; The key contribution to the field of optimization lies in the ability of the method to reduce the number of simulations by utilizing simulations that have been made in prior optimization runs.&nbsp; The other subproject considered an open question in the field of optimization:&nbsp; Currently, there is only one practical approach for solving ?second-order cone? problems, namely interior point methods. For other problem classes, so-called ?active-set? methods offer an alternative and are preferable when problem instances are small or need to be solved repeatedly, but it was not clear whether these methods can also be derived for second-order cone problems.&nbsp; This project developed such an active-set method and showed in preliminary experiments that the new method might be able to compete with interior point methods.&nbsp; This work laid the foundation for further research that is likely to result in methods that are more efficient in important settings than the state-of-the-art.</span></p>\n<div><span><br /></span></div>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/17/2023<br>\n\t\t\t\t\tModified by: Andreas&nbsp;Waechter</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \nThis project concerned the development of several practical numerical optimization algorithms for problems that arise in different scientific, engineering, and economic disciplines.\n\n \nThe main focus of this project was the development and software implementation of a decomposition algorithm for two-stage optimization problems as they arise frequently in important practical situations in which decisions have to be made in stages. As a specific example where this work has the potential to benefit society, consider the optimization of electrical power networks as it is done every day by power providers: Here, we need to\ndecide on the amount of power that generators should produce to satisfy the demand in an electrical power grid. One day ahead of time, an independent system operator decides how much power each generator should produce so that the overall production costs are minimized (first-stage problem), based on a demand forecast which provides only an estimate of the\nactual demand. The next day, when the actual demand becomes known, the power production has to be adjusted to match the actual demand, potentially with other prices. The goal is to make the first-stage decision so that the overall expected (average) production cost is minimized.  While this is a well-studied setting, current decomposition approaches can only work with linear but inexact approximations of the physical equations that describe the power flow. \n\n \nThe new framework developed under this proposal permits the use of the true nonlinear nonconvex formulation, which more accurately describes the physics and thereby avoids infeasible or sub-optimal solutions encountered with current approaches.  This work introduced a new smoothing technique in the theory of optimization algorithms that can also be extended to other settings (such as bi-level problems that model economic market settings).  A new algorithm was developed and realized in a sophisticated C++ software implementation, which is the foundation of a future open-source package.  By making the outcome of this project available in that way, it can easily be used by practitioners in many disciplines.  For example, real-sized power networks are too large to be solved in an undecomposed manner, particular when data uncertainty is also considered. The new framework was used in this project to decompose a large network into smaller networks that are small enough to be solved (in parallel) with existing solvers.\n\n \nIn addition, this project resulted in two more optimization methods with unique characteristics.  One method targets the optimization of processes that are simulated with time-consuming computations.  The key contribution to the field of optimization lies in the ability of the method to reduce the number of simulations by utilizing simulations that have been made in prior optimization runs.  The other subproject considered an open question in the field of optimization:  Currently, there is only one practical approach for solving ?second-order cone? problems, namely interior point methods. For other problem classes, so-called ?active-set? methods offer an alternative and are preferable when problem instances are small or need to be solved repeatedly, but it was not clear whether these methods can also be derived for second-order cone problems.  This project developed such an active-set method and showed in preliminary experiments that the new method might be able to compete with interior point methods.  This work laid the foundation for further research that is likely to result in methods that are more efficient in important settings than the state-of-the-art.\n\n\n\n \n\n \n\n\t\t\t\t\tLast Modified: 10/17/2023\n\n\t\t\t\t\tSubmitted by: Andreas Waechter"
+ }
+}

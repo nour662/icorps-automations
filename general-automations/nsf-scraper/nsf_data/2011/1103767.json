@@ -1,0 +1,101 @@
+{
+ "awd_id": "1103767",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Fellowship Award",
+ "awd_titl_txt": "NSF Postdoctoral Fellowship in Biology for FY 2011",
+ "cfda_num": "47.074",
+ "org_code": "08080000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Michael Vanni",
+ "awd_eff_date": "2012-01-01",
+ "awd_exp_date": "2015-01-31",
+ "tot_intn_awd_amt": 189000.0,
+ "awd_amount": 189000.0,
+ "awd_min_amd_letter_date": "2011-07-06",
+ "awd_max_amd_letter_date": "2011-07-06",
+ "awd_abstract_narration": "This action funds an NSF Postdoctoral Research Fellowship in Biology for FY 2011, Intersections of Biology and Mathematical and Physical Sciences. The fellowship supports a research and training plan in a host laboratory for the Fellow at the intersection of biology and statistics. The title of the research and training plan for this fellowship to Rori Rohlfs is \"Developing statistical tools to examine the evolution of gene expression.\"  The host institution for this fellowship is the University of California, Berkeley, and the sponsoring scientists are Drs. Rasmus Nielsen and Sandrine Dudoit.\r\n\r\nThe regulation of the degree to which a particular gene is used, called gene expression, has been proposed as an important mechanism explaining much of species diversity yet a rigorous statistical framework that models gene expression evolution has not yet been established.  This research uses the Ornstein-Uhlenbeck process to build a model of the evolution of gene expression.  It takes into account the existing phylogeny, relationships between genes and between species, factors limiting constraints on gene expression, and an optimally fit expression level.  After demonstrating the model's biological and statistical validity, the research uses a data set of mammalian gene expression, as measured with new RNA-Seq technology. Specific hypotheses regarding the evolution of gene expression levels in mammals are tested.  For instance, based on the model, the likelihood ratio test determines if genes expressed in human brain are undergoing rapid expression adaptation along the human species lineage.  A goal is to produce an open source software package of the model for broad use in studies of expression evolution across biological disciplines.\r\n\r\nTraining goals include strengthening scientific collaborations and developing and distributing tools that will be accessible widely to the scientific community.  Broader impacts include outreach to the public through collaborations with science media and public museums on the underlying causes of differences between species.  Educational outreach includes designing and teaching a course at K-12 schools and community colleges.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "BIO",
+ "org_dir_long_name": "Directorate for Biological Sciences",
+ "div_abbr": "DBI",
+ "org_div_long_name": "Division of Biological Infrastructure",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Rori",
+   "pi_last_name": "Rohlfs",
+   "pi_mid_init": "V",
+   "pi_sufx_name": "",
+   "pi_full_name": "Rori V Rohlfs",
+   "pi_email_addr": "",
+   "nsf_id": "000576889",
+   "pi_start_date": "2011-07-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Rohlfs                  Rori           V",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "Seattle",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "",
+  "inst_zip_code": "981955065",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "WA07",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "Rohlfs                  Rori           V",
+  "perf_str_addr": "",
+  "perf_city_name": "Seattle",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "981955065",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "WA07",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "805400",
+   "pgm_ele_name": "Inters Biol and Math and Phys"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9179",
+   "pgm_ref_txt": "GRADUATE INVOLVEMENT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 189000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Long-standing theories in evolutionary biology posit that changes in gene regulation contribute substantially to physical differences between species.&nbsp; Direct evolutionary analyses of gene usage (or expression) were impeded by the difficulty of obtaining comparable gene expression measurements across species.&nbsp; Next generation sequencing technologies have made these sorts of measurements accessible through RNA-Seq.&nbsp; Early evolutionary gene expression studies produced a number of interesting results, but were limited by statistical methods that lacked an evolutionary framework (i.e. these methods failed to account for different evolutionary relationships between species).&nbsp;</p>\n<p>&nbsp;</p>\n<p>In this project, I developed and implemented an evolutionary framework for gene expression between species.&nbsp; This method directly accounts for expression variation both within and between species, making it possible to test a number of specific hypotheses including:</p>\n<ul>\n<li>non-evolutionary expression variance (for example, differences in expression due to environmental conditions)</li>\n<li>expression drift (expression levels change randomly without constraint over evolutionary time)</li>\n<li>stabilizing selection on expression level (when a particular expression level is more evolutionarily fit than others, resulting in species maintaining similar expression levels over time, with some variance)</li>\n<li>adaptive shifts in expression level (while expression levels are stable over evolutionary time, for a particular species a change in expression level becomes advantageous (perhaps in response to a change of niche))</li>\n<li>expression level divergence between species (unusually high expression level differences between species, based on what is expected given within species expression variance, likely evidence of expression level adaptation)</li>\n<li>expression level diversity within species (unusually high expression level differences within species, based on what is expected given between species expression variance, likely evidence of short term expression level response to environmental factors)</li>\n</ul>\n<p>Specifically testing these hypotheses enables rigorous analyses of expression level evolution, greatly expanding our understanding of how changes in expression level contribute to adaptive differences between species.&nbsp; The software I developed implementing this method is being made freely available.&nbsp;</p>\n<p>&nbsp;</p>\n<p>I applied my model to a publicly available expression data set across 15 mammals (mostly primates).&nbsp; I identified candidate genes for environmental response by testing for expression diversity, including HSPA8, a heat shock gene which varies in expression level according to environmental conditions.&nbsp; I also identified candidate genes for expression level adaptation for example, F10, a blood coagulation factor that has extremely high expression in armadillos as compared to other mammals.&nbsp; It has previously been found that armadillo blood coagulates remarkably quickly compared to other mammals. &nbsp;This suggests that selective pressure on F10 expression level in armadillos caused an expression increase, resulting in a physiological difference.</p>\n<p>&nbsp;</p>\n<p>Simultaneous to this evolutionary expression level research, I investigated population genetic assumptions in forensic genetic identification methods.&nbsp; I specifically examined familial searching, where a database is queried for a partial genetic match to a sample of unknown origin, which may be caused by a close genetic relationship between the individual who left the sample and the partially matching individual in the database.&nbsp; I implemented the familial searching method used in California and quantified how often unrelated individuals and distant relatives (half-sibs, half-cousins, second cousins) are mistaken as first degre...",
+  "por_txt_cntn": "\nLong-standing theories in evolutionary biology posit that changes in gene regulation contribute substantially to physical differences between species.  Direct evolutionary analyses of gene usage (or expression) were impeded by the difficulty of obtaining comparable gene expression measurements across species.  Next generation sequencing technologies have made these sorts of measurements accessible through RNA-Seq.  Early evolutionary gene expression studies produced a number of interesting results, but were limited by statistical methods that lacked an evolutionary framework (i.e. these methods failed to account for different evolutionary relationships between species). \n\n \n\nIn this project, I developed and implemented an evolutionary framework for gene expression between species.  This method directly accounts for expression variation both within and between species, making it possible to test a number of specific hypotheses including:\n\nnon-evolutionary expression variance (for example, differences in expression due to environmental conditions)\nexpression drift (expression levels change randomly without constraint over evolutionary time)\nstabilizing selection on expression level (when a particular expression level is more evolutionarily fit than others, resulting in species maintaining similar expression levels over time, with some variance)\nadaptive shifts in expression level (while expression levels are stable over evolutionary time, for a particular species a change in expression level becomes advantageous (perhaps in response to a change of niche))\nexpression level divergence between species (unusually high expression level differences between species, based on what is expected given within species expression variance, likely evidence of expression level adaptation)\nexpression level diversity within species (unusually high expression level differences within species, based on what is expected given between species expression variance, likely evidence of short term expression level response to environmental factors)\n\n\nSpecifically testing these hypotheses enables rigorous analyses of expression level evolution, greatly expanding our understanding of how changes in expression level contribute to adaptive differences between species.  The software I developed implementing this method is being made freely available. \n\n \n\nI applied my model to a publicly available expression data set across 15 mammals (mostly primates).  I identified candidate genes for environmental response by testing for expression diversity, including HSPA8, a heat shock gene which varies in expression level according to environmental conditions.  I also identified candidate genes for expression level adaptation for example, F10, a blood coagulation factor that has extremely high expression in armadillos as compared to other mammals.  It has previously been found that armadillo blood coagulates remarkably quickly compared to other mammals.  This suggests that selective pressure on F10 expression level in armadillos caused an expression increase, resulting in a physiological difference.\n\n \n\nSimultaneous to this evolutionary expression level research, I investigated population genetic assumptions in forensic genetic identification methods.  I specifically examined familial searching, where a database is queried for a partial genetic match to a sample of unknown origin, which may be caused by a close genetic relationship between the individual who left the sample and the partially matching individual in the database.  I implemented the familial searching method used in California and quantified how often unrelated individuals and distant relatives (half-sibs, half-cousins, second cousins) are mistaken as first degree relatives (siblings, parent-offspring).  In the case of such a mis-identification, the family of the mistaken individual would be investigated which would not result in an identification of the individual who left the sample. \n\n \n\nIn similar wor..."
+ }
+}

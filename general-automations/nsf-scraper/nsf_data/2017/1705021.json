@@ -1,0 +1,108 @@
+{
+ "awd_id": "1705021",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "CSR: Medium: Collaborative Research: Data Center Scale Programmable Storage",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Erik Brunvand",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 500000.0,
+ "awd_min_amd_letter_date": "2017-07-05",
+ "awd_max_amd_letter_date": "2019-08-08",
+ "awd_abstract_narration": "Historically, applications usually interface with persistent storage systems through protocols, abstractions and interfaces. Protocols define a series of actions that can be taken on the storage such as reading, or writing and have an implicit abstraction model such as blocks or objects. Interfaces such as general or dedicated storage networks transport protocol messages. While protocols and interfaces simplify storage system design, both impact performance by the use of abstraction models and limited operations. Emerging storage class memory has low latency and granular operations, greatly increasing the relative impact of the overhead of protocols, abstractions and interfaces. This project is re-imagining the storage interface as programmable storage, where the defined protocol involves sending encapsulated programs to the actual storage where their effect is applied. This will improve the performance of distributed systems as well as storage applications, both of which are central to Internet applications.\r\n\r\nThe intellectual challenge in this project is the design of the new storage abstractions, insuring they are suitable for a variety of new storage media and that security is maintained while performance is improved. We are extending an existing storage system to include features of programmable storage while also supporting emerging consensus on low-level components used by distributed systems, such as persistent logs and transactional operations at the memory level. The project is using existing run-time code generation frameworks to insure that the programmable interface generates portable code that is also efficient. Part of the research effort is developing consensus among industry and academic researchers on the necessity and sufficiency of the storage abstractions we propose and developing educational materials to demonstrate how they should be used.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Carl",
+   "pi_last_name": "Maltzahn",
+   "pi_mid_init": "G",
+   "pi_sufx_name": "",
+   "pi_full_name": "Carl G Maltzahn",
+   "pi_email_addr": "carlosm@ucsc.edu",
+   "nsf_id": "000419997",
+   "pi_start_date": "2017-07-05",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Santa Cruz",
+  "inst_street_address": "1156 HIGH ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "SANTA CRUZ",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8314595278",
+  "inst_zip_code": "950641077",
+  "inst_country_name": "United States",
+  "cong_dist_code": "19",
+  "st_cong_dist_code": "CA19",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA SANTA CRUZ",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "VXUFPE4MCZH5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Santa Cruz",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "950641077",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "19",
+  "perf_st_cong_dist": "CA19",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 321588.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 178412.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Data movement in datacenters is a major cause for energy consumption and response delays. Data movement occurs when the location of processing the data is different than the location of where the data is stored. Processing data at the location where data is stored is surprisingly challenging: (1) processing resources might not be available, (2) the data as stored in one location might not make sense either because it is not complete or it is not sufficiently described, (3) the location of where data is stored might suddenly switch to a backup location due to device or power failures. In this project we set out to explore designs of a backward-compatible storage framework for data-centric computing that works for transactional programming styles across a range of storage systems and that exploits datacenter network technologies. We quickly realized that the interesting questions are about how data is represented in memory and on storage devices and how those representations enable efficient processing. We also observed a convergence in both the data science and data-intensive scientific communities around a couple of file formats, i.e., Parquet for data science and HDF5 for scientific communities. Users read and write files of these formats using format-specific software, also known as \"access libraries.\" These access libraries encode significant know-how of how to perform well under a variety of workloads and have received a significant amount of investment. The question is then how to embed these access libraries in storage systems while minimizing changes to the storage system, to the access library, and to the application that uses the programmable storage system.</p>\n<p>We ended up combining two large and rapidly evolving open source ecosystem, Apache Arrow and the Ceph distributed storage system: Apache Arrow is an in-memory binary representation of columnar data, provides access libraries across multiple programming languages, and is the center of an ecosystem of file formats, including Parquet, an extensive data processing library that minimizes data copying, and supports a variety of hardware accelerators. Ceph stores data as objects that have access methods, usually just read and write. An extension mechanism allows the introduction of additional access methods defined by dynamically linked libraries. In our solution both the application and Ceph objects link to the Apache Arrow library, and the Apache Arrow library supports a new \"file format\" that serves as an abstraction of processing data within objects instead of at the application's host while applications can continue using the Apache Arrow library as before. The final piece of the puzzle is how data and its processing is partitioned across a distributed storage system. Ceph allows users to manipulate how files are mapped to objects. We split large datasets into semantically complete files that each map to exactly one object. Apache Arrow provides a dataset abstractions over multiple files and implements the discovery of files and the scatter/gather of processing function calls to each file. Thus, to ingest a dataset into storage, the dataset needs to be split into object-sized, semantically complete files and to query the dataset, the application uses the Apache Arrow dataset interface with the new file format. Initial discussions with the Apache Arrow community has shown great interest in our project and in the prospect of contributing the Ceph extension to Apache Arrow and laying the groundwork for extensions of other storage systems. The architecture we identified also serves as a valuable blueprint for other access libraries such as HDF5.</p>\n<p>The introductions of additional storage services into the storage layer increases the importance of resource management. Storage servers are often divided into front ends that schedule requests and backends that are specialized for particular storage devices. A common strategy for storage systems is to move requests quickly to the backend where they wait for service but are beyond the front end scheduler's control. This can lead to priority inversion where a high-priority request waits for a low-priority request. To keep requests within the scheduler's control, they have to be kept as long as possible in the front end but without starving the backend. On our quest to find an easily computed signal to when the backend has enough requests or needs more requests, we discovered parallels to the bufferbloat problem well-known among computer networking experts. We ended up creating a controller with an inner and outer loop where the inner loop manages the backend queue to maintain a target latency, and the outer loop determines a good target latency based on continually sampling different latency throughput trade-offs. We are working with the Ceph community and Red Hat on contributing the controller.</p>\n<p>The project had a significantly positive impact on the career of three Ph.D. students, three M.S. students, and one undergraduate student and resulted in seven publications with more in the pipeline.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/06/2022<br>\n\t\t\t\t\tModified by: Carl&nbsp;G&nbsp;Maltzahn</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nData movement in datacenters is a major cause for energy consumption and response delays. Data movement occurs when the location of processing the data is different than the location of where the data is stored. Processing data at the location where data is stored is surprisingly challenging: (1) processing resources might not be available, (2) the data as stored in one location might not make sense either because it is not complete or it is not sufficiently described, (3) the location of where data is stored might suddenly switch to a backup location due to device or power failures. In this project we set out to explore designs of a backward-compatible storage framework for data-centric computing that works for transactional programming styles across a range of storage systems and that exploits datacenter network technologies. We quickly realized that the interesting questions are about how data is represented in memory and on storage devices and how those representations enable efficient processing. We also observed a convergence in both the data science and data-intensive scientific communities around a couple of file formats, i.e., Parquet for data science and HDF5 for scientific communities. Users read and write files of these formats using format-specific software, also known as \"access libraries.\" These access libraries encode significant know-how of how to perform well under a variety of workloads and have received a significant amount of investment. The question is then how to embed these access libraries in storage systems while minimizing changes to the storage system, to the access library, and to the application that uses the programmable storage system.\n\nWe ended up combining two large and rapidly evolving open source ecosystem, Apache Arrow and the Ceph distributed storage system: Apache Arrow is an in-memory binary representation of columnar data, provides access libraries across multiple programming languages, and is the center of an ecosystem of file formats, including Parquet, an extensive data processing library that minimizes data copying, and supports a variety of hardware accelerators. Ceph stores data as objects that have access methods, usually just read and write. An extension mechanism allows the introduction of additional access methods defined by dynamically linked libraries. In our solution both the application and Ceph objects link to the Apache Arrow library, and the Apache Arrow library supports a new \"file format\" that serves as an abstraction of processing data within objects instead of at the application's host while applications can continue using the Apache Arrow library as before. The final piece of the puzzle is how data and its processing is partitioned across a distributed storage system. Ceph allows users to manipulate how files are mapped to objects. We split large datasets into semantically complete files that each map to exactly one object. Apache Arrow provides a dataset abstractions over multiple files and implements the discovery of files and the scatter/gather of processing function calls to each file. Thus, to ingest a dataset into storage, the dataset needs to be split into object-sized, semantically complete files and to query the dataset, the application uses the Apache Arrow dataset interface with the new file format. Initial discussions with the Apache Arrow community has shown great interest in our project and in the prospect of contributing the Ceph extension to Apache Arrow and laying the groundwork for extensions of other storage systems. The architecture we identified also serves as a valuable blueprint for other access libraries such as HDF5.\n\nThe introductions of additional storage services into the storage layer increases the importance of resource management. Storage servers are often divided into front ends that schedule requests and backends that are specialized for particular storage devices. A common strategy for storage systems is to move requests quickly to the backend where they wait for service but are beyond the front end scheduler's control. This can lead to priority inversion where a high-priority request waits for a low-priority request. To keep requests within the scheduler's control, they have to be kept as long as possible in the front end but without starving the backend. On our quest to find an easily computed signal to when the backend has enough requests or needs more requests, we discovered parallels to the bufferbloat problem well-known among computer networking experts. We ended up creating a controller with an inner and outer loop where the inner loop manages the backend queue to maintain a target latency, and the outer loop determines a good target latency based on continually sampling different latency throughput trade-offs. We are working with the Ceph community and Red Hat on contributing the controller.\n\nThe project had a significantly positive impact on the career of three Ph.D. students, three M.S. students, and one undergraduate student and resulted in seven publications with more in the pipeline.\n\n\t\t\t\t\tLast Modified: 07/06/2022\n\n\t\t\t\t\tSubmitted by: Carl G Maltzahn"
+ }
+}

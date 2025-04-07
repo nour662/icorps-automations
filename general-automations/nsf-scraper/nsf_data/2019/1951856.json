@@ -1,0 +1,105 @@
+{
+ "awd_id": "1951856",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RI: Small: Scalable Online Learning with Gaussian Processes",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032928318",
+ "po_email": "vpavlovi@nsf.gov",
+ "po_sign_block_name": "Vladimir Pavlovic",
+ "awd_eff_date": "2019-08-01",
+ "awd_exp_date": "2023-07-31",
+ "tot_intn_awd_amt": 399061.0,
+ "awd_amount": 399061.0,
+ "awd_min_amd_letter_date": "2019-09-23",
+ "awd_max_amd_letter_date": "2019-09-23",
+ "awd_abstract_narration": "The modern world is filled with highly complex systems interacting to transport goods and raw materials, to manufacture the tiny components that power phones and laptops, and to assist surgeons in delicate medical procedures. Every day, the operators of these systems must make general decisions like how to schedule workers and deliveries, and specific decisions like how a certain robot in an assembly line should function. In each case, a good decision must account not only for what is known about the environment, but also what is unknown. Sometimes more information should be gathered, and sometimes action must be taken to avoid unlikely but costly mistakes. Moreover, every decision affects the next, and errors and delays in judgement at each step can be propagated and amplified. Scientists rely heavily on computer models to control for unknowns when making decisions, but in many situations the models are simply too slow to be useful. This research will greatly reduce the computational requirements needed for a robust representation of uncertainty, meaning computer models can quantify the effect of uncertainty more quickly and reliably, at a lower cost. In a world where unknowns are carefully modeled, autonomous vehicles are safer, infrastructure is more efficient, and scientific experiments are more informative.\r\n\r\nGaussian processes are a gold standard for uncertainty representation. However, the high computational cost of making predictions, after training, has limited their applicability in the sequential decision making frameworks for Bayesian optimization and reinforcement learning, where the quality of uncertainty estimates can have enormous impact. This research develops algebraic methods that exploit advances in hardware design for scalable Gaussian processes in these settings. This work will broaden the applicability of Bayesian optimization methods to general purpose objectives, with crucial scientific impacts such as automating NMR spectroscopy. This research will also enable more realistic assumptions in model-based reinforcement learning, to capture many possible future states of an engineering system, efficient exploration of possible states, and representation of high dimensional state spaces. These features are an important step towards automatic control in complicated engineering systems, such as unmanned vehicles, where data is costly to acquire and safety guarantees are critical. Overall this work will help unlock the potential of probabilistic methods for sequential online decision making, while providing interactive engineering demonstrations in educational settings.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Andrew",
+   "pi_last_name": "Wilson",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Andrew Wilson",
+   "pi_email_addr": "andrewgw@cims.nyu.edu",
+   "nsf_id": "000696522",
+   "pi_start_date": "2019-09-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "New York University",
+  "inst_street_address": "70 WASHINGTON SQ S",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEW YORK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "2129982121",
+  "inst_zip_code": "100121019",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "NY10",
+  "org_lgl_bus_name": "NEW YORK UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NX9PXMKW5KW8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "New York University",
+  "perf_str_addr": "70 WASHINGTON SQUARE S",
+  "perf_city_name": "NEW YORK",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "100121019",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "NY10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 399061.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In terms of intellectual merit, the project has significantly advanced the state-of-the-art in uncertainty representation and probabilistic modeling. In particular, it has led to the development of scalable Gaussian process models, with applications in climate science, spatiotemporal statistics, and general-purpose machine learning applications. These models provide reliable uncertainty about their predictions, for downstream decision making. Moreover, the scalable inference, enabled through proposing new ideas in linear algebra and quantization, means that these models can be applied to much larger datasets than before, leading to much more accurate predictions. We have also developed approaches in Bayesian optimization and reinforcement learning that use this uncertainty representation for exploration. Specifically, the uncertainty is used to explore optimization objectives, such as where to measure malaria incidence to increase the model's knowledge of disease spread, and to predict how to act in engineering controllers when the state of an objective is unknown. This work has led to over 10 publications in the premier machine learning conferences (including NeurIPS, ICML, and UAI).<br /><br />In terms of broader impacts, the project led to wide dissemination of educational materials to benefit a broad audience. These materials include a tutorial at ICML 2020, popular blog posts, an open source software library, and class teaching. It has also provided the basis for outreach and mentoring to underrepresented groups, including summer schools, the NYU AI Winter School, the NYU CDS undergraduate research program, and NYU Pathways to AI.</p><br>\n<p>\n Last Modified: 12/04/2023<br>\nModified by: Andrew&nbsp;G&nbsp;Wilson</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nIn terms of intellectual merit, the project has significantly advanced the state-of-the-art in uncertainty representation and probabilistic modeling. In particular, it has led to the development of scalable Gaussian process models, with applications in climate science, spatiotemporal statistics, and general-purpose machine learning applications. These models provide reliable uncertainty about their predictions, for downstream decision making. Moreover, the scalable inference, enabled through proposing new ideas in linear algebra and quantization, means that these models can be applied to much larger datasets than before, leading to much more accurate predictions. We have also developed approaches in Bayesian optimization and reinforcement learning that use this uncertainty representation for exploration. Specifically, the uncertainty is used to explore optimization objectives, such as where to measure malaria incidence to increase the model's knowledge of disease spread, and to predict how to act in engineering controllers when the state of an objective is unknown. This work has led to over 10 publications in the premier machine learning conferences (including NeurIPS, ICML, and UAI).\n\nIn terms of broader impacts, the project led to wide dissemination of educational materials to benefit a broad audience. These materials include a tutorial at ICML 2020, popular blog posts, an open source software library, and class teaching. It has also provided the basis for outreach and mentoring to underrepresented groups, including summer schools, the NYU AI Winter School, the NYU CDS undergraduate research program, and NYU Pathways to AI.\t\t\t\t\tLast Modified: 12/04/2023\n\n\t\t\t\t\tSubmitted by: AndrewGWilson\n"
+ }
+}

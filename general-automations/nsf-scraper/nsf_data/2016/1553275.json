@@ -1,0 +1,105 @@
+{
+ "awd_id": "1553275",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CAREER: Revealing a Reduced-Order Model for Chaotic Electroconvection and its Applications",
+ "cfda_num": "47.041",
+ "org_code": "07020000",
+ "po_phone": "7032927030",
+ "po_email": "rjoslin@nsf.gov",
+ "po_sign_block_name": "Ron Joslin",
+ "awd_eff_date": "2016-03-01",
+ "awd_exp_date": "2022-02-28",
+ "tot_intn_awd_amt": 505000.0,
+ "awd_amount": 515000.0,
+ "awd_min_amd_letter_date": "2016-02-16",
+ "awd_max_amd_letter_date": "2016-07-06",
+ "awd_abstract_narration": "PI:  Mani, Ali\r\nProposal Number: 1553275\r\n\r\nThe proposal is focused on the computational study of elctroconvection. This term is used to describe the fluid dynamics phenomena that are precipitated by electrokinetic forces.  Electroconvetion is important for flow close to surfaces like electrodes or membranes, where the surfaces interact with the ions of the fluid. The results of this research could have a strong impact on many engineering and technology applications, starting from water desalination, molecular separation, battery design, lab on a chip systems, etc.\r\n\r\nExperimental and theoretical investigations have revealed that electroconvection can lead to highly chaotic flows with remarkable resemblance to turbulent flows. These effects are shown to drastically impact mixing, ion transfer rates, and thus energy and throughput efficiency in these systems. Therefore, it is of crucial importance to develop modeling capabilities that can quantitatively predict EC effects in such systems. A multiscale approach is proposed that borrows concepts and tools reserved for turbulent flow analysis. Preliminary results with 2D direct numerical simulations (DNS) are available. These will be used to obtain boundary conditions for a spectral, high resolution 3D DNS. The 3D results will be used to develop a reduced order that can provide results faster than the DNS. Finally, experiments at collaborating laboratories will be conducted to validate the models. Plans for the development of a web based learning tool (based on Brownian dynamics simulations) for high school students are described.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CBET",
+ "org_div_long_name": "Division of Chemical, Bioengineering, Environmental, and Transport Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ali",
+   "pi_last_name": "Mani",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ali Mani",
+   "pi_email_addr": "alimani@stanford.edu",
+   "nsf_id": "000623817",
+   "pi_start_date": "2016-02-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Stanford University",
+  "inst_street_address": "450 JANE STANFORD WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "STANFORD",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "6507232300",
+  "inst_zip_code": "943052004",
+  "inst_country_name": "United States",
+  "cong_dist_code": "16",
+  "st_cong_dist_code": "CA16",
+  "org_lgl_bus_name": "THE LELAND STANFORD JUNIOR UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HJD6G4D6TJY5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Stanford University",
+  "perf_str_addr": "416 Escondido Mall",
+  "perf_city_name": "Stanford",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "943052203",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "16",
+  "perf_st_cong_dist": "CA16",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "144300",
+   "pgm_ele_name": "FD-Fluid Dynamics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1045",
+   "pgm_ref_txt": "CAREER-Faculty Erly Career Dev"
+  },
+  {
+   "pgm_ref_code": "7218",
+   "pgm_ref_txt": "RET SUPP-Res Exp for Tchr Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 515000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this project was to enable efficient quantitative prediction of salt transport in electroconvection, which is a chaotic hydrodynamic instability common in electrodialysis systems for water desalination. Current mathematical models for salt transport in such systems are either unreliably inaccurate or prohibitively expensive. A reduced-order model, similar to model reduction for turbulence by RANS framework, would make an engineering impact by allowing quantitative analysis and optimization of industry relevant settings. Our study through the course of this project, not only improved our understanding of the physics and modeling of electroconvection, but it also led to development of analysis tools that are broadly application for closure modeling of transport phenomena. Below we begin by first describing this broader outcome.&nbsp;</p>\n<p>Development of Macroscopic Forcing Method (MFM), a tool for analysis of closures and turbulence modeling: A key challenge in reduced-order modeling of transport in wide range of disciplines is identification of accurate closure operators for the advective terms, particularly when the underlying velocity field is chaotic or turbulent. To mitigate this challenge, one needs to quantify the so-called eddy diffusivity operator, which receives the mean spatial gradient of the transported quantity as its input and outputs the mean flux term due to the underlying fluctuating velocities. A key proposed component of this project involved quantification of eddy diffusivity from direct numerical simulation data (DNS). After identification of problems with the initially envisioned approaches, we developed MFM as an efficient and accurate technique for quantification of eddy diffusivity (Mani and Park, Physical Review Fluids, 2021). Specifically, through the development of Inverse MFM (IMFM), we introduced a cost-effective approach with substantial reduction on the required number of operations compared to prior methods, namely the Green&rsquo;s function method. The developed methodology is general in the sense that it allows identification of non-isotropic effects in eddy diffusivity, allows decomposition of eddy diffusivity in terms of local and non-local terms, is applicable for scalar and momentum transport, and is broadly relevant to both laminar and turbulent flows in broad regimes including aerodynamic flows and environmental flows as well as settings relevant to electrochemical systems.&nbsp;</p>\n<p>Another outcome of this project is successful demonstration of utilization of experimental data in MFM analysis. Specifically, when velocity data can be donated by an experimental measurement, MFM analysis can bypass DNS simulations. This alternative leads to additional cost reduction when DNS cost is dominant compared to MFM cost. In this project, experimental data were provided by a collaborating team (Prof. Wessling at RWTH Aachen). Utilization of these data allowed bypassing months of DNS simulations on computer clusters. Instead MFM calculations were performed in matter of hours on a desktop machine to generate the eddy diffusivity fields needed for reduced-order models. Additionally, this strategy led to quantifications of eddy diffusivity in regimes that are most relevant in practice, by proper matching of all parameters, namely the dimensionless Debye length, which is often difficult to match in DNS simulations.&nbsp;</p>\n<p>As a metric of success, the accuracy of the quantified eddy diffusivities is demonstrated through examining solutions of RANS-type transport models augmented by these eddy diffusivities. These models can be solved in matter of seconds to minutes on a laptop. The key quantity of interest is the predicted current-voltage curve in the presence of electroconvection. The quantified eddy diffusivities were found to result in accurate prediction of the current-voltage curves in RANS-type models when compared against experimental measurements. A remaining goal is the development of stand-alone analytical RANS models for electroconvection. Achieving this goal requires analytical parameterization/fitting of the eddy diffusivity. However, prior to such attempts, examination of additional canonical settings relevant to practical applications is needed which should likely be coordinated between experiments and MFM simulations.&nbsp;</p>\n<p>Another outcome is revealing the scaling of small flow structures near membranes in electroconvection. Utilizing DNS data, a scaling law was developed and verified to lead to collapse data, characterizing the magnitude and length scale of small unsteady structures near the membrane boundary. Extrapolations based on the developed scaling, confirmed our early hypothesis that DNS of electroconvection in most industry relevant settings is prohibitively expensive.&nbsp;</p>\n<p>As part of our educational objective, we developed&nbsp;a web-based interactive computer application for a broad high-school audience focusing on desalination and transport phenomena. The PI hosted two high-school students from URM groups and a high-school teacher over two summers to develop and test this tool (desalination.stanford.edu). This tool has already been used in math and physics courses in a local high school involving minority students to enhance students learning of non-linear behavior, transport phenomena, and mathematical optimization. Additionally, we have utilized this tool in science workshops for high school students, to spread awareness about the water scarcity problem in California and to inform students about impact of mathematical modeling and engineering design in solving this problem.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/27/2023<br>\n\t\t\t\t\tModified by: Ali&nbsp;Mani</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of this project was to enable efficient quantitative prediction of salt transport in electroconvection, which is a chaotic hydrodynamic instability common in electrodialysis systems for water desalination. Current mathematical models for salt transport in such systems are either unreliably inaccurate or prohibitively expensive. A reduced-order model, similar to model reduction for turbulence by RANS framework, would make an engineering impact by allowing quantitative analysis and optimization of industry relevant settings. Our study through the course of this project, not only improved our understanding of the physics and modeling of electroconvection, but it also led to development of analysis tools that are broadly application for closure modeling of transport phenomena. Below we begin by first describing this broader outcome. \n\nDevelopment of Macroscopic Forcing Method (MFM), a tool for analysis of closures and turbulence modeling: A key challenge in reduced-order modeling of transport in wide range of disciplines is identification of accurate closure operators for the advective terms, particularly when the underlying velocity field is chaotic or turbulent. To mitigate this challenge, one needs to quantify the so-called eddy diffusivity operator, which receives the mean spatial gradient of the transported quantity as its input and outputs the mean flux term due to the underlying fluctuating velocities. A key proposed component of this project involved quantification of eddy diffusivity from direct numerical simulation data (DNS). After identification of problems with the initially envisioned approaches, we developed MFM as an efficient and accurate technique for quantification of eddy diffusivity (Mani and Park, Physical Review Fluids, 2021). Specifically, through the development of Inverse MFM (IMFM), we introduced a cost-effective approach with substantial reduction on the required number of operations compared to prior methods, namely the Green\u2019s function method. The developed methodology is general in the sense that it allows identification of non-isotropic effects in eddy diffusivity, allows decomposition of eddy diffusivity in terms of local and non-local terms, is applicable for scalar and momentum transport, and is broadly relevant to both laminar and turbulent flows in broad regimes including aerodynamic flows and environmental flows as well as settings relevant to electrochemical systems. \n\nAnother outcome of this project is successful demonstration of utilization of experimental data in MFM analysis. Specifically, when velocity data can be donated by an experimental measurement, MFM analysis can bypass DNS simulations. This alternative leads to additional cost reduction when DNS cost is dominant compared to MFM cost. In this project, experimental data were provided by a collaborating team (Prof. Wessling at RWTH Aachen). Utilization of these data allowed bypassing months of DNS simulations on computer clusters. Instead MFM calculations were performed in matter of hours on a desktop machine to generate the eddy diffusivity fields needed for reduced-order models. Additionally, this strategy led to quantifications of eddy diffusivity in regimes that are most relevant in practice, by proper matching of all parameters, namely the dimensionless Debye length, which is often difficult to match in DNS simulations. \n\nAs a metric of success, the accuracy of the quantified eddy diffusivities is demonstrated through examining solutions of RANS-type transport models augmented by these eddy diffusivities. These models can be solved in matter of seconds to minutes on a laptop. The key quantity of interest is the predicted current-voltage curve in the presence of electroconvection. The quantified eddy diffusivities were found to result in accurate prediction of the current-voltage curves in RANS-type models when compared against experimental measurements. A remaining goal is the development of stand-alone analytical RANS models for electroconvection. Achieving this goal requires analytical parameterization/fitting of the eddy diffusivity. However, prior to such attempts, examination of additional canonical settings relevant to practical applications is needed which should likely be coordinated between experiments and MFM simulations. \n\nAnother outcome is revealing the scaling of small flow structures near membranes in electroconvection. Utilizing DNS data, a scaling law was developed and verified to lead to collapse data, characterizing the magnitude and length scale of small unsteady structures near the membrane boundary. Extrapolations based on the developed scaling, confirmed our early hypothesis that DNS of electroconvection in most industry relevant settings is prohibitively expensive. \n\nAs part of our educational objective, we developed a web-based interactive computer application for a broad high-school audience focusing on desalination and transport phenomena. The PI hosted two high-school students from URM groups and a high-school teacher over two summers to develop and test this tool (desalination.stanford.edu). This tool has already been used in math and physics courses in a local high school involving minority students to enhance students learning of non-linear behavior, transport phenomena, and mathematical optimization. Additionally, we have utilized this tool in science workshops for high school students, to spread awareness about the water scarcity problem in California and to inform students about impact of mathematical modeling and engineering design in solving this problem. \n\n \n\n\t\t\t\t\tLast Modified: 05/27/2023\n\n\t\t\t\t\tSubmitted by: Ali Mani"
+ }
+}

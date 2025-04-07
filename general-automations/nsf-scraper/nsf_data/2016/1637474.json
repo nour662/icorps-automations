@@ -1,0 +1,109 @@
+{
+ "awd_id": "1637474",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Gradient Sliding Schemes for Large-scale Optimization and Data Analysis",
+ "cfda_num": "47.041",
+ "org_code": "07030000",
+ "po_phone": "7032922443",
+ "po_email": "gaklutke@nsf.gov",
+ "po_sign_block_name": "Georgia-Ann Klutke",
+ "awd_eff_date": "2016-02-15",
+ "awd_exp_date": "2019-10-31",
+ "tot_intn_awd_amt": 266731.0,
+ "awd_amount": 266731.0,
+ "awd_min_amd_letter_date": "2016-04-13",
+ "awd_max_amd_letter_date": "2018-11-27",
+ "awd_abstract_narration": "The rapid advances in technology for digital data collection have led to significant increases in the size and complexity of data sets, sometimes known as big data. Optimization models, when combined with novel statistical analysis, have been proven fruitful in analyzing these complex datasets. However, optimization problems arising from these applications often involve nonsmooth components that can significantly slow down the convergence of existing optimization algorithms. Moreover, the complex datasets are so big and often distributed over different storage locations that the usual assumption that an entire dataset can be completely traversed in each iteration of the algorithm is unrealistic. Gradient sliding schemes do not require this assumption and hence are ideally suited for optimization with big data.  The research aims at tackling these computational challenges through the design, analysis, and implementation of a novel class of optimization algorithms using gradient sliding schemes.  The effectiveness of these new optimization algorithms will be demonstrated by solving problems in image processing and machine learning.\r\n\r\nThe gradient sliding algorithms are first-order methods that use first-order information (gradients and function values) exclusively in addition to some auxiliary operations, such as projection over the feasible set. As opposed to existing first-order methods, gradient sliding methods can skip the computation of gradients from time to time, while still preserving the optimal convergence properties for solving different types of large-scale optimization problems. This research will also study a new class of conditional gradient sliding methods that require a linear optimization rather than a more involved projection over the feasible set in each iteration. These algorithms are expected to exhibit optimal rate of convergence in terms of both the number of gradient computations and the number of times for solving the linear optimization subproblem. Moreover, randomized variants of these gradient sliding algorithms which are amenable to parallel/distributed computing will also be studied.  When applied to data analysis, these algorithms can reduce, by orders of magnitude, the number of traverses through the datasets, the computational cost associated with the involved matrix-vector multiplications, as well as the communication costs for the distributed datasets.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "CMMI",
+ "org_div_long_name": "Division of Civil, Mechanical, and Manufacturing Innovation",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Guanghui",
+   "pi_last_name": "Lan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Guanghui Lan",
+   "pi_email_addr": "george.lan@isye.gatech.edu",
+   "nsf_id": "000545078",
+   "pi_start_date": "2016-04-13",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Tech Research Corporation",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320420",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "006Y00",
+   "pgm_ele_name": "OE Operations Engineering"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "072E",
+   "pgm_ref_txt": "NETWORKS & QUEUING SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "073E",
+   "pgm_ref_txt": "OPTIMIZATION & DECISION MAKING"
+  },
+  {
+   "pgm_ref_code": "077E",
+   "pgm_ref_txt": "SIMULATION MODELS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0115",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001516DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2015,
+   "fund_oblg_amt": 266731.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Optimization has been widely used for large-scale data analysis. However, optimization problems arising from these applications often involve, in addition to expensive smooth components for data fitting, nonsmooth and nonseparable regularization terms/constraints to enforce certain structural properties for the generated solutions (e.g, low rank or group sparsity). It is well-known that such nonsmooth components can significantly slow down the convergence of existing optimization algorithms, leading to a large number of traverses through the datasets and/or expensive matrix-vector multiplications. Moreover, another significant challenge for the design of optimization algorithms comes from the fact that the complex datasets are so big and often distributed over different storage locations. It is often impractical to assume that optimization algorithms can traverse an entire dataset once in each iteration, because doing so would be too time consuming and unreliable in a distributed computing environment, and often result in low resource utilization due to the required communication and synchronization among different computing units.</p>\n<p>With the support of this NSF grant, we have proposed a new class of first-order optimization algorithms, including gradient sliding, conditional gradient sliding, accelerated gradient sliding, and communication sliding methods. These methods can skip the bottleneck of computation, e.g., gradient evaluation and communication, from time to time, while still preserving the optimal convergence behaviour for solving different types of large scale optimization problems. Moreover, we studied randomized variants for some of these algorithms which are amenable to parallel/distributed computing. When applied to data analysis, these algorithms can reduce, by orders of magnitude, the number of traverses through the datasets, the computational cost associated with the involved matrix-vector multiplications, as well as the communication costs for the distributed datasets.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/17/2020<br>\n\t\t\t\t\tModified by: Guanghui&nbsp;Lan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOptimization has been widely used for large-scale data analysis. However, optimization problems arising from these applications often involve, in addition to expensive smooth components for data fitting, nonsmooth and nonseparable regularization terms/constraints to enforce certain structural properties for the generated solutions (e.g, low rank or group sparsity). It is well-known that such nonsmooth components can significantly slow down the convergence of existing optimization algorithms, leading to a large number of traverses through the datasets and/or expensive matrix-vector multiplications. Moreover, another significant challenge for the design of optimization algorithms comes from the fact that the complex datasets are so big and often distributed over different storage locations. It is often impractical to assume that optimization algorithms can traverse an entire dataset once in each iteration, because doing so would be too time consuming and unreliable in a distributed computing environment, and often result in low resource utilization due to the required communication and synchronization among different computing units.\n\nWith the support of this NSF grant, we have proposed a new class of first-order optimization algorithms, including gradient sliding, conditional gradient sliding, accelerated gradient sliding, and communication sliding methods. These methods can skip the bottleneck of computation, e.g., gradient evaluation and communication, from time to time, while still preserving the optimal convergence behaviour for solving different types of large scale optimization problems. Moreover, we studied randomized variants for some of these algorithms which are amenable to parallel/distributed computing. When applied to data analysis, these algorithms can reduce, by orders of magnitude, the number of traverses through the datasets, the computational cost associated with the involved matrix-vector multiplications, as well as the communication costs for the distributed datasets.\n\n \n\n\t\t\t\t\tLast Modified: 01/17/2020\n\n\t\t\t\t\tSubmitted by: Guanghui Lan"
+ }
+}

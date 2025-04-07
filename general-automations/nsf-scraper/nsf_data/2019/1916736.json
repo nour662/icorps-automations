@@ -1,0 +1,105 @@
+{
+ "awd_id": "1916736",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "EAGER: Truly Distributed Deep Learning: Representation and Computation",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Wei Ding",
+ "awd_eff_date": "2019-06-15",
+ "awd_exp_date": "2022-05-31",
+ "tot_intn_awd_amt": 164729.0,
+ "awd_amount": 164729.0,
+ "awd_min_amd_letter_date": "2019-06-03",
+ "awd_max_amd_letter_date": "2019-06-03",
+ "awd_abstract_narration": "In many scientific domains, from healthcare to astronomy, our ability to gather data far outstrips our ability to analyze it.  Most data analysis algorithms require all of the data to be available at one central location, but that is not always possible due to either the sheer size of the data or, as in healthcare, privacy concerns.  The goal of this project is to develop data analysis algorithms that can be run on distributed datasets, where different physical locations contain a subset of the data.  Applications include medical diagnostic tools that are more accurate because they are based on significantly larger datasets than is currently possible, and crowdsourcing data analysis tasks by allowing anyone with some spare compute capacity to participate in a global-scale computation.\r\n\r\nThe project has two aims.  The first is the design and implement an ontologically backed Deep Learning Description Language (DL2) for representing all phases on deep learning, including model structure, hyperparameters, and training methods. DL2 will serve as an interlingua between deep learning frameworks, regardless of the hardware architecture on which they run, to support model sharing, primarily in service of truly distributed learning. The ontological underpinnings of DL2 will support, among other things, explicit reasoning about framework compatibility when sharing models; a \"model zoo\" that is open to all, not just users of a specific framework; and the ability to formulate semantic queries against model libraries to, for example, find similar models.  The second aim is to design, implement, and thoroughly evaluate a number of truly distributed algorithms for deep learning that leverage DL2 for model sharing. Existing approaches to distributed machine learning rely on distributed algorithms that exchange shallow, compact models that are orders of magnitude smaller than modern deep networks, leading to interesting challenges in adapting distributed averaging to deep learning.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "James",
+   "pi_last_name": "Oates",
+   "pi_mid_init": "T",
+   "pi_sufx_name": "",
+   "pi_full_name": "James T Oates",
+   "pi_email_addr": "jtooates@gmail.com",
+   "nsf_id": "000250972",
+   "pi_start_date": "2019-06-03",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Maryland Baltimore County",
+  "inst_street_address": "1000 HILLTOP CIR",
+  "inst_street_address_2": "",
+  "inst_city_name": "BALTIMORE",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "4104553140",
+  "inst_zip_code": "212500001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MD07",
+  "org_lgl_bus_name": "UNIVERSITY OF MARYLAND BALTIMORE COUNTY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "RNKYWXURFRL5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Maryland Baltimore County",
+  "perf_str_addr": "CSEE, 1000 Hilltop Circle",
+  "perf_city_name": "Baltimore",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "212500001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MD07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736400",
+   "pgm_ele_name": "Info Integration & Informatics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 164729.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Modern machine learning systems rely on lots of data and lots ofcompute power.&nbsp; Sometimes organizations have data that they do notwant to share, such as medical data maintained by hospitals, but theywould like to use it collectively with other such organizations tobuild models.&nbsp; This work developed approaches to machine learning insuch settings with the goal of building models that are as good asthose that would be learned if all of the data was available at acentral location.</p>\n<p><br />This grant funded two PhD students and one undergraduate student for asummer who was part of the LSAMP program at UMBC, which seeks to\"significantly increase the numbers of (minority) studentsmatriculating into and successfully completing high-quality degreeprograms in science, technology, engineering and mathematics (STEM)disciplines in order to diversify the STEM workforce.\"</p>\n<p><br />In this project we showed that it is possible to enlist citizenscientists for large scale dataset construction in&nbsp; machine learningusing distributed computing.&nbsp; Constructing datasets of this sizerequires a large amount of parallel computation. To facilitate this,we leveraged the open source BOINC distributed computing platform andcreated the Machine Learning Comprehension at Home (MLC@Home)project. Through this project, we enlisted the help of thousands ofvolunteers who donate their home computer resources to the project tofurther scientific causes. Other well-known BOINC projects includeSETI@Home and World Community Grid. Volunteers install a unified BOINCclient, then choose which projects to donate their computer&rsquo;sresources. This client a) downloads &rdquo;work units&rdquo; from a project&rsquo;sserver, b) performs the work on behalf of the project in thebackground of the user&rsquo;s system when idle, and c) uploads the resultsto the project server. MLC@Home is the first BOINC project dedicatedto machine learning research. MLC@Home&rsquo;s BOINC-enabled application isbuilt using PyTorch&rsquo;s C++ API [13], and supports Windows and Linuxplatforms with AMD64, ARM, and AARCH64 CPUs and (optionally) NVidiaand AMD GPUs. Computations are intentionally set to 32-bit floatingpoint to keep the computations uniform across CPUs and GPUs. MLC&rsquo;sapplication is open source and available online 4 . As of thiswriting, MLC@Home has received support from over 2,200 volunteers and8,000 separate computers, and those numbers are growing everyday. These volunteers have trained over 750,000 neural networks.&nbsp; Thisinfrastructure and example show that other disciplines can build largedatasets of this form quickly and cheaply.&nbsp;</p>\n<p><br />Scientifically, we developed methods for ensuring that complex neuralnetworks learned from different data at different sites can becombined into a single network, which is non-trivial given thattraining a single network on the same data can lead to very differentoutcomes in terms of the learned weights.&nbsp; We also worked with aprofessor and one of his PhD students to understand how our approachcan work when some of the compute nodes are quantum, not classical.That professor has implemented algorithms for deep learning (thoughwith much smaller networks) of the DWave quantum computer.&nbsp; Thatexploration is the first that we know of that tries to leverage bothtypes of computation in a single distributed learning effort.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/11/2023<br>\n\t\t\t\t\tModified by: Tim&nbsp;Oates</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nModern machine learning systems rely on lots of data and lots ofcompute power.  Sometimes organizations have data that they do notwant to share, such as medical data maintained by hospitals, but theywould like to use it collectively with other such organizations tobuild models.  This work developed approaches to machine learning insuch settings with the goal of building models that are as good asthose that would be learned if all of the data was available at acentral location.\n\n\nThis grant funded two PhD students and one undergraduate student for asummer who was part of the LSAMP program at UMBC, which seeks to\"significantly increase the numbers of (minority) studentsmatriculating into and successfully completing high-quality degreeprograms in science, technology, engineering and mathematics (STEM)disciplines in order to diversify the STEM workforce.\"\n\n\nIn this project we showed that it is possible to enlist citizenscientists for large scale dataset construction in  machine learningusing distributed computing.  Constructing datasets of this sizerequires a large amount of parallel computation. To facilitate this,we leveraged the open source BOINC distributed computing platform andcreated the Machine Learning Comprehension at Home (MLC@Home)project. Through this project, we enlisted the help of thousands ofvolunteers who donate their home computer resources to the project tofurther scientific causes. Other well-known BOINC projects includeSETI@Home and World Community Grid. Volunteers install a unified BOINCclient, then choose which projects to donate their computer\u2019sresources. This client a) downloads \"work units\" from a project\u2019sserver, b) performs the work on behalf of the project in thebackground of the user\u2019s system when idle, and c) uploads the resultsto the project server. MLC@Home is the first BOINC project dedicatedto machine learning research. MLC@Home\u2019s BOINC-enabled application isbuilt using PyTorch\u2019s C++ API [13], and supports Windows and Linuxplatforms with AMD64, ARM, and AARCH64 CPUs and (optionally) NVidiaand AMD GPUs. Computations are intentionally set to 32-bit floatingpoint to keep the computations uniform across CPUs and GPUs. MLC\u2019sapplication is open source and available online 4 . As of thiswriting, MLC@Home has received support from over 2,200 volunteers and8,000 separate computers, and those numbers are growing everyday. These volunteers have trained over 750,000 neural networks.  Thisinfrastructure and example show that other disciplines can build largedatasets of this form quickly and cheaply. \n\n\nScientifically, we developed methods for ensuring that complex neuralnetworks learned from different data at different sites can becombined into a single network, which is non-trivial given thattraining a single network on the same data can lead to very differentoutcomes in terms of the learned weights.  We also worked with aprofessor and one of his PhD students to understand how our approachcan work when some of the compute nodes are quantum, not classical.That professor has implemented algorithms for deep learning (thoughwith much smaller networks) of the DWave quantum computer.  Thatexploration is the first that we know of that tries to leverage bothtypes of computation in a single distributed learning effort.\n\n\t\t\t\t\tLast Modified: 05/11/2023\n\n\t\t\t\t\tSubmitted by: Tim Oates"
+ }
+}

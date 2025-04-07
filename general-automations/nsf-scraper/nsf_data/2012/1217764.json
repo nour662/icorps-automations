@@ -1,0 +1,105 @@
+{
+ "awd_id": "1217764",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR: Small: Accelerating Microprocessor Post-Silicon Diagnosis with Statistical Inference",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 478156.0,
+ "awd_amount": 478156.0,
+ "awd_min_amd_letter_date": "2012-08-23",
+ "awd_max_amd_letter_date": "2012-08-23",
+ "awd_abstract_narration": "Finding bugs in modern complex microprocessors is a critical and daunting task that must be deftly mastered to move designs from first silicon to launch.  Escaped bugs may lead to the demise of a digital silicon company. At the same time, looking for design errors on first silicon prototypes lacks the observability, controllability and repeatability afforded by pre-silicon simulation frameworks. To complicate the process further, many of the bugs that manifest in real silicon are the result of complex asynchronous interactions and/or electrical anomalies that are often not easily or frequently repeatable.  Because of these challenges, debugging these \"fleeting bugs\" in early silicon is a black art that can significantly impact design schedules if the debugging process does not proceed smoothly.\r\n\r\nThis project investigates solutions to support the efficient diagnosis of these most challenging post-silicon validation bugs, those that manifest only occasionally. These bugs may be functional, timing or electrical errors, or also missed manufacturing defects. The approach entails placing lightweight instrumentation on-chip to collect data during a prototype's test executions. The data is then analyzed offline using statistical inference algorithms to quickly point verification engineers to offending components. The research explores a range of ideas to find the most promising instrumentation and algorithms for analysis. The results of this research effort allow semiconductor companies to shorten their time to market while delivering high quality products, with low incidence of escaped bugs; in turn, the work benefits society in that it unlocks further scaling and growth for the electronics industry.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Valeria",
+   "pi_last_name": "Bertacco",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Valeria Bertacco",
+   "pi_email_addr": "valeria@umich.edu",
+   "nsf_id": "000488341",
+   "pi_start_date": "2012-08-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Regents of the University of Michigan - Ann Arbor",
+  "inst_street_address": "1109 GEDDES AVE STE 3300",
+  "inst_street_address_2": "",
+  "inst_city_name": "ANN ARBOR",
+  "inst_state_code": "MI",
+  "inst_state_name": "Michigan",
+  "inst_phone_num": "7347636438",
+  "inst_zip_code": "481091015",
+  "inst_country_name": "United States",
+  "cong_dist_code": "06",
+  "st_cong_dist_code": "MI06",
+  "org_lgl_bus_name": "REGENTS OF THE UNIVERSITY OF MICHIGAN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GNJ7BBP73WE9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Michigan Ann Arbor",
+  "perf_str_addr": "3003 South State Street",
+  "perf_city_name": "Ann Arbor",
+  "perf_st_code": "MI",
+  "perf_st_name": "Michigan",
+  "perf_zip_code": "481091271",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "MI06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 478156.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This research project focused on the diagnosis of bugs (functional, electrical or manufacturing) during the post-silicon validation of silicon designs, when the first few physical prototypes become available. The most challenging bugs in this phase are \"intermittent\" bugs, that is bugs that manifest only in a few of many executions of a same test. These bugs are extremely difficult to diagnose because of their fleeting behavior, and their diagnosis often requires many weeks or months of work.</p>\n<p>The research approach developed entails an iterative search process, whereby internal signals (wire) activity is compressed into signatures and analyzed at the end of the simulation by a machine learning algorithm. In turn, this algorithm is responsible for discerning the root cause of divergent behavior or non-buggy executions and buggy ones.</p>\n<p>Throughout the project development, we were able to sharpen the quality of the diagnosis, going from solutions that could narrow down the bug to a few hundreds potential responsible signals, to just a handful.&nbsp;</p>\n<p>Moreover, we expanded this type of analysis to consider a broader family of bugs, those manifesting during system-level integration of a design. In this context we developed a framework capable of collecting multiple architecture-level symptoms of a same bugs. We then applied a machine-learning analysis to identify the architectural module responsible for the problem.</p>\n<p>Finally, we also explored a variant of our solution in the context of malware detection, whereby we detect the activity of malware based on system-level activity (e.g.: superuser mode, spread of contacted IP addresses, etc.).</p>\n<p>The solutions explored in this project benefit the semiconductor and electronics industries, in that they allow to develop higher quality designs with less engineering effort, and thus at lower cost. In turn, this quality boost will benefit society in improving the reliance that can be placed in electronic devices, and limiting the impact of malware attacks.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/29/2016<br>\n\t\t\t\t\tModified by: Valeria&nbsp;Bertacco</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480476213238_FinalSlide4--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480476213238_FinalSlide4--rgov-800width.jpg\" title=\"Intermittent post-silicon bugs\"><img src=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480476213238_FinalSlide4--rgov-66x44.jpg\" alt=\"Intermittent post-silicon bugs\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">The schematic illustrates a type of bugs that occur often in post-silicon validation and are the most-challenging to diagnose, because of their inconsistent manifestation patterns.</div>\n<div class=\"imageCredit\">self</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Valeria&nbsp;Bertacco</div>\n<div class=\"imageTitle\">Intermittent post-silicon bugs</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480476626098_FinalSlide12--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480476626098_FinalSlide12--rgov-800width.jpg\" title=\"Diagnostic algorithm flow\"><img src=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480476626098_FinalSlide12--rgov-66x44.jpg\" alt=\"Diagnostic algorithm flow\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">The schematic illustrate the iterative process for signature collection over multiple simulation runs, and their related analysis. The diagnostic algorithm performs an iterative search by exploring multiple sets of signal's signatures striving to optimize the density parameter of DBSCAN clustering.</div>\n<div class=\"imageCredit\">Valeria Bertacco</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Valeria&nbsp;Bertacco</div>\n<div class=\"imageTitle\">Diagnostic algorithm flow</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480476717229_FinalSlide13--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480476717229_FinalSlide13--rgov-800width.jpg\" title=\"Key evaluation benchmark bugs\"><img src=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480476717229_FinalSlide13--rgov-66x44.jpg\" alt=\"Key evaluation benchmark bugs\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Characteristics of the intermittent bugs diagnosed.</div>\n<div class=\"imageCredit\">Valeria Bertacco</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Valeria&nbsp;Bertacco</div>\n<div class=\"imageTitle\">Key evaluation benchmark bugs</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480476918693_FinalSlide14--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480476918693_FinalSlide14--rgov-800width.jpg\" title=\"Bug localization accuracy\"><img src=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480476918693_FinalSlide14--rgov-66x44.jpg\" alt=\"Bug localization accuracy\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">The table reports, for each bug and software benchmark, if and how accurately the bug was identified by our solution: in each slot we report the number of signals flagged as root cause and the corresponding max density by DBSCAN.</div>\n<div class=\"imageCredit\">Valeria Bertacco</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Valeria&nbsp;Bertacco</div>\n<div class=\"imageTitle\">Bug localization accuracy</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480477192995_FinalSlide16--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480477192995_FinalSlide16--rgov-800width.jpg\" title=\"A case study analysis of the search progress\"><img src=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480477192995_FinalSlide16--rgov-66x44.jpg\" alt=\"A case study analysis of the search progress\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">The plot illustrates how the search for the signals leading to the highest density proceeds: when a promising region is identified, our algorithm goes deep in the design modules to investigate further, before advancing the top-level search.</div>\n<div class=\"imageCredit\">Valeria Bertacco</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Valeria&nbsp;Bertacco</div>\n<div class=\"imageTitle\">A case study analysis of the search progress</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480477382467_FinalBugMD--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480477382467_FinalBugMD--rgov-800width.jpg\" title=\"Application of the detection mechanism to system-level simulation\"><img src=\"/por/images/Reports/POR/2016/1217764/1217764_10204875_1480477382467_FinalBugMD--rgov-66x44.jpg\" alt=\"Application of the detection mechanism to system-level simulation\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">This application project leverages machine learning techniques to identify the module responsible for a bug by sifting through multiple symptoms of that bug manifestation.</div>\n<div class=\"imageCredit\">Valeria Bertacco</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Valeria&nbsp;Bertacco</div>\n<div class=\"imageTitle\">Application of the detection mechanism to system-level simulation</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThis research project focused on the diagnosis of bugs (functional, electrical or manufacturing) during the post-silicon validation of silicon designs, when the first few physical prototypes become available. The most challenging bugs in this phase are \"intermittent\" bugs, that is bugs that manifest only in a few of many executions of a same test. These bugs are extremely difficult to diagnose because of their fleeting behavior, and their diagnosis often requires many weeks or months of work.\n\nThe research approach developed entails an iterative search process, whereby internal signals (wire) activity is compressed into signatures and analyzed at the end of the simulation by a machine learning algorithm. In turn, this algorithm is responsible for discerning the root cause of divergent behavior or non-buggy executions and buggy ones.\n\nThroughout the project development, we were able to sharpen the quality of the diagnosis, going from solutions that could narrow down the bug to a few hundreds potential responsible signals, to just a handful. \n\nMoreover, we expanded this type of analysis to consider a broader family of bugs, those manifesting during system-level integration of a design. In this context we developed a framework capable of collecting multiple architecture-level symptoms of a same bugs. We then applied a machine-learning analysis to identify the architectural module responsible for the problem.\n\nFinally, we also explored a variant of our solution in the context of malware detection, whereby we detect the activity of malware based on system-level activity (e.g.: superuser mode, spread of contacted IP addresses, etc.).\n\nThe solutions explored in this project benefit the semiconductor and electronics industries, in that they allow to develop higher quality designs with less engineering effort, and thus at lower cost. In turn, this quality boost will benefit society in improving the reliance that can be placed in electronic devices, and limiting the impact of malware attacks.\n\n \n\n\t\t\t\t\tLast Modified: 11/29/2016\n\n\t\t\t\t\tSubmitted by: Valeria Bertacco"
+ }
+}

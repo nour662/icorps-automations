@@ -1,0 +1,96 @@
+{
+ "awd_id": "1619550",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Mathematical Aspects of Interior Problem of Tomography",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Michael Steuerwalt",
+ "awd_eff_date": "2014-11-08",
+ "awd_exp_date": "2017-03-31",
+ "tot_intn_awd_amt": 20263.0,
+ "awd_amount": 20263.0,
+ "awd_min_amd_letter_date": "2016-02-16",
+ "awd_max_amd_letter_date": "2016-02-16",
+ "awd_abstract_narration": "One of the long-standing paradigms in computed tomography (CT) is that CT detectors should be large enough to cover the entire cross-section of the patient. The reason for this requirement is that, according to the classical theory, image reconstruction from truncated CT data (the so-called \"interior problem\") is non-unique. As a consequence, many aspects of truncated data inversion have not been studied in literature. In this project the PIs will theoretically analyze the problem of image reconstruction from truncated data with minimal prior knowledge. Both transmission CT and emission tomography (SPECT) with constant attenuation will be addressed. The PIs will study the questions of stability of the reconstructions in 2D and 3D, characterize the null-space of an integral transform arising in the interior problem, and analyze eigenfunctions of certain singular Sturm-Liouville problems. The PIs will also develop efficient algorithms for numerical solution of the interior problem. These algorithms will be implemented and tested using both simulated and real data. \r\n\r\nAt present, interior tomography is at the cusp of being directly applicable in general medical imaging diagnostics. The confluence of theoretical, algorithmic, computational, and technological advances gives the PIs hope that interior tomography can move from the \"drawing boards\" to practical medical imaging in the not so distant future. While there are still some open research problems, the results obtained recently show that the problems can be solved with a fairly high degree of confidence. If successful, this study will provide theoretically justified and practically applicable two and three-dimensional reconstruction algorithms for imaging a region of interest inside an object (e.g., the patient) from truncated data. The broader impact of the proposed research lies in the promise it holds for improvements in the practice of clinical medicine and biomedical science generally, as well as for industrial non-destructive testing. The most direct benefit is the reduction in the x-ray dose to the patient; other benefits include less expensive scanners, improved temporal resolution, increased scanner throughput, capability of imaging larger objects, reduced system cost, etc.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Hengyong",
+   "pi_last_name": "Yu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Hengyong Yu",
+   "pi_email_addr": "hengyong_yu@uml.edu",
+   "nsf_id": "000596633",
+   "pi_start_date": "2016-02-16",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Massachusetts Lowell",
+  "inst_street_address": "220 PAWTUCKET ST STE 400",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOWELL",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "9789344170",
+  "inst_zip_code": "018543573",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "MA03",
+  "org_lgl_bus_name": "UNIVERSITY OF MASSACHUSETTS LOWELL",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LTNVSTJ3R6D5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Massachusetts Lowell",
+  "perf_str_addr": "600 Suffolk St.",
+  "perf_city_name": "Lowell",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "018543643",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "MA03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126600",
+   "pgm_ele_name": "APPLIED MATHEMATICS"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 20263.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>The objective of this collaborative project is to assemble a team of pure and applied mathematicians as well as specialists in computations and tomography who will develop, implement, and test image reconstruction algorithms for solving the interior problem of transmission and emission tomographies. The focus our team is to develop numerical reconstruction methods. On November 10, the PI Dr. Yu relocated from Wake Forest University School of Medicine to UMass Lowell, and the project was transfer to UMass Lowell. During the project period 11/10/2014 to 03/31/2017, we developed several state-of-the-art algorithms. The major outcomes are summarized as follows.</span></p>\n<p><span>The L_p regularization method, a generalized version between the well-known L_1 regularization and the L_0 regularization, has been proposed for a sparser solution. The research team derived several quasi-analytic thresholding representations for the L_p(0 &lt; p &lt; 1) regularization. The derived representations are exact matches for the well-known soft-threshold filtering for the L_1 regularization and the hard-threshold filtering for the L_0 regularization. The error bounds of the approximate general formulas are analyzed. The general-threshold representation formulas are incorporated into an iterative thresholding framework for a fast solution of an L_p regularized computed tomography (CT) reconstruction. A series of simulated and realistic data experiments are conducted to evaluate the performance of the proposed generalthreshold filtering algorithm for CT reconstruction, and it is also compared with the well-known reweighted approach. Compared with the reweighted algorithm, the proposed general-threshold filtering algorithm can substantially reduce the necessary view number for an accurate reconstruction of the Shepp&ndash;Logan phantom. In addition, the proposed general-threshold filtering algorithm performs well in terms of image quality, reconstruction accuracy, convergence speed, and sensitivity to parameters. </span></p>\n<p><span>Because the L_p regularization is a nonconvex problem, an iterative algorithm can only converge to local optima instead of the global optimum. To overcome this issue, we also propose an alternating iteration algorithm for computed tomography reconstruction in a thresholding form based on our general analytic thresholding representation for better convergent properties. The alternating iteration algorithm alternatively minimizes one L_1 and one L_p (0 &lt; p &lt; 1) regularized objective functions. While the L_p regularization can help to find a sparser solution, the L_1 regularization can help to monitor the solution not away from the global optimum. Compared with the L_p (0 &lt; p &lt; 1) regularization using a single p, the proposed alternating iteration algorithm reduces more data measurements for accurate reconstruction and is more robust for projection noise.</span></p>\n<p><span>To solve the interior problem uniquely and stably, in recent years both the prior knowledge- and compressive sensing (CS)-based methods have been developed. Those theoretically exact solutions for the interior problem are called interior tomography. Along this direction, we propose a new CS-based method for the interior problem based on the curvelet transform. A curvelet is localized in both radial and angular directions in the frequency domain. A two-dimensional (2D) image can be represented in a curvelet frame. We employ the curvelet transform coefficients to regularize the interior problem and obtain a curvelet frame based regularization method (CFRM) for interior tomography. The curvelet coefficients of the reconstructed image are split into two sets according to their visibility from the interior data, and different regularization parameters are used for these two sets. We also present the results of numerical experiments, which demonstrate the feasibility of the proposed approach.</span></p>\n<p><span>Singular value decomposition (SVD)-based 2D image reconstruction methods are developed and evaluated for a broad class of inverse problems for which there are no analytical solutions. The proposed methods are fast and accurate for reconstructing images in a non-iterative fashion. The multi-resolution strategy is adopted to reduce the size of the system matrix to reconstruct large images using limited memory capacity. A modified high-contrast Shepp-Logan phantom, a low contrast FORBILD head phantom, and a physical phantom are employed to evaluate the proposed methods with different system configurations. The results show that the SVD methods can accurately reconstruct images from truncated projections and that they outperform other benchmark methods. The general SVD method outperforms the other SVD methods. The truncated SVD and Tikhonov regularized SVD methods accurately reconstruct a region-of-interest (ROI) from an internal scan with a known sub-region inside the ROI. Furthermore, the SVD methods are much faster and more flexible than the benchmark algorithms, especially in the ROI reconstructions in our experiments.</span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/06/2017<br>\n\t\t\t\t\tModified by: Hengyong&nbsp;Yu</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe objective of this collaborative project is to assemble a team of pure and applied mathematicians as well as specialists in computations and tomography who will develop, implement, and test image reconstruction algorithms for solving the interior problem of transmission and emission tomographies. The focus our team is to develop numerical reconstruction methods. On November 10, the PI Dr. Yu relocated from Wake Forest University School of Medicine to UMass Lowell, and the project was transfer to UMass Lowell. During the project period 11/10/2014 to 03/31/2017, we developed several state-of-the-art algorithms. The major outcomes are summarized as follows.\n\nThe L_p regularization method, a generalized version between the well-known L_1 regularization and the L_0 regularization, has been proposed for a sparser solution. The research team derived several quasi-analytic thresholding representations for the L_p(0 &lt; p &lt; 1) regularization. The derived representations are exact matches for the well-known soft-threshold filtering for the L_1 regularization and the hard-threshold filtering for the L_0 regularization. The error bounds of the approximate general formulas are analyzed. The general-threshold representation formulas are incorporated into an iterative thresholding framework for a fast solution of an L_p regularized computed tomography (CT) reconstruction. A series of simulated and realistic data experiments are conducted to evaluate the performance of the proposed generalthreshold filtering algorithm for CT reconstruction, and it is also compared with the well-known reweighted approach. Compared with the reweighted algorithm, the proposed general-threshold filtering algorithm can substantially reduce the necessary view number for an accurate reconstruction of the Shepp&ndash;Logan phantom. In addition, the proposed general-threshold filtering algorithm performs well in terms of image quality, reconstruction accuracy, convergence speed, and sensitivity to parameters. \n\nBecause the L_p regularization is a nonconvex problem, an iterative algorithm can only converge to local optima instead of the global optimum. To overcome this issue, we also propose an alternating iteration algorithm for computed tomography reconstruction in a thresholding form based on our general analytic thresholding representation for better convergent properties. The alternating iteration algorithm alternatively minimizes one L_1 and one L_p (0 &lt; p &lt; 1) regularized objective functions. While the L_p regularization can help to find a sparser solution, the L_1 regularization can help to monitor the solution not away from the global optimum. Compared with the L_p (0 &lt; p &lt; 1) regularization using a single p, the proposed alternating iteration algorithm reduces more data measurements for accurate reconstruction and is more robust for projection noise.\n\nTo solve the interior problem uniquely and stably, in recent years both the prior knowledge- and compressive sensing (CS)-based methods have been developed. Those theoretically exact solutions for the interior problem are called interior tomography. Along this direction, we propose a new CS-based method for the interior problem based on the curvelet transform. A curvelet is localized in both radial and angular directions in the frequency domain. A two-dimensional (2D) image can be represented in a curvelet frame. We employ the curvelet transform coefficients to regularize the interior problem and obtain a curvelet frame based regularization method (CFRM) for interior tomography. The curvelet coefficients of the reconstructed image are split into two sets according to their visibility from the interior data, and different regularization parameters are used for these two sets. We also present the results of numerical experiments, which demonstrate the feasibility of the proposed approach.\n\nSingular value decomposition (SVD)-based 2D image reconstruction methods are developed and evaluated for a broad class of inverse problems for which there are no analytical solutions. The proposed methods are fast and accurate for reconstructing images in a non-iterative fashion. The multi-resolution strategy is adopted to reduce the size of the system matrix to reconstruct large images using limited memory capacity. A modified high-contrast Shepp-Logan phantom, a low contrast FORBILD head phantom, and a physical phantom are employed to evaluate the proposed methods with different system configurations. The results show that the SVD methods can accurately reconstruct images from truncated projections and that they outperform other benchmark methods. The general SVD method outperforms the other SVD methods. The truncated SVD and Tikhonov regularized SVD methods accurately reconstruct a region-of-interest (ROI) from an internal scan with a known sub-region inside the ROI. Furthermore, the SVD methods are much faster and more flexible than the benchmark algorithms, especially in the ROI reconstructions in our experiments.\n\n \n\n\t\t\t\t\tLast Modified: 08/06/2017\n\n\t\t\t\t\tSubmitted by: Hengyong Yu"
+ }
+}

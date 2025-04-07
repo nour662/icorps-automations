@@ -1,0 +1,105 @@
+{
+ "awd_id": "1718820",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AF: Small: Algorithms for Solving Real-Life Instances of Optimization and Clustering Problems",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tracy Kimbrel",
+ "awd_eff_date": "2017-08-15",
+ "awd_exp_date": "2022-07-31",
+ "tot_intn_awd_amt": 449986.0,
+ "awd_amount": 449986.0,
+ "awd_min_amd_letter_date": "2017-08-09",
+ "awd_max_amd_letter_date": "2017-08-09",
+ "awd_abstract_narration": "The project aims to develop efficient algorithms for computational problems that arise in business, engineering, and science. The project will have an impact on theoretical computer science (TCS) by improving our understanding of the nature of real-life instances and designing better algorithms -- with provable performance guarantees -- for them. Additionally, the results will be relevant to researchers in other areas of computer science, including machine learning and optimization. In particular, this project will provide researchers with new practical algorithms. Through its wide-reaching results, the project will strengthen the connection between TCS and other areas of computer science. Further, the project will be of interest to researchers in mathematics, mathematical physics, and statistics, in part because one of the key models considered in this proposal has been introduced and studied in these fields.\r\n\r\nThe PI will collaborate on this project with graduate and undergraduate students at the Toyota Technological Institute at Chicago (TTIC) and the University of Chicago. Additionally, he will invite PhD students from other universities to work on the project during summer months. The PI will incorporate the topic of this proposal in his graduate courses. Specifically, he will include introductory material on the topic in his graduate Algorithms course and more advanced material in his course on metric geometry in computer science.\r\n\r\nMany problems that arise in business, engineering, and science are very hard in the worst case: for them, there are no \"universal\" efficient algorithms -- i.e., algorithms that solve all possible instances in reasonable (polynomial) time. However, real-life instances are usually considerably simpler than the most difficult ones. The goal of this project is to identify what makes real-life instances computationally tractable and to design efficient algorithms for solving them. These algorithms will solve many real-life instances of computational problems by exploiting their structural properties (at the same time, the algorithms may fail to solve the most difficult instances, which, however, almost never appear in practice).\r\n\r\nIn order to design efficient algorithms -- with provable performance guarantees -- for real-life instances of computational problems, one has to define a formal model for real-life instances. This proposal will explore existing generative and descriptive models for real-life instances of clustering and optimization problems, including semi-random stochastic block models and models based on different stability assumptions. The project will also develop new, more advanced models. The PI will design new algorithms for these models and analyze existing heuristics.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Yury",
+   "pi_last_name": "Makarychev",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yury Makarychev",
+   "pi_email_addr": "yury@ttic.edu",
+   "nsf_id": "000597155",
+   "pi_start_date": "2017-08-09",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Toyota Technological Institute at Chicago",
+  "inst_street_address": "6045 S KENWOOD AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHICAGO",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "7738340409",
+  "inst_zip_code": "606372803",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "IL01",
+  "org_lgl_bus_name": "TOYOTA TECHNOLOGICAL INSTITUTE AT CHICAGO",
+  "org_prnt_uei_num": "ERBJF4DMW6G4",
+  "org_uei_num": "ERBJF4DMW6G4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Toyota Technological Institute at Chicago",
+  "perf_str_addr": "6045 S. Kenwood Ave.",
+  "perf_city_name": "Chicago",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "606372902",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "IL01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7926",
+   "pgm_ref_txt": "ALGORITHMS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 449986.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project studied algorithms and algorithmic techniques for solving clustering and combinatorial optimization problems focusing on instances arising in practice.</p>\n<p>Many problem instances arising in practice have structural properties that make them easier than the most difficult &ndash; often contrived &ndash; worst-case instances. Traditional approximation algorithms do not exploit these properties and give the same worst-case approximation guarantee no matter whether the instance is easy or hard. One such structural property that received a lot of interest in recent years is &ldquo;perturbation resilience&rdquo;. As part of this project, we developed a new framework for designing algorithms &ndash; which we call certified algorithms &ndash; that can handle all instances but perform especially well on perturbation-resilient instances. Using this framework, we designed certified algorithms for several specific problems of interest. To inform researchers, including PhD students and postdocs, about this research area, we published a survey book chapter.</p>\n<p>Also as part of this project, we studied a popular data clustering problem called &ldquo;correlation clustering&rdquo;. Previously known algorithms for the problem either did not make any assumptions about the data or made very restrictive and thus unrealistic ones. First, we identified reasonable assumptions about real-life data. After this key step, we developed correlation clustering algorithms that perform significantly better than the previously known ones (when the data satisfies said assumptions).</p>\n<p>Further, we obtained mathematical results about Lipschitz and bi-Lipschitz maps between high dimensional spaces. These results have applications in both mathematics and computer science. Using these results, we developed several techniques for working with massive datasets in high dimensional spaces. These techniques may be used to speed up existing clustering algorithms and applied to supervised learning and data aggregation.</p>\n<p>Finally, we explored algorithmic fairness. Decisions affecting the lives of many people are often made by or with the help of computer programs/algorithms. In such cases, it is important that algorithms make or propose decisions that are not only good for most people but also fair. Specifically, we want these decisions to be good for minorities and protected groups. We designed such fair algorithms for clustering and facility location problems. These algorithms perform much better than the previously known ones.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 04/26/2023<br>\n\t\t\t\t\tModified by: Yury&nbsp;Makarychev</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project studied algorithms and algorithmic techniques for solving clustering and combinatorial optimization problems focusing on instances arising in practice.\n\nMany problem instances arising in practice have structural properties that make them easier than the most difficult &ndash; often contrived &ndash; worst-case instances. Traditional approximation algorithms do not exploit these properties and give the same worst-case approximation guarantee no matter whether the instance is easy or hard. One such structural property that received a lot of interest in recent years is \"perturbation resilience\". As part of this project, we developed a new framework for designing algorithms &ndash; which we call certified algorithms &ndash; that can handle all instances but perform especially well on perturbation-resilient instances. Using this framework, we designed certified algorithms for several specific problems of interest. To inform researchers, including PhD students and postdocs, about this research area, we published a survey book chapter.\n\nAlso as part of this project, we studied a popular data clustering problem called \"correlation clustering\". Previously known algorithms for the problem either did not make any assumptions about the data or made very restrictive and thus unrealistic ones. First, we identified reasonable assumptions about real-life data. After this key step, we developed correlation clustering algorithms that perform significantly better than the previously known ones (when the data satisfies said assumptions).\n\nFurther, we obtained mathematical results about Lipschitz and bi-Lipschitz maps between high dimensional spaces. These results have applications in both mathematics and computer science. Using these results, we developed several techniques for working with massive datasets in high dimensional spaces. These techniques may be used to speed up existing clustering algorithms and applied to supervised learning and data aggregation.\n\nFinally, we explored algorithmic fairness. Decisions affecting the lives of many people are often made by or with the help of computer programs/algorithms. In such cases, it is important that algorithms make or propose decisions that are not only good for most people but also fair. Specifically, we want these decisions to be good for minorities and protected groups. We designed such fair algorithms for clustering and facility location problems. These algorithms perform much better than the previously known ones.\n\n\t\t\t\t\tLast Modified: 04/26/2023\n\n\t\t\t\t\tSubmitted by: Yury Makarychev"
+ }
+}

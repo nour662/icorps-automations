@@ -1,0 +1,96 @@
+{
+ "awd_id": "1916320",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Nonparametric Confidence Sequences and their Applications",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032927299",
+ "po_email": "yzeng@nsf.gov",
+ "po_sign_block_name": "Yong Zeng",
+ "awd_eff_date": "2019-08-01",
+ "awd_exp_date": "2022-07-31",
+ "tot_intn_awd_amt": 160000.0,
+ "awd_amount": 160000.0,
+ "awd_min_amd_letter_date": "2019-07-29",
+ "awd_max_amd_letter_date": "2019-07-29",
+ "awd_abstract_narration": "Large scale sequential testing and estimation is now a daily task in the tech industry, with large internet companies running hundreds or thousands of experiments (sometimes called A/B tests) per week to understand their customer base preferences, in order to improve product performance and user experience. Such experiments are inherently sequential: visitors arrive in a stream and outcomes are typically observed quickly relative to the duration of the test. These experiments are loosely planned: there are few hurdles to starting a new test, and little oversight on how they are run, unlike clinical trials which are heavily regulated with clear formal planning due to the involvement of statisticians from the start. The experiments are also continuously monitored, and adaptive choices are made of whether to stop early and make conclusions, or to collect more data. In other words, sample sizes and budgets are rarely fixed in stone in advance and there is plenty of flexibility at the hands of the data scientist who is running the experiment. Such situations are common in the sciences as well, with either telescopes collecting astronomical data sequentially (and perhaps testing for presence of black holes or estimating sizes of galaxies), or psychologists collecting human subject data sequentially (and analyzing effect sizes along the way). However, a major drawback of such flexible, loosely planned, sequential experimentation with fluid decision making, is that it is very nontrivial to provide correct inferential guarantees, either along the way or when the experiment is terminated. Traditional confidence intervals and p-values, the bread and butter of classical statistics, are designed for fixed sample sizes, and can only be used once at that predetermined time. Using the standard CIs repeatedly at different sample sizes, or after adaptively stopping, without any correction to account for the multiple intervals constructed, completely invalidates their guarantees, leading to an increase in erroneous conclusions. The graduate student support will be used for research on sequential analysis and concentration inequalities.\r\n\r\nThe PI proposes to revisit a classical notion called a \"confidence sequence\" by Darling and Robbins (1967), which is a (potentially infinite) sequence of confidence intervals that is, with high probability, simultaneously valid over all times. Due to the simultaneous guarantee, an analyst may keep peeking at the data and the constructed confidence sequence, adaptively choosing to stop collecting data or to collect more, and still have correct inferential guarantees through the process including when it stops. These can be converted to always-valid p-values, that are also valid at arbitrary stopping times. Using modern martingale techniques, we have recently been able to generalize prior constructions of confidence sequences to several novel nonparametric settings, yielding both the tightest known closed-form CS expressions as well as the sharpest numerical methods in practice. This project seeks to extend the scope of the above advances both theoretically and practically. A few examples of extensions that the PI wishes to pursue include designing new confidence sequences for vector-valued mean vectors, and fully empirical bounds that do not depend on unknown parameters. We will also explore applications of these bounds to sequential testing and estimation tasks.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Aaditya",
+   "pi_last_name": "Ramdas",
+   "pi_mid_init": "K",
+   "pi_sufx_name": "",
+   "pi_full_name": "Aaditya K Ramdas",
+   "pi_email_addr": "aramdas@stat.cmu.edu",
+   "nsf_id": "000785155",
+   "pi_start_date": "2019-07-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Carnegie-Mellon University",
+  "inst_street_address": "5000 FORBES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4122688746",
+  "inst_zip_code": "152133815",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "CARNEGIE MELLON UNIVERSITY",
+  "org_prnt_uei_num": "U3NKNFLNQ613",
+  "org_uei_num": "U3NKNFLNQ613"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Carnegie-Mellon University",
+  "perf_str_addr": "5000 Forbes Avenue",
+  "perf_city_name": "Pittsburgh",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152133890",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126900",
+   "pgm_ele_name": "STATISTICS"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 160000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>A confidence sequence is a sequence of confidence intervals that is valid at any data-dependent stopping time, or equivalently at all times simultaneously. This is different from the classical concept of a confidence interval, which is only valid at one data-independent fixed time specified in advance. Confidence sequences allow for experiments to be continuously monitored, adaptively stopped, and yet have correct inferential guarantees at the end.</p>\n<p>This project led to the development of new confidence sequences in a variety of nonparametric settings. In the process, a general framework was developed that was based on 3 principles: nonnegative supermartingales, the method of mixtures, and Ville's inequality. This recipe unified and improved many constructions in the literature. The theoretical analysis of width, nonparametric conditions of validity, and variance adaptive methods were developed. These have significantly advanced the state of the art on this topic.</p>\n<p>Confidence sequences are intimately related to sequential testing, and thus many of the methods resulting in improved sequential tests as well. In particular, they provide a more flexible alternative to group-sequential methods or fixed-sample size tests.</p>\n<p>This project has resulted in publications in numerous top venues in Probability, Statistics, Machine Learning and applied areas. Some papers that stand out include one in Probability Surveys, one in the Annals of Statistics, one in Bernoulli, one in Neural Information Processing Systems, and even a best paper award in a conference on Electronic Voting, where our methods led to more efficient post-election audits, which was an unintended application that turned out to be a perfect test bed for our new ideas.</p>\n<p>The PI also offered a PhD level course on the topic, gave dozens of university and industry seminars, and today the confidence sequences developed in this project are already being applied in production at Netflix, Amazon, Microsoft, and several other top IT companies (links to documentation can be provided on request).</p>\n<p>Several PhD students were trained in the process, some received their PhDs and some are about to graduate soon.</p>\n<p>Thus the project has been very successful on all fronts: new mathematical principles, state-of-the-art methodology, new applications, impacts on the tech industry, training of students, and public dissemination of results.</p>\n<p>Research on the topic has continued after the end of the grant, and further support may be requested at a later stage.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/07/2022<br>\n\t\t\t\t\tModified by: Aaditya&nbsp;K&nbsp;Ramdas</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2022/1916320/1916320_10626940_1667861725355_ScreenShot2022-11-07at5.52.20PM--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1916320/1916320_10626940_1667861725355_ScreenShot2022-11-07at5.52.20PM--rgov-800width.jpg\" title=\"Confidence sequence\"><img src=\"/por/images/Reports/POR/2022/1916320/1916320_10626940_1667861725355_ScreenShot2022-11-07at5.52.20PM--rgov-66x44.jpg\" alt=\"Confidence sequence\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">This plot displays the difference between a standard central-limit-theorem based confidence interval, and our confidence sequence for a simulated example involving estimating the average treatment effect in a randomized experiment.</div>\n<div class=\"imageCredit\">https://arxiv.org/pdf/2103.06476.pdf</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Aaditya&nbsp;K&nbsp;Ramdas</div>\n<div class=\"imageTitle\">Confidence sequence</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nA confidence sequence is a sequence of confidence intervals that is valid at any data-dependent stopping time, or equivalently at all times simultaneously. This is different from the classical concept of a confidence interval, which is only valid at one data-independent fixed time specified in advance. Confidence sequences allow for experiments to be continuously monitored, adaptively stopped, and yet have correct inferential guarantees at the end.\n\nThis project led to the development of new confidence sequences in a variety of nonparametric settings. In the process, a general framework was developed that was based on 3 principles: nonnegative supermartingales, the method of mixtures, and Ville's inequality. This recipe unified and improved many constructions in the literature. The theoretical analysis of width, nonparametric conditions of validity, and variance adaptive methods were developed. These have significantly advanced the state of the art on this topic.\n\nConfidence sequences are intimately related to sequential testing, and thus many of the methods resulting in improved sequential tests as well. In particular, they provide a more flexible alternative to group-sequential methods or fixed-sample size tests.\n\nThis project has resulted in publications in numerous top venues in Probability, Statistics, Machine Learning and applied areas. Some papers that stand out include one in Probability Surveys, one in the Annals of Statistics, one in Bernoulli, one in Neural Information Processing Systems, and even a best paper award in a conference on Electronic Voting, where our methods led to more efficient post-election audits, which was an unintended application that turned out to be a perfect test bed for our new ideas.\n\nThe PI also offered a PhD level course on the topic, gave dozens of university and industry seminars, and today the confidence sequences developed in this project are already being applied in production at Netflix, Amazon, Microsoft, and several other top IT companies (links to documentation can be provided on request).\n\nSeveral PhD students were trained in the process, some received their PhDs and some are about to graduate soon.\n\nThus the project has been very successful on all fronts: new mathematical principles, state-of-the-art methodology, new applications, impacts on the tech industry, training of students, and public dissemination of results.\n\nResearch on the topic has continued after the end of the grant, and further support may be requested at a later stage.\n\n\t\t\t\t\tLast Modified: 11/07/2022\n\n\t\t\t\t\tSubmitted by: Aaditya K Ramdas"
+ }
+}

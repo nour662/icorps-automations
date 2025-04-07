@@ -1,0 +1,117 @@
+{
+ "awd_id": "1934467",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Robust Estimation and Control of Dynamic Systems Experiencing Large Random Outliers",
+ "cfda_num": "47.041",
+ "org_code": "07010000",
+ "po_phone": "7032925394",
+ "po_email": "rnash@nsf.gov",
+ "po_sign_block_name": "Richard Nash",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2023-08-31",
+ "tot_intn_awd_amt": 265000.0,
+ "awd_amount": 270988.0,
+ "awd_min_amd_letter_date": "2019-08-13",
+ "awd_max_amd_letter_date": "2022-05-03",
+ "awd_abstract_narration": "The bell shaped curve, known technically as the Gaussian probability density function (pdf), has been a central element in engineering and financial algorithms that process data and automate a desired operation. Unfortunately, the Gaussian is quite limiting. For example, in air traffic control the distance and bearing to an aircraft in a dynamic environment is measured by active radar. This measurement is not exact, having an uncertainty or error in its value. This uncertainty is not described well by the Gaussian pdf because the portion of the bell shaped curve far from zero, called the tail of the pdf, is far smaller than the radar data suggests: the Gaussian bell shaped curve is known to have a light, rapidly decaying tail, while radar data is said to have a heavy tail.  It has been well recognized that reliance on the Gaussian pdf can be dangerous, since many practical systems in engineering, economics, biology, financial movements, earthquakes, atmospheric turbulence, etc., are poorly described by Gaussian pdfs and better described by heavy tailed ones. However, the majority of current data processing algorithms are based on the Gaussian pdf assumption mainly because it leads to tractable, real-time implementations. The newly proposed theory is a paradigm shift, which proposes new recursive and analytic algorithms based on the very heavy tailed Cauchy and Laplace pdfs. Although no physical process is explicitly Cauchy or Laplace distributed, since their tails over bound other realistic densities, estimators and controllers that are based on the Cauchy or Laplace pdfs are hypothesized to be robust to unknown realistic physical densities. This robustness is especially true for the Cauchy pdf which has a very heavy tail.  Robustness is meant in the statistical sense, where the estimator achieves adequate performance when faced with outliers or unexplained events, and where these events may arise either as large measurement errors, large process deviations, or due to misspecification of the dynamic model.  There is an adaptive aspect to these new estimators not found in the algorithms commonly used today. Since extreme data is likely, the estimator is rich in structure and hence is computationally more intense than its Gaussian counterparts. The primary goal of the proposed study is to determine robust, implementable, real-time, estimators and stochastic controllers by uncovering their fundamental properties and constructing metrics that measure stability and robustness. Thereby, these algorithms can be realized on computational hardware, such as graphic processing units. \r\n\r\nA new class of robust, implementable, real-time, vector-state, estimators and stochastic controllers for linear dynamic systems with additive heavy-tailed Cauchy process and measurement noises are to be further developed. The estimation methodology for this vector-state, linear dynamic system with additive Cauchy noises was realized only by developing a recursion for the analytic measurement update and propagation of the character function of the unnormalized conditional probability density function (ucpdf) of the state given the measurement history. Over the last grant period, we noticed that a similar algorithm could be adapted to linear systems with additive Laplace noises, in which the ucpdf is determined directly using analytic and recursive relations. Both of these algorithms entail significant numerical complexities due to their rich analytic structure. The primary goal for the implementation of real-time vector-state estimators and stochastic controllers is to determine approximations that will conserve the basic structure of the character function of the Cauchy and the ucpdf of the Laplacian, which are shown to be convergent with negligible performance error. This study was performed with a colleague from the Technion in Israel under a Bi-national Science Foundation (BSF) Grant. This international collaboration will continue under the NSF/ENG/ECCS-BSF and BSF grants.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "ENG",
+ "org_dir_long_name": "Directorate for Engineering",
+ "div_abbr": "ECCS",
+ "org_div_long_name": "Division of Electrical, Communications and Cyber Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jason",
+   "pi_last_name": "Speyer",
+   "pi_mid_init": "L",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jason L Speyer",
+   "pi_email_addr": "speyer@seas.ucla.edu",
+   "nsf_id": "000103424",
+   "pi_start_date": "2019-08-13",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Los Angeles",
+  "inst_street_address": "10889 WILSHIRE BLVD STE 700",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOS ANGELES",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "3107940102",
+  "inst_zip_code": "900244200",
+  "inst_country_name": "United States",
+  "cong_dist_code": "36",
+  "st_cong_dist_code": "CA36",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, LOS ANGELES",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "RN64EPNH8JC6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "UCLA Mechanical & Aerospace Engineering",
+  "perf_str_addr": "420 Westwood Plaza, 44-116A",
+  "perf_city_name": "Los Angeles",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "900951597",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "36",
+  "perf_st_cong_dist": "CA36",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "760700",
+   "pgm_ele_name": "EPCN-Energy-Power-Ctrl-Netwrks"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "092E",
+   "pgm_ref_txt": "Control systems & applications"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "",
+   "app_name": "",
+   "app_symb_id": "",
+   "fund_code": "01002223DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 265000.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2022,
+   "fund_oblg_amt": 5988.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Our newly developed recursive and analytic estimation algorithm, based on linear dynamic systems with additive heavy-tailed Cauchy uncertainty, is a paradigm shift. Currently, only linear dynamic systems with additive Gaussian uncertainties produce a recursive and analytic algorithm that leads to tractable, real-time implementations. However, since the heavy Cauchy pdf tail overbounds other realistic densities, estimators that are based on the Cauchy pdf are hypothesized to be robust to unknown realistic physical densities. The Gaussian, having a very light tail, is shown to be very non-robust in the presence of heavier-tailed densities. We refer to robustness in the statistical sense, meaning that the estimator achieves adequate performance when faced with outliers or unexplained events, and where these events may arise either as large measurement errors, large process deviations, or due to misspecification of the dynamic model. Since extreme data is assumed likely, the Cauchy estimator is rich in structure and computationally challenging. Therefore, we developed new analytic techniques to make the computation streamlined and have implemented this Cauchy estimator on general purpose graphical processing units (GPU). Our study also focuses on the development new stochastic control laws. Because our estimator is analytic and recursive, new stochastic cost criteria can be formulated, leading to a host of new stochastic controllers and, in general, a new control technology. &nbsp;</p>\n<p>Some of the new properties and techniques that were developed for the multivariate Cauchy estimator (MCE) over the grant period are discussed. The solution to any dynamic estimation problem is the construction of the probability density function (pdf) of the state variables of the dynamic system given the measurement history. For our multivariate estimation problem, this pdf conditioned on the measurement history could not be constructed directly. However, a spectral transformation of this conditional pdf, the Fourier transform, could be analytically and reclusively constructed. This spectral transformation, called the characteristic function of the conditional pdf, is composed of a sum of terms that grows when a measurement is processed. Each term is a product of two functions: a coefficient term (g) made up of signs of linear functions, referred to as hyperplanes, and an exponential function whose arguments are absolute values of these hyperplanes.&nbsp; This g function was very difficult to compute since it required tracing back to the initial time to compute the associated coefficients. We can think of g as a diamond where in each facet or face the value of g is a constant. However, we discovered that g could be represented by basis functions composed of sign functions and products of sign functions. The associated parameters operating on the bases were constructed for each g, a constant in each face of the hyperplane arrangement. Based on these results, our new innovations for rapid computation of the MCE are:</p>\n<ol>\n<li>An efficient numerical algorithm for constructing the vector of parameters operating on basis functions is implemented.</li>\n<li>Though reducing terms is seen to lessen the computational burden of the estimator, the number of terms at each estimation step will continue to grow. To run the MCE continuously and for arbitrarily long simulations, a bank of W sliding constant data windows of MCEs is introduced, where each window has a processing capacity of W sensor measurements. Although the derivation of this initialization method is algebraically involved, all that is required numerically is that a particular symmetric, positive definite matrix be rotated into a diagonal form.</li>\n<li>The necessary changes to the underlying estimation routine were made to handle both nonlinear dynamics and measurement models. The nonlinear Cauchy estimator is termed the extended multivariate Cauchy estimator (EMCE).</li>\n<li>For large impulsive variations in the measurement pdfs, the Monte Carlo simulation showed that the geometric standard deviation was almost invariant for the Cauchy estimator, indicating robust performance. This was not the case for the extended Kalman filter.</li>\n</ol>\n<p>This EMCE should be extensively utilized, since in many engineering, economic, telecommunications, and science applications, the underlying random processes or noises have significant volatility, which is not captured by Gaussian distributions, but by heavy-tailed distributions. By bringing our technology on robust estimation and controllers based on heavy-tailed uncertainties to all these technical communities, this technology will induce the creation of new innovations, thereby producing greater levels of progress.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/22/2023<br>\n\t\t\t\t\tModified by: Jason&nbsp;L&nbsp;Speyer</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nOur newly developed recursive and analytic estimation algorithm, based on linear dynamic systems with additive heavy-tailed Cauchy uncertainty, is a paradigm shift. Currently, only linear dynamic systems with additive Gaussian uncertainties produce a recursive and analytic algorithm that leads to tractable, real-time implementations. However, since the heavy Cauchy pdf tail overbounds other realistic densities, estimators that are based on the Cauchy pdf are hypothesized to be robust to unknown realistic physical densities. The Gaussian, having a very light tail, is shown to be very non-robust in the presence of heavier-tailed densities. We refer to robustness in the statistical sense, meaning that the estimator achieves adequate performance when faced with outliers or unexplained events, and where these events may arise either as large measurement errors, large process deviations, or due to misspecification of the dynamic model. Since extreme data is assumed likely, the Cauchy estimator is rich in structure and computationally challenging. Therefore, we developed new analytic techniques to make the computation streamlined and have implemented this Cauchy estimator on general purpose graphical processing units (GPU). Our study also focuses on the development new stochastic control laws. Because our estimator is analytic and recursive, new stochastic cost criteria can be formulated, leading to a host of new stochastic controllers and, in general, a new control technology.  \n\nSome of the new properties and techniques that were developed for the multivariate Cauchy estimator (MCE) over the grant period are discussed. The solution to any dynamic estimation problem is the construction of the probability density function (pdf) of the state variables of the dynamic system given the measurement history. For our multivariate estimation problem, this pdf conditioned on the measurement history could not be constructed directly. However, a spectral transformation of this conditional pdf, the Fourier transform, could be analytically and reclusively constructed. This spectral transformation, called the characteristic function of the conditional pdf, is composed of a sum of terms that grows when a measurement is processed. Each term is a product of two functions: a coefficient term (g) made up of signs of linear functions, referred to as hyperplanes, and an exponential function whose arguments are absolute values of these hyperplanes.  This g function was very difficult to compute since it required tracing back to the initial time to compute the associated coefficients. We can think of g as a diamond where in each facet or face the value of g is a constant. However, we discovered that g could be represented by basis functions composed of sign functions and products of sign functions. The associated parameters operating on the bases were constructed for each g, a constant in each face of the hyperplane arrangement. Based on these results, our new innovations for rapid computation of the MCE are:\n\nAn efficient numerical algorithm for constructing the vector of parameters operating on basis functions is implemented.\nThough reducing terms is seen to lessen the computational burden of the estimator, the number of terms at each estimation step will continue to grow. To run the MCE continuously and for arbitrarily long simulations, a bank of W sliding constant data windows of MCEs is introduced, where each window has a processing capacity of W sensor measurements. Although the derivation of this initialization method is algebraically involved, all that is required numerically is that a particular symmetric, positive definite matrix be rotated into a diagonal form.\nThe necessary changes to the underlying estimation routine were made to handle both nonlinear dynamics and measurement models. The nonlinear Cauchy estimator is termed the extended multivariate Cauchy estimator (EMCE).\nFor large impulsive variations in the measurement pdfs, the Monte Carlo simulation showed that the geometric standard deviation was almost invariant for the Cauchy estimator, indicating robust performance. This was not the case for the extended Kalman filter.\n\n\nThis EMCE should be extensively utilized, since in many engineering, economic, telecommunications, and science applications, the underlying random processes or noises have significant volatility, which is not captured by Gaussian distributions, but by heavy-tailed distributions. By bringing our technology on robust estimation and controllers based on heavy-tailed uncertainties to all these technical communities, this technology will induce the creation of new innovations, thereby producing greater levels of progress.\n\n \n\n \n\n\t\t\t\t\tLast Modified: 10/22/2023\n\n\t\t\t\t\tSubmitted by: Jason L Speyer"
+ }
+}

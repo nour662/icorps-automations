@@ -1,0 +1,114 @@
+{
+ "awd_id": "2006437",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CNS Core: Small: Not All Cameras are Created Equal: Systems Support for Highly Adaptive Video Analytics Pipelines",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032922935",
+ "po_email": "dmedhi@nsf.gov",
+ "po_sign_block_name": "Deepankar Medhi",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2021-11-30",
+ "tot_intn_awd_amt": 499999.0,
+ "awd_amount": 499999.0,
+ "awd_min_amd_letter_date": "2020-08-11",
+ "awd_max_amd_letter_date": "2020-08-11",
+ "awd_abstract_narration": "The ubiquity of video camera deployments, coupled with steady improvements in computer vision algorithms, has given rise to a diverse range of video analytics applications. Use cases include surveillance, traffic scheduling, disaster response, and more. Yet despite their promise, video analytics deployments are far from widespread. A key reason is that video analysis is often prohibitively expensive: video is data-intensive, stressing the network, and analysis typically involves Deep Neural Networks (DNNs) to query video, requiring substantial compute resources. This project aims to design and implement practical video analytics systems that can adapt their execution to most efficiently utilize end-to-end compute and network resources, i.e., across cameras, servers, and the networks between them.\r\n\r\nThe key insight underlying the proposed work is to adaptively place analytics tasks by leveraging frame-transforming techniques that are diverse in terms of resource requirements and accuracy, e.g., lightweight frame differencing versus expensive object detection DNNs. Along these lines, the project involves three synergistic directions. First, it rigorously classifies existing frame transforming techniques, investigating the correlation between their computation costs, potential data reduction, and impact on response accuracy. Second, it develops end-to-end systems that can automatically select the appropriate frame transforming technique to run on a camera with the goal of optimizing for response latency and accuracy given the available resources. Third, it develops techniques to extend adaptive video analytics to emerging camera settings, e.g., multi-camera, steerable, energy-harvesting; these systems rely on the extraction of spatial and temporal relationships between camera feeds to guide resource allocation decisions.\r\n\r\nThe proposed research targets a large slice of the population (given the breadth of video analytics applications), and improves both the accessibility and potential of video analytics deployments. The developed systems enable affordable (but effective) video analytics for organizations of different scale, allowing them to make the most of their available resources. Furthermore, the work motivates novel applications that were previously deemed impractical, e.g., real-time monitoring of rural areas via energy-harvesting cameras. The project also involves outreach efforts to attract students from populations currently under-represented in computer science. Key to these efforts is magnifying the interdisciplinary nature of video analytics pipelines which span systems, networks, machine learning, and computer vision.\r\n\r\nThe software and research artifacts designed as part of this project are released on a public website: http://web.cs.ucla.edu/~ravi/adaptive_video_analytics/. The site is regularly maintained and includes replication instructions and packages. Project data are kept on the site for at least 5 years after publication, with extensions based on public interest.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ravi",
+   "pi_last_name": "Netravali",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ravi Netravali",
+   "pi_email_addr": "rnetravali@cs.princeton.edu",
+   "nsf_id": "000786640",
+   "pi_start_date": "2020-08-11",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Harry",
+   "pi_last_name": "Xu",
+   "pi_mid_init": "G",
+   "pi_sufx_name": "",
+   "pi_full_name": "Harry G Xu",
+   "pi_email_addr": "harryxu@cs.ucla.edu",
+   "nsf_id": "000599637",
+   "pi_start_date": "2020-08-11",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Los Angeles",
+  "inst_street_address": "10889 WILSHIRE BLVD STE 700",
+  "inst_street_address_2": "",
+  "inst_city_name": "LOS ANGELES",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "3107940102",
+  "inst_zip_code": "900244200",
+  "inst_country_name": "United States",
+  "cong_dist_code": "36",
+  "st_cong_dist_code": "CA36",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, LOS ANGELES",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "RN64EPNH8JC6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "UCLA, Computer Science Dept.",
+  "perf_str_addr": "404 Westwood Plaza, 482 Engr VI.",
+  "perf_city_name": "Los Angeles",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "900951596",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "36",
+  "perf_st_cong_dist": "CA36",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  },
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 126091.0
+  }
+ ],
+ "por": null
+}

@@ -1,0 +1,101 @@
+{
+ "awd_id": "1205493",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: CI-ADDO-NEW: An Open Memory Array Compiler Framework to Support Devices, Circuits and Systems Research",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2012-08-01",
+ "awd_exp_date": "2017-07-31",
+ "tot_intn_awd_amt": 522000.0,
+ "awd_amount": 522000.0,
+ "awd_min_amd_letter_date": "2012-08-17",
+ "awd_max_amd_letter_date": "2012-08-17",
+ "awd_abstract_narration": "The OpenRAM project aims to provide an open-source memory compiler framework for Random-Access Memories (RAMs). Most academic Integrated Circuit (IC) design methodologies are inhibited by the availability of memories since commercially available memory compilers are often black box, not modifiable, and have limited available memory configurations. However, memories are the largest barrier to future scaling and require urgent solutions to lower leakage power consumption, improve reliability in shrinking supply voltages, and incorporate post-CMOS technologies.  The OpenRAM compiler will enable research in these areas by providing a completely modifiable, verified, technology independent compiler for single-port and multi-port RAMs and many-port register files.  The availability of the OpenRAM will enable research in a variety of IC-related disciplines\r\nincluding: computer architecture and system-on-chip (SOC) design, memory circuit and device research, and computer-aided design (CAD).\r\nComputer architects and SOC designers need access to a variety of memory configurations including specialized many-ported register files to prototype system-level implementations.  Similarly, memory circuit and device researchers need a framework to prototype new circuits and devices in the context of these many configurations.  Last, CAD researchers need a framework to study the optimization and analysis of power and yield of on-chip memories. In addition to the broader impact of enabling future memory system scaling, OpenRAM will also be an important education tool by allowing anyone to synthesize and utilize memory macros in standard-cell design flows and implement custom extensions.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Matthew",
+   "pi_last_name": "Guthaus",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Matthew Guthaus",
+   "pi_email_addr": "mrg@ucsc.edu",
+   "nsf_id": "000327463",
+   "pi_start_date": "2012-08-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Santa Cruz",
+  "inst_street_address": "1156 HIGH ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "SANTA CRUZ",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8314595278",
+  "inst_zip_code": "950641077",
+  "inst_country_name": "United States",
+  "cong_dist_code": "19",
+  "st_cong_dist_code": "CA19",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA SANTA CRUZ",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "VXUFPE4MCZH5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Santa Cruz",
+  "perf_str_addr": "1156 High Street",
+  "perf_city_name": "SANTA CRUZ",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "950641077",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "19",
+  "perf_st_cong_dist": "CA19",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7359",
+   "pgm_ref_txt": "COMPUTING RES INFRASTRUCTURE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 522000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Computer systems research is often inhibited by the availability of memory designs. Existing Process Design Kits (PDKs) frequently lack memory compilers, while expensive commercial solutions only provide memory models with immutable cells, limited configurations, and restrictive licenses. Manually creating memories can be time consuming and tedious and the designs are usually inflexible. This project created OpenRAM, an open-source memory compiler, that provides a platform for the generation, characterization, and verification of fabricable memory designs across various technologies, sizes, and configurations. It enables research in computer architecture, system-on-chip design, memory circuit and device research, and computer-aided design.</p>\n<p>OpenRAM is technology-portable by using a technology directory that includes the technology&rsquo;s specific information, rules, and library cells. Technology parameters such as the design rule check (DRC) rules and the layer map are required to ensure that the dynamically generated designs are correct. Custom designed library cells such as the memory cell and the sense amplifier are also placed in this directory. A very simple design rule parameter file has the most important design rules for constructing basic interconnect and transistor devices.</p>\n<p>OpenRAM provides a reference implementation in 45nm FreePDK45 and a fabricable option using the MOSIS Scalable CMOS (SCMOS) design rules. FreePDK45 uses many design rules found in modern technologies, but is non-fabricable, while SCMOS enables fabrication of designs using the MOSIS foundry services. SCMOS is not confidential and an implementation using it is included, however, it does not include many advanced DSM design rules.</p>\n<p>OpenRAM&rsquo;s software is implemented using an object-oriented approach in the Python programming language. Python is a simple, yet powerful language that is easy to learn and very human-readable. Moreover, Python enables portability to most operating systems such as Linux, macOS, and Windows. OpenRAM generates approximate models with no external CAD tools or detailed models with a few external CAD dependencies.</p>\n<p>OpenRAM reference implementations and full source code are available at:</p>\n<p>https://openram.soe.ucsc.edu/</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/13/2017<br>\n\t\t\t\t\tModified by: Matthew&nbsp;Guthaus</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nComputer systems research is often inhibited by the availability of memory designs. Existing Process Design Kits (PDKs) frequently lack memory compilers, while expensive commercial solutions only provide memory models with immutable cells, limited configurations, and restrictive licenses. Manually creating memories can be time consuming and tedious and the designs are usually inflexible. This project created OpenRAM, an open-source memory compiler, that provides a platform for the generation, characterization, and verification of fabricable memory designs across various technologies, sizes, and configurations. It enables research in computer architecture, system-on-chip design, memory circuit and device research, and computer-aided design.\n\nOpenRAM is technology-portable by using a technology directory that includes the technology?s specific information, rules, and library cells. Technology parameters such as the design rule check (DRC) rules and the layer map are required to ensure that the dynamically generated designs are correct. Custom designed library cells such as the memory cell and the sense amplifier are also placed in this directory. A very simple design rule parameter file has the most important design rules for constructing basic interconnect and transistor devices.\n\nOpenRAM provides a reference implementation in 45nm FreePDK45 and a fabricable option using the MOSIS Scalable CMOS (SCMOS) design rules. FreePDK45 uses many design rules found in modern technologies, but is non-fabricable, while SCMOS enables fabrication of designs using the MOSIS foundry services. SCMOS is not confidential and an implementation using it is included, however, it does not include many advanced DSM design rules.\n\nOpenRAM?s software is implemented using an object-oriented approach in the Python programming language. Python is a simple, yet powerful language that is easy to learn and very human-readable. Moreover, Python enables portability to most operating systems such as Linux, macOS, and Windows. OpenRAM generates approximate models with no external CAD tools or detailed models with a few external CAD dependencies.\n\nOpenRAM reference implementations and full source code are available at:\n\nhttps://openram.soe.ucsc.edu/\n\n\t\t\t\t\tLast Modified: 11/13/2017\n\n\t\t\t\t\tSubmitted by: Matthew Guthaus"
+ }
+}

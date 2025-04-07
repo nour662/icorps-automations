@@ -1,0 +1,105 @@
+{
+ "awd_id": "2006363",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: MaPaMaP: Massively Parallel Solving of Math Problems",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922585",
+ "po_email": "pprabhak@nsf.gov",
+ "po_sign_block_name": "Pavithra Prabhakar",
+ "awd_eff_date": "2019-11-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 328934.0,
+ "awd_amount": 328934.0,
+ "awd_min_amd_letter_date": "2020-01-08",
+ "awd_max_amd_letter_date": "2020-01-08",
+ "awd_abstract_narration": "State-of-the-art automated theorem proving tools have been making progress on, and in some cases resolve, longstanding unsolved problems of mathematics like: can the positive integers be sorted into two buckets, so that neither bucket contains a Pythagorean triple (a solution to a^2+b^2=c^2), or can the points on the plane be colored 5 colors, so that every two points at distance 1 apart are colored differently? The same techniques are also crucial in industry to verify hardware and software. A key aspect of recent and future successes in mechanized mathematics is the use of massively parallel computation. Handling these computing resources carefully is vital to exploit their great potential. Sophisticated splitting heuristics and encodings are required to partition a given problem into many sub-problems that can be efficiently solved in parallel. Unfortunately, today the development of such heuristics depends predominantly on expert knowledge about this problem and on sensible manual optimization.\r\n\r\nThis research offers advances towards automated construction of sophisticated heuristics, as well as improved encodings of commonly used mathematical operations. Apart from solving long-standing open problems automatically, the research intents to extract information from the solutions to acquire useful mathematical insights. Famous mathematical challenges like the Collatz conjecture and the Hadwiger-Nelson problem are motivating examples that are driving this work and they could help making this technology go mainstream. The investigators will involve both graduate and undergraduate students in this research.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Marienus",
+   "pi_last_name": "Heule",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Marienus Heule",
+   "pi_email_addr": "marijn@cmu.edu",
+   "nsf_id": "000689986",
+   "pi_start_date": "2020-01-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Carnegie-Mellon University",
+  "inst_street_address": "5000 FORBES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4122688746",
+  "inst_zip_code": "152133815",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "CARNEGIE MELLON UNIVERSITY",
+  "org_prnt_uei_num": "U3NKNFLNQ613",
+  "org_uei_num": "U3NKNFLNQ613"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Carnegie-Mellon University",
+  "perf_str_addr": "5000 Forbes Ave WQED Bldg",
+  "perf_city_name": "Pittsburgh",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152133815",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "8206",
+   "pgm_ref_txt": "Formal Methods and Verification"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 328934.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In the past twenty years, the capabilities of automated reasoning tools have seen enormous growth, revolutionizing the ability to tackle and solve longstanding mathematical challenges. This project has advanced the field, marking notable achievements such as the resolution of Keller's conjecture, pioneering an automated method for the Collatz conjecture, and the development of a novel automated reasoning tool leveraging local search algorithms.</p>\n<p>Ott-Heinrich Keller, nearly a century ago, conjectured that in the n-dimensional space, any tiling of unit cubes must inevitably include at least one pair of cubes sharing a full (n-1)-dimensional face. Simplified, in a two-dimensional space, this implies that any gap-free tiling with square tiles of identical size contains a pair of tiles that share a complete edge. While this is intuitively understandable in two and three dimensions, the complexity escalates significantly in higher dimensions. The conjecture remained unresolved for dimension seven until this project applied massively parallel automated reasoning. The final result is that Keller's conjecture holds for the dimensions up to seven, while it is false for the eighth and higher dimensions.</p>\n<p>Also nearly a century ago, Lothar Collatz introduced a famous problem: by repeatedly applying a simple operation to any positive number (halving it if even; tripling and adding one if odd), would one eventually arrive at one? Despite extensive efforts by mathematicians, this question remained unanswered. Our project addressed this by transforming the problem into a rewrite system that, if proven to terminate on all inputs, confirms the conjecture. While the Collatz conjecture itself remains unsolved, this innovative approach has successfully solved similar problems through fully automated proofs, thanks to sophisticated encoding techniques and effective heuristic strategies.</p>\n<p>Furthermore, the project has developed a cutting-edge parallel local search solver that demonstrates strong performance across a wide array of benchmark problems. For example, it outperforms existing local search solvers in the international satisfiability competitions. The solver is particularly effective in solving mathematical challenges. It successfully closed a graph coloring problem that was open for decades and it improved the lower bounds for several van der Waerden numbers.</p><br>\n<p>\n Last Modified: 02/20/2024<br>\nModified by: Marienus&nbsp;Heule</p></div>\n<div class=\"porSideCol\"\n><div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2024/2006363/2006363_10552761_1708467322509_dim8--rgov-214x142.png\" original=\"/por/images/Reports/POR/2024/2006363/2006363_10552761_1708467322509_dim8--rgov-800width.png\" title=\"Keller dimension 8\"><img src=\"/por/images/Reports/POR/2024/2006363/2006363_10552761_1708467322509_dim8--rgov-66x44.png\" alt=\"Keller dimension 8\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">The smallest counterexample of Keller's conjecture.</div>\n<div class=\"imageCredit\">Marijn Heule</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Marienus&nbsp;Heule\n<div class=\"imageTitle\">Keller dimension 8</div>\n</div>\n</li><li>\n<a href=\"/por/images/Reports/POR/2024/2006363/2006363_10552761_1708466336767_2d_tiles--rgov-214x142.png\" original=\"/por/images/Reports/POR/2024/2006363/2006363_10552761_1708466336767_2d_tiles--rgov-800width.png\" title=\"Keller dimension 2\"><img src=\"/por/images/Reports/POR/2024/2006363/2006363_10552761_1708466336767_2d_tiles--rgov-66x44.png\" alt=\"Keller dimension 2\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Keller's conjecture in dimension two. Tiles can be put in lanes that can be shifted arbitrarily from each other. However, two adjacent tiles in the same lane fully share an edge.</div>\n<div class=\"imageCredit\">Marijn Heule</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Marienus&nbsp;Heule\n<div class=\"imageTitle\">Keller dimension 2</div>\n</div>\n</li><li>\n<a href=\"/por/images/Reports/POR/2024/2006363/2006363_10552761_1708457832515_Collatz_rewriting--rgov-214x142.png\" original=\"/por/images/Reports/POR/2024/2006363/2006363_10552761_1708457832515_Collatz_rewriting--rgov-800width.png\" title=\"Collatz as a rewriting system\"><img src=\"/por/images/Reports/POR/2024/2006363/2006363_10552761_1708457832515_Collatz_rewriting--rgov-66x44.png\" alt=\"Collatz as a rewriting system\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Illustration of the Collatz trajectory of 27. Each row in the cascade is a mixed binary-ternary representation of a number, with each box corresponding to a digit. The rewrite rules are shown at the top right corner, while the zoomed-in part shows auxiliary rewrite steps.</div>\n<div class=\"imageCredit\">Marijn Heule</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Marienus&nbsp;Heule\n<div class=\"imageTitle\">Collatz as a rewriting system</div>\n</div>\n</li><li>\n<a href=\"/por/images/Reports/POR/2024/2006363/2006363_10552761_1708466506936_3d_tiles--rgov-214x142.png\" original=\"/por/images/Reports/POR/2024/2006363/2006363_10552761_1708466506936_3d_tiles--rgov-800width.png\" title=\"Keller dimension 3\"><img src=\"/por/images/Reports/POR/2024/2006363/2006363_10552761_1708466506936_3d_tiles--rgov-66x44.png\" alt=\"Keller dimension 3\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Keller's conjecture in dimension 3. The image shows a partial tiling that can only be extended to a gap-free tiling by cubes that fully share the blue faces.</div>\n<div class=\"imageCredit\">Marijn Heule</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Marienus&nbsp;Heule\n<div class=\"imageTitle\">Keller dimension 3</div>\n</div>\n</li></ul>\n</div>\n</div></div>\n</div>\n",
+  "por_txt_cntn": "\n\nIn the past twenty years, the capabilities of automated reasoning tools have seen enormous growth, revolutionizing the ability to tackle and solve longstanding mathematical challenges. This project has advanced the field, marking notable achievements such as the resolution of Keller's conjecture, pioneering an automated method for the Collatz conjecture, and the development of a novel automated reasoning tool leveraging local search algorithms.\n\n\nOtt-Heinrich Keller, nearly a century ago, conjectured that in the n-dimensional space, any tiling of unit cubes must inevitably include at least one pair of cubes sharing a full (n-1)-dimensional face. Simplified, in a two-dimensional space, this implies that any gap-free tiling with square tiles of identical size contains a pair of tiles that share a complete edge. While this is intuitively understandable in two and three dimensions, the complexity escalates significantly in higher dimensions. The conjecture remained unresolved for dimension seven until this project applied massively parallel automated reasoning. The final result is that Keller's conjecture holds for the dimensions up to seven, while it is false for the eighth and higher dimensions.\n\n\nAlso nearly a century ago, Lothar Collatz introduced a famous problem: by repeatedly applying a simple operation to any positive number (halving it if even; tripling and adding one if odd), would one eventually arrive at one? Despite extensive efforts by mathematicians, this question remained unanswered. Our project addressed this by transforming the problem into a rewrite system that, if proven to terminate on all inputs, confirms the conjecture. While the Collatz conjecture itself remains unsolved, this innovative approach has successfully solved similar problems through fully automated proofs, thanks to sophisticated encoding techniques and effective heuristic strategies.\n\n\nFurthermore, the project has developed a cutting-edge parallel local search solver that demonstrates strong performance across a wide array of benchmark problems. For example, it outperforms existing local search solvers in the international satisfiability competitions. The solver is particularly effective in solving mathematical challenges. It successfully closed a graph coloring problem that was open for decades and it improved the lower bounds for several van der Waerden numbers.\t\t\t\t\tLast Modified: 02/20/2024\n\n\t\t\t\t\tSubmitted by: MarienusHeule\n"
+ }
+}

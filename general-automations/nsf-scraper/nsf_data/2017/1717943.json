@@ -1,0 +1,105 @@
+{
+ "awd_id": "1717943",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CIF: Small: Distributed Statistical Inference with Compressed Data",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922981",
+ "po_email": "pregalia@nsf.gov",
+ "po_sign_block_name": "Phillip Regalia",
+ "awd_eff_date": "2017-07-15",
+ "awd_exp_date": "2022-06-30",
+ "tot_intn_awd_amt": 449996.0,
+ "awd_amount": 449996.0,
+ "awd_min_amd_letter_date": "2017-07-07",
+ "awd_max_amd_letter_date": "2017-07-07",
+ "awd_abstract_narration": "Due to the rapid growth of size and scale of datasets and desire to harnessing parallel processing capabilities of multiple machines, distributed statistical inference and machine learning, in which available data are stored in multiple machines who are allowed to communicate with each other with limited communication budgets, have attracted significant research interests. There are two basic scenarios for the distributed setting: sample partition and feature partition. Although there have been many recent work on the design of inference algorithms for the sample partition scenario, there has been limited work on the feature partition scenario. The focus of this project is to characterize the fundamental limits and develop distributed statistical algorithms for the feature partition scenario from information theoretic perspective.\r\n\r\nCompared with the sample partition scenario, the feature partition scenario is significantly more challenging. This research addresses these challenges by focusing on two research thrusts. Thrust 1 focuses on designing interactive encoding schemes for inference. The main idea is that, by interacting with each other, the terminals can coordinate their compression so that the decision maker can obtain more information about the parameter while using the same communication resources, which will lead to a better inference performance. Thrust 2 designs function computing schemes for inference, in which the machines compute a function of observations without recovering them first and then perform inference from this function. The main motivation for this idea is that recovering observations or a compressed version of them is not necessary in the distributed inference setup, as the final goal of the distributed inference is to infer the value of the unknown parameter.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Lifeng",
+   "pi_last_name": "Lai",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Lifeng Lai",
+   "pi_email_addr": "lflai@ucdavis.edu",
+   "nsf_id": "000541215",
+   "pi_start_date": "2017-07-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Davis",
+  "inst_street_address": "1850 RESEARCH PARK DR STE 300",
+  "inst_street_address_2": "",
+  "inst_city_name": "DAVIS",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "5307547700",
+  "inst_zip_code": "956186153",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "CA04",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, DAVIS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "TX2DAGQPENZ5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Davis",
+  "perf_str_addr": "1 Shields Avenue",
+  "perf_city_name": "Davis",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "956165270",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "CA04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779700",
+   "pgm_ele_name": "Comm & Information Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7936",
+   "pgm_ref_txt": "SIGNAL PROCESSING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 449996.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In modern distributed statistical inference and machine learning systems, available data are stored in multiple machines who are allowed to communicate with each other with limited communication budgets. The focus of this project is to characterize the fundamental limits and develop distributed statistical algorithms for distributed statistical inference.</p>\n<p>The first major contribution of our work in this project is the characterization of the fundamental information theoretic limits of a variety of distributed inference problems. For example, we have characterized the error exponents of the distributed identity testing with data compression problems, and the distributed testing with cascaded encoders problems.</p>\n<p>The second major contribution of our work is the development of robust distributed inference algorithms. For example, we have developed robust zeroth order distributed inference algorithms, in which only zeroth order information is used. We have further developed robust distributed gradient&nbsp;decent algorithms and robust <span><span>distributed approximate Newton's method</span></span>.</p>\n<p><span>The third major contribution of our work is the characterization of various practical constraints on the performance of distributed inference algorithms. We have examined the impact of network topology and communication delays on the performance of distributed dual coordinate ascent for inference. We have also developed robust distributed consensus algorithms that go beyond basic server-client setups.</span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/12/2022<br>\n\t\t\t\t\tModified by: Lifeng&nbsp;Lai</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIn modern distributed statistical inference and machine learning systems, available data are stored in multiple machines who are allowed to communicate with each other with limited communication budgets. The focus of this project is to characterize the fundamental limits and develop distributed statistical algorithms for distributed statistical inference.\n\nThe first major contribution of our work in this project is the characterization of the fundamental information theoretic limits of a variety of distributed inference problems. For example, we have characterized the error exponents of the distributed identity testing with data compression problems, and the distributed testing with cascaded encoders problems.\n\nThe second major contribution of our work is the development of robust distributed inference algorithms. For example, we have developed robust zeroth order distributed inference algorithms, in which only zeroth order information is used. We have further developed robust distributed gradient decent algorithms and robust distributed approximate Newton's method.\n\nThe third major contribution of our work is the characterization of various practical constraints on the performance of distributed inference algorithms. We have examined the impact of network topology and communication delays on the performance of distributed dual coordinate ascent for inference. We have also developed robust distributed consensus algorithms that go beyond basic server-client setups.\n\n\t\t\t\t\tLast Modified: 10/12/2022\n\n\t\t\t\t\tSubmitted by: Lifeng Lai"
+ }
+}

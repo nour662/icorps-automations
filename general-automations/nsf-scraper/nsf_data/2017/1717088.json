@@ -1,0 +1,105 @@
+{
+ "awd_id": "1717088",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF:Small:Software-Defined Radio: From High-level Language to Hardware",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 443935.0,
+ "awd_amount": 443935.0,
+ "awd_min_amd_letter_date": "2017-08-31",
+ "awd_max_amd_letter_date": "2017-08-31",
+ "awd_abstract_narration": "Software-defined radio (SDR) promises to bring the flexibility of software development to radio protocol design. Unfortunately, SDR platforms that support high-data rate protocols are difficult to program and require low-level, expert knowledge that has little to do with radio protocol design. This project makes high-data rate radio protocol design accessible to a wider community of developers by developing a new high-level language for expressing SDR applications, freeing protocol designers from worrying about the low-level details of a particular SDR platform. The intellectual merits are a new understanding of the language abstractions and runtime facilities needed to translate high-level code to efficient low-level implementations. The project's broader significance and importance are to drastically lower the barrier to entry for high-speed software-defined radio platforms and to produce new tools for the SDR community that facilitate both research and education.\r\n\r\nThe proposed research builds on Ziria, a language for writing radio physical layer (PHY) implementations. Ziria will be extended in to support new radio protocol applications and to support new hardware platforms, including FPGAs. A key project goal is portability: protocols written in Ziria should be portable across SDR platforms without significant loss of performance. Furthermore, users must be able to make use of all parts of heterogeneous SDR platforms---from FPGAs to CPUs to DSPs---seamlessly and without rewriting code. Finally, this project applies knowledge gained in the SDR domain to new domains, such a video encoding and decoding, where low-level hardware is also commonly targeted.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Geoffrey",
+   "pi_last_name": "Mainland",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Geoffrey Mainland",
+   "pi_email_addr": "gbm26@drexel.edu",
+   "nsf_id": "000667814",
+   "pi_start_date": "2017-08-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Drexel University",
+  "inst_street_address": "3141 CHESTNUT ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "PHILADELPHIA",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "2158956342",
+  "inst_zip_code": "191042875",
+  "inst_country_name": "United States",
+  "cong_dist_code": "03",
+  "st_cong_dist_code": "PA03",
+  "org_lgl_bus_name": "DREXEL UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "XF3XM9642N96"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Drexel University",
+  "perf_str_addr": "3141 Chestnut St",
+  "perf_city_name": "Philadelphia",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "191042875",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "PA03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7943",
+   "pgm_ref_txt": "PROGRAMMING LANGUAGES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 443935.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The future of wireless communications depends on the development of new algorithms and protocols that make more efficient use of existing spectrum. One way to improve spectrum efficiency is to develop new physical layer waveforms, coding techniques, and other low-level protocols that make better use of an allocated slice of spectrum. A second approach focuses on new high-level algorithms that organize multiple spectrum users to enable more efficient sharing of spectrum between devices. Because of the computational complexity and speeds at which modern communications systems operate, prototyping new low-level protocols is extremely challenging and often requires the use of programmable hardware, like FPGAs. In contrast, developing new high-level spectrum sharing algorithms can be done purely in software, but there is a dearth of freely available platforms that have the features needed to support this kind of research. This project yielded new tools and techniques that provide a firm foundation for experimentation and development of both low-level and high-level wireless communications protocols.</p>\n<p>The project was approach in two main areas: high-level programming languages and tools for describing the hardware implementation of low-level communications algorithms, and the development of a flexible, modular platform for communication protocol experimentation. As the project progressed, focus shifted to the latter as it served as a necessary foundation for the former and presented opportunities to engage with a larger group of students. The work on high-level programming languages for hardware yielded several open-source tools and a PhD dissertation. The work on a modular radio platform produced DragonRadio, which has and is serving as the foundation for many research projects in wireless communications.</p>\n<p>In addition to its intellectual merit, the project demonstrated broader impacts in several areas. The project directly supported an undergraduate co-op student and a graduate PhD student, both mentored by the PI. The PhD student served as a role model for women in computing in her department, including through her frequent participation in the annual Grace Hopper Celebration. She successfully defended her dissertation and obtained a position in industry. A new course based on this project&rsquo;s results was developed that enrolls undergraduate and graduate students from both engineering and computer science, providing them with hands-on experience working with communications protocols on real-world hardware. The DragonRadio platform served as the foundation of Drexel&rsquo;s entry into DARPA&rsquo;s Spectrum Collaboration Challenge competition. The Drexel team consisted of both undergraduate and graduate students, including two senior design teams from different departments. DragonRadio has since been used by other senior design teams, and it is the basis of several research projects at both the undergraduate and graduate level in areas such as directional antennas, anti-jamming, and millimeter wave communication. DragonRadio is available as a standard experimental radio on the Northeastern Colosseum, a large-scale wireless testbed, ensuring that it will serve as a tool for the wider wireless research community.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/30/2021<br>\n\t\t\t\t\tModified by: Geoffrey&nbsp;Mainland</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe future of wireless communications depends on the development of new algorithms and protocols that make more efficient use of existing spectrum. One way to improve spectrum efficiency is to develop new physical layer waveforms, coding techniques, and other low-level protocols that make better use of an allocated slice of spectrum. A second approach focuses on new high-level algorithms that organize multiple spectrum users to enable more efficient sharing of spectrum between devices. Because of the computational complexity and speeds at which modern communications systems operate, prototyping new low-level protocols is extremely challenging and often requires the use of programmable hardware, like FPGAs. In contrast, developing new high-level spectrum sharing algorithms can be done purely in software, but there is a dearth of freely available platforms that have the features needed to support this kind of research. This project yielded new tools and techniques that provide a firm foundation for experimentation and development of both low-level and high-level wireless communications protocols.\n\nThe project was approach in two main areas: high-level programming languages and tools for describing the hardware implementation of low-level communications algorithms, and the development of a flexible, modular platform for communication protocol experimentation. As the project progressed, focus shifted to the latter as it served as a necessary foundation for the former and presented opportunities to engage with a larger group of students. The work on high-level programming languages for hardware yielded several open-source tools and a PhD dissertation. The work on a modular radio platform produced DragonRadio, which has and is serving as the foundation for many research projects in wireless communications.\n\nIn addition to its intellectual merit, the project demonstrated broader impacts in several areas. The project directly supported an undergraduate co-op student and a graduate PhD student, both mentored by the PI. The PhD student served as a role model for women in computing in her department, including through her frequent participation in the annual Grace Hopper Celebration. She successfully defended her dissertation and obtained a position in industry. A new course based on this project\u2019s results was developed that enrolls undergraduate and graduate students from both engineering and computer science, providing them with hands-on experience working with communications protocols on real-world hardware. The DragonRadio platform served as the foundation of Drexel\u2019s entry into DARPA\u2019s Spectrum Collaboration Challenge competition. The Drexel team consisted of both undergraduate and graduate students, including two senior design teams from different departments. DragonRadio has since been used by other senior design teams, and it is the basis of several research projects at both the undergraduate and graduate level in areas such as directional antennas, anti-jamming, and millimeter wave communication. DragonRadio is available as a standard experimental radio on the Northeastern Colosseum, a large-scale wireless testbed, ensuring that it will serve as a tool for the wider wireless research community.\n\n \n\n\t\t\t\t\tLast Modified: 12/30/2021\n\n\t\t\t\t\tSubmitted by: Geoffrey Mainland"
+ }
+}

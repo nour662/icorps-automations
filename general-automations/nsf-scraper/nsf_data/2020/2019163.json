@@ -1,0 +1,138 @@
+{
+ "awd_id": "2019163",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CC* Integration-Small: Error Free File Transfer for Big Science",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": "7032922935",
+ "po_email": "dmedhi@nsf.gov",
+ "po_sign_block_name": "Deepankar Medhi",
+ "awd_eff_date": "2020-07-01",
+ "awd_exp_date": "2025-03-31",
+ "tot_intn_awd_amt": 470384.0,
+ "awd_amount": 479484.0,
+ "awd_min_amd_letter_date": "2020-07-01",
+ "awd_max_amd_letter_date": "2024-10-25",
+ "awd_abstract_narration": "Scientific data transfers have gotten so large that previously rare transmission errors in the Internet are causing some scientific data transfers to be corrupted. The Internet's error checking mechanisms were designed at a time when a megabyte was a large file. Now files can contain terabytes. The old error checking mechanisms are in danger of being overwhelmed.  This project seeks to find new error checking mechanisms for the Internet to safely move tomorrow's scientific data efficiently and without errors.\r\n\r\nThis project addresses two fundamental issues. First, the Internet's checksums and message digests are too small (32-bits) and probably are poorly tuned to today's error patterns.  It is a little-known fact that checksums can (and typically should) be designed to reliably catch specific errors. A good checksum is designed to protect against errors that it will actually encounter. So the first step in this project is to collect information about the kinds of transmission errors currently happening in the Internet for a comprehensive study.  Second, today's file transfer protocols, if they find a file has been corrupted in transit, simply discard the file and transfer it again.  In a world in which the file is huge (tens of terabytes or even petabytes long), that's a tremendous waste.  Rather, the file transfer protocol should seek to repair the corrupted parts of the file.  As the project collects data about errors, it will also design a new file transfer protocol that can incrementally verify and repair files.\r\n\r\nThis project will improve the Internet's ability to support big data transfers, both for science and commerce, for decades to come.  Users will be able to transfer big files with confidence that the data will be accurately and efficiently copied over the network. This work will further NSF's Blueprint for a National Cyberinfrastructure Ecosystem by ensuring a world in which networks work efficiently to deliver trustworthy copies of big data to anyone who needs it. Additional information on the project is available at: www.hipft.net\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Craig",
+   "pi_last_name": "Partridge",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Craig Partridge",
+   "pi_email_addr": "craig.partridge@colostate.edu",
+   "nsf_id": "000781352",
+   "pi_start_date": "2020-07-01",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Former Co-Principal Investigator",
+   "pi_first_name": "Anton",
+   "pi_last_name": "Betten",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Anton Betten",
+   "pi_email_addr": "betten@math.colostate.edu",
+   "nsf_id": "000493691",
+   "pi_start_date": "2020-07-01",
+   "pi_end_date": "2024-10-25"
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Susmit",
+   "pi_last_name": "Shannigrahi",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Susmit Shannigrahi",
+   "pi_email_addr": "sshannigrahi@tntech.edu",
+   "nsf_id": "000812736",
+   "pi_start_date": "2020-07-01",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Colorado State University",
+  "inst_street_address": "601 S HOWES ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "FORT COLLINS",
+  "inst_state_code": "CO",
+  "inst_state_name": "Colorado",
+  "inst_phone_num": "9704916355",
+  "inst_zip_code": "805212807",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "CO02",
+  "org_lgl_bus_name": "COLORADO STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LT9CXX8L19G1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Colorado State University",
+  "perf_str_addr": "200 W Lake St",
+  "perf_city_name": "Fort Collins",
+  "perf_st_code": "CO",
+  "perf_st_name": "Colorado",
+  "perf_zip_code": "805214593",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "CO02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "171400",
+   "pgm_ele_name": "Special Projects - CNS"
+  },
+  {
+   "pgm_ele_code": "289000",
+   "pgm_ele_name": "CISE Research Resources"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "",
+   "app_name": "",
+   "app_symb_id": "",
+   "fund_code": "01002425DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 470384.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2024,
+   "fund_oblg_amt": 9100.0
+  }
+ ],
+ "por": null
+}

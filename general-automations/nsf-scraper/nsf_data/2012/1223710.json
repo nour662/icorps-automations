@@ -1,0 +1,117 @@
+{
+ "awd_id": "1223710",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Phase: Small: Software Cruising for System Security",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2012-09-01",
+ "awd_exp_date": "2016-08-31",
+ "tot_intn_awd_amt": 499745.0,
+ "awd_amount": 499745.0,
+ "awd_min_amd_letter_date": "2012-08-30",
+ "awd_max_amd_letter_date": "2012-08-30",
+ "awd_abstract_narration": "Software bugs and vulnerabilities are primary causes for cyber-security breaches in today's society. Runtime monitoring, a technique to enforce safety and security properties at program execution time, is essential to detect intrusions and keep the system healthy. One of the main obstacles to adopt runtime monitoring techniques in practice is high performance overhead. Inlined security monitoring enforcement often delays and blocks the execution of protected programs. Conventional concurrent runtime monitors have not been able to leverage the multicore architectures for performance due to synchronization issues. If conventional synchronization primitives are used, when the monitor is crashed or blocked due to external events, the protected program will also be blocked even if the monitor is not monitoring. The goal of this proposal is to develop an innovative security monitoring technology, called Software Cruising, to explore multicore architectures for non-blocking concurrent security monitoring using lock-free data structures and algorithms. Software cruising eliminates the blocking effect and achieves efficient and scalable security monitoring. This can result in a game-changing capability in large-scale security monitoring for both cloud-based and traditional computing systems and applications.\r\n\r\nThe software cruising applications include, but are not limited to, heap buffer integrity checking, kernel memory cruising, data structure and object invariant checking, rootkit detection, and information provenance and flow checking. Three related sets of prototypical toolkits?Cruiser, Kruiser, and iCruiser?will be developed to demonstrate the effectiveness and practicality of large-scale software cruising. Cruiser is for lock-free heap buffer overflow monitoring of user-space programs. Kruiser is for kernel cruising on OS kernel heap buffer overflows and other security vulnerabilities. iCruiser is for user- and kernel-space data structure and object invariant cruising. The proposed research, upon completion, would make large-scale security monitoring more efficient and scalable in the increasingly popular multicore architecture and cloud environment, and thus significantly enhance system security. With the proposed tech transfer effort, applications as well as OS kernels will have better protection with the deployed software cruising technology. Broader impacts will also result from the education, outreach, and dissemination initiatives. Educational resources from this project, including course modules on software cruising and teaching laboratory designs, will be incorporated into online courses and disseminated through a dedicated web site. The project outcomes of this project will be disseminated broadly through publications, software releases, and technology transfer.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Dinghao",
+   "pi_last_name": "Wu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Dinghao Wu",
+   "pi_email_addr": "dwu@ist.psu.edu",
+   "nsf_id": "000555271",
+   "pi_start_date": "2012-08-30",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Peng",
+   "pi_last_name": "Liu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Peng Liu",
+   "pi_email_addr": "pliu@ist.psu.edu",
+   "nsf_id": "000240285",
+   "pi_start_date": "2012-08-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Pennsylvania State Univ University Park",
+  "inst_street_address": "201 OLD MAIN",
+  "inst_street_address_2": "",
+  "inst_city_name": "UNIVERSITY PARK",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "8148651372",
+  "inst_zip_code": "168021503",
+  "inst_country_name": "United States",
+  "cong_dist_code": "15",
+  "st_cong_dist_code": "PA15",
+  "org_lgl_bus_name": "THE PENNSYLVANIA STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "NPM2J7MSCF61"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Pennsylvania State Univ University Park",
+  "perf_str_addr": "313E ISTBuilding",
+  "perf_city_name": "University Park",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "168027000",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": null,
+  "perf_st_cong_dist": "PA",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 499745.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project introduces a novel concurrent software monitoring technology, called Software Cruising. It leverages multicore architectures and utilizes lock-free data structures and algorithms to achieve efficient and scalable security monitoring. Applications include, but are not limited to, heap buffer integrity checking, kernel memory cruising, data structure and object invariant checking, rootkit detection, and information provenance and flow checking. In the software cruising framework, one or more dedicated threads, called cruising threads, are running concurrently with the monitored user or kernel code, to constantly check, or cruise, for security violations. Customized lock-free non-blocking data structures and algorithms are designed to reduce the communication or synchronization overhead between the monitor threads and the application code. We believe the software cruising technology would result in a game-changing capability in security monitoring for the cloud-based and traditional computing and network systems.&nbsp;</p>\n<p>We have developed three prototypical cruising systems: Cruiser, a lock-free concurrent heap buffer overflow monitor in user space; Kruiser, a semi-synchronized non-blocking operating system kernel cruiser; and iCruiser, a monitoring tool for checking data structure integrity under attacks. Our experimental results showed that software cruising can be deployed in practice with modest overhead. In user space, heap buffer overflow cruising incurs only about 5% performance overhead on average for the SPEC CPU2006 benchmark, and the Apache throughput slowdown is only 3% maximum and negligible on average. In kernel space, it is negligible for SPEC, and 3.8% for Apache. Both technologies can be deployed in large scale for cloud data centers and server farms in an automated manner. For data structure integrity checking, new techniques such as secure canary are designed to increase the system security.</p>\n<p>We have also developed TaintPipe, a tool that decouples taint analysis using the software cruising technology. Taint analysis has a wide variety of compelling applications in security tasks, from software attack detection to data lifetime analysis, but the high overhead associated with dynamic taint analysis has been severely restricted its application scope. By adopting the idea of software cruising, we parallelize the taint analysis using a pipeline style, which has resulted significant performance improvement (about 2.4 times speedup on execution time) over the existing technology.</p>\n<p>The Uroboros tool (Reassembleable Disassembling, Usenix Security 2015) we developed for reverse engineering binary executables (e.g., for applying software cruising to binary code directly, or other security retrofitting on binary code) advocates a new direction on reverse engineering and binary code retrofitting.&nbsp;</p>\n<p>The project has resulted in significant publications in top tier venues including PLDI, NDSS, USENIX Security, ASE, and DSN. We have published more than 30 research papers on this project. In particular, the Cruiser result is published in PLDI, kruiser is published in NDSS, TaintPipe and Uroboros are published in USENIX Security, and StraightTaint in ASE.</p>\n<p>We have also open source released the Cruiser and Uroboros prototypes to facilitate further research and dissemination. The source code is available at Cruiser: https://code.google.com/p/cruiser-psu/ and Uroboros: https://github.com/s3team/uroboros.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/05/2016<br>\n\t\t\t\t\tModified by: Dinghao&nbsp;Wu</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2016/1223710/1223710_10208937_1474750375620_architecture--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1223710/1223710_10208937_1474750375620_architecture--rgov-800width.jpg\" title=\"Software Cruising\"><img src=\"/por/images/Reports/POR/2016/1223710/1223710_10208937_1474750375620_architecture--rgov-66x44.jpg\" alt=\"Software Cruising\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Software Cruising</div>\n<div class=\"imageCredit\">Dinghao Wu</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Dinghao&nbsp;Wu</div>\n<div class=\"imageTitle\">Software Cruising</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2016/1223710/1223710_10208937_1474750544710_cruiseer--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1223710/1223710_10208937_1474750544710_cruiseer--rgov-800width.jpg\" title=\"Cruiser\"><img src=\"/por/images/Reports/POR/2016/1223710/1223710_10208937_1474750544710_cruiseer--rgov-66x44.jpg\" alt=\"Cruiser\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Cruiser</div>\n<div class=\"imageCredit\">Dinghao Wu</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Dinghao&nbsp;Wu</div>\n<div class=\"imageTitle\">Cruiser</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2016/1223710/1223710_10208937_1474750615369_kruiser--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1223710/1223710_10208937_1474750615369_kruiser--rgov-800width.jpg\" title=\"kruiser\"><img src=\"/por/images/Reports/POR/2016/1223710/1223710_10208937_1474750615369_kruiser--rgov-66x44.jpg\" alt=\"kruiser\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">kruiser: kernel cruising</div>\n<div class=\"imageCredit\">Dinghao Wu</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Dinghao&nbsp;Wu</div>\n<div class=\"imageTitle\">kruiser</div>\n</div>\n</li>\n<li>\n<a href=\"/por/images/Reports/POR/2016/1223710/1223710_10208937_1474750671711_iCruiser--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2016/1223710/1223710_10208937_1474750671711_iCruiser--rgov-800width.jpg\" title=\"iCruiser\"><img src=\"/por/images/Reports/POR/2016/1223710/1223710_10208937_1474750671711_iCruiser--rgov-66x44.jpg\" alt=\"iCruiser\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">iCruiser</div>\n<div class=\"imageCredit\">Dinghao Wu</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Dinghao&nbsp;Wu</div>\n<div class=\"imageTitle\">iCruiser</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThis project introduces a novel concurrent software monitoring technology, called Software Cruising. It leverages multicore architectures and utilizes lock-free data structures and algorithms to achieve efficient and scalable security monitoring. Applications include, but are not limited to, heap buffer integrity checking, kernel memory cruising, data structure and object invariant checking, rootkit detection, and information provenance and flow checking. In the software cruising framework, one or more dedicated threads, called cruising threads, are running concurrently with the monitored user or kernel code, to constantly check, or cruise, for security violations. Customized lock-free non-blocking data structures and algorithms are designed to reduce the communication or synchronization overhead between the monitor threads and the application code. We believe the software cruising technology would result in a game-changing capability in security monitoring for the cloud-based and traditional computing and network systems. \n\nWe have developed three prototypical cruising systems: Cruiser, a lock-free concurrent heap buffer overflow monitor in user space; Kruiser, a semi-synchronized non-blocking operating system kernel cruiser; and iCruiser, a monitoring tool for checking data structure integrity under attacks. Our experimental results showed that software cruising can be deployed in practice with modest overhead. In user space, heap buffer overflow cruising incurs only about 5% performance overhead on average for the SPEC CPU2006 benchmark, and the Apache throughput slowdown is only 3% maximum and negligible on average. In kernel space, it is negligible for SPEC, and 3.8% for Apache. Both technologies can be deployed in large scale for cloud data centers and server farms in an automated manner. For data structure integrity checking, new techniques such as secure canary are designed to increase the system security.\n\nWe have also developed TaintPipe, a tool that decouples taint analysis using the software cruising technology. Taint analysis has a wide variety of compelling applications in security tasks, from software attack detection to data lifetime analysis, but the high overhead associated with dynamic taint analysis has been severely restricted its application scope. By adopting the idea of software cruising, we parallelize the taint analysis using a pipeline style, which has resulted significant performance improvement (about 2.4 times speedup on execution time) over the existing technology.\n\nThe Uroboros tool (Reassembleable Disassembling, Usenix Security 2015) we developed for reverse engineering binary executables (e.g., for applying software cruising to binary code directly, or other security retrofitting on binary code) advocates a new direction on reverse engineering and binary code retrofitting. \n\nThe project has resulted in significant publications in top tier venues including PLDI, NDSS, USENIX Security, ASE, and DSN. We have published more than 30 research papers on this project. In particular, the Cruiser result is published in PLDI, kruiser is published in NDSS, TaintPipe and Uroboros are published in USENIX Security, and StraightTaint in ASE.\n\nWe have also open source released the Cruiser and Uroboros prototypes to facilitate further research and dissemination. The source code is available at Cruiser: https://code.google.com/p/cruiser-psu/ and Uroboros: https://github.com/s3team/uroboros.\n\n \n\n\t\t\t\t\tLast Modified: 10/05/2016\n\n\t\t\t\t\tSubmitted by: Dinghao Wu"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1850434",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: SaTC: Towards Paving the Way for Large-Scale Malware Analysis: New Directions in Generic Binary Unpacking",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2019-05-01",
+ "awd_exp_date": "2022-04-30",
+ "tot_intn_awd_amt": 174998.0,
+ "awd_amount": 174998.0,
+ "awd_min_amd_letter_date": "2019-04-17",
+ "awd_max_amd_letter_date": "2019-04-17",
+ "awd_abstract_narration": "Malware, with harmful intent to compromise computer systems, has been one of the significant challenges to the Internet. Driven by the rich profit, relentless malware developers apply various obfuscation schemes to circumvent malware detection. Binary packing is the most common obfuscation adopted by malware authors to camouflage malicious code and defeat popular signature-based malware detection. Binary packing first encrypts or compresses malware code as data, making it immune to static analysis. At run time, the attached unpacking routine writes the decoded code to memory and then resumes malicious payload execution. Over the past two decades, packed malware has been a challenge in the anti-malware landscape. This project addresses this problem from new angles and advances the state of the art in terms of better performance and stronger anti-analysis resistance. The project's novelties are new methods and efficient tools to extract packed malware payload without the prior knowledge of packers. The project's impacts are paving the way for large-scale malware analysis and helping people respond to emerging malware attacks promptly.\r\n\r\nExisting generic binary unpacking work suffers from high runtime overhead and lack of anti-analysis resistance. This project conducts an in-depth study on an enormous variety of malware packers and reveals promising research directions to address the long-standing binary unpacking problem. Based on the investigator's encouraging preliminary results, this project goes one step further to address the unsolved challenges and pave the last mile to a complete generic unpacking solution. This project develops a novel machine learning model to extract the semantics of the original entry point. The proposed technique notably outperforms existing search heuristics. This project's hybrid de-obfuscation approaches enable unpacking tools to recover a fully functional version of the original binary, which is the ultimate goal of unpacking technique. To achieve stronger resilience to various anti-analysis attacks, the investigator advances the use of hardware supported lower-level features to detecting the end of unpacking.  The proposed methods can handle a broader range of malware packers, even brand new packers.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jiang",
+   "pi_last_name": "Ming",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jiang Ming",
+   "pi_email_addr": "jming@tulane.edu",
+   "nsf_id": "000734583",
+   "pi_start_date": "2019-04-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Arlington",
+  "inst_street_address": "701 S NEDDERMAN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "ARLINGTON",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "8172722105",
+  "inst_zip_code": "760199800",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT ARLINGTON",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "LMLUKUPJJ9N3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Arlington",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "760190145",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "25",
+  "perf_st_cong_dist": "TX25",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 174998.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Malware with harmful intents to compromise computer systems, has been one of the major challenges to the Internet. Driven by the rich profit, relentless malware developers apply various obfuscation schemes to circumvent malware detection. Binary packing is the most common obfuscation adopted by malware authors to camouflage malicious code and defeat popular signature-based malware detection. Binary packing first encrypts or compresses malware code as data, making it immune to static analysis. At run time, the attached unpacking routine writes the decoded code to memory and then resumes malicious payload execution. Especially, most packers recover the original code by going through a set of &ldquo;written-then-executed&rdquo; layers, which renders determining the end of the unpacking increasingly difficult. Many generic binary unpacking approaches have been proposed to extract packed binaries without the prior knowledge of packers. However, the high runtime overhead and lack of anti-analysis resistance have severely limited their adoptions. Over the past two decades, packed malware is always a veritable challenge to anti-malware landscape.</p>\n<p>Our research first revisits the long-standing binary unpacking problem from a new angle: packers consistently obfuscate the standard use of API calls. Malware&rsquo;s import address table (IAT), which acts as a lookup table for dynamically linked API calls, is typically erased by packers for further obfuscation; and then unpacking routine, like a custom dynamic loader, will reconstruct IAT before original code resumes execution. This insight motivates us to design an efficient unpacking approach, called BinUnpack. BinUnpack&rsquo;s success rate is significantly better than that of existing tools with several orders of magnitude performance boost. However, BinUnpack still leaves several challenging problems unsolved. First, some programs unpacked by BinUnpack cannot function correctly. The major reason is IAT obfuscation such as API redirection renders the memory dump&rsquo;s IAT misleading. Second, as BinUnpack is a software-based solution, it is still possible for a skilled attacker to circumvent BinUnpack, such as performing DLL integrity check.</p>\n<p>Our project continues this line of research and explores the utilization of hardware features in conjunction with novel program analysis and machine learning techniques. We have achieved the following two goals: 1) defeat various IAT obfuscation schemes using a hardware-assisted solution to extract the executable payload from packed malware; 2) examine the feasibility of unpacking using hardware performance counters so that a motivated adversary is more laborious to evade it. Our research advances the state of the art in malicious software analysis and helps security venders respond to emerging malware attacks promptly, leading to more secure cyberspace.</p>\n<p>Our educational and outreach goals for this project are to develop hands-on security course materials and participate in the McNair Scholars Program. Specifically, the measures that have been taken include: transforming the proposed prototypes into two new hands-on security instruction labs;&nbsp;offering a new graduate-level course (\"Practical Malware Analysis\"); participating in the McNair Scholars Program to assist qualified undergraduates from low-income/first-generation or under-represented backgrounds to enter the professoriate.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/21/2022<br>\n\t\t\t\t\tModified by: Jiang&nbsp;Ming</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nMalware with harmful intents to compromise computer systems, has been one of the major challenges to the Internet. Driven by the rich profit, relentless malware developers apply various obfuscation schemes to circumvent malware detection. Binary packing is the most common obfuscation adopted by malware authors to camouflage malicious code and defeat popular signature-based malware detection. Binary packing first encrypts or compresses malware code as data, making it immune to static analysis. At run time, the attached unpacking routine writes the decoded code to memory and then resumes malicious payload execution. Especially, most packers recover the original code by going through a set of \"written-then-executed\" layers, which renders determining the end of the unpacking increasingly difficult. Many generic binary unpacking approaches have been proposed to extract packed binaries without the prior knowledge of packers. However, the high runtime overhead and lack of anti-analysis resistance have severely limited their adoptions. Over the past two decades, packed malware is always a veritable challenge to anti-malware landscape.\n\nOur research first revisits the long-standing binary unpacking problem from a new angle: packers consistently obfuscate the standard use of API calls. Malware\u2019s import address table (IAT), which acts as a lookup table for dynamically linked API calls, is typically erased by packers for further obfuscation; and then unpacking routine, like a custom dynamic loader, will reconstruct IAT before original code resumes execution. This insight motivates us to design an efficient unpacking approach, called BinUnpack. BinUnpack\u2019s success rate is significantly better than that of existing tools with several orders of magnitude performance boost. However, BinUnpack still leaves several challenging problems unsolved. First, some programs unpacked by BinUnpack cannot function correctly. The major reason is IAT obfuscation such as API redirection renders the memory dump\u2019s IAT misleading. Second, as BinUnpack is a software-based solution, it is still possible for a skilled attacker to circumvent BinUnpack, such as performing DLL integrity check.\n\nOur project continues this line of research and explores the utilization of hardware features in conjunction with novel program analysis and machine learning techniques. We have achieved the following two goals: 1) defeat various IAT obfuscation schemes using a hardware-assisted solution to extract the executable payload from packed malware; 2) examine the feasibility of unpacking using hardware performance counters so that a motivated adversary is more laborious to evade it. Our research advances the state of the art in malicious software analysis and helps security venders respond to emerging malware attacks promptly, leading to more secure cyberspace.\n\nOur educational and outreach goals for this project are to develop hands-on security course materials and participate in the McNair Scholars Program. Specifically, the measures that have been taken include: transforming the proposed prototypes into two new hands-on security instruction labs; offering a new graduate-level course (\"Practical Malware Analysis\"); participating in the McNair Scholars Program to assist qualified undergraduates from low-income/first-generation or under-represented backgrounds to enter the professoriate. \n\n \n\n\t\t\t\t\tLast Modified: 05/21/2022\n\n\t\t\t\t\tSubmitted by: Jiang Ming"
+ }
+}

@@ -1,0 +1,145 @@
+{
+ "awd_id": "1710371",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CDS&E: SuperSTARLU - STacked, AcceleRated Algorithms for Sparse Linear Systems",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Rob Beverly",
+ "awd_eff_date": "2017-08-01",
+ "awd_exp_date": "2022-07-31",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 516000.0,
+ "awd_min_amd_letter_date": "2017-08-02",
+ "awd_max_amd_letter_date": "2020-06-11",
+ "awd_abstract_narration": "Computing systems and associated software have long had to make trade-offs in terms of performance due to an imbalance between fast processors and their slower memory hierarchies. Newly released technologies for 3D stacked memories provide an opportunity to reduce this imbalance by providing higher memory bandwidths and novel ways for accessing memory. One of the most promising techniques for using 3D stacked memory involves \"memory-centric\" computation that moves computation as close as possible to main memory. However, there is little understanding of how to best use these new memory technologies in libraries and applications, even as this hardware is slated to be integrated into near-term exascale supercomputing systems. The goal of this project is to understand the techniques and approaches that are needed to fully utilize 3D stacked memories and to demonstrate a useful set of computational primitives that can serve as a template for accelerating large scientific codes with these new memory components.\r\n\r\nThis research considers the specific problem of using \"memory-centric\" processors effectively to implement sparse primitives as part of a library that supports a number of key scientific applications including radiation transport, fluid flow, and fusion simulations. This library, SuperLU_DIST, is a sparse direct solver library designed for distributed memory multicore systems that has previously been accelerated on both NVIDIA?s graphics co-processors and Intel?s Xeon Phi co-processor.  While this prior work has thus far yielded promising speedups, it has also revealed critical and fundamental algorithmic performance bottlenecks related to memory data transfers. This research project will investigate whether these bottlenecks may be mitigated by using emerging memory-centric co-processors. Such co-processors, which include Micron?s Hybrid Memory Cube (HMC) and High-Bandwidth Memory (HBM), combine 3-D stacked memories and FPGAs to provide lower latency, higher bandwidth data transfer, and support for near-memory data processing. The project will use high-level languages like OpenCL to take advantage of such technologies and will utilize a mix of algorithmic advances and software library development to improve application performance. Additionally, this work will lead to a new, open-source release of SuperLU called Super Stacked, Accelerated LU (SuperSTARLU), which will be made available to application developers and will be demonstrated on one of the next-generation systems with memory-centric co-processors, such as NERSC?s Cori.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jeffrey",
+   "pi_last_name": "Young",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jeffrey Young",
+   "pi_email_addr": "jyoung9@gatech.edu",
+   "nsf_id": "000667897",
+   "pi_start_date": "2017-08-02",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Richard",
+   "pi_last_name": "Vuduc",
+   "pi_mid_init": "W",
+   "pi_sufx_name": "",
+   "pi_full_name": "Richard W Vuduc",
+   "pi_email_addr": "richie@cc.gatech.edu",
+   "nsf_id": "000080331",
+   "pi_start_date": "2017-08-02",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Edward",
+   "pi_last_name": "Riedy",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Edward J Riedy",
+   "pi_email_addr": "jason.riedy@cc.gatech.edu",
+   "nsf_id": "000596559",
+   "pi_start_date": "2017-08-02",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Georgia Tech Research Corporation",
+  "inst_street_address": "926 DALNEY ST NW",
+  "inst_street_address_2": "",
+  "inst_city_name": "ATLANTA",
+  "inst_state_code": "GA",
+  "inst_state_name": "Georgia",
+  "inst_phone_num": "4048944819",
+  "inst_zip_code": "303186395",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "GA05",
+  "org_lgl_bus_name": "GEORGIA TECH RESEARCH CORP",
+  "org_prnt_uei_num": "EMW9FC8J3HN4",
+  "org_uei_num": "EMW9FC8J3HN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Georgia Institute of Technology",
+  "perf_str_addr": "255 North Avenue",
+  "perf_city_name": "Atlanta",
+  "perf_st_code": "GA",
+  "perf_st_name": "Georgia",
+  "perf_zip_code": "303320002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "05",
+  "perf_st_cong_dist": "GA05",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "808400",
+   "pgm_ele_name": "CDS&E"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "8084",
+   "pgm_ref_txt": "CDS&E"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 500000.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 16000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project focused on the understanding and development of memory-centric computational primitives for algorithms and applications that operate on sparse data accesses. The specific goals of the project were to implement primitives that are key to SuperLU, a widely used sparse linear solver that has applications in areas including airplane design, oil and gas exploration, cancer screening and diagnosis, and the study of alternative energy sources. A key deliverable of this project is code contributions and updates to the distributed shared-memory version of SuperLU, called SuperLU_DIST.</p>\n<p>Through the duration of this program, two distinct themes have been explored. One is the usage of computational primitives for gathering and scattering data. Data can either be scattered from a dense data input to a sparse data output or alternatively gathered from a sparse data structure into a more dense format, where a dense format may allow for more efficient computation using current-generation Graphics Processing Units (GPUs) or Central Processing Units (CPUs). However, scattering and gathering of data can be challenging to perform according to the desired input and output data structures. Analysis of the SuperLU linear solver has shown that one of its core kernels, the panel factorization phase, can suffer from performance inefficiencies due to a large subset of the kernel's runtime requiring gather/scatter operations.</p>\n<p>The approach to optimize gather/scatter was to develop a general-purpose framework that can be used to study and understand these patterns via the Spatter benchmark suite. This suite allows for the evaluation of application-specific and user-defined gather/scatter patterns written in modern HPC languages like OpenMP, CUDA, and SYCL. &nbsp;The Spatter benchmark suite provides a general framework for executing tunable gather/scatter related to Schur's Complement that can be extended for other HPC applications. This benchmark suite has been open-sourced and released to the public, and experimental analysis has demonstrated that it can be used to provide more in-depth investigations of gather/scatter dominant workloads on both CPUs and GPUs as well as initial support for evaluating 3D stacked memories on Field Programmable Gate Arrays (FPGAs).</p>\n<p>The second distinct theme of this research focuses on improvements of the SuperLU codebase by incorporating communication-avoiding techniques to reduce the amount of data that needs to be moved between devices in a heterogeneous system. For example, a compute node might have a CPU and multiple GPUs, and it needs to move data between each component to complete each step of the linear solve. If the underlying data structures and algorithms can be partially replicated to reduce or \"avoid\" that amount of data movement, the algorithm can be said to be communication-avoiding. Work on a 3D communication-avoiding algorithm related to this project has been incorporated into recent SuperLU_DIST releases, resulting in substantial speedups of 2.7 to 7.2 times for tested non-planar and planar sparse matrices. This work was recently recognized as significant by SIAM's Activity Group on Supercomputing via a Best Paper prize in 2022. Overall, this project has resulted in over 10 publications on topics related to the evaluation of sparse primitives for HPC applications and improvements related to SuperLU.</p>\n<p>Finally, this project has made a significant impact on the training and education of involved students with two graduate students and seven undergraduate students contributing to the research program via funded research and a supplemental Research Experience for Undergraduates program. The work of these students has been included in open-source releases and has contributed to paper and poster presentations to communities of interest.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/23/2023<br>\n\t\t\t\t\tModified by: Jeffrey&nbsp;Young</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project focused on the understanding and development of memory-centric computational primitives for algorithms and applications that operate on sparse data accesses. The specific goals of the project were to implement primitives that are key to SuperLU, a widely used sparse linear solver that has applications in areas including airplane design, oil and gas exploration, cancer screening and diagnosis, and the study of alternative energy sources. A key deliverable of this project is code contributions and updates to the distributed shared-memory version of SuperLU, called SuperLU_DIST.\n\nThrough the duration of this program, two distinct themes have been explored. One is the usage of computational primitives for gathering and scattering data. Data can either be scattered from a dense data input to a sparse data output or alternatively gathered from a sparse data structure into a more dense format, where a dense format may allow for more efficient computation using current-generation Graphics Processing Units (GPUs) or Central Processing Units (CPUs). However, scattering and gathering of data can be challenging to perform according to the desired input and output data structures. Analysis of the SuperLU linear solver has shown that one of its core kernels, the panel factorization phase, can suffer from performance inefficiencies due to a large subset of the kernel's runtime requiring gather/scatter operations.\n\nThe approach to optimize gather/scatter was to develop a general-purpose framework that can be used to study and understand these patterns via the Spatter benchmark suite. This suite allows for the evaluation of application-specific and user-defined gather/scatter patterns written in modern HPC languages like OpenMP, CUDA, and SYCL.  The Spatter benchmark suite provides a general framework for executing tunable gather/scatter related to Schur's Complement that can be extended for other HPC applications. This benchmark suite has been open-sourced and released to the public, and experimental analysis has demonstrated that it can be used to provide more in-depth investigations of gather/scatter dominant workloads on both CPUs and GPUs as well as initial support for evaluating 3D stacked memories on Field Programmable Gate Arrays (FPGAs).\n\nThe second distinct theme of this research focuses on improvements of the SuperLU codebase by incorporating communication-avoiding techniques to reduce the amount of data that needs to be moved between devices in a heterogeneous system. For example, a compute node might have a CPU and multiple GPUs, and it needs to move data between each component to complete each step of the linear solve. If the underlying data structures and algorithms can be partially replicated to reduce or \"avoid\" that amount of data movement, the algorithm can be said to be communication-avoiding. Work on a 3D communication-avoiding algorithm related to this project has been incorporated into recent SuperLU_DIST releases, resulting in substantial speedups of 2.7 to 7.2 times for tested non-planar and planar sparse matrices. This work was recently recognized as significant by SIAM's Activity Group on Supercomputing via a Best Paper prize in 2022. Overall, this project has resulted in over 10 publications on topics related to the evaluation of sparse primitives for HPC applications and improvements related to SuperLU.\n\nFinally, this project has made a significant impact on the training and education of involved students with two graduate students and seven undergraduate students contributing to the research program via funded research and a supplemental Research Experience for Undergraduates program. The work of these students has been included in open-source releases and has contributed to paper and poster presentations to communities of interest.\n\n\t\t\t\t\tLast Modified: 05/23/2023\n\n\t\t\t\t\tSubmitted by: Jeffrey Young"
+ }
+}

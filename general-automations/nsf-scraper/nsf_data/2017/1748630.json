@@ -1,0 +1,105 @@
+{
+ "awd_id": "1748630",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NeTS: Small: Collaborative Research: Identifying Design and Operational Loopholes in Cellular Network Protocols",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Monisha Ghosh",
+ "awd_eff_date": "2017-08-25",
+ "awd_exp_date": "2018-06-30",
+ "tot_intn_awd_amt": 44109.0,
+ "awd_amount": 44109.0,
+ "awd_min_amd_letter_date": "2017-09-11",
+ "awd_max_amd_letter_date": "2017-09-11",
+ "awd_abstract_narration": "The cellular network is the largest wireless infrastructure deployed today. It plays an important role to provide users mobile Internet access and cellular voice service.  A key design component of the cellular network is its signaling protocols, which operate on the control plane. Compared with their Internet counterparts, these signaling protocols are more complex to ensure vital control functions, such as mobility support, radio resource control, session management for data and voice, to name a few. Consequently, their proper design and operation are critical to both the cellular operators and the users.  The objective of this project is to devise tools and verify the correctness of signaling protocols in current cellular networks by: (i)identifying design loopholes in the protocols defined by the 3GPP standards, as well as operational slips made by operators and vendors, (ii) analyzing their root causes and performance penalties, and (iii) devising techniques that fix such problems. The proposed activities can enhance the reliability of cellular networks in both design and practice.  They will help us to not only better understand how to avoid design and implementation mistakes in a cellular system, but also to renovate the current protocol design and even affect the upcoming 5G cellular technology in its standardization. If successful, the results will facilitate the design and practice of a more reliable mobile Internet infrastructure for our society. The project will also recruit and train a new generation of students and engineers, including those from minority groups, who are technically ready for the mobile Internet era.  The PIs will interact closely with the related industry for possible technology transfer.   \r\n\r\nThe research in this project has two main thrusts. One is to devise tools and identify design loopholes and operational slips in cellular networks. The project will develop a cellular-specific verifier that adapts generic model-checking techniques with domain-specific cellular knowledge, and uses phone-based empirical validation. The project will apply model checking to identify a superset of potential candidate loopholes, and then validate the real ones through experiments over operational 3G/4G carriers, by focusing on design slips in two categories: (a) protocols interaction with shared certain context (e.g., connection status, commands, IP address, virtual connection), which is popular in cross-layer, cross-domain, and inter-system protocol communications; (b) Out-of-sequenced signaling delivery. When the designated sequence of control messages is disrupted, its cost is way beyond lost or delayed messages. Missequenced signals are reacted based on defined semantics and may trigger wrong protocol operations. This project will also assess the real-world impact of both categories of issues through user studies over operational carriers. The other thrust of this project is to propose fixes to the identified loopholes. The proposed solutions incorporate new heuristics into cellular signaling protocols and call for concerted effort on the mobile device and the network infrastructure.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Chunyi",
+   "pi_last_name": "Peng",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Chunyi Peng",
+   "pi_email_addr": "chunyi@purdue.edu",
+   "nsf_id": "000652380",
+   "pi_start_date": "2017-09-11",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Purdue University",
+  "inst_street_address": "2550 NORTHWESTERN AVE # 1100",
+  "inst_street_address_2": "",
+  "inst_city_name": "WEST LAFAYETTE",
+  "inst_state_code": "IN",
+  "inst_state_name": "Indiana",
+  "inst_phone_num": "7654941055",
+  "inst_zip_code": "479061332",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "IN04",
+  "org_lgl_bus_name": "PURDUE UNIVERSITY",
+  "org_prnt_uei_num": "YRXVL4JYCEF5",
+  "org_uei_num": "YRXVL4JYCEF5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Purdue University",
+  "perf_str_addr": "305 N. University Street",
+  "perf_city_name": "West Lafayette",
+  "perf_st_code": "IN",
+  "perf_st_name": "Indiana",
+  "perf_zip_code": "479072107",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "IN04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0114",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001415DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2014,
+   "fund_oblg_amt": 44109.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project has investigated cellular network protocol correctness, which is a critical requirement for mobile Internet indispensable to billions of mobile users and the cellular network operators. Throughout this project, we have successfully developed an effective and systematic approach to verifying network protocol design and operations, opening up data-driven cellular network research using open-sourced tools developed by us, resolving the identified problems and gaining insights in enhancing next-generation (5G) cellular technologies.</p>\n<p>We summarize our main outcomes in two aspects.</p>\n<p><strong>Intellectual Merit: </strong>Our results have advanced our understanding to certain challenging performance and reliability problems, as well as opening up solutions which have not been explored before. As the first group, we have applied formal methods to verify cellular network protocol and operations and inspired follows-up in the recent years. We have been fostering and leading data-driven cellular network research by providing open sourced tools which empower third-party researchers to conduct their work using data collected on their own phones, without requiring assistance from operators. This greatly boosts cellular network research in the past years and also helps companies and starts-up to deliver products for quality cellular network access. Our results have been published at top networking conferences and journals including SIGCOMM&rsquo;14, TON&rsquo;16, NSDI&rsquo;16, SIGMETRICS&rsquo;16, INFOCOM&rsquo;16, MobiCom&rsquo;16, MobiCom&rsquo;17, ICNP&rsquo;17, SIGMETRICS&rsquo;18, MobiCom&rsquo;18, IMC&rsquo;18 and ICCCN&rsquo;18 (Invited paper).</p>\n<p>&nbsp;</p>\n<p><strong>Broader Impacts: &nbsp;</strong>We have released software and datasets collected by us to the public. Specifically, we have released MobileInsight 3.3 with substantial updates and new feature development with a well-organized website (<a href=\"http://www.mobileinsight.net/)\">http://www.mobileinsight.net/)</a> to better disseminate our results and foster the community research. MobileInsight has gained monument with downloads and uses by 130+ companies and universities. MobileInsight has received the Best Community Paper Award at MobiCom'16, which&nbsp;contributes the most to the broader research community in terms of real data or new software/hardware or artifacts. We also made our first release of MI-LAB in Nov 2017 (<a href=\"http://mssn.cs.purdue.edu/mobileinsight_lab/milab/)\">http://milab.cs.purdue.edu/)</a>, which is being developed to support advanced features. It supported seven tasks and collected 17,440+ logs (around 400GB), which are about to release. All these helped third-party research groups, companies and starts-up to perform tasks out of their demands. The issues identified by us have been reported to US carriers and involved companies like Google, which eventually help to enhance user experience in the era of Mobile Internet. Last but not the least, through curriculum development, graduate/undergraduate advising, independent studies and online tutorials, this project helps training a new generation of students and workforce in information and communication technology.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/09/2018<br>\n\t\t\t\t\tModified by: Chunyi&nbsp;Peng</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project has investigated cellular network protocol correctness, which is a critical requirement for mobile Internet indispensable to billions of mobile users and the cellular network operators. Throughout this project, we have successfully developed an effective and systematic approach to verifying network protocol design and operations, opening up data-driven cellular network research using open-sourced tools developed by us, resolving the identified problems and gaining insights in enhancing next-generation (5G) cellular technologies.\n\nWe summarize our main outcomes in two aspects.\n\nIntellectual Merit: Our results have advanced our understanding to certain challenging performance and reliability problems, as well as opening up solutions which have not been explored before. As the first group, we have applied formal methods to verify cellular network protocol and operations and inspired follows-up in the recent years. We have been fostering and leading data-driven cellular network research by providing open sourced tools which empower third-party researchers to conduct their work using data collected on their own phones, without requiring assistance from operators. This greatly boosts cellular network research in the past years and also helps companies and starts-up to deliver products for quality cellular network access. Our results have been published at top networking conferences and journals including SIGCOMM?14, TON?16, NSDI?16, SIGMETRICS?16, INFOCOM?16, MobiCom?16, MobiCom?17, ICNP?17, SIGMETRICS?18, MobiCom?18, IMC?18 and ICCCN?18 (Invited paper).\n\n \n\nBroader Impacts:  We have released software and datasets collected by us to the public. Specifically, we have released MobileInsight 3.3 with substantial updates and new feature development with a well-organized website (http://www.mobileinsight.net/) to better disseminate our results and foster the community research. MobileInsight has gained monument with downloads and uses by 130+ companies and universities. MobileInsight has received the Best Community Paper Award at MobiCom'16, which contributes the most to the broader research community in terms of real data or new software/hardware or artifacts. We also made our first release of MI-LAB in Nov 2017 (http://milab.cs.purdue.edu/), which is being developed to support advanced features. It supported seven tasks and collected 17,440+ logs (around 400GB), which are about to release. All these helped third-party research groups, companies and starts-up to perform tasks out of their demands. The issues identified by us have been reported to US carriers and involved companies like Google, which eventually help to enhance user experience in the era of Mobile Internet. Last but not the least, through curriculum development, graduate/undergraduate advising, independent studies and online tutorials, this project helps training a new generation of students and workforce in information and communication technology.\n\n \n\n\t\t\t\t\tLast Modified: 08/09/2018\n\n\t\t\t\t\tSubmitted by: Chunyi Peng"
+ }
+}

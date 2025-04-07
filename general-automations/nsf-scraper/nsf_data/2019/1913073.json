@@ -1,0 +1,105 @@
+{
+ "awd_id": "1913073",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Efficient Numerical Simulations of Oceanic Flows with Application to Coastal Modeling",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2019-07-15",
+ "awd_exp_date": "2022-06-30",
+ "tot_intn_awd_amt": 167916.0,
+ "awd_amount": 167916.0,
+ "awd_min_amd_letter_date": "2019-07-10",
+ "awd_max_amd_letter_date": "2019-07-10",
+ "awd_abstract_narration": "Coastal ocean modeling has been developed for better serving climate impact assessments that are closely related to pressing society problems such as coastal flooding. To resolve multiple scales in ocean circulations and deal with complicated coastal topography, it is quite natural to use multi-resolution meshes in numerical simulations of oceanic flows. Typically, the grid sizes would vary from 100 km in major ocean basins to 1km in coastal regions. This, however, brings grand computational challenges: During explicit time integrations, the time step size would be restricted by the smallest grid size in the entire domain. Such a small time step size would make the numerical simulations unaffordable, especially for the purpose of climate modeling because long-term simulations are needed in such applications. To overcome this issue, this project puts forth new schemes that will be substantially more efficient compared to current algorithms used in ocean models while keeping their fidelity. This award will support one graduate student each year.\r\n\r\nWe propose innovative, efficient numerical methods for simulating oceanic flows with application to coastal modeling. The new approaches comprise two major mathematical and computational developments: (i) conservative local time stepping, which allows the use of spatially-variable time step sizes in regions of different resolutions while keeping desired physical quantities conserved; and (ii) structure-preserving reduced order modeling, which significantly decreases the spatial dimension while maintaining the inherent Hamiltonian structure in the resultant low dimensional model. These approaches provide fast yet accurate and stable numerical solvers for simulating oceanic flow problems, which would enhance the simulation capability of current coastal ocean modeling and further increase computational efficiency required to solve pressing society problems such as coastal flooding. As a first step, we will study the shallow water equations on an unstructured, multi-resolution mesh. The effectiveness of the proposed methods will be demonstrated by verifying their stability and numerical accuracy. More complicated test cases and real-world applications will be further considered in this project.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Zhu",
+   "pi_last_name": "Wang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Zhu Wang",
+   "pi_email_addr": "wangzhu@math.sc.edu",
+   "nsf_id": "000636774",
+   "pi_start_date": "2019-07-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of South Carolina at Columbia",
+  "inst_street_address": "1600 HAMPTON ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLUMBIA",
+  "inst_state_code": "SC",
+  "inst_state_name": "South Carolina",
+  "inst_phone_num": "8037777093",
+  "inst_zip_code": "292083403",
+  "inst_country_name": "United States",
+  "cong_dist_code": "06",
+  "st_cong_dist_code": "SC06",
+  "org_lgl_bus_name": "UNIVERSITY OF SOUTH CAROLINA",
+  "org_prnt_uei_num": "Q93ZDA59ZAR5",
+  "org_uei_num": "J22LNTMEDP73"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of South Carolina at Columbia",
+  "perf_str_addr": "",
+  "perf_city_name": "Columbia",
+  "perf_st_code": "SC",
+  "perf_st_name": "South Carolina",
+  "perf_zip_code": "292080001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "SC06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 167916.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"p1\">Ocean modeling on multi-resolution meshes enables regionally enhanced simulations within global domains, which aims to resolve multiple scales comprised in the geophysical flows and to better handle the complicated coastal topography. However, the time step size in the associated numerical simulations would be restricted by the smallest grid size in the entire domain when explicit time-stepping methods are used, which often results in unaffordable computational cost.<span>&nbsp;</span></p>\n<p class=\"p1\"><span>&nbsp;</span>This project developed efficient numerical approaches for simulating oceanic flows with application to coastal modeling. The developments include (i) high-order explicit conservative local time stepping methods, which allow the use of spatially-variable time step sizes in regions of different resolutions while keeping desired physical quantities conserved; (ii) iterative algorithms and parallel-in-time preconditioners for parameter-dependent and random problems, which ensure fast data generations to derive low-dimensional models; and (iii) structure-preserving reduced order modeling, which significantly decreases the spatial dimension while maintaining the underlying Hamiltonian structure thus preserving the physics of the system. The accuracy, stability and robustness of these approaches have been theoretically analyzed and numerically investigated. These new methods enable fast simulations of parametric ocean models on unstructured meshes, which could further enhance the simulation capability of current coastal ocean modeling and make possible many runs of ocean simulation codes.</p>\n<p class=\"p1\">The project supported two graduate students (one is female) in Department of Mathematics at University of South Carolina over the three-year period. The students received comprehensive trainings on model order reduction, numerical analysis and simulations of the flow problems. Combining with the NSF-RTG: Mathematical Foundation of Data Science at University of South Carolina, the PI supervised four undergraduate students (one of them is from underrepresented group) in 2022 summer REU program, in which the undergraduates explored the dimensionality reduction and reduced order modeling using classic approaches and deep learning techniques. Nine papers have been published in internationally prestigious journals based on the research findings. To further expose the research outcomes to the public, eight mini-symposium talks, research seminar and colloquium talks have been presented by the PI.&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/18/2022<br>\n\t\t\t\t\tModified by: Zhu&nbsp;Wang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "Ocean modeling on multi-resolution meshes enables regionally enhanced simulations within global domains, which aims to resolve multiple scales comprised in the geophysical flows and to better handle the complicated coastal topography. However, the time step size in the associated numerical simulations would be restricted by the smallest grid size in the entire domain when explicit time-stepping methods are used, which often results in unaffordable computational cost. \n This project developed efficient numerical approaches for simulating oceanic flows with application to coastal modeling. The developments include (i) high-order explicit conservative local time stepping methods, which allow the use of spatially-variable time step sizes in regions of different resolutions while keeping desired physical quantities conserved; (ii) iterative algorithms and parallel-in-time preconditioners for parameter-dependent and random problems, which ensure fast data generations to derive low-dimensional models; and (iii) structure-preserving reduced order modeling, which significantly decreases the spatial dimension while maintaining the underlying Hamiltonian structure thus preserving the physics of the system. The accuracy, stability and robustness of these approaches have been theoretically analyzed and numerically investigated. These new methods enable fast simulations of parametric ocean models on unstructured meshes, which could further enhance the simulation capability of current coastal ocean modeling and make possible many runs of ocean simulation codes.\nThe project supported two graduate students (one is female) in Department of Mathematics at University of South Carolina over the three-year period. The students received comprehensive trainings on model order reduction, numerical analysis and simulations of the flow problems. Combining with the NSF-RTG: Mathematical Foundation of Data Science at University of South Carolina, the PI supervised four undergraduate students (one of them is from underrepresented group) in 2022 summer REU program, in which the undergraduates explored the dimensionality reduction and reduced order modeling using classic approaches and deep learning techniques. Nine papers have been published in internationally prestigious journals based on the research findings. To further expose the research outcomes to the public, eight mini-symposium talks, research seminar and colloquium talks have been presented by the PI. \n\n\t\t\t\t\tLast Modified: 08/18/2022\n\n\t\t\t\t\tSubmitted by: Zhu Wang"
+ }
+}

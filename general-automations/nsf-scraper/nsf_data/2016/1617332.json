@@ -1,0 +1,105 @@
+{
+ "awd_id": "1617332",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RI: Small: Collaborative Research: New Directions in Spectral Learning with Applications to Comparative Epigenomics",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032925149",
+ "po_email": "kwhang@nsf.gov",
+ "po_sign_block_name": "Kenneth Whang",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2018-07-31",
+ "tot_intn_awd_amt": 226775.0,
+ "awd_amount": 81988.0,
+ "awd_min_amd_letter_date": "2016-06-30",
+ "awd_max_amd_letter_date": "2018-09-07",
+ "awd_abstract_narration": "The goal of this project is to design algorithms and statistical tools to build complex probabilistic models from massive quantities of data in a computationally efficient manner. This work is motivated by an important current problem in genomics, namely comparative epigenetics. While every cell in an organism has the same DNA sequence, epigenetic marks on the genome are known to be highly correlated with variation between cells. A pressing question in biology is to compare the epigenetic marks across different cell types to understand these differences. While massive amounts of data has been generated for this purpose, there is a great need for computational tools that can operate on this data and provide biologically meaningful solutions. This work will thus advance the state-of-the-art in the analysis of large complex data sets and advance the field of epigenomics. The broader impact of the work includes organizing workshops and tutorials at machine learning and bioinformatics venues, involving undergraduate students in research, and releasing open source software for the community.\r\n\r\nSpecifically, this project will focus on spectral learning, which has recently provided principled and computationally efficient methods for learning parameters of probabilistic graphical models. While spectral learning methods are known for some simple latent variable models, a major barrier to realizing the potential of spectral learning in real-world applications is the lack of associated statistical tools such as regularization and hypothesis testing that connect these methods in a principled manner to end-to-end application frameworks. This project proposes to develop such statistical tools by integrating modern spectral learning with the classical statistical literature in econometrics on Generalized Method of Moments. The project proposes to formulate the statistical generalized method of moment procedures for complex graphical models in the context of spectral learning as constrained optimization problems and proposes ways of solving these problems. Finally, the novel algorithms developed will be directly applied to model epigenomics data sets from the ENCODE and Roadmap Epigenomics Projects to yield methods that can operate on the massive quantities of data and provide biologically meaningful solutions. These algorithms and software have the potential to have a widespread impact on the understanding of complex human diseases such as cancer and mental disorders. This will provide a basis for designing therapeutics for these diseases and advance society towards a future of Personalized Medicine.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Kevin",
+   "pi_last_name": "Chen",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Kevin Chen",
+   "pi_email_addr": "kcchen@biology.rutgers.edu",
+   "nsf_id": "000622541",
+   "pi_start_date": "2016-06-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Rutgers University New Brunswick",
+  "inst_street_address": "3 RUTGERS PLZ",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEW BRUNSWICK",
+  "inst_state_code": "NJ",
+  "inst_state_name": "New Jersey",
+  "inst_phone_num": "8489320150",
+  "inst_zip_code": "089018559",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "NJ12",
+  "org_lgl_bus_name": "RUTGERS, THE STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "M1LVPE5GLSD9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Rutgers, The State University of NJ",
+  "perf_str_addr": "145 Bevier Rd.",
+  "perf_city_name": "Piscataway",
+  "perf_st_code": "NJ",
+  "perf_st_name": "New Jersey",
+  "perf_zip_code": "088548009",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "NJ06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 81987.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goals of this project were to further develop a novel machine learning technique, called \"Spectral Learning\", and to apply the methods to the interpretation of non-coding regions of the human genome. The latter is a very important problem in modern biomedical science since it is a key step towards interpreting the genetic basis of human disease, because recent work in the Genomics field has shown that a large fraction of human diseases are caused by mutations in non-coding regions of the genome. In other words, they are more likely to affect the expression of protein-coding genes rather than the actual structure of the proteins themselves. In this project, we made significant progress in two scientific directions. On the computational methodology side, we combined our spectral learning techniques, implemented in the Spectacle software, with modern deep learning methods from the machine learning field. More specifically we used spectral learning to learn features of the input DNA sequences and then combined those features using neural networks to make predictions about the ability of those sequences to promote gene expression in human cells. On the biological side, we collaborated with our experimentalist colleagues to apply these methods to a new data set of potential gene regulatory elements from the human genome. In addition, this project supported several PhD students and undergraduate students doing research at Rutgers University.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/07/2018<br>\n\t\t\t\t\tModified by: Kevin&nbsp;Chen</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goals of this project were to further develop a novel machine learning technique, called \"Spectral Learning\", and to apply the methods to the interpretation of non-coding regions of the human genome. The latter is a very important problem in modern biomedical science since it is a key step towards interpreting the genetic basis of human disease, because recent work in the Genomics field has shown that a large fraction of human diseases are caused by mutations in non-coding regions of the genome. In other words, they are more likely to affect the expression of protein-coding genes rather than the actual structure of the proteins themselves. In this project, we made significant progress in two scientific directions. On the computational methodology side, we combined our spectral learning techniques, implemented in the Spectacle software, with modern deep learning methods from the machine learning field. More specifically we used spectral learning to learn features of the input DNA sequences and then combined those features using neural networks to make predictions about the ability of those sequences to promote gene expression in human cells. On the biological side, we collaborated with our experimentalist colleagues to apply these methods to a new data set of potential gene regulatory elements from the human genome. In addition, this project supported several PhD students and undergraduate students doing research at Rutgers University.\n\n\t\t\t\t\tLast Modified: 10/07/2018\n\n\t\t\t\t\tSubmitted by: Kevin Chen"
+ }
+}

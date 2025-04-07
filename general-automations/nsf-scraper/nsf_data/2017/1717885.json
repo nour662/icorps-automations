@@ -1,0 +1,101 @@
+{
+ "awd_id": "1717885",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR:  Small:  Collaborative Research:  GAMBIT:  Efficient Graph Processing on a Memristor-based Embedded Computing Platform",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Matt Mutka",
+ "awd_eff_date": "2017-10-01",
+ "awd_exp_date": "2020-09-30",
+ "tot_intn_awd_amt": 100000.0,
+ "awd_amount": 100000.0,
+ "awd_min_amd_letter_date": "2017-08-02",
+ "awd_max_amd_letter_date": "2017-08-02",
+ "awd_abstract_narration": "Recently, graph processing received intensive interests in light of a wide range of needs to understand relationships. Graph analytics are widely used in key domains in our society, such as cyber security, social media, infrastructure monitoring (e.g., smart building), natural language processing, system biology, recommendation systems. These important applications all fall into fast-growing sectors in computer science and engineering research. On the other hand, in many emerging applications, the graph analytics are ideally performed in the edge (e.g., a mobile or embedded system) in order to allow the relationships between events to be discovered in the field where they are unfold. Unfortunately, the existing embedded systems equipped with conventional computing units like CPU/GPU cannot efficiently process large graphs in real time. Instead, large data centers are required to perform the graph processing, either incurring extra latency and energy due to data communication or only providing forensic (offline) graph analysis. This research aims to effectively enable graph analytics in embedded system with disruptive emerging technology. \r\n\r\nTo support graph analytic applications with the limited hardware resources in embedded systems, this project seeks to develop GAMBIT -- a memristor-based embedded computing framework for efficient graph processing. Our research program aims to develop multi-layer techniques to enable highly efficient (e.g., 1000X) and scalable real-time graph analytics in embedded systems (i.e., network edge). It contains research efforts across circuit, architecture, system and vertical integration. (1) At the circuit level, the project proposes a memristor-based graph computing core to enable efficient computations for graph processing. (2) At the architecture level, the project proposes the complete memristor-based graph processing architecture for partitioned graph and various algorithms. (3) At the system level, the project develops a graph analytics framework for embedded systems and integrates it with a popular embedded OS. (4) For integration, the project proposes to develop an emulator of the proposed architecture and cross-layer HW/SW co-design techniques. This project contributes to society through engaging high-school and undergraduate students from minority-serving institutions into research, attracting women and under-represented groups into graduate education, expanding the computer engineering curriculum with graph processing and other emerging applications in embedded systems, disseminating research infrastructure for education and training, and collaborating with the industry.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Hai",
+   "pi_last_name": "Li",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Hai Li",
+   "pi_email_addr": "hai.li@duke.edu",
+   "nsf_id": "000538107",
+   "pi_start_date": "2017-08-02",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Duke University",
+  "inst_street_address": "2200 W MAIN ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "DURHAM",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9196843030",
+  "inst_zip_code": "277054640",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "NC04",
+  "org_lgl_bus_name": "DUKE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "TP7EK8DZV6N5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Duke University",
+  "perf_str_addr": "2200 W. Main St, Suite 710",
+  "perf_city_name": "Durham",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "277054010",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "NC04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 100000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The objective of this project is to improve graph processing efficiency on embedded computing platforms through integrated innovations at circuit, architecture, and system/application levels. Design the memristor (aka ReRAM) technology based graph computing unit in graphic analytics has been investigated. Furthermore, the in-memory graph processing accelerator architecture for low energy consumption of both computation and data movements has been explored.</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; During the first year, we mainly focused on the work on ?GraphR: Accelerating Graph Processing Using ReRAM.? Graph processing is well-known for the poor locality and high memory bandwidth requirement. GraphR is the first ReRAM-based graph processing accelerator. GraphR follows the principle of near-data processing and explores the opportunity of performing massive parallel analog operations with low hardware and energy cost. The GraphR architecture consists of two components: memory ReRAM and graph engine (GE). The core graph computations are performed in sparse matrix format in GEs (ReRAM crossbars). With small subgraphs processed by GEs, the gain of performing parallel operations overshadows the wastes due to sparsity. A conference paper has been published and presented in the Proceeding of the 24th IEEE International Symposium on High Performance Computer Architecture (HPCA?18) in February 2018.</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We then move our study to ?HyPar: Towards Hybrid Parallelism for Deep Learning Accelerator Array.? To achieve high performance and energy efficiency, hardware acceleration (especially inference) of Deep Neural Networks (DNNs) is intensively studied both in academia and industry. However, we still face two challenges: large DNN models and datasets, which incur frequent off-chip memory accesses; and the training of DNNs, which is not well-explored in recent accelerator designs. To truly provide high throughput and energy efficient acceleration for the training of deep and large models, we inevitably need to use multiple accelerators to explore the coarse-grain parallelism, compared to the fine-grain parallelism inside a layer considered in most of the existing architectures. In this work, we propose a solution HYPAR to determine layer-wise parallelism for deep neural network training with an array of DNN accelerators. A conference paper has been published and presented in HPCA 2019.</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Toward to the end of the project, we systematically and constructively analyzed the latest developments in the field of machine learning accelerator research. Based on the parallelism being explored, we classify the design space of current deep learning accelerators into three levels: (1) Processing engine level parallelism comes naturally from the fact that the massive multiplication and accumulation operations can be processed independently. At this level, operation primitives are organized in a high-parallel fashion to exploit the temporal and/or spatial parallelism. (2) Memory level parallelism is achieved through parallel and efficient memory accessing to alleviate the memory wall effect. At this level, memory is optimized for parallel accessing to disjoint memory space and high data utilization. (3) Accelerator level parallelism emerges as a recent research direction to address the coordination of multiple accelerators in a heterogeneous system. At this level, parallelism for multiple accelerators is proposed. Our study help researchers identify and evaluate the effectiveness of different DNN hardware implementations and apply these concepts to future DNN accelerator designs and accelerator designs in other areas such as graph processing and genome sequencing. Our research leads to a conference publication in the Proceeding of the Asia and South Pacific Design Automation Conference (ASPDAC) in January 2020.</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The proposed project makes great efforts to make the students aware of the challenges in future intelligent computing systems. Moreover, the proposed project inspires students' interests in bio-inspired computing and prepares them for future systems that require the combined enhancements at both software and hardware implementation levels. The developed research outcomes, including the hardware implementation, architectural level optimization methodologies, and software/hardware co-design methodologies, have been seamlessly integrated into classes of ECE590-04 ? Emerging Memory and Computer Architecture, ECE590-12 ? Neuromorphic Computing, and ECE590-10 Computer Engineering ML &amp; Deep Neural Nets. Tutorial talks have been given in other classes for senior undergraduate students and graduate students, such as ECE 2193: Advanced VLSI Design, and ECE/CoE 1885: Departmental Seminar. The corresponding course materials and project information become available to the students to conduct the analysis and evaluation of the heterogeneous system integrating both conventional CPUs and GPUs and novel neuromorphic computing accelerators.</p>\n<p>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;The research has been conducted in close collaboration with our industrial and military partners, such as HPE Labs, and Air Force Research Lab. We also work on the novel circuit development with AFRL. We envision the direct transfer of our proposed techniques to the industry during our whole research process. This research's outcomes have direct impacts on future graph computing systems by making the research outcomes publicly accessible to those parameters. The internship or other opportunities provided by our collaborators also offer versatile training for undergraduate and graduate students as well as the ideal initial step of technology transferring.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/30/2020<br>\n\t\t\t\t\tModified by: Hai&nbsp;Li</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n      The objective of this project is to improve graph processing efficiency on embedded computing platforms through integrated innovations at circuit, architecture, and system/application levels. Design the memristor (aka ReRAM) technology based graph computing unit in graphic analytics has been investigated. Furthermore, the in-memory graph processing accelerator architecture for low energy consumption of both computation and data movements has been explored.\n\n      During the first year, we mainly focused on the work on ?GraphR: Accelerating Graph Processing Using ReRAM.? Graph processing is well-known for the poor locality and high memory bandwidth requirement. GraphR is the first ReRAM-based graph processing accelerator. GraphR follows the principle of near-data processing and explores the opportunity of performing massive parallel analog operations with low hardware and energy cost. The GraphR architecture consists of two components: memory ReRAM and graph engine (GE). The core graph computations are performed in sparse matrix format in GEs (ReRAM crossbars). With small subgraphs processed by GEs, the gain of performing parallel operations overshadows the wastes due to sparsity. A conference paper has been published and presented in the Proceeding of the 24th IEEE International Symposium on High Performance Computer Architecture (HPCA?18) in February 2018.\n\n      We then move our study to ?HyPar: Towards Hybrid Parallelism for Deep Learning Accelerator Array.? To achieve high performance and energy efficiency, hardware acceleration (especially inference) of Deep Neural Networks (DNNs) is intensively studied both in academia and industry. However, we still face two challenges: large DNN models and datasets, which incur frequent off-chip memory accesses; and the training of DNNs, which is not well-explored in recent accelerator designs. To truly provide high throughput and energy efficient acceleration for the training of deep and large models, we inevitably need to use multiple accelerators to explore the coarse-grain parallelism, compared to the fine-grain parallelism inside a layer considered in most of the existing architectures. In this work, we propose a solution HYPAR to determine layer-wise parallelism for deep neural network training with an array of DNN accelerators. A conference paper has been published and presented in HPCA 2019.\n\n      Toward to the end of the project, we systematically and constructively analyzed the latest developments in the field of machine learning accelerator research. Based on the parallelism being explored, we classify the design space of current deep learning accelerators into three levels: (1) Processing engine level parallelism comes naturally from the fact that the massive multiplication and accumulation operations can be processed independently. At this level, operation primitives are organized in a high-parallel fashion to exploit the temporal and/or spatial parallelism. (2) Memory level parallelism is achieved through parallel and efficient memory accessing to alleviate the memory wall effect. At this level, memory is optimized for parallel accessing to disjoint memory space and high data utilization. (3) Accelerator level parallelism emerges as a recent research direction to address the coordination of multiple accelerators in a heterogeneous system. At this level, parallelism for multiple accelerators is proposed. Our study help researchers identify and evaluate the effectiveness of different DNN hardware implementations and apply these concepts to future DNN accelerator designs and accelerator designs in other areas such as graph processing and genome sequencing. Our research leads to a conference publication in the Proceeding of the Asia and South Pacific Design Automation Conference (ASPDAC) in January 2020.\n\n      The proposed project makes great efforts to make the students aware of the challenges in future intelligent computing systems. Moreover, the proposed project inspires students' interests in bio-inspired computing and prepares them for future systems that require the combined enhancements at both software and hardware implementation levels. The developed research outcomes, including the hardware implementation, architectural level optimization methodologies, and software/hardware co-design methodologies, have been seamlessly integrated into classes of ECE590-04 ? Emerging Memory and Computer Architecture, ECE590-12 ? Neuromorphic Computing, and ECE590-10 Computer Engineering ML &amp; Deep Neural Nets. Tutorial talks have been given in other classes for senior undergraduate students and graduate students, such as ECE 2193: Advanced VLSI Design, and ECE/CoE 1885: Departmental Seminar. The corresponding course materials and project information become available to the students to conduct the analysis and evaluation of the heterogeneous system integrating both conventional CPUs and GPUs and novel neuromorphic computing accelerators.\n\n      The research has been conducted in close collaboration with our industrial and military partners, such as HPE Labs, and Air Force Research Lab. We also work on the novel circuit development with AFRL. We envision the direct transfer of our proposed techniques to the industry during our whole research process. This research's outcomes have direct impacts on future graph computing systems by making the research outcomes publicly accessible to those parameters. The internship or other opportunities provided by our collaborators also offer versatile training for undergraduate and graduate students as well as the ideal initial step of technology transferring.\n\n \n\n\t\t\t\t\tLast Modified: 12/30/2020\n\n\t\t\t\t\tSubmitted by: Hai Li"
+ }
+}

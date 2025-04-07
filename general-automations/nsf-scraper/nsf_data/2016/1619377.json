@@ -1,0 +1,105 @@
+{
+ "awd_id": "1619377",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NeTS: Small: Universal Packet Scheduling",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Darleen Fisher",
+ "awd_eff_date": "2016-10-01",
+ "awd_exp_date": "2020-09-30",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2016-08-29",
+ "awd_max_amd_letter_date": "2016-08-29",
+ "awd_abstract_narration": "It is of vital importance that we maintain and evolve the infrastructure that underlies the modern Internet. A fundamental question within this infrastructure is that of `packet scheduling' which determines the order in which data is transmitted across the switches and links that form the Internet's infrastructure. Packet scheduling is thus a richly explored research topic: as networks evolve to support new applications and technologies, so do the requirements placed on packet schedulers, hence researchers and practitioners alike have continued to develop new schedulers to suit current needs. The implicit assumption to date has been that new scheduling goals necessitate new scheduling algorithms. The research being undertaken in this project posits an alternate viewpoint: rather than design new scheduling algorithms as new needs emerge, it asks whether there exists a single scheduling algorithm that can be tuned (i.e., through configuration changes) to match the performance of any scheduling algorithm.  Thus the project addresses a seemingly simple question: Is there a universal packet scheduling (UPS) algorithm? The results will clarify the fundamental limits of any packet scheduling algorithm as well as influence the development of network switch hardware. \r\n\r\nThe existence of a universal or near-universal packet scheduler could lower the barrier to evolving network infrastructure and hence contribute to the broader goal of ensuring that the Internet continues to serve as a transformative communication service for the nation. The results of the research will be incorporated into the curriculum for networking courses at both the undergraduate and graduate levels.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Sylvia",
+   "pi_last_name": "Ratnasamy",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sylvia Ratnasamy",
+   "pi_email_addr": "sylvia@eecs.berkeley.edu",
+   "nsf_id": "000579413",
+   "pi_start_date": "2016-08-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "International Computer Science Institute",
+  "inst_street_address": "2150 SHATTUCK AVE",
+  "inst_street_address_2": "SUITE 250",
+  "inst_city_name": "BERKELEY",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "5106662900",
+  "inst_zip_code": "947041345",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "CA12",
+  "org_lgl_bus_name": "INTERNATIONAL COMPUTER SCIENCE INSTITUTE",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GSRMP1QCXU74"
+ },
+ "perf_inst": {
+  "perf_inst_name": "International Computer Science Institute",
+  "perf_str_addr": "1947 Center Street, Suite 600",
+  "perf_city_name": "Berkeley",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "947041159",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "CA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project posed a seemingly simple question: is there a universal packet scheduling algorithm? More precisely, the research analyzed whether there is a single packet scheduling algorithm that, at a network-wide level, can perfectly match the results of any given scheduling algorithm. The proposal presented a comprehensive agenda to explore the question of universal packet scheduling from both a theoretical and empirical perspective.</p>\n<p><br />The traditional approach to packet scheduling has been to design packet scheduling algorithms in reaction to the goals for the predominant workloads of that time. However, this mindset implies certain overheads: designing and deploying new networking hardware is slow and expensive and our predictions about future workloads and their needs may fall short. Rather than design new standalone algorithms for current workloads, this project instead aimed for a forward-looking approach to packet scheduling in which a single algorithm can be tuned or configured to meet evolving and diverse application needs.</p>\n<p>&nbsp;</p>\n<p>The key outcomes from this project include: (i) a formal definition of the concept of a &ldquo;universal&rdquo; packet scheduler (UPS) accompanied by formal proofs on the theoretical limits of a UPS (published at NSDI&rsquo;16), (ii) optimal scheduling algorithms for practical contexts (the IRN RDMA scheduler published at SIGCOMM&rsquo;18), (iii) a practical scheduler that achieves the performance benefits of UPS but is amenable to a practical implementation. Our ADS. (Approximate and Deployable SRPT) scheduler is such a scheduler (published in CCR, July 2019 issue). Taken together, the above results provide a comprehensive suite of solutions for building efficient yet adaptive network infrastructure.</p>\n<p><br />&nbsp;The research improves our fundamental understanding of packet scheduling which is one of the key functions in any network. There is a vast research literature on packet scheduling that continues to grow even today: as networks evolve to support new environments, applications and technologies, so do the requirements placed on packet schedulers, hence researchers and practitioners alike have continued to develop new scheduling algorithms to suit current needs. The implicit assumption to date has been that new scheduling goals necessitate new scheduling algorithms.</p>\n<p>We have shown that an alternate viewpoint is feasible both in theory and practice; rather than design new scheduling algorithms as new needs emerge, &nbsp;we showed that one can approximate a single scheduling algorithm that can be tuned (e.g., through configuration changes) to match the performance of any scheduling algorithm.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/07/2021<br>\n\t\t\t\t\tModified by: Sylvia&nbsp;Ratnasamy</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project posed a seemingly simple question: is there a universal packet scheduling algorithm? More precisely, the research analyzed whether there is a single packet scheduling algorithm that, at a network-wide level, can perfectly match the results of any given scheduling algorithm. The proposal presented a comprehensive agenda to explore the question of universal packet scheduling from both a theoretical and empirical perspective.\n\n\nThe traditional approach to packet scheduling has been to design packet scheduling algorithms in reaction to the goals for the predominant workloads of that time. However, this mindset implies certain overheads: designing and deploying new networking hardware is slow and expensive and our predictions about future workloads and their needs may fall short. Rather than design new standalone algorithms for current workloads, this project instead aimed for a forward-looking approach to packet scheduling in which a single algorithm can be tuned or configured to meet evolving and diverse application needs.\n\n \n\nThe key outcomes from this project include: (i) a formal definition of the concept of a \"universal\" packet scheduler (UPS) accompanied by formal proofs on the theoretical limits of a UPS (published at NSDI\u201916), (ii) optimal scheduling algorithms for practical contexts (the IRN RDMA scheduler published at SIGCOMM\u201918), (iii) a practical scheduler that achieves the performance benefits of UPS but is amenable to a practical implementation. Our ADS. (Approximate and Deployable SRPT) scheduler is such a scheduler (published in CCR, July 2019 issue). Taken together, the above results provide a comprehensive suite of solutions for building efficient yet adaptive network infrastructure.\n\n\n The research improves our fundamental understanding of packet scheduling which is one of the key functions in any network. There is a vast research literature on packet scheduling that continues to grow even today: as networks evolve to support new environments, applications and technologies, so do the requirements placed on packet schedulers, hence researchers and practitioners alike have continued to develop new scheduling algorithms to suit current needs. The implicit assumption to date has been that new scheduling goals necessitate new scheduling algorithms.\n\nWe have shown that an alternate viewpoint is feasible both in theory and practice; rather than design new scheduling algorithms as new needs emerge,  we showed that one can approximate a single scheduling algorithm that can be tuned (e.g., through configuration changes) to match the performance of any scheduling algorithm.\n\n \n\n\t\t\t\t\tLast Modified: 02/07/2021\n\n\t\t\t\t\tSubmitted by: Sylvia Ratnasamy"
+ }
+}

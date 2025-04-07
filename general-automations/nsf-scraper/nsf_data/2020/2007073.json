@@ -1,0 +1,101 @@
+{
+ "awd_id": "2007073",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CNS Core: Small: Test Framework for Easy and Effective Use of Network Verification",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Ann Von Lehmen",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 499980.0,
+ "awd_amount": 499980.0,
+ "awd_min_amd_letter_date": "2020-08-10",
+ "awd_max_amd_letter_date": "2020-08-10",
+ "awd_abstract_narration": "As more people, devices, and services connect to the Internet, computer networks continue to increase in scale and complexity, which then leads to frequent outages and security breaches. In recent years, formal modeling and analysis has emerged as a promising approach to eliminate a broad class of network incidents.  However, today, this approach is difficult to use and provides no feedback on how well it is being employed or the degree of protection it provides. This project aims to develop methods and metrics that enable easy and effective use of formal network analysis. It will develop a test framework which network engineers can use to easily specify correctness conditions for their networks and quantify how effectively the network is being tested.  Consistent with NSF\u2019s mission, these capabilities will help secure and fortify computer networks, which have become an integral part of modern society and business.\r\n\r\nAt a high-level, the project will develop capabilities similar to those in test frameworks for software. However, networks are different from software, and the project will thus need to develop new domain-specific methods and metrics. Key areas of investigation include 1) an operational model for networks that can provide a basis for scientifically measuring test coverage; 2) coverage metrics that quantify how well different aspects of the network are being evaluated by a suite of tests; 3) a high-level language to easily express network invariants and facilitate coverage computation; and 4) a practical system that embeds these concepts and integrates with existing network verification tools to make formal analysis accessible to average network engineers. The work will be informed by close collaboration with industry and networks engineers that are either already using formal network analysis or motivated to do so.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ratul",
+   "pi_last_name": "Mahajan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ratul Mahajan",
+   "pi_email_addr": "ratul@cs.washington.edu",
+   "nsf_id": "000814755",
+   "pi_start_date": "2020-08-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Washington",
+  "inst_street_address": "4333 BROOKLYN AVE NE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SEATTLE",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "2065434043",
+  "inst_zip_code": "981951016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "WA07",
+  "org_lgl_bus_name": "UNIVERSITY OF WASHINGTON",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HD1WMN6945W6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Washington",
+  "perf_str_addr": "185 Stevens Way CSE101",
+  "perf_city_name": "Seattle",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "981952350",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "WA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 499980.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-63f49c32-7fff-a673-1d65-01a0df99b0f1\"> </span></p>\r\n<p dir=\"ltr\"><span>The reliability of computer networks is key to businesses and modern society alike. Over the last decade, researchers and practitioners have developed a range of automated testing and verification approaches that can significantly boost network reliability by using formal methods to find issues in network forwarding (data plane) and route computation (control plane). But outages continue to occur despite the use of these approaches when the specifications provided to these tools (i.e., test suits) are poor and do not cover all critical aspects. However, it is difficult for network engineers to know when their specifications are poor and which aspects are not being tested.&nbsp;</span></p>\r\n<p dir=\"ltr\"><span>This project developed metrics that characterize the quality of network specifications (i.e., test suites) and developed systems to compute those metrics efficiently for large, real-world networks. The metrics cover both the data plane and control plane of networks. While inspired by code coverage metrics, such test coverage metrics are a first for the networking domain. The systems leverage the ability of binary decision diagrams to reason about large spaces of packets and leverage the semantics of control plane computation for efficiently computing the impact of the control plane on the data plane. They enable network engineers to harden specifications and reduce the risk of outages by identifying untested parts of the network. The project also developed a new, relational approach to writing specifications that is much simpler. Using this approach, network engineers can specify and test network changes, even if they do not know the behavior of the network prior to the change. The research results were published at top-tier peer reviewed venues including ACM SIGCOMM 2021, 2023, and 2024, and USENIX NSDI 2023.</span></p>\r\n<p dir=\"ltr\"><span>One of the systems was deployed at a large cloud provider (Microsoft Azure), where it uncovered several testing gaps. Within the first month of its deployment, it helped improve testing by covering 89% more forwarding rules and 17% more network interfaces. Another system was awarded the IRTF (Internet Research Task Force) Applied Networking Research Prize and parts of it are in the process of being standardized at the IETF (Internet Engineering Task Force) via its RFC process. A third system was deployed at another large cloud provider, where it now validates the correctness of all network changes to the global backbone. The project also helped train two graduate students in this interdisciplinary area, one female undergraduate student, and one female high school student.</span></p>\r\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 12/15/2024<br>\nModified by: Ratul&nbsp;Mahajan</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\n \r\n\n\nThe reliability of computer networks is key to businesses and modern society alike. Over the last decade, researchers and practitioners have developed a range of automated testing and verification approaches that can significantly boost network reliability by using formal methods to find issues in network forwarding (data plane) and route computation (control plane). But outages continue to occur despite the use of these approaches when the specifications provided to these tools (i.e., test suits) are poor and do not cover all critical aspects. However, it is difficult for network engineers to know when their specifications are poor and which aspects are not being tested.\r\n\n\nThis project developed metrics that characterize the quality of network specifications (i.e., test suites) and developed systems to compute those metrics efficiently for large, real-world networks. The metrics cover both the data plane and control plane of networks. While inspired by code coverage metrics, such test coverage metrics are a first for the networking domain. The systems leverage the ability of binary decision diagrams to reason about large spaces of packets and leverage the semantics of control plane computation for efficiently computing the impact of the control plane on the data plane. They enable network engineers to harden specifications and reduce the risk of outages by identifying untested parts of the network. The project also developed a new, relational approach to writing specifications that is much simpler. Using this approach, network engineers can specify and test network changes, even if they do not know the behavior of the network prior to the change. The research results were published at top-tier peer reviewed venues including ACM SIGCOMM 2021, 2023, and 2024, and USENIX NSDI 2023.\r\n\n\nOne of the systems was deployed at a large cloud provider (Microsoft Azure), where it uncovered several testing gaps. Within the first month of its deployment, it helped improve testing by covering 89% more forwarding rules and 17% more network interfaces. Another system was awarded the IRTF (Internet Research Task Force) Applied Networking Research Prize and parts of it are in the process of being standardized at the IETF (Internet Engineering Task Force) via its RFC process. A third system was deployed at another large cloud provider, where it now validates the correctness of all network changes to the global backbone. The project also helped train two graduate students in this interdisciplinary area, one female undergraduate student, and one female high school student.\r\n\n\n\t\t\t\t\tLast Modified: 12/15/2024\n\n\t\t\t\t\tSubmitted by: RatulMahajan\n"
+ }
+}

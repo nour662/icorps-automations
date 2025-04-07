@@ -1,0 +1,109 @@
+{
+ "awd_id": "2026921",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: SaTC: TTP: Medium: NextGenPQ: Post-quantum Schemes for Next Generation Applications",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Rob Beverly",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 300000.0,
+ "awd_amount": 300000.0,
+ "awd_min_amd_letter_date": "2020-08-31",
+ "awd_max_amd_letter_date": "2020-10-14",
+ "awd_abstract_narration": "The proliferation of advances in quantum computing has put traditional cryptography and our entire computing and communications infrastructure in danger. The threat is so urgent that the US National Institute of Standards and Technology (NIST) started a standardization competition in 2018 to select one or more so-called Post-Quantum (PQ) schemes. Traditional cryptographic techniques are expected to be replaced by PQ-schemes in applications during the next decade. Unfortunately, the upgrade comes at a cost since PQ-schemes require significant increases in digital signature and public key sizes. The team of researchers tackle this very problem. The project's novelties are new techniques to enable aggregation of PQ signatures. The project's impacts are reduced energy consumption and spectrum efficiency in applications such as sensor networks, 5G systems, IoT devices, and Blockchains.\r\n\r\nThe investigation is structured in two research modules. The first module focuses on developing aggregation extensions to existing PQ signature algorithms. The work in this module includes a thorough security analysis of the extensions, and selection of parameters for secure and efficient construction. The second module investigates new PQ signature schemes that allow more efficient aggregation. This module will build on the recent works on homomorphic signature schemes. The security and performance of the developed signature schemes will be scrutinized and compared to existing schemes.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jeffrey",
+   "pi_last_name": "Hoffstein",
+   "pi_mid_init": "E",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jeffrey E Hoffstein",
+   "pi_email_addr": "jhoff@math.brown.edu",
+   "nsf_id": "000188175",
+   "pi_start_date": "2020-08-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Brown University",
+  "inst_street_address": "1 PROSPECT ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "PROVIDENCE",
+  "inst_state_code": "RI",
+  "inst_state_name": "Rhode Island",
+  "inst_phone_num": "4018632777",
+  "inst_zip_code": "029129100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "01",
+  "st_cong_dist_code": "RI01",
+  "org_lgl_bus_name": "BROWN UNIVERSITY",
+  "org_prnt_uei_num": "E3FDXZ6TBHW3",
+  "org_uei_num": "E3FDXZ6TBHW3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Brown University",
+  "perf_str_addr": "151 Thayer Street",
+  "perf_city_name": "Providence",
+  "perf_st_code": "RI",
+  "perf_st_name": "Rhode Island",
+  "perf_zip_code": "029129002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "01",
+  "perf_st_cong_dist": "RI01",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  },
+  {
+   "pgm_ref_code": "9150",
+   "pgm_ref_txt": "EXP PROG TO STIM COMP RES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 300000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The object of this project was to devise a method of collecting many digitital signatures on many documents, signed by different users with different public private key pairs.&nbsp; &nbsp;The objective was to combine them all into one considerably shorter signature which could then be verified in one simple and efficient step, as opposed to verifying them each individually.&nbsp; &nbsp;We succeeded in doing most of this, but were unable to come up with a way that did not include a list of the somewhat lengthy public keys associated to each signature.&nbsp; This can be finessed by including a list of the relevant public keys, or a reference to a place where such a list is kept, but we were not happy with this imperfection</p>\n<p>&nbsp;</p>\n<p>On a brighter note, in the last year of the grant I switched to thinking about templateless biometric authentication - a way of using biometric data to authenticate a person, and to create a unique secret key associated to that person, and derivable from an image, without storing any private biometric information anywhere.&nbsp; &nbsp;This eliminates privacy issues, and the abiliity to generate a unique and reproducable key from an ephemeral image has never been achieved before.&nbsp; This has consequences that go far beyond biometric authentication applications.&nbsp; The technique can be used, for example, to guide drones in an environment flooded with up to 40% nolise.</p><br>\n<p>\n Last Modified: 11/29/2023<br>\nModified by: Jeffrey&nbsp;Hoffstein</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe object of this project was to devise a method of collecting many digitital signatures on many documents, signed by different users with different public private key pairs. The objective was to combine them all into one considerably shorter signature which could then be verified in one simple and efficient step, as opposed to verifying them each individually. We succeeded in doing most of this, but were unable to come up with a way that did not include a list of the somewhat lengthy public keys associated to each signature. This can be finessed by including a list of the relevant public keys, or a reference to a place where such a list is kept, but we were not happy with this imperfection\n\n\n\n\n\nOn a brighter note, in the last year of the grant I switched to thinking about templateless biometric authentication - a way of using biometric data to authenticate a person, and to create a unique secret key associated to that person, and derivable from an image, without storing any private biometric information anywhere. This eliminates privacy issues, and the abiliity to generate a unique and reproducable key from an ephemeral image has never been achieved before. This has consequences that go far beyond biometric authentication applications. The technique can be used, for example, to guide drones in an environment flooded with up to 40% nolise.\t\t\t\t\tLast Modified: 11/29/2023\n\n\t\t\t\t\tSubmitted by: JeffreyHoffstein\n"
+ }
+}

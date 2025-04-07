@@ -1,0 +1,105 @@
+{
+ "awd_id": "1618963",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: SMALL: Parallelization and Memory System Techniques for Heterogeneous Microprocessors",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Yuanyuan Yang",
+ "awd_eff_date": "2016-08-01",
+ "awd_exp_date": "2021-07-31",
+ "tot_intn_awd_amt": 400000.0,
+ "awd_amount": 400000.0,
+ "awd_min_amd_letter_date": "2016-07-27",
+ "awd_max_amd_letter_date": "2016-07-27",
+ "awd_abstract_narration": "Traditional discrete GPUs have demonstrated dramatic performance gains over CPUs, but the improvements have been limited to simpler codes with massive parallelism.  Recently, computer manufacturers have been producing heterogeneous microprocessors in which a CPU and GPU are integrated on the same die.  Such processors provide shared memory between the CPU and GPU, and fast CPU-GPU communication.  These features potentially enable acceleration of new types of computations, allowing the GPU to gainfully execute smaller loops and to support more complex codes.  This project investigates techniques for exploiting heterogeneous microprocessors and to realize their benefits.  If successful, the project will enable most programs, not just those with massive parallelism, to utilize GPUs.  The project will also provide valuable training to both graduate and undergraduate students, and improve graduate-level coursework.\r\n\r\nOn the research side, the project will pursue the following research directions.  First, it will create a suite of benchmarks exhibiting complex loop nests that demonstrate the new capabilities of heterogeneous microprocessors.  Second, the project will also develop novel parallelization schemes for the new benchmark suite.  The parallelization schemes will map multiple levels of parallelism to CPU and GPU cores simultaneously to fully utilize the compute resources in a heterogeneous microprocessor.  Third, new cache coherence protocols will be developed that efficiently support the bulk producer-consumer communication that occurs as finer-grained computations migrate from CPU to GPU and back.  And finally, adaptive memory address mapping schemes will be investigated that exploit DRAM page locality for CPU accesses and channel-level parallelism for GPU accesses.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Donald",
+   "pi_last_name": "Yeung",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Donald Yeung",
+   "pi_email_addr": "yeung@umd.edu",
+   "nsf_id": "000460886",
+   "pi_start_date": "2016-07-27",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Maryland, College Park",
+  "inst_street_address": "3112 LEE BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE PARK",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "3014056269",
+  "inst_zip_code": "207425100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "MD04",
+  "org_lgl_bus_name": "UNIVERSITY OF MARYLAND, COLLEGE PARK",
+  "org_prnt_uei_num": "NPU8ULVAAS23",
+  "org_uei_num": "NPU8ULVAAS23"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Maryland College Park",
+  "perf_str_addr": "",
+  "perf_city_name": "College Park",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "207425141",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "MD04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7941",
+   "pgm_ref_txt": "COMPUTER ARCHITECTURE"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 400000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Heterogeneous microprocessors, in which a CPU and GPU are both<br />integrated on the same die, are commonplace today.&nbsp; Such processors<br />support shared memory (often coherently) between the CPU and GPU, and<br />provide fast CPU-GPU communication.&nbsp; These features permit a wide<br />range of loops to be gainfully off-loaded onto the GPU, including<br />those with smaller amounts of work, thus enabling acceleration of a<br />greater variety of computations.<br /><br />This research project developed a new parallelization scheme, called<br />\"nested MIMD-SIMD parallelization,\" that parallelizes codes with<br />complex loop nests onto the CPU and GPU of a heterogeneous<br />microprocessor.&nbsp; In particular, our technique targets large parallel<br />code regions that also contain smaller data-parallel loops.&nbsp; In such<br />nested parallel code structures, our technique parallelizes the<br />outer-most code region and executes it on the CPU cores.&nbsp; At the same<br />time, our technique also parallelizes the inner-most parallel loops<br />and executes them on the integrated GPU.&nbsp; Because the resulting GPU<br />kernels are launched from multiple CPU threads, simultaneous kernel<br />launches can occur, boosting GPU utilization especially when<br />inidividual kernels contain smaller amounts of work.&nbsp; Several example<br />benchmarks illustrating our nested MIMD-SIMD parallization technique<br />are available for download at github.com/dgerzhoy/Nested_MIMD_SIMD.<br /><br />Fast CPU-GPU communication not only permits heterogeneous<br />microprocessors to accelerate new types of codes, it can also improve<br />the performance and efficiency of traditional massively parallel<br />codes.&nbsp; Kernel launches are a form of computation migration in which<br />producer-consumer communication occurs from the CPU to the GPU and<br />back.&nbsp; Compared to discrete systems, heterogeneous microprocessors can<br />support such producer-consumer communication through shared main<br />memory which is much more efficient than having to go through the<br />system I/O bus, as is needed for discrete GPUs.&nbsp; However,<br />heterogeneous microprocessors have the potential to provide even<br />higher performance if the CPU-GPU communication can be performed<br />entirely on-chip.&nbsp; Unfortunately, this normally does not happen due to<br />poor temporal reuse on the communicated data structures.<br /><br />This research project introduced a new code transformation, called<br />\"pipelined CPU-GPU scheduling for caches,\" that improves the temporal<br />reuse of producer-consumer communication between the CPU and GPU so<br />that the communication can happen via the on-chip shared cache of a<br />heterogeneous microprocessor.&nbsp; Specifically, we divide CPU and GPU<br />execution into blocks.&nbsp; Rather than execute all of the CPU (GPU)<br />blocks prior to a kernel launch (completion), we overlap the execution<br />of CPU and GPU blocks in a software pipelined fashion.&nbsp; By properly<br />selecting the block size, one can tune the combined working sets of<br />the CPU and GPU blocks such that they fit in the last-level cache.<br />When this happens, communication from the CPU to the GPU across kernel<br />launches (and similarly, from the GPU back to the CPU across kernel<br />completions) can occur entirely through the on-chip cache.&nbsp; This<br />results in both performance gains and energy savings.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/14/2021<br>\n\t\t\t\t\tModified by: Donald&nbsp;Yeung</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nHeterogeneous microprocessors, in which a CPU and GPU are both\nintegrated on the same die, are commonplace today.  Such processors\nsupport shared memory (often coherently) between the CPU and GPU, and\nprovide fast CPU-GPU communication.  These features permit a wide\nrange of loops to be gainfully off-loaded onto the GPU, including\nthose with smaller amounts of work, thus enabling acceleration of a\ngreater variety of computations.\n\nThis research project developed a new parallelization scheme, called\n\"nested MIMD-SIMD parallelization,\" that parallelizes codes with\ncomplex loop nests onto the CPU and GPU of a heterogeneous\nmicroprocessor.  In particular, our technique targets large parallel\ncode regions that also contain smaller data-parallel loops.  In such\nnested parallel code structures, our technique parallelizes the\nouter-most code region and executes it on the CPU cores.  At the same\ntime, our technique also parallelizes the inner-most parallel loops\nand executes them on the integrated GPU.  Because the resulting GPU\nkernels are launched from multiple CPU threads, simultaneous kernel\nlaunches can occur, boosting GPU utilization especially when\ninidividual kernels contain smaller amounts of work.  Several example\nbenchmarks illustrating our nested MIMD-SIMD parallization technique\nare available for download at github.com/dgerzhoy/Nested_MIMD_SIMD.\n\nFast CPU-GPU communication not only permits heterogeneous\nmicroprocessors to accelerate new types of codes, it can also improve\nthe performance and efficiency of traditional massively parallel\ncodes.  Kernel launches are a form of computation migration in which\nproducer-consumer communication occurs from the CPU to the GPU and\nback.  Compared to discrete systems, heterogeneous microprocessors can\nsupport such producer-consumer communication through shared main\nmemory which is much more efficient than having to go through the\nsystem I/O bus, as is needed for discrete GPUs.  However,\nheterogeneous microprocessors have the potential to provide even\nhigher performance if the CPU-GPU communication can be performed\nentirely on-chip.  Unfortunately, this normally does not happen due to\npoor temporal reuse on the communicated data structures.\n\nThis research project introduced a new code transformation, called\n\"pipelined CPU-GPU scheduling for caches,\" that improves the temporal\nreuse of producer-consumer communication between the CPU and GPU so\nthat the communication can happen via the on-chip shared cache of a\nheterogeneous microprocessor.  Specifically, we divide CPU and GPU\nexecution into blocks.  Rather than execute all of the CPU (GPU)\nblocks prior to a kernel launch (completion), we overlap the execution\nof CPU and GPU blocks in a software pipelined fashion.  By properly\nselecting the block size, one can tune the combined working sets of\nthe CPU and GPU blocks such that they fit in the last-level cache.\nWhen this happens, communication from the CPU to the GPU across kernel\nlaunches (and similarly, from the GPU back to the CPU across kernel\ncompletions) can occur entirely through the on-chip cache.  This\nresults in both performance gains and energy savings.\n\n\t\t\t\t\tLast Modified: 07/14/2021\n\n\t\t\t\t\tSubmitted by: Donald Yeung"
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "awd_id": "1908849",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AF: Small: Collaborative Research: New Challenges in Graph Stream Algorithms and Related Communication Games",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032922182",
+ "po_email": "pbrass@nsf.gov",
+ "po_sign_block_name": "Peter Brass",
+ "awd_eff_date": "2019-07-01",
+ "awd_exp_date": "2023-06-30",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2019-06-07",
+ "awd_max_amd_letter_date": "2019-06-07",
+ "awd_abstract_narration": "Computational problems in many domains call for analyzing interactions among a very large number of entities. For instance, the friendship links in a globe-spanning social network contain a vast amount of knowledge. Detailed analyses of these links can drive research in the social sciences, aid security analysis and intelligence gathering, and guide infrastructure planning. Some other important examples of large networks (graphs, in mathematical parlance) that hide a wealth of information are the networks of genes and neurons in biology, the network of web pages, and the network of geometric and physical relationships between stars and galaxies. Further, many such graphs are continually evolving as links appear and disappear, potentially necessitating repeated costly computation. It is usually infeasible or inefficient to perform computations on graphs this large while holding them entirely in memory. To address this broad challenge, over the last decade or so, researchers including this project's investigators have developed algorithmic techniques known as streaming and sketching to compute more efficiently on large data sets, including large graphs. A streaming algorithm treats its input as an ordered sequence of values, each of which can be read only once. Sketching refers to techniques for summarizing a stream of data using memory much smaller than the data stream. This project will (1) develop novel streaming and sketching algorithms for graph problems that are fundamental enough to have broad applicability and (2) develop the underlying mathematical theory of such algorithms to better understand their possibilities and limitations.\r\n\r\nAt a technical level, one major goal of this project is to attack basic directed graph problems in the streaming model, from both upper and lower bounds perspectives: the existing theory is mostly focused on undirected graphs. Another goal is to deeply understand the role of randomness in solving graph problems that admit efficient linear sketches: such understanding is currently limited to problems from basic statistics. The theory of streaming and sketching algorithms is closely tied to communication complexity, which studies protocols for solving problems (sometimes called games) where the input is distributed across two or more sites. Accordingly, this project will seek new protocols or lower bounds for some such communication games and design novel communication games that address aspects of streaming algorithms specific to graph problems.  The investigators will leverage the geographical proximity of their respective universities to build more formal ties between their respective theoretical computer science research groups, including an annual day-long workshop.  They will continue their established history of developing pedagogical materials on the research topics included in or closely related to this project.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Andrew",
+   "pi_last_name": "McGregor",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Andrew McGregor",
+   "pi_email_addr": "mcgregor@cs.umass.edu",
+   "nsf_id": "000536261",
+   "pi_start_date": "2019-06-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Massachusetts Amherst",
+  "inst_street_address": "101 COMMONWEALTH AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "AMHERST",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "4135450698",
+  "inst_zip_code": "010039252",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "MA02",
+  "org_lgl_bus_name": "UNIVERSITY OF MASSACHUSETTS",
+  "org_prnt_uei_num": "VGJHK59NMPK9",
+  "org_uei_num": "VGJHK59NMPK9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Massachusetts Amherst",
+  "perf_str_addr": "",
+  "perf_city_name": "Amherst",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "010039264",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "MA02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7926",
+   "pgm_ref_txt": "ALGORITHMS"
+  },
+  {
+   "pgm_ref_code": "7927",
+   "pgm_ref_txt": "COMPLEXITY & CRYPTOGRAPHY"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project designed and analyzed new algorithms that are applicable when processing massive data sets, particularly those related to massive graphs. Massive graphs arise in any application where there is data about both basic entities and the relationships between these entities and they have become the de facto standard for representing many types of highly structured data. However, the size of these massive graphs is such that existing graph algorithms in traditional computational models are typically not applicable. The new algorithms are based on techniques such as sampling, streaming, compression via random projections (aka \"sketching\"), and typically use either resources that are either linear or sublinear in the size of the input. We also found novel ways to use graphs to model other computational problems such that graph-theoretic techniques, including the new those developed in this work, &nbsp;could be applied more widely.&nbsp;</p>\n<p><br />In more detail, we developed a suite of algorithms, and proved mathematical guarantees on their performance, for a variety of classical problems on massive graphs including a) vertex ordering problems in directed graphs including fundamental problems such as topological ordering and acyclicity testing, b) counting sub-graphs (or \"motifs\"), a problem related to finding the structural properties of a real-world graphs, c) graph clustering, a problem in which the goal is to decompose a massive graph such as a social network into natural sub-communities, c) coverage problems such as vertex cover and max-coverage in hypergraphs, and d) graph reconstruction via randomly sampled induced subgraphs. Many of these results were provably optimal in various aspects, e.g., in the memory used by the algorithm or the sample complexity. Beyond the focus on solving classical graph problems, we also used graph-based abstractions to establish new algorithmic results on the machine learning problem of identifying causal relationships amongst random variables, the diverse data selection problem in database systems, and the analysis of traffic behavior in network monitoring. The grant partially supported the training of three Ph.D. students who have all subsequently graduated and accepted research positions.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 03/22/2024<br>\nModified by: Andrew&nbsp;Mcgregor</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThis project designed and analyzed new algorithms that are applicable when processing massive data sets, particularly those related to massive graphs. Massive graphs arise in any application where there is data about both basic entities and the relationships between these entities and they have become the de facto standard for representing many types of highly structured data. However, the size of these massive graphs is such that existing graph algorithms in traditional computational models are typically not applicable. The new algorithms are based on techniques such as sampling, streaming, compression via random projections (aka \"sketching\"), and typically use either resources that are either linear or sublinear in the size of the input. We also found novel ways to use graphs to model other computational problems such that graph-theoretic techniques, including the new those developed in this work, could be applied more widely.\n\n\n\nIn more detail, we developed a suite of algorithms, and proved mathematical guarantees on their performance, for a variety of classical problems on massive graphs including a) vertex ordering problems in directed graphs including fundamental problems such as topological ordering and acyclicity testing, b) counting sub-graphs (or \"motifs\"), a problem related to finding the structural properties of a real-world graphs, c) graph clustering, a problem in which the goal is to decompose a massive graph such as a social network into natural sub-communities, c) coverage problems such as vertex cover and max-coverage in hypergraphs, and d) graph reconstruction via randomly sampled induced subgraphs. Many of these results were provably optimal in various aspects, e.g., in the memory used by the algorithm or the sample complexity. Beyond the focus on solving classical graph problems, we also used graph-based abstractions to establish new algorithmic results on the machine learning problem of identifying causal relationships amongst random variables, the diverse data selection problem in database systems, and the analysis of traffic behavior in network monitoring. The grant partially supported the training of three Ph.D. students who have all subsequently graduated and accepted research positions.\n\n\n\t\t\t\t\tLast Modified: 03/22/2024\n\n\t\t\t\t\tSubmitted by: AndrewMcgregor\n"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1908094",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small:Automatically Synthesizing System and Integration Tests",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 378860.0,
+ "awd_amount": 378860.0,
+ "awd_min_amd_letter_date": "2019-07-08",
+ "awd_max_amd_letter_date": "2019-07-08",
+ "awd_abstract_narration": "System and integration testing is a set of key activities in software development and maintenance to determine if applications and their constituent components behave correctly. System/integration testing is vitally important for ensuring software quality, since many serious software defects occur in interactions among different components. Unfortunately, creating effective system/integration tests requires significant time and effort, since it is not feasible to test the enormous set of all combinations of the components from a nontrivial software application. It is crucial to reduce the cost and increase the quality of software with system/integration testing that is effective in fault finding and efficient in resource consumption and execution time.  In sum, there are unique factors in  system/integration testing, not previously considered, that if not addressed will continue to limit the quality of software applications.\r\n \r\nIn this project, a novel framework will be created for automatically creating effective system/integration tests that find bugs efficiently.  A three-pronged research program will be developed for Automatic Synthesis of System and Integration Software Tests (ASSIST). New algorithms and techniques will be created and evaluated as part of the work on this project for automatically obtaining models that describe interacting components, thus reducing the number of synthesized system and integration tests and increasing their fault-finding power. Also, a novel way will be created in which static and dynamic analyses and machine learning are used to obtain test input data as well as oracles for the synthesized system and integration tests. As a result of the work on this project, system and integration tests will be automatically synthesized using ASSIST that have a comparable bug-finding power with manually created integration tests. A suite of new ASSIST tools that will be developed, evaluated, and applied to different open-source and commercial applications, and made available to the broader community.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Mark",
+   "pi_last_name": "Grechanik",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mark Grechanik",
+   "pi_email_addr": "drmark@uic.edu",
+   "nsf_id": "000516683",
+   "pi_start_date": "2019-07-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Illinois at Chicago",
+  "inst_street_address": "809 S MARSHFIELD AVE M/C 551",
+  "inst_street_address_2": "",
+  "inst_city_name": "CHICAGO",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "3129962862",
+  "inst_zip_code": "606124305",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "IL07",
+  "org_lgl_bus_name": "UNIVERSITY OF ILLINOIS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "W8XEAJDKMXH3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Illinois at Chicago",
+  "perf_str_addr": "809 S MARSHFIELD RM 608",
+  "perf_city_name": "Chicago",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "606127301",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "IL07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7944",
+   "pgm_ref_txt": "SOFTWARE ENG & FORMAL METHODS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 378860.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Imagine the world where each human has a distinct anatomy and reacts to viruses and bacteria in ways that are totally different from other humans. The medical science, as we know it, will cease to exist. When we get sick, we will pray that the medical staff will be able to understand the nature of our diseases that uniquely affect each individual and ways to cure them, which will be specific for each human. Does it sound horrible?</p>\n<p><br />This is the state of the art in software engineering, and very few problems impact people more negatively than field failures, where deployed software behaves incorrectly. Just like distinct human anatomies would prevent medical professionals from quickly diagnosing diseases using symptoms, production fault localisation requires a huge effort from software professionals, since each software application has its own unique structure and programmers must spend a lot of time to understand it even for smaller applications. Not only do field failures zap every shred of customer&rsquo;s confidence in software applications, but also they cost dearly, sometimes in human lives, since software applications support all aspects of our lives.</p>\n<p><br />Despite hundreds of different approaches for fault localisation, the problem of localising production faults for field failures automatically is unsolved. Moreover, our interviews with 72 companies as part of our work on directly related NSF I-Corps grant and the recent investigation by Parnin and Orso whether automated debugging technique actually helping programmers reveal that programmers use their intuition on the nature of the fault instead of relying on automated debugging tools to diagnose faults. A problem is that production faults are not known by definition when the application is deployed, therefore running existing test suites is not applicable. Only when field failures occur in a deployed application, programmers start analysing the symptoms<br />to determine what faults can cause them. The number of the possibilities of what application&rsquo;s statements or combinations thereof can cause faults is enormous even for small programs. Time to fix is critical, since the applications&rsquo; downtime often costs thousands of dollars per minute. Currently, there is no solution that can automatically localise functional production faults in deployed software applications with a high degree of precision using only symptoms of the field failures and input values and without deploying&nbsp; instrumented applications at the customer&rsquo;s site, and without collecting any runtime data from deployed applications at the customer&rsquo;s site, and without having any tests with oracles, without performing successful and failed runs, and without collecting large amounts of state information from field failures. To the best of our knowledge, there is no solution to this big and important problem.</p>\n<p>Our approach for Automatically Localising Faults For Functional Field Failures in Applications (&alpha;5, pronounced as al-five) attacked this widely recognized and challenging problem from a completely different perspective. In &alpha;5, the intuition of programmers about natures of faults is modeled by performing sensitivity analysis that speculatively constructs the predictive fault model that is specific for every software application. Essentially, &alpha;5 mimics what programmers do to understand the effect of different faults on the behavior of the application. This model enables stakeholders to obtain specific information on how a suggested fault results in an error state that propagates through the application to cause the failure whose symptoms are the input to &alpha;5. To the best of our knowledge, this abstraction has never been created and applied<br />to automatic debugging of field failures.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/30/2023<br>\n\t\t\t\t\tModified by: Mark&nbsp;Grechanik</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nImagine the world where each human has a distinct anatomy and reacts to viruses and bacteria in ways that are totally different from other humans. The medical science, as we know it, will cease to exist. When we get sick, we will pray that the medical staff will be able to understand the nature of our diseases that uniquely affect each individual and ways to cure them, which will be specific for each human. Does it sound horrible?\n\n\nThis is the state of the art in software engineering, and very few problems impact people more negatively than field failures, where deployed software behaves incorrectly. Just like distinct human anatomies would prevent medical professionals from quickly diagnosing diseases using symptoms, production fault localisation requires a huge effort from software professionals, since each software application has its own unique structure and programmers must spend a lot of time to understand it even for smaller applications. Not only do field failures zap every shred of customer\u2019s confidence in software applications, but also they cost dearly, sometimes in human lives, since software applications support all aspects of our lives.\n\n\nDespite hundreds of different approaches for fault localisation, the problem of localising production faults for field failures automatically is unsolved. Moreover, our interviews with 72 companies as part of our work on directly related NSF I-Corps grant and the recent investigation by Parnin and Orso whether automated debugging technique actually helping programmers reveal that programmers use their intuition on the nature of the fault instead of relying on automated debugging tools to diagnose faults. A problem is that production faults are not known by definition when the application is deployed, therefore running existing test suites is not applicable. Only when field failures occur in a deployed application, programmers start analysing the symptoms\nto determine what faults can cause them. The number of the possibilities of what application\u2019s statements or combinations thereof can cause faults is enormous even for small programs. Time to fix is critical, since the applications\u2019 downtime often costs thousands of dollars per minute. Currently, there is no solution that can automatically localise functional production faults in deployed software applications with a high degree of precision using only symptoms of the field failures and input values and without deploying  instrumented applications at the customer\u2019s site, and without collecting any runtime data from deployed applications at the customer\u2019s site, and without having any tests with oracles, without performing successful and failed runs, and without collecting large amounts of state information from field failures. To the best of our knowledge, there is no solution to this big and important problem.\n\nOur approach for Automatically Localising Faults For Functional Field Failures in Applications (&alpha;5, pronounced as al-five) attacked this widely recognized and challenging problem from a completely different perspective. In &alpha;5, the intuition of programmers about natures of faults is modeled by performing sensitivity analysis that speculatively constructs the predictive fault model that is specific for every software application. Essentially, &alpha;5 mimics what programmers do to understand the effect of different faults on the behavior of the application. This model enables stakeholders to obtain specific information on how a suggested fault results in an error state that propagates through the application to cause the failure whose symptoms are the input to &alpha;5. To the best of our knowledge, this abstraction has never been created and applied\nto automatic debugging of field failures.\n\n\t\t\t\t\tLast Modified: 10/30/2023\n\n\t\t\t\t\tSubmitted by: Mark Grechanik"
+ }
+}

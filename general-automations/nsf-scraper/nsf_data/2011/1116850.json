@@ -1,0 +1,117 @@
+{
+ "awd_id": "1116850",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CSR:Small: Enabling Aggressive Voltage Scaling for Real-Time and Embedded Systems with Inexpensive yet Efficient Power Conversion",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032925197",
+ "po_email": "mmcclure@nsf.gov",
+ "po_sign_block_name": "Marilyn McClure",
+ "awd_eff_date": "2011-08-15",
+ "awd_exp_date": "2014-07-31",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2011-08-07",
+ "awd_max_amd_letter_date": "2011-08-07",
+ "awd_abstract_narration": "This project seeks to improve the energy efficiency of cost-sensitive embedded computer systems by splitting them into multiple separate voltage domains and running each as efficiently as possible by adjusting voltage and frequency dynamically. Improving energy efficiency allows a designer to extend a system?s operational life, reduce battery size and weight, and/or improve functionality. Switch-mode power supplies are commonly used to convert power efficiently from one voltage level to another. However, existing switching power supplies are often quite expensive compared with the microcontrollers and peripherals which they power. The major challenge in exploiting multiple voltage domains to save energy is to make power supplies that are efficient yet inexpensive enough to be practical for low-cost devices. The innovation here is to move control of the power supply into software and a low-cost generic microcontroller, which can be shared by the embedded application.  Real-time systems scheduling techniques ensure that the entire system works reliably and that the power supply does not emit electromagnetic noise during periods that the system needs to perform noise-sensitive operations.  Advanced Gallium Nitride (GaN) transistors are used to achieve high switching frequencies, enabling the use of smaller and less expensive components.  New, highly efficient methods are developed to store and use energy from energy-scavenging devices (photovoltaic, thermoelectric, ambient radio).\r\n\r\nImprovements in power supply technology mean lower energy consumption and longer battery life for electronic devices, and lower production costs. Beyond developing such technology, the project advances education in it.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Alexander",
+   "pi_last_name": "Dean",
+   "pi_mid_init": "G",
+   "pi_sufx_name": "",
+   "pi_full_name": "Alexander G Dean",
+   "pi_email_addr": "alex_dean@ncsu.edu",
+   "nsf_id": "000340374",
+   "pi_start_date": "2011-08-07",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Subhashish",
+   "pi_last_name": "Bhattacharya",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Subhashish Bhattacharya",
+   "pi_email_addr": "sbhatta4@ncsu.edu",
+   "nsf_id": "000348955",
+   "pi_start_date": "2011-08-07",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "North Carolina State University",
+  "inst_street_address": "2601 WOLF VILLAGE WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "RALEIGH",
+  "inst_state_code": "NC",
+  "inst_state_name": "North Carolina",
+  "inst_phone_num": "9195152444",
+  "inst_zip_code": "276950001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "NC02",
+  "org_lgl_bus_name": "NORTH CAROLINA STATE UNIVERSITY",
+  "org_prnt_uei_num": "U3NVH931QJJ3",
+  "org_uei_num": "U3NVH931QJJ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "North Carolina State University",
+  "perf_str_addr": "2601 WOLF VILLAGE WAY",
+  "perf_city_name": "RALEIGH",
+  "perf_st_code": "NC",
+  "perf_st_name": "North Carolina",
+  "perf_zip_code": "276950001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "NC02",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7354",
+   "pgm_ref_txt": "COMPUTER SYSTEMS"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Embedded systems are computers embedded within other devices, such as thermostats, watches, microwave ovens, automobiles, and baby monitors. They are ubiquitous and touch many aspects of modern life. This project developed methods to improve the energy efficiency of cost-sensitive embedded systems. Improving energy efficiency allows a designer to extend a system's  operational life, reduce battery size and weight, and use more  sophisticated (and computationally intense) control methods.</p>\n<p>One way to reduce power use is to increase the number of separate voltage domains in a system, allowing more components to run at lower voltages and hence use less power, as power use is proportional to the square of the voltage. Adding a voltage domain using traditional methods raises costs by adding hardware such as a voltage converters and level translators. There are two common types of voltage converters: linear converters are inexpensive and simple but inefficient. Switching power converters are efficient but complex and more expensive.</p>\n<p>Some electronic devices (e.g. personal computers and cellphones) are expensive enough to afford multiple switching power converters, but many embedded systems are so price-sensitive that they cannot.</p>\n<p>Our methods make it inexpensive to add voltage domains with switching power converters. We reduce costs by moving the control functionality into software and general-purpose hardware in the same microcontrollers which is running the rest of the system. We use real-time task scheduling concepts, structures and analyses to ensure that the control system software always executes on time and can never miss its deadlines.</p>\n<p>We developed analytical models for various important characteristics of buck converters for use in our overall design method. These models were validated both through simulation and experimentally using actual systems. We developed several simple, low-cost converters controlled by a microcontroller development board to evaluate and validate our concepts. We designed these converters specifically to operate at low voltages, with little power loss and with low cost .</p>\n<p>We have developed optimized SMPS control software for two MCU architectures, Renesas RL78 (16 bits, 32 MHz) and ARM Cortex-M0+ (32 bits, 48 MHz). The controller code for the buck converter was written in C and leverages the MCU peripherals to reduce software loading. Control calculations are performed using fixed-point math using native multiply/accumulate operations if available. The RL78/G14 version of the controller code requires only 6.3% of the CPU's time, leaving most time free for other work. The Cortex-M0+ version of the controller code uses 13.6% of the CPU's time.</p>\n<p>One of the ultimate goals of the project has been to show that it is feasible to use low-cost buck converters controlled by an application MCU (rather than dedicated stand-alone converters) in order to reduce the power used by the system.</p>\n<p>We applied our methods to an example embedded system: a tracking device which uses its GPS receiver to determine location and velocity and logs these data to a microSD card once per second. The system includes a graphical monochrome LCD, a ARM Cortex M0+  microcontroller, Freedom-KL25Z  development board and three low-cost  asynchronous buck converters. The  power system contains three supply  rails (1.8 V, 2.8 V, and 3.3 V) to  save power. The peripherals have  minimum operating voltages ranging  from 1.6 to 3.3 V, so adding rails  allows us to operate more of them at  lower voltages, saving power. Using our methods we demonstrated power savings of up to 50% against a system with one 3.3 V supply rail. Our system reduced costs by eliminating $1.55 of dedicated SMPS controller chips in a power supply costing $2.58.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/05/2015<br>\n\t\t\t\t\tModified by: Alexander&nbsp;G&nbsp;Dean</p>\n</div>...",
+  "por_txt_cntn": "\nEmbedded systems are computers embedded within other devices, such as thermostats, watches, microwave ovens, automobiles, and baby monitors. They are ubiquitous and touch many aspects of modern life. This project developed methods to improve the energy efficiency of cost-sensitive embedded systems. Improving energy efficiency allows a designer to extend a system's  operational life, reduce battery size and weight, and use more  sophisticated (and computationally intense) control methods.\n\nOne way to reduce power use is to increase the number of separate voltage domains in a system, allowing more components to run at lower voltages and hence use less power, as power use is proportional to the square of the voltage. Adding a voltage domain using traditional methods raises costs by adding hardware such as a voltage converters and level translators. There are two common types of voltage converters: linear converters are inexpensive and simple but inefficient. Switching power converters are efficient but complex and more expensive.\n\nSome electronic devices (e.g. personal computers and cellphones) are expensive enough to afford multiple switching power converters, but many embedded systems are so price-sensitive that they cannot.\n\nOur methods make it inexpensive to add voltage domains with switching power converters. We reduce costs by moving the control functionality into software and general-purpose hardware in the same microcontrollers which is running the rest of the system. We use real-time task scheduling concepts, structures and analyses to ensure that the control system software always executes on time and can never miss its deadlines.\n\nWe developed analytical models for various important characteristics of buck converters for use in our overall design method. These models were validated both through simulation and experimentally using actual systems. We developed several simple, low-cost converters controlled by a microcontroller development board to evaluate and validate our concepts. We designed these converters specifically to operate at low voltages, with little power loss and with low cost .\n\nWe have developed optimized SMPS control software for two MCU architectures, Renesas RL78 (16 bits, 32 MHz) and ARM Cortex-M0+ (32 bits, 48 MHz). The controller code for the buck converter was written in C and leverages the MCU peripherals to reduce software loading. Control calculations are performed using fixed-point math using native multiply/accumulate operations if available. The RL78/G14 version of the controller code requires only 6.3% of the CPU's time, leaving most time free for other work. The Cortex-M0+ version of the controller code uses 13.6% of the CPU's time.\n\nOne of the ultimate goals of the project has been to show that it is feasible to use low-cost buck converters controlled by an application MCU (rather than dedicated stand-alone converters) in order to reduce the power used by the system.\n\nWe applied our methods to an example embedded system: a tracking device which uses its GPS receiver to determine location and velocity and logs these data to a microSD card once per second. The system includes a graphical monochrome LCD, a ARM Cortex M0+  microcontroller, Freedom-KL25Z  development board and three low-cost  asynchronous buck converters. The  power system contains three supply  rails (1.8 V, 2.8 V, and 3.3 V) to  save power. The peripherals have  minimum operating voltages ranging  from 1.6 to 3.3 V, so adding rails  allows us to operate more of them at  lower voltages, saving power. Using our methods we demonstrated power savings of up to 50% against a system with one 3.3 V supply rail. Our system reduced costs by eliminating $1.55 of dedicated SMPS controller chips in a power supply costing $2.58.\n\n\t\t\t\t\tLast Modified: 02/05/2015\n\n\t\t\t\t\tSubmitted by: Alexander G Dean"
+ }
+}

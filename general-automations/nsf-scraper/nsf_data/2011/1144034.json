@@ -1,0 +1,117 @@
+{
+ "awd_id": "1144034",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "EAGER: Learning to Efficiently Rank with Cascades",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Maria Zemankova",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2014-08-31",
+ "tot_intn_awd_amt": 150000.0,
+ "awd_amount": 150000.0,
+ "awd_min_amd_letter_date": "2011-07-23",
+ "awd_max_amd_letter_date": "2012-07-20",
+ "awd_abstract_narration": "Text search is undeniably vital to today's information-based societies, helping users locate relevant information in web pages, journal articles, news stories, blogs, emails, tweets, and a myriad of other sources. Naturally, users desire results that are not only good but also fast. Learning to rank, the dominant approach to information retrieval (IR) today, focuses almost exclusively on effectiveness, often neglecting the runtime speed (i.e., efficiency) of the ranking functions. This project contributes to the emerging research area of learning to efficiently rank, which aims to let algorithm designers capture, model, and reason about tradeoffs between effectiveness and efficiency in a unified framework. \r\n\r\nSpecifically, this project explores a novel cascade model for retrieval, where ranking is broken into a finite number of distinct stages. Each stage considers successively richer and more complex features, but over successively smaller candidate document sets. The intuition is that although complex features are more time-consuming to compute, examining fewer documents offsets the additional overhead. In other words, the cascade model views retrieval as a multi-stage progressive refinement problem. Based on the survey of the current state-of-the-art, knowledge, this is the first project to explore this approach to the ranking problem, marking a substantial departure from previous \"monolithic\" ranking functions. Although exploration in this uncharted area carries some risk, this research promises to open up a new frontier in IR research. \r\n\r\nThis project aims to narrow the chasm between academic and industrial IR research by bringing together theoretical IR research and practical considerations in \"real-world\" search. It is expected that the cascade model will be of interest to web search engine companies, thus providing a path from the exploratory research results to significant impact in production systems. Furthermore, this work dovetails with the emerging area of green computing: more efficient algorithms use less energy, hence help reduce the environmental footprint of web-scale services. The project web site (http://www.umiacs.umd.edu/~jimmylin/projects/) includes more information about this project and will be used for the release of a prototype as part of the Ivory open-source retrieval toolkit.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Jimmy",
+   "pi_last_name": "Lin",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jimmy J Lin",
+   "pi_email_addr": "jimmylin@umd.edu",
+   "nsf_id": "000105597",
+   "pi_start_date": "2011-07-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Maryland, College Park",
+  "inst_street_address": "3112 LEE BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE PARK",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "3014056269",
+  "inst_zip_code": "207425100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "MD04",
+  "org_lgl_bus_name": "UNIVERSITY OF MARYLAND, COLLEGE PARK",
+  "org_prnt_uei_num": "NPU8ULVAAS23",
+  "org_uei_num": "NPU8ULVAAS23"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Maryland College Park",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "207425141",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "MD04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736400",
+   "pgm_ele_name": "Info Integration & Informatics"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "7916",
+   "pgm_ref_txt": "EAGER"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 79923.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 70077.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>When it comes to search, users desire results that are not only good but also fast. These two desiderata, however, are often in tension. To obtain high quality results, systems typically take advantage of machine learning techniques to rank documents based on multitude of \"features\". For example: Does the document have matching query terms? Does the document have matching phrases? Does the document have high editorial quality? Etc. The more features an algorithm considers, the better the quality overall; however, considering more features takes more time, particularly for certain types of features that are computationally expensive. Thus, we often observe an inverse relationship between quality and speed (i.e., fast but poor quality or slow but high quality).<br /><br />The goal of this project is to explore search techniques that are able to balance result quality with the time required to compute those results. Our intuition is to consider the problem as a \"cascade\", proceeding in stages: the algorithm would first consider \"cheap\" and \"fast\" features over a large set of documents, and then progressively consider more \"costly\" features, but over smaller sets of documents. The additional time required to consider more computationally-intensive features is balanced by the fact that fewer documents need to be analyzed. In this way, cascade ranking can generate high quality results quickly.<br /><br />Building on this basic idea, we explored two main instantiations based on different classes of machine learning techniques: linear models and decision trees. In both cases, we showed that it is indeed possible to design algorithms that are both good and fast. For the second type of model, we additionally developed a number of optimizations to take advantage of modern computer architectures. As a result, we are able to substantially increase the speed of algorithms based on decision trees.<br /><br />In addition to designing ranking algorithms that better balance speed and quality, we considered the overall architecture of search systems. Traditionally, researchers have viewed search engines as monolithic entities; building on the intuition of ranking cascades, we took a different route and re-conceived of search in terms of multi-stage architectures, breaking the overall problem down into different stages that can be implemented by distinct software components in a loosely-coupled manner. Recently, a paper about Microsoft's Bing search engine describes a very similar design, which provides validation for our ideas.<br /><br />More generally, the issue of algorithmic efficiency is an important problem recognized by industry. Datacenters, which power the vast majority of the world's Internet services, consume a huge amount of energy and are a significant contributor of greenhouse gases. More efficient algorithms mean fewer machines for the same quality of service, or an expansion of services to better benefit users. Our research achieves broader impact in its contribution to these important challenges. Finally, our work has yielded open-source software that captures our findings, so that our results can be replicated and expanded upon by others.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/29/2014<br>\n\t\t\t\t\tModified by: Jimmy&nbsp;J&nbsp;Lin</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nWhen it comes to search, users desire results that are not only good but also fast. These two desiderata, however, are often in tension. To obtain high quality results, systems typically take advantage of machine learning techniques to rank documents based on multitude of \"features\". For example: Does the document have matching query terms? Does the document have matching phrases? Does the document have high editorial quality? Etc. The more features an algorithm considers, the better the quality overall; however, considering more features takes more time, particularly for certain types of features that are computationally expensive. Thus, we often observe an inverse relationship between quality and speed (i.e., fast but poor quality or slow but high quality).\n\nThe goal of this project is to explore search techniques that are able to balance result quality with the time required to compute those results. Our intuition is to consider the problem as a \"cascade\", proceeding in stages: the algorithm would first consider \"cheap\" and \"fast\" features over a large set of documents, and then progressively consider more \"costly\" features, but over smaller sets of documents. The additional time required to consider more computationally-intensive features is balanced by the fact that fewer documents need to be analyzed. In this way, cascade ranking can generate high quality results quickly.\n\nBuilding on this basic idea, we explored two main instantiations based on different classes of machine learning techniques: linear models and decision trees. In both cases, we showed that it is indeed possible to design algorithms that are both good and fast. For the second type of model, we additionally developed a number of optimizations to take advantage of modern computer architectures. As a result, we are able to substantially increase the speed of algorithms based on decision trees.\n\nIn addition to designing ranking algorithms that better balance speed and quality, we considered the overall architecture of search systems. Traditionally, researchers have viewed search engines as monolithic entities; building on the intuition of ranking cascades, we took a different route and re-conceived of search in terms of multi-stage architectures, breaking the overall problem down into different stages that can be implemented by distinct software components in a loosely-coupled manner. Recently, a paper about Microsoft's Bing search engine describes a very similar design, which provides validation for our ideas.\n\nMore generally, the issue of algorithmic efficiency is an important problem recognized by industry. Datacenters, which power the vast majority of the world's Internet services, consume a huge amount of energy and are a significant contributor of greenhouse gases. More efficient algorithms mean fewer machines for the same quality of service, or an expansion of services to better benefit users. Our research achieves broader impact in its contribution to these important challenges. Finally, our work has yielded open-source software that captures our findings, so that our results can be replicated and expanded upon by others.\n\n\t\t\t\t\tLast Modified: 11/29/2014\n\n\t\t\t\t\tSubmitted by: Jimmy J Lin"
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "awd_id": "2039062",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CPS: Medium: Correct-by-Construction Controller Synthesis using Gaussian Process Transfer Learning",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032928950",
+ "po_email": "rwachter@nsf.gov",
+ "po_sign_block_name": "Ralph Wachter",
+ "awd_eff_date": "2021-01-01",
+ "awd_exp_date": "2025-12-31",
+ "tot_intn_awd_amt": 1200000.0,
+ "awd_amount": 1200000.0,
+ "awd_min_amd_letter_date": "2020-09-08",
+ "awd_max_amd_letter_date": "2020-10-14",
+ "awd_abstract_narration": "This project proposes a novel and rigorous methodology for the design of embedded control software for safety-critical cyber-physical systems (CPS) with complex and possibly unknown dynamics by embracing ideas from control theory, formal verification in computer science, and Gaussian processes (GPs) from machine learning. Embedded control software forms the main core of autonomous transportation, traffic networks, power networks, aerospace systems, and health and assisted living. These applications are examples of CPS, wherein software components interact tightly with physical systems with complex dynamics. Recent technological advances in sensing, memory, and communication technology offer unprecedented opportunities for ubiquitously collecting data at high details and large scales for CPS. Utilization of data at these scales poses major challenges for a rigorous analysis and design of CPS, particularly in view of the additional inherent uncertainty that data-driven control signals introduce to systems behavior. In fact, this effect has not been well understood to this date, primarily due to the missing link between data analytic techniques in machine learning and the underlying physics of dynamical systems in a rigorous system design. In addition, most of the existing results proposed in the literature on the formal verification or synthesis of CPS are model-based, whereas in many applications, a model may not be always available or may be too complex for current techniques. \r\n\r\nThis project investigates a novel correct-by-construction controller synthesis scheme for CPS with complex and possibly unknown dynamics by embracing ideas from the GPs. Particularly, given temporal logic requirements (e.g. those expressed as linear temporal logic formula or by omega-regular languages) for the CPS, they will be decomposed to simpler reachability tasks based on the types of automata representing those properties. Then, the project develops an approach to solve those simpler tasks by computing so-called control barrier functions together with their corresponding hybrid controllers using regressed GPs of the unknown CPS. In addition, the investigators develop an adaptive transfer learning approach that leverages previously learned GPs and emploies them as sources of information in learning new ones especially when limited training data are available. The project develops a scheme on either transferring the controllers designed for old GPs to new ones or safely modifying them on the fly while formally guaranteeing their correctness for the new GPs. The algorithms are implemented into design software tools and evaluated on actual CPS platforms, namely, autonomous underwater vehicles and aerial robots.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Majid",
+   "pi_last_name": "Zamani",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Majid Zamani",
+   "pi_email_addr": "majid.zamani@colorado.edu",
+   "nsf_id": "000800508",
+   "pi_start_date": "2020-09-08",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Eric",
+   "pi_last_name": "Frew",
+   "pi_mid_init": "W",
+   "pi_sufx_name": "",
+   "pi_full_name": "Eric W Frew",
+   "pi_email_addr": "eric.frew@colorado.edu",
+   "nsf_id": "000269163",
+   "pi_start_date": "2020-09-08",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Morteza",
+   "pi_last_name": "Lahijanian",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Morteza Lahijanian",
+   "pi_email_addr": "morteza.lahijanian@colorado.edu",
+   "nsf_id": "000811095",
+   "pi_start_date": "2020-09-08",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Colorado at Boulder",
+  "inst_street_address": "3100 MARINE ST",
+  "inst_street_address_2": "STE 481 572 UCB",
+  "inst_city_name": "Boulder",
+  "inst_state_code": "CO",
+  "inst_state_name": "Colorado",
+  "inst_phone_num": "3034926221",
+  "inst_zip_code": "803090001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "CO02",
+  "org_lgl_bus_name": "THE REGENTS OF THE UNIVERSITY OF COLORADO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "SPVKK1RC2MZ3"
+ },
+ "perf_inst": {
+  "perf_inst_name": "The Regents of the University of Colorado",
+  "perf_str_addr": "3100 Marine St, Room 481, 572 UC",
+  "perf_city_name": "Boulder",
+  "perf_st_code": "CO",
+  "perf_st_name": "Colorado",
+  "perf_zip_code": "803031058",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "CO02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "791800",
+   "pgm_ele_name": "CPS-Cyber-Physical Systems"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7918",
+   "pgm_ref_txt": "CYBER-PHYSICAL SYSTEMS (CPS)"
+  },
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 1200000.0
+  }
+ ],
+ "por": null
+}

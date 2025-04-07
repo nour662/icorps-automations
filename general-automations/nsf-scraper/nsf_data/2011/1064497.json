@@ -1,0 +1,129 @@
+{
+ "awd_id": "1064497",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "SHF: Medium: A Code-Centric Approach to Specifying, Checking, and Discovering Shared-Memory Communication",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2011-08-01",
+ "awd_exp_date": "2016-07-31",
+ "tot_intn_awd_amt": 901206.0,
+ "awd_amount": 901206.0,
+ "awd_min_amd_letter_date": "2011-07-28",
+ "awd_max_amd_letter_date": "2013-06-13",
+ "awd_abstract_narration": "This project aims to improve the practice of shared-memory concurrent programming by exploring a fundamentally new way to specify, verify, test, and monitor how threads communicate via memory.  Shared-memory concurrency has become an increasingly important style of programming because it is a common way to utilize multicore processors, i.e., machines where there is more than one processing core, and desktops, laptops, servers, and even mobile devices are increasingly multicore. Shared-memory concurrency is widely recognized as difficult and error-prone, and much prior work has aimed to detect bugs related to this style automatically.  This project complements prior work by focusing on application-specific specifications in terms of how different parts of the code-base use concurrency to communicate, rather than focusing on how individual pieces of data are used.  This approach aims to improve the quality of software used throughout society, to improve the productivity of software developers and testers, and to influence how students are taught concurrent programming.\r\n\r\nAt the heart of the approach is a communication graph in which the nodes are program points and the edges indicate communication via shared memory. That is, for each edge, the code that the source node represents performs a write in one thread that is subsequently read in another thread by the code that the target node represents. Such graphs can form the foundation for conceptual and intellectual tools useful throughout the development and maintenance of software, including specifications (declarations of what communication is allowed), static checking (program analysis to infer possible communication), dynamic checking (efficient run-time communication monitoring), testing (design/evaluation of a test-suite in terms of communication coverage), and automatic anomaly detection and bug isolation (in terms of unexpected communication) for deployed software.  This project is developing and evaluating tools inspired by this foundation, leveraging synergies across the execution stack, including work on computer architecture, run-time systems, compilers, programming languages, automatic testing, and static analysis.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Daniel",
+   "pi_last_name": "Grossman",
+   "pi_mid_init": "J",
+   "pi_sufx_name": "",
+   "pi_full_name": "Daniel J Grossman",
+   "pi_email_addr": "djg@cs.washington.edu",
+   "nsf_id": "000400274",
+   "pi_start_date": "2011-07-28",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Luis",
+   "pi_last_name": "Ceze",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Luis Ceze",
+   "pi_email_addr": "luisceze@cs.washington.edu",
+   "nsf_id": "000083036",
+   "pi_start_date": "2011-07-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Washington",
+  "inst_street_address": "4333 BROOKLYN AVE NE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SEATTLE",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "2065434043",
+  "inst_zip_code": "981951016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "WA07",
+  "org_lgl_bus_name": "UNIVERSITY OF WASHINGTON",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HD1WMN6945W6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Washington",
+  "perf_str_addr": "4333 BROOKLYN AVE NE",
+  "perf_city_name": "SEATTLE",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "981951016",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "WA07",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  },
+  {
+   "pgm_ref_code": "7943",
+   "pgm_ref_txt": "PROGRAMMING LANGUAGES"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0113",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001314DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 588856.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2013,
+   "fund_oblg_amt": 312350.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><strong>Accomplishments:</strong></p>\n<p>This project aimed at making concurrent programming (when multiple threads use shared resources such as memory) easier by developing better tools, libraries, and techniques for identifying how different pieces of a software project use shared resources.&nbsp; Our novel approach is to focus on the code points that communicate more than on locking protocols or critical sections. We have pushed the notion of shared memory in several novel directions, including: (1) toward systems where datasets cannot reside in one machine's memory; (2) toward systems where memory is not perfect (bits may flip for data where software can tolerate such imprecision); (3) toward systems with bugs in which dynamic configuration updates and other changes to external resources; and (4) toward avoiding security-critical time-of-check-to-time-of-use bugs in event-based mobile applications.</p>\n<p>&nbsp;</p>\n<p><strong>Major Activities:</strong></p>\n<p>Because the best approaches can depend on the problem domain, we pursued several complementary directions.&nbsp; For computations over large-scale data, we developed a system for distributing memory across multiple machines withough unduly sacrificing performance or programmability.&nbsp; For computations where data races can make the program incorrect, we developed novel bug-detection tools. &nbsp;Conversely, we showed how assuming data-race freedom can enable additional compiler optimizations.&nbsp; We also showed how thread schedules can be controlled to avoid errors by sticking to schedules that have already been tested.&nbsp; For mobile applications, we developed an implementation of security that is less error-prone than conventional methods.&nbsp; Finally, we showed how to extend the notion of consistent uses of shared resources to the setting where external configuration values are updated while a program is running.</p>\n<p>&nbsp;</p>\n<p><strong>Training and Professional Development:</strong></p>\n<p>Five different graudate students who contributed to this research project received their PhDs to date with another five students still in graduate school.&nbsp; Of the five graduates, three entered industry and two took academic positions.</p>\n<p>&nbsp;</p>\n<p><strong>Results Dissemination:</strong></p>\n<p>We published papers in several research conferences: OOPSLA 2012, ASPLOS 2013, OOPSLA 2014, USENIX ATC 2014 (receiving a best-paper award), ASPLOS 2015, OOPSLA 2015, POPL 2016, ECOOP 2016, CCS2016.&nbsp; We also made several of our software systems publicly available, including systems for: (1) managing large-scale computations where datasets cannot reside in one machine's memory, (2) a dynamic analysis for detecting software errors related to configuration updates, (3) a library for Android applications that can enforce user-driven access control, (4) a dynamic analysis for estimating the performance benefits and debugging issues of (only) approximating the correct answer, (5) a compiler for approximate programs that integrates into the widely used LLVM tool-chain.</p>\n<p>&nbsp;</p>\n<p><strong>Impacts:</strong></p>\n<p>Concurrency errors are notoriously problematic for software quality and are known to be difficult to avoid or even debug.&nbsp; We developed a range of novel analyses and libraries to make this essential aspect of software development easier.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 11/15/2016<br>\n\t\t\t\t\tModified by: Luis&nbsp;Ceze</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nAccomplishments:\n\nThis project aimed at making concurrent programming (when multiple threads use shared resources such as memory) easier by developing better tools, libraries, and techniques for identifying how different pieces of a software project use shared resources.  Our novel approach is to focus on the code points that communicate more than on locking protocols or critical sections. We have pushed the notion of shared memory in several novel directions, including: (1) toward systems where datasets cannot reside in one machine's memory; (2) toward systems where memory is not perfect (bits may flip for data where software can tolerate such imprecision); (3) toward systems with bugs in which dynamic configuration updates and other changes to external resources; and (4) toward avoiding security-critical time-of-check-to-time-of-use bugs in event-based mobile applications.\n\n \n\nMajor Activities:\n\nBecause the best approaches can depend on the problem domain, we pursued several complementary directions.  For computations over large-scale data, we developed a system for distributing memory across multiple machines withough unduly sacrificing performance or programmability.  For computations where data races can make the program incorrect, we developed novel bug-detection tools.  Conversely, we showed how assuming data-race freedom can enable additional compiler optimizations.  We also showed how thread schedules can be controlled to avoid errors by sticking to schedules that have already been tested.  For mobile applications, we developed an implementation of security that is less error-prone than conventional methods.  Finally, we showed how to extend the notion of consistent uses of shared resources to the setting where external configuration values are updated while a program is running.\n\n \n\nTraining and Professional Development:\n\nFive different graudate students who contributed to this research project received their PhDs to date with another five students still in graduate school.  Of the five graduates, three entered industry and two took academic positions.\n\n \n\nResults Dissemination:\n\nWe published papers in several research conferences: OOPSLA 2012, ASPLOS 2013, OOPSLA 2014, USENIX ATC 2014 (receiving a best-paper award), ASPLOS 2015, OOPSLA 2015, POPL 2016, ECOOP 2016, CCS2016.  We also made several of our software systems publicly available, including systems for: (1) managing large-scale computations where datasets cannot reside in one machine's memory, (2) a dynamic analysis for detecting software errors related to configuration updates, (3) a library for Android applications that can enforce user-driven access control, (4) a dynamic analysis for estimating the performance benefits and debugging issues of (only) approximating the correct answer, (5) a compiler for approximate programs that integrates into the widely used LLVM tool-chain.\n\n \n\nImpacts:\n\nConcurrency errors are notoriously problematic for software quality and are known to be difficult to avoid or even debug.  We developed a range of novel analyses and libraries to make this essential aspect of software development easier.\n\n \n\n\t\t\t\t\tLast Modified: 11/15/2016\n\n\t\t\t\t\tSubmitted by: Luis Ceze"
+ }
+}

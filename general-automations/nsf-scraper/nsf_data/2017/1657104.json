@@ -1,0 +1,105 @@
+{
+ "awd_id": "1657104",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: III: Algorithms for Causal Inference on Networks",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032924481",
+ "po_email": "hmunoz@nsf.gov",
+ "po_sign_block_name": "Hector Munoz-Avila",
+ "awd_eff_date": "2017-04-01",
+ "awd_exp_date": "2020-03-31",
+ "tot_intn_awd_amt": 175000.0,
+ "awd_amount": 175000.0,
+ "awd_min_amd_letter_date": "2017-02-23",
+ "awd_max_amd_letter_date": "2017-02-23",
+ "awd_abstract_narration": "Randomized experiments (sometimes called \"A/B tests\") play increasingly fundamental roles in the design and refinement of modern online systems that drive the internet economy. Common design decisions include: What headline should be used with a news article; What prices should an item be offered at; or How should search results be ranked? However, modern web platforms exist atop strong networks of information flow and social interactions that mar the statistical validity of traditional experimental designs and analyses. This project aims to design graph clustering algorithms that can be used to administer experimental treatments in network-aware randomization designs and yield practically useful results. The project will train new graduate and undergraduate students in cutting-edge data science as they develop and deploy new research algorithms and software for causal inference at the intersection of modern computational and statistical research. The project will ultimately deliver new technical tools that increase the certainty of experiments that feature network interference, helping designers of online systems, both in industry and in government, make better decisions and craft better policies for an increasingly networked world.\r\n\r\nThis project aims to develop algorithmic tools for causal inference under network interference that go beyond mere proof-of-concepts, placing a specific focus on developments that will make network experimentation tools practical and provide significant and relevant results. The project will develop tools that harness graph metadata for variance reduction, and also develop techniques for running experiments in marketplaces, bipartite graphs rife with interference. In considering graph metadata, the goal is to develop stratified graph sampling methods that balance graph structure directly against latent traits. The deliverable assets of this project, which include algorithmic research as well as software for designing experiments, are intended to benefit computer scientists and statisticians, as well the broader community of researchers in the social and economic sciences that study networks. Research result, including software will be accessible via the project web site (http://stanford.edu/~jugander/crii/).",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Johan",
+   "pi_last_name": "Ugander",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Johan Ugander",
+   "pi_email_addr": "jugander@stanford.edu",
+   "nsf_id": "000704300",
+   "pi_start_date": "2017-02-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Stanford University",
+  "inst_street_address": "450 JANE STANFORD WAY",
+  "inst_street_address_2": "",
+  "inst_city_name": "STANFORD",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "6507232300",
+  "inst_zip_code": "943052004",
+  "inst_country_name": "United States",
+  "cong_dist_code": "16",
+  "st_cong_dist_code": "CA16",
+  "org_lgl_bus_name": "THE LELAND STANFORD JUNIOR UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HJD6G4D6TJY5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Stanford University",
+  "perf_str_addr": "475 Via Ortega",
+  "perf_city_name": "Stanford",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "943054026",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "16",
+  "perf_st_cong_dist": "CA16",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7364",
+   "pgm_ref_txt": "INFO INTEGRATION & INFORMATICS"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 175000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Randomized controlled trials are the gold standard of causal evidence in science. Designing and Interpreting randomized trials in network settings -- where the behaviors of experimental subject are intertwined -- is difficult, with standard statistical methods breaking down. This project has developed new methods for designing and analyzing experiments on networks.</p>\n<p>As a first application, consider an intervention in a small community. For example, we are interested in the effects of encouraging farmers to adopt a new weather insurance product, or encouraging students in a school to take a stand against bullying. Our intervention is to target indvidiuals with information, but our goal is to cause a community-level outcome (more insurnace, less bullying). How should we target individuals? Randomly? Or should we target more connected individuals? How can we compare or contrast differnt strategies? As part of this work, we developed statistical methods for comparing different strategies, and evaluating which one has a larger effect, using much less data that required by previous statistical methods.</p>\n<p>As a second application, if a web company is considering a product change for their users, but the product has strong network effects (e.g., a chat product, or a music sharing app), how can they compare different version of the product? Ideally they'd like to give everyone version A or everyone version B, and compare. But that's not possible. The networked setting differs from the standard setting (e.g., a drug trial) because people's outcomes are coupled. As part of this work, we develop new methods to much more efficiently estimate (designs that give much lower variance estimates) the global average treatment effect using more sophisticared randomization strategies that are network-aware.</p>\n<p>Additional work prodcuts of this project target other types of experimental designs for interventions with other types of spillovers, or other methods for analyzing social network data.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/28/2020<br>\n\t\t\t\t\tModified by: Johan&nbsp;Ugander</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nRandomized controlled trials are the gold standard of causal evidence in science. Designing and Interpreting randomized trials in network settings -- where the behaviors of experimental subject are intertwined -- is difficult, with standard statistical methods breaking down. This project has developed new methods for designing and analyzing experiments on networks.\n\nAs a first application, consider an intervention in a small community. For example, we are interested in the effects of encouraging farmers to adopt a new weather insurance product, or encouraging students in a school to take a stand against bullying. Our intervention is to target indvidiuals with information, but our goal is to cause a community-level outcome (more insurnace, less bullying). How should we target individuals? Randomly? Or should we target more connected individuals? How can we compare or contrast differnt strategies? As part of this work, we developed statistical methods for comparing different strategies, and evaluating which one has a larger effect, using much less data that required by previous statistical methods.\n\nAs a second application, if a web company is considering a product change for their users, but the product has strong network effects (e.g., a chat product, or a music sharing app), how can they compare different version of the product? Ideally they'd like to give everyone version A or everyone version B, and compare. But that's not possible. The networked setting differs from the standard setting (e.g., a drug trial) because people's outcomes are coupled. As part of this work, we develop new methods to much more efficiently estimate (designs that give much lower variance estimates) the global average treatment effect using more sophisticared randomization strategies that are network-aware.\n\nAdditional work prodcuts of this project target other types of experimental designs for interventions with other types of spillovers, or other methods for analyzing social network data.\n\n\t\t\t\t\tLast Modified: 08/28/2020\n\n\t\t\t\t\tSubmitted by: Johan Ugander"
+ }
+}

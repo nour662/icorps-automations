@@ -1,0 +1,113 @@
+{
+ "awd_id": "1115448",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "AF: Small: Descriptive Complexity and Inductive Synthesis",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Jack S. Snoeyink",
+ "awd_eff_date": "2011-09-01",
+ "awd_exp_date": "2015-08-31",
+ "tot_intn_awd_amt": 341341.0,
+ "awd_amount": 341341.0,
+ "awd_min_amd_letter_date": "2011-07-06",
+ "awd_max_amd_letter_date": "2011-07-06",
+ "awd_abstract_narration": "Descriptive Complexity measures the richness of a language or sentence needed to describe a given property. There is a profound relationship between the traditional computational complexity of a problem and the descriptive complexity of the problem. In particular, the trade-off between parallel time and amount of hardware, which is a fundamental issue in computation, has been characterized as the trade-off between formula size and number of variables.  \r\n \r\nInformed by descriptive complexity, PI will use modern SAT solvers, SMT solvers and AI planners to automatically derive efficient algorithms from high-level specifications.  PI and his research group will also develop a system that uses solvers to automatically derive low-level reductions between combinatorial problems.  Thus methods will be developed to automatically go from high-level specifications to  efficient programs as well as to automatically derive lower bounds on how efficient such implementations can be.   In using and building these systems, students and established researchers will gain knowledge on what makes problems computationally complex, and how to use state-of-the art solvers to automatically build efficient and reliable software.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Neil",
+   "pi_last_name": "Immerman",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Neil Immerman",
+   "pi_email_addr": "immerman@cs.umass.edu",
+   "nsf_id": "000178321",
+   "pi_start_date": "2011-07-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Massachusetts Amherst",
+  "inst_street_address": "101 COMMONWEALTH AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "AMHERST",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "4135450698",
+  "inst_zip_code": "010039252",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "MA02",
+  "org_lgl_bus_name": "UNIVERSITY OF MASSACHUSETTS",
+  "org_prnt_uei_num": "VGJHK59NMPK9",
+  "org_uei_num": "VGJHK59NMPK9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Massachusetts Amherst",
+  "perf_str_addr": "101 COMMONWEALTH AVE",
+  "perf_city_name": "AMHERST",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "010039252",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "MA02",
+  "perf_ctry_name": "",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7927",
+   "pgm_ref_txt": "COMPLEXITY & CRYPTOGRAPHY"
+  },
+  {
+   "pgm_ref_code": "9218",
+   "pgm_ref_txt": "BASIC RESEARCH & HUMAN RESORCS"
+  },
+  {
+   "pgm_ref_code": "HPCC",
+   "pgm_ref_txt": "HIGH PERFORMANCE COMPUTING & COMM"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0111",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001112DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2011,
+   "fund_oblg_amt": 341341.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This reseach project made contributions leading to eleven published papers in database theory, the static analysis of programs and the automatic synthesis of correct and efficient programs from high-level specifications.&nbsp;&nbsp; Two highlights of our research contributions are the following.<br /><br />We introduced the concept of \"resilience\" of a boolean query. The resilience of a query with respect to a database, D, is the minimum number of tuples that must be removed from D to make the query false. Computing resilience is important for understanding why a tuple is present in a query or view, and to compute how to change it in the simplest way.&nbsp;&nbsp; We developed a natural criterion that classifies queries according to the complexity of their resilience problem, showing that this problem exhibits a dichotomy.&nbsp; We defined the \"triad\" and showed that resilience is NP complete in the presence of a triad; whereas in the absence of a triad resilience is in P. We also extended our result to determine dichotomies in the presence of functional dependencies and to compute the responsibility of such a query, and also for the case of responsibility in the presence of functional dependencies.&nbsp;&nbsp; These four main results give elegant characterizations of&nbsp; complexity dichotomies for each of these four important database problems.<br /><br />We also introduced and then extended a new method for automatically reasoning about programs.&nbsp; In particular, we reason about reachability between dynamically allocated memory locations.&nbsp; We use a simple logic which includes a relation, n*, denoting the reflexive, transitive closure of the functional pointer field, n.&nbsp; <br /><br />The key idea is that while reasoning about reachability is undecidable, when we restrict the allowed data structures we can automatically do incremental reasoning about reachability. We showed that each formula, phi, in our language is satisfiable if and only if a corresponding propositional formula, psi, is satisfiable.&nbsp; We can thus use a SAT solver to check psi, giving a proof of correctness if psi is unsatisfiable and a counter-example execution sequence when psi is satisfiable.&nbsp; We call our reasoning system EPR*, effectively propositional reasoning about reachability.&nbsp;&nbsp; The development of effectively propositional reasoning about reachability is probably the most important body of work resulting from this grant.&nbsp; In particular, we and others are continuing to use and extend this work to make it more widely applicable.&nbsp;&nbsp;</p>\n<p>Part of the broader impact of the supported research was the training of two young computer scientists.&nbsp; Our research developing new methods to automatic check the correctness of programs may lead in the future to improvements in the security and reliablity of software.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/08/2015<br>\n\t\t\t\t\tModified by: Neil&nbsp;Immerman</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis reseach project made contributions leading to eleven published papers in database theory, the static analysis of programs and the automatic synthesis of correct and efficient programs from high-level specifications.   Two highlights of our research contributions are the following.\n\nWe introduced the concept of \"resilience\" of a boolean query. The resilience of a query with respect to a database, D, is the minimum number of tuples that must be removed from D to make the query false. Computing resilience is important for understanding why a tuple is present in a query or view, and to compute how to change it in the simplest way.   We developed a natural criterion that classifies queries according to the complexity of their resilience problem, showing that this problem exhibits a dichotomy.  We defined the \"triad\" and showed that resilience is NP complete in the presence of a triad; whereas in the absence of a triad resilience is in P. We also extended our result to determine dichotomies in the presence of functional dependencies and to compute the responsibility of such a query, and also for the case of responsibility in the presence of functional dependencies.   These four main results give elegant characterizations of  complexity dichotomies for each of these four important database problems.\n\nWe also introduced and then extended a new method for automatically reasoning about programs.  In particular, we reason about reachability between dynamically allocated memory locations.  We use a simple logic which includes a relation, n*, denoting the reflexive, transitive closure of the functional pointer field, n.  \n\nThe key idea is that while reasoning about reachability is undecidable, when we restrict the allowed data structures we can automatically do incremental reasoning about reachability. We showed that each formula, phi, in our language is satisfiable if and only if a corresponding propositional formula, psi, is satisfiable.  We can thus use a SAT solver to check psi, giving a proof of correctness if psi is unsatisfiable and a counter-example execution sequence when psi is satisfiable.  We call our reasoning system EPR*, effectively propositional reasoning about reachability.   The development of effectively propositional reasoning about reachability is probably the most important body of work resulting from this grant.  In particular, we and others are continuing to use and extend this work to make it more widely applicable.  \n\nPart of the broader impact of the supported research was the training of two young computer scientists.  Our research developing new methods to automatic check the correctness of programs may lead in the future to improvements in the security and reliablity of software.\n\n\t\t\t\t\tLast Modified: 12/08/2015\n\n\t\t\t\t\tSubmitted by: Neil Immerman"
+ }
+}

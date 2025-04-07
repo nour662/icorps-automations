@@ -1,0 +1,121 @@
+{
+ "awd_id": "1550417",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SI2-SSI: Collaborative Research: ParaTreet: Parallel Software for Spatial Trees in Simulation and Analysis",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Rob Beverly",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2017-08-31",
+ "tot_intn_awd_amt": 54999.0,
+ "awd_amount": 54999.0,
+ "awd_min_amd_letter_date": "2016-08-19",
+ "awd_max_amd_letter_date": "2016-08-19",
+ "awd_abstract_narration": "Many scientific and visualization methods involve organizing the data they are processing into a hierarchy (also known as a \"tree\").   These applications and methods include: astronomical simulations of particles moving under the influence of gravity, analysis of spatial data (that is, data that describes objects with respect to their relative position in space), photorealistic rendering of virtual environments,reconstruction of surfaces from laser scans, collision detection when simulating the movement of physical objects, and many others.   Tree data structures, and the algorithms used to work on these structures, are heavily used in these applications because they help to make these applications run much faster on supercomputers. However, implementing tree-based algorithms can require a significant effort, particularly on modern highly parallel computers.  This project will create ParaTreet, a software toolkit for parallel trees, that will enable rapid development of such applications.  Details of the parallel aspects will be hidden from the programmer, who will be able to quickly evaluate the relative merits of different trees and algorithms even when applied to large datasets and very computation-intensive applications. The combination of such an abstract and extensible framework with a portable adaptive runtime system will allow scientists to effectively use parallel hardware ranging from small clusters to petascale-class machines, for a wide variety of tree-based applications. This project will demonstrate the feasibility of such an approach as well as generate evidence of community adoption of this technology. If successful, this project will enable NSF-supported researchers to solve science problems faster as well as to tackle more complex problems, thus serving NSF's science mission.\r\n\r\n\r\nThis project builds upon an existing collaboration on Computational Astronomy and the resultant software base in the ChaNGa (Charm N-body GrAvity solver) code. ChaNGa is a software package that performs collisionless N-body simulations, and can perform cosmological simulations with periodic boundary conditions in co-moving coordinates or simulations of isolated stellar systems. This project will extend ChaNGa with a parallel tree toolkit called ParaTreet and associated applications, that will allow scientists to effectively utilize small clusters as well as very large supercomputers for parallel tree-based calculations.  The key data structure in ParaTreet is an asynchronous software-based tree data cache, which maintains a writeback local copy of remote tree data. We plan to support a variety of spatial decomposition methods and the associated trees, including Oct-trees, KD-trees, inside-outside trees, ball trees, R-trees, and their combinations. Different trees are useful in different application circumstances, and the software will allow their relative merits to be evaluated with relative ease. The framework will support a variety of parallel work decomposition methods, including those based on space filling curves, and support dynamic rearrangement of parallel work at runtime. The algorithms supported will range from Barnes-Hut with various multipole expansions, data clustering, collision detection, surface reconstruction, ray intersection, etc. The software includes a collection of dynamic load balancing strategies in the Charm++ framework that can be tuned for specific problem structures. It also includes support for clusters of accelerators, such as GPGPUs. This project will demonstrate the feasibility of such an approach as well as generate evidence of community adoption of this technology.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Derek",
+   "pi_last_name": "Richardson",
+   "pi_mid_init": "C",
+   "pi_sufx_name": "",
+   "pi_full_name": "Derek C Richardson",
+   "pi_email_addr": "dcr@astro.umd.edu",
+   "nsf_id": "000489796",
+   "pi_start_date": "2016-08-19",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Wolfgang",
+   "pi_last_name": "Losert",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Wolfgang Losert",
+   "pi_email_addr": "wlosert@umd.edu",
+   "nsf_id": "000165167",
+   "pi_start_date": "2016-08-19",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Maryland, College Park",
+  "inst_street_address": "3112 LEE BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE PARK",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "3014056269",
+  "inst_zip_code": "207425100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "MD04",
+  "org_lgl_bus_name": "UNIVERSITY OF MARYLAND, COLLEGE PARK",
+  "org_prnt_uei_num": "NPU8ULVAAS23",
+  "org_uei_num": "NPU8ULVAAS23"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Maryland College Park",
+  "perf_str_addr": "1112 Physical Sciences Complex",
+  "perf_city_name": "College Park",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "207422421",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "MD04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "800400",
+   "pgm_ele_name": "Software Institutes"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "8004",
+   "pgm_ref_txt": "Software Institutes"
+  },
+  {
+   "pgm_ref_code": "8009",
+   "pgm_ref_txt": "Scientifc Software Integration"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 54999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span>As part of a larger collaboration, our group was tasked with supporting code development for ParaTreeT, a software framework to facilitate incorporation of fast computational algorithms that exploit parallel architecture into existing coding projects while minimizing the development time for the end user. We also investigated potential use cases of ParaTreeT in the biosciences. We accomplished these goals by (1) assisting</span>&nbsp;with the incorporation and testing of a collision detection algorithm into ParaTreeT; and (2) identifying several biosciences use cases and potential adopters of ParaTreeT within that community. A graduate student received training during the tenure of this award. The full collaboration demonstrated benchmarking of various components of ParaTreeT on several architectures (including the BlueWaters supercomputer), measured download statistics for CHARM++ (on which ParaTreeT is based), and compiled a broader list of potential adopters for ParaTreeT.</p>\n<p>We note this project was funded for just 1 year, so the list of accomplishments is correspondingly modest. As a detail of possible interest, the biosciences use cases we identified included flow cytometry (a means of counting and sorting biological cells) and improvements to the popular codes AWESM-MD (for modeling the dynamics of proteins) and MEDYAN (an efficient and scalable computational model for mechanochemical simulations of active matter networks).</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/23/2017<br>\n\t\t\t\t\tModified by: Derek&nbsp;C&nbsp;Richardson</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nAs part of a larger collaboration, our group was tasked with supporting code development for ParaTreeT, a software framework to facilitate incorporation of fast computational algorithms that exploit parallel architecture into existing coding projects while minimizing the development time for the end user. We also investigated potential use cases of ParaTreeT in the biosciences. We accomplished these goals by (1) assisting with the incorporation and testing of a collision detection algorithm into ParaTreeT; and (2) identifying several biosciences use cases and potential adopters of ParaTreeT within that community. A graduate student received training during the tenure of this award. The full collaboration demonstrated benchmarking of various components of ParaTreeT on several architectures (including the BlueWaters supercomputer), measured download statistics for CHARM++ (on which ParaTreeT is based), and compiled a broader list of potential adopters for ParaTreeT.\n\nWe note this project was funded for just 1 year, so the list of accomplishments is correspondingly modest. As a detail of possible interest, the biosciences use cases we identified included flow cytometry (a means of counting and sorting biological cells) and improvements to the popular codes AWESM-MD (for modeling the dynamics of proteins) and MEDYAN (an efficient and scalable computational model for mechanochemical simulations of active matter networks).\n\n \n\n\t\t\t\t\tLast Modified: 12/23/2017\n\n\t\t\t\t\tSubmitted by: Derek C Richardson"
+ }
+}

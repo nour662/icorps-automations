@@ -1,0 +1,109 @@
+{
+ "awd_id": "2001752",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: SI2-SSI: Expanding Volunteer Computing",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Seung-Jong Park",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2021-04-30",
+ "tot_intn_awd_amt": 172474.0,
+ "awd_amount": 172474.0,
+ "awd_min_amd_letter_date": "2019-10-31",
+ "awd_max_amd_letter_date": "2019-10-31",
+ "awd_abstract_narration": "Volunteer computing (VC) uses donated computing time consumer devices such as home computers and smartphones to do scientific computing. It has been shown that VC can provide greater computing power, at lower cost, than conventional approaches such as organizational computing centers and commercial clouds. BOINC is the most common software framework for VC. Essentially, donors of computing time simply have to load BOINC on their computer or smartphone, and then register to donate at the BOINC web site. VC provides \"high throughput computing\": handling lots of independent jobs, with performance goals based on the rate of job completion rather than completion time for individual jobs. This type of computing (all known as high-throughput computing) is in great demand in most areas of science. Until now, the adoption of VC has been limited by its structure. For example, VC projects (such as Einstein@home and Rosetta@home) are operated by individual research groups, and volunteers must browse and choose from among many such projects. As a result, there are relatively few VC projects, and volunteers are mostly tech-savvy computer enthusiasts.  This project aims to solve these problems using two complementary development efforts: First, it will add BOINC-based VC conduits to two major high-performance computing providers: (a) the Texas Advanced Computing Center, a supercomputer center, and (b) nanoHUB, a web portal for nano science that provides computing capabilities.Also, a unified control interface to VC will be developed, tentatively called Science United, where donors can register.  The project  will benefit thousands of scientists who use these facilities, and it will create technology that makes it easy for other HPC providers to add their own VC back ends. Also, Science United will provide a simpler interface to BOINC volunteers where they will register to support scientific areas, rather than specific projects. Science United will also serve as an allocator of computing power among projects. Thus, new projects will no longer have to do their own marketing and publicity to recruit volunteers. Finally, the creation of a single VC \"brand\" (i.e Science United) will allow coherent marketing of VC to the public. By creating a huge pool of low-cost computing power that will benefit thousands of scientists, and increasing public awareness of and interest in science, the project plans to establish VC as a central and long-term part of the U.S. scientific cyber infrastructure.\r\n\r\nAdding VC to an existing HPC facility involves several technical issues, which will be addressed as follows: (1) Packaging science applications (which typically run on Linux cluster nodes) to run on home computers (mostly Windows, some Mac and Linux): the team is developing an approach using VirtualBox and Docker, in which the application and its environment (Linux distribution, libraries, executables) are represented as a set of layers comprising a Docker image, which is then run as a container within a Linux virtual machine on the volunteer device. This has numerous advantages: it reduces the work of packaging applications to near zero; it minimizes network traffic because a given Docker layer is downloaded to a host only once; and it provides a strong security sandbox so that volunteer computers are protected from buggy or malicious applications, (2) File management: Input and output files must be moved between existing private servers and public-facing servers that are accessible to the outside Internet. A file management system will be developed, based on Web RPCs, for this purpose. This system will use content-based naming so that a given file is transferred and stored only once. It also maintains job/file associations so that files can be automatically deleted from the public server when they are no longer needed. (3) Submitting and monitoring jobs:  BOINC provides a web interface for efficiently submitting and monitoring large batches of jobs. These were originally developed as part of a system to migrate HTCondor jobs to BOINC. This project is extending it to support the additional requirements of TACC and nanoHUB. Note that these new capabilities are not specific to TACC or nanoHUB: they provide the glue needed to easily add BOINC-based VC to any existing HTC facility. The team is also developing RPC bindings in several languages (Python, C++, PHP). The other component of the project, Science United, is a database-driven web site and an associated web service for the BOINC clients. Science United will control volunteer hosts (i.e. tell them which projects to work for) using BOINC's \"Account Manager\" mechanism, in which the BOINC client on each host periodically contacts Science United and is told what projects to run. Project servers, not Science United, will distribute jobs and files. Science United will define a set of \"keywords\" for science areas (physics, biomedicine, environment, etc.) and for location (country, institution). Projects will be labelled with appropriate keywords. Volunteers will have a yes/no/maybe interface for specifying the types of jobs they want to run. Science United will thus provide a mechanism in which a fraction of total computing capacity can be allocated to a project for a given period. Because total capacity changes slowly over time, this allows near-certain guaranteed allocations. Science United will embody a scheduling system that attempts to enforce allocations, honor volunteer preferences, and maximize throughput. Finally, Science United will do detailed accounting of computing. Volunteer hosts will tell Science United how much work (measured by CPU time and FLOPs, GPU time and FLOPs, and number of jobs) they have done for each project. Science United will maintain historical records of this data for volunteers and projects, and current totals with finer granularity (e.g. for each host/project combination). Finally, Science United will provide web interfaces letting volunteers see their contribution status and history, and letting administrators add projects, control allocations, and view accounting data.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Michael",
+   "pi_last_name": "Zentner",
+   "pi_mid_init": "G",
+   "pi_sufx_name": "",
+   "pi_full_name": "Michael G Zentner",
+   "pi_email_addr": "mzentner@cbios.com",
+   "nsf_id": "000573005",
+   "pi_start_date": "2019-10-31",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-San Diego",
+  "inst_street_address": "9500 GILMAN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "LA JOLLA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8585344896",
+  "inst_zip_code": "920930021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "UYTTZT6G9DT1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-San Diego",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920930621",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "800400",
+   "pgm_ele_name": "Software Institutes"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "8004",
+   "pgm_ref_txt": "Software Institutes"
+  },
+  {
+   "pgm_ref_code": "8009",
+   "pgm_ref_txt": "Scientifc Software Integration"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 172473.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>BOINC is a system created at UC Berkeley for Volunteer Computing (VC), which allows anyone to register their computer to perform computational tasks submitted through BOINC.&nbsp; Citizens can participate in science by donating their home / office spare computing capacity (most often when they are not using the computer for themselves).&nbsp; nanoHUB is a large web portal (nanohub.org) that allows tens of thousands of scientists and students to access hundreds of simulation tools and large compute resources.&nbsp; Users of nanoHUB are doing research and studying nano electronic devices commonly used in everyday electronics: cell phones, automobiles, televisions, and nearly any product that contains microchips and displays.</p>\n<p>This project investigated advantages that might be brought to the field of nanotechnology by using VC.&nbsp; Although BOINC is commonly used in projects like SETI@home, where instruments like telescopes produce a very large number of images that can be processed on a vast pool of VC resources, nanoHUB creates a different type of compute work.&nbsp; nanoHUB workloads are created by humans as they click on simulation tools to study various inputs and what impact those inputs have on nano electronic device designs.&nbsp; We discovered that this type of workload, where humans are waiting for a response, is slower using VC resources than dedicated compute resources.</p>\n<p>However this discovery also highlighted two new areas where VC could shine in partnership with nanoHUB: uncertainty quantification (UQ) and machine learning (ML).&nbsp; UQ involves computing results when the inputs are not certain.&nbsp; For example, in a manufacturing process one might only be able to say that the thickness of a material is between two values because of the variability in manufacturing conditions.&nbsp; Based on this uncertainty, the outputs of a model, for example the strength of a material, are also uncertain and need to be expressed not as single values but as a range of values.&nbsp; This is important because it affects the performance of items ranging from airplane wings to the batteries and components in cellphones.&nbsp; Computing under uncertainty involves taking a model which does not inherently handle uncertainty, determining a large set of input conditions to run the model many times, and producing a range of outputs.&nbsp; These are all then gathered together to provide an output that is the expected performance of the item being simulated given the uncertainties.&nbsp; To perform a UQ calculation requires hundreds or even thousands of computer generated simulation jobs, which are ideal workloads for VC.</p>\n<p>Similar to UQ, ML also can also require thousands of computer generated compute jobs.&nbsp; ML is used in common settings to recognize images and predict behavior.&nbsp; The public experiences the results of such ML work every day.&nbsp; This is successful because there are large data sets to use to train machine learning models (for example millions of photographs, hundreds of millions of interactions with websites like Amazon, and so on).&nbsp; With simulation models, such large training sets need to be created.&nbsp; The work in this project involved creating a system called specbot that is capable of generating thousands of compute jobs.&nbsp; The outputs of these compute jobs can be used to train ML based models that provide similar outputs for a given set of inputs, but which run much faster than the models based on physics that were used to produce training sets.&nbsp; As a result, a ML based model trained on thousands of simulation results can in turn be used to generate millions of results much more quickly than the original model.&nbsp; Such models are key to analyzing the performance of materials and devices quickly so that only the most promising configurations are pursued more deeply with additional simulation and ultimately physical manufacturing and testing.&nbsp; As&nbsp; result, costs can be avoided and speed to market greatly enhanced.</p>\n<p>The key advances of this research project were to i) understand the ideal and non-ideal use cases for VC in a scientific simulation web site like nanoHUB, ii) create enabling technologies to pursue those ideal use cases, iii) adapt existing nanoHUB technology to handle the scale of a much larger number of compute jobs than those initiated only by human simulation activity, and iv) assess the VC community&rsquo;s response to workloads like those produced by nanoHUB as opposed to the more conventional workloads like SETI@Home.&nbsp; It was determined that UQ and ML based workloads are most appropriate for VC, the connectors for BOINC to nanoHUB were built, scale was achieved to run approximately 10 million jobs annually, and it was determined that the VC community craves constant and heavy workloads (and conversely is not responsive to projects with minimal workloads).&nbsp; It was also found that only some of the simulation jobs on nanoHUB are appropriate for VC, given that some such jobs require larger resources than those typically found in the pool of VC resources.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/23/2021<br>\n\t\t\t\t\tModified by: Michael&nbsp;Zentner</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nBOINC is a system created at UC Berkeley for Volunteer Computing (VC), which allows anyone to register their computer to perform computational tasks submitted through BOINC.  Citizens can participate in science by donating their home / office spare computing capacity (most often when they are not using the computer for themselves).  nanoHUB is a large web portal (nanohub.org) that allows tens of thousands of scientists and students to access hundreds of simulation tools and large compute resources.  Users of nanoHUB are doing research and studying nano electronic devices commonly used in everyday electronics: cell phones, automobiles, televisions, and nearly any product that contains microchips and displays.\n\nThis project investigated advantages that might be brought to the field of nanotechnology by using VC.  Although BOINC is commonly used in projects like SETI@home, where instruments like telescopes produce a very large number of images that can be processed on a vast pool of VC resources, nanoHUB creates a different type of compute work.  nanoHUB workloads are created by humans as they click on simulation tools to study various inputs and what impact those inputs have on nano electronic device designs.  We discovered that this type of workload, where humans are waiting for a response, is slower using VC resources than dedicated compute resources.\n\nHowever this discovery also highlighted two new areas where VC could shine in partnership with nanoHUB: uncertainty quantification (UQ) and machine learning (ML).  UQ involves computing results when the inputs are not certain.  For example, in a manufacturing process one might only be able to say that the thickness of a material is between two values because of the variability in manufacturing conditions.  Based on this uncertainty, the outputs of a model, for example the strength of a material, are also uncertain and need to be expressed not as single values but as a range of values.  This is important because it affects the performance of items ranging from airplane wings to the batteries and components in cellphones.  Computing under uncertainty involves taking a model which does not inherently handle uncertainty, determining a large set of input conditions to run the model many times, and producing a range of outputs.  These are all then gathered together to provide an output that is the expected performance of the item being simulated given the uncertainties.  To perform a UQ calculation requires hundreds or even thousands of computer generated simulation jobs, which are ideal workloads for VC.\n\nSimilar to UQ, ML also can also require thousands of computer generated compute jobs.  ML is used in common settings to recognize images and predict behavior.  The public experiences the results of such ML work every day.  This is successful because there are large data sets to use to train machine learning models (for example millions of photographs, hundreds of millions of interactions with websites like Amazon, and so on).  With simulation models, such large training sets need to be created.  The work in this project involved creating a system called specbot that is capable of generating thousands of compute jobs.  The outputs of these compute jobs can be used to train ML based models that provide similar outputs for a given set of inputs, but which run much faster than the models based on physics that were used to produce training sets.  As a result, a ML based model trained on thousands of simulation results can in turn be used to generate millions of results much more quickly than the original model.  Such models are key to analyzing the performance of materials and devices quickly so that only the most promising configurations are pursued more deeply with additional simulation and ultimately physical manufacturing and testing.  As  result, costs can be avoided and speed to market greatly enhanced.\n\nThe key advances of this research project were to i) understand the ideal and non-ideal use cases for VC in a scientific simulation web site like nanoHUB, ii) create enabling technologies to pursue those ideal use cases, iii) adapt existing nanoHUB technology to handle the scale of a much larger number of compute jobs than those initiated only by human simulation activity, and iv) assess the VC community\u2019s response to workloads like those produced by nanoHUB as opposed to the more conventional workloads like SETI@Home.  It was determined that UQ and ML based workloads are most appropriate for VC, the connectors for BOINC to nanoHUB were built, scale was achieved to run approximately 10 million jobs annually, and it was determined that the VC community craves constant and heavy workloads (and conversely is not responsive to projects with minimal workloads).  It was also found that only some of the simulation jobs on nanoHUB are appropriate for VC, given that some such jobs require larger resources than those typically found in the pool of VC resources.\n\n\t\t\t\t\tLast Modified: 08/23/2021\n\n\t\t\t\t\tSubmitted by: Michael Zentner"
+ }
+}

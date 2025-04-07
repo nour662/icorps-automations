@@ -1,0 +1,129 @@
+{
+ "awd_id": "1148424",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: SI2-SSI: A Comprehensive Performance Tuning Framework for the MPI Stack",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Rajiv Ramnath",
+ "awd_eff_date": "2012-06-01",
+ "awd_exp_date": "2016-05-31",
+ "tot_intn_awd_amt": 449995.0,
+ "awd_amount": 449995.0,
+ "awd_min_amd_letter_date": "2012-06-04",
+ "awd_max_amd_letter_date": "2012-06-04",
+ "awd_abstract_narration": "The Message Passing Interface (MPI) is a very widely used parallel programming model on modern High-End Computing (HEC) systems. Many performance aspects of MPI libraries, such as latency, bandwidth, scalability, memory footprint, cache pollution, overlap of computation and communication etc. are highly dependent on system configuration and application requirements. Additionally, modern clusters are changing rapidly with the growth of multi-core processors and commodity networking technologies such as InfiniBand and 10GigE/iWARP. They are becoming diverse and heterogeneous with varying number of processor cores, processor speed, memory speed, multi-generation network adapters/switches, I/O interface technologies, and accelerators (GPGPUs), etc.  Typically, any MPI library deals with the above kind of diversity in platforms and sensitivity of applications by employing various runtime parameters. These parameters are tuned during its release, or by\r\nsystem administrators, or by end-users.  These default parameters may or may not be optimal for all system configurations and applications.\r\n\r\nThe MPI library of a typical proprietary system goes through heavy performance tuning for a range of applications.  Since commodity clusters provide greater flexibility in their configurations (processor, memory and network), it is very hard to achieve optimal tuning using released version of any MPI library, with its default settings. This leads to the following broad challenge: \"Can a comprehensive performance tuning framework be designed for MPI library so that the next generation InfiniBand, 10GigE/iWARP and RoCE clusters and applications will be able to extract `bare-metal' performance and maximum scalability?\"  The investigators, involving computer\r\nscientists from The Ohio State University (OSU) and Ohio Supercomputer Center (OSC) as well as computational scientists from the Texas Advanced Computing Center (TACC) and San Diego Supercomputer Center (SDSC), University of California San Diego (UCSD), will be addressing the above challenge with innovative solutions.\r\n\r\nThe investigators will specifically address the following challenges: 1) Can a set of static tools be designed to optimize performance of an MPI library during installation time?  2) Can a set of dynamic tools with low overhead be designed to optimize performance on a per-user and per-application basis during production runs?  3) How to incorporate the proposed performance tuning framework with the upcoming MPIT interface?  4) How to configure MPI libraries on a given system to deliver different optimizations to a set of driving applications?  and 5) What kind of benefits (in terms of performance, scalability, memory efficiency and reduction in cache pollution) can be achieved by the proposed tuning framework?  The research will be driven by a set of applications from established NSF computational science researchers running large scale simulations on the TACC Ranger and other systems at OSC, SDSC and OSU.  The proposed designs will be integrated into the open-source MVAPICH2 library.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "William",
+   "pi_last_name": "Barth",
+   "pi_mid_init": "L",
+   "pi_sufx_name": "",
+   "pi_full_name": "William L Barth",
+   "pi_email_addr": "bbarth@tacc.utexas.edu",
+   "nsf_id": "000596862",
+   "pi_start_date": "2012-06-04",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Tommy",
+   "pi_last_name": "Minyard",
+   "pi_mid_init": "K",
+   "pi_sufx_name": "",
+   "pi_full_name": "Tommy K Minyard",
+   "pi_email_addr": "minyard@tacc.utexas.edu",
+   "nsf_id": "000371000",
+   "pi_start_date": "2012-06-04",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Texas at Austin",
+  "inst_street_address": "110 INNER CAMPUS DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "AUSTIN",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "5124716424",
+  "inst_zip_code": "787121139",
+  "inst_country_name": "United States",
+  "cong_dist_code": "25",
+  "st_cong_dist_code": "TX25",
+  "org_lgl_bus_name": "UNIVERSITY OF TEXAS AT AUSTIN",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "V6AFQPN18437"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Texas at Austin",
+  "perf_str_addr": "PO Box 7726",
+  "perf_city_name": "Austin",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "787137726",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "37",
+  "perf_st_cong_dist": "TX37",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "164000",
+   "pgm_ele_name": "Information Technology Researc"
+  },
+  {
+   "pgm_ele_code": "800400",
+   "pgm_ele_name": "Software Institutes"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1640",
+   "pgm_ref_txt": "INFORMATION TECHNOLOGY RESEARC"
+  },
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "8004",
+   "pgm_ref_txt": "Software Institutes"
+  },
+  {
+   "pgm_ref_code": "8009",
+   "pgm_ref_txt": "Scientifc Software Integration"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0112",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001213DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2012,
+   "fund_oblg_amt": 449995.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The largest computers today use thousands of computing units (referredto as cores) to run complex scientific simulations. Applicationsrunning on these systems predominately use the Message PassingInterface (MPI) programming model to exchange data between cores. Thecores are organized several cores per socket, and commonly two or foursockets per server, with the servers connected by a high-performancenetwork, the system's interconnect. The focus of this project isperformance tuning of the MVAPICH2 MPI library, a high performance,open-source implementation of the MPI standard that delivers the bestperformance, scalability, and fault tolerance for high-end computingsystems and servers that use one of the following interconnect networktechnologies: InfiniBand, Intel Omni-Path, 10-40GigE/iWARP orRoCE. The overarching goal of the project is to reduce the time tosolution for complex science simulations which use MVAPICH2 or otherMPI libraries on these large systems.<br /><br />Most large computer systems (clusters) are built up from commoditycomponents, but the technology is changing rapidly with frequentintroduction of new multi-core processors and networkingtechnologies. Open source MPI libraries must run well across multiplegenerations of processors and interconnects, and additionally supportaccelerators such as NVIDIA GPGPUS and Intel Xeon Phiprocessors. Typically, any MPI library deals with diverse platformsand a wide range of applications by employing various runtimeparameters. These parameters are either set during software release,by system administrators, or end-users. Considering the nature ofcommodity clusters, it is difficult to apply one set of common tuningparameters that will allow an MPI library to extract the bestperformance on all computer systems. This leads to a broad challenge:Can a comprehensive performance tuning framework be designed for MPIlibraries for modern commodity clusters?<br /><br />In this project we have addressed this challenge in three areas: 1) Developed architecture specific tuning for MPI communicationoperations between pairs of cores (point-to-point operations) orgroups of cores (collective operations).&nbsp; 2) Developed a performanceprofiling layer within MVAPICH2, including support for the MPI-3standard's MPI_T interface.&nbsp; 3) Studied application sensitivity to MPIparameters and developed applications specific tuning strategies.<br /><br />Developments were made in all three areas and evaluated with a rangeof science applications including: HoomdBlue, SMG2000, Neuron, Amber,MiniAMR, MILC, LULESH and HPCCG. These scientific applications and mathematical libraries are from biochemistry, neuroscience, high energy physics, computational fluid dynamics, and numerical linear algebra. Some highlights of these results arethat architecture-specific tuning improves collective operationlatency by up to 58%. The GPU tuning methods were able to provide a 2Ximprovement in the execution time of HoomdBlue application. Thetransport protocol-based tuning shows 27% improvement for the Neuronapplication example. With HPCG and the LULESH application kernel, thecollective tuning for partial subscription available on hybridMPI+OpenMP programming model improves the execution time by 24% at 512<br />cores.<br />The results of this research (tuned designs, performance results,benchmarks, etc.) have been made available to the community throughthe open-source MVAPICH2 library (1.9, 2.0, 2.1, and 2.2 releaseseries including alpha, beta and RC versions). The latest version iscurrently running on many large-scale XSEDE systems including TACC Stampede, SDSC Gordon and SDSC Comet. Currently,the MVAPICH2 library is being used by more than 2,650 organizations in 81 countries. The MVAPICH2 library and the enhancements are being used by a large numberof users of these systems.<br /><br />In each of these releases, information about the tuned designs forvarious components (such as point-to-point, collectives, GPU-GPUcommunication, etc.) has been shared with the MVAPICH2 user communitythrough mailing lists. The applications-based tuning results have beenmade available to the community through the \"Best Practices\" link ofthe MVAPICH project web page. In order to achieve direct face-to-facediscussion with MVAPICH2 users and get their feedback, in 2013 westarted holding an MVAPICH2 User Group Meeting (MUG) each year inAugust in Columbus Ohio. This meeting has been continuing successfullyfor the last four years and has helped to disseminate the results ofthis research to a wider community.&nbsp; In addition to the softwaredistribution and the MUG events, the results have been presented atvarious conferences and events through talks and tutorials. Multiple Ph.D and Masters students have performed research work and received their Ph.D and M.S. degrees as a part of this project.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/30/2016<br>\n\t\t\t\t\tModified by: William&nbsp;L&nbsp;Barth</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe largest computers today use thousands of computing units (referredto as cores) to run complex scientific simulations. Applicationsrunning on these systems predominately use the Message PassingInterface (MPI) programming model to exchange data between cores. Thecores are organized several cores per socket, and commonly two or foursockets per server, with the servers connected by a high-performancenetwork, the system's interconnect. The focus of this project isperformance tuning of the MVAPICH2 MPI library, a high performance,open-source implementation of the MPI standard that delivers the bestperformance, scalability, and fault tolerance for high-end computingsystems and servers that use one of the following interconnect networktechnologies: InfiniBand, Intel Omni-Path, 10-40GigE/iWARP orRoCE. The overarching goal of the project is to reduce the time tosolution for complex science simulations which use MVAPICH2 or otherMPI libraries on these large systems.\n\nMost large computer systems (clusters) are built up from commoditycomponents, but the technology is changing rapidly with frequentintroduction of new multi-core processors and networkingtechnologies. Open source MPI libraries must run well across multiplegenerations of processors and interconnects, and additionally supportaccelerators such as NVIDIA GPGPUS and Intel Xeon Phiprocessors. Typically, any MPI library deals with diverse platformsand a wide range of applications by employing various runtimeparameters. These parameters are either set during software release,by system administrators, or end-users. Considering the nature ofcommodity clusters, it is difficult to apply one set of common tuningparameters that will allow an MPI library to extract the bestperformance on all computer systems. This leads to a broad challenge:Can a comprehensive performance tuning framework be designed for MPIlibraries for modern commodity clusters?\n\nIn this project we have addressed this challenge in three areas: 1) Developed architecture specific tuning for MPI communicationoperations between pairs of cores (point-to-point operations) orgroups of cores (collective operations).  2) Developed a performanceprofiling layer within MVAPICH2, including support for the MPI-3standard's MPI_T interface.  3) Studied application sensitivity to MPIparameters and developed applications specific tuning strategies.\n\nDevelopments were made in all three areas and evaluated with a rangeof science applications including: HoomdBlue, SMG2000, Neuron, Amber,MiniAMR, MILC, LULESH and HPCCG. These scientific applications and mathematical libraries are from biochemistry, neuroscience, high energy physics, computational fluid dynamics, and numerical linear algebra. Some highlights of these results arethat architecture-specific tuning improves collective operationlatency by up to 58%. The GPU tuning methods were able to provide a 2Ximprovement in the execution time of HoomdBlue application. Thetransport protocol-based tuning shows 27% improvement for the Neuronapplication example. With HPCG and the LULESH application kernel, thecollective tuning for partial subscription available on hybridMPI+OpenMP programming model improves the execution time by 24% at 512\ncores.\nThe results of this research (tuned designs, performance results,benchmarks, etc.) have been made available to the community throughthe open-source MVAPICH2 library (1.9, 2.0, 2.1, and 2.2 releaseseries including alpha, beta and RC versions). The latest version iscurrently running on many large-scale XSEDE systems including TACC Stampede, SDSC Gordon and SDSC Comet. Currently,the MVAPICH2 library is being used by more than 2,650 organizations in 81 countries. The MVAPICH2 library and the enhancements are being used by a large numberof users of these systems.\n\nIn each of these releases, information about the tuned designs forvarious components (such as point-to-point, collectives, GPU-GPUcommunication, etc.) has been shared with the MVAPICH2 user communitythrough mailing lists. The applications-based tuning results have beenmade available to the community through the \"Best Practices\" link ofthe MVAPICH project web page. In order to achieve direct face-to-facediscussion with MVAPICH2 users and get their feedback, in 2013 westarted holding an MVAPICH2 User Group Meeting (MUG) each year inAugust in Columbus Ohio. This meeting has been continuing successfullyfor the last four years and has helped to disseminate the results ofthis research to a wider community.  In addition to the softwaredistribution and the MUG events, the results have been presented atvarious conferences and events through talks and tutorials. Multiple Ph.D and Masters students have performed research work and received their Ph.D and M.S. degrees as a part of this project.\n\n\t\t\t\t\tLast Modified: 08/30/2016\n\n\t\t\t\t\tSubmitted by: William L Barth"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1619211",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "TWC: Small: Hydra - Hybrid Defenses for Resilient Applications: Practical Approaches Towards Defense In Depth",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2020-06-30",
+ "tot_intn_awd_amt": 499981.0,
+ "awd_amount": 499981.0,
+ "awd_min_amd_letter_date": "2016-06-10",
+ "awd_max_amd_letter_date": "2016-06-10",
+ "awd_abstract_narration": "In popular culture, cyber security is characterized as a cat-and-mouse game: an attacker finds a new exploit, defenders find a corresponding countermeasure, and the game goes on and on. Unfortunately, reality isn't far removed from this fiction: most defenses are reactive to particular threats that have already been discovered, and they are often combined on top of each other, without attempting to integrate them. Combining disjoint security mechanisms in this manner often has the effect that the individual costs of the mechanisms add up, so that at some point it becomes impractical to add more. Biological immune systems in nature do much better than this, combining an innate response against general threats (such as bacteria and viruses) with a learned response against specific previously seen threats. Moreover, the adaptive system doesn't appear to get \"slower\" as it learns to handle new classes of pathogens. This research focuses on \"hybrid\" defenses inspired by biological systems.\r\n\r\nThe project investigates practical \"defense in depth\" approaches that synthesize hybrid defenses that are greater the sum of their parts and that have lower overheads than traditional layered security solutions. This is not trivial, since one must ensure that combining multiple defenses doesn't create (possibly hidden) feature-interaction conflicts, perhaps even leading to new vulnerabilities that an attacker might exploit. The project's approach leverages dynamic diversification, which intersperses randomization with program execution. By rapidly switching between alternative versions of the program at run-time, one can ensure that the flow of control never follows the same path for two different executions of the same program, even when operating on the same inputs. This technique provides the foundation for much of the proposed research and offers probabilistic protection. The project will benefit all domains in which computer security measures have traditionally been constrained by performance considerations, including e-commerce, consumer software, and mobile computing.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Michael",
+   "pi_last_name": "Franz",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Michael Franz",
+   "pi_email_addr": "franz@uci.edu",
+   "nsf_id": "000162759",
+   "pi_start_date": "2016-06-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Irvine",
+  "inst_street_address": "160 ALDRICH HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "IRVINE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9498247295",
+  "inst_zip_code": "926970001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "47",
+  "st_cong_dist_code": "CA47",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA IRVINE",
+  "org_prnt_uei_num": "MJC5FCYQTPE6",
+  "org_uei_num": "MJC5FCYQTPE6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Irvine",
+  "perf_str_addr": "Computer Science, 444 ICS Bldg",
+  "perf_city_name": "Irvine",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "926971000",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "47",
+  "perf_st_cong_dist": "CA47",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 499981.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In this project, we set out to create new exploit mitigation techniques and to investigate how one could combine multiple different compiler-inserted software defenses with acceptable overhead.&nbsp;&nbsp;Because the overhead of different exploit mitigation techniques is typically additive, the original idea was that one could use a compiler to generate several versions of each basic block (an optimized one and several additional ones with different mitigations enabled), and then dynamically switch between the different versions of each basic block so that the overhead of mitigation could be adjusted dynamically at runtime.</p>\n<p>It turned out that our original idea of switching between basic blocks for exploit mitigation was not as practical as we had expected, at least not on current hardware.&nbsp;&nbsp;However, applying these ideas to sanitization (dynamic vulnerability finding techniques) worked quite well, making sanitizers more flexible and reducing their cost.&nbsp;&nbsp;As a result, in the second half of the project, we focused more on uncovering software vulnerabilities through sanitization and fuzzing while also developing specifically lower-overhead mitigations.</p>\n<p>Several of our research papers were accepted at top-tier strongly refereed venues.&nbsp;&nbsp;We discovered and reported eight software vulnerabilities in device drivers from two different chipset manufacturers, affecting flagship mobile phones from two different phone manufacturers.&nbsp;&nbsp;Vulnerabilities were officially confirmed by the manufacturers, assigned an entry in the Common Vulnerabilities and Exposures (CVE) database sponsored by the U.S. Department of Homeland Security, and released to the public only after a remedy was available.&nbsp;&nbsp;By finding and responsibly disclosing these software vulnerabilities, we potentially prevented great societal harm.&nbsp;</p>\n<p>This project also contributed to educating the next generation of faculty and researchers.&nbsp;&nbsp;A Post-Doctoral Researcher became a tenure-track Assistant Professor, benefiting from the training and mentoring obtained under this project.&nbsp;&nbsp;Several Ph.D. students completed their degrees partially funded by this project.&nbsp;&nbsp;We incorporated some of the insights from this research project into presentations given at conferences, invited colloquia, and academic lectures and seminars, thereby disseminating the insights we gained more widely.&nbsp;&nbsp;Our work's practical significance was further underlined by multiple invitations to present our work at major non-academic conferences in front of thousands of computer security industry professionals.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/05/2020<br>\n\t\t\t\t\tModified by: Michael&nbsp;Franz</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIn this project, we set out to create new exploit mitigation techniques and to investigate how one could combine multiple different compiler-inserted software defenses with acceptable overhead.  Because the overhead of different exploit mitigation techniques is typically additive, the original idea was that one could use a compiler to generate several versions of each basic block (an optimized one and several additional ones with different mitigations enabled), and then dynamically switch between the different versions of each basic block so that the overhead of mitigation could be adjusted dynamically at runtime.\n\nIt turned out that our original idea of switching between basic blocks for exploit mitigation was not as practical as we had expected, at least not on current hardware.  However, applying these ideas to sanitization (dynamic vulnerability finding techniques) worked quite well, making sanitizers more flexible and reducing their cost.  As a result, in the second half of the project, we focused more on uncovering software vulnerabilities through sanitization and fuzzing while also developing specifically lower-overhead mitigations.\n\nSeveral of our research papers were accepted at top-tier strongly refereed venues.  We discovered and reported eight software vulnerabilities in device drivers from two different chipset manufacturers, affecting flagship mobile phones from two different phone manufacturers.  Vulnerabilities were officially confirmed by the manufacturers, assigned an entry in the Common Vulnerabilities and Exposures (CVE) database sponsored by the U.S. Department of Homeland Security, and released to the public only after a remedy was available.  By finding and responsibly disclosing these software vulnerabilities, we potentially prevented great societal harm. \n\nThis project also contributed to educating the next generation of faculty and researchers.  A Post-Doctoral Researcher became a tenure-track Assistant Professor, benefiting from the training and mentoring obtained under this project.  Several Ph.D. students completed their degrees partially funded by this project.  We incorporated some of the insights from this research project into presentations given at conferences, invited colloquia, and academic lectures and seminars, thereby disseminating the insights we gained more widely.  Our work's practical significance was further underlined by multiple invitations to present our work at major non-academic conferences in front of thousands of computer security industry professionals.\n\n\t\t\t\t\tLast Modified: 10/05/2020\n\n\t\t\t\t\tSubmitted by: Michael Franz"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "awd_id": "1912866",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Non-convex Variational Image Processing: Boosting Classical Methods with Machine Learning",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2019-08-01",
+ "awd_exp_date": "2022-07-31",
+ "tot_intn_awd_amt": 198152.0,
+ "awd_amount": 198152.0,
+ "awd_min_amd_letter_date": "2019-07-29",
+ "awd_max_amd_letter_date": "2019-07-29",
+ "awd_abstract_narration": "Recent advances in machine learning and AI, particularly those based on artificial neural networks, have enabled us to build systems that solve difficult information processing problems with human-like accuracy.  For example, neural networks can recognize objects, predict how proteins fold, automate manufacturing processing, and use computer vision to navigate a vehicle or analyze satellite imagery. Unfortunately, these advanced AI systems come with their own unique problems.  Like humans, neural networks can behave erratically, sometimes making strange and unexplainable decisions when asked to perform tasks that differ even a little from their training. For this reason, classifical image and signal processing methods are still the go-to solution when reliability, interpretability, and computational speed at needed.  The goal of this research project is to mash up the performance and power of neural networks with the speed and reliability and classical algorithms. This research project also features an integrated teaching plan involving graduate students and undergraduate interns.\r\n \r\nTo achieve this goal, we consider three interrelated research thrusts.  First, we consider ways that deep networks can help to automate and improve classical algorithms.  For example, networks can be used to automate the selection of hyper-parameters, choose objective functions to minimize, identify noise types and levels that are present in data, and make other decisions that are needed to optimally tune the performance of classical imaging system.  Second, we consider ways that neural networks can be 'plugged in' to classical variational imaging methods. For example, classical image priors (such as wavelet sparsity or total variation), can be replaced with more sophisticated priors defined by neural networks. Third, we consider efficient algorithms for solving minimization problems that arise when complex neural networks are used as components in classical optimization problems.  Better algorithms will allow us to solve these complex problems efficiently, and without human oversight. This new suite of approaches has the potential to improve that state of the art for a range of important practical problems that have been studied by the PI. This includes enhancing deblurring problems of the type used for microscopy of new materials, boosting segmentation algorithms used to identify faults in semiconductor manufacturing, and solving complex resource allocation problems for medical applications.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Thomas",
+   "pi_last_name": "Goldstein",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Thomas A Goldstein",
+   "pi_email_addr": "tomg@cs.umd.edu",
+   "nsf_id": "000546658",
+   "pi_start_date": "2019-07-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Maryland, College Park",
+  "inst_street_address": "3112 LEE BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE PARK",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "3014056269",
+  "inst_zip_code": "207425100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "MD04",
+  "org_lgl_bus_name": "UNIVERSITY OF MARYLAND, COLLEGE PARK",
+  "org_prnt_uei_num": "NPU8ULVAAS23",
+  "org_uei_num": "NPU8ULVAAS23"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Maryland College Park",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "207425141",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "MD04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "079Z",
+   "pgm_ref_txt": "Machine Learning Theory"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 198152.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-1ee88dc0-7fff-83b3-4edd-4db7ea96d83d\">\n<p>This project focused on the uses of convex optimization in conjunction with non-convex neural network training. The outcomes of this report can be broadly broken down into two categories, as described below.</p>\n<p>Using convex optimization to scale up network training: The non-convexity of neural models makes it difficult to train them at scale. We explored a number of ways that convex optimization methods can be used to enhance the training of neural networks and achieve a greater degree of scalability. Our proposed GradInit method uses standard (non-stochastic) optimization methods from the convex literature to learn the best initialization parameters for a neural network before the network is trained. Solving this small-scale problem before training the network enables training of architectures that would typically be unstable, such as deep networks without batch normalization and post-activation transformers. We also proposed a new method called VQ-GNN that uses low-rank matrix factorizations to enable training of graph neural networks on large distributed datasets.</p>\n<p>Using convex optimization for new applications involving deep learning: We considered a number of new applications that hybridize convex optimization with neural models. Our work on face recognition explored the use of convex regularization to enforce fairness constraints in neural models. We found that standard convex regularizers are effective at enforcing constraints on the training set, but that these outcomes do not generalize to the downstream test set. Our paper \"Fishing for User Data in Large-Batch Federated Learning via Gradient Magnification\" showed that convex optimization methods can be adapted to extract training data from gradient descent updates used in federated learning. Finally, our work on \"center smoothing\" provides rigorous guarantees on the robustness of neural networks with vector-valued outputs, such as object detectors and segmentation systems.</p>\n<p dir=\"ltr\">&nbsp;</p>\n</span></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/16/2023<br>\n\t\t\t\t\tModified by: Thomas&nbsp;A&nbsp;Goldstein</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n\n\nThis project focused on the uses of convex optimization in conjunction with non-convex neural network training. The outcomes of this report can be broadly broken down into two categories, as described below.\n\nUsing convex optimization to scale up network training: The non-convexity of neural models makes it difficult to train them at scale. We explored a number of ways that convex optimization methods can be used to enhance the training of neural networks and achieve a greater degree of scalability. Our proposed GradInit method uses standard (non-stochastic) optimization methods from the convex literature to learn the best initialization parameters for a neural network before the network is trained. Solving this small-scale problem before training the network enables training of architectures that would typically be unstable, such as deep networks without batch normalization and post-activation transformers. We also proposed a new method called VQ-GNN that uses low-rank matrix factorizations to enable training of graph neural networks on large distributed datasets.\n\nUsing convex optimization for new applications involving deep learning: We considered a number of new applications that hybridize convex optimization with neural models. Our work on face recognition explored the use of convex regularization to enforce fairness constraints in neural models. We found that standard convex regularizers are effective at enforcing constraints on the training set, but that these outcomes do not generalize to the downstream test set. Our paper \"Fishing for User Data in Large-Batch Federated Learning via Gradient Magnification\" showed that convex optimization methods can be adapted to extract training data from gradient descent updates used in federated learning. Finally, our work on \"center smoothing\" provides rigorous guarantees on the robustness of neural networks with vector-valued outputs, such as object detectors and segmentation systems.\n \n\n\n\t\t\t\t\tLast Modified: 02/16/2023\n\n\t\t\t\t\tSubmitted by: Thomas A Goldstein"
+ }
+}

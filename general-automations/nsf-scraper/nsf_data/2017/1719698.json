@@ -1,0 +1,129 @@
+{
+ "awd_id": "1719698",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Rigorous Development of an Efficient Reduced Collocation Approach for High-Dimensional Parametric Partial Differential Equations",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032922113",
+ "po_email": "ygorb@nsf.gov",
+ "po_sign_block_name": "Yuliya Gorb",
+ "awd_eff_date": "2017-08-01",
+ "awd_exp_date": "2022-07-31",
+ "tot_intn_awd_amt": 158494.0,
+ "awd_amount": 179414.0,
+ "awd_min_amd_letter_date": "2017-06-12",
+ "awd_max_amd_letter_date": "2021-07-15",
+ "awd_abstract_narration": "Many physical phenomena  depend on a range of parameters, and to understand the phenomena many repeated simulations for different parameter values are required. Such parameters may describe properties of a material, wave frequencies, uncertainties in measured data, physical states at the boundaries, or domain geometry, among others. These massively repeated simulations require significant computer time, and are frequently computationally prohibitive.  Reduced basis methods were developed to resolve this issue by providing efficient and accurate surrogate solutions for the large space of parameter values, based on a relatively small number of carefully selected parameters and their related pre-computed highly accurate \"snapshot\" solutions. Once these \"snapshot\" solutions are pre-computed, computing the surrogate solutions for any parameter values is quick and efficient. Moreover, their accuracy is certified by a mathematically rigorous error bound. A variant of the reduced basis method, called the reduced collocation method, was recently introduced by the PIs that is more efficient for nonlinear problems. The goals of this project are to develop this new method to be more efficient, both in precise identification of the \"snapshot\" solutions and in computing the surrogate solutions once the \"snapshot\" solutions are found, to integrate reduced basis and reduced collocation methods with uncertainly quantification techniques to efficiently handle complex problems, and to ensure that certain strong stability properties satisfied by the underlying snapshot solutions are preserved by the reduced collocation methods. These goals will enable an efficient and powerful reduced collocation method that can be applied to a wide range of parameter-dependent phenomena. \r\n\r\nReduced basis methods were originally developed for use with a Galerkin formulation of a partial differential equations, and recently extended by the PIs for collocation formulations, which are frequently preferred for nonlinear problems. In fact, this new reduced collocation method (RCM) is more efficient than the typical reduced basis method (RBM) for a large class of partial differential equations (PDEs). The goal of this project is to rigorously develop the new RCM in order to: (1) improve the offline stage by introducing novel approaches to building a more optimal reduced space faster; (2) make the online stage of the RCM more robust and efficient for nonlinear problems through a variety of mathematical approaches to selecting the collocation points, developing pre-conditioners, and creating a co-prime multi-grid approach; (3) integrate the RBM/RCM with uncertainty quantification approaches to efficiently handle problems with high dimensional random spaces; and (4) enhance the RBM/RCM approaches to guarantee that the surrogate solutions preserve the strong stability properties satisfied by the underlying snapshot solutions.  Rigorous mathematical analysis and innovative and efficient algorithm design will be combined to improve the reduced basis approaches thereby making them more efficient and robust for large classes of problems. This project will transform the RCM to make it efficient and robust, for linear as well as nonlinear problems. Furthermore, this project will combine knowledge from the field of reduced order modeling for linear and nonlinear PDEs and the field of uncertainty quantification to create powerful new methods, hybrids of the generalized polynomial chaos method and reduced basis methods. The resulting algorithms will impact the field of uncertainty quantification by improving the efficiency and robust handling of high parameter dimensions. Finally, the RBM/RCM will be improved to guarantee the preservation of nonlinear properties such as positivity. This novel development will resolve a major concern about the quality of the surrogate solution.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Yanlai",
+   "pi_last_name": "Chen",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yanlai Chen",
+   "pi_email_addr": "yanlai.chen@umassd.edu",
+   "nsf_id": "000582272",
+   "pi_start_date": "2017-06-12",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Sigal",
+   "pi_last_name": "Gottlieb",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sigal Gottlieb",
+   "pi_email_addr": "sgottlieb@umassd.edu",
+   "nsf_id": "000242545",
+   "pi_start_date": "2017-06-12",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Massachusetts, Dartmouth",
+  "inst_street_address": "285 OLD WESTPORT RD",
+  "inst_street_address_2": "",
+  "inst_city_name": "NORTH DARTMOUTH",
+  "inst_state_code": "MA",
+  "inst_state_name": "Massachusetts",
+  "inst_phone_num": "5089998953",
+  "inst_zip_code": "027472356",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "MA09",
+  "org_lgl_bus_name": "UNIVERSITY OF MASSACHUSETTS DARTMOUTH",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "PMMKPCKNN9R2"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Massachusetts, Dartmouth",
+  "perf_str_addr": "285 Old Westport Rd",
+  "perf_city_name": "North Dartmouth",
+  "perf_st_code": "MA",
+  "perf_st_name": "Massachusetts",
+  "perf_zip_code": "027472300",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "09",
+  "perf_st_cong_dist": "MA09",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "127100",
+   "pgm_ele_name": "COMPUTATIONAL MATHEMATICS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "102Z",
+   "pgm_ref_txt": "COVID-Disproportionate Impcts Inst-Indiv"
+  },
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0121",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002122DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 158494.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2021,
+   "fund_oblg_amt": 20920.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This award is for developing the drastically efficient and practically more feasible versions of the classical Reduced Basis Method (RBM). RBM is a machine-learning like algorithm. It comes in the form of a mathematically rigorous and practically efficient surrogate modeling technique for multi-parametric systems. These parameters may be material properties, system configurations, initial and surrounding conditions, communication frequency etc. These systems are ubiquitous and resolving them efficiently is paramount in the era of data-driven modeling.</p>\n<p class=\"p1\">Leading&nbsp;his students and colleagues and demonstrated via 12 papers published on top journals, the&nbsp;principal investigator (PI) successfully achieved the following outcomes.&nbsp;<strong>First</strong>, they made the learning stage of the method faster, easier to implement, and more robust. These were achieved by: 1) performing the training step of the algorithm on a reduced training space that was informed by the current state of the algorithm, 2) a robust strategy in doing error certification that can avoid catastrophic cancellation in computing, and 3) a simpler form of error indication based on interpolation theory that only requires the ability to compute the fast solution.&nbsp;<strong>Second</strong>, they<strong> </strong>designed two new RBMs, the Reduced Over Collocation (ROC) methods, that circumvent a tedious and potentially inaccurate step of the offline learning phase which is needed online as well to certify the result. By design, ROC mitigates the efficiency degradation of the online phase that plagues RBM when dealing with nonlinear and nonaffine problems. <strong>Third</strong>, the PI paid close attention to applications of the mathematical algorithms. He and his collaborators applied the methods to fractional-order equations (that are increasingly useful in finance, physical and biological processes and systems), stochastic equations, fluid flow problems, optimal mass transport (related to AI training), and Poisson-Boltzmann equation (used to e.g. evaluate charge distributions for ions around charged surfaces).</p>\n<p class=\"p1\">Inspired by this grant, the PI served as the lead organizer and Point of Contact for the Spring 2020 semester program, <em>Model and dimension reduction in uncertain and dynamic systems</em>, at the NSF-funded world-renowned ICERM (Institute for Computational and Experimental Research in Mathematics, Providence RI). That program was a huge success with international impact. It attracted 53 long term participants, many of whom moved to Providence, RI to be at ICERM on a daily basis in Spring 2020. All three week-long workshops (the backbone of the semester program) were at or above fire-code capacity with the first and third closed even well before the start of the semester program. We successfully transitioned the program online at the outbreak of Covid-19 and its resulting campus closure of Brown University.</p>\n<p>A critical focus of this grant is to nurture the next generation workforce. Toward that end, it has directly helped the training of <strong>two undergraduate and four graduate students</strong> in the field of computational science.&nbsp;They were all outstanding young individuals who were pursuing a mathematics degree with three of them already entered the STEM workforce. The research experience made possible by this grant turned out to be vital for their professional development.</p>\n<p>Among the&nbsp;undergraduate students, equipped&nbsp;with coding skills sharpened through working with the PI,&nbsp;one has started a full time job as a software engineer. Among the four graduate students partially supported by this grant, two have graduated with one being a postdoc and the other (a female) being a faculty member at the University Birmingham. The other two&nbsp;graduate students&nbsp;are current, but making progress toward graduation from our young and interdisciplinary doctoral program at UMass Dartmouth.&nbsp;This grant directly contributed to the nurturing of these computational scientists of the next generation with terminal degree, and to the growth of a quite unique interdisciplinary PhD program.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/02/2022<br>\n\t\t\t\t\tModified by: Yanlai&nbsp;Chen</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2022/1719698/1719698_10492191_1669997155055_CavityExample--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2022/1719698/1719698_10492191_1669997155055_CavityExample--rgov-800width.jpg\" title=\"Capturing the vortices by the ROC method\"><img src=\"/por/images/Reports/POR/2022/1719698/1719698_10492191_1669997155055_CavityExample--rgov-66x44.jpg\" alt=\"Capturing the vortices by the ROC method\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Three vortices will form when the lid is pulled from left to right of a square container full of fluid. The developed ROC captures them better and better from lower left to upper right as time goes by and we increase space dimension to a mere 90.</div>\n<div class=\"imageCredit\">Yanlai Chen</div>\n<div class=\"imagePermisssions\">Public Domain</div>\n<div class=\"imageSubmitted\">Yanlai&nbsp;Chen</div>\n<div class=\"imageTitle\">Capturing the vortices by the ROC method</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThis award is for developing the drastically efficient and practically more feasible versions of the classical Reduced Basis Method (RBM). RBM is a machine-learning like algorithm. It comes in the form of a mathematically rigorous and practically efficient surrogate modeling technique for multi-parametric systems. These parameters may be material properties, system configurations, initial and surrounding conditions, communication frequency etc. These systems are ubiquitous and resolving them efficiently is paramount in the era of data-driven modeling.\nLeading his students and colleagues and demonstrated via 12 papers published on top journals, the principal investigator (PI) successfully achieved the following outcomes. First, they made the learning stage of the method faster, easier to implement, and more robust. These were achieved by: 1) performing the training step of the algorithm on a reduced training space that was informed by the current state of the algorithm, 2) a robust strategy in doing error certification that can avoid catastrophic cancellation in computing, and 3) a simpler form of error indication based on interpolation theory that only requires the ability to compute the fast solution. Second, they designed two new RBMs, the Reduced Over Collocation (ROC) methods, that circumvent a tedious and potentially inaccurate step of the offline learning phase which is needed online as well to certify the result. By design, ROC mitigates the efficiency degradation of the online phase that plagues RBM when dealing with nonlinear and nonaffine problems. Third, the PI paid close attention to applications of the mathematical algorithms. He and his collaborators applied the methods to fractional-order equations (that are increasingly useful in finance, physical and biological processes and systems), stochastic equations, fluid flow problems, optimal mass transport (related to AI training), and Poisson-Boltzmann equation (used to e.g. evaluate charge distributions for ions around charged surfaces).\nInspired by this grant, the PI served as the lead organizer and Point of Contact for the Spring 2020 semester program, Model and dimension reduction in uncertain and dynamic systems, at the NSF-funded world-renowned ICERM (Institute for Computational and Experimental Research in Mathematics, Providence RI). That program was a huge success with international impact. It attracted 53 long term participants, many of whom moved to Providence, RI to be at ICERM on a daily basis in Spring 2020. All three week-long workshops (the backbone of the semester program) were at or above fire-code capacity with the first and third closed even well before the start of the semester program. We successfully transitioned the program online at the outbreak of Covid-19 and its resulting campus closure of Brown University.\n\nA critical focus of this grant is to nurture the next generation workforce. Toward that end, it has directly helped the training of two undergraduate and four graduate students in the field of computational science. They were all outstanding young individuals who were pursuing a mathematics degree with three of them already entered the STEM workforce. The research experience made possible by this grant turned out to be vital for their professional development.\n\nAmong the undergraduate students, equipped with coding skills sharpened through working with the PI, one has started a full time job as a software engineer. Among the four graduate students partially supported by this grant, two have graduated with one being a postdoc and the other (a female) being a faculty member at the University Birmingham. The other two graduate students are current, but making progress toward graduation from our young and interdisciplinary doctoral program at UMass Dartmouth. This grant directly contributed to the nurturing of these computational scientists of the next generation with terminal degree, and to the growth of a quite unique interdisciplinary PhD program.\n\n \n\n\t\t\t\t\tLast Modified: 12/02/2022\n\n\t\t\t\t\tSubmitted by: Yanlai Chen"
+ }
+}

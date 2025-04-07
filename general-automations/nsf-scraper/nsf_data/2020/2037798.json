@@ -1,0 +1,105 @@
+{
+ "awd_id": "2037798",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: SaTC: Securing Internet of Things Against Cache-based Attacks",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Jeremy Epstein",
+ "awd_eff_date": "2020-06-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 172235.0,
+ "awd_amount": 172235.0,
+ "awd_min_amd_letter_date": "2020-06-30",
+ "awd_max_amd_letter_date": "2020-06-30",
+ "awd_abstract_narration": "The Internet of Things (IoT) is has fast become an integral part of everyday life. IoT devices ranging from insulin pumps, smart home devices, and driverless cars, to energy delivery systems are vastly improving the quality of life. Many of these devices use processors based on the ARM architecture. While decades of research and deployment have successfully reduced the attack surface of memory corruptions, a new attack surface, the CPU caches, has emerged. This project advances the frontiers of knowledge in defeating cache-based attacks on IoT systems that are based on ARM processors. In particular, the project will develop software mitigation to defeat the destructive cache side-channel attacks and cache resident malware. It integrates a comprehensive education plan with the research to train the next generation workforce in cybersecurity.\r\n\r\nThis project consists of two complementary tasks, which can be deployed in tandem to provide comprehensive cache-based attack mitigation in IoT systems. First, the project develops software mitigation for all-level cache side-channel attacks. While software mitigation for cache side-channel attacks in cloud scenarios focus on last-level cache, novel attacks on L1 cache can also break the security guarantees of IoT systems. Based on the observation that the key to defending against all-level cache side-channel attacks is to take away attackers' ability to tell timing differences between used and unused data, this project develops new techniques to ensure a private space for each process by reserving the L1 cache for a sensitive operation\u2019s exclusive use. Second, this project develops asynchronous cache resident malware mitigation to increase the performance and responsiveness of applications. Existing approaches in cache malware mitigation are slow because they are synchronous and the application requesting service will be suspended. This project divides an inspection task into two halves: one is urgent and not interruptible; the other is lengthy but interruptible. The longer half can be executed on another CPU core or can use deferred execution thus increasing the execution efficiency of the inspection task as a whole.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ziming",
+   "pi_last_name": "Zhao",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ziming Zhao",
+   "pi_email_addr": "z.zhao@northeastern.edu",
+   "nsf_id": "000710958",
+   "pi_start_date": "2020-06-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "SUNY at Buffalo",
+  "inst_street_address": "520 LEE ENTRANCE STE 211",
+  "inst_street_address_2": "",
+  "inst_city_name": "AMHERST",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "7166452634",
+  "inst_zip_code": "142282577",
+  "inst_country_name": "United States",
+  "cong_dist_code": "26",
+  "st_cong_dist_code": "NY26",
+  "org_lgl_bus_name": "THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK",
+  "org_prnt_uei_num": "GMZUKXFDJMA9",
+  "org_uei_num": "LMCJKRFW5R81"
+ },
+ "perf_inst": {
+  "perf_inst_name": "SUNY at Buffalo",
+  "perf_str_addr": "520 Lee Entrance Suite 211",
+  "perf_city_name": "Buffalo",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "142282567",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "26",
+  "perf_st_cong_dist": "NY26",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 172235.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The research outcomes of this project encompass several significant contributions:</p>\n<ol>\n<li>A comprehensive solution that effectively counters cache side-channel attacks targeting both L1 and L2 caches in IoT systems. A paper was published at ACM International Conference on Mobile Systems, Applications, and Services (MobiSys),&nbsp;2020</li>\n<li>Valuable insights and techniques for detecting remote infections on Linux-based IoT devices, bolstering the security posture of these systems. A paper was publoshed at&nbsp;ACM Asia Conference on Computer and Communications Security (AsiaCCS),&nbsp;2022</li>\n<li>A pioneering exploration into, and the development of detection mechanisms for, return-to-normal-world attacks on the trusted execution environment of IoT devices. A paper was publshed at&nbsp;\n<div class=\"periodical\">ACM/IEEE Design Automation Conference (DAC),&nbsp;2023</div>\n</li>\n</ol>\n<p>Moreover, this project has yielded notable educational outcomes:</p>\n<ol>\n<li>The introduction of a new academic course focused on trusted computing and trusted execution, accompanied by the public availability of course materials and lecture recordings.</li>\n<li>The creation of hands-on labs designed to provide practical experience in the realms of cache and trusted execution environment security. Additionally, the PI has led security training sessions specifically tailored for hardware-software Capture The Flag (CTF) competitions.</li>\n<li>This project has also provided support for a female Ph.D. student, contributing to the advancement of diversity and inclusion in the field of cybersecurity.</li>\n</ol>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/31/2023<br>\n\t\t\t\t\tModified by: Ziming&nbsp;Zhao</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe research outcomes of this project encompass several significant contributions:\n\nA comprehensive solution that effectively counters cache side-channel attacks targeting both L1 and L2 caches in IoT systems. A paper was published at ACM International Conference on Mobile Systems, Applications, and Services (MobiSys), 2020\nValuable insights and techniques for detecting remote infections on Linux-based IoT devices, bolstering the security posture of these systems. A paper was publoshed at ACM Asia Conference on Computer and Communications Security (AsiaCCS), 2022\nA pioneering exploration into, and the development of detection mechanisms for, return-to-normal-world attacks on the trusted execution environment of IoT devices. A paper was publshed at \nACM/IEEE Design Automation Conference (DAC), 2023\n\n\n\nMoreover, this project has yielded notable educational outcomes:\n\nThe introduction of a new academic course focused on trusted computing and trusted execution, accompanied by the public availability of course materials and lecture recordings.\nThe creation of hands-on labs designed to provide practical experience in the realms of cache and trusted execution environment security. Additionally, the PI has led security training sessions specifically tailored for hardware-software Capture The Flag (CTF) competitions.\nThis project has also provided support for a female Ph.D. student, contributing to the advancement of diversity and inclusion in the field of cybersecurity.\n\n\n \n\n \n\n\t\t\t\t\tLast Modified: 10/31/2023\n\n\t\t\t\t\tSubmitted by: Ziming Zhao"
+ }
+}

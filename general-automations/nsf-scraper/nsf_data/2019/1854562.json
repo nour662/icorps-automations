@@ -1,0 +1,113 @@
+{
+ "awd_id": "1854562",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: Adaptive Gaussian Markov Random Fields for Large-scale Discrete Optimization via Simulation",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": "7032927299",
+ "po_email": "yzeng@nsf.gov",
+ "po_sign_block_name": "Yong Zeng",
+ "awd_eff_date": "2019-07-15",
+ "awd_exp_date": "2023-06-30",
+ "tot_intn_awd_amt": 163934.0,
+ "awd_amount": 163934.0,
+ "awd_min_amd_letter_date": "2019-07-22",
+ "awd_max_amd_letter_date": "2019-07-22",
+ "awd_abstract_narration": "Major federal agencies, including the Department of Veterans Affairs, Department of Defense, Department of Homeland Security, Federal Aviation Administration, Department of the Treasury, Internal Revenue Service, Centers for Medicare and Medicaid Services, Department of Health and Human Services, and others, seek government and non-government assistance with the application of scientific, data-driven methods to help them execute effectively on their critical missions. Because their mandate is typically large-scale, complex, and involves inherent uncertainty, computer simulation is often the only tool for representing their problems in a comprehensive way. Similar problems occur in the private sector, especially in health care delivery, computer networks, warehousing and distribution, and transportation systems. Unfortunately, \"large-scale, complex, and involving inherent uncertainty\" are the features that make \"optimizing\" a simulated system hard, particularly when the decisions are how to allocate discrete units of resources such as personnel, vehicles and facilities. The proposed research marries high-performance computing, smart numerical methods, and state-of-the-art statistical methodology to significantly increase the size and complexity of simulated systems that can be optimized. As a result, agencies such as those listed above will be able to more fully solve their \"system of systems\" resource-allocation problems using computer simulation.\r\n\r\nThe proposed research tackles statistical and computational challenges that arise in solving large-scale stochastic optimization problems when the objective function may only be evaluated by executing a stochastic simulation. Such optimization problems are often with respect to a high-dimensional, discrete-valued decision variable in a large solution space. The modeling flexibility of simulation comes at a cost: arbitrarily complex stochastic simulations may not be optimized using tools from mathematical programming. As a result, the scale of problems that can currently be solved by simulation with an optimality gap guarantee is limited. The investigators propose to create theory, algorithms and software for large-scale discrete-decision-variable simulation optimization that converge to the global optimum asymptotically, and provide optimality-gap inference when terminated. The proposed methods are based on inferential optimization, which models the unknown objective function by a Gaussian Markov Random Field (GMRF), a type of Gaussian Process defined by a graph on the discrete solution space; the investigators have shown that GMRFs provide better inference for a discrete problems than Gaussian processes defined on a continuous domain. The conditional distribution of a GMRF provides inference for selecting solutions to simulate and for search termination when the inferred optimality gap is small. However, the computational cost of numerical linear algebra increases faster than the number of feasible solutions. To facilitate the solution of large-scale problems, three core topics are proposed: exploiting high-performance computing; creating a restricted search scheme and tailored computational linear algebra that significantly reduces the computations in GMRF updates; and attacking limits on dimensionality via an adaptive multi-resolution GMRF and projections to lower dimensions. This award will provide support of graduate student training through research.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Barry",
+   "pi_last_name": "Nelson",
+   "pi_mid_init": "L",
+   "pi_sufx_name": "",
+   "pi_full_name": "Barry L Nelson",
+   "pi_email_addr": "nelsonb@northwestern.edu",
+   "nsf_id": "000294721",
+   "pi_start_date": "2019-07-22",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Andreas",
+   "pi_last_name": "Waechter",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Andreas Waechter",
+   "pi_email_addr": "waechter@iems.northwestern.edu",
+   "nsf_id": "000609240",
+   "pi_start_date": "2019-07-22",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Northwestern University",
+  "inst_street_address": "633 CLARK ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "EVANSTON",
+  "inst_state_code": "IL",
+  "inst_state_name": "Illinois",
+  "inst_phone_num": "3125037955",
+  "inst_zip_code": "602080001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "IL09",
+  "org_lgl_bus_name": "NORTHWESTERN UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "EXZVPWZBLUE8"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Northwestern University",
+  "perf_str_addr": "2220 Campus Drive",
+  "perf_city_name": "Evanston",
+  "perf_st_code": "IL",
+  "perf_st_name": "Illinois",
+  "perf_zip_code": "602013119",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "09",
+  "perf_st_cong_dist": "IL09",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806900",
+   "pgm_ele_name": "CDS&E-MSS"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "9263",
+   "pgm_ref_txt": "COMPUTATIONAL SCIENCE & ENGING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 163934.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Stochastic simulation is a tool for the design, analysis and<br />improvement of large-scale systems that are subject to risk and<br />uncertainty. Application areas are broad and diverse, including<br />manufacturing, supply chains, healthcare delivery, transportation,<br />digital twin technology and service systems. Simulation optimization<br />is the key technology employed by industrial engineering, operations<br />research and management science to attain the best possible system<br />performance using stochastic simulation. In many simulation<br />optimization problems the underlying decision variables over which the<br />system can be optimized are discrete valued; examples include the<br />number of units of each product to stock in a sports equipment supply<br />chain, the number of beds to allocate to mental health patients in a<br />hospital, and the number of vans to include in a dial-a-ride fleet.<br />However, solution technology for discrete-decision-variable problems<br />has been greatly limited in the size (number of feasible solutions)<br />and dimension (number of quantities to be set) of the decision<br />variables of problems that are practically solvable. This research<br />project pushed these limits back substantially, thereby allowing<br />richer real-world problems to be solved.<br /><br />The intellectual merit of this project was extending Bayesian<br />optimization to discrete-decision-variable problems by employing an<br />innovative prior distribution---discrete Gaussian Markov Random<br />Fields---smart computational linear algebra for posterior updating,<br />projection and decomposition techniques to reduce dimension, a new<br />Bayesian acquisition function for guiding the search, innovations in<br />hyperparameter estimation, and parallel computing to greatly extend<br />the size and dimension of practical problems that can be solved.<br />Problem classes addressed include simulation optimization over<br />integer-ordered decision variables, over integer-ordered decision<br />variables with apriori objective function information, over<br />categorical decision variables, and over categorical decision<br />variables in the presence of real-time covariate information. Specific<br />applications included future mobility simulations for General Motors,<br />air traffic recovery from weather and equipment disruptions, and<br />real-time assortment optimization using publically available data from<br />Yahoo! In addition, the grant supported related work in simulation<br />analytics (i.e., deeper analysis of stochastic simulation outputs). &nbsp;<br /><br />The research outcomes, including publically available, open-source<br />software, have broad impacts across the application domains noted<br />above. Further, the methodological breakthroughs have value in<br />Bayesian optimization more broadly, including the design and analysis<br />of deterministic computer experiments. Two Ph.D. students at<br />Northwestern University were supported, and publication and<br />presentation of the work was disseminated widely via journals,<br />conference proceedings and highly visible workshops.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/16/2023<br>\n\t\t\t\t\tModified by: Barry&nbsp;L&nbsp;Nelson</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nStochastic simulation is a tool for the design, analysis and\nimprovement of large-scale systems that are subject to risk and\nuncertainty. Application areas are broad and diverse, including\nmanufacturing, supply chains, healthcare delivery, transportation,\ndigital twin technology and service systems. Simulation optimization\nis the key technology employed by industrial engineering, operations\nresearch and management science to attain the best possible system\nperformance using stochastic simulation. In many simulation\noptimization problems the underlying decision variables over which the\nsystem can be optimized are discrete valued; examples include the\nnumber of units of each product to stock in a sports equipment supply\nchain, the number of beds to allocate to mental health patients in a\nhospital, and the number of vans to include in a dial-a-ride fleet.\nHowever, solution technology for discrete-decision-variable problems\nhas been greatly limited in the size (number of feasible solutions)\nand dimension (number of quantities to be set) of the decision\nvariables of problems that are practically solvable. This research\nproject pushed these limits back substantially, thereby allowing\nricher real-world problems to be solved.\n\nThe intellectual merit of this project was extending Bayesian\noptimization to discrete-decision-variable problems by employing an\ninnovative prior distribution---discrete Gaussian Markov Random\nFields---smart computational linear algebra for posterior updating,\nprojection and decomposition techniques to reduce dimension, a new\nBayesian acquisition function for guiding the search, innovations in\nhyperparameter estimation, and parallel computing to greatly extend\nthe size and dimension of practical problems that can be solved.\nProblem classes addressed include simulation optimization over\ninteger-ordered decision variables, over integer-ordered decision\nvariables with apriori objective function information, over\ncategorical decision variables, and over categorical decision\nvariables in the presence of real-time covariate information. Specific\napplications included future mobility simulations for General Motors,\nair traffic recovery from weather and equipment disruptions, and\nreal-time assortment optimization using publically available data from\nYahoo! In addition, the grant supported related work in simulation\nanalytics (i.e., deeper analysis of stochastic simulation outputs).  \n\nThe research outcomes, including publically available, open-source\nsoftware, have broad impacts across the application domains noted\nabove. Further, the methodological breakthroughs have value in\nBayesian optimization more broadly, including the design and analysis\nof deterministic computer experiments. Two Ph.D. students at\nNorthwestern University were supported, and publication and\npresentation of the work was disseminated widely via journals,\nconference proceedings and highly visible workshops.\n\n\t\t\t\t\tLast Modified: 07/16/2023\n\n\t\t\t\t\tSubmitted by: Barry L Nelson"
+ }
+}

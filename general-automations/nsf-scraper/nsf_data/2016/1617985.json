@@ -1,0 +1,113 @@
+{
+ "awd_id": "1617985",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "NeTS: Small: Detecting Races in SDN Control Plane",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Darleen Fisher",
+ "awd_eff_date": "2016-09-01",
+ "awd_exp_date": "2021-05-31",
+ "tot_intn_awd_amt": 350000.0,
+ "awd_amount": 350000.0,
+ "awd_min_amd_letter_date": "2016-08-24",
+ "awd_max_amd_letter_date": "2016-08-24",
+ "awd_abstract_narration": "Software Defined Networking (SDN) has rapidly emerged as a promising solution to building the future Internet. Current legacy network devices are typically proprietary, closed, and complex platforms, which as a result have severely throttled innovation in networking. SDN in contrast is designed to separate intelligent control plane (controller) from switching fabrics, ushering in enormous opportunities for rapid open innovations and quick creation of customized services. In SDN, the controllers play a central role, acting as the brain of the entire network. Thus, the reliable and secure operation of them is of extreme importance. Unfortunately, the asynchrony of network events and the complex architecture of SDN controllers make them prone to hard-to-find yet serious data race bugs, that can cause serious reliability and security issues to the whole SDN network.\r\n\r\nIn the principal investigators' (PIs) initial investigation, they found that data race bugs in the control plane can greatly reduce the reliability and security of SDN, e.g., causing system crashes, denying critical network services, interfering with service chains, or leaking privacy network information.  These are not acceptable for SDN technology deployment. Unfortunately there is a serious lack of techniques to detect systematically these harmful concurrency bugs in the SDN control plane. This work seeks to address these issues.  First, this project will conduct a systematic investigation of mainstream SDN controllers and develop an abstracted causality model to capture the unique happens-before semantics of the SDN control plane for race detection. Second, the project will develop the first dynamic race detection tool for the SDN control plane and will target mainstream controllers, such as Floodlight, ONOS and OpenDaylight, to maximize the impact on the SDN community. Third, this project will design new techniques to handle missing events in the dynamic execution of SDN controllers to reduce false alarms and for more complete race detection. Finally, the PIs will extend the techniques to detect a broad range of concurrency bugs.\r\n\r\nThe goal of the project is to develop a reliability and security model for the SDN control plane. The PIs have been developing network security, SDN, and software analysis related courses. The PIs will recruit and educate minorities and underrepresented students. The teams are well positioned to help shape the landscape of SDN reliability/security research and education in the academic communities and to influence the industry.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Guofei",
+   "pi_last_name": "Gu",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Guofei Gu",
+   "pi_email_addr": "guofei@cse.tamu.edu",
+   "nsf_id": "000537957",
+   "pi_start_date": "2016-08-24",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Jeff",
+   "pi_last_name": "Huang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jeff Huang",
+   "pi_email_addr": "jeff@cse.tamu.edu",
+   "nsf_id": "000677528",
+   "pi_start_date": "2016-08-24",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Texas A&M Engineering Experiment Station",
+  "inst_street_address": "3124 TAMU",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE STATION",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "9798626777",
+  "inst_zip_code": "778433124",
+  "inst_country_name": "United States",
+  "cong_dist_code": "10",
+  "st_cong_dist_code": "TX10",
+  "org_lgl_bus_name": "TEXAS A&M ENGINEERING EXPERIMENT STATION",
+  "org_prnt_uei_num": "QD1MX6N5YTN4",
+  "org_uei_num": "QD1MX6N5YTN4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Texas A&M Engineering Experiment Station",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "778454645",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "10",
+  "perf_st_cong_dist": "TX10",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "736300",
+   "pgm_ele_name": "Networking Technology and Syst"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 350000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p><span id=\"docs-internal-guid-5d0c77d9-7fff-235c-785d-55dd39b93ec3\"> </span></p>\n<p dir=\"ltr\"><span>The overall goal of the project is to develop new detection and defense techniques (e.g., race detection) for software environments such as SDN control planes to precisely pinpoint security bugs/vulnerabilities, particularly those race related.</span></p>\n<p>&nbsp;</p>\n<p dir=\"ltr\"><span>We found several new attack surfaces in existing software-defined infrastructure. We illustrate two major outcomes on detecting SDN vulnerabilities below:</span></p>\n<ol>\n<li>We identified a novel attack against SDN networks that can cause serious security and reliability risks by exploiting harmful race conditions in the SDN controllers, similar in spirit to classic TOCTTOU (Time of Check to Time of Use) attacks against &#64257;le systems. We further developed a novel dynamic framework, CONGUARD, that can effectively detect and exploit harmful race conditions. We show that an adversary can remotely exploit many harmful race conditions with a high success ratio by injecting the &ldquo;right&rdquo; external events into the SDN network. We have designed and implemented a framework called CONGUARD for detecting and exploiting concurrency vulnerabilities in the SDN control plane, and we have evaluated it on three mainstream open-source SDN controllers &ndash;Floodlight, ONOS, and OpenDaylight, with 34 applications in total. CONGUARD found 15 previously unknown harmful race conditions in these SDN controllers. All of them have been con&#64257;rmed by developers and 12 of them are patched with our assistance.</li>\n<li>We found that it is possible for a weak adversary who only controls a commodity network device (host or switch) to attack previously unreachable control plane components by maliciously increasing reachability in the control plane. We introduce D2C2 (data dependency creation and chaining) attack, which leverages some widely-used SDN protocol features (e.g., custom fields) to create and chain unexpected data dependencies in order to achieve greater reachability. We have developed a novel tool, SVHunter, which can effectively identify D2C2 vulnerabilities. We have evaluated SVHunter on three mainstream open-source SDN controllers (i.e., ONOS, Floodlight, and Opendaylight) as well as one security-enhanced controller (i.e., SE-Floodlight). SVHunter detects 18 previously unknown vulnerabilities, all of which can be exploited remotely to launch serious attacks such as executing arbitrary commands, exfiltrating confidential files, and crashing SDN services. To fix these vulnerabilities, we have made responsible disclosure and notified the vendors of each vulnerable controller. They reacted immediately to fix most of them. Our found vulnerabilities have also been assigned with 9 CVE numbers. Our research has significantly improved the security of our society.&nbsp;</li>\n</ol>\n<p><br /><br /></p>\n<p dir=\"ltr\"><span>Going beyond SDN, we have also developed new race detection algorithms and techniques that either significantly advanced prior state-of-the-art approaches or have become the state-of-the-art. Our tools on static and dynamic race detection have been applied to a large collection of real-world parallel applications written in different programming languages such as C/C++/Java/OpenMP/Go/Rust. We illustrate two representative outcomes below:</span></p>\n<ol>\n<li>Our dynamic race detection tool UFO scales to large real-world C/C++ programs such as Chromium and FireFox and detects over a hundred potential UAFs that are previously unknown. The significance of this work was also recognized by Google and the results were published in the flagship international software engineering conference (ICSE'18). Our open source pointer analysis implementation has been adopted by the popular WALA program analysis framework developed by IBM T.J. Watson Research Center. </li>\n<li>Our static race detection tool OMPRacer uses novel flow-sensitive, interprocedural analysis to detect data races in parallel programs written in OpenMP. Unlike dynamic tools that currently dominate the field, OMPRACER achieves almost 100% OpenMP code coverage using static analysis to detect a broader category of races without running the program or relying on specific input and runtime behaviour to trigger the race. Moreover, OMPRACER has competitive precision with representative dynamic tools such as Archer and ROMP: it passes 105 out of the 116 cases in DataRaceBench with a total accuracy of 91%. OMPRACER has been used to analyze the large-scale OpenMP applications containing over 2 million lines of code in under 10 minutes and has revealed a previously-unknown race in them.</li>\n</ol>\n<p><br /><br /></p>\n<p dir=\"ltr\"><span>During this project, several graduate students have gained valuable experience and learned several research skills such as scientific reading/writing, scientific data analysis, security system development. </span></p>\n<div><span><br /></span></div>\n<p>&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 09/29/2021<br>\n\t\t\t\t\tModified by: Guofei&nbsp;Gu</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \nThe overall goal of the project is to develop new detection and defense techniques (e.g., race detection) for software environments such as SDN control planes to precisely pinpoint security bugs/vulnerabilities, particularly those race related.\n\n \nWe found several new attack surfaces in existing software-defined infrastructure. We illustrate two major outcomes on detecting SDN vulnerabilities below:\n\nWe identified a novel attack against SDN networks that can cause serious security and reliability risks by exploiting harmful race conditions in the SDN controllers, similar in spirit to classic TOCTTOU (Time of Check to Time of Use) attacks against &#64257;le systems. We further developed a novel dynamic framework, CONGUARD, that can effectively detect and exploit harmful race conditions. We show that an adversary can remotely exploit many harmful race conditions with a high success ratio by injecting the \"right\" external events into the SDN network. We have designed and implemented a framework called CONGUARD for detecting and exploiting concurrency vulnerabilities in the SDN control plane, and we have evaluated it on three mainstream open-source SDN controllers &ndash;Floodlight, ONOS, and OpenDaylight, with 34 applications in total. CONGUARD found 15 previously unknown harmful race conditions in these SDN controllers. All of them have been con&#64257;rmed by developers and 12 of them are patched with our assistance.\nWe found that it is possible for a weak adversary who only controls a commodity network device (host or switch) to attack previously unreachable control plane components by maliciously increasing reachability in the control plane. We introduce D2C2 (data dependency creation and chaining) attack, which leverages some widely-used SDN protocol features (e.g., custom fields) to create and chain unexpected data dependencies in order to achieve greater reachability. We have developed a novel tool, SVHunter, which can effectively identify D2C2 vulnerabilities. We have evaluated SVHunter on three mainstream open-source SDN controllers (i.e., ONOS, Floodlight, and Opendaylight) as well as one security-enhanced controller (i.e., SE-Floodlight). SVHunter detects 18 previously unknown vulnerabilities, all of which can be exploited remotely to launch serious attacks such as executing arbitrary commands, exfiltrating confidential files, and crashing SDN services. To fix these vulnerabilities, we have made responsible disclosure and notified the vendors of each vulnerable controller. They reacted immediately to fix most of them. Our found vulnerabilities have also been assigned with 9 CVE numbers. Our research has significantly improved the security of our society. \n\n\n\n\n\nGoing beyond SDN, we have also developed new race detection algorithms and techniques that either significantly advanced prior state-of-the-art approaches or have become the state-of-the-art. Our tools on static and dynamic race detection have been applied to a large collection of real-world parallel applications written in different programming languages such as C/C++/Java/OpenMP/Go/Rust. We illustrate two representative outcomes below:\n\nOur dynamic race detection tool UFO scales to large real-world C/C++ programs such as Chromium and FireFox and detects over a hundred potential UAFs that are previously unknown. The significance of this work was also recognized by Google and the results were published in the flagship international software engineering conference (ICSE'18). Our open source pointer analysis implementation has been adopted by the popular WALA program analysis framework developed by IBM T.J. Watson Research Center. \nOur static race detection tool OMPRacer uses novel flow-sensitive, interprocedural analysis to detect data races in parallel programs written in OpenMP. Unlike dynamic tools that currently dominate the field, OMPRACER achieves almost 100% OpenMP code coverage using static analysis to detect a broader category of races without running the program or relying on specific input and runtime behaviour to trigger the race. Moreover, OMPRACER has competitive precision with representative dynamic tools such as Archer and ROMP: it passes 105 out of the 116 cases in DataRaceBench with a total accuracy of 91%. OMPRACER has been used to analyze the large-scale OpenMP applications containing over 2 million lines of code in under 10 minutes and has revealed a previously-unknown race in them.\n\n\n\n\n\nDuring this project, several graduate students have gained valuable experience and learned several research skills such as scientific reading/writing, scientific data analysis, security system development. \n\n\n\n \n\n \n\n\t\t\t\t\tLast Modified: 09/29/2021\n\n\t\t\t\t\tSubmitted by: Guofei Gu"
+ }
+}

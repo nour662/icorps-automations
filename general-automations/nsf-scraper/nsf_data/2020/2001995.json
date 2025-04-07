@@ -1,0 +1,101 @@
+{
+ "awd_id": "2001995",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SBIR Phase I:  Learning from Demonstration for Customer-Grade Robots",
+ "cfda_num": "47.084",
+ "org_code": "15030000",
+ "po_phone": "7032928772",
+ "po_email": "patherto@nsf.gov",
+ "po_sign_block_name": "Peter Atherton",
+ "awd_eff_date": "2020-07-01",
+ "awd_exp_date": "2021-10-31",
+ "tot_intn_awd_amt": 224999.0,
+ "awd_amount": 224999.0,
+ "awd_min_amd_letter_date": "2020-07-06",
+ "awd_max_amd_letter_date": "2020-07-06",
+ "awd_abstract_narration": "The broader impact of this Small Business Innovation Research (SBIR) Phase I project is to advance the capability of current robots to autonomously engage with the household environment, recognize objects, and manipulate them in a purposeful way. The proposed methodology adds this capability to a wide range of household and entertainment robots. A user can teach a robot a wide range of autonomous behaviors out of reach of the previously installed baseline software packages. The proposed technology radically lowers the threshold for teaching a robot sophisticated behaviors without complex programming nor high-quality demonstrations. This enables a class of new applications beyond the simple repetition of industrial activities. \r\n\r\nThis Small Business Innovation Research (SBIR) Phase I project leverages a deep neural network-based computer vision system that creates a lower-dimensional representation of the world-view of the robot. On this latent encoding, the robot behavior is trained using a combination of optimization criteria (e.g. training loss) that ensures the generalization of the target task, smooth operation, recovery from accidental mistakes, and ability to choose between alternative solutions to the problem (e.g. avoid an obstacle to the left or to the right). The technology is novel: current learning by demonstration systems usually reproduce an identical trajectory to what has been demonstrated. This might be useful on a factory floor but would not work in a home environment. In contrast, the proposed model learns a generalizable behavior that uses demonstrations to obtain clues as to how to solve a particular manipulation problem and can both identify and learn from its own mistakes.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "TIP",
+ "org_dir_long_name": "Directorate for Technology, Innovation, and Partnerships",
+ "div_abbr": "TI",
+ "org_div_long_name": "Translational Impacts",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Rouhollah",
+   "pi_last_name": "Rahmatizadeh",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Rouhollah Rahmatizadeh",
+   "pi_email_addr": "rouhollah@ximpatico.com",
+   "nsf_id": "000812703",
+   "pi_start_date": "2020-07-06",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "XIMPATICO INC.",
+  "inst_street_address": "680 EPIC WAY APT 354",
+  "inst_street_address_2": "",
+  "inst_city_name": "SAN JOSE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "4074095859",
+  "inst_zip_code": "951342869",
+  "inst_country_name": "United States",
+  "cong_dist_code": "17",
+  "st_cong_dist_code": "CA17",
+  "org_lgl_bus_name": "XIMPATICO INC.",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "PMKNH1EJEK98"
+ },
+ "perf_inst": {
+  "perf_inst_name": "XIMPATICO INC.",
+  "perf_str_addr": "680 EPIC WAY, APT 354",
+  "perf_city_name": "SAN JOSE",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "951342869",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "17",
+  "perf_st_cong_dist": "CA17",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "537100",
+   "pgm_ele_name": "SBIR Phase I"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8033",
+   "pgm_ref_txt": "Hardware Software Integration"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 224999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Ximpatico is developing a brain for existing and new robots that have a camera. This technology enables inexpensive robots to perceive the environment using their camera and interact with different objects. Once the robot knows where everything is located in the environment, it can autonomously perform manipulation with its arm. The user can teach the robot to perform a certain task by demonstrating the task using remote control. The brain of the robot learns from the demonstrations provided by the user and captures user preferences. In one implementation, the remote control and the AI software are incorporated in a mobile application that users can install on their phones.</p>\n<p>One of the most important outcomes of this research is the development of a more sample-efficient imitation learning approach. Compared to previous approaches that need a few hundred example demonstrations, the new approach can learn simple tasks with only several demonstrations. Another benefit of the approach is that for many tasks it can be executed locally, on the computer or phone of the user. In these situations, the user does not need to upload demonstrations to our servers for the neural network training phase. As a result, after the user demonstrates the task, the robot is immediately ready to autonomously perform the task.</p>\n<p>The AI technology we are developing is largely independent of the architecture and the application of the robot; it can be deployed as part of the solution for household robots, industrial robotic arms, mobile robots, drones, and delivery robots. It is difficult to predict the speed with which different application domains mature. Therefore, we are actively looking for potential customers and partnership opportunities in different industries.</p>\n<p>Ximpatico's vision goes beyond the household robot market and the development of a customer product. Once the technology is de-risked and had demonstrated effectiveness through the support of the SBIR grant, Ximpatico will start partnering with robotics companies that provide service to industries.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/16/2021<br>\n\t\t\t\t\tModified by: Rouhollah&nbsp;Rahmatizadeh</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nXimpatico is developing a brain for existing and new robots that have a camera. This technology enables inexpensive robots to perceive the environment using their camera and interact with different objects. Once the robot knows where everything is located in the environment, it can autonomously perform manipulation with its arm. The user can teach the robot to perform a certain task by demonstrating the task using remote control. The brain of the robot learns from the demonstrations provided by the user and captures user preferences. In one implementation, the remote control and the AI software are incorporated in a mobile application that users can install on their phones.\n\nOne of the most important outcomes of this research is the development of a more sample-efficient imitation learning approach. Compared to previous approaches that need a few hundred example demonstrations, the new approach can learn simple tasks with only several demonstrations. Another benefit of the approach is that for many tasks it can be executed locally, on the computer or phone of the user. In these situations, the user does not need to upload demonstrations to our servers for the neural network training phase. As a result, after the user demonstrates the task, the robot is immediately ready to autonomously perform the task.\n\nThe AI technology we are developing is largely independent of the architecture and the application of the robot; it can be deployed as part of the solution for household robots, industrial robotic arms, mobile robots, drones, and delivery robots. It is difficult to predict the speed with which different application domains mature. Therefore, we are actively looking for potential customers and partnership opportunities in different industries.\n\nXimpatico's vision goes beyond the household robot market and the development of a customer product. Once the technology is de-risked and had demonstrated effectiveness through the support of the SBIR grant, Ximpatico will start partnering with robotics companies that provide service to industries.\n\n \n\n\t\t\t\t\tLast Modified: 10/16/2021\n\n\t\t\t\t\tSubmitted by: Rouhollah Rahmatizadeh"
+ }
+}

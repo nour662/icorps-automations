@@ -1,0 +1,96 @@
+{
+ "awd_id": "1916002",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Privacy-Preserving Bayesian Inference: Foundations and Extensions",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Pena Edsel",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2022-08-31",
+ "tot_intn_awd_amt": 100000.0,
+ "awd_amount": 100000.0,
+ "awd_min_amd_letter_date": "2019-07-30",
+ "awd_max_amd_letter_date": "2019-07-30",
+ "awd_abstract_narration": "This project provides a theoretical foundation and computational methodologies to conduct Bayesian statistical inference using differentially private data. Differential privacy is a mathematical framework that allows the release of potentially sensitive data in such a way that protects the confidentiality of individual records without unduly sacrificing its overall usefulness for statistical analysis. As our society today grapples with the privacy implications that accompany the exploding growth of large-scale datasets, the invention of differential privacy provides a solution to protect personal demographic and biological information without deterring the accumulation of public knowledge. The U.S. Census Bureau has officially adopted differential privacy as the disclosure avoidance method for the 2020 Census. Other data collectors and curators are expected to follow suit in the near future. This project answers the pressing need for new statistical theory and methods to appropriately understand and efficiently analyze differentially private data. The project will expand the repertoire of tools available to researchers, and contribute to the cause of creating a better informed and more transparent society while respecting individual privacy.\r\n \r\n   \r\nThe PI will work on a theoretical formulation of the definitions of differential privacy using imprecise probability constructions, including interval of measures and coherent upper-lower probability measures. In the Bayesian context, such a formulation delivers a robust-likelihood conception of the model and allows for the computation of bounds on posterior quantities based on differentially private data for arbitrary prior specifications. The PI also proposes the differentially private approximate Bayesian computation (ABC) algorithm, a noisy ABC algorithm that delivers exact posterior inference given differentially private observations subject to arbitrary additive noise. The algorithm permits differentially private inference from large-scale Bayesian models with intractable likelihoods. The project bridges the classic theories of robust Bayes and generalized Bayes, with the novel literature on statistical privacy, and derives practical implementations based on privacy-preserving data releases. The project will supply analysts and researchers in a timely fashion with inferential methodologies tailored for differentially private input that are both theoretically sound and computationally efficient.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Ruobin",
+   "pi_last_name": "Gong",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Ruobin Gong",
+   "pi_email_addr": "ruobin.gong@rutgers.edu",
+   "nsf_id": "000791470",
+   "pi_start_date": "2019-07-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Rutgers University New Brunswick",
+  "inst_street_address": "3 RUTGERS PLZ",
+  "inst_street_address_2": "",
+  "inst_city_name": "NEW BRUNSWICK",
+  "inst_state_code": "NJ",
+  "inst_state_name": "New Jersey",
+  "inst_phone_num": "8489320150",
+  "inst_zip_code": "089018559",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "NJ12",
+  "org_lgl_bus_name": "RUTGERS, THE STATE UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "M1LVPE5GLSD9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Rutgers University New Brunswick, Dept of Statistics",
+  "perf_str_addr": "110 Frelinghuysen Road",
+  "perf_city_name": "Piscataway",
+  "perf_st_code": "NJ",
+  "perf_st_name": "New Jersey",
+  "perf_zip_code": "088548019",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "06",
+  "perf_st_cong_dist": "NJ06",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126900",
+   "pgm_ele_name": "STATISTICS"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 100000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The project \"<span><em>Privacy-Preserving Bayesian Inference: Foundations and Extensions</em>\"</span>&nbsp;answers to the pressing need to facilitate principled statistical inference from privacy-protected data. It has supported the development of quantitative and computational tools to conduct inference from privatized data, as well as the design of transparent privacy protection mechanisms that are congenial to downstream statistical analysis. On the inference front, two classes of Monte Carlo techniques, including approximate Bayesian computation (ABC) and data augmentation Markov chain Monte Carlo (DA-MCMC), are proposed for the exact computation of likelihood and Bayesian inference using differentially privatized data (Gong, 2022a; Ju, Awan, Gong, &amp; Rao, 2022). As a crucial ingredient to their efficacy, these techniques leverage the transparency of the privacy mechanism (Gong, 2022b) and are implemented for practical problems. On the design front, two frameworks for privacy mechanism design are proposed to accommodate &nbsp;mandated consistency and invariant requirements in relation to the confidential information. These frameworks utilize the conditional distributions of otherwise unconstrained differential privacy mechanisms (Gong &amp; Meng, 2020) and through projection and extension schemes when the invariants are of linear equality forms both in continuous and discrete settings (Gao, Gong, &amp; Yu, 2022; Dharangutte, Gao, Gong, &amp; Yu, 2023).<br /><br />Privacy-preserving statistical methodology encourages open information sharing for scientific research, and contributes to the creation of a fairer and more transparent society. Research supported by this project has a demonstrated impact on the scholarly discourse that advises policy decisions of official statistical agencies. The project has provided powerful statistical and computational tools for quantitative social science and policymaking that rely on privacy-protected data files. These tools facilitate the migration of existing data analysis regimes designed for non-privatized data to privatized data, and are applicable to quantitative analysis in demography, social sciences, economics, and public policy.</p>\n<p><br />The PI is actively involved in the advising of both graduate and undergraduate students of diverse backgrounds, increasing their participation in quantitative research with a focus on privacy protection, open science, and positive societal impact. The PI served as faculty advisor to undergraduate students through the Rutgers DIMACS Research Experiences for Undergraduates program, the Aresty Summer Research program, and the Douglass Women in Science and Engineering (WiSE) program. The PI designed and taught the Byrne Seminar titled \"<em>Privacy in the Digital World: from Netflix to the Census</em>\", gathering first-year undergraduate students for &nbsp;reading and discussion surrounding modern contentious issues in privacy and data ethics. In addition, the PI engaged in a multitude of synergistic activities including participating in the National Academies of Sciences, Engineering and Medicine (NASEM) Committee on National Statistics Census Data Products Expert Meetings, organizing the Workshop on the Analysis of Census Noisy Measurement Files and Differential Privacy (April 2022, New Brunswick, NJ), and co-editing of the Harvard Data Science Review Special Issue, \"<em>Differential Privacy for the 2020 U.S. Census:Can&nbsp;We Make Data Both Private and Useful?</em>\" These activities realize the broader impacts of the project and promote the dissemination of research results stemming from this project to communities of interest.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/29/2022<br>\n\t\t\t\t\tModified by: Ruobin&nbsp;Gong</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe project \"Privacy-Preserving Bayesian Inference: Foundations and Extensions\" answers to the pressing need to facilitate principled statistical inference from privacy-protected data. It has supported the development of quantitative and computational tools to conduct inference from privatized data, as well as the design of transparent privacy protection mechanisms that are congenial to downstream statistical analysis. On the inference front, two classes of Monte Carlo techniques, including approximate Bayesian computation (ABC) and data augmentation Markov chain Monte Carlo (DA-MCMC), are proposed for the exact computation of likelihood and Bayesian inference using differentially privatized data (Gong, 2022a; Ju, Awan, Gong, &amp; Rao, 2022). As a crucial ingredient to their efficacy, these techniques leverage the transparency of the privacy mechanism (Gong, 2022b) and are implemented for practical problems. On the design front, two frameworks for privacy mechanism design are proposed to accommodate  mandated consistency and invariant requirements in relation to the confidential information. These frameworks utilize the conditional distributions of otherwise unconstrained differential privacy mechanisms (Gong &amp; Meng, 2020) and through projection and extension schemes when the invariants are of linear equality forms both in continuous and discrete settings (Gao, Gong, &amp; Yu, 2022; Dharangutte, Gao, Gong, &amp; Yu, 2023).\n\nPrivacy-preserving statistical methodology encourages open information sharing for scientific research, and contributes to the creation of a fairer and more transparent society. Research supported by this project has a demonstrated impact on the scholarly discourse that advises policy decisions of official statistical agencies. The project has provided powerful statistical and computational tools for quantitative social science and policymaking that rely on privacy-protected data files. These tools facilitate the migration of existing data analysis regimes designed for non-privatized data to privatized data, and are applicable to quantitative analysis in demography, social sciences, economics, and public policy.\n\n\nThe PI is actively involved in the advising of both graduate and undergraduate students of diverse backgrounds, increasing their participation in quantitative research with a focus on privacy protection, open science, and positive societal impact. The PI served as faculty advisor to undergraduate students through the Rutgers DIMACS Research Experiences for Undergraduates program, the Aresty Summer Research program, and the Douglass Women in Science and Engineering (WiSE) program. The PI designed and taught the Byrne Seminar titled \"Privacy in the Digital World: from Netflix to the Census\", gathering first-year undergraduate students for  reading and discussion surrounding modern contentious issues in privacy and data ethics. In addition, the PI engaged in a multitude of synergistic activities including participating in the National Academies of Sciences, Engineering and Medicine (NASEM) Committee on National Statistics Census Data Products Expert Meetings, organizing the Workshop on the Analysis of Census Noisy Measurement Files and Differential Privacy (April 2022, New Brunswick, NJ), and co-editing of the Harvard Data Science Review Special Issue, \"Differential Privacy for the 2020 U.S. Census:Can We Make Data Both Private and Useful?\" These activities realize the broader impacts of the project and promote the dissemination of research results stemming from this project to communities of interest.\n\n\t\t\t\t\tLast Modified: 12/29/2022\n\n\t\t\t\t\tSubmitted by: Ruobin Gong"
+ }
+}

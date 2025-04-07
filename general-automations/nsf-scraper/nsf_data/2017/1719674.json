@@ -1,0 +1,105 @@
+{
+ "awd_id": "1719674",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: Small: Embedded Graph Software-Hardware Models and Maps for Scalable Sparse Computations",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927498",
+ "po_email": "achtchel@nsf.gov",
+ "po_sign_block_name": "Almadena Chtchelkanova",
+ "awd_eff_date": "2016-01-15",
+ "awd_exp_date": "2018-07-31",
+ "tot_intn_awd_amt": 206450.0,
+ "awd_amount": 206450.0,
+ "awd_min_amd_letter_date": "2016-12-15",
+ "awd_max_amd_letter_date": "2016-12-15",
+ "awd_abstract_narration": "A large number of \"big data\" and \"big simulation\" applications, such as those for determining network models or simulations of partial differential equation models, concern high dimensional data that are sparse.  Sparse data structures and algorithms present significant advantages in terms of storage and computational costs. However, with only a few operations per data element, efficient and scalable implementations are difficult to achieve on current and emerging high performance computing systems with very high degrees of core level parallelism, complex node interconnect topology and multicore/manycore nodes with non-uniform memory architectures (NUMA). This proposal develops and evaluates \u00e1-embedded graph hardware-software models and attendant data locality-preserving and NUMA-aware application to core/thread mappings to enhance performance and parallel scalability.  \r\nConsider an application task graph A, weighted with measures of work and data sharing that is approximately embedded in two or three dimensions, to obtain an \u00e1-embedded graph A.  Additionally,  consider a weighted graph of a HPC system that is naturally assigned coordinates to obtain an \u00e1-embedded host graph model H.  This proposal develops parallel algorithms  to compute interconnect topology-aware mappings of A to H in order to optimize performance measures such as congestion and dilation while preserving load balance. Additionally, at a multicore node in H that is assigned a subgraph of A,  (i) sparse data are reordered to enhance parallelism and locality, and (ii) a  dynamic fine-grain NUMA-aware task scheduling  is applied to respond through work-stealing to core variations in performance from resource conflicts, throttling etc. Finally, through insights gained from \u00e1-embedded graph models, sparse matrix algorithms are reformulated to enhance communication avoidance, soft error resilience and data preconditioning. Outcomes include enabling weak scaling to a very large number of cores by extracting parallelism at fine, medium and large-grains, and significantly enhanced fixed and scaled problem efficiencies through locality preservation. \r\nThe interconnect topology-aware models and maps hold the potential for impact on very large scale HPC workloads through potential incorporation into the Message Passing Interface for enhanced sparse communications. Additionally, the proposed locality-aware mappings and NUMA-aware scheduling can potentially benefit the very large base of modeling and simulation applications that run on small multicore clusters.  Graduate student training is enhanced through a \"scale-up\" challenge component in an interdisciplinary course on computational science and engineering. High school students are introduced to parallel computing through summer in-residence programs seeking to broaden participation in science and engineering from underrepresented communities.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Padma",
+   "pi_last_name": "Raghavan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Padma Raghavan",
+   "pi_email_addr": "padma.raghavan@vanderbilt.edu",
+   "nsf_id": "000097691",
+   "pi_start_date": "2016-12-15",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Vanderbilt University",
+  "inst_street_address": "110 21ST AVE S",
+  "inst_street_address_2": "",
+  "inst_city_name": "NASHVILLE",
+  "inst_state_code": "TN",
+  "inst_state_name": "Tennessee",
+  "inst_phone_num": "6153222631",
+  "inst_zip_code": "372032416",
+  "inst_country_name": "United States",
+  "cong_dist_code": "05",
+  "st_cong_dist_code": "TN05",
+  "org_lgl_bus_name": "VANDERBILT UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "GTNBNWXJ12D5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Vanderbilt University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "TN",
+  "perf_st_name": "Tennessee",
+  "perf_zip_code": "372350002",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "TN07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "794200",
+   "pgm_ele_name": "HIGH-PERFORMANCE COMPUTING"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7942",
+   "pgm_ref_txt": "HIGH-PERFORMANCE COMPUTING"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0113",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001314DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2013,
+   "fund_oblg_amt": 206450.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The major goals of the project concern the development of efficient scalable parallel algorithms to enable \"big data\" models that rely on large sparse graph or matrix calculations. In particular, we seek to enable efficient use of&nbsp;the underlying supercomputing hardware in regard to peak processing rates and energy consumed, while ensuring reliable solutions in the face of transient errors. A major challenge to achieving such high performance is that the recent growth in billion-to-trillion-way parallelism in supercomputers comes along with highly heterogeneous processing architectures, and increasing rates of&nbsp;transient errors. Our research has focused on modeling the hardware heterogeneity as well as the numerical and structural properties of sparse, high dimensional data sets to enable an appropriate mapping of tasks to processing elements. We have sought to deliver high performance&nbsp;through techniques to extract large levels of parallelism that are latent in the data, to re-structure calculations to hide the large latencies of data access, to co-schedule tasks to increase throughput, and to embed detection and correction schemes for \"soft\" or transient hardware errors. Through analyses and empirical evaluation, we demonstrate that when compared to the state-of-the-art schemes, our new algorithms can improve parallel speedups and hardware energy efficiencies by several factors on average and by as much as 100x in certain cases.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 01/03/2019<br>\n\t\t\t\t\tModified by: Padma&nbsp;Raghavan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe major goals of the project concern the development of efficient scalable parallel algorithms to enable \"big data\" models that rely on large sparse graph or matrix calculations. In particular, we seek to enable efficient use of the underlying supercomputing hardware in regard to peak processing rates and energy consumed, while ensuring reliable solutions in the face of transient errors. A major challenge to achieving such high performance is that the recent growth in billion-to-trillion-way parallelism in supercomputers comes along with highly heterogeneous processing architectures, and increasing rates of transient errors. Our research has focused on modeling the hardware heterogeneity as well as the numerical and structural properties of sparse, high dimensional data sets to enable an appropriate mapping of tasks to processing elements. We have sought to deliver high performance through techniques to extract large levels of parallelism that are latent in the data, to re-structure calculations to hide the large latencies of data access, to co-schedule tasks to increase throughput, and to embed detection and correction schemes for \"soft\" or transient hardware errors. Through analyses and empirical evaluation, we demonstrate that when compared to the state-of-the-art schemes, our new algorithms can improve parallel speedups and hardware energy efficiencies by several factors on average and by as much as 100x in certain cases.\n\n\t\t\t\t\tLast Modified: 01/03/2019\n\n\t\t\t\t\tSubmitted by: Padma Raghavan"
+ }
+}

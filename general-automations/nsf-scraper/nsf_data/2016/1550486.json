@@ -1,0 +1,105 @@
+{
+ "awd_id": "1550486",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research:  SI2-SSI: Sustaining Innovation in the Linear Algebra Software Stack for Computational Chemistry and Other Sciences",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": "7032924538",
+ "po_email": "awalton@nsf.gov",
+ "po_sign_block_name": "Amy Walton",
+ "awd_eff_date": "2016-07-15",
+ "awd_exp_date": "2019-06-30",
+ "tot_intn_awd_amt": 265000.0,
+ "awd_amount": 265000.0,
+ "awd_min_amd_letter_date": "2016-07-26",
+ "awd_max_amd_letter_date": "2016-07-26",
+ "awd_abstract_narration": "Scientific discovery now often involves computer simulation in addition to, or instead of, laboratory experimentation. This can accelerate, improve, and/or expand scientific insight, often at a great reduction in cost. Many such computer simulations spend much or most of their time solving linear algebra (matrix) problems. For these simulations, linear algebra problems constitute the most basic building blocks of the computation. As a result, software libraries (bundles of specialized code) that efficiently solve linear algebra problems fundamentally support sustained innovation in science. The project aims to create a next generation of software libraries for this domain and will make these libraries available to the scientific community as open source software that can be easily ported to current and future computer architectures. This will directly and indirectly impact discovery in academia, at the national labs, and in industry. The project will also impact affordable education through open course ware that is expected to reach a broad audience. The involvement of undergraduate and graduate students will strengthen the pool of qualified individuals trained to support scientific computing.  The project involves research staff and students who are members of traditionally underrepresented groups.\r\n\r\n\r\nThe BLAS (Basic Linear Algebra Subprograms) are well-known routines that provide standard building blocks for performing basic vector and matrix operations. The Level 1 BLAS perform scalar, vector and vector-vector operations, the Level 2 BLAS perform matrix-vector operations, and the Level 3 BLAS perform matrix-matrix operations. Because the BLAS are efficient, portable, and widely available, they are commonly used in the development of high quality linear algebra software, such as the well-known Linear Algebra PACKage (LAPACK), as an example. However, the BLAS libraries that exist today have not evolved to new computing architectures, and hence do not perform as well as they could. The technical goal and scope of this project, therefore, is to develop a new high-performance dense linear algebra library with broad functionality that can be easily ported to current and future multi-core and many-core processors. The project builds on the BLAS-like Library Instantiation Software (BLIS) effort that has exposed low-level primitives that facilitate the high-performance implementation of BLAS. By implementing the higher-level dense linear algebra functionality in terms of these low-level primitives, portable high performance will be achieved for higher-level functionality needed by many scientific computing applications. Contributions will include the to-be developed techniques for implementing such software, the resulting open source software, and pedagogical artifacts that will include open course ware.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Tze Meng",
+   "pi_last_name": "Low",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Tze Meng Low",
+   "pi_email_addr": "lowt@andrew.cmu.edu",
+   "nsf_id": "000698739",
+   "pi_start_date": "2016-07-26",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Carnegie-Mellon University",
+  "inst_street_address": "5000 FORBES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4122688746",
+  "inst_zip_code": "152133815",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "CARNEGIE MELLON UNIVERSITY",
+  "org_prnt_uei_num": "U3NKNFLNQ613",
+  "org_uei_num": "U3NKNFLNQ613"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Carnegie-Mellon University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152133815",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "800400",
+   "pgm_ele_name": "Software Institutes"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "8004",
+   "pgm_ref_txt": "Software Institutes"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 265000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The use of high performance libraries is needed for speedy developing of scientific and machine learning applications. However, the development of high performance libraries is often a time-consuming task that requires expert knowledge about the application domain, and the hardware on which the application will run. When the hardware changes, time and effort have to be spent to redesign a new library for the new hardware. Similar effort has to be expended to design a new library for a new application domain.</p>\n<p>The BLAS-like instantiation software (BLIS) is a carefully-layered software framework for building new high performance dense linear algebra libraries for new CPUs with minimal addition/changes to the existing code.&nbsp; Much of this layering captures the collective knowledge of how to design high performance dense linear algebra library. This project sought to extend and explore the use of the BLIS framework for new applications domains and other hardware platform such as General Purpose Graphics Processing Units (GPGPUs).</p>\n<p>Through this project, we successfully demonstrated that the BLIS kernels, small code segments designed for specific hardware, could be reused to design libraries for new application domains in machine learning and network analysis.&nbsp; Reusing these BLIS kernels for new domains allow faster development of high performance libraries for new application domains by transferring knowledge from a well-studied application domain to newer domains.</p>\n<p>In the domain of machine learning, redesigning the code around the BLIS kernels yielded new routines that requires less memory resources, allowing them to be deployed into smaller and cheaper hardware such as those used in the Internet of Things (IoT).&nbsp; The resulting code also computes faster than conventional techniques that use dense linear algebra libraries.&nbsp; In the domain of network analysis, we demonstrate that the techniques for designing new computational methods in high performance linear algebra libraries can be similarly used to identify new computational methods for network analysis.</p>\n<p>We showed that routines that are specialized for new hardware, such as GPGPUs, can be designed using the same layering framework in BLIS. We demonstrated this by designing specialized GPGPU kernels for performing single nucleotide polymorphism (SNP) comparisons, a fundamental computation used in genomic analysis and DNA forensics. These specialized GPGPU kernels are then used in a BLIS-like framework to provide fast SNP comparisons routines on GPUs.</p>\n<p>A total of 7 (2 PhD, 1 Masters, 6 undergraduates) students were trained in the use of the techniques for designing high performance libraries. All but one of the undergraduate student have gone on to graduate school.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 05/04/2020<br>\n\t\t\t\t\tModified by: Tze Meng&nbsp;Low</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe use of high performance libraries is needed for speedy developing of scientific and machine learning applications. However, the development of high performance libraries is often a time-consuming task that requires expert knowledge about the application domain, and the hardware on which the application will run. When the hardware changes, time and effort have to be spent to redesign a new library for the new hardware. Similar effort has to be expended to design a new library for a new application domain.\n\nThe BLAS-like instantiation software (BLIS) is a carefully-layered software framework for building new high performance dense linear algebra libraries for new CPUs with minimal addition/changes to the existing code.  Much of this layering captures the collective knowledge of how to design high performance dense linear algebra library. This project sought to extend and explore the use of the BLIS framework for new applications domains and other hardware platform such as General Purpose Graphics Processing Units (GPGPUs).\n\nThrough this project, we successfully demonstrated that the BLIS kernels, small code segments designed for specific hardware, could be reused to design libraries for new application domains in machine learning and network analysis.  Reusing these BLIS kernels for new domains allow faster development of high performance libraries for new application domains by transferring knowledge from a well-studied application domain to newer domains.\n\nIn the domain of machine learning, redesigning the code around the BLIS kernels yielded new routines that requires less memory resources, allowing them to be deployed into smaller and cheaper hardware such as those used in the Internet of Things (IoT).  The resulting code also computes faster than conventional techniques that use dense linear algebra libraries.  In the domain of network analysis, we demonstrate that the techniques for designing new computational methods in high performance linear algebra libraries can be similarly used to identify new computational methods for network analysis.\n\nWe showed that routines that are specialized for new hardware, such as GPGPUs, can be designed using the same layering framework in BLIS. We demonstrated this by designing specialized GPGPU kernels for performing single nucleotide polymorphism (SNP) comparisons, a fundamental computation used in genomic analysis and DNA forensics. These specialized GPGPU kernels are then used in a BLIS-like framework to provide fast SNP comparisons routines on GPUs.\n\nA total of 7 (2 PhD, 1 Masters, 6 undergraduates) students were trained in the use of the techniques for designing high performance libraries. All but one of the undergraduate student have gone on to graduate school.\n\n\t\t\t\t\tLast Modified: 05/04/2020\n\n\t\t\t\t\tSubmitted by: Tze Meng Low"
+ }
+}

@@ -1,0 +1,113 @@
+{
+ "awd_id": "1910133",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CNS Core: Small: Lease-based, Utilitarian Mobile System Design to Enable Energy-Efficient Apps",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Jason Hallstrom",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2023-09-30",
+ "tot_intn_awd_amt": 500000.0,
+ "awd_amount": 500000.0,
+ "awd_min_amd_letter_date": "2019-05-23",
+ "awd_max_amd_letter_date": "2023-01-23",
+ "awd_abstract_narration": "Mobile devices are a pervasive computing platform with a rich set of programming interfaces for third-party developers to write software applications. However, mobile application programming is challenging. Software developers need to consider user interactions, changes in the conditions in which the mobile application is running, and carefully monitor resources on the mobile device.  As a result, many mobile applications have software errors (bugs) that waste energy and cause the battery to be discharged quickly. The goal of this project is to provide a comprehensive solution to reduce energy waste caused by software bugs and enable application developers to create energy-efficient apps.\r\n\r\nSpecifically, the project studies how real-world applications with energy bugs behave by collecting their runtime information and characterizing the energy misbehavior.  This project then explores a utilitarian mobile operating system design with a new abstraction lease, to manage mobile resources efficiently even when applications have energy bugs. To facilitate application developers to leverage the new operating system design, this project further designs new interfaces for developers to define custom utility, a library to perform online optimization on utility and energy efficiency at application runtime, and an energy profiler to optimize low-utility code.\r\n\r\nMobile applications today provide services integral to our daily life. Building energy-aware applications is ever more important. This project can effectively improve our understanding of application runtime behavior, significantly reduce the impact of potential energy bugs, and help application developers more easily build energy-efficient applications. This project will also promote teaching, outreach, and training by exposing students to the real-world challenges and design principles in building energy-aware applications.\r\n\r\nThe project outcomes include paper publications, technical reports, presentations, course material, datasets, and software. The outcomes will be made available for download at https://www.cs.jhu.edu/~huang and be maintained for at least five years beyond the completion of the project. The source code of the new mobile operating system design will also be released and available on GitHub.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Yinzhi",
+   "pi_last_name": "Cao",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Yinzhi Cao",
+   "pi_email_addr": "ycao43@jhu.edu",
+   "nsf_id": "000689464",
+   "pi_start_date": "2023-01-23",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Former Principal Investigator",
+   "pi_first_name": "Peng",
+   "pi_last_name": "Huang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Peng Huang",
+   "pi_email_addr": "ryanph@umich.edu",
+   "nsf_id": "000754849",
+   "pi_start_date": "2019-05-23",
+   "pi_end_date": "2023-01-23"
+  }
+ ],
+ "inst": {
+  "inst_name": "Johns Hopkins University",
+  "inst_street_address": "3400 N CHARLES ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "BALTIMORE",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "4439971898",
+  "inst_zip_code": "212182608",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "MD07",
+  "org_lgl_bus_name": "THE JOHNS HOPKINS UNIVERSITY",
+  "org_prnt_uei_num": "GS4PNKTRNKL3",
+  "org_uei_num": "FTMTDMBR29C7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Johns Hopkins University",
+  "perf_str_addr": "3400 N. Charles Street",
+  "perf_city_name": "Baltimore",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "212182608",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "MD07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "735400",
+   "pgm_ele_name": "CSR-Computer Systems Research"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 500000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p class=\"p2\">Energy and performance issues have plagued many applications today, leading to frustrating experiences for users. To enable energy-efficient apps, this project provides comprehensive support, ranging from operating system (OS)-level mechanisms to development tools.</p>\n<p class=\"p2\">On the OS front, we developed LeaseOS, an OS that employs the abstraction of leases to manage app resources effectively. This novel resource management scheme addresses a fundamental gap, allowing the OS to continuously assess whether a resource is still truly useful to the app after the resource is granted. We showed that LeaseOS effectively mitigated the energy waste in various buggy apps. Additionally, we identified a common source of inefficiency in modern apps related to auxiliary tasks. To tackle this problem, we developed special OS support for auxiliary tasks with an abstraction called orbit. Orbit offers strong isolation to prevent bugs in an auxiliary task from negatively affecting the main app. We implemented orbit in the Linux kernel and evaluated it on different auxiliary tasks in large applications.</p>\n<p class=\"p2\">At the tool level, we observed that existing profilers often fall short when diagnosing complex energy and performance bugs. To bridge this gap, we created three new profilers. The first is a utility-based energy profiler that collects multi-dimensional data to automatically pinpoint energy bugs in the app code. The second profiler is Argus, a causal tracing tool for debugging performance anomalies due to complex component interactions in an app. Argus introduces a novel notion of strong and weak edges to explicitly model and annotate trace graph ambiguities, as well as a new diagnosis algorithm to select the most likely causal paths. The third profiler is vProf, which designs a novel profiling methodology called value-assisted cost profiling. vProf continuously records program variable values during cost profiling, and then uses the recorded values after profiling to calibrate the raw costs and more accurately localize the culprit functions. Using real-world bugs in widely used applications, we showed that the new profilers are effective at diagnosing real-world energy and performance issues, including long-standing, unresolved issues.</p>\n<p class=\"p2\">As apps become indispensable in daily life, issues like rapid battery drain and sluggish performance due to app bugs can significantly impact user satisfaction. This project deepened our understanding of energy and performance inefficiencies in modern apps. The solutions developed in this project reduced the impact of energy bugs and helped app developers more easily build energy-efficient apps. This project resulted in multiple publications in top computer systems conferences, including two best paper awards. It also contributed open-source tools usable by developers.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/11/2023<br>\n\t\t\t\t\tModified by: Yinzhi&nbsp;Cao</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "Energy and performance issues have plagued many applications today, leading to frustrating experiences for users. To enable energy-efficient apps, this project provides comprehensive support, ranging from operating system (OS)-level mechanisms to development tools.\nOn the OS front, we developed LeaseOS, an OS that employs the abstraction of leases to manage app resources effectively. This novel resource management scheme addresses a fundamental gap, allowing the OS to continuously assess whether a resource is still truly useful to the app after the resource is granted. We showed that LeaseOS effectively mitigated the energy waste in various buggy apps. Additionally, we identified a common source of inefficiency in modern apps related to auxiliary tasks. To tackle this problem, we developed special OS support for auxiliary tasks with an abstraction called orbit. Orbit offers strong isolation to prevent bugs in an auxiliary task from negatively affecting the main app. We implemented orbit in the Linux kernel and evaluated it on different auxiliary tasks in large applications.\nAt the tool level, we observed that existing profilers often fall short when diagnosing complex energy and performance bugs. To bridge this gap, we created three new profilers. The first is a utility-based energy profiler that collects multi-dimensional data to automatically pinpoint energy bugs in the app code. The second profiler is Argus, a causal tracing tool for debugging performance anomalies due to complex component interactions in an app. Argus introduces a novel notion of strong and weak edges to explicitly model and annotate trace graph ambiguities, as well as a new diagnosis algorithm to select the most likely causal paths. The third profiler is vProf, which designs a novel profiling methodology called value-assisted cost profiling. vProf continuously records program variable values during cost profiling, and then uses the recorded values after profiling to calibrate the raw costs and more accurately localize the culprit functions. Using real-world bugs in widely used applications, we showed that the new profilers are effective at diagnosing real-world energy and performance issues, including long-standing, unresolved issues.\nAs apps become indispensable in daily life, issues like rapid battery drain and sluggish performance due to app bugs can significantly impact user satisfaction. This project deepened our understanding of energy and performance inefficiencies in modern apps. The solutions developed in this project reduced the impact of energy bugs and helped app developers more easily build energy-efficient apps. This project resulted in multiple publications in top computer systems conferences, including two best paper awards. It also contributed open-source tools usable by developers.\n\n \n\n\t\t\t\t\tLast Modified: 10/11/2023\n\n\t\t\t\t\tSubmitted by: Yinzhi Cao"
+ }
+}

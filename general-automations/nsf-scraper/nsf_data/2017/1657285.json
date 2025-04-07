@@ -1,0 +1,105 @@
+{
+ "awd_id": "1657285",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: NeTS: Towards a database-defined network",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Darleen Fisher",
+ "awd_eff_date": "2017-02-15",
+ "awd_exp_date": "2020-01-31",
+ "tot_intn_awd_amt": 160000.0,
+ "awd_amount": 160000.0,
+ "awd_min_amd_letter_date": "2017-02-15",
+ "awd_max_amd_letter_date": "2017-02-15",
+ "awd_abstract_narration": "Software-defined networking (SDN) provides an unprecedented opportunity to exercise computing principles in simplifying networking practice. Indeed, many salient SDN features --- central control and programming interfaces --- are enabled by principles from the fields of programming language, operating systems, and distributed systems.  While these principles have produced a variety of programming abstractions that drastically improve networking practice, reducing the complex distributed protocols to simpler centralized programs, there is little consensus on what are the right abstractions. Moreover, network architects today need to combine heterogeneous data sources --- network forwarding rules, data flow and QoS metrics, host intrusion alerts, and so on --- to produce a cohesive view of the network and investigate problems. To tackle the challenging network abstraction and integration problem, this project will explore the computing principle --- a principle blessed with decades of fruitful theories and commercial success, yet surprisingly under-investigated in SDN --- of database.\r\n\r\nThis database-defined network project builds on the perspective that SDN control fundamentally revolves around data representation, where the entire SDN network is under the hood of a standard SQL database, relying on SQL for flexible and extensible network abstraction, and leveraging the database integration techniques for combining multiple control applications into a coherent forwarding behavior. In achieving this ambitious goal, this project will first develop a novel database-centered controller platform that address two unique networking challenges not found in classic database applications: (1) the system extensibility requirement to accommodate an enlarging body of control applications; and (2) the performance requirement to cope with very fast data-plane updates under complex control applications. In addition, the controller platform will be enhanced with data integration component to manage dependencies between control applications, addressing the long-standing problem of integrating control applications --- combining a collection of potentially overlapping and conflicting modules into a coherent network forwarding behavior.\r\n\r\nThe results of the project will yield solutions to multiple problems, including an attractive form of evolvable SDN abstractions and automated coordination between controls applications. All the abstractions and coordination facilities will be exposed to application programmers, network engineers and architects via the broadly familiar SQL interfaces. Thus, the project is likely to be valuable both technically and as a way to encourage more rapid uptake of SDN. The project will integrate the theoretically-grounded research methodology and content of this proposal with education by developing a graduate-level 'Computing principles in software-defined networking' course.  Informed by the analysis and comparison of the various fundamental approaches (e.g., database, distributed system, programming language) to prominent SDN problems of abstraction and integration, the project will also result in a survey paper on computing principles and SDN.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Anduo",
+   "pi_last_name": "Wang",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Anduo Wang",
+   "pi_email_addr": "adw@temple.edu",
+   "nsf_id": "000704254",
+   "pi_start_date": "2017-02-15",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Temple University",
+  "inst_street_address": "1805 N BROAD ST",
+  "inst_street_address_2": "",
+  "inst_city_name": "PHILADELPHIA",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "2157077547",
+  "inst_zip_code": "191226104",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "PA02",
+  "org_lgl_bus_name": "TEMPLE UNIVERSITY-OF THE COMMONWEALTH SYSTEM OF HIGHER EDUCATION",
+  "org_prnt_uei_num": "QD4MGHFDJKU1",
+  "org_uei_num": "QD4MGHFDJKU1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Temple University",
+  "perf_str_addr": "3340 N. Broad Street SFC, Suite",
+  "perf_city_name": "Philadelphia",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "191405104",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "03",
+  "perf_st_cong_dist": "PA03",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7363",
+   "pgm_ref_txt": "RES IN NETWORKING TECH & SYS"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 160000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>In this project, we ask whether and how can database systems, equally renowned for mediating factual data and its semantic meaning, help managing the semantic network data &mdash; network policies that are driving the behaviors of such complex environments such as software defined networks and Internet routing.</p>\n<p>Specifically, we developed Ravel, a software-defined networking (SDN) controller that uses a standard SQL database to represent the network.&nbsp;<em>Why a database?</em>&nbsp;SDN fundamentally revolves around data representation&ndash;representation of the network topology and forwarding, as well as the higher-level abstractions useful to applications.</p>\n<p>In Ravel, the entire network control infrastructure is implemented within a SQL database. Abstractions of the network take the form of&nbsp;<em>SQL views</em>&nbsp;expressed by SQL queries that can be instantiated and extended on the fly. To allow multiple simultaneous abstractions to collectively drive control, Ravel automatically&nbsp;<em>orchestrates</em>&nbsp;the abstractions to merge multiple views into a coherent forwarding behavior.</p>\n<p>We believe this is likely to be valuable both technically and as a way to encourage more rapid uptake of SDN.&nbsp; SQL databases have proved over decades to be an effective platform for high-level manipulation of data, and are broadly familiar (compared to domain-specific languages, for example).&nbsp; Moreover, network architects today need to combine heterogeneous data sources --- network forwarding rules, data flow and QoS metrics, host intrusion alerts, and so on --- to produce a cohesive view of the network and investigate problems; this will be eased by the interoperability of SQL databases.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/23/2020<br>\n\t\t\t\t\tModified by: Anduo&nbsp;Wang</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIn this project, we ask whether and how can database systems, equally renowned for mediating factual data and its semantic meaning, help managing the semantic network data &mdash; network policies that are driving the behaviors of such complex environments such as software defined networks and Internet routing.\n\nSpecifically, we developed Ravel, a software-defined networking (SDN) controller that uses a standard SQL database to represent the network. Why a database? SDN fundamentally revolves around data representation&ndash;representation of the network topology and forwarding, as well as the higher-level abstractions useful to applications.\n\nIn Ravel, the entire network control infrastructure is implemented within a SQL database. Abstractions of the network take the form of SQL views expressed by SQL queries that can be instantiated and extended on the fly. To allow multiple simultaneous abstractions to collectively drive control, Ravel automatically orchestrates the abstractions to merge multiple views into a coherent forwarding behavior.\n\nWe believe this is likely to be valuable both technically and as a way to encourage more rapid uptake of SDN.  SQL databases have proved over decades to be an effective platform for high-level manipulation of data, and are broadly familiar (compared to domain-specific languages, for example).  Moreover, network architects today need to combine heterogeneous data sources --- network forwarding rules, data flow and QoS metrics, host intrusion alerts, and so on --- to produce a cohesive view of the network and investigate problems; this will be eased by the interoperability of SQL databases.\n\n \n\n\t\t\t\t\tLast Modified: 02/23/2020\n\n\t\t\t\t\tSubmitted by: Anduo Wang"
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "awd_id": "1629444",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "XPS: FULL: Bridging Parallel and Queueing-Theoretic Scheduling",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tracy Kimbrel",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2020-06-30",
+ "tot_intn_awd_amt": 825000.0,
+ "awd_amount": 991000.0,
+ "awd_min_amd_letter_date": "2016-06-29",
+ "awd_max_amd_letter_date": "2019-07-30",
+ "awd_abstract_narration": "Scheduling computational tasks on computational resources has played a fundamental role in computer science since the 1950s.  One branch of scheduling (queueing theoretic) has focused on analyzing multiple sequential jobs competing for a shared resource with the goal of minimizing the response time (latency) over all jobs.  Most operating system and server schedulers use ideas developed as part of this research.  Another branch of scheduling (parallel) has focused on analyzing a single parallel job running on a dedicated parallel machine, with the goal of maximizing efficiency (throughput) of the job.  Most schedulers for dynamically parallel programs use ideas developed as part of this research.  Until recently these branches were adequate on their own, and the communities studying them have had very little interaction.  However, the mainstream availability of parallel hardware, and the need to handle many parallel jobs sharing a single resource, has recently changed this.  The goal of this project is to bridge the two branches by developing new theory and practical scheduling algorithms, that can handle multiple dynamically parallel jobs competing for shared resources.  The project brings together PIs with expertise from each area, and will apply and combine techniques from each area.  The project has the potential to have significant broad impact on the theory and practice of widely used shared parallel systems.  The project will include an educational outreach component in which the PIs will include ideas from the project in courses they teach.\r\n\r\nThis project is the first to tackle the union of these two domains. The PIs will develop scheduling algorithms for a stream of arriving jobs, where the jobs are complex multi-threaded fine-grained parallel jobs with dynamic parallelism and dependencies among tasks.  The research will address three specific challenges, as follows. Challenge 1, Statistical Characterization/Modeling: Scheduling multiple jobs requires knowing something about when each job will complete and what it will do in the future, such as the number of tasks it will create or the granularity of tasks.  A significant part of the project is devoted to measuring parallel jobs and statistically characterizing them to create simple models of their behavior.  Challenge 2, Algorithmic Development and Analysis: There are currently no scheduling algorithms for the problem that is being considered.  While queueing theory touts the optimality of always running the job with the \"shortest expected remaining time,\" this has little meaning when jobs are parallel and there are many resources.  New theorems and analytical techniques will be developed. Challenge 3, Implementation and Benchmarking: An important component of the project will be the implementation and benchmarking of our algorithms on prototype systems.  The PIs will investigate multiple metrics including latency, throughput, fairness, and robustness.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Guy",
+   "pi_last_name": "Blelloch",
+   "pi_mid_init": "E",
+   "pi_sufx_name": "",
+   "pi_full_name": "Guy E Blelloch",
+   "pi_email_addr": "guyb@cs.cmu.edu",
+   "nsf_id": "000196851",
+   "pi_start_date": "2016-06-29",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Mor",
+   "pi_last_name": "Harchol-Balter",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Mor Harchol-Balter",
+   "pi_email_addr": "harchol@cs.cmu.edu",
+   "nsf_id": "000201705",
+   "pi_start_date": "2016-06-29",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Umut",
+   "pi_last_name": "Acar",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Umut Acar",
+   "pi_email_addr": "umut@cs.cmu.edu",
+   "nsf_id": "000636864",
+   "pi_start_date": "2016-06-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Carnegie-Mellon University",
+  "inst_street_address": "5000 FORBES AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "PITTSBURGH",
+  "inst_state_code": "PA",
+  "inst_state_name": "Pennsylvania",
+  "inst_phone_num": "4122688746",
+  "inst_zip_code": "152133815",
+  "inst_country_name": "United States",
+  "cong_dist_code": "12",
+  "st_cong_dist_code": "PA12",
+  "org_lgl_bus_name": "CARNEGIE MELLON UNIVERSITY",
+  "org_prnt_uei_num": "U3NKNFLNQ613",
+  "org_uei_num": "U3NKNFLNQ613"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Carnegie-Mellon University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "PA",
+  "perf_st_name": "Pennsylvania",
+  "perf_zip_code": "152133890",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "12",
+  "perf_st_cong_dist": "PA12",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "042Y00",
+   "pgm_ele_name": "PPoSS-PP of Scalable Systems"
+  },
+  {
+   "pgm_ele_code": "779600",
+   "pgm_ele_name": "Algorithmic Foundations"
+  },
+  {
+   "pgm_ele_code": "828300",
+   "pgm_ele_name": "Exploiting Parallel&Scalabilty"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "7934",
+   "pgm_ref_txt": "PARAL/DISTRIBUTED ALGORITHMS"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0118",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001819DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 825000.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2018,
+   "fund_oblg_amt": 16000.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 150000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>&nbsp;</p>\n<p style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\"><span style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">The aim of this project is to develop new theories and approaches to scheduling by combining knowledge from two disparate communities:&nbsp; (i) the stochastic queueing-theoretic scheduling community, and (ii) the adversarial parallel job scheduling community.&nbsp;&nbsp;&nbsp;</span></p>\n<p>&nbsp;</p>\n<p style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\"><span style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">On the technical end, the project has tackled several important questions in scheduling and has resulted in some major breakthroughs. &nbsp; One of the key questions involves how to optimally share a set of cores among multiple parallelizable jobs so as to minimize the mean response time across all the jobs (response time is the time from when a job arrives until it completes). &nbsp; Jobs have different sizes, where a job?s size is the inherent work associated with the job. &nbsp; Each job also has a speedup function that indicates how much benefit the job gets from each additional core. &nbsp; On the one hand, when allocating cores to jobs, it makes sense to favor short jobs, in accordance with the well-known Shortest-Remaining-Processing-Time (SRPT) algorithm. &nbsp; On the other hand, given that jobs have speedup functions, one has to be careful not to allocate cores to jobs that insufficiently benefit from these cores. &nbsp; The core algorithm that we develop is called heSRPT, or ?high-efficiency SRPT,? because it combines the ideas of SRPT scheduling, while maintaining high efficiency which is key to parallel workloads. &nbsp; In the case where all jobs are present at the start, job sizes are known a priori, and all jobs have the same concave speedup function, we have developed an exact explicit formula for the optimal allocation of cores to jobs, at each moment of time, so as to minimize mean response time.&nbsp; &nbsp; Under the same model, we also have derived a formula for minimizing mean slowdown (slowdown is a version of weighted response time where small jobs count more, as they are more sensitive to high response time).&nbsp;&nbsp;&nbsp;&nbsp;</span></p>\n<p>&nbsp;</p>\n<p style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\"><span style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">We also consider the problem of optimal core allocation where jobs have different speedup functions, specifically one class of jobs is fully parallelizable (elastic) while another class is only parallelizable up to some point (inelastic). &nbsp; Here we assume that jobs arrive over time and their sizes are drawn from exponential distributions where elastic jobs are larger on average.&nbsp; In this setting, we prove that the optimal core allocation policy is the Inelastic First policy, which always favors inelastic jobs.&nbsp; There is a lot more work to be done in this area.</span></p>\n<p>&nbsp;</p>\n<p style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\"><span style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">We also tackled the problem of how to schedule jobs optimally when the job sizes are not known and the sizes are drawn from some arbitrary distribution.&nbsp; Here we derived and analyzed simple yet near-optimal scheduling policies (called M-Gittins, or \"monotonic Gittins\") for both a single server queue and a multi-server queue.&nbsp;&nbsp;</span></p>\n<p>&nbsp;</p>\n<p style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\"><span style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">In the context of work-stealing schedulers we considered the problem where a single job has classes of subtasks (e.g. readers and writers) which must each receive a fair share of the computational power. &nbsp; We developed a work-stealing scheduler that can create pools of tasks such that every dynamic subtask&nbsp; can be forked into any specified pool. &nbsp; On creation, each pool is given a fixed share of resources. &nbsp; We applied this to both a database application and a graph processing engine, where in both cases we have a mix of large parallel queries with much smaller dynamic updates.&nbsp; In the context of hardware scheduling of memory requests we studied how hardware schedules requests to cache lines. &nbsp; This included an extensive study and the development of a tool called Severus.</span></p>\n<p>&nbsp;</p>\n<p id=\"docs-internal-guid-3f5fdd07-7fff-1fb8-b798-06154b0e2590\" style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\"><span style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">The project also produced several broader impacts. &nbsp; Seven PhD students were partially funded under this project as well as four undergraduates. &nbsp; One received their PhD during the time of the grant. &nbsp; Between them, they produced over a dozen papers, including 5 Best Paper or Best Student Paper Awards and 1 Best Video Presentation Award. &nbsp; The research in this grant also inspired scheduling work at Google, which led to a Google Faculty Research Award. &nbsp; One of the PIs completed a first draft of an undergraduate textbook on Probability Theory for Computer Scientists, which combines both stochastic analysis and adversarial worst-case analysis as is the goal of this grant. &nbsp; The work on the pool scheduler was released on github as part of the Parlay library (https://github.com/cmuparlay/parlaylib).&nbsp; &nbsp; It was also used in an in-memory multiversion database system, also available on github (</span><a style=\"text-decoration: none;\" href=\"https://github.com/cmuparlay/PAM\"><span style=\"font-size: 11pt; font-family: Arial; color: #1155cc; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;\">https://github.com/cmuparlay/PAM</span></a><span style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">).&nbsp; Our tool for analyzing the scheduling of memory requests, Severus, is also available on github (</span><a style=\"text-decoration: none;\" href=\"https://github.com/cmuparlay/severus\"><span style=\"font-size: 11pt; font-family: Arial; color: #1155cc; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;\">https://github.com/cmuparlay/severus</span></a><span style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">).</span></p>\n<p style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\"><span style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\"><br /></span></p>\n<p><br /><br /></p><br>\n<p>\n\t\t\t\t      \tLast Modified: 08/01/2020<br>\n\t\t\t\t\tModified by: Mor&nbsp;Harchol-Balter</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n \nThe aim of this project is to develop new theories and approaches to scheduling by combining knowledge from two disparate communities:  (i) the stochastic queueing-theoretic scheduling community, and (ii) the adversarial parallel job scheduling community.   \n\n \nOn the technical end, the project has tackled several important questions in scheduling and has resulted in some major breakthroughs.   One of the key questions involves how to optimally share a set of cores among multiple parallelizable jobs so as to minimize the mean response time across all the jobs (response time is the time from when a job arrives until it completes).   Jobs have different sizes, where a job?s size is the inherent work associated with the job.   Each job also has a speedup function that indicates how much benefit the job gets from each additional core.   On the one hand, when allocating cores to jobs, it makes sense to favor short jobs, in accordance with the well-known Shortest-Remaining-Processing-Time (SRPT) algorithm.   On the other hand, given that jobs have speedup functions, one has to be careful not to allocate cores to jobs that insufficiently benefit from these cores.   The core algorithm that we develop is called heSRPT, or ?high-efficiency SRPT,? because it combines the ideas of SRPT scheduling, while maintaining high efficiency which is key to parallel workloads.   In the case where all jobs are present at the start, job sizes are known a priori, and all jobs have the same concave speedup function, we have developed an exact explicit formula for the optimal allocation of cores to jobs, at each moment of time, so as to minimize mean response time.    Under the same model, we also have derived a formula for minimizing mean slowdown (slowdown is a version of weighted response time where small jobs count more, as they are more sensitive to high response time).    \n\n \nWe also consider the problem of optimal core allocation where jobs have different speedup functions, specifically one class of jobs is fully parallelizable (elastic) while another class is only parallelizable up to some point (inelastic).   Here we assume that jobs arrive over time and their sizes are drawn from exponential distributions where elastic jobs are larger on average.  In this setting, we prove that the optimal core allocation policy is the Inelastic First policy, which always favors inelastic jobs.  There is a lot more work to be done in this area.\n\n \nWe also tackled the problem of how to schedule jobs optimally when the job sizes are not known and the sizes are drawn from some arbitrary distribution.  Here we derived and analyzed simple yet near-optimal scheduling policies (called M-Gittins, or \"monotonic Gittins\") for both a single server queue and a multi-server queue.  \n\n \nIn the context of work-stealing schedulers we considered the problem where a single job has classes of subtasks (e.g. readers and writers) which must each receive a fair share of the computational power.   We developed a work-stealing scheduler that can create pools of tasks such that every dynamic subtask  can be forked into any specified pool.   On creation, each pool is given a fixed share of resources.   We applied this to both a database application and a graph processing engine, where in both cases we have a mix of large parallel queries with much smaller dynamic updates.  In the context of hardware scheduling of memory requests we studied how hardware schedules requests to cache lines.   This included an extensive study and the development of a tool called Severus.\n\n \nThe project also produced several broader impacts.   Seven PhD students were partially funded under this project as well as four undergraduates.   One received their PhD during the time of the grant.   Between them, they produced over a dozen papers, including 5 Best Paper or Best Student Paper Awards and 1 Best Video Presentation Award.   The research in this grant also inspired scheduling work at Google, which led to a Google Faculty Research Award.   One of the PIs completed a first draft of an undergraduate textbook on Probability Theory for Computer Scientists, which combines both stochastic analysis and adversarial worst-case analysis as is the goal of this grant.   The work on the pool scheduler was released on github as part of the Parlay library (https://github.com/cmuparlay/parlaylib).    It was also used in an in-memory multiversion database system, also available on github (https://github.com/cmuparlay/PAM).  Our tool for analyzing the scheduling of memory requests, Severus, is also available on github (https://github.com/cmuparlay/severus).\n\n\n\n\n\n\n\n\t\t\t\t\tLast Modified: 08/01/2020\n\n\t\t\t\t\tSubmitted by: Mor Harchol-Balter"
+ }
+}

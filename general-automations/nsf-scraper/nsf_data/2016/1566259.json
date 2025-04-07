@@ -1,0 +1,125 @@
+{
+ "awd_id": "1566259",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: ACI: Efficient Radiative Heat Transfer Modeling In Large-Scale Combustion Systems",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Alan Sussman",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2019-06-30",
+ "tot_intn_awd_amt": 174999.0,
+ "awd_amount": 182999.0,
+ "awd_min_amd_letter_date": "2016-06-15",
+ "awd_max_amd_letter_date": "2017-07-17",
+ "awd_abstract_narration": "Thermal radiation is an important but less adequately understood heat transfer process for large-scale thermal systems. Radiative heat transfer accounts for more than 70% of the total heat transfer to the ambient environment in large-scale fires. Pollutants that are produced by combustion systems, such as particulate matters, NOx and SOx (main contributor to acid rain), are highly sensitive to the thermal effects of radiative heat transfer. To correctly predict fire propagation and pollutant emission, and to guide power plant retrofit, high-fidelity radiation modeling for large-scale combustion systems is needed. However, the expensive computational cost of high-fidelity radiation models, their intensive memory requirements, and poor scaling performances have traditionally prevented their applications beyond toy or small-scale problems. Modern high performance computing systems have evolved to a stage where massive parallelism can be harnessed but memory-per-core is decreasing. Therefore, new modeling and parallelism strategies for thermal radiation prediction are required to leverage the power of current and future cyber-infrastructure. To advance the understanding of the thermal radiation processes, and to enable the application of predictive models to practical engineering systems, this CRII project aims at optimizing the solution algorithms and parallelism strategies of high-fidelity radiation models for the modern heterogeneous many-core high performance computing systems.  Therefore, this research aligns with the NSF mission to promote the progress of science and to advance the national health, prosperity and welfare.\r\n\r\nThe overarching goal of this project is to break the barrier of applying high-fidelity radiation models to practical large-scale systems, utilizing modern cyber-infrastructure. As a result, the heat flux on the computational boundaries as well as pollutant emissions can be better predicted, which can reduce the fire loss and alleviate the environmental concerns with pollutions. Specifically, the project focuses on enhancing the parallelism of a Monte Carlo based high-fidelity radiation model, using the hybrid computing environment provided by the many-integrated-core (MIC) co-processors. As proposed, the high-fidelity radiation model will be coupled to an open-source fire simulator, and will be validated against well-documented experimental data. By identifying the disparate time scales of different physical processes, solution algorithm is first optimized to enhance the overall efficiency of the proposed code. Hybrid parallelism with message passing interface (MPI) and OpenMP is then proposed to achieve the desired reduction in the \"time to solution.\" Finally, the accuracy and efficiency of the developed fire-radiation code will be demonstrated through a large-scale fire simulation.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Xinyu",
+   "pi_last_name": "Zhao",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Xinyu Zhao",
+   "pi_email_addr": "xinyu.zhao@uconn.edu",
+   "nsf_id": "000703105",
+   "pi_start_date": "2016-06-15",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Connecticut",
+  "inst_street_address": "438 WHITNEY RD EXTENSION UNIT 1133",
+  "inst_street_address_2": "",
+  "inst_city_name": "STORRS",
+  "inst_state_code": "CT",
+  "inst_state_name": "Connecticut",
+  "inst_phone_num": "8604863622",
+  "inst_zip_code": "062699018",
+  "inst_country_name": "United States",
+  "cong_dist_code": "02",
+  "st_cong_dist_code": "CT02",
+  "org_lgl_bus_name": "UNIVERSITY OF CONNECTICUT",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "WNTPS995QBM7"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Connecticut",
+  "perf_str_addr": "191 Auditorium Road UNIT 3139",
+  "perf_city_name": "Storrs",
+  "perf_st_code": "CT",
+  "perf_st_name": "Connecticut",
+  "perf_zip_code": "062693139",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "02",
+  "perf_st_cong_dist": "CT02",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  },
+  {
+   "pgm_ele_code": "736100",
+   "pgm_ele_name": "EDUCATION AND WORKFORCE"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 174999.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 8000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Thermal radiation accounts for more than 70% of the total heat transfer to the ambient environment in large-scale fires, which plays a critical role in fire spread.Accurate modeling and prediction of radiation in fires can lead to direct social and economic benefits by preventing property loss and casualties during fire hazards, hence is pursued in this project. Clear understanding of the effect of radiation and its interactions with other processes is still missing due to challenges both computationally and experimentally.&nbsp; This project aims at removing major bottlenecks in employing high-fidelity radiation models in fire simulations on modern cyber-infrastructure. A Monte Carlo ray tracing based radiation solver is first implemented into a fire simulator, where verification and validation are conducted. A detailed simulation of a turbulent pool fire is performed using the new solver, where details of radiation, chemistry and turbulence are well accounted for. Good agreement with experiments is achieved, without ad hoc model tuning. The simulation is the largest-scale simulation till this date, in terms of model complexities, and it provides unprecedented details about the structure and dynamics of fires.The insights obtained from the data generated by the simulation have already been employed to generate reduced-order models for larger-scale engineering simulations. The simulations are enabled by a newly implemented hybrid distributed/shared memory programming scheme in the fire solver, which removes the memory constraints resulting from loading large databases into the memory. Through profiling and scaling analysis, the ray tracing procedure has been identified to be the most computing-intensive portion of the solver, and a new backward tracing algorithm is implemented to improve the memory access pattern and to enhance the parallelism by exploiting the multithreading feature of the many-core computing system.</p>\n<p>The project features adaption and optimization of legacy engineering computer codes on the next-generation many-core systems, which provides timely examples/experience to the larger scientific computing communities. The hybrid distributed/shared-memory programming model for the mixed-language code that involves both C++ and Fortran can be readily adopted by other scientific disciplines where memory-intensive databases are required. The ray-tracing technique and the particle-based Monte Carlo method are widely employed in other areas, such as the near-infrared imaging for deep tissue probing, computer-aided visualization, gravity wave modeling, etc. The experience accumulated during this project in optimizing the unique ray-tracing process where frequent write/read access to memory is required can provide the larger science and engineering communities with transferrable procedures/experience in improving the performance of Monte Carlo ray tracing. Two graduate students and one undergraduate students are trained within the project. Through the training in this project, the undergraduate REU trainee is well prepared in conducting scientific research using high-performance computing and is inspired to continue his graduate studies. The female graduate student is exposed to multiple professional conferences through support from this project, and is inspired to continue her research career after graduation.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/28/2019<br>\n\t\t\t\t\tModified by: Xinyu&nbsp;Zhao</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThermal radiation accounts for more than 70% of the total heat transfer to the ambient environment in large-scale fires, which plays a critical role in fire spread.Accurate modeling and prediction of radiation in fires can lead to direct social and economic benefits by preventing property loss and casualties during fire hazards, hence is pursued in this project. Clear understanding of the effect of radiation and its interactions with other processes is still missing due to challenges both computationally and experimentally.  This project aims at removing major bottlenecks in employing high-fidelity radiation models in fire simulations on modern cyber-infrastructure. A Monte Carlo ray tracing based radiation solver is first implemented into a fire simulator, where verification and validation are conducted. A detailed simulation of a turbulent pool fire is performed using the new solver, where details of radiation, chemistry and turbulence are well accounted for. Good agreement with experiments is achieved, without ad hoc model tuning. The simulation is the largest-scale simulation till this date, in terms of model complexities, and it provides unprecedented details about the structure and dynamics of fires.The insights obtained from the data generated by the simulation have already been employed to generate reduced-order models for larger-scale engineering simulations. The simulations are enabled by a newly implemented hybrid distributed/shared memory programming scheme in the fire solver, which removes the memory constraints resulting from loading large databases into the memory. Through profiling and scaling analysis, the ray tracing procedure has been identified to be the most computing-intensive portion of the solver, and a new backward tracing algorithm is implemented to improve the memory access pattern and to enhance the parallelism by exploiting the multithreading feature of the many-core computing system.\n\nThe project features adaption and optimization of legacy engineering computer codes on the next-generation many-core systems, which provides timely examples/experience to the larger scientific computing communities. The hybrid distributed/shared-memory programming model for the mixed-language code that involves both C++ and Fortran can be readily adopted by other scientific disciplines where memory-intensive databases are required. The ray-tracing technique and the particle-based Monte Carlo method are widely employed in other areas, such as the near-infrared imaging for deep tissue probing, computer-aided visualization, gravity wave modeling, etc. The experience accumulated during this project in optimizing the unique ray-tracing process where frequent write/read access to memory is required can provide the larger science and engineering communities with transferrable procedures/experience in improving the performance of Monte Carlo ray tracing. Two graduate students and one undergraduate students are trained within the project. Through the training in this project, the undergraduate REU trainee is well prepared in conducting scientific research using high-performance computing and is inspired to continue his graduate studies. The female graduate student is exposed to multiple professional conferences through support from this project, and is inspired to continue her research career after graduation.\n\n \n\n\t\t\t\t\tLast Modified: 10/28/2019\n\n\t\t\t\t\tSubmitted by: Xinyu Zhao"
+ }
+}

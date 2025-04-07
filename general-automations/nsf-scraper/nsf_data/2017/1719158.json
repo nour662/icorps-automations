@@ -1,0 +1,121 @@
+{
+ "awd_id": "1719158",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SHF: SMALL: Intermediate Languages for Safe and Efficient Compilation",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927885",
+ "po_email": "abanerje@nsf.gov",
+ "po_sign_block_name": "Anindya Banerjee",
+ "awd_eff_date": "2017-08-01",
+ "awd_exp_date": "2021-07-31",
+ "tot_intn_awd_amt": 449269.0,
+ "awd_amount": 539110.0,
+ "awd_min_amd_letter_date": "2017-07-10",
+ "awd_max_amd_letter_date": "2020-06-18",
+ "awd_abstract_narration": "The importance of compiler verification is well established, especially for high-security and high-assurance applications. Regardless of how confident we are in our source code, no amount of program verification can survive the compilation process if the compiler introduces its own bugs and security flaws.  Even though verified compilers are a reality today, many of the techniques employed by today's compiler writers have not made it into a formal system.  This undermines confidence in a correctness proof of an optimizing compiler.  The intellectual merit of this research is the design and implementation of intermediate languages that address both safety and efficiency concerns.  The work focuses on the Glasgow Haskell compiler. However, the development is not tied to a specific language but focuses on a more general framework.  The broader impact of the research consists of improving the approaches to verified compilation; providing a solid semantics for all stages of the compiler makes verification more compositional and makes verifying more complex compilers feasible. The project impacts more than just intermediate languages, because the broader lessons learned can be incorporated into source languages themselves. The work represents an important step toward extending current languages with proving capabilities by formally addressing the difficult challenge of integrating dependent types and effects.\r\n\r\nFunctional language implementations rely heavily on effects for efficiency. Haskell, for example, is a pure functional language but its implementation uses memoization that involves reassignment. Intermediate languages that adequately represent implementation techniques must support effects. Making effects explicit not only increases confidence in compiler correctness, but also presents more opportunities for optimizations to produce better code. Whereas current research has focused on pushing high-level features down the compilation pipeline, the goal here is to also pull low-level features up the pipeline. Finding the right balance between high and low levels is challenging, since one wants to exploit low-level features to enhance efficiency without ruining the advantages of purity and ultimately hindering more than helping optimizations. The key to design useful intermediate languages is not that programs are necessarily pure, but that they use benign effects, namely effects that guarantee functional behavior. The guiding principle is to keep a strong connection with proof theory in the design and models of intermediate languages, especially the ones with mixed calling conventions.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Zena",
+   "pi_last_name": "Ariola",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Zena M Ariola",
+   "pi_email_addr": "ariola@cs.uoregon.edu",
+   "nsf_id": "000097717",
+   "pi_start_date": "2017-07-10",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Oregon Eugene",
+  "inst_street_address": "1776 E 13TH AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "EUGENE",
+  "inst_state_code": "OR",
+  "inst_state_name": "Oregon",
+  "inst_phone_num": "5413465131",
+  "inst_zip_code": "974031905",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "OR04",
+  "org_lgl_bus_name": "UNIVERSITY OF OREGON",
+  "org_prnt_uei_num": "Z3FGN9MF92U2",
+  "org_uei_num": "Z3FGN9MF92U2"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Oregon Eugene",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "OR",
+  "perf_st_name": "Oregon",
+  "perf_zip_code": "974035219",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "OR04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7943",
+   "pgm_ref_txt": "PROGRAMMING LANGUAGES"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 449269.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 89841.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This work developed new techniques for designing intermediate languages used to efficiently and safely compiling programs. &nbsp;Modern programming languages have become increasingly high level, aiming to improve the productivity of human programmers with features that help writing complex code quickly and correctly. &nbsp;Yet, compilers are still tasked with turning those high-level programs into the same low-level machine code understood by computers. &nbsp;To help bridge that widening gap, modern compilers use increasingly sophisticated intermediate languages to translate between what the programmer writes and what the machine runs. &nbsp;And as the distance between the high and low levels increases, the need for the intermediate language to be able to correctly facilitate and represent optimizations is even more important.<br /><br />This project shows that a solid foundation in logic and proofs is a crucial tool for developing intermediate languages that effectively aid compilation of modern programming languages. &nbsp;The connection between proofs and programs is renowned for its success for framing the correctness of software, which also extends to the correctness of compilers which convert software into executable code. &nbsp;This project also shows that the proof-as-programs approach is a productive method of improving the efficiency of software, too. &nbsp;In particular, the intermediate languages and optimizations developed in this project were all directly inspired by and based off of key ideas previously discovered in mathematical logic and proof theory.<br /><br />At the broad level, one goal of this project is to develop the framework for a \"universal\" intermediate language that could serve as a common compile target for a wide variety of modern programming languages that all contain contradictory features. &nbsp;On the one hand, Java is a standard object-oriented language that allows programmers to employ side effects, like implicitly changing values as the program runs. &nbsp;On the other hand, Haskell is a purely functional language that forbids side effects, and runs programs in an unconventional order named \"lazy evaluation.\" &nbsp;Both of these languages call for very different compilation and optimization techniques to transform programs into efficient and correct machine code. &nbsp;How can the same intermediate language faithfully capture all the concerns of both?<br /><br />Designing the foundation for such a \"universal\" intermediate language is the first major outcome of this project. &nbsp;The main challenge this foundation overcomes is to resolve the tension between the high and low levels. &nbsp;First, it must preserve the properties used to reason about programs in the high-level source language, since these are needed to correctly optimize programs. &nbsp;Second, it must be capable of accurately breaking down complex structures in the program into more basic, low-level primitives found in machine code. Third, it must be able to express the important computational features used by the program, such as side effects like state, exceptions, loops, and lazy evaluation. &nbsp;It turned out that the concept of \"polarity\" in logic and proof theory is the key to accomplish all three goals simultaneously. &nbsp;The result is a framework for polarized intermediate languages which can compile complex, user-defined types into a small, finite number of primitives that can be directly implemented in a machine.<br /><br />The second major outcome is to apply these theoretical results to a practical compiler. &nbsp;Ideas from a &nbsp;polarized framework were translated to the intermediate language of &nbsp;the Glasgow Haskell Compiler. This made it possible to express the idea of \"calling conventions\" into a form that is compatible with the high-level, purely functional Haskell. &nbsp;The result is a type system for statically tracking information about functions, such as the number of arguments and their representation in memory, so that higher-order function calls can be optimized at compile time. &nbsp;The type system can be used by the compiler to automatically optimize programs, or to give fine-grained control to Haskell programmers.<br /><br />To reason about the semantics of these intermediate languages, the third major outcome is a framework of syntactic models that characterize and verify important properties of polarized intermediate languages that include side effects. &nbsp;The syntactic models developed here can express properties like strong normalization for intermediate languages which include jumps, lazy evaluation, and multiple evaluation strategies. &nbsp;They also give a framework for characterizing intersection and union types, which are useful in a compiler to safely represent C-style unions.</p>\n<p>The final outcome is the application of the logical idea of duality to develop the dual of functional programming techniques. &nbsp;In particular, the dual of a \"data type\" in functional languages is a \"codata type,\" which can be used to model corecursive programs like servers which are endless processes that respond to requests on-demand. &nbsp;This resulted in a foundation for &nbsp;corecursion based on computation, along with a new method of coinduction for reasoning about corecursive programs based on control flow. &nbsp;This new method of corecursive programming with codata can be used in today's programming languages, and is equally applicable to both functional and object-oriented.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/29/2021<br>\n\t\t\t\t\tModified by: Zena&nbsp;M&nbsp;Ariola</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis work developed new techniques for designing intermediate languages used to efficiently and safely compiling programs.  Modern programming languages have become increasingly high level, aiming to improve the productivity of human programmers with features that help writing complex code quickly and correctly.  Yet, compilers are still tasked with turning those high-level programs into the same low-level machine code understood by computers.  To help bridge that widening gap, modern compilers use increasingly sophisticated intermediate languages to translate between what the programmer writes and what the machine runs.  And as the distance between the high and low levels increases, the need for the intermediate language to be able to correctly facilitate and represent optimizations is even more important.\n\nThis project shows that a solid foundation in logic and proofs is a crucial tool for developing intermediate languages that effectively aid compilation of modern programming languages.  The connection between proofs and programs is renowned for its success for framing the correctness of software, which also extends to the correctness of compilers which convert software into executable code.  This project also shows that the proof-as-programs approach is a productive method of improving the efficiency of software, too.  In particular, the intermediate languages and optimizations developed in this project were all directly inspired by and based off of key ideas previously discovered in mathematical logic and proof theory.\n\nAt the broad level, one goal of this project is to develop the framework for a \"universal\" intermediate language that could serve as a common compile target for a wide variety of modern programming languages that all contain contradictory features.  On the one hand, Java is a standard object-oriented language that allows programmers to employ side effects, like implicitly changing values as the program runs.  On the other hand, Haskell is a purely functional language that forbids side effects, and runs programs in an unconventional order named \"lazy evaluation.\"  Both of these languages call for very different compilation and optimization techniques to transform programs into efficient and correct machine code.  How can the same intermediate language faithfully capture all the concerns of both?\n\nDesigning the foundation for such a \"universal\" intermediate language is the first major outcome of this project.  The main challenge this foundation overcomes is to resolve the tension between the high and low levels.  First, it must preserve the properties used to reason about programs in the high-level source language, since these are needed to correctly optimize programs.  Second, it must be capable of accurately breaking down complex structures in the program into more basic, low-level primitives found in machine code. Third, it must be able to express the important computational features used by the program, such as side effects like state, exceptions, loops, and lazy evaluation.  It turned out that the concept of \"polarity\" in logic and proof theory is the key to accomplish all three goals simultaneously.  The result is a framework for polarized intermediate languages which can compile complex, user-defined types into a small, finite number of primitives that can be directly implemented in a machine.\n\nThe second major outcome is to apply these theoretical results to a practical compiler.  Ideas from a  polarized framework were translated to the intermediate language of  the Glasgow Haskell Compiler. This made it possible to express the idea of \"calling conventions\" into a form that is compatible with the high-level, purely functional Haskell.  The result is a type system for statically tracking information about functions, such as the number of arguments and their representation in memory, so that higher-order function calls can be optimized at compile time.  The type system can be used by the compiler to automatically optimize programs, or to give fine-grained control to Haskell programmers.\n\nTo reason about the semantics of these intermediate languages, the third major outcome is a framework of syntactic models that characterize and verify important properties of polarized intermediate languages that include side effects.  The syntactic models developed here can express properties like strong normalization for intermediate languages which include jumps, lazy evaluation, and multiple evaluation strategies.  They also give a framework for characterizing intersection and union types, which are useful in a compiler to safely represent C-style unions.\n\nThe final outcome is the application of the logical idea of duality to develop the dual of functional programming techniques.  In particular, the dual of a \"data type\" in functional languages is a \"codata type,\" which can be used to model corecursive programs like servers which are endless processes that respond to requests on-demand.  This resulted in a foundation for  corecursion based on computation, along with a new method of coinduction for reasoning about corecursive programs based on control flow.  This new method of corecursive programming with codata can be used in today's programming languages, and is equally applicable to both functional and object-oriented.\n\n\t\t\t\t\tLast Modified: 10/29/2021\n\n\t\t\t\t\tSubmitted by: Zena M Ariola"
+ }
+}

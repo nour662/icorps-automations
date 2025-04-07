@@ -1,0 +1,121 @@
+{
+ "awd_id": "1717801",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SaTC: TTP: Small: Easy Email Encryption",
+ "cfda_num": "47.070",
+ "org_code": "05050000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Rob Beverly",
+ "awd_eff_date": "2017-09-01",
+ "awd_exp_date": "2021-08-31",
+ "tot_intn_awd_amt": 499999.0,
+ "awd_amount": 499999.0,
+ "awd_min_amd_letter_date": "2017-07-26",
+ "awd_max_amd_letter_date": "2017-07-26",
+ "awd_abstract_narration": "Encryption is not used as widely as it should be, especially for email.  One reason is that it's very hard to use; study after study has shown that email users, especially senders, cannot use email encryption correctly. All too often, email is sent unencrypted or encrypted to the wrong recipient, without the sender even realizing it. The essential problem is the certificate: recipients may not have one, or senders may not know how to find it.  This project addresses these problems in two ways. First, it makes certificate generation and selection automatic and transparent; when a sender tries to transmit an email message, the recipient's site automatically generates the certificate and returns it to the sender's email client; that program in turn uses the certificate to encrypt the email.  Second, when email arrives unencrypted, the recipient's mail client encrypts it with a locally generated key, thus obviating any need for the sender to know or do anything.\r\n\r\nThe schemes rest on one fundamental principle: a significant reason for the complexity of cryptography is that it tries to defend against extremely powerful adversaries. This provides strong protection, but at the expense of usability. The approach of this project is to assume a somewhat less capable adversary; in turn, it achieves a significant reduction in complexity. For automatic key distribution, the sender's email client consults the recipient's site's Lightweight Directory Access Protocol (LDAP) database. If a certificate already exists; it is returned and used for encryption; if it does not, a key pair and certificate are generated. The certificate is stored in the database and returned to the querier; the private key is passed to the recipient.  The system also implements receiver-controlled email encryption: when email is received, a modified Internet Message Access Protocol (IMAP) client downloads the message, encrypts it with a locally generated key, and replaces the original email with an encrypted version. This functionality can be incorporated into a standard email client or it can be done via a standalone daemon. Either way, there is no key distribution problem nor any need for sender action. The emails are not protected in transmission, except by Transport Layer Security (TLS); however, they are protected for their likely long lifetime in an IMAP store. If the email had been encrypted by the sender, it is decrypted and then re-encrypted; the same can be done with messages protected by a locally generated key. This allows for key and algorithm refresh, again protecting email in storage.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CNS",
+ "org_div_long_name": "Division Of Computer and Network Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Steven",
+   "pi_last_name": "Bellovin",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Steven M Bellovin",
+   "pi_email_addr": "smb@cs.columbia.edu",
+   "nsf_id": "000164204",
+   "pi_start_date": "2017-07-26",
+   "pi_end_date": null
+  },
+  {
+   "pi_role": "Co-Principal Investigator",
+   "pi_first_name": "Jason",
+   "pi_last_name": "Nieh",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Jason Nieh",
+   "pi_email_addr": "nieh@cs.columbia.edu",
+   "nsf_id": "000304769",
+   "pi_start_date": "2017-07-26",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Columbia University",
+  "inst_street_address": "615 W 131ST ST",
+  "inst_street_address_2": "MC 8741",
+  "inst_city_name": "NEW YORK",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "2128546851",
+  "inst_zip_code": "100277922",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "NY13",
+  "org_lgl_bus_name": "THE TRUSTEES OF COLUMBIA UNIVERSITY IN THE CITY OF NEW YORK",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "F4N1QNPB95M4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Columbia University",
+  "perf_str_addr": "500 West 120th St",
+  "perf_city_name": "New York",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "100277003",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "NY13",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "806000",
+   "pgm_ele_name": "Secure &Trustworthy Cyberspace"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "025Z",
+   "pgm_ref_txt": "SaTC: Secure and Trustworthy Cyberspace"
+  },
+  {
+   "pgm_ref_code": "7434",
+   "pgm_ref_txt": "CNCI"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 499999.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Encryption is notoriously hard for people to use. Many studies, going back more than 20 years, show that, with \"key management\" being the hardest concept. There are \"public keys\" and \"private keys\", neither of which should be confused with passwords, but passwords are often used to protect private keys. Furthermore, public keys often need to be shared with others, especially for email, but private keys should never be shared. However, if you have more than one device of your own, perhaps a phone and a laptop, you have to copy your private key from one to the other, and do it very securely. If you get any of this wrong, your encryption will be insecure&mdash;and in an era of cloud storage, that can be a very serious matter indeed.</p>\n<p>We did two things. First, we took a step back and looked at the actual threats. For example, for most people today the threat to email isn't someone eavesdropping while the messages are in transit; rather, it's your archive of old emails, which may go back many years. Your own devices are trusted&mdash;if not, if they were penetrated, encryption wouldn't do any good, since an attacker could read the old messages any time you did. Our solution is to encrypt emails on receipt, thus obviating the need to share keys with anyone.</p>\n<p>Second, we devised a scheme called <em>per-device keying (PDK)</em>. With PDK, there is no need to move private keys around. Instead, you authenticate adding a new device, a much simpler (and more secure) process. Our user studies confirm that this is much easier to do.</p>\n<p>We also designed and implemented similar schemes for cloud storage of photos and a password manager. Again, each device has its own keys; adding (or deleting) a device is very simple. Users do not need to know anything about keys; everything \"just works\".</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 10/04/2021<br>\n\t\t\t\t\tModified by: Steven&nbsp;M&nbsp;Bellovin</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nEncryption is notoriously hard for people to use. Many studies, going back more than 20 years, show that, with \"key management\" being the hardest concept. There are \"public keys\" and \"private keys\", neither of which should be confused with passwords, but passwords are often used to protect private keys. Furthermore, public keys often need to be shared with others, especially for email, but private keys should never be shared. However, if you have more than one device of your own, perhaps a phone and a laptop, you have to copy your private key from one to the other, and do it very securely. If you get any of this wrong, your encryption will be insecure&mdash;and in an era of cloud storage, that can be a very serious matter indeed.\n\nWe did two things. First, we took a step back and looked at the actual threats. For example, for most people today the threat to email isn't someone eavesdropping while the messages are in transit; rather, it's your archive of old emails, which may go back many years. Your own devices are trusted&mdash;if not, if they were penetrated, encryption wouldn't do any good, since an attacker could read the old messages any time you did. Our solution is to encrypt emails on receipt, thus obviating the need to share keys with anyone.\n\nSecond, we devised a scheme called per-device keying (PDK). With PDK, there is no need to move private keys around. Instead, you authenticate adding a new device, a much simpler (and more secure) process. Our user studies confirm that this is much easier to do.\n\nWe also designed and implemented similar schemes for cloud storage of photos and a password manager. Again, each device has its own keys; adding (or deleting) a device is very simple. Users do not need to know anything about keys; everything \"just works\".\n\n\t\t\t\t\tLast Modified: 10/04/2021\n\n\t\t\t\t\tSubmitted by: Steven M Bellovin"
+ }
+}

@@ -1,0 +1,134 @@
+{
+ "awd_id": "1900765",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Continuing Grant",
+ "awd_titl_txt": "SHF: Medium: Collaborative Research: ANACIN-X:  Analysis and modeling of Nondeterminism and Associated Costs in eXtreme scale applications",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927498",
+ "po_email": "achtchel@nsf.gov",
+ "po_sign_block_name": "Almadena Chtchelkanova",
+ "awd_eff_date": "2019-08-01",
+ "awd_exp_date": "2025-07-31",
+ "tot_intn_awd_amt": 316201.0,
+ "awd_amount": 316201.0,
+ "awd_min_amd_letter_date": "2019-07-17",
+ "awd_max_amd_letter_date": "2024-03-06",
+ "awd_abstract_narration": "Nondeterminism (i.e., the properties of a scientific application to exhibit different behaviors in numerical results and execution patterns during multiple executions) is an increasingly entrenched property of high performance computing (HPC) applications as the scientific community is moving their simulations on larger and highly heterogeneous computing  systems. Nondeterminism can drastically increase the cost of scientific reproducibility in terms of developer time and computational resources, debugging applications when moving from a smaller to a larger scale or from one platform to another, and ensuring fault-tolerance when executions may need to recover from a system fault. These three challenges can ultimately compromise the amount and quality of scientific discovery through computer simulations.  Tools for addressing aspects of the nondeterministic problem have emerged, including Record-and-replay (R&R) techniques that monitor and record changes in program states over one execution (i.e., the recorded execution) of an application; and reproduce those changes, and thus, the behavior of the application during a subsequent execution (i.e., the replayed execution). However, these tools impose overheads on the underlying application and thus present HPC users with the problem of balancing tool utility against tool overhead. HPC users may opt to not use the tool at all rather than deal with unpredictable overheads. This project supports HPC users by modeling the relationship between application nondeterminism and variability in tool overhead, and uses this knowledge to identify hot spots in terms of tool cost as well as regions in executions that trigger nondeterministic behaviors in the applications. The aim of the project is to model nondeterministic executions by determining points (motif) of nondeterminism in executions of HPC applications and to apply the motif modeling with R&R techniques, to study the cost on R&R techniques of certain motifs. The outcome of this project impacts four communities of application developers with the identification of sources of unintended nondeterminism and their management; the HPC research community working on fault-tolerance, resilience, and reproducibility at exascale; data center administrators who use evaluation tools for and with application developers; and educators and trainers in resource constrained environments to promote HPC without the need of accessing high-end, expensive computers.\r\n\r\nThis project advances the study of nondeterministic HPC applications by studying the recording costs of Record-and-replay (R&R) tools and by defining strategy so that these tools can scale to the exascale domain. In addition to the more commonly studied factors of time and memory overhead, the project integrates power usage in the modeling. The project relies on graph theory to develop expressive and scalable graph-based representations of the dependencies between events in a program, and develops algorithms to identify motifs in the graph that indicate points of nondeterminism. These motifs are applied to quantify the associated costs of nondeterminism, including developing metrics to measure dissimilarities between different executions, modeling the costs of recording executions and assessing the overhead of recordings. Based on these motifs, work on this project generates 'fingerprints'  (i.e., a holistic characterization of how and where nondeterminism manifests during the application executions) of real world HPC applications including N-Body problems (e.g., simulating particle, atomic, and planetary interactions); (2) Graph analytics (e.g., Graph500 benchmark); (3) Bioinformatics (e.g., mpiBLAST); and (4) Task-based data analysis application (e.g., WordCount, Join, Octree Clustering on top of MapReduce Over MPI frameworks). The fingerprints illuminate previously-overlooked similarities between the nondeterminism that manifests across multiple classes of applications and allow users to probe the relationship between process communication patterns, the motifs of the actual resulting executions, and the regions of those executions in which tool overhead accumulates for nondeterministic HPC applications.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Sanjukta",
+   "pi_last_name": "Bhowmick",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Sanjukta Bhowmick",
+   "pi_email_addr": "Sanjukta.Bhowmick@unt.edu",
+   "nsf_id": "000545869",
+   "pi_start_date": "2019-07-17",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of North Texas",
+  "inst_street_address": "1112 DALLAS DR STE 4000",
+  "inst_street_address_2": "",
+  "inst_city_name": "DENTON",
+  "inst_state_code": "TX",
+  "inst_state_name": "Texas",
+  "inst_phone_num": "9405653940",
+  "inst_zip_code": "762051132",
+  "inst_country_name": "United States",
+  "cong_dist_code": "13",
+  "st_cong_dist_code": "TX13",
+  "org_lgl_bus_name": "UNIVERSITY OF NORTH TEXAS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "G47WN1XZNWX9"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of North Texas",
+  "perf_str_addr": "1155 Union Circle #305250",
+  "perf_city_name": "Denton",
+  "perf_st_code": "TX",
+  "perf_st_name": "Texas",
+  "perf_zip_code": "762077102",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "13",
+  "perf_st_cong_dist": "TX13",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "287800",
+   "pgm_ele_name": "Special Projects - CCF"
+  },
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7924",
+   "pgm_ref_txt": "MEDIUM PROJECT"
+  },
+  {
+   "pgm_ref_code": "7942",
+   "pgm_ref_txt": "HIGH-PERFORMANCE COMPUTING"
+  },
+  {
+   "pgm_ref_code": "9102",
+   "pgm_ref_txt": "WOMEN, MINORITY, DISABLED, NEC"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  },
+  {
+   "app_code": "0121",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002122DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 113796.0
+  },
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 202405.0
+  }
+ ],
+ "por": null
+}

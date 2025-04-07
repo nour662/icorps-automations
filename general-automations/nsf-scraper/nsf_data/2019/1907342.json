@@ -1,0 +1,105 @@
+{
+ "awd_id": "1907342",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CDS&E:  Development of fast, multi-dimensional Gaussian Processes for Exoplanet discovery and beyond",
+ "cfda_num": "47.049",
+ "org_code": "03020000",
+ "po_phone": "7032928123",
+ "po_email": "jkeane@nsf.gov",
+ "po_sign_block_name": "Jacqueline Keane",
+ "awd_eff_date": "2019-09-01",
+ "awd_exp_date": "2024-08-31",
+ "tot_intn_awd_amt": 471048.0,
+ "awd_amount": 471048.0,
+ "awd_min_amd_letter_date": "2019-08-28",
+ "awd_max_amd_letter_date": "2019-08-28",
+ "awd_abstract_narration": "All astronomical observations are subject to unwanted \"noise:\" signals that can mask the output from the object to be studied.  Noise can come from the telescope and detector, from the atmosphere, from other objects in the sky, or from intrinsic variations in the object to be studied. The PI will use the technique known as Gaussian Processing to model and reduce the interference of astronomical noise to facilitate the study of planets around other stars. These planets are studied by their \"eclipses,\" or transits, in front of the star. Many stars, however, vary in their light output, and this can cause a misinterpretation of the transit data. The method to be developed will help reduce the noise due to the variability of the star. A graduate student will be trained, and undergraduate students will be involved in the research. The computational techniques developed will be applicable to fields beyond astronomy.\r\n\r\nThe proposer will develop a method for finding small transiting exoplanets and/or exomoons in the presence of stellar variability. Stellar brightness variations are correlated across time and wavelength, and the fast computational method he proposes to develop will be employed to use these correlations to distinguish between transits and random dips in stellar brightness. This technique will be extended to account for outliers and can be applied to other types of exoplanet and astronomical data, as well as data in other fields.  The code written under this proposal will be made available to the community through open-access development.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "AST",
+ "org_div_long_name": "Division Of Astronomical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Eric",
+   "pi_last_name": "Agol",
+   "pi_mid_init": "M",
+   "pi_sufx_name": "",
+   "pi_full_name": "Eric M Agol",
+   "pi_email_addr": "agol@u.washington.edu",
+   "nsf_id": "000470175",
+   "pi_start_date": "2019-08-28",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Washington",
+  "inst_street_address": "4333 BROOKLYN AVE NE",
+  "inst_street_address_2": "",
+  "inst_city_name": "SEATTLE",
+  "inst_state_code": "WA",
+  "inst_state_name": "Washington",
+  "inst_phone_num": "2065434043",
+  "inst_zip_code": "981951016",
+  "inst_country_name": "United States",
+  "cong_dist_code": "07",
+  "st_cong_dist_code": "WA07",
+  "org_lgl_bus_name": "UNIVERSITY OF WASHINGTON",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "HD1WMN6945W6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Washington",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "WA",
+  "perf_st_name": "Washington",
+  "perf_zip_code": "981050001",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "07",
+  "perf_st_cong_dist": "WA07",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "121400",
+   "pgm_ele_name": "PLANETARY ASTRONOMY"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "1206",
+   "pgm_ref_txt": "THEORETICAL & COMPUTATIONAL ASTROPHYSICS"
+  },
+  {
+   "pgm_ref_code": "8084",
+   "pgm_ref_txt": "CDS&E"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 471048.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The primary outcome of this research project was the development of fast, new computational method for handling noisy data in which there are correlations in the noise across multiple dimensions. &nbsp; The application we have in mind is time-series measurements of astronomical bodies in which the measurements are simultaneous across different wavelengths, but the method is a general statistical method and thus can have broad application to numerous data types. &nbsp;An example dataset would be measurements of a star with a transiting planet and moon which is measured over several hours and across a range of wavelengths with the James Webb Space Telescope (JWST). &nbsp;We want to distinguish stellar variability from variations in brightness caused by the shadow of the moon and planet with the statistical model, and more accurately and precisely measure the properties of the planet and moon.</p>\r\n<p>The method we developed proved very efficient. &nbsp;The typical approach involves a compution which scales as the cube of the size of the dataset; &nbsp;our approach scales linearly with size (although it has a cubic dependence with the size of the second dimension, except in some common cases where the scaling is linear). &nbsp;Also, the memory footprint of this method is much smaller, making the computation tractable. &nbsp;This can lead to a <em>huge</em> computational savings, as we demonstrated with simulated data.</p>\r\n<p>This computational method has been applied to the Kepler/K2 dataset to measure the rotation periods of stars, as well as to ground-based data to detect transiting planets around brown dwarfs. &nbsp;We applied it to simulated data to show an improved capability for detecting exoplanets, measuring their atmospheric properties, and detecting accompanying moons, for which we have developed a new photometric model. &nbsp;The method has been incorporated into open-source astronomical packages, such as the `exoplanet' package, which are being widely used by the exoplanet/astronomy communities. &nbsp;The techniques developed were used in preparing proposals for JWST.</p>\r\n<p>We also developed other methods for handling outliers: a robust method for flagging and accounting for outliers in a dataset; a model for stellar flares; a new method for accounting for random 'systematic' noise (applied to simulated transit data for Earth &amp; Venus as seen from afar); and a cross-validation model for handling transiting planet data, applied to actual measurements from JWST of the TRAPPIST-1 system. &nbsp;Finally, we created a model for reflected light for directly-imaged exoplanets, and a robust photodynamical model for handling interacting transiting planets.</p>\r\n<p>The research was carried out in conjunction with the training of graduate and undergraduate students at the University of Washington. &nbsp; Two undergraduates participated in research which resulted in one publication (both students have moved on to graduate programs at other universities), and two graduate students participated in published research resulting from this project (one student has moved onto a postdoctoral fellowship, and another is about to graduate with their PhD). &nbsp; The computer codes developed from this project have been made publically available through the github platform for use by other scientists.</p>\r\n<p>We expect that the methods developed will be useful across a wide range of astronomy research projects, but also have application to any scientific or engineering endeavor which involves large datasets with correlated noise and outliers.</p><br>\n<p>\n Last Modified: 12/10/2024<br>\nModified by: Eric&nbsp;M&nbsp;Agol</p></div>\n<div class=\"porSideCol\"\n><div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImages (<span id=\"selectedPhoto0\">1</span> of <span class=\"totalNumber\"></span>)\t\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853130829_stellar_rotation--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853130829_stellar_rotation--rgov-800width.jpg\" title=\"Plot of stellar rotation period versus stellar color\"><img src=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853130829_stellar_rotation--rgov-66x44.jpg\" alt=\"Plot of stellar rotation period versus stellar color\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">(see Figure for caption)</div>\n<div class=\"imageCredit\">Gordon et al. (2021)</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Eric&nbsp;M&nbsp;Agol\n<div class=\"imageTitle\">Plot of stellar rotation period versus stellar color</div>\n</div>\n</li><li>\n<a href=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853266152_flare_model--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853266152_flare_model--rgov-800width.jpg\" title=\"model for stellar flare compared with data\"><img src=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853266152_flare_model--rgov-66x44.jpg\" alt=\"model for stellar flare compared with data\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">(see Figure caption for details)</div>\n<div class=\"imageCredit\">Tovar Mendoza et al. (2022)</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Eric&nbsp;M&nbsp;Agol\n<div class=\"imageTitle\">model for stellar flare compared with data</div>\n</div>\n</li><li>\n<a href=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853051065_Transit_multiwavelength--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853051065_Transit_multiwavelength--rgov-800width.jpg\" title=\"Simulated multi-wavelength transits with correlated noise\"><img src=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853051065_Transit_multiwavelength--rgov-66x44.jpg\" alt=\"Simulated multi-wavelength transits with correlated noise\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">(see Figure for caption).</div>\n<div class=\"imageCredit\">Gordon et al. (2020)</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Eric&nbsp;M&nbsp;Agol\n<div class=\"imageTitle\">Simulated multi-wavelength transits with correlated noise</div>\n</div>\n</li><li>\n<a href=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853319717_Photodynamical_model--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853319717_Photodynamical_model--rgov-800width.jpg\" title=\"transits of three planets modeled with a photo dynamical model\"><img src=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853319717_Photodynamical_model--rgov-66x44.jpg\" alt=\"transits of three planets modeled with a photo dynamical model\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">(see Figure caption for details)</div>\n<div class=\"imageCredit\">Langford & Agol (2024)</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Eric&nbsp;M&nbsp;Agol\n<div class=\"imageTitle\">transits of three planets modeled with a photo dynamical model</div>\n</div>\n</li><li>\n<a href=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853214969_gefera_example--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853214969_gefera_example--rgov-800width.jpg\" title=\"model of a planet and moon transiting a star\"><img src=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853214969_gefera_example--rgov-66x44.jpg\" alt=\"model of a planet and moon transiting a star\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">(see Figure caption for details)</div>\n<div class=\"imageCredit\">Gordon & Agol (2022)</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Eric&nbsp;M&nbsp;Agol\n<div class=\"imageTitle\">model of a planet and moon transiting a star</div>\n</div>\n</li><li>\n<a href=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853172093_GP_vs_STP--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853172093_GP_vs_STP--rgov-800width.jpg\" title=\"example of correlated noise with outliers\"><img src=\"/por/images/Reports/POR/2024/1907342/1907342_10638557_1733853172093_GP_vs_STP--rgov-66x44.jpg\" alt=\"example of correlated noise with outliers\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">(see Figure caption for details)</div>\n<div class=\"imageCredit\">Gordon (2023), PhD dissertation</div>\n<div class=\"imagePermisssions\">Copyrighted</div>\n<div class=\"imageSubmitted\">Eric&nbsp;M&nbsp;Agol\n<div class=\"imageTitle\">example of correlated noise with outliers</div>\n</div>\n</li></ul>\n</div>\n</div></div>\n</div>\n",
+  "por_txt_cntn": "\n\nThe primary outcome of this research project was the development of fast, new computational method for handling noisy data in which there are correlations in the noise across multiple dimensions.  The application we have in mind is time-series measurements of astronomical bodies in which the measurements are simultaneous across different wavelengths, but the method is a general statistical method and thus can have broad application to numerous data types. An example dataset would be measurements of a star with a transiting planet and moon which is measured over several hours and across a range of wavelengths with the James Webb Space Telescope (JWST). We want to distinguish stellar variability from variations in brightness caused by the shadow of the moon and planet with the statistical model, and more accurately and precisely measure the properties of the planet and moon.\r\n\n\nThe method we developed proved very efficient. The typical approach involves a compution which scales as the cube of the size of the dataset; our approach scales linearly with size (although it has a cubic dependence with the size of the second dimension, except in some common cases where the scaling is linear). Also, the memory footprint of this method is much smaller, making the computation tractable. This can lead to a huge computational savings, as we demonstrated with simulated data.\r\n\n\nThis computational method has been applied to the Kepler/K2 dataset to measure the rotation periods of stars, as well as to ground-based data to detect transiting planets around brown dwarfs. We applied it to simulated data to show an improved capability for detecting exoplanets, measuring their atmospheric properties, and detecting accompanying moons, for which we have developed a new photometric model. The method has been incorporated into open-source astronomical packages, such as the `exoplanet' package, which are being widely used by the exoplanet/astronomy communities. The techniques developed were used in preparing proposals for JWST.\r\n\n\nWe also developed other methods for handling outliers: a robust method for flagging and accounting for outliers in a dataset; a model for stellar flares; a new method for accounting for random 'systematic' noise (applied to simulated transit data for Earth & Venus as seen from afar); and a cross-validation model for handling transiting planet data, applied to actual measurements from JWST of the TRAPPIST-1 system. Finally, we created a model for reflected light for directly-imaged exoplanets, and a robust photodynamical model for handling interacting transiting planets.\r\n\n\nThe research was carried out in conjunction with the training of graduate and undergraduate students at the University of Washington.  Two undergraduates participated in research which resulted in one publication (both students have moved on to graduate programs at other universities), and two graduate students participated in published research resulting from this project (one student has moved onto a postdoctoral fellowship, and another is about to graduate with their PhD).  The computer codes developed from this project have been made publically available through the github platform for use by other scientists.\r\n\n\nWe expect that the methods developed will be useful across a wide range of astronomy research projects, but also have application to any scientific or engineering endeavor which involves large datasets with correlated noise and outliers.\t\t\t\t\tLast Modified: 12/10/2024\n\n\t\t\t\t\tSubmitted by: EricMAgol\n"
+ }
+}

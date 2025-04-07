@@ -1,0 +1,113 @@
+{
+ "awd_id": "1566186",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: RI: Accelerated Stochastic Approximation for Reinforcement Learning",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Rebecca Hwa",
+ "awd_eff_date": "2016-06-01",
+ "awd_exp_date": "2018-12-31",
+ "tot_intn_awd_amt": 174616.0,
+ "awd_amount": 182616.0,
+ "awd_min_amd_letter_date": "2016-03-09",
+ "awd_max_amd_letter_date": "2016-06-10",
+ "awd_abstract_narration": "This project develops a new class of accelerated learning techniques for reinforcement learning. Reinforcement learning is an approach to autonomous decision-making through trial-and-error interaction with an unknown environment, with a focus on learning incrementally from this stream of data. Reinforcement learning has significant industrial potential, particularly for real-time control systems, such as active network management for energy and search-and-rescue robots, and is already used in a wide range of fields, including robotics, psychology, animal learning and neuroscience. To improve the practical application of reinforcement learning, this project proposes a new class of algorithms with the goal to balance computational complexity and the sample efficiency of learning, which often requires significant computation and memory. This space of algorithms that attempt to balance both requirements has been under-explored for reinforcement learning, and provide exciting opportunities to impact industrial applications and the growing area of computational sustainability. An important aspect of this project will be to implement and study these algorithms on a wide-range of simulated environments, and engage a diverse group of students through courses and summer research.\r\n\r\nThis project develops efficient incremental approximations to summarize gathered samples for improved sample efficiency and an empirical framework to evaluate these algorithms. This new class of accelerated learning techniques formally trade-off computation and accuracy and have many promising extensions and research directions, through a variety of accelerated stochastic gradient descent techniques and incremental matrix approximations. Further, another focus is to develop tools and novel measures for the reinforcement learning community that evaluate this balance between sample efficiency and computational complexity, with the code framework released through an existing open-source platform. This initial systematic exploration of these novel optimization variants will lay the foundation for the long-term goal of improving efficacy of reinforcement learning in industry and for practical autonomous agents.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Martha",
+   "pi_last_name": "White",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Martha White",
+   "pi_email_addr": "martha@indiana.edu",
+   "nsf_id": "000694415",
+   "pi_start_date": "2016-03-09",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Indiana University",
+  "inst_street_address": "107 S INDIANA AVE",
+  "inst_street_address_2": "",
+  "inst_city_name": "BLOOMINGTON",
+  "inst_state_code": "IN",
+  "inst_state_name": "Indiana",
+  "inst_phone_num": "3172783473",
+  "inst_zip_code": "474057000",
+  "inst_country_name": "United States",
+  "cong_dist_code": "09",
+  "st_cong_dist_code": "IN09",
+  "org_lgl_bus_name": "TRUSTEES OF INDIANA UNIVERSITY",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "YH86RTW2YVJ4"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Indiana University",
+  "perf_str_addr": "",
+  "perf_city_name": "",
+  "perf_st_code": "IN",
+  "perf_st_name": "Indiana",
+  "perf_zip_code": "474057104",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "09",
+  "perf_st_cong_dist": "IN09",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  },
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  },
+  {
+   "pgm_ref_code": "9251",
+   "pgm_ref_txt": "REU SUPP-Res Exp for Ugrd Supp"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 182616.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><!-- p.p1 {margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Verdana; color: #000000} span.s1 {font-kerning: none} -->\n<p class=\"p1\"><span class=\"s1\">This research project concerns algorithm development for reinforcement learning, a formalism for trial-and-error interaction of an agent with an unknown environment. A central goal in reinforcement learning is sample efficiency: the agent should learn with as few interactions with the world as possible. At the same time, the agent needs to make decision quickly: it needs to be reactive. This means it cannot use too much computation per step, because then it would be effectively paused while computing, unable to make decisions and interact in the world. The larger research question in the project is: how can we effectively balance sample efficiency and computational complexity in reinforcement learning?</span></p>\n<p class=\"p1\"><span class=\"s1\">Towards this aim, the major goals of the project were to develop new algorithms and provide an empirical methodology to measure how effectively these algorithms balance these two goals. The algorithms we introduced have an explicit user-specified mechanism to balance sample efficiency and computation. In settings where more computation is available, the agent designer can take advantage of this computation to improve sample efficiency. Otherwise, if the settings is a low-computation setting, the agent designer can still best take advantage of computation that is available, beyond the more standard light-weight algorithms in reinforcement learning. We provided explicit guidance on empirical methodology, particularly focusing on how to compare algorithms fairly under different choices for this balance as well as sound statistical strategies to measure differences.<span>&nbsp;</span></span></p>\n<p class=\"p1\"><span class=\"s1\">This new class of algorithms will have growing impact as we scale our AI systems, to learn about many more policies and predictions. Currently, this trade-off does not play as critical of a role as it should, because either problems remain small simulation problems or are solved using Google-scale compute. However, as reinforcement learning becomes more widespread, these algorithms will be needed and will improve our ability to in fact achieve this scaling.<span>&nbsp;</span></span></p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 06/19/2019<br>\n\t\t\t\t\tModified by: Martha&nbsp;White</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis research project concerns algorithm development for reinforcement learning, a formalism for trial-and-error interaction of an agent with an unknown environment. A central goal in reinforcement learning is sample efficiency: the agent should learn with as few interactions with the world as possible. At the same time, the agent needs to make decision quickly: it needs to be reactive. This means it cannot use too much computation per step, because then it would be effectively paused while computing, unable to make decisions and interact in the world. The larger research question in the project is: how can we effectively balance sample efficiency and computational complexity in reinforcement learning?\nTowards this aim, the major goals of the project were to develop new algorithms and provide an empirical methodology to measure how effectively these algorithms balance these two goals. The algorithms we introduced have an explicit user-specified mechanism to balance sample efficiency and computation. In settings where more computation is available, the agent designer can take advantage of this computation to improve sample efficiency. Otherwise, if the settings is a low-computation setting, the agent designer can still best take advantage of computation that is available, beyond the more standard light-weight algorithms in reinforcement learning. We provided explicit guidance on empirical methodology, particularly focusing on how to compare algorithms fairly under different choices for this balance as well as sound statistical strategies to measure differences. \nThis new class of algorithms will have growing impact as we scale our AI systems, to learn about many more policies and predictions. Currently, this trade-off does not play as critical of a role as it should, because either problems remain small simulation problems or are solved using Google-scale compute. However, as reinforcement learning becomes more widespread, these algorithms will be needed and will improve our ability to in fact achieve this scaling. \n\n \n\n\t\t\t\t\tLast Modified: 06/19/2019\n\n\t\t\t\t\tSubmitted by: Martha White"
+ }
+}

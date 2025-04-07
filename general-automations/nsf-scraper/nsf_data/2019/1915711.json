@@ -1,0 +1,96 @@
+{
+ "awd_id": "1915711",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "High-Dimensional Inference beyond Linear Models",
+ "cfda_num": "47.049",
+ "org_code": "03040000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Pena Edsel",
+ "awd_eff_date": "2019-10-01",
+ "awd_exp_date": "2022-09-30",
+ "tot_intn_awd_amt": 199994.0,
+ "awd_amount": 199994.0,
+ "awd_min_amd_letter_date": "2019-07-29",
+ "awd_max_amd_letter_date": "2019-07-29",
+ "awd_abstract_narration": "Regression models are widely used in investigating the associations between a set of predicting variables, the so-called covariates, and some outcome variable. Estimates of regression coefficients and their confidence intervals provide useful information, for example, the importance of certain genetic variants to lung cancer, or brain regions associated with memory loss in an aging population. With the advent of big data era, regression models with many covariates have been commonly used to tackle many important scientific problems in areas such as genomics, neuroimaging, business, engineering, information technology, and other biomedical studies, and sometimes the number of covariates (e.g. genetic variants) is even greater than the sample size (e.g. the number of study participants). Making statistical inference (i.e. constructing confidence intervals for regression coefficients) for a large number of covariates becomes a challenging issue because the conventional methods such as the maximum likelihood estimation may either not exist or yield biased estimates. It has been shown in recent years that the regression coefficients can be estimated by using regularized methods, e.g., the lasso approach. However, it is also well-known that the regularized methods yield biased estimates, thus cannot be directly used for making statistical inference, in particular, for constructing confidence intervals. Some researchers have shown that proper statistical inference can be made in linear regression models after implementing a clever de-biasing procedure. However, it is also found that the de-biased method does not work beyond linear models. Without imposing restrictive assumptions, theory and methods will be developed for the generalized linear models and the Cox regression model with a large number of covariates, as well as for the functional regression models with applications in brain imaging studies. Proper distributional theory and confidence intervals will be provided, which will lead to more reliable results in scientific research.   \r\n\r\nThe existing de-biased methods do not successfully correct the bias in nonlinear models, e.g., the generalized linear models or the Cox model, leading to poor results in statistical inference. The main causes of the problem include the unrealistic sparsity assumption imposed on the inverse expected Hessian matrix, and that the \"negligible\" terms in the existing de-biased methods are in fact not negligible. In this project, two methods that further de-bias the lasso estimators without relying on the assumption of sparse inverse expected Hessian matrix will be considered: (i) directly inverting the Hessian matrix when the number of regression parameters is less than the sample size; (ii) eliminating the major bias term without using the inverse of Hessian matrix - a quadratic programming approach, which can potentially handle the case with larger number of regression parameters than the number of observations. Additional challenges arise in the Cox regression with high-dimensional covariates, where the partial-likelihood-based loss functions for all the observations are not i.i.d., and each loss function is not Lipschitz. The proposed method will be approximating the loss function to yield i.i.d. losses and extended to handling multivariate and clustered survival data with even more complicated loss functions. For the brain imaging data, functional regression model using Haar wavelet basis is investigated. The major added challenge is to characterize the impact of the approximation error using Haar wavelets on the asymptotic distribution of the refined de-biased functional estimation.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "MPS",
+ "org_dir_long_name": "Directorate for Mathematical and Physical Sciences",
+ "div_abbr": "DMS",
+ "org_div_long_name": "Division Of Mathematical Sciences",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Bin",
+   "pi_last_name": "Nan",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Bin Nan",
+   "pi_email_addr": "nanb@uci.edu",
+   "nsf_id": "000244901",
+   "pi_start_date": "2019-07-29",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Irvine",
+  "inst_street_address": "160 ALDRICH HALL",
+  "inst_street_address_2": "",
+  "inst_city_name": "IRVINE",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "9498247295",
+  "inst_zip_code": "926970001",
+  "inst_country_name": "United States",
+  "cong_dist_code": "47",
+  "st_cong_dist_code": "CA47",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA IRVINE",
+  "org_prnt_uei_num": "MJC5FCYQTPE6",
+  "org_uei_num": "MJC5FCYQTPE6"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Irvine",
+  "perf_str_addr": "2066 Bren Hall",
+  "perf_city_name": "Irvine",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "926793425",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "40",
+  "perf_st_cong_dist": "CA40",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "126900",
+   "pgm_ele_name": "STATISTICS"
+  }
+ ],
+ "pgm_ref": null,
+ "app_fund": [
+  {
+   "app_code": "0119",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001920DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2019,
+   "fund_oblg_amt": 199994.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Intellectual Merit:</p>\n<p>The current literature has primarily focused on linear regression models with high-dimensional covariates. One type of methods is the so-called post-selection inference conditional on the selected model. Another type of methods parallel to post-selection inference is to correct the biases of lasso estimates in the full model, the so-called debiased lasso or de-sparsified lasso, which has been shown to possess nice theoretical and numerical properties in linear regression models. The assumptions for debiased lasso in linear models have been directly applied to nonlinear models,&nbsp; e.g., generalized linear models and the Cox model for survival data, in the current literature. We have found, however, the existing debiased methods do not successfully correct the bias in nonlinear models, e.g., generalized linear models, leading to poor results in statistical inference. We also have found the main causes of the problem include the unrealistic sparsity assumption imposed on the inverse expected Hessian matrix, and that the \"negligible\" terms in the existing debiased methods are in fact not negligible. For the generalized linear models, we have investigated all bias terms that can be corrected properly, i.e., further debias the lasso estimators, without relying on the assumption of sparse inverse expected Hessian matrix. Based on recent developments of high-dimensional random matrix theory, we have established the asymptotic normality of any linear combination of the regression parameter estimates, which lays the theoretical ground for drawing proper inference. Meanwhile we have discovered that the debiased lasso method generally cannot yield satisfactory bias correction when the number of regression parameters exceeds the sample size in generalized linear models, or any nonlinear regression model, due to violation of the assumption of sparse inverse expected Hessian matrix.&nbsp;</p>\n<p>Additional challenges arise in the Cox regression with large number of covariates: (i) the partial-likelihood-based loss functions for all the observations are not i.i.d.; (ii) also, each loss function is not Lipschitz. We have developed a modified debiased lasso approach, which solves a series of quadratic programming problems to approximate the inverse information matrix without posing sparse matrix assumptions. For the theoretical development, we have applied a similar strategy of handling the convergence results of lasso estimators in the literature -- approximating the loss function to yield i.i.d. losses and using a pointwise argument to handle the non-Lipschitz loss functions.</p>\n<p>We have established asymptotic results for the estimated regression coefficients when the dimension of covariates diverges with the sample size. Our proposed method provides consistent estimates and confidence intervals with nominal coverage probabilities. The method has been extended to stratified Cox model with diverging number of regression coefficients for clustered censored survival data.&nbsp;</p>\n<p>&nbsp;</p>\n<p>Broader Impacts:</p>\n<p>The proposed research is motivated by PI's collaboration in biomedical studies, in particular, lung cancer studies and kidney transplant data. The proposed research will also allow the investigator to add more thorough statistical results to the courses of high-dimensional data analysis and advanced survival analysis, and motivate graduate students to become independent researchers who are able to engage in fundamental statistical research. The proposed research will contribute to the well-being of human beings and to the scientific community in a significant way through its versatile real-life applications and journal publications, and create an impact in and beyond statistical periphery.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/18/2022<br>\n\t\t\t\t\tModified by: Bin&nbsp;Nan</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nIntellectual Merit:\n\nThe current literature has primarily focused on linear regression models with high-dimensional covariates. One type of methods is the so-called post-selection inference conditional on the selected model. Another type of methods parallel to post-selection inference is to correct the biases of lasso estimates in the full model, the so-called debiased lasso or de-sparsified lasso, which has been shown to possess nice theoretical and numerical properties in linear regression models. The assumptions for debiased lasso in linear models have been directly applied to nonlinear models,  e.g., generalized linear models and the Cox model for survival data, in the current literature. We have found, however, the existing debiased methods do not successfully correct the bias in nonlinear models, e.g., generalized linear models, leading to poor results in statistical inference. We also have found the main causes of the problem include the unrealistic sparsity assumption imposed on the inverse expected Hessian matrix, and that the \"negligible\" terms in the existing debiased methods are in fact not negligible. For the generalized linear models, we have investigated all bias terms that can be corrected properly, i.e., further debias the lasso estimators, without relying on the assumption of sparse inverse expected Hessian matrix. Based on recent developments of high-dimensional random matrix theory, we have established the asymptotic normality of any linear combination of the regression parameter estimates, which lays the theoretical ground for drawing proper inference. Meanwhile we have discovered that the debiased lasso method generally cannot yield satisfactory bias correction when the number of regression parameters exceeds the sample size in generalized linear models, or any nonlinear regression model, due to violation of the assumption of sparse inverse expected Hessian matrix. \n\nAdditional challenges arise in the Cox regression with large number of covariates: (i) the partial-likelihood-based loss functions for all the observations are not i.i.d.; (ii) also, each loss function is not Lipschitz. We have developed a modified debiased lasso approach, which solves a series of quadratic programming problems to approximate the inverse information matrix without posing sparse matrix assumptions. For the theoretical development, we have applied a similar strategy of handling the convergence results of lasso estimators in the literature -- approximating the loss function to yield i.i.d. losses and using a pointwise argument to handle the non-Lipschitz loss functions.\n\nWe have established asymptotic results for the estimated regression coefficients when the dimension of covariates diverges with the sample size. Our proposed method provides consistent estimates and confidence intervals with nominal coverage probabilities. The method has been extended to stratified Cox model with diverging number of regression coefficients for clustered censored survival data. \n\n \n\nBroader Impacts:\n\nThe proposed research is motivated by PI's collaboration in biomedical studies, in particular, lung cancer studies and kidney transplant data. The proposed research will also allow the investigator to add more thorough statistical results to the courses of high-dimensional data analysis and advanced survival analysis, and motivate graduate students to become independent researchers who are able to engage in fundamental statistical research. The proposed research will contribute to the well-being of human beings and to the scientific community in a significant way through its versatile real-life applications and journal publications, and create an impact in and beyond statistical periphery.\n\n\t\t\t\t\tLast Modified: 12/18/2022\n\n\t\t\t\t\tSubmitted by: Bin Nan"
+ }
+}

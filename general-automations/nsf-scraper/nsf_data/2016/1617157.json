@@ -1,0 +1,105 @@
+{
+ "awd_id": "1617157",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "RI: Small: Collaborative Research: New Directions in Spectral Learning with Applications to Comparative Epigenomics",
+ "cfda_num": "47.070",
+ "org_code": "05020000",
+ "po_phone": "7032925149",
+ "po_email": "kwhang@nsf.gov",
+ "po_sign_block_name": "Kenneth Whang",
+ "awd_eff_date": "2016-07-01",
+ "awd_exp_date": "2020-06-30",
+ "tot_intn_awd_amt": 273000.0,
+ "awd_amount": 273000.0,
+ "awd_min_amd_letter_date": "2016-06-30",
+ "awd_max_amd_letter_date": "2016-06-30",
+ "awd_abstract_narration": "The goal of this project is to design algorithms and statistical tools to build complex probabilistic models from massive quantities of data in a computationally efficient manner. This work is motivated by an important current problem in genomics, namely comparative epigenetics. While every cell in an organism has the same DNA sequence, epigenetic marks on the genome are known to be highly correlated with variation between cells. A pressing question in biology is to compare the epigenetic marks across different cell types to understand these differences. While massive amounts of data has been generated for this purpose, there is a great need for computational tools that can operate on this data and provide biologically meaningful solutions. This work will thus advance the state-of-the-art in the analysis of large complex data sets and advance the field of epigenomics. The broader impact of the work includes organizing workshops and tutorials at machine learning and bioinformatics venues, involving undergraduate students in research, and releasing open source software for the community. \r\n\r\nSpecifically, this project will focus on spectral learning, which has recently provided principled and computationally efficient methods for learning parameters of probabilistic graphical models. While spectral learning methods are known for some simple latent variable models, a major barrier to realizing the potential of spectral learning in real-world applications is the lack of associated statistical tools such as regularization and hypothesis testing that connect these methods in a principled manner to end-to-end application frameworks. This project proposes to develop such statistical tools by integrating modern spectral learning with the classical statistical literature in econometrics on Generalized Method of Moments. The project proposes to formulate the statistical generalized method of moment procedures for complex graphical models in the context of spectral learning as constrained optimization problems and proposes ways of solving these problems. Finally, the novel algorithms developed will be directly applied to model epigenomics data sets from the ENCODE and Roadmap Epigenomics Projects to yield methods that can operate on the massive quantities of data and provide biologically meaningful solutions. These algorithms and software have the potential to have a widespread impact on the understanding of complex human diseases such as cancer and mental disorders. This will provide a basis for designing therapeutics for these diseases and advance society towards a future of Personalized Medicine.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "IIS",
+ "org_div_long_name": "Division of Information & Intelligent Systems",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Kamalika",
+   "pi_last_name": "Chaudhuri",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Kamalika Chaudhuri",
+   "pi_email_addr": "kamalika@cs.ucsd.edu",
+   "nsf_id": "000573596",
+   "pi_start_date": "2016-06-30",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-San Diego",
+  "inst_street_address": "9500 GILMAN DR",
+  "inst_street_address_2": "",
+  "inst_city_name": "LA JOLLA",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "8585344896",
+  "inst_zip_code": "920930021",
+  "inst_country_name": "United States",
+  "cong_dist_code": "50",
+  "st_cong_dist_code": "CA50",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "UYTTZT6G9DT1"
+ },
+ "perf_inst": {
+  "perf_inst_name": "UC San Diego",
+  "perf_str_addr": "9500 gilman drive",
+  "perf_city_name": "La jolla",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "920930404",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "50",
+  "perf_st_cong_dist": "CA50",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "749500",
+   "pgm_ele_name": "Robust Intelligence"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7495",
+   "pgm_ref_txt": "ROBUST INTELLIGENCE"
+  },
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 273000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>The goal of this project was to develop new theory and algorithms related to the method of moments for unsupervised learning of complex models on structured data and apply them to comparative epigenomics.</p>\n<p><br />The project resulted in a number of interesting theoretical and algorithmic developments on unsupervised learning and the method of moments. The first is a novel connection between the method of moments and generative adversarial networks -- a class of deep generative models that have recently been shown to perform extremely well empirically. It was shown that these networks solve a loss function which is a mix of the method of moments and maximum likelihood. Additionally, it led to the development of theory characterizing the expressive power of normalizing flows -- a kind of deep generative model. Finally, it led to a new hypothesis test for detecting a common type of overfitting in unsupervised generative models called data copying.</p>\n<p>On the broader impact side, the project led to the development of a new class on advanced optimization, and partially supported four PhD students, one MS student and two undergraduate students. Three of the students supported were female. The PI gave a number of talks based on results from the project, and publications that resulted were made available on arxiv, and code was made publicly available on github.</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 07/14/2020<br>\n\t\t\t\t\tModified by: Kamalika&nbsp;Chaudhuri</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThe goal of this project was to develop new theory and algorithms related to the method of moments for unsupervised learning of complex models on structured data and apply them to comparative epigenomics.\n\n\nThe project resulted in a number of interesting theoretical and algorithmic developments on unsupervised learning and the method of moments. The first is a novel connection between the method of moments and generative adversarial networks -- a class of deep generative models that have recently been shown to perform extremely well empirically. It was shown that these networks solve a loss function which is a mix of the method of moments and maximum likelihood. Additionally, it led to the development of theory characterizing the expressive power of normalizing flows -- a kind of deep generative model. Finally, it led to a new hypothesis test for detecting a common type of overfitting in unsupervised generative models called data copying.\n\nOn the broader impact side, the project led to the development of a new class on advanced optimization, and partially supported four PhD students, one MS student and two undergraduate students. Three of the students supported were female. The PI gave a number of talks based on results from the project, and publications that resulted were made available on arxiv, and code was made publicly available on github.\n\n \n\n\t\t\t\t\tLast Modified: 07/14/2020\n\n\t\t\t\t\tSubmitted by: Kamalika Chaudhuri"
+ }
+}

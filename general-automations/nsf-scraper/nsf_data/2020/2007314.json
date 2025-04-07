@@ -1,0 +1,105 @@
+{
+ "awd_id": "2007314",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "Collaborative Research: SHF: Small: An Automated Full-Lifecycle Approach for Improving the Development and Use of Static Analysis",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": "7032927841",
+ "po_email": "sgreensp@nsf.gov",
+ "po_sign_block_name": "Sol Greenspan",
+ "awd_eff_date": "2020-10-01",
+ "awd_exp_date": "2024-09-30",
+ "tot_intn_awd_amt": 250000.0,
+ "awd_amount": 250000.0,
+ "awd_min_amd_letter_date": "2020-08-14",
+ "awd_max_amd_letter_date": "2020-10-15",
+ "awd_abstract_narration": "Because software failures can and do cause severe, even life-threatening losses, effective quality assurance remains a constant concern for software developers. In fact, over the past decades, numerous software analysis techniques have been developed to address this concern. These techniques represent a powerful means of detecting bugs or proving their absence. Despite their theoretical superiority, static program analysis tools have had relatively limited industry adoption. Static analysis tools aiming for practical solutions are forced to approximate, trading off precision (i.e., better modeling to ensure correctness) against performance (i.e., faster analysis). Finding the right balance of the complex tradeoffs between performance and precision when developing and using static analysis tools is extremely challenging. This project seeks to reduce practical barriers to conquering this tradeoff. Successful outcomes of this project are likely to improve static analysis tool adoption rates, and thereby improve the safety, security and functionality of critical software that society depends upon.\r\n \r\nThis project aims to achieve more effective static analysis design and usage through cohesive development and usage lifecycle that is powerfully augmented with automated support. This automated support includes systematic evaluation and generation of benchmarks for static analysis tools, localizing sources of imprecision and performance bottlenecks, configuring tool settings that are likely to produce correct and timely results, using machine learning approaches to identify and filter false positives, and integrating these improvements into a demonstration system that leverages information and experiences coming from both tool developers and tool users. This augmented and automated lifecycle will identify frequently occurring code patterns that significantly affect performance/precision tradeoffs in specific tools, allowing tool developers to quickly improve their tools. It will also enable tools designed to customize their behavior and analysis approaches to specific target programs. At the same time, this will provide static analysis tool users with automated support for tuning tool configurations to quickly get more effective results. This is supported by automated classification of tool error reports, reducing effort wasted investigating false positives. These improvements used in concert with each other will result in greatly improved static analysis tools, and much-increased use of these tools in analyzing real-world software.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Adam",
+   "pi_last_name": "Porter",
+   "pi_mid_init": "A",
+   "pi_sufx_name": "",
+   "pi_full_name": "Adam A Porter",
+   "pi_email_addr": "aporter@cs.umd.edu",
+   "nsf_id": "000437686",
+   "pi_start_date": "2020-08-14",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of Maryland, College Park",
+  "inst_street_address": "3112 LEE BUILDING",
+  "inst_street_address_2": "",
+  "inst_city_name": "COLLEGE PARK",
+  "inst_state_code": "MD",
+  "inst_state_name": "Maryland",
+  "inst_phone_num": "3014056269",
+  "inst_zip_code": "207425100",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "MD04",
+  "org_lgl_bus_name": "UNIVERSITY OF MARYLAND, COLLEGE PARK",
+  "org_prnt_uei_num": "NPU8ULVAAS23",
+  "org_uei_num": "NPU8ULVAAS23"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of Maryland College Park",
+  "perf_str_addr": "Brendan Iribe Center 8125 Paint",
+  "perf_city_name": "College Park",
+  "perf_st_code": "MD",
+  "perf_st_name": "Maryland",
+  "perf_zip_code": "207425103",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "MD04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "779800",
+   "pgm_ele_name": "Software & Hardware Foundation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7923",
+   "pgm_ref_txt": "SMALL PROJECT"
+  },
+  {
+   "pgm_ref_code": "7944",
+   "pgm_ref_txt": "SOFTWARE ENG & FORMAL METHODS"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0120",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01002021DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2020,
+   "fund_oblg_amt": 250000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>Static program analysis is essential in ensuring software quality, which is a critical property of software to help avoid failures that can cause severe consequences. The precision and usability issues are key bottlenecks that have prevented static analysis from wide adoption. Static analysis algorithms and implementations trade off precision, soundness, or performance to be practical. Users of static analysis tools must inspect all results produced, including the false positives, which result in the waste of manual effort. One solution proposed by researchers is automated classification of static analysis results to reduce the potential waste of effort. However, due to the inaccuracy of these classifications, such a solution still is not widely adopted.&nbsp;</p>\r\n<p>The research supported by this grant addressed these problems by providing lifecycle support for static analysis development and usage, which includes enabling systematic evaluation and testing methods to improve the quality of static analysis tools, enabling accurate automated configuration of static analysis tools and classification of their results to produce relevant results, and providing interpretable static analysis results to make it easier to use these tools. Specifically, the research project defined a new approach to test static analysis tools that use the metamorphic relationship between the algorithmic configuration options in static analysis to check if the static analysis results hold this relationship. The framework developed and released using this idea, ECSTATIC, revealed multiple bugs in popular static analysis tools. Additionally, the project created new ground-truth feature-based test suites for static analysis. We define dynamic analyses that under-approximate the results of static analyses, called dynamic projections. These dynamic projections allow us to automatically generate ground truths by observing the executions of target programs; these ground truths can then be compared against to identify soundness bugs in a static analysis. We implemented dynamic projections for three static analysis features: call-site sensitivity, object sensitivity, and analysis of static initializers, and generated ground truths for real world benchmarks. To enable accurate configuration auto-tuning of analysis results when using static analysis tools, we invented SATune, a tool- and language- agnostic technique that finds configurations using a meta-heuristic search driven by a fitness function, where the fitness of a configuration is its predicted likelihood to terminate with a correct result on the target program. SATune achieved the state-of-the-art performance in balancing between precision and number of completed tasks in static software verification tools and was 2-4 times faster than random search. Additionally, the project improved on the automated classification of static analysis results by systematically exploring how to adapt different machine learning (ML) algorithms. We targeted popular software verification and analysis tools in C and Java and experimented with three families of ML approaches: traditional models, recurrent neural networks, and graph neural networks. We further experimented with several broad representations of the input data and compared the effectiveness of these ML approaches with different combinations of data preparation routines. We observed that neural networks performed better compared to the other approaches and with more data preparation, we achieved large performance improvements over the state-of-the-art, up to 89% accuracy on the real-world dataset. To allow better integration of these improvements in the lifecycle of using static analysis tools, the project applied explainable AI (xAI) methods to provide insights into model behavior during training. The xAI explanations effectively highlight code segments relevant to bug causation, reducing manual effort required by users in locating the root causes.</p>\r\n<p>&nbsp;</p>\r\n<p>The educational and broader impacts component of the project was centered on augmenting the existing software engineering curriculum with findings from the performed research and on wide dissemination to other researchers at conferences, including, but not limited to the International Conference of Software Engineering (ICSE), the International Conference on Automated Software Engineering (ASE), the International Symposium on Software Testing and Analysis (ISSTA), and the Empirical Software Engineering (EMSE), and to students in classroom projects, teaching, and summer research internship. Artifacts produced during this grant have been disseminated publicly in repositories containing the software source code, experimental scripts, and resulting data. During the duration of the grant,&nbsp;7 graduate students and 2&nbsp;undergraduate students worked on topics related to this project under the direct advising of the PIs, with&nbsp;2&nbsp;of them belong to the underrepresented groups. This grant contributed to the training and professional development for the supported graduate students, by presenting their papers at conferences, attending research presentations at conferences, and interacting with other students and researchers in the field. Two of the doctoral students graduated with dissertation work funded in part by the grant (one in academia and one in software industry).</p>\r\n<p>&nbsp;</p>\r\n<p>We expect that the project outcomes on the lifecycle support for static analysis development and usage will have a significant impact on the software engineering research and practice that invent and adopt static analysis for software quality assurance.</p>\r\n<p>&nbsp;</p><br>\n<p>\n Last Modified: 02/12/2025<br>\nModified by: Adam&nbsp;A&nbsp;Porter</p></div>\n<div class=\"porSideCol\"\n></div>\n</div>\n",
+  "por_txt_cntn": "\n\nStatic program analysis is essential in ensuring software quality, which is a critical property of software to help avoid failures that can cause severe consequences. The precision and usability issues are key bottlenecks that have prevented static analysis from wide adoption. Static analysis algorithms and implementations trade off precision, soundness, or performance to be practical. Users of static analysis tools must inspect all results produced, including the false positives, which result in the waste of manual effort. One solution proposed by researchers is automated classification of static analysis results to reduce the potential waste of effort. However, due to the inaccuracy of these classifications, such a solution still is not widely adopted.\r\n\n\nThe research supported by this grant addressed these problems by providing lifecycle support for static analysis development and usage, which includes enabling systematic evaluation and testing methods to improve the quality of static analysis tools, enabling accurate automated configuration of static analysis tools and classification of their results to produce relevant results, and providing interpretable static analysis results to make it easier to use these tools. Specifically, the research project defined a new approach to test static analysis tools that use the metamorphic relationship between the algorithmic configuration options in static analysis to check if the static analysis results hold this relationship. The framework developed and released using this idea, ECSTATIC, revealed multiple bugs in popular static analysis tools. Additionally, the project created new ground-truth feature-based test suites for static analysis. We define dynamic analyses that under-approximate the results of static analyses, called dynamic projections. These dynamic projections allow us to automatically generate ground truths by observing the executions of target programs; these ground truths can then be compared against to identify soundness bugs in a static analysis. We implemented dynamic projections for three static analysis features: call-site sensitivity, object sensitivity, and analysis of static initializers, and generated ground truths for real world benchmarks. To enable accurate configuration auto-tuning of analysis results when using static analysis tools, we invented SATune, a tool- and language- agnostic technique that finds configurations using a meta-heuristic search driven by a fitness function, where the fitness of a configuration is its predicted likelihood to terminate with a correct result on the target program. SATune achieved the state-of-the-art performance in balancing between precision and number of completed tasks in static software verification tools and was 2-4 times faster than random search. Additionally, the project improved on the automated classification of static analysis results by systematically exploring how to adapt different machine learning (ML) algorithms. We targeted popular software verification and analysis tools in C and Java and experimented with three families of ML approaches: traditional models, recurrent neural networks, and graph neural networks. We further experimented with several broad representations of the input data and compared the effectiveness of these ML approaches with different combinations of data preparation routines. We observed that neural networks performed better compared to the other approaches and with more data preparation, we achieved large performance improvements over the state-of-the-art, up to 89% accuracy on the real-world dataset. To allow better integration of these improvements in the lifecycle of using static analysis tools, the project applied explainable AI (xAI) methods to provide insights into model behavior during training. The xAI explanations effectively highlight code segments relevant to bug causation, reducing manual effort required by users in locating the root causes.\r\n\n\n\r\n\n\nThe educational and broader impacts component of the project was centered on augmenting the existing software engineering curriculum with findings from the performed research and on wide dissemination to other researchers at conferences, including, but not limited to the International Conference of Software Engineering (ICSE), the International Conference on Automated Software Engineering (ASE), the International Symposium on Software Testing and Analysis (ISSTA), and the Empirical Software Engineering (EMSE), and to students in classroom projects, teaching, and summer research internship. Artifacts produced during this grant have been disseminated publicly in repositories containing the software source code, experimental scripts, and resulting data. During the duration of the grant,7 graduate students and 2undergraduate students worked on topics related to this project under the direct advising of the PIs, with2of them belong to the underrepresented groups. This grant contributed to the training and professional development for the supported graduate students, by presenting their papers at conferences, attending research presentations at conferences, and interacting with other students and researchers in the field. Two of the doctoral students graduated with dissertation work funded in part by the grant (one in academia and one in software industry).\r\n\n\n\r\n\n\nWe expect that the project outcomes on the lifecycle support for static analysis development and usage will have a significant impact on the software engineering research and practice that invent and adopt static analysis for software quality assurance.\r\n\n\n\t\t\t\t\tLast Modified: 02/12/2025\n\n\t\t\t\t\tSubmitted by: AdamAPorter\n"
+ }
+}

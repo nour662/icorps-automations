@@ -1,0 +1,113 @@
+{
+ "awd_id": "1740333",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "SI2-SSE: Gunrock: High-Performance GPU Graph Analytics",
+ "cfda_num": "47.070",
+ "org_code": "05090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Seung-Jong Park",
+ "awd_eff_date": "2017-10-01",
+ "awd_exp_date": "2022-09-30",
+ "tot_intn_awd_amt": 400000.0,
+ "awd_amount": 400000.0,
+ "awd_min_amd_letter_date": "2017-08-24",
+ "awd_max_amd_letter_date": "2017-08-24",
+ "awd_abstract_narration": "Many sets of data can be represented as \"graphs\". Graphs express relationships between entities, and those entities and relationships can be used to solve problems of interest in many fields. For instance, a social graph (like Facebook's) links people (entities) by friendships (relationships), and with that graph, Facebook can suggest people to you who might be your friends. Amazon might use a graph made of people and items for sale (entities) connected by who bought those items (relationships) to suggest items you might want to buy. A credit card company might look at your pattern of purchases and detect possible fraud even before you know your credit card was stolen. Graphs are also useful in many fields of science, such as genomics, epidemiology, and economics. This project uses an emerging programmable processor, the graphics processor (GPU), to solve graph problems. GPUs are rapidly moving into our nation's largest data centers and supercomputers. The project team is building a system for computation on graphs that will significantly improve performance on these problems. In this project, the team will work with the computing community and the scientific community, both of whom have numerous interesting, challenging graph computation problems that this system will target. The system is open-source software and can be used freely by researchers and industry all over the world.\r\n\r\n\r\nThis project, supported by the Office of Advanced Cyberinfrastructure seeks to develop the \"Gunrock\" programmable, high-performance, open-source graph analytics library for graphics processors (GPUs) from a working prototype to a robust, sustainable, open-source component of the GPU computing ecosystem. Gunrock's strengths are its programming model and highly optimized implementation. With this work the project team hopes to address Gunrock's usability in the computing and scientific communities by improving Gunrock's scalability, capabilities, core operators, and supported graph computations. In this work the team will collaborate with the GPU Open Analytics Initiative and the NSF-sponsored CINET project for network science to ensure that our work has the broadest possible impact.\r\n\r\nThis award reflects NSF's statutory mission and has been deemed worthy of support through evaluation using the Foundation's intellectual merit and broader impacts review criteria.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "OAC",
+ "org_div_long_name": "Office of Advanced Cyberinfrastructure (OAC)",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "John",
+   "pi_last_name": "Owens",
+   "pi_mid_init": "D",
+   "pi_sufx_name": "",
+   "pi_full_name": "John D Owens",
+   "pi_email_addr": "jowens@ece.ucdavis.edu",
+   "nsf_id": "000377403",
+   "pi_start_date": "2017-08-24",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "University of California-Davis",
+  "inst_street_address": "1850 RESEARCH PARK DR STE 300",
+  "inst_street_address_2": "",
+  "inst_city_name": "DAVIS",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "5307547700",
+  "inst_zip_code": "956186153",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "CA04",
+  "org_lgl_bus_name": "UNIVERSITY OF CALIFORNIA, DAVIS",
+  "org_prnt_uei_num": "",
+  "org_uei_num": "TX2DAGQPENZ5"
+ },
+ "perf_inst": {
+  "perf_inst_name": "University of California-Davis",
+  "perf_str_addr": "One Shields Avenue",
+  "perf_city_name": "Davis",
+  "perf_st_code": "CA",
+  "perf_st_name": "California",
+  "perf_zip_code": "956162500",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "04",
+  "perf_st_cong_dist": "CA04",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "800400",
+   "pgm_ele_name": "Software Institutes"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "026Z",
+   "pgm_ref_txt": "NSCI: National Strategic Computing Initi"
+  },
+  {
+   "pgm_ref_code": "7433",
+   "pgm_ref_txt": "CyberInfra Frmwrk 21st (CIF21)"
+  },
+  {
+   "pgm_ref_code": "8004",
+   "pgm_ref_txt": "Software Institutes"
+  },
+  {
+   "pgm_ref_code": "8005",
+   "pgm_ref_txt": "Scientific Software Elements"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0117",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001718DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2017,
+   "fund_oblg_amt": 400000.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project focused on developing an open-source programmable graph analytics framework for graphics processing units (GPUs). Our framework is called Gunrock and it is motivated by the need for high-performance, programmable graph analytics.</p>\n<p>Graphs are ubiquitous data structures that can be used to represent objects and the relationships between them, for instance friendships in a social network, interactions among genes, or roads between cities. Graphs are at the core of modern applications that make recommendations (\"you might be friends with ...\" or \"you might like this product\"), detect anomalies (\"this looks like credit card fraud!\"), and solve interesting computational problems (\"what's the fastest route between here and ...\"). Both engineers and scientists want to solve these problems quickly, and thus our project targets powerful parallel processors (GPUs) that can deliver the fastest possible results. However, programming GPUs remains a significant challenge, so our project develops a framework that hides the complexity of GPUs, making programming easier while simultaneously achieving best-in-class performance.</p>\n<p>Over the course of this project, we have both advanced the state of the art in GPU graph analytics and made the results of our work available as publications and as open-source software. Our work has culminated in a complete rewrite of the Gunrock internals in a way that separates the most challenging computational problem (load imbalance, where some processors have more work than others) from the specification of the graph algorithm, and also leverages the newest features of the C++ programming language. Our load-balancing library is now application-agnostic and can be used in other applications that require fine-grained load balancing. We developed and integrated the ability for our library to process dynamic graphs that change during the course of the computation, which required significant advances in the design and implementation of fast and dynamic GPU data structures (hash tables) that underlie our dynamic-graph implementation. We have also advanced the state of the art in numerous applications that use graph analytics, including graph coloring, triangle counting, neural-network inference, and subgraph matching. Finally, we have developed and released the \"GraphBLAST\" framework for GPU graph analytics that uses a different underlying approach, based on linear algebra, that achieves best-in-class performance among frameworks that use this approach.</p>\n<p>These advances are incorporated into high-quality open-source software, with a mature software methodology and development practices, and with extensive documentation, testing, and performance-analysis capabilities. We are proud that Gunrock has been integrated into NVIDIA's leading \"RAPIDS\" framework for data science, where our advances and code can be directly used by the many users of this framework. Finally, our open-source software is widely considered the academic benchmark of choice and sets the bar for future advances in GPU graph analytics.</p>\n<p>The students supported by this work have subsequently joined some of America's most respected and innovative companies (e.g., NVIDIA, AMD, and Google). We all appreciate the support of the National Science Foundation and the taxpayers who have funded this work.</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 02/20/2023<br>\n\t\t\t\t\tModified by: John&nbsp;D&nbsp;Owens</p>\n</div>\n<div class=\"porSideCol\">\n<div class=\"each-gallery\">\n<div class=\"galContent\" id=\"gallery0\">\n<div class=\"photoCount\" id=\"photoCount0\">\n\t\t\t\t\t\t\t\t\tImage\n\t\t\t\t\t\t\t\t</div>\n<div class=\"galControls onePhoto\" id=\"controls0\"></div>\n<div class=\"galSlideshow\" id=\"slideshow0\"></div>\n<div class=\"galEmbox\" id=\"embox\">\n<div class=\"image-title\"></div>\n</div>\n</div>\n<div class=\"galNavigation onePhoto\" id=\"navigation0\">\n<ul class=\"thumbs\" id=\"thumbs0\">\n<li>\n<a href=\"/por/images/Reports/POR/2023/1740333/1740333_10518548_1676918932436_graph--rgov-214x142.jpg\" original=\"/por/images/Reports/POR/2023/1740333/1740333_10518548_1676918932436_graph--rgov-800width.jpg\" title=\"Example graph\"><img src=\"/por/images/Reports/POR/2023/1740333/1740333_10518548_1676918932436_graph--rgov-66x44.jpg\" alt=\"Example graph\"></a>\n<div class=\"imageCaptionContainer\">\n<div class=\"imageCaption\">Small example graph that shows vertices (lettered circles) and their relationships, expressed as (numbered) edges.</div>\n<div class=\"imageCredit\">Yangzihao Wang</div>\n<div class=\"imagePermisssions\">Creative Commons</div>\n<div class=\"imageSubmitted\">John&nbsp;D&nbsp;Owens</div>\n<div class=\"imageTitle\">Example graph</div>\n</div>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+  "por_txt_cntn": "\nThis project focused on developing an open-source programmable graph analytics framework for graphics processing units (GPUs). Our framework is called Gunrock and it is motivated by the need for high-performance, programmable graph analytics.\n\nGraphs are ubiquitous data structures that can be used to represent objects and the relationships between them, for instance friendships in a social network, interactions among genes, or roads between cities. Graphs are at the core of modern applications that make recommendations (\"you might be friends with ...\" or \"you might like this product\"), detect anomalies (\"this looks like credit card fraud!\"), and solve interesting computational problems (\"what's the fastest route between here and ...\"). Both engineers and scientists want to solve these problems quickly, and thus our project targets powerful parallel processors (GPUs) that can deliver the fastest possible results. However, programming GPUs remains a significant challenge, so our project develops a framework that hides the complexity of GPUs, making programming easier while simultaneously achieving best-in-class performance.\n\nOver the course of this project, we have both advanced the state of the art in GPU graph analytics and made the results of our work available as publications and as open-source software. Our work has culminated in a complete rewrite of the Gunrock internals in a way that separates the most challenging computational problem (load imbalance, where some processors have more work than others) from the specification of the graph algorithm, and also leverages the newest features of the C++ programming language. Our load-balancing library is now application-agnostic and can be used in other applications that require fine-grained load balancing. We developed and integrated the ability for our library to process dynamic graphs that change during the course of the computation, which required significant advances in the design and implementation of fast and dynamic GPU data structures (hash tables) that underlie our dynamic-graph implementation. We have also advanced the state of the art in numerous applications that use graph analytics, including graph coloring, triangle counting, neural-network inference, and subgraph matching. Finally, we have developed and released the \"GraphBLAST\" framework for GPU graph analytics that uses a different underlying approach, based on linear algebra, that achieves best-in-class performance among frameworks that use this approach.\n\nThese advances are incorporated into high-quality open-source software, with a mature software methodology and development practices, and with extensive documentation, testing, and performance-analysis capabilities. We are proud that Gunrock has been integrated into NVIDIA's leading \"RAPIDS\" framework for data science, where our advances and code can be directly used by the many users of this framework. Finally, our open-source software is widely considered the academic benchmark of choice and sets the bar for future advances in GPU graph analytics.\n\nThe students supported by this work have subsequently joined some of America's most respected and innovative companies (e.g., NVIDIA, AMD, and Google). We all appreciate the support of the National Science Foundation and the taxpayers who have funded this work.\n\n\t\t\t\t\tLast Modified: 02/20/2023\n\n\t\t\t\t\tSubmitted by: John D Owens"
+ }
+}

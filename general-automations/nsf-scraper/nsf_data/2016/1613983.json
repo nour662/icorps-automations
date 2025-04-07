@@ -1,0 +1,109 @@
+{
+ "awd_id": "1613983",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Fellowship Award",
+ "awd_titl_txt": "EAPSI: Preventing Traffic Accidents based on Driving Behavior with Engineering and Statistical Models",
+ "cfda_num": "47.079",
+ "org_code": "01090000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Anne Emig",
+ "awd_eff_date": "2016-06-01",
+ "awd_exp_date": "2017-05-31",
+ "tot_intn_awd_amt": 5400.0,
+ "awd_amount": 5400.0,
+ "awd_min_amd_letter_date": "2016-06-23",
+ "awd_max_amd_letter_date": "2016-06-23",
+ "awd_abstract_narration": "Predicting driving behavior is an important component for developing safer and more reliable driver assistance systems. Modern technologies such as the Google Self-Driving Car and the Mobileye system are good examples on using sensors or cameras to detect road conditions and send out instructions to the cars and drivers when potential dangers are about to occur. However, these technologies can be less reliable when driving in extreme weather conditions, such as heavy rain or darkness at night. Thus many researchers in the engineering field have attempted to analyze driver behavior to predict what will happen next. This project proposes the use of driver behavior data to predict the possibility of an upcoming traffic accident. The project is in collaboration with Professor Kazushi Ikeda from Nara Institute of Science and Technology in Japan. Professor Ikeda and his laboratory are experts in analyzing traffic data.\r\n\r\nHidden Markov Models (HMM) is a popular technique used in the engineering field to analyze traffic data. One can view HMM as an unsupervised clustering technique, where one tries to cluster the different driving states into groups exhibiting similar data pattern. Much work has been proposed on estimating and predicting the different driving states using HMM, however, little work has extended this idea to predicting the occurrence of accidents. This project attempts to close this gap by combining existing methods with an additional change point detection procedure from time series analysis to predict the occurrence of an accident if the driver behaves abnormally. In brief, HMM will first be used to learn the different driving states. Once the states are estimated, a global trend within each state can be obtained and removed, then change point analysis will be applied to analyze the residual of the data, where the goal is to detect sudden changes in drivers? behavior which might signify an accident is about to occur. This can be viewed as a preprocessing step using unsupervised learning (HMM) followed by a statistical modeling approach (change point detection) to build the prediction model.\r\n\r\nThis award under the East Asia and Pacific Summer Institutes program supports summer research by a U.S. graduate student and is jointly funded by NSF and the Japan Society for the Promotion of Science.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "O/D",
+ "org_dir_long_name": "Office Of The Director",
+ "div_abbr": "OISE",
+ "org_div_long_name": "Office of International Science and Engineering",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Rex",
+   "pi_last_name": "Cheung",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Rex Cheung",
+   "pi_email_addr": "",
+   "nsf_id": "000710369",
+   "pi_start_date": "2016-06-23",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "Cheung                  Rex",
+  "inst_street_address": "",
+  "inst_street_address_2": "",
+  "inst_city_name": "Davis",
+  "inst_state_code": "CA",
+  "inst_state_name": "California",
+  "inst_phone_num": "",
+  "inst_zip_code": "956161063",
+  "inst_country_name": "United States",
+  "cong_dist_code": "04",
+  "st_cong_dist_code": "CA04",
+  "org_lgl_bus_name": "",
+  "org_prnt_uei_num": "",
+  "org_uei_num": ""
+ },
+ "perf_inst": {
+  "perf_inst_name": "Nara Institute of Science and Technology",
+  "perf_str_addr": null,
+  "perf_city_name": "Nara",
+  "perf_st_code": "",
+  "perf_st_name": "RI REQUIRED",
+  "perf_zip_code": "",
+  "perf_ctry_code": "JA",
+  "perf_cong_dist": "",
+  "perf_st_cong_dist": "",
+  "perf_ctry_name": "Japan",
+  "perf_ctry_flag": "0"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "731600",
+   "pgm_ele_name": "EAPSI"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "5921",
+   "pgm_ref_txt": "JAPAN"
+  },
+  {
+   "pgm_ref_code": "5978",
+   "pgm_ref_txt": "EAST ASIA AND PACIFIC PROGRAM"
+  },
+  {
+   "pgm_ref_code": "7316",
+   "pgm_ref_txt": "EAPSI"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 5400.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>This project proposed to develop an automatic algorithm to detect the driving state of a driver using driver&rsquo;s behavior data. In brief, driver&rsquo;s behavior data is a collection of driving data, including the usage of gas pedal, steering angle degree, turn signal usage, etc., during driving. The driving states of a driver include driving safely, near-crash, or crash, which signify three levels of safety from very safe to very dangerous. The data used for building the algorithm is a publicly available data set obtained in Virginia in 2003.</p>\n<p>&nbsp;</p>\n<p>The original proposal proposed to use a combination of Hidden Markov Models and change point detection technique to solve the problem. However, while experimenting these techniques with the data set, it was found that the results from Hidden Markov Models tend to be very unstable due to the large variability of the data set. Hence it was decided to use a different approach to build the detection algorithm. As a result, the final algorithm is designed using a semi-supervised learning method from machine learning as the base methodology.</p>\n<p>&nbsp;</p>\n<p>The project is divided into two stages: first we will develop a detection algorithm that simply detects the driving state at real time. Once the detection algorithm is developed, a prediction algorithm will be developed using knowledge from the detection algorithm, which tries to predict the future driving states using current and past driving behavior. Since driving behavior is very dynamic, the goal is simply to predict within seconds into the future, otherwise the accuracy of the prediction will be low.</p>\n<p>&nbsp;</p>\n<p>The first stage, to build a detection algorithm, is almost completed. We have decided the specific structure of the semi-supervised learning algorithm as well as the input features to be used. Currently we are tuning the algorithm to achieve maximum accuracy. Once the algorithm has achieved the accuracy we want, we will proceed to the next stage: to set up the prediction algorithm. The final product for the two stages will be two fully trained algorithms, where the user will input the current driving data and the algorithms will output the current and future driving states. Publications in peer-reviewed journals will follow.&nbsp;</p>\n<p>&nbsp;</p><br>\n<p>\n\t\t\t\t      \tLast Modified: 03/11/2017<br>\n\t\t\t\t\tModified by: Rex&nbsp;Cheung</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\nThis project proposed to develop an automatic algorithm to detect the driving state of a driver using driver?s behavior data. In brief, driver?s behavior data is a collection of driving data, including the usage of gas pedal, steering angle degree, turn signal usage, etc., during driving. The driving states of a driver include driving safely, near-crash, or crash, which signify three levels of safety from very safe to very dangerous. The data used for building the algorithm is a publicly available data set obtained in Virginia in 2003.\n\n \n\nThe original proposal proposed to use a combination of Hidden Markov Models and change point detection technique to solve the problem. However, while experimenting these techniques with the data set, it was found that the results from Hidden Markov Models tend to be very unstable due to the large variability of the data set. Hence it was decided to use a different approach to build the detection algorithm. As a result, the final algorithm is designed using a semi-supervised learning method from machine learning as the base methodology.\n\n \n\nThe project is divided into two stages: first we will develop a detection algorithm that simply detects the driving state at real time. Once the detection algorithm is developed, a prediction algorithm will be developed using knowledge from the detection algorithm, which tries to predict the future driving states using current and past driving behavior. Since driving behavior is very dynamic, the goal is simply to predict within seconds into the future, otherwise the accuracy of the prediction will be low.\n\n \n\nThe first stage, to build a detection algorithm, is almost completed. We have decided the specific structure of the semi-supervised learning algorithm as well as the input features to be used. Currently we are tuning the algorithm to achieve maximum accuracy. Once the algorithm has achieved the accuracy we want, we will proceed to the next stage: to set up the prediction algorithm. The final product for the two stages will be two fully trained algorithms, where the user will input the current driving data and the algorithms will output the current and future driving states. Publications in peer-reviewed journals will follow. \n\n \n\n\t\t\t\t\tLast Modified: 03/11/2017\n\n\t\t\t\t\tSubmitted by: Rex Cheung"
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "awd_id": "1566356",
+ "agcy_id": "NSF",
+ "tran_type": "Grant",
+ "awd_istr_txt": "Standard Grant",
+ "awd_titl_txt": "CRII: AF: On Designing Approximation Algorithms Based on Round-or-Cut Paradigm",
+ "cfda_num": "47.070",
+ "org_code": "05010000",
+ "po_phone": null,
+ "po_email": "",
+ "po_sign_block_name": "Tracy Kimbrel",
+ "awd_eff_date": "2016-03-01",
+ "awd_exp_date": "2019-08-31",
+ "tot_intn_awd_amt": 174990.0,
+ "awd_amount": 174990.0,
+ "awd_min_amd_letter_date": "2016-03-09",
+ "awd_max_amd_letter_date": "2016-03-09",
+ "awd_abstract_narration": "Numerous discrete optimization problems arising in practice are intractable; the approximation algorithms framework provides efficient algorithms for these optimization problems with provable guarantees on the quality of solutions. Among many others, the linear programming (LP) technique has played a central role in the area of approximation algorithms.  This project seeks to understand the power of this technique, by exploiting a very flexible paradigm in designing LP-based algorithms, called the \"round-or-cut\" paradigm.  The PI aims to use this paradigm to tackle many combinatorial optimizations problems that seem hard to tackle in other ways.  Successful completion of the project will not only yield improved approximation algorithms for these problems, but also lead to a better understanding of the power of linear programming technique. As a part of the project, undergraduate and graduate students will be trained and involved in the research activities. The course materials resulting from this research project will be made freely accessible online.\r\n\r\nRecently, the round-or-cut paradigm has led to many improved approximation algorithms.  This paradigm differs from the traditional \"relax-and-round\" paradigm in that the LP relaxation used to approximate the problem does not need to be efficiently solvable.  As a result, the round-or-cut paradigm has the flexibility that the rounding algorithm can adaptively choose the set of linear constraints to require the fractional solution to satisfy. The major goal of this project is to leverage this flexibility to tackle problems that seem hard to tackle using the traditional relax-and-round paradigm, including the capacitated k-median problem, the machine minimization problem on identical machines, and the unsplittable flow problem on paths.  The second goal is to understand the gap between the round-or-cut paradigm and the traditional relax-and-round paradigm. So far, the relax-and-round paradigm is far more popular than the round-or-cut paradigm in designing LP-based approximation algorithms. For a few problems only, algorithms require the stronger round-or-cut paradigm. The PI will investigate whether the relax-and-round paradigm is sufficient for these problems.",
+ "awd_arra_amount": 0.0,
+ "dir_abbr": "CSE",
+ "org_dir_long_name": "Directorate for Computer and Information Science and Engineering",
+ "div_abbr": "CCF",
+ "org_div_long_name": "Division of Computing and Communication Foundations",
+ "awd_agcy_code": "4900",
+ "fund_agcy_code": "4900",
+ "pi": [
+  {
+   "pi_role": "Principal Investigator",
+   "pi_first_name": "Shi",
+   "pi_last_name": "Li",
+   "pi_mid_init": "",
+   "pi_sufx_name": "",
+   "pi_full_name": "Shi Li",
+   "pi_email_addr": "shil@buffalo.edu",
+   "nsf_id": "000705048",
+   "pi_start_date": "2016-03-09",
+   "pi_end_date": null
+  }
+ ],
+ "inst": {
+  "inst_name": "SUNY at Buffalo",
+  "inst_street_address": "520 LEE ENTRANCE STE 211",
+  "inst_street_address_2": "",
+  "inst_city_name": "AMHERST",
+  "inst_state_code": "NY",
+  "inst_state_name": "New York",
+  "inst_phone_num": "7166452634",
+  "inst_zip_code": "142282577",
+  "inst_country_name": "United States",
+  "cong_dist_code": "26",
+  "st_cong_dist_code": "NY26",
+  "org_lgl_bus_name": "THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK",
+  "org_prnt_uei_num": "GMZUKXFDJMA9",
+  "org_uei_num": "LMCJKRFW5R81"
+ },
+ "perf_inst": {
+  "perf_inst_name": "Department of Computer Science and Engineering, SUNY at Buffalo",
+  "perf_str_addr": "328 Davis Hall",
+  "perf_city_name": "Buffalo",
+  "perf_st_code": "NY",
+  "perf_st_name": "New York",
+  "perf_zip_code": "142607016",
+  "perf_ctry_code": "US",
+  "perf_cong_dist": "26",
+  "perf_st_cong_dist": "NY26",
+  "perf_ctry_name": "United States",
+  "perf_ctry_flag": "1"
+ },
+ "pgm_ele": [
+  {
+   "pgm_ele_code": "026Y00",
+   "pgm_ele_name": "CRII CISE Research Initiation"
+  }
+ ],
+ "pgm_ref": [
+  {
+   "pgm_ref_code": "7796",
+   "pgm_ref_txt": "ALGORITHMIC FOUNDATIONS"
+  },
+  {
+   "pgm_ref_code": "7926",
+   "pgm_ref_txt": "ALGORITHMS"
+  },
+  {
+   "pgm_ref_code": "8228",
+   "pgm_ref_txt": "CISE Resrch Initiatn Initiatve"
+  }
+ ],
+ "app_fund": [
+  {
+   "app_code": "0116",
+   "app_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "app_symb_id": "040100",
+   "fund_code": "01001617DB",
+   "fund_name": "NSF RESEARCH & RELATED ACTIVIT",
+   "fund_symb_id": "040100"
+  }
+ ],
+ "oblg_fy": [
+  {
+   "fund_oblg_fiscal_yr": 2016,
+   "fund_oblg_amt": 174990.0
+  }
+ ],
+ "por": {
+  "por_cntn": "<div class=\"porColContainerWBG\">\n<div class=\"porContentCol\"><p>1. In a joint work with Krishnaswamy and Sandeep, we developed a unified iterative rounding framework to achieve constant approximations for many variants of the k-median problem, including the classic k-median and k-means clustering with outliers problems. &nbsp;In particular, our algorithm for k-means with outliers is the first efficient one for the problem with true constant approximation guarantee.&nbsp;<br />2. In a joint work with Guo, we considered the k-center, &nbsp;k-median and k-means with outliers problems in the distributed computation model, where data points are store across m different machines and our goal is to compute a good clustering using small communication complexity. Most previous algorithms with constant approximation guarantee have their communication complexity linearly depending on z, the number of outliers. &nbsp;We circumvent the issue by slightly increase the number of outliers from z to (1+\\epsilon)z. With the relaxation, our communication cost becomes only \\tilde O(km/\\epsilon).<br />3. Motivated by applications where points to be clustered are from parties with diverse interests, in a joint work with Harris, Pensyl, Srinivasan and Trinh, we studied the notion of fairness in clustering algorithms. We developed many algorithms that simultaneously achieve good fairness and high qualities.<br />4. We studied the uncapacitated facility location problem in the differential privacy (DP) model, and gave improved epsilon-DP algorithms for the problem. We consider the model where each client is only interested in its own service facility. Under this model, we show there is an \\epsilon-DP algorithm that achieves an O(1/\\epsilon) expected approximation ratio for hierarchically-well-separated tree (HST) metrics. Combining with the famous FRT tree embedding technique leads to an \\epsilon-DP O(\\log n/ \\epsilon)-approximation algorithm for general metrics, where n is the size of the metric. &nbsp;<br />5. In a joint work with Garg and Kulkarni, we gave a (2+\\epsilon)-approximation algorithm for the problem of scheduling precedence-constrained unit-size jobs on m = O(1) machines so as &nbsp;to minimize total weighted completion time. &nbsp;This is based on the Sherali-Adams (SA) hierarchy technique for linear programming relaxations.&nbsp;<br />6. Using the same technique, we gave a quasi-polynomial time approximation scheme for the problem of scheduling precedence-constrained variable-length jobs on constant number of identical machines so as to minimize the makespan of the schedule. &nbsp;<br />7. We leveraged the SA-hierarchy technique to derive a tight O(\\log^2k/\\log\\log k)-approximation in quasi-polynomial time for the classic Directed Steiner Tree (DST) problem. This improves the previous decade-old O(\\log^3k)-ratio for the problem and thus solves a long-standing open problem. &nbsp;In the paper, we introduced a new variant of the classic Group Steiner Tree (GST) problem called the Group Steiner Tree with Dependency Constraint (GST-D) and developed an approximation-preserving reduction from DST to GST-D. &nbsp;In contrast, most previous results for DST used a reduction to the ordinary GST problem that loses a \\Theta(\\log k)-approximation factor. &nbsp;By saving this factor of log k, we were able to derive the tight approximation.&nbsp;<br />8. In a recent work with Feige and Kulkarni, we considered the classic problem of scheduling variant-length jobs with different arrival times &nbsp;on a single machine to minimize total weighted flow-time, with preemptions allowed. &nbsp;This NP-hard problem has been studied quite extensively for decades. In a recent breakthrough, Batra, Garg and Kumar presented a pseudo-polynomial time O(1) approximation for the problem, but the design of such an algorithm in truly-polynomial time remained a long-standing open problem. In the paper, we show a transformation from pseudo-polynomial time algorithms to polynomial time ones for the problem which, combined with that of Batra, Garg and Kumar, solved the open problem in the affirmative.<br />9. In a joint work with Im and Moseley \\cite{ILM17}, we considered the problem of non-preemptively scheduling variant-length jobs within their respective time windows on m identical machines so as to maximize the throughput. We broke the decade-long barrier of (1-1/e)-approximation ratio for the single-machine scheduling case (i.e, m = 1) due to Chuzhoy, Ostrovsky and Rabani, &nbsp;by giving an improved (0.644 &gt; 1-1/e)-approximation. &nbsp;<br />10. In a joint work with Chattopadhyay, Langberg and Rudra, we initiated the study of round complexity for computing a function over a network. In the problem, there is a network G = (V, E) with k players K \\subseteq V, and each player has an input string and they collectively need to compute a function on the k strings. In each round, one bit can be sent through each edge between the its two end points. The goal is to decide the minimum number of rounds needed to compute the function. &nbsp;We gave tight bounds for a large family of functions, using techniques from graph theory, linear programming and information theory. &nbsp;In a follow-up work with Langberg, Mani-Jayaramanand and Rudra, we exclusively studied the joint query function in databases under this model and gave many bounds depending on the relations of the tables and topology of the underlying network.&nbsp;</p>\n<ol> </ol><br>\n<p>\n\t\t\t\t      \tLast Modified: 12/18/2019<br>\n\t\t\t\t\tModified by: Shi&nbsp;Li</p>\n</div>\n<div class=\"porSideCol\"></div>\n</div>",
+  "por_txt_cntn": "\n1. In a joint work with Krishnaswamy and Sandeep, we developed a unified iterative rounding framework to achieve constant approximations for many variants of the k-median problem, including the classic k-median and k-means clustering with outliers problems.  In particular, our algorithm for k-means with outliers is the first efficient one for the problem with true constant approximation guarantee. \n2. In a joint work with Guo, we considered the k-center,  k-median and k-means with outliers problems in the distributed computation model, where data points are store across m different machines and our goal is to compute a good clustering using small communication complexity. Most previous algorithms with constant approximation guarantee have their communication complexity linearly depending on z, the number of outliers.  We circumvent the issue by slightly increase the number of outliers from z to (1+\\epsilon)z. With the relaxation, our communication cost becomes only \\tilde O(km/\\epsilon).\n3. Motivated by applications where points to be clustered are from parties with diverse interests, in a joint work with Harris, Pensyl, Srinivasan and Trinh, we studied the notion of fairness in clustering algorithms. We developed many algorithms that simultaneously achieve good fairness and high qualities.\n4. We studied the uncapacitated facility location problem in the differential privacy (DP) model, and gave improved epsilon-DP algorithms for the problem. We consider the model where each client is only interested in its own service facility. Under this model, we show there is an \\epsilon-DP algorithm that achieves an O(1/\\epsilon) expected approximation ratio for hierarchically-well-separated tree (HST) metrics. Combining with the famous FRT tree embedding technique leads to an \\epsilon-DP O(\\log n/ \\epsilon)-approximation algorithm for general metrics, where n is the size of the metric.  \n5. In a joint work with Garg and Kulkarni, we gave a (2+\\epsilon)-approximation algorithm for the problem of scheduling precedence-constrained unit-size jobs on m = O(1) machines so as  to minimize total weighted completion time.  This is based on the Sherali-Adams (SA) hierarchy technique for linear programming relaxations. \n6. Using the same technique, we gave a quasi-polynomial time approximation scheme for the problem of scheduling precedence-constrained variable-length jobs on constant number of identical machines so as to minimize the makespan of the schedule.  \n7. We leveraged the SA-hierarchy technique to derive a tight O(\\log^2k/\\log\\log k)-approximation in quasi-polynomial time for the classic Directed Steiner Tree (DST) problem. This improves the previous decade-old O(\\log^3k)-ratio for the problem and thus solves a long-standing open problem.  In the paper, we introduced a new variant of the classic Group Steiner Tree (GST) problem called the Group Steiner Tree with Dependency Constraint (GST-D) and developed an approximation-preserving reduction from DST to GST-D.  In contrast, most previous results for DST used a reduction to the ordinary GST problem that loses a \\Theta(\\log k)-approximation factor.  By saving this factor of log k, we were able to derive the tight approximation. \n8. In a recent work with Feige and Kulkarni, we considered the classic problem of scheduling variant-length jobs with different arrival times  on a single machine to minimize total weighted flow-time, with preemptions allowed.  This NP-hard problem has been studied quite extensively for decades. In a recent breakthrough, Batra, Garg and Kumar presented a pseudo-polynomial time O(1) approximation for the problem, but the design of such an algorithm in truly-polynomial time remained a long-standing open problem. In the paper, we show a transformation from pseudo-polynomial time algorithms to polynomial time ones for the problem which, combined with that of Batra, Garg and Kumar, solved the open problem in the affirmative.\n9. In a joint work with Im and Moseley \\cite{ILM17}, we considered the problem of non-preemptively scheduling variant-length jobs within their respective time windows on m identical machines so as to maximize the throughput. We broke the decade-long barrier of (1-1/e)-approximation ratio for the single-machine scheduling case (i.e, m = 1) due to Chuzhoy, Ostrovsky and Rabani,  by giving an improved (0.644 &gt; 1-1/e)-approximation.  \n10. In a joint work with Chattopadhyay, Langberg and Rudra, we initiated the study of round complexity for computing a function over a network. In the problem, there is a network G = (V, E) with k players K \\subseteq V, and each player has an input string and they collectively need to compute a function on the k strings. In each round, one bit can be sent through each edge between the its two end points. The goal is to decide the minimum number of rounds needed to compute the function.  We gave tight bounds for a large family of functions, using techniques from graph theory, linear programming and information theory.  In a follow-up work with Langberg, Mani-Jayaramanand and Rudra, we exclusively studied the joint query function in databases under this model and gave many bounds depending on the relations of the tables and topology of the underlying network. \n \n\n\t\t\t\t\tLast Modified: 12/18/2019\n\n\t\t\t\t\tSubmitted by: Shi Li"
+ }
+}
