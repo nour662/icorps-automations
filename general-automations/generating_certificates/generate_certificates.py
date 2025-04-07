@@ -51,7 +51,7 @@ def fill_and_flatten_pdf(template_path, output_path, name, date, cohort):
     print(f'Flattened PDF saved as {output_path}')
 
 if __name__ == "__main__":
-    csv_path = 'data/generate_certificate_input-2025-02-03-15-53-32.csv'
+    csv_path = '' ## Change this to the path of the CSV file
     
     create_certificates(csv_path)
     [os.remove(f) for f in glob.glob('generated-pdfs/*_temp.pdf')]
