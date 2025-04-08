@@ -1,110 +1,89 @@
-import argparse
-import requests
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+import time
 import csv
-import re
+import os
 
-def get_firm_info_by_uei(uei):
-    BASE_URL = "https://api.www.sbir.gov/public/api/firm"
-    response = requests.get(BASE_URL, params={"uei": uei})
-    
-    if response.status_code == 200:
-        firm_data = response.json()
-        return firm_data if firm_data else None
-    return None
+# --- SETUP SELENIUM WEBDRIVER ---
+# Configure Chrome to run headless (no GUI)
+options = Options()
+options.add_argument("--headless")
+options.add_argument("--disable-gpu")
+options.add_argument("--window-size=1920,1080")
 
-def get_awards_by_firm_name(firm_name):
-    BASE_URL = "https://api.www.sbir.gov/public/api/awards"
-    response = requests.get(BASE_URL, params={"firm": firm_name})
-    
-    return response.json() if response.status_code == 200 else None
+# Adjust the path to your local chromedriver if necessary
+service = Service()  # Assumes chromedriver is in PATH
+browser = webdriver.Chrome(service=service, options=options)
 
-def extract_company_info(firm_data):
-    firm_data = firm_data[0]
-    return {
-        "Company Name": firm_data.get("company_name"),
-        "UEI": firm_data.get("uei"),
-        "DUNS": firm_data.get("duns"),
-        "SBIR Profile": firm_data.get("sbir_url"),
-        "Number of Employees": firm_data.get("number_employees"),
-        "Women Owned": firm_data.get("women_owned"),
-        "Company URL": firm_data.get("company_url"),
-        "Address": f"{firm_data.get('address1', '')} {firm_data.get('address2', '')}".strip(),
-        "City": firm_data.get("city"),
-        "State": firm_data.get("state"),
-        "ZIP Code": firm_data.get("zip"),
-    }
+# --- SETUP INPUT/OUTPUT ---
+input_file = "/Users/carterkinch/Documents/GitHub/icorps-automations/watn_automations/sbir/UEI_test_list.csv"
+output_file = "/Users/carterkinch/Documents/GitHub/icorps-automations/watn_automations/sbir/scraped_sbir_output.csv"
 
-def extract_funding_info(awards, uei):
-    return [
-        {
-            "Company Name": award.get('firm_name'),
-            "UEI": award.get("uei"),
-            "Award Title": award.get("award_title"),
-            "Agency": award.get("agency"),
-            "Branch": award.get("branch"),
-            "Phase": award.get("phase"),
-            "Award Year": award.get("award_year"),
-            "Award Amount": award.get("award_amount"),
-            "Contract Number": award.get("contract"),
-            "Proposal Award Date": award.get("proposal_award_date"),
-            "Contract End Date": award.get("contract_end_date"),
-            "Award Link": f'https://www.sbir.gov/awards/{award.get("award_link")}'
-        }
-        for award in awards if award.get("uei") == uei
-    ]
+# Confirm working directory and files
+print("Input File Path:", input_file)
+print("Output File Path:", output_file)
 
-def save_to_csv(filename, data_list):
-    if not data_list:
-        print(f"No data to save for {filename}")
-        return
+# --- READ UEIs FROM CSV ---
+uei_list = []
+with open(input_file, mode='r', newline='') as infile:
+    reader = csv.DictReader(infile)
+    for row in reader:
+        uei = row.get('UEI')
+        if uei:
+            uei_list.append(uei.strip())
 
-    keys = data_list[0].keys()  
-    with open(filename, "w", newline="") as file:
-        writer = csv.DictWriter(file, fieldnames=keys)
-        writer.writeheader()
-        writer.writerows(data_list)
-    print(f"Data saved to {filename}")
+# --- SCRAPE DATA FOR EACH UEI ---
+data_rows = []
 
-def clean_firm_name(firm_name):
-    cleaned_name = re.sub(r'\b(Inc|LLC|Corp|Ltd|Co|LLP|Ltd.)\b', '', firm_name, flags=re.IGNORECASE)
-    cleaned_name = re.sub(r'[^A-Za-z0-9\s]', '', cleaned_name)
-    return cleaned_name.strip()
+for uei in uei_list:
+    print(f"Processing UEI: {uei}")
+    url = f"https://www.sbir.gov/portfolio?uei={uei}"
+    browser.get(url)
+    time.sleep(2)  # Wait for page to load (adjust delay if needed)
 
-def main(input_file, output_file):
-    with open(input_file, mode='r', newline='') as infile:
-        reader = csv.DictReader(infile)
-        uei_list = [row['UEI'] for row in reader]
-    
-    all_company_info = []
-    all_funding_info = []
+    try:
+        # Extract Company Name using XPath
+        company_name_elem = browser.find_element(By.XPATH, '//h2[contains(@class, "company-title")]')
+        company_name = company_name_elem.text.strip()
+    except:
+        company_name = "N/A"
 
-    for uei in uei_list:
-        print(f"Processing UEI: {uei}")
+    try:
+        # Extract Address block using XPath
+        address_elem = browser.find_element(By.XPATH, '//div[contains(@class, "company-address")]')
+        address = address_elem.text.strip().replace('\n', ' ')
+    except:
+        address = "N/A"
 
-        firm_info = get_firm_info_by_uei(uei)
-        if firm_info:
-            company_info = extract_company_info(firm_info)
+    try:
+        # Extract Number of Awards using XPath (typically found near award results)
+        awards_text_elem = browser.find_element(By.XPATH, '//div[@class="view-header"]')
+        awards_text = awards_text_elem.text.strip()
+        number_of_awards = ''.join([s for s in awards_text if s.isdigit()])
+    except:
+        number_of_awards = "0"
 
-            firm_name = company_info["Company Name"]
-            cleaned_firm_name = clean_firm_name(firm_name)
-            awards = get_awards_by_firm_name(cleaned_firm_name)
+    # Save data row
+    data_rows.append({
+        'UEI': uei,
+        'Company Name': company_name,
+        'Address': address,
+        '# of Awards': number_of_awards
+    })
 
-            funding_info = extract_funding_info(awards, uei) if awards else []
+    time.sleep(1)  # Be respectful to the server
 
-            all_company_info.append(company_info)
-            all_funding_info.extend(funding_info)
+# --- WRITE OUTPUT TO CSV ---
+with open(output_file, mode='w', newline='') as outfile:
+    fieldnames = ['UEI', 'Company Name', 'Address', '# of Awards']
+    writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerows(data_rows)
 
-        else:
-            print(f"No company found for UEI: {uei}")
+print(f"Finished. Data written to {output_file}")
 
-    save_to_csv(output_file + "_company_info.csv", all_company_info)
-    save_to_csv(output_file + "_funding_info.csv", all_funding_info)
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Process UEIs and get data from SBIR APIs.")
-    parser.add_argument('input_file', type=str, help="Path to the input CSV file containing UEIs.")
-    parser.add_argument('output_file', type=str, help="Base path for the output CSV files.")
-    
-    args = parser.parse_args()
-
-    main(args.input_file, args.output_file)
+# --- CLEANUP ---
+browser.quit()
+# Optionally, remove the input file if no longer needed

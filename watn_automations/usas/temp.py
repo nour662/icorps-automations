@@ -94,6 +94,16 @@ def process_batch(driver, input_list, start, end, batch_number):
     print(f"Batch {batch_number} company data saved to '{company_filename}'")
 
 def main(input_file='temp.csv', start_batch=0):
+    if __name__ == "__main__":
+        starting_batch = int(input("Enter the batch number to start from: "))
+    if not input_file:
+        print("Input file not provided.")
+        return
+    if not input_file.endswith('.csv'):
+        print("Input file must be a CSV file.")
+    if not input_file:
+        print("Input file not provided.")
+        return
     if not os.path.exists(input_file):
         print(f"Input file '{input_file}' not found.")
         return

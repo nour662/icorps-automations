@@ -2,7 +2,7 @@ import pandas as pd
 import re
 from rapidfuzz import process, fuzz
 import logging
-import ArgumentParser
+from argparse import ArgumentParser
 import sys
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -109,4 +109,4 @@ def parse_args(arglist):
 
 if __name__ == "__main__":
     args = parse_args(sys.argv[1:])
-    main(args.masterlist path, args.sam_data_path)
+    main(args.masterlist_path, args.sam_data_path)

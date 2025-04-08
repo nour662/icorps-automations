@@ -193,12 +193,12 @@ def scrape_award_page(award_url, company_name):
     
 
 
-def main(input_file='input.csv', start_batch=107, batch_size=10):
+def main(input_file='UEI_test_list.csv', start_batch=107, batch_size=10):
     """
     This function determines the batch size of the search terms and decides what batch to start the program off at if it is being 
     run for a specific range. The function then formats all information for the 2 outputted .csv file
     """
-    # Load the companies from input.csv
+    # Load the companies from UEI_test_list.csv
     if not os.path.exists(input_file):
         print(f"Input file {input_file} not found.")
         return
@@ -210,7 +210,7 @@ def main(input_file='input.csv', start_batch=107, batch_size=10):
         return
     
     companies = companies_df['Company_Name'].tolist()
-
+    print(f"Current working directory: {os.getcwd()}")
     # Create directories if they don't exist
     if not os.path.exists('company_output'):
         os.makedirs('company_output')
