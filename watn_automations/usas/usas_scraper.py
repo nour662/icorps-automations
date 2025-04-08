@@ -56,6 +56,9 @@ def search_keyword(driver, keyword, result_links):
     except Exception as e:
         print(f"Error searching keyword '{keyword}': {e}")
 
+def get_downloads(uei_list):
+    '''Populate all of the UEIs into the recipeient search then do a mass 
+        download of all of the funds and award data.'''
 #Locates the page of each company by UEI and extracts company information
 def scrape_links(driver, keyword, url):
     """
