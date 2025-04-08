@@ -151,6 +151,7 @@ def scrape_links(driver, keyword, url):
 #
 
 
+
 def process_batch(driver, input_list, start, end, batch_number):
     company_data = []
     batch_input = input_list[start:end]
@@ -173,7 +174,54 @@ def process_batch(driver, input_list, start, end, batch_number):
     company_filename = f"company_output/company_batch_{batch_number}.csv"
     company_df.to_csv(company_filename, index=False)
     print(f"Batch {batch_number} company data saved to '{company_filename}'")
+    
+# simple main
+def main():
+    input_file = "watn_automations\\usas\\small_uei.csv"
+    if not os.path.exists(input_file):
+        print(f"Input file '{input_file}' not found.")
+        return
 
+    input_df = pd.read_csv(input_file)
+    if 'num_uei' not in input_df.columns:
+        print("The CSV must contain a 'UEI' column.")
+        return
+
+    input_list = input_df['num_uei'].tolist()
+
+    # Configure Chrome WebDriver options
+    chrome_options = Options()
+    #chrome_options.add_argument("--headless")  # Run Chrome in headless mode
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--remote-debugging-port=9230")
+
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
+
+    try:
+        batch_size = 5  # Number of UEIs to process per batch
+        num_batches = math.ceil(len(input_list) / batch_size)
+
+        # Create output directory if it doesn't exist
+        if not os.path.exists("company_output"):
+            os.makedirs("company_output")
+
+        # Process each batch
+        for i in range(1, num_batches):
+            start_idx = i * batch_size
+            end_idx = min(start_idx + batch_size, len(input_list))
+            print(f"Processing batch {i+1}/{num_batches}, companies {start_idx+1} to {end_idx}")
+
+            process_batch(driver, input_list, start_idx, end_idx, i+1)
+    except Exception as e:
+        print(f"Error in main function: {e}")
+    finally:
+        driver.quit()
+
+if __name__ == "__main__":
+    main()
+
+'''
 # Divides the input file into batches, reads it, and outputs results
 def main(input_file='input.csv', start_batch=0):
     if not os.path.exists(input_file):
@@ -220,3 +268,4 @@ def main(input_file='input.csv', start_batch=0):
 if __name__ == "__main__":
     starting_batch = int(input("Enter the batch number to start from: "))
     main('input.csv', starting_batch)
+'''
