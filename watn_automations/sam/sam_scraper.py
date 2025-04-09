@@ -9,15 +9,28 @@ import math, pandas as pd, sys, pickle, logging
 from argparse import ArgumentParser
 from time import sleep
 
-'''
-**Nour Ali Ahmed**
-**Scott Lucarelli**
-'''
+"""
+SAM.gov Scraper
+This script automates the process of scraping data from the SAM.gov website using Selenium.
+It searches for company names, collects URLs from the search results, and scrapes relevant data from each URL.
+"""
 
-## Fix the entity information filter selection
-        
+def search_keyword(driver, keyword) -> list:
+    """
+    Searches for a keyword in the SAM.gov search bar and returns the first 10 URLs found.
+    This function also ensures that the "Inactive" checkbox is checked before performing the search.
+    It waits for the search bar and submit button to be clickable, enters the keyword, and clicks the submit button.
+    If the search is successful, it collects the URLs of the first 10 results.
+    If any error occurs during the process, it logs the error and returns an empty list.
 
-def search_keyword(driver, keyword):
+    Arguments:
+        driver: selenium webdriver
+        keyword: str, the keyword to search for
+
+    Returns:
+        list: a list of URLs found in the search results
+    """
+
     inactive = WebDriverWait(driver, 100).until(
         EC.element_to_be_clickable((By.XPATH, '//span[contains(text(), "Inactive")]'))
     )
@@ -36,17 +49,29 @@ def search_keyword(driver, keyword):
         search_bar.send_keys(keyword)
         submit_button.click()
 
-    
         links = WebDriverWait(driver, 3).until(EC.element_to_be_clickable((By.XPATH, '//div[@class="grid-row grid-gap"]//a')))
-         
-        
+          
         return [a.get_attribute('href') for a in links][:10]
     
     except Exception as e:
         logging.error(f"Error searching keyword {keyword}: {e}")  
         return []
 
-def scrape_links(driver, keyword, url):
+def scrape_links(driver, keyword, url) -> dict:
+    """
+    Scrapes the details from the given URL and returns a dictionary with the scraped data.
+    This function waits for the page to load, then extracts various details such as legal name, UEI, CAGE, addresses, etc.
+    It uses XPath to locate the elements on the page and handles exceptions if any element is not found.
+
+    Arguments:
+        driver: selenium webdriver
+        keyword: str, the keyword used for the search
+        url: str, the URL to scrape data from
+
+    Returns:
+        dict: a dictionary containing the scraped data
+    """
+
     try:
         driver.get(url)
         WebDriverWait(driver, 10).until(
@@ -101,8 +126,22 @@ def scrape_links(driver, keyword, url):
         logging.error(f"Error scraping {url}: {e}") 
         return None
 
-def process_batch(driver, input_list, start, end):
-        
+def process_batch(driver, input_list, start, end) -> list:
+    """
+    Processes a batch of input names, searches for each name, and scrapes the details from the search results.
+    This function takes a list of names, divides it into batches, and for each name in the batch, it performs a search and scrapes the details from the resulting URLs.
+    It returns a list of dictionaries containing the scraped data.
+
+    Arguments:
+        driver: selenium webdriver
+        input_list: list of names to search for
+        start: int, starting index for the batch
+        end: int, ending index for the batch
+
+    Returns:
+        list: a list of dictionaries containing the scraped data
+    """
+
     links = {}
     batch_input = input_list[start:end]
 
@@ -122,38 +161,83 @@ def process_batch(driver, input_list, start, end):
 
     return links_data
 
+def select_filters(driver) -> None:
+    """
+    Selects the filters on the SAM.gov search page to ensure that the "Inactive" checkbox is checked and the "Entity Domain" is selected.
+    This function waits for the elements to be clickable and then clicks on them to apply the filters.
+    It also waits for the search button to be clickable before clicking it.
+    Finally, it selects the "Entity Domain" filter.
 
-def select_filters(driver): 
-        
-    search_button = WebDriverWait(driver , 10).until(
-        EC.element_to_be_clickable((By.XPATH , '//a[@id = "search"]'))
-    )
+    Arguments:
+        driver: selenium webdriver
+    
+    """
+    try:
+        search_button = WebDriverWait(driver , 10).until(
+            EC.element_to_be_clickable((By.XPATH , '//a[@id = "search"]'))
+        )
+        search_button.click()
 
-    search_button.click()
+        entity_domain = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, '//*[@aria-describedby="mat-mdc-chip-9-aria-description"]'))
+        )
+        entity_domain.click()
+    except Exception as e:
+        logging.error(f"Error selecting filters: {e}")
+        driver.quit()
 
+def load_cookies(driver, input_path)-> None:
+    """
+    Loads cookies from a specified file and adds them to the Selenium WebDriver session.
+    This function uses the pickle module to load the cookies from a binary file and adds each cookie to the driver.
+    It also logs the loading of cookies.
 
-    entity_domain = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.XPATH, '//*[@aria-describedby="mat-mdc-chip-9-aria-description"]'))
-    )
-    entity_domain.click()
+    Arguments:
+        driver: selenium webdriver
+        input_path: str, path to the cookies file
+    """
 
-
-def load_cookies(driver, input_path):
     with open(input_path, "rb") as file:
         cookies = pickle.load(file)
         for cookie in cookies:
             driver.add_cookie(cookie)
     logging.info(f"Cookies loaded from {input_path}") 
 
-def main(input_file, starting_batch, output_path):
+
+def clean_input_list(input_list) -> list:
+    df = pd.read_csv(input_list)  # Read the CSV file
+
+    if 'Entrepreneur Stage' not in df.columns or 'UEI' not in df.columns:
+        input_list = df['Company'].tolist()  
+    else:
+
+        df = df[(df['Entrepreneur Stage'] != 'Inactive')]
+        df = df[(df['UEI'] != '')]
+
+        print(df)
+
+        input_list = df["Company"].drop_duplicates().tolist()
+
+        input_list = df['Company'].tolist()  
+
+    return input_list 
+
+
+def main(input_file, starting_batch, output_path) -> None:
+    """
+    Main function to execute the SAM.gov scraper.   
+
+    Arguments:
+        input_file: str, path to the input CSV file containing company names
+        starting_batch: int, the batch number to start processing from
+        output_path: str, path to the output directory where results will be saved
+    """
+
     logging.basicConfig(filename=f'{output_path}/log/sam_log.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
     starting_batch = int(starting_batch)
-
-    input_df = pd.read_csv(input_file)
-    input_df = input_df[(input_df['Entrepreneur Stage'] != 'Inactive')]
-    input_df = input_df[(input_df['UEI'] != '')]
-    input_list = input_df["Company"].drop_duplicates().tolist()
+    
+    input_list = clean_input_list(input_file)
     
     chrome_options = Options()
     chrome_options.add_argument('--remote-debugging-port=9222')
@@ -162,11 +246,8 @@ def main(input_file, starting_batch, output_path):
     try:
         driver.get("https://sam.gov/")
         
-        load_cookies(driver, "sam/cookies.pkl") # this cookies files causes an infinite loop where the program goes back and forth from the home/search page till timeout
+        load_cookies(driver, "sam/cookies.pkl")
 
-
-        #sleep(500000)
-        #driver.get("https://sam.gov/search/")
 
         select_filters(driver)
 
@@ -196,10 +277,22 @@ def main(input_file, starting_batch, output_path):
         logging.info("Driver quit and process finished.") 
 
 def parse_args(arglist):
+    """
+    Parses command line arguments.
+    This function uses the argparse module to define and parse command line arguments.
+    It defines three arguments: starting_batch, input_file, and output_path.
+
+    Arguments:
+        arglist: list of command line arguments
+    Returns:
+        Namespace: parsed arguments
+    """
+
     parser = ArgumentParser()
     parser.add_argument("--starting_batch", "-s", required=False, help="Starting Batch")
     parser.add_argument("--input_file", "-i", required=True, help="Input File")
     parser.add_argument("--output_path", "-o", required=True, help = "Output Path")
+   
     return parser.parse_args(arglist)
 
 if __name__ == "__main__":
