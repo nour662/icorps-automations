@@ -5,7 +5,7 @@ source util/myenv/bin/activate
 pip install -r util/requirements.txt --break-system-packages
 
 ## 3. Identify Date
-tag=$"psum_$(date +%Y-%m-%d)"
+tag=$"psu_incubator_$(date +%Y-%m-%d)"
 
 ## 4. Creating Output Directory
 mkdir outputs/outputs_$tag
