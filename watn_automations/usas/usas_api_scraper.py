@@ -11,6 +11,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os
 import math
+import csv
 
 
 def main():
@@ -26,18 +27,44 @@ def main():
 
     input_list = input_df['num_uei'].tolist()
 
-    # Configure Chrome WebDriver options
-    chrome_options = Options()
-    #chrome_options.add_argument("--headless")  # Run Chrome in headless mode
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--remote-debugging-port=9230")
+    # # Configure Chrome WebDriver options
+    # chrome_options = Options()
+    # chrome_options.add_argument("--headless")  # Run Chrome in headless mode
+    # chrome_options.add_argument("--disable-gpu")
+    # chrome_options.add_argument("--no-sandbox")
+    # chrome_options.add_argument("--remote-debugging-port=9230")
 
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
+    # driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
     
     # API stuff I guess :)
-    base_url = "https://api.usaspending.gov/api/v2/search/spending_by_award/"
+    base_url = "https://api.usaspending.gov"
+    search_endpoint = "/api/v2/recipient/recipient_search_text/"
+    award_search_endpoint = "/api/v2/search/spending_by_award/"
+    response = requests.get(base_url)
+    print(response.status_code)
+    print(response.json())
     
+    # need to read UEI's from input csv
+    def uei_list (file_path):
+        with open (file_path, mode = 'r') as file:
+            reader = csv.DictReader(file)
+            return [row["UEI"].strip() for row in reader if row["UEI"].strip()] 
+            # list is going to be unfriendly, write the loop and append "carter will do this"
 
+    #search recipient and award data
+    def get_data (uei):
+        response = requests.post( # find uei
+            base_url + award_search_endpoint,
+            json = {"text":uei} #put uei into csv, with column uei
+        )
+        
+    response.raise_for_status
+    data = response.json()
+    if not data["results"] :
+        return None
+    return data["results"][0]
+
+    
+        
 if __name__ == "__main__":
     main()
