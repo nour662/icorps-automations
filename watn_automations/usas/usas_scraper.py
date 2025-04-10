@@ -150,30 +150,73 @@ def scrape_links(driver, keyword, url):
 #
 #
 
+def get_downloads(uei_list, driver):
+    '''Populate all of the UEIs into the recipeient search then do a mass 
+        download of all of the funds and award data.'''
+    try: 
+        driver.get('https://www.usaspending.gov/search')
+        recipient_dropdown = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, '//button[@aria-label = "Recipient"]'))
+        )
+        # driver.execute_script("arguments[0].setAttribute('aria-pressed', 'true');", recipient_dropdown)
+        recipient_dropdown.click()
 
+        clear_filter = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, '//button[@class= "clear-all__button"]'))
+        )
+        clear_filter.click()
+        
+        # Search and select all of the UEI filters
+        try:
+            for uei in uei_list: 
+                input_field = driver.find_element(By.XPATH, '//input[@class= "geo-entity-dropdown__input"]')
+                input_field.clear()
+                input_field.send_keys(uei)
+                
+                WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, '//*[contains(@class, "checkbox-type-filter")]/div[1]'))
+                )
+                
+                checkbox = WebDriverWait(driver, 10).until(
+                    EC.element_to_be_clickable((By.XPATH, '//*[@id="main-content"]/div/div[1]/div[1]/div[3]/div[7]/div[2]/div/div[3]/div/div[1]//input[@type="checkbox"]'))
+                )     
+                        
+                driver.execute_script("arguments[0].click();", checkbox)
+                
+                # submit = WebDriverWait(driver, 10).until(
+                #     EC.element_to_be_clickable((By.XPATH, ".button__md.button-type__primary-light.submit-button"))
+                # )
+                # submit.click()
+        except Exception as e:
+            print(f"Filter not Found: {e}")
+        sleep(1000)
+        
+    except Exception as e:
+        print(f"Page Setup Failed: {e}")
 
 def process_batch(driver, input_list, start, end, batch_number):
     company_data = []
     batch_input = input_list[start:end]
 
-    for name in batch_input:
-        result_links = []
-        search_keyword(driver, name, result_links)
+    get_downloads(batch_input, driver)
+    # for name in batch_input:
+    #     result_links = []
+    #     search_keyword(driver, name, result_links)
 
-        # Remove duplicate links, if any
-        result_links = list(set(result_links))
-        print(f"Unique search results for {name}: {result_links}")  # Debug print
+    #     # Remove duplicate links, if any
+    #     result_links = list(set(result_links))
+    #     print(f"Unique search results for {name}: {result_links}")  # Debug print
 
-        for url in result_links:
-            company_info = scrape_links(driver, name, url)
-            if company_info:
-                company_data.append(company_info)
+    #     for url in result_links:
+    #         company_info = scrape_links(driver, name, url)
+    #         if company_info:
+    #             company_data.append(company_info)
 
-    # Save the batch results to a CSV file
-    company_df = pd.DataFrame(company_data).drop_duplicates()
-    company_filename = f"company_output/company_batch_{batch_number}.csv"
-    company_df.to_csv(company_filename, index=False)
-    print(f"Batch {batch_number} company data saved to '{company_filename}'")
+    # # Save the batch results to a CSV file
+    # company_df = pd.DataFrame(company_data).drop_duplicates()
+    # company_filename = f"company_output/company_batch_{batch_number}.csv"
+    # company_df.to_csv(company_filename, index=False)
+    # print(f"Batch {batch_number} company data saved to '{company_filename}'")
     
 # simple main
 def main():
