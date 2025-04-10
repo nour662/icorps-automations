@@ -36,60 +36,70 @@ Because an unique identifier is used as a search term, cleaning of the data is n
 """
 
 # This function accesses the USA Spending website and searches for a given keyword (UEI).
-def search_keyword(driver, keyword, result_links):
+
+def search_keyword(driver, keyword, result_links):# This function accesses the USA Spending website and searches for a given keyword (UEI).
     try:
         driver.get("https://www.usaspending.gov/recipient")
+
         search_bar = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '//input[@class="search-section__input"]'))
         )
+        
         submit_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, '//button[@class="search-section__button"]'))
         )
+
+        #enter search term
         search_bar.send_keys(keyword)
         submit_button.click()
         sleep(2)  # Wait for the results to load
+        # Define the priority XPaths for different recipient types
 
-        priority_classes = [
-            "recipient-landing__icon recipient-landing__icon_recipient",
-            "recipient-landing__icon recipient-landing__icon_child",
-            "recipient-landing__icon recipient-landing__icon_parent"
-        ]
-        found_option = False
-        
-        for class_name in priority_classes:
+        search_bar.send_keys(keyword)
+        submit_button.click()
+        sleep(2)  # Wait for the results to load
+        #define the xpaths for each, in order
+        # Define xpaths for each recipient type in priority order:
+        xpath_recipient = "//tr[.//span[contains(@class, 'recipient-landing__icon_recipient')]]]//a"
+        xpath_child = "//tr[.//span[contains(@class, 'recipient-landing__icon_child')]]]//a"
+        xpath_parent = "//tr[.//span[contains(@class, 'recipient-landing__icon_parent')]]//a"
+
+        # old recipient path "//*[contains(@class, 'recipient-landing__icon') and contains(@class, 'recipient-landing__icon_recipient') and contains(text(), 'R')]/following-sibling::a"
+        #old child path = "//*[contains(@class, 'recipient-landing__icon') and contains(@class, 'recipient-landing__icon_child') and contains(text(), 'C')]/following-sibling::a"
+        #old parent path = "//*[contains(@class, 'recipient-landing__icon') and contains(@class, 'recipient-landing__icon_parent') and contains(text(), 'P')]/following-sibling::a"
+
+        priority_xpaths = [xpath_recipient, xpath_child, xpath_parent]
+        recipient_found = False
+
+        #loop through the xpaths in order of priority
+        for xpath in priority_xpaths:
             try:
-                # Find the <span> that indicates this recipient type.
-                span = driver.find_element(By.XPATH, f'//span[contains(@class, "{class_name}")]')
-                
-                # Move up to the <td> that contains this span
-                td = span.find_element(By.XPATH, './ancestor::td')
-                
-                # Inside that <td>, find the first <a> tag
-                link = td.find_element(By.XPATH, './/a')
-                
-                # Click the link
-                print(f"Clicking option with class: {class_name} - Link text: '{link.text}'")
+                link = driver.find_element(By.XPATH, xpath)
+                print(f"[{keyword}] Found: {link.text}")
                 link.click()
-                sleep(2)  # Wait for the page to load after clicking
-                
-                # Capture the resulting URL
+                recipient_found = True
+                sleep(2)  # Wait for the profile page to load
                 result_url = driver.current_url
                 print(f"URL after clicking: {result_url}")
                 result_links.append(result_url)
-                
-                found_option = True
-                break  # Stop once we've successfully clicked a link
-            except:
-                # If we can't find a span or link with this class, move on to the next
-                pass
-        
-        if not found_option:
-            print(f"No matching recipient option found for keyword '{keyword}'.")
-    
+                break
+            except Exception:
+                print(f"[{keyword}] No matching recipient found.")
+                continue
+        if not recipient_found:
+            print(f"[{keyword}] No matching recipient found in any category.")
+            # Optionally, you can add logic to handle this case (e.g., log it, raise an error, etc.)
     except Exception as e:
-        print(f"Error searching keyword '{keyword}': {e}")
+        # Handle exceptions that may occur during the search process
+        print(f"Error finding or clicking recipient name: {e}")
 
-# Locates the page of each company by UEI and extracts company information
+
+#the function above takes UEI's, searches data from the USA spending website
+#it will make a batch of 2 UEI's at a time, and then save the results to a csv file
+#the script needs a few more functions
+#the next function will scrape the data from the USA spending website
+
+
 def scrape_links(driver, keyword, url):
     """
     This function seeks to locate each company's legal name, UEI number, DUNS number, CAGE, full address, and
@@ -142,129 +152,73 @@ def scrape_links(driver, keyword, url):
         print(f"Error scraping {url}: {e}")
         return None
 
-#
-#
-#
-#def get_funding_info(): 
-#    pass
-#
-#
 
-def get_downloads(uei_list, driver):
-    '''Populate all of the UEIs into the recipeient search then do a mass 
-        download of all of the funds and award data.'''
-    try: 
-        driver.get('https://www.usaspending.gov/search')
-        recipient_dropdown = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, '//button[@aria-label = "Recipient"]'))
-        )
-        # driver.execute_script("arguments[0].setAttribute('aria-pressed', 'true');", recipient_dropdown)
-        recipient_dropdown.click()
 
-        clear_filter = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, '//button[@class= "clear-all__button"]'))
-        )
-        clear_filter.click()
-        
-        # Search and select all of the UEI filters
-        try:
-            for uei in uei_list: 
-                input_field = driver.find_element(By.XPATH, '//input[@class= "geo-entity-dropdown__input"]')
-                input_field.clear()
-                input_field.send_keys(uei)
-                
-                WebDriverWait(driver, 10).until(
-                    EC.presence_of_element_located((By.XPATH, '//*[contains(@class, "checkbox-type-filter")]/div[1]'))
-                )
-                
-                checkbox = WebDriverWait(driver, 10).until(
-                    EC.element_to_be_clickable((By.XPATH, '//*[@id="main-content"]/div/div[1]/div[1]/div[3]/div[7]/div[2]/div/div[3]/div/div[1]//input[@type="checkbox"]'))
-                )     
-                        
-                driver.execute_script("arguments[0].click();", checkbox)
-                
-                # submit = WebDriverWait(driver, 10).until(
-                #     EC.element_to_be_clickable((By.XPATH, ".button__md.button-type__primary-light.submit-button"))
-                # )
-                # submit.click()
-        except Exception as e:
-            print(f"Filter not Found: {e}")
-        sleep(1000)
-        
+
+
+#
+#the above functions will scrape the data from the USA spending website and they currently work
+#the function below will be called to get the funding information for each company
+#the funding info is on a tertiatytertiary page, so we need to scrape it from there
+#the funding page is found from the company page from above
+#
+def get_funding_info(driver, keyword, url):
+    """
+    This function seeks to locate each company's funding information. If it cannot locate the company's record, then it will be returned that there was an error 
+    scraping that specific URL and UEI.
+    """
+    try:
+        # Navigate to the company's funding page
+        driver.get(url)
+
+        # Helper function to safely find elements by XPath
+        def safe_find(xpath):
+            try:
+                element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, xpath)))
+                return element.text
+            except Exception:
+                return None
+
+        # Extract funding details
+        funding_info = safe_find('//div[@class="funding-info"]')
+        if funding_info:
+            funding_info = funding_info.split('\n')[0].strip()
+
+        return funding_info
     except Exception as e:
-        print(f"Page Setup Failed: {e}")
+        print(f"Error scraping {url}: {e}")
+        return None
+
+
+
+
+
+
+
 
 def process_batch(driver, input_list, start, end, batch_number):
     company_data = []
     batch_input = input_list[start:end]
 
-    get_downloads(batch_input, driver)
-    # for name in batch_input:
-    #     result_links = []
-    #     search_keyword(driver, name, result_links)
+    for name in batch_input:
+        result_links = []
+        search_keyword(driver, name, result_links)
 
-    #     # Remove duplicate links, if any
-    #     result_links = list(set(result_links))
-    #     print(f"Unique search results for {name}: {result_links}")  # Debug print
+        # Remove duplicate links, if any
+        result_links = list(set(result_links))
+        print(f"Unique search results for {name}: {result_links}")  # Debug print
 
-    #     for url in result_links:
-    #         company_info = scrape_links(driver, name, url)
-    #         if company_info:
-    #             company_data.append(company_info)
+        for url in result_links:
+            company_info = scrape_links(driver, name, url)
+            if company_info:
+                company_data.append(company_info)
 
-    # # Save the batch results to a CSV file
-    # company_df = pd.DataFrame(company_data).drop_duplicates()
-    # company_filename = f"company_output/company_batch_{batch_number}.csv"
-    # company_df.to_csv(company_filename, index=False)
-    # print(f"Batch {batch_number} company data saved to '{company_filename}'")
-    
-# simple main
-def main():
-    input_file = "watn_automations\\usas\\small_uei.csv"
-    if not os.path.exists(input_file):
-        print(f"Input file '{input_file}' not found.")
-        return
+    # Save the batch results to a CSV file
+    company_df = pd.DataFrame(company_data).drop_duplicates()
+    company_filename = f"company_output/company_batch_{batch_number}.csv"
+    company_df.to_csv(company_filename, index=False)
+    print(f"Batch {batch_number} company data saved to '{company_filename}'")
 
-    input_df = pd.read_csv(input_file)
-    if 'num_uei' not in input_df.columns:
-        print("The CSV must contain a 'UEI' column.")
-        return
-
-    input_list = input_df['num_uei'].tolist()
-
-    # Configure Chrome WebDriver options
-    chrome_options = Options()
-    #chrome_options.add_argument("--headless")  # Run Chrome in headless mode
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--remote-debugging-port=9230")
-
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
-
-    try:
-        batch_size = 5  # Number of UEIs to process per batch
-        num_batches = math.ceil(len(input_list) / batch_size)
-
-        # Create output directory if it doesn't exist
-        if not os.path.exists("company_output"):
-            os.makedirs("company_output")
-
-        # Process each batch
-        for i in range(1, num_batches):
-            start_idx = i * batch_size
-            end_idx = min(start_idx + batch_size, len(input_list))
-            print(f"Processing batch {i+1}/{num_batches}, companies {start_idx+1} to {end_idx}")
-
-            process_batch(driver, input_list, start_idx, end_idx, i+1)
-    except Exception as e:
-        print(f"Error in main function: {e}")
-    finally:
-        driver.quit()
-
-if __name__ == "__main__":
-    main()
-
-'''
 # Divides the input file into batches, reads it, and outputs results
 def main(input_file='input.csv', start_batch=0):
     if not os.path.exists(input_file):
@@ -311,4 +265,3 @@ def main(input_file='input.csv', start_batch=0):
 if __name__ == "__main__":
     starting_batch = int(input("Enter the batch number to start from: "))
     main('input.csv', starting_batch)
-'''
