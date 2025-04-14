@@ -12,6 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import os
 import math
 import csv
+import tempfile, json
 
 
 def main():
@@ -40,10 +41,37 @@ def main():
     base_url = "https://api.usaspending.gov"
     search_endpoint = "/api/v2/recipient/recipient_search_text/"
     award_search_endpoint = "/api/v2/search/spending_by_award/"
-    response = requests.get(base_url)
-    print(response.status_code)
-    print(response.json())
     
+    # define the input filters we want and the output data tags we want
+    setup =  {"filters": {
+        "recipient_search_text":['LA9LCVM7HMK5'],
+        "award_type_codes": ["A", "B" , "C" , "D", "02", "03", "04", "05"]
+      },
+      "fields": ["Recipient Name", "Start Date",
+          "End Date",
+          "Award Amount",
+          "Awarding Agency",
+          "Awarding Sub Agency",
+          "Contract Award Type",
+          "Award Type",
+          "Funding Agency",
+          "Funding Sub Agency"]
+    }
+
+    response = requests.get(base_url + award_search_endpoint, json=setup)
+
+    if response.status_code == 200:
+        data = response.json()
+    
+        temp_file = tempfile.NamedTemporaryFile(mode = 'w+t', suffix = '.json', delete=True)
+        try:
+            json.dump(data, temp_file)
+            temp_filename = temp_file.name
+        except Exception:
+            temp_file.close()
+            raise
+        
+            
     # need to read UEI's from input csv
     def uei_list (file_path):
         with open (file_path, mode = 'r') as file:
@@ -58,13 +86,12 @@ def main():
             json = {"text":uei} #put uei into csv, with column uei
         )
         
-    response.raise_for_status
-    data = response.json()
-    if not data["results"] :
-        return None
-    return data["results"][0]
+    # response.raise_for_status
+    # data = response.json()
+    # if not data["results"] :
+    #     return None
+    # return data["results"][0]
 
-    
         
 if __name__ == "__main__":
     main()
