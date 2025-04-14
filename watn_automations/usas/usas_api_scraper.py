@@ -40,13 +40,14 @@ def main():
     # API stuff I guess :)
     base_url = "https://api.usaspending.gov/api/v2/search/spending_by_award/"
     
+    # uei_list = pd.read_csv("small_uei.csv")["num_uei"].tolist()
     # define the input filters we want and the output data tags we want
     header = {
         "Content-Type" : "application/json"
     }
     payload =  {"filters": {
         "recipient_search_text":['LA9LCVM7HMK5'],
-        "award_type_codes": ["A", "B" , "C" , "D", "02", "03", "04", "05"]
+        "award_type_codes": ["A", "B" , "C" , "D"]
       },
       "fields": ["Recipient Name", "Start Date",
           "End Date",
@@ -56,21 +57,24 @@ def main():
           "Contract Award Type",
           "Award Type",
           "Funding Agency",
-          "Funding Sub Agency"]
+          "Funding Sub Agency"],
+      "limit": 100
     }
 
-    response = requests.get(base_url, headers=header, json=payload)
+    response = requests.post(base_url, headers=header, json=payload)
+    print(response.status_code)
 
     if response.status_code == 200:
         data = response.json()
+        print(data)
     
-        temp_file = tempfile.NamedTemporaryFile(mode = 'w+t', suffix = '.json', delete=True)
-        try:
-            json.dump(data, temp_file)
-            temp_filename = temp_file.name
-        except Exception:
-            temp_file.close()
-            raise
+        # temp_file = tempfile.NamedTemporaryFile(mode = 'w+t', suffix = '.json', delete=True)
+        # try:
+        #     json.dump(data, temp_file)
+        #     temp_filename = temp_file.name
+        # except Exception:
+        #     temp_file.close()
+        #     raise
         
             
     # need to read UEI's from input csv
