@@ -38,12 +38,13 @@ def main():
     # driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
     
     # API stuff I guess :)
-    base_url = "https://api.usaspending.gov"
-    search_endpoint = "/api/v2/recipient/recipient_search_text/"
-    award_search_endpoint = "/api/v2/search/spending_by_award/"
+    base_url = "https://api.usaspending.gov/api/v2/search/spending_by_award/"
     
     # define the input filters we want and the output data tags we want
-    setup =  {"filters": {
+    header = {
+        "Content-Type" : "application/json"
+    }
+    payload =  {"filters": {
         "recipient_search_text":['LA9LCVM7HMK5'],
         "award_type_codes": ["A", "B" , "C" , "D", "02", "03", "04", "05"]
       },
@@ -58,7 +59,7 @@ def main():
           "Funding Sub Agency"]
     }
 
-    response = requests.get(base_url + award_search_endpoint, json=setup)
+    response = requests.get(base_url, headers=header, json=payload)
 
     if response.status_code == 200:
         data = response.json()
