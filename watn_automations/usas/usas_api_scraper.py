@@ -83,8 +83,50 @@ input_file = "watn_automations\\usas\\small_uei.csv"
     #     return None
     # return data["results"][0]
 '''
+def get_company_info(recipient_ids): 
+    for recipient_id in recipient_ids:
+        recipient_url = f"https://api.usaspending.gov/api/v2/recipient/{recipient_id}/"
 
-def get_data (response, all_data, uei):
+        response = requests.get(recipient_url)
+        if response.status_code == 200:
+            data = response.json()
+            company_uei = data["uei"]
+            name = data["name"]
+            duns = data["duns"]
+            location = data["location"]
+            address_line1, address_line2, city, state, zip, congressional_code = clean_location_dict(location)
+            
+            company_data = {
+                "uei": company_uei,
+                "recipient_id":recipient_id,
+                "name": name,
+                "duns": duns,
+                "address_line1": address_line1,
+                "address_line2": address_line2,
+                "city": city,
+                "state": state,
+                "zip": zip,
+                "congressional_code": congressional_code
+            }
+            print(company_data)
+            # errors were thrown along side my sanity :/
+            # df = pd.DataFrame(company_data)
+            # df.to_csv('watn_automations\\usas\\usas_company_data', index=False)
+        else:
+            print(f"Ruh Roh: {response.status_code}")
+            print(response.text)
+        
+def clean_location_dict(location):
+    address_line1 = location["address_line1"]
+    address_line2 = location["address_line2"]
+    city = location["city_name"]
+    state = location["state_code"] 
+    zip = location["zip"]
+    congressional_code = location["congressional_code"]
+    
+    return address_line1, address_line2, city, state, zip, congressional_code
+    
+def get_data (response, all_data):
     if response.status_code == 200:
         data = response.json()
         awards = data.get("results", [])
@@ -102,16 +144,21 @@ def main():
     base_url = "https://api.usaspending.gov/api/v2/search/spending_by_award/"
     
     uei_list = pd.read_csv("watn_automations\\usas\\small_uei.csv")["num_uei"].tolist()
+
     # define the input filters we want and the output data tags we want
     header = {
         "Content-Type" : "application/json"
     }
     # Award Data extracted for contracts -- not available for every UEI
     payload =  {"filters": {
-        "recipient_search_text":['JD35KEUVYS94'],
+        "recipient_search_text":["ZZKFKXNTMMA3"],
         "award_type_codes": ["A", "B" , "C" , "D"]
       },
-      "fields": ["Recipient Name", "Start Date",
+      "fields": [
+          "Recipient Name",
+          "Recipient UEI",
+          "recipient_id",
+          "Start Date",
           "End Date",
           "Award Amount",
           "Awarding Agency",
@@ -123,36 +170,50 @@ def main():
       "limit": 100
     }
 
-    all_data = []
-
-    for uei in uei_list:
-        if not uei is np.nan : 
-            payload = payload.copy()
-            payload["filters"]["recipient_search_text"] = [uei]
-            
-            payload["filters"]["recipient_search_text"] = ["A", "B" , "C" , "D"]
-            response1 = requests.post(base_url, headers=header, json=payload)
-            if get_data(response1, all_data, uei) :
-                all_data = get_data(response1, all_data, uei)
-            else:
-                print(f"Request failed for UEI {uei} with status code {response1.status_code}")
+    all_contract_data = []
+    all_grant_data = []
+    try: 
+        for uei in uei_list:
+            if not uei is np.nan : 
+                payload = payload.copy()
+                payload["filters"]["recipient_search_text"] = [uei]
                 
-            payload["filters"]["recipient_search_text"] = ["02", "03" , "04" , "05"]
-            response2 = requests.post(base_url, headers=header, json=payload)
-            if get_data(response2, all_data, uei):
-                all_data = get_data(response2, all_data, uei)
+                # get contract data in a list 
+                payload["filters"]["award_type_codes"] = ["A", "B" , "C" , "D"]
+                response1 = requests.post(base_url, headers=header, json=payload)
+                if get_data(response1, all_contract_data) :
+                    all_contract_data = get_data(response1, all_contract_data)
+                else:
+                    print(f"Request failed for UEI {uei} with status code {response1.status_code}")
+                
+                # get grant data in a list 
+                payload["filters"]["award_type_codes"] = ["02", "03" , "04" , "05"]
+                response2 = requests.post(base_url, headers=header, json=payload)
+                if get_data(response2, all_grant_data):
+                    all_data_grant = get_data(response2, all_grant_data)
+                else: 
+                    print(f"Request failed for UEI {uei} with status code {response2.status_code}")
+                print(f'{uei} Processed')
             else: 
-                print(f"Request failed for UEI {uei} with status code {response2.status_code}")
-        else: 
-            pass 
+                pass 
+    except Exception as e:
+        print(f'{uei} Could not Be Processed: {e}')
 
 
-    df = pd.DataFrame(all_data)
+    contract_df = pd.DataFrame(all_contract_data)
+    grant_df = pd.DataFrame(all_grant_data)
 
-
-    df.to_csv('watn_automations\\usas\\spending_data.csv', index=False)
-    print("Data has been saved to 'spending_data.csv'.")
-
+    contract_df.to_csv('watn_automations\\usas\\spending_data_contracts.csv', index=False)
+    print("Data has been saved to 'spending_data_contracts.csv'.")
+    grant_df.to_csv('watn_automations\\usas\\spending_data_grants.csv', index=False)
+    print("Data has been saved to 'spending_data_grants.csv'.")
+    
+    recipient_ids = pd.read_csv("watn_automations\\usas\\spending_data_contracts.csv")["recipient_id"].tolist()
+    recipient_ids.extend(pd.read_csv("watn_automations\\usas\\spending_data_grants.csv")["recipient_id"].tolist())
+    recipient_ids = list(set(recipient_ids))
+    print(recipient_ids)
+    
+    get_company_info(recipient_ids)
         
 if __name__ == "__main__":
     main()
