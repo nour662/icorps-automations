@@ -83,7 +83,7 @@ input_file = "watn_automations\\usas\\small_uei.csv"
     #     return None
     # return data["results"][0]
 '''
-def get_company_info(recipient_ids): 
+def get_company_info(recipient_ids, data_list): 
     for recipient_id in recipient_ids:
         recipient_url = f"https://api.usaspending.gov/api/v2/recipient/{recipient_id}/"
 
@@ -109,13 +109,12 @@ def get_company_info(recipient_ids):
                 "congressional_code": congressional_code
             }
             print(company_data)
-            # errors were thrown along side my sanity :/
-            # df = pd.DataFrame(company_data)
-            # df.to_csv('watn_automations\\usas\\usas_company_data', index=False)
+            data_list.append(company_data)
         else:
             print(f"Ruh Roh: {response.status_code}")
             print(response.text)
-        
+    return data_list
+
 def clean_location_dict(location):
     address_line1 = location["address_line1"]
     address_line2 = location["address_line2"]
@@ -199,7 +198,6 @@ def main():
     except Exception as e:
         print(f'{uei} Could not Be Processed: {e}')
 
-
     contract_df = pd.DataFrame(all_contract_data)
     grant_df = pd.DataFrame(all_grant_data)
 
@@ -211,9 +209,11 @@ def main():
     recipient_ids = pd.read_csv("watn_automations\\usas\\spending_data_contracts.csv")["recipient_id"].tolist()
     recipient_ids.extend(pd.read_csv("watn_automations\\usas\\spending_data_grants.csv")["recipient_id"].tolist())
     recipient_ids = list(set(recipient_ids))
-    print(recipient_ids)
     
-    get_company_info(recipient_ids)
+    gen_company_data = []
+    gen_company_data = get_company_info(recipient_ids, gen_company_data)
+    df = pd.DataFrame(gen_company_data)
+    df.to_csv('watn_automations\\usas\\usas_company_data.csv', index=False)
         
 if __name__ == "__main__":
     main()
