@@ -1,112 +1,260 @@
 import pandas as pd
 import re
-from rapidfuzz import process, fuzz
+from rapidfuzz import fuzz
 import logging
-import ArgumentParser
+from argparse import ArgumentParser
 import sys
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+def clean_company_name(name) -> str:
+    """
+    Cleans the company name by removing special characters and standardizing common terms.
 
-def clean_company_name(name):
+    Aruments:
+        name : (str) The company name to be cleaned.
+    Returns:
+        str : The cleaned company name.
+    """
     if pd.isna(name):
         return ''
     name = re.sub(r"[^\w\s]", "", name.lower().strip())
     name = name.replace("corporation", "corp").replace("incorporated", "inc")
-    return name
 
-def match_companies(sam_company, sf_companies):
-    match = process.extractOne(sam_company, sf_companies, scorer=fuzz.ratio)
-    return match[0] if match and match[1] > 80 else None  # Threshold set to 80
+    suffixes = [" inc", " llc", " ltd", " corp", " co", " company", " pllc", " lp", " llp"]
+    for suffix in suffixes:
+        if name.endswith(suffix):
+            name = name[: -len(suffix)]
+    return name.strip()
 
-def match_contacts(sam_contacts, sf_contacts):
-    return list(set(sam_contacts) & set(sf_contacts))
+def match_contacts(sam_contacts, input_contacts) -> tuple:
+    """
+    Matches contacts from SAM dataset with input contacts using fuzzy string matching.
 
-def clean_masterlist(df):
-    logging.info("Cleaning masterlist...")
+    Arguments:
+        sam_contacts : (list) List of contacts from SAM dataset.
+        input_contacts : (list) List of contacts from input dataset.
+    Returns:
+        tuple : A tuple containing the best match and its score.
+    """
+    logging.info("Matching contacts...")
+    sam_contacts = sam_contacts if isinstance(sam_contacts, list) else []
+    input_contacts = input_contacts if isinstance(input_contacts, list) else []
+
+    highest_score = 0
+    best_match = None
+
+    for sam_contact in sam_contacts:
+        for input_contact in input_contacts:
+            score = fuzz.ratio(sam_contact.lower(), input_contact.lower())
+            if score > highest_score:
+                highest_score = score
+                best_match = sam_contact
+
+    return [best_match] if best_match else [], highest_score
+
+def clean_input(df) -> pd.DataFrame:
+    """
+    Cleans the input DataFrame by combining first and last names into a single column.
+    Also groups by company name and aggregates contacts.
+
+    Arguments:
+        df : (DataFrame) The input DataFrame to be cleaned.
+    Returns:
+        DataFrame : The cleaned DataFrame with company names and aggregated contacts.
+    """
+    logging.info("Cleaning original input file...")
     try:
-        df["Full Name"] = df["First Name"].fillna('') + " " + df["Last Name"].fillna('')
-        df.drop(columns=["First Name", "Last Name"], inplace=True)
-        df["Regional Cohort Date"] = pd.to_datetime(df["Regional Cohort Date"], errors="coerce")
+        if {"First Name", "Last Name"}.issubset(df.columns):
+            df["Name"] = df["First Name"].fillna('') + " " + df["Last Name"].fillna('')
+            df.drop(columns=["First Name", "Last Name"], inplace=True)
+
         grouped = (
             df.groupby("Company")
-            .agg({"Full Name": lambda x: list(set(x))})  # Remove duplicate names
+            .agg({"Name": lambda x: list(set(x))})
             .reset_index()
         )
-        grouped = grouped.rename(columns={"Company": "sf_company", "Full Name": "sf_contacts"})
-        grouped["sf_company"] = grouped["sf_company"].apply(clean_company_name)
+        grouped = grouped.rename(columns={"Company": "input_company", "Name": "input_contacts"})
         return grouped
     except Exception as e:
-        logging.error(f"Error in cleaning masterlist: {e}")
+        logging.error(f"Error in cleaning input data: {e}")
         raise
 
-def clean_sam(df):
+def clean_sam(df) -> pd.DataFrame:
+    """
+    Cleans the SAM DataFrame by renaming columns and converting contacts to lists.
+    Also handles missing values.
+
+    Arguments:
+        df : (DataFrame) The SAM DataFrame to be cleaned.
+    Returns:
+        DataFrame : The cleaned SAM DataFrame with standardized column names and contact lists.
+    """
+
     logging.info("Cleaning SAM dataset...")
-
-    def extract_name(name):
-        if pd.isna(name):
-            return None
-        pattern = r"^([A-Za-z]+)\s?([A-Za-z]?.)?\s([A-Za-z]+)"
-        match = re.match(pattern, name.strip())
-        if match:
-            first_name = match.group(1)
-            last_name = match.group(3)
-            return f"{first_name} {last_name}" if first_name and last_name else None
-        return None
-
-    df = df.rename(columns={"legal_name": "sam_company"})
-    df["sam_company"] = df["sam_company"].apply(clean_company_name)
-    df["sam_contacts"] = df.apply(
-        lambda row: list(set(filter(None, [
-            extract_name(row.get("contact1")),
-            extract_name(row.get("contact2"))
-        ]))),
-        axis=1
+    df = df.rename(columns={"legal_name": "sam_company", "contacts": "sam_contacts"})
+    df["sam_contacts"] = df["sam_contacts"].apply(
+        lambda x: eval(x) if isinstance(x, str) else ([] if pd.isna(x) else x)
     )
     return df
 
-def match_datasets(master_df, sam_df):
-    logging.info("Matching datasets...")
+def join_dfs(input_df, sam_df) -> pd.DataFrame:
+    """
+    Joins the input DataFrame with the SAM DataFrame on company names.
+    Also drops rows with missing values in the joined DataFrame.
 
-    matched = pd.merge(sam_df, master_df, left_on="sam_company", right_on="sf_company", how="inner")
+    Arguments:
+        input_df : (DataFrame) The cleaned input DataFrame.
+        sam_df : (DataFrame) The cleaned SAM DataFrame.
+    Returns:
+        DataFrame : The merged DataFrame with company names and contacts.
+    """
+    logging.info("Joining datasets...")
+    if "keyword" not in sam_df.columns or "input_company" not in input_df.columns:
+        logging.error("Required columns 'keyword' or 'input_company' are missing.")
+        return pd.DataFrame()
 
-    unmatched_sam = sam_df[~sam_df["sam_company"].isin(matched["sam_company"])]
-    sf_company_list = master_df["sf_company"].tolist()
-    unmatched_sam["matched_company"] = unmatched_sam["sam_company"].apply(lambda x: match_companies(x, sf_company_list))
-
-    fuzzy_matched = unmatched_sam.merge(master_df, left_on="matched_company", right_on="sf_company", how="inner")
-    all_matches = pd.concat([matched, fuzzy_matched], ignore_index=True)
-
-    all_matches["contact_overlap"] = all_matches.apply(
-        lambda row: match_contacts(row["sam_contacts"], row["sf_contacts"]),
-        axis=1
+    merged_df = pd.merge(
+        input_df,
+        sam_df,
+        left_on="input_company",
+        right_on="keyword",
+        how="outer",
+        suffixes=("_input", "_sam")
     )
 
-    final_matches = all_matches[all_matches["contact_overlap"].str.len() > 0]
+    merged_df = merged_df.dropna(subset=["input_company", "sam_company"])
+    return merged_df
 
-    return final_matches
+def find_matches(merged_df, threshold=80) -> pd.DataFrame:
+    """
+    Finds matches between input and SAM companies using fuzzy string matching.
+
+    Arguments:
+        merged_df : (DataFrame) The merged DataFrame containing input and SAM companies.
+        threshold : (int) The score threshold for considering a match.
+    Returns:
+        DataFrame : A DataFrame containing the matched results.
+    """
+
+    logging.info("Scoring matches within joined DataFrame...")
+
+    results = []
+
+    for _, row in merged_df.iterrows():
+        input_company = row.get("input_company", "")
+        sam_company = row.get("sam_company", "")
+        input_contacts = row.get("input_contacts", [])
+        sam_contacts = row.get("sam_contacts", [])
+        
+
+        input_company = clean_company_name(input_company)
+        sam_company = clean_company_name(sam_company)
+
+        company_score = fuzz.ratio(input_company, sam_company)
+
+        
+
+        matched_contacts, contact_score = match_contacts(sam_contacts, input_contacts)
+        overall_score = round((0.7 * company_score + 0.3 * contact_score), 2)
+
+        if overall_score < threshold:
+            continue
+        
+        results.append({
+            "keyword": row.get("keyword", ""),
+            "uei" : row.get("num_uei", ""),
+            "input_company": input_company,
+            "sam_company": sam_company,
+            "company_score": company_score,
+            "matched_contacts": matched_contacts,
+            "contact_score": round(contact_score, 2),
+            "overall_score": overall_score
+        })
+
+    return pd.DataFrame(results)
+
+def merge_final_output(input_df, results_df, output_path) -> None:
+    """
+    Merges the final output with UEIs and saves the result to a CSV file.
+
+    Arguments:
+        input_df : (DataFrame) The original input DataFrame.
+        results_df : (DataFrame) The DataFrame containing matched results.
+        output_path : (str) The path to save the final output CSV file.
+    """
+    logging.info("Merging final output with UEIs…")
+
+    ueis = results_df[['keyword', 'uei']].rename(columns={'uei': 'uei_new'})
+
+    merged = pd.merge(
+        input_df,
+        ueis,
+        left_on="Company",
+        right_on="keyword",
+        how="left"
+    )
+
+    if 'UEI' in merged.columns:
+        merged['UEI'] = merged['uei_new'].combine_first(merged['UEI'])
+    else:
+        merged['UEI'] = merged['uei_new']
+
+    drop_cols = [col for col in ['keyword', 'uei_new'] if col in merged.columns]
+    merged.drop(columns=drop_cols, inplace=True)
 
 
+    output_file = f"{output_path}/post_sam_matching.csv"
+    
+    merged.to_csv(output_file, index=False)
+    logging.info(f"Final merged output saved to {output_file}")
 
-def main(masterlist_path, sam_data_path):
-    masterlist = pd.read_csv("../inputs/icorps_masterlist.csv")
-    sam_data = pd.read_csv("training.csv")
+def main(input_path, data_path, output_path) -> None:
+    """
+    Main function to execute the matching algorithm.
 
-    masterlist_cleaned = clean_masterlist(masterlist)
-    sam_data_cleaned = clean_sam(sam_data)
+    Arguments:
+        input_path : (str) Path to the original input data.
+        data_path : (str) Path to the scraped data from SAM.gov.
+        output_path : (str) Path to the output folder.
+    """
 
-    results = match_datasets(masterlist_cleaned, sam_data_cleaned)
+    logging.info("Starting matching process...")
 
-    results.to_csv("matched_results.csv", index=False)
-    logging.info("Matching complete. Results saved to matched_results.csv")
+    input_df = pd.read_csv(input_path)
+    sam_df = pd.read_csv(data_path)
 
+    if input_df.empty:
+        logging.error("Input file is empty. Please check the file.")
+        return
 
+    input_df_cleaned = clean_input(input_df)
+    sam_df_cleaned = clean_sam(sam_df)
 
-def parse_args(arglist):
+    merged_df = join_dfs(input_df_cleaned, sam_df_cleaned)
+    results = find_matches(merged_df)
+
+    best_matches = results.sort_values('overall_score', ascending=False).groupby('input_company').head(1)
+
+    merge_final_output(input_df , best_matches, output_path)
+    logging.info("Matching complete. Results saved to matched_results.csv in cleaned_output folder")
+
+def parse_args(arglist) -> ArgumentParser:
+    """
+    Parses command line arguments.
+    Arguments:
+        arglist : (list) List of command line arguments.
+    Returns:
+        Namespace : Parsed command lin∂e arguments.
+    """
     parser = ArgumentParser()
-    parser.add_argument("--masterlist-path", "-m", required=False, help="Path to I-Corps Masterlist")
-    parser.add_argument("--sam_data_path", "-s", required=True, help="Path to output data from SAM.gov")
+    parser.add_argument("--input_path", "-i", required=True, help="Path to original input data")
+    parser.add_argument("--data_path", "-d", required=True, help="Path to scraped data from SAM.gov")
+    parser.add_argument("--output_path", "-o", required=True, help="Path to output folder")
+    parser.add_argument("--log_file", "-l", required=False, default="log/sam_log.txt", help = "Log File")
     return parser.parse_args(arglist)
 
 if __name__ == "__main__":
     args = parse_args(sys.argv[1:])
-    main(args.masterlist path, args.sam_data_path)
+    logging.basicConfig(filename=f'{args.output_path}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+    main(args.input_path, args.data_path, args.output_path)
+
+
