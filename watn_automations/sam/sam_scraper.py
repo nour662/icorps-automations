@@ -9,25 +9,14 @@ import math, pandas as pd, sys, pickle, logging
 from argparse import ArgumentParser
 import re
 
-"""
-SAM.gov Scraper
-This script automates the process of scraping data from the SAM.gov website using Selenium.
-It searches for company names, collects URLs from the search results, and scrapes relevant data from each URL.
-"""
-
 def search_keyword(driver, keyword) -> list:
-    """
-    Searches for a keyword in the SAM.gov search bar and returns the first 10 URLs found.
-    It waits for the search bar and submit button to be clickable, enters the keyword, and clicks the submit button.
-    If the search is successful, it collects the URLs of the first 10 results.
-    If any error occurs during the process, it logs the error and returns an empty list.
+    """Search for a keyword on the SAM website and return the first 10 links found.
 
     Arguments:
-        driver: selenium webdriver
-        keyword: str, the keyword to search for
-
+        driver (webdriver): The Selenium WebDriver instance.
+        keyword (str): The keyword to search for.
     Returns:
-        list: a list of URLs found in the search results
+        list: A list of URLs found in the search results.
     """
     try:
         search_bar = WebDriverWait(driver, 10).until(
@@ -47,7 +36,7 @@ def search_keyword(driver, keyword) -> list:
             )
             logging.info(f"No matches found for {keyword}")
             return []
-        except Exception as e:
+        except:
             pass  
 
         links = WebDriverWait(driver, 5).until(
@@ -61,21 +50,17 @@ def search_keyword(driver, keyword) -> list:
         return []
 
 def scrape_links(driver, keyword, url) -> dict:
-    """
-    Scrapes the details from the given URL and returns a dictionary with the scraped data.
-    This function waits for the page to load, then extracts various details such as legal name, UEI, CAGE, addresses, etc.
-    It uses XPath to locate the elements on the page and handles exceptions if any element is not found.
+    """Scrape data from a given URL on the SAM website.
 
     Arguments:
-        driver: selenium webdriver
-        keyword: str, the keyword used for the search
-        url: str, the URL to scrape data from
-
+        driver (webdriver): The Selenium WebDriver instance.
+        keyword (str): The keyword used for the search.
+        url (str): The URL to scrape data from.
     Returns:
-        dict: a dictionary containing the scraped data
+        dict: A dictionary containing the scraped data.
     """
-
     try:
+        logging.info(f"Scraping URL: {url}")
         driver.get(url)
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '//span[@class="sds-navbar__title"]')))
@@ -83,20 +68,20 @@ def scrape_links(driver, keyword, url) -> dict:
         def safe_find(xpath):
             try:
                 return driver.find_element(By.XPATH, xpath).text
-            except Exception:
+            except:
                 return None
 
         def safe_find_attr(xpath, attr):
             try:
-                element = driver.find_elements(By.XPATH, xpath).get_attribute(attr)
-                return element
-            except Exception:
+                return driver.find_element(By.XPATH, xpath).get_attribute(attr)
+            except:
                 return None
+
         def safe_find_contacts(xpath, attr):
             try:
                 elements = driver.find_elements(By.XPATH, xpath)
                 return [element.get_attribute(attr) for element in elements]
-            except Exception:
+            except:
                 return []
 
         def extract_names(contact_texts):
@@ -108,11 +93,8 @@ def scrape_links(driver, keyword, url) -> dict:
                 try:
                     match = re.match(pattern, text.strip())
                     if match:
-                        first_name = match.group(1)
-                        last_name = match.group(3)
-                        full_name = f"{first_name.title()} {last_name.title()}" if first_name and last_name else None
-                        if full_name:
-                            extracted_names.append(full_name)
+                        full_name = f"{match.group(1).title()} {match.group(3).title()}"
+                        extracted_names.append(full_name)
                 except Exception as e:
                     logging.error(f"Error extracting names from text '{text}': {e}")
             return list(set(extracted_names))
@@ -135,7 +117,7 @@ def scrape_links(driver, keyword, url) -> dict:
         result1 = ','.join(physical_address_lines) if physical_address_lines else None
         result2 = ','.join(mailing_address_lines) if mailing_address_lines else None
 
-        logging.info(f"Scraped data for {keyword}: {legal_name}, {num_uei}, {cage}, {physical_address}, {mailing_address}, {entity_url}")
+        logging.info(f"Scraped data for {keyword}: {legal_name}, {num_uei}, {cage}, {result1}, {result2}, {entity_url}")
 
         return {
             "keyword": keyword,
@@ -156,28 +138,24 @@ def scrape_links(driver, keyword, url) -> dict:
         return None
 
 def process_batch(driver, input_list, start, end) -> list:
-    """
-    Processes a batch of input names, searches for each name, and scrapes the details from the search results.
-    This function takes a list of names, divides it into batches, and for each name in the batch, it performs a search and scrapes the details from the resulting URLs.
-    It returns a list of dictionaries containing the scraped data.
+    """Process a batch of company names, search for them, and scrape data from the results.
 
     Arguments:
-        driver: selenium webdriver
-        input_list: list of names to search for
-        start: int, starting index for the batch
-        end: int, ending index for the batch
+        driver (webdriver): The Selenium WebDriver instance.
+        input_list (list): The list of company names to process.
+        start (int): The starting index for the batch.
+        end (int): The ending index for the batch.
 
     Returns:
-        list: a list of dictionaries containing the scraped data
+        list: A list of dictionaries containing the scraped data for each company.
     """
-
     links = {}
     batch_input = input_list[start:end]
 
     for name in batch_input:
         name = str(name)
-        search_input = name.lower().strip()
-        search_input = search_input.replace(".", "").replace(",", "").replace("inc", "").replace("llc", "").replace("corp", "").replace("ltd", "").replace("limited", "").replace("pty", "")
+        search_input = re.sub(r"\b(inc|llc|corp|ltd|limited|pty)\b", "", name.lower().strip())
+        search_input = search_input.replace(".", "").replace(",", "")
         result_links = search_keyword(driver, search_input)
         links[name] = result_links
 
@@ -191,18 +169,14 @@ def process_batch(driver, input_list, start, end) -> list:
     return links_data
 
 def select_filters(driver) -> None:
-    """
-    Selects filters on the SAM.gov website to narrow down the search results.
-    This function waits for the search button and entity domain to be clickable, then clicks them.
-    It also selects the inactive checkbox to include inactive companies in the search results.
-    If any error occurs during the process, it logs the error and quits the driver.
+    """Select filters on the SAM website to narrow down search results.
 
     Arguments:
-        driver: selenium webdriver
+        driver (webdriver): The Selenium WebDriver instance.
     """
     try:
-        search_button = WebDriverWait(driver , 10).until(
-            EC.element_to_be_clickable((By.XPATH , '//a[@id = "search"]'))
+        search_button = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, '//a[@id = "search"]'))
         )
         search_button.click()
 
@@ -214,73 +188,60 @@ def select_filters(driver) -> None:
         inactive_checkbox = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '//label[@class="usa-checkbox__label"]'))
         )
-
         inactive_checkbox.click()
         
     except Exception as e:
         logging.error(f"Error selecting filters: {e}")
         driver.quit()
 
-def load_cookies(driver, input_path)-> None:
-    """
-    Loads cookies from a specified file and adds them to the Selenium WebDriver.
-    This function uses the pickle module to load the cookies from a binary file and adds each cookie to the driver.
+def load_cookies(driver, input_path) -> None:
+    """Load cookies from a file and add them to the Selenium WebDriver.
 
     Arguments:
-        driver: selenium webdriver
-        input_path: str, path to the file containing the cookies
+        driver (webdriver): The Selenium WebDriver instance.
+        input_path (str): The path to the file containing the cookies.
     """
     with open(input_path, "rb") as file:
         cookies = pickle.load(file)
         for cookie in cookies:
             driver.add_cookie(cookie)
-    logging.info(f"Cookies loaded from {input_path}") 
+    logging.info(f"Cookies loaded from {input_path}")
 
-def clean_input_list(input_list) -> list:
-    """
-    Cleans the input list by removing duplicates and filtering out inactive companies.
-    It reads the input file, checks for specific columns, and filters the data accordingly.
+def clean_input_list(input_file) -> list:
+    """Clean the input list by removing duplicates and filtering based on conditions.
 
     Arguments:
-        input_list: str, path to the input file containing company names
+        input_file (str): The path to the input CSV file.
     Returns:
-        list: a cleaned list of company names
+        list: A cleaned list of company names.
     """
-    df = pd.read_csv(input_list) 
-
+    df = pd.read_csv(input_file) 
     if 'Entrepreneur Stage' in df.columns:
         df = df[(df['Entrepreneur Stage'] != 'Inactive')]
     elif 'UEI' in df.columns:
         df = df[(df['UEI'] == '')]
+    return df["Company"].drop_duplicates().tolist()
 
-    input_list = df["Company"].drop_duplicates().tolist()
-
-    return input_list 
-
-def main(input_file, starting_batch, output_path) -> None:
-    """
-    Main function to execute the SAM.gov scraper.
-    It initializes the Selenium WebDriver, loads cookies, selects filters, and processes the input list in batches.
-    It saves the scraped data to CSV files in the specified output path.
+def main(input_file, starting_batch, output_path, headless=False) -> None:
+    """Main function to initialize the WebDriver, process batches of company names, and save results.
 
     Arguments:
-        input_file: str, path to the input file containing company names
-        starting_batch: int, batch number to start processing from
-        output_path: str, path to save the output CSV files
+        input_file (str): The path to the input CSV file.
+        starting_batch (int): The starting batch number for processing.
+        output_path (str): The path to save the output files.
+        headless (bool): Whether to run the browser in headless mode.
     """
-
     starting_batch = int(starting_batch)
-    
     input_list = clean_input_list(input_file)
-    
+
     chrome_options = Options()
-    chrome_options.add_argument('--headless')
+    if str(headless).lower() == "true":
+        chrome_options.add_argument('--headless')
     chrome_options.add_argument('--remote-debugging-port=9222')
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
 
     try:
         driver.get("https://sam.gov/")
-        
         load_cookies(driver, "sam/cookies.pkl")
         select_filters(driver)
 
@@ -295,39 +256,35 @@ def main(input_file, starting_batch, output_path) -> None:
             batch_data = process_batch(driver, input_list, start_idx, end_idx)
 
             output_df = pd.DataFrame(batch_data)
-
             output_filename = f"{output_path}/sam_batches/batch_{i+1}.csv"
             output_df.to_csv(output_filename, index=False)
             logging.info(f"Batch {i+1} completed and saved to {output_filename}")
             
-            #reset to homepage for new batch
             driver.get("https://sam.gov/")
             select_filters(driver)
-            
 
     finally:
         driver.quit()
-        logging.info("Driver quit and process finished.") 
+        logging.info("Driver quit and process finished.")
 
 def parse_args(arglist):
-    """
-    Parses command line arguments using argparse.
-    It defines the expected arguments and their types, and returns the parsed arguments.
+    """Parse command line arguments.
 
     Arguments:
-        arglist: list of command line arguments
+        arglist (list): List of command line arguments.
     Returns:
-        Namespace: parsed arguments
+        Namespace: Parsed arguments.
     """
     parser = ArgumentParser()
-    parser.add_argument("--starting_batch", "-s", required=False, default = 0, help="Starting Batch")
+    parser.add_argument("--starting_batch", "-s", required=False, default=0, help="Starting Batch")
     parser.add_argument("--input_file", "-i", required=True, help="Input File")
-    parser.add_argument("--output_path", "-o", required=True, help = "Output Path")
-    parser.add_argument("--log_file", "-l", required=False, default="log/sam_log.txt", help = "Log File")
-   
+    parser.add_argument("--output_path", "-o", required=True, help="Output Path")
+    parser.add_argument("--headless", "-hd", required=False, default=True, help="Headless Mode")
+    parser.add_argument("--log_file", "-l", required=False, default="log/sam_log.txt", help="Log File")
     return parser.parse_args(arglist)
 
 if __name__ == "__main__":
     args = parse_args(sys.argv[1:])
     logging.basicConfig(filename=f'{args.output_path}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-    main(args.input_file, args.starting_batch, args.output_path)
+    main(args.input_file, args.starting_batch, args.output_path, headless=args.headless)
+    logging.info("Script started.")

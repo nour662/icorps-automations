@@ -6,7 +6,15 @@ import argparse
 from math import ceil
 
 
-def get_company_info(uei):
+def get_company_info(uei) -> dict:
+    """
+    Fetch company information from the SBIR API using the UEI.
+
+    Arugments:
+        uei : str : Unique Entity Identifier (UEI) of the company.
+    Returns:
+        ict : Company information including UEI, name, address, website, and SBIR profile link.
+    """
     url = f"https://api.www.sbir.gov/public/api/firm?keyword={uei}"
     response = requests.get(url)
 
@@ -28,7 +36,15 @@ def get_company_info(uei):
         logging.error(f"Failed to retrieve company info for UEI {uei}: {response.status_code}")
     return None
 
-def get_award_info(company_name):
+def get_award_info(company_name) -> list:
+    """
+    Fetch award information from the SBIR API using the company name.
+    
+    Arguments:
+        company_name : str : Name of the company.
+    Returns:
+        list : List of awards associated with the company.
+    """
     url = f"https://api.www.sbir.gov/public/api/awards?firm={company_name}"
     response = requests.get(url)
 
@@ -38,7 +54,17 @@ def get_award_info(company_name):
         logging.error(f"Failed to retrieve award info for {company_name}: {response.status_code}")
     return []
 
-def process_batch(uei_batch, batch_number, company_output_dir, awards_output_dir):
+def process_batch(uei_batch, batch_number, company_output_dir, awards_output_dir)-> None:
+    """
+    Process a batch of UEIs to fetch company and award information.
+
+    Arguments:
+        uei_batch : list : List of UEIs to process.
+        batch_number : int : Current batch number.
+        company_output_dir : str : Directory to save company information CSV.
+        awards_output_dir : str : Directory to save award information CSV.
+    """
+    logging.info(f"Processing batch {batch_number} with {len(uei_batch)} UEIs")
     company_info_df = pd.DataFrame(columns=[
         "UEI", "Name", "Street Address", "City", "State", "Zip Code", "Website", "SBIR Profile Link"
     ])
@@ -66,7 +92,15 @@ def process_batch(uei_batch, batch_number, company_output_dir, awards_output_dir
     else:
         logging.warning(f"No award data found in batch {batch_number}")
 
-def process_batches(uei_list, output_path, batch_size):
+def process_batches(uei_list, output_path, batch_size) -> None:
+    """
+    Process the list of UEIs in batches.
+
+    Arguments:
+        uei_list : list : List of UEIs to process.
+        output_path : str : Directory to save output folders.
+        batch_size : int : Number of UEIs to process per batch.
+    """
     os.makedirs(output_path, exist_ok=True)
 
     company_dir = os.path.join(output_path, "sbir_batches/sbir_company_info_batches")
@@ -83,13 +117,27 @@ def process_batches(uei_list, output_path, batch_size):
         logging.info(f"Processing batch {batch_num + 1} with {len(uei_batch)} UEIs")
         process_batch(uei_batch, batch_num + 1, company_dir, awards_dir)
 
-def main(input_file, output_path, batch_size):
+def main(input_file, output_path, batch_size) -> None:
+    """
+    Main function to set up logging, read input file, and process batches.
+
+    Arguments:
+        input_file : str : Path to input CSV file with UEIs.
+        output_path : str : Directory to store output folders.
+        batch_size : int : Number of UEIs to process per batch.
+    """
     logging.basicConfig(filename=f'{output_path}/log/sbir_log.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
     df = pd.read_csv(input_file)
     uei_list = df['UEI'].dropna().tolist()
     process_batches(uei_list, output_path, batch_size)
 
 def parse_arguments():
+    """
+    Parse command line arguments.
+
+    Returns:
+        argparse.Namespace : Parsed command line arguments.
+    """
     parser = argparse.ArgumentParser(description="SBIR API Scraper Script (Batch Mode)")
     parser.add_argument("--input_file", "-i", type=str, required=True, help="Path to input CSV file with UEIs.")
     parser.add_argument("--output_path", "-o", type=str, required=True, help="Directory to store output folders.")

@@ -1,0 +1,23 @@
+'Account Name': Original company name on file.
+'Legal Name': Legal Name from either (1) Sam[legal_name]  or (2) Pitchbook[legalName]
+'Wesbite': Company Website from either (1) Sam[entity_url] or (2) Pitcbook[companyWebsite] or (3) SBIR[Website] 
+'Active': False if PB[businessStatus] = "Out of Business" else True 
+'Company Exists': Set True if company exisists in SAM or Pitchbook else False 
+'Incorporation Year': Incorporation Year from either (1) SAM[start_date].year() or Pitchook[yearFounded]
+'Street Address': 
+'City' 'State', 'Zip Code', 'Country', 'Incorporation Type', 
+'DUNS': From USAS[duns]
+'Incorporation Date': From SAM[start_date]
+'Description': From Pitcbook[description]
+'Industry': From Pitchbook[primaryIndustrySector]
+'Revenue': From Pitchbook[revenue]
+'Incorporation Type': Based on Legal Name. 2 Value Options : "Corporation" or "Limited Liability Company (LLC)" 
+'Merged': False if Pitchbook[acquirers] is null else True 
+'Merger Additional Info': Pitchbook[acquirers]
+
+'Legislative District': (1) SAM[congressional_district] or 
+'Incorporation State': SAM[state_country_incorporation].split
+'Incorporation Country': SAM[state_country_incorporation].split
+'Employees': Employee highest number from Pitchbook[employees] 
+
+        

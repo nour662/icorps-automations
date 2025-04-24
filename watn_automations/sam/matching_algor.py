@@ -172,14 +172,13 @@ def find_matches(merged_df, threshold=80) -> pd.DataFrame:
 
     return pd.DataFrame(results)
 
-def merge_final_output(input_df, results_df, output_path) -> None:
+def merge_final_output(input_df, results_df, input_path) -> None:
     """
     Merges the final output with UEIs and saves the result to a CSV file.
 
     Arguments:
         input_df : (DataFrame) The original input DataFrame.
         results_df : (DataFrame) The DataFrame containing matched results.
-        output_path : (str) The path to save the final output CSV file.
     """
     logging.info("Merging final output with UEIs…")
 
@@ -202,19 +201,17 @@ def merge_final_output(input_df, results_df, output_path) -> None:
     merged.drop(columns=drop_cols, inplace=True)
 
 
-    output_file = f"{output_path}/post_sam_matching.csv"
     
-    merged.to_csv(output_file, index=False)
-    logging.info(f"Final merged output saved to {output_file}")
+    merged.to_csv(input_path, index=False)
+    logging.info(f"Final merged output saved to {input_path}")
 
-def main(input_path, data_path, output_path) -> None:
+def main(input_path, data_path) -> None:
     """
     Main function to execute the matching algorithm.
 
     Arguments:
         input_path : (str) Path to the original input data.
         data_path : (str) Path to the scraped data from SAM.gov.
-        output_path : (str) Path to the output folder.
     """
 
     logging.info("Starting matching process...")
@@ -234,7 +231,7 @@ def main(input_path, data_path, output_path) -> None:
 
     best_matches = results.sort_values('overall_score', ascending=False).groupby('input_company').head(1)
 
-    merge_final_output(input_df , best_matches, output_path)
+    merge_final_output(input_df , best_matches, input_path)
     logging.info("Matching complete. Results saved to matched_results.csv in cleaned_output folder")
 
 def parse_args(arglist) -> ArgumentParser:
@@ -255,6 +252,6 @@ def parse_args(arglist) -> ArgumentParser:
 if __name__ == "__main__":
     args = parse_args(sys.argv[1:])
     logging.basicConfig(filename=f'{args.output_path}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-    main(args.input_path, args.data_path, args.output_path)
+    main(args.input_path, args.data_path)
 
 

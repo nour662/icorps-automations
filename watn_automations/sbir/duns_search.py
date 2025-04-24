@@ -6,14 +6,21 @@ import logging
 from argparse import ArgumentParser
 
 
-def get_firm_info_by_duns(duns_number):
+def get_firm_info_by_duns(duns_number) -> dict:
+    """
+    Fetch firm information from the SBIR API using DUNS number.
+
+    Arguments:
+        duns_number : str : DUNS number of the firm
+    Returns:
+        dict : Firm information if found, else None
+    """
     BASE_URL = "https://api.www.sbir.gov/public/api/firm"
 
     if not duns_number: 
         return None
     
     params = {'duns': duns_number}
-    
     
     response = requests.get(BASE_URL, params=params)
     
@@ -23,6 +30,13 @@ def get_firm_info_by_duns(duns_number):
     return None
 
 def main(input_file, output_path):
+    """
+    Main function to process the input file and update DUNS numbers with UEI.
+    
+    Arguments:
+        input_file : str : Path to the input CSV file
+        output_path : str : Path to save the output file
+    """
     logging.basicConfig(
         filename=f'{output_path}/log/duns_search_log.txt',
         level=logging.DEBUG,
@@ -59,8 +73,13 @@ def main(input_file, output_path):
     df_original.to_csv(input_file, index=False)
     logging.info(f"Data updated in original file: {input_file}")
 
-
 def parse_arguments():
+    """
+    Parse command line arguments.
+
+    Returns:
+        Namespace : Parsed arguments
+    """
     parser = ArgumentParser(description="Process DUNS numbers and fetch firm data.")
     parser.add_argument('--input_file', '-i', type=str, help='Input CSV file with DUNS numbers')
     parser.add_argument('--output_path', '-o', type=str, help='Output path file to save results')

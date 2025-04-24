@@ -6,7 +6,6 @@ import os
 
 def main(path, source, output_path): 
 
-
     all_files = glob.glob(f'{path}/{source}_batches/*.csv')
     df_list = []
 
@@ -18,7 +17,18 @@ def main(path, source, output_path):
             print(f"Error reading {file}: {e}")
 
     merged_df = pd.concat(df_list, ignore_index= True)
-    merged_df.to_csv(f'{output_path}/uncleaned_outputs/{source}_uncleaned.csv', index=False)
+    
+    sub_folder = "company_info" if source == "sam" or "company_info" in source else "funding"
+    
+
+    filepath = f'{output_path}/uncleaned_outputs/{sub_folder}'
+
+    if not os.path.exists(filepath): 
+        os.makedirs(filepath)
+
+    substring = "_".join(source.split("_")[:2]) if source.startswith("usas") and source != "usas_company_info" else source.split("_")[0]
+
+    merged_df.to_csv(f'{filepath}/{substring}_uncleaned.csv', index=False)
     
     os.system(f"rm -R {path}/{source}_batches/")
 
