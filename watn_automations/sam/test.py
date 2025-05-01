@@ -53,17 +53,16 @@ def match_contacts(sam_contacts, input_contacts) -> tuple:
 
     return [best_match] if best_match else [], highest_score
 
-def website_is_present(series):
-    existing_websites = series.dropna()
-    existing_websites = existing_websites[existing_websites != ""]
-    if not existing_websites.empty:
-        return existing_websites.iloc[0]
-    return None
-
+def website_is_present(df):
+    if 'Website' not in df.columns:
+        return None
+    else:
+        return df["Website"]
+    
 def clean_input(df) -> pd.DataFrame:
     """
     Cleans the input DataFrame by combining first and last names into a single column.
-    Also groups by company name and aggregates contacts.
+    Also groups by company name website and aggregates contacts.
 
     Arguments:
         df : (DataFrame) The input DataFrame to be cleaned.
@@ -75,17 +74,16 @@ def clean_input(df) -> pd.DataFrame:
         if {"First Name", "Last Name"}.issubset(df.columns):
             df["Name"] = df["First Name"].fillna('') + " " + df["Last Name"].fillna('')
             df.drop(columns=["First Name", "Last Name"], inplace=True)
-        
-        if df["Website"].issubset(df.columns):
-            grouped = (
-                df.groupby("Company")
-                .agg({
-                    "Name": lambda x: list(set(x)),
-                    "Website": lambda x: website_is_present(x)})
-                .reset_index()
-            )
             
-            grouped = grouped.rename(columns={"Company": "input_company", "Name": "input_contacts"})
+        grouped = (
+            df.groupby("Company")
+            .agg({
+                "Name": lambda x: list(set(x)),
+                "Website": lambda x: website_is_present(x)})
+            .reset_index()
+        )
+            
+        grouped = grouped.rename(columns={"Company": "input_company", "Name": "input_contacts", "Website": "input_website"})
         return grouped
     except Exception as e:
         logging.error(f"Error in cleaning input data: {e}")
@@ -154,20 +152,31 @@ def find_matches(merged_df, threshold=80) -> pd.DataFrame:
 
     for _, row in merged_df.iterrows():
         input_company = row.get("input_company", "")
+        print(input_company)
         sam_company = row.get("sam_company", "")
         input_contacts = row.get("input_contacts", [])
         sam_contacts = row.get("sam_contacts", [])
+        input_website = row.get("input_website", "")
+        print("input website: ", input_website)
+        sam_entity_url = row.get("sam_entity_url", "")
+        print("Sam entity url: ", sam_entity_url)
         
-
+        
         input_company = clean_company_name(input_company)
         sam_company = clean_company_name(sam_company)
 
         company_score = fuzz.ratio(input_company, sam_company)
-
+        
+        if input_website == None:
+            website_score = 0
+        else: 
+            website_score = fuzz.ratio(input_website, sam_entity_url)
+        
         
 
         matched_contacts, contact_score = match_contacts(sam_contacts, input_contacts)
-        overall_score = round((0.7 * company_score + 0.3 * contact_score), 2)
+        overall_score = round((0.65 * company_score + 0.25 * website_score + 0.1 * contact_score), 2)
+        print(overall_score)
         if overall_score < threshold:
             continue
         
@@ -179,6 +188,9 @@ def find_matches(merged_df, threshold=80) -> pd.DataFrame:
             "company_score": company_score,
             "matched_contacts": matched_contacts,
             "contact_score": round(contact_score, 2),
+            "input_website": input_website,
+            "sam_entity_url": sam_entity_url,
+            "website_score": website_score,
             "overall_score": overall_score
         })
 
@@ -219,7 +231,7 @@ def merge_final_output(input_df, results_df, output_path) -> None:
     merged.to_csv(output_file, index=False)
     logging.info(f"Final merged output saved to {output_file}")
 
-def main(input_path, data_path, output_path) -> None:
+def main() -> None:
     """
     Main function to execute the matching algorithm.
 
@@ -231,8 +243,8 @@ def main(input_path, data_path, output_path) -> None:
 
     logging.info("Starting matching process...")
 
-    input_df = pd.read_csv(input_path)
-    sam_df = pd.read_csv(data_path)
+    input_df = pd.read_csv("watn_automations\sam\sample_input.csv")
+    sam_df = pd.read_csv("watn_automations\sam\sampl_sam.csv")
 
     if input_df.empty:
         logging.error("Input file is empty. Please check the file.")
@@ -246,27 +258,26 @@ def main(input_path, data_path, output_path) -> None:
 
     best_matches = results.sort_values('overall_score', ascending=False).groupby('input_company').head(1)
 
-    merge_final_output(input_df , best_matches, output_path)
-    logging.info("Matching complete. Results saved to matched_results.csv in cleaned_output folder")
+    # merge_final_output(input_df , best_matches, output_path)
+    # logging.info("Matching complete. Results saved to matched_results.csv in cleaned_output folder")
 
-def parse_args(arglist) -> ArgumentParser:
-    """
-    Parses command line arguments.
-    Arguments:
-        arglist : (list) List of command line arguments.
-    Returns:
-        Namespace : Parsed command lin∂e arguments.
-    """
-    parser = ArgumentParser()
-    parser.add_argument("--input_path", "-i", required=True, help="Path to original input data")
-    parser.add_argument("--data_path", "-d", required=True, help="Path to scraped data from SAM.gov")
-    parser.add_argument("--output_path", "-o", required=True, help="Path to output folder")
-    parser.add_argument("--log_file", "-l", required=False, default="log/sam_log.txt", help = "Log File")
-    return parser.parse_args(arglist)
+# def parse_args(arglist) -> ArgumentParser:
+#     """
+#     Parses command line arguments.
+#     Arguments:
+#         arglist : (list) List of command line arguments.
+#     Returns:
+#         Namespace : Parsed command lin∂e arguments.
+#     """
+#     parser = ArgumentParser()
+#     parser.add_argument("--input_path", "-i", required=True, help="Path to original input data")
+#     parser.add_argument("--data_path", "-d", required=True, help="Path to scraped data from SAM.gov")
+#     parser.add_argument("--output_path", "-o", required=True, help="Path to output folder")
+#     parser.add_argument("--log_file", "-l", required=False, default="log/sam_log.txt", help = "Log File")
+#     return parser.parse_args(arglist)
 
 if __name__ == "__main__":
-    args = parse_args(sys.argv[1:])
-    # logging.basicConfig(filename= "log.txt", level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-    main(args.input_path, args.data_path, args.output_path)
+    logging.basicConfig(filename= "log.txt", level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+    main()
 
 
