@@ -5,6 +5,8 @@ import logging
 from argparse import ArgumentParser
 import sys
 
+# 60: company 30:website  10:contacts split
+# 62: company 25:website  10:contacts split
 def clean_company_name(name) -> str:
     """
     Cleans the company name by removing special characters and standardizing common terms.
@@ -50,6 +52,13 @@ def match_contacts(sam_contacts, input_contacts) -> tuple:
                 best_match = sam_contact
 
     return [best_match] if best_match else [], highest_score
+
+def website_is_present(series):
+    existing_websites = series.dropna()
+    existing_websites = existing_websites[existing_websites != ""]
+    if not existing_websites.empty:
+        return existing_websites.iloc[0]
+    return None
 
 def clean_input(df) -> pd.DataFrame:
     """
@@ -166,7 +175,6 @@ def find_matches(merged_df, threshold=80) -> pd.DataFrame:
 
         matched_contacts, contact_score = match_contacts(sam_contacts, input_contacts)
         overall_score = round((0.7 * company_score + 0.3 * contact_score), 2)
-
         if overall_score < threshold:
             continue
         
@@ -183,13 +191,14 @@ def find_matches(merged_df, threshold=80) -> pd.DataFrame:
 
     return pd.DataFrame(results)
 
-def merge_final_output(input_df, results_df, input_path) -> None:
+def merge_final_output(input_df, results_df, output_path) -> None:
     """
     Merges the final output with UEIs and saves the result to a CSV file.
 
     Arguments:
         input_df : (DataFrame) The original input DataFrame.
         results_df : (DataFrame) The DataFrame containing matched results.
+        output_path : (str) The path to save the final output CSV file.
     """
     logging.info("Merging final output with UEIs…")
 
@@ -212,17 +221,19 @@ def merge_final_output(input_df, results_df, input_path) -> None:
     merged.drop(columns=drop_cols, inplace=True)
 
 
+    output_file = f"{output_path}/post_sam_matching.csv"
     
-    merged.to_csv(input_path, index=False)
-    logging.info(f"Final merged output saved to {input_path}")
+    merged.to_csv(output_file, index=False)
+    logging.info(f"Final merged output saved to {output_file}")
 
-def main(input_path, data_path) -> None:
+def main(input_path, data_path, output_path) -> None:
     """
     Main function to execute the matching algorithm.
 
     Arguments:
         input_path : (str) Path to the original input data.
         data_path : (str) Path to the scraped data from SAM.gov.
+        output_path : (str) Path to the output folder.
     """
 
     logging.info("Starting matching process...")
@@ -242,7 +253,7 @@ def main(input_path, data_path) -> None:
 
     best_matches = results.sort_values('overall_score', ascending=False).groupby('input_company').head(1)
 
-    merge_final_output(input_df , best_matches, input_path)
+    merge_final_output(input_df , best_matches, output_path)
     logging.info("Matching complete. Results saved to matched_results.csv in cleaned_output folder")
 
 def parse_args(arglist) -> ArgumentParser:

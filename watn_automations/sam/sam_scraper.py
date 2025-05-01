@@ -104,7 +104,7 @@ def scrape_links(driver, keyword, url) -> dict:
         cage = safe_find('(//span[@class="wrap font-sans-md tablet:font-sans-lg h2"])[2]')
         physical_address = safe_find('//ul[@class="sds-list sds-list--unstyled margin-top-1"]')
         mailing_address = safe_find('(//ul[@class="sds-list sds-list--unstyled"])[2]')
-        entity_url = safe_find_attr('//a[@class="usa-link"]', 'href')
+        entity_url = safe_find_attr('//a[@class="usa-link"]/@href')
         start_date = safe_find('//span[contains(text(), "Entity Start Date")]/following-sibling::span')
         contacts_texts = safe_find_contacts('//div[@class="sds-card__body padding-2"]//child::h3', 'textContent')
         contacts = extract_names(contacts_texts)
