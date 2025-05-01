@@ -103,10 +103,11 @@ def clean_sam(df) -> pd.DataFrame:
     """
 
     logging.info("Cleaning SAM dataset...")
-    df = df.rename(columns={"legal_name": "sam_company", "contacts": "sam_contacts"})
+    df = df.rename(columns={"legal_name": "sam_company", "contacts": "sam_contacts" , "entity_url": "sam_url"})
     df["sam_contacts"] = df["sam_contacts"].apply(
         lambda x: eval(x) if isinstance(x, str) else ([] if pd.isna(x) else x)
     )
+
     return df
 
 def join_dfs(input_df, sam_df) -> pd.DataFrame:
@@ -134,7 +135,12 @@ def join_dfs(input_df, sam_df) -> pd.DataFrame:
         suffixes=("_input", "_sam")
     )
 
+    cols = [col for col in merged_df.columns if col.startswith("input") or col.startswith("sam")]
+    drop_cols = [col for col in merged_df.columns if col not in cols]
+
+    merged_df = merged_df.drop(columns=drop_cols, errors='ignore') 
     merged_df = merged_df.dropna(subset=["input_company", "sam_company"])
+
     return merged_df
 
 def find_matches(merged_df, threshold=80) -> pd.DataFrame:
@@ -157,14 +163,14 @@ def find_matches(merged_df, threshold=80) -> pd.DataFrame:
         sam_company = row.get("sam_company", "")
         input_contacts = row.get("input_contacts", [])
         sam_contacts = row.get("sam_contacts", [])
+        sam_url = row.get("sam_url", "") 
+        input_url = row.get("input_url", "")
         
 
         input_company = clean_company_name(input_company)
         sam_company = clean_company_name(sam_company)
 
         company_score = fuzz.ratio(input_company, sam_company)
-
-        
 
         matched_contacts, contact_score = match_contacts(sam_contacts, input_contacts)
         overall_score = round((0.7 * company_score + 0.3 * contact_score), 2)
