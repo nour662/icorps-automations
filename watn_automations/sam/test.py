@@ -52,12 +52,6 @@ def match_contacts(sam_contacts, input_contacts) -> tuple:
                 best_match = sam_contact
 
     return [best_match] if best_match else [], highest_score
-
-def website_is_present(df):
-    if 'Website' not in df.columns:
-        return None
-    else:
-        return df["Website"]
     
 def clean_input(df) -> pd.DataFrame:
     """
@@ -79,7 +73,7 @@ def clean_input(df) -> pd.DataFrame:
             df.groupby("Company")
             .agg({
                 "Name": lambda x: list(set(x)),
-                "Website": lambda x: website_is_present(x)})
+                "Website": lambda x: x.iloc(0) if "Website" in df.columns else None})
             .reset_index()
         )
             
@@ -101,7 +95,7 @@ def clean_sam(df) -> pd.DataFrame:
     """
 
     logging.info("Cleaning SAM dataset...")
-    df = df.rename(columns={"legal_name": "sam_company", "contacts": "sam_contacts"})
+    df = df.rename(columns={"legal_name": "sam_company", "contacts": "sam_contacts", "entity_url": "sam_url"})
     df["sam_contacts"] = df["sam_contacts"].apply(
         lambda x: eval(x) if isinstance(x, str) else ([] if pd.isna(x) else x)
     )
@@ -158,8 +152,8 @@ def find_matches(merged_df, threshold=80) -> pd.DataFrame:
         sam_contacts = row.get("sam_contacts", [])
         input_website = row.get("input_website", "")
         print("input website: ", input_website)
-        sam_entity_url = row.get("sam_entity_url", "")
-        print("Sam entity url: ", sam_entity_url)
+        sam_entity_url = row.get("sam_url", "")
+        print("Sam url: ", sam_entity_url)
         
         
         input_company = clean_company_name(input_company)

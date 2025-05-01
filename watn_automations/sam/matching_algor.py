@@ -53,13 +53,6 @@ def match_contacts(sam_contacts, input_contacts) -> tuple:
 
     return [best_match] if best_match else [], highest_score
 
-def website_is_present(series):
-    existing_websites = series.dropna()
-    existing_websites = existing_websites[existing_websites != ""]
-    if not existing_websites.empty:
-        return existing_websites.iloc[0]
-    return None
-
 def clean_input(df) -> pd.DataFrame:
     """
     Cleans the input DataFrame by combining first and last names into a single column.
@@ -79,9 +72,7 @@ def clean_input(df) -> pd.DataFrame:
         if df["Website"].issubset(df.columns):
             grouped = (
                 df.groupby("Company")
-                .agg({
-                    "Name": lambda x: list(set(x)),
-                    "Website": lambda x: website_is_present(x)})
+                .agg({"Name": lambda x: list(set(x))})
                 .reset_index()
             )
             
