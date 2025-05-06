@@ -1,17 +1,21 @@
 import requests
 from lxml import html
-import openai
 import pandas as pd
-import csv
-from config import OPENAI_API_KEY
+import spacy
+import os
 
-openai.api_key = OPENAI_API_KEY
+# Load spaCy English NLP model
+nlp = spacy.load("en_core_web_sm")
+
+# Change this to resume from a specific page
+START_PAGE = 0
+OUTPUT_FILE = "relevant_articles.csv"
 
 def get_article_links(url):
     response = requests.get(url)
     tree = html.fromstring(response.content)
     article_urls = tree.xpath('//div[@class= "content"]//a/@href')
-    return article_urls
+    return ["https://www.tedcomd.com" + link for link in article_urls]
 
 def get_content(url):
     response = requests.get(url)
@@ -20,10 +24,7 @@ def get_content(url):
     release_date = tree.xpath('//div[@class="field field--name-field-release-date field--type-datetime field--label-hidden field--item"]/time/text()')
     article_content = ";".join(tree.xpath('//article//text()')).strip()
 
-    # Remove line breaks from the article content
     article_content = article_content.replace('\n', '')
-
-    # Cleaning up and formatting the article content
     lines = [line.strip() for line in article_content.split(';') if line.strip()]
     cleaned_content = ' '.join(lines)
 
@@ -38,58 +39,57 @@ def get_content(url):
         "related_funds": ', '.join(related_funds)
     }
 
-def check_relevance(article_content, companies_list):
-
-    prompt = f"Is the following article relevant to any of these companies or entrepreneurs: {', '.join(companies_list)}?\n\nArticle: {article_content}\n\nRespond with 'Yes' or 'No'."
-
-    # Call OpenAI API
-    response = openai.Completion.create(
-        engine="text-embedding-ada-002",
-        prompt=prompt,
-        max_tokens=5
-    )
-
-    return response.choices[0].text.strip().lower() == "yes"
+def extract_entities(text):
+    doc = nlp(text)
+    people = sorted(set(ent.text for ent in doc.ents if ent.label_ == "PERSON"))
+    orgs = sorted(set(ent.text for ent in doc.ents if ent.label_ == "ORG"))
+    return people, orgs
 
 def main():
-    companies_df = pd.read_csv('companies.csv')
-    companies_list = companies_df['Company Name'].tolist()
-    companies_list = [str(a) for a in companies_list]
+    page_number = START_PAGE
 
-    relevant_articles = []
-
-    page_number = 0
+    # Check if output file already exists to avoid duplicating headers
+    file_exists = os.path.isfile(OUTPUT_FILE)
 
     while True:
-        main_url = f"https://www.tedcomd.com/news-events/press-releases?page={page_number}"
-        response = requests.get(main_url)
+        url = f"https://www.tedcomd.com/news-events/press-releases?page={page_number}"
+        response = requests.get(url)
 
         if response.status_code != 200:
-            print(f"Bad request encountered for page {page_number}, stopping scraping.")
+            print(f"Finished scraping at page {page_number}")
             break
 
-        tree = html.fromstring(response.content)
-        article_links = tree.xpath('//div[@class= "content"]//a/@href')
-        article_links = [f"https://www.tedcomd.com{link}" for link in article_links]
+        article_links = get_article_links(url)
+        print(f"Found {len(article_links)} articles on page {page_number}")
+
+        if not article_links:
+            print("No more articles found.")
+            break
+
+        articles_data = []
 
         for link in article_links:
             data = get_content(link)
-            if data:
-                is_relevant = check_relevance(data["article_content"], companies_list)
-                if is_relevant:
-                    relevant_articles.append({
-                        'Title': data["title"],
-                        'Release Date': data["release_date"],
-                        'Related Companies': data["related_companies"],
-                        'Related Funds': data["related_funds"],
-                        'URL': link,
-                        'Content': data["article_content"]
-                    })
+            people, orgs = extract_entities(data["article_content"])
+
+            articles_data.append({
+                'Title': data["title"],
+                'Release Date': data["release_date"],
+                'URL': link,
+                'Related Companies': data["related_companies"],
+                'Related Funds': data["related_funds"],
+                'Content': data["article_content"],
+                'People Mentioned': ', '.join(people),
+                'Organizations Mentioned': ', '.join(orgs)
+            })
+
+        # Append to CSV file
+        df = pd.DataFrame(articles_data)
+        df.to_csv(OUTPUT_FILE, mode='a', header=not file_exists, index=False, encoding='utf-8')
+        file_exists = True  # Ensure only the first write includes headers
+        print(f"Appended page {page_number} to {OUTPUT_FILE}")
 
         page_number += 1
-
-    relevant_df = pd.DataFrame(relevant_articles)
-    relevant_df.to_csv('relevant_articles.csv', index=False, encoding='utf-8')
 
 if __name__ == "__main__":
     main()
