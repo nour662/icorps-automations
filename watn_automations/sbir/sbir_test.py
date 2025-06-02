@@ -10,10 +10,7 @@ AWARD_FIELDS = [
     "award_amount", "award_link"
 ]
 
-COMPANY_FIELDS = [
-    "Company Name", "duns", "uei", "hubzone_owned", "socially_economically_disadvantaged", "women_owned",
-    "number_employees", "company_url", "address1", "address2", "city", "state", "zip"
-]
+COMPANY_FIELDS = ["duns","number_employees"]
 
 def get_company_info(uei):
     url = f"https://api.www.sbir.gov/public/api/firm?keyword={uei}"
@@ -45,10 +42,13 @@ def get_award_info(company_name):
     return []
 
 def main():
-    input_file = "watn_automations\outputs\outputs_psu_incubator_companies_2025-05-01\inputs\psu_incubator_companies.csv"
+    input_file = "watn_automations\sam\sample_input.csv"
     output_path = "watn_automations\sbir\outputs"
-    os.makedirs(output_path, exist_ok=True)
-    os.makedirs(os.path.join(output_path, "log"), exist_ok=True)
+    
+    company_dir = os.path.join(output_path, "sbir_batches/sbir_company_info_batches")
+    awards_dir = os.path.join(output_path, "sbir_batches/sbir_awards_batches")
+    os.makedirs(company_dir, exist_ok=True)
+    os.makedirs(awards_dir, exist_ok=True)
 
     logging.basicConfig(
         filename=os.path.join(output_path, "log", "sbir_log.txt"),
@@ -71,7 +71,8 @@ def main():
             continue
 
         company_name = company_structured["Name"]
-        company_info_records.append(company_structured)
+        print(company_structured)
+        
 
         awards = get_award_info(company_name)
         for award in awards:
@@ -79,12 +80,14 @@ def main():
             core_record = {field: award.get(field, "") for field in AWARD_FIELDS}
             award_core_records.append(core_record)
 
-            company_record = {field: award.get(field, company_raw.get(field, "")) for field in AWARD_COMPANY_FIELDS}
-            award_company_records.append(company_record)
+            company_structured.update({field: award.get(field, company_raw.get(field, "")) for field in COMPANY_FIELDS})
+            print(company_structured)
+            
+        company_info_records.append(company_structured)
+        print(company_info_records)
 
     pd.DataFrame(company_info_records).to_csv(os.path.join(output_path, "sbir_company_info.csv"), index=False)
-    pd.DataFrame(award_core_records).to_csv(os.path.join(output_path, "sbir_award_core_fields.csv"), index=False)
-    pd.DataFrame(award_company_records).to_csv(os.path.join(output_path, "sbir_award_company_fields.csv"), index=False)
+    pd.DataFrame(award_core_records).to_csv(os.path.join(output_path, "sbir_funding_info.csv"), index=False)
 
 if __name__ == "__main__":
     main()
