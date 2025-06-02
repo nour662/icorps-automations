@@ -69,7 +69,7 @@ def filter_articles(companies_file, articles_file, start_date, end_date, thresho
 
 def main():
     # Input files
-    companies_file = 'test.csv'
+    companies_file = 'input.csv'
     articles_file = 'relevant_articles.csv'
 
     # Date range for filtering
