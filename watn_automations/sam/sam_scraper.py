@@ -104,7 +104,7 @@ def scrape_links(driver, keyword, url) -> dict:
         cage = safe_find('(//span[@class="wrap font-sans-md tablet:font-sans-lg h2"])[2]')
         physical_address = safe_find('//ul[@class="sds-list sds-list--unstyled margin-top-1"]')
         mailing_address = safe_find('(//ul[@class="sds-list sds-list--unstyled"])[2]')
-        entity_url = safe_find_attr('//a[@class="usa-link"]/@href')
+        entity_url = safe_find_attr('//a[@class="usa-link"]', 'href')
         start_date = safe_find('//span[contains(text(), "Entity Start Date")]/following-sibling::span')
         contacts_texts = safe_find_contacts('//div[@class="sds-card__body padding-2"]//child::h3', 'textContent')
         contacts = extract_names(contacts_texts)
@@ -152,20 +152,22 @@ def process_batch(driver, input_list, start, end) -> list:
     links = {}
     batch_input = input_list[start:end]
 
-    for name in batch_input:
-        name = str(name)
-        search_input = re.sub(r"\b(inc|llc|corp|ltd|limited|pty)\b", "", name.lower().strip())
-        search_input = search_input.replace(".", "").replace(",", "")
-        result_links = search_keyword(driver, search_input)
-        links[name] = result_links
-
+    for name, uei in batch_input:
+        if uei is not None:
+            result_links = search_keyword(driver, str(uei))
+            links[uei] = result_links
+        else: 
+            name = str(name)
+            search_input = re.sub(r"\b(inc|llc|corp|ltd|limited|pty)\b", "", name.lower().strip())
+            search_input = search_input.replace(".", "").replace(",", "")
+            result_links = search_keyword(driver, search_input)
+            links[name] = result_links
     links_data = []
     for keyword, urls in links.items():
         for url in urls:
             result = scrape_links(driver, keyword, url)
             if result:
                 links_data.append(result)
-
     return links_data
 
 def select_filters(driver) -> None:
@@ -215,12 +217,23 @@ def clean_input_list(input_file) -> list:
     Returns:
         list: A cleaned list of company names.
     """
+    #input_file = "C:\\Users\\Pineappleboss.MGP\\OneDrive\\Documents\\GitHub\\icorps-automations\\watn_automations\\sam\\sample_input.csv"
     df = pd.read_csv(input_file) 
     if 'Entrepreneur Stage' in df.columns:
         df = df[(df['Entrepreneur Stage'] != 'Inactive')]
-    elif 'UEI' in df.columns:
-        df = df[(df['UEI'] == '')]
-    return df["Company"].drop_duplicates().tolist()
+
+    input_list = []
+    company_list = df["Company"].tolist()
+        
+    if "UEI" not in df.columns:
+        uei_list = [None for i in range(len(company_list))]
+    else:
+        uei_list = df["UEI"].where(pd.notna(df["UEI"]), None).tolist()
+
+    for i in range(len(company_list)):
+        input_list.append((company_list[i], uei_list[i]))
+        
+    return list(set(input_list))
 
 def main(input_file, starting_batch, output_path, headless=False) -> None:
     """Main function to initialize the WebDriver, process batches of company names, and save results.
