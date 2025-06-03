@@ -162,12 +162,14 @@ def process_batch(driver, input_list, start, end) -> list:
             search_input = search_input.replace(".", "").replace(",", "")
             result_links = search_keyword(driver, search_input)
             links[name] = result_links
+    print(links)
     links_data = []
     for keyword, urls in links.items():
         for url in urls:
             result = scrape_links(driver, keyword, url)
             if result:
                 links_data.append(result)
+    print(links_data)
     return links_data
 
 def select_filters(driver) -> None:
@@ -231,7 +233,7 @@ def clean_input_list(input_file) -> list:
 
     for i in range(len(company_list)):
         input_list.append((company_list[i], uei_list[i]))
-        
+    
     return list(set(input_list))
 
 def main(input_file, starting_batch, output_path, headless=False) -> None:
