@@ -217,7 +217,6 @@ def clean_input_list(input_file) -> list:
     Returns:
         list: A cleaned list of company names.
     """
-    #input_file = "C:\\Users\\Pineappleboss.MGP\\OneDrive\\Documents\\GitHub\\icorps-automations\\watn_automations\\sam\\sample_input.csv"
     df = pd.read_csv(input_file) 
     if 'Entrepreneur Stage' in df.columns:
         df = df[(df['Entrepreneur Stage'] != 'Inactive')]

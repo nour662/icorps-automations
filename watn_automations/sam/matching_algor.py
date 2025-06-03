@@ -120,7 +120,7 @@ def join_dfs(input_df, sam_df) -> pd.DataFrame:
         logging.error("Required columns 'keyword' or 'input_company' are missing.")
         return pd.DataFrame()
 
-    merged_df = pd.merge(
+    merged_name = pd.merge(
         input_df,
         sam_df,
         left_on="input_company",
@@ -128,12 +128,31 @@ def join_dfs(input_df, sam_df) -> pd.DataFrame:
         how="outer",
         suffixes=("_input", "_sam")
     )
+    merged_name["match_type"] = "company"
 
-    cols = [col for col in merged_df.columns if col.startswith("input") or col.startswith("sam")]
-    drop_cols = [col for col in merged_df.columns if col not in cols]
+    if 'UEI' in input_df.columns and 'num_uei' in sam_df.columns:
+        merged_uei = pd.merge(
+            input_df,
+            sam_df,
+            left_on="UEI",
+            right_on="keyword",
+            how="outer",
+            suffixes=("_input", "_sam")
+        )
+        
+        merged_uei["match_type"] = "uei"
+        
+        merged_df = pd.concat([merged_name, merged_uei], ignore_index=True).drop_duplicates()
+    else:
+        merged_df = merged_name
 
-    merged_df = merged_df.drop(columns=drop_cols, errors='ignore') 
-    merged_df = merged_df.dropna(subset=["input_company", "sam_company"])
+    keep_cols = [
+        col for col in merged_df.columns
+        if col.startswith("input") or col.startswith("sam") or col in {"keyword", "num_uei", "match_type"}
+    ]
+    merged_df = merged_df[keep_cols]
+
+    merged_df = merged_df.dropna(subset=["input_company", "sam_company"], how="all")
 
     return merged_df
 
@@ -154,24 +173,22 @@ def find_matches(merged_df, threshold=80) -> pd.DataFrame:
 
     for _, row in merged_df.iterrows():
         input_company = row.get("input_company", "")
-        print(input_company)
         sam_company = row.get("sam_company", "")
         input_contacts = row.get("input_contacts", [])
         sam_contacts = row.get("sam_contacts", [])
         sam_url = row.get("sam_url", "") 
         input_url = row.get("input_url", "")
-        
 
         input_company = clean_company_name(input_company)
         sam_company = clean_company_name(sam_company)
 
         company_score = fuzz.ratio(input_company, sam_company)
         
-        website_score = fuzz.ratio(input_url, sam_url)
+        website_score = fuzz.ratio(str(input_url), str(sam_url))
 
         matched_contacts, contact_score = match_contacts(sam_contacts, input_contacts)
         overall_score = round((0.65 * company_score + 0.15 * website_score + 0.2 * contact_score), 2)
-        print(overall_score)
+
         if overall_score < threshold:
             continue
         
@@ -183,7 +200,8 @@ def find_matches(merged_df, threshold=80) -> pd.DataFrame:
             "company_score": company_score,
             "matched_contacts": matched_contacts,
             "contact_score": round(contact_score, 2),
-            "overall_score": overall_score
+            "overall_score": overall_score,
+            "match_type": row.get("match_type", "company")
         })
 
     return pd.DataFrame(results)
@@ -234,7 +252,7 @@ def main(input_path, data_path, output_path) -> None:
     """
 
     logging.info("Starting matching process...")
-
+    
     input_df = pd.read_csv(input_path)
     sam_df = pd.read_csv(data_path)
 
@@ -247,11 +265,13 @@ def main(input_path, data_path, output_path) -> None:
 
     merged_df = join_dfs(input_df_cleaned, sam_df_cleaned)
     results = find_matches(merged_df)
-
-    best_matches = results.sort_values('overall_score', ascending=False).groupby('input_company').head(1)
-
-    merge_final_output(input_df , best_matches, output_path)
-    logging.info("Matching complete. Results saved to matched_results.csv in cleaned_output folder")
+    
+    if not results.empty:
+        results['match_priority'] = results['match_type'].map({'uei': 0, 'company': 1})
+        best_matches = results.sort_values('overall_score', ascending=False).groupby('input_company').head(1)
+        merge_final_output(input_df, best_matches, output_path)
+    else:
+        logging.warning("No matches found with given threshold. Skipping final merge.")
 
 def parse_args(arglist) -> ArgumentParser:
     """
