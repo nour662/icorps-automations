@@ -207,7 +207,7 @@ def find_matches(merged_df, threshold=80) -> pd.DataFrame:
 
     return pd.DataFrame(results)
 
-def merge_final_output(input_df, results_df, output_path) -> None:
+def merge_final_output(input_df, results_df, input_path) -> None:
     """
     Merges the final output with UEIs and saves the result to a CSV file.
 
@@ -236,20 +236,16 @@ def merge_final_output(input_df, results_df, output_path) -> None:
     drop_cols = [col for col in ['keyword', 'uei_new'] if col in merged.columns]
     merged.drop(columns=drop_cols, inplace=True)
 
+    merged.to_csv(input, index=False)
+    logging.info(f"Final merged output saved to {input_path}")
 
-    output_file = f"{output_path}/post_sam_matching.csv"
-    
-    merged.to_csv(output_file, index=False)
-    logging.info(f"Final merged output saved to {output_file}")
-
-def main(input_path, data_path, output_path) -> None:
+def main(input_path, data_path) -> None:
     """
     Main function to execute the matching algorithm.
 
     Arguments:
         input_path : (str) Path to the original input data.
         data_path : (str) Path to the scraped data from SAM.gov.
-        output_path : (str) Path to the output folder.
     """
 
     logging.info("Starting matching process...")
@@ -270,7 +266,7 @@ def main(input_path, data_path, output_path) -> None:
     if not results.empty:
         results['match_priority'] = results['match_type'].map({'uei': 0, 'company': 1})
         best_matches = results.sort_values('overall_score', ascending=False).groupby('input_company').head(1)
-        merge_final_output(input_df, best_matches, output_path)
+        merge_final_output(input_df, best_matches, input_path)
     else:
         logging.warning("No matches found with given threshold. Skipping final merge.")
 
@@ -285,13 +281,12 @@ def parse_args(arglist) -> ArgumentParser:
     parser = ArgumentParser()
     parser.add_argument("--input_path", "-i", required=True, help="Path to original input data")
     parser.add_argument("--data_path", "-d", required=True, help="Path to scraped data from SAM.gov")
-    parser.add_argument("--output_path", "-o", required=True, help="Path to output folder")
     parser.add_argument("--log_file", "-l", required=False, default="log/sam_log.txt", help = "Log File")
     return parser.parse_args(arglist)
 
 if __name__ == "__main__":
     args = parse_args(sys.argv[1:])
     # logging.basicConfig(filename=f'{args.output_path}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-    main(args.input_path, args.data_path, args.output_path)
+    main(args.input_path, args.data_path)
 
 

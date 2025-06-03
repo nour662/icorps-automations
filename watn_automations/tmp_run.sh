@@ -1,8 +1,9 @@
+#!/bin/bash
+set -e
 
 ## 1. Setting up Environment Variables
 root_tag="psu_incubator_companies"
 tag="${root_tag}_$(date +%Y-%m-%d)"
-tag="psu_incubator_companies_2025-04-22"
 output_folder="outputs/outputs_$tag"
 inputs_folder="$output_folder/inputs"
 input_file="$root_tag.csv"
@@ -31,40 +32,47 @@ if [ -d "all_inputs/webarchives/$root_tag" ]; then
 fi
 
 ## 5. Starting Virtual Environment
-python -m venv util/env
+python3 -m venv util/env
 source util/env/bin/activate >> $general_log
 echo "Virtual environment activated" >> $general_log
 
 ## 6. Installing Dependencies
-pip install --upgrade pip >> $general_log
+pip3 install --upgrade pip >> $general_log
 echo "pip3 upgraded to the latest version" >> $general_log
-pip install -r util/requirements.txt >> $general_log
+pip3 install -r util/requirements.txt >> $general_log
 echo "Dependencies installed" >> $general_log
 
 ## 7. Running UEI search by DUNS, if applicable 
 echo "Starting UEI search by DUNS" >> $general_log
-python sbir/duns_search.py -i $inputs_folder/$input_file -o $output_folder
+python3 sbir/duns_search.py -i $inputs_folder/$input_file -o $output_folder
 echo "UEI search by DUNS completed" >> $general_log
 
 ## 8. Getting cookies.pkl File for SAM.gov login
-python util/get_cookies.py -u https://sam.gov/ -o sam/cookies.pkl 
+python3 util/get_cookies.py -u https://sam.gov/ -o sam/cookies.pkl 
 echo "Cookies.pkl file created at sam/cookies.pkl" >> $general_log
+
 ## 9. Running SAM.gov Scraper
 echo "Starting SAM.gov scraper" >> $general_log
-python sam/sam_scraper.py -i $inputs_folder/$input_file -o $output_folder
+python3 sam/sam_scraper.py -i $inputs_folder/$input_file -o $output_folder
 echo "SAM.gov scraper completed" >> $general_log
 
-# ## 10. Running Batch Merger for SAM.gov
-# echo "Starting batch merger for SAM.gov" >> $general_log
-# python3 util/merge_batches.py -r $output_folder -s sam -o $output_folder
-# echo "Batch merger for SAM.gov completed" >> $general_log
+## 10. Running Batch Merger for SAM.gov
+echo "Starting batch merger for SAM.gov" >> $general_log
+python3 util/merge_batches.py -r $output_folder -s sam -o $output_folder
+echo "Batch merger for SAM.gov completed" >> $general_log
 
-# ## 11. Running Matching Algorithm for SAM.gov 
-# echo "Starting matching algorithm for SAM.gov" >> $general_log
-# python3 sam/matching_algor.py -i "$inputs_folder/$input_file" -o $output_folder -d "$output_folder/uncleaned_outputs/company_info/sam_uncleaned.csv" 
-# echo "Matching algorithm for SAM.gov completed" >> $general_log
+## 11. Running Matching Algorithm for SAM.gov 
+echo "Starting matching algorithm for SAM.gov" >> $general_log
+python3 sam/matching_algor.py -i "$inputs_folder/$input_file" -o $output_folder -d "$output_folder/uncleaned_outputs/company_info/sam_uncleaned.csv" 
+echo "Matching algorithm for SAM.gov completed" >> $general_log
 
-# ## 12. Running SBIR/STTR Scraper 
-# echo "Starting SBIR/STTR scraper" >> $general_log
-# python3 sbir/sbir_scraper.py -i $inputs_folder/$input_file -s 0 -o $output_folder
-# echo "SBIR/STTR scraper completed" >> $general_log
+## 12. Running SBIR/STTR Scraper 
+echo "Starting SBIR/STTR scraper" >> $general_log
+python3 sbir/sbir_scraper.py -i $inputs_folder/$input_file -s 0 -o $output_folder
+echo "SBIR/STTR scraper completed" >> $general_log
+
+## 13. Running Batch Merger for SBIR/STTR
+echo "Starting batch merger for SBIR/STTR" >> $general_log
+python3 util/merge_batches.py -r $output_folder/sbir_batches -s sbir_awards  -o $output_folder
+python3 util/merge_batches.py -r $output_folder/sbir_batches -s sbir_company_info -o $output_folder
+echo "Batch merger for SBIR/STTR completed" >> $general_log
