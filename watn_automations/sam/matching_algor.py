@@ -106,7 +106,8 @@ def clean_sam(df) -> pd.DataFrame:
 
 def join_dfs(input_df, sam_df) -> pd.DataFrame:
     """
-    Joins the input DataFrame with the SAM DataFrame on company names.
+    Joins the input DataFrame with the SAM DataFrame on either company names 
+    or UEI depending on the Keyword Column in the input DataFrame.
     Also drops rows with missing values in the joined DataFrame.
 
     Arguments:

@@ -86,29 +86,36 @@ def process_batch(uei_batch, batch_number, company_output_dir, awards_output_dir
 
         company_name = company_structured["Name"]
         awards = get_award_info(company_name)
-        for award in awards:
-            award["Company Name"] = company_name
-            core_record = {field: award.get(field, "") for field in AWARD_FIELDS}
-            award_core_records.append(core_record)
+        
+        if not awards:
+            placeholder_award = {
+                "Company Name": company_name,
+                **{field: "N/A" for field in AWARD_FIELDS if field != "Company Name"}
+            }
+            award_core_records.append(placeholder_award)
+        else: 
+            for award in awards:
+                award["Company Name"] = company_name
+                core_record = {field: award.get(field, "") for field in AWARD_FIELDS}
+                award_core_records.append(core_record)
 
-            company_structured.update({field: award.get(field, company_raw.get(field, "")) for field in COMPANY_FIELDS})
+                company_structured.update({field: award.get(field, company_raw.get(field, "")) for field in COMPANY_FIELDS})
 
         company_info_records.append(company_structured)
 
     # Save batch files
-    if len(company_info_records):
+    if len(company_info_records) > 0:
         company_df = pd.DataFrame(company_info_records)
         company_batch_filename = os.path.join(company_output_dir, f"batch_{batch_number}.csv")
         company_df.to_csv(company_batch_filename, index=False)
+        logging.info(f"Saved company data: {company_batch_filename}")
 
 
     if len(award_core_records) > 0:
         award_df = pd.DataFrame(award_core_records)
         award_batch_filename = os.path.join(awards_output_dir, f"batch_{batch_number}.csv")
         award_df.to_csv(award_batch_filename, index=False)
-
-    logging.info(f"Saved company data: {company_batch_filename}")
-    logging.info(f"Saved award data: {award_batch_filename}")
+        logging.info(f"Saved award data: {award_batch_filename}")
 
 def process_batches(uei_list, output_path, batch_size) -> None:
     """

@@ -162,14 +162,12 @@ def process_batch(driver, input_list, start, end) -> list:
             search_input = search_input.replace(".", "").replace(",", "")
             result_links = search_keyword(driver, search_input)
             links[name] = result_links
-    print(links)
     links_data = []
     for keyword, urls in links.items():
         for url in urls:
             result = scrape_links(driver, keyword, url)
             if result:
                 links_data.append(result)
-    print(links_data)
     return links_data
 
 def select_filters(driver) -> None:
@@ -217,7 +215,7 @@ def clean_input_list(input_file) -> list:
     Arguments:
         input_file (str): The path to the input CSV file.
     Returns:
-        list: A cleaned list of company names.
+        tuple list: A cleaned list of (company names, UEIs).
     """
     df = pd.read_csv(input_file) 
     if 'Entrepreneur Stage' in df.columns:

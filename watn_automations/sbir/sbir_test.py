@@ -42,8 +42,8 @@ def get_award_info(company_name):
     return []
 
 def main():
-    input_file = "watn_automations\sam\sample_input.csv"
-    output_path = "watn_automations\sbir\outputs"
+    input_file = "outputs\outputs_psu_incubator_companies_2025-04-22\post_sam_matching.csv"
+    output_path = "sbir\outputs"
     
     company_dir = os.path.join(output_path, "sbir_batches/sbir_company_info_batches")
     awards_dir = os.path.join(output_path, "sbir_batches/sbir_awards_batches")
@@ -58,10 +58,10 @@ def main():
 
     df = pd.read_csv(input_file)
     uei_list = df['UEI'].dropna().tolist()
+    print(uei_list)
 
     company_info_records = []
     award_core_records = []
-    award_company_records = []
 
     for uei in uei_list:
         logging.info(f"Processing UEI: {uei}")
@@ -71,18 +71,22 @@ def main():
             continue
 
         company_name = company_structured["Name"]
-        print(company_structured)
         
-
         awards = get_award_info(company_name)
-        for award in awards:
-            award["Company Name"] = company_name
-            core_record = {field: award.get(field, "") for field in AWARD_FIELDS}
-            award_core_records.append(core_record)
-
-            company_structured.update({field: award.get(field, company_raw.get(field, "")) for field in COMPANY_FIELDS})
-            print(company_structured)
-            
+        if not awards:
+            # Add placeholder award row
+            placeholder_award = {
+                "Company Name": company_name,
+                **{field: "N/A" for field in AWARD_FIELDS if field != "Company Name"}
+            }
+            award_core_records.append(placeholder_award)
+        else:
+            for award in awards:
+                award["Company Name"] = company_name
+                core_record = {field: award.get(field, "") for field in AWARD_FIELDS}
+                award_core_records.append(core_record)
+                company_structured.update({field: award.get(field, company_raw.get(field, "")) for field in COMPANY_FIELDS})
+                
         company_info_records.append(company_structured)
         print(company_info_records)
 
