@@ -104,7 +104,7 @@ def scrape_links(driver, keyword, url) -> dict:
         cage = safe_find('(//span[@class="wrap font-sans-md tablet:font-sans-lg h2"])[2]')
         physical_address = safe_find('//ul[@class="sds-list sds-list--unstyled margin-top-1"]')
         mailing_address = safe_find('(//ul[@class="sds-list sds-list--unstyled"])[2]')
-        entity_url = safe_find_attr('//a[@class="usa-link"]/@href')
+        entity_url = safe_find_attr('//a[@class="usa-link"]', 'href')
         start_date = safe_find('//span[contains(text(), "Entity Start Date")]/following-sibling::span')
         contacts_texts = safe_find_contacts('//div[@class="sds-card__body padding-2"]//child::h3', 'textContent')
         contacts = extract_names(contacts_texts)
@@ -218,8 +218,12 @@ def clean_input_list(input_file) -> list:
     df = pd.read_csv(input_file) 
     if 'Entrepreneur Stage' in df.columns:
         df = df[(df['Entrepreneur Stage'] != 'Inactive')]
-    elif 'UEI' in df.columns:
+
+    ### GABBY - Needs to have UEI column in the input file
+    if 'UEI' in df.columns:
         df = df[(df['UEI'] == '')]
+
+
     return df["Company"].drop_duplicates().tolist()
 
 def main(input_file, starting_batch, output_path, headless=False) -> None:
