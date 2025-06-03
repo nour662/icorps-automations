@@ -219,10 +219,10 @@ def clean_input_list(input_file) -> list:
     if 'Entrepreneur Stage' in df.columns:
         df = df[(df['Entrepreneur Stage'] != 'Inactive')]
 
-    ### GABBY - Needs to have UEI column in the input file
-    if 'UEI' in df.columns:
-        df = df[(df['UEI'] == '')]
 
+    ## you can make this a list of tuples (company, uei) 
+
+    ## ex. [("Inventwood", "UEI12345"), ("Tech Innovations", None)]
 
     return df["Company"].drop_duplicates().tolist()
 
