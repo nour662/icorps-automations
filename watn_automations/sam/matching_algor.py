@@ -236,7 +236,7 @@ def merge_final_output(input_df, results_df, input_path) -> None:
     drop_cols = [col for col in ['keyword', 'uei_new'] if col in merged.columns]
     merged.drop(columns=drop_cols, inplace=True)
 
-    merged.to_csv(input, index=False)
+    merged.to_csv(input_path, index=False)
     logging.info(f"Final merged output saved to {input_path}")
 
 def main(input_path, data_path) -> None:
@@ -286,7 +286,7 @@ def parse_args(arglist) -> ArgumentParser:
 
 if __name__ == "__main__":
     args = parse_args(sys.argv[1:])
-    logging.basicConfig(filename=f'{args.output_path}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+    #logging.basicConfig(filename=f'{args.input_path}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
     main(args.input_path, args.data_path)
 
 

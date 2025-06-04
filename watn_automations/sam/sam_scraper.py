@@ -259,8 +259,8 @@ def main(input_file, starting_batch, output_path, headless, batch_size) -> None:
     input_list = clean_input_list(input_file)
 
     chrome_options = Options()
-    if headless:
-        chrome_options.add_argument('--headless')
+    # if headless:
+    #     chrome_options.add_argument('--headless')
     chrome_options.add_argument('--remote-debugging-port=9222')
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
 
