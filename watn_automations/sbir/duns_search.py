@@ -6,6 +6,12 @@ import logging
 from argparse import ArgumentParser
 
 
+## TO DO:
+
+## Add in logging configuration in the argsparse, doesnt have to be required, but useful for debugging, can set a defualt
+## Move the logging configuration to the if name == "__main__": block to avoid running it on import
+## Check docstrings for functions and add type hints for better clarity 
+
 def get_firm_info_by_duns(duns_number) -> dict:
     """
     Fetch firm information from the SBIR API using DUNS number.
@@ -27,9 +33,10 @@ def get_firm_info_by_duns(duns_number) -> dict:
     if response.status_code == 200:
         firm_data = response.json()
         return firm_data[0] if firm_data else None
+    
     return None
 
-def main(input_file, output_path):
+def main(input_file, output_path) -> None:
     """
     Main function to process the input file and update DUNS numbers with UEI.
     
@@ -73,7 +80,7 @@ def main(input_file, output_path):
     df_original.to_csv(input_file, index=False)
     logging.info(f"Data updated in original file: {input_file}")
 
-def parse_arguments():
+def parse_arguments() -> ArgumentParser:
     """
     Parse command line arguments.
 

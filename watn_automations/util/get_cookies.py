@@ -4,21 +4,20 @@ from argparse import ArgumentParser
 import sys
 import time
 
-def extend_cookie_expiry(cookies, years=10):
-    far_future = int(time.time()) + years * 365 * 24 * 60 * 60 
-    for cookie in cookies:
-        cookie['expiry'] = far_future
-    return cookies
+
+## TO DO: 
+
+## Add docstrings 
+
+
 
 def save_cookies(driver, output_path):
     cookies = driver.get_cookies()
-    cookies = extend_cookie_expiry(cookies)
     with open(output_path, "wb") as file:
         pickle.dump(cookies, file)
-    print(f"Cookies saved to {output_path} with extended expiry")
+    print(f"Cookies saved to {output_path}.")
 
 def main(url, output_path):
-    # Step 1: Save cookies after manual login
     print(f"Opening {url}. Please log in manually.")
     driver = webdriver.Chrome()
     driver.get(url)
