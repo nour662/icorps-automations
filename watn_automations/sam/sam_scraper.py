@@ -258,7 +258,6 @@ def main(input_file, starting_batch, output_path, headless, batch_size) -> None:
     starting_batch = int(starting_batch)
     input_list = clean_input_list(input_file)
 
-
     chrome_options = Options()
     if headless:
         chrome_options.add_argument('--headless')

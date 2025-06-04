@@ -12,7 +12,7 @@ from argparse import ArgumentParser
 ## Move the logging configuration to the if name == "__main__": block to avoid running it on import
 ## Check docstrings for functions and add type hints for better clarity 
 
-def get_firm_info_by_duns(duns_number) -> dict:
+def get_firm_info_by_duns(duns_number:str) -> dict:
     """
     Fetch firm information from the SBIR API using DUNS number.
 
@@ -36,7 +36,7 @@ def get_firm_info_by_duns(duns_number) -> dict:
     
     return None
 
-def main(input_file, output_path) -> None:
+def main(input_file: str, output_path: str) -> None:
     """
     Main function to process the input file and update DUNS numbers with UEI.
     
@@ -94,4 +94,5 @@ def parse_arguments() -> ArgumentParser:
 
 if __name__ == "__main__":
     args = parse_arguments()
+    logging.basicConfig(filename=f'{args.output_path}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
     main(args.input_file, args.output_path)

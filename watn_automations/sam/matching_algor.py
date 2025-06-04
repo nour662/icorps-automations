@@ -286,7 +286,7 @@ def parse_args(arglist) -> ArgumentParser:
 
 if __name__ == "__main__":
     args = parse_args(sys.argv[1:])
-    # logging.basicConfig(filename=f'{args.output_path}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+    logging.basicConfig(filename=f'{args.output_path}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
     main(args.input_path, args.data_path)
 
 
