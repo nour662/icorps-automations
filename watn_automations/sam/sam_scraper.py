@@ -9,6 +9,13 @@ import math, pandas as pd, sys, pickle, logging
 from argparse import ArgumentParser
 import re
 
+## TO DO:
+
+# - Add docstrings for all functions 
+# - Add in comments for clarity 
+# - Fix the lag happining for search keyword function. 
+
+
 def search_keyword(driver, keyword) -> list:
     """Search for a keyword on the SAM website and return the first 10 links found.
 
@@ -39,6 +46,9 @@ def search_keyword(driver, keyword) -> list:
         except:
             pass  
 
+
+
+        ## GABBY!!!! This might be a problem for lagging. 
         links = WebDriverWait(driver, 5).until(
             lambda d: d.find_elements(By.XPATH, '//div[@class="grid-row grid-gap"]//a')
         )
@@ -152,20 +162,22 @@ def process_batch(driver, input_list, start, end) -> list:
     links = {}
     batch_input = input_list[start:end]
 
-    for name in batch_input:
-        name = str(name)
-        search_input = re.sub(r"\b(inc|llc|corp|ltd|limited|pty)\b", "", name.lower().strip())
-        search_input = search_input.replace(".", "").replace(",", "")
-        result_links = search_keyword(driver, search_input)
-        links[name] = result_links
-
+    for name, uei in batch_input:
+        if uei is not None:
+            result_links = search_keyword(driver, str(uei))
+            links[name] = result_links
+        else: 
+            name = str(name)
+            search_input = re.sub(r"\b(inc|llc|corp|ltd|limited|pty)\b", "", name.lower().strip())
+            search_input = search_input.replace(".", "").replace(",", "")
+            result_links = search_keyword(driver, search_input)
+            links[name] = result_links
     links_data = []
     for keyword, urls in links.items():
         for url in urls:
             result = scrape_links(driver, keyword, url)
             if result:
                 links_data.append(result)
-
     return links_data
 
 def select_filters(driver) -> None:
@@ -189,6 +201,8 @@ def select_filters(driver) -> None:
             EC.presence_of_element_located((By.XPATH, '//label[@class="usa-checkbox__label"]'))
         )
         inactive_checkbox.click()
+
+        logging.info("Filters selected successfully.")
         
     except Exception as e:
         logging.error(f"Error selecting filters: {e}")
@@ -213,20 +227,26 @@ def clean_input_list(input_file) -> list:
     Arguments:
         input_file (str): The path to the input CSV file.
     Returns:
-        list: A cleaned list of company names.
+        tuple list: A cleaned list of (company names, UEIs).
     """
     df = pd.read_csv(input_file) 
     if 'Entrepreneur Stage' in df.columns:
         df = df[(df['Entrepreneur Stage'] != 'Inactive')]
 
+    input_list = []
+    company_list = df["Company"].tolist()
+        
+    if "UEI" not in df.columns:
+        uei_list = [None for i in range(len(company_list))]
+    else:
+        uei_list = df["UEI"].where(pd.notna(df["UEI"]), None).tolist()
 
-    ## you can make this a list of tuples (company, uei) 
+    for i in range(len(company_list)):
+        input_list.append((company_list[i], uei_list[i]))
 
-    ## ex. [("Inventwood", "UEI12345"), ("Tech Innovations", None)]
+    return list(set(input_list))
 
-    return df["Company"].drop_duplicates().tolist()
-
-def main(input_file, starting_batch, output_path, headless=False) -> None:
+def main(input_file, starting_batch, output_path, headless, batch_size) -> None:
     """Main function to initialize the WebDriver, process batches of company names, and save results.
 
     Arguments:
@@ -239,8 +259,8 @@ def main(input_file, starting_batch, output_path, headless=False) -> None:
     input_list = clean_input_list(input_file)
 
     chrome_options = Options()
-    if str(headless).lower() == "true":
-        chrome_options.add_argument('--headless')
+    # if headless:
+    #     chrome_options.add_argument('--headless')
     chrome_options.add_argument('--remote-debugging-port=9222')
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
 
@@ -249,12 +269,15 @@ def main(input_file, starting_batch, output_path, headless=False) -> None:
         load_cookies(driver, "sam/cookies.pkl")
         select_filters(driver)
 
-        batch_size = 10
+        logging.info(f"Starting batch processing from batch {starting_batch + 1} with {len(input_list)} companies.")
+        
+
         num_batches = math.ceil(len(input_list) / batch_size)
 
         for i in range(starting_batch, num_batches):
             start_idx = i * batch_size
             end_idx = min(start_idx + batch_size, len(input_list))
+
             logging.info(f"Processing batch {i+1}/{num_batches}, companies {start_idx+1} to {end_idx}")
 
             batch_data = process_batch(driver, input_list, start_idx, end_idx)
@@ -280,9 +303,10 @@ def parse_args(arglist):
         Namespace: Parsed arguments.
     """
     parser = ArgumentParser()
-    parser.add_argument("--starting_batch", "-s", required=False, default=0, help="Starting Batch")
     parser.add_argument("--input_file", "-i", required=True, help="Input File")
     parser.add_argument("--output_path", "-o", required=True, help="Output Path")
+    parser.add_argument("--batch_size", "-b", required=False, default=10, help="Batch Size")
+    parser.add_argument("--starting_batch", "-s", required=False, default=0, help="Starting Batch")
     parser.add_argument("--headless", "-hd", required=False, default=True, help="Headless Mode")
     parser.add_argument("--log_file", "-l", required=False, default="log/sam_log.txt", help="Log File")
     return parser.parse_args(arglist)
@@ -290,5 +314,5 @@ def parse_args(arglist):
 if __name__ == "__main__":
     args = parse_args(sys.argv[1:])
     logging.basicConfig(filename=f'{args.output_path}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-    main(args.input_file, args.starting_batch, args.output_path, headless=args.headless)
+    main(args.input_file, args.starting_batch, args.output_path, args.headless, args.batch_size)
     logging.info("Script started.")

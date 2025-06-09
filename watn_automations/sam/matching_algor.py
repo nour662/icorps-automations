@@ -53,60 +53,56 @@ def match_contacts(sam_contacts, input_contacts) -> tuple:
 
     return [best_match] if best_match else [], highest_score
 
-def clean_input(df) -> pd.DataFrame:
+def cleaned_dfs(input_df, sam_df) -> None:
     """
-    Cleans the input DataFrame by combining first and last names into a single column.
-    Also groups by company name and aggregates contacts.
-
+    Cleans and modifes the input and SAM DataFrames for further processing in place.
+    
     Arguments:
-        df : (DataFrame) The input DataFrame to be cleaned.
-    Returns:
-        DataFrame : The cleaned DataFrame with company names and aggregated contacts.
+        input_df (DataFrame): The input DataFrame containing company information.
+        sam_df (DataFrame): The SAM DataFrame containing company information from SAM.gov. 
     """
     logging.info("Cleaning original input file...")
     try:
-        if {"First Name", "Last Name"}.issubset(df.columns):
-            df["Name"] = df["First Name"].fillna('') + " " + df["Last Name"].fillna('')
-            df.drop(columns=["First Name", "Last Name"], inplace=True)
+        if {"First Name", "Last Name"}.issubset(input_df.columns):
+            input_df["Name"] = input_df["First Name"].fillna('') + " " + input_df["Last Name"].fillna('')
+            input_df.drop(columns=["First Name", "Last Name"], inplace=True)
 
         grouped = (
-            df.groupby("Company")
+            input_df.groupby("Company")
             .agg({
                 "Name": lambda x: list(set(x)),
-                "Website": lambda x: x if "Website" in df.columns else None
+                "Website": lambda x: x if "Website" in input_df.columns else None
             })
             .reset_index()
         )
 
-        grouped = grouped.rename(columns={"Company": "input_company", "Name": "input_contacts",  "Website": "input_url"})
-        
-        return grouped
+        grouped = grouped.rename(columns={"Company": "input_company", "Name": "input_contacts", "Website": "input_url"})
+
+        input_df.drop(input_df.index, inplace=True)
+        for col in grouped.columns:
+            input_df[col] = grouped[col]
+
     except Exception as e:
         logging.error(f"Error in cleaning input data: {e}")
         raise
 
-def clean_sam(df) -> pd.DataFrame:
-    """
-    Cleans the SAM DataFrame by renaming columns and converting contacts to lists.
-    Also handles missing values.
-
-    Arguments:
-        df : (DataFrame) The SAM DataFrame to be cleaned.
-    Returns:
-        DataFrame : The cleaned SAM DataFrame with standardized column names and contact lists.
-    """
-
+    
     logging.info("Cleaning SAM dataset...")
-    df = df.rename(columns={"legal_name": "sam_company", "contacts": "sam_contacts" , "entity_url": "sam_url"})
-    df["sam_contacts"] = df["sam_contacts"].apply(
-        lambda x: eval(x) if isinstance(x, str) else ([] if pd.isna(x) else x)
-    )
-
-    return df
+    try:
+        sam_df.rename(columns={"legal_name": "sam_company", "contacts": "sam_contacts", "entity_url": "sam_url"}, inplace=True)
+        sam_df["sam_contacts"] = sam_df["sam_contacts"].apply(
+            lambda x: eval(x) if isinstance(x, str) else ([] if pd.isna(x) else x)
+        )
+    except Exception as e:
+        logging.error(f"Error in cleaning SAM data: {e}")
+        raise
+    
+    
 
 def join_dfs(input_df, sam_df) -> pd.DataFrame:
     """
-    Joins the input DataFrame with the SAM DataFrame on company names.
+    Joins the input DataFrame with the SAM DataFrame on either company names 
+    or UEI depending on the Keyword Column in the input DataFrame.
     Also drops rows with missing values in the joined DataFrame.
 
     Arguments:
@@ -120,7 +116,7 @@ def join_dfs(input_df, sam_df) -> pd.DataFrame:
         logging.error("Required columns 'keyword' or 'input_company' are missing.")
         return pd.DataFrame()
 
-    merged_df = pd.merge(
+    merged_name = pd.merge(
         input_df,
         sam_df,
         left_on="input_company",
@@ -128,12 +124,31 @@ def join_dfs(input_df, sam_df) -> pd.DataFrame:
         how="outer",
         suffixes=("_input", "_sam")
     )
+    merged_name["match_type"] = "company"
 
-    cols = [col for col in merged_df.columns if col.startswith("input") or col.startswith("sam")]
-    drop_cols = [col for col in merged_df.columns if col not in cols]
+    if 'UEI' in input_df.columns and 'num_uei' in sam_df.columns:
+        merged_uei = pd.merge(
+            input_df,
+            sam_df,
+            left_on="UEI",
+            right_on="keyword",
+            how="outer",
+            suffixes=("_input", "_sam")
+        )
+        
+        merged_uei["match_type"] = "uei"
+        
+        merged_df = pd.concat([merged_name, merged_uei], ignore_index=True).drop_duplicates()
+    else:
+        merged_df = merged_name
 
-    merged_df = merged_df.drop(columns=drop_cols, errors='ignore') 
-    merged_df = merged_df.dropna(subset=["input_company", "sam_company"])
+    keep_cols = [
+        col for col in merged_df.columns
+        if col.startswith("input") or col.startswith("sam") or col in {"keyword", "num_uei", "match_type"}
+    ]
+    merged_df = merged_df[keep_cols]
+
+    merged_df = merged_df.dropna(subset=["input_company", "sam_company"], how="all")
 
     return merged_df
 
@@ -154,24 +169,22 @@ def find_matches(merged_df, threshold=80) -> pd.DataFrame:
 
     for _, row in merged_df.iterrows():
         input_company = row.get("input_company", "")
-        print(input_company)
         sam_company = row.get("sam_company", "")
         input_contacts = row.get("input_contacts", [])
         sam_contacts = row.get("sam_contacts", [])
         sam_url = row.get("sam_url", "") 
         input_url = row.get("input_url", "")
-        
 
         input_company = clean_company_name(input_company)
         sam_company = clean_company_name(sam_company)
 
         company_score = fuzz.ratio(input_company, sam_company)
         
-        website_score = fuzz.ratio(input_url, sam_url)
+        website_score = fuzz.ratio(str(input_url), str(sam_url))
 
         matched_contacts, contact_score = match_contacts(sam_contacts, input_contacts)
         overall_score = round((0.65 * company_score + 0.15 * website_score + 0.2 * contact_score), 2)
-        print(overall_score)
+
         if overall_score < threshold:
             continue
         
@@ -183,12 +196,13 @@ def find_matches(merged_df, threshold=80) -> pd.DataFrame:
             "company_score": company_score,
             "matched_contacts": matched_contacts,
             "contact_score": round(contact_score, 2),
-            "overall_score": overall_score
+            "overall_score": overall_score,
+            "match_type": row.get("match_type", "company")
         })
 
     return pd.DataFrame(results)
 
-def merge_final_output(input_df, results_df, output_path) -> None:
+def merge_final_output(input_df, results_df, input_path) -> None:
     """
     Merges the final output with UEIs and saves the result to a CSV file.
 
@@ -217,41 +231,45 @@ def merge_final_output(input_df, results_df, output_path) -> None:
     drop_cols = [col for col in ['keyword', 'uei_new'] if col in merged.columns]
     merged.drop(columns=drop_cols, inplace=True)
 
+    merged.to_csv(input_path, index=False)
+    logging.info(f"Final merged output saved to {input_path}")
 
-    output_file = f"{output_path}/post_sam_matching.csv"
-    
-    merged.to_csv(output_file, index=False)
-    logging.info(f"Final merged output saved to {output_file}")
-
-def main(input_path, data_path, output_path) -> None:
+def main(input_path, data_path) -> None:
     """
     Main function to execute the matching algorithm.
 
     Arguments:
         input_path : (str) Path to the original input data.
         data_path : (str) Path to the scraped data from SAM.gov.
-        output_path : (str) Path to the output folder.
     """
 
     logging.info("Starting matching process...")
-
+    
     input_df = pd.read_csv(input_path)
     sam_df = pd.read_csv(data_path)
 
     if input_df.empty:
         logging.error("Input file is empty. Please check the file.")
         return
+    print("Before cleaning:")
+    print(input_df)
+    print(sam_df)
 
-    input_df_cleaned = clean_input(input_df)
-    sam_df_cleaned = clean_sam(sam_df)
+    cleaned_dfs(input_df, sam_df)
+    
+    print("After cleaning:")
+    print(input_df)
+    print(sam_df)
 
-    merged_df = join_dfs(input_df_cleaned, sam_df_cleaned)
+    merged_df = join_dfs(input_df, sam_df)
     results = find_matches(merged_df)
-
-    best_matches = results.sort_values('overall_score', ascending=False).groupby('input_company').head(1)
-
-    merge_final_output(input_df , best_matches, output_path)
-    logging.info("Matching complete. Results saved to matched_results.csv in cleaned_output folder")
+    
+    if not results.empty:
+        results['match_priority'] = results['match_type'].map({'uei': 0, 'company': 1})
+        best_matches = results.sort_values('overall_score', ascending=False).groupby('input_company').head(1)
+        merge_final_output(input_df, best_matches, input_path)
+    else:
+        logging.warning("No matches found with given threshold. Skipping final merge.")
 
 def parse_args(arglist) -> ArgumentParser:
     """
@@ -264,13 +282,12 @@ def parse_args(arglist) -> ArgumentParser:
     parser = ArgumentParser()
     parser.add_argument("--input_path", "-i", required=True, help="Path to original input data")
     parser.add_argument("--data_path", "-d", required=True, help="Path to scraped data from SAM.gov")
-    parser.add_argument("--output_path", "-o", required=True, help="Path to output folder")
     parser.add_argument("--log_file", "-l", required=False, default="log/sam_log.txt", help = "Log File")
     return parser.parse_args(arglist)
 
 if __name__ == "__main__":
     args = parse_args(sys.argv[1:])
-    # logging.basicConfig(filename=f'{args.output_path}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-    main(args.input_path, args.data_path, args.output_path)
+    #logging.basicConfig(filename=f'{args.output_}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+    main(args.input_path, args.data_path)
 
 
