@@ -53,56 +53,51 @@ def match_contacts(sam_contacts, input_contacts) -> tuple:
 
     return [best_match] if best_match else [], highest_score
 
-def clean_input(df) -> pd.DataFrame:
+def cleaned_dfs(input_df, sam_df) -> None:
     """
-    Cleans the input DataFrame by combining first and last names into a single column.
-    Also groups by company name and aggregates contacts.
-
+    Cleans and modifes the input and SAM DataFrames for further processing in place.
+    
     Arguments:
-        df : (DataFrame) The input DataFrame to be cleaned.
-    Returns:
-        DataFrame : The cleaned DataFrame with company names and aggregated contacts.
+        input_df (DataFrame): The input DataFrame containing company information.
+        sam_df (DataFrame): The SAM DataFrame containing company information from SAM.gov. 
     """
     logging.info("Cleaning original input file...")
     try:
-        if {"First Name", "Last Name"}.issubset(df.columns):
-            df["Name"] = df["First Name"].fillna('') + " " + df["Last Name"].fillna('')
-            df.drop(columns=["First Name", "Last Name"], inplace=True)
+        if {"First Name", "Last Name"}.issubset(input_df.columns):
+            input_df["Name"] = input_df["First Name"].fillna('') + " " + input_df["Last Name"].fillna('')
+            input_df.drop(columns=["First Name", "Last Name"], inplace=True)
 
         grouped = (
-            df.groupby("Company")
+            input_df.groupby("Company")
             .agg({
                 "Name": lambda x: list(set(x)),
-                "Website": lambda x: x if "Website" in df.columns else None
+                "Website": lambda x: x if "Website" in input_df.columns else None
             })
             .reset_index()
         )
 
-        grouped = grouped.rename(columns={"Company": "input_company", "Name": "input_contacts",  "Website": "input_url"})
-        
-        return grouped
+        grouped = grouped.rename(columns={"Company": "input_company", "Name": "input_contacts", "Website": "input_url"})
+
+        input_df.drop(input_df.index, inplace=True)
+        for col in grouped.columns:
+            input_df[col] = grouped[col]
+
     except Exception as e:
         logging.error(f"Error in cleaning input data: {e}")
         raise
 
-def clean_sam(df) -> pd.DataFrame:
-    """
-    Cleans the SAM DataFrame by renaming columns and converting contacts to lists.
-    Also handles missing values.
-
-    Arguments:
-        df : (DataFrame) The SAM DataFrame to be cleaned.
-    Returns:
-        DataFrame : The cleaned SAM DataFrame with standardized column names and contact lists.
-    """
-
+    
     logging.info("Cleaning SAM dataset...")
-    df = df.rename(columns={"legal_name": "sam_company", "contacts": "sam_contacts" , "entity_url": "sam_url"})
-    df["sam_contacts"] = df["sam_contacts"].apply(
-        lambda x: eval(x) if isinstance(x, str) else ([] if pd.isna(x) else x)
-    )
-
-    return df
+    try:
+        sam_df.rename(columns={"legal_name": "sam_company", "contacts": "sam_contacts", "entity_url": "sam_url"}, inplace=True)
+        sam_df["sam_contacts"] = sam_df["sam_contacts"].apply(
+            lambda x: eval(x) if isinstance(x, str) else ([] if pd.isna(x) else x)
+        )
+    except Exception as e:
+        logging.error(f"Error in cleaning SAM data: {e}")
+        raise
+    
+    
 
 def join_dfs(input_df, sam_df) -> pd.DataFrame:
     """
@@ -256,11 +251,17 @@ def main(input_path, data_path) -> None:
     if input_df.empty:
         logging.error("Input file is empty. Please check the file.")
         return
+    print("Before cleaning:")
+    print(input_df)
+    print(sam_df)
 
-    input_df_cleaned = clean_input(input_df)
-    sam_df_cleaned = clean_sam(sam_df)
+    cleaned_dfs(input_df, sam_df)
+    
+    print("After cleaning:")
+    print(input_df)
+    print(sam_df)
 
-    merged_df = join_dfs(input_df_cleaned, sam_df_cleaned)
+    merged_df = join_dfs(input_df, sam_df)
     results = find_matches(merged_df)
     
     if not results.empty:
@@ -286,7 +287,7 @@ def parse_args(arglist) -> ArgumentParser:
 
 if __name__ == "__main__":
     args = parse_args(sys.argv[1:])
-    #logging.basicConfig(filename=f'{args.input_path}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+    #logging.basicConfig(filename=f'{args.output_}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
     main(args.input_path, args.data_path)
 
 

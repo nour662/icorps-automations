@@ -17,7 +17,7 @@ def get_firm_info_by_duns(duns_number:str) -> dict:
     Fetch firm information from the SBIR API using DUNS number.
 
     Arguments:
-        duns_number : str : DUNS number of the firm
+        duns_number (str) : DUNS number of the firm
     Returns:
         dict : Firm information if found, else None
     """
@@ -41,8 +41,8 @@ def main(input_file: str, output_path: str) -> None:
     Main function to process the input file and update DUNS numbers with UEI.
     
     Arguments:
-        input_file : str : Path to the input CSV file
-        output_path : str : Path to save the output file
+        input_file (str) : Path to the input CSV file
+        output_path (str) : Path to save the output file
     """
     logging.basicConfig(
         filename=f'{output_path}/log/duns_search_log.txt',
