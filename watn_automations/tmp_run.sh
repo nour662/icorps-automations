@@ -61,7 +61,7 @@ echo "Batch merger for SAM.gov completed" >> $general_log
 
 ## 11. Running Matching Algorithm for SAM.gov 
 echo "Starting matching algorithm for SAM.gov" >> $general_log
-python sam/matching_algor.py -i "$inputs_folder/$input_file" -d "$output_folder/uncleaned_outputs/company_info/sam_uncleaned.csv" 
+python sam/matching_algor.py -i "$inputs_folder/$input_file" -d "$output_folder/uncleaned_outputs/company_info/sam_uncleaned.csv" -o $output_folder
 echo "Matching algorithm for SAM.gov completed" >> $general_log
 
 ## 12. Running SBIR/STTR Scraper 

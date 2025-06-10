@@ -2,7 +2,7 @@
 set -e
 
 ## 1. Setting up Environment Variables
-root_tag="psu_incubator_companies"
+root_tag="WATN_input_group_1"
 tag="${root_tag}_$(date +%Y-%m-%d)"
 output_folder="outputs/outputs_$tag"
 inputs_folder="$output_folder/inputs"
