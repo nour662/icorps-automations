@@ -4,7 +4,7 @@ set -e
 ## 1. Setting up Environment Variables
 root_tag="hub-2025-g1"
 tag="${root_tag}_$(date +%Y-%m-%d)"
-output_folder="outputs/outputs_$tag"
+output_folder="outputs/$tag"
 inputs_folder="$output_folder/inputs"
 input_file="$root_tag.csv"
 general_log="$output_folder/log/general_log.txt"
@@ -14,7 +14,7 @@ mkdir -p "$output_folder"
 mkdir -p "$inputs_folder"
 
 ## 3. Creating Separate Directories for Data Sources
-mkdir -p "$output_folder"/{usas_batches,sam_batches,sbir_batches,uncleaned_outputs,cleaned_outputs,log}
+mkdir -p "$output_folder"/{usas_batches,sam_batches,sbir_batches,uncleaned_outputs,cleaned_outputs,log, finalized_results}
 echo "Log directory created at $output_folder/log" >> "$general_log"
 
 ## 4. Copy Inputs and Clean Up Extras
@@ -53,7 +53,7 @@ echo "Cookies.pkl file created at sam/cookies.pkl" >> $general_log
 
 ## 9. Running SAM.gov Scraper
 echo "Starting SAM.gov scraper" >> $general_log
-python3 sam/sam_scraper.py -i $inputs_folder/$input_file -o $output_folder
+python3 sam/sam_scraper.py -i $inputs_folder/$input_file -o $output_folder -hd False
 echo "SAM.gov scraper completed" >> $general_log
 
 ## 10. Running Batch Merger for SAM.gov
@@ -109,3 +109,12 @@ echo "Finished Pitchbook Webarchive Scraper" >> $general_log
 echo "Cleaning Company Info" >> $general_log
 python3  cleaning_files/clean_company_info.py -i $output_folder -r $root_tag
 echo "Cleaning Company Info Done" >> $general_log
+
+#20. Merging Company Info 
+echo "Merging Company Info" >> $general_log
+python3 cleaning_files/merge_company_info.py -i $input_file -d $output_folder/cleaned_outputs/company_info -o $output_folder/finalized_results
+echo "Finished Merging Company Info" >> $general_log
+
+
+rm -rf util/env
+echo "Virtual environment removed" >> $general_log

@@ -8,6 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import math, pandas as pd, sys, pickle, logging
 from argparse import ArgumentParser
 import re
+import os
 
 ## TO DO:
 
@@ -46,12 +47,10 @@ def search_keyword(driver, keyword) -> list:
         except:
             pass  
 
-
-
-        ## GABBY!!!! This might be a problem for lagging. 
-        links = WebDriverWait(driver, 2).until(
-            lambda d: d.find_elements(By.XPATH, '//div[@class="grid-row grid-gap"]//a')
+        WebDriverWait(driver, 2).until(
+            EC.presence_of_element_located((By.XPATH, '//div[@class="grid-row grid-gap"]//a'))
         )
+        links = driver.find_elements(By.XPATH, '//div[@class="grid-row grid-gap"]//a')
 
         return [a.get_attribute('href') for a in links][:10]
 
@@ -259,8 +258,8 @@ def main(input_file, starting_batch, output_path, headless, batch_size) -> None:
     input_list = clean_input_list(input_file)
 
     chrome_options = Options()
-    # if headless:
-    #     chrome_options.add_argument('--headless')
+    if headless:
+        chrome_options.add_argument('--headless')
     chrome_options.add_argument('--remote-debugging-port=9222')
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
 
@@ -291,6 +290,7 @@ def main(input_file, starting_batch, output_path, headless, batch_size) -> None:
             select_filters(driver)
 
     finally:
+        os.remove("sam/cookies.pkl")
         driver.quit()
         logging.info("Driver quit and process finished.")
 

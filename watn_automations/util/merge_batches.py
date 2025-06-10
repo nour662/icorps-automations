@@ -30,7 +30,7 @@ def main(path, source, output_path):
 
     merged_df.to_csv(f'{filepath}/{substring}_uncleaned.csv', index=False)
     
-    #os.system(f"rm -R {path}/{source}_batches/")
+    os.system(f"rm -R {path}/{source}_batches/")
 
 
 def parse_args(arglist):

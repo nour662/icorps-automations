@@ -90,6 +90,7 @@ def parse_arguments() -> ArgumentParser:
     parser = ArgumentParser(description="Process DUNS numbers and fetch firm data.")
     parser.add_argument('--input_file', '-i', type=str, help='Input CSV file with DUNS numbers')
     parser.add_argument('--output_path', '-o', type=str, help='Output path file to save results')
+    parser.add_argument("--log_file", "-l", required=False, default="log/duns_search_log.txt", help="Log File")
     return parser.parse_args()
 
 if __name__ == "__main__":
