@@ -6,7 +6,7 @@ import argparse
 from math import ceil
 
 AWARD_FIELDS = [
-    "Company Name", "award_title", "agency", "branch", "phase", "program",
+    "Company Name", "uei", "award_title", "agency", "branch", "phase", "program",
     "agency_tracking_number", "contract", "proposal_award_date", "contract_end_date",
     "solicitation_number", "solicitation_year", "topic_code", "award_year",
     "award_amount", "award_link"
