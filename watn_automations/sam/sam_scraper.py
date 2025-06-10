@@ -49,7 +49,7 @@ def search_keyword(driver, keyword) -> list:
 
 
         ## GABBY!!!! This might be a problem for lagging. 
-        links = WebDriverWait(driver, 5).until(
+        links = WebDriverWait(driver, 2).until(
             lambda d: d.find_elements(By.XPATH, '//div[@class="grid-row grid-gap"]//a')
         )
 

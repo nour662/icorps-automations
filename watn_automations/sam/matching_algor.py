@@ -53,7 +53,58 @@ def match_contacts(sam_contacts, input_contacts) -> tuple:
 
     return [best_match] if best_match else [], highest_score
 
-def cleaned_dfs(input_df, sam_df) -> None:
+def clean_input(df) -> pd.DataFrame:
+    """
+    Cleans the input DataFrame by combining first and last names into a single column.
+    Also groups by company name and aggregates contacts.
+
+    Arguments:
+        df : (DataFrame) The input DataFrame to be cleaned.
+    Returns:
+        DataFrame : The cleaned DataFrame with company names and aggregated contacts.
+    """
+    logging.info("Cleaning original input file...")
+    try:
+        if {"First Name", "Last Name"}.issubset(df.columns):
+            df["Name"] = df["First Name"].fillna('') + " " + df["Last Name"].fillna('')
+            df.drop(columns=["First Name", "Last Name"], inplace=True)
+
+        grouped = (
+            df.groupby("Company")
+            .agg({
+                "Name": lambda x: list(set(x)),
+                "Website": lambda x: x if "Website" in df.columns else None
+            })
+            .reset_index()
+        )
+
+        grouped = grouped.rename(columns={"Company": "input_company", "Name": "input_contacts",  "Website": "input_url"})
+        
+        return grouped
+    except Exception as e:
+        logging.error(f"Error in cleaning input data: {e}")
+        raise
+
+def clean_sam(df) -> pd.DataFrame:
+    """
+    Cleans the SAM DataFrame by renaming columns and converting contacts to lists.
+    Also handles missing values.
+
+    Arguments:
+        df : (DataFrame) The SAM DataFrame to be cleaned.
+    Returns:
+        DataFrame : The cleaned SAM DataFrame with standardized column names and contact lists.
+    """
+
+    logging.info("Cleaning SAM dataset...")
+    df = df.rename(columns={"legal_name": "sam_company", "contacts": "sam_contacts" , "entity_url": "sam_url"})
+    df["sam_contacts"] = df["sam_contacts"].apply(
+        lambda x: eval(x) if isinstance(x, str) else ([] if pd.isna(x) else x)
+    )
+
+    return df
+
+def cleaned_dfs(input_df, sam_df) -> tuple:
     """
     Cleans and modifes the input and SAM DataFrames for further processing in place.
     
@@ -76,26 +127,22 @@ def cleaned_dfs(input_df, sam_df) -> None:
             .reset_index()
         )
 
-        grouped = grouped.rename(columns={"Company": "input_company", "Name": "input_contacts", "Website": "input_url"})
-
-        input_df.drop(input_df.index, inplace=True)
-        for col in grouped.columns:
-            input_df[col] = grouped[col]
-
-    except Exception as e:
-        logging.error(f"Error in cleaning input data: {e}")
-        raise
-
-    
-    logging.info("Cleaning SAM dataset...")
-    try:
-        sam_df.rename(columns={"legal_name": "sam_company", "contacts": "sam_contacts", "entity_url": "sam_url"}, inplace=True)
+        cleaned_input_df = grouped.rename(columns={"Company": "input_company", "Name": "input_contacts",  "Website": "input_url"})
+        
+        logging.info("Cleaning SAM dataset...")
+        sam_df = sam_df.rename(columns={"legal_name": "sam_company", "contacts": "sam_contacts" , "entity_url": "sam_url"})
         sam_df["sam_contacts"] = sam_df["sam_contacts"].apply(
             lambda x: eval(x) if isinstance(x, str) else ([] if pd.isna(x) else x)
         )
+        
+        return cleaned_input_df, sam_df
+        
     except Exception as e:
-        logging.error(f"Error in cleaning SAM data: {e}")
+        logging.error(f"Error in cleaning input data: {e}")
         raise
+    
+    
+
     
     
 
@@ -234,7 +281,7 @@ def merge_final_output(input_df, results_df, input_path) -> None:
     merged.to_csv(input_path, index=False)
     logging.info(f"Final merged output saved to {input_path}")
 
-def main(input_path, data_path) -> None:
+def main(input_path, data_path, output_path) -> None:
     """
     Main function to execute the matching algorithm.
 
@@ -251,17 +298,10 @@ def main(input_path, data_path) -> None:
     if input_df.empty:
         logging.error("Input file is empty. Please check the file.")
         return
-    print("Before cleaning:")
-    print(input_df)
-    print(sam_df)
 
-    cleaned_dfs(input_df, sam_df)
-    
-    print("After cleaning:")
-    print(input_df)
-    print(sam_df)
+    input_df_cleaned,sam_df_cleaned = cleaned_dfs(input_df, sam_df)
 
-    merged_df = join_dfs(input_df, sam_df)
+    merged_df = join_dfs(input_df_cleaned, sam_df_cleaned)
     results = find_matches(merged_df)
     
     if not results.empty:
@@ -282,12 +322,13 @@ def parse_args(arglist) -> ArgumentParser:
     parser = ArgumentParser()
     parser.add_argument("--input_path", "-i", required=True, help="Path to original input data")
     parser.add_argument("--data_path", "-d", required=True, help="Path to scraped data from SAM.gov")
+    parser.add_argument("--output_path", "-o", required=True, help="Path to log file")
     parser.add_argument("--log_file", "-l", required=False, default="log/sam_log.txt", help = "Log File")
     return parser.parse_args(arglist)
 
 if __name__ == "__main__":
     args = parse_args(sys.argv[1:])
-    #logging.basicConfig(filename=f'{args.output_}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-    main(args.input_path, args.data_path)
+    logging.basicConfig(filename=f'{args.output_path}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+    main(args.input_path, args.data_path, args.output_path)
 
 
