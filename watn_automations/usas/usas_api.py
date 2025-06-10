@@ -125,19 +125,22 @@ def fetch_award_data(uei_list, header) -> tuple:
 
     return all_contract_data, all_grant_data
 
-def process_in_batches(data_list, batch_size, process_function, *args) -> None:
+def process_in_batches(data_list, batch_size, process_function, *args, starting_batch=0) -> None:
     """
-    Process a list of data in batches.
+    Process a list of data in batches, optionally starting from a given batch index.
 
     Arguments:
         data_list (list): List of data to process.
         batch_size (int): Size of each batch.
         process_function (function): Function to process each batch.
         *args: Additional arguments to pass to the process_function.
+        starting_batch (int): The batch index to start processing from.
     """
-    for i in range(0, len(data_list), batch_size):
+    total_batches = (len(data_list) + batch_size - 1) // batch_size
+    for i in range(starting_batch * batch_size, len(data_list), batch_size):
         batch = data_list[i:i + batch_size]
         process_function(batch, *args)
+
 
 def save_data_in_batches(data, output_path, base_folder, batch_size) -> None:
     """
@@ -157,7 +160,7 @@ def save_data_in_batches(data, output_path, base_folder, batch_size) -> None:
         pd.DataFrame(batch).to_csv(batch_file, index=False)
         logging.info(f"Saved batch to {batch_file}")
 
-def main(input_file, output_path) -> None:
+def main(input_file, output_path, batch_size, starting_batch) -> None:
     """
     Main function to read input file, fetch award and company data, and save results.
     
@@ -178,7 +181,6 @@ def main(input_file, output_path) -> None:
     ueis = df['UEI'].tolist()
     header = {"Content-Type": "application/json"}
 
-    batch_size = 10
     all_contract_data = []
     all_grant_data = []
 
@@ -187,7 +189,7 @@ def main(input_file, output_path) -> None:
         contract_data.extend(contract_batch)
         grant_data.extend(grant_batch)
 
-    process_in_batches(ueis, batch_size, fetch_award_batch, header, all_contract_data, all_grant_data)
+    process_in_batches(ueis, batch_size, fetch_award_batch, header, all_contract_data, all_grant_data, starting_batch=starting_batch)
 
     # Save contract and grant data in batches
     save_data_in_batches(all_contract_data, output_path, "usas_batches/usas_contracts_batches", batch_size)
@@ -211,11 +213,14 @@ def main(input_file, output_path) -> None:
 
 def parse_args():
     parser = ArgumentParser(description="Fetch award and company data for a list of UEIs.")
-    parser.add_argument("--input_file", "-i", help="Path to the input CSV file containing UEIs.")
-    parser.add_argument("--output_path", "-o", help="Directory to save the output CSV files.")
+    parser.add_argument("--input_file", "-i", required=True, help="Path to the input CSV file containing UEIs.")
+    parser.add_argument("--output_path", "-o", required=True, help="Directory to save the output CSV files.")
+    parser.add_argument("--batch_size", "-b", required=False, default=10, help="Batch Size")
+    parser.add_argument("--starting_batch", "-s", required=False, default=0, help="Starting Batch")
+    parser.add_argument("--log_file", "-l", required=False, default="usas_log.txt", help="Log File")
     return parser.parse_args()
 
 if __name__ == "__main__":
     args = parse_args()
     logging.basicConfig(filename=f'{args.output_path}/log/usas_log.txt', level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
-    main(args.input_file, args.output_path)
+    main(args.input_file, args.output_path,int(args.batch_size), int(args.starting_batch))

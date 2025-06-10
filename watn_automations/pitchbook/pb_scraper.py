@@ -53,7 +53,7 @@ def get_companies_list(soup) -> list:
     return [company.get_text() for company in company_elem]
 
 def get_table_headers(soup) -> list : 
-    col_elem = soup.find_all('div', class_='smart-caption smart-caption_038bbd88 smart-caption__static smart-caption__static_038bbd88')
+    col_elem = soup.find_all('div', role='SmartCaption')
     return [str(col.get_text()) for col in col_elem]
 
 def get_table_content(soup, col_ids, companies) -> list: 
@@ -115,9 +115,8 @@ def main(input_folder, output_path) -> None:
     """
 
     webarchive_path = os.path.join(input_folder, "webarchives")
-    print(input_folder)
     files = glob.glob(os.path.join(webarchive_path, '*.webarchive'))
-    
+        
     for file in files:
         div = "company_info" if "company" in file else "funding"
         html_path = os.path.join(os.getcwd(), "extracted_info.html")
@@ -126,6 +125,7 @@ def main(input_folder, output_path) -> None:
         with open(html_path, 'rb') as html_file:
             html_content = html_file.read()
             soup = BeautifulSoup(html_content, 'html.parser')
+            html_content = soup.prettify()
         
         table_headers = get_table_headers(soup)
         companies = get_companies_list(soup)

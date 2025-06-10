@@ -6,12 +6,18 @@ import logging
 from argparse import ArgumentParser
 
 
-def get_firm_info_by_duns(duns_number) -> dict:
+## TO DO:
+
+## Add in logging configuration in the argsparse, doesnt have to be required, but useful for debugging, can set a defualt
+## Move the logging configuration to the if name == "__main__": block to avoid running it on import
+## Check docstrings for functions and add type hints for better clarity 
+
+def get_firm_info_by_duns(duns_number:str) -> dict:
     """
     Fetch firm information from the SBIR API using DUNS number.
 
     Arguments:
-        duns_number : str : DUNS number of the firm
+        duns_number (str) : DUNS number of the firm
     Returns:
         dict : Firm information if found, else None
     """
@@ -27,15 +33,16 @@ def get_firm_info_by_duns(duns_number) -> dict:
     if response.status_code == 200:
         firm_data = response.json()
         return firm_data[0] if firm_data else None
+    
     return None
 
-def main(input_file, output_path):
+def main(input_file: str, output_path: str) -> None:
     """
     Main function to process the input file and update DUNS numbers with UEI.
     
     Arguments:
-        input_file : str : Path to the input CSV file
-        output_path : str : Path to save the output file
+        input_file (str) : Path to the input CSV file
+        output_path (str) : Path to save the output file
     """
     logging.basicConfig(
         filename=f'{output_path}/log/duns_search_log.txt',
@@ -73,7 +80,7 @@ def main(input_file, output_path):
     df_original.to_csv(input_file, index=False)
     logging.info(f"Data updated in original file: {input_file}")
 
-def parse_arguments():
+def parse_arguments() -> ArgumentParser:
     """
     Parse command line arguments.
 
@@ -83,8 +90,10 @@ def parse_arguments():
     parser = ArgumentParser(description="Process DUNS numbers and fetch firm data.")
     parser.add_argument('--input_file', '-i', type=str, help='Input CSV file with DUNS numbers')
     parser.add_argument('--output_path', '-o', type=str, help='Output path file to save results')
+    parser.add_argument("--log_file", "-l", required=False, default="log/duns_search_log.txt", help="Log File")
     return parser.parse_args()
 
 if __name__ == "__main__":
     args = parse_arguments()
+    logging.basicConfig(filename=f'{args.output_path}/{args.log_file}', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
     main(args.input_file, args.output_path)

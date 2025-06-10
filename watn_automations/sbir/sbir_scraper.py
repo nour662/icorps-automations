@@ -4,57 +4,86 @@ import os
 import logging
 import argparse
 from math import ceil
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+import time
+
+AWARD_FIELDS = [
+    "Company Name", "award_title", "agency", "branch", "phase", "program",
+    "agency_tracking_number", "contract", "proposal_award_date", "contract_end_date",
+    "solicitation_number", "solicitation_year", "topic_code", "award_year",
+    "award_amount", "award_link"
+]
+
+COMPANY_FIELDS = ["duns", "number_employees"]
+
+session = requests.Session()
+retries = Retry(
+    total=5,
+    backoff_factor=1,
+    status_forcelist=[500, 502, 503, 504, 429],
+    allowed_methods=["GET"]
+)
+adapter = HTTPAdapter(max_retries=retries)
+session.mount("http://", adapter)
+session.mount("https://", adapter)
+
 
 
 def get_company_info(uei) -> dict:
     """
     Fetch company information from the SBIR API using the UEI.
 
-    Arugments:
+    Arguments:
         uei : str : Unique Entity Identifier (UEI) of the company.
     Returns:
-        ict : Company information including UEI, name, address, website, and SBIR profile link.
+        dict : Company information including UEI, name, address, website, and SBIR profile link.
     """
     url = f"https://api.www.sbir.gov/public/api/firm?keyword={uei}"
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        data = response.json()
-        if data:
-            company_info = data[0] 
-            return {
-                "UEI": company_info.get("uei", "N/A"),
-                "Name": company_info.get("company_name", "N/A"),
-                "Street Address": company_info.get("address1", "N/A"),
-                "City": company_info.get("city", "N/A"),
-                "State": company_info.get("state", "N/A"),
-                "Zip Code": company_info.get("zip", "N/A"),
-                "Website": company_info.get("company_url", "N/A"),
-                "SBIR Profile Link": company_info.get("sbir_url", "N/A")
-            }
-    else:
-        logging.error(f"Failed to retrieve company info for UEI {uei}: {response.status_code}")
-    return None
+    try:
+        response = session.get(url, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            if data:
+                company_info = data[0]
+                structured = {
+                    "UEI": company_info.get("uei", "N/A"),
+                    "Name": company_info.get("company_name", "N/A"),
+                    "Street Address": company_info.get("address1", "N/A"),
+                    "City": company_info.get("city", "N/A"),
+                    "State": company_info.get("state", "N/A"),
+                    "Zip Code": company_info.get("zip", "N/A"),
+                    "Website": company_info.get("company_url", "N/A"),
+                    "SBIR Profile Link": company_info.get("sbir_url", "N/A")
+                }
+                return structured, company_info
+        else:
+            logging.error(f"Failed to retrieve company info for UEI {uei}: {response.status_code}")
+    except requests.exceptions.RequestException as e:
+        logging.error(f"Error fetching company info for UEI {uei}: {e}")
+    return None, None
 
 def get_award_info(company_name) -> list:
     """
     Fetch award information from the SBIR API using the company name.
-    
+
     Arguments:
         company_name : str : Name of the company.
     Returns:
         list : List of awards associated with the company.
     """
     url = f"https://api.www.sbir.gov/public/api/awards?firm={company_name}"
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        return response.json()
-    else:
-        logging.error(f"Failed to retrieve award info for {company_name}: {response.status_code}")
+    try:
+        response = session.get(url, timeout=10)
+        if response.status_code == 200:
+            return response.json()
+        else:
+            logging.error(f"Failed to retrieve award info for {company_name}: {response.status_code}")
+    except requests.exceptions.RequestException as e:
+        logging.error(f"Error fetching award info for {company_name}: {e}")
     return []
 
-def process_batch(uei_batch, batch_number, company_output_dir, awards_output_dir)-> None:
+def process_batch(uei_batch, batch_number, company_output_dir, awards_output_dir) -> None:
     """
     Process a batch of UEIs to fetch company and award information.
 
@@ -64,33 +93,48 @@ def process_batch(uei_batch, batch_number, company_output_dir, awards_output_dir
         company_output_dir : str : Directory to save company information CSV.
         awards_output_dir : str : Directory to save award information CSV.
     """
-    logging.info(f"Processing batch {batch_number} with {len(uei_batch)} UEIs")
-    company_info_df = pd.DataFrame(columns=[
-        "UEI", "Name", "Street Address", "City", "State", "Zip Code", "Website", "SBIR Profile Link"
-    ])
-    all_awards = []
+    company_info_records = []
+    award_core_records = []
 
     for uei in uei_batch:
         logging.info(f"Processing UEI: {uei}")
-        company_info = get_company_info(uei)
+        company_structured, company_raw = get_company_info(uei)
+        if not company_structured or not company_raw:
+            logging.warning(f"No company data found for UEI: {uei}")
+            continue
 
-        if company_info:
-            company_info_df = pd.concat([company_info_df, pd.DataFrame([company_info])], ignore_index=True)
-            company_name = company_info["Name"]
-            award_data = get_award_info(company_name)
-            for award in award_data:
+        company_name = company_structured["Name"]
+        awards = get_award_info(company_name)
+        
+        if not awards:
+            placeholder_award = {
+                "Company Name": company_name,
+                **{field: "N/A" for field in AWARD_FIELDS if field != "Company Name"}
+            }
+            award_core_records.append(placeholder_award)
+        else: 
+            for award in awards:
                 award["Company Name"] = company_name
-                all_awards.append(award)
+                core_record = {field: award.get(field, "") for field in AWARD_FIELDS}
+                award_core_records.append(core_record)
 
-    company_batch_filename = os.path.join(company_output_dir, f"batch_{batch_number}.csv")
-    company_info_df.to_csv(company_batch_filename, index=False)
+                company_structured.update({field: award.get(field, company_raw.get(field, "")) for field in COMPANY_FIELDS})
 
-    if all_awards:
-        awards_df = pd.DataFrame(all_awards)
-        awards_batch_filename = os.path.join(awards_output_dir, f"batch_{batch_number}.csv")
-        awards_df.to_csv(awards_batch_filename, index=False)
-    else:
-        logging.warning(f"No award data found in batch {batch_number}")
+        company_info_records.append(company_structured)
+        time.sleep(0.5)  # Sleep between requests to avoid rate limiting
+
+    # Save batch files
+    if len(company_info_records) > 0:
+        company_df = pd.DataFrame(company_info_records)
+        company_batch_filename = os.path.join(company_output_dir, f"batch_{batch_number}.csv")
+        company_df.to_csv(company_batch_filename, index=False)
+        logging.info(f"Saved company data: {company_batch_filename}")
+
+    if len(award_core_records) > 0:
+        award_df = pd.DataFrame(award_core_records)
+        award_batch_filename = os.path.join(awards_output_dir, f"batch_{batch_number}.csv")
+        award_df.to_csv(award_batch_filename, index=False)
+        logging.info(f"Saved award data: {award_batch_filename}")
 
 def process_batches(uei_list, output_path, batch_size) -> None:
     """
@@ -114,19 +158,24 @@ def process_batches(uei_list, output_path, batch_size) -> None:
         start = batch_num * batch_size
         end = start + batch_size
         uei_batch = uei_list[start:end]
-        logging.info(f"Processing batch {batch_num + 1} with {len(uei_batch)} UEIs")
+        logging.info(f"Processing batch {batch_num + 1}/{total_batches} with {len(uei_batch)} UEIs")
         process_batch(uei_batch, batch_num + 1, company_dir, awards_dir)
 
 def main(input_file, output_path, batch_size) -> None:
     """
-    Main function to set up logging, read input file, and process batches.
+    Main function to read input file and process batches.
 
     Arguments:
         input_file : str : Path to input CSV file with UEIs.
         output_path : str : Directory to store output folders.
         batch_size : int : Number of UEIs to process per batch.
     """
-    logging.basicConfig(filename=f'{output_path}/log/sbir_log.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+    log_dir = os.path.join(output_path, "log")
+    os.makedirs(log_dir, exist_ok=True)
+
+    logging.basicConfig(filename=f'{output_path}/log/sbir_log.txt',
+                        level=logging.DEBUG,
+                        format='%(asctime)s - %(levelname)s - %(message)s')    
     df = pd.read_csv(input_file)
     uei_list = df['UEI'].dropna().tolist()
     process_batches(uei_list, output_path, batch_size)

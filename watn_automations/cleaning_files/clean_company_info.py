@@ -144,6 +144,8 @@ def clean_sbir(sbir_df):
 
 
     sbir_df["Street Address"] = sbir_df["Street Address"].apply(lambda x: str(x).split(",")[0].title() if pd.notna(x) else None)
+    sbir_df["duns"] = sbir_df["duns"].apply(lambda x: str(x).split(".")[0].zfill(9) if pd.notna(x) else None)
+
     sbir_df["City"] = sbir_df["City"].apply(lambda x: str(x).split(",")[0].title() if pd.notna(x) else None)
     state_abbr_to_full = {v: k for k, v in col_converts.get_state_abbreviations().items()}
     sbir_df["State"] = sbir_df["State"].apply(lambda x: state_abbr_to_full.get(x.upper(), x).title() if pd.notna(x) else None)
@@ -226,6 +228,7 @@ def main(input_folder , root_tag):
 
     for key, source in sources.items():
         print(f"Processing {key.upper()} data...")
+        
         df = pd.read_csv(source["path"])
         cleaned_df = source["clean_func"](df)
         output_path = os.path.join(cleaned_output_dir, f"{key}_cleaned.csv")

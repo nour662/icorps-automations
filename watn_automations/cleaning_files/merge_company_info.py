@@ -1,13 +1,18 @@
 import col_converts
 import pandas as pd
 import os
+from argparse import ArgumentParser
 
-def make_final_output(original_input, usas, sbir, sam, pb):
+def make_final_output(input_file, output_path, usas, sbir, sam, pb):
     cols = col_converts.get_compinfo_final_cols()
-    final_output = pd.DataFrame(columns=cols).astype(str)
-    final_output["Account Name"] = original_input["Company"]
-    final_output["UEI"] = original_input["UEI"]
 
+    final_output = pd.DataFrame(columns=cols).astype(str)
+    input_file = pd.read_csv(input_file, dtype={"UEI": str, "DUNS": str, "Zip Code": str})
+
+    final_output["Account Name"] = input_file["Company"].unique()
+    name_to_uei = input_file.set_index("Company")["UEI"].to_dict()
+    final_output["UEI"] = final_output["Account Name"].map(name_to_uei)
+    
     final_output = final_output[
         final_output["UEI"].isin(sam["UEI"]) | final_output["Account Name"].isin(pb["Account Name"])
     ]
@@ -17,8 +22,8 @@ def make_final_output(original_input, usas, sbir, sam, pb):
         "Website": "Company Website"
     }
     for input_col, output_col in optional_fields.items():
-        if input_col in original_input.columns:
-            final_output[output_col] = original_input[input_col]
+        if input_col in input_file.columns:
+            final_output[output_col] = input_file[input_col]
 
     def dynamic_map(source_df, key_col, fields, target_df, target_key):
         for src, tgt in fields.items():
@@ -104,18 +109,27 @@ def make_final_output(original_input, usas, sbir, sam, pb):
         return pb.set_index("Account Name")["Company Website"].get(row["Account Name"], row.get("Company Website"))
 
     final_output["Company Website"] = final_output.apply(website_get, axis=1)
-    final_output.to_csv("final_output.csv", index=False)
+    final_output.to_csv(f"{output_path}/company_info.csv", index=False)
     return final_output
 
-def main():
-    input_path = "outputs/outputs_psu_incubator_companies_2025-04-22/"
-    original_input = pd.read_csv(f"{input_path}/inputs/psu_incubator_companies.csv")
-    usas = pd.read_csv(f"{input_path}/cleaned_outputs/company_info/usas_cleaned.csv", dtype={"DUNS": str})
-    sbir = pd.read_csv(f"{input_path}/cleaned_outputs/company_info/sbir_cleaned.csv", dtype={"Zip Code": str})
-    sam = pd.read_csv(f"{input_path}/cleaned_outputs/company_info/sam_cleaned.csv")
-    pb = pd.read_csv(f"{input_path}/cleaned_outputs/company_info/pb_cleaned.csv", dtype={"Employees": str, "Incorporation Year": str})
-    print(os.getcwd())
-    make_final_output(original_input, usas, sbir, sam, pb)
+def main(input_file, data_path, output_path):
+
+    usas = pd.read_csv(f"{data_path}/usas_cleaned.csv", dtype={"DUNS": str})
+    sbir = pd.read_csv(f"{data_path}/sbir_cleaned.csv", dtype={"Zip Code": str})
+    sam = pd.read_csv(f"{data_path}/sam_cleaned.csv")
+    pb = pd.read_csv(f"{data_path}/pb_cleaned.csv", dtype={"Employees": str, "Incorporation Year": str})
+
+    make_final_output(input_file, output_path, usas, sbir, sam, pb)
+
+
+def parse_args(): 
+    parser = ArgumentParser(description="")
+    parser.add_argument("--input_file", "-i", type=str, required=True, help="Path to original ETL input file.")
+    parser.add_argument("--data_path", "-d", type=str, required=True, help="Directory of cleaned data files.")
+    parser.add_argument("--output_path", "-o", type=str, required=True, help="Output directory for final merged data.")
+
+    return parser.parse_args()
 
 if __name__ == "__main__":
-    main()
+    args = parse_args()
+    main(args.input_file, args.data_path, args.output_path)
