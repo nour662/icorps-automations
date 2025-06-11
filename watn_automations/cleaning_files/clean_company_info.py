@@ -164,7 +164,7 @@ def clean_pitchbook(pb_df, pb_matches):
     pb_df.drop_duplicates(subset=["company"], inplace=True)
     pb_df = pb_df[pb_df["company"].notna()]
 
-    pb_df = pb_df.drop(columns=["Firm Name from PitchBook", "company"])
+    pb_df = pb_df.drop(columns=["Firm Name from PitchBook"])
 
     pb_df = pb_df.loc[pb_df["Company"].drop_duplicates(keep="first").index]
 
