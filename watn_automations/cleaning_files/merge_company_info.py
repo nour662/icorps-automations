@@ -44,9 +44,19 @@ def make_final_output(input_file, output_path, usas, sbir, sam, pb):
         "Status": "Active",
         "Employees": "Employees"
     }
+
     for src, tgt in pb_fields.items():
         mapped = final_output["Account Name"].map(pb.set_index("Account Name")[src])
         final_output[tgt] = mapped.apply(lambda x: x != "Out of Business") if src == "Status" else mapped
+
+    sbir_emp_map = sbir.set_index("UEI")["number_employees"]
+    final_output["SBIR_Employees"] = final_output["UEI"].map(sbir_emp_map)
+
+    final_output["Employees"] = final_output["Employees"].replace(["", " ", "nan", "None"], pd.NA)
+    final_output["SBIR_Employees"] = final_output["SBIR_Employees"].replace(["", " ", "nan", "None"], pd.NA)
+    final_output["Employees"] = final_output["Employees"].fillna(final_output["SBIR_Employees"])
+
+    final_output.drop(columns=["SBIR_Employees"], inplace=True)
 
     final_output["DUNS"] = final_output.apply(
         lambda row: usas.set_index("UEI")["DUNS"].get(row["UEI"], row.get("DUNS")), axis=1
@@ -115,7 +125,7 @@ def make_final_output(input_file, output_path, usas, sbir, sam, pb):
 def main(input_file, data_path, output_path):
 
     usas = pd.read_csv(f"{data_path}/usas_cleaned.csv", dtype={"DUNS": str})
-    sbir = pd.read_csv(f"{data_path}/sbir_cleaned.csv", dtype={"Zip Code": str})
+    sbir = pd.read_csv(f"{data_path}/sbir_cleaned.csv", dtype={"Employees": str, "Zip Code": str, })
     sam = pd.read_csv(f"{data_path}/sam_cleaned.csv")
     pb = pd.read_csv(f"{data_path}/pb_cleaned.csv", dtype={"Employees": str, "Incorporation Year": str})
 
