@@ -97,7 +97,10 @@ def get_sbir_compinfo_col_mapping():
     "City" : "City",
     "State" : "State",
     "Zip Code" : "Zip Code",
-    "Website" : "Company Website"
+    "Website" : "Company Website",
+    "number_employees" : "Employees",
+    "duns" : "DUNS",
+
     }
     return company_info_cols_mapping
 
@@ -116,7 +119,7 @@ def get_usas_compinfo_col_mapping():
 
 def get_pb_compinfo_col_mapping(): 
     company_info_cols_mapping = {
-    "Company": "Account Name",
+    "company": "Account Name",
     "hqCity": "City",
     "hqState": "State",
     "hqAddressLine1": "Street Address",

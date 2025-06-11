@@ -144,7 +144,9 @@ def clean_sbir(sbir_df):
 
 
     sbir_df["Street Address"] = sbir_df["Street Address"].apply(lambda x: str(x).split(",")[0].title() if pd.notna(x) else None)
+    sbir_df["duns"] = sbir_df["duns"].apply(lambda x: str(x).split(".")[0].zfill(9) if pd.notna(x) else None)
     sbir_df["City"] = sbir_df["City"].apply(lambda x: str(x).split(",")[0].title() if pd.notna(x) else None)
+    
     state_abbr_to_full = {v: k for k, v in col_converts.get_state_abbreviations().items()}
     sbir_df["State"] = sbir_df["State"].apply(lambda x: state_abbr_to_full.get(x.upper(), x).title() if pd.notna(x) else None)
     sbir_df["Zip Code"] = sbir_df["Zip Code"].apply(lambda x: str(x)[:5] if pd.notna(x) else None)
@@ -162,7 +164,7 @@ def clean_pitchbook(pb_df, pb_matches):
     pb_df.drop_duplicates(subset=["company"], inplace=True)
     pb_df = pb_df[pb_df["company"].notna()]
 
-    pb_df = pb_df.drop(columns=["Firm Name from PitchBook", "company"])
+    pb_df = pb_df.drop(columns=["Firm Name from PitchBook"])
 
     pb_df = pb_df.loc[pb_df["Company"].drop_duplicates(keep="first").index]
 
@@ -226,6 +228,7 @@ def main(input_folder , root_tag):
 
     for key, source in sources.items():
         print(f"Processing {key.upper()} data...")
+        
         df = pd.read_csv(source["path"])
         cleaned_df = source["clean_func"](df)
         output_path = os.path.join(cleaned_output_dir, f"{key}_cleaned.csv")
