@@ -49,8 +49,17 @@ def make_final_output(input_file, output_path, usas, sbir, sam, pb):
         mapped = final_output["Account Name"].map(pb.set_index("Account Name")[src])
         final_output[tgt] = mapped.apply(lambda x: x != "Out of Business") if src == "Status" else mapped
 
-    sbir_emp_map = sbir.set_index("UEI")["number_employees"]
-    final_output["SBIR_Employees"] = final_output["UEI"].map(sbir_emp_map)
+    sbir_states = sbir[["UEI", "Employees", "State"]].copy()
+    sam_states = sam[["UEI", "State"]].copy()
+
+    sbir_sam_merge = sbir_states.merge(sam_states, on="UEI", suffixes=("_sbir", "_sam"))
+
+    sbir_sam_merge = sbir_sam_merge[
+        sbir_sam_merge["State_sbir"].str.upper() == sbir_sam_merge["State_sam"].str.upper()
+    ]
+
+    sbir_valid_emp = sbir_sam_merge.set_index("UEI")["Employees"]
+    final_output["SBIR_Employees"] = final_output["UEI"].map(sbir_valid_emp)
 
     final_output["Employees"] = final_output["Employees"].replace(["", " ", "nan", "None"], pd.NA)
     final_output["SBIR_Employees"] = final_output["SBIR_Employees"].replace(["", " ", "nan", "None"], pd.NA)
@@ -125,7 +134,7 @@ def make_final_output(input_file, output_path, usas, sbir, sam, pb):
 def main(input_file, data_path, output_path):
 
     usas = pd.read_csv(f"{data_path}/usas_cleaned.csv", dtype={"DUNS": str})
-    sbir = pd.read_csv(f"{data_path}/sbir_cleaned.csv", dtype={"Employees": str, "Zip Code": str, })
+    sbir = pd.read_csv(f"{data_path}/sbir_cleaned.csv", dtype={"Employees": str, "Zip Code": str, "State":str})
     sam = pd.read_csv(f"{data_path}/sam_cleaned.csv")
     pb = pd.read_csv(f"{data_path}/pb_cleaned.csv", dtype={"Employees": str, "Incorporation Year": str})
 
